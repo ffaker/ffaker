@@ -14,7 +14,7 @@ A port of Perl's Data::Faker library that generates fake data.
 
   Faker::Internet.email => "kirsten.greenholt@corkeryfisher.info"
 
-== Ffaker / Faker ==
+== Ffaker / Faker
 
 This version of the gem was modified by me (Emmanuel Oga) cause I was
 so annoyed on several ineficiencies on the original gem.
@@ -29,7 +29,7 @@ and require 'ffaker', instead of the previous "faker" with one f.
 The API is pretty much the same. Fork/ping me if you feel like adding
 more goodies to it.
 
-== Faster??? does it really matter ??? ==
+== Faster? does it really matter ?
 
 While it may seem like the speed of good'ol faker is not such a big deal, I
 really disliked the previous code base.
@@ -53,18 +53,17 @@ $ cat scripts/benchmark.rb
     end
   end
 
-* ruby 1.8.7 (2009-06-12 patchlevel 174) [x86_64-linux],
-             MBARI 0x6770, Ruby Enterprise Edition 2009.10
+* ruby 1.8.7 (2009-06-12 patchlevel 174) [x86_64-linux], MBARI 0x6770, Ruby Enterprise Edition 2009.10
 
-                  user     system      total        real
-  Faker       9.240000   0.020000   9.260000 (  9.297381)
-  Fast Faker  0.060000   0.000000   0.060000 (  0.109047)
+                    user     system      total        real
+    Faker       9.240000   0.020000   9.260000 (  9.297381)
+    Fast Faker  0.060000   0.000000   0.060000 (  0.109047)
 
 * ruby 1.9.1p376 (2009-12-07 revision 26041) [x86_64-linux]
 
-                   user     system      total        real
-Faker         74.980000   0.110000  75.090000 ( 75.881142)
-Fast Faker     0.050000   0.000000   0.050000 (  0.052292)
+                    user     system      total        real
+    Faker      74.980000   0.110000  75.090000 ( 75.881142)
+    Fast Faker  0.050000   0.000000   0.050000 (  0.052292)
 
 DISCLAIMER: I have no idea why I'm getting such bad numbers
 for traditional faker on 1.9, but I'm not making up this!!!
