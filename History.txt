@@ -1,3 +1,7 @@
+== 0.3.3 2010-01-14
+* removed library file and directory "faker".
+  now you only can load the gem using require 'ffaker'
+
 == 0.3.2 2010-01-14
 * Several Optimizations, renamed gem packege to ffaker.
 

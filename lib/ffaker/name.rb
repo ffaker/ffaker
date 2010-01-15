@@ -5,9 +5,9 @@ module Faker
 
     def name
       case rand(10)
-      when 0 then "#{prefix}#{first_name}#{last_name}"
-      when 1 then "#{first_name}#{last_name}#{suffix}"
-      else        "#{first_name}#{last_name}"
+      when 0 then "#{prefix} #{first_name} #{last_name}"
+      when 1 then "#{first_name} #{last_name} #{suffix}"
+      else        "#{first_name} #{last_name}"
       end
     end
 
