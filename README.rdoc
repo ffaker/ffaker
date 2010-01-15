@@ -67,7 +67,7 @@ $ cat scripts/benchmark.rb
 
 DISCLAIMER: I have no idea why I'm getting such bad numbers
 for traditional faker on 1.9, but I'm not making up this!!!
-Try it in your own machine, your milage may vary.
+Try it in your own machine, your mileage may vary.
 
 == Note on Patches/Pull Requests
 
