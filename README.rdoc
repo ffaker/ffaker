@@ -1,9 +1,28 @@
 = ffaker
 
-Description goes here.
+Fast Faker == Faker refactored, cleaner and faster.
+
+= Faker
+
+A port of Perl's Data::Faker library that generates fake data.
+
+== Usage
+
+* Faker::Name.name => "Christophe Bartell"
+
+* Faker::Internet.email => "kirsten.greenholt@corkeryfisher.info"
+
+== Ffaker / Faker ==
+
+This version of the gem was modified by me (Emmanuel Oga) cause I was
+so annoyed on several ineficiencies on the original gem.
+
+And because I coult not find the original author on github (and I
+don't feel like working with the arcane rubyforge+svn tools) I
+just realised this gem using a different name.
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
@@ -14,4 +33,5 @@ Description goes here.
 
 == Copyright
 
+Copyright (c) 2007 Benjamin Curtis
 Copyright (c) 2010 Emmanuel Oga. See LICENSE for details.
