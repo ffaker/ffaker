@@ -3,8 +3,7 @@ module Faker
     def self.const_array(argument)
       array = argument.is_a?(Array) ? argument : argument.to_a
       array.extend ArrayUtils
-      array.freeze_all
-      array
+      freeze_all(array)
     end
 
     def self.random_pick(array, n)

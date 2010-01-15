@@ -16,7 +16,7 @@ module Faker
   end
 
   def self.bothify(string)
-    self.letterify(self.numerify(string))
+    letterify(numerify(string))
   end
 
   autoload :Address,     'faker/address'

@@ -12,7 +12,7 @@ module Faker
     end
 
     def us_state_abbr
-      STATE_ABBR
+      STATE_ABBR.rand
     end
 
     def city_prefix

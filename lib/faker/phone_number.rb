@@ -4,7 +4,11 @@ module Faker
     extend self
 
     def phone_number
-      Faker.numerify(Formats.rand)
+      Faker.numerify(FORMATS.rand)
+    end
+
+    def self.short_phone_number
+      Faker.numerify(FORMATS.first.dup)
     end
 
     FORMATS = k [
