@@ -1,5 +1,5 @@
 module Faker
-  require 'faker/utils/module_utils'
+  require 'ffaker/utils/module_utils'
 
   extend ModuleUtils
 
@@ -20,7 +20,7 @@ module Faker
   end
 
   autoload :Address,     'ffaker/address'
-  autoload :Company,     'faker/company'
+  autoload :Company,     'ffaker/company'
   autoload :Internet,    'ffaker/internet'
   autoload :Lorem,       'ffaker/lorem'
   autoload :Name,        'ffaker/name'
