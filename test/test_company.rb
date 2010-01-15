@@ -14,6 +14,6 @@ class TestCompany < Test::Unit::TestCase
   end
 
   def test_suffix
-    assert_match /[ a-z]+/, Faker::Company.suffix
+    assert_match /[ a-z]+/i, Faker::Company.suffix
   end
 end
