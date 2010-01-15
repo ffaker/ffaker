@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/test_helper.rb'
+require 'helper'
 
 class TestFakerName < Test::Unit::TestCase
   def setup
