@@ -21,12 +21,12 @@ so annoyed on several ineficiencies on the original gem.
 
 And because I coult not find the original author on github (and I
 don't feel like working with the arcane rubyforge+svn tools) I
-just realised this gem using a different name.
+just realeased this gem using a different name.
 
 The only difference in usage is that you need to gem install ffaker,
-and require 'ffaker', instead of the previous "faker" with one f.
+and require 'ffaker', instead of the previous "faker" with only one f.
 
-The API is pretty much the same. Fork/ping me if you feel like adding
+The API is pretty much the same. Fork it/ping me if you feel like adding
 more goodies to it.
 
 == Faster? does it really matter ?
@@ -34,8 +34,8 @@ more goodies to it.
 While it may seem like the speed of good'ol faker is not such a big deal, I
 really disliked the previous code base.
 
-Speed came as a result of having better code in place. In any case getting a
-few more cycles here and there is not bad, specially since I had fun while
+Speed came as a result of having better code in place. Getting a
+few more cycles here and there was not bad, specially since I had fun while
 doing the refactoring :).
 
 Here are some benchmarks (yeah everybody love benchmarks!)
@@ -66,7 +66,7 @@ $ cat scripts/benchmark.rb
     Fast Faker  0.050000   0.000000   0.050000 (  0.052292)
 
 DISCLAIMER: I have no idea why I'm getting such bad numbers
-for traditional faker on 1.9, but I'm not making up this!!!
+for traditional faker on 1.9, but I'm not making this up!
 Try it in your own machine, your mileage may vary.
 
 == Note on Patches/Pull Requests
