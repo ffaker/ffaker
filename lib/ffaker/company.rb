@@ -18,13 +18,13 @@ module Faker
     # Generate a buzzword-laden catch phrase.
     # Wordlist from http://www.1728.com/buzzword.htm
     def catch_phrase
-      "#{CATCH_MID.rand} #{CATCH_MID.rand} #{CATCH_POS.rand}"
+      "#{CATCH_PRE.rand} #{CATCH_MID.rand} #{CATCH_POS.rand}"
     end
 
     # When a straight answer won't do, BS to the rescue!
     # Wordlist from http://dack.com/web/bullshit.html
     def bs
-      "#{BS_MID.rand} #{BS_MID.rand} #{BS_POS.rand}"
+      "#{BS_PRE.rand} #{BS_MID.rand} #{BS_POS.rand}"
     end
 
     SUFFIXES = k %w(Inc and\ Sons LLC Group)
