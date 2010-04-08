@@ -90,7 +90,8 @@ module Faker
                      ND MP OH OK OR PW PA PR RI SC SD TN TX UT VT VI VA WA WV
                      WI WY AE AA AP)
 
-    CITY_PREFIXES = k %w(North East West South New Lake Port)
+    COMPASS_DIRECTIONS = k %w(North East West South)
+    CITY_PREFIXES = k(COMPASS_DIRECTIONS + %w(New Lake Port))
 
     CITY_SUFFIXES = k %w(town ton land ville berg burgh borough bury view port
                         mouth stad furt chester mouth fort haven side shire)
