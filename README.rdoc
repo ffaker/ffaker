@@ -16,27 +16,28 @@ A port of Perl's Data::Faker library that generates fake data.
 
 == Ffaker / Faker
 
-This version of the gem was modified by me (Emmanuel Oga) cause I was
-so annoyed on several ineficiencies on the original gem.
+The only difference between faker and ffaker is that you need to
 
-And because I coult not find the original author on github (and I
-don't feel like working with the arcane rubyforge+svn tools) I
-just realeased this gem using a different name.
+  gem install ffaker
 
-The only difference in usage is that you need to gem install ffaker,
-and require 'ffaker', instead of the previous "faker" with only one f.
+and then
 
-The API is pretty much the same. Fork it/ping me if you feel like adding
-more goodies to it.
+  require 'ffaker'
+
+instead of "faker" with only one f.
+
+The API is pretty much the same as before.
+
+Fork it/ping me if you feel like adding more goodies to it.
 
 == Faster? does it really matter ?
 
-While it may seem like the speed of good'ol faker is not such a big deal, I
+While it may seem like the speed of good'ol faker was not such a big deal, I
 really disliked the previous code base.
 
 Speed came as a result of having better code in place. Getting a
 few more cycles here and there was not bad, specially since I had fun while
-doing the refactoring :).
+doing the refactoring.
 
 Here are some benchmarks (yeah everybody love benchmarks!)
 
@@ -69,6 +70,10 @@ DISCLAIMER: I have no idea why I'm getting such bad numbers
 for traditional faker on 1.9, but I'm not making this up!
 Try it in your own machine, your mileage may vary.
 
+== TODO
+
+* Even though the API is pretty simple, better rdoc documentation would not hurt.
+
 == Note on Patches/Pull Requests
 
 * Fork the project.
@@ -78,6 +83,10 @@ Try it in your own machine, your mileage may vary.
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
+
+== Contributors
+
+* James Rosen ( http://github.com/jamesarosen/ffaker ).
 
 == Copyright
 
