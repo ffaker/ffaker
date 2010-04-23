@@ -38,18 +38,13 @@ module Faker
 
     def street_name
       case rand(2)
-      when 0 then "#{Name.last_name}#{street_suffix}"
-      when 1 then "#{Name.first_name}#{street_suffix}"
+      when 0 then "#{Name.last_name} #{street_suffix}"
+      when 1 then "#{Name.first_name} #{street_suffix}"
       end
     end
 
     def street_address(include_secondary = false)
-      str = case rand(3)
-      when 0 then '##### %s' % street_name
-      when 1 then '#### %s'  % street_name
-      when 2 then '### %s'   % street_name
-      end
-
+      str = ( "#" * rand(3) ) << ('### %s' % street_name)
       str << ' ' << secondary_address  if include_secondary
 
       Faker.numerify(str)
@@ -103,7 +98,7 @@ module Faker
       Estate Estates Expressway Extension Extensions Fall Falls Ferry
       Field Fields Flat Flats Ford Fords Forest Forge Forges Fork Forks Fort
       Freeway Garden Gardens Gateway Glen Glens Green Greens Grove Groves Harbor
-      Harbors Haven Heights Highway Hill Hills Hollow Inlet Island 
+      Harbors Haven Heights Highway Hill Hills Hollow Inlet Island
       Islands Isle Junction Junctions Key Keys Knoll Knolls Lake
       Lakes Land Landing Lane Light Lights Loaf Lock Locks Lodge Loop
       Mall Manor Manors Meadow Meadows Mews Mill Mills Mission Motorway
