@@ -53,4 +53,8 @@ class TestAddress < Test::Unit::TestCase
   def test_zip_code
     assert_match /[0-9]/, Faker::Address.zip_code
   end
+
+  def test_neighborhood
+    assert_match /[ a-z]+/, Faker::Address::neighborhood
+  end
 end
