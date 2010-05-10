@@ -9,7 +9,7 @@ begin
     gem.description = %Q{Faker refactored}
     gem.email = "EmmanuelOga@gmail.com"
     gem.homepage = "http://github.com/EmmanuelOga/ffaker"
-    gem.authors = ["Emmanuel Oga"]
+    gem.authors = ["Emmanuel Oga", "James Rosen", "Rafael Souza"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
