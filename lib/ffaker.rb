@@ -25,5 +25,6 @@ module Faker
   autoload :Lorem,       'ffaker/lorem'
   autoload :Name,        'ffaker/name'
   autoload :PhoneNumber, 'ffaker/phone_number'
+  autoload :Geolocation, 'ffaker/geolocation'
   autoload :VERSION,     'ffaker/version'
 end
