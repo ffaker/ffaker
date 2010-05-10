@@ -67,6 +67,10 @@ module Faker
       Faker.bothify(UK_POSTCODE.rand).upcase
     end
 
+    def neighborhood
+      NEIGHBORHOOD.rand
+    end
+
     ZIP_FORMATS = k ['#####', '#####-####']
 
     STATE = k ['Alabama', 'Alaska', 'Arizona', 'Arkansas',
@@ -134,5 +138,17 @@ module Faker
     UK_COUNTRY = k ['England', 'Scotland', 'Wales', 'Northern Ireland']
 
     UK_POSTCODE = k ['??# #??', '??## #??']
+
+    NEIGHBORHOOD = k ['East of Telegraph Road', 'North Norridge', 'Northwest Midlothian/Midlothian Country Club',
+      'Mott Haven/Port Morris', 'Kingsbridge Heights', 'Bronxdale', 'Pennypack', 'Bridesburg',
+      'Allegheny West', 'Bushwick South', 'Dyker Heights', 'Ocean Parkway South', 'Summerlin North',
+      'Seven Hills Area', 'Greater Las Vegas National', 'phoenix', 'Central Chandler', 'South of Bell Road',
+      'River Heights', 'White Plains Central', 'Mount Kisco West', 'Pound Ridge East', 'Babylon Bayside',
+      'Sagaponack Seaside', 'South of Lake Ave', 'Far Rockaway/Bayswater', 'Jamaica Estates/Holliswood',
+      'Murray Hill', 'East Renton', 'Renton West', 'Auburn North', 'Northwoods West', 'Florissant West',
+      'Ladue South', 'Candlewood Country Club', 'West Covina East', 'North East Irwindale', 'Sunshine-Gardens',
+      'Cipriani', 'Brentwood Central', 'Jupiter South/Abacoa', 'Sea Ranch Lakes', 'Schall Circle/Lakeside Green',
+      'Olmsted Falls Central', 'South of Lake Shore Blvd', 'Gates Mills North', 'White Oak South of Columbia Pike',
+      'Rockville East of Hungerford Dr', 'Cleveland Park']
   end
 end
