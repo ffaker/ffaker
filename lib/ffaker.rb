@@ -24,6 +24,7 @@ module Faker
   autoload :Internet,    'ffaker/internet'
   autoload :Lorem,       'ffaker/lorem'
   autoload :Name,        'ffaker/name'
+  autoload :NameCN,      'ffaker/name_cn'
   autoload :PhoneNumber, 'ffaker/phone_number'
   autoload :VERSION,     'ffaker/version'
 end

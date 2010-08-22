@@ -12,6 +12,8 @@ A port of Perl's Data::Faker library that generates fake data.
 
   Faker::Name.name => "Christophe Bartell"
 
+  Faker::NameCN.name => "李小飞" (motified by qichunren)
+
   Faker::Internet.email => "kirsten.greenholt@corkeryfisher.info"
 
 == Ffaker / Faker
@@ -73,6 +75,8 @@ Try it in your own machine, your mileage may vary.
 == TODO
 
 * Even though the API is pretty simple, better rdoc documentation would not hurt.
+* 继续完善中文姓名
+* 中文地区地址
 
 == Note on Patches/Pull Requests
 
