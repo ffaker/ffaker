@@ -41,7 +41,7 @@ module Faker
     end
 
     def domain_suffix
-      DOMAIN_SUFFIXES.rand
+      DOMAIN_SUFFIXES.rand.dup
     end
 
     HOSTS = k %w(gmail.com yahoo.com hotmail.com)
