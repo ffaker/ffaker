@@ -54,6 +54,10 @@ class TestAddress < Test::Unit::TestCase
     assert_match /[0-9]/, Faker::Address.zip_code
   end
 
+  def test_zip_code_frozen
+    assert Faker::Address.zip_code.frozen? == false
+  end
+
   def test_neighborhood
     assert_match /[ a-z]+/, Faker::Address::neighborhood
   end

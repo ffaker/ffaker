@@ -7,11 +7,11 @@ module Faker
   LETTERS = k('a'..'z')
 
   def self.numerify(number_string)
-    number_string.dup.gsub!(/#/) { rand(10).to_s }
+    number_string.gsub(/#/) { rand(10).to_s }
   end
 
   def self.letterify(letter_string)
-    letter_string.dup.gsub!(/\?/) { LETTERS.rand }
+    letter_string.gsub(/\?/) { LETTERS.rand }
   end
 
   def self.bothify(string)

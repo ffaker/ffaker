@@ -30,7 +30,7 @@ module Faker
     end
 
     def rand
-      ArrayUtils.rand(self.dup)
+      ArrayUtils.rand(self)
     end
 
     def freeze_all
