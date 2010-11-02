@@ -8,11 +8,11 @@ module Faker
 
     def self.random_pick(array, n)
       indexes = (0...array.length).sort_by{Kernel.rand}[0...n]
-      indexes.map { |n| array[n].dup }
+      indexes.map { |n| array[n] }
     end
 
     def self.rand(array)
-      array[Kernel.rand(array.length)].dup
+      array[Kernel.rand(array.length)]
     end
 
     def self.freeze_all(array)
@@ -30,7 +30,7 @@ module Faker
     end
 
     def rand
-      ArrayUtils.rand(self)
+      ArrayUtils.rand(self.dup)
     end
 
     def freeze_all
