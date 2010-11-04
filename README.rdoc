@@ -16,7 +16,7 @@ A port of Perl's Data::Faker library that generates fake data.
 
 == Ffaker / Faker
 
-The only difference between faker and ffaker is that you need to
+The are only two differences between faker and ffaker. The first one is that you need to
 
   gem install ffaker
 
@@ -27,6 +27,14 @@ and then
 instead of "faker" with only one f.
 
 The API is pretty much the same as before.
+
+The second difference is that Faker::VERSION is no longer a module, so instead of accessing the version like this:
+
+  Faker::VERSION::STRING # faker
+
+you'll need to access it like this:
+
+  Faker::VERSION # ffaker
 
 Fork it/ping me if you feel like adding more goodies to it.
 

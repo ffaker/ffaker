@@ -1,21 +1,11 @@
-## MAC OS
-.DS_Store
-
-## TEXTMATE
-*.tmproj
-tmtags
-
-## EMACS
-*~
-\#*
-.\#*
-
-## VIM
 *.swp
-
-## PROJECT::GENERAL
+*.tmproj
+*~
+.DS_Store
+.\#*
+.yardoc
+\#*
 coverage
-rdoc
 pkg
-
-## PROJECT::SPECIFIC
+rdoc
+tmtags

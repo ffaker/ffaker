@@ -1,4 +1,6 @@
 module Faker
+  VERSION = "1.0.0.pre"
+
   require 'ffaker/utils/module_utils'
 
   extend ModuleUtils
