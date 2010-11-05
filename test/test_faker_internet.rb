@@ -9,6 +9,10 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.email.match(/.+@.+\.\w+/)
   end
 
+  def test_email_frozen
+    assert @tester.email.frozen? == false
+  end
+
   def test_free_email
     assert @tester.free_email.match(/.+@(gmail|hotmail|yahoo)\.com/)
   end
