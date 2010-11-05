@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.0.0.pre'
+  s.version           = '1.0.0'
   s.date              = '2010-11-04'
   s.rubyforge_project = 'ffaker'
 
@@ -27,7 +27,6 @@ Gem::Specification.new do |s|
     LICENSE
     README.rdoc
     Rakefile
-    VERSION
     ffaker.gemspec
     lib/ffaker.rb
     lib/ffaker/address.rb
@@ -39,7 +38,6 @@ Gem::Specification.new do |s|
     lib/ffaker/phone_number.rb
     lib/ffaker/utils/array_utils.rb
     lib/ffaker/utils/module_utils.rb
-    lib/ffaker/version.rb
     scripts/benchmark.rb
     scripts/profile.sh
     scripts/profiling.rb
