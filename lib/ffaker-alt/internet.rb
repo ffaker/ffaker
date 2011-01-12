@@ -49,10 +49,10 @@ module Faker
     end
   
     def ip_v4_address
-      [(0..255).to_a.rand,
-      (0..255).to_a.rand,
-      (0..255).to_a.rand,
-      (0..255).to_a.rand].join('.')
+      [(0..255).to_a[rand(3)],
+      (0..255).to_a[rand(3)],
+      (0..255).to_a[rand(3)],
+      (0..255).to_a[rand(3)]].join('.')
     end
 
 

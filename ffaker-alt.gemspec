@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.7'
 
   s.name              = 'ffaker-alt'
-  s.version           = '1.0.0'
+  s.version           = '1.0.1'
   s.date              = '2011-01-12'
 
   s.summary     = "Faster Faker, generates dummy data."
@@ -25,7 +25,6 @@ Gem::Specification.new do |s|
     History.txt
     LICENSE
     README.rdoc
-    Rakefile
     ffaker-alt.gemspec
     lib/ffaker-alt.rb
     lib/ffaker-alt/address.rb
