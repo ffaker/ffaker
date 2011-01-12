@@ -1,4 +1,4 @@
-require 'ffaker/utils/array_utils'
+require 'ffaker-alt/utils/array_utils'
 
 module Faker
   module ModuleUtils

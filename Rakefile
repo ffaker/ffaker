@@ -43,7 +43,7 @@ end
 #
 #############################################################################
 
-require 'rspec/core/rake_task'
+#require 'rspec/core/rake_task'
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|

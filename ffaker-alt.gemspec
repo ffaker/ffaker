@@ -2,19 +2,18 @@
 Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.rubygems_version = '1.3.5'
+  s.rubygems_version = '1.3.7'
 
-  s.name              = 'ffaker'
+  s.name              = 'ffaker-alt'
   s.version           = '1.0.0'
-  s.date              = '2010-11-04'
-  s.rubyforge_project = 'ffaker'
+  s.date              = '2011-01-12'
 
   s.summary     = "Faster Faker, generates dummy data."
   s.description = "Faster Faker, generates dummy data."
 
   s.authors  = ["Emmanuel Oga"]
   s.email    = 'EmmanuelOga@gmail.com'
-  s.homepage = 'http://github.com/emmanueloga/ffaker'
+  s.homepage = 'http://github.com/bdigital/ffaker'
 
   s.require_paths = %w[lib]
 
@@ -27,17 +26,17 @@ Gem::Specification.new do |s|
     LICENSE
     README.rdoc
     Rakefile
-    ffaker.gemspec
-    lib/ffaker.rb
-    lib/ffaker/address.rb
-    lib/ffaker/company.rb
-    lib/ffaker/geolocation.rb
-    lib/ffaker/internet.rb
-    lib/ffaker/lorem.rb
-    lib/ffaker/name.rb
-    lib/ffaker/phone_number.rb
-    lib/ffaker/utils/array_utils.rb
-    lib/ffaker/utils/module_utils.rb
+    ffaker-alt.gemspec
+    lib/ffaker-alt.rb
+    lib/ffaker-alt/address.rb
+    lib/ffaker-alt/company.rb
+    lib/ffaker-alt/geolocation.rb
+    lib/ffaker-alt/internet.rb
+    lib/ffaker-alt/lorem.rb
+    lib/ffaker-alt/name.rb
+    lib/ffaker-alt/phone_number.rb
+    lib/ffaker-alt/utils/array_utils.rb
+    lib/ffaker-alt/utils/module_utils.rb
     scripts/benchmark.rb
     scripts/profile.sh
     scripts/profiling.rb
