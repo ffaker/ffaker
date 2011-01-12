@@ -47,6 +47,14 @@ module Faker
     def http_url
       "http://#{domain_name}"
     end
+  
+    def ip_v4_address
+      [(0..255).to_a.rand,
+      (0..255).to_a.rand,
+      (0..255).to_a.rand,
+      (0..255).to_a.rand].join('.')
+    end
+
 
     HOSTS = k %w(gmail.com yahoo.com hotmail.com)
     DOMAIN_SUFFIXES = k %w(co.uk com us uk ca biz info name)
