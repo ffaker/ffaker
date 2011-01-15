@@ -76,7 +76,7 @@ Try it in your own machine, your mileage may vary!
 
 == Changelog
 
-* 0.4.x
+* 1.1.0
 
 Api (with contributions by Robert Berry)
 
