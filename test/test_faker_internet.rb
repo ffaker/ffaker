@@ -36,4 +36,19 @@ class TestFakerInternet < Test::Unit::TestCase
   def test_domain_suffix
     assert @tester.domain_suffix.match(/^\w+(\.\w+)?/)
   end
+
+  def test_uri
+    assert @tester.uri("ftp").match(/^ftp:\/\/.+/)
+    assert @tester.uri("http").match(/^http:\/\/.+/)
+    assert @tester.uri("https").match(/^https:\/\/.+/)
+  end
+
+  def test_http_url
+    assert @tester.http_url.match(/^http:\/\/.+/)
+  end
+
+  def test_ip_v4_address
+    assert @tester.ip_v4_address.match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/)
+  end
+
 end

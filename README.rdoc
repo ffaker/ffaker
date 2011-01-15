@@ -76,6 +76,14 @@ Try it in your own machine, your mileage may vary!
 
 == Changelog
 
+* 0.4.x
+
+Api (with contributions by Robert Berry)
+
+ Faker::Internet.uri(protocol)
+ Faker::Internet.http_url
+ Faker::Internet.ip_v4_address
+
 * 0.4.0
 
 Api additions by Rafael Souza
