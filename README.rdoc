@@ -75,8 +75,7 @@ Try it in your own machine, your mileage may vary.
 == TODO
 
 * Even though the API is pretty simple, better rdoc documentation would not hurt.
-* 继续完善中文姓名
-* 中文地区地址
+
 
 == Note on Patches/Pull Requests
 
