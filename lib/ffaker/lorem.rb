@@ -4,6 +4,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    def word
+      WORDS.rand
+    end
+
     def words(num = 3)
       WORDS.random_pick(num)
     end

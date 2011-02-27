@@ -21,4 +21,8 @@ class TestLorem < Test::Unit::TestCase
   def test_words
     assert_match /[ a-z]+/, Faker::Lorem.words.join(" ")
   end
+
+  def test_word
+    assert_match /[a-z]+/, Faker::Lorem.word
+  end
 end
