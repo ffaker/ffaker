@@ -43,13 +43,9 @@ end
 #
 #############################################################################
 
-require 'rspec/core/rake_task'
-
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
+desc "run the tests"
+task :test do
+  sh "ruby -Ilib -Itest/ test/test*"
 end
 
 task :default => :test
@@ -58,7 +54,6 @@ desc "Open an irb session preloaded with this library"
 task :console do
   sh "irb -I ./lib/ -rubygems -r ./lib/#{name}.rb"
 end
-
 
 #############################################################################
 #
@@ -72,31 +67,6 @@ begin
 rescue LoadError
   task :yardoc do
     abort "YARD is not available. In order to run yardoc, you must: sudo gem install yard"
-  end
-end
-
-if File.directory?("features")
-  begin
-    require 'cucumber'
-    require 'cucumber/rake/task'
-
-    namespace :features do
-      Cucumber::Rake::Task.new(:all) do |t|
-        t.cucumber_opts = "--format pretty"
-      end
-
-      %w|tag|.each do |tag|
-        Cucumber::Rake::Task.new("#{tag}") do |t|
-          t.cucumber_opts = "--format pretty --tags @#{tag}"
-        end
-      end
-    end
-
-  rescue LoadError
-    desc 'Cucumber rake task not available'
-    task :features do
-      abort 'Cucumber rake task is not available. Be sure to install cucumber as a gem or plugin'
-    end
   end
 end
 
@@ -114,7 +84,7 @@ task :release => :build do
   sh "git commit --allow-empty -a -m 'Release #{version}'"
   sh "git tag v#{version}"
   sh "git push origin master"
-  sh "git push origin v#{version}"
+  sh "git push --tags"
   sh "gem push pkg/#{name}-#{version}.gem"
 end
 

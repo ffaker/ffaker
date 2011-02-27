@@ -75,8 +75,13 @@ Try it in your own machine, your mileage may vary!
 * Rafael Souza ( http://github.com/rafaelss/ffaker ).
 * Robert Berry ( https://github.com/bdigital ).
 * qichunren ( http://github.com/qichunren ).
+* Kristján Pétursson ( https://github.com/kristjan )
 
 == Changelog
+
+* 1.3.0
+
+  Faker::Lorem.word as a convenience method, instead of Faker::Lorem.words(1).first.
 
 * 1.2.0
 
