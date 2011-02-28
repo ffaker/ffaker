@@ -27,6 +27,14 @@ module Faker
       "#{BS_PRE.rand} #{BS_MID.rand} #{BS_POS.rand}"
     end
 
+    def position
+      case rand(3)
+        when 0 then [POSITION_PREFIXES.rand, POSITIONS.rand]
+        when 1 then [POSITION_AREAS.rand, POSITIONS.rand]
+        when 2 then [POSITION_PREFIXES.rand, POSITION_AREAS.rand, POSITIONS.rand]
+      end.join(' ')
+    end
+
     SUFFIXES = k %w(Inc and\ Sons LLC Group)
 
     CATCH_PRE = k ["Adaptive", "Advanced", "Ameliorated", "Assimilated",
@@ -136,5 +144,9 @@ module Faker
       "users", "schemas", "networks", "applications", "metrics",
       "e-business", "functionalities", "experiences", "web services",
       "methodologies"]
+
+    POSITION_PREFIXES = k %w[Executive Assistant General Associate]
+    POSITION_AREAS = k %w[Finance IT Operations Information Vice Sales Marketing Corporate Department Regional Division]
+    POSITIONS = k %w[President Manager Director Secretary Consultant]
   end
 end
