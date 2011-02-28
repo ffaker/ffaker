@@ -40,9 +40,9 @@ module Faker
     MAJOR_ADJ = k (%w(Business Systems Industrial Medical Financial Marketing Political Social) + ['Human Resource'])
     MAJOR_NOUN = k %w(Science Arts Administration Engineering Management Production Economics Architecture Accountancy Education Development Philosophy Studies)
 
-    SCHOOL_PREFIX = k %w(Green South North Wind Lake Hill Lark)
-    SCHOOL_SUFFIX = k %w(wood dale ridge ville point field shire shore crest spur well)
-    SCHOOL_ADJ = k %w(International Global)
+    SCHOOL_PREFIX = k %w(Green South North Wind Lake Hill Lark River Red White)
+    SCHOOL_SUFFIX = k %w(wood dale ridge ville point field shire shore crest spur well side coast)
+    SCHOOL_ADJ = k %w(International Global Polytechnic National)
     SCHOOL_TYPE = k %w(School University College Institution Academy)
     SCHOOL_UNI  = k %w(University College)
   end
