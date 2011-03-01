@@ -14,7 +14,7 @@ module Faker
     def product_name
       case rand(2)
       when 0 then "#{ADJ.rand} #{NOUN.rand}"
-      when 1 then "#{ADJ.rand} #{ADJ.rand} #{NOUN.rand}"
+      when 1 then "#{[ADJ.rand, ADJ.rand].uniq.join(" ")} #{NOUN.rand}"
       end
     end
 
