@@ -76,8 +76,13 @@ Try it in your own machine, your mileage may vary!
 * Robert Berry ( https://github.com/bdigital ).
 * qichunren ( http://github.com/qichunren ).
 * Kristján Pétursson ( https://github.com/kristjan )
+* Rico Sta. Cruz ( https://github.com/rstacruz )
 
 == Changelog
+
+* 1.4.0
+
+  Added Faker::Product and Faker::Education ( Thanks Rico Sta. Cruz, https://github.com/EmmanuelOga/ffaker/pull/12 )
 
 * 1.3.0
 
