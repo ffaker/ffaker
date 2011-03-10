@@ -22,4 +22,12 @@ class TestRegexp < Test::Unit::TestCase
     assert_equal "\\/.()[]{}", FR.regexp(/\\\/\.\(\)\[\]\{\}/)
   end
 
+  def test_atom_sets
+    assert ['a', 'b', 'c'].include?(FR.regexp(/[abc]/))
+  end
+
+  def test_special_sets
+    assert_match /[\w\d]/, FR.regexp(/[\w\d]/)
+  end
+
 end

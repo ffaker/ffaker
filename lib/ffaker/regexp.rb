@@ -3,6 +3,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    BACKSLASH = '\\'
+
     LOWERS     = k(('a'..'z').to_a)
     UPPERS     = k(('A'..'Z').to_a)
     LETTERS    = k(LOWERS + UPPERS)
@@ -17,17 +19,37 @@ module Faker
       # Drop surrounding /'s and split into characters
       tokens = exp.inspect[1...-1].split(//)
       until tokens.empty?
-        token = tokens.shift
-        case token
-        when /\w/: result << token
-        when '\\': result << special(tokens.shift)
-        end
+        result << process_token(tokens)
       end
 
       result
     end
 
   private
+
+    def join_escapes(tokens)
+      result = []
+      while tokens.any?
+        token = tokens.shift
+        token << tokens.shift if token == BACKSLASH
+        result << token
+      end
+      result
+    end
+
+    def process_token(tokens)
+      token = tokens.shift
+      case token
+      when /\w/: token
+      when BACKSLASH: special(tokens.shift)
+      when '[':
+        set = []
+        while (ch = tokens.shift) != ']'
+          set << ch
+        end
+        process_token([ArrayUtils.rand(join_escapes(set))])
+      end
+    end
 
     def special(token)
       case token
