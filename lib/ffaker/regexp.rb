@@ -9,6 +9,7 @@ module Faker
     NUMBERS    = k(('0'..'9').to_a)
     WORD_CHARS = k(LETTERS + NUMBERS + ['_'])
     SPACES     = k([" ", "\t"])
+    ESCAPEABLE_CHARS = '\\', '/', '.', '(', ')', '[', ']', '{', '}'
 
     def regexp(exp)
       result = ''
@@ -33,6 +34,7 @@ module Faker
       when 'w': WORD_CHARS.rand
       when 'd': NUMBERS.rand
       when 's': SPACES.rand
+      when *ESCAPEABLE_CHARS: token
       end
     end
   end

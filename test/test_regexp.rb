@@ -18,5 +18,8 @@ class TestRegexp < Test::Unit::TestCase
     assert_match /\s\s\s/, FR.regexp(/\s\s\s/)
   end
 
+  def test_escaped_characters
+    assert_equal "\\/.()[]{}", FR.regexp(/\\\/\.\(\)\[\]\{\}/)
+  end
 
 end
