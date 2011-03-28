@@ -3,7 +3,8 @@ require 'helper'
 
 class TestFakerNameRu < Test::Unit::TestCase
   def setup
-    @words = Faker::NameRU.name.split
+    @tester = Faker::NameRU
+    @words = @tester.name.split
   end
   
   def test_name
@@ -11,8 +12,35 @@ class TestFakerNameRu < Test::Unit::TestCase
     assert @words.each { |word| word.match /[А-Я][а-я]+/ }
   end
   
-  def test_sex
+  def test_name_sex
     assert same_sex?(@words)
+  end
+  
+  def test_uniqueness
+    unique_names = (1..100).map { @tester.name }.uniq.size
+    assert unique_names > 65, "got only #{unique_names} unique names out of 100"
+  end
+  
+  def test_last_name
+    assert @tester.last_name.match(/[А-Я][а-я]+/)
+  end
+  
+  def test_first_name
+    assert @tester.first_name.match(/[А-Я][а-я]+/)
+  end
+  
+  def test_patronymic
+    assert @tester.patronymic.match(/[А-Я][а-я]+/)
+  end
+  
+  def test_with_same_sex
+    names = []
+    @tester.with_same_sex do
+      names << @tester.last_name
+      names << @tester.first_name
+      names << @tester.patronymic
+    end
+    assert same_sex?(names)
   end
   
   # checks if every name is of the same sex
