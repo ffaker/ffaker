@@ -28,6 +28,7 @@ module Faker
   autoload :Lorem,       'ffaker/lorem'
   autoload :Name,        'ffaker/name'
   autoload :NameCN,      'ffaker/name_cn'
+  autoload :NameRU,      'ffaker/name_ru'
   autoload :PhoneNumber, 'ffaker/phone_number'
   autoload :Product,     'ffaker/product'
   autoload :Geolocation, 'ffaker/geolocation'
