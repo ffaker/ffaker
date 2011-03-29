@@ -17,8 +17,8 @@ class TestFakerNameRu < Test::Unit::TestCase
   end
   
   def test_uniqueness
-    unique_names = (1..100).map { @tester.name }.uniq.size
-    assert unique_names > 65, "got only #{unique_names} unique names out of 100"
+    unique_names = (1..10000).map { @tester.name }.uniq.size
+    assert unique_names > 9900, "got only #{unique_names} unique names out of 10000"
   end
   
   def test_last_name
