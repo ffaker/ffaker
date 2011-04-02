@@ -5,6 +5,26 @@ module Faker
     extend ModuleUtils
     extend self
 
+    # All names generated inside the block will have the same sex.
+    # Can be called with explicit sex which will affect
+    # all calls inside thee block:
+    #
+    #   Faker::NameRU.with_same_sex(:male)
+    #     person.last_name  = Faker::NameRU.last_name
+    #     person.first_name = Faker::NameRU.first_name
+    #     person.patronymic = Faker::NameRU.patronymic
+    #   end
+    #
+    #   person.last_name    # => "Иванов"
+    #   person.first_name   # => "Александр"
+    #   person.patronymic   # => "Петрович"
+    def with_same_sex(sex = :random)
+      @fixed_sex = sex == :random ? GENDERS[rand(2)] : sex
+      yield
+    ensure
+      @fixed_sex = nil
+    end
+
     # Generates random full name which can contain patronymic
     # Can be called with explicit sex (:male, :female), like:
     #
@@ -58,8 +78,9 @@ module Faker
     GENDERS = [:male, :female, :random] # :nodoc:
 
     def select_sex(sex) # :nodoc:
-      raise ArgumentError, "Unknown sex #{for_sex}" unless GENDERS.include?(sex)
-      sex == :random ? GENDERS[rand(2)] : sex
+      given_sex = @fixed_sex ? @fixed_sex : sex
+      raise ArgumentError, "Unknown sex #{given_sex}" unless GENDERS.include?(given_sex)
+      given_sex == :random ? GENDERS[rand(2)] : given_sex
     end
   end
 end

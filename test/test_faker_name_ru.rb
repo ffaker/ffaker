@@ -47,20 +47,22 @@ class TestFakerNameRu < Test::Unit::TestCase
   end
 
   def test_with_same_sex
-    sex = [:male, :female][rand(2)]
     names = []
-    names << @tester.last_name(sex)
-    names << @tester.first_name(sex)
-    names << @tester.patronymic(sex)
+    @tester.with_same_sex do
+      names << @tester.last_name
+      names << @tester.first_name
+      names << @tester.patronymic
+    end
     assert same_sex?(names)
   end
 
   def test_with_same_sex_for_male
-    sex = :male
     names = []
-    names << @tester.last_name(sex)
-    names << @tester.first_name(sex)
-    names << @tester.patronymic(sex)
+    @tester.with_same_sex(:male) do
+      names << @tester.last_name
+      names << @tester.first_name
+      names << @tester.patronymic
+    end
     assert same_sex?(names, :male)
   end
 
