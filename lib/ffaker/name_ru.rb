@@ -34,8 +34,8 @@ module Faker
     def name(for_sex = :random)
       with_same_sex(for_sex) do
         case rand(2)
-        when 0 then "#{last_name(for_sex)} #{first_name(for_sex)} #{patronymic(for_sex)}"
-        else        "#{first_name(for_sex)} #{last_name(for_sex)}"
+        when 0 then "#{last_name} #{first_name} #{patronymic}"
+        else        "#{first_name} #{last_name}"
         end
       end
     end
