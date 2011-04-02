@@ -8,28 +8,36 @@ module Faker
     @immutable_sex = false
     
     # Generates random full name which can contain patronymic
-    def name
-      with_same_sex do
+    # Can be called with explicit sex, like
+    #   Faker::NameRU.name(:male)
+    def name(for_sex = :random)
+      with_same_sex(for_sex) do
         case rand(2)
-        when 0 then "#{last_name} #{first_name} #{patronymic}"
-        else        "#{first_name} #{last_name}"
+        when 0 then "#{last_name(for_sex)} #{first_name(for_sex)} #{patronymic(for_sex)}"
+        else        "#{first_name(for_sex)} #{last_name(for_sex)}"
         end
       end
     end
     
     # Generates random last name
-    def last_name
-      LAST_NAMES[sex].rand
+    def last_name(for_sex = :random)
+      raise ArgumentError, "Unknown sex #{for_sex}" unless sex_valid?(for_sex)
+      for_sex = sex if for_sex == :random
+      LAST_NAMES[for_sex].rand
     end
     
     # Generates random first name
-    def first_name
-      FIRST_NAMES[sex].rand
+    def first_name(for_sex = :random)
+      raise ArgumentError, "Unknown sex #{for_sex}" unless sex_valid?(for_sex)
+      for_sex = sex if for_sex == :random
+      FIRST_NAMES[for_sex].rand
     end
     
     # Generates random patronymic
-    def patronymic
-      PATRONYMICS[sex].rand
+    def patronymic(for_sex = :random)
+      raise ArgumentError, "Unknown sex #{for_sex}" unless sex_valid?(for_sex)
+      for_sex = sex if for_sex == :random
+      PATRONYMICS[for_sex].rand
     end
     
     # Last names grammar
@@ -50,22 +58,47 @@ module Faker
       :female => k(%w(Абрамовна Августовна Авдеевна Адамовна Адольфовна Адриановна Акимовна Александровна Алексеевна Альбертовна Альфредовна Анатольевна Андреевна Антоновна Ануфриевна Арамовна Ариевна Аристарховна Аркадиевна Арнольдовна Ароновна Арсеновна Артемовна Артемьевна Артуровна Аскольдовна Афанасьевна Ахметовна Ашотовна Бенедиктовна Бернаровна Богдановна Болеславовна Бонифациевна Борисовна Бориславовна Брониславовна Вадимовна Валентиновна Валерьевна Вальтеровна Васильевна Велоровна Венедиктовна Вениаминовна Викторовна Вильгельмовна Виссарионовна Витальевна Владимировна Владиславовна Вольдемаровна Всеволодовна Вячеславовна Гаврииловна Геннадьевна Генриховна Георгиевна Геральдовна Герасимовна Германовна Глебовна Гордеевна Градимировна Григорьевна Гурьевна Давыдовна Данииловна Демидовна Демьяновна Денисовна Дмитриевна Донатовна Дорофеевна Евгеньевна Евдокимовна Евстафьевна Егоровна Елисеевна Емельяновна Ермолаевна Ерофеевна Ефимовна Ефремовна Захаровна Зигмундовна Зиновьевна Ибрагимовна Ивановна Игнатовна Игоревна Измаиловна Израилевна Илларионовна Иннокентиевна Ионовна Иосифовна Ираклиевна Исаевна Казимировна Кареновна Карловна Кирилловна Клавдиевна Клементовна Климовна Кондратьевна Конкордиевна Константиновна Лазарьевна Львовна Левановна Леонардовна Леонидовна Леонтьевна Леопольдовна Любомировна Людвиговна Макаровна Максимовна Максимилиановна Маратовна Мариановна Марковна Мартиновна Матвеевна Мерабовна Мечеславовна Мироновна Мирославовна Михайловна Модестовна Моисеевна Муратовна Назаровна Натановна Наумовна Никитовна Никифоровна Николаевна Никоновна Нисоновна Нифонтовна Олеговна Онисимовна Орестовна Осиповна Оскаровна Павловна Парамоновна Петровна Платоновна Прохоровна Рафиковна Рашидовна Ринатовна Ричардовна Робертовна Родионовна Ролановна Романовна Ростиславовна Рубеновна Рудольфовна Руслановна Рустамовна Самсоновна Святославовна Севастьяновна Семеновна Серафимовна Сергеевна Соломоновна Спартаковна Станиславовна Степановна Стояновна Тамазовна Тарасовна Теодоровна Терентьевна Тиграновна Тимофеевна Тимуровна Титовна Тихоновна Трифоновна Трофимовна Устиновна Федоровна Феликсовна Феодосьевна Филимоновна Филипповна Фридриховна Харитоновна Христиановна Христофоровна Эдуардовна Эльдаровна Эмилевна Эммануиловна Эриковна Эрнестовна Юлиановна Юрьевна Якимовна Яновна Ярославовна))
     }
     
-    # All names generated inside the block will have the same sex
-    def with_same_sex
+    # All names generated inside the block will have the same sex.
+    # Can be called with explicit sex which will affect
+    # all calls inside thee block:
+    #
+    #   Faker::NameRU.with_same_sex(:male)
+    #     person.last_name  = Faker::NameRU.last_name
+    #     person.first_name = Faker::NameRU.first_name
+    #     person.patronymic = Faker::NameRU.patronymic
+    #   end
+    #   
+    #   person.last_name    # => "Иванов"
+    #   person.first_name   # => "Александр"
+    #   person.patronymic   # => "Петрович"
+    def with_same_sex(for_sex = :random)
+      raise ArgumentError, "Unknown sex #{for_sex}" unless sex_valid?(for_sex)
       raise ArgumentError, 'You should pass with_same_sex a block' unless block_given?
       
-      randomize_sex
+      # randomize sex if needed
+      if for_sex == :random
+        randomize_sex
+      else
+        @sex = for_sex
+      end
+      
       @immutable_sex = true
       result = yield
       @immutable_sex = false
       result
     end
   private
+    GENDERS = [:male, :female, :random] # :nodoc:
+    
+    def sex_valid?(sex) # :nodoc:
+      GENDERS.include?(sex)
+    end
+    
     def sex # :nodoc:
       @immutable_sex ? @sex : randomize_sex
     end
     
-    def randomize_sex  # :nodoc:
+    def randomize_sex # :nodoc:
       @sex = case rand(2)
       when 0 then :male
       when 1 then :female
