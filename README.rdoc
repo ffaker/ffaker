@@ -77,8 +77,13 @@ Try it in your own machine, your mileage may vary!
 * qichunren ( http://github.com/qichunren ).
 * Kristján Pétursson ( https://github.com/kristjan )
 * Rico Sta. Cruz ( https://github.com/rstacruz )
+* Vsevolod Romashov ( https://github.com/7even )
 
 == Changelog
+
+* 1.5.0
+
+  Added Faker::NameRU (Thanks Vsevolod Romashov, https://github.com/7even, https://github.com/EmmanuelOga/ffaker/pull/14)
 
 * 1.4.0
 
