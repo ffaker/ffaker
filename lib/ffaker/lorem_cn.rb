@@ -15,13 +15,14 @@ module Faker
 
     def sentence(word_count = 4)
       s = words(word_count + rand(6))
-      s = s.join(' ')
-      s.capitalize!
-      "#{s}."
+      s = s.join
+      "#{s},"
     end
 
     def sentences(sentence_count = 3)
-      (1..sentence_count).map { sentence }
+      s = (1..sentence_count).map { sentence }.join(' ')
+      s[-1] = '。'
+      "#{s}"
     end
 
     def paragraph(sentence_count = 3)
