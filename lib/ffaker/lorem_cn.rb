@@ -26,11 +26,12 @@ module Faker
     end
 
     def paragraph(sentence_count = 3)
-      sentences(sentence_count + rand(3)).join(' ')
+      sentences(sentence_count + rand(3))
     end
 
     def paragraphs(paragraph_count = 3)
-      (1..paragraph_count).map { paragraph }
+      ps = (1..paragraph_count).map { paragraph }
+      "#{ps}"
     end
 
     WORDS = k %w(宝昌  佩均  之启  书宣  光弘  诚智  喜佩  欢莹  瑜念
