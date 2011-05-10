@@ -26,6 +26,7 @@ module Faker
   autoload :Education,   'ffaker/education'
   autoload :Internet,    'ffaker/internet'
   autoload :Lorem,       'ffaker/lorem'
+  autoload :LoremCN,     'ffaker/lorem_cn'
   autoload :Name,        'ffaker/name'
   autoload :NameCN,      'ffaker/name_cn'
   autoload :NameRU,      'ffaker/name_ru'
