@@ -67,6 +67,11 @@ module Faker
       Faker.bothify(UK_POSTCODE.rand).upcase
     end
 
+    # DE Variants
+    def de_county
+      DE_COUNTY.rand
+    end
+
     def neighborhood
       NEIGHBORHOOD.rand
     end
