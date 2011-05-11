@@ -22,6 +22,7 @@ module Faker
   end
 
   autoload :Address,     'ffaker/address'
+  autoload :AddressDE,   'ffaker/address_de'
   autoload :Company,     'ffaker/company'
   autoload :Education,   'ffaker/education'
   autoload :Internet,    'ffaker/internet'
