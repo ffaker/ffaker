@@ -67,11 +67,6 @@ module Faker
       Faker.bothify(UK_POSTCODE.rand).upcase
     end
 
-    # DE Variants
-    def de_county
-      DE_COUNTY.rand
-    end
-
     def neighborhood
       NEIGHBORHOOD.rand
     end
@@ -143,11 +138,6 @@ module Faker
     UK_COUNTRY = k ['England', 'Scotland', 'Wales', 'Northern Ireland']
 
     UK_POSTCODE = k ['??# #??', '??## #??']
-
-    DE_COUNTY = k ['Baden-Wuerttemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen',
-       'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen', 'Nordrhein-Westfalen',
-       'Rheinland-Pfalz', 'Saarland', 'Sachsen', 'Schleswig-Holstein',
-       'Thueringen']
 
     NEIGHBORHOOD = k ['East of Telegraph Road', 'North Norridge', 'Northwest Midlothian/Midlothian Country Club',
       'Mott Haven/Port Morris', 'Kingsbridge Heights', 'Bronxdale', 'Pennypack', 'Bridesburg',
