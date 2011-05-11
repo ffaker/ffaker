@@ -1,5 +1,6 @@
 module Faker
-  module Name
+  module NameDE
+    include Faker::Name
     extend ModuleUtils
     extend self
 

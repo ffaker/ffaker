@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name.rb
     lib/ffaker/name_cn.rb
     lib/ffaker/name_ru.rb
+    lib/ffaker/name_de.rb
     lib/ffaker/phone_number.rb
     lib/ffaker/product.rb
     lib/ffaker/utils/array_utils.rb
