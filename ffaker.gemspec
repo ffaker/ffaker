@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
     ffaker.gemspec
     lib/ffaker.rb
     lib/ffaker/address.rb
+    lib/ffaker/address_de.rb
     lib/ffaker/company.rb
     lib/ffaker/education.rb
     lib/ffaker/geolocation.rb
