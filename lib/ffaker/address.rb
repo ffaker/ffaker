@@ -139,6 +139,11 @@ module Faker
 
     UK_POSTCODE = k ['??# #??', '??## #??']
 
+    DE_COUNTY = k ['Baden-Wuerttemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen',
+      'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen', 'Nordrhein-Westfalen',
+      'Rheinland-Pfalz', 'Saarland', 'Sachsen', 'Sachsen-AnhalSchleswig-Holstein',
+      'Thueringen']
+
     NEIGHBORHOOD = k ['East of Telegraph Road', 'North Norridge', 'Northwest Midlothian/Midlothian Country Club',
       'Mott Haven/Port Morris', 'Kingsbridge Heights', 'Bronxdale', 'Pennypack', 'Bridesburg',
       'Allegheny West', 'Bushwick South', 'Dyker Heights', 'Ocean Parkway South', 'Summerlin North',
