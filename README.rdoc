@@ -78,8 +78,15 @@ Try it in your own machine, your mileage may vary!
 * Kristján Pétursson ( https://github.com/kristjan )
 * Rico Sta. Cruz ( https://github.com/rstacruz )
 * Vsevolod Romashov ( https://github.com/7even )
+* David Noelte (https://github.com/marvin)
+* Port 80 Labs (https://github.com/port80labs)
 
 == Changelog
+
+* 1.6.0
+
+  Added Faker::NameDE (Thanks David Noelte, https://github.com/marvin, https://github.com/EmmanuelOga/ffaker/pull/17)
+  Added Faker::Internet#disposable_email (Thanks Port 80 Labs, https://github.com/port80labs, https://github.com/EmmanuelOga/ffaker/pull/15)
 
 * 1.5.0
 

@@ -7,6 +7,8 @@ module Faker
       [ user_name(name), domain_name ].join('@')
     end
 
+    # returns an email address of an online disposable email service (like tempinbox.com).
+    # you can really send an email to these addresses an access it by going to the service web pages.
     def disposable_email(name = nil)
       [ user_name(name), DISPOSABLE_HOSTS.rand ].join('@')
     end
