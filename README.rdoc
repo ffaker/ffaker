@@ -80,8 +80,13 @@ Try it in your own machine, your mileage may vary!
 * Vsevolod Romashov ( https://github.com/7even )
 * David Noelte (https://github.com/marvin)
 * Port 80 Labs (https://github.com/port80labs)
+* Shane Weng (https://github.com/swcool)
 
 == Changelog
+
+* 1.7.0
+
+  Added Faker::LoremCN (Thanks Shane Weng, Shane Weng (https://github.com/swcool), https://github.com/EmmanuelOga/ffaker/pull/16/files)
 
 * 1.6.0
 

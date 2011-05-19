@@ -1,5 +1,5 @@
 module Faker
-  VERSION = "1.6.0"
+  VERSION = "1.7.0"
 
   require 'ffaker/utils/module_utils'
 
@@ -31,7 +31,7 @@ module Faker
   autoload :Name,        'ffaker/name'
   autoload :NameCN,      'ffaker/name_cn'
   autoload :NameRU,      'ffaker/name_ru'
-  autoload :NameDE,	 'ffaker/name_de'
+  autoload :NameDE,      'ffaker/name_de'
   autoload :PhoneNumber, 'ffaker/phone_number'
   autoload :Product,     'ffaker/product'
   autoload :Geolocation, 'ffaker/geolocation'
