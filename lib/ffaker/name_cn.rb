@@ -15,6 +15,10 @@ module Faker
     def last_name
       LAST_NAMES.rand
     end
+    
+    def last_first
+       "#{last_name}#{first_name}"
+    end
 
     LAST_NAMES = k %w(赵 钱 孙 李 周 吴 郑 王 冯 陈 褚 卫 蒋 沈 韩 杨 朱 秦 尤
                       许 何 吕 施 张 孔 曹 严 华 金 魏 陶 姜 戚 谢 邹 喻 柏 水 窦 章 云 苏 潘 葛 奚
