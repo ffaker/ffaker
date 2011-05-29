@@ -22,31 +22,31 @@ class TestHTMLIpsum < Test::Unit::TestCase
   end
   
   def test_dl
-    assert_match /^<dl>(<dt>[ \w]+<\/dt><dd>[ \w.]+<\/dd>)+<\/dl>$/i, Faker::HTMLIpsum.dl
+    assert_match /^<dl>(<dt>[ \w]+<\/dt><dd>[ \w.]+<\/dd>){3}<\/dl>$/i, Faker::HTMLIpsum.dl(3)
   end
   
   def test_ul_short
-    assert_match /^<ul>(<li>[ \w.]+<\/li>)+<\/ul>$/i, Faker::HTMLIpsum.ul_short
+    assert_match /^<ul>(<li>[ \w.]+<\/li>){3}<\/ul>$/i, Faker::HTMLIpsum.ul_short(3)
   end
   
   def test_ul_long
-    assert_match /^<ul>(<li>[ \w.]+<\/li>)+<\/ul>$/i, Faker::HTMLIpsum.ul_long
+    assert_match /^<ul>(<li>[ \w.]+<\/li>){3}<\/ul>$/i, Faker::HTMLIpsum.ul_long(3)
   end
 
   def test_ol_short
-    assert_match /^<ol>(<li>[ \w.]+<\/li>)+<\/ol>$/i, Faker::HTMLIpsum.ol_short
+    assert_match /^<ol>(<li>[ \w.]+<\/li>){3}<\/ol>$/i, Faker::HTMLIpsum.ol_short(3)
   end
   
   def test_ol_long
-    assert_match /^<ol>(<li>[ \w.]+<\/li>)+<\/ol>$/i, Faker::HTMLIpsum.ul_long
+    assert_match /^<ol>(<li>[ \w.]+<\/li>){3}<\/ol>$/i, Faker::HTMLIpsum.ol_long(3)
   end
   
   def test_ul_links
-    assert_match /^<ul>(<li><a href="#\w+" title="\w+">[ \w]+<\/a><\/li>)+<\/ul>$/i, Faker::HTMLIpsum.ul_links
+    assert_match /^<ul>(<li><a href="#\w+" title="\w+">[ \w]+<\/a><\/li>){3}<\/ul>$/i, Faker::HTMLIpsum.ul_links(3)
   end
   
   def test_table
-    assert_match /(<td>[ \w]+<\/td>\s+)+/i, Faker::HTMLIpsum.table
+    assert_match /(<td>[ \w]+<\/td>\s*){3}/i, Faker::HTMLIpsum.table(3)
   end
   
   def test_body
