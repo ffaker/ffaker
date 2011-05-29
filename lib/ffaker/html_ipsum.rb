@@ -9,16 +9,15 @@ module Faker
       "<a href=\"##{word}\" title=\"#{words(word_count).capitalize!}\">#{words(word_count).capitalize!}</a>"
     end
 
-    def p_long(word_count = 10)
-      "<p>#{paragraphs word_count}</p>"
-    end
-    
-    def p_medium(word_count = 6)
-      "<p>#{paragraphs word_count}</p>"
-    end
-    
-    def p(word_count = 3)
-      "<p>#{paragraphs word_count}</p>"
+    def p(count = 3, options = {})
+      options = {:fancy => false, :include_breaks => false}.merge(options)
+      if options[:fancy]
+        s = fancy_string(count, options[:include_breaks])
+      else
+        mode = options[:include_breaks] ? "paragraphs" : "paragraph"
+        s = send(mode.to_sym, count)
+      end
+      "<p>#{s}</p>"
     end
     
     def dl(definitions = 2)
@@ -94,20 +93,20 @@ module Faker
     
     def body
       s = "<h1>#{words(2).capitalize!}</h1>"
-      Random.new.rand(1..4).times do
-        s << "<p><strong>#{words(2).capitalize!}</strong>. #{paragraph 3} <em>#{paragraph}</em> #{paragraph 2} #{words(3).capitalize!},  <code>#{words 2}</code>, #{words 4}. #{paragraph 3} #{a 2} #{words 4}.</p>"
+      rand(4).times do
+        s << "<p>#{fancy_string}</p>"
       end
-      s << table(Random.new.rand(1..4))
+      s << table(rand(4))
       s << "<h2>#{words(2).capitalize!}</h2>
       <ol>"
-      Random.new.rand(1..4).times do
+      rand(4).times do
         s << "<li>#{paragraph 1}</li>"
       end
       s << "</ol>
       <blockquote><p>#{paragraphs 3}</p></blockquote>
       <h3>#{words(2).capitalize!}</h3>
       <ul>"
-      Random.new.rand(1..4).times do
+      rand(4).times do
         s << "<li>#{paragraph 1}</li>"
       end
       s << "</ul>
@@ -118,6 +117,17 @@ module Faker
       	height: 80px; 
       }
       </code></pre>"
+    end
+    
+    def fancy_string(count = 3, include_breaks = false)
+      sep  = include_breaks ? "<br>" : " "
+      a = k([
+        "<strong>#{words(2).capitalize!}</strong>.",
+        "<em>#{paragraph}</em>",
+        "<code>#{words 2}</code>",
+        "#{a 2}"
+      ] + Faker::Lorem::paragraphs(count))
+      a.random_pick(count).join(sep)
     end
 
   private
