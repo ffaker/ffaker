@@ -1,22 +1,22 @@
 = ffaker
 
-Fast Faker == Faker refactored, cleaner and faster.
+Fast Faker == Faker refactored. http://rubygems.org/gems/ffaker
 
 = Faker
 
-A port of Perl's Data::Faker library that generates fake data.
+A port of Perl's Data::Faker library that generates fake data. http://rubygems.org/gems/faker
 
 == Usage
 
   require 'ffaker'
-
   Faker::Name.name => "Christophe Bartell"
-
   Faker::Internet.email => "kirsten.greenholt@corkeryfisher.info"
 
 == Ffaker / Faker
 
-The are only two differences between faker and ffaker. The first one is that you need to
+Faker and Ffaker APIs are mostly the same, although the API on ffaker keeps
+growing with its users additions. In general, the only difference is that you
+need to:
 
   gem install ffaker
 
@@ -26,19 +26,15 @@ and then
 
 instead of "faker" with only one f.
 
-The API is pretty much the same as before.
-
-The second difference is that Faker::VERSION is no longer a module, so instead of accessing the version like this:
-
-  Faker::VERSION::STRING # faker
-
-you'll need to access it like this:
-
-  Faker::VERSION # ffaker
-
-Fork it/ping me if you feel like adding more goodies to it.
-
 == Faster? does it really matter ?
+
+Ffaker was initially written in an effort to speed up a slow spec suite. Bear
+in mind, if your spec suite is slow, chances are the generation of random data
+will not account for much of the run time.
+
+Since then, the original faker gem has become faster (at the moment it did not
+seem it was mantained). Nevertheless, ffaker is still about 20x faster than
+faker.
 
 $ cat scripts/benchmark.rb
 
@@ -53,21 +49,15 @@ $ cat scripts/benchmark.rb
     end
   end
 
-* ruby 1.8.7 (2009-06-12 patchlevel 174) [x86_64-linux], MBARI 0x6770, Ruby Enterprise Edition 2009.10
+* ruby 1.8.7 (2011-02-18 patchlevel 334) [x86_64-linux], MBARI 0x6770, Ruby Enterprise Edition 2011.03
 
-                    user     system      total        real
-    Faker       9.240000   0.020000   9.260000 (  9.297381)
-    Fast Faker  0.060000   0.000000   0.060000 (  0.109047)
+    generating 10000 names (faker 0.9.5)  1.500000   0.000000   1.500000 (  1.506865)
+    generating 10000 names (ffaker 1.5.0)  0.070000   0.000000   0.070000 (  0.067526)
 
-* ruby 1.9.1p376 (2009-12-07 revision 26041) [x86_64-linux]
+* ruby 1.9.2p180 (2011-02-18 revision 30909) [x86_64-linux]
 
-                    user     system      total        real
-    Faker      74.980000   0.110000  75.090000 ( 75.881142)
-    Fast Faker  0.050000   0.000000   0.050000 (  0.052292)
-
-DISCLAIMER: I have no idea why I'm getting such bad numbers
-for traditional faker on 1.9, but I'm not making this up.
-Try it in your own machine, your mileage may vary!
+    generating 10000 names (faker 0.9.5)  1.030000   0.020000   1.050000 (  1.046116)
+    generating 10000 names (ffaker 1.7.0)  0.040000   0.000000   0.040000 (  0.045917)
 
 == Contributors
 
@@ -81,12 +71,17 @@ Try it in your own machine, your mileage may vary!
 * David Noelte (https://github.com/marvin)
 * Port 80 Labs (https://github.com/port80labs)
 * Shane Weng (https://github.com/swcool)
+* Chris Bloom (https://github.com/chrisbloom7)
 
 == Changelog
 
+* 1.8.0
+
+  Added Faker::HTMLIpsum module inspired in http://html-ipsum.com/ (Thanks Chris Bloom, https://github.com/EmmanuelOga/ffaker/pull/18)
+
 * 1.7.0
 
-  Added Faker::LoremCN (Thanks Shane Weng, Shane Weng (https://github.com/swcool), https://github.com/EmmanuelOga/ffaker/pull/16/files)
+  Added Faker::LoremCN (Thanks Shane Weng, Shane Weng, https://github.com/swcool, https://github.com/EmmanuelOga/ffaker/pull/16/files)
 
 * 1.6.0
 
