@@ -25,6 +25,7 @@ module Faker
   autoload :AddressDE,   'ffaker/address_de'
   autoload :Company,     'ffaker/company'
   autoload :Education,   'ffaker/education'
+  autoload :HTMLIpsum,   'ffaker/html_ipsum'
   autoload :Internet,    'ffaker/internet'
   autoload :Lorem,       'ffaker/lorem'
   autoload :LoremCN,     'ffaker/lorem_cn'
