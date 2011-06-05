@@ -14,6 +14,12 @@ class TestLoremCN < Test::Unit::TestCase
   def test_paragraphs
     assert Faker::LoremCN.paragraphs.length >= 2
   end
+  def test_paragraphs_is_not_a_string_representation_of_an_array
+    assert_not_match /[\[\]]+/, [Faker::LoremCN.paragraphs].flatten.join(' ')
+  end
+  def test_paragraphs_is_an_array
+    assert Faker::LoremCN.paragraphs.class == Array
+  end
 
   def test_sentences
     assert Faker::LoremCN.sentences.length >= 2

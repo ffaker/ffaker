@@ -30,8 +30,7 @@ module Faker
     end
 
     def paragraphs(paragraph_count = 3)
-      ps = (1..paragraph_count).map { paragraph }
-      "#{ps}"
+      (1..paragraph_count).map { paragraph }
     end
 
     WORDS = k %w(
