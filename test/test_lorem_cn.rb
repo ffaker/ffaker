@@ -24,6 +24,14 @@ class TestLoremCN < Test::Unit::TestCase
   def test_sentences
     assert Faker::LoremCN.sentences.length >= 2
   end
+  def test_sentences_is_an_array
+    assert Faker::LoremCN.sentences.class == Array
+  end
+  def test_sentences_via_to_s_produces_string_terminated_with_period
+    string = Faker::LoremCN.sentences.to_s
+    assert string.class == String
+    assert string[-1] == '。'
+  end
     
   def test_words
     assert Faker::LoremCN.words.length >= 2
