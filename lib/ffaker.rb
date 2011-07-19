@@ -33,6 +33,7 @@ module Faker
   autoload :NameCN,      'ffaker/name_cn'
   autoload :NameRU,      'ffaker/name_ru'
   autoload :NameDE,      'ffaker/name_de'
+  autoload :NameJA,      'ffaker/name_ja'
   autoload :PhoneNumber, 'ffaker/phone_number'
   autoload :Product,     'ffaker/product'
   autoload :Geolocation, 'ffaker/geolocation'
