@@ -37,7 +37,7 @@ module Faker
 
     DEGREE_SHORT_PREFIX = k %w(AB BS BSc MA MD DMus DPhil)
     DEGREE_PREFIX = k ['Bachelor of Science', 'Bachelor of Arts', 'Master of Arts', 'Doctor of Medicine', 'Bachelor of Music', 'Doctor of Philosophy']
-    MAJOR_ADJ = k (%w(Business Systems Industrial Medical Financial Marketing Political Social) + ['Human Resource'])
+    MAJOR_ADJ = k(%w(Business Systems Industrial Medical Financial Marketing Political Social) + ['Human Resource'])
     MAJOR_NOUN = k %w(Science Arts Administration Engineering Management Production Economics Architecture Accountancy Education Development Philosophy Studies)
 
     SCHOOL_PREFIX = k %w(Green South North Wind Lake Hill Lark River Red White)

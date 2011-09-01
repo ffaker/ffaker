@@ -75,6 +75,10 @@ $ cat scripts/benchmark.rb
 
 == Changelog
 
+* 1.8.1
+
+  Remove a warning.
+
 * 1.8.0
 
   Added Faker::HTMLIpsum module inspired in http://html-ipsum.com/ (Thanks Chris Bloom, https://github.com/EmmanuelOga/ffaker/pull/18)
