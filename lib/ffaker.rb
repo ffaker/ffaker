@@ -35,6 +35,7 @@ module Faker
   autoload :NameRU,      'ffaker/name_ru'
   autoload :NameSN,      'ffaker/name_sn'
   autoload :PhoneNumber, 'ffaker/phone_number'
+  autoload :PhoneNumberSN, 'ffaker/phone_number_sn'
   autoload :Product,     'ffaker/product'
   autoload :Geolocation, 'ffaker/geolocation'
   autoload :VERSION,     'ffaker/version'
