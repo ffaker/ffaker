@@ -10,3 +10,4 @@ pkg
 rdoc
 tmtags
 .project
+*.gem
