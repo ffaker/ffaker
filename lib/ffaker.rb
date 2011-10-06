@@ -5,7 +5,7 @@ module Faker
 
   extend ModuleUtils
 
-  LETTERS = k('a'..'z')
+ LETTERS = k('a'..'z')
 
   def self.numerify(number_string)
     number_string.gsub!(/#/) { rand(10).to_s }
@@ -33,7 +33,7 @@ module Faker
   autoload :NameCN,      'ffaker/name_cn'
   autoload :NameDE,      'ffaker/name_de'
   autoload :NameRU,      'ffaker/name_ru'
-  autoload :NameWf,      'ffaker/name_wf'
+  autoload :NameSN,      'ffaker/name_sn'
   autoload :PhoneNumber, 'ffaker/phone_number'
   autoload :Product,     'ffaker/product'
   autoload :Geolocation, 'ffaker/geolocation'
