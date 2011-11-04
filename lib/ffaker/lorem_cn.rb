@@ -20,18 +20,21 @@ module Faker
     end
 
     def sentences(sentence_count = 3)
-      s = (1..sentence_count).map { sentence }.join(' ')
-      s[-1] = '。'
-      "#{s}"
+      s = (1..sentence_count).map { sentence }
+      def s.to_s
+        result = self.join(' ')
+        result[-1] = '。'
+        result
+      end
+      s
     end
 
     def paragraph(sentence_count = 3)
-      sentences(sentence_count + rand(3))
+      sentences(sentence_count + rand(3)).to_s
     end
 
     def paragraphs(paragraph_count = 3)
-      ps = (1..paragraph_count).map { paragraph }
-      "#{ps}"
+      (1..paragraph_count).map { paragraph }
     end
 
     WORDS = k %w(
