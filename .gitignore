@@ -9,3 +9,5 @@ coverage
 pkg
 rdoc
 tmtags
+.project
+*.gem
