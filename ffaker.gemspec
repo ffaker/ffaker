@@ -42,6 +42,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_cn.rb
     lib/ffaker/name_de.rb
     lib/ffaker/name_ru.rb
+    lib/ffaker/name_ja.rb
     lib/ffaker/phone_number.rb
     lib/ffaker/product.rb
     lib/ffaker/utils/array_utils.rb
@@ -60,6 +61,7 @@ Gem::Specification.new do |s|
     test/test_faker_name_cn.rb
     test/test_faker_name_de.rb
     test/test_faker_name_ru.rb
+    test/test_faker_name_ja.rb
     test/test_geolocation.rb
     test/test_html_ipsum.rb
     test/test_lorem.rb
