@@ -4,7 +4,7 @@ module Faker
   module HTMLIpsum
     extend ModuleUtils
     extend self
-    
+
     def a(word_count = 2)
       "<a href=\"##{word}\" title=\"#{words(word_count).capitalize!}\">#{words(word_count).capitalize!}</a>"
     end
@@ -19,26 +19,26 @@ module Faker
       end
       "<p>#{s}</p>"
     end
-    
+
     def dl(definitions = 2)
       s = "<dl>"
-      definitions.times do 
+      definitions.times do
         s << "<dt>#{words(1).capitalize!}</dt><dd>#{paragraph 2}</dd>"
       end
       s << "</dl>"
     end
-    
+
     def ul_short(items = 3)
       s = "<ul>"
-      items.times do 
+      items.times do
         s << "<li>#{sentence 2}</li>"
       end
       s << "</ul>"
     end
-    
+
     def ul_long(items = 3)
       s = "<ul>"
-      items.times do 
+      items.times do
         s << "<li>#{paragraph 2}</li>"
       end
       s << "</ul>"
@@ -46,51 +46,51 @@ module Faker
 
     def ol_short(items = 3)
       s = "<ol>"
-      items.times do 
+      items.times do
         s << "<li>#{sentence 2}</li>"
       end
       s << "</ol>"
     end
-    
+
     def ol_long(items = 3)
       s = "<ol>"
-      items.times do 
+      items.times do
         s << "<li>#{paragraph 2}</li>"
       end
       s << "</ol>"
     end
-    
+
     def ul_links(items = 3)
       s = "<ul>"
-      items.times do 
+      items.times do
         s << "<li>#{a 1}</li>"
       end
       s << "</ul>"
     end
-    
+
     def table(rows = 3)
       s = "<table>
-      	<thead>
-      		<tr>
-      			<th>#{word.capitalize!}</th>
-      			<th>#{word.capitalize!}</th>
-      			<th>#{word.capitalize!}</th>
-      			<th>#{word.capitalize!}</th>
-      		</tr>
-      	</thead>
-      	<tbody>"
-      rows.times do 
+      <thead>
+      <tr>
+      <th>#{word.capitalize!}</th>
+      <th>#{word.capitalize!}</th>
+      <th>#{word.capitalize!}</th>
+      <th>#{word.capitalize!}</th>
+      </tr>
+      </thead>
+      <tbody>"
+      rows.times do
         s << "<tr>
-    			<td>#{words(1).capitalize!}</td>
-    			<td>#{words(1).capitalize!}</td>
-    			<td>#{words(1).capitalize!}</td>
-    			<td>#{a}</td>
-    		</tr>"
+                <td>#{words(1).capitalize!}</td>
+                <td>#{words(1).capitalize!}</td>
+                <td>#{words(1).capitalize!}</td>
+                <td>#{a}</td>
+              </tr>"
       end
       s << "</tbody>
       </table>"
     end
-    
+
     def body
       s = "<h1>#{words(2).capitalize!}</h1>"
       rand(4).times do
@@ -111,14 +111,14 @@ module Faker
       end
       s << "</ul>
       <pre><code>
-      ##{word} h1 a { 
-      	display: block; 
-      	width: 300px; 
-      	height: 80px; 
+      ##{word} h1 a {
+        display: block;
+        width: 300px;
+        height: 80px;
       }
       </code></pre>"
     end
-    
+
     def fancy_string(count = 3, include_breaks = false)
       sep  = include_breaks ? "<br>" : " "
       a = k([
@@ -131,7 +131,6 @@ module Faker
     end
 
   private
-  
     def word
       Faker::Lorem::word
     end
@@ -150,11 +149,10 @@ module Faker
 
     def paragraph(sentence_count = 3)
       Faker::Lorem::paragraph(sentence_count)
-    end  
+    end
 
     def paragraphs(paragraph_count = 3)
       Faker::Lorem::paragraphs(paragraph_count).join('<br>')
-    end  
-
-  end 
+    end
+  end
 end
