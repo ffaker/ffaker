@@ -72,8 +72,15 @@ $ cat scripts/benchmark.rb
 * Port 80 Labs (https://github.com/port80labs)
 * Shane Weng (https://github.com/swcool)
 * Chris Bloom (https://github.com/chrisbloom7)
+* SENE (https://github.com/PapePathe)
+* kichiro (https://github.com/kichiro)
 
 == Changelog
+
+* 1.9.1
+
+  Added Faker::NameSN, Faker::PhoneNumberSN (Thanks SENE, https://github.com/EmmanuelOga/ffaker/pull/26)
+  Added Faker::NameJA (Thanks kichiro, https://github.com/EmmanuelOga/ffaker/pull/21)
 
 * 1.8.1
 
