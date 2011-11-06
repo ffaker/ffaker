@@ -1,7 +1,6 @@
 require 'helper'
 
 class TestHipsterIpsum < Test::Unit::TestCase
-
   def test_paragraph
     assert_match /1\+|[ a-z]+/i, Faker::HipsterIpsum.paragraph
   end
@@ -25,5 +24,4 @@ class TestHipsterIpsum < Test::Unit::TestCase
   def test_word
     assert_match /1\+|[a-z]+/i, Faker::HipsterIpsum.word
   end
-
 end

@@ -1,6 +1,5 @@
 require 'helper'
 
-
 class TestAddress < Test::Unit::TestCase
   def test_city
     assert_match /[ a-z]+/, Faker::Address.city

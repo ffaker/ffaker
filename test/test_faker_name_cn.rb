@@ -9,5 +9,4 @@ class TestFakerNameCN < Test::Unit::TestCase
   def test_name
     assert Faker::NameCN.name.length > 2
   end
-
 end

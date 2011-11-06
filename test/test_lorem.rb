@@ -1,7 +1,6 @@
 require 'helper'
 
 class TestLorem < Test::Unit::TestCase
-
   def test_paragraph
     assert_match /[ a-z]+/, Faker::Lorem.paragraph
   end
