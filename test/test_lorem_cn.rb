@@ -2,7 +2,7 @@
 require 'helper'
 
 class TestLoremCN < Test::Unit::TestCase
-   
+
   def test_paragraph
     assert Faker::LoremCN.paragraph.length >= 3*4*2
   end
@@ -32,12 +32,12 @@ class TestLoremCN < Test::Unit::TestCase
     assert string.class == String
     assert string[-1] == '。'
   end
-    
+
   def test_words
     assert Faker::LoremCN.words.length >= 2
   end
 
   def test_word
-    assert Faker::LoremCN.word.length >= 2
+    assert Faker::LoremCN.word.length >= 1
   end
 end
