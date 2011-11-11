@@ -74,8 +74,13 @@ $ cat scripts/benchmark.rb
 * Chris Bloom (https://github.com/chrisbloom7)
 * SENE (https://github.com/PapePathe)
 * kichiro (https://github.com/kichiro)
+* doctorbh (https://github.com/doctorbh)
 
 == Changelog
+
+* 1.10.1
+
+  Added Faker::AddressCA (Thanks doctorbh, https://github.com/EmmanuelOga/ffaker/pull/27)
 
 * 1.9.1
 
