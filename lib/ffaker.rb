@@ -24,6 +24,7 @@ module Faker
   autoload :Address,       'ffaker/address'
   autoload :AddressDE,     'ffaker/address_de'
   autoload :AddressCA,     'ffaker/address_ca'
+  autoload :AddressUK,     'ffaker/address_uk'
   autoload :Company,       'ffaker/company'
   autoload :Education,     'ffaker/education'
   autoload :Geolocation,   'ffaker/geolocation'

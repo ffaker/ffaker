@@ -54,19 +54,23 @@ module Faker
       Faker.numerify(SEC_ADDR.rand)
     end
 
+    # @deprecated UK specific address info. Moved into {AddressUK}
     # UK Variants
     def uk_county
-      UK_COUNTY.rand
+      warn '[uk_county] is deprecated. For UK addresses please use the AddressUK module'
+      Faker::AddressUK.county
     end
 
     def uk_country
-      UK_COUNTRY.rand
+      warn '[uk_country] is deprecated. For UK addresses please use the AddressUK module'
+      Faker::AddressUK.country
     end
 
     def uk_postcode
-      Faker.bothify(UK_POSTCODE.rand).upcase
+      warn '[uk_postcode] is deprecated. For UK addresses please use the AddressUK module'
+      Faker::AddressUK.postcode
     end
-
+    
     def neighborhood
       NEIGHBORHOOD.rand
     end
@@ -90,6 +94,7 @@ module Faker
                      WI WY AE AA AP)
 
     COMPASS_DIRECTIONS = k %w(North East West South)
+
     CITY_PREFIXES = k(COMPASS_DIRECTIONS + %w(New Lake Port))
 
     CITY_SUFFIXES = k %w(town ton land ville berg burgh borough bury view port
@@ -118,26 +123,6 @@ module Faker
       Village Villages Ville Vista Walk Walks Wall Way Ways Well Wells)
 
     SEC_ADDR = k ['Apt. ###', 'Suite ###']
-
-    UK_COUNTY = k ['Avon', 'Bedfordshire', 'Berkshire', 'Borders',
-      'Buckinghamshire', 'Cambridgeshire', 'Central', 'Cheshire', 'Cleveland',
-      'Clwyd', 'Cornwall', 'County Antrim', 'County Armagh', 'County Down',
-      'County Fermanagh', 'County Londonderry', 'County Tyrone', 'Cumbria',
-      'Derbyshire', 'Devon', 'Dorset', 'Dumfries and Galloway', 'Durham',
-      'Dyfed', 'East Sussex', 'Essex', 'Fife', 'Gloucestershire', 'Grampian',
-      'Greater Manchester', 'Gwent', 'Gwynedd County', 'Hampshire',
-      'Herefordshire', 'Hertfordshire', 'Highlands and Islands', 'Humberside',
-      'Isle of Wight', 'Kent', 'Lancashire', 'Leicestershire', 'Lincolnshire',
-      'Lothian', 'Merseyside', 'Mid Glamorgan', 'Norfolk', 'North Yorkshire',
-      'Northamptonshire', 'Northumberland', 'Nottinghamshire', 'Oxfordshire',
-      'Powys', 'Rutland', 'Shropshire', 'Somerset', 'South Glamorgan',
-      'South Yorkshire', 'Staffordshire', 'Strathclyde', 'Suffolk', 'Surrey',
-      'Tayside', 'Tyne and Wear', 'Warwickshire', 'West Glamorgan', 'West Midlands',
-      'West Sussex', 'West Yorkshire', 'Wiltshire', 'Worcestershire']
-
-    UK_COUNTRY = k ['England', 'Scotland', 'Wales', 'Northern Ireland']
-
-    UK_POSTCODE = k ['??# #??', '??## #??']
 
     NEIGHBORHOOD = k ['East of Telegraph Road', 'North Norridge', 'Northwest Midlothian/Midlothian Country Club',
       'Mott Haven/Port Morris', 'Kingsbridge Heights', 'Bronxdale', 'Pennypack', 'Bridesburg',
