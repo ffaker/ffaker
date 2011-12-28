@@ -5,20 +5,22 @@ module Faker
 
   extend ModuleUtils
 
- LETTERS = k('a'..'z')
+  LETTERS = k('a'..'z')
 
-  def self.numerify(number_string)
-    number_string.gsub!(/#/) { rand(10).to_s }
-    number_string
+  def self.numerify(*masks)
+    mask = k(masks.flatten).rand
+    mask.gsub!(/#/) { rand(10).to_s }
+    mask
   end
 
-  def self.letterify(letter_string)
-    letter_string.gsub!(/\?/) { LETTERS.rand }
-    letter_string
+  def self.letterify(*masks)
+    mask = k(masks.flatten).rand
+    mask.gsub!(/\?/) { LETTERS.rand }
+    mask
   end
 
-  def self.bothify(string)
-    letterify(numerify(string))
+  def self.bothify(masks)
+    letterify(numerify(masks))
   end
 
   autoload :Address,       'ffaker/address'
