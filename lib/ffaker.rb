@@ -1,6 +1,7 @@
 module Faker
   VERSION = "1.10.1"
 
+  require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'
 
   extend ModuleUtils
@@ -8,13 +9,13 @@ module Faker
   LETTERS = k('a'..'z')
 
   def self.numerify(*masks)
-    mask = k(masks.flatten).rand
+    mask = ArrayUtils.rand(masks.flatten)
     mask.gsub!(/#/) { rand(10).to_s }
     mask
   end
 
   def self.letterify(*masks)
-    mask = k(masks.flatten).rand
+    mask = ArrayUtils.rand(masks.flatten)
     mask.gsub!(/\?/) { LETTERS.rand }
     mask
   end
