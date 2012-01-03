@@ -16,7 +16,6 @@ module Faker
       Faker.bothify(UK_POSTCODE.rand).upcase
     end
 
-
     UK_COUNTY = k ['Avon', 'Bedfordshire', 'Berkshire', 'Borders',
       'Buckinghamshire', 'Cambridgeshire', 'Central', 'Cheshire', 'Cleveland',
       'Clwyd', 'Cornwall', 'County Antrim', 'County Armagh', 'County Down',

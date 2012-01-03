@@ -76,7 +76,13 @@ $ cat scripts/benchmark.rb
 * kichiro (https://github.com/kichiro)
 * doctorbh (https://github.com/doctorbh)
 
+* See complete list: https://github.com/EmmanuelOga/ffaker/network
+
 == Changelog
+
+* 1.11.0
+
+  Extraction of AddressUK and AddressUS classes. (Thanks doctorbh).
 
 * 1.10.1
 
