@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.11.0'
-  s.date              = '2012-01-03'
+  s.version           = '1.12.0'
+  s.date              = '2012-01-07'
   s.rubyforge_project = 'ffaker'
 
   s.summary     = "Faster Faker, generates dummy data."
@@ -19,17 +19,18 @@ Gem::Specification.new do |s|
   s.require_paths = %w[lib]
 
   s.rdoc_options = ["--charset=UTF-8"]
-  s.extra_rdoc_files = %w[README.rdoc LICENSE]
+  s.extra_rdoc_files = %w[README.rdoc LICENSE Changelog.rdoc]
 
   # = MANIFEST =
   s.files = %w[
-    History.txt
+    Changelog.rdoc
     LICENSE
     README.rdoc
     Rakefile
     ffaker.gemspec
     lib/ffaker.rb
     lib/ffaker/address.rb
+    lib/ffaker/address_au.rb
     lib/ffaker/address_ca.rb
     lib/ffaker/address_de.rb
     lib/ffaker/address_uk.rb
@@ -49,6 +50,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_ru.rb
     lib/ffaker/name_sn.rb
     lib/ffaker/phone_number.rb
+    lib/ffaker/phone_number_au.rb
     lib/ffaker/phone_number_sn.rb
     lib/ffaker/product.rb
     lib/ffaker/utils/array_utils.rb
@@ -58,6 +60,7 @@ Gem::Specification.new do |s|
     scripts/profiling.rb
     test/helper.rb
     test/test_address.rb
+    test/test_address_au.rb
     test/test_address_ca.rb
     test/test_address_de.rb
     test/test_address_uk.rb
@@ -79,6 +82,7 @@ Gem::Specification.new do |s|
     test/test_lorem_cn.rb
     test/test_module_utils.rb
     test/test_phone_number.rb
+    test/test_phone_number_au.rb
     test/test_phone_number_sn.rb
   ]
   # = MANIFEST =
