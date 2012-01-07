@@ -75,6 +75,7 @@ $ cat scripts/benchmark.rb
 * SENE (https://github.com/PapePathe)
 * kichiro (https://github.com/kichiro)
 * doctorbh (https://github.com/doctorbh)
+* Ben Wisleey ( https://github.com/wiseleyb )
 
 * See complete list: https://github.com/EmmanuelOga/ffaker/network
 
