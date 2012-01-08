@@ -11,6 +11,8 @@ module Faker
       ZIP_CODE[st_abbr][rand(ZIP_CODE[st_abbr].size)]
     end
 
+    alias :postcode :zip_code
+
     def state
       STATE.rand
     end
@@ -26,7 +28,7 @@ module Faker
 
     def full_address(st_abbr = nil)
       st_abbr ||= state_abbr
-      "#{Faker::Address.street_address}, #{city(st_abbr)}, #{st_abbr} #{zip_code}"
+      "#{Faker::Address.street_address}, #{city(st_abbr)} #{st_abbr} #{zip_code}"
     end
     
     ZIP_FORMATS = k ['####']
@@ -38,7 +40,7 @@ module Faker
     
     # based on http://en.wikipedia.org/wiki/List_of_cities_in_Australia
     CITY = {
-      "ACT" => ["Canberra"],
+      "ACT" => ["Canberra", "Ainslie", "Braddon", "O'Connor"],
       "NSW" => ["Albury", "Armidale", "Bankstown", "Bathurst", "Blacktown", "Blue Mountains", "Botany Bay", 
         "Broken Hill", "Campbelltown", "Canada Bay", "Canterbury", "Cessnock", "Coffs Harbour", "Dubbo", 
         "Fairfield", "Gosford", "Goulburn", "Grafton", "Greater Taree", "Griffith", "Hawkesbury", "Holroyd", 
