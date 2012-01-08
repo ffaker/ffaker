@@ -26,6 +26,10 @@ class TestAddressAU < Test::Unit::TestCase
     assert_match /\d{4}/, Faker::AddressAU.zip_code
   end
 
+  def test_postcode
+    assert_match /\d{4}/, Faker::AddressAU.postcode
+  end
+
   def test_full_address
     assert_match /[\, a-z]/, Faker::AddressAU.full_address
   end
