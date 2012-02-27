@@ -21,7 +21,7 @@ module Faker
 
     def school_generic_name
       case rand(2)
-      when 0 then Address::STATE.rand
+      when 0 then AddressUS::STATE.rand
       when 1 then school_name
       end
     end
