@@ -24,4 +24,3 @@ module Faker
                   Consultant Assistant Facilitator Agent Representative Strategist)
   end
 end
-
