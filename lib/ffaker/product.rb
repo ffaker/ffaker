@@ -30,7 +30,7 @@ module Faker
     def model
       case rand(2)
       when 0 then "#{LETTERS.rand.upcase}#{rand(90)}"   # N90
-      when 1 then "#{letters(0..rand(2))}-#{rand(9900)}"         # N-9400
+      when 1 then "#{letters(1..rand(1..2))}-#{rand(9900)}"         # N-9400
       end
     end
 
