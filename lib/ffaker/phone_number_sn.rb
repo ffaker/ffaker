@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-# => author: xarala
+# => author: PapePathe
 # => email: pathe.sene@xarala.sn
 # => website: http://www.xarala.sn
 module  Faker
