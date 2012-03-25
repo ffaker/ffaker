@@ -1,4 +1,8 @@
 # encoding: utf-8
+
+# => author: PapePathe github.com/PapePathe
+# => email: pathe.sene@gmail.com
+
 require 'helper'
 
 class TestFakerNameSn < Test::Unit::TestCase

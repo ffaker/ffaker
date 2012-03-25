@@ -28,6 +28,7 @@ module Faker
   autoload :AddressAU,     'ffaker/address_au'
   autoload :AddressCA,     'ffaker/address_ca'
   autoload :AddressDE,     'ffaker/address_de'
+  autoload :AddressSN,     'ffaker/address_sn'
   autoload :AddressUK,     'ffaker/address_uk'
   autoload :AddressUS,     'ffaker/address_us'
   autoload :Company,       'ffaker/company'
