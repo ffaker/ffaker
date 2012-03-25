@@ -1,3 +1,7 @@
+== 1.14.0
+
+AddressSN (thanks PapePethe), and a bugfix on Faker::Product.model (thanks finarfin).
+
 == 1.13.0
 
 Education bug fix, Faker::Job (thanks Piotr Usewicz)
