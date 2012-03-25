@@ -11,3 +11,4 @@ rdoc
 tmtags
 .project
 *.gem
+.idea

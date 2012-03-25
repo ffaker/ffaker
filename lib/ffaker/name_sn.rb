@@ -1,9 +1,10 @@
 # encoding: utf-8
 
-# => author: xarala
-# => email: pathe.sene@xarala.sn
-# => website: http://www.xarala.sn
+# => author: PapePathe github.com/PapePathe
+# => email: pathe.sene@gmail.com
+
 # => the names & first names in this module were found at this url : http://www.senegalaisement.com/senegal/noms_et_prenoms.html
+
 module Faker
   module NameSN
     extend ModuleUtils

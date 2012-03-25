@@ -90,4 +90,9 @@ Gem::Specification.new do |s|
   # = MANIFEST =
 
   s.test_files = s.files.select { |path| path =~ /^test\/test_.*\.rb/ }
+
+  # TODO add development dependencies
+  #s.add_development_dependency 'rake'
+  #s.add_development_dependency 'test-unit'
+
 end
