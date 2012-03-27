@@ -16,10 +16,14 @@ module Faker
       CITY.rand
     end
 
-    ZIP_FORMATS = k ['#####']
+    ZIP_FORMATS = k ['####']
 
     def street_name
       STREET.rand
+    end
+
+    def street_address
+      "#{Faker::AddressDA.street_address} #{rand(100)}"
     end
 
     STREET = k [
