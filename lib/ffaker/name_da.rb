@@ -4,16 +4,51 @@ module Faker
     extend ModuleUtils
     extend self
 
-    def name
-      case rand(8)
-      when 0 then "#{prefix} #{first_name} #{last_name}"
-      when 1..2 then "#{first_name} #{last_name} #{last_name}"
-      else 	  "#{first_name} #{last_name}"
-      end
+    def name gender = :any
+    	case gender
+    	when :any then any_name
+    	when :male then male_name
+    	when :female then female_name
+    	else
+    		raise ArgumentError, "Invalid gender, must be one of :any, :male, :female"
+    	end
     end
 
-    def first_name
-      FIRST_NAMES.rand
+    def any_name
+      case rand(8)
+      when 0 		then 	"#{prefix} #{first_name} #{last_name}"
+      when 1..2 then 	"#{first_name} #{last_name} #{last_name}"
+      else 	  				"#{first_name} #{last_name}"
+      end
+		end    	
+
+		def male_name
+			fname = first_name :male
+      case rand(8)
+      when 0 		then 	"#{prefix} #{fname} #{last_name}"
+      when 1..2 then 	"#{fname} #{last_name} #{last_name}"
+      else 						"#{fname} #{last_name}"
+      end			
+		end
+
+		def female_name
+			fname = first_name :female
+      case rand(8)
+      when 0 		then 	"#{prefix} #{fname} #{last_name}"
+      when 1..2 then 	"#{fname} #{last_name} #{last_name}"
+      else 						"#{fname} #{last_name}"
+      end			
+		end
+
+    def first_name gender = :any
+    	fname = first_name :male
+    	case gender
+    	when :any then FIRST_NAMES.rand
+    	when :male then MALE_FIRST_NAMES.rand
+    	when :female then FEMALE_FIRST_NAMES.rand
+    	else
+    		raise ArgumentError, "Invalid gender, must be one of :any, :male, :female"
+    	end
     end
 
     def last_name
@@ -24,7 +59,7 @@ module Faker
       PREFIXES.rand
     end
 
-    BOY_FIRST_NAMES = k ["Ab", "Abel", "Abdikheyr","Abdillahi","Abdiqadir","Abdirahman","Abnir","Addis","Adiva","Aftab","Aimal","Ajeeshan","Ajuna","Akachi","Akon","Alasdair","Albertinus","Alix","Amiin","Amren","Anaz","Andriy","Andry","Annæus","Ansumana","Antonio","Apollo","Araz","Armaandeep","Artur","Atshey","Attila","Aurel","Avraz","Awais","Azis",
+    MALE_FIRST_NAMES = k ["Ab", "Abel", "Abdikheyr","Abdillahi","Abdiqadir","Abdirahman","Abnir","Addis","Adiva","Aftab","Aimal","Ajeeshan","Ajuna","Akachi","Akon","Alasdair","Albertinus","Alix","Amiin","Amren","Anaz","Andriy","Andry","Annæus","Ansumana","Antonio","Apollo","Araz","Armaandeep","Artur","Atshey","Attila","Aurel","Avraz","Awais","Azis",
     	"Babatunde","Balzer","Baqar","Barbaros","Barca","Batin","Berkin","Berndt","Bertier","Bille","Boniface","Brianeli","Brido","Brono","Burim","Butoto","Buzter",
     	"Cayden","Cevat","Chay","Cheick","Chico","Chidozie","Cilan","Clauz","Cormac","Cömert", "Christian", "Dae","Dagim","Darnel","Dennik","Dero","Deyyan","Dogukan","Dominick","Dreas","Dynnes","Eberhardt","Edon","Eick","Eiler","Einert","Eitel","Elarbi","Eldin","Elwin","Emal","Emilis","Emre","Enoch","Erem","Ersan",
     	"Falah","Falke","Fardin","Felan","Fester","Finnbjørn","Fir","Frorai","Galad","Gary","Gerald","Germann","Germind","Gharib","Gniewko","Greg","Günther","Gøtz",
@@ -40,7 +75,7 @@ module Faker
     	"Zaid","Zamann","Zamuel","Zaydan","Zeddy","Zhwan","Zilaz","Zillas","Zoltan"
     ]
 
-    GIRL_FIRST_NAMES = k [
+    FEMALE_FIRST_NAMES = k [
 			"Abelone","Abishna","Abraar","Acaylia","Addi","Adelfine","Adeliin","Adhina","Adia","Aisa","Aishwaryar","Ajla","Akuye","Albine","Allydia","Amela","Amélie","Amineh","Ampong","Anabita","Anantika","Anastasiya","Anastasja","Anatasie","Andorthe","Anedorte","Anelela","Anell","Anesa","Angeliki","Ani","Anjelica","Annalee","Annaline","Annamaya","Anne-Mie","Annekarin","Annekarinna","Annelisa","Annelouiise","Anniceta","Anniek","Anya","Aputsiaq","Arathana","Aribah","Arnóra","Asenath","Asthrid","Asu","Athena","Atiya-Tul","Atlante","Audrey","Audreyanne","Avin","Awatif","Baele","Basik","Baukje",
 			"Be","Beathe","Bejan","Belén","Bellakarla","Benda","Benditte","Bengta","Berta","Biak","Bianna","Bibba","Birgitanilla","Birret","Bismee","Bodil","Bothilia","Brenda","Brescia","Bria","Camelie","Cami","Canelita","Cang","Cannie","Cayenne","Chanelli","Chasmin","Chepkoech","Chili","Chrisanne","Christin","Chrysahne","Chrysanta","Chun","Claudiane","Clennie","Constantina","Cubamari","Curie","Cæcilie","Daina","Daiomi","Dalya","Deia","Delta","Deqa","Deva","Dilan","Diljá","Dilys","Dineke","Dionysia",
 			"Domenika","Dominique","Dorette","Dung","Döne","Ebbakia","Eleana","Elejnia","Elenore","Elín","Ellah","Elodie","Elvine","Elvire","Elwira","Emilee","Emmelin","Enid","Ennike","Enyo","Ephra","Eretha","Erika","Esaura","Esmee","Esra","Eva-Maria","Fahima","Faiza","Farishta","Faten","Feben","Felia","Fillipa","Fitore","Florette","Francesca","Francini","Frencia","Fridamarie","Frigerd","Frøya","Funda","Gazal","Gazala","Gena","Getha","Ghada","Ginger","Gizem","Gjyzide","Gofran","Grada","Grusje","Gulney","Gun",
