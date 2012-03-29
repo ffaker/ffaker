@@ -8,8 +8,20 @@ module Faker
       Faker.numerify ZIP_FORMATS.rand
     end
 
+    def post_nr
+      zip_code
+    end
+
     def state
-      STATE.rand
+      kommune
+    end
+
+    def kommune
+      KOMMUNE.rand
+    end
+
+    def region
+      REGION.rand
     end
 
     def city
@@ -24,6 +36,14 @@ module Faker
 
     def street_address
       "#{Faker::AddressDA.street_address} #{rand(100)}"
+    end
+
+    def full_address
+      %Q{#{street_address}
+#{post_nr} #{city}
+#{region}
+DANMARK
+}
     end
 
     STREET = k [
@@ -53,12 +73,20 @@ module Faker
       "Østerby Torv","Østre Alle","Øtoftegårdsvej"
     ]
 
-    STATE = k [
-      'Nord Jylland', 'Vest Jylland', 'Øst Jylland', 'Syd Jylland', 'Fyn',
-      'Lolland Falster', 'København'
+    KOMMUNE = k [
+      "Aabenraa","Aalborg","Aarhus","Albertslund","Allerød","Assens","Billund","Bornholm","Brønderslev","Egedal","Esbjerg","Faaborg-Midtfyn","Fanø","Favrskov","Faxe",
+      "Fredensborg","Fredericia","Frederikshavn","Frederikssund","Furesø","Gentofte","Greve","Gribskov","Guldborgsund","Haderslev","Halsnæs","Hedensted","Helsingør",
+      "Herlev","Herning","Hillerød","Hjørring","Holbæk","Holstebro","Horsens","Høje-Taastrup","Hørsholm","Ikast-Brande","Ishøj","Jammerbugt","Kalundborg","Kerteminde",
+      "Kolding","Kujalleq","København","Køge","Langeland","Lejre","Lemvig","Lolland","Læsø","Mariagerfjord","Middelfart","Morsø","Norddjurs","Nordfyns","Nyborg","Næstved",
+      "Odder","Odense","Odsherred","Qaasuitsup","Qeqqata","Randers","Rebild","Ringkøbing-Skjern","Ringsted","Roskilde","Rudersdal","Rødovre","Samsø","Sermersooq","Silkeborg",
+      "Skanderborg","Skive","Slagelse","Solrød","Sorø","Stevns","Struer","Svendborg","Syddjurs","Sønderborg","Thisted","Tønder","Varde","Vejen","Vejle","Vesthimmerlands","Viborg","Vordingborg","Ærø"
     ]
 
-    REGION = STATE
+    REGION = k [
+      'Hovedstaden', 'Sjælland', 'Syddanmark', 'Midtjylland', 'Nordjylland'
+    ]
+
+    STATE = REGION
 
     CITY = k [
       'Aabenraa','Aabybro','Aakirkeby','Aalborg','Aalborg SV','Aalborg SØ','Aalborg Øst','Aalestrup','Aars','Aarup',
