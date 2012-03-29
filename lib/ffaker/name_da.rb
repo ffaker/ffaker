@@ -5,8 +5,9 @@ module Faker
     extend self
 
     def name
-      case rand(10)
+      case rand(8)
       when 0 then "#{prefix} #{first_name} #{last_name}"
+      when 1..2 then "#{first_name} #{last_name} #{last_name}"
       else 	  "#{first_name} #{last_name}"
       end
     end
@@ -23,96 +24,48 @@ module Faker
       PREFIXES.rand
     end
 
-    FIRST_NAMES = k %w(Mia Hannah Hanna Lena Lea Leah Emma Anna Leonie Leoni Lilli Lilly Lili Emilie Emily Lina Laura Marie Sarah
-	Sarah Sophia Sofia Lara Sophie Sofie Maja Maya Amelie Luisa Louisa Johanna Emilia Nele Neele Clara Klara Leni
-	Alina Charlotte Julia Lisa Zoe Pia Paula Melina Finja Finnja Ida Lia Liah Lya Greta Jana Josefine Josephine
-	Jasmin Yasmin Lucy Lucie Victoria Viktoria Emely Emelie Katharina Fiona Stella Pauline Amy Antonia Mara
-	Marah Annika Nina Matilda Mathilda Helena Marlene Lotta Isabel Isabell Isabelle Theresa Teresa Chiara
-	Kiara Frieda Frida Eva Maria Celine Selina Jule Celina Vanessa Ronja Luise Louise Romy Isabella Ella
-	Franziska Elisa Magdalena Carla Karla Luna Sina Sinah Angelina Milena Helene Merle Jolina Joelina
-	Melissa Mila Nora Jette Miriam Carlotta Karlotta Elena Kim Michelle Aylin Eileen Aileen Ayleen Lynn Linn
-	Mira Carolin Caroline Karoline Kimberly Kimberley Julie Juli Alicia Kira Kyra Vivien Vivienne Lana Paulina
-	Linda Larissa Annabelle Annabell Annabel Anabel Elina Samira Leyla Nelli Nelly Lucia Alexandra Tamina Laila
-	Layla Elisabeth Lenja Lenya Anny Anni Annie Diana Natalie Nathalie Martha Marta Mina Jessica Jessika
-	Valentina Alisa Leticia Letizia Olivia Christina Lotte Samantha Fabienne Nisa Zoey Mariella Svea Cheyenne
-	Chayenne Annalena Carolina Karolina Ela Leona Tabea Aliyah Aaliyah Josy Josie Rebekka Alissa Alyssa Anastasia
-	Marleen Marlen Elif Anne Carina Karina Dana Noemi Lene Milla Rosalie Luana Evelyn Evelin Eveline Fenja Tessa
-	Xenia Marla Alessia Mona Saskia Joline Joeline Alexa Aurelia Ceylin Helen Jennifer Tamara Ecrin Leana Elli
-	Elly Nayla Florentine Henriette Lorena Veronika Felicitas Liana Livia Malin Marit Melanie Josephin
-	Josefin Emmi Emmy Tuana Dilara Maike Meike Thea Ashley Linea Linnea Marina Lilian Lillian Amina
-	Jill Jil Sarina Giulia Janne Talia Thalia Alea Rieke Rike Svenja Liliana Janina Nicole Selma Alisha
-	Ava Kaja Kaya Caja Liv Rosa Valeria Heidi Joyce Selin Ina Aleyna Enya Jamie Naomi Patricia Amira
-	Amalia Anouk Eliana Hermine Joy Juliana Romina Azra Franka Melek Melinda Freya Marieke Marike Mary
-	Sonja Ayla Elaine Alma Eda Elin Lola Melia Miley Nike Philine Cora Daria Jenny Jonna Yara Zeynep
-	Cassandra Kassandra Esila Felicia Malia Smilla Alena Amelia Aurora Ceyda Juliane Leandra Lilith Madita
-	Melisa Nika Summer Fatima Ilayda Joleen Malina Sandra Jasmina Katja Medina Annelie Juna Valerie Madlen
-	Madleen Aliya Charlotta Eleni Hailey Mailin Denise Fine Flora Madeleine Sena Vivian Ann Annemarie Asya
-	Christin Kristin Jara Jenna Julina Maren Soraya Tara Viola Alia Ellen Enie Lydia Milana Nala Adriana
-	Aimee Anja Chantal Elise Elsa Gina Joanna Judith Malea Marisa Mayra Talea Thalea Tilda Delia Joana
-	Kiana Melis Meryem Sude Amanda Enna Esther Holly Irem Marlena Mirja Phoebe Rahel Verena Alexia Bianca
-	Bianka Cara Friederike Catrin Katrin Kathrin Lavinia Lenia Nadine Stefanie Stephanie Ada Asmin Bella
-	Cecilia Clarissa Esma Jolie Maila Mareike Selena Soey Ylvi Ylvie Zara Abby Ayse Claire Helin Jona
-	Jonah Lilia Luzi Luzie Nila Sally Samia Sidney Sydney Tina Tyra Alice Anisa Belinay Cecile Fee
-	Inga Janna Jolien Levke Nia Ruby Stine Sunny Tamia Tiana Alara Charleen Collien Fanny Fatma
-	Felina Ines Jane Maxima Tarja Adelina Alica Dila Elanur Elea Gloria Jamila Kate Loreen Lou Maxi
-	Melody Nela Rania Sabrina Ariana Charline Christine Cosima Leia Leya Leonora Lindsay Megan Naemi
-	Nahla Sahra Saphira Serafina Stina Toni Tony Yaren Abigail Ece Evelina Frederike Inka Irma Kayra
-	Mariam Marissa Salome Violetta Yagmur Celin Eleonora Felia Femke Finia Hedda Hedi Henrike Jody
-	Juline Lieselotte Lilliana Luca Luka Maira Naila Naima Natalia Neela Salma Scarlett Seraphine
-	Shirin Tia Wiebke Alexis Alisia Angelique Anneke Edda Elia Gabriela Geraldine Giuliana Ilaria
-	Janin Janine Joelle Malak Mieke Nilay Noelle Yuna Adele Ceren Chelsea Daniela Evangeline Liz
-	Maggie Malena Marielle Marietta Mathea Mathilde Melike Merve Rafaela Raphaela Sandy Sienna Leon
-	Lucas Lukas Ben Finn Fynn Jonas Paul Luis Louis Maximilian Luca Luka Felix Tim Timm Elias Max Noah
-	Philip Philipp Niclas Niklas Julian Moritz Jan David Fabian Alexander Simon Jannik Yannik Yannick
-	Yannic Tom Nico Niko Jacob Jakob Eric Erik Linus Florian Lennard Lennart Nils Niels Henri Henry
-	Nick Joel Rafael Raphael Benjamin Marlon Jonathan Hannes Jannis Janis Yannis Jason Anton Emil
-	Johannes Leo Mika Sebastian Dominic Dominik Daniel Adrian Vincent Tobias Samuel Julius Till Lenny
-	Lenni Constantin Konstantin Timo Lennox Robin Aaron Oscar Oskar Colin Collin Jona Jonah Justin
-	Carl Karl Leonard Joshua Ole Matteo Jamie Marvin Marwin John Kilian Lasse Mattis Mathis Matthis
-	Levin Marc Mark Liam Maxim Maksim Gabriel Theo Bastian Johann Damian Noel Levi Phil Justus Malte
-	Tyler Tayler Valentin Benedikt Christian Silas Lars Mats Mads Jeremy Michael Oliver Pascal Toni
-	Tony Dennis Bennet Bennett Artur Arthur Luke Luc Luk Jayden Finnley Finley Finlay Connor Conner
-	Tristan Richard Marcel Diego Marius Mohammed Muhammad Manuel Jannes Fabio Maik Meik Mike Julien
-	Frederic Frederik Frederick Marco Marko Kevin Matti Ian Maurice Franz Arne Nicolas Nikolas Ali
-	Leandro Kai Kay Leopold Martin Elia Sam Dean Henrik Pepe Len Lenn Hendrik Emilio Cedric Cedrik
-	Milan Theodor Timon Jesper Malik Matthias Hugo Leander Michel Andreas Laurens Laurenz Bruno Konrad
-	Arda Neo Lorenz Marcus Markus Torben Thorben Magnus Robert Can Milo Clemens Klemens Nikita Domenic
-	Domenik Emilian Laurin Willi Willy Alessio Devin Fiete Friedrich Deniz Ruben Thomas Eddi Eddy Lion
-	Luan Kian Lian Lias Mert Patrick Chris Ilias Ilyas Kaan Nevio Quentin Yusuf Christoph Dustin
-	Joris Gustav Jaden Adam Fritz Henning Ryan Ferdinand Lionel Nino Piet Yasin Alex Carlo Karlo
-	Charlie Charli Leonardo Peter Ahmed Ahmet Benno Efe Enes Iven Yven Josef Joseph Miguel William
-	Marian Alessandro Antonio Brian Bryan Jerome Kerem Ludwig Arian Cristopher Jaron Stefan
-	Stephan Sven Victor Viktor Carlos Dario Sandro Jean Mehmet Bjarne Etienne Anthony Hans Mustafa
-	Darius Leif Georg Kjell Maddox Roman Thore Tore Danny Mohamed Titus Andre Damien Leonhard
-	Ricardo Riccardo Semih Janne Melvin Valentino Cem Jannek Janek Korbinian Romeo Taylor Jack
-	Rayan Thilo Curt Kurt Darian Jermaine Steven Albert Angelo Eren Eymen Hamza Sascha Dave Sean
-	Umut Wilhelm Edgar Giuliano Arjen Bela Hennes Logan Lutz Marten Batuhan Danilo Enrico Fabrice
-	Lean Sami Tamino Tizian Amir Claas Klaas Xaver Armin Denny Ibrahim Karim Sinan Tommy
-	Yunus Emanuel Gregor Jon Joost Jost Merlin Tamme Berkay Edward Jim Lino Mick Mikail Miran
-	Nicolai Nikolai Ron Tammo Tjark Emre Jordan Leonidas Mario Quirin Eduard Hassan Jano
-	Kimi Taha Baran Berat Caspar Gianluca Jarne Jarno Jonte Lucian Lucien Mailo Nathan Nelson Tino
-	Calvin Dorian Emirhan Furkan Ilja Lio Marek Mio Rico Damon Janosch Jesper Juri Kerim Shawn Tiago
-	Timur Elian Ethan Gian Kenan Amin Arvid Enno Falk Jens Johnny Keanu Mirco Mirko Pierre Santino
-	Eike Elijah Emin Gerrit Hasan Jake Jakub James Juan Kenny Peer Raik Ramon Rocco Tarik Vitus
-	Yigit Younes Bilal Dylan Edwin Georgios Jesse Koray Lewis Nikola Stanley Taylan Vinzenz
-	Burak Corvin Dejan Keno Nathanael Neven Ahmad Andrej Davin Dion Eray Erwin Francesco Mattes
-	Brandon Cornelius Ensar Fabien Giulio Hanno Ivan Jamal Jeremias Joe Kim Kolja Marlo Miko
-	Milow Omar Paolo Salih Samir Tilo Timmy Vin Abdullah Adem Alan Alperen Ansgar Aras Arno Azad
-	Bo Giovanni Ismail Jaro Jendrik Jimmy Kadir Kirill Otto Quinn Sercan Sidney Sydney Tyron
-	Adriano Aiden Amon Benny Carsten Karsten Dan Dante Hagen Harun Jayson Kalle Leonas Levent
-	Lorik Loris Mirac Onur Raul Samuele Severin Simeon Vincenzo Yassin Yves Alejandro Alfred
-	Bendix Demian Enzo)
+    BOY_FIRST_NAMES = k ["Ab", "Abel", "Abdikheyr","Abdillahi","Abdiqadir","Abdirahman","Abnir","Addis","Adiva","Aftab","Aimal","Ajeeshan","Ajuna","Akachi","Akon","Alasdair","Albertinus","Alix","Amiin","Amren","Anaz","Andriy","Andry","Annæus","Ansumana","Antonio","Apollo","Araz","Armaandeep","Artur","Atshey","Attila","Aurel","Avraz","Awais","Azis",
+    	"Babatunde","Balzer","Baqar","Barbaros","Barca","Batin","Berkin","Berndt","Bertier","Bille","Boniface","Brianeli","Brido","Brono","Burim","Butoto","Buzter",
+    	"Cayden","Cevat","Chay","Cheick","Chico","Chidozie","Cilan","Clauz","Cormac","Cömert", "Christian", "Dae","Dagim","Darnel","Dennik","Dero","Deyyan","Dogukan","Dominick","Dreas","Dynnes","Eberhardt","Edon","Eick","Eiler","Einert","Eitel","Elarbi","Eldin","Elwin","Emal","Emilis","Emre","Enoch","Erem","Ersan",
+    	"Falah","Falke","Fardin","Felan","Fester","Finnbjørn","Fir","Frorai","Galad","Gary","Gerald","Germann","Germind","Gharib","Gniewko","Greg","Günther","Gøtz",
+    	"Haggi","Hailo","Hakon","Hans", "Haqmal","Haraldur","Haroot","Hedi","Helfred","Helton","Henrick","Hercules","Heri","Hjalti","Hodja","Honza","Hoya","Hunter","Huu","Huy","Hydar","Haakon",
+    	"Iannis","Idan","Ilie","Ilkcan","Ingemar","Ingmar","Ingvald","Isaías","Issak","Istvan","Isaali","Izat","Jacko","Jaime","Janius","Jarno","Jeak","Jerzy","Jesu","Jesuran","Jogvan","Johann","Johnes","Jónatan","Jordan","Jorik","Junes","Juntao","Jørn",
+    	"Karl", "Kangolo","Kave","Kayembe","Kazam","Kerry","Kewin","Kheir","Khudhur","Kilian","Kimo","Kobe","Korhan", "Kristian", "Kuku","Kåre","Lage","Laith","Lali","Lauge","Leenus","Leonid","Levi","Lior","Logan","Long","Lorry","Lowrance","Lozang","Lurifax","Luuk","Luuka",
+    	"Madar","Mahdy","Mahed","Maico","Majad","Maksen","Margus","Marley","Masafumi","Mathew","Mathiias","Mati","Mattias","Mattis","Maxian","Maysam","Medin","Meick","Mek","Merlan","Merlin","Messi","Michas","Miggi","Mika","Mikael","Mikk","Mikkell","Minato","Moez","Mohamad","Mohamedburhan","Momin","Morgan","Mortan","Moslem","Mouhammad","Mousa","Mowlid","Muhanad","Munasar","Mushtaq","Musse",
+    	"Nadhim","Nait","Nanoq","Nasar","Neal","Nebo","Nedin","Neshan","Nevil","Nickolej","Nikky","Nileshan","Nilias","Nithush","Nurdin","Nuri","Ny","Nökkvi","Odai","Olliwer","Oluwalanaire","Omotayo","Onesimos","Orhan","Osvaldus","Pak","Papa","Parvel","Parvez","Patrekur","Paul-Erik","Pavith","Petter","Philipp","Phinneas","Phung",
+    	"Platon","Polle","Pæshang","Qadar","Qassem","Quando","Raheim","Ramazan","Rames","Ramsey","Ranj","Raymont","Reda","Regont","Reihdar","Rejmar","Renaldas","Rian","Robbert","Rued","Rupendra","Ryta","Saban","Sada","Sahib","Saif","Salih","Salko","Sanjin","Sayid","Sayjon",
+    	"Sebastean","Sein","Selmer","Semir","seph","Sergiy","Shahid","Shajan","Shamal","Sharuson","Shuo","Si","Sijiang","Silverio","Sipan","Sjurður","Steinar","Stephaan","Subhaan","Sun","Suren","Sveinn","Svevo","Tabo","Tadeas","Tahsin","Tamer","Tancred","Taner","Taulant",
+    	"Tesser","Thawng","Theodoros","Therkil","Thony","Thorlak","Thorvild","Thuan","Tian","Tieno","Timm","Tjahed","Tolle","Tolver","Tomás","Tonny","Tor","Torfinn","Torvil","Travis","Trent","Triztan","Tuala","Turan","Turgay",
+    	"Ugli","Úlfur","Umberto","Valfred","Varnaan","Vaughn","Venny","Vigo","Villas","Vinjar","Vinu","Wahaab","Walied","Wassily","Wenkai","Winno","Witte","Xenius","Xinyao","Yaki","Yalcin","Yaman","Yassen","Yasser","Yassier","Yngwie",
+    	"Zaid","Zamann","Zamuel","Zaydan","Zeddy","Zhwan","Zilaz","Zillas","Zoltan"
+    ]
 
-    LAST_NAMES = k %w(Schmidt Schneider Fischer Weber Meyer Wagner Becker Schulz Hoffmann
-	Koch Bauer Richter Klein Wolf Neumann Schwarz Zimmermann Braun
-	Hofmann Hartmann Lange Schmitt Werner Schmitz Krause Meier Lehmann
-	Schmid Schulze Maier Herrmann Walter Mayer Huber Kaiser Fuchs Peters
-	Lang Scholz Weiss Jung Hahn Schubert Vogel Friedrich Keller Frank Berger
-	Winkler Roth Beck Lorenz Baumann Franke Albrecht Schuster Simon Ludwig
-	Winter Kraus Martin Schumacher Vogt Stein Otto Sommer Gross Seidel Heinrich
-	Brandt Haas Schreiber Graf Schulte Dietrich Ziegler Kuhn Pohl Engel Horn
-	Busch Bergmann Thomas Voigt Sauer Arnold Wolff Pfeiffer Brauner Dreier
-	Schmenke Nowak Heinz Haupt Siegel Wagler Moser Elsner Reitenbach Steiner)
+    GIRL_FIRST_NAMES = k [
+			"Abelone","Abishna","Abraar","Acaylia","Addi","Adelfine","Adeliin","Adhina","Adia","Aisa","Aishwaryar","Ajla","Akuye","Albine","Allydia","Amela","Amélie","Amineh","Ampong","Anabita","Anantika","Anastasiya","Anastasja","Anatasie","Andorthe","Anedorte","Anelela","Anell","Anesa","Angeliki","Ani","Anjelica","Annalee","Annaline","Annamaya","Anne-Mie","Annekarin","Annekarinna","Annelisa","Annelouiise","Anniceta","Anniek","Anya","Aputsiaq","Arathana","Aribah","Arnóra","Asenath","Asthrid","Asu","Athena","Atiya-Tul","Atlante","Audrey","Audreyanne","Avin","Awatif","Baele","Basik","Baukje",
+			"Be","Beathe","Bejan","Belén","Bellakarla","Benda","Benditte","Bengta","Berta","Biak","Bianna","Bibba","Birgitanilla","Birret","Bismee","Bodil","Bothilia","Brenda","Brescia","Bria","Camelie","Cami","Canelita","Cang","Cannie","Cayenne","Chanelli","Chasmin","Chepkoech","Chili","Chrisanne","Christin","Chrysahne","Chrysanta","Chun","Claudiane","Clennie","Constantina","Cubamari","Curie","Cæcilie","Daina","Daiomi","Dalya","Deia","Delta","Deqa","Deva","Dilan","Diljá","Dilys","Dineke","Dionysia",
+			"Domenika","Dominique","Dorette","Dung","Döne","Ebbakia","Eleana","Elejnia","Elenore","Elín","Ellah","Elodie","Elvine","Elvire","Elwira","Emilee","Emmelin","Enid","Ennike","Enyo","Ephra","Eretha","Erika","Esaura","Esmee","Esra","Eva-Maria","Fahima","Faiza","Farishta","Faten","Feben","Felia","Fillipa","Fitore","Florette","Francesca","Francini","Frencia","Fridamarie","Frigerd","Frøya","Funda","Gazal","Gazala","Gena","Getha","Ghada","Ginger","Gizem","Gjyzide","Gofran","Grada","Grusje","Gulney","Gun",
+			"Gunvor","Habib","Hadishta","Haessal","Hafsah","Halima","Hanka","Hanne-Marie","Harena","Hasanat","Heerthdana","Henriette","Herle","Hiam","Hikma","Idun","Ifrah","Ikiuna","Iliriana","Ilmur","Inaya","Ingear","Ingelil","Ingelina","Inger-Lis","Ingibjörg","Ione", "Irela","Irini","Isalina","Iselinn","Isobell","Jamile","Jamina","Janaya","Janette","Janini","Janne","Jawan","Jerie","Jestelina",
+			"Jethe","Jirina","Jonna","Josa","Jostina","Juweeriya","Jytthe","Jørna","Kadja","Kadla","Kahina","Kaja","Kali","Kamilia","Kamilla","Karianne","karinasofia","Karma","Kasina","Katarin","Katherin","Kazime","Kecia","Kerstinne","Kiea","Kiritin","Kisa","Kristense","Kristjana","Kulthum","Laiila","Laina","Laisa","Lalbibi","Lamar","Lavanya","Lawan","Layan","Leanette","Leenamari","Lela","Leonor",
+			"Lida","Liisa","Lika","Lilse","Lisen","Lizi","Loa","Lonai","Lorenze","Loulie","Lucija","Lullu","Lusy","Lyudmyla","Maddie","Mahboobeh","Mahnaz","Maiasoffi","Maibritt","Majabrith","Majalisa","MajaMarie","Malizia","Mamoona","Marenta","Marentine","Margreta","Margrete","Marieann","Marinette","Marjun","Marlin","Marliz","Marwo","Maryanruun","Marysia","Maryzia","Masume","Mathilde","Mazcha","Medya","Mekana","Melani","Meliah","Melin","Mellisa","Mercedez","Meri",
+			"Metea","Mette-Louise","Miall","Mica","Milina","Mimi","Min","Minika","Minna","Minnie","Minot","Mirthe","Monisha","Mudan","Mugisha","Muzdalifa","Mwiinga","Müberra","Münevver","Mythily","Nadeena","Nahide","Najaad","Nanda","Naserian","Nastasia","Nazreen","Nee","Neeline","Neia","Neimi","Nella","Nenne","Neval","Ngan","Nhea","Nicolie","Nif","Njeri","Njike","Nnaba","Noella","Noma","Nupel","Offodjé","Ojetta","Olivia",
+			"Oluffa","Osayuki","Othilie","Pabodhi","Pandora","Perla","Persille","Peytons","Phillippa","Piatilde","Piya","Polonia","Pranatda","Premasha","Priscilla","Qaymayriyah","Rabena","Rania","Razan","Rennette","Ridwan","Rikkemaria","Rinie","Ritazol","Ritva","Robine","Rojbin","Roksana","Roopraj","Rosemaya","Raamin","Saffron","Salca","Salima","Salomine","Salwa","Sama","Samanda","Samaya","Sanela","Sayna","Saynabou","Sedsel","Seia","Selen","Selinda","Selvi","Senia","Serafine",
+			"Sette","Seynab","Shahin","Shahzadi","Shaima","Shams","Sharmi","Shela","Shessa","Shpresa","Shriti","Sibelle","Siddiqa","Sido","Sighrid","Sinnika","Sintta","Sizze","Sol","Sólrún","Star","Stasia","Stenja","Stisser","Stivelle","Suchitra","Suleima","Sumayyah","Suszy","Suzanne","Syp","Sølvi","Sønnøve","Søvrine","Tae","Tahereh","Tanaz","Tara","Tasneem","Tatiana","Tchila","Teri","Tessa","Thelse","Thordiis","Tidde","Tinamia","Titania",
+			"Tong","Tovelisse","Triesse","Trisja","Tristin","Truste","Tuong","Valja","Valnesa","Vanesa","Varshini","Vernice","Vibika","Vichi","Vilhelmine","Ville","Vimbiso","Vinda","Violetta","Vivi","Wardah","Wega","Welphy","Wesakha","Winnia","Xaji","Xingchen","Xiomara","Xue","Yasmin","Yetta","Yin","Yuhan","Yulanda","Yuqing","Zada","Zarghunah","Zecilie","Zenta","Zienna","Zihan","Zikan","Zilvia","Ziva","Æsa","Özlam","Aanya","Aasiya"
+    ]
+
+    FIRST_NAMES = BOY_FIRST_NAMES + GIRL_FIRST_NAMES
+
+    LAST_NAMES = k [
+    	"Ahmed","Ali","Andersen","Andersson","Andreasen","Andreassen","Andresen","Asmussen",
+    	"Bach","Bak","Bang","Bech","Beck","Bendtsen","Berg","Bertelsen","Berthelsen","Bisgaard","Bisgård","Bjerre","Bjerregaard","Bjerregård","Bonde","Brandt","Brodersen","Bruun","Buch","Bundgaard","Bundgård","Carlsen",
+    	"Carstensen","Christensen","Christiansen","Christoffersen","Clausen","Dahl","Dalgaard","Dalgård","Dalsgaard","Dalsgård","Dam","Damgaard","Damgård","Danielsen","Davidsen","Enevoldsen","Eriksen","Eskildsen","Fischer","Frandsen",
+    	"Frederiksen","Friis","Frost","Gade","Gregersen","Hald","Hansen","Hedegaard","Hedegård","Hemmingsen","Henningsen","Henriksen","Hermansen","Hjorth","Hoffmann","Holm","Holst","Hougaard","Hougård","Ibsen","Iversen","Jacobsen","Jakobsen",
+    	"Jensen","Jeppesen","Jepsen","Jespersen","Jessen","Johannesen","Johannsen","Johansen","Johansson","Johnsen","Juhl","Justesen","Juul","Jønsson","Jørgensen","Karlsen","Kirkegaard","Kjeldsen","Kjær","Kjærgaard","Kjærgård","Klausen","Knudsen",
+    	"Koch","Kofoed","Kragh","Kristensen","Kristiansen","Kristoffersen","Krog","Krogh","Kruse","Lange","Larsen","Lassen","Lauridsen","Lauritsen","Lauritzen","Laursen","Laustsen","Leth","Lind","Lorentzen","Lorenzen","Lund","Madsen","Markussen",
+    	"Mathiasen","Mathiesen","Meyer","Michelsen","Mikkelsen","Mogensen","Mortensen","Munk","Müller","Mølgaard","Mølgård","Møller","Nguyen","Nielsen","Nikolajsen","Nilsson","Nissen","Nygaard","Nygård","Nørgaard","Nørgård","Olesen","Olsen","Olsson",
+    	"Overgaard","Overgård","Paulsen","Pedersen","Persson","Petersen","Poulsen","Rasmussen","Ravn","Riis","Schmidt","Schou","Schrøder","Schultz","Simonsen","Skov","Sloth","Sommer","Steffensen","Svendsen","Svensson","Søgaard","Søgård","Søndergaard",
+    	"Søndergård","Sørensen","Thomassen","Thomsen","Thorsen","Thygesen","Thøgersen","Toft","Vestergaard","Vestergård","Villadsen","Vinther","Winther","Østergaard","Østergård","Aagaard","Aagård","Ågård","Ågaard"
+    ]
 
     PREFIXES = k %w(Hr. Fr. Dr. Prof.)
   end
