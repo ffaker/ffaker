@@ -26,7 +26,7 @@ module  Faker
     HomeWorkOperatorsPrefix = %w(02 03 05 07 08)
 
     OperatorsPrefix = MobileOperatorsPrefix + HomeWorkOperatorsPrefix
-    
+
     # Return a prefix in MobileOperatorsPrefix
     # @see Faker::PhoneNumberAU::MobileOperatorsPrefix
     #
@@ -40,11 +40,11 @@ module  Faker
     def home_work_phone_prefix
       HomeWorkOperatorsPrefix[rand(HomeWorkOperatorsPrefix.size)]
     end
-    
+
     def phone_prefix
       OperatorsPrefix[rand(OperatorsPrefix.size)]
     end
-    
+
     # Generates a general phone number
     #  (0x) xxxx xxxx
     #
@@ -66,11 +66,11 @@ module  Faker
       when 1 then mobile_phone_number
       end
     end
-    
+
     def country_code
       "+61"
     end
-    
+
     def international_mobile_phone_number
       Faker.numerify("#{country_code} #{mobile_phone_prefix[1]} #### ####")
     end
@@ -85,6 +85,6 @@ module  Faker
       when 1 then international_home_work_phone_number
       end
     end
-    
+
   end
 end

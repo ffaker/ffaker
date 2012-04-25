@@ -15,7 +15,7 @@ class TestLoremCN < Test::Unit::TestCase
   end
 
   def test_paragraphs_is_not_a_string_representation_of_an_array
-    assert_not_match /[\[\]]+/, [Faker::LoremCN.paragraphs].flatten.join(' ')
+    assert !/[\[\]]+/.match([Faker::LoremCN.paragraphs].flatten.join(' '))
   end
 
   def test_paragraphs_is_an_array
@@ -33,7 +33,7 @@ class TestLoremCN < Test::Unit::TestCase
   def test_sentences_via_to_s_produces_string_terminated_with_period
     string = Faker::LoremCN.sentences.to_s
     assert string.class == String
-    assert string[-1] == '。'
+    assert string =~ /。$/
   end
 
   def test_words
