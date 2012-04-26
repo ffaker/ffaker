@@ -8,6 +8,10 @@ class TestLorem < Test::Unit::TestCase
   def test_sentence
     assert_match /[ a-z]+/, Faker::Lorem.sentence
   end
+  
+  def test_phrase
+    assert_match /[ a-z]+/, Faker::Lorem.phrase
+  end
 
   def test_paragraphs
     assert_match /[ a-z]+/, Faker::Lorem.paragraphs.join(" ")
@@ -15,6 +19,10 @@ class TestLorem < Test::Unit::TestCase
 
   def test_sentences
     assert_match /[ a-z]+/, Faker::Lorem.sentences.join(" ")
+  end
+
+  def test_phrases
+    assert_match /[ a-z]+/, Faker::Lorem.phrases.join(" ")
   end
 
   def test_words
