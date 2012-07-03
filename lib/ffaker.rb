@@ -50,6 +50,7 @@ module Faker
   autoload :PhoneNumber,   'ffaker/phone_number'
   autoload :PhoneNumberAU, 'ffaker/phone_number_au'
   autoload :PhoneNumberSN, 'ffaker/phone_number_sn'
+  autoload :PhoneNumberSG, 'ffaker/phone_number_sg'
   autoload :Product,       'ffaker/product'
   autoload :VERSION,       'ffaker/version'
 end
