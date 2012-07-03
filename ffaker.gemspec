@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_sn.rb
     lib/ffaker/address_uk.rb
     lib/ffaker/address_us.rb
+    lib/ffaker/book.rb
     lib/ffaker/company.rb
     lib/ffaker/education.rb
     lib/ffaker/geolocation.rb
@@ -48,6 +49,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_cn.rb
     lib/ffaker/name_de.rb
     lib/ffaker/name_ja.rb
+    lib/ffaker/name_kr.rb
     lib/ffaker/name_ru.rb
     lib/ffaker/name_sn.rb
     lib/ffaker/phone_number.rb
