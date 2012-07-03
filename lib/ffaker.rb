@@ -44,6 +44,7 @@ module Faker
   autoload :NameCN,        'ffaker/name_cn'
   autoload :NameDE,        'ffaker/name_de'
   autoload :NameJA,        'ffaker/name_ja'
+  autoload :NameKR,        'ffaker/name_kr'
   autoload :NameRU,        'ffaker/name_ru'
   autoload :NameSN,        'ffaker/name_sn'
   autoload :PhoneNumber,   'ffaker/phone_number'
