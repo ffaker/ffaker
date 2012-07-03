@@ -31,6 +31,7 @@ module Faker
   autoload :AddressSN,     'ffaker/address_sn'
   autoload :AddressUK,     'ffaker/address_uk'
   autoload :AddressUS,     'ffaker/address_us'
+  autoload :Book,          'ffaker/book'
   autoload :Company,       'ffaker/company'
   autoload :Education,     'ffaker/education'
   autoload :Geolocation,   'ffaker/geolocation'

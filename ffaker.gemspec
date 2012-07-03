@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_sn.rb
     lib/ffaker/address_uk.rb
     lib/ffaker/address_us.rb
+    lib/ffaker/book.rb
     lib/ffaker/company.rb
     lib/ffaker/education.rb
     lib/ffaker/geolocation.rb
