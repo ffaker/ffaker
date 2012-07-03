@@ -1,5 +1,5 @@
 module Faker
-  VERSION = "1.14.0"
+  VERSION = "1.15.0"
 
   require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'
@@ -52,5 +52,4 @@ module Faker
   autoload :PhoneNumberSN, 'ffaker/phone_number_sn'
   autoload :PhoneNumberSG, 'ffaker/phone_number_sg'
   autoload :Product,       'ffaker/product'
-  autoload :VERSION,       'ffaker/version'
 end

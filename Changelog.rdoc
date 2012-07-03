@@ -1,3 +1,7 @@
+== 1.15.0
+NameKR (https://github.com/EmmanuelOga/ffaker/pull/47) and PhoneNumbersSG
+(https://github.com/EmmanuelOga/ffaker/pull/46).
+
 == 1.14.0
 
 AddressSN (thanks PapePethe), and a bugfix on Faker::Product.model (thanks finarfin).
