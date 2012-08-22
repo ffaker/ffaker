@@ -52,4 +52,5 @@ module Faker
   autoload :PhoneNumberSN, 'ffaker/phone_number_sn'
   autoload :PhoneNumberSG, 'ffaker/phone_number_sg'
   autoload :Product,       'ffaker/product'
+  autoload :SwansonIpsum,  'ffaker/swanson_ipsum'
 end
