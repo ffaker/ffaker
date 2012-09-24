@@ -43,6 +43,7 @@ module Faker
   autoload :Name,          'ffaker/name'
   autoload :NameCN,        'ffaker/name_cn'
   autoload :NameDE,        'ffaker/name_de'
+  autoload :NameGA,        'ffaker/name_ga'
   autoload :NameJA,        'ffaker/name_ja'
   autoload :NameKR,        'ffaker/name_kr'
   autoload :NameRU,        'ffaker/name_ru'
