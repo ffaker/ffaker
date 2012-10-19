@@ -37,6 +37,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_uk.rb
     lib/ffaker/address_us.rb
     lib/ffaker/company.rb
+    lib/ffaker/dizzle_ipsum.rb
     lib/ffaker/education.rb
     lib/ffaker/geolocation.rb
     lib/ffaker/hipster_ipsum.rb
@@ -75,6 +76,7 @@ Gem::Specification.new do |s|
     test/test_address_us.rb
     test/test_array_utils.rb
     test/test_company.rb
+    test/test_dizzle_ipsum.rb
     test/test_education.rb
     test/test_faker.rb
     test/test_faker_internet.rb
