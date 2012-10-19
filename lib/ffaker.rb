@@ -32,6 +32,7 @@ module Faker
   autoload :AddressUK,     'ffaker/address_uk'
   autoload :AddressUS,     'ffaker/address_us'
   autoload :Company,       'ffaker/company'
+  autoload :DizzleIpsum,   'ffaker/dizzle_ipsum'
   autoload :Education,     'ffaker/education'
   autoload :Geolocation,   'ffaker/geolocation'
   autoload :HTMLIpsum,     'ffaker/html_ipsum'
