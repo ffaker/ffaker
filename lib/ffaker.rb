@@ -41,6 +41,7 @@ module Faker
   autoload :Company,       'ffaker/company'
   autoload :CompanySE,     'ffaker/company_se'
   autoload :Conference,    'ffaker/conference'
+  autoload :DizzleIpsum,   'ffaker/dizzle_ipsum'
   autoload :Education,     'ffaker/education'
   autoload :Geolocation,   'ffaker/geolocation'
   autoload :HTMLIpsum,     'ffaker/html_ipsum'
