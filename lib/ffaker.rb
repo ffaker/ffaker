@@ -32,6 +32,7 @@ module Faker
   autoload :AddressUK,     'ffaker/address_uk'
   autoload :AddressUS,     'ffaker/address_us'
   autoload :Company,       'ffaker/company'
+  autoload :Conference,    'ffaker/conference'
   autoload :Education,     'ffaker/education'
   autoload :Geolocation,   'ffaker/geolocation'
   autoload :HTMLIpsum,     'ffaker/html_ipsum'
@@ -52,4 +53,5 @@ module Faker
   autoload :PhoneNumberSN, 'ffaker/phone_number_sn'
   autoload :PhoneNumberSG, 'ffaker/phone_number_sg'
   autoload :Product,       'ffaker/product'
+  autoload :Venue,         'ffaker/venue'
 end
