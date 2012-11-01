@@ -39,6 +39,7 @@ module Faker
   autoload :Internet,      'ffaker/internet'
   autoload :Job,           'ffaker/job'
   autoload :Lorem,         'ffaker/lorem'
+  autoload :LoremAR,       'ffaker/lorem_ar'
   autoload :LoremCN,       'ffaker/lorem_cn'
   autoload :Name,          'ffaker/name'
   autoload :NameCN,        'ffaker/name_cn'
