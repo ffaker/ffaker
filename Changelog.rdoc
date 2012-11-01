@@ -4,7 +4,7 @@ NameKR (https://github.com/EmmanuelOga/ffaker/pull/47) and PhoneNumbersSG
 
 == 1.14.0
 
-AddressSN (thanks PapePethe), and a bugfix on Faker::Product.model (thanks finarfin).
+AddressSN (thanks PapePathe), and a bugfix on Faker::Product.model (thanks finarfin).
 
 == 1.13.0
 
