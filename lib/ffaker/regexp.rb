@@ -38,7 +38,17 @@ module Faker
     end
 
     def process_token(tokens)
+      return '' if tokens.empty?
+
       token = tokens.shift
+      lookahead = tokens.first
+
+      case lookahead
+      when '?'
+        tokens.shift # Drop `?`
+        return '' if rand(2) == 1 # Skip current
+      end
+
       case token
       when /\w/: token
       when BACKSLASH: special(tokens.shift)

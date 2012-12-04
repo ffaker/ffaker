@@ -2,6 +2,7 @@ require 'helper'
 
 class TestRegexp < Test::Unit::TestCase
   FR = Faker::Regexp
+
   def test_atoms
     assert_equal "abc", FR.regexp(/abc/)
   end
@@ -30,4 +31,7 @@ class TestRegexp < Test::Unit::TestCase
     assert_match /[\w\d]/, FR.regexp(/[\w\d]/)
   end
 
+  def test_question
+    assert_match /a?/, FR.regexp(/a?/)
+  end
 end
