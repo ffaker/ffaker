@@ -31,15 +31,27 @@ class TestRegexp < Test::Unit::TestCase
     assert_match /[\w\d]/, FR.regexp(/[\w\d]/)
   end
 
-  def test_question
+  def test_atom_question
     assert_match /a?/, FR.regexp(/a?/)
   end
 
-  def test_plus
+  def test_special_question
+    assert_match /^\w?$/, FR.regexp(/\w?/)
+  end
+
+  def test_atom_plus
     assert_match /a+/, FR.regexp(/a+/)
   end
 
-  def test_star
+  def test_special_plus
+    assert_match /\w+/, FR.regexp(/\w+/)
+  end
+
+  def test_atom_star
     assert_match /a*/, FR.regexp(/a*/)
+  end
+
+  def test_special_star
+    assert_match /\w*/, FR.regexp(/\w*/)
   end
 end
