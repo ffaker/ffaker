@@ -52,5 +52,5 @@ module Faker
   autoload :PhoneNumberSN, 'ffaker/phone_number_sn'
   autoload :PhoneNumberSG, 'ffaker/phone_number_sg'
   autoload :Product,       'ffaker/product'
-  autoload :Regexp,      'ffaker/regexp'
+  autoload :String,        'ffaker/string'
 end
