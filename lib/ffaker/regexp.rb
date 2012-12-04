@@ -44,13 +44,13 @@ module Faker
       token = tokens.shift
 
       case token
-      when '?'
+      when '?' then
         # TODO: Let ? generate nothong
         return '' # We already printed its target
-      when '+'
+      when '+' then
         tokens.unshift(token) if rand(2) == 1 # Leave the `+` on to run again
         return process_token(@last_token) # Run the last one at least once
-      when '*'
+      when '*' then
         tokens.unshift(token) if rand(2) == 1 # Leave the `*` on to run again
         return '' if rand(2) == 1 # Or maybe do nothing
         return process_token(@last_token) # Else run the last one again
@@ -61,14 +61,14 @@ module Faker
 
     def generate_token(token, tokens)
       case token
-      when /\w/:
+      when /\w/ then
         @last_token = [token]
         token
-      when BACKSLASH:
+      when BACKSLASH then
         token = tokens.shift
         @last_token = ['\\', token]
         special(token)
-      when '[':
+      when '[' then
         set = []
         while (ch = tokens.shift) != ']'
           set << ch
@@ -80,10 +80,10 @@ module Faker
 
     def special(token)
       case token
-      when 'w': WORD_CHARS.rand
-      when 'd': NUMBERS.rand
-      when 's': SPACES.rand
-      when *ESCAPEABLE_CHARS: token
+      when 'w' then WORD_CHARS.rand
+      when 'd' then NUMBERS.rand
+      when 's' then SPACES.rand
+      when *ESCAPEABLE_CHARS then token
       end
     end
   end
