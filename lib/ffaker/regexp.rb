@@ -15,6 +15,7 @@ module Faker
 
     def regexp(exp)
       result = ''
+      @last_token = nil
 
       # Drop surrounding /'s and split into characters
       tokens = exp.inspect[1...-1].split(//)
@@ -41,36 +42,38 @@ module Faker
       return '' if tokens.empty?
 
       token = tokens.shift
-      lookahead = tokens.first
-
-      case lookahead
-      when '?'
-        tokens.shift # Drop `?`
-        return '' if rand(2) == 1 # Skip current
-      when '+'
-        if rand(2) == 1
-          tokens.unshift(token) # Leave it on to run again
-        else
-          tokens.shift # Consume the `+`
-          return token
-        end
-      when '*'
-        if rand(2) == 1
-          tokens.unshift(token) # Leave it on to run again
-        else
-          tokens.shift # Consume the `*`
-          return ''
-        end
-      end
 
       case token
-      when /\w/: token
-      when BACKSLASH: special(tokens.shift)
+      when '?'
+        # TODO: Let ? generate nothong
+        return '' # We already printed its target
+      when '+'
+        tokens.unshift(token) if rand(2) == 1 # Leave the `+` on to run again
+        return process_token(@last_token) # Run the last one at least once
+      when '*'
+        tokens.unshift(token) if rand(2) == 1 # Leave the `*` on to run again
+        return '' if rand(2) == 1 # Or maybe do nothing
+        return process_token(@last_token) # Else run the last one again
+      end
+
+      generate_token token, tokens
+    end
+
+    def generate_token(token, tokens)
+      case token
+      when /\w/:
+        @last_token = [token]
+        token
+      when BACKSLASH:
+        token = tokens.shift
+        @last_token = ['\\', token]
+        special(token)
       when '[':
         set = []
         while (ch = tokens.shift) != ']'
           set << ch
         end
+        @last_token = ['['] + set + [']']
         process_token([ArrayUtils.rand(join_escapes(set))])
       end
     end
