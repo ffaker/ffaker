@@ -1,5 +1,5 @@
 module Faker
-  module Regexp
+  module String
     extend ModuleUtils
     extend self
 
@@ -13,7 +13,7 @@ module Faker
     SPACES     = k([" ", "\t"])
     ESCAPEABLE_CHARS = '\\', '/', '.', '(', ')', '[', ']', '{', '}'
 
-    def regexp(exp)
+    def from_regexp(exp)
       result = ''
       @last_token = nil
 

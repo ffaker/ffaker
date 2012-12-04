@@ -65,4 +65,5 @@ module Faker
   autoload :SSN,           'ffaker/ssn'
   autoload :SSNSE,         'ffaker/ssn_se'
   autoload :Regexp,      'ffaker/regexp'
+  autoload :String,        'ffaker/string'
 end

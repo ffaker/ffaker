@@ -71,6 +71,7 @@ Gem::Specification.new do |s|
     lib/ffaker/ssn.rb
     lib/ffaker/ssn_se.rb
     lib/ffaker/regexp.rb
+    lib/ffaker/string.rb
     lib/ffaker/utils/array_utils.rb
     lib/ffaker/utils/module_utils.rb
     scripts/benchmark.rb
@@ -118,6 +119,7 @@ Gem::Specification.new do |s|
     test/test_ssn.rb
     test/test_ssn_se.rb
     test/test_regexp.rb
+    test/test_string.rb
   ]
   # = MANIFEST =
 
