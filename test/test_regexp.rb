@@ -35,6 +35,10 @@ class TestRegexp < Test::Unit::TestCase
     assert_match /a?/, FR.regexp(/a?/)
   end
 
+  def test_plus
+    assert_match /a+/, FR.regexp(/a+/)
+  end
+
   def test_star
     assert_match /a*/, FR.regexp(/a*/)
   end

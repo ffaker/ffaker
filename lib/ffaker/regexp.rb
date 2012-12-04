@@ -47,6 +47,13 @@ module Faker
       when '?'
         tokens.shift # Drop `?`
         return '' if rand(2) == 1 # Skip current
+      when '+'
+        if rand(2) == 1
+          tokens.unshift(token) # Leave it on to run again
+        else
+          tokens.shift # Consume the `+`
+          return token
+        end
       when '*'
         if rand(2) == 1
           tokens.unshift(token) # Leave it on to run again
