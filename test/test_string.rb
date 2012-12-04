@@ -39,6 +39,10 @@ class TestString < Test::Unit::TestCase
     assert_match /^\w?$/, FS.from_regexp(/\w?/)
   end
 
+  def test_set_question
+    assert_match /^[abc]?$/, FS.from_regexp(/[abc]?/)
+  end
+
   def test_atom_plus
     assert_match /a+/, FS.from_regexp(/a+/)
   end
@@ -47,11 +51,19 @@ class TestString < Test::Unit::TestCase
     assert_match /\w+/, FS.from_regexp(/\w+/)
   end
 
+  def test_set_plus
+    assert_match /^[abc]+$/, FS.from_regexp(/[abc]+/)
+  end
+
   def test_atom_star
     assert_match /a*/, FS.from_regexp(/a*/)
   end
 
   def test_special_star
     assert_match /\w*/, FS.from_regexp(/\w*/)
+  end
+
+  def test_set_star
+    assert_match /^[abc]*$/, FS.from_regexp(/[abc]*/)
   end
 end
