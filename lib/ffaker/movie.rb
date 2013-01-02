@@ -52,14 +52,12 @@ module Faker
       "When #{Faker::Name.first_name} Met #{Faker::Name.first_name}",
       "Dr. #{NOUNS.sample}",
       "Je Vous Presente, #{Faker::Name.first_name}",
-      "Rochelle, Rochelle",
-      "Gandhi II",
       "#{rand(3000)} A.D.",
       "The #{NOUNS.sample} from #{Faker::Address.neighborhood}",
       "Christmas on #{Faker::Address.street_name}",
       "The #{ %w{ Red Yellow Black White }.sample } Rose of #{Faker::AddressUK.country}",
       "Hard Boiled #{NOUNS.sample}",
-      String.new.tap{|s| n = simple_title; s.replace("#{n} 2: Son of #{n}") }
+      String.new.tap{|s| n = simple_title; s.replace("#{n} 2: Son of #{n}")}
       ].sample
     end
   end
