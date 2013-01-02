@@ -30,15 +30,15 @@ class TestAddress < Test::Unit::TestCase
   end
 
   def test_uk_country
-    assert_match /[ a-z]/, Faker::Address.uk_country
+    assert_match /[ a-z]/, Faker::AddressUK.country
   end
 
   def test_uk_county
-    assert_match /[ a-z]/, Faker::Address.uk_county
+    assert_match /[ a-z]/, Faker::AddressUK.county
   end
 
   def test_uk_postcode
-    assert_match /[ a-z]/, Faker::Address.uk_postcode
+    assert_match /[ a-z]/, Faker::AddressUK.postcode
   end
 
   def test_us_state
