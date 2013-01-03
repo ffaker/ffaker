@@ -10,18 +10,34 @@ class TestFaker < Test::Unit::TestCase
   end
 
   def test_letterify
-    assert Faker.letterify('???').match(/[a-z]{3}/)
+    assert Faker.letterify(false, '???').match(/[a-z]{3}/)
+  end
+
+  def test_capital_letterify
+    assert Faker.letterify(true, '???').match(/[A-Z]{3}/)
   end
 
   def test_letterify_with_array
-    assert Faker.letterify(['???', '???']).match(/[a-z]{3}/)
+    assert Faker.letterify(false, ['???', '???']).match(/[a-z]{3}/)
   end
+
+  def test_capital_letterify_with_array
+      assert Faker.letterify(true, ['???', '???']).match(/[A-Z]{3}/)
+    end
 
   def test_bothify
     assert Faker.bothify('???###').match(/[a-z]{3}\d{3}/)
   end
 
-  def test_bothify
-    assert Faker.bothify(['???###', '???###']).match(/[a-z]{3}\d{3}/)
+  def test_capital_bothify
+    assert Faker.bothify(true, '???###').match(/[A-Z]{3}\d{3}/)
+  end
+
+  def test_bothify_with_array
+    assert Faker.bothify(false, ['???###', '???###']).match(/[a-z]{3}\d{3}/)
+  end
+
+  def test_capital_bothify_with_array
+    assert Faker.bothify(true, ['???###', '???###']).match(/[A-Z]{3}\d{3}/)
   end
 end

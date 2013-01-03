@@ -30,31 +30,31 @@ class TestAddress < Test::Unit::TestCase
   end
 
   def test_uk_country
-    assert_match /[ a-z]/, Faker::Address.uk_country
+    assert_match /[ a-z]/, Faker::AddressUK.country
   end
 
   def test_uk_county
-    assert_match /[ a-z]/, Faker::Address.uk_county
+    assert_match /[ a-z]/, Faker::AddressUK.county
   end
 
   def test_uk_postcode
-    assert_match /[ a-z]/, Faker::Address.uk_postcode
+    assert_match /[ a-z]/, Faker::AddressUK.postcode
   end
 
   def test_us_state
-    assert_match /[ a-z]/, Faker::Address.us_state
+    assert_match /[ a-z]/, Faker::AddressUS.state
   end
 
   def test_us_state_abbr
-    assert_match /[A-Z]/, Faker::Address.us_state_abbr
+    assert_match /[A-Z]/, Faker::AddressUS.state_abbr
   end
 
   def test_zip_code
-    assert_match /[0-9]/, Faker::Address.zip_code
+    assert_match /[0-9]/, Faker::AddressUS.zip_code
   end
 
   def test_zip_code_frozen
-    assert Faker::Address.zip_code.frozen? == false
+    assert Faker::AddressUS.zip_code.frozen? == false
   end
 
   def test_neighborhood
