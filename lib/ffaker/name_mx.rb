@@ -1,3 +1,5 @@
+# encoding: utf-8
+# => author: guapolo github.com/guapolo
 module Faker
   module NameMX
     include Faker::Name
