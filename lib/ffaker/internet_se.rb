@@ -60,6 +60,7 @@ module Faker
 
     def join_to_user_name(array_parts)
       join_char = ArrayUtils.rand(%w(. _))
+      array_parts.map!(&:downcase)
       array_parts.join(join_char)
     end
 
