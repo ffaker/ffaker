@@ -1,6 +1,10 @@
 require 'helper'
 
 class TestAddress < Test::Unit::TestCase
+  def test_building_number
+    assert_match /\A\d{3,5}\z/, Faker::Address.building_number
+  end
+
   def test_city
     assert_match /[ a-z]+/, Faker::Address.city
   end
