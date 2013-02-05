@@ -53,8 +53,8 @@ module Faker
     end
 
     def street_address(include_secondary = false)
-      str = building_number << " #{street_name}"
-      str << ' ' << secondary_address  if include_secondary
+      str = "#{building_number} #{street_name}"
+      str << " #{secondary_address}" if include_secondary
       str
     end
 
