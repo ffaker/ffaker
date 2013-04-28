@@ -33,7 +33,7 @@ in mind, if your spec suite is slow, chances are the generation of random data
 will not account for much of the run time.
 
 Since then, the original faker gem has become faster (at the moment it did not
-seem it was mantained). Nevertheless, ffaker is still about 20x faster than
+seem it was maintained). Nevertheless, ffaker is still about 20x faster than
 faker.
 
 $ cat scripts/benchmark.rb
