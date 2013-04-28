@@ -14,8 +14,8 @@ module Faker
 
     def sentence(word_count = 4)
       s = words(word_count + rand(6))
+      s[0].capitalize!
       s = s.join(' ')
-      s.capitalize!
       "#{s}."
     end
     
