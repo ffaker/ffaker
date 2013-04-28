@@ -33,15 +33,18 @@ Gem::Specification.new do |s|
     lib/ffaker/address_ca.rb
     lib/ffaker/address_da.rb
     lib/ffaker/address_de.rb
+    lib/ffaker/address_se.rb
     lib/ffaker/address_sn.rb
     lib/ffaker/address_uk.rb
     lib/ffaker/address_us.rb
     lib/ffaker/company.rb
+    lib/ffaker/company_se.rb
     lib/ffaker/education.rb
     lib/ffaker/geolocation.rb
     lib/ffaker/hipster_ipsum.rb
     lib/ffaker/html_ipsum.rb
     lib/ffaker/internet.rb
+    lib/ffaker/internet_se.rb
     lib/ffaker/job.rb
     lib/ffaker/lorem.rb
     lib/ffaker/lorem_cn.rb
@@ -52,14 +55,18 @@ Gem::Specification.new do |s|
     lib/ffaker/name_ja.rb
     lib/ffaker/name_kr.rb
     lib/ffaker/name_ru.rb
+    lib/ffaker/name_se.rb
     lib/ffaker/name_sn.rb
     lib/ffaker/name_vn.rb
     lib/ffaker/phone_number.rb
     lib/ffaker/phone_number_au.rb
     lib/ffaker/phone_number_da.rb
+    lib/ffaker/phone_number_se.rb
     lib/ffaker/phone_number_sg.rb
     lib/ffaker/phone_number_sn.rb
     lib/ffaker/product.rb
+    lib/ffaker/ssn.rb
+    lib/ffaker/ssn_se.rb
     lib/ffaker/utils/array_utils.rb
     lib/ffaker/utils/module_utils.rb
     scripts/benchmark.rb
@@ -70,14 +77,17 @@ Gem::Specification.new do |s|
     test/test_address_au.rb
     test/test_address_ca.rb
     test/test_address_de.rb
+    test/test_address_se.rb
     test/test_address_sn.rb
     test/test_address_uk.rb
     test/test_address_us.rb
     test/test_array_utils.rb
     test/test_company.rb
+    test/test_company_se.rb
     test/test_education.rb
     test/test_faker.rb
     test/test_faker_internet.rb
+    test/test_faker_internet_se.rb
     test/test_faker_job.rb
     test/test_faker_name.rb
     test/test_faker_name_cn.rb
@@ -85,6 +95,7 @@ Gem::Specification.new do |s|
     test/test_faker_name_ja.rb
     test/test_faker_name_kr.rb
     test/test_faker_name_ru.rb
+    test/test_faker_name_se.rb
     test/test_faker_name_sn.rb
     test/test_geolocation.rb
     test/test_hipster_ipsum.rb
@@ -94,8 +105,11 @@ Gem::Specification.new do |s|
     test/test_module_utils.rb
     test/test_phone_number.rb
     test/test_phone_number_au.rb
+    test/test_phone_number_se.rb
     test/test_phone_number_sg.rb
     test/test_phone_number_sn.rb
+    test/test_ssn.rb
+    test/test_ssn_se.rb
   ]
   # = MANIFEST =
 
