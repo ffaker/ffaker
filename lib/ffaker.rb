@@ -7,6 +7,7 @@ module Faker
   extend ModuleUtils
 
   LETTERS = k('a'..'z')
+  CAPITAL_LETTERS = k('A'..'Z')
 
   def self.numerify(*masks)
     mask = ArrayUtils.rand(masks.flatten)
@@ -14,14 +15,18 @@ module Faker
     mask
   end
 
-  def self.letterify(*masks)
+  def self.letterify(capitalize = false, *masks)
     mask = ArrayUtils.rand(masks.flatten)
-    mask.gsub!(/\?/) { LETTERS.rand }
+    if capitalize
+      mask.gsub!(/\?/) {CAPITAL_LETTERS.rand}
+    else
+      mask.gsub!(/\?/) { LETTERS.rand }
+    end
     mask
   end
 
-  def self.bothify(masks)
-    letterify(numerify(masks))
+  def self.bothify(capitalize = false, masks)
+    letterify(capitalize, numerify(masks))
   end
 
   autoload :Address,       'ffaker/address'
@@ -39,6 +44,7 @@ module Faker
   autoload :Geolocation,   'ffaker/geolocation'
   autoload :HTMLIpsum,     'ffaker/html_ipsum'
   autoload :HipsterIpsum,  'ffaker/hipster_ipsum'
+  autoload :Identification,'ffaker/identification'
   autoload :Internet,      'ffaker/internet'
   autoload :InternetSE,    'ffaker/internet_se'
   autoload :Job,           'ffaker/job'
@@ -66,4 +72,5 @@ module Faker
   autoload :SSNSE,         'ffaker/ssn_se'
   autoload :Regexp,      'ffaker/regexp'
   autoload :String,        'ffaker/string'
+  autoload :Time,          'ffaker/time'
 end
