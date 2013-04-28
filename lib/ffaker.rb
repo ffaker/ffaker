@@ -40,6 +40,7 @@ module Faker
   autoload :AddressUS,     'ffaker/address_us'
   autoload :Company,       'ffaker/company'
   autoload :CompanySE,     'ffaker/company_se'
+  autoload :Conference,    'ffaker/conference'
   autoload :Education,     'ffaker/education'
   autoload :Geolocation,   'ffaker/geolocation'
   autoload :HTMLIpsum,     'ffaker/html_ipsum'
@@ -73,4 +74,5 @@ module Faker
   autoload :Regexp,      'ffaker/regexp'
   autoload :String,        'ffaker/string'
   autoload :Time,          'ffaker/time'
+  autoload :Venue,         'ffaker/venue'
 end
