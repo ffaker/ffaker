@@ -6,6 +6,7 @@
 require 'helper'
 
 class TestFakerNameSn < Test::Unit::TestCase
+  
   def setup
     @tester = Faker::NameSN
   end

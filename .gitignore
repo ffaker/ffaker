@@ -12,4 +12,5 @@ tmtags
 .project
 *.gem
 .idea
-Gemfile.lock
+*.sublime*
+
