@@ -6,8 +6,8 @@ class TestAddressAU < Test::Unit::TestCase
   
   def test_au_state_abbr
     arr = Faker::AddressAU::STATE_ABBR.sort
-    assert arr = Faker::AddressAU::CITY.keys.sort
-    assert arr = Faker::AddressAU::ZIP_CODE.keys.sort
+    assert arr = Faker::AddressAU::SUBURB.keys.sort
+    assert arr = Faker::AddressAU::POSTCODE.keys.sort
   end
   
   def test_au_state
@@ -18,14 +18,10 @@ class TestAddressAU < Test::Unit::TestCase
     assert_match /[A-Z]/, Faker::AddressAU.state_abbr
   end
 
-  def test_au_city
-    assert_match /[a-zA-Z]/, Faker::AddressAU.city
+  def test_au_suburb
+    assert_match /[a-zA-Z]/, Faker::AddressAU.suburb
   end
   
-  def test_zip_code
-    assert_match /\d{4}/, Faker::AddressAU.zip_code
-  end
-
   def test_postcode
     assert_match /\d{4}/, Faker::AddressAU.postcode
   end
@@ -34,19 +30,19 @@ class TestAddressAU < Test::Unit::TestCase
     assert_match /[\, a-z]/, Faker::AddressAU.full_address
   end
   
-  def test_zip_code_frozen
-    assert Faker::AddressAU.zip_code.frozen? == false
+  def test_postcode_frozen
+    assert Faker::AddressAU.postcode.frozen? == false
   end
 
-  def test_au_city_with_states
+  def test_au_suburb_with_states
     Faker::AddressAU::STATE_ABBR.each do |st_abbr|
-      assert_match /[a-zA-Z]/, Faker::AddressAU.city(st_abbr)
+      assert_match /[a-zA-Z]/, Faker::AddressAU.suburb(st_abbr)
     end
   end
 
-  def test_zip_code_with_states
+  def test_postcode_with_states
     Faker::AddressAU::STATE_ABBR.each do |st_abbr|
-      assert_match /\d{4}/, Faker::AddressAU.zip_code(st_abbr)
+      assert_match /\d{4}/, Faker::AddressAU.postcode(st_abbr)
     end
   end
 
