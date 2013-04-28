@@ -24,8 +24,8 @@ module Faker
     extend self
 
     def ssn(opts = {})
-      from   = opts[:from]   || Time.local(1940, 1, 1)
-      to     = opts[:to]     || Time.now
+      from   = opts[:from]   || ::Time.local(1940, 1, 1)
+      to     = opts[:to]     || ::Time.now
       gender = opts[:gender] || genders.sample
 
       raise_error_on_bad_arguments(from, to, gender)
@@ -45,8 +45,8 @@ module Faker
     end
 
     def raise_error_on_bad_arguments(from, to, gender)
-      raise ArgumentError, "Invalid from argument: from" unless to.is_a? Time
-      raise ArgumentError, "Invalid from argument: from" unless from.is_a? Time
+      raise ArgumentError, "Invalid from argument: from" unless to.is_a? ::Time
+      raise ArgumentError, "Invalid from argument: from" unless from.is_a? ::Time
       raise ArgumentError, "Invalid argument: from > to" if from > to
       raise ArgumentError, "Invalid argument: gender" unless genders.include?(gender)
     end
@@ -56,8 +56,8 @@ module Faker
       [:female, :male]
     end
 
-    def random_birth_time_between(from=Time.local(1940, 1, 1), to=Time.now)
-      Time.at(from + rand * (to.to_f - from.to_f))
+    def random_birth_time_between(from=::Time.local(1940, 1, 1), to=::Time.now)
+      ::Time.at(from + rand * (to.to_f - from.to_f))
     end
 
     def get_random_region_for(gender)
