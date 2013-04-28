@@ -1,3 +1,6 @@
+== 1.16.0
+Many module additions from different contributors!
+
 == 1.15.0
 NameKR (https://github.com/EmmanuelOga/ffaker/pull/47) and PhoneNumbersSG
 (https://github.com/EmmanuelOga/ffaker/pull/46).
