@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_da.rb
     lib/ffaker/address_de.rb
     lib/ffaker/address_se.rb
+    lib/ffaker/address_mx.rb
     lib/ffaker/address_sn.rb
     lib/ffaker/address_uk.rb
     lib/ffaker/address_us.rb
@@ -54,6 +55,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_de.rb
     lib/ffaker/name_ja.rb
     lib/ffaker/name_kr.rb
+    lib/ffaker/name_mx.rb
     lib/ffaker/name_ru.rb
     lib/ffaker/name_se.rb
     lib/ffaker/name_sn.rb
@@ -62,6 +64,7 @@ Gem::Specification.new do |s|
     lib/ffaker/phone_number_au.rb
     lib/ffaker/phone_number_da.rb
     lib/ffaker/phone_number_se.rb
+    lib/ffaker/phone_number_mx.rb
     lib/ffaker/phone_number_sg.rb
     lib/ffaker/phone_number_sn.rb
     lib/ffaker/product.rb
@@ -78,6 +81,7 @@ Gem::Specification.new do |s|
     test/test_address_ca.rb
     test/test_address_de.rb
     test/test_address_se.rb
+    test/test_address_mx.rb
     test/test_address_sn.rb
     test/test_address_uk.rb
     test/test_address_us.rb
@@ -94,6 +98,7 @@ Gem::Specification.new do |s|
     test/test_faker_name_de.rb
     test/test_faker_name_ja.rb
     test/test_faker_name_kr.rb
+    test/test_faker_name_mx.rb
     test/test_faker_name_ru.rb
     test/test_faker_name_se.rb
     test/test_faker_name_sn.rb
@@ -106,6 +111,7 @@ Gem::Specification.new do |s|
     test/test_phone_number.rb
     test/test_phone_number_au.rb
     test/test_phone_number_se.rb
+    test/test_phone_number_mx.rb
     test/test_phone_number_sg.rb
     test/test_phone_number_sn.rb
     test/test_ssn.rb
