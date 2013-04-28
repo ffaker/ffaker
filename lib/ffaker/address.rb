@@ -41,6 +41,10 @@ module Faker
       STREET_SUFFIX.rand
     end
 
+    def building_number
+      Faker.numerify ( '#' * rand(3) ) << '###'
+    end
+
     def street_name
       case rand(2)
       when 0 then "#{Name.last_name} #{street_suffix}"
@@ -49,10 +53,9 @@ module Faker
     end
 
     def street_address(include_secondary = false)
-      str = ( "#" * rand(3) ) << ('### %s' % street_name)
-      str << ' ' << secondary_address  if include_secondary
-
-      Faker.numerify(str)
+      str = "#{building_number} #{street_name}"
+      str << " #{secondary_address}" if include_secondary
+      str
     end
 
     def secondary_address
