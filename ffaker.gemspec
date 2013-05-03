@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.16.0'
-  s.date              = '2013-04-28'
+  s.version           = '1.16.1'
+  s.date              = '2013-05-02'
   s.rubyforge_project = 'ffaker'
 
   s.summary     = "Faster Faker, generates dummy data."
