@@ -42,7 +42,7 @@ module Faker
     end
 
     def building_number
-      Faker.numerify ( '#' * rand(3) ) << '###'
+      Faker.numerify(( '#' * rand(3) ) << '###')
     end
 
     def street_name

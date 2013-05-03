@@ -6,6 +6,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    def zip_code
+      Faker::AddressUS.zip_code
+    end
+
     def postal_code
       Faker.numerify POSTAL_CODE_FORMATS.rand
     end

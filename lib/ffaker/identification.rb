@@ -4,7 +4,7 @@ module Faker
     extend self
 
     def drivers_license
-      Faker.bothify(true, '?###-###-##-###-#')
+      Faker.bothify('?###-###-##-###-#').upcase
     end
 
     def ssn

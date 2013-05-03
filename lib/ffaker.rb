@@ -7,7 +7,6 @@ module Faker
   extend ModuleUtils
 
   LETTERS = k('a'..'z')
-  CAPITAL_LETTERS = k('A'..'Z')
 
   def self.numerify(*masks)
     mask = ArrayUtils.rand(masks.flatten)
@@ -15,18 +14,14 @@ module Faker
     mask
   end
 
-  def self.letterify(capitalize = false, *masks)
+  def self.letterify(*masks)
     mask = ArrayUtils.rand(masks.flatten)
-    if capitalize
-      mask.gsub!(/\?/) {CAPITAL_LETTERS.rand}
-    else
-      mask.gsub!(/\?/) { LETTERS.rand }
-    end
+    mask.gsub!(/\?/) { LETTERS.rand }
     mask
   end
 
-  def self.bothify(capitalize = false, masks)
-    letterify(capitalize, numerify(masks))
+  def self.bothify(masks)
+    letterify(numerify(masks))
   end
 
   autoload :Address,       'ffaker/address'

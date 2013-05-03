@@ -26,7 +26,7 @@ module Faker
     def ssn(opts = {})
       from   = opts[:from]   || ::Time.local(1940, 1, 1)
       to     = opts[:to]     || ::Time.now
-      gender = opts[:gender] || genders.sample
+      gender = opts[:gender] || GENDERS.rand
 
       raise_error_on_bad_arguments(from, to, gender)
 
@@ -48,13 +48,10 @@ module Faker
       raise ArgumentError, "Invalid from argument: from" unless to.is_a? ::Time
       raise ArgumentError, "Invalid from argument: from" unless from.is_a? ::Time
       raise ArgumentError, "Invalid argument: from > to" if from > to
-      raise ArgumentError, "Invalid argument: gender" unless genders.include?(gender)
+      raise ArgumentError, "Invalid argument: gender" unless GENDERS.include?(gender.to_s)
     end
 
-    def genders
-      # XXX Don't like this def.
-      [:female, :male]
-    end
+    GENDERS = k ["female", "male"]
 
     def random_birth_time_between(from=::Time.local(1940, 1, 1), to=::Time.now)
       ::Time.at(from + rand * (to.to_f - from.to_f))
@@ -62,18 +59,18 @@ module Faker
 
     def get_random_region_for(gender)
       region_number = case gender
-        when :female then get_random_region_even
-        when :male then get_random_region_odd
+      when "female" then get_random_region_even
+      when "male" then get_random_region_odd
       end
       three_character_string(region_number)
     end
 
     def get_random_region_even
-      (0..998).step(2).to_a.sample
+      rand(499) * 2
     end
 
     def get_random_region_odd
-      get_random_region_even + 1
+      rand(499) * 2 + 1
     end
 
     def three_character_string(number)
