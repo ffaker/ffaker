@@ -55,7 +55,7 @@ module Faker
       when 7 then "#{rand(3000)} A.D."
       when 8 then "The #{NOUNS.rand} from #{Faker::Address.neighborhood}"
       when 9 then "Christmas on #{Faker::Address.street_name}"
-      when 10 then "The #{ %w{ Red Yellow Black White }.rand } Rose of #{Faker::AddressUK.country}"
+      when 10 then "The #{ %w{ Red Yellow Black White }.sample } Rose of #{Faker::AddressUK.country}"
       when 11 then "Hard Boiled #{NOUNS.rand}"
       else
         String.new.tap{|s| n = simple_title; s.replace("#{n} 2: Son of #{n}")}
