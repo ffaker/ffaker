@@ -18,14 +18,14 @@ Gem::Specification.new do |s|
   s.require_paths = %w[lib]
 
   s.rdoc_options = ["--charset=UTF-8"]
-  s.extra_rdoc_files = %w[README.rdoc LICENSE Changelog.rdoc]
+  s.extra_rdoc_files = %w[README.md LICENSE Changelog.md]
 
   # = MANIFEST =
   s.files = %w[
-    Changelog.rdoc
+    Changelog.md
     Gemfile
     LICENSE
-    README.rdoc
+    README.md
     Rakefile
     ffaker.gemspec
     lib/ffaker.rb
