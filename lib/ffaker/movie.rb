@@ -22,7 +22,7 @@ module Faker
       Beast Demon Monster }
     SUFFIXES = k [ "from Hell", "from Outer Space", "from Mars", "from the Black Lagoon", "with a Thousand Faces",
       "from Across the Ocean", "Who Fell to Earth", "That Came to Dinner"]
-
+    COLORS = k %w{Red Yellow Black White}
     private
 
     def title_with_prefix
@@ -55,7 +55,7 @@ module Faker
       when 7 then "#{rand(3000)} A.D."
       when 8 then "The #{NOUNS.rand} from #{Faker::Address.neighborhood}"
       when 9 then "Christmas on #{Faker::Address.street_name}"
-      when 10 then "The #{ %w{ Red Yellow Black White }.rand } Rose of #{Faker::AddressUK.country}"
+      when 10 then "The #{COLORS.rand} Rose of #{Faker::AddressUK.country}"
       when 11 then "Hard Boiled #{NOUNS.rand}"
       else
         String.new.tap{|s| n = simple_title; s.replace("#{n} 2: Son of #{n}")}
