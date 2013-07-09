@@ -58,7 +58,7 @@ module Faker
       when 10 then "The #{COLORS.rand} Rose of #{Faker::AddressUK.country}"
       when 11 then "Hard Boiled #{NOUNS.rand}"
       else
-        String.new.tap{|s| n = simple_title; s.replace("#{n} 2: Son of #{n}")}
+        ::String.new.tap{|s| n = simple_title; s.replace("#{n} 2: Son of #{n}")}
       end
     end
   end
