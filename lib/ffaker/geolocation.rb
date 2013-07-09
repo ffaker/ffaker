@@ -34,8 +34,11 @@ module Faker
       [41.77117,-87.888795], [41.900425,-87.624262], [41.737173,-87.869998]]
 
     def boxed_coords(upper_left, lower_right)
-      [ rand(upper_left[0]..lower_right[0]),
-        rand(upper_left[1]..lower_right[1]) ]
+      latitude_range = [upper_left[0], lower_right[0]].sort
+      longitude_range = [upper_left[1], lower_right[1]].sort
+
+      [ rand(latitude_range[0]..latitude_range[1]),
+        rand(longitude_range[0]..longitude_range[1]) ]
     end
   end
 end
