@@ -33,6 +33,7 @@ module Faker
   autoload :AddressSN,     'ffaker/address_sn'
   autoload :AddressUK,     'ffaker/address_uk'
   autoload :AddressUS,     'ffaker/address_us'
+  autoload :BaconIpsum,    'ffaker/bacon_ipsum'
   autoload :Company,       'ffaker/company'
   autoload :CompanySE,     'ffaker/company_se'
   autoload :Conference,    'ffaker/conference'
