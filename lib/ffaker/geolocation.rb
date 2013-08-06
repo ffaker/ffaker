@@ -37,8 +37,10 @@ module Faker
       latitude_range = [upper_left[0], lower_right[0]].sort
       longitude_range = [upper_left[1], lower_right[1]].sort
 
-      [ rand(latitude_range[0]..latitude_range[1]),
-        rand(longitude_range[0]..longitude_range[1]) ]
+      latitude = latitude_range[0] + rand() * (latitude_range[1] - latitude_range[0])
+      longitude = longitude_range[0] + rand() * (longitude_range[1] - longitude_range[0])
+
+      [latitude, longitude]
     end
   end
 end
