@@ -32,5 +32,13 @@ module Faker
       [34.3823767402857,-118.550562688364], [33.8256050190507,-118.281161297494], [37.5758033375583,-122.012044535507],
       [37.8768587606888,-122.078250641083], [37.6859990796181,-122.094516147761], [37.4660979087165,-121.900873639257],
       [41.77117,-87.888795], [41.900425,-87.624262], [41.737173,-87.869998]]
+
+    def boxed_coords(upper_left, lower_right)
+      latitude_range = [upper_left[0], lower_right[0]].sort
+      longitude_range = [upper_left[1], lower_right[1]].sort
+
+      [ rand(latitude_range[0]..latitude_range[1]),
+        rand(longitude_range[0]..longitude_range[1]) ]
+    end
   end
 end
