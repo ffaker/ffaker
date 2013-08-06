@@ -12,15 +12,15 @@ Faker::Internet.email => "kirsten.greenholt@corkeryfisher.info"
 
 ## ffaker vs faker
 
-faker and ffaker APIs are mostly the same, although the API on ffaker keeps
+The faker and ffaker APIs are mostly the same, although the API on ffaker keeps
 growing with its users additions. In general, the only difference is that you
 need to:
 
-  gem install ffaker
+    gem install ffaker
 
 and then
 
-  require 'ffaker'
+    require 'ffaker'
 
 instead of "faker" with only one f.
 
@@ -46,7 +46,7 @@ Nevertheless, ffaker is still about 20x faster than faker.
 ```
 
 ```
-ruby 1.8.7`
+ruby 1.8.7
 generating 10000 names (faker 0.9.5)  1.500000   0.000000   1.500000 (  1.506865)
 generating 10000 names (ffaker 1.5.0)  0.070000   0.000000   0.070000 (  0.067526)
 
@@ -57,12 +57,12 @@ generating 10000 names (ffaker 1.7.0)  0.040000   0.000000   0.040000 (  0.04591
 
 ## Contributors
 
-A lot of people has contributed to ffaker. Check [this list](https://github.com/EmmanuelOga/ffaker/graphs/contributors).
+A lot of people have contributed to ffaker. Check [this list](https://github.com/EmmanuelOga/ffaker/graphs/contributors).
 
 ## TODO
 
 * Even though the API is pretty simple, better rdoc documentation would not hurt.
-* Put all modules under its respective language (E.G. EducationUS instead of just Education)
+* Put all modules under their respective languages (E.G. EducationUS instead of just Education)
 
 ## Note on Patches/Pull Requests
 
