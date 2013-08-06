@@ -9,6 +9,10 @@ class TestAddressUSUS < Test::Unit::TestCase
     assert_match /[A-Z]/, Faker::AddressUS.state_abbr
   end
 
+  def test_us_state_and_territories_abbr
+    assert_match /[A-Z]/, Faker::AddressUS.state_and_territories_abbr
+  end
+
   def test_zip_code
     assert_match /[0-9]/, Faker::AddressUS.zip_code
   end
