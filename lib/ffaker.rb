@@ -41,6 +41,7 @@ module Faker
   autoload :Education,       'ffaker/education'
   autoload :Geolocation,     'ffaker/geolocation'
   autoload :HTMLIpsum,       'ffaker/html_ipsum'
+  autoload :HealthcareIpsum, 'ffaker/healthcare_ipsum'
   autoload :HipsterIpsum,    'ffaker/hipster_ipsum'
   autoload :Identification,  'ffaker/identification'
   autoload :Internet,        'ffaker/internet'
