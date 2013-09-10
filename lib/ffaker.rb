@@ -53,6 +53,7 @@ module Faker
   autoload :Movie,           'ffaker/movie'
   autoload :Name,            'ffaker/name'
   autoload :NameCN,          'ffaker/name_cn'
+  autoload :NameCS,          'ffaker/name_cs'
   autoload :NameDE,          'ffaker/name_de'
   autoload :NameGA,          'ffaker/name_ga'
   autoload :NameJA,          'ffaker/name_ja'
