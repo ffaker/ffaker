@@ -1,5 +1,5 @@
 # encoding: utf-8
-require_relative 'helper'
+require 'helper'
 
 class TestFakerNameCS < Test::Unit::TestCase
   def setup
