@@ -3,13 +3,13 @@
 require 'helper'
 
 class TestAddressAU < Test::Unit::TestCase
-  
+
   def test_au_state_abbr
     arr = Faker::AddressAU::STATE_ABBR.sort
     assert arr = Faker::AddressAU::SUBURB.keys.sort
     assert arr = Faker::AddressAU::POSTCODE.keys.sort
   end
-  
+
   def test_au_state
     assert_match /[ a-z]/, Faker::AddressAU.state
   end
@@ -21,7 +21,7 @@ class TestAddressAU < Test::Unit::TestCase
   def test_au_suburb
     assert_match /[a-zA-Z]/, Faker::AddressAU.suburb
   end
-  
+
   def test_postcode
     assert_match /\d{4}/, Faker::AddressAU.postcode
   end
@@ -29,14 +29,17 @@ class TestAddressAU < Test::Unit::TestCase
   def test_full_address
     assert_match /[\, a-z]/, Faker::AddressAU.full_address
   end
-  
-  def test_postcode_frozen
-    assert Faker::AddressAU.postcode.frozen? == false
-  end
 
   def test_au_suburb_with_states
     Faker::AddressAU::STATE_ABBR.each do |st_abbr|
       assert_match /[a-zA-Z]/, Faker::AddressAU.suburb(st_abbr)
+    end
+  end
+
+  def test_au_suburb_with_state_and_postcodes
+    Faker::AddressAU::STATE_ABBR.each do |st_abbr|
+      p_code = Faker::AddressAU.postcode(st_abbr)
+      assert_match /[a-zA-Z]/, Faker::AddressAU.suburb(st_abbr, p_code)
     end
   end
 

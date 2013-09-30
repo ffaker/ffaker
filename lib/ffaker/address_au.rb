@@ -18,65 +18,71 @@ module Faker
     def state_abbr
       STATE_ABBR.rand
     end
-    
-    def suburb(st_abbr = nil)
+
+    def suburb(st_abbr = nil, p_code = nil)
       st_abbr ||= state_abbr
-      SUBURB[st_abbr][rand(SUBURB[st_abbr].size)]
+      p_code  ||= postcode(st_abbr)
+      SUBURB[st_abbr][p_code]
     end
 
     def full_address(st_abbr = nil)
       st_abbr ||= state_abbr
       "#{Faker::Address.street_address}, #{suburb(st_abbr)} #{st_abbr} #{postcode}"
     end
-    
+
     # based on areas labeled state (+act) here: http://en.wikipedia.org/wiki/States_and_territories_of_Australia
     STATE = k ['Australian Capital Territory', 'New South Wales', 'Queensland',
       'South Australia', 'Tasmania', 'Victoria', 'Western Australia']
 
     STATE_ABBR = k %w(ACT NSW NT QLD SA TAS VIC WA)
-    
+
     # based on http://en.wikipedia.org/wiki/List_of_cities_in_Australia
     SUBURB = {
-      "ACT" => ["Canberra", "Ainslie", "Braddon", "O'Connor"],
-      "NSW" => ["Albury", "Armidale", "Bankstown", "Bathurst", "Blacktown",
-        "Blue Mountains", "Botany Bay", "Broken Hill", "Campbelltown",
-        "Canada Bay", "Canterbury", "Cessnock", "Coffs Harbour", "Dubbo",
-        "Fairfield", "Gosford", "Goulburn", "Grafton", "Greater Taree", "Griffith",
-        "Hawkesbury", "Holroyd", "Hurstville", "Lake Macquarie", "Lismore", "Lithgow",
-        "Liverpool", "Maitland", "Newcastle", "Orange", "Parramatta", "Penrith",
-        "Queanbeyan", "Randwick", "Rockdale", "Ryde", "Shellharbour", "Shoalhaven",
-        "Sydney", "Tamworth", "Wagga Wagga", "Willoughby", "Wollongong"],
-      "NT" => ["Darwin", "Palmerston"],
-      "QLD" => ["Brisbane", "Bundaberg", "Cairns", "Caloundra", "Charters Towers",
-        "Gladstone", "Gold Coast", "Gympie", "Hervey Bay", "Ipswich", "Logan City",
-        "Mackay", "Maryborough", "Mount Isa", "Redcliffe City", "Redland City",
-        "Rockhampton", "Sunshine Coast", "Surfers Paradise", "Thuringowa",
-        "Toowoomba", "Townsville", "Warwick"],
-      "SA" => ["Adelaide", "Mount Barker", "Mount Gambier", "Murray Bridge",
-        "Port Adelaide", "Port Augusta", "Port Lincoln", "Port Pirie", "Victor Harbor",
-        "Whyalla"],
-      "TAS" => ["Burnie", "Clarence", "Devonport", "Glenorchy", "Hobart", "Launceston"],
-      "VIC" => ["Ararat", "Bairnsdale", "Ballarat", "Benalla", "Bendigo", "Dandenong",
-        "Frankston", "Geelong", "Hamilton", "Horsham", "Melbourne", "Melton", "Mildura",
-        "Moe", "Morwell", "Sale", "Shepparton", "Swan Hill", "Traralgon", "Wangaratta",
-        "Warrnambool", "Wodonga"],
-      "WA" => ["Albany", "Armadale", "Bayswater", "Bunbury", "Canning", "Cockburn",
-        "Fremantle", "Geraldton", "Gosnells", "Joondalup", "Kalgoorlie", "Mandurah",
-        "Melville", "Nedlands", "Perth", "Rockingham", "South Perth", "Stirling",
-        "Subiaco", "Swan", "Wanneroo"]
-    }
-    
-    # based on http://en.wikipedia.org/wiki/Postcodes_in_Australia
-    POSTCODE = {
-      'NSW' => [('1000'..'1999').to_a + ('2000'..'2599').to_a + ('2619'..'2898').to_a + ('2921'..'2999').to_a].flatten,
-      'ACT' => [('0200'..'0299').to_a + ('2600'..'2618').to_a + ('2900'..'2920').to_a].flatten,
-      'VIC' => [('3000'..'3999').to_a + ('8000'..'8999').to_a].flatten,
-      'QLD' => [('4000'..'4999').to_a + ('9000'..'9999').to_a].flatten,
-      'SA'  => [('5000'..'5799').to_a + ('5800'..'5999').to_a].flatten,
-      'WA'  => [('6000'..'6797').to_a + ('6800'..'6999').to_a].flatten,
-      'TAS' => [('7000'..'7799').to_a + ('7800'..'7999').to_a].flatten,
-      'NT'  => [('0800'..'0899').to_a + ('0900'..'0999').to_a].flatten
+      "ACT"=>{"2600"=>"Canberra", "2601"=>"Canberra", "2602"=>"O'Connor",
+        "2612"=>"Braddon"},
+      "NT"=>{"0800"=>"Darwin", "0830"=>"Palmerston"},
+      "SA"=>{"5000"=>"Adelaide", "5015"=>"Port Adelaide", "5211"=>"Victor Harbor",
+        "5251"=>"Mount Barker", "5253"=>"Murray Bridge", "5254"=>"Murray Bridge",
+        "5290"=>"Mount Gambier", "5291"=>"Mount Gambier", "5540"=>"Port Pirie",
+        "5600"=>"Whyalla", "5606"=>"Port Lincoln", "5607"=>"Port Lincoln",
+        "5700"=>"Port Augusta", "5710"=>"Port Augusta"},
+      "WA"=>{"6000"=>"Perth", "6008"=>"Subiaco", "6009"=>"Nedlands",
+        "6021"=>"Stirling", "6027"=>"Joondalup", "6053"=>"Bayswater",
+        "6065"=>"Wanneroo", "6110"=>"Gosnells", "6112"=>"Armadale",
+        "6151"=>"South Perth", "6156"=>"Melville", "6160"=>"Fremantle",
+        "6168"=>"Rockingham", "6210"=>"Mandurah", "6230"=>"Bunbury",
+        "6330"=>"Albany", "6430"=>"Kalgoorlie", "6530"=>"Geraldton"},
+      "NSW"=>{"2000"=>"Sydney", "2031"=>"Randwick", "2046"=>"Canada Bay",
+        "2068"=>"Willoughby", "2112"=>"Ryde", "2142"=>"Holroyd",
+        "2148"=>"Blacktown", "2150"=>"Parramatta", "2165"=>"Fairfield",
+        "2170"=>"Liverpool", "2193"=>"Canterbury", "2200"=>"Bankstown",
+        "2216"=>"Rockdale", "2220"=>"Hurstville", "2250"=>"Gosford",
+        "2300"=>"Newcastle", "2320"=>"Maitland", "2325"=>"Cessnock",
+        "2340"=>"Tamworth", "2350"=>"Armidale", "2450"=>"Coffs Harbour",
+        "2460"=>"Grafton", "2480"=>"Lismore", "2500"=>"Wollongong",
+        "2529"=>"Shellharbour", "2560"=>"Campbelltown", "2580"=>"Goulburn",
+        "2620"=>"Queanbeyan", "2640"=>"Albury", "2650"=>"Wagga Wagga",
+        "2680"=>"Griffith", "2750"=>"Penrith", "2790"=>"Lithgow",
+        "2795"=>"Bathurst", "2800"=>"Orange", "2830"=>"Dubbo",
+        "2880"=>"Broken Hill"},
+      "QLD"=>{"4000"=>"Brisbane", "4217"=>"Surfers Paradise", "4305"=>"Ipswich",
+        "4350"=>"Toowoomba", "4370"=>"Warwick", "4551"=>"Caloundra",
+        "4570"=>"Gympie", "4650"=>"Maryborough", "4655"=>"Hervey Bay",
+        "4670"=>"Bundaberg", "4680"=>"Gladstone", "4700"=>"Rockhampton",
+        "4740"=>"Mackay", "4810"=>"Townsville", "4820"=>"Charters Towers",
+        "4825"=>"Mount Isa", "4870"=>"Cairns"},
+      "VIC"=>{"3000"=>"Melbourne", "3175"=>"Dandenong", "3199"=>"Frankston",
+        "3220"=>"Geelong", "3280"=>"Warrnambool", "3300"=>"Hamilton",
+        "3337"=>"Melton", "3350"=>"Ballarat", "3377"=>"Ararat",
+        "3400"=>"Horsham", "3500"=>"Mildura", "3550"=>"Bendigo",
+        "3585"=>"Swan Hill", "3630"=>"Shepparton", "3672"=>"Benalla",
+        "3677"=>"Wangaratta", "3690"=>"Wodonga", "3825"=>"Moe",
+        "3840"=>"Morwell", "3844"=>"Traralgon", "3850"=>"Sale",
+        "3875"=>"Bairnsdale"},
+      "TAS"=>{"7000"=>"Hobart", "7010"=>"Glenorchy", "7250"=>"Launceston",
+        "7310"=>"Devonport", "7320"=>"Burnie"}
     }
 
+    POSTCODE = SUBURB.inject({}) { |h, (s_abbr, postcode_suburb_map)| h.update(s_abbr => postcode_suburb_map.keys) }
   end
 end
