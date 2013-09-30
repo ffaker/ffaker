@@ -1,3 +1,6 @@
+## 1.19.0
+More APIs
+
 ## 1.16.2
 Small bug fix and updated docs.
 
