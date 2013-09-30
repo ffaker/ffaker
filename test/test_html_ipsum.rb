@@ -26,13 +26,17 @@ class TestHTMLIpsum < Test::Unit::TestCase
     # because the Faker::Lorem methods that we are using adds a random
     # number on top of what we specify for the count argument. We also have to
     # account for the other HTML that is being returned.
-    assert_match /^<p>[[:alnum:][:punct:] <>\/]+<\/p>$/i, Faker::HTMLIpsum.p(5, {:fancy => true})
+    str = Faker::HTMLIpsum.p(5, {:fancy => true})
+    assert_match /^<p>/, str
+    assert_match /<\/p>$/, str
+    assert str.length > 6, "string contains more than <p></p>"
   end
 
   def test_p_fancy_breaks
     # Here we can at least test how many <br> tags there are. We also have to
     # account for the other HTML that is being returned.
-    assert_match /^<p>(?:[[:alnum:][:punct:] <>\/]+?<br>){9}[[:alnum:][:punct:] <>\/]+?<\/p>/i, Faker::HTMLIpsum.p(10, {:fancy => true, :include_breaks => true})
+    str = Faker::HTMLIpsum.p(10, {:fancy => true, :include_breaks => true})
+    assert_equal 10, str.split("<br>").length
   end
 
   def test_dl
@@ -72,12 +76,14 @@ class TestHTMLIpsum < Test::Unit::TestCase
   def test_fancy_string
     # We can't reliably predict what's going to end up inside, so just ensure
     # that we have a complete string.
-    assert_match /^[[:alnum:][:punct:] <>\/]+$/im, Faker::HTMLIpsum.fancy_string
+    assert Faker::HTMLIpsum.fancy_string.is_a?(String), "returns a string"
+    assert Faker::HTMLIpsum.fancy_string.length > 1, "the string is longer than one char"
   end
 
   def test_fancy_string_breaks
     # We can't reliably predict what's going to end up inside, so just ensure
     # that we have a complete string.
-    assert_match /^(?:[[:alnum:][:punct:] <>\/]+?<br>){2}[[:alnum:][:punct:] <>\/]+?$/im, Faker::HTMLIpsum.fancy_string(3, true)
+    str = Faker::HTMLIpsum.fancy_string(3, true)
+    assert_equal 3, str.split("<br>").length
   end
 end
