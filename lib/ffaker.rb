@@ -52,6 +52,7 @@ module Faker
   autoload :JobFR,             'ffaker/job_fr'
   autoload :Lorem,           'ffaker/lorem'
   autoload :LoremAR,         'ffaker/lorem_ar'
+  autoload :LoremFR,         'ffaker/lorem_fr'
   autoload :LoremCN,         'ffaker/lorem_cn'
   autoload :Movie,           'ffaker/movie'
   autoload :Name,            'ffaker/name'
