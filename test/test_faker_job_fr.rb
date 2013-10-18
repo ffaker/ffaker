@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'helper'
 
 class TestFakerJobFr < Test::Unit::TestCase

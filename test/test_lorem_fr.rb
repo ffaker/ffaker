@@ -8,7 +8,7 @@ class TestLoremFR < Test::Unit::TestCase
   def test_sentence
     assert_match /[ a-z]+/, Faker::LoremFR.sentence
   end
-  
+
   def test_phrase
     assert_match /[ a-z]+/, Faker::LoremFR.phrase
   end
