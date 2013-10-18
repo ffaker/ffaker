@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.19.0'
-  s.date              = '2013-09-29'
+  s.version           = '1.20.0'
+  s.date              = '2013-10-17'
   s.rubyforge_project = 'ffaker'
 
   s.summary     = "Faster Faker, generates dummy data."
@@ -55,9 +55,11 @@ Gem::Specification.new do |s|
     lib/ffaker/internet.rb
     lib/ffaker/internet_se.rb
     lib/ffaker/job.rb
+    lib/ffaker/job_fr.rb
     lib/ffaker/lorem.rb
     lib/ffaker/lorem_ar.rb
     lib/ffaker/lorem_cn.rb
+    lib/ffaker/lorem_fr.rb
     lib/ffaker/movie.rb
     lib/ffaker/name.rb
     lib/ffaker/name_cn.rb
@@ -113,6 +115,7 @@ Gem::Specification.new do |s|
     test/test_faker_internet.rb
     test/test_faker_internet_se.rb
     test/test_faker_job.rb
+    test/test_faker_job_fr.rb
     test/test_faker_name.rb
     test/test_faker_name_cn.rb
     test/test_faker_name_cs.rb
@@ -135,6 +138,7 @@ Gem::Specification.new do |s|
     test/test_lorem.rb
     test/test_lorem_ar.rb
     test/test_lorem_cn.rb
+    test/test_lorem_fr.rb
     test/test_module_utils.rb
     test/test_movie.rb
     test/test_phone_number.rb
