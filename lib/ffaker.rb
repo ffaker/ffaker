@@ -78,6 +78,7 @@ module Faker
   autoload :Regexp,          'ffaker/regexp'
   autoload :SSN,             'ffaker/ssn'
   autoload :SSNSE,           'ffaker/ssn_se'
+  autoload :Skill,           'ffaker/skill'
   autoload :String,          'ffaker/string'
   autoload :Time,            'ffaker/time'
   autoload :Venue,           'ffaker/venue'
