@@ -72,7 +72,8 @@ module Faker
                      'filet mignon',
                      'leberkas',
                      'turducken',
-                     'doner'
+                     'doner',
+                     'Kevin'
                     ]
 
 
