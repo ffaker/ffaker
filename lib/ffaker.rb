@@ -81,5 +81,8 @@ module Faker
   autoload :Skill,           'ffaker/skill'
   autoload :String,          'ffaker/string'
   autoload :Time,            'ffaker/time'
+  autoload :Unit,            'ffaker/unit'
+  autoload :UnitEnglish,     'ffaker/unit_english'
+  autoload :UnitMetric,      'ffaker/unit_metric'
   autoload :Venue,           'ffaker/venue'
 end
