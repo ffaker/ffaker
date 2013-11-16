@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.20.0'
-  s.date              = '2013-10-17'
+  s.version           = '1.21.0'
+  s.date              = '2013-11-15'
   s.rubyforge_project = 'ffaker'
   
   s.license = 'MIT'
@@ -68,6 +68,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_cs.rb
     lib/ffaker/name_da.rb
     lib/ffaker/name_de.rb
+    lib/ffaker/name_fr.rb
     lib/ffaker/name_ga.rb
     lib/ffaker/name_ja.rb
     lib/ffaker/name_kr.rb
@@ -86,10 +87,14 @@ Gem::Specification.new do |s|
     lib/ffaker/phone_number_sg.rb
     lib/ffaker/phone_number_sn.rb
     lib/ffaker/product.rb
+    lib/ffaker/skill.rb
     lib/ffaker/ssn.rb
     lib/ffaker/ssn_se.rb
     lib/ffaker/string.rb
     lib/ffaker/time.rb
+    lib/ffaker/unit.rb
+    lib/ffaker/unit_english.rb
+    lib/ffaker/unit_metric.rb
     lib/ffaker/utils/array_utils.rb
     lib/ffaker/utils/module_utils.rb
     lib/ffaker/venue.rb
@@ -122,6 +127,7 @@ Gem::Specification.new do |s|
     test/test_faker_name_cn.rb
     test/test_faker_name_cs.rb
     test/test_faker_name_de.rb
+    test/test_faker_name_fr.rb
     test/test_faker_name_ga.rb
     test/test_faker_name_ja.rb
     test/test_faker_name_kr.rb
@@ -150,10 +156,14 @@ Gem::Specification.new do |s|
     test/test_phone_number_se.rb
     test/test_phone_number_sg.rb
     test/test_phone_number_sn.rb
+    test/test_skill.rb
     test/test_ssn.rb
     test/test_ssn_se.rb
     test/test_string.rb
     test/test_time.rb
+    test/test_units.rb
+    test/test_units_english.rb
+    test/test_units_metric.rb
     test/test_venue.rb
   ]
   # = MANIFEST =
