@@ -24,7 +24,7 @@ module Faker
       end
     end
 
-    def self.short_phone_number
+    def short_phone_number
       Faker.numerify('###-###-####')
     end
 
