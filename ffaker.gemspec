@@ -7,6 +7,8 @@ Gem::Specification.new do |s|
   s.version           = '1.20.0'
   s.date              = '2013-10-17'
   s.rubyforge_project = 'ffaker'
+  
+  s.license = 'MIT'
 
   s.summary     = "Faster Faker, generates dummy data."
   s.description = "Faster Faker, generates dummy data."
