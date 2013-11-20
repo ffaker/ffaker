@@ -1,6 +1,7 @@
 require 'helper'
 
 class TestFakerIdentificationESCOL < Test::Unit::TestCase
+  include Test::Unit::Assertions
   def setup
     @tester = Faker::IdentificationESCOL
   end
@@ -9,6 +10,10 @@ class TestFakerIdentificationESCOL < Test::Unit::TestCase
     # pattern \d{6,14}
     assert_match /\d{6,14}/, @tester.drivers_license
     assert @tester.drivers_license.length.between?(6,14)
+  end
+
+  def test_id
+    assert @tester.method_defined? :id
   end
 
   def test_gender

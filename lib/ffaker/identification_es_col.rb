@@ -10,6 +10,8 @@ module Faker
       Faker.numerify("#" * how_many_numbers)
     end
 
+  alias :id :drivers_license
+
     def driver_license_category
       category = LICENSE_CATEGORY.rand
       # the categories are A1 A2 B1 B2 B3 C1 C2 C3
