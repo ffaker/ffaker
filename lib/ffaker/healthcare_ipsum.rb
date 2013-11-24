@@ -1,9 +1,12 @@
 # encoding: utf-8
 
+require 'ffaker/lorem'
+
 module Faker
   module HealthcareIpsum
+    include Lorem
+
     extend ModuleUtils
-    extend Lorem
     extend self
 
     def word

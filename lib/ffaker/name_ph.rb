@@ -1,9 +1,12 @@
 # encoding: utf-8
 
+require 'ffaker/name'
+
 module Faker
   # Philippine names based on http://en.wikipedia.org/wiki/Philippine_name
   module NamePH
     include Faker::Name
+
     extend ModuleUtils
     extend self
 

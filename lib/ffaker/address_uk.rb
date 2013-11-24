@@ -1,8 +1,11 @@
 # encoding: utf-8
 
+require 'ffaker/address'
+
 module Faker
   module AddressUK
     include Faker::Address
+
     extend ModuleUtils
     extend self
 

@@ -1,8 +1,11 @@
 # encoding: utf-8
 
+require 'ffaker/name'
+
 module Faker
   module NameCS
     include Faker::Name
+
     extend ModuleUtils
     extend self
 

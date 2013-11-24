@@ -1,9 +1,12 @@
 # encoding: utf-8
 
+require 'ffaker/address'
+
 module Faker
   # Author guapolo<github.com/guapolo>
   module AddressMX
     include Faker::Address
+
     extend ModuleUtils
     extend self
 

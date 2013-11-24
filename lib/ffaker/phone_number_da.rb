@@ -39,7 +39,7 @@ module  Faker
     end
 
     def international_phone_number
-      Faker.numerify("#{country_code} #{phone_number}"
+      Faker.numerify("#{country_code} #{phone_number}")
     end
   end
 end

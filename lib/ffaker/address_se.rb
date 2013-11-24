@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require 'ffaker/address'
+
 module Faker
 
   # List of countries from http://sv.wikipedia.org/wiki/V%C3%A4rldens_l%C3%A4nder#Lista_.C3.B6ver_l.C3.A4nder
@@ -7,6 +9,7 @@ module Faker
   # List of cities are from http://sv.wikipedia.org/wiki/Sveriges_kommuner
   module AddressSE
     include Faker::Address
+
     extend ModuleUtils
     extend self
 

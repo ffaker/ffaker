@@ -1,10 +1,13 @@
 # encoding: utf-8
 
+require 'ffaker/lorem'
+
 module Faker
   # Thanks to Snoop Dogg
   module DizzleIpsum
-    extend ModuleUtils
     extend Lorem
+
+    extend ModuleUtils
     extend self
 
     def word

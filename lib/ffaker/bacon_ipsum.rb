@@ -5,8 +5,9 @@ require 'ffaker/lorem'
 module Faker
   # Thanks to http://baconipsum.com/
   module BaconIpsum
+    include Lorem
+
     extend ModuleUtils
-    extend Lorem
     extend self
 
     def word

@@ -1,9 +1,12 @@
 # encoding: utf-8
 
+require 'ffaker/name'
+
 module Faker
   # guapolo github.com/guapolo
   module NameMX
     include Faker::Name
+
     extend ModuleUtils
     extend self
 

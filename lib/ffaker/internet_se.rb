@@ -1,9 +1,12 @@
 # encoding: utf-8
 
+require 'ffaker/internet'
+
 module Faker
   module InternetSE
-    extend ModuleUtils
     include Internet
+
+    extend ModuleUtils
     extend self
 
     def email(name = nil)

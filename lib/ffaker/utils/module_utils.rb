@@ -7,11 +7,15 @@ module Faker
     end
 
     def const_missing(const_name)
-      mod_name = ancestors.first.to_s.split("::").last
-      data_path = "#{Faker::DATA_PATH}/#{underscore(mod_name)}/#{underscore(const_name.to_s)}"
-      data = File.read(data_path).split("\n")
-      const_set const_name, k(data)
-      data
+      if const_name =~ /[a-z]/ # Not a constant, probably a class/module name.
+        super const_name
+      else
+        mod_name = ancestors.first.to_s.split("::").last
+        data_path = "#{Faker::BASE_LIB_PATH}/ffaker/data/#{underscore(mod_name)}/#{underscore(const_name.to_s)}"
+        data = File.read(data_path).split("\n")
+        const_set const_name, k(data)
+        data
+      end
     end
 
     def underscore(string)

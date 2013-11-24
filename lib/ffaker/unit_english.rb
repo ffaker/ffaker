@@ -1,10 +1,12 @@
 # encoding: utf-8
 
+require 'ffaker/unit'
 require 'ostruct'
 
 module Faker
   module UnitEnglish
     include Faker::Unit
+
     extend ModuleUtils
     extend self
 

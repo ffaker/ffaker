@@ -1,9 +1,12 @@
 # encoding: utf-8
 
+require 'ffaker/address'
+
 module Faker
   # Author wiseleyb<wiseleyb@gmail.com>
   module AddressAU
     include Faker::Address
+
     extend ModuleUtils
     extend self
 

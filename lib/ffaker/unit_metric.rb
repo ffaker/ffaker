@@ -5,6 +5,7 @@ require 'ostruct'
 module Faker
   module UnitMetric
     include Faker::Unit
+
     extend ModuleUtils
     extend self
 

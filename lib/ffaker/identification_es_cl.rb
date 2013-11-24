@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require 'ffaker/identification_es'
+
 module Faker
   module IdentificationESCL
     extend IdentificationES

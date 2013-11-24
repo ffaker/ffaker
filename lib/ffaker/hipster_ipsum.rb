@@ -1,10 +1,13 @@
 # encoding: utf-8
 
+require 'ffaker/lorem'
+
 module Faker
   # thanks to http://hipsteripsum.me
   module HipsterIpsum
+    include Lorem
+
     extend ModuleUtils
-    extend Lorem
     extend self
 
     def word
