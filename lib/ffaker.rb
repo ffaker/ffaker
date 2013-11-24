@@ -46,7 +46,7 @@ module Faker
   autoload :Identification,  'ffaker/identification'
   autoload :IdentificationES,  'ffaker/identification_es'
   autoload :IdentificationESCL,  'ffaker/identification_es_cl'
-  autoload :IdentificationESCOL,  'ffaker/identification_es_col'
+  autoload :IdentificationESCO,  'ffaker/identification_es_co'
   autoload :Internet,        'ffaker/internet'
   autoload :InternetSE,      'ffaker/internet_se'
   autoload :Job,             'ffaker/job'

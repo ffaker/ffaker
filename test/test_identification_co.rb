@@ -1,9 +1,9 @@
 require 'helper'
 
-class TestFakerIdentificationESCOL < Test::Unit::TestCase
+class TestFakerIdentificationESCO < Test::Unit::TestCase
   include Test::Unit::Assertions
   def setup
-    @tester = Faker::IdentificationESCOL
+    @tester = Faker::IdentificationESCO
   end
 
   def test_drivers_license

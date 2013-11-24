@@ -1,5 +1,5 @@
 module Faker
-  module IdentificationESCOL
+  module IdentificationESCO
     include IdentificationES
     extend ModuleUtils
     require "date"
@@ -10,7 +10,7 @@ module Faker
       Faker.numerify("#" * how_many_numbers)
     end
 
-  alias :id :drivers_license
+  alias_method :id, :drivers_license
 
     def driver_license_category
       category = LICENSE_CATEGORY.rand
