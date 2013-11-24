@@ -1,5 +1,6 @@
 # encoding: utf-8
 
+require 'ffaker/unit'
 require 'ostruct'
 
 module Faker

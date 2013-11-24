@@ -1,3 +1,7 @@
+## 1.22.1
+
+Bugfixes
+
 ## 1.22.0
 
 Maintenance release, lots of cleanups.

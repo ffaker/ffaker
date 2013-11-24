@@ -1,5 +1,5 @@
 module Faker
-  VERSION = "1.22.0"
+  VERSION = "1.22.1"
 
   require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'
@@ -27,5 +27,5 @@ module Faker
   end
 
   # Load all constants.
-  Dir["#{BASE_LIB_PATH}/ffaker/*rb"].each { |f| require f }
+  Dir["#{BASE_LIB_PATH}/ffaker/*rb"].sort.each { |f| require f }
 end
