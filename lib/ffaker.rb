@@ -6,7 +6,7 @@ module Faker
 
   extend ModuleUtils
 
-  DATA_PATH = File.expand_path("../ffaker/data", __FILE__)
+  BASE_LIB_PATH = File.expand_path("..", __FILE__)
 
   LETTERS = k('a'..'z')
 
@@ -26,66 +26,6 @@ module Faker
     letterify(numerify(masks))
   end
 
-  autoload :Address,         'ffaker/address'
-  autoload :AddressAU,       'ffaker/address_au'
-  autoload :AddressCA,       'ffaker/address_ca'
-  autoload :AddressDE,       'ffaker/address_de'
-  autoload :AddressMX,       'ffaker/address_mx'
-  autoload :AddressSE,       'ffaker/address_se'
-  autoload :AddressSN,       'ffaker/address_sn'
-  autoload :AddressUK,       'ffaker/address_uk'
-  autoload :AddressUS,       'ffaker/address_us'
-  autoload :BaconIpsum,      'ffaker/bacon_ipsum'
-  autoload :Company,         'ffaker/company'
-  autoload :CompanySE,       'ffaker/company_se'
-  autoload :Conference,      'ffaker/conference'
-  autoload :DizzleIpsum,     'ffaker/dizzle_ipsum'
-  autoload :Education,       'ffaker/education'
-  autoload :Geolocation,     'ffaker/geolocation'
-  autoload :HTMLIpsum,       'ffaker/html_ipsum'
-  autoload :HealthcareIpsum, 'ffaker/healthcare_ipsum'
-  autoload :HipsterIpsum,    'ffaker/hipster_ipsum'
-  autoload :Identification,  'ffaker/identification'
-  autoload :IdentificationES,  'ffaker/identification_es'
-  autoload :IdentificationESCL,  'ffaker/identification_es_cl'
-  autoload :Internet,        'ffaker/internet'
-  autoload :InternetSE,      'ffaker/internet_se'
-  autoload :Job,             'ffaker/job'
-  autoload :JobFR,             'ffaker/job_fr'
-  autoload :Lorem,           'ffaker/lorem'
-  autoload :LoremAR,         'ffaker/lorem_ar'
-  autoload :LoremFR,         'ffaker/lorem_fr'
-  autoload :LoremCN,         'ffaker/lorem_cn'
-  autoload :Movie,           'ffaker/movie'
-  autoload :Name,            'ffaker/name'
-  autoload :NameCN,          'ffaker/name_cn'
-  autoload :NameCS,          'ffaker/name_cs'
-  autoload :NameDE,          'ffaker/name_de'
-  autoload :NameFR,          'ffaker/name_fr'
-  autoload :NameGA,          'ffaker/name_ga'
-  autoload :NameJA,          'ffaker/name_ja'
-  autoload :NameKR,          'ffaker/name_kr'
-  autoload :NameMX,          'ffaker/name_mx'
-  autoload :NamePH,          'ffaker/name_ph'
-  autoload :NameRU,          'ffaker/name_ru'
-  autoload :NameSE,          'ffaker/name_se'
-  autoload :NameSN,          'ffaker/name_sn'
-  autoload :PhoneNumber,     'ffaker/phone_number'
-  autoload :PhoneNumberAU,   'ffaker/phone_number_au'
-  autoload :PhoneNumberDE,   'ffaker/phone_number_de'
-  autoload :PhoneNumberMX,   'ffaker/phone_number_mx'
-  autoload :PhoneNumberSE,   'ffaker/phone_number_se'
-  autoload :PhoneNumberSG,   'ffaker/phone_number_sg'
-  autoload :PhoneNumberSN,   'ffaker/phone_number_sn'
-  autoload :Product,         'ffaker/product'
-  autoload :Regexp,          'ffaker/regexp'
-  autoload :SSN,             'ffaker/ssn'
-  autoload :SSNSE,           'ffaker/ssn_se'
-  autoload :Skill,           'ffaker/skill'
-  autoload :String,          'ffaker/string'
-  autoload :Time,            'ffaker/time'
-  autoload :Unit,            'ffaker/unit'
-  autoload :UnitEnglish,     'ffaker/unit_english'
-  autoload :UnitMetric,      'ffaker/unit_metric'
-  autoload :Venue,           'ffaker/venue'
+  # Load all constants.
+  Dir["#{BASE_LIB_PATH}/ffaker/*rb"].each { |f| require f }
 end
