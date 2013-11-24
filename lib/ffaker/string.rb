@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module Faker
   module String
     extend ModuleUtils
@@ -26,7 +28,7 @@ module Faker
       result
     end
 
-  private
+    private
 
     def join_escapes(tokens)
       result = []

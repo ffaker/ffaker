@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'helper'
 
 class TestLorem < Test::Unit::TestCase
@@ -8,7 +10,7 @@ class TestLorem < Test::Unit::TestCase
   def test_sentence
     assert_match /[ a-z]+/, Faker::Lorem.sentence
   end
-  
+
   def test_phrase
     assert_match /[ a-z]+/, Faker::Lorem.phrase
   end

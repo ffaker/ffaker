@@ -1,18 +1,20 @@
-# based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Singapore
+# encoding: utf-8
+
 module  Faker
+  # Based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Singapore
   module PhoneNumberSG
     extend ModuleUtils
     extend self
 
-	# Number Ranges
-	# 3xxx xxxx - Voice Over IP services
-	# 6xxx xxxx - Fixed Line services inclusive of Fixed Line Voice Over IP services
-	#                        like StarHub Digital Voice and SingTel mio Voice
-	# 8xxx xxxx - Mobile phone services
-	# 9xxx xxxx - Mobile phone services Includes Paging Services like SUNPAGE
-	# 800 xxx xxxx - Toll-Free International services
-	# 1800 xxx xxxx - Toll-Free line services
-	# 1900 xxx xxxx - Premium Service
+    # Number Ranges
+    # 3xxx xxxx - Voice Over IP services
+    # 6xxx xxxx - Fixed Line services inclusive of Fixed Line Voice Over IP services
+    #                        like StarHub Digital Voice and SingTel mio Voice
+    # 8xxx xxxx - Mobile phone services
+    # 9xxx xxxx - Mobile phone services Includes Paging Services like SUNPAGE
+    # 800 xxx xxxx - Toll-Free International services
+    # 1800 xxx xxxx - Toll-Free line services
+    # 1900 xxx xxxx - Premium Service
 
     # Generates a voip phone number
     #  3xxx xxxx
@@ -63,7 +65,6 @@ module  Faker
       Faker.numerify("1900 ### ####")
     end
 
-
     # generates mobile or home/work number
     def phone_number
       case rand(3)
@@ -76,6 +77,5 @@ module  Faker
     def country_code
       "+65"
     end
-
   end
 end

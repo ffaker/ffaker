@@ -1,12 +1,13 @@
 # encoding: utf-8
-# => author: guapolo github.com/guapolo
+
 require 'helper'
 
+# Author: guapolo github.com/guapolo
 class TestPhoneNumberMX < Test::Unit::TestCase
   def setup
     @tester = Faker::PhoneNumberMX
   end
-  
+
   def test_mobile_phone_number
     assert_match /044 \d{2} \d{4} \d{4}/, @tester.mobile_phone_number
   end
@@ -34,7 +35,7 @@ class TestPhoneNumberMX < Test::Unit::TestCase
       assert_match /\+52 (\d )*\d{2} \d{4} \d{4}/, @tester.international_phone_number
     end
   end
-  
+
   def test_toll_free_phone_number
     assert_match /01 800 \d{3} \d{4}/, @tester.toll_free_number
   end

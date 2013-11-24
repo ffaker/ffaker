@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'helper'
 
 class TestAddress < Test::Unit::TestCase
@@ -64,7 +66,7 @@ class TestAddress < Test::Unit::TestCase
   def test_neighborhood
     assert_match /[ a-z]+/, Faker::Address::neighborhood
   end
-  
+
   def test_country
     assert_match /[ a-z]+/, Faker::Address::country
   end

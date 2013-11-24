@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module Faker
   module AddressCA
     include Faker::Address
@@ -17,13 +19,6 @@ module Faker
     end
 
     POSTAL_CODE_FORMATS = k ['?#? #?#']
-
-    PROVINCE = k [
-      'Newfoundland and Labrador', 'Nova Scotia', 'Prince Edward Island',
-      'New Brunswick', 'Quebec', 'Ontario', 'Manitoba', 'Saskatchewan',
-      'Alberta', 'British Columbia', 'Yukon', 'Northwest Territories',
-      'Nunavut'
-    ]
 
     PROVINCE_ABBRS = k %w(NL NS PE NB QC ON MB SK AB BC YT NT NU)
   end

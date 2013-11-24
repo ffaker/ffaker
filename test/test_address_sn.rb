@@ -22,5 +22,4 @@ class TestAddressSn < Test::Unit::TestCase
   def test_arrondissement
     assert Faker::AddressSN::ARRONDISSEMENTS.include?(Faker::AddressSN.arrondissement)
   end
-
 end

@@ -1,9 +1,8 @@
 # encoding: utf-8
 
-# => author: wiseleyb
-# => email: wiseleyb@gmail.com
 require 'helper'
 
+# Author: wiseleyb<wiseleyb@gmail.com>
 class TestPhoneNumberAU < Test::Unit::TestCase
   def setup
     @tester = Faker::PhoneNumberAU
@@ -48,6 +47,4 @@ class TestPhoneNumberAU < Test::Unit::TestCase
       assert_match /\+61 \d{1,2} \d{4} \d{4}/, Faker::PhoneNumberAU.international_phone_number
     end
   end
-
 end
-

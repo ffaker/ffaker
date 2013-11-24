@@ -1,8 +1,7 @@
 # encoding: utf-8
 
-# => author: lawitschka
-# => email: moritz.lawitschka@urbanvention.com
 module Faker
+  # Author: lawitschka<moritz.lawitschka@urbanvention.com>
   module PhoneNumberDE
     extend ModuleUtils
     extend self

@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 require 'helper'
 
 class TestPhoneNumberSE < Test::Unit::TestCase
@@ -8,6 +9,7 @@ class TestPhoneNumberSE < Test::Unit::TestCase
   end
 
   ALLOWED_CHARS = /[()\d +-]/
+
   def test_mobile_phone_prefix
     assert Faker::PhoneNumberSE::MOBILE_PHONE_PREFIX.include?(@tester.mobile_prefix)
   end

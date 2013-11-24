@@ -1,7 +1,8 @@
-# => author: wiseleyb
-# => email: wiseleyb@gmail.com
+# encoding: utf-8
+
 require 'helper'
 
+# Author: wiseleyb<wiseleyb@gmail.com>
 class TestAddressAU < Test::Unit::TestCase
 
   def test_au_state_abbr
@@ -54,5 +55,4 @@ class TestAddressAU < Test::Unit::TestCase
       assert_match /[\, a-z]/, Faker::AddressAU.full_address(st_abbr)
     end
   end
-
 end

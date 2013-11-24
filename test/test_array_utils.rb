@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'helper'
 require 'set'
 
@@ -7,20 +9,20 @@ class TestArrayUtils < Test::Unit::TestCase
     @elems = Set.new("a".."c")
   end
 
-  it "provides a way of freezing the elements and itself" do
+  def test_provides_a_way_of_freezing_the_elements_and_itself
     assert @array.respond_to?(:freeze_all)
     @array.freeze_all
     assert @array.frozen?
     @array.each { |e| assert e.frozen?  }
   end
 
-  it "provides a way of getting a random element" do
+  def test_provides_a_way_of_getting_a_random_element
     set = Set.new
     1000.times { set << @array.rand }
     assert set == @elems
   end
 
-  it "provides a way of getting n random elements" do
+   def test_provides_a_way_of_getting_n_random_elements
     assert_equal @array.random_pick(3).sort, @array.sort
 
     1.upto(3) do |n|
@@ -34,7 +36,7 @@ class TestArrayUtils < Test::Unit::TestCase
     end
   end
 
-  it "provides a way of shuffling the array" do
+  def test_provides_a_way_of_shuffling_the_array
     assert_equal @array.shuffle.sort, @array.sort
 
     different_arrangements = 0

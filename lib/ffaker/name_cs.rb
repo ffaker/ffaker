@@ -72,11 +72,10 @@ module Faker
       :male => k(%w(Dvořák Černý Beneš Fiala Doležal Čermák Blažek Bartoš Čech Dostál Bláha Bureš Dušek Beran Bednář Bárta Bílek Beránek Fišer Brož Čížek Filip Červenka Adámek Daněk Dvořáček Benda Adamec Brabec Březina David Burian Čapek Dohnal Dlouhý Fojtík Bartoň Červený Dufek Burda Duda Adam Boháč Doležel Baláž Diviš Coufal Bauer Dolejší))
     }
 
-    PREFIXES = k %w(Bc. BcA. Mgr. MgA. Ing. Ing. arch. JUDr. MDDr. MUDr. MVDr. PharmDr. PhDr. RNDr. ThDr. ThLic.)
-
     SUFFIXES = k %w(Ph.D. Th.D. DSc.)
 
     private
+
     GENDERS = [:male, :female, :random] # :nodoc:
 
     def select_sex(sex) # :nodoc:

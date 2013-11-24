@@ -1,8 +1,8 @@
 # encoding: utf-8
+
 require 'helper'
 
 class TestSSN < Test::Unit::TestCase
-  # SSNSE.ssn(from: Time.local(1980, 2, 28), to: Time.local(2000, 2, 28), gender: :male)
 
   def test_ssn_format
     ssn = Faker::SSNSE.ssn

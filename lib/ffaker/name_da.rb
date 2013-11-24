@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module Faker
   module NameDA
     include Faker::Name

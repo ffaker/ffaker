@@ -1,7 +1,8 @@
 # encoding: utf-8
-# => author: lurraca github.com/lurraca
+
 require 'helper'
 
+# Author: lurraca github.com/lurraca
 class TestUnitsEnglish < Test::Unit::TestCase
 
   def setup

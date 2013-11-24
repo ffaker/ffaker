@@ -1,9 +1,8 @@
 # encoding: utf-8
 
-# => author: lawitschka
-# => email: moritz.lawitschka@urbanvention.com
 require 'helper'
 
+# Author: lawitschka<moritz.lawitschka@urbanvention.com>
 class TestPhoneNumberDE < Test::Unit::TestCase
   def setup
     @tester = Faker::PhoneNumberDE
@@ -44,5 +43,4 @@ class TestPhoneNumberDE < Test::Unit::TestCase
   def test_international_home_work_phone_number
     assert_match /^\+49 [2-9]{1}[0-9]{1,3} [0-9]{7}$/, Faker::PhoneNumberDE.international_home_work_phone_number
   end
-
 end

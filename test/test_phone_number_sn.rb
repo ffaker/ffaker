@@ -1,10 +1,8 @@
 # encoding: utf-8
 
-# => author: xarala
-# => email: pathe.sene@xarala.sn
-# => website: http://www.xarala.sn
 require 'helper'
 
+# Author: xarala<pathe.sene@xarala.sn> http://www.xarala.sn
 class TestPhoneNumberSN < Test::Unit::TestCase
   def setup
     @tester = Faker::PhoneNumberSN

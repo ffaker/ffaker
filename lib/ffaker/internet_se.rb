@@ -98,8 +98,6 @@ module Faker
     BYTE = k((0..255).to_a.map { |n| n.to_s })
     HOSTS = k %w(gmail.com yahoo.com hotmail.com spray.se passagen.se)
     DOMAIN_SUFFIXES = k %w(se nu com)
-    DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com
-                            binkmail.com safetymail.info)
-
+    DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
   end
 end

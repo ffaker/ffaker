@@ -6,6 +6,8 @@ module Faker
 
   extend ModuleUtils
 
+  DATA_PATH = File.expand_path("../ffaker/data", __FILE__)
+
   LETTERS = k('a'..'z')
 
   def self.numerify(*masks)

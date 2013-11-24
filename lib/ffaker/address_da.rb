@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module Faker
   module AddressDA
     include Faker::Address
@@ -151,6 +153,3 @@ DANMARK
     ]
   end
 end
-
-
-

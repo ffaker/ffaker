@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 require 'helper'
 
 class TestCompanySE < Test::Unit::TestCase
@@ -10,5 +11,4 @@ class TestCompanySE < Test::Unit::TestCase
   def test_suffix
     assert_match(/[ a-z]+/i, Faker::CompanySE.suffix)
   end
-
 end

@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'helper'
 
 class TestLoremARAR < Test::Unit::TestCase
@@ -8,13 +10,13 @@ class TestLoremARAR < Test::Unit::TestCase
   def test_sentence
     assert_match /[ a-z]+/, Faker::LoremAR.sentence
   end
-  
+
   def test_phrase
     assert_match /[ a-z]+/, Faker::LoremAR.phrase
   end
 
   def test_paragraphs
-   assert_match /[^a-zA-Z0-9]+/, Faker::LoremAR.paragraphs.join(" ")
+    assert_match /[^a-zA-Z0-9]+/, Faker::LoremAR.paragraphs.join(" ")
   end
 
   def test_sentences

@@ -1,5 +1,9 @@
+# encoding: utf-8
+
+require 'ffaker/lorem'
+
 module Faker
-  # thanks to http://baconipsum.com/
+  # Thanks to http://baconipsum.com/
   module BaconIpsum
     extend ModuleUtils
     extend Lorem
@@ -12,71 +16,5 @@ module Faker
     def words(num = 3)
       BACON_WORDS.random_pick(num)
     end
-
-    BACON_WORDS = k [
-                     'beef',
-                     'chicken',
-                     'pork',
-                     'bacon',
-                     'chuck',
-                     'short loin',
-                     'sirloin',
-                     'shank',
-                     'flank',
-                     'sausage',
-                     'pork belly',
-                     'shoulder',
-                     'cow',
-                     'pig',
-                     'ground round',
-                     'hamburger',
-                     'meatball',
-                     'tenderloin',
-                     'strip steak',
-                     't-bone',
-                     'ribeye',
-                     'shankle',
-                     'tongue',
-                     'tail',
-                     'pork chop',
-                     'pastrami',
-                     'corned beef',
-                     'jerky',
-                     'ham',
-                     'fatback',
-                     'ham hock',
-                     'pancetta',
-                     'pork loin',
-                     'short ribs',
-                     'spare ribs',
-                     'beef ribs',
-                     'drumstick',
-                     'tri-tip',
-                     'ball tip',
-                     'venison',
-                     'turkey',
-                     'biltong',
-                     'rump',
-                     'jowl',
-                     'salami',
-                     'bresaola',
-                     'meatloaf',
-                     'brisket',
-                     'boudin',
-                     'andouille',
-                     'capicola',
-                     'swine',
-                     'kielbasa',
-                     'frankfurter',
-                     'prosciutto',
-                     'filet mignon',
-                     'leberkas',
-                     'turducken',
-                     'doner',
-                     'Kevin'
-                    ]
-
-
-
   end
 end

@@ -1,23 +1,11 @@
 # encoding: utf-8
 
-# => author: wiseleyb
-# => email: wiseleyb@gmail.com
-# based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Australia
 module  Faker
+  # Author: wiseleyb<wiseleyb@gmail.com>
+  # Based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Australia
   module PhoneNumberAU
     extend ModuleUtils
     extend self
-
-    # Prefixes from http://en.wikipedia.org/wiki/Telephone_numbers_in_Australia
-    # 00 Emergency and International access
-    # 01 Alternative phone services
-    # 02 Geographic: Central East region (NSW, ACT)
-    # 03 Geographic: South-east region (VIC, TAS)
-    # 04 Digital Mobile services (GSM and 3G)
-    # 05 Universal/Personal numberings
-    # 07 Geographic: North-east region (QLD)
-    # 08 Geographic: Central and West region (SA, NT, WA)
-    # 1 Non-geographic numbers (mostly for domestic use only)
 
     # Mobile prefixes
     MobileOperatorsPrefix = %w(04)
@@ -85,6 +73,5 @@ module  Faker
       when 1 then international_home_work_phone_number
       end
     end
-
   end
 end

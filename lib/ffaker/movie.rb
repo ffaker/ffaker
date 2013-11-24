@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module Faker
   module Movie
     extend ModuleUtils
@@ -12,17 +14,13 @@ module Faker
       end
     end
 
-    PREFIXES = k [ "Time of the", "Season of the", "Return of the", "I am", "Planet of the", "War of the",
-      "Invasion of the", "I Married a", "Legend of", "Codename:", "Case of the Missing", "Day of the", "Curse of the",
-      "Rise of the", "The", "A Fistful of", "Journey of the" ]
-    ADJ_AND_ADV = k %w{ Action Hungry Ultra Dangerous Danger Tokyo Red Blue Green Killer Electric Blonde Flying
-      Forbidden Nuclear Fake American Death Champagne Bloody }
-    NOUNS = k %w{ Wolf Wolves Cousins Jungle Witch Woman Women Man Men Identity Ninja Ninjas Pickpocket Hills Clash
-      Wizard World Brain Brains Fly Mutant Blow Diaries Gypsy Diaries Dreams Tears City Cat Tentacle Friday Rain Thief
-      Beast Demon Monster }
-    SUFFIXES = k [ "from Hell", "from Outer Space", "from Mars", "from the Black Lagoon", "with a Thousand Faces",
-      "from Across the Ocean", "Who Fell to Earth", "That Came to Dinner"]
+    SUFFIXES = k [
+      "from Hell", "from Outer Space", "from Mars", "from the Black Lagoon", "with a Thousand Faces",
+      "from Across the Ocean", "Who Fell to Earth", "That Came to Dinner"
+    ]
+
     COLORS = k %w{Red Yellow Black White}
+
     private
 
     def title_with_prefix

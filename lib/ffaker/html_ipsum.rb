@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module Faker
   # Loosely based on http://html-ipsum.com/
   # Requires Faker::Lorem module

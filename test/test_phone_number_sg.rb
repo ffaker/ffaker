@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'helper'
 
 class TestPhoneNumberSG < Test::Unit::TestCase
@@ -34,9 +36,9 @@ class TestPhoneNumberSG < Test::Unit::TestCase
   end
 
   def test_phone_number
-	10.times do
-		assert_match /[6,8,9]\d{3}\s\d{4}/, @tester.phone_number
-	end
+    10.times do
+      assert_match /[6,8,9]\d{3}\s\d{4}/, @tester.phone_number
+    end
   end
 end
 

@@ -1,9 +1,7 @@
 # encoding: utf-8
 
-# => author: PapePathe
-# => email: pathe.sene@xarala.sn
-# => website: http://www.xarala.sn
 module  Faker
+  # Author: PapePathe<pathe.sene@xarala.sn> http://www.xarala.sn
   module PhoneNumberSN
     extend ModuleUtils
     extend self
@@ -67,13 +65,13 @@ module  Faker
     #
     def phone_number
       case rand(10)
-        when 0 then homework_number
-        when 9 then homework_number
-        when 3 then mobile_number
-        when 5 then mobile_number
-        when 6 then mobile_number
-        when 8 then mobile_number
-        else        homework_number
+      when 0 then homework_number
+      when 9 then homework_number
+      when 3 then mobile_number
+      when 5 then mobile_number
+      when 6 then mobile_number
+      when 8 then mobile_number
+      else        homework_number
       end
     end
   end

@@ -1,6 +1,7 @@
 # encoding: utf-8
-# => author: guapolo github.com/guapolo
+
 module  Faker
+  # Author: guapolo github.com/guapolo
   module PhoneNumberMX
     extend ModuleUtils
     extend self

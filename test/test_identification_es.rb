@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'helper'
 
 class TestFakerIdentificationES < Test::Unit::TestCase
@@ -8,5 +10,4 @@ class TestFakerIdentificationES < Test::Unit::TestCase
   def test_gender
     assert_match /(Hombre|Mujer)/, @tester.gender
   end
-
 end

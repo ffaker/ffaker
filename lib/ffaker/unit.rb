@@ -1,4 +1,7 @@
+# encoding: utf-8
+
 require 'ostruct'
+
 module Faker
   module Unit
     extend ModuleUtils
@@ -21,6 +24,7 @@ module Faker
     end
 
     private
+
     def time
       OpenStruct.new TIME_UNITS.rand
     end
@@ -29,8 +33,18 @@ module Faker
       OpenStruct.new TEMPERATURE_UNITS.rand
     end
 
-    TIME_UNITS = k [ {:name => 'Years', :abbreviation => 'yr'}, {:name => 'Days', :abbreviation => 'd'}, {:name => 'Hours', :abbreviation => 'Minutes'}, {:name => 'Seconds', :abbreviation => 's'}, {:name => 'Milliseconds', :abbreviation => 'msec'} ]
+    TIME_UNITS = k [
+      {:name => 'Years', :abbreviation => 'yr'},
+      {:name => 'Days', :abbreviation => 'd'},
+      {:name => 'Hours', :abbreviation => 'Minutes'},
+      {:name => 'Seconds', :abbreviation => 's'},
+      {:name => 'Milliseconds', :abbreviation => 'msec'}
+    ]
 
-    TEMPERATURE_UNITS = k [ {:name => 'Kelvin', :abbreviation => 'K'}, {:name => 'Celsius', :abbreviation => 'C'}, {:name => 'Fahrenheit', :abbreviation => 'F'} ]
+    TEMPERATURE_UNITS = k [
+      {:name => 'Kelvin', :abbreviation => 'K'},
+      {:name => 'Celsius', :abbreviation => 'C'},
+      {:name => 'Fahrenheit', :abbreviation => 'F'}
+    ]
   end
 end

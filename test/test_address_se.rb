@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 require 'helper'
 
 class TestAddressSE < Test::Unit::TestCase
@@ -32,5 +33,4 @@ class TestAddressSE < Test::Unit::TestCase
   def test_se_full_address
     assert_match(/[\, a-z]/, Faker::AddressSE.full_address)
   end
-
 end

@@ -1,12 +1,10 @@
 # encoding: utf-8
 
-# => author: PapePathe github.com/PapePathe
-# => email: pathe.sene@gmail.com
-
 require 'helper'
 
+# Author: PapePathe<pathe.sene@gmail.com> github.com/PapePathe 
 class TestFakerNameFR < Test::Unit::TestCase
-  
+
   def setup
     @tester = Faker::NameFR
   end
@@ -46,6 +44,5 @@ class TestFakerNameFR < Test::Unit::TestCase
       assert Faker::NameFR::LAST_NAMES.include?(parts[1])
     end
   end
-
 
 end
