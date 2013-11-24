@@ -11,7 +11,7 @@ module Faker
     extend self
 
     def drivers_license
-      how_many_numbers = rand(6..14)
+      how_many_numbers = 6 + rand(8)
       Faker.numerify("#" * how_many_numbers)
     end
 
@@ -20,7 +20,7 @@ module Faker
     def driver_license_category
       category = LICENSE_CATEGORY.rand
       # the categories are A1 A2 B1 B2 B3 C1 C2 C3
-      num = category == 'A' ? rand(1..2) : rand(1..3)
+      num = category == 'A' ? 1 + rand(2) : 1 + rand(3)
       category.concat(num.to_s)
     end
 
