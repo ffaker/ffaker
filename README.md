@@ -59,6 +59,19 @@ generating 10000 names (ffaker 1.7.0)  0.040000   0.000000   0.040000 (  0.04591
 
 A lot of people have contributed to ffaker. Check [this list](https://github.com/EmmanuelOga/ffaker/graphs/contributors).
 
+If you want to add new modules or localization data, use one of the
+[directories for data files](https://github.com/EmmanuelOga/ffaker/tree/master/lib/ffaker/data)
+(or create a new one!).
+
+**const_missing** is
+[overriden](https://github.com/EmmanuelOga/ffaker/blob/master/lib/ffaker/utils/module_utils.rb#L9)
+for Faker modules, so if you try to use a constant that is not defined
+in the module, the
+[override](https://github.com/EmmanuelOga/ffaker/blob/master/lib/ffaker/utils/module_utils.rb#L9)
+will look for a data file matching the name of the constant. E.G.: the
+first time someone accesses ++Faker::Name::FIRST_NAMES++, a const of that
+name will be set with data from ffaker/data/name/first_names.
+
 ## TODO
 
 * Even though the API is pretty simple, better rdoc documentation would not hurt.

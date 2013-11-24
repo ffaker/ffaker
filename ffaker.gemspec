@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.21.0'
-  s.date              = '2013-11-15'
+  s.version           = '1.22.0'
+  s.date              = '2013-11-23'
   s.rubyforge_project = 'ffaker'
   
   s.license = 'MIT'
@@ -45,6 +45,94 @@ Gem::Specification.new do |s|
     lib/ffaker/company.rb
     lib/ffaker/company_se.rb
     lib/ffaker/conference.rb
+    lib/ffaker/data/address/city_suffixes
+    lib/ffaker/data/address/country
+    lib/ffaker/data/address/neighborhood
+    lib/ffaker/data/address/street_suffix
+    lib/ffaker/data/address_ca/province
+    lib/ffaker/data/address_da/city
+    lib/ffaker/data/address_da/kommune
+    lib/ffaker/data/address_da/street
+    lib/ffaker/data/address_de/city
+    lib/ffaker/data/address_de/state
+    lib/ffaker/data/address_mx/state
+    lib/ffaker/data/address_mx/state_abbr
+    lib/ffaker/data/address_se/city
+    lib/ffaker/data/address_se/countries
+    lib/ffaker/data/address_se/street
+    lib/ffaker/data/address_sn/arrondissements
+    lib/ffaker/data/address_sn/departements
+    lib/ffaker/data/address_sn/regions
+    lib/ffaker/data/address_uk/uk_county
+    lib/ffaker/data/address_us/state
+    lib/ffaker/data/address_us/state_abbr
+    lib/ffaker/data/address_us/state_and_territories_abbr
+    lib/ffaker/data/bacon_ipsum/bacon_words
+    lib/ffaker/data/company/bs_mid
+    lib/ffaker/data/company/bs_pos
+    lib/ffaker/data/company/bs_pre
+    lib/ffaker/data/company/catch_mid
+    lib/ffaker/data/company/catch_pos
+    lib/ffaker/data/company/catch_pre
+    lib/ffaker/data/company/position_areas
+    lib/ffaker/data/conference/conference_list
+    lib/ffaker/data/dizzle_ipsum/dizzle_words
+    lib/ffaker/data/education/major_noun
+    lib/ffaker/data/education/school_suffix
+    lib/ffaker/data/healthcare_ipsum/healthcare_words
+    lib/ffaker/data/hipster_ipsum/hipster_words
+    lib/ffaker/data/job/job_adj
+    lib/ffaker/data/job/job_noun
+    lib/ffaker/data/job/job_prefix
+    lib/ffaker/data/job_fr/job_nouns
+    lib/ffaker/data/job_fr/job_prefixes
+    lib/ffaker/data/lorem/words
+    lib/ffaker/data/lorem_ar/words
+    lib/ffaker/data/lorem_cn/words
+    lib/ffaker/data/lorem_fr/words
+    lib/ffaker/data/movie/adj_and_adv
+    lib/ffaker/data/movie/nouns
+    lib/ffaker/data/movie/prefixes
+    lib/ffaker/data/name/first_names
+    lib/ffaker/data/name/last_names
+    lib/ffaker/data/name_cn/first_names
+    lib/ffaker/data/name_cn/last_names
+    lib/ffaker/data/name_cs/prefixes
+    lib/ffaker/data/name_da/female_first_names
+    lib/ffaker/data/name_da/last_names
+    lib/ffaker/data/name_da/male_first_names
+    lib/ffaker/data/name_de/first_names
+    lib/ffaker/data/name_de/last_names
+    lib/ffaker/data/name_fr/first_names
+    lib/ffaker/data/name_fr/last_names
+    lib/ffaker/data/name_ga/first_names_female
+    lib/ffaker/data/name_ga/first_names_male
+    lib/ffaker/data/name_ja/first_names
+    lib/ffaker/data/name_ja/last_names
+    lib/ffaker/data/name_kr/first_names
+    lib/ffaker/data/name_kr/last_names
+    lib/ffaker/data/name_mx/female_first_names
+    lib/ffaker/data/name_mx/last_names
+    lib/ffaker/data/name_mx/male_first_names
+    lib/ffaker/data/name_ph/autochthonous_surnames
+    lib/ffaker/data/name_ph/spanish_surnames
+    lib/ffaker/data/name_se/first_names_female
+    lib/ffaker/data/name_se/first_names_male
+    lib/ffaker/data/name_se/last_names
+    lib/ffaker/data/name_sn/first_names_female
+    lib/ffaker/data/name_sn/first_names_male
+    lib/ffaker/data/name_sn/last_names
+    lib/ffaker/data/name_vn/first_names
+    lib/ffaker/data/name_vn/last_names
+    lib/ffaker/data/name_vn/middle_names
+    lib/ffaker/data/phone_number_se/phone_prefix
+    lib/ffaker/data/product/adj
+    lib/ffaker/data/product/b1
+    lib/ffaker/data/product/noun
+    lib/ffaker/data/skill/specialty_end
+    lib/ffaker/data/skill/specialty_start
+    lib/ffaker/data/skill/tech_skills
+    lib/ffaker/data/venue/venue_list
     lib/ffaker/dizzle_ipsum.rb
     lib/ffaker/education.rb
     lib/ffaker/geolocation.rb
@@ -54,6 +142,7 @@ Gem::Specification.new do |s|
     lib/ffaker/identification.rb
     lib/ffaker/identification_es.rb
     lib/ffaker/identification_es_cl.rb
+    lib/ffaker/identification_es_co.rb
     lib/ffaker/internet.rb
     lib/ffaker/internet_se.rb
     lib/ffaker/job.rb
@@ -141,6 +230,7 @@ Gem::Specification.new do |s|
     test/test_hipster_ipsum.rb
     test/test_html_ipsum.rb
     test/test_identification.rb
+    test/test_identification_co.rb
     test/test_identification_es.rb
     test/test_identification_es_cl.rb
     test/test_lorem.rb

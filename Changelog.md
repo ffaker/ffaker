@@ -1,3 +1,8 @@
+## 1.22.0
+
+Maintenance release, lots of cleanups.
+New modules contributed.
+
 ## 1.21.0
 
 NameFR
