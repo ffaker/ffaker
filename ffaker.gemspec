@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version           = '1.22.1'
   s.date              = '2013-11-24'
   s.rubyforge_project = 'ffaker'
-  
+
   s.license = 'MIT'
 
   s.summary     = "Faster Faker, generates dummy data."
@@ -262,4 +262,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'test-unit'
+  s.add_development_dependency 'mocha'
 end
