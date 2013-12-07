@@ -14,6 +14,14 @@ module Faker
       ArrayUtils.rand(CODES)
     end
 
+    def alphabetic_code
+      ArrayUtils.rand(ALPHABET_CODES)
+    end
+
+    def numeric_code
+      ArrayUtils.rand(NUMERIC_CODES)
+    end
+
     def callsign
       callsignify("?-?-#")
     end

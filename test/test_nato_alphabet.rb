@@ -11,6 +11,14 @@ class TestNato < Test::Unit::TestCase
     assert Faker::NatoAlphabet::CODES.include?(@tester.code)
   end
 
+  def test_letter_code
+    assert Faker::NatoAlphabet::ALPHABET_CODES.include?(@tester.alphabetic_code)
+  end
+
+  def test_numerify_code
+    assert Faker::NatoAlphabet::NUMERIC_CODES.include?(@tester.numeric_code)
+  end
+
   def test_callsign
     assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.callsign
   end
