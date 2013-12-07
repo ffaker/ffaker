@@ -23,9 +23,9 @@ class TestNato < Test::Unit::TestCase
     assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.callsign
   end
 
-  def test_callsignify
-    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.callsignify("?-?-?")
-    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.callsignify("?-#-?")
-    assert_match Faker::NatoAlphabet::STOP_CODE, @tester.callsignify(".")
+  def test_codify
+    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.codify("?-?-?")
+    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.codify("?-#-?")
+    assert_match Faker::NatoAlphabet::STOP_CODE, @tester.codify(".")
   end
 end

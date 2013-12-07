@@ -23,10 +23,10 @@ module Faker
     end
 
     def callsign
-      callsignify("?-?-#")
+      codify("?-?-#")
     end
 
-    def callsignify(masks)
+    def codify(masks)
       masks.scan(/./).map do |c|
         case c
         when "#" then NUMERIC_CODES[Faker.numerify(c).to_i]
