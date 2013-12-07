@@ -1,0 +1,23 @@
+# encoding: utf-8
+
+require 'helper'
+
+class TestNato < Test::Unit::TestCase
+  def setup
+    @tester = Faker::NatoAlphabet
+  end
+
+  def test_code
+    assert Faker::NatoAlphabet::CODES.include?(@tester.code)
+  end
+
+  def test_callsign
+    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.callsign
+  end
+
+  def test_callsignify
+    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.callsignify("?-?-?")
+    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.callsignify("?-#-?")
+    assert_match Faker::NatoAlphabet::STOP_CODE, @tester.callsignify(".")
+  end
+end
