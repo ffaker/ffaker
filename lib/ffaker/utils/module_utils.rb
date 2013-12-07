@@ -12,8 +12,8 @@ module Faker
       else
         mod_name = ancestors.first.to_s.split("::").last
         data_path = "#{Faker::BASE_LIB_PATH}/ffaker/data/#{underscore(mod_name)}/#{underscore(const_name.to_s)}"
-        data = File.read(data_path).split("\n")
-        const_set const_name, k(data)
+        data = k File.read(data_path).split("\n")
+        const_set const_name, data
         data
       end
     end
