@@ -70,4 +70,13 @@ class TestAddress < Test::Unit::TestCase
   def test_country
     assert_match /[ a-z]+/, Faker::Address::country
   end
+
+  def test_country_code
+    assert_match /[A-Z]{2}/, Faker::Address::country_code
+  end
+
+  def test_country_code_of_particular_country
+    assert_match 'UA', Faker::Address::country_code('Ukraine')
+    assert_match /[A-Z]{2}/, Faker::Address::country_code('Foo')
+  end
 end

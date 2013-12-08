@@ -90,6 +90,14 @@ module Faker
       COUNTRY.rand
     end
 
+    def country_code(country = nil)
+      if country && COUNTRY.index(country)
+        COUNTRY_CODE[COUNTRY.index(country)]
+      else
+        COUNTRY_CODE.rand
+      end
+    end
+
     COMPASS_DIRECTIONS = k %w(North East West South)
 
     CITY_PREFIXES = k(COMPASS_DIRECTIONS + %w(New Lake Port))
