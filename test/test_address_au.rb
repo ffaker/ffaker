@@ -5,7 +5,7 @@ require 'helper'
 # Author: wiseleyb<wiseleyb@gmail.com>
 class TestAddressAU < Test::Unit::TestCase
 
-  def test_au_state_abbr
+  def test_au_state_abbr_insertion
     arr = Faker::AddressAU::STATE_ABBR.sort
     assert arr = Faker::AddressAU::SUBURB.keys.sort
     assert arr = Faker::AddressAU::POSTCODE.keys.sort
