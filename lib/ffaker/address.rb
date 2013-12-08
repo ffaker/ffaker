@@ -86,13 +86,19 @@ module Faker
       NEIGHBORHOOD.rand
     end
 
-    def country
-      COUNTRY.rand
+    def country(given_code = nil)
+      country_index = COUNTRY_CODE.index(given_code)
+      if given_code && country_index
+        COUNTRY[country_index]
+      else
+        COUNTRY.rand
+      end
     end
 
-    def country_code(country = nil)
-      if country && COUNTRY.index(country)
-        COUNTRY_CODE[COUNTRY.index(country)]
+    def country_code(given_country = nil)
+      code_index = COUNTRY.index(given_country)
+      if given_country && code_index
+        COUNTRY_CODE[code_index]
       else
         COUNTRY_CODE.rand
       end
