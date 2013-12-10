@@ -91,6 +91,7 @@ module Faker
       end
       s << "</tbody>
       </table>"
+      s.gsub /\n/, "\r\n"
     end
 
     def body
@@ -119,6 +120,7 @@ module Faker
         height: 80px;
       }
       </code></pre>"
+      s.gsub /\n/, "\r\n"
     end
 
     def fancy_string(count = 3, include_breaks = false)
