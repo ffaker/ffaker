@@ -1,0 +1,38 @@
+events: process_time
+
+fl=/Users/linglis/.rvm/gems/ruby-1.9.3-p484/gems/ruby-prof-0.13.0/bin/ruby-prof
+fn=Global#[No method]
+299 17
+
+fl=/Users/linglis/Code/ffaker/ruby_runtime
+fn=Exception#set_backtrace
+0 3
+
+fl=/Users/linglis/Code/ffaker/ruby_runtime
+fn=Exception#backtrace
+0 2
+
+fl=/Users/linglis/Code/ffaker/ruby_runtime
+fn=Exception#exception
+0 2
+
+fl=/Users/linglis/Code/ffaker/ruby_runtime
+fn=Exception#initialize
+0 5
+
+fl=/Users/linglis/Code/ffaker/ruby_runtime
+fn=<Class::BasicObject>#allocate
+0 20
+
+fl=/Users/linglis/Code/ffaker/ruby_runtime
+fn=Class#new
+0 96
+cfl=/Users/linglis/Code/ffaker/ruby_runtime
+cfn=<Class::BasicObject>#allocate
+calls=1 96
+96 20
+cfl=/Users/linglis/Code/ffaker/ruby_runtime
+cfn=Exception#initialize
+calls=1 96
+96 5
+
