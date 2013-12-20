@@ -7,11 +7,7 @@ module Faker
     extend self
 
     def characters(character_count = 255)
-      unless character_count < 0
-        CHARACTERS.random_pick(character_count, true).join
-      else
-        ""
-      end
+      [].tap { |c| character_count.times { c << CHARACTERS.sample } }.join
     end
 
     def word
