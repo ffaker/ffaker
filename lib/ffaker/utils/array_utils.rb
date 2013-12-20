@@ -6,8 +6,12 @@ module Faker
       freeze_all(array)
     end
 
-    def self.random_pick(array, n)
-      indexes = (0...array.length).sort_by{Kernel.rand}[0...n]
+    def self.random_pick(array, n, duplicates = false)
+      if duplicates
+        indexes = Array.new(n) { |i| Kernel.rand(array.length) }
+      else
+        indexes = (0...array.length).sort_by{Kernel.rand}[0...n]
+      end
       indexes.map { |n| array[n].dup }
     end
 
@@ -25,8 +29,8 @@ module Faker
       array.sort_by{Kernel.rand}
     end
 
-    def random_pick(n)
-      ArrayUtils.random_pick(self, n)
+    def random_pick(n, duplicates = false)
+      ArrayUtils.random_pick(self, n, duplicates)
     end
 
     def rand
