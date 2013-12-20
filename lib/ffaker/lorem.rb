@@ -7,7 +7,11 @@ module Faker
     extend self
 
     def characters(character_count = 255)
-      CHARACTERS.random_pick(character_count, true).join
+      unless character_count < 0
+        CHARACTERS.random_pick(character_count, true).join
+      else
+        ""
+      end
     end
 
     def word
