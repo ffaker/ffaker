@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version           = '1.22.1'
   s.date              = '2013-11-24'
   s.rubyforge_project = 'ffaker'
-  
+
   s.license = 'MIT'
 
   s.summary     = "Faster Faker, generates dummy data."
@@ -119,6 +119,9 @@ Gem::Specification.new do |s|
     lib/ffaker/data/name_se/first_names_female
     lib/ffaker/data/name_se/first_names_male
     lib/ffaker/data/name_se/last_names
+    lib/ffaker/data/name_nb/first_names_female
+    lib/ffaker/data/name_nb/first_names_male
+    lib/ffaker/data/name_nb/last_names
     lib/ffaker/data/name_sn/first_names_female
     lib/ffaker/data/name_sn/first_names_male
     lib/ffaker/data/name_sn/last_names
@@ -165,6 +168,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_ph.rb
     lib/ffaker/name_ru.rb
     lib/ffaker/name_se.rb
+    lib/ffaker/name_nb.rb
     lib/ffaker/name_sn.rb
     lib/ffaker/name_vn.rb
     lib/ffaker/phone_number.rb
@@ -224,6 +228,7 @@ Gem::Specification.new do |s|
     test/test_faker_name_ph.rb
     test/test_faker_name_ru.rb
     test/test_faker_name_se.rb
+    test/test_faker_name_nb.rb
     test/test_faker_name_sn.rb
     test/test_geolocation.rb
     test/test_healthcare_ipsum.rb
