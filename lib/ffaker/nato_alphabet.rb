@@ -29,8 +29,8 @@ module Faker
     def codify(masks)
       masks.scan(/./).map do |c|
         case c
-        when "#" then NUMERIC_CODES[Faker.numerify(c).to_i]
-        when "?" then ALPHABET_CODES["a".ord - Faker.letterify(c).ord]
+        when "#" then NUMERIC_CODES.rand
+        when "?" then ALPHABET_CODES.rand
         when "." then STOP_CODE
         else c
         end

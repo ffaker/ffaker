@@ -7,7 +7,7 @@ module Faker
     extend self
 
     def characters(character_count = 255)
-      [].tap { |c| character_count.times { c << CHARACTERS.sample } }.join
+      Array.new(character_count < 0 ? 0 : character_count).map { CHARACTERS.rand }.join
     end
 
     def word
