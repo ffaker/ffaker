@@ -1,5 +1,9 @@
 ## 1.22.1
 
+Bugfixes and minor API additions.
+
+## 1.22.1
+
 Bugfixes
 
 ## 1.22.0
