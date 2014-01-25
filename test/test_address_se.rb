@@ -24,13 +24,10 @@ class TestAddressSE < Test::Unit::TestCase
     assert_match ALPHA, address
     assert_match DIGIT, address
     assert_match(/SVERIGE/, address)
+    assert_match(/[\, a-z]/, address)
   end
 
   def test_se_zip_code_frozen
     assert Faker::AddressSE.zip_code.frozen? == false
-  end
-
-  def test_se_full_address
-    assert_match(/[\, a-z]/, Faker::AddressSE.full_address)
   end
 end
