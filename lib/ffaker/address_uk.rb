@@ -10,18 +10,18 @@ module Faker
     extend self
 
     def county
-      UK_COUNTY.rand
+      COUNTY.rand
     end
 
     def country
-      UK_COUNTRY.rand
+      COUNTRY.rand
     end
 
     def postcode
-      Faker.bothify(UK_POSTCODE.rand).upcase
+      Faker.bothify(POSTCODE.rand).upcase
     end
 
-    UK_COUNTRY = k ['England', 'Scotland', 'Wales', 'Northern Ireland']
-    UK_POSTCODE = k ['??# #??', '??## #??']
+    COUNTRY = k ['England', 'Scotland', 'Wales', 'Northern Ireland']
+    POSTCODE = k ['??# #??', '??## #??']
   end
 end
