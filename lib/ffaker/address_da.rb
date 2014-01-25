@@ -40,7 +40,7 @@ module Faker
     end
 
     def street_address
-      "#{Faker::AddressDA.street_address} #{rand(100)}"
+      "#{street_name} #{rand(100)}"
     end
 
     def full_address
