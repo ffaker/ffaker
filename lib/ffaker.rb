@@ -12,7 +12,7 @@ module Faker
 
   def self.numerify(*masks)
     mask = ArrayUtils.rand(masks.flatten)
-    mask.gsub!(/#/) { rand(10).to_s }
+    mask.gsub!(/#/) { rand(9).to_s }
     mask
   end
 

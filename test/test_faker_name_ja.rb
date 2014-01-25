@@ -8,6 +8,6 @@ class TestFakerNameJA < Test::Unit::TestCase
   end
 
   def test_name
-    assert Faker::NameJA.name.length > 2
+    assert Faker::NameJA.name.length >= 2
   end
 end
