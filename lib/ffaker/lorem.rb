@@ -6,6 +6,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    def characters(character_count = 255)
+      [].tap { |c| character_count.times { c << CHARACTERS.sample } }.join
+    end
+
     def word
       WORDS.rand
     end

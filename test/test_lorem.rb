@@ -34,4 +34,11 @@ class TestLorem < Test::Unit::TestCase
   def test_word
     assert_match /[a-z]+/, Faker::Lorem.word
   end
+
+  def test_characters
+    assert_match /[a-z0-9]+/, Faker::Lorem.characters
+    assert Faker::Lorem.characters().length == 255
+    assert Faker::Lorem.characters(10).length == 10
+    assert Faker::Lorem.characters(-1) == ""
+  end
 end

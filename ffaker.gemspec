@@ -87,6 +87,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/job_fr/job_nouns
     lib/ffaker/data/job_fr/job_prefixes
     lib/ffaker/data/lorem/words
+    lib/ffaker/data/lorem/characters
     lib/ffaker/data/lorem_ar/words
     lib/ffaker/data/lorem_cn/words
     lib/ffaker/data/lorem_fr/words
