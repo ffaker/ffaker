@@ -1,16 +1,14 @@
 # encoding: utf-8
 
 module Faker
-  # Author PapePathe<pathe.sene@gmail.com> github.com/PapePathe
-  # The names & first names in this module were found at this url
-  # https://github.com/fzaninotto/Faker/blob/master/src/Faker/Provider/fr_FR/Person.php
+  # Author microspino<info@microspino.com> github.com/microspino
   module NameIT
     extend ModuleUtils
     extend self
 
     PREFIX = k %w(Sig. Sig.ra Sig.na Dr. Dott. Dott.ssa Prof. Prof.ssa)
 
-    # randomized? (FRENCH)  prefix!
+    # randomized? (ITALIAN)  prefix!
     #
     def prefix
       PREFIX.rand
