@@ -137,6 +137,9 @@ Gem::Specification.new do |s|
     lib/ffaker/data/name_sn/first_names_female
     lib/ffaker/data/name_sn/first_names_male
     lib/ffaker/data/name_sn/last_names
+    lib/ffaker/data/name_th/first_names
+    lib/ffaker/data/name_th/last_names
+    lib/ffaker/data/name_th/nick_names
     lib/ffaker/data/name_vn/first_names
     lib/ffaker/data/name_vn/last_names
     lib/ffaker/data/name_vn/middle_names
@@ -184,6 +187,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_ru.rb
     lib/ffaker/name_se.rb
     lib/ffaker/name_sn.rb
+    lib/ffaker/name_th.rb
     lib/ffaker/name_vn.rb
     lib/ffaker/nato_alphabet.rb
     lib/ffaker/phone_number.rb
@@ -264,6 +268,7 @@ Gem::Specification.new do |s|
     test/test_name_ru.rb
     test/test_name_se.rb
     test/test_name_sn.rb
+    test/test_name_th.rb
     test/test_nato_alphabet.rb
     test/test_phone_number.rb
     test/test_phone_number_au.rb
