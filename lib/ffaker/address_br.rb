@@ -31,8 +31,8 @@ module Faker
 
     def street
       case rand(1)
-      when 0 then "#{street_prefix} #{Name.name}"
-      when 1 then "#{street_prefix} #{Name.first_name} #{Name.last_name} #{Name.last_name}"
+      when 0 then "#{street_prefix} #{NameBR.name}"
+      when 1 then "#{street_prefix} #{NameBR.first_name} #{NameBR.last_name} #{NameBR.last_name}"
       end
     end
 
