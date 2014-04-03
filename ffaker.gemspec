@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.23.0'
-  s.date              = '2014-01-24'
+  s.version           = '1.24.0'
+  s.date              = '2014-04-02'
   s.rubyforge_project = 'ffaker'
 
   s.license = 'MIT'
@@ -45,6 +45,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_us.rb
     lib/ffaker/bacon_ipsum.rb
     lib/ffaker/company.rb
+    lib/ffaker/company_it.rb
     lib/ffaker/company_se.rb
     lib/ffaker/conference.rb
     lib/ffaker/data/address/city_suffixes
@@ -93,6 +94,8 @@ Gem::Specification.new do |s|
     lib/ffaker/data/job/job_prefix
     lib/ffaker/data/job_fr/job_nouns
     lib/ffaker/data/job_fr/job_prefixes
+    lib/ffaker/data/locale/language
+    lib/ffaker/data/locale/language_code
     lib/ffaker/data/lorem/characters
     lib/ffaker/data/lorem/words
     lib/ffaker/data/lorem_ar/words
@@ -143,6 +146,8 @@ Gem::Specification.new do |s|
     lib/ffaker/data/name_vn/first_names
     lib/ffaker/data/name_vn/last_names
     lib/ffaker/data/name_vn/middle_names
+    lib/ffaker/data/phone_number_it/home_phone_prefixes
+    lib/ffaker/data/phone_number_it/mobile_phone_prefixes
     lib/ffaker/data/phone_number_se/phone_prefix
     lib/ffaker/data/product/adj
     lib/ffaker/data/product/b1
@@ -165,6 +170,7 @@ Gem::Specification.new do |s|
     lib/ffaker/internet_se.rb
     lib/ffaker/job.rb
     lib/ffaker/job_fr.rb
+    lib/ffaker/locale.rb
     lib/ffaker/lorem.rb
     lib/ffaker/lorem_ar.rb
     lib/ffaker/lorem_cn.rb
@@ -195,6 +201,7 @@ Gem::Specification.new do |s|
     lib/ffaker/phone_number_da.rb
     lib/ffaker/phone_number_de.rb
     lib/ffaker/phone_number_fr.rb
+    lib/ffaker/phone_number_it.rb
     lib/ffaker/phone_number_mx.rb
     lib/ffaker/phone_number_se.rb
     lib/ffaker/phone_number_sg.rb
@@ -229,6 +236,7 @@ Gem::Specification.new do |s|
     test/test_array_utils.rb
     test/test_bacon_ipsum.rb
     test/test_company.rb
+    test/test_company_it.rb
     test/test_company_se.rb
     test/test_conference.rb
     test/test_dizzle_ipsum.rb
