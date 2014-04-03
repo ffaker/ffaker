@@ -27,5 +27,7 @@ module Faker
   end
 
   # Load all constants.
-  Dir["#{BASE_LIB_PATH}/ffaker/*rb"].sort.each { |f| require f }
+  Dir["#{BASE_LIB_PATH}/ffaker/*.rb"].sort.each do |f|
+    require "ffaker/#{File.basename(f, '.rb')}"
+  end
 end
