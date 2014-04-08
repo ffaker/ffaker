@@ -3,7 +3,7 @@
 require 'ffaker/address'
 
 module Faker
-  # Author guapolo<github.com/guapolo>
+  # Author Guapolo <github.com/guapolo>
   module AddressMX
     include Faker::Address
 
