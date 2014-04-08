@@ -41,7 +41,6 @@ module Faker
       "#{domain_word}.#{domain_suffix}"
     end
 
-
     def domain_word
       dw = Company.name.split(' ').first
       dw.gsub!(/\W/, '')
@@ -72,8 +71,6 @@ module Faker
       end
       return temp
     end
-
-
     BYTE = k((0..255).to_a.map { |n| n.to_s })
     HOSTS = k %w(gmail.com yahoo.com hotmail.com)
     DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
