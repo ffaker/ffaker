@@ -41,6 +41,7 @@ module Faker
       "#{domain_word}.#{domain_suffix}"
     end
 
+
     def domain_word
       dw = Company.name.split(' ').first
       dw.gsub!(/\W/, '')
@@ -63,6 +64,15 @@ module Faker
     def ip_v4_address
       (1..4).map { BYTE.random_pick(1) }.join(".")
     end
+
+    def password(min_length=0)
+      temp = Lorem.words.join
+      while temp.length < min_length
+        temp += Lorem.word
+      end
+      return temp
+    end
+
 
     BYTE = k((0..255).to_a.map { |n| n.to_s })
     HOSTS = k %w(gmail.com yahoo.com hotmail.com)
