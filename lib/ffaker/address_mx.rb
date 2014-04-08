@@ -1,21 +1,17 @@
 # encoding: utf-8
 
-require 'ffaker/address'
-
 module Faker
   # Author Guapolo <github.com/guapolo>
   module AddressMX
-    include Faker::Address
-
     extend ModuleUtils
     extend self
 
     def zip_code
-      Faker::AddressUS.zip_code
+      Faker.numerify('#####')
     end
 
     def postal_code
-      Faker.numerify POSTAL_CODE_FORMATS.rand
+      Faker.numerify('#####')
     end
 
     def state
@@ -31,8 +27,6 @@ module Faker
       st_abbr ||= state_abbr
       MUNICIPALITY[st_abbr][rand(MUNICIPALITY[st_abbr].size)]
     end
-
-    POSTAL_CODE_FORMATS = k ['#####']
 
     MUNICIPALITY = {
       "AGS" => [
