@@ -1,9 +1,11 @@
 # encoding: utf-8
 
+require 'ffaker/identification_es'
+
 module Faker
-  # Author Guapolo <github.com/guapolo>
-  module IDCodeMX
-    extend ModuleUtils
+  module IdentificationMX
+    # Author Guapolo <github.com/guapolo>
+    extend IdentificationES
     extend self
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -36,7 +38,7 @@ module Faker
       all_letters = CONSONANTS + VOWELS
       hm = ["H","M"]
       date = ::Time.at(rand * ::Time.now.to_f).to_date.strftime("%y%m%d")
-      "#{CONSONANTS.sample}#{VOWELS.sample}#{all_letters.sample(2).join}#{date}#{hm.sample}#{CURP_STATE_ABBR.sample}#{CONSONANTS.sample(3).join}#{HOMOCLAVE.sample(2).join}"
+      "#{CONSONANTS.sample}#{VOWELS.sample}#{all_letters.sample(2).join}#{date}#{hm.sample}#{CURP_STATE_ABBR.sample}#{CONSONANTS.sample(3).join}#{HOMOCLAVE.sample}#{rand(10)}"
     end
 
 
