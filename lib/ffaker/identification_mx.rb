@@ -14,7 +14,7 @@ module Faker
       consonants_n = CONSONANTS + ["Ñ"]
       all_letters = consonants_n + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
-      "#{ArrayUtils.rand(consonants_n)}#{ArrayUtils.rand(VOWELS)}#{ArrayUtils.random_pick(all_letters,2)}#{date}#{ArrayUtils.random_pick(HOMOCLAVE,3)}"
+      "#{ArrayUtils.rand(consonants_n)}#{ArrayUtils.rand(VOWELS)}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{ArrayUtils.random_pick(HOMOCLAVE,3).join}"
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -23,7 +23,7 @@ module Faker
       consonants_n_amp = CONSONANTS + ["Ñ", "&"]
       all_letters = consonants_n_amp + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
-      "#{ArrayUtils.random_pick(all_letters,3)}#{date}#{ArrayUtils.random_pick(HOMOCLAVE,3)}"
+      "#{ArrayUtils.random_pick(all_letters,3).join}#{date}#{ArrayUtils.random_pick(HOMOCLAVE,3).join}"
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -38,7 +38,7 @@ module Faker
       all_letters = CONSONANTS + VOWELS
       hm = ["H","M"]
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
-      "#{ArrayUtils.rand(CONSONANTS)}#{ArrayUtils.rand(VOWELS)}#{ArrayUtils.random_pick(all_letters,2)}#{date}#{ArrayUtils.rand(hm)}#{ArrayUtils.rand(ESTADOS_CURP)}#{ArrayUtils.random_pick(CONSONANTS,3)}#{ArrayUtils.rand(HOMOCLAVE)}#{rand(10)}"
+      "#{ArrayUtils.rand(CONSONANTS)}#{ArrayUtils.rand(VOWELS)}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{ArrayUtils.rand(hm)}#{ArrayUtils.rand(ESTADOS_CURP)}#{ArrayUtils.random_pick(CONSONANTS,3).join}#{ArrayUtils.rand(HOMOCLAVE)}#{rand(10)}"
     end
 
 
