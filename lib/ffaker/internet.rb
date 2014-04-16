@@ -65,10 +65,12 @@ module Faker
     end
 
     def slug(words = nil, glue = nil)
-      glue ||= %w[- _ .].sample
+      glue_options = %w[- _ .]
+      glue ||= glue_options.respond_to?(:sample) ?
+        glue_options.sample : glue_options.choice
       (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
     end
-  
+
     BYTE = k((0..255).to_a.map { |n| n.to_s })
     HOSTS = k %w(gmail.com yahoo.com hotmail.com)
     DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
