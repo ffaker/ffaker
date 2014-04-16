@@ -66,6 +66,8 @@ module Faker
 
     def slug(words = nil, glue = nil)
       glue_options = %w[- _ .]
+
+      # Adds support for Ruby 1.8.7
       glue ||= glue_options.respond_to?(:sample) ?
         glue_options.sample : glue_options.choice
       (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
