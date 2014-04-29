@@ -65,11 +65,8 @@ module Faker
     end
 
     def slug(words = nil, glue = nil)
-      glue_options = %w[- _ .]
+      glue ||= SLUG_DELIMITERS.rand
 
-      # Adds support for Ruby 1.8.7
-      glue ||= glue_options.respond_to?(:sample) ?
-        glue_options.sample : glue_options.choice
       (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
     end
 
@@ -77,5 +74,6 @@ module Faker
     HOSTS = k %w(gmail.com yahoo.com hotmail.com)
     DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
     DOMAIN_SUFFIXES = k %w(co.uk com us ca biz info name)
+    SLUG_DELIMITERS = k %w[- _ .]
   end
 end
