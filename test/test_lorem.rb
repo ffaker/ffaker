@@ -9,6 +9,9 @@ class TestLorem < Test::Unit::TestCase
 
   def test_sentence
     assert_match /[ a-z]+/, Faker::Lorem.sentence
+    assert_nothing_thrown do
+      100.times { Faker::Lorem.sentence 0 }
+    end
   end
 
   def test_phrase
