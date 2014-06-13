@@ -98,9 +98,16 @@ module Faker
       (1..4).map { BYTE.random_pick(1) }.join(".")
     end
 
+    def slug(words = nil, glue = nil)
+      glue ||= SLUG_DELIMITERS.rand
+
+      (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
+    end
+
     BYTE = k((0..255).to_a.map { |n| n.to_s })
     HOSTS = k %w(gmail.com yahoo.com hotmail.com spray.se passagen.se)
     DOMAIN_SUFFIXES = k %w(se nu com)
     DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
+    SLUG_DELIMITERS = k %w[- _ .]
   end
 end
