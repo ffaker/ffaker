@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'helper'
+require File.dirname(__FILE__) + '/helper'
 
 class TestFakerTime < Test::Unit::TestCase
   def setup

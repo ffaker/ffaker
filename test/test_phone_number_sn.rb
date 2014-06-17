@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'helper'
+require File.dirname(__FILE__) + '/helper'
 
 # Author: xarala<pathe.sene@xarala.sn> http://www.xarala.sn
 class TestPhoneNumberSN < Test::Unit::TestCase

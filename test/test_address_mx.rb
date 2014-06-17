@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'helper'
+require File.dirname(__FILE__) + '/helper'
 
 # Author: guapolo github.com/guapolo
 class TestAddressMX < Test::Unit::TestCase

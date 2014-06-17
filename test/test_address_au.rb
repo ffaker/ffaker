@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'helper'
+require File.dirname(__FILE__) + '/helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
 class TestAddressAU < Test::Unit::TestCase

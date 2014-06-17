@@ -3,7 +3,7 @@
 # => author: PapePathe github.com/PapePathe
 # => email: pathe.sene@gmail.com
 
-require "helper"
+require File.dirname(__FILE__) + "/helper"
 
 class TestAddressSn < Test::Unit::TestCase
 

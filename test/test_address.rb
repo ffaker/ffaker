@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'helper'
+require File.dirname(__FILE__) + '/helper'
 
 class TestAddress < Test::Unit::TestCase
   def test_building_number

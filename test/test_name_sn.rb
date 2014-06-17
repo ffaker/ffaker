@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'helper'
+require File.dirname(__FILE__) + '/helper'
 
 # Author: PapePathe<pathe.sene@gmail.com> github.com/PapePathe
 class TestFakerNameSn < Test::Unit::TestCase
