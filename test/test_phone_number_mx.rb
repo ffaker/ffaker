@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require File.dirname(__FILE__) + '/helper'
+require 'helper'
 
 # Author: guapolo github.com/guapolo
 class TestPhoneNumberMX < Test::Unit::TestCase

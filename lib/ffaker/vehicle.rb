@@ -40,7 +40,7 @@ module Faker
     end
 
     DRIVETRAINS = k(%w(4WD 4X4 AWD FWD RWD))
-    YEARS = k('1900'.."#{Date.today.year+1}")
+    YEARS = k('1900'.."#{::Date.today.year+1}")
     COLOR_PREFIXES = k(%w(
       beautiful bright calm dangerous dark dull fast magnetic magnificent majestic melodic metallic
       mundane mute mysterious new pleasant pretty resonant royal slate soft tranquil vibrant weak

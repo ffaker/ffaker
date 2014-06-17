@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-require File.dirname(__FILE__) + '/helper'
+require 'helper'
 
 class TestFakerNameBR < Test::Unit::TestCase
   def setup

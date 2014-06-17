@@ -1,7 +1,7 @@
 # => Author: Vitor Oliveira <vitormil@gmail.com>
 # => Transfered By: Anthony Humes <jah.humes@gmail.com>
 
-require File.dirname(__FILE__) + '/helper'
+require 'helper'
 
 class TestFakerDate < Test::Unit::TestCase
   def setup

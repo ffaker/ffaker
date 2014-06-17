@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require File.dirname(__FILE__) + '/helper'
+require 'helper'
 
 class TestConference < Test::Unit::TestCase
   def test_name

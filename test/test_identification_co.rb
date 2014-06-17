@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/helper'
+require 'helper'
 
 class TestFakerIdentificationESCO < Test::Unit::TestCase
   include Test::Unit::Assertions

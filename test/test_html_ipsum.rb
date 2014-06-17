@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require File.dirname(__FILE__) + '/helper'
+require 'helper'
 
 class TestHTMLIpsum < Test::Unit::TestCase
   def setup

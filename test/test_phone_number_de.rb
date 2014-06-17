@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require File.dirname(__FILE__) + '/helper'
+require 'helper'
 
 # Author: lawitschka<moritz.lawitschka@urbanvention.com>
 class TestPhoneNumberDE < Test::Unit::TestCase

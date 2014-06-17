@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require File.dirname(__FILE__) + '/helper'
+require 'helper'
 
 class TestAddressDA < Test::Unit::TestCase
   def test_zip_code
