@@ -63,5 +63,8 @@ class TestFakerInternetSE < Test::Unit::TestCase
     assert @tester.ip_v4_address.match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/)
   end
 
-end
+  def test_slug
+    assert @tester.slug.match(/^[a-z]+(_|\.|\-)[a-z]+$/)
+  end
 
+end
