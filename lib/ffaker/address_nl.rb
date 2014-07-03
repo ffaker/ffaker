@@ -10,7 +10,7 @@ module Faker
     extend self
 
     def postal_code
-      Faker.numerify POSTAL_CODE_FORMAT
+      Faker.bothify POSTAL_CODE_FORMAT
     end
 
     def street_name
@@ -30,6 +30,6 @@ module Faker
       CITY.rand
     end
 
-    POSTAL_CODE_FORMAT = k ['#### ZZ']
+    POSTAL_CODE_FORMAT = k ['#### ??']
   end
 end
