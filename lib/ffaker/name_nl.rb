@@ -17,21 +17,24 @@ module Faker
     end
 
     def first_name
-      case rand(12)
-      when 0..4  then first_name_female
-      when 5..9  then first_name_male
-      when 10    then "#{first_name_male}-#{first_name_male}"
-      when 11    then "#{first_name_female}-#{first_name_female}"
-      else            first_name_female
+      case rand(2)
+      when 0 then first_name_female
+      when 1 then first_name_male
       end
     end
 
     def first_name_female
-      FIRST_NAMES_FEMALE.rand
+      case rand(8)
+      when 0 then [FIRST_NAMES_FEMALE.rand, FIRST_NAMES_FEMALE.rand].join('-')
+      else then FIRST_NAMES_FEMALE.rand
+      end
     end
 
     def first_name_male
-      FIRST_NAMES_MALE.rand
+      case rand(8)
+      when 0 then [FIRST_NAMES_MALE.rand, FIRST_NAMES_MALE.rand].join('-')
+      else then FIRST_NAMES_MALE.rand
+      end
     end
 
     def last_name
