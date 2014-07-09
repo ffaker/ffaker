@@ -13,6 +13,10 @@ module Faker
       Faker.bothify POSTAL_CODE_FORMAT
     end
 
+    def zip_code
+      postal_code
+    end
+
     def street_name
       case rand(2)
       when 0 then "#{NameNL.last_name}"
