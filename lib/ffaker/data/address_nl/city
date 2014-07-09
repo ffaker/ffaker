@@ -22,7 +22,7 @@ Maastricht
 IJmond
 Arnhem
 Alkmaar
-Zwolle-Kern
+Zwolle
 Leeuwarden
 Deventer
 Purmerend
@@ -30,7 +30,7 @@ Hilversum
 Helmond
 Hoofddorp
 Spijkenisse
-Lelystad-Kern
+Lelystad
 Gouda
 Hoorn
 Almelo
@@ -47,7 +47,7 @@ Nieuwegein
 Oss
 Venlo
 Tegelen
-Hengelo-Kern
+Hengelo
 Emmen
 Geleen
 Bergen op Zoom
@@ -92,7 +92,7 @@ Waalwijk
 Sneek
 Kerkrade
 Wijchen
-Harderwijk-Kern
+Harderwijk
 Bilthoven
 De Bilt
 Kampen
@@ -118,7 +118,7 @@ Veendam
 Wildervank
 Veghel
 Terneuzen
-Leusden-Kern
+Leusden
 Uithoorn
 Nijkerk
 Emmeloord
@@ -147,7 +147,7 @@ Mijdrecht
 Wilnis
 Deurne
 Dongen
-Ermelo-Kern
+Ermelo
 Bovenkarspel
 Grootebroek
 Lutjebroek
@@ -194,7 +194,7 @@ Beuningen
 s-Gravenzande
 Weesp
 Bodegraven
-Huissen-Kern
+Huissen
 Rijen
 Laren
 Blaricum
@@ -234,11 +234,11 @@ Aalten
 Wierden
 Sint Willebrord
 Sprundel
-Epe-Kern
+Epe
 Franeker
 Didam
 Lichtenvoorde
-Rozenburg-Kern
+Rozenburg
 Monster
 Ter Heijde
 Asten
@@ -269,9 +269,9 @@ Meerssen
 Bunde
 Noordwijkerhout
 Heesch
-Vriezenveen-Kern
+Vriezenveen
 Made
-Boskoop-Kern
+Boskoop
 Reuver
 Rhenen
 Vaassen
@@ -311,7 +311,7 @@ Breukelen
 Poortugaal
 Eerbeek
 Genemuiden
-Hulst-Kern
+Hulst
 Bladel
 Eelde
 Paterswolde
@@ -328,12 +328,12 @@ Buchten
 Holtum
 Oirschot
 Hoogkerk
-Heerde-Kern
+Heerde
 Scherpenzeel
 Hazerswoude-Rijndijk
 Koudekerk a
 d Rijn
-Hoek van Holland-Kern
+Hoek van Holland
 Gennep
 Roelofsarendsveen
 Oude Wetering
@@ -371,11 +371,11 @@ Nieuwkoop
 Oudewater
 Stiens
 Winsum
-Vroomshoop-Kern
+Vroomshoop
 Dinxperlo
 Axel
 Hoogkarspel
-Oude Pekela-Kern
+Oude Pekela
 Borculo
 Brummen
 Doesburg
@@ -425,14 +425,14 @@ Yerseke
 Krimpen aan de Lek
 Oostvoorne
 Waalre
-Maasbracht-Kern
+Maasbracht
 Nieuw-Amsterdam
 Soesterberg
 Kortenhoef
 Teteringen
 Ruurlo
 Beneden-Leeuwen
-Assendelft-Kern
+Assendelft
 Terheijden
 Holten
 Nieuw-Loosdrecht
@@ -458,7 +458,7 @@ Klundert
 Heythuysen
 Grou
 Varsseveld
-Vinkeveen-Kern
+Vinkeveen
 Surhuisterveen
 Bennebroek
 Angerlo
@@ -534,7 +534,7 @@ Wehl
 Maartensdijk
 Nuth
 Bocholtz
-Uithuizen-Kern
+Uithuizen
 Fijnaart
 Winkel
 Opheusden
@@ -580,7 +580,7 @@ Liempde
 Velden
 Diepenveen
 Middenbeemster
-Naarden-Kern
+Naarden
 Sas van Gent
 Balk
 Ochten
@@ -597,7 +597,7 @@ Renswoude
 Wapenveld
 Schipluiden
 Rucphen
-Haaren-Kern
+Haaren
 Appelscha
 Ureterp
 Kruiningen
@@ -609,7 +609,7 @@ Lienden
 Linschoten
 Markelo
 Horn
-Posterholt-Kern
+Posterholt
 Sint Anthonis
 Smilde
 Heerjansdam
@@ -661,7 +661,7 @@ Rijsenhout
 Grootegast
 Spaubeek
 Dronrijp
-Gorssel-Kern
+Gorssel
 Gulpen
 Hank
 Benthuizen
@@ -722,7 +722,7 @@ Aan de Berg
 Siddeburen
 Ruinen
 Beusichem
-Nieuwe Pekela-Kern
+Nieuwe Pekela
 Middelbeers
 Tolkamer
 Westkapelle
@@ -894,7 +894,7 @@ Beegden
 Leens
 Wagenborgen
 Budel-Schoot-Noord
-Goedereede-Kern
+Goedereede
 Oosterhesselen
 Afferden
 Vuren
@@ -1043,7 +1043,7 @@ Oud-Alblas
 Biervliet
 Noordbroek
 Kampen-Onderdijks
-Babberich-Kern
+Babberich
 Heusden
 Opeinde
 Puth
@@ -1095,14 +1095,14 @@ Jirnsum
 Keijenborg
 Usquert
 America
-Hierden-Kern
+Hierden
 Ophemert
 Rijkevoort
 Deurningen
 Zevenhuizen
 Ell
 Aldeboarn
-Bellingwolde-Kern
+Bellingwolde
 Berkhout
 Kropswolde
 Meerwijck
@@ -1129,7 +1129,7 @@ Garderen
 Glimmen
 Herkingen
 Klarenbeek
-Marken-Kern
+Marken
 Oldeberkoop
 Sint Jansklooster
 Wintelre
@@ -1292,7 +1292,7 @@ Hattemerbroek
 Ingen
 Oosterblokker
 Suameer
-Zuilichem-Kern
+Zuilichem
 Buren-Zuid
 Sibculo
 Tijnje
@@ -1505,7 +1505,7 @@ Lennisheuvel
 't Loo
 Wilhelminadorp
 Lutjegast
-Mheer-Kern
+Mheer
 Nederwetten
 Nunhem
 Someren-Heide
@@ -1567,7 +1567,7 @@ Lage Weg
 Oene
 Olland
 Zalk
-Giethoorn-Kern
+Giethoorn
 Waskemeer
 Appeltern
 Geesteren
@@ -1672,7 +1672,7 @@ Hoge Enk
 Hulsel
 Oosterlittens
 Uithuizen-Oost
-Veere-Kern
+Veere
 Bruchterveld
 Catrijp
 Gees
