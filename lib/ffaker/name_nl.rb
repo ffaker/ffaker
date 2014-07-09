@@ -26,14 +26,14 @@ module Faker
     def first_name_female
       case rand(8)
       when 0 then [FIRST_NAMES_FEMALE.rand, FIRST_NAMES_FEMALE.rand].join('-')
-      else then FIRST_NAMES_FEMALE.rand
+      else FIRST_NAMES_FEMALE.rand
       end
     end
 
     def first_name_male
       case rand(8)
       when 0 then [FIRST_NAMES_MALE.rand, FIRST_NAMES_MALE.rand].join('-')
-      else then FIRST_NAMES_MALE.rand
+      else FIRST_NAMES_MALE.rand
       end
     end
 
