@@ -60,4 +60,8 @@ class TestFakerInternet < Test::Unit::TestCase
   def test_slug
     assert @tester.slug.match(/^[a-z]+(_|\.|\-)[a-z]+$/)
   end
+
+  def test_password
+    assert @tester.password.match(/[a-z]+/)
+  end
 end

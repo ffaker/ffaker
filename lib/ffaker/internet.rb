@@ -70,6 +70,14 @@ module Faker
       (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
     end
 
+    def password(min_length=0)
+      temp = Lorem.words.join
+      while temp.length < min_length
+        temp += Lorem.word
+      end
+      return temp
+    end
+
     BYTE = k((0..255).to_a.map { |n| n.to_s })
     HOSTS = k %w(gmail.com yahoo.com hotmail.com)
     DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
