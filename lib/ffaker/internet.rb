@@ -19,6 +19,10 @@ module Faker
       "#{user_name(name)}@#{HOSTS.rand}"
     end
 
+    def safe_email(name = nil)
+      [user_name(name), 'example.'+ %w[org com net].shuffle.first].join('@')
+    end
+
     def user_name(name = nil)
       if name
         parts = ArrayUtils.shuffle(name.scan(/\w+/)).join(ArrayUtils.rand(%w(. _)))

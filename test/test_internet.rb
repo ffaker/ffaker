@@ -23,6 +23,10 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.disposable_email.match(/.+@(mailinator\.com|suremail\.info|spamherelots\.com|binkmail\.com|safetymail\.info)/)
   end
 
+  def test_safe_email
+    assert @tester.safe_email.match(/.+@example.(com|net|org)/)
+  end
+
   def test_user_name
     assert @tester.user_name.match(/[a-z]+((_|\.)[a-z]+)?/)
   end
