@@ -15,6 +15,14 @@ class TestAddressUSUS < Test::Unit::TestCase
     assert_match /[A-Z]/, Faker::AddressUS.state_and_territories_abbr
   end
 
+  def test_us_continental_state
+    assert_match /[ a-z]/, Faker::AddressUS.continental_state
+  end
+
+  def test_us_continental_state_abbr
+    assert_match /[A-Z]/, Faker::AddressUS.continental_state_abbr
+  end
+
   def test_zip_code
     assert_match /[0-9]/, Faker::AddressUS.zip_code
   end

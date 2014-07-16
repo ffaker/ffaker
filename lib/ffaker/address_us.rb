@@ -25,6 +25,16 @@ module Faker
       STATE_AND_TERRITORIES_ABBR.rand
     end
 
+    def continental_state
+      CONTINENTAL_STATE.rand
+    end
+
+    def continental_state_abbr
+      CONTINENTAL_STATE_ABBR.rand
+    end
+
     ZIP_FORMATS = k ['#####', '#####-####']
+    CONTINENTAL_STATE = k (STATE - ['Hawaii', 'Alaska'])
+    CONTINENTAL_STATE_ABBR = k (STATE_ABBR - ['HI', 'AK'])
   end
 end
