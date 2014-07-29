@@ -10,6 +10,14 @@ module Faker
 
   LETTERS = k('a'..'z')
 
+  HEX = %w(0 1 2 3 4 5 6 7 8 9 A B C D E F)
+
+  def self.hexify(*masks)
+    mask = ArrayUtils.rand(masks.flatten)
+    mask.gsub!(/#/) { ArrayUtils.rand(HEX) }
+    mask
+  end
+
   def self.numerify(*masks)
     mask = ArrayUtils.rand(masks.flatten)
     mask.gsub!(/#/) { rand(10).to_s }
