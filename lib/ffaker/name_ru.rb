@@ -13,7 +13,7 @@ module Faker
     # Can be called with explicit sex which will affect
     # all calls inside thee block:
     #
-    #   Faker::NameRU.with_same_sex(:male)
+    #   Faker::NameRU.with_same_sex(:male) do
     #     person.last_name  = Faker::NameRU.last_name
     #     person.first_name = Faker::NameRU.first_name
     #     person.patronymic = Faker::NameRU.patronymic
