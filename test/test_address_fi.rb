@@ -16,8 +16,7 @@ class TestAddressFI < Test::Unit::TestCase
   end
 
   def test_countries
-    assert Faker::AddressFI::COUNTRIES
-      .include?(Faker::AddressFI.random_country)
+    assert Faker::AddressFI::COUNTRIES.include?(Faker::AddressFI.random_country)
   end
 
   def test_fi_full_address

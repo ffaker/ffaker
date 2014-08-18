@@ -12,8 +12,10 @@ class TestFakerNameBR < Test::Unit::TestCase
   end
 
   def test_name_with_prefix
-    prefixes = @tester::PREFIXES.map { |p| Regexp.escape(p) }
-    assert_match /(#{prefixes.join('|')}) [[:alpha:]]+ [[:alpha:]]+/, @tester.name_with_prefix
+    prefixes = @tester::PREFIXES
+    parts = @tester.name_with_prefix.split(/\s+/)
+    assert prefixes.include?(parts.first)
+    assert(parts[1].length > 0)
   end
 
   def test_first_name
