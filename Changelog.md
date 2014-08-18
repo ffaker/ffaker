@@ -1,3 +1,7 @@
+## 1.25.0
+
+API additions and some fixes... check the git log! :)
+
 ## 1.24.0
 
 API additions

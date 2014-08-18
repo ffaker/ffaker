@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.24.0'
-  s.date              = '2014-04-02'
+  s.version           = '1.25.0'
+  s.date              = '2014-08-18'
   s.rubyforge_project = 'ffaker'
 
   s.license = 'MIT'
@@ -37,13 +37,17 @@ Gem::Specification.new do |s|
     lib/ffaker/address_ca.rb
     lib/ffaker/address_da.rb
     lib/ffaker/address_de.rb
+    lib/ffaker/address_fi.rb
     lib/ffaker/address_fr.rb
     lib/ffaker/address_mx.rb
+    lib/ffaker/address_nl.rb
     lib/ffaker/address_se.rb
     lib/ffaker/address_sn.rb
     lib/ffaker/address_uk.rb
     lib/ffaker/address_us.rb
     lib/ffaker/bacon_ipsum.rb
+    lib/ffaker/boolean.rb
+    lib/ffaker/color.rb
     lib/ffaker/company.rb
     lib/ffaker/company_it.rb
     lib/ffaker/company_se.rb
@@ -62,9 +66,14 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address_da/street
     lib/ffaker/data/address_de/city
     lib/ffaker/data/address_de/state
+    lib/ffaker/data/address_fi/city
+    lib/ffaker/data/address_fi/countries
+    lib/ffaker/data/address_fi/street
     lib/ffaker/data/address_fr/city
     lib/ffaker/data/address_mx/state
     lib/ffaker/data/address_mx/state_abbr
+    lib/ffaker/data/address_nl/city
+    lib/ffaker/data/address_nl/province
     lib/ffaker/data/address_se/city
     lib/ffaker/data/address_se/countries
     lib/ffaker/data/address_se/street
@@ -76,6 +85,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address_us/state_abbr
     lib/ffaker/data/address_us/state_and_territories_abbr
     lib/ffaker/data/bacon_ipsum/bacon_words
+    lib/ffaker/data/color/names_list
     lib/ffaker/data/company/bs_mid
     lib/ffaker/data/company/bs_pos
     lib/ffaker/data/company/bs_pre
@@ -87,13 +97,19 @@ Gem::Specification.new do |s|
     lib/ffaker/data/dizzle_ipsum/dizzle_words
     lib/ffaker/data/education/major_noun
     lib/ffaker/data/education/school_suffix
+    lib/ffaker/data/food/fruit
+    lib/ffaker/data/food/herb_spice
+    lib/ffaker/data/food/meat
+    lib/ffaker/data/food/vegetable
     lib/ffaker/data/healthcare_ipsum/healthcare_words
     lib/ffaker/data/hipster_ipsum/hipster_words
+    lib/ffaker/data/identification_mx/estados_curp
     lib/ffaker/data/job/job_adj
     lib/ffaker/data/job/job_noun
     lib/ffaker/data/job/job_prefix
     lib/ffaker/data/job_fr/job_nouns
     lib/ffaker/data/job_fr/job_prefixes
+    lib/ffaker/data/job_ja/job_nouns
     lib/ffaker/data/locale/language
     lib/ffaker/data/locale/language_code
     lib/ffaker/data/lorem/characters
@@ -132,6 +148,9 @@ Gem::Specification.new do |s|
     lib/ffaker/data/name_nb/first_names_female
     lib/ffaker/data/name_nb/first_names_male
     lib/ffaker/data/name_nb/last_names
+    lib/ffaker/data/name_nl/first_names_female
+    lib/ffaker/data/name_nl/first_names_male
+    lib/ffaker/data/name_nl/last_names
     lib/ffaker/data/name_ph/autochthonous_surnames
     lib/ffaker/data/name_ph/spanish_surnames
     lib/ffaker/data/name_se/first_names_female
@@ -155,9 +174,13 @@ Gem::Specification.new do |s|
     lib/ffaker/data/skill/specialty_end
     lib/ffaker/data/skill/specialty_start
     lib/ffaker/data/skill/tech_skills
+    lib/ffaker/data/vehicle/makes_list
+    lib/ffaker/data/vehicle/models_list
+    lib/ffaker/data/vehicle/trims_list
     lib/ffaker/data/venue/venue_list
     lib/ffaker/dizzle_ipsum.rb
     lib/ffaker/education.rb
+    lib/ffaker/food.rb
     lib/ffaker/geolocation.rb
     lib/ffaker/healthcare_ipsum.rb
     lib/ffaker/hipster_ipsum.rb
@@ -166,10 +189,12 @@ Gem::Specification.new do |s|
     lib/ffaker/identification_es.rb
     lib/ffaker/identification_es_cl.rb
     lib/ffaker/identification_es_co.rb
+    lib/ffaker/identification_mx.rb
     lib/ffaker/internet.rb
     lib/ffaker/internet_se.rb
     lib/ffaker/job.rb
     lib/ffaker/job_fr.rb
+    lib/ffaker/job_ja.rb
     lib/ffaker/locale.rb
     lib/ffaker/lorem.rb
     lib/ffaker/lorem_ar.rb
@@ -189,6 +214,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_kr.rb
     lib/ffaker/name_mx.rb
     lib/ffaker/name_nb.rb
+    lib/ffaker/name_nl.rb
     lib/ffaker/name_ph.rb
     lib/ffaker/name_ru.rb
     lib/ffaker/name_se.rb
@@ -203,12 +229,14 @@ Gem::Specification.new do |s|
     lib/ffaker/phone_number_fr.rb
     lib/ffaker/phone_number_it.rb
     lib/ffaker/phone_number_mx.rb
+    lib/ffaker/phone_number_nl.rb
     lib/ffaker/phone_number_se.rb
     lib/ffaker/phone_number_sg.rb
     lib/ffaker/phone_number_sn.rb
     lib/ffaker/product.rb
     lib/ffaker/skill.rb
     lib/ffaker/ssn.rb
+    lib/ffaker/ssn_mx.rb
     lib/ffaker/ssn_se.rb
     lib/ffaker/string.rb
     lib/ffaker/time.rb
@@ -217,6 +245,7 @@ Gem::Specification.new do |s|
     lib/ffaker/unit_metric.rb
     lib/ffaker/utils/array_utils.rb
     lib/ffaker/utils/module_utils.rb
+    lib/ffaker/vehicle.rb
     lib/ffaker/venue.rb
     scripts/benchmark.rb
     scripts/profile.sh
@@ -228,13 +257,17 @@ Gem::Specification.new do |s|
     test/test_address_ca.rb
     test/test_address_da.rb
     test/test_address_de.rb
+    test/test_address_fi.rb
     test/test_address_mx.rb
+    test/test_address_nl.rb
     test/test_address_se.rb
     test/test_address_sn.rb
     test/test_address_uk.rb
     test/test_address_us.rb
     test/test_array_utils.rb
     test/test_bacon_ipsum.rb
+    test/test_boolean.rb
+    test/test_color.rb
     test/test_company.rb
     test/test_company_it.rb
     test/test_company_se.rb
@@ -242,6 +275,7 @@ Gem::Specification.new do |s|
     test/test_dizzle_ipsum.rb
     test/test_education.rb
     test/test_faker.rb
+    test/test_food.rb
     test/test_geolocation.rb
     test/test_healthcare_ipsum.rb
     test/test_hipster_ipsum.rb
@@ -250,10 +284,12 @@ Gem::Specification.new do |s|
     test/test_identification_co.rb
     test/test_identification_es.rb
     test/test_identification_es_cl.rb
+    test/test_identification_es_mx.rb
     test/test_internet.rb
     test/test_internet_se.rb
     test/test_job.rb
     test/test_job_fr.rb
+    test/test_job_ja.rb
     test/test_lorem.rb
     test/test_lorem_ar.rb
     test/test_lorem_cn.rb
@@ -272,6 +308,7 @@ Gem::Specification.new do |s|
     test/test_name_kr.rb
     test/test_name_mx.rb
     test/test_name_nb.rb
+    test/test_name_nl.rb
     test/test_name_ph.rb
     test/test_name_ru.rb
     test/test_name_se.rb
@@ -282,17 +319,20 @@ Gem::Specification.new do |s|
     test/test_phone_number_au.rb
     test/test_phone_number_de.rb
     test/test_phone_number_mx.rb
+    test/test_phone_number_nl.rb
     test/test_phone_number_se.rb
     test/test_phone_number_sg.rb
     test/test_phone_number_sn.rb
     test/test_skill.rb
     test/test_ssn.rb
+    test/test_ssn_mx.rb
     test/test_ssn_se.rb
     test/test_string.rb
     test/test_time.rb
     test/test_units.rb
     test/test_units_english.rb
     test/test_units_metric.rb
+    test/test_vehicle.rb
     test/test_venue.rb
   ]
   # = MANIFEST =
