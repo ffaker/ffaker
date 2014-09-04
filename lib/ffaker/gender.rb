@@ -9,5 +9,7 @@ module Faker
       ['male', 'female'].sample
     end
 
+    alias_method :maybe, :random
+    alias_method :sample, :random
   end
 end

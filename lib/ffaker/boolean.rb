@@ -12,5 +12,7 @@ module Faker
       end
     end
 
+    alias_method :random, :maybe
+    alias_method :sample, :maybe
   end
 end
