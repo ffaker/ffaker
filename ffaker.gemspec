@@ -52,6 +52,7 @@ Gem::Specification.new do |s|
     lib/ffaker/company_it.rb
     lib/ffaker/company_se.rb
     lib/ffaker/conference.rb
+    lib/ffaker/currency.rb
     lib/ffaker/data/address/city_suffixes
     lib/ffaker/data/address/country
     lib/ffaker/data/address/country_code
