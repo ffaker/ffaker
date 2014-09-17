@@ -224,6 +224,7 @@ Gem::Specification.new do |s|
     lib/ffaker/nato_alphabet.rb
     lib/ffaker/phone_number.rb
     lib/ffaker/phone_number_au.rb
+    lib/ffaker/phone_number_cu.rb
     lib/ffaker/phone_number_da.rb
     lib/ffaker/phone_number_de.rb
     lib/ffaker/phone_number_fr.rb
@@ -317,6 +318,7 @@ Gem::Specification.new do |s|
     test/test_nato_alphabet.rb
     test/test_phone_number.rb
     test/test_phone_number_au.rb
+    test/test_phone_number_cu.rb
     test/test_phone_number_de.rb
     test/test_phone_number_mx.rb
     test/test_phone_number_nl.rb
