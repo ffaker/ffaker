@@ -182,6 +182,7 @@ Gem::Specification.new do |s|
     lib/ffaker/education.rb
     lib/ffaker/food.rb
     lib/ffaker/geolocation.rb
+    lib/ffaker/guid.rb
     lib/ffaker/healthcare_ipsum.rb
     lib/ffaker/hipster_ipsum.rb
     lib/ffaker/html_ipsum.rb
