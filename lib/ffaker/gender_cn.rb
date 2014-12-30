@@ -5,8 +5,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    GENDERS = ['男', '女']
+
     def random
-      ['男', '女'].sample
+      GENDERS[rand(GENDERS.size)]
     end
 
     alias_method :maybe, :random
