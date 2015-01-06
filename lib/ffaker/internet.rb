@@ -71,7 +71,7 @@ module Faker
     def slug(words = nil, glue = nil)
       glue ||= SLUG_DELIMITERS.rand
 
-      (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
+      (words || Faker::Lorem::words(2).join(glue)).downcase
     end
 
     def password(min_length=0)
