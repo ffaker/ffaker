@@ -26,14 +26,19 @@ New modules contributed.
 ## 1.21.0
 
 NameFR
+
 Skill
+
 Unit
+
 UnitEnglish
+
 UnitMetric
 
 ## 1.20.0
 
 JobFR
+
 LoremFR
 
 ## 1.19.0
