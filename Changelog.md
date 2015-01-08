@@ -1,3 +1,16 @@
+## 1.30.0
+
+dropped support for ruby 1.8.x
+fixes some broken tests
+improved Faker::Internet.slug method
+
+added Faker::Gender(CN), Faker::Guid to API
+added continental_state and continental_state_abbr to Faker::AddressUs API
+added Faker::Internet.safe_email method to API
+added max_length parameter to Faker::Internet.password
+
+and some small API additions ... for more details check the git log
+
 ## 1.25.0
 
 API additions and some fixes... check the git log! :)
