@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.25.0'
-  s.date              = '2014-08-18'
+  s.version           = '1.30.0'
+  s.date              = '2015-01-08'
   s.rubyforge_project = 'ffaker'
 
   s.license = 'MIT'
@@ -181,7 +181,10 @@ Gem::Specification.new do |s|
     lib/ffaker/dizzle_ipsum.rb
     lib/ffaker/education.rb
     lib/ffaker/food.rb
+    lib/ffaker/gender.rb
+    lib/ffaker/gender_cn.rb
     lib/ffaker/geolocation.rb
+    lib/ffaker/guid.rb
     lib/ffaker/healthcare_ipsum.rb
     lib/ffaker/hipster_ipsum.rb
     lib/ffaker/html_ipsum.rb
@@ -276,7 +279,10 @@ Gem::Specification.new do |s|
     test/test_education.rb
     test/test_faker.rb
     test/test_food.rb
+    test/test_gender.rb
+    test/test_gender_cn.rb
     test/test_geolocation.rb
+    test/test_guid.rb
     test/test_healthcare_ipsum.rb
     test/test_hipster_ipsum.rb
     test/test_html_ipsum.rb
