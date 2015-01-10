@@ -6,7 +6,7 @@ module Faker
     extend self
 
     def name
-      CONFERENCE_LIST.rand
+      CONFERENCE_LIST.sample
     end
   end
 end

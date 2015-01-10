@@ -10,15 +10,15 @@ module Faker
     extend self
 
     def postal_code
-      Faker.bothify(POSTAL_CODE_FORMATS.rand).upcase
+      Faker.bothify(POSTAL_CODE_FORMATS.sample).upcase
     end
 
     def province
-      PROVINCE.rand
+      PROVINCE.sample
     end
 
     def province_abbr
-      PROVINCE_ABBRS.rand
+      PROVINCE_ABBRS.sample
     end
 
     POSTAL_CODE_FORMATS = k ['?#? #?#']

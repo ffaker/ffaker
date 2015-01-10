@@ -8,7 +8,7 @@ module Faker
     JOB_ADJECTIVES = k ['', 'general', '', 'adjoint', '', 'associé', '']
 
     def title
-      "#{JOB_PREFIXES.rand} #{JOB_ADJECTIVES.rand} #{JOB_NOUNS.rand}"
+      "#{JOB_PREFIXES.sample} #{JOB_ADJECTIVES.sample} #{JOB_NOUNS.sample}"
     end
   end
 end

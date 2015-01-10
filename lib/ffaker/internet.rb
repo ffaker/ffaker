@@ -12,11 +12,11 @@ module Faker
     # returns an email address of an online disposable email service (like tempinbox.com).
     # you can really send an email to these addresses an access it by going to the service web pages.
     def disposable_email(name = nil)
-      [ user_name(name), DISPOSABLE_HOSTS.rand ].join('@')
+      [ user_name(name), DISPOSABLE_HOSTS.sample ].join('@')
     end
 
     def free_email(name = nil)
-      "#{user_name(name)}@#{HOSTS.rand}"
+      "#{user_name(name)}@#{HOSTS.sample}"
     end
 
     def safe_email(name = nil)
@@ -25,7 +25,7 @@ module Faker
 
     def user_name(name = nil)
       if name
-        parts = ArrayUtils.shuffle(name.scan(/\w+/)).join(ArrayUtils.rand(%w(. _)))
+        parts = ArrayUtils.shuffle(name.scan(/\w+/)).join(%w(. _).sample)
         parts.downcase!
         parts
       else
@@ -33,8 +33,8 @@ module Faker
         when 0
           Name.first_name.gsub(/\W/, '').downcase
         when 1
-          parts = [ Name.first_name, Name.last_name ].each {|n| n.gsub!(/\W/, '') }
-          parts = parts.join ArrayUtils.rand(%w(. _))
+          parts = [ Name.first_name, Name.last_name ]
+          parts = parts.join(%w(. _).sample).gsub(/\W/, '')
           parts.downcase!
           parts
         end
@@ -53,7 +53,7 @@ module Faker
     end
 
     def domain_suffix
-      DOMAIN_SUFFIXES.rand
+      DOMAIN_SUFFIXES.sample
     end
 
     def uri(protocol)
@@ -69,7 +69,7 @@ module Faker
     end
 
     def slug(words = nil, glue = nil)
-      glue ||= SLUG_DELIMITERS.rand
+      glue ||= SLUG_DELIMITERS.sample
 
       (words || Faker::Lorem::words(2).join(glue)).downcase
     end

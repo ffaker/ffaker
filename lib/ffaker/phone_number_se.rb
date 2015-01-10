@@ -42,7 +42,7 @@ module Faker
     end
 
     def country_prefix
-      COUNTRY_PREFIX.rand
+      COUNTRY_PREFIX.sample
     end
 
     def international_mobile_phone_number
@@ -54,24 +54,24 @@ module Faker
     end
 
     def area_prefix
-      PHONE_PREFIX.rand
+      PHONE_PREFIX.sample
     end
 
     def phone_number_format
       prefix = area_prefix
       case prefix.length
-      when 1 then PHONE_FORMAT_PREFIX_2.rand
-      when 2 then PHONE_FORMAT_PREFIX_3.rand
-      when 3 then PHONE_FORMAT_PREFIX_4.rand
+      when 1 then PHONE_FORMAT_PREFIX_2.sample
+      when 2 then PHONE_FORMAT_PREFIX_3.sample
+      when 3 then PHONE_FORMAT_PREFIX_4.sample
       end % prefix
     end
 
     def mobile_prefix
-      MOBILE_PHONE_PREFIX.rand
+      MOBILE_PHONE_PREFIX.sample
     end
 
     def mobile_phone_number_format
-      MOBILE_PHONE_FORMAT.rand % mobile_prefix
+      MOBILE_PHONE_FORMAT.sample % mobile_prefix
     end
 
     PHONE_FORMAT_PREFIX_2 = k ["%s-### ### ##",

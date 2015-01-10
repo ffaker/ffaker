@@ -31,11 +31,11 @@ module Faker
     end
 
     def city
-      CITY.rand
+      CITY.sample
     end
 
     def province
-      PROVINCE.rand
+      PROVINCE.sample
     end
 
     POSTAL_CODE_FORMAT = k ['#### ??']

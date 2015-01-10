@@ -10,7 +10,7 @@ module Faker
     extend self
 
     def zip_code
-      Faker.numerify ZIP_FORMATS.rand
+      Faker.numerify ZIP_FORMATS.sample
     end
 
     def post_nr
@@ -22,21 +22,21 @@ module Faker
     end
 
     def kommune
-      KOMMUNE.rand
+      KOMMUNE.sample
     end
 
     def region
-      REGION.rand
+      REGION.sample
     end
 
     def city
-      CITY.rand
+      CITY.sample
     end
 
     ZIP_FORMATS = k ['####']
 
     def street_name
-      STREET.rand
+      STREET.sample
     end
 
     def street_address

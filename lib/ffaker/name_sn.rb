@@ -12,23 +12,23 @@ module Faker
     PREFIX_MALE = k %w(pape eladji mame serigne)
 
     def last_name
-      LAST_NAMES.rand
+      LAST_NAMES.sample
     end
 
     def first_name_male
-      FIRST_NAMES_MALE.rand
+      FIRST_NAMES_MALE.sample
     end
 
     def first_name_female
-      FIRST_NAMES_FEMALE.rand
+      FIRST_NAMES_FEMALE.sample
     end
 
     def prefix_male
-      PREFIX_MALE.rand
+      PREFIX_MALE.sample
     end
 
     def prefix_female
-      PREFIX_FEMALE.rand
+      PREFIX_FEMALE.sample
     end
 
     def name_male

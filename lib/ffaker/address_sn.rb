@@ -11,15 +11,15 @@ module Faker
     extend self
 
     def region
-      REGIONS.rand
+      REGIONS.sample
     end
 
     def departement
-      DEPARTEMENTS.rand
+      DEPARTEMENTS.sample
     end
 
     def arrondissement
-      ARRONDISSEMENTS.rand
+      ARRONDISSEMENTS.sample
     end
   end
 end

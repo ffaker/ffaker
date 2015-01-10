@@ -7,11 +7,11 @@ module Faker
     extend self
 
     def characters(character_count = 255)
-      Array.new(character_count < 0 ? 0 : character_count).map { CHARACTERS.rand }.join
+      Array.new(character_count < 0 ? 0 : character_count).map { CHARACTERS.sample }.join
     end
 
     def word
-      WORDS.rand
+      WORDS.sample
     end
 
     def words(num = 3)

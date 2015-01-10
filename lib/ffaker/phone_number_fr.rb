@@ -13,11 +13,11 @@ module Faker
     end
 
     def home_work_phone_number
-      Faker.numerify "#{COUNTRY_PREFIX.rand}#{AREA_PREFIX.rand}#{PHONE_NUMBER.rand}" 
+      Faker.numerify "#{COUNTRY_PREFIX.sample}#{AREA_PREFIX.sample}#{PHONE_NUMBER.sample}"
     end
 
     def mobile_phone_number
-      Faker.numerify "#{COUNTRY_PREFIX.rand}#{MOBILE_PREFIX.rand}#{PHONE_NUMBER.rand}" 
+      Faker.numerify "#{COUNTRY_PREFIX.sample}#{MOBILE_PREFIX.sample}#{PHONE_NUMBER.sample}"
     end
 
     COUNTRY_PREFIX = k %w[+33 0033 0]

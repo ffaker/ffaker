@@ -6,34 +6,34 @@ module Faker
     extend self
 
     def degree_short
-      "#{DEGREE_SHORT_PREFIX.rand} in #{major}"
+      "#{DEGREE_SHORT_PREFIX.sample} in #{major}"
     end
 
     def degree
-      "#{DEGREE_PREFIX.rand} in #{major}"
+      "#{DEGREE_PREFIX.sample} in #{major}"
     end
 
     def major
-      "#{MAJOR_ADJ.rand} #{MAJOR_NOUN.rand}"
+      "#{MAJOR_ADJ.sample} #{MAJOR_NOUN.sample}"
     end
 
     def school_name
-      SCHOOL_PREFIX.rand + SCHOOL_SUFFIX.rand
+      SCHOOL_PREFIX.sample + SCHOOL_SUFFIX.sample
     end
 
     def school_generic_name
       case rand(2)
-      when 0 then AddressUS::STATE.rand
+      when 0 then AddressUS::STATE.sample
       when 1 then school_name
       end
     end
 
     def school
       case rand(5)
-      when (0..1)  then "#{school_name} #{SCHOOL_TYPE.rand}"
-      when 2 then "#{school_generic_name} #{SCHOOL_ADJ.rand} #{SCHOOL_TYPE.rand}"
-      when 3 then "#{SCHOOL_UNI.rand} of #{school_generic_name}"
-      when 4 then "#{school_generic_name} #{SCHOOL_TYPE.rand} of #{MAJOR_NOUN.rand}"
+      when (0..1)  then "#{school_name} #{SCHOOL_TYPE.sample}"
+      when 2 then "#{school_generic_name} #{SCHOOL_ADJ.sample} #{SCHOOL_TYPE.sample}"
+      when 3 then "#{SCHOOL_UNI.sample} of #{school_generic_name}"
+      when 4 then "#{school_generic_name} #{SCHOOL_TYPE.sample} of #{MAJOR_NOUN.sample}"
       end
     end
 

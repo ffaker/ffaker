@@ -14,15 +14,15 @@ module Faker
     extend self
 
     def zip_code
-      Faker.numerify ZIP_FORMATS.rand
+      Faker.numerify ZIP_FORMATS.sample
     end
 
     def city
-      CITY.rand
+      CITY.sample
     end
 
     def street_name
-      STREET.rand
+      STREET.sample
     end
 
     def street_address
@@ -30,7 +30,7 @@ module Faker
     end
 
     def street_nbr
-      Faker.numerify STREET_NBR_FORMATS.rand
+      Faker.numerify STREET_NBR_FORMATS.sample
     end
 
     def full_address
@@ -38,7 +38,7 @@ module Faker
     end
 
     def random_country
-      COUNTRIES.rand
+      COUNTRIES.sample
     end
 
     ZIP_FORMATS = k ['#####']

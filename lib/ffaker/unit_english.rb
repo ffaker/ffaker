@@ -53,23 +53,23 @@ module Faker
     private
 
     def length
-      OpenStruct.new LENGTH_UNITS.rand
+      OpenStruct.new LENGTH_UNITS.sample
     end
 
     def mass
-      OpenStruct.new MASS_UNITS.rand
+      OpenStruct.new MASS_UNITS.sample
     end
 
     def liquid
-      OpenStruct.new LIQUID_UNITS.rand
+      OpenStruct.new LIQUID_UNITS.sample
     end
 
     def volume
-      OpenStruct.new VOLUME_UNITS.rand
+      OpenStruct.new VOLUME_UNITS.sample
     end
 
     def area
-      OpenStruct.new AREA_UNITS.rand
+      OpenStruct.new AREA_UNITS.sample
     end
 
     LENGTH_UNITS = k [

@@ -17,11 +17,11 @@ module Faker
     # (like tempinbox.com). you can really send an email to these
     # addresses an access it by going to the service web pages.
     def disposable_email(name = nil)
-      "#{user_name(name)}@#{DISPOSABLE_HOSTS.rand}"
+      "#{user_name(name)}@#{DISPOSABLE_HOSTS.sample}"
     end
 
     def free_email(name = nil)
-      "#{user_name(name)}@#{HOSTS.rand}"
+      "#{user_name(name)}@#{HOSTS.sample}"
     end
 
     # Used to fake login names were dot is not allowed
@@ -62,9 +62,8 @@ module Faker
     end
 
     def join_to_user_name(array_parts)
-      join_char = ArrayUtils.rand(%w(. _))
-      array_parts.map!(&:downcase)
-      array_parts.join(join_char)
+      join_char = %w(. _).sample
+      array_parts.map(&:downcase).join(join_char)
     end
 
     def domain_name
@@ -83,7 +82,7 @@ module Faker
     end
 
     def domain_suffix
-      DOMAIN_SUFFIXES.rand
+      DOMAIN_SUFFIXES.sample
     end
 
     def uri(protocol)
@@ -99,7 +98,7 @@ module Faker
     end
 
     def slug(words = nil, glue = nil)
-      glue ||= SLUG_DELIMITERS.rand
+      glue ||= SLUG_DELIMITERS.sample
 
       (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
     end

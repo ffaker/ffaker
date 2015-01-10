@@ -10,23 +10,23 @@ module Faker
     extend self
 
     def street_address
-      Faker.numerify(NUM.rand) +
-      MOD.rand +
-      SEP.rand +
-      TYPE.rand + ' ' +
+      Faker.numerify(NUM.sample) +
+      MOD.sample +
+      SEP.sample +
+      TYPE.sample + ' ' +
       Faker::NameFR.name
     end
 
     def postal_code
-      Faker.numerify POSTAL_CODE_FORMATS.rand
+      Faker.numerify POSTAL_CODE_FORMATS.sample
     end
 
     def city
-      CITY.rand
+      CITY.sample
     end
 
     def full_address
-      %Q{#{street_address}#{SEP.rand}#{postal_code} #{CITY.rand}}
+      %Q{#{street_address}#{SEP.sample}#{postal_code} #{CITY.sample}}
     end
 
     NUM = k ['#', '##', '##', '###', '####', '#-##']

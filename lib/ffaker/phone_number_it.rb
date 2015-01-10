@@ -23,10 +23,10 @@ module Faker
 
     def number(prefixes)
       p = [
-        COUNTRY_PREFIX.rand,
-        prefixes.rand,
+        COUNTRY_PREFIX.sample,
+        prefixes.sample,
         random_space,
-        PHONE_NUMBER.rand
+        PHONE_NUMBER.sample
       ].join('')
 
       Faker.numerify p

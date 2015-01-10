@@ -6,11 +6,11 @@ module Faker
     extend self
 
     def lat
-      LATLNG.rand[0]
+      LATLNG.sample[0]
     end
 
     def lng
-      LATLNG.rand[1]
+      LATLNG.sample[1]
     end
 
     LATLNG = k [

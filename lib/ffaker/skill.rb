@@ -6,15 +6,15 @@ module Faker
     extend self
 
     def tech_skill
-      TECH_SKILLS.rand
+      TECH_SKILLS.sample
     end
 
     def tech_skills(num = 3)
-      TECH_SKILLS.random_pick(num) 
+      TECH_SKILLS.random_pick(num)
     end
 
     def specialty
-      "%s %s" % [SPECIALTY_START.rand, SPECIALTY_END.rand]
+      "%s %s" % [SPECIALTY_START.sample, SPECIALTY_END.sample]
     end
 
     def specialties(num = 3)

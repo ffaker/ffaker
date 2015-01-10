@@ -6,7 +6,7 @@ module Faker
     extend self
 
     def gender
-      GENDERS.rand
+      GENDERS.sample
     end
 
     GENDERS = k %w(Hombre Mujer)

@@ -10,15 +10,15 @@ module Faker
     extend self
 
     def zip_code
-      Faker.numerify ZIP_FORMATS.rand
+      Faker.numerify ZIP_FORMATS.sample
     end
 
     def state
-      STATE.rand
+      STATE.sample
     end
 
     def city
-      CITY.rand
+      CITY.sample
     end
 
     def street_name

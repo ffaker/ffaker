@@ -26,11 +26,11 @@ module Faker
     private
 
     def time
-      OpenStruct.new TIME_UNITS.rand
+      OpenStruct.new TIME_UNITS.sample
     end
 
     def temperature
-      OpenStruct.new TEMPERATURE_UNITS.rand
+      OpenStruct.new TEMPERATURE_UNITS.sample
     end
 
     TIME_UNITS = k [

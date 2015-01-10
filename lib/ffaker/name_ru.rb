@@ -47,19 +47,19 @@ module Faker
     # Generates random last name
     # for_sex can be :male, :female. Defaults to :random
     def last_name(for_sex = :random)
-      LAST_NAMES[select_sex(for_sex)].rand
+      LAST_NAMES[select_sex(for_sex)].sample
     end
 
     # Generates random first name
     # for_sex can be :male, :female. Defaults to :random
     def first_name(for_sex = :random)
-      FIRST_NAMES[select_sex(for_sex)].rand
+      FIRST_NAMES[select_sex(for_sex)].sample
     end
 
     # Generates random patronymic
     # for_sex can be :male, :female. Defaults to :random
     def patronymic(for_sex = :random)
-      PATRONYMICS[select_sex(for_sex)].rand
+      PATRONYMICS[select_sex(for_sex)].sample
     end
 
     # Last names grammar

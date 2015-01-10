@@ -46,23 +46,23 @@ module Faker
     # Generates random last name
     # for_sex can be :male, :female. Defaults to :random
     def last_name(for_sex = :random)
-      LAST_NAMES[select_sex(for_sex)].rand
+      LAST_NAMES[select_sex(for_sex)].sample
     end
 
     # Generates random first name
     # for_sex can be :male, :female. Defaults to :random
     def first_name(for_sex = :random)
-      FIRST_NAMES[select_sex(for_sex)].rand
+      FIRST_NAMES[select_sex(for_sex)].sample
     end
 
     # Generates random name prefix, an academic degree
     def prefix
-      PREFIXES.rand
+      PREFIXES.sample
     end
 
     # Generates random name suffix, an academic degree
     def suffix
-      SUFFIXES.rand
+      SUFFIXES.sample
     end
 
     FIRST_NAMES = {

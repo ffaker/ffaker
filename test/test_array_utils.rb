@@ -18,7 +18,7 @@ class TestArrayUtils < Test::Unit::TestCase
 
   def test_provides_a_way_of_getting_a_random_element
     set = Set.new
-    1000.times { set << @array.rand }
+    1000.times { set << @array.sample }
     assert set == @elems
   end
 

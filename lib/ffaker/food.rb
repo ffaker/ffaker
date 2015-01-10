@@ -8,19 +8,19 @@ module Faker
     end
 
     def vegetable
-      VEGETABLE.rand
+      VEGETABLE.sample
     end
 
     def fruit
-      FRUIT.rand
+      FRUIT.sample
     end
 
     def meat
-      MEAT.rand
+      MEAT.sample
     end
 
     def herb_or_spice
-      HERB_SPICE.rand
+      HERB_SPICE.sample
     end
 
   end

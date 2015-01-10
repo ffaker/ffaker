@@ -11,7 +11,7 @@ module Faker
     extend self
 
     def word
-      BACON_WORDS.rand
+      BACON_WORDS.sample
     end
 
     def words(num = 3)

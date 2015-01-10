@@ -10,11 +10,11 @@ module Faker
     end
 
     def first_name
-      FIRST_NAMES.rand
+      FIRST_NAMES.sample
     end
 
     def last_name
-      LAST_NAMES.rand
+      LAST_NAMES.sample
     end
 
     def last_first

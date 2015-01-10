@@ -15,7 +15,7 @@ module Faker
     end
 
     def state
-      STATE.rand
+      STATE.sample
     end
 
     def state_abbr(st_name = nil)

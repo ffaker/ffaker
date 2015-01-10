@@ -6,7 +6,7 @@ module Faker
     extend self
 
     def title
-      "#{JOB_PREFIX.rand} #{JOB_ADJ.rand} #{JOB_NOUN.rand}"
+      "#{JOB_PREFIX.sample} #{JOB_ADJ.sample} #{JOB_NOUN.sample}"
     end
   end
 end
