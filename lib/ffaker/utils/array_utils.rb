@@ -11,6 +11,11 @@ module Faker
       indexes.map { |n| array[n].dup }
     end
 
+    def self.rand(array)
+      warn '[ArrayUtils.rand] is deprecated. Please use the Array#sample method'
+      array.sample
+    end
+
     def self.freeze_all(array)
       array.each { |e| e.freeze }
       array.freeze
@@ -23,6 +28,11 @@ module Faker
 
     def random_pick(n)
       ArrayUtils.random_pick(self, n)
+    end
+
+    def rand
+      warn '[ArrayUtils#rand] is deprecated. Please use the Array#sample method'
+      sample
     end
 
     def freeze_all
