@@ -1,3 +1,7 @@
+## 2.0.0
+Changed Faker:: namespace to FFaker::
+dropped ruby 1.8 support
+
 ## 1.25.0
 
 API additions and some fixes... check the git log! :)
@@ -54,15 +58,15 @@ NameKR (https://github.com/EmmanuelOga/ffaker/pull/47) and PhoneNumbersSG
 
 ## 1.14.0
 
-AddressSN (thanks PapePathe), and a bugfix on FFaker::Product.model (thanks finarfin).
+AddressSN (thanks PapePathe), and a bugfix on Faker::Product.model (thanks finarfin).
 
 ## 1.13.0
 
-Education bug fix, FFaker::Job (thanks Piotr Usewicz)
+Education bug fix, Faker::Job (thanks Piotr Usewicz)
 
 ## 1.12.0
 
-FFaker::AddressAU and FakkerAddressPhoneAU modules (thanks Ben Wiseley).
+Faker::AddressAU and FakkerAddressPhoneAU modules (thanks Ben Wiseley).
 
 ## 1.11.0
 
@@ -70,13 +74,13 @@ Extraction of AddressUK and AddressUS classes. (Thanks doctorbh).
 
 ## 1.10.1
 
-FFaker::AddressCA (Thanks doctorbh, https://github.com/EmmanuelOga/ffaker/pull/27)
+Faker::AddressCA (Thanks doctorbh, https://github.com/EmmanuelOga/ffaker/pull/27)
 
 ## 1.9.1
 
-FFaker::NameSN, FFaker::PhoneNumberSN (Thanks SENE, https://github.com/EmmanuelOga/ffaker/pull/26)
+Faker::NameSN, Faker::PhoneNumberSN (Thanks SENE, https://github.com/EmmanuelOga/ffaker/pull/26)
 
-Added FFaker::NameJA (Thanks kichiro, https://github.com/EmmanuelOga/ffaker/pull/21)
+Added Faker::NameJA (Thanks kichiro, https://github.com/EmmanuelOga/ffaker/pull/21)
 
 ## 1.8.1
 
@@ -84,52 +88,52 @@ Remove a warning.
 
 ## 1.8.0
 
-FFaker::HTMLIpsum module inspired in http://html-ipsum.com/ (Thanks Chris Bloom, https://github.com/EmmanuelOga/ffaker/pull/18)
+Faker::HTMLIpsum module inspired in http://html-ipsum.com/ (Thanks Chris Bloom, https://github.com/EmmanuelOga/ffaker/pull/18)
 
 ## 1.7.0
 
-FFaker::LoremCN (Thanks Shane Weng, Shane Weng, https://github.com/swcool, https://github.com/EmmanuelOga/ffaker/pull/16/files)
+Faker::LoremCN (Thanks Shane Weng, Shane Weng, https://github.com/swcool, https://github.com/EmmanuelOga/ffaker/pull/16/files)
 
 ## 1.6.0
 
-FFaker::NameDE (thanks David Noelte, https://github.com/marvin, https://github.com/EmmanuelOga/ffaker/pull/17)
-Added FFaker::Internet#disposable_email (Thanks Port 80 Labs, https://github.com/port80labs, https://github.com/EmmanuelOga/ffaker/pull/15)
+Faker::NameDE (thanks David Noelte, https://github.com/marvin, https://github.com/EmmanuelOga/ffaker/pull/17)
+Added Faker::Internet#disposable_email (Thanks Port 80 Labs, https://github.com/port80labs, https://github.com/EmmanuelOga/ffaker/pull/15)
 
 ## 1.5.0
 
-FFaker::NameRU (Thanks Vsevolod Romashov, https://github.com/7even, https://github.com/EmmanuelOga/ffaker/pull/14)
+Faker::NameRU (Thanks Vsevolod Romashov, https://github.com/7even, https://github.com/EmmanuelOga/ffaker/pull/14)
 
 ## 1.4.0
 
-FFaker::Product and FFaker::Education (thanks Rico Sta. Cruz, https://github.com/EmmanuelOga/ffaker/pull/12 )
+Faker::Product and Faker::Education (thanks Rico Sta. Cruz, https://github.com/EmmanuelOga/ffaker/pull/12 )
 
 ## 1.3.0
 
-FFaker::Lorem.word as a convenience method, instead of FFaker::Lorem.words(1).first.
+Faker::Lorem.word as a convenience method, instead of Faker::Lorem.words(1).first.
 
 ## 1.2.0
 
-New FFaker::NameCN module (contributions by qichunren)
+New Faker::NameCN module (contributions by qichunren)
 
-  FFaker::NameCN.first_name # => 鑫洋
-  FFaker::NameCN.last_name # => 禹
-  FFaker::NameCN.name # => 俊伶漫
+  Faker::NameCN.first_name # => 鑫洋
+  Faker::NameCN.last_name # => 禹
+  Faker::NameCN.name # => 俊伶漫
 
 ## 1.1.0
 
 Api additions (contributions by Robert Berry)
 
-  FFaker::Internet.uri(protocol)
-  FFaker::Internet.http_url
-  FFaker::Internet.ip_v4_address
+  Faker::Internet.uri(protocol)
+  Faker::Internet.http_url
+  Faker::Internet.ip_v4_address
 
 ## 0.4.0
 
 Api additions by Rafael Souza
 
-  FFaker::Geolocation.lat # => 40.6609944585817
-  FFaker::Geolocation.lng # => -73.8454648940358
-  FFaker::Address.neighborhood # => "Renton West"
+  Faker::Geolocation.lat # => 40.6609944585817
+  Faker::Geolocation.lng # => -73.8454648940358
+  Faker::Address.neighborhood # => "Renton West"
 
 
 ## 0.3.3 2010-01-14

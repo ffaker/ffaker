@@ -28,7 +28,7 @@ class TestHTMLIpsum < Test::Unit::TestCase
     # because the FFaker::Lorem methods that we are using adds a random
     # number on top of what we specify for the count argument. We also have to
     # account for the other HTML that is being returned.
-    str = FFaker::HTMLIpsum.p(5, {:fancy => true})
+    str = FFaker::HTMLIpsum.p(5, {fancy: true})
     assert_match /^<p>/, str
     assert_match /<\/p>$/, str
     assert str.length > 6, "string contains more than <p></p>"
@@ -37,7 +37,7 @@ class TestHTMLIpsum < Test::Unit::TestCase
   def test_p_fancy_breaks
     # Here we can at least test how many <br> tags there are. We also have to
     # account for the other HTML that is being returned.
-    str = FFaker::HTMLIpsum.p(10, {:fancy => true, :include_breaks => true})
+    str = FFaker::HTMLIpsum.p(10, {fancy: true, include_breaks: true})
     assert_equal 10, str.split("<br>").length
   end
 

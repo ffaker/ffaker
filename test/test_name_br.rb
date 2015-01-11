@@ -8,7 +8,7 @@ class TestFakerNameBR < Test::Unit::TestCase
   end
 
   def test_name
-    assert_match /[[:alpha:]]+ [[:alpha:]]+/, @tester.name
+    assert_match /[\p{Alpha}]+ [\p{Alpha}]+/, @tester.name
   end
 
   def test_name_with_prefix

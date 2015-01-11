@@ -2,26 +2,6 @@ require 'rubygems'
 require 'rake'
 require 'date'
 
-require "test/unit/testsuite"
-
-module Test
-  module Unit
-    class TestSuite
-
-      def run(result, &progress_block)
-        yield(STARTED, name)
-        run_startup(result)
-        @tests.each do |test|
-          test.run(result, &progress_block)
-          break unless result.passed?
-        end
-        run_shutdown(result)
-        yield(FINISHED, name)
-      end
-    end
-  end
-end
-
 #############################################################################
 #
 # Helper functions
@@ -70,7 +50,7 @@ Rake::TestTask.new do |t|
   t.verbose = true
 end
 
-task :default => :test
+task default: :test
 
 desc "Open an irb session preloaded with this library"
 task :console do
@@ -98,7 +78,7 @@ end
 #
 #############################################################################
 
-task :release => :build do
+task release: :build do
   unless `git branch` =~ /^\* master$/
     puts "You must be on the master branch to release!"
     exit!
@@ -110,13 +90,13 @@ task :release => :build do
   sh "gem push pkg/#{name}-#{version}.gem"
 end
 
-task :build => :gemspec do
+task build: :gemspec do
   sh "mkdir -p pkg"
   sh "gem build #{gemspec_file}"
   sh "mv #{gem_file} pkg"
 end
 
-task :gemspec => :validate do
+task gemspec: :validate do
   # read spec file and split out manifest section
   spec = File.read(gemspec_file)
   head, manifest, tail = spec.split("  # = MANIFEST =\n")
