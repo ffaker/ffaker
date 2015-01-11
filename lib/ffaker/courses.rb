@@ -1,29 +1,22 @@
+# encoding: utf-8
+
 module FFaker
   module CoursesFR
 
-   module Mathematiques
-     extend ModuleUtils
-     extend self
-     def lesson
-       LESSONS.rand
-     end
-   end
+    module Mathematiques
+      extend ModuleUtils
+      extend self
+      def lesson
+        LESSONS.rand
+      end
+    end
 
-   module Philosophie
-     extend ModuleUtils
-     extend self
-     def lesson
-       LESSONS.rand
-     end
-   end
-
-   module Francais
-     extend ModuleUtils
-     extend self
-
-     def lesson
-     end
-   end
-
+    module Philosophie
+      extend ModuleUtils
+      extend self
+      def lesson
+        LESSONS.rand
+      end
+    end
   end
 end

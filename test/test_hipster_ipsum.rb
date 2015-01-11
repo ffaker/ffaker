@@ -3,27 +3,29 @@
 require 'helper'
 
 class TestHipsterIpsum < Test::Unit::TestCase
+  TEST_REGEX = /\+1|[ a-z]+/i
+
   def test_paragraph
-    assert_match /1\+|[ a-z]+/i, FFaker::HipsterIpsum.paragraph
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.paragraph
   end
 
   def test_sentence
-    assert_match /1\+|[ a-z]+/i, FFaker::HipsterIpsum.sentence
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.sentence
   end
 
   def test_paragraphs
-    assert_match /1\+|[ a-z]+/i, FFaker::HipsterIpsum.paragraphs.join(" ")
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.paragraphs.join(" ")
   end
 
   def test_sentences
-    assert_match /1\+|[ a-z]+/i, FFaker::HipsterIpsum.sentences.join(" ")
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.sentences.join(" ")
   end
 
   def test_words
-    assert_match /1\+|[ a-z]+/i, FFaker::HipsterIpsum.words.join(" ")
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.words.join(" ")
   end
 
   def test_word
-    assert_match /1\+|[a-z]+/i, FFaker::HipsterIpsum.word
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.word
   end
 end

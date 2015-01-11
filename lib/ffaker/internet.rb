@@ -71,15 +71,20 @@ module FFaker
     def slug(words = nil, glue = nil)
       glue ||= SLUG_DELIMITERS.rand
 
-      (words || FFaker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
+      (words || FFaker::Lorem::words(2).join(glue)).downcase
     end
 
-    def password(min_length=0)
+    def password(min_length = 8, max_length = 16)
       temp = Lorem.words.join
+
       while temp.length < min_length
         temp += Lorem.word
       end
-      return temp
+      if max_length > min_length && temp.length > max_length
+        temp = temp.slice(0, max_length)
+      end
+
+      temp
     end
 
     BYTE = k((0..255).to_a.map { |n| n.to_s })

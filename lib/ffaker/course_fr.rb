@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module FFaker
   module Courses
 
@@ -16,14 +18,5 @@ module FFaker
         LESSONS.rand
       end
     end
-
-    module Francais
-      extend ModuleUtils
-      extend self
-
-      def lesson
-      end
-    end
-
   end
 end

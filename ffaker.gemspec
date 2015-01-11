@@ -4,10 +4,9 @@ Gem::Specification.new do |s|
   s.rubygems_version = '2.0.0'
 
   s.name              = 'ffaker'
-  s.version           = '2.0.0'
-  s.date              = '2015-01-10'
+  s.version           = '1.30.0'
+  s.date              = '2015-01-08'
   s.rubyforge_project = 'ffaker'
-  s.required_ruby_version = '>= 1.9'
 
   s.license = 'MIT'
 
@@ -53,6 +52,8 @@ Gem::Specification.new do |s|
     lib/ffaker/company_it.rb
     lib/ffaker/company_se.rb
     lib/ffaker/conference.rb
+    lib/ffaker/course_fr.rb
+    lib/ffaker/courses.rb
     lib/ffaker/data/address/city_suffixes
     lib/ffaker/data/address/country
     lib/ffaker/data/address/country_code
@@ -118,6 +119,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/lorem_ar/words
     lib/ffaker/data/lorem_cn/words
     lib/ffaker/data/lorem_fr/words
+    lib/ffaker/data/mathematiques/lessons
     lib/ffaker/data/movie/adj_and_adv
     lib/ffaker/data/movie/nouns
     lib/ffaker/data/movie/prefixes
@@ -166,6 +168,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/name_vn/first_names
     lib/ffaker/data/name_vn/last_names
     lib/ffaker/data/name_vn/middle_names
+    lib/ffaker/data/philosophie/lessons
     lib/ffaker/data/phone_number_it/home_phone_prefixes
     lib/ffaker/data/phone_number_it/mobile_phone_prefixes
     lib/ffaker/data/phone_number_se/phone_prefix
@@ -182,7 +185,10 @@ Gem::Specification.new do |s|
     lib/ffaker/dizzle_ipsum.rb
     lib/ffaker/education.rb
     lib/ffaker/food.rb
+    lib/ffaker/gender.rb
+    lib/ffaker/gender_cn.rb
     lib/ffaker/geolocation.rb
+    lib/ffaker/guid.rb
     lib/ffaker/healthcare_ipsum.rb
     lib/ffaker/hipster_ipsum.rb
     lib/ffaker/html_ipsum.rb
@@ -273,11 +279,16 @@ Gem::Specification.new do |s|
     test/test_company_it.rb
     test/test_company_se.rb
     test/test_conference.rb
+    test/test_course_mathematiques.rb
+    test/test_course_philosophie.rb
     test/test_dizzle_ipsum.rb
     test/test_education.rb
     test/test_faker.rb
     test/test_food.rb
+    test/test_gender.rb
+    test/test_gender_cn.rb
     test/test_geolocation.rb
+    test/test_guid.rb
     test/test_healthcare_ipsum.rb
     test/test_hipster_ipsum.rb
     test/test_html_ipsum.rb
