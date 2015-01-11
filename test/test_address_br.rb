@@ -25,6 +25,6 @@ class TestAddressBR < Test::Unit::TestCase
 
   def test_street
     prefixes = FFaker::AddressBR::STREET_PREFIX
-    assert_match /(#{prefixes.join('|')})( [[:alpha:]]+){1,2}/, FFaker::AddressBR.street
+    assert_match /(#{prefixes.join('|')})( [\p{Alpha}]+){1,2}/, FFaker::AddressBR.street
   end
 end
