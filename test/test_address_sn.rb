@@ -8,18 +8,18 @@ require "helper"
 class TestAddressSn < Test::Unit::TestCase
 
   def setup
-    @subject = Faker::AddressSN
+    @subject = FFaker::AddressSN
   end
 
   def test_region
-    assert Faker::AddressSN::REGIONS.include?(Faker::AddressSN.region)
+    assert FFaker::AddressSN::REGIONS.include?(FFaker::AddressSN.region)
   end
 
   def test_departement
-    assert Faker::AddressSN::DEPARTEMENTS.include?(Faker::AddressSN.departement)
+    assert FFaker::AddressSN::DEPARTEMENTS.include?(FFaker::AddressSN.departement)
   end
 
   def test_arrondissement
-    assert Faker::AddressSN::ARRONDISSEMENTS.include?(Faker::AddressSN.arrondissement)
+    assert FFaker::AddressSN::ARRONDISSEMENTS.include?(FFaker::AddressSN.arrondissement)
   end
 end

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module PhoneNumberFR
     extend ModuleUtils
     extend self
@@ -13,11 +13,11 @@ module Faker
     end
 
     def home_work_phone_number
-      Faker.numerify "#{COUNTRY_PREFIX.rand}#{AREA_PREFIX.rand}#{PHONE_NUMBER.rand}" 
+      FFaker.numerify "#{COUNTRY_PREFIX.rand}#{AREA_PREFIX.rand}#{PHONE_NUMBER.rand}"
     end
 
     def mobile_phone_number
-      Faker.numerify "#{COUNTRY_PREFIX.rand}#{MOBILE_PREFIX.rand}#{PHONE_NUMBER.rand}" 
+      FFaker.numerify "#{COUNTRY_PREFIX.rand}#{MOBILE_PREFIX.rand}#{PHONE_NUMBER.rand}"
     end
 
     COUNTRY_PREFIX = k %w[+33 0033 0]

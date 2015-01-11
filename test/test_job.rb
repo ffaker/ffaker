@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerJob < Test::Unit::TestCase
   def setup
-    @tester = Faker::Job
+    @tester = FFaker::Job
   end
 
   def test_title

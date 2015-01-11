@@ -2,15 +2,15 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressUS
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
 
     def zip_code
-      Faker.numerify ZIP_FORMATS.rand
+      FFaker.numerify ZIP_FORMATS.rand
     end
 
     def state

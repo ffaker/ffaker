@@ -1,8 +1,8 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Loosely based on http://html-ipsum.com/
-  # Requires Faker::Lorem module
+  # Requires FFaker::Lorem module
   module HTMLIpsum
     extend ModuleUtils
     extend self
@@ -12,7 +12,7 @@ module Faker
     end
 
     def p(count = 3, options = {})
-      options = {:fancy => false, :include_breaks => false}.merge(options)
+      options = {fancy: false, include_breaks: false}.merge(options)
       if options[:fancy]
         s = fancy_string(count, options[:include_breaks])
       else
@@ -128,33 +128,33 @@ module Faker
         "<em>#{paragraph}</em>",
         "<code>#{words 2}</code>",
         "#{a 2}"
-      ] + Faker::Lorem::paragraphs(count))
+      ] + FFaker::Lorem::paragraphs(count))
       a.random_pick(count).join(sep)
     end
 
   private
     def word
-      Faker::Lorem::word
+      FFaker::Lorem::word
     end
 
     def words(word_count = 3)
-      Faker::Lorem::words(word_count).join(' ')
+      FFaker::Lorem::words(word_count).join(' ')
     end
 
     def sentence(word_count = 3)
-      Faker::Lorem::sentence(word_count)
+      FFaker::Lorem::sentence(word_count)
     end
 
     def sentences(sentence_count = 3)
-      Faker::Lorem::sentences(sentence_count).join(' ')
+      FFaker::Lorem::sentences(sentence_count).join(' ')
     end
 
     def paragraph(sentence_count = 3)
-      Faker::Lorem::paragraph(sentence_count)
+      FFaker::Lorem::paragraph(sentence_count)
     end
 
     def paragraphs(paragraph_count = 3)
-      Faker::Lorem::paragraphs(paragraph_count).join('<br>')
+      FFaker::Lorem::paragraphs(paragraph_count).join('<br>')
     end
   end
 end

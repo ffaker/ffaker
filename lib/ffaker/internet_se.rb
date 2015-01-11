@@ -2,7 +2,7 @@
 
 require 'ffaker/internet'
 
-module Faker
+module FFaker
   module InternetSE
     include Internet
 
@@ -101,7 +101,7 @@ module Faker
     def slug(words = nil, glue = nil)
       glue ||= SLUG_DELIMITERS.rand
 
-      (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
+      (words || FFaker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
     end
 
     BYTE = k((0..255).to_a.map { |n| n.to_s })

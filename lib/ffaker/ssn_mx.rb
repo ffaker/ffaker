@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Author Guapolo <github.com/guapolo>
   module SSNMX
     extend ModuleUtils
@@ -9,13 +9,13 @@ module Faker
     # The Social Security number is a eleven-digit number in the format
     # "AABBCCDDEE-F".
     def ssn
-      Faker.numerify('##########-#')
+      FFaker.numerify('##########-#')
     end
 
     # The Social Security number is a eleven-digit number in the format
     # "AABBCCDDEEF".
     def ssn_undashed
-      Faker.numerify('###########')
+      FFaker.numerify('###########')
     end
 
     # http://es.wikipedia.org/wiki/Instituto_Mexicano_del_Seguro_Social
@@ -24,7 +24,7 @@ module Faker
     # is a eleven-digit number in the format
     # "AABBCCDDEE-F".
     def imss
-      Faker.numerify('##########-#')
+      FFaker.numerify('##########-#')
     end
 
     # http://es.wikipedia.org/wiki/Instituto_Mexicano_del_Seguro_Social
@@ -33,7 +33,7 @@ module Faker
     # is a eleven-digit number in the format
     # "AABBCCDDEEF".
     def imss_undashed
-      Faker.numerify('###########')
+      FFaker.numerify('###########')
     end
 
     # http://es.wikipedia.org/wiki/Instituto_de_Seguridad_y_Servicios_Sociales_de_los_Trabajadores_del_Estado
@@ -42,7 +42,7 @@ module Faker
     # is a eleven-digit number in the format
     # "AABBCCDDEE-F".
     def issste
-      Faker.numerify('##########-#')
+      FFaker.numerify('##########-#')
     end
 
     # http://es.wikipedia.org/wiki/Instituto_de_Seguridad_y_Servicios_Sociales_de_los_Trabajadores_del_Estado
@@ -51,7 +51,7 @@ module Faker
     # is a eleven-digit number in the format
     # "AABBCCDDEEF".
     def issste_undashed
-      Faker.numerify('###########')
+      FFaker.numerify('###########')
     end
   end
 end

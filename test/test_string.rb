@@ -3,7 +3,7 @@
 require 'helper'
 
 class TestString < Test::Unit::TestCase
-  FS = Faker::String
+  FS = FFaker::String
 
   def test_atoms
     assert_equal "abc", FS.from_regexp(/abc/)

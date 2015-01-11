@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module PhoneNumberNL
     extend ModuleUtils
     extend self
@@ -17,11 +17,11 @@ module Faker
 
     def home_work_phone_number
       area = AREA_CODES.rand
-      Faker.numerify "#{AREA_CODE_PREFIX}#{area}-#{PHONE_NUMBER[area.size].rand}"
+      FFaker.numerify "#{AREA_CODE_PREFIX}#{area}-#{PHONE_NUMBER[area.size].rand}"
     end
 
     def mobile_phone_number
-      Faker.numerify "#{AREA_CODE_PREFIX}6#{MOBILE_PHONE_NUMBER.rand}"
+      FFaker.numerify "#{AREA_CODE_PREFIX}6#{MOBILE_PHONE_NUMBER.rand}"
     end
 
     def international_phone_number
@@ -33,11 +33,11 @@ module Faker
 
     def international_home_work_phone_number
       area = AREA_CODES.rand
-      Faker.numerify("#{COUNTRY_CODE} #{area}-#{PHONE_NUMBER[area.size].rand}")
+      FFaker.numerify("#{COUNTRY_CODE} #{area}-#{PHONE_NUMBER[area.size].rand}")
     end
 
     def international_mobile_phone_number
-      Faker.numerify("#{COUNTRY_CODE} 6#{MOBILE_PHONE_NUMBER.rand}")
+      FFaker.numerify("#{COUNTRY_CODE} 6#{MOBILE_PHONE_NUMBER.rand}")
     end
 
     PHONE_NUMBER = {

@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerTime < Test::Unit::TestCase
   def setup
-    @tester = Faker::Time
+    @tester = FFaker::Time
   end
 
   def test_date

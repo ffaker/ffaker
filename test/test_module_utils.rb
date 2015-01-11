@@ -5,7 +5,7 @@ require 'helper'
 class TestModuleUtils < Test::Unit::TestCase
   def test_provides_a_k_method_for_generating_constant_arrays
     obj = Object.new
-    obj.extend Faker::ModuleUtils
+    obj.extend FFaker::ModuleUtils
     result = obj.k ["1","2","3"]
 
     assert result.frozen?

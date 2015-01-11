@@ -2,9 +2,9 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressUK
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
@@ -18,7 +18,7 @@ module Faker
     end
 
     def postcode
-      Faker.bothify(POSTCODE.rand).upcase
+      FFaker.bothify(POSTCODE.rand).upcase
     end
 
     COUNTRY = k ['England', 'Scotland', 'Wales', 'Northern Ireland']

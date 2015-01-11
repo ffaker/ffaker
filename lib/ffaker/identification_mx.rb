@@ -2,7 +2,7 @@
 
 require 'ffaker/identification_es'
 
-module Faker
+module FFaker
   module IdentificationMX
     # Author Guapolo <github.com/guapolo>
     extend ModuleUtils
@@ -27,7 +27,7 @@ module Faker
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
-    # Registro Federal de Contribuyentes (R.F.C.) 
+    # Registro Federal de Contribuyentes (R.F.C.)
     def rfc
       ArrayUtils.rand([rfc_persona_moral, rfc_persona_fisica])
     end

@@ -1,12 +1,12 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module Vehicle
     extend ModuleUtils
     extend self
 
     def base_color
-      Faker::Color.name
+      FFaker::Color.name
     end
 
     def drivetrain
@@ -32,7 +32,7 @@ module Faker
     end
 
     def vin
-      Faker.bothify('1#???#####?######').upcase
+      FFaker.bothify('1#???#####?######').upcase
     end
 
     def year

@@ -2,7 +2,7 @@
 
 require 'ostruct'
 
-module Faker
+module FFaker
   module Unit
     extend ModuleUtils
     extend self
@@ -34,17 +34,17 @@ module Faker
     end
 
     TIME_UNITS = k [
-      {:name => 'Years', :abbreviation => 'yr'},
-      {:name => 'Days', :abbreviation => 'd'},
-      {:name => 'Hours', :abbreviation => 'Minutes'},
-      {:name => 'Seconds', :abbreviation => 's'},
-      {:name => 'Milliseconds', :abbreviation => 'msec'}
+      {name: 'Years',        abbreviation: 'yr'},
+      {name: 'Days',         abbreviation: 'd'},
+      {name: 'Hours',        abbreviation: 'Minutes'},
+      {name: 'Seconds',      abbreviation: 's'},
+      {name: 'Milliseconds', abbreviation: 'msec'}
     ]
 
     TEMPERATURE_UNITS = k [
-      {:name => 'Kelvin', :abbreviation => 'K'},
-      {:name => 'Celsius', :abbreviation => 'C'},
-      {:name => 'Fahrenheit', :abbreviation => 'F'}
+      {name: 'Kelvin',     abbreviation: 'K'},
+      {name: 'Celsius',    abbreviation: 'C'},
+      {name: 'Fahrenheit', abbreviation: 'F'}
     ]
   end
 end

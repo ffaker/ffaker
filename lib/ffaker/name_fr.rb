@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Author PapePathe<pathe.sene@gmail.com> github.com/PapePathe
   # The names & first names in this module were found at this url
   # https://github.com/fzaninotto/Faker/blob/master/src/Faker/Provider/fr_FR/Person.php

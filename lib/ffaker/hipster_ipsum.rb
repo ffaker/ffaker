@@ -2,7 +2,7 @@
 
 require 'ffaker/lorem'
 
-module Faker
+module FFaker
   # thanks to http://hipsteripsum.me
   module HipsterIpsum
     include Lorem
