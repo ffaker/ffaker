@@ -2,10 +2,10 @@
 
 require 'ffaker/name'
 
-module Faker
+module FFaker
   # guapolo github.com/guapolo
   module NameMX
-    include Faker::Name
+    include FFaker::Name
 
     extend ModuleUtils
     extend self

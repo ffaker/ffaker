@@ -2,7 +2,7 @@
 
 require 'ffaker/lorem'
 
-module Faker
+module FFaker
   # Thanks to Snoop Dogg
   module DizzleIpsum
     extend Lorem

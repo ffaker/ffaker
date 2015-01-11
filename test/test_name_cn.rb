@@ -4,10 +4,10 @@ require 'helper'
 
 class TestFakerNameCN < Test::Unit::TestCase
   def setup
-    @tester = Faker::NameCN
+    @tester = FFaker::NameCN
   end
 
   def test_name
-    assert Faker::NameCN.name.length > 2
+    assert FFaker::NameCN.name.length > 2
   end
 end

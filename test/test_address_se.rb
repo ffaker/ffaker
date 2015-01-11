@@ -8,19 +8,19 @@ class TestAddressSE < Test::Unit::TestCase
   DIGIT = /\d{1}/
 
   def test_se_city
-    assert_match ALPHA, Faker::AddressSE.city
+    assert_match ALPHA, FFaker::AddressSE.city
   end
 
   def test_se_zip_code
-    assert_match(/\d{2}/, Faker::AddressSE.zip_code)
+    assert_match(/\d{2}/, FFaker::AddressSE.zip_code)
   end
 
   def test_countries
-    assert Faker::AddressSE::COUNTRIES.include?(Faker::AddressSE.random_country)
+    assert FFaker::AddressSE::COUNTRIES.include?(FFaker::AddressSE.random_country)
   end
 
   def test_se_full_address
-    address = Faker::AddressSE.full_address
+    address = FFaker::AddressSE.full_address
     assert_match ALPHA, address
     assert_match DIGIT, address
     assert_match(/SVERIGE/, address)
@@ -28,6 +28,6 @@ class TestAddressSE < Test::Unit::TestCase
   end
 
   def test_se_zip_code_frozen
-    assert Faker::AddressSE.zip_code.frozen? == false
+    assert FFaker::AddressSE.zip_code.frozen? == false
   end
 end

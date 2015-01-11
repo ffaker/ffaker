@@ -2,7 +2,7 @@ require "helper"
 
 class TestCourseMathematiques < Test::Unit::TestCase
   def setup
-    @subject = Faker::CoursesFR::Mathematiques
+    @subject = FFaker::CoursesFR::Mathematiques
   end
 
   def test_lesson

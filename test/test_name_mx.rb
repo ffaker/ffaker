@@ -6,12 +6,12 @@ require 'helper'
 class TestFakerNameMX < Test::Unit::TestCase
 
   def setup
-    @tester = Faker::NameMX
-    @all_names = Faker::NameMX::MALE_FIRST_NAMES + Faker::NameMX::FEMALE_FIRST_NAMES
+    @tester = FFaker::NameMX
+    @all_names = FFaker::NameMX::MALE_FIRST_NAMES + FFaker::NameMX::FEMALE_FIRST_NAMES
   end
 
   def test_last_name
-    assert Faker::NameMX::LAST_NAMES.include?(@tester.last_name)
+    assert FFaker::NameMX::LAST_NAMES.include?(@tester.last_name)
   end
 
   def test_first_name
@@ -27,32 +27,32 @@ class TestFakerNameMX < Test::Unit::TestCase
   end
 
   def test_prefix_male
-    assert Faker::NameMX::MALE_PREFIXES.include?(@tester.male_prefix)
+    assert FFaker::NameMX::MALE_PREFIXES.include?(@tester.male_prefix)
   end
 
   def test_prefix_female
-    assert Faker::NameMX::FEMALE_PREFIXES.include?(@tester.female_prefix)
+    assert FFaker::NameMX::FEMALE_PREFIXES.include?(@tester.female_prefix)
   end
 
   def test_prefix
-    assert Faker::NameMX::PREFIXES.include?(@tester.prefix)
+    assert FFaker::NameMX::PREFIXES.include?(@tester.prefix)
   end
 
   def test_male_name
     parts = @tester.male_name.split(' ')
     case parts.count
-    when 1 then assert Faker::NameMX::MALE_FIRST_NAMES.include?(parts[0])
-    when 2 then assert Faker::NameMX::MALE_FIRST_NAMES.include?(parts[0]) &&
-      Faker::NameMX::MALE_FIRST_NAMES.include?(parts[1])
+    when 1 then assert FFaker::NameMX::MALE_FIRST_NAMES.include?(parts[0])
+    when 2 then assert FFaker::NameMX::MALE_FIRST_NAMES.include?(parts[0]) &&
+      FFaker::NameMX::MALE_FIRST_NAMES.include?(parts[1])
     end
   end
 
   def test_female_name
     parts = @tester.female_name.split(' ')
     case parts.count
-    when 1 then assert Faker::NameMX::FEMALE_FIRST_NAMES.include?(parts[0])
-    when 2 then assert Faker::NameMX::FEMALE_FIRST_NAMES.include?(parts[0]) &&
-      Faker::NameMX::FEMALE_FIRST_NAMES.include?(parts[1])
+    when 1 then assert FFaker::NameMX::FEMALE_FIRST_NAMES.include?(parts[0])
+    when 2 then assert FFaker::NameMX::FEMALE_FIRST_NAMES.include?(parts[0]) &&
+      FFaker::NameMX::FEMALE_FIRST_NAMES.include?(parts[1])
     end
   end
 
@@ -60,23 +60,23 @@ class TestFakerNameMX < Test::Unit::TestCase
     parts = @tester.full_name(:male).split(' ')
     case parts.count
     when 5
-      assert Faker::NameMX::MALE_PREFIXES.include?(parts[0])
-      assert Faker::NameMX::MALE_FIRST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::MALE_PREFIXES.include?(parts[0])
+      assert FFaker::NameMX::MALE_FIRST_NAMES.include?(parts[1])
       # Middle name
-      assert Faker::NameMX::MALE_FIRST_NAMES.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[4])
+      assert FFaker::NameMX::MALE_FIRST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[4])
     when 4
-      prefix_or_first_name = Faker::NameMX::MALE_PREFIXES.include?(parts[0]) ||
-        Faker::NameMX::MALE_FIRST_NAMES.include?(parts[0])
+      prefix_or_first_name = FFaker::NameMX::MALE_PREFIXES.include?(parts[0]) ||
+        FFaker::NameMX::MALE_FIRST_NAMES.include?(parts[0])
       assert prefix_or_first_name
-      assert Faker::NameMX::MALE_FIRST_NAMES.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::MALE_FIRST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
     when 3
-      assert Faker::NameMX::MALE_FIRST_NAMES.include?(parts[0])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::MALE_FIRST_NAMES.include?(parts[0])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
     else
       flunk "Invalid Male Name"
     end
@@ -86,23 +86,23 @@ class TestFakerNameMX < Test::Unit::TestCase
     parts = @tester.full_name(:female).split(' ')
     case parts.count
     when 5
-      assert Faker::NameMX::FEMALE_PREFIXES.include?(parts[0])
-      assert Faker::NameMX::FEMALE_FIRST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::FEMALE_PREFIXES.include?(parts[0])
+      assert FFaker::NameMX::FEMALE_FIRST_NAMES.include?(parts[1])
       # Middle name
-      assert Faker::NameMX::FEMALE_FIRST_NAMES.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[4])
+      assert FFaker::NameMX::FEMALE_FIRST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[4])
     when 4
-      prefix_or_first_name = Faker::NameMX::FEMALE_PREFIXES.include?(parts[0]) ||
-        Faker::NameMX::FEMALE_FIRST_NAMES.include?(parts[0])
+      prefix_or_first_name = FFaker::NameMX::FEMALE_PREFIXES.include?(parts[0]) ||
+        FFaker::NameMX::FEMALE_FIRST_NAMES.include?(parts[0])
       assert prefix_or_first_name
-      assert Faker::NameMX::FEMALE_FIRST_NAMES.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::FEMALE_FIRST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
     when 3
-      assert Faker::NameMX::FEMALE_FIRST_NAMES.include?(parts[0])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::FEMALE_FIRST_NAMES.include?(parts[0])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
     else
       flunk "Invalid Female Name"
     end
@@ -112,23 +112,23 @@ class TestFakerNameMX < Test::Unit::TestCase
     parts = @tester.full_name.split(' ')
     case parts.count
     when 5
-      assert Faker::NameMX::PREFIXES.include?(parts[0])
+      assert FFaker::NameMX::PREFIXES.include?(parts[0])
       assert @all_names.include?(parts[1])
       # Middle name
       assert @all_names.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[4])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[4])
     when 4
-      prefix_or_first_name = Faker::NameMX::PREFIXES.include?(parts[0]) ||
+      prefix_or_first_name = FFaker::NameMX::PREFIXES.include?(parts[0]) ||
         @all_names.include?(parts[0])
       assert prefix_or_first_name
       assert @all_names.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
     when 3
       assert @all_names.include?(parts[0])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
     else
       flunk "Invalid Name"
     end
@@ -140,12 +140,12 @@ class TestFakerNameMX < Test::Unit::TestCase
     when 4
       assert @all_names.include?(parts[0])
       assert @all_names.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
     when 3
       assert @all_names.include?(parts[0])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
     else
       flunk "Invalid Name"
     end
@@ -155,23 +155,23 @@ class TestFakerNameMX < Test::Unit::TestCase
     parts = @tester.full_name_prefix.split(' ')
     case parts.count
     when 5
-      assert Faker::NameMX::PREFIXES.include?(parts[0])
+      assert FFaker::NameMX::PREFIXES.include?(parts[0])
       assert @all_names.include?(parts[1])
       # Middle name
       assert @all_names.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[4])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[4])
     when 4
-      prefix_or_first_name = Faker::NameMX::PREFIXES.include?(parts[0]) ||
+      prefix_or_first_name = FFaker::NameMX::PREFIXES.include?(parts[0]) ||
         @all_names.include?(parts[0])
       assert prefix_or_first_name
       assert @all_names.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[3])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[3])
     when 3
       assert @all_names.include?(parts[0])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[1])
-      assert Faker::NameMX::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[1])
+      assert FFaker::NameMX::LAST_NAMES.include?(parts[2])
     else
       flunk "Invalid Name"
     end

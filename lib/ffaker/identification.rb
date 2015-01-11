@@ -1,16 +1,16 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module Identification
     extend ModuleUtils
     extend self
 
     def drivers_license
-      Faker.bothify('?###-###-##-###-#').upcase
+      FFaker.bothify('?###-###-##-###-#').upcase
     end
 
     def ssn
-      Faker.numerify('###-##-####')
+      FFaker.numerify('###-##-####')
     end
 
     def ethnicity

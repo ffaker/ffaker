@@ -5,7 +5,7 @@ require 'set'
 
 class TestArrayUtils < Test::Unit::TestCase
   def setup
-    @array = Faker::ArrayUtils.const_array("a".."c")
+    @array = FFaker::ArrayUtils.const_array("a".."c")
     @elems = Set.new("a".."c")
   end
 

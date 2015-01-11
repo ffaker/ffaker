@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module Skill
     extend ModuleUtils
     extend self
@@ -10,7 +10,7 @@ module Faker
     end
 
     def tech_skills(num = 3)
-      TECH_SKILLS.random_pick(num) 
+      TECH_SKILLS.random_pick(num)
     end
 
     def specialty

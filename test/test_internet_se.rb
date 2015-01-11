@@ -5,7 +5,7 @@ require 'helper'
 class TestFakerInternetSE < Test::Unit::TestCase
 
   def setup
-    @tester = Faker::InternetSE
+    @tester = FFaker::InternetSE
   end
 
   def test_email

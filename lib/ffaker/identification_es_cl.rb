@@ -2,7 +2,7 @@
 
 require 'ffaker/identification_es'
 
-module Faker
+module FFaker
   module IdentificationESCL
     extend IdentificationES
     extend self

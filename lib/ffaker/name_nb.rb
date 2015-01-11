@@ -2,9 +2,9 @@
 
 require 'ffaker/name'
 
-module Faker
+module FFaker
   module NameNB
-    include Faker::Name
+    include FFaker::Name
 
     extend ModuleUtils
     extend self

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module  Faker
+module FFaker
   # Based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Singapore
   module PhoneNumberSG
     extend ModuleUtils
@@ -20,49 +20,49 @@ module  Faker
     #  3xxx xxxx
     #
     def voip_number
-      Faker.numerify("3### ####")
+      FFaker.numerify("3### ####")
     end
 
     # Generates a fixed line phone number
     #  6xxx xxxx
     #
-    def fixed_line_number 
-      Faker.numerify("6### ####")
+    def fixed_line_number
+      FFaker.numerify("6### ####")
     end
 
     # Generates a fixed mobile phone number
     #  8xxx xxxx
     #
     def mobile_number
-      Faker.numerify("8### ####")
+      FFaker.numerify("8### ####")
     end
 
     # Generates a fixed mobile phone number or pager service number
     #  9xxx xxxx
     #
     def mobile_or_pager_number
-      Faker.numerify("9### ####")
+      FFaker.numerify("9### ####")
     end
 
     # Generates an international toll-free number
     #  800 xxx xxxx
     #
     def international_toll_free_number
-      Faker.numerify("800 ### ####")
+      FFaker.numerify("800 ### ####")
     end
 
     # Generates an toll-free number
     #  1800 xxx xxxx
     #
     def toll_free_number
-      Faker.numerify("1800 ### ####")
+      FFaker.numerify("1800 ### ####")
     end
 
     # Generates a premium service number
     #  (1900) xxx xxxx
     #
     def premium_service_number
-      Faker.numerify("1900 ### ####")
+      FFaker.numerify("1900 ### ####")
     end
 
     # generates mobile or home/work number

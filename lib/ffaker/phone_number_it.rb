@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module PhoneNumberIT
     extend ModuleUtils
     extend self
@@ -29,7 +29,7 @@ module Faker
         PHONE_NUMBER.rand
       ].join('')
 
-      Faker.numerify p
+      FFaker.numerify p
     end
 
     def random_space

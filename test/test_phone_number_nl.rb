@@ -5,7 +5,7 @@ require 'helper'
 # Author: wiseleyb<wiseleyb@gmail.com>
 class TestPhoneNumberNL < Test::Unit::TestCase
   def setup
-    @tester = Faker::PhoneNumberNL
+    @tester = FFaker::PhoneNumberNL
   end
 
   def test_mobile_phone_prefix

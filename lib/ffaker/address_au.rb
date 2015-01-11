@@ -2,10 +2,10 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   # Author wiseleyb<wiseleyb@gmail.com>
   module AddressAU
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
@@ -31,7 +31,7 @@ module Faker
 
     def full_address(st_abbr = nil)
       st_abbr ||= state_abbr
-      "#{Faker::Address.street_address}, #{suburb(st_abbr)} #{st_abbr} #{postcode}"
+      "#{FFaker::Address.street_address}, #{suburb(st_abbr)} #{st_abbr} #{postcode}"
     end
 
     # based on areas labeled state (+act) here: http://en.wikipedia.org/wiki/States_and_territories_of_Australia
@@ -54,7 +54,7 @@ module Faker
           "5600"=>"Whyalla", "5606"=>"Port Lincoln", "5607"=>"Port Lincoln",
           "5700"=>"Port Augusta", "5710"=>"Port Augusta"
         },
-        "WA" => { 
+        "WA" => {
           "6000"=>"Perth", "6008"=>"Subiaco", "6009"=>"Nedlands",
           "6021"=>"Stirling", "6027"=>"Joondalup", "6053"=>"Bayswater",
           "6065"=>"Wanneroo", "6110"=>"Gosnells", "6112"=>"Armadale",

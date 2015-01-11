@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Source: http://www.thai-language.com/
   module NameTH
     extend ModuleUtils

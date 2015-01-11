@@ -1,4 +1,4 @@
-module Faker
+module FFaker
   module ArrayUtils
     def self.const_array(argument)
       array = argument.is_a?(Array) ? argument : argument.to_a

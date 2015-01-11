@@ -3,9 +3,9 @@
 require 'ffaker/unit'
 require 'ostruct'
 
-module Faker
+module FFaker
   module UnitMetric
-    include Faker::Unit
+    include FFaker::Unit
 
     extend ModuleUtils
     extend self

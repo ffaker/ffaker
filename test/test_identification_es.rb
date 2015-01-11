@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerIdentificationES < Test::Unit::TestCase
   def setup
-    @tester = Faker::IdentificationES
+    @tester = FFaker::IdentificationES
   end
 
   def test_gender

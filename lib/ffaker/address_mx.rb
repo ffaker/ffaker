@@ -1,17 +1,17 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Author Guapolo <github.com/guapolo>
   module AddressMX
     extend ModuleUtils
     extend self
 
     def zip_code
-      Faker.numerify('#####')
+      FFaker.numerify('#####')
     end
 
     def postal_code
-      Faker.numerify('#####')
+      FFaker.numerify('#####')
     end
 
     def state
