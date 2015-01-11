@@ -14,14 +14,14 @@ class TestSSN < Test::Unit::TestCase
   end
 
   def test_ssn_with_gender
-    ssn_male = FFaker::SSNSE.ssn(:gender => :male)
+    ssn_male = FFaker::SSNSE.ssn(gender: :male)
     assert is_equal?(ssn_male[10].to_i)
 
-    ssn_female = FFaker::SSNSE.ssn(:gender => :female)
+    ssn_female = FFaker::SSNSE.ssn(gender: :female)
     assert is_equal?(ssn_female[10].to_i)
 
     assert_raise ArgumentError do
-      FFaker::SSNSE.ssn(:gender => :unkown)
+      FFaker::SSNSE.ssn(gender: :unkown)
     end
   end
 
@@ -30,7 +30,7 @@ class TestSSN < Test::Unit::TestCase
       from = Time.local(1980, 2, 28)
       to = Time.local(2000, 2, 28)
 
-      ssn = FFaker::SSNSE.ssn(:from => from, :to => to)
+      ssn = FFaker::SSNSE.ssn(from: from, to: to)
       year = ssn[0..3].to_i
       month = ssn[4..5].to_i
       day = ssn[6..7].to_i
