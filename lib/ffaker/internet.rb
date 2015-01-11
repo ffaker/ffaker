@@ -26,17 +26,15 @@ module Faker
     def user_name(name = nil)
       if name
         parts = ArrayUtils.shuffle(name.scan(/\w+/)).join(%w(. _).sample)
-        parts.downcase!
-        parts
+        parts.downcase
       else
         case rand(2)
         when 0
           Name.first_name.gsub(/\W/, '').downcase
         when 1
-          parts = [ Name.first_name, Name.last_name ]
-          parts = parts.join(%w(. _).sample).gsub(/\W/, '')
-          parts.downcase!
-          parts
+          parts = [ Name.first_name, Name.last_name ].map{|n| n.gsub(/\W/, '') }
+          parts = parts.join(%w(. _).sample)
+          parts.downcase
         end
       end
     end
