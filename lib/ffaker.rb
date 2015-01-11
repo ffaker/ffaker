@@ -13,21 +13,15 @@ module Faker
   HEX = %w(0 1 2 3 4 5 6 7 8 9 A B C D E F)
 
   def self.hexify(*masks)
-    mask = ArrayUtils.rand(masks.flatten)
-    mask.gsub!(/#/) { ArrayUtils.rand(HEX) }
-    mask
+    masks.flatten.sample.gsub(/#/) { HEX.sample }
   end
 
   def self.numerify(*masks)
-    mask = ArrayUtils.rand(masks.flatten)
-    mask.gsub!(/#/) { rand(10).to_s }
-    mask
+    masks.flatten.sample.gsub(/#/) { rand(10).to_s }
   end
 
   def self.letterify(*masks)
-    mask = ArrayUtils.rand(masks.flatten)
-    mask.gsub!(/\?/) { LETTERS.rand }
-    mask
+    masks.flatten.sample.gsub(/\?/) { LETTERS.sample }
   end
 
   def self.bothify(masks)

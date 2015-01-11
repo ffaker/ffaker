@@ -16,12 +16,12 @@ module Faker
     end
 
     def home_work_phone_number
-      area = AREA_CODES.rand
-      Faker.numerify "#{AREA_CODE_PREFIX}#{area}-#{PHONE_NUMBER[area.size].rand}"
+      area = AREA_CODES.sample
+      Faker.numerify "#{AREA_CODE_PREFIX}#{area}-#{PHONE_NUMBER[area.size].sample}"
     end
 
     def mobile_phone_number
-      Faker.numerify "#{AREA_CODE_PREFIX}6#{MOBILE_PHONE_NUMBER.rand}"
+      Faker.numerify "#{AREA_CODE_PREFIX}6#{MOBILE_PHONE_NUMBER.sample}"
     end
 
     def international_phone_number
@@ -32,12 +32,12 @@ module Faker
     end
 
     def international_home_work_phone_number
-      area = AREA_CODES.rand
-      Faker.numerify("#{COUNTRY_CODE} #{area}-#{PHONE_NUMBER[area.size].rand}")
+      area = AREA_CODES.sample
+      Faker.numerify("#{COUNTRY_CODE} #{area}-#{PHONE_NUMBER[area.size].sample}")
     end
 
     def international_mobile_phone_number
-      Faker.numerify("#{COUNTRY_CODE} 6#{MOBILE_PHONE_NUMBER.rand}")
+      Faker.numerify("#{COUNTRY_CODE} 6#{MOBILE_PHONE_NUMBER.sample}")
     end
 
     PHONE_NUMBER = {

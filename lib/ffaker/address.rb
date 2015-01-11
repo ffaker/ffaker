@@ -23,11 +23,11 @@ module Faker
     # end US deprecation
 
     def city_prefix
-      CITY_PREFIXES.rand
+      CITY_PREFIXES.sample
     end
 
     def city_suffix
-      CITY_SUFFIXES.rand
+      CITY_SUFFIXES.sample
     end
 
     def city
@@ -40,7 +40,7 @@ module Faker
     end
 
     def street_suffix
-      STREET_SUFFIX.rand
+      STREET_SUFFIX.sample
     end
 
     def building_number
@@ -61,7 +61,7 @@ module Faker
     end
 
     def secondary_address
-      Faker.numerify(SEC_ADDR.rand)
+      Faker.numerify(SEC_ADDR.sample)
     end
 
     # @deprecated UK specific address info. Moved into {AddressUK}
@@ -83,7 +83,7 @@ module Faker
     # end UK deprecation
 
     def neighborhood
-      NEIGHBORHOOD.rand
+      NEIGHBORHOOD.sample
     end
 
     def country(given_code = nil)
@@ -91,7 +91,7 @@ module Faker
       if given_code && country_index
         COUNTRY[country_index]
       else
-        COUNTRY.rand
+        COUNTRY.sample
       end
     end
 
@@ -100,7 +100,7 @@ module Faker
       if given_country && code_index
         COUNTRY_CODE[code_index]
       else
-        COUNTRY_CODE.rand
+        COUNTRY_CODE.sample
       end
     end
 

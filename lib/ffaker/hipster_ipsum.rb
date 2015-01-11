@@ -11,7 +11,7 @@ module Faker
     extend self
 
     def word
-      HIPSTER_WORDS.rand
+      HIPSTER_WORDS.sample
     end
 
     def words(num = 3)

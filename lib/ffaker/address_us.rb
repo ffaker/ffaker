@@ -10,27 +10,27 @@ module Faker
     extend self
 
     def zip_code
-      Faker.numerify ZIP_FORMATS.rand
+      Faker.numerify ZIP_FORMATS.sample
     end
 
     def state
-      STATE.rand
+      STATE.sample
     end
 
     def state_abbr
-      STATE_ABBR.rand
+      STATE_ABBR.sample
     end
 
     def state_and_territories_abbr
-      STATE_AND_TERRITORIES_ABBR.rand
+      STATE_AND_TERRITORIES_ABBR.sample
     end
 
     def continental_state
-      CONTINENTAL_STATE.rand
+      CONTINENTAL_STATE.sample
     end
 
     def continental_state_abbr
-      CONTINENTAL_STATE_ABBR.rand
+      CONTINENTAL_STATE_ABBR.sample
     end
 
     ZIP_FORMATS = k ['#####', '#####-####']

@@ -14,11 +14,11 @@ module Faker
     end
 
     def ethnicity
-      ETHNICITIES.rand
+      ETHNICITIES.sample
     end
 
     def gender
-      GENDERS.rand
+      GENDERS.sample
     end
 
     ETHNICITIES = k ['African American', 'Asian/Pacific Islander', 'Caucasian', 'Hispanic', 'Native American', 'Multiracial', 'Other', 'Prefer not to respond']

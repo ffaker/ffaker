@@ -14,19 +14,19 @@ module Faker
     end
 
     def state
-      STATE.rand
+      STATE.sample
     end
 
     def state_abbr
-      STATE_ABBR.rand
+      STATE_ABBR.sample
     end
 
     def city
-      CITY.rand
+      CITY.sample
     end
 
     def street_prefix
-      STREET_PREFIX.rand
+      STREET_PREFIX.sample
     end
 
     def street

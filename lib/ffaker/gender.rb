@@ -8,7 +8,7 @@ module Faker
     GENDERS = ['male', 'female']
 
     def random
-      GENDERS[rand(GENDERS.size)]
+      GENDERS.sample
     end
 
     alias_method :maybe, :random

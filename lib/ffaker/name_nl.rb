@@ -25,24 +25,24 @@ module Faker
 
     def first_name_female
       case rand(8)
-      when 0 then [FIRST_NAMES_FEMALE.rand, FIRST_NAMES_FEMALE.rand].join('-')
-      else FIRST_NAMES_FEMALE.rand
+      when 0 then [FIRST_NAMES_FEMALE.sample, FIRST_NAMES_FEMALE.sample].join('-')
+      else FIRST_NAMES_FEMALE.sample
       end
     end
 
     def first_name_male
       case rand(8)
-      when 0 then [FIRST_NAMES_MALE.rand, FIRST_NAMES_MALE.rand].join('-')
-      else FIRST_NAMES_MALE.rand
+      when 0 then [FIRST_NAMES_MALE.sample, FIRST_NAMES_MALE.sample].join('-')
+      else FIRST_NAMES_MALE.sample
       end
     end
 
     def last_name
-      LAST_NAMES.rand
+      LAST_NAMES.sample
     end
 
     def prefix
-      PREFIXES.rand
+      PREFIXES.sample
     end
 
     PREFIXES = k %w(Dr. Drs. Ir. Ing. Prof.)

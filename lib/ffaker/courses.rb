@@ -7,7 +7,7 @@ module Faker
       extend ModuleUtils
       extend self
       def lesson
-        LESSONS.rand
+        LESSONS.sample
       end
     end
 
@@ -15,7 +15,7 @@ module Faker
       extend ModuleUtils
       extend self
       def lesson
-        LESSONS.rand
+        LESSONS.sample
       end
     end
   end

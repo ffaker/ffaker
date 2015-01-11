@@ -76,15 +76,15 @@ module Faker
           set << ch
         end
         @last_token = ['['] + set + [']']
-        process_token([ArrayUtils.rand(join_escapes(set))])
+        process_token([join_escapes(set).sample])
       end
     end
 
     def special(token)
       case token
-      when 'w' then WORD_CHARS.rand
-      when 'd' then NUMBERS.rand
-      when 's' then SPACES.rand
+      when 'w' then WORD_CHARS.sample
+      when 'd' then NUMBERS.sample
+      when 's' then SPACES.sample
       when *ESCAPEABLE_CHARS then token
       end
     end

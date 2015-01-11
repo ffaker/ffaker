@@ -11,15 +11,15 @@ module Faker
     LAST_NAMES = k %w(jammeh ceesay)
 
     def first_name_female
-      FIRST_NAMES_FEMALE.rand
+      FIRST_NAMES_FEMALE.sample
     end
 
     def first_name_male
-      FIRST_NAMES_MALE.rand
+      FIRST_NAMES_MALE.sample
     end
 
     def last_name
-      LAST_NAMES.rand
+      LAST_NAMES.sample
     end
 
     def name_male

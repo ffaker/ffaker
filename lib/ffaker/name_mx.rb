@@ -71,8 +71,8 @@ module Faker
     def name(gender = :any)
       case gender
       when :any then (rand(2) == 0) ? name(:male) : name(:female)
-      when :male then MALE_FIRST_NAMES.rand
-      when :female then FEMALE_FIRST_NAMES.rand
+      when :male then MALE_FIRST_NAMES.sample
+      when :female then FEMALE_FIRST_NAMES.sample
       else raise ArgumentError, "Invalid gender, must be one of :any, :male, :female"
       end
     end
@@ -85,19 +85,19 @@ module Faker
     end
 
     def last_name
-      LAST_NAMES.rand
+      LAST_NAMES.sample
     end
 
     def prefix
-      PREFIXES.rand
+      PREFIXES.sample
     end
 
     def male_prefix
-      MALE_PREFIXES.rand
+      MALE_PREFIXES.sample
     end
 
     def female_prefix
-      FEMALE_PREFIXES.rand
+      FEMALE_PREFIXES.sample
     end
   end
 end

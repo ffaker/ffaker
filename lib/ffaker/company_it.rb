@@ -14,11 +14,11 @@ module Faker
     end
 
     def suffix
-      SUFFIXES.rand
+      SUFFIXES.sample
     end
 
     def prefix
-      PREFIXES.rand
+      PREFIXES.sample
     end
 
     PREFIXES = k ["Studio Legale", "Studio Tecnico", "Laboratorio"]

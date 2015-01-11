@@ -6,7 +6,7 @@ module Faker
     extend self
 
     def month
-      MONTHS.rand
+      MONTHS.sample
     end
 
     def date(params={})

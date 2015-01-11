@@ -11,15 +11,15 @@ module Faker
     # randomized? (ITALIAN)  prefix!
     #
     def prefix
-      PREFIX.rand
+      PREFIX.sample
     end
 
     def last_name
-      LAST_NAMES.rand
+      LAST_NAMES.sample
     end
 
     def first_name
-      FIRST_NAMES.rand
+      FIRST_NAMES.sample
     end
 
     def name

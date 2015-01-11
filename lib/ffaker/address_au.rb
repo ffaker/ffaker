@@ -16,11 +16,11 @@ module Faker
     end
 
     def state
-      STATE.rand
+      STATE.sample
     end
 
     def state_abbr
-      STATE_ABBR.rand
+      STATE_ABBR.sample
     end
 
     def suburb(st_abbr = nil, p_code = nil)
@@ -54,7 +54,7 @@ module Faker
           "5600"=>"Whyalla", "5606"=>"Port Lincoln", "5607"=>"Port Lincoln",
           "5700"=>"Port Augusta", "5710"=>"Port Augusta"
         },
-        "WA" => { 
+        "WA" => {
           "6000"=>"Perth", "6008"=>"Subiaco", "6009"=>"Nedlands",
           "6021"=>"Stirling", "6027"=>"Joondalup", "6053"=>"Bayswater",
           "6065"=>"Wanneroo", "6110"=>"Gosnells", "6112"=>"Armadale",

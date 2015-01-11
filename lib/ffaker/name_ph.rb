@@ -13,9 +13,9 @@ module Faker
     def last_name
       case rand(2)
       when 0
-        AUTOCHTHONOUS_SURNAMES.rand
+        AUTOCHTHONOUS_SURNAMES.sample
       else
-        SPANISH_SURNAMES.rand
+        SPANISH_SURNAMES.sample
       end
     end
 

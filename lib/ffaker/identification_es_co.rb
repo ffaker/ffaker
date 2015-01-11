@@ -18,15 +18,15 @@ module Faker
   alias_method :id, :drivers_license
 
     def driver_license_category
-      category = LICENSE_CATEGORY.rand
+      category = LICENSE_CATEGORY.sample
       # the categories are A1 A2 B1 B2 B3 C1 C2 C3
       num = category == 'A' ? 1 + rand(2) : 1 + rand(3)
-      category.concat(num.to_s)
+      "#{category}#{num}"
     end
 
     def blood_type #RH
-      sign = %w(+ -).shuffle.shift
-      BLOOD_TYPE.rand.concat sign
+      sign = %w(+ -).sample
+      "#{BLOOD_TYPE.sample}#{sign}"
     end
 
     def expedition_date

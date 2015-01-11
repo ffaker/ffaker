@@ -14,26 +14,26 @@ module Faker
     end
 
     def suffix
-      SUFFIXES.rand
+      SUFFIXES.sample
     end
 
     # Generate a buzzword-laden catch phrase.
     # Wordlist from http://www.1728.com/buzzword.htm
     def catch_phrase
-      "#{CATCH_PRE.rand} #{CATCH_MID.rand} #{CATCH_POS.rand}"
+      "#{CATCH_PRE.sample} #{CATCH_MID.sample} #{CATCH_POS.sample}"
     end
 
     # When a straight answer won't do, BS to the rescue!
     # Wordlist from http://dack.com/web/bullshit.html
     def bs
-      "#{BS_PRE.rand} #{BS_MID.rand} #{BS_POS.rand}"
+      "#{BS_PRE.sample} #{BS_MID.sample} #{BS_POS.sample}"
     end
 
     def position
       case rand(3)
-      when 0 then [POSITION_PREFIXES.rand, POSITIONS.rand]
-      when 1 then [POSITION_AREAS.rand, POSITIONS.rand]
-      when 2 then [POSITION_PREFIXES.rand, POSITION_AREAS.rand, POSITIONS.rand]
+      when 0 then [POSITION_PREFIXES.sample, POSITIONS.sample]
+      when 1 then [POSITION_AREAS.sample, POSITIONS.sample]
+      when 2 then [POSITION_PREFIXES.sample, POSITION_AREAS.sample, POSITIONS.sample]
       end.join(' ')
     end
 

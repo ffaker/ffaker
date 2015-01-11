@@ -7,16 +7,16 @@ module Faker
 
     def brand
       case rand(12)
-      when (0..4) then B1.rand + B2.rand
-      when (5..10) then "#{START.rand}#{VOWELS.rand}#{SUFFIX.rand}#{ADDON.rand if rand(2)==0}".capitalize
+      when (0..4) then B1.sample + B2.sample
+      when (5..10) then "#{START.sample}#{VOWELS.sample}#{SUFFIX.sample}#{ADDON.sample if rand(2)==0}".capitalize
       when 11 then "#{letters(2..3)}"
       end
     end
 
     def product_name
       case rand(2)
-      when 0 then "#{ADJ.rand} #{NOUN.rand}"
-      when 1 then "#{[ADJ.rand, ADJ.rand].uniq.join(" ")} #{NOUN.rand}"
+      when 0 then "#{ADJ.sample} #{NOUN.sample}"
+      when 1 then "#{[ADJ.sample, ADJ.sample].uniq.join(" ")} #{NOUN.sample}"
       end
     end
 
@@ -26,12 +26,12 @@ module Faker
 
     def letters(n)
       max = n.is_a?(Range) ? n.to_a.shuffle.first : n
-      (0...max).map { LETTERS.rand.upcase }.join
+      (0...max).map { LETTERS.sample.upcase }.join
     end
 
     def model
       case rand(2)
-      when 0 then "#{LETTERS.rand.upcase}#{rand(90)}"   # N90
+      when 0 then "#{LETTERS.sample.upcase}#{rand(90)}"   # N90
       when 1 then "#{letters(1..rand(1..2))}-#{rand(9900)}"         # N-9400
       end
     end

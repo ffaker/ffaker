@@ -10,7 +10,7 @@ module Faker
       if given_language && code_index
         LANGUAGE_CODE[code_index]
       else
-        LANGUAGE_CODE.rand
+        LANGUAGE_CODE.sample
       end
     end
 
@@ -19,7 +19,7 @@ module Faker
       if given_code && language_index
         LANGUAGE[language_index]
       else
-        LANGUAGE.rand
+        LANGUAGE.sample
       end
     end
 

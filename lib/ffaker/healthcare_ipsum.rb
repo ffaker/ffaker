@@ -10,7 +10,7 @@ module Faker
     extend self
 
     def word
-      HEALTHCARE_WORDS.rand
+      HEALTHCARE_WORDS.sample
     end
 
     def words(num = 3)

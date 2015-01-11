@@ -15,7 +15,7 @@ module Faker
     end
 
     def suffix
-      SUFFIXES.rand
+      SUFFIXES.sample
     end
 
     SUFFIXES = k %w(AB Aktiebolag Ab)

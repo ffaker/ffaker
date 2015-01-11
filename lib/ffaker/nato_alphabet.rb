@@ -11,15 +11,15 @@ module Faker
     CODES = ALPHABET_CODES + NUMERIC_CODES + [STOP_CODE]
 
     def code
-      ArrayUtils.rand(CODES)
+      CODES.sample
     end
 
     def alphabetic_code
-      ArrayUtils.rand(ALPHABET_CODES)
+      ALPHABET_CODES.sample
     end
 
     def numeric_code
-      ArrayUtils.rand(NUMERIC_CODES)
+      NUMERIC_CODES.sample
     end
 
     def callsign
@@ -29,8 +29,8 @@ module Faker
     def codify(masks)
       masks.scan(/./).map do |c|
         case c
-        when "#" then NUMERIC_CODES.rand
-        when "?" then ALPHABET_CODES.rand
+        when "#" then NUMERIC_CODES.sample
+        when "?" then ALPHABET_CODES.sample
         when "." then STOP_CODE
         else c
         end

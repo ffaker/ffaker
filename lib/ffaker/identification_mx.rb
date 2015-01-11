@@ -14,7 +14,7 @@ module Faker
       consonants_n = CONSONANTS + ["Ñ"]
       all_letters = consonants_n + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
-      "#{ArrayUtils.rand(consonants_n)}#{ArrayUtils.rand(VOWELS)}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{ArrayUtils.random_pick(HOMOCLAVE,3).join}"
+      "#{consonants_n.sample}#{VOWELS.sample}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{ArrayUtils.random_pick(HOMOCLAVE,3).join}"
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -27,9 +27,9 @@ module Faker
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
-    # Registro Federal de Contribuyentes (R.F.C.) 
+    # Registro Federal de Contribuyentes (R.F.C.)
     def rfc
-      ArrayUtils.rand([rfc_persona_moral, rfc_persona_fisica])
+      [rfc_persona_moral, rfc_persona_fisica].sample
     end
 
     # http://es.wikipedia.org/wiki/Clave_%C3%9Anica_de_Registro_de_Poblaci%C3%B3n
@@ -38,7 +38,7 @@ module Faker
       all_letters = CONSONANTS + VOWELS
       hm = ["H","M"]
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
-      "#{ArrayUtils.rand(CONSONANTS)}#{ArrayUtils.rand(VOWELS)}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{ArrayUtils.rand(hm)}#{ArrayUtils.rand(ESTADOS_CURP)}#{ArrayUtils.random_pick(CONSONANTS,3).join}#{ArrayUtils.rand(HOMOCLAVE)}#{rand(10)}"
+      "#{CONSONANTS.sample}#{VOWELS.sample}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{hm.sample}#{ESTADOS_CURP.sample}#{ArrayUtils.random_pick(CONSONANTS,3).join}#{HOMOCLAVE.sample}#{rand(10)}"
     end
 
 

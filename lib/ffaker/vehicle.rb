@@ -10,11 +10,11 @@ module Faker
     end
 
     def drivetrain
-      DRIVETRAINS.rand
+      DRIVETRAINS.sample
     end
 
     def make
-      MAKES_LIST.rand
+      MAKES_LIST.sample
     end
 
     def manufacturer_color(n=2)
@@ -24,11 +24,11 @@ module Faker
     alias_method :mfg_color, :manufacturer_color
 
     def model
-      MODELS_LIST.rand
+      MODELS_LIST.sample
     end
 
     def trim
-      TRIMS_LIST.rand
+      TRIMS_LIST.sample
     end
 
     def vin
@@ -36,7 +36,7 @@ module Faker
     end
 
     def year
-      YEARS.rand
+      YEARS.sample
     end
 
     DRIVETRAINS = k(%w(4WD 4X4 AWD FWD RWD))

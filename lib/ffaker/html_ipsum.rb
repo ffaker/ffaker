@@ -74,18 +74,18 @@ module Faker
       s = "<table>
       <thead>
       <tr>
-      <th>#{word.capitalize!}</th>
-      <th>#{word.capitalize!}</th>
-      <th>#{word.capitalize!}</th>
-      <th>#{word.capitalize!}</th>
+      <th>#{word.capitalize}</th>
+      <th>#{word.capitalize}</th>
+      <th>#{word.capitalize}</th>
+      <th>#{word.capitalize}</th>
       </tr>
       </thead>
       <tbody>"
       rows.times do
         s << "<tr>
-                <td>#{words(1).capitalize!}</td>
-                <td>#{words(1).capitalize!}</td>
-                <td>#{words(1).capitalize!}</td>
+                <td>#{words(1).capitalize}</td>
+                <td>#{words(1).capitalize}</td>
+                <td>#{words(1).capitalize}</td>
                 <td>#{a}</td>
               </tr>"
       end
@@ -94,12 +94,12 @@ module Faker
     end
 
     def body
-      s = "<h1>#{words(2).capitalize!}</h1>"
+      s = "<h1>#{words(2).capitalize}</h1>"
       rand(4).times do
         s << "<p>#{fancy_string}</p>"
       end
       s << table(rand(4))
-      s << "<h2>#{words(2).capitalize!}</h2>
+      s << "<h2>#{words(2).capitalize}</h2>
       <ol>"
       rand(4).times do
         s << "<li>#{paragraph 1}</li>"

@@ -12,7 +12,8 @@ module Faker
     end
 
     def self.rand(array)
-      array[Kernel.rand(array.length)].dup
+      warn '[ArrayUtils.rand] is deprecated. Please use the Array#sample method'
+      array.sample
     end
 
     def self.freeze_all(array)
@@ -30,7 +31,8 @@ module Faker
     end
 
     def rand
-      ArrayUtils.rand(self)
+      warn '[ArrayUtils#rand] is deprecated. Please use the Array#sample method'
+      sample
     end
 
     def freeze_all
