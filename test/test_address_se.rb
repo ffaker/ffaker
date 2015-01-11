@@ -4,7 +4,7 @@ require 'helper'
 
 class TestAddressSE < Test::Unit::TestCase
 
-  ALPHA = /\A[[:alpha:]]+/
+  ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/
 
   def test_se_city

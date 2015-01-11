@@ -4,7 +4,7 @@ require 'helper'
 
 # Test features related to Finnish addresses
 class TestAddressFI < Test::Unit::TestCase
-  ALPHA = /\A[[:alpha:]]+/
+  ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/
 
   def test_fi_city
