@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Author: lawitschka<moritz.lawitschka@urbanvention.com>
   module PhoneNumberDE
     extend ModuleUtils
@@ -15,7 +15,7 @@ module Faker
 
     # Region prefixes are in range 02..09 with length of 3 to 5 digits
     def region_prefix(leading_zero = true)
-      region_prefix = (rand(8) + 2).to_s + Faker.numerify( '#' * (rand(3) + 1) ).to_s
+      region_prefix = (rand(8) + 2).to_s + FFaker.numerify( '#' * (rand(3) + 1) ).to_s
       region_prefix = '0' + region_prefix if leading_zero
       region_prefix
     end
@@ -25,11 +25,11 @@ module Faker
     end
 
     def mobile_phone_number(leading_zero = true)
-      [mobile_prefix(leading_zero), Faker.numerify('#######')].join(' ')
+      [mobile_prefix(leading_zero), FFaker.numerify('#######')].join(' ')
     end
 
     def home_work_phone_number(leading_zero = true)
-      [region_prefix(leading_zero), Faker.numerify('#######')].join(' ')
+      [region_prefix(leading_zero), FFaker.numerify('#######')].join(' ')
     end
 
     def country_code

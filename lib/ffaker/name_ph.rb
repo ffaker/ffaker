@@ -2,10 +2,10 @@
 
 require 'ffaker/name'
 
-module Faker
+module FFaker
   # Philippine names based on http://en.wikipedia.org/wiki/Philippine_name
   module NamePH
-    include Faker::Name
+    include FFaker::Name
 
     extend ModuleUtils
     extend self

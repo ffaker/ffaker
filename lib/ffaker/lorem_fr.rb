@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-module Faker
+module FFaker
   module LoremFR
     extend ModuleUtils
     extend self

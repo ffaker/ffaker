@@ -2,23 +2,23 @@
 
 require 'helper'
 
-# Author: PapePathe<pathe.sene@gmail.com> github.com/PapePathe 
+# Author: PapePathe<pathe.sene@gmail.com> github.com/PapePathe
 class TestFakerNameFR < Test::Unit::TestCase
 
   def setup
-    @tester = Faker::NameFR
+    @tester = FFaker::NameFR
   end
 
   def test_last_name
-    assert Faker::NameFR::LAST_NAMES.include?(@tester.last_name)
+    assert FFaker::NameFR::LAST_NAMES.include?(@tester.last_name)
   end
 
   def test_first_name
-    assert Faker::NameFR::FIRST_NAMES.include?(@tester.first_name)
+    assert FFaker::NameFR::FIRST_NAMES.include?(@tester.first_name)
   end
 
   def test_prefix
-    assert Faker::NameFR::PREFIX.include?(@tester.prefix)
+    assert FFaker::NameFR::PREFIX.include?(@tester.prefix)
   end
 
 
@@ -28,20 +28,20 @@ class TestFakerNameFR < Test::Unit::TestCase
 
     if parts.count == 3
       # the value at the index 1 should be a valid! prefix
-      assert Faker::NameFR::PREFIX.include?(parts[1])
+      assert FFaker::NameFR::PREFIX.include?(parts[1])
 
       # the value at the index 0 should be a valid! male_first_name
-      assert Faker::NameFR::FIRST_NAMES.include?(parts[0])
+      assert FFaker::NameFR::FIRST_NAMES.include?(parts[0])
 
       # the value at the index 2 should be a valid! last_name
-      assert Faker::NameFR::LAST_NAMES.include?(parts[2])
+      assert FFaker::NameFR::LAST_NAMES.include?(parts[2])
 
     elsif parts.count == 2
       # the value at the index 0 should be a valid! prefix
-      assert Faker::NameFR::FIRST_NAMES.include?(parts[0])
+      assert FFaker::NameFR::FIRST_NAMES.include?(parts[0])
 
       # the value at the index 1 should be a valid! last_name
-      assert Faker::NameFR::LAST_NAMES.include?(parts[1])
+      assert FFaker::NameFR::LAST_NAMES.include?(parts[1])
     end
   end
 

@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-module Faker
+module FFaker
   module JobFR
     extend ModuleUtils
     extend self

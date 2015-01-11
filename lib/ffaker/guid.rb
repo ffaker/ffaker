@@ -1,12 +1,12 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module Guid
     extend ModuleUtils
     extend self
 
     def guid
-      Faker.hexify('########-####-####-####-############')
+      FFaker.hexify('########-####-####-####-############')
     end
   end
 end

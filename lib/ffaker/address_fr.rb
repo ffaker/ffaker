@@ -2,23 +2,23 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressFR
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
 
     def street_address
-      Faker.numerify(NUM.rand) +
+      FFaker.numerify(NUM.rand) +
       MOD.rand +
       SEP.rand +
       TYPE.rand + ' ' +
-      Faker::NameFR.name
+      FFaker::NameFR.name
     end
 
     def postal_code
-      Faker.numerify POSTAL_CODE_FORMATS.rand
+      FFaker.numerify POSTAL_CODE_FORMATS.rand
     end
 
     def city

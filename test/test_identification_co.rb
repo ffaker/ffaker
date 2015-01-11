@@ -3,7 +3,7 @@ require 'helper'
 class TestFakerIdentificationESCO < Test::Unit::TestCase
   include Test::Unit::Assertions
   def setup
-    @tester = Faker::IdentificationESCO
+    @tester = FFaker::IdentificationESCO
   end
 
   def test_drivers_license

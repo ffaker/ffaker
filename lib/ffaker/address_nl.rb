@@ -2,15 +2,15 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressNL
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
 
     def postal_code
-      Faker.bothify POSTAL_CODE_FORMAT
+      FFaker.bothify POSTAL_CODE_FORMAT
     end
 
     def zip_code

@@ -2,15 +2,15 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressCA
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
 
     def postal_code
-      Faker.bothify(POSTAL_CODE_FORMATS.rand).upcase
+      FFaker.bothify(POSTAL_CODE_FORMATS.rand).upcase
     end
 
     def province

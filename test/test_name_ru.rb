@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerNameRu < Test::Unit::TestCase
   def setup
-    @tester = Faker::NameRU
+    @tester = FFaker::NameRU
   end
 
   def test_name
@@ -28,7 +28,7 @@ class TestFakerNameRu < Test::Unit::TestCase
   end
 
   def test_male_last_name
-    assert Faker::NameRU::LAST_NAMES[:male].include?(@tester.last_name(:male))
+    assert FFaker::NameRU::LAST_NAMES[:male].include?(@tester.last_name(:male))
   end
 
   def test_first_name
@@ -36,7 +36,7 @@ class TestFakerNameRu < Test::Unit::TestCase
   end
 
   def test_male_first_name
-    assert Faker::NameRU::FIRST_NAMES[:male].include?(@tester.first_name(:male))
+    assert FFaker::NameRU::FIRST_NAMES[:male].include?(@tester.first_name(:male))
   end
 
   def test_patronymic
@@ -44,7 +44,7 @@ class TestFakerNameRu < Test::Unit::TestCase
   end
 
   def test_male_patronymic
-    assert Faker::NameRU::PATRONYMICS[:male].include?(@tester.patronymic(:male))
+    assert FFaker::NameRU::PATRONYMICS[:male].include?(@tester.patronymic(:male))
   end
 
   def test_with_same_sex
@@ -71,7 +71,7 @@ class TestFakerNameRu < Test::Unit::TestCase
   def same_sex?(words, sex = :any)
     (sex == :any ? [:male, :female] : [sex]).any? do |sex|
       words.all? do |word|
-        [Faker::NameRU::LAST_NAMES, Faker::NameRU::FIRST_NAMES, Faker::NameRU::PATRONYMICS].any? do |names|
+        [FFaker::NameRU::LAST_NAMES, FFaker::NameRU::FIRST_NAMES, FFaker::NameRU::PATRONYMICS].any? do |names|
           names[sex].include?(word)
         end
       end

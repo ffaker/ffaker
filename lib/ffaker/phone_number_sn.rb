@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module  Faker
+module FFaker
   # Author: PapePathe<pathe.sene@xarala.sn> http://www.xarala.sn
   module PhoneNumberSN
     extend ModuleUtils
@@ -21,14 +21,14 @@ module  Faker
     HomeWorkOperatorsPrefix = %w(33)
 
     # Return a prefix in MobileOperatorsPrefix
-    # @see Faker::PhoneNumberSN::MobileOperatorsPrefix
+    # @see FFaker::PhoneNumberSN::MobileOperatorsPrefix
     #
     def mobile_phone_prefix
       MobileOperatorsPrefix[rand(3)]
     end
 
     # Return a prefix in HomeWorkOperatorsPrefix
-    # @see Faker::PhoneNumberSN::HomeWorkOperatorsPrefix
+    # @see FFaker::PhoneNumberSN::HomeWorkOperatorsPrefix
     #
     def homework_phone_prefix
       HomeWorkOperatorsPrefix[0]
@@ -40,7 +40,7 @@ module  Faker
     # Example 726 29 05
     #
     def short_phone_number
-      Faker.numerify('###-##-##')
+      FFaker.numerify('###-##-##')
     end
 
     # Generates a mobile phone number
@@ -58,7 +58,7 @@ module  Faker
     # Example 33 906 29 05
     #
     def homework_number
-      "#{homework_phone_prefix}-#{[8, 9][rand(1)]}#{Faker.numerify('##-##-##')}"
+      "#{homework_phone_prefix}-#{[8, 9][rand(1)]}#{FFaker.numerify('##-##-##')}"
     end
 
     # Generates a random phone number mobile or home or work

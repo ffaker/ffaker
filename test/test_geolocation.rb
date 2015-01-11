@@ -4,11 +4,11 @@ require 'helper'
 
 class TestGeolocation < Test::Unit::TestCase
   def test_lat
-    assert_match /[0-9]+/, Faker::Geolocation.lat.to_s
+    assert_match /[0-9]+/, FFaker::Geolocation.lat.to_s
   end
 
   def test_lng
-    assert_match /[0-9]+/, Faker::Geolocation.lng.to_s
+    assert_match /[0-9]+/, FFaker::Geolocation.lng.to_s
   end
 
   def test_boxed_coords
@@ -24,7 +24,7 @@ class TestGeolocation < Test::Unit::TestCase
       lon_min = [coords[0][1], coords[1][1]].min
       lon_max = [coords[0][1], coords[1][1]].max
 
-      new_coords = Faker::Geolocation.boxed_coords(coords[0], coords[1])
+      new_coords = FFaker::Geolocation.boxed_coords(coords[0], coords[1])
 
       assert (lat_min..lat_max).include?new_coords[0]
       assert (lon_min..lon_max).include?new_coords[1]

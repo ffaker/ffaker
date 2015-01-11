@@ -2,7 +2,7 @@
 
 require 'ffaker/lorem'
 
-module Faker
+module FFaker
   module HealthcareIpsum
     include Lorem
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module  Faker
+module FFaker
   # Author: guapolo github.com/guapolo
   module PhoneNumberMX
     extend ModuleUtils
@@ -10,14 +10,14 @@ module  Faker
     #  xx xxxx xxxx
     #
     def home_work_phone_number
-      Faker.numerify("## #### ####")
+      FFaker.numerify("## #### ####")
     end
 
     # Generates a mobile phone number
     # 044 xx xxxx xxxx
     #
     def mobile_phone_number
-      Faker.numerify("044 ## #### ####")
+      FFaker.numerify("044 ## #### ####")
     end
 
     # generates mobile or home/work number
@@ -33,11 +33,11 @@ module  Faker
     end
 
     def international_mobile_phone_number
-      Faker.numerify("#{country_code} 1 ## #### ####")
+      FFaker.numerify("#{country_code} 1 ## #### ####")
     end
 
     def international_home_work_phone_number
-      Faker.numerify("#{country_code} ## #### ####")
+      FFaker.numerify("#{country_code} ## #### ####")
     end
 
     def international_phone_number
@@ -46,12 +46,12 @@ module  Faker
       when 1 then international_home_work_phone_number
       end
     end
-    
+
     # Generates a toll-free number
     #  01 800 xxx xxxx
     #
     def toll_free_number
-      Faker.numerify("01 800 ### ####")
+      FFaker.numerify("01 800 ### ####")
     end
 
   end

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Author microspino<info@microspino.com> github.com/microspino
   module NameIT
     extend ModuleUtils

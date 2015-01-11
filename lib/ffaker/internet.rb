@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module Internet
     extend ModuleUtils
     extend self
@@ -71,7 +71,7 @@ module Faker
     def slug(words = nil, glue = nil)
       glue ||= SLUG_DELIMITERS.rand
 
-      (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
+      (words || FFaker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
     end
 
     def password(min_length=0)

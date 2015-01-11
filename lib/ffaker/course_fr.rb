@@ -1,4 +1,4 @@
-module Faker
+module FFaker
   module Courses
 
    module Mathematiques

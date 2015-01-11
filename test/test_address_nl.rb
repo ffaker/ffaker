@@ -5,7 +5,7 @@ require 'helper'
 class TestAddressNL < Test::Unit::TestCase
 
   def setup
-    @tester = Faker::AddressNL
+    @tester = FFaker::AddressNL
   end
 
   def test_city

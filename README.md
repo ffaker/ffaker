@@ -7,8 +7,8 @@
 
 ```ruby
 require 'ffaker'
-Faker::Name.name => "Christophe Bartell"
-Faker::Internet.email => "kirsten.greenholt@corkeryfisher.info"
+FFaker::Name.name => "Christophe Bartell"
+FFaker::Internet.email => "kirsten.greenholt@corkeryfisher.info"
 ```
 
 ## ffaker vs faker
@@ -53,7 +53,7 @@ for Faker modules, so if you try to use a constant that is not defined
 in the module, the
 [override](https://github.com/EmmanuelOga/ffaker/blob/master/lib/ffaker/utils/module_utils.rb#L9)
 will look for a data file matching the name of the constant. E.G.: the
-first time someone accesses ++Faker::Name::FIRST_NAMES++, a const of that
+first time someone accesses ++FFaker::Name::FIRST_NAMES++, a const of that
 name will be set with data from ffaker/data/name/first_names.
 
 ## TODO

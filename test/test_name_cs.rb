@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerNameCS < Test::Unit::TestCase
   def setup
-    @tester = Faker::NameCS
+    @tester = FFaker::NameCS
   end
 
   def test_name
@@ -19,19 +19,19 @@ class TestFakerNameCS < Test::Unit::TestCase
   end
 
   def test_male_last_name
-    assert Faker::NameCS::LAST_NAMES[:male].include?(@tester.last_name(:male))
+    assert FFaker::NameCS::LAST_NAMES[:male].include?(@tester.last_name(:male))
   end
 
   def test_male_first_name
-    assert Faker::NameCS::FIRST_NAMES[:male].include?(@tester.first_name(:male))
+    assert FFaker::NameCS::FIRST_NAMES[:male].include?(@tester.first_name(:male))
   end
 
   def test_prefix
-    assert Faker::NameCS::PREFIXES.include?(@tester.prefix)
+    assert FFaker::NameCS::PREFIXES.include?(@tester.prefix)
   end
 
   def test_suffix
-    assert Faker::NameCS::SUFFIXES.include?(@tester.suffix)
+    assert FFaker::NameCS::SUFFIXES.include?(@tester.suffix)
   end
 
   def test_with_same_sex
@@ -56,7 +56,7 @@ class TestFakerNameCS < Test::Unit::TestCase
   def same_sex?(words, sex = :any)
     (sex == :any ? [:male, :female] : [sex]).any? do |sex|
       words.all? do |word|
-        [Faker::NameCS::LAST_NAMES, Faker::NameCS::FIRST_NAMES].any? do |names|
+        [FFaker::NameCS::LAST_NAMES, FFaker::NameCS::FIRST_NAMES].any? do |names|
           names[sex].include?(word)
         end
       end
