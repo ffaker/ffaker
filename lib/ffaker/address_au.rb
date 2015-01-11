@@ -2,10 +2,10 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   # Author wiseleyb<wiseleyb@gmail.com>
   module AddressAU
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
@@ -97,7 +97,7 @@ module Faker
 
     def full_address(st_abbr = nil)
       st_abbr ||= state_abbr
-      "#{Faker::Address.street_address}, #{suburb(st_abbr)} #{st_abbr} #{postcode}"
+      "#{FFaker::Address.street_address}, #{suburb(st_abbr)} #{st_abbr} #{postcode}"
     end
   end
 end

@@ -2,7 +2,7 @@
 
 require 'ostruct'
 
-module Faker
+module FFaker
   module Unit
     extend ModuleUtils
     extend self

@@ -2,9 +2,9 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressUK
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
@@ -21,7 +21,7 @@ module Faker
     end
 
     def postcode
-      Faker.bothify(POSTCODE.sample).upcase
+      FFaker.bothify(POSTCODE.sample).upcase
     end
   end
 end

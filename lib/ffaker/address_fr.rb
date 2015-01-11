@@ -2,9 +2,9 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressFR
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
@@ -16,15 +16,15 @@ module Faker
     POSTAL_CODE_FORMATS = ['####', '#####', '97####', '2A###', '2B###']
 
     def street_address
-      Faker.numerify(NUM.sample) +
+      FFaker.numerify(NUM.sample) +
       MOD.sample +
       SEP.sample +
       TYPE.sample + ' ' +
-      Faker::NameFR.name
+      FFaker::NameFR.name
     end
 
     def postal_code
-      Faker.numerify POSTAL_CODE_FORMATS.sample
+      FFaker.numerify POSTAL_CODE_FORMATS.rand
     end
 
     def city

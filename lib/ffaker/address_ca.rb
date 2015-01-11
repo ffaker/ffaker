@@ -2,9 +2,9 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressCA
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
@@ -13,7 +13,7 @@ module Faker
     PROVINCE_ABBRS = %w(NL NS PE NB QC ON MB SK AB BC YT NT NU)
 
     def postal_code
-      Faker.bothify(POSTAL_CODE_FORMATS.sample).upcase
+      FFaker.bothify(POSTAL_CODE_FORMATS.sample).upcase
     end
 
     def province

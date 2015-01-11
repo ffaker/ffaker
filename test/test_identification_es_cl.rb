@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerIdentificationESCL < Test::Unit::TestCase
   def setup
-    @tester = Faker::IdentificationESCL
+    @tester = FFaker::IdentificationESCL
   end
 
   def test_rut

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module  Faker
+module FFaker
   # Author: wiseleyb<wiseleyb@gmail.com>
   # Based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Australia
   module PhoneNumberDA
@@ -23,7 +23,7 @@ module  Faker
 
     # generates mobile or home/work number
     def phone_number
-      Faker.numerify("########")
+      FFaker.numerify("########")
     end
 
     def country_code
@@ -39,7 +39,7 @@ module  Faker
     end
 
     def international_phone_number
-      Faker.numerify("#{country_code} #{phone_number}")
+      FFaker.numerify("#{country_code} #{phone_number}")
     end
   end
 end

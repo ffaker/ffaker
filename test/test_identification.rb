@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerIdentification < Test::Unit::TestCase
   def setup
-    @tester = Faker::Identification
+    @tester = FFaker::Identification
   end
 
   def test_drivers_license

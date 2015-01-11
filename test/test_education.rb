@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerEducation < Test::Unit::TestCase
   def setup
-    @tester = Faker::Education
+    @tester = FFaker::Education
   end
 
   def test_degree_short

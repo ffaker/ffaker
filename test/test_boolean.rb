@@ -4,7 +4,7 @@ require 'helper'
 
 class TestBoolean < Test::Unit::TestCase
   def test_maybe
-    maybe = Faker::Boolean.maybe
+    maybe = FFaker::Boolean.maybe
     assert (maybe == false || maybe == true)
   end
 end

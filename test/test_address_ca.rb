@@ -4,11 +4,11 @@ require 'helper'
 
 class TestAddressCA < Test::Unit::TestCase
   def test_province
-    assert_match /[ a-z]/, Faker::AddressCA.province
+    assert_match /[ a-z]/, FFaker::AddressCA.province
   end
 
   def test_province_abbr
-    assert_match /[A-Z][A-Z]/, Faker::AddressCA.province_abbr
+    assert_match /[A-Z][A-Z]/, FFaker::AddressCA.province_abbr
   end
 
   def test_city
@@ -16,6 +16,6 @@ class TestAddressCA < Test::Unit::TestCase
   end
 
   def test_postal_code
-    assert_match /[A-Z]\d[A-Z]\W\d[A-Z]\d/, Faker::AddressCA.postal_code
+    assert_match /[A-Z]\d[A-Z]\W\d[A-Z]\d/, FFaker::AddressCA.postal_code
   end
 end

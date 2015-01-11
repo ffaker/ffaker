@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module NatoAlphabet
     extend ModuleUtils
     extend self

@@ -1,12 +1,12 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module PhoneNumber
     extend ModuleUtils
     extend self
 
     def phone_number
-      Faker.numerify case rand(20)
+      FFaker.numerify case rand(20)
       when      0 then '###-###-#### x#####'
       when      1 then '###-###-#### x####'
       when      2 then '###-###-#### x###'
@@ -27,7 +27,7 @@ module Faker
     end
 
     def short_phone_number
-      Faker.numerify('###-###-####')
+      FFaker.numerify('###-###-####')
     end
 
   end

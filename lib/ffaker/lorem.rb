@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Based on Perl's Text::Lorem
   module Lorem
     extend ModuleUtils
