@@ -8,8 +8,7 @@ class TestFakerGender < Test::Unit::TestCase
   end
 
   def test_random
-    generder_regex = /['male', 'female']/
-    assert_match generder_regex, @tester.random.to_s
+    gender_regex = /\A(male|female)\z/
+    assert_match gender_regex, @tester.random
   end
-
 end

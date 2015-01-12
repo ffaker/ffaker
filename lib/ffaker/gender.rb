@@ -5,7 +5,7 @@ module Faker
     extend ModuleUtils
     extend self
 
-    GENDERS = ['male', 'female']
+    GENDERS = %w(male female)
 
     def random
       GENDERS.sample

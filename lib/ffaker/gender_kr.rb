@@ -1,11 +1,11 @@
 # encoding: utf-8
 
 module Faker
-  module GenderCN
+  module GenderKR
     extend ModuleUtils
     extend self
 
-    GENDERS = %w(男 女)
+    GENDERS = %w(남 녀)
 
     def random
       GENDERS.sample
