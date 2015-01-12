@@ -9,6 +9,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    PREFIXES = %w(Herr Frau Dr. Prof.)
+
     def name
       case rand(10)
       when 0 then "#{prefix} #{first_name} #{last_name}"
@@ -27,7 +29,5 @@ module Faker
     def prefix
       PREFIXES.sample
     end
-
-    PREFIXES = k %w(Herr Frau Dr. Prof.)
   end
 end

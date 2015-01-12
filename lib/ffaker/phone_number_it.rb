@@ -5,6 +5,9 @@ module Faker
     extend ModuleUtils
     extend self
 
+    COUNTRY_PREFIX = ['+39', '0039', '+39 ', '0039 ']
+    PHONE_NUMBER = ['######', '########']
+
     def phone_number
       if rand(0..1) == 1
         home_phone_number
@@ -35,8 +38,5 @@ module Faker
     def random_space
       rand(0..1) == 1 ? ' ' : ''
     end
-
-    COUNTRY_PREFIX = k ['+39', '0039', '+39 ', '0039 ']
-    PHONE_NUMBER = k ['######', '########']
   end
 end

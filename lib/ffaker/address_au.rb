@@ -10,38 +10,12 @@ module Faker
     extend ModuleUtils
     extend self
 
-    def postcode(st_abbr = nil)
-      st_abbr ||= state_abbr
-      POSTCODE[st_abbr][rand(POSTCODE[st_abbr].size)]
-    end
-
-    def state
-      STATE.sample
-    end
-
-    def state_abbr
-      STATE_ABBR.sample
-    end
-
-    def suburb(st_abbr = nil, p_code = nil)
-      st_abbr ||= state_abbr
-      p_code  ||= postcode(st_abbr)
-      SUBURB[st_abbr][p_code]
-    end
-
-    def full_address(st_abbr = nil)
-      st_abbr ||= state_abbr
-      "#{Faker::Address.street_address}, #{suburb(st_abbr)} #{st_abbr} #{postcode}"
-    end
-
     # based on areas labeled state (+act) here: http://en.wikipedia.org/wiki/States_and_territories_of_Australia
-    STATE = k [
+    STATE = [
       'Australian Capital Territory', 'New South Wales', 'Queensland',
       'South Australia', 'Tasmania', 'Victoria', 'Western Australia'
     ]
-
-    STATE_ABBR = k %w(ACT NSW NT QLD SA TAS VIC WA)
-
+    STATE_ABBR = %w(ACT NSW NT QLD SA TAS VIC WA)
     # based on http://en.wikipedia.org/wiki/List_of_cities_in_Australia
     SUBURB = {
       "ACT"=>{
@@ -100,7 +74,30 @@ module Faker
           "7310"=>"Devonport", "7320"=>"Burnie"
         }
     }
-
     POSTCODE = SUBURB.inject({}) { |h, (s_abbr, postcode_suburb_map)| h.update(s_abbr => postcode_suburb_map.keys) }
+
+    def postcode(st_abbr = nil)
+      st_abbr ||= state_abbr
+      POSTCODE[st_abbr][rand(POSTCODE[st_abbr].size)]
+    end
+
+    def state
+      STATE.sample
+    end
+
+    def state_abbr
+      STATE_ABBR.sample
+    end
+
+    def suburb(st_abbr = nil, p_code = nil)
+      st_abbr ||= state_abbr
+      p_code  ||= postcode(st_abbr)
+      SUBURB[st_abbr][p_code]
+    end
+
+    def full_address(st_abbr = nil)
+      st_abbr ||= state_abbr
+      "#{Faker::Address.street_address}, #{suburb(st_abbr)} #{st_abbr} #{postcode}"
+    end
   end
 end

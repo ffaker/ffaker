@@ -5,6 +5,12 @@ module Faker
     extend ModuleUtils
     extend self
 
+    SUFFIXES = [
+      "from Hell", "from Outer Space", "from Mars", "from the Black Lagoon", "with a Thousand Faces",
+      "from Across the Ocean", "Who Fell to Earth", "That Came to Dinner"
+    ]
+    COLORS = %w{Red Yellow Black White}
+
     def title
       case rand(4)
       when 0 then title_with_prefix
@@ -13,13 +19,6 @@ module Faker
       when 3 then title_from_formula
       end
     end
-
-    SUFFIXES = k [
-      "from Hell", "from Outer Space", "from Mars", "from the Black Lagoon", "with a Thousand Faces",
-      "from Across the Ocean", "Who Fell to Earth", "That Came to Dinner"
-    ]
-
-    COLORS = k %w{Red Yellow Black White}
 
     private
 

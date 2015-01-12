@@ -10,9 +10,9 @@ module Faker
     extend ModuleUtils
     extend self
 
-    MALE_PREFIXES = k %w(Sr. C.)
-    FEMALE_PREFIXES = k %w(Sra. Srita. C.)
-    PREFIXES = k %w(Sr. Sra. Srita. C.)
+    MALE_PREFIXES = %w(Sr. C.)
+    FEMALE_PREFIXES = %w(Sra. Srita. C.)
+    PREFIXES = %w(Sr. Sra. Srita. C.)
 
     # Full name according to gender and prefix, possibly with middle_name
     def full_name(gender = :any, prefix = false)
