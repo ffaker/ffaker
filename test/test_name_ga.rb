@@ -3,54 +3,52 @@
 require 'helper'
 
 class TestFakerNameGa < Test::Unit::TestCase
-
   def setup
     @tester = FFaker::NameGA
   end
 
   def test_last_name
-    assert FFaker::NameGA::LAST_NAMES.include?(@tester.last_name)
+    assert_include @tester::LAST_NAMES, @tester.last_name
   end
 
   def test_first_name_male
-    assert FFaker::NameGA::FIRST_NAMES_MALE.include?(@tester.first_name_male)
+    assert_include @tester::FIRST_NAMES_MALE, @tester.first_name_male
   end
 
   def test_first_name_female
-    assert FFaker::NameGA::FIRST_NAMES_FEMALE.include?(@tester.first_name_female)
+    assert_include @tester::FIRST_NAMES_FEMALE, @tester.first_name_female
   end
 
   def test_name_male
     # => split the name_male into an array of words
-    parts = @tester.name_male.split(' ')
+    first_name, last_name = @tester.name_male.split(' ')
 
     # the value at the index 0 should be a valid! male_prefix
-    assert FFaker::NameGA::FIRST_NAMES_MALE.include?(parts[0])
+    assert_include @tester::FIRST_NAMES_MALE, first_name
 
     # the value at the index 1 should be a valid! last_name
-    assert FFaker::NameGA::LAST_NAMES.include?(parts[1])
+    assert_include @tester::LAST_NAMES, last_name
   end
 
   def test_name_female
     # => split the name_male into an array of words
-    parts = @tester.name_female.split(' ')
+    first_name, last_name = @tester.name_female.split(' ')
 
     # the value at the index 0 should be a valid! male_prefix
-    assert FFaker::NameGA::FIRST_NAMES_FEMALE.include?(parts[0])
+    assert_include @tester::FIRST_NAMES_FEMALE, first_name
 
     # the value at the index 1 should be a valid! last_name
-    assert FFaker::NameGA::LAST_NAMES.include?(parts[1])
+    assert_include @tester::LAST_NAMES, last_name
   end
-
 
   def test_name
     # => split the name_male into an array of words
-    parts = @tester.name.split(' ')
+    first_name, last_name = @tester.name.split(' ')
 
     # the value at the index 0 should be a valid! male_prefix
-    assert FFaker::NameGA::FIRST_NAMES_FEMALE.include?(parts[0]) || FFaker::NameGA::FIRST_NAMES_MALE.include?(parts[0])
+    assert_include(@tester::FIRST_NAMES_FEMALE + @tester::FIRST_NAMES_MALE, first_name)
 
     # the value at the index 1 should be a valid! last_name
-    assert FFaker::NameGA::LAST_NAMES.include?(parts[1])
+    assert_include @tester::LAST_NAMES, last_name
   end
 end
