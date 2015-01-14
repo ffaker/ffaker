@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/EmmanuelOga/ffaker.svg?branch=master)](https://travis-ci.org/EmmanuelOga/ffaker) [![Code Climate](https://codeclimate.com/github/EmmanuelOga/ffaker/badges/gpa.svg)](https://codeclimate.com/github/EmmanuelOga/ffaker)
 # ffaker
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/EmmanuelOga/ffaker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [ffaker](http://rubygems.org/gems/ffaker) is a rewrite of [faker](http://rubygems.org/gems/faker).
 
 ## Usage
