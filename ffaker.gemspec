@@ -112,6 +112,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/job_fr/job_nouns
     lib/ffaker/data/job_fr/job_prefixes
     lib/ffaker/data/job_ja/job_nouns
+    lib/ffaker/data/job_kr/job_nouns
     lib/ffaker/data/locale/language
     lib/ffaker/data/locale/language_code
     lib/ffaker/data/lorem/characters
@@ -187,6 +188,7 @@ Gem::Specification.new do |s|
     lib/ffaker/food.rb
     lib/ffaker/gender.rb
     lib/ffaker/gender_cn.rb
+    lib/ffaker/gender_kr.rb
     lib/ffaker/geolocation.rb
     lib/ffaker/guid.rb
     lib/ffaker/healthcare_ipsum.rb
@@ -202,6 +204,7 @@ Gem::Specification.new do |s|
     lib/ffaker/job.rb
     lib/ffaker/job_fr.rb
     lib/ffaker/job_ja.rb
+    lib/ffaker/job_kr.rb
     lib/ffaker/locale.rb
     lib/ffaker/lorem.rb
     lib/ffaker/lorem_ar.rb
@@ -235,6 +238,7 @@ Gem::Specification.new do |s|
     lib/ffaker/phone_number_de.rb
     lib/ffaker/phone_number_fr.rb
     lib/ffaker/phone_number_it.rb
+    lib/ffaker/phone_number_kr.rb
     lib/ffaker/phone_number_mx.rb
     lib/ffaker/phone_number_nl.rb
     lib/ffaker/phone_number_se.rb
@@ -287,6 +291,7 @@ Gem::Specification.new do |s|
     test/test_food.rb
     test/test_gender.rb
     test/test_gender_cn.rb
+    test/test_gender_kr.rb
     test/test_geolocation.rb
     test/test_guid.rb
     test/test_healthcare_ipsum.rb
@@ -302,6 +307,7 @@ Gem::Specification.new do |s|
     test/test_job.rb
     test/test_job_fr.rb
     test/test_job_ja.rb
+    test/test_job_kr.rb
     test/test_lorem.rb
     test/test_lorem_ar.rb
     test/test_lorem_cn.rb
@@ -330,6 +336,7 @@ Gem::Specification.new do |s|
     test/test_phone_number.rb
     test/test_phone_number_au.rb
     test/test_phone_number_de.rb
+    test/test_phone_number_kr.rb
     test/test_phone_number_mx.rb
     test/test_phone_number_nl.rb
     test/test_phone_number_se.rb
