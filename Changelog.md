@@ -1,3 +1,11 @@
+## 1.31.0
+
+  - add deprecation warning to ArrayUtils#rand method
+  - changed all internal ArrayUtils#rand method calls to Array#sample
+  - Korea API additions
+  - fixes some broken tests
+
+
 ## 1.30.0
 
   - dropped support for ruby 1.8.x
