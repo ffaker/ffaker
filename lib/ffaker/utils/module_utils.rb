@@ -18,6 +18,11 @@ module Faker
       end
     end
 
+    def rand_in_range(from, to)
+      from, to = to, from if to < from
+      Random.new.rand(from..to)
+    end
+
     def underscore(string)
       string.gsub(/::/, '/').
       gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').

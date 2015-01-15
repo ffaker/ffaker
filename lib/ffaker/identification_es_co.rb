@@ -30,7 +30,7 @@ module Faker
     end
 
     def expedition_date
-      today = Date.today
+      today = ::Date.today
       today - rand(today.year)
     end
 
