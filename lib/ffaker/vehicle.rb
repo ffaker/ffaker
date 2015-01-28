@@ -5,6 +5,13 @@ module Faker
     extend ModuleUtils
     extend self
 
+    DRIVETRAINS = %w(4WD 4X4 AWD FWD RWD)
+    YEARS = [*'1900'.."#{Date.today.year+1}"]
+    COLOR_PREFIXES = k(%w(
+      beautiful bright calm dangerous dark dull fast magnetic magnificent majestic melodic metallic
+      mundane mute mysterious new pleasant pretty resonant royal slate soft tranquil vibrant weak
+    ))
+
     def base_color
       Faker::Color.name
     end
@@ -38,13 +45,5 @@ module Faker
     def year
       YEARS.sample
     end
-
-    DRIVETRAINS = k(%w(4WD 4X4 AWD FWD RWD))
-    YEARS = k('1900'.."#{Date.today.year+1}")
-    COLOR_PREFIXES = k(%w(
-      beautiful bright calm dangerous dark dull fast magnetic magnificent majestic melodic metallic
-      mundane mute mysterious new pleasant pretty resonant royal slate soft tranquil vibrant weak
-    ))
-
   end
 end

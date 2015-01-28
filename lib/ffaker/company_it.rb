@@ -5,6 +5,9 @@ module Faker
     extend ModuleUtils
     extend self
 
+    PREFIXES = ["Studio Legale", "Studio Tecnico", "Laboratorio"]
+    SUFFIXES = %w(S.p.a. s.r.l. s.n.c. Avvocati Architetti Ingegneri)
+
     def name
       case rand(2)
       when 0 then "#{NameIT.last_name} #{suffix}"
@@ -20,9 +23,5 @@ module Faker
     def prefix
       PREFIXES.sample
     end
-
-    PREFIXES = k ["Studio Legale", "Studio Tecnico", "Laboratorio"]
-    SUFFIXES = k %w(S.p.a. s.r.l. s.n.c. Avvocati Architetti Ingegneri)
-
   end
 end

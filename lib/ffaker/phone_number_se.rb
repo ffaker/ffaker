@@ -19,6 +19,18 @@ module Faker
     extend ModuleUtils
     extend self
 
+    PHONE_FORMAT_PREFIX_2 = ["%s-### ### ##",
+                             "%s-### ## ##",
+                             "%s-## ## ##"]
+    PHONE_FORMAT_PREFIX_3 = ["%s-### ## ##",
+                             "%s-## ## ##",
+                             "%s-## ###"]
+    PHONE_FORMAT_PREFIX_4 = ["%s-## ## ##",
+                             "%s-### ##"]
+    MOBILE_PHONE_FORMAT = ["%s#-## ## ##", "%s#-######"]
+    COUNTRY_PREFIX = ["+46", "0046"]
+    MOBILE_PHONE_PREFIX = %w(70 72 73 76 74)
+
     def phone_number
       case rand(2)
       when 0 then home_work_phone_number
@@ -73,18 +85,5 @@ module Faker
     def mobile_phone_number_format
       MOBILE_PHONE_FORMAT.sample % mobile_prefix
     end
-
-    PHONE_FORMAT_PREFIX_2 = k ["%s-### ### ##",
-                               "%s-### ## ##",
-                               "%s-## ## ##"]
-    PHONE_FORMAT_PREFIX_3 = k ["%s-### ## ##",
-                               "%s-## ## ##",
-                               "%s-## ###"]
-    PHONE_FORMAT_PREFIX_4 = k ["%s-## ## ##",
-                               "%s-### ##"]
-
-    MOBILE_PHONE_FORMAT = k ["%s#-## ## ##", "%s#-######"]
-    COUNTRY_PREFIX = k ["+46", "0046"]
-    MOBILE_PHONE_PREFIX = k %w(70 72 73 76 74)
   end
 end

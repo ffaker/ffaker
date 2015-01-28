@@ -5,6 +5,9 @@ module Faker
     extend ModuleUtils
     extend self
 
+    ETHNICITIES = ['African American', 'Asian/Pacific Islander', 'Caucasian', 'Hispanic', 'Native American', 'Multiracial', 'Other', 'Prefer not to respond']
+    GENDERS = %w(Male Female)
+
     def drivers_license
       Faker.bothify('?###-###-##-###-#').upcase
     end
@@ -20,8 +23,5 @@ module Faker
     def gender
       GENDERS.sample
     end
-
-    ETHNICITIES = k ['African American', 'Asian/Pacific Islander', 'Caucasian', 'Hispanic', 'Native American', 'Multiracial', 'Other', 'Prefer not to respond']
-    GENDERS = k %w(Male Female)
   end
 end

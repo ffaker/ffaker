@@ -8,6 +8,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    CONSONANTS = ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"]
+    VOWELS = ["A","E","I","O","U"]
+    HOMOCLAVE = CONSONANTS + VOWELS + [*'0'..'9']
+
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
     # Registro Federal de Contribuyentes (R.F.C.) para persona física
     def rfc_persona_fisica
@@ -40,10 +44,5 @@ module Faker
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
       "#{CONSONANTS.sample}#{VOWELS.sample}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{hm.sample}#{ESTADOS_CURP.sample}#{ArrayUtils.random_pick(CONSONANTS,3).join}#{HOMOCLAVE.sample}#{rand(10)}"
     end
-
-
-    CONSONANTS = ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"]
-    VOWELS = ["A","E","I","O","U"]
-    HOMOCLAVE = CONSONANTS + VOWELS + (0..9).to_a.map{|n| n.to_s}
   end
 end

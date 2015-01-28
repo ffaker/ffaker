@@ -5,11 +5,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    GENDERS = %w(Hombre Mujer)
+
     def gender
       GENDERS.sample
     end
-
-    GENDERS = k %w(Hombre Mujer)
-
   end
 end

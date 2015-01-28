@@ -17,7 +17,7 @@ module Faker
     end
 
     def self.freeze_all(array)
-      array.each { |e| e.freeze }
+      array.each(&:freeze)
       array.freeze
       array
     end

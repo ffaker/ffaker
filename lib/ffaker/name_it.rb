@@ -6,7 +6,7 @@ module Faker
     extend ModuleUtils
     extend self
 
-    PREFIX = k %w(Sig. Sig.ra Sig.na Dr. Dott. Dott.ssa Prof. Prof.ssa)
+    PREFIX = %w(Sig. Sig.ra Sig.na Dr. Dott. Dott.ssa Prof. Prof.ssa)
 
     # randomized? (ITALIAN)  prefix!
     #

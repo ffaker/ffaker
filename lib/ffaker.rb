@@ -8,7 +8,7 @@ module Faker
 
   BASE_LIB_PATH = File.expand_path("..", __FILE__)
 
-  LETTERS = k('a'..'z')
+  LETTERS = [*'a'..'z']
 
   HEX = %w(0 1 2 3 4 5 6 7 8 9 A B C D E F)
 

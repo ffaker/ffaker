@@ -10,6 +10,32 @@ module Faker
     extend ModuleUtils
     extend self
 
+    LENGTH_UNITS = [
+      { name: "millimeters", abbreviation: "mm"},
+      { name: "centimeters", abbreviation: "cm"},
+      {  name: "meters", abbreviation: "m"},
+      { name: "kilometers", abbreviation: "km"}
+    ]
+    MASS_UNITS = [
+      { name: "gram", abbreviation: "g"},
+      { name: "kilogram", abbreviation: "kg" },
+      { name: "metric ton", abbreviation: "mt"}
+    ]
+    LIQUID_UNITS = [
+      { name: "milliliters", abbreviation: "ml"},
+      { name: "liters", abbreviation: "L"}
+    ]
+    VOLUME_UNITS = [
+      { name: " cubic centimeters", abbreviation: "cm^3"},
+      { name: "cubic meters", abbreviation: "m^3"}
+    ]
+    AREA_UNITS = [
+      { name: "centimeters squared", abbreviation: "cm^2"},
+      { name: "meters squared", abbreviation: "m^2"},
+      { name: "hectares", abbreviation: "ha"},
+      { name: "kilometers", abbreviation: "km" }
+    ]
+
     def mass_name
       mass.name
     end
@@ -71,35 +97,5 @@ module Faker
     def area
       OpenStruct.new AREA_UNITS.sample
     end
-
-    LENGTH_UNITS = k [
-      { :name =>"millimeters", :abbreviation => "mm"},
-      { :name =>"centimeters", :abbreviation => "cm"},
-      {  :name =>"meters", :abbreviation => "m"},
-      { :name =>"kilometers", :abbreviation => "km"}
-    ]
-
-    MASS_UNITS = k [
-      { :name => "gram", :abbreviation => "g"},
-      { :name => "kilogram", :abbreviation => "kg" },
-      { :name => "metric ton", :abbreviation => "mt"}
-    ]
-
-    LIQUID_UNITS = k [
-      { :name => "milliliters", :abbreviation => "ml"},
-      { :name => "liters", :abbreviation => "L"}
-    ]
-
-    VOLUME_UNITS = k [
-      { :name => " cubic centimeters", :abbreviation => "cm^3"},
-      { :name => "cubic meters", :abbreviation => "m^3"}
-    ]
-
-    AREA_UNITS = k [
-      { :name => "centimeters squared", :abbreviation => "cm^2"},
-      { :name => "meters squared", :abbreviation => "m^2"},
-      { :name => "hectares", :abbreviation => "ha"},
-      { :name => "kilometers", :abbreviation => "km" }
-    ]
   end
 end

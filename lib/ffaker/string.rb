@@ -7,12 +7,12 @@ module Faker
 
     BACKSLASH = '\\'
 
-    LOWERS     = k(('a'..'z').to_a)
-    UPPERS     = k(('A'..'Z').to_a)
-    LETTERS    = k(LOWERS + UPPERS)
-    NUMBERS    = k(('0'..'9').to_a)
-    WORD_CHARS = k(LETTERS + NUMBERS + ['_'])
-    SPACES     = k([" ", "\t"])
+    LOWERS     = [*'a'..'z']
+    UPPERS     = [*'A'..'Z']
+    LETTERS    = LOWERS + UPPERS
+    NUMBERS    = [*'0'..'9']
+    WORD_CHARS = LETTERS + NUMBERS + ['_']
+    SPACES     = [" ", "\t"]
     ESCAPEABLE_CHARS = '\\', '/', '.', '(', ')', '[', ']', '{', '}'
 
     def from_regexp(exp)

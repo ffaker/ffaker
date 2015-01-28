@@ -9,6 +9,9 @@ module Faker
     extend ModuleUtils
     extend self
 
+    COUNTRY = ['England', 'Scotland', 'Wales', 'Northern Ireland']
+    POSTCODE = ['??# #??', '??## #??']
+
     def county
       COUNTY.sample
     end
@@ -20,8 +23,5 @@ module Faker
     def postcode
       Faker.bothify(POSTCODE.sample).upcase
     end
-
-    COUNTRY = k ['England', 'Scotland', 'Wales', 'Northern Ireland']
-    POSTCODE = k ['??# #??', '??## #??']
   end
 end

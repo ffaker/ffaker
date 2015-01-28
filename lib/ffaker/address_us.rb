@@ -9,6 +9,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    ZIP_FORMATS = ['#####', '#####-####']
+    CONTINENTAL_STATE = (STATE - ['Hawaii', 'Alaska'])
+    CONTINENTAL_STATE_ABBR = (STATE_ABBR - ['HI', 'AK'])
+
     def zip_code
       Faker.numerify ZIP_FORMATS.sample
     end
@@ -32,9 +36,5 @@ module Faker
     def continental_state_abbr
       CONTINENTAL_STATE_ABBR.sample
     end
-
-    ZIP_FORMATS = k ['#####', '#####-####']
-    CONTINENTAL_STATE = k (STATE - ['Hawaii', 'Alaska'])
-    CONTINENTAL_STATE_ABBR = k (STATE_ABBR - ['HI', 'AK'])
   end
 end

@@ -5,6 +5,12 @@ module Faker
     extend ModuleUtils
     extend self
 
+    B2   = %w(nix cell sync func balt sche pod)
+    VOWELS = %w(a e i o u ou ie y io)
+    START  = %w(tr br p ph)
+    SUFFIX = %w(ck ns nce nt st ne re ffe ph)
+    ADDON  = %w(wood forge func)
+
     def brand
       case rand(12)
       when (0..4) then B1.sample + B2.sample
@@ -35,11 +41,5 @@ module Faker
       when 1 then "#{letters(1..rand(1..2))}-#{rand(9900)}"         # N-9400
       end
     end
-
-    B2   = k %w(nix cell sync func balt sche pod)
-    VOWELS = k %w(a e i o u ou ie y io)
-    START  = k %w(tr br p ph)
-    SUFFIX = k %w(ck ns nce nt st ne re ffe ph)
-    ADDON  = k %w(wood forge func)
   end
 end

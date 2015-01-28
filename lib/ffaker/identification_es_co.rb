@@ -1,14 +1,17 @@
 # encoding: utf-8
 
 require 'ffaker/identification_es'
+require "date"
 
 module Faker
   module IdentificationESCO
     include IdentificationES
 
     extend ModuleUtils
-    require "date"
     extend self
+
+    BLOOD_TYPE = %w(A B O AB)
+    LICENSE_CATEGORY = %w(A B C)
 
     def drivers_license
       how_many_numbers = 6 + rand(8)
@@ -34,7 +37,5 @@ module Faker
       today - rand(today.year)
     end
 
-    BLOOD_TYPE = k %w(A B O AB)
-    LICENSE_CATEGORY = k %w(A B C)
   end
 end

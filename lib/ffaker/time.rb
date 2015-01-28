@@ -5,6 +5,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    MONTHS = %w(January February March April May June July August September October November December)
+
     def month
       MONTHS.sample
     end
@@ -24,7 +26,5 @@ module Faker
       end
       date.strftime "%Y-%m-%d %T %z"
     end
-
-    MONTHS = k %w(January February March April May June July August September October November December)
   end
 end

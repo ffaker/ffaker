@@ -5,6 +5,9 @@ module Faker
     extend ModuleUtils
     extend self
 
+    PREFIXES = %w(Mr. Mrs. Ms. Miss Dr.)
+    SUFFIXES = %w(Jr. Sr. I II III IV V MD DDS PhD DVM)
+
     def name
       case rand(10)
       when 0 then "#{prefix} #{first_name} #{last_name}"
@@ -28,8 +31,5 @@ module Faker
     def suffix
       SUFFIXES.sample
     end
-
-    PREFIXES = k %w(Mr. Mrs. Ms. Miss Dr.)
-    SUFFIXES = k %w(Jr. Sr. I II III IV V MD DDS PhD DVM)
   end
 end

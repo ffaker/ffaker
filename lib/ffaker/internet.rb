@@ -5,6 +5,12 @@ module Faker
     extend ModuleUtils
     extend self
 
+    BYTE = [*'0'..'255']
+    HOSTS = %w(gmail.com yahoo.com hotmail.com)
+    DISPOSABLE_HOSTS = %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
+    DOMAIN_SUFFIXES = %w(co.uk com us ca biz info name)
+    SLUG_DELIMITERS = %w[- _ .]
+
     def email(name = nil)
       [ user_name(name), domain_name ].join('@')
     end
@@ -63,7 +69,7 @@ module Faker
     end
 
     def ip_v4_address
-      (1..4).map { BYTE.random_pick(1) }.join(".")
+      (1..4).map { BYTE.sample }.join(".")
     end
 
     def slug(words = nil, glue = nil)
@@ -84,11 +90,5 @@ module Faker
 
       temp
     end
-
-    BYTE = k((0..255).to_a.map { |n| n.to_s })
-    HOSTS = k %w(gmail.com yahoo.com hotmail.com)
-    DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
-    DOMAIN_SUFFIXES = k %w(co.uk com us ca biz info name)
-    SLUG_DELIMITERS = k %w[- _ .]
   end
 end

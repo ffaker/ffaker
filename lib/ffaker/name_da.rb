@@ -9,6 +9,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    PREFIXES = %w(Hr. Fr. Dr. Prof.)
+
     def name gender = :any
       case gender
       when :any then any_name
@@ -63,6 +65,5 @@ module Faker
       PREFIXES.sample
     end
 
-    PREFIXES = k %w(Hr. Fr. Dr. Prof.)
   end
 end
