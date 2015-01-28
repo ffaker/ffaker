@@ -5,6 +5,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    SUFFIXES = %w(AB Aktiebolag Ab)
+
     def name
       case rand(3)
       when 0 then "#{NameSE.last_name} #{suffix}"
@@ -17,8 +19,5 @@ module Faker
     def suffix
       SUFFIXES.sample
     end
-
-    SUFFIXES = k %w(AB Aktiebolag Ab)
-
   end
 end

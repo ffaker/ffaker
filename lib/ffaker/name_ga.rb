@@ -8,7 +8,7 @@ module Faker
     extend ModuleUtils
     extend self
 
-    LAST_NAMES = k %w(jammeh ceesay)
+    LAST_NAMES = %w(jammeh ceesay)
 
     def first_name_female
       FIRST_NAMES_FEMALE.sample

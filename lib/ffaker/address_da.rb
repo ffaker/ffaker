@@ -9,8 +9,13 @@ module Faker
     extend ModuleUtils
     extend self
 
+    REGION = [
+      'Hovedstaden', 'Sjælland', 'Syddanmark', 'Midtjylland', 'Nordjylland'
+    ]
+    STATE = REGION
+
     def zip_code
-      Faker.numerify ZIP_FORMATS.sample
+      Faker.numerify('####')
     end
 
     def post_nr
@@ -33,8 +38,6 @@ module Faker
       CITY.sample
     end
 
-    ZIP_FORMATS = k ['####']
-
     def street_name
       STREET.sample
     end
@@ -46,11 +49,5 @@ module Faker
     def full_address
       %Q{#{street_address} #{post_nr} #{city} #{region} DANMARK}
     end
-
-    REGION = k [
-      'Hovedstaden', 'Sjælland', 'Syddanmark', 'Midtjylland', 'Nordjylland'
-    ]
-
-    STATE = REGION
   end
 end

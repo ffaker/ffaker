@@ -13,6 +13,9 @@ module Faker
     extend ModuleUtils
     extend self
 
+    ZIP_FORMATS = ['#####']
+    STREET_NBR_FORMATS = ['##', '#', '# a', '# b', '###', '# a #', '# b #']
+
     def zip_code
       Faker.numerify ZIP_FORMATS.sample
     end
@@ -41,8 +44,5 @@ module Faker
       COUNTRIES.sample
     end
 
-    ZIP_FORMATS = k ['#####']
-
-    STREET_NBR_FORMATS = k ['##', '#', '# a', '# b', '###', '# a #', '# b #']
   end
 end

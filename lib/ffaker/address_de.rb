@@ -10,7 +10,7 @@ module Faker
     extend self
 
     def zip_code
-      Faker.numerify ZIP_FORMATS.sample
+      Faker.numerify '#####'
     end
 
     def state
@@ -36,7 +36,5 @@ module Faker
     def street_address
       "#{street_name} #{1+rand(192)}"
     end
-
-    ZIP_FORMATS = k ['#####']
   end
 end

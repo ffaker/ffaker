@@ -12,7 +12,7 @@ module Faker
     end
 
     def p(count = 3, options = {})
-      options = {:fancy => false, :include_breaks => false}.merge(options)
+      options = {fancy: false, include_breaks: false}.merge(options)
       if options[:fancy]
         s = fancy_string(count, options[:include_breaks])
       else

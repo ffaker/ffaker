@@ -24,6 +24,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    GENDERS = ["female", "male"]
+
     def ssn(opts = {})
       from   = opts[:from]   || ::Time.local(1940, 1, 1)
       to     = opts[:to]     || ::Time.now
@@ -51,8 +53,6 @@ module Faker
       raise ArgumentError, "Invalid argument: from > to" if from > to
       raise ArgumentError, "Invalid argument: gender" unless GENDERS.include?(gender.to_s)
     end
-
-    GENDERS = k ["female", "male"]
 
     def random_birth_time_between(from=::Time.local(1940, 1, 1), to=::Time.now)
       ::Time.at(from + rand * (to.to_f - from.to_f))

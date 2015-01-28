@@ -9,6 +9,12 @@ module Faker
     extend ModuleUtils
     extend self
 
+    NUM = ['#', '##', '##', '###', '####', '#-##']
+    MOD = [' B', ' T', ' Q', ' BIS', ' TER', ' QUATER', '', '', '', '']
+    SEP = [', ', ' ']
+    TYPE = %w[rue avenue av boulevard bd impasse]
+    POSTAL_CODE_FORMATS = ['####', '#####', '97####', '2A###', '2B###']
+
     def street_address
       Faker.numerify(NUM.sample) +
       MOD.sample +
@@ -28,11 +34,5 @@ module Faker
     def full_address
       %Q{#{street_address}#{SEP.sample}#{postal_code} #{CITY.sample}}
     end
-
-    NUM = k ['#', '##', '##', '###', '####', '#-##']
-    MOD = k [' B', ' T', ' Q', ' BIS', ' TER', ' QUATER', '', '', '', '']
-    SEP = k [', ', ' ']
-    TYPE = k %w[rue avenue av boulevard bd impasse]
-    POSTAL_CODE_FORMATS = k ['####', '#####', '97####', '2A###', '2B###']
   end
 end

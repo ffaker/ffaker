@@ -9,6 +9,9 @@ module Faker
     extend ModuleUtils
     extend self
 
+    POSTAL_CODE_FORMATS = ['?#? #?#']
+    PROVINCE_ABBRS = %w(NL NS PE NB QC ON MB SK AB BC YT NT NU)
+
     def postal_code
       Faker.bothify(POSTAL_CODE_FORMATS.sample).upcase
     end
@@ -21,8 +24,5 @@ module Faker
       PROVINCE_ABBRS.sample
     end
 
-    POSTAL_CODE_FORMATS = k ['?#? #?#']
-
-    PROVINCE_ABBRS = k %w(NL NS PE NB QC ON MB SK AB BC YT NT NU)
   end
 end

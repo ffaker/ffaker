@@ -9,6 +9,12 @@ module Faker
     extend ModuleUtils
     extend self
 
+    BYTE = [*'0'..'255']
+    HOSTS = %w(gmail.com yahoo.com hotmail.com spray.se passagen.se)
+    DOMAIN_SUFFIXES = %w(se nu com)
+    DISPOSABLE_HOSTS = %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
+    SLUG_DELIMITERS = %w[- _ .]
+
     def email(name = nil)
       "#{user_name(name)}@#{domain_name}"
     end
@@ -26,7 +32,7 @@ module Faker
 
     # Used to fake login names were dot is not allowed
     def login_user_name
-      user_name.gsub('.','')
+      user_name.tr('.','')
     end
 
     # Mostly used for email creation
@@ -94,7 +100,7 @@ module Faker
     end
 
     def ip_v4_address
-      (1..4).map { BYTE.random_pick(1) }.join(".")
+      (1..4).map { BYTE.sample }.join(".")
     end
 
     def slug(words = nil, glue = nil)
@@ -102,11 +108,5 @@ module Faker
 
       (words || Faker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
     end
-
-    BYTE = k((0..255).to_a.map { |n| n.to_s })
-    HOSTS = k %w(gmail.com yahoo.com hotmail.com spray.se passagen.se)
-    DOMAIN_SUFFIXES = k %w(se nu com)
-    DISPOSABLE_HOSTS = k %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
-    SLUG_DELIMITERS = k %w[- _ .]
   end
 end

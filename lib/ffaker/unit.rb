@@ -7,6 +7,19 @@ module Faker
     extend ModuleUtils
     extend self
 
+    TIME_UNITS = [
+      {name: 'Years', abbreviation: 'yr'},
+      {name: 'Days', abbreviation: 'd'},
+      {name: 'Hours', abbreviation: 'Minutes'},
+      {name: 'Seconds', abbreviation: 's'},
+      {name: 'Milliseconds', abbreviation: 'msec'}
+    ]
+    TEMPERATURE_UNITS = [
+      {name: 'Kelvin', abbreviation: 'K'},
+      {name: 'Celsius', abbreviation: 'C'},
+      {name: 'Fahrenheit', abbreviation: 'F'}
+    ]
+
     def time_name
       time.name
     end
@@ -32,19 +45,5 @@ module Faker
     def temperature
       OpenStruct.new TEMPERATURE_UNITS.sample
     end
-
-    TIME_UNITS = k [
-      {:name => 'Years', :abbreviation => 'yr'},
-      {:name => 'Days', :abbreviation => 'd'},
-      {:name => 'Hours', :abbreviation => 'Minutes'},
-      {:name => 'Seconds', :abbreviation => 's'},
-      {:name => 'Milliseconds', :abbreviation => 'msec'}
-    ]
-
-    TEMPERATURE_UNITS = k [
-      {:name => 'Kelvin', :abbreviation => 'K'},
-      {:name => 'Celsius', :abbreviation => 'C'},
-      {:name => 'Fahrenheit', :abbreviation => 'F'}
-    ]
   end
 end

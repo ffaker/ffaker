@@ -9,6 +9,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    POSTAL_CODE_FORMAT = ['#### ??']
+
     def postal_code
       Faker.bothify POSTAL_CODE_FORMAT
     end
@@ -37,7 +39,5 @@ module Faker
     def province
       PROVINCE.sample
     end
-
-    POSTAL_CODE_FORMAT = k ['#### ??']
   end
 end

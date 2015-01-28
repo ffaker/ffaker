@@ -5,6 +5,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    PREFIXES = %w(Sr. Sra. Srta.)
+
     def name
       "#{first_name} #{last_name}"
     end
@@ -24,8 +26,6 @@ module Faker
     def prefix
       PREFIXES.sample
     end
-
-    PREFIXES = k %w(Sr. Sra. Srta.)
   end
 end
 

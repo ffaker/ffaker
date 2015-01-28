@@ -5,6 +5,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    COMPASS_DIRECTIONS = %w(North East West South)
+    CITY_PREFIXES = COMPASS_DIRECTIONS + %w(New Lake Port)
+    SEC_ADDR = ['Apt. ###', 'Suite ###']
+
     # @deprecated US specific address info. Moved into {AddressUS}
     def zip_code
       warn '[zip_code] is deprecated. For US addresses please use the AddressUS module'
@@ -103,11 +107,5 @@ module Faker
         COUNTRY_CODE.sample
       end
     end
-
-    COMPASS_DIRECTIONS = k %w(North East West South)
-
-    CITY_PREFIXES = k(COMPASS_DIRECTIONS + %w(New Lake Port))
-
-    SEC_ADDR = k ['Apt. ###', 'Suite ###']
   end
 end

@@ -5,6 +5,10 @@ module Faker
     extend ModuleUtils
     extend self
 
+    SUFFIXES = %w(Inc and\ Sons LLC Group)
+    POSITION_PREFIXES = %w[Executive Assistant General Associate]
+    POSITIONS = %w[President Manager Director Secretary Consultant]
+
     def name
       case rand(3)
       when 0 then "#{Name.last_name} #{suffix}"
@@ -37,9 +41,5 @@ module Faker
       end.join(' ')
     end
 
-    SUFFIXES = k %w(Inc and\ Sons LLC Group)
-
-    POSITION_PREFIXES = k %w[Executive Assistant General Associate]
-    POSITIONS = k %w[President Manager Director Secretary Consultant]
   end
 end

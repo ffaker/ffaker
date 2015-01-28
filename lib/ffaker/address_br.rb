@@ -9,6 +9,8 @@ module Faker
     extend ModuleUtils
     extend self
 
+    STREET_PREFIX = %w( Rua Avenida Travessa Alameda )
+
     def zip_code
       Faker.numerify '#####-###'
     end
@@ -35,7 +37,5 @@ module Faker
       when 1 then "#{street_prefix} #{NameBR.first_name} #{NameBR.last_name} #{NameBR.last_name}"
       end
     end
-
-    STREET_PREFIX = k %w( Rua Avenida Travessa Alameda )
   end
 end

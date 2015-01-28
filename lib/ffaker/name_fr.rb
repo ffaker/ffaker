@@ -8,7 +8,7 @@ module Faker
     extend ModuleUtils
     extend self
 
-    PREFIX = k %w(de du le)
+    PREFIX = %w(de du le)
 
     # randomized? (FRENCH)  prefix!
     #
