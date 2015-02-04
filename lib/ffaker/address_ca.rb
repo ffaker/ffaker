@@ -21,7 +21,7 @@ module Faker
     end
 
     def city
-      CITY.rand
+      CITY.sample
     end
 
     def province_abbr
