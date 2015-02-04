@@ -20,6 +20,10 @@ module Faker
       PROVINCE.sample
     end
 
+    def city
+      CITY.rand
+    end
+
     def province_abbr
       PROVINCE_ABBRS.sample
     end

@@ -11,6 +11,10 @@ class TestAddressCA < Test::Unit::TestCase
     assert_match /[A-Z][A-Z]/, Faker::AddressCA.province_abbr
   end
 
+  def test_city
+    assert Faker::AddressCA::CITY.include?(Faker::AddressCA.city)
+  end
+
   def test_postal_code
     assert_match /[A-Z]\d[A-Z]\W\d[A-Z]\d/, Faker::AddressCA.postal_code
   end
