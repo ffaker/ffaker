@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '1.31.0'
-  s.date              = '2015-01-14'
+  s.version           = '1.32.0'
+  s.date              = '2015-02-04'
   s.rubyforge_project = 'ffaker'
 
   s.license = 'MIT'
@@ -62,6 +62,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address_br/city
     lib/ffaker/data/address_br/state
     lib/ffaker/data/address_br/state_abbr
+    lib/ffaker/data/address_ca/city
     lib/ffaker/data/address_ca/province
     lib/ffaker/data/address_da/city
     lib/ffaker/data/address_da/kommune
@@ -96,6 +97,8 @@ Gem::Specification.new do |s|
     lib/ffaker/data/company/catch_pre
     lib/ffaker/data/company/position_areas
     lib/ffaker/data/conference/conference_list
+    lib/ffaker/data/currency/currency_code
+    lib/ffaker/data/currency/currency_name
     lib/ffaker/data/dizzle_ipsum/dizzle_words
     lib/ffaker/data/education/major_noun
     lib/ffaker/data/education/school_suffix
@@ -120,6 +123,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/lorem_ar/words
     lib/ffaker/data/lorem_cn/words
     lib/ffaker/data/lorem_fr/words
+    lib/ffaker/data/lorem_kr/words
     lib/ffaker/data/mathematiques/lessons
     lib/ffaker/data/movie/adj_and_adv
     lib/ffaker/data/movie/nouns
@@ -210,6 +214,7 @@ Gem::Specification.new do |s|
     lib/ffaker/lorem_ar.rb
     lib/ffaker/lorem_cn.rb
     lib/ffaker/lorem_fr.rb
+    lib/ffaker/lorem_kr.rb
     lib/ffaker/movie.rb
     lib/ffaker/name.rb
     lib/ffaker/name_br.rb
@@ -313,6 +318,7 @@ Gem::Specification.new do |s|
     test/test_lorem_ar.rb
     test/test_lorem_cn.rb
     test/test_lorem_fr.rb
+    test/test_lorem_kr.rb
     test/test_module_utils.rb
     test/test_movie.rb
     test/test_name.rb
