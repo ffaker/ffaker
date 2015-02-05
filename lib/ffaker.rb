@@ -1,5 +1,5 @@
 module Faker
-  VERSION = "1.32.0"
+  VERSION = "1.32.1"
 
   require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'
