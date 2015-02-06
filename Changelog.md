@@ -1,3 +1,12 @@
+## 1.32.1
+  - set required ruby version for gem
+## 1.32.0
+  - add Korean lorem to API
+  - add 100 canadian largest cities to API
+  - add Cuban phone numbers to API
+  - add currency code to API
+  - internal code-style improvements
+  
 ## 1.31.0
 
   - add deprecation warning to ArrayUtils#rand method
