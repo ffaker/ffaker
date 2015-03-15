@@ -1,5 +1,5 @@
 module FFaker
-  VERSION = "1.32.1"
+  VERSION = '2.0.0'
 
   require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'

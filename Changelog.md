@@ -1,3 +1,6 @@
+## 2.0.0
+  - switched faker to ffaker namespace, you should now be able to use
+  faker and ffaker gem together.
 ## 1.32.1
   - set required ruby version for gem
 ## 1.32.0
@@ -6,7 +9,7 @@
   - add Cuban phone numbers to API
   - add currency code to API
   - internal code-style improvements
-  
+
 ## 1.31.0
 
   - add deprecation warning to ArrayUtils#rand method
