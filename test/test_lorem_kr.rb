@@ -7,7 +7,7 @@ class TestLoremKR < Test::Unit::TestCase
   KOREAN_WORDS_MATCHER = /\A[ 가-힣]+\z/
   KOREAN_WORD_MATCHER = /\A[가-힣]+\z/
   def setup
-    @tester = Faker::LoremKR
+    @tester = FFaker::LoremKR
   end
 
   def test_paragraph
@@ -17,7 +17,7 @@ class TestLoremKR < Test::Unit::TestCase
   def test_sentence
     assert_match KOREAN_SENTENCE_MATCHER, @tester.sentence
     assert_nothing_thrown do
-      100.times { Faker::Lorem.sentence 0 }
+      100.times { FFaker::Lorem.sentence 0 }
     end
   end
 

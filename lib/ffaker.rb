@@ -1,4 +1,4 @@
-module Faker
+module FFaker
   VERSION = "1.32.1"
 
   require 'ffaker/utils/array_utils'

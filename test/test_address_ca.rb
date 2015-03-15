@@ -12,7 +12,7 @@ class TestAddressCA < Test::Unit::TestCase
   end
 
   def test_city
-    assert Faker::AddressCA::CITY.include?(Faker::AddressCA.city)
+    assert FFaker::AddressCA::CITY.include?(FFaker::AddressCA.city)
   end
 
   def test_postal_code

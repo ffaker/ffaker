@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module Currency
     extend ModuleUtils
     extend self

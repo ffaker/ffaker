@@ -4,7 +4,7 @@ require 'helper'
 
 class TestFakerGenderKR < Test::Unit::TestCase
   def setup
-    @tester = Faker::GenderKR
+    @tester = FFaker::GenderKR
   end
 
   def test_random
