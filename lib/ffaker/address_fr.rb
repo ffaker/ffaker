@@ -24,7 +24,7 @@ module FFaker
     end
 
     def postal_code
-      FFaker.numerify POSTAL_CODE_FORMATS.rand
+      FFaker.numerify POSTAL_CODE_FORMATS.sample
     end
 
     def city

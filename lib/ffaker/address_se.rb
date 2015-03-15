@@ -33,7 +33,7 @@ module FFaker
     end
 
     def street_nbr
-      FFaker.numerify STREET_NBR_FORMATS.rand
+      FFaker.numerify STREET_NBR_FORMATS.sample
     end
 
     def full_address
