@@ -2,7 +2,7 @@
 
 require 'date'
 
-module Faker
+module FFaker
 
   # The Social Security number is a 12-digit number in the format:
   # "YYYYDDMM-XXXX'

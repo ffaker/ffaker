@@ -2,9 +2,9 @@
 
 require 'ffaker/name'
 
-module Faker
+module FFaker
   module NameRU
-    include Faker::Name
+    include FFaker::Name
 
     extend ModuleUtils
     extend self
@@ -32,10 +32,10 @@ module Faker
     # Can be called with explicit sex which will affect
     # all calls inside thee block:
     #
-    #   Faker::NameRU.with_same_sex(:male) do
-    #     person.last_name  = Faker::NameRU.last_name
-    #     person.first_name = Faker::NameRU.first_name
-    #     person.patronymic = Faker::NameRU.patronymic
+    #   FFaker::NameRU.with_same_sex(:male) do
+    #     person.last_name  = FFaker::NameRU.last_name
+    #     person.first_name = FFaker::NameRU.first_name
+    #     person.patronymic = FFaker::NameRU.patronymic
     #   end
     #
     #   person.last_name    # => "Иванов"
@@ -51,7 +51,7 @@ module Faker
     # Generates random full name which can contain patronymic
     # Can be called with explicit sex (:male, :female), like:
     #
-    #   Faker::NameRU.name(:male)
+    #   FFaker::NameRU.name(:male)
     #
     # for_sex defaults to :random.
     def name(for_sex = :random)

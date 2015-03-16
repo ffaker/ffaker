@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-module  Faker
+module FFaker
   # Author: Luilver<luilver@gmail.com>
   # Based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Cuba
   module PhoneNumberCU
@@ -16,14 +14,14 @@ module  Faker
     OperatorsPrefix = MobileOperatorsPrefix + HomeWorkOperatorsPrefix
 
     # Return a prefix in MobileOperatorsPrefix
-    # @see Faker::PhoneNumberCU::MobileOperatorsPrefix
+    # @see FFaker::PhoneNumberCU::MobileOperatorsPrefix
     #
     def mobile_phone_prefix
       MobileOperatorsPrefix[rand(MobileOperatorsPrefix.size)]
     end
 
     # Return a prefix in HomeWorkOperatorsPrefix
-    # @see Faker::PhoneNumberCU::HomeWorkOperatorsPrefix
+    # @see FFaker::PhoneNumberCU::HomeWorkOperatorsPrefix
     #
     def home_work_phone_prefix
       HomeWorkOperatorsPrefix[rand(HomeWorkOperatorsPrefix.size)]
@@ -39,8 +37,8 @@ module  Faker
     def home_work_phone_number
       phone_prefix = home_work_phone_prefix
       case phone_prefix.size
-      when 2 then Faker.numerify("(#{phone_prefix}) ### ####")
-      when 3 then Faker.numerify("(#{phone_prefix}) ## ####")
+      when 2 then FFaker.numerify("(#{phone_prefix}) ### ####")
+      when 3 then FFaker.numerify("(#{phone_prefix}) ## ####")
       end
     end
 
@@ -48,7 +46,7 @@ module  Faker
     # 05 xxx xxxx
     #
     def mobile_phone_number
-      Faker.numerify("#{mobile_phone_prefix} ### ####")
+      FFaker.numerify("#{mobile_phone_prefix} ### ####")
     end
 
     # Generates general number
@@ -76,14 +74,14 @@ module  Faker
     end
 
     def international_mobile_phone_number
-      Faker.numerify("#{international_country_code}#{mobile_phone_prefix[1]} ### ####")
+      FFaker.numerify("#{international_country_code}#{mobile_phone_prefix[1]} ### ####")
     end
 
     def international_home_work_phone_number
       phone_prefix = home_work_phone_prefix
       case phone_prefix.size
-      when 2 then Faker.numerify("#{international_country_code}#{phone_prefix[1]} ### ####")
-      when 3 then Faker.numerify("#{international_country_code}#{phone_prefix[1,2]} ## ####")
+      when 2 then FFaker.numerify("#{international_country_code}#{phone_prefix[1]} ### ####")
+      when 3 then FFaker.numerify("#{international_country_code}#{phone_prefix[1,2]} ## ####")
       end
     end
 
@@ -102,14 +100,14 @@ module  Faker
     end
 
     def e164_mobile_phone_number
-      Faker.numerify("#{country_code}#{mobile_phone_prefix[1]}#######")
+      FFaker.numerify("#{country_code}#{mobile_phone_prefix[1]}#######")
     end
 
     def e164_home_work_phone_number
       phone_prefix = home_work_phone_prefix
       case phone_prefix.size
-      when 2 then Faker.numerify("#{e164_country_code}#{phone_prefix[1]}#######")
-      when 3 then Faker.numerify("#{e164_country_code}#{phone_prefix[1,2]}######")
+      when 2 then FFaker.numerify("#{e164_country_code}#{phone_prefix[1]}#######")
+      when 3 then FFaker.numerify("#{e164_country_code}#{phone_prefix[1,2]}######")
       end
     end
 

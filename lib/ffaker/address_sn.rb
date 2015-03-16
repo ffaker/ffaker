@@ -2,10 +2,10 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   # Author PapePathe<pathe.sene@gmail.com> github.com/PapePathe
   module AddressSN
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self

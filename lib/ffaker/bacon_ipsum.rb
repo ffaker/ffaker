@@ -2,7 +2,7 @@
 
 require 'ffaker/lorem'
 
-module Faker
+module FFaker
   # Thanks to http://baconipsum.com/
   module BaconIpsum
     include Lorem

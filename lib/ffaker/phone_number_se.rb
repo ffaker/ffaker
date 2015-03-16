@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
 
   # Format for swedish numbers, from here
   # from http://sv.wikipedia.org/wiki/Telefonnummer
@@ -39,11 +39,11 @@ module Faker
     end
 
     def home_work_phone_number
-      Faker.numerify("0#{phone_number_format}")
+      FFaker.numerify("0#{phone_number_format}")
     end
 
     def mobile_phone_number
-      Faker.numerify("0#{mobile_phone_number_format}")
+      FFaker.numerify("0#{mobile_phone_number_format}")
     end
 
     def international_phone_number
@@ -58,11 +58,11 @@ module Faker
     end
 
     def international_mobile_phone_number
-      Faker.numerify("#{country_prefix} (0)#{mobile_phone_number_format}")
+      FFaker.numerify("#{country_prefix} (0)#{mobile_phone_number_format}")
     end
 
     def international_home_work_phone_number
-      Faker.numerify("#{country_prefix} (0)#{phone_number_format}")
+      FFaker.numerify("#{country_prefix} (0)#{phone_number_format}")
     end
 
     def area_prefix

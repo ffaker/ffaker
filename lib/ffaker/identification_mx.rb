@@ -2,7 +2,7 @@
 
 require 'ffaker/identification_es'
 
-module Faker
+module FFaker
   module IdentificationMX
     # Author Guapolo <github.com/guapolo>
     extend ModuleUtils

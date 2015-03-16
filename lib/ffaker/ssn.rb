@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module SSN
     extend ModuleUtils
     extend self
@@ -11,7 +11,7 @@ module Faker
     # http://en.wikipedia.org/wiki/Social_Security_number
     #
     def ssn
-      Faker.numerify('###-##-####')
+      FFaker.numerify('###-##-####')
     end
   end
 end

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   # Author PapePathe<pathe.sene@gmail.com> github.com/PapePathe
   # The names & first names in this module were found at this url:
   # http://www.senegalaisement.com/senegal/noms_et_prenoms.html

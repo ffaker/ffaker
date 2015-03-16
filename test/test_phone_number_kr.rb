@@ -4,7 +4,7 @@ require 'helper'
 
 class TestPhoneNumberKR < Test::Unit::TestCase
   def setup
-    @tester = Faker::PhoneNumberKR
+    @tester = FFaker::PhoneNumberKR
   end
 
   def test_mobile_phone_number

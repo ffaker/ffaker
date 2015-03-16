@@ -2,9 +2,9 @@
 
 require 'ffaker/address'
 
-module Faker
+module FFaker
   module AddressUS
-    include Faker::Address
+    include FFaker::Address
 
     extend ModuleUtils
     extend self
@@ -14,7 +14,7 @@ module Faker
     CONTINENTAL_STATE_ABBR = (STATE_ABBR - ['HI', 'AK'])
 
     def zip_code
-      Faker.numerify ZIP_FORMATS.sample
+      FFaker.numerify ZIP_FORMATS.sample
     end
 
     def state

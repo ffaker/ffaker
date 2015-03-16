@@ -3,7 +3,7 @@
 require 'ffaker/identification_es'
 require "date"
 
-module Faker
+module FFaker
   module IdentificationESCO
     include IdentificationES
 
@@ -15,7 +15,7 @@ module Faker
 
     def drivers_license
       how_many_numbers = 6 + rand(8)
-      Faker.numerify("#" * how_many_numbers)
+      FFaker.numerify("#" * how_many_numbers)
     end
 
   alias_method :id, :drivers_license

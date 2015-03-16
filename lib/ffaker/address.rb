@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module Address
     extend ModuleUtils
     extend self
@@ -12,17 +12,17 @@ module Faker
     # @deprecated US specific address info. Moved into {AddressUS}
     def zip_code
       warn '[zip_code] is deprecated. For US addresses please use the AddressUS module'
-      Faker::AddressUS.zip_code
+      FFaker::AddressUS.zip_code
     end
 
     def us_state
       warn '[us_state] is deprecated. For US addresses please use the AddressUS module'
-      Faker::AddressUS.state
+      FFaker::AddressUS.state
     end
 
     def us_state_abbr
       warn '[state_abbr] is deprecated. For US addresses please use the AddressUS module'
-      Faker::AddressUS.state_abbr
+      FFaker::AddressUS.state_abbr
     end
     # end US deprecation
 
@@ -48,7 +48,7 @@ module Faker
     end
 
     def building_number
-      Faker.numerify(( '#' * rand(3) ) << '###')
+      FFaker.numerify(( '#' * rand(3) ) << '###')
     end
 
     def street_name
@@ -65,24 +65,24 @@ module Faker
     end
 
     def secondary_address
-      Faker.numerify(SEC_ADDR.sample)
+      FFaker.numerify(SEC_ADDR.sample)
     end
 
     # @deprecated UK specific address info. Moved into {AddressUK}
     # UK Variants
     def uk_county
       warn '[uk_county] is deprecated. For UK addresses please use the AddressUK module'
-      Faker::AddressUK.county
+      FFaker::AddressUK.county
     end
 
     def uk_country
       warn '[uk_country] is deprecated. For UK addresses please use the AddressUK module'
-      Faker::AddressUK.country
+      FFaker::AddressUK.country
     end
 
     def uk_postcode
       warn '[uk_postcode] is deprecated. For UK addresses please use the AddressUK module'
-      Faker::AddressUK.postcode
+      FFaker::AddressUK.postcode
     end
     # end UK deprecation
 

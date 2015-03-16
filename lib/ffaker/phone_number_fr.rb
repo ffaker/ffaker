@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-module Faker
+module FFaker
   module PhoneNumberFR
     extend ModuleUtils
     extend self
@@ -18,11 +18,11 @@ module Faker
     end
 
     def home_work_phone_number
-      Faker.numerify "#{COUNTRY_PREFIX.sample}#{AREA_PREFIX.sample}#{PHONE_NUMBER.sample}"
+      FFaker.numerify "#{COUNTRY_PREFIX.sample}#{AREA_PREFIX.sample}#{PHONE_NUMBER.sample}"
     end
 
     def mobile_phone_number
-      Faker.numerify "#{COUNTRY_PREFIX.sample}#{MOBILE_PREFIX.sample}#{PHONE_NUMBER.sample}"
+      FFaker.numerify "#{COUNTRY_PREFIX.sample}#{MOBILE_PREFIX.sample}#{PHONE_NUMBER.sample}"
     end
   end
 end

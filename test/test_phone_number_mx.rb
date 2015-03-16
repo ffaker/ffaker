@@ -5,7 +5,7 @@ require 'helper'
 # Author: guapolo github.com/guapolo
 class TestPhoneNumberMX < Test::Unit::TestCase
   def setup
-    @tester = Faker::PhoneNumberMX
+    @tester = FFaker::PhoneNumberMX
   end
 
   def test_mobile_phone_number
