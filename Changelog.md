@@ -1,8 +1,10 @@
 ## 2.0.0
   - switched faker to ffaker namespace, you should now be able to use
   faker and ffaker gem together.
+
 ## 1.32.1
   - set required ruby version for gem
+
 ## 1.32.0
   - add Korean lorem to API
   - add 100 canadian largest cities to API
