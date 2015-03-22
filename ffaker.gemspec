@@ -46,6 +46,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_sn.rb
     lib/ffaker/address_uk.rb
     lib/ffaker/address_us.rb
+    lib/ffaker/avatar.rb
     lib/ffaker/bacon_ipsum.rb
     lib/ffaker/boolean.rb
     lib/ffaker/color.rb
@@ -283,6 +284,7 @@ Gem::Specification.new do |s|
     test/test_address_uk.rb
     test/test_address_us.rb
     test/test_array_utils.rb
+    test/test_avatar.rb
     test/test_bacon_ipsum.rb
     test/test_boolean.rb
     test/test_color.rb
