@@ -11,6 +11,8 @@ module FFaker
     ]
     COLORS = %w{Red Yellow Black White}
 
+    RATINGS = %w(G PG PG-13 R NC-17)  # According to MPAA
+
     def title
       case rand(4)
       when 0 then title_with_prefix
@@ -18,6 +20,10 @@ module FFaker
       when 2 then simple_title
       when 3 then title_from_formula
       end
+    end
+
+    def rating
+      RATINGS.sample
     end
 
     private
