@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_ca.rb
     lib/ffaker/address_da.rb
     lib/ffaker/address_de.rb
+    lib/ffaker/address_es.rb
     lib/ffaker/address_fi.rb
     lib/ffaker/address_fr.rb
     lib/ffaker/address_mx.rb
@@ -71,6 +72,8 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address_da/street
     lib/ffaker/data/address_de/city
     lib/ffaker/data/address_de/state
+    lib/ffaker/data/address_es/city
+    lib/ffaker/data/address_es/province
     lib/ffaker/data/address_fi/city
     lib/ffaker/data/address_fi/countries
     lib/ffaker/data/address_fi/street
@@ -142,6 +145,9 @@ Gem::Specification.new do |s|
     lib/ffaker/data/name_da/male_first_names
     lib/ffaker/data/name_de/first_names
     lib/ffaker/data/name_de/last_names
+    lib/ffaker/data/name_es/female_first_names
+    lib/ffaker/data/name_es/last_names
+    lib/ffaker/data/name_es/male_first_names
     lib/ffaker/data/name_fr/first_names
     lib/ffaker/data/name_fr/last_names
     lib/ffaker/data/name_ga/first_names_female
@@ -224,6 +230,7 @@ Gem::Specification.new do |s|
     lib/ffaker/name_cs.rb
     lib/ffaker/name_da.rb
     lib/ffaker/name_de.rb
+    lib/ffaker/name_es.rb
     lib/ffaker/name_fr.rb
     lib/ffaker/name_ga.rb
     lib/ffaker/name_it.rb
@@ -276,6 +283,7 @@ Gem::Specification.new do |s|
     test/test_address_ca.rb
     test/test_address_da.rb
     test/test_address_de.rb
+    test/test_address_es.rb
     test/test_address_fi.rb
     test/test_address_mx.rb
     test/test_address_nl.rb
@@ -329,6 +337,7 @@ Gem::Specification.new do |s|
     test/test_name_cn.rb
     test/test_name_cs.rb
     test/test_name_de.rb
+    test/test_name_es.rb
     test/test_name_fr.rb
     test/test_name_ga.rb
     test/test_name_it.rb
