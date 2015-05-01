@@ -9,9 +9,12 @@
 
 ```ruby
 require 'ffaker'
-FFaker::Name.name => "Christophe Bartell"
-FFaker::Internet.email => "kirsten.greenholt@corkeryfisher.info"
+
+FFaker::Name.name       #=> "Christophe Bartell"
+FFaker::Internet.email  #=> "kirsten.greenholt@corkeryfisher.info"
 ```
+
+**[See more →](REFERENCE.md)**
 
 ## ffaker vs faker
 
