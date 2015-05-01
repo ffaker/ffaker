@@ -155,3 +155,8 @@ task :validate do
     exit!
   end
 end
+
+desc "Creates REFERENCE.md"
+task :reference do
+  system "ruby ./scripts/reference.rb > REFERENCE.md"
+end
