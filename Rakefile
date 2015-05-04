@@ -72,11 +72,6 @@ end
 
 task :default => :test
 
-desc "Open an irb session preloaded with this library"
-task :console do
-  sh "irb -I ./lib/ -rubygems -r ./lib/#{name}.rb"
-end
-
 #############################################################################
 #
 # Custom tasks (add your own tasks here)
