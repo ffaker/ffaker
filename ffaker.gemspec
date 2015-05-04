@@ -114,7 +114,6 @@ Gem::Specification.new do |s|
     lib/ffaker/data/job/job_adj
     lib/ffaker/data/job/job_noun
     lib/ffaker/data/job/job_prefix
-    lib/ffaker/data/job_cn/job_nouns
     lib/ffaker/data/job_fr/job_nouns
     lib/ffaker/data/job_fr/job_prefixes
     lib/ffaker/data/job_ja/job_nouns
@@ -209,7 +208,6 @@ Gem::Specification.new do |s|
     lib/ffaker/internet.rb
     lib/ffaker/internet_se.rb
     lib/ffaker/job.rb
-    lib/ffaker/job_cn.rb
     lib/ffaker/job_fr.rb
     lib/ffaker/job_ja.rb
     lib/ffaker/job_kr.rb
@@ -316,7 +314,6 @@ Gem::Specification.new do |s|
     test/test_internet.rb
     test/test_internet_se.rb
     test/test_job.rb
-    test/test_job_cn.rb
     test/test_job_fr.rb
     test/test_job_ja.rb
     test/test_job_kr.rb
