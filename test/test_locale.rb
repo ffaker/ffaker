@@ -12,10 +12,10 @@ class TestLocale < Test::Unit::TestCase
   end
 
   def test_language_with_args
-    assert_match /./, FFaker::Locale.language('French')
+    assert_match 'French', FFaker::Locale.language('FR')
   end
 
   def test_code_with_args
-    assert_match /./, FFaker::Locale.code('FR')
+    assert_match 'FR', FFaker::Locale.code('French')
   end
 end
