@@ -28,8 +28,6 @@ and then
 
     require 'ffaker'
 
-instead of "faker" with only one f.
-
 ## ffaker is faster... does it really matter?
 
 <b>NO.</b>
