@@ -6,13 +6,14 @@ module FFaker
     extend self
 
     BACKSLASH = '\\'
+    DASH      = '-'
 
     LOWERS     = [*'a'..'z']
     UPPERS     = [*'A'..'Z']
     LETTERS    = LOWERS + UPPERS
     NUMBERS    = [*'0'..'9']
     WORD_CHARS = LETTERS + NUMBERS + ['_']
-    SPACES     = [" ", "\t"]
+    SPACES     = [' ', "\t"]
     ESCAPEABLE_CHARS = '\\', '/', '.', '(', ')', '[', ']', '{', '}'
 
     def from_regexp(exp)
@@ -30,12 +31,17 @@ module FFaker
 
     private
 
-    def join_escapes(tokens)
+    def generate_range(tokens)
       result = []
       while tokens.any?
         token = tokens.shift
-        token << tokens.shift if token == BACKSLASH
-        result << token
+        if token == DASH && tokens.first && result.last
+          result += [*result.pop..tokens.shift]
+        elsif token == BACKSLASH
+          result << special(tokens.shift)
+        else
+          result << token
+        end
       end
       result
     end
@@ -47,18 +53,18 @@ module FFaker
 
       case token
       when '?' then
-        # TODO: Let ? generate nothong
-        return '' # We already printed its target
+        # TODO: Let ? generate nothing
+        '' # We already printed its target
       when '+' then
         tokens.unshift(token) if rand(2) == 1 # Leave the `+` on to run again
-        return process_token(@last_token) # Run the last one at least once
+        process_token(@last_token) # Run the last one at least once
       when '*' then
         tokens.unshift(token) if rand(2) == 1 # Leave the `*` on to run again
         return '' if rand(2) == 1 # Or maybe do nothing
-        return process_token(@last_token) # Else run the last one again
+        process_token(@last_token) # Else run the last one again
+      else
+        generate_token token, tokens
       end
-
-      generate_token token, tokens
     end
 
     def generate_token(token, tokens)
@@ -76,7 +82,10 @@ module FFaker
           set << ch
         end
         @last_token = ['['] + set + [']']
-        process_token([join_escapes(set).sample])
+
+        process_token([generate_range(set).sample])
+      else
+        token
       end
     end
 
@@ -86,6 +95,8 @@ module FFaker
       when 'd' then NUMBERS.sample
       when 's' then SPACES.sample
       when *ESCAPEABLE_CHARS then token
+      else
+        ''
       end
     end
   end
