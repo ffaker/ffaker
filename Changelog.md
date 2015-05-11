@@ -1,3 +1,12 @@
+## 2.1.0 - unreleased
+
+  - add REFERENCE.md
+  - FFaker::String.from_regexp: implement support for regexp ranges like `/[a-f]/` ([#199], [#200], [@marocchino])
+
+[#199]: https://github.com/EmmanuelOga/ffaker/issues/199
+[#200]: https://github.com/EmmanuelOga/ffaker/issues/200
+[@marocchino]: https://github.com/marocchino
+
 ## 2.0.0
   - switched faker to ffaker namespace, you should now be able to use
   faker and ffaker gem together.
