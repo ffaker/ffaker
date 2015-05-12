@@ -9,19 +9,20 @@ class TestFakerIdentification < Test::Unit::TestCase
 
   def test_drivers_license
     ###-###-##-###-#
-    assert_match /[A-Z]\d{3}-\d{3}-\d{2}-\d{3}-\d{1}/, @tester.drivers_license
+    drivers_license_regex = /\A[A-Z]\d{3}-\d{3}-\d{2}-\d{3}-\d{1}\z/
+    assert_match drivers_license_regex, @tester.drivers_license
   end
 
   def test_ssn
-    assert_match /\d{3}-\d{2}-\d{4}/, @tester.ssn
+    assert_match(/\A\d{3}-\d{2}-\d{4}\z/, @tester.ssn)
   end
 
   def test_gender
-    assert_match /(Male|Female)/, @tester.gender
+    assert_match(/\A(Male|Female)\z/, @tester.gender)
   end
 
   def test_ethnicity
-    ethnicity_regex = /(African American|Asian\/Pacific Islander|Caucasian|Hispanic|Native American|Multiracial|Other|Prefer not to respond)/
+    ethnicity_regex = /\A(African American|Asian\/Pacific Islander|Caucasian|Hispanic|Native American|Multiracial|Other|Prefer not to respond)\z/
     assert_match ethnicity_regex, @tester.ethnicity
   end
 end
