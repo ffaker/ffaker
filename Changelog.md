@@ -1,11 +1,20 @@
 ## 2.1.0 - unreleased
 
-  - add REFERENCE.md
-  - FFaker::String.from_regexp: implement support for regexp ranges like `/[a-f]/` ([#199], [#200], [@marocchino])
+  - [#191] - add REFERENCE.md ([@rstacruz])
+  - [#193] - fix FFaker::Locale.language throwing errors ([@rstacruz], [#196])
+  - [#199] - FFaker::String.from_regexp: implement support for regexp ranges like `/[a-f]/` ([@marocchino], [#200])
+  - [#181] - fix FFaker::PhoneNumber.phone_number throwing invalid US phone numbers ([@rstacruz], [#195])
+  - [#181] - implement FFaker::PhoneNumber.area_code ([@rstacruz], [#195])
 
+[#181]: https://github.com/EmmanuelOga/ffaker/issues/181
+[#191]: https://github.com/EmmanuelOga/ffaker/issues/191
+[#193]: https://github.com/EmmanuelOga/ffaker/issues/193
+[#195]: https://github.com/EmmanuelOga/ffaker/issues/195
+[#196]: https://github.com/EmmanuelOga/ffaker/issues/196
 [#199]: https://github.com/EmmanuelOga/ffaker/issues/199
 [#200]: https://github.com/EmmanuelOga/ffaker/issues/200
 [@marocchino]: https://github.com/marocchino
+[@rstacruz]: https://github.com/rstacruz
 
 ## 2.0.0
   - switched faker to ffaker namespace, you should now be able to use
