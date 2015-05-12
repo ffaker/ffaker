@@ -14,7 +14,7 @@ module FFaker
     end
 
     def words(num = 3)
-      HEALTHCARE_WORDS.random_pick(num)
+      HEALTHCARE_WORDS.sample(num)
     end
   end
 end

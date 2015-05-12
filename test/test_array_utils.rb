@@ -22,12 +22,12 @@ class TestArrayUtils < Test::Unit::TestCase
     assert set == @elems
   end
 
-   def test_provides_a_way_of_getting_n_random_elements
-    assert_equal @array.random_pick(3).sort, @array.sort
+  def test_provides_a_way_of_getting_n_random_elements
+    assert_equal @array.sample(3).sort, @array.sort
 
     1.upto(3) do |n|
       1000.times do
-        new_arr = @array.random_pick(n)
+        new_arr = @array.sample(n)
         assert_equal n, new_arr.length
         new_arr.each do |e|
           assert @elems.include? e

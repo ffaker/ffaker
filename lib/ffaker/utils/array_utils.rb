@@ -7,8 +7,8 @@ module FFaker
     end
 
     def self.random_pick(array, n)
-      indexes = (0...array.length).sort_by{Kernel.rand}[0...n]
-      indexes.map { |n| array[n].dup }
+      warn '[ArrayUtils.random_pick] is deprecated. Please use the Array#sample method'
+      array.sample(n)
     end
 
     def self.rand(array)
@@ -27,7 +27,8 @@ module FFaker
     end
 
     def random_pick(n)
-      ArrayUtils.random_pick(self, n)
+      warn '[ArrayUtils#random_pick] is deprecated. Please use the Array#sample method'
+      self.sample(n)
     end
 
     def rand

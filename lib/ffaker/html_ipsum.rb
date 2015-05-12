@@ -129,7 +129,7 @@ module FFaker
         "<code>#{words 2}</code>",
         "#{a 2}"
       ] + FFaker::Lorem::paragraphs(count))
-      a.random_pick(count).join(sep)
+      a.sample(count).join(sep)
     end
 
   private

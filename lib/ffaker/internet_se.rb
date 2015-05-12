@@ -63,7 +63,7 @@ module FFaker
     end
 
     def user_name_from_name(name)
-      array_parts = ArrayUtils.shuffle(name.scan(/\w+/))
+      array_parts = name.scan(/\w+/).shuffle
       join_to_user_name(array_parts)
     end
 
