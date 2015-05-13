@@ -15,7 +15,7 @@ module FFaker
     end
 
     def words(num = 3)
-      BACON_WORDS.random_pick(num)
+      BACON_WORDS.sample(num)
     end
   end
 end

@@ -15,14 +15,16 @@ module FFaker
     end
 
     def words(num = 3)
-      WORDS.random_pick(num)
+      WORDS.sample(num)
     end
 
     def sentence(word_count = 4)
-      s = words(word_count + rand(5) + 1)
-      s[0].capitalize!
-      s = s.join(' ')
-      "#{s}."
+      first_word, *last_words = words(word_count + rand(5) + 1)
+      if last_words.nil?
+        first_word.capitalize
+      else
+        "#{first_word.capitalize} #{last_words.join(' ')}."
+      end
     end
 
     alias_method :phrase, :sentence

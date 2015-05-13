@@ -26,12 +26,12 @@ module FFaker
     end
 
     def safe_email(name = nil)
-      [user_name(name), 'example.'+ %w[org com net].shuffle.first].join('@')
+      [user_name(name), 'example.'+ %w[org com net].sample].join('@')
     end
 
     def user_name(name = nil)
       if name
-        parts = ArrayUtils.shuffle(name.scan(/\w+/)).join(%w(. _).sample)
+        parts = name.scan(/\w+/).shuffle.join(%w(. _).sample)
         parts.downcase
       else
         case rand(2)

@@ -26,7 +26,7 @@ module FFaker
 
     def manufacturer_color(n=2)
       # Take two prefixes because it's more fun than one
-      [COLOR_PREFIXES.random_pick(n), self.base_color].flatten.join(' ')
+      (COLOR_PREFIXES.sample(n) + [base_color]).join(' ')
     end
     alias_method :mfg_color, :manufacturer_color
 

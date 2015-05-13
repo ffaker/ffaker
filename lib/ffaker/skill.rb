@@ -10,7 +10,7 @@ module FFaker
     end
 
     def tech_skills(num = 3)
-      TECH_SKILLS.random_pick(num)
+      TECH_SKILLS.sample(num)
     end
 
     def specialty

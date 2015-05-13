@@ -10,7 +10,7 @@ module FFaker
     end
 
     def words(num = 3)
-      WORDS.random_pick(num)
+      WORDS.sample(num)
     end
 
     def sentence(word_count = 4)

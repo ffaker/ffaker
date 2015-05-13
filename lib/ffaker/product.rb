@@ -31,7 +31,7 @@ module FFaker
     end
 
     def letters(n)
-      max = n.is_a?(Range) ? n.to_a.shuffle.first : n
+      max = n.is_a?(Range) ? n.to_a.sample : n
       (0...max).map { LETTERS.sample.upcase }.join
     end
 

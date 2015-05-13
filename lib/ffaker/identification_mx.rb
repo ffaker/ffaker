@@ -18,7 +18,7 @@ module FFaker
       consonants_n = CONSONANTS + ["Ñ"]
       all_letters = consonants_n + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
-      "#{consonants_n.sample}#{VOWELS.sample}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{ArrayUtils.random_pick(HOMOCLAVE,3).join}"
+      "#{consonants_n.sample}#{VOWELS.sample}#{all_letters.sample(2).join}#{date}#{HOMOCLAVE.sample(3).join}"
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -27,7 +27,7 @@ module FFaker
       consonants_n_amp = CONSONANTS + ["Ñ", "&"]
       all_letters = consonants_n_amp + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
-      "#{ArrayUtils.random_pick(all_letters,3).join}#{date}#{ArrayUtils.random_pick(HOMOCLAVE,3).join}"
+      "#{all_letters.sample(3).join}#{date}#{HOMOCLAVE.sample(3).join}"
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -42,7 +42,7 @@ module FFaker
       all_letters = CONSONANTS + VOWELS
       hm = ["H","M"]
       date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
-      "#{CONSONANTS.sample}#{VOWELS.sample}#{ArrayUtils.random_pick(all_letters,2).join}#{date}#{hm.sample}#{ESTADOS_CURP.sample}#{ArrayUtils.random_pick(CONSONANTS,3).join}#{HOMOCLAVE.sample}#{rand(10)}"
+      "#{CONSONANTS.sample}#{VOWELS.sample}#{all_letters.sample(2).join}#{date}#{hm.sample}#{ESTADOS_CURP.sample}#{CONSONANTS.sample(3).join}#{HOMOCLAVE.sample}#{rand(10)}"
     end
   end
 end

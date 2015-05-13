@@ -15,7 +15,7 @@ module FFaker
     end
 
     def words(num = 3)
-      HIPSTER_WORDS.random_pick(num)
+      HIPSTER_WORDS.sample(num)
     end
   end
 end

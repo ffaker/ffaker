@@ -17,7 +17,7 @@ class TestLoremKR < Test::Unit::TestCase
   def test_sentence
     assert_match KOREAN_SENTENCE_MATCHER, @tester.sentence
     assert_nothing_thrown do
-      100.times { FFaker::Lorem.sentence 0 }
+      100.times { @tester.sentence 0 }
     end
   end
 
