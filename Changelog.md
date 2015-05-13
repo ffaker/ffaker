@@ -5,6 +5,7 @@
   - [#199] - FFaker::String.from_regexp: implement support for regexp ranges like `/[a-f]/` ([@marocchino], [#200])
   - [#181] - fix FFaker::PhoneNumber.phone_number throwing invalid US phone numbers ([@rstacruz], [#195])
   - [#181] - implement FFaker::PhoneNumber.area_code ([@rstacruz], [#195])
+  - [#203] - deprecate FFaker::ArrayUtils.random_pick in favor for Array#sample ([@marocchino])
 
 [#181]: https://github.com/EmmanuelOga/ffaker/issues/181
 [#191]: https://github.com/EmmanuelOga/ffaker/issues/191
@@ -13,6 +14,7 @@
 [#196]: https://github.com/EmmanuelOga/ffaker/issues/196
 [#199]: https://github.com/EmmanuelOga/ffaker/issues/199
 [#200]: https://github.com/EmmanuelOga/ffaker/issues/200
+[#203]: https://github.com/EmmanuelOga/ffaker/issues/203
 [@marocchino]: https://github.com/marocchino
 [@rstacruz]: https://github.com/rstacruz
 
