@@ -116,12 +116,6 @@
 | `street_address` | 504 Madilyn Dam, 998 Stark Rest, 547 Alexandre Keys |
 | `street_name` | Melyna Alley, Wiegand Ville, Haley Crossroad |
 | `street_suffix` | Extensions, Ways, Throughway |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | ❗ *[zip_code] is deprecated. For US addresses please use the AddressUS module* |
 
 ## FFaker::AddressAU
 
@@ -143,12 +137,6 @@
 | `street_name` | Ezekiel Highway, Alena Landing, Betsy Crossing |
 | `street_suffix` | Port, Glens, Junction |
 | `suburb` | Hobart, Launceston, Canberra |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | ❗ *[zip_code] is deprecated. For US addresses please use the AddressUS module* |
 
 ## FFaker::AddressBR
 
@@ -169,11 +157,6 @@
 | `street_name` | Will Ferry, Runolfsdottir Harbors, Considine Streets |
 | `street_prefix` | Travessa, Travessa, Travessa |
 | `street_suffix` | Causeway, Ways, Landing |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 90848-041, 24990-487, 70891-129 |
 
 ## FFaker::AddressCA
@@ -194,12 +177,6 @@
 | `street_address` | 39380 Turner Crossroad, 18696 Reichel Lodge, 17001 Flavie Spurs |
 | `street_name` | Vernie Park, Wintheiser Roads, Rutherford Islands |
 | `street_suffix` | Station, Orchard, Centers |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | ❗ *[zip_code] is deprecated. For US addresses please use the AddressUS module* |
 
 ## FFaker::AddressDA
 
@@ -221,11 +198,6 @@
 | `street_address` | Mosegårdsvej 5, Klinken 94, Bækgårdsvej 73 |
 | `street_name` | Nordvang, Mosedalen, Murskeen |
 | `street_suffix` | Centers, Manors, Forest |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 2980, 8756, 2885 |
 
 ## FFaker::AddressDE
@@ -244,11 +216,6 @@
 | `street_address` | Corwinstr. 94, Lindastr. 171, Torphystr. 185 |
 | `street_name` | Friesenstr., Millerstr., Erikstr. |
 | `street_suffix` | Cape, Key, Court |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 47639, 14974, 94739 |
 
 ## FFaker::AddressFI
@@ -269,11 +236,6 @@
 | `street_name` | Soinintie, Käkimäentie, Köllintie |
 | `street_nbr` | 7 b, 6, 1 b |
 | `street_suffix` | Brook, Roads, Underpass |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 32556, 67619, 95120 |
 
 ## FFaker::AddressFR
@@ -293,12 +255,6 @@
 | `street_address` | 3 TER bd Théodore du Clement, 8 QUATER av Anaïs Laine, 0283, boulevard Anaïs Humbert |
 | `street_name` | Blanda Route, Orpha Points, Loyce Spur |
 | `street_suffix` | Views, Mountain, Hills |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | ❗ *[zip_code] is deprecated. For US addresses please use the AddressUS module* |
 
 ## FFaker::AddressMX
 
@@ -327,11 +283,6 @@
 | `street_address` | 9810 Theodora-Wendyweg, 766 Langoshstraat, 99062 Anneweg |
 | `street_name` | Crooksstraat, O'Reillystraat, Nolanstraat |
 | `street_suffix` | Fork, Coves, Village |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 1532 az, 3447 hd, 3690 uj |
 
 ## FFaker::AddressSE
@@ -352,11 +303,6 @@
 | `street_name` | Skördevägen, Roslagsvägen, Bredängsvägen |
 | `street_nbr` | 4, 2a, 12 |
 | `street_suffix` | Plains, Key, Pines |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 22 849, 29 056, 10 586 |
 
 ## FFaker::AddressSN
@@ -377,12 +323,6 @@
 | `street_address` | 24846 Maddison Street, 290 Ward Vista, 14807 Melissa Island |
 | `street_name` | Wilderman Underpass, Altenwerth Shoals, Mante Mission |
 | `street_suffix` | Circle, Turnpike, Row |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | ❗ *[zip_code] is deprecated. For US addresses please use the AddressUS module* |
 
 ## FFaker::AddressUK
 
@@ -401,12 +341,6 @@
 | `street_address` | 369 Otto Dale, 10388 Will Green, 26414 Kshlerin Lodge |
 | `street_name` | Jon Via, Fay Summit, Mariah Estate |
 | `street_suffix` | Pike, Fords, Loaf |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | ❗ *[zip_code] is deprecated. For US addresses please use the AddressUS module* |
 
 ## FFaker::AddressUS
 
@@ -428,11 +362,6 @@
 | `street_address` | 2784 Monica Turnpike, 9508 Kling Hills, 3618 Amya Forges |
 | `street_name` | Bednar Circle, Madonna Terrace, Roob Junction |
 | `street_suffix` | Ridge, Ferry, Extensions |
-| `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
-| `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
-| `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 18018, 40412-9140, 36189-2187 |
 
 ## FFaker::Avatar
