@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
 
   # Format for swedish numbers, from here

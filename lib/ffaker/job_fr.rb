@@ -1,5 +1,3 @@
-# encoding: UTF-8
-
 module FFaker
   module JobFR
     extend ModuleUtils
