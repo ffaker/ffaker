@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestBaconIpsum < Test::Unit::TestCase
+class TestBaconIpsum < Minitest::Test
 
   def test_paragraph
     assert_match /1\+|[ a-z]+/i, FFaker::BaconIpsum.paragraph

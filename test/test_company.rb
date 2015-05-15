@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestCompany < Test::Unit::TestCase
+class TestCompany < Minitest::Test
   def setup
     @tester = FFaker::Company
   end
@@ -20,6 +18,6 @@ class TestCompany < Test::Unit::TestCase
   end
 
   def test_suffix
-    assert_include @tester::SUFFIXES, @tester.suffix
+    assert_includes @tester::SUFFIXES, @tester.suffix
   end
 end

@@ -1,9 +1,7 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author: guapolo github.com/guapolo
-class TestPhoneNumberMX < Test::Unit::TestCase
+class TestPhoneNumberMX < Minitest::Test
   def setup
     @tester = FFaker::PhoneNumberMX
   end

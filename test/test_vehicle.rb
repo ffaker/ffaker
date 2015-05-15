@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestVehicle < Test::Unit::TestCase
+class TestVehicle < Minitest::Test
   def test_base_color
     assert_match /\A[a-z]+\z/, FFaker::Vehicle.base_color
   end

@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestPhoneNumer < Test::Unit::TestCase
+class TestPhoneNumer < Minitest::Test
   def test_phone_number
     assert_match /\d{3}[. -]\d{3}/, FFaker::PhoneNumber.phone_number
   end

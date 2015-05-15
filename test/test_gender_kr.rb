@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestFakerGenderKR < Test::Unit::TestCase
+class TestFakerGenderKR < Minitest::Test
   def setup
     @tester = FFaker::GenderKR
   end

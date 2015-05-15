@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   module Vehicle
     extend ModuleUtils

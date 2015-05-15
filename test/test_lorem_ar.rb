@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestLoremARAR < Test::Unit::TestCase
+class TestLoremARAR < Minitest::Test
   def test_paragraph
     assert_match /[ a-z]+/, FFaker::LoremAR.paragraph
   end

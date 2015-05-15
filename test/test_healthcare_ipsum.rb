@@ -1,6 +1,6 @@
-require 'helper'
+require 'test_helper'
 
-class TestHealthcareIpsum < Test::Unit::TestCase
+class TestHealthcareIpsum < Minitest::Test
   def test_paragraph
     assert_match /1\+|[ a-z]+/i, FFaker::HealthcareIpsum.paragraph
   end

@@ -1,9 +1,7 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author: xarala<pathe.sene@xarala.sn> http://www.xarala.sn
-class TestPhoneNumberSN < Test::Unit::TestCase
+class TestPhoneNumberSN < Minitest::Test
   def setup
     @tester = FFaker::PhoneNumberSN
   end

@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestAddressSE < Test::Unit::TestCase
+class TestAddressSE < Minitest::Test
 
   ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/

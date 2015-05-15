@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestBoolean < Test::Unit::TestCase
+class TestBoolean < Minitest::Test
   def test_maybe
     maybe = FFaker::Boolean.maybe
     assert (maybe == false || maybe == true)

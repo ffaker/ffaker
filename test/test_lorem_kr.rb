@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestLoremKR < Test::Unit::TestCase
+class TestLoremKR < Minitest::Test
   KOREAN_SENTENCE_MATCHER = /\A[ .가-힣]+\z/
   KOREAN_WORDS_MATCHER = /\A[ 가-힣]+\z/
   KOREAN_WORD_MATCHER = /\A[가-힣]+\z/
@@ -16,9 +14,6 @@ class TestLoremKR < Test::Unit::TestCase
 
   def test_sentence
     assert_match KOREAN_SENTENCE_MATCHER, @tester.sentence
-    assert_nothing_thrown do
-      100.times { @tester.sentence 0 }
-    end
   end
 
   def test_phrase

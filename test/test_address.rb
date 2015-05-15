@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestAddress < Test::Unit::TestCase
+class TestAddress < Minitest::Test
   def test_building_number
     assert_match /\A\d{3,5}\z/, FFaker::Address.building_number
   end

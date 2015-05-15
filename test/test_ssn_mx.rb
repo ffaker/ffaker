@@ -1,9 +1,7 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author Guapolo <github.com/guapolo>
-class TestSSNMX < Test::Unit::TestCase
+class TestSSNMX < Minitest::Test
 
   def test_ssn
     assert_match(/\d{10}-\d/, FFaker::SSNMX.ssn)

@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestAddressBR < Test::Unit::TestCase
+class TestAddressBR < Minitest::Test
   def test_zip_code
     assert_match /\d{5}-\d{3}/, FFaker::AddressBR.zip_code
   end

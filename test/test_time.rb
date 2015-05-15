@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestFakerTime < Test::Unit::TestCase
+class TestFakerTime < Minitest::Test
   def setup
     @tester = FFaker::Time
   end

@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestDizzleIpsum < Test::Unit::TestCase
+class TestDizzleIpsum < Minitest::Test
 
   def test_paragraph
     assert_match /1\+|[ a-z]+/i, FFaker::DizzleIpsum.paragraph

@@ -1,11 +1,6 @@
-# encoding: utf-8
+require "test_helper"
 
-# => author: PapePathe github.com/PapePathe
-# => email: pathe.sene@gmail.com
-
-require "helper"
-
-class TestAddressSn < Test::Unit::TestCase
+class TestAddressSn < Minitest::Test
 
   def setup
     @subject = FFaker::AddressSN

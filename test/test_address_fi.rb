@@ -1,9 +1,7 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Test features related to Finnish addresses
-class TestAddressFI < Test::Unit::TestCase
+class TestAddressFI < Minitest::Test
   ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/
 

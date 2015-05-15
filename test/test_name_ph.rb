@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestFakerNamePH < Test::Unit::TestCase
+class TestFakerNamePH < Minitest::Test
   def setup
     @tester = FFaker::NamePH
   end

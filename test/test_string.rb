@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestString < Test::Unit::TestCase
+class TestString < Minitest::Test
   FS = FFaker::String
 
   def test_atoms
@@ -36,7 +34,7 @@ class TestString < Test::Unit::TestCase
   end
 
   def test_atom_sets
-    assert_include %w(a b c), FS.from_regexp(/[abc]/)
+    assert_includes %w(a b c), FS.from_regexp(/[abc]/)
   end
 
   def test_special_sets

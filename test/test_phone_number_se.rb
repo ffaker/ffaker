@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestPhoneNumberSE < Test::Unit::TestCase
+class TestPhoneNumberSE < Minitest::Test
 
   def setup
     @tester = FFaker::PhoneNumberSE

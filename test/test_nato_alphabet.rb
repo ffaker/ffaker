@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestNato < Test::Unit::TestCase
+class TestNato < Minitest::Test
   def setup
     @tester = FFaker::NatoAlphabet
   end

@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestSkill < Test::Unit::TestCase
+class TestSkill < Minitest::Test
 
   def test_tech_skill
     assert_match /[a-z]+/i, FFaker::Skill.tech_skill

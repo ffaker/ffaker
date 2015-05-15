@@ -1,9 +1,7 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
-class TestAddressAU < Test::Unit::TestCase
+class TestAddressAU < Minitest::Test
 
   def test_au_state_abbr_insertion
     arr = FFaker::AddressAU::STATE_ABBR.sort

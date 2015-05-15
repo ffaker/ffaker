@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestFakerInternet < Test::Unit::TestCase
+class TestFakerInternet < Minitest::Test
   def setup
     @tester = FFaker::Internet
   end

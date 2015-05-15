@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestCompanyIT < Test::Unit::TestCase
+class TestCompanyIT < Minitest::Test
 
   def test_name
     assert_match(/[ a-z]+/, FFaker::CompanyIT.name)

@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestMovie < Test::Unit::TestCase
+class TestMovie < Minitest::Test
   def setup
     @tester = FFaker::Movie
   end

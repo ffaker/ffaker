@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestAddressCA < Test::Unit::TestCase
+class TestAddressCA < Minitest::Test
   def test_province
     assert_match(/\A[ a-z]+\z/i, FFaker::AddressCA.province)
   end
@@ -12,7 +10,7 @@ class TestAddressCA < Test::Unit::TestCase
   end
 
   def test_city
-    assert_include(FFaker::AddressCA::CITY, FFaker::AddressCA.city)
+    assert_includes(FFaker::AddressCA::CITY, FFaker::AddressCA.city)
   end
 
   def test_postal_code

@@ -1,8 +1,6 @@
-# encoding: utf-8
+require 'test_helper'
 
-require 'helper'
-
-class TestAddressUSUS < Test::Unit::TestCase
+class TestAddressUSUS < Minitest::Test
   def test_us_state
     assert_match /[ a-z]/, FFaker::AddressUS.state
   end

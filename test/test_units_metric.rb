@@ -1,9 +1,7 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author: lurraca github.com/lurraca
-class TestUnitsMetric < Test::Unit::TestCase
+class TestUnitsMetric < Minitest::Test
   def setup
     @tester = FFaker::UnitMetric
   end

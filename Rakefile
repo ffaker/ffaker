@@ -1,32 +1,9 @@
 require 'rubygems'
 require 'rake'
 require 'date'
+require 'rake/testtask'
 
-require "test/unit/testsuite"
-
-module Test
-  module Unit
-    class TestSuite
-
-      def run(result, &progress_block)
-        yield(STARTED, name)
-        run_startup(result)
-        @tests.each do |test|
-          test.run(result, &progress_block)
-          break unless result.passed?
-        end
-        run_shutdown(result)
-        yield(FINISHED, name)
-      end
-    end
-  end
-end
-
-#############################################################################
-#
 # Helper functions
-#
-#############################################################################
 
 def name
   @name ||= Dir['*.gemspec'].first.split('.').first
@@ -57,26 +34,16 @@ def replace_header(head, header_name)
   head.sub!(/(\.#{header_name}\s*= ').*'/) { "#{$1}#{send(header_name)}'"}
 end
 
-#############################################################################
-#
 # Standard tasks
-#
-#############################################################################
 
-require 'rake/testtask'
 Rake::TestTask.new do |t|
-  t.libs << "test/" << "lib/"
-  t.test_files = FileList['test/test*.rb']
-  t.verbose = true
+  t.libs << 'test'
+  t.libs << 'lib'
 end
 
 task :default => :test
 
-#############################################################################
-#
 # Custom tasks (add your own tasks here)
-#
-#############################################################################
 
 begin
   require 'yard'
@@ -87,11 +54,7 @@ rescue LoadError
   end
 end
 
-#############################################################################
-#
 # Packaging tasks
-#
-#############################################################################
 
 task :release => :build do
   unless `git branch` =~ /^\* master$/

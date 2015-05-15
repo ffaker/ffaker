@@ -1,9 +1,7 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author: Luilver<luilver@gmail.com>
-class TestPhoneNumberCU < Test::Unit::TestCase
+class TestPhoneNumberCU < Minitest::Test
   def setup
     @tester = FFaker::PhoneNumberCU
   end

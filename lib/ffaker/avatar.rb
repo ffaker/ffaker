@@ -1,8 +1,6 @@
-# encoding: utf-8
-
 module FFaker
   module Avatar
-    
+
     extend ModuleUtils
   	extend self
 
@@ -15,6 +13,6 @@ module FFaker
       slug ||= FFaker::Lorem.words.join
       "http://robohash.org/#{slug}.#{format}?size=#{size}#{'&bgset=bg' + bgset.to_s unless bgset.nil?}"
     end
-    
+
   end
 end

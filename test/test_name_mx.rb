@@ -1,9 +1,7 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author: guapolo github.com/guapolo
-class TestFakerNameMX < Test::Unit::TestCase
+class TestFakerNameMX < Minitest::Test
 
   def setup
     @tester = FFaker::NameMX
