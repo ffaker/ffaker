@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestFakerName < Minitest::Test
   def setup

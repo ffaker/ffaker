@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestGeolocation < Minitest::Test
   def test_lat

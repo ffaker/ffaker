@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestGuid < Minitest::Test
   def test_guid

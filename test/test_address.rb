@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestAddress < Minitest::Test
   def test_building_number

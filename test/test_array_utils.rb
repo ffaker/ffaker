@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 require 'set'
 
 class TestArrayUtils < Minitest::Test

@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestConference < Minitest::Test
   def test_name

@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestVehicle < Minitest::Test
   def test_base_color

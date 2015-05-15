@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestAddressBR < Minitest::Test
   def test_zip_code

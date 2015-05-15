@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestFaker < Minitest::Test
   def test_numerify

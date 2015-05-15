@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestFakerJobCN < Minitest::Test
   def setup
