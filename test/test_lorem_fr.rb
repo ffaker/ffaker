@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestLoremFR < Test::Unit::TestCase
+class TestLoremFR < Minitest::Test
   def test_paragraph
     assert_match /\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.paragraph
   end

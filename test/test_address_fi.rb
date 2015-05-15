@@ -3,7 +3,7 @@
 require 'helper'
 
 # Test features related to Finnish addresses
-class TestAddressFI < Test::Unit::TestCase
+class TestAddressFI < Minitest::Test
   ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/
 

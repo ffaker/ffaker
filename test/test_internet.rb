@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestFakerInternet < Test::Unit::TestCase
+class TestFakerInternet < Minitest::Test
   def setup
     @tester = FFaker::Internet
   end

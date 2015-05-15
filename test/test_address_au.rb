@@ -3,7 +3,7 @@
 require 'helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
-class TestAddressAU < Test::Unit::TestCase
+class TestAddressAU < Minitest::Test
 
   def test_au_state_abbr_insertion
     arr = FFaker::AddressAU::STATE_ABBR.sort

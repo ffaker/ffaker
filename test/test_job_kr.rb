@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestFakerJobKR < Test::Unit::TestCase
+class TestFakerJobKR < Minitest::Test
   def setup
     @tester = FFaker::JobKR
   end

@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestNato < Test::Unit::TestCase
+class TestNato < Minitest::Test
   def setup
     @tester = FFaker::NatoAlphabet
   end

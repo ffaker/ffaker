@@ -3,7 +3,7 @@
 require 'helper'
 
 # Author: lurraca github.com/lurraca
-class TestUnitsEnglish < Test::Unit::TestCase
+class TestUnitsEnglish < Minitest::Test
 
   def setup
     @tester = FFaker::UnitEnglish

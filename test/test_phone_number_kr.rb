@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestPhoneNumberKR < Test::Unit::TestCase
+class TestPhoneNumberKR < Minitest::Test
   def setup
     @tester = FFaker::PhoneNumberKR
   end

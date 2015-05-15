@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestAddressSE < Test::Unit::TestCase
+class TestAddressSE < Minitest::Test
 
   ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/

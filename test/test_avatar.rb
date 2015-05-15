@@ -1,6 +1,6 @@
 require 'helper'
 
-class TestAvatar < Test::Unit::TestCase
+class TestAvatar < Minitest::Test
   def setup
     @tester = FFaker::Avatar
   end
@@ -21,7 +21,7 @@ class TestAvatar < Test::Unit::TestCase
   end
 
   def test_avatar_with_incorrect_size
-    assert_raise ArgumentError do
+    assert_raises ArgumentError do
       @tester.image(nil, '150x320z')
     end
   end
@@ -32,7 +32,7 @@ class TestAvatar < Test::Unit::TestCase
   end
 
   def test_avatar_with_incorrect_format
-    assert_raise ArgumentError do
+    assert_raises ArgumentError do
       @tester.image(nil, '300x300', 'wrong_format')
     end
   end
@@ -43,7 +43,7 @@ class TestAvatar < Test::Unit::TestCase
   end
 
   def test_avatar_with_incorrect_background
-    assert_raise ArgumentError do
+    assert_raises ArgumentError do
       @tester.image('faker', '300x300', 'png', 'not_a_number')
     end
   end

@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestLoremCN < Test::Unit::TestCase
+class TestLoremCN < Minitest::Test
   def test_paragraph
     assert FFaker::LoremCN.paragraph.length >= 3*4*2
   end

@@ -1,6 +1,6 @@
 require "helper"
 
-class TestCourseMathematiques < Test::Unit::TestCase
+class TestCourseMathematiques < Minitest::Test
   def setup
     @subject = FFaker::CoursesFR::Mathematiques
   end

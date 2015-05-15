@@ -3,7 +3,7 @@
 require 'helper'
 require 'set'
 
-class TestArrayUtils < Test::Unit::TestCase
+class TestArrayUtils < Minitest::Test
   def setup
     @array = FFaker::ArrayUtils.const_array("a".."c")
     @elems = Set.new("a".."c")

@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestCompanyIT < Test::Unit::TestCase
+class TestCompanyIT < Minitest::Test
 
   def test_name
     assert_match(/[ a-z]+/, FFaker::CompanyIT.name)

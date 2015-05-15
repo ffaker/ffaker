@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestAddressDA < Test::Unit::TestCase
+class TestAddressDA < Minitest::Test
   def test_zip_code
     assert_match /^\d{4}$/, FFaker::AddressDA.zip_code
   end

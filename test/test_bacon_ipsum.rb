@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestBaconIpsum < Test::Unit::TestCase
+class TestBaconIpsum < Minitest::Test
 
   def test_paragraph
     assert_match /1\+|[ a-z]+/i, FFaker::BaconIpsum.paragraph

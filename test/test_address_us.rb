@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestAddressUSUS < Test::Unit::TestCase
+class TestAddressUSUS < Minitest::Test
   def test_us_state
     assert_match /[ a-z]/, FFaker::AddressUS.state
   end

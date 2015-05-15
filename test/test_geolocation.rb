@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestGeolocation < Test::Unit::TestCase
+class TestGeolocation < Minitest::Test
   def test_lat
     assert_match /[0-9]+/, FFaker::Geolocation.lat.to_s
   end

@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestFakerTime < Test::Unit::TestCase
+class TestFakerTime < Minitest::Test
   def setup
     @tester = FFaker::Time
   end

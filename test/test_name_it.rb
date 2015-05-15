@@ -3,7 +3,7 @@
 require 'helper'
 
 # Author: PapePathe<pathe.sene@gmail.com> github.com/PapePathe
-class TestFakerNameIT < Test::Unit::TestCase
+class TestFakerNameIT < Minitest::Test
 
   def setup
     @tester = FFaker::NameIT

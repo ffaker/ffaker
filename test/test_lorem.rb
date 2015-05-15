@@ -2,16 +2,13 @@
 
 require 'helper'
 
-class TestLorem < Test::Unit::TestCase
+class TestLorem < Minitest::Test
   def test_paragraph
     assert_match /[ a-z]+/, FFaker::Lorem.paragraph
   end
 
   def test_sentence
     assert_match /[ a-z]+/, FFaker::Lorem.sentence
-    assert_nothing_thrown do
-      100.times { FFaker::Lorem.sentence 0 }
-    end
   end
 
   def test_phrase

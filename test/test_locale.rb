@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestLocale < Test::Unit::TestCase
+class TestLocale < Minitest::Test
   def test_code
     assert_match /./, FFaker::Locale.code
   end
