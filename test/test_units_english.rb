@@ -4,59 +4,52 @@ require 'helper'
 
 # Author: lurraca github.com/lurraca
 class TestUnitsEnglish < Test::Unit::TestCase
-
   def setup
     @tester = FFaker::UnitEnglish
+    @length_units = @tester::LENGTH_UNITS.map { |u| OpenStruct.new u }
+    @mass_units = @tester::MASS_UNITS.map { |u| OpenStruct.new u }
+    @liquid_units = @tester::LIQUID_UNITS.map { |u| OpenStruct.new u }
+    @volume_units = @tester::VOLUME_UNITS.map { |u| OpenStruct.new u }
+    @area_units = @tester::AREA_UNITS.map { |u| OpenStruct.new u }
   end
 
   def test_length_name
-    length_name = @tester.length_name
-    assert FFaker::UnitEnglish::LENGTH_UNITS.any?{ |hash| hash[:name] == length_name }
+    assert_include @length_units.map(&:name), @tester.length_name
   end
 
   def test_length_abbrev
-    length_abbr = @tester.length_abbr
-    assert FFaker::UnitEnglish::LENGTH_UNITS.any?{ |hash| hash[:abbreviation] == length_abbr }
+    assert_include @length_units.map(&:abbreviation), @tester.length_abbr
   end
 
   def test_mass_name
-    mass_name = @tester.mass_name
-    assert FFaker::UnitEnglish::MASS_UNITS.any?{ |hash| hash[:name] == mass_name }
+    assert_include @mass_units.map(&:name), @tester.mass_name
   end
 
   def test_mass_abbr
-    mass_abbr = @tester.mass_abbr
-    assert FFaker::UnitEnglish::MASS_UNITS.any?{ |hash| hash[:abbreviation] == mass_abbr }
+    assert_include @mass_units.map(&:abbreviation), @tester.mass_abbr
   end
 
   def test_liquid_name
-    liquid_name = @tester.liquid_name
-    assert FFaker::UnitEnglish::LIQUID_UNITS.any?{ |hash| hash[:name] == liquid_name }
+    assert_include @liquid_units.map(&:name), @tester.liquid_name
   end
 
   def test_liquid_abbr
-    liquid_abbr = @tester.liquid_abbr
-    assert FFaker::UnitEnglish::LIQUID_UNITS.any?{ |hash| hash[:abbreviation] == liquid_abbr }
+    assert_include @liquid_units.map(&:abbreviation), @tester.liquid_abbr
   end
 
   def test_volume_name
-    volume_name = @tester.volume_name
-    assert FFaker::UnitEnglish::VOLUME_UNITS.any?{ |hash| hash[:name] == volume_name }
+    assert_include @volume_units.map(&:name), @tester.volume_name
   end
 
   def test_volume_abbr
-    volume_abbr = @tester.volume_abbr
-    assert FFaker::UnitEnglish::VOLUME_UNITS.any?{ |hash| hash[:abbreviation] == volume_abbr }
+    assert_include @volume_units.map(&:abbreviation), @tester.volume_abbr
   end
 
   def test_area_name
-    area_name = @tester.area_name
-    assert FFaker::UnitEnglish::AREA_UNITS.any?{ |hash| hash[:name] == area_name }
+    assert_include @area_units.map(&:name), @tester.area_name
   end
 
   def test_area_abbr
-    area_abbr = @tester.area_abbr
-    assert FFaker::UnitEnglish::AREA_UNITS.any?{ |hash| hash[:abbreviation] == area_abbr }
+    assert_include @area_units.map(&:abbreviation), @tester.area_abbr
   end
-
 end
