@@ -8,14 +8,14 @@ class TestFakerNameDE < Test::Unit::TestCase
   end
 
   def test_name
-    assert @tester.name.match(/(\w+\.? ?){2,3}/)
+    assert_match(/\A([\w']+\.? ?){2,3}\z/, @tester.name)
   end
 
   def test_prefix
-    assert @tester.prefix.match(/[A-Z][a-z]+\.?/)
+    assert_match(/\A[A-Z][a-z]+\.?\z/, @tester.prefix)
   end
 
   def test_suffix
-    assert @tester.suffix.match(/[A-Z][a-z]*\.?/)
+    assert_include(@tester::SUFFIXES, @tester.suffix)
   end
 end

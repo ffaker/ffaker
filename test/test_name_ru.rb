@@ -2,15 +2,17 @@
 
 require 'helper'
 
-class TestFakerNameRu < Test::Unit::TestCase
+class TestFakerNameRU < Test::Unit::TestCase
+  RU_REGEX = /[А-Я][а-я]+/
+
   def setup
     @tester = FFaker::NameRU
   end
 
   def test_name
     @words = @tester.name.split
-    assert [2,3].include?(@words.size)
-    assert @words.each { |word| word.match /[А-Я][а-я]+/ }
+    assert_include [2, 3], @words.size
+    assert @words.all? { |word| word.match RU_REGEX }
   end
 
   def test_name_sex
@@ -19,27 +21,27 @@ class TestFakerNameRu < Test::Unit::TestCase
   end
 
   def test_last_name
-    assert @tester.last_name.match(/[А-Я][а-я]+/)
+    assert_match RU_REGEX, @tester.last_name
   end
 
   def test_male_last_name
-    assert FFaker::NameRU::LAST_NAMES[:male].include?(@tester.last_name(:male))
+    assert_include @tester::LAST_NAMES[:male], @tester.last_name(:male)
   end
 
   def test_first_name
-    assert @tester.first_name.match(/[А-Я][а-я]+/)
+    assert_match RU_REGEX, @tester.first_name
   end
 
   def test_male_first_name
-    assert FFaker::NameRU::FIRST_NAMES[:male].include?(@tester.first_name(:male))
+    assert_include @tester::FIRST_NAMES[:male], @tester.first_name(:male)
   end
 
   def test_patronymic
-    assert @tester.patronymic.match(/[А-Я][а-я]+/)
+    assert_match RU_REGEX, @tester.patronymic
   end
 
   def test_male_patronymic
-    assert FFaker::NameRU::PATRONYMICS[:male].include?(@tester.patronymic(:male))
+    assert_include @tester::PATRONYMICS[:male], @tester.patronymic(:male)
   end
 
   def test_with_same_sex
@@ -62,11 +64,13 @@ class TestFakerNameRu < Test::Unit::TestCase
     assert same_sex?(names, :male)
   end
 
+  private
+
   # checks if every name is of the same sex
   def same_sex?(words, sex = :any)
     (sex == :any ? [:male, :female] : [sex]).any? do |sex|
       words.all? do |word|
-        [FFaker::NameRU::LAST_NAMES, FFaker::NameRU::FIRST_NAMES, FFaker::NameRU::PATRONYMICS].any? do |names|
+        [@tester::LAST_NAMES, @tester::FIRST_NAMES, @tester::PATRONYMICS].any? do |names|
           names[sex].include?(word)
         end
       end

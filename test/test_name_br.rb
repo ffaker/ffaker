@@ -8,25 +8,24 @@ class TestFakerNameBR < Test::Unit::TestCase
   end
 
   def test_name
-    assert_match /[[:alpha:]]+ [[:alpha:]]+/, @tester.name
+    assert_match(/\A[[:alpha:]]+ [[:alpha:]]+\z/, @tester.name)
   end
 
   def test_name_with_prefix
-    prefixes = @tester::PREFIXES
-    parts = @tester.name_with_prefix.split(/\s+/)
-    assert prefixes.include?(parts.first)
-    assert(parts[1].length > 0)
+    prefix, name = @tester.name_with_prefix.split(/\s+/)
+    assert_include(@tester::PREFIXES, prefix)
+    assert(name.length > 0)
   end
 
   def test_first_name
-    assert @tester::FIRST_NAMES.include? @tester.first_name
+    assert_include(@tester::FIRST_NAMES, @tester.first_name)
   end
 
   def test_last_name
-    assert @tester::LAST_NAMES.include? @tester.last_name
+    assert_include(@tester::LAST_NAMES, @tester.last_name)
   end
 
   def test_prefix
-    assert @tester::PREFIXES.include? @tester.prefix
+    assert_include(@tester::PREFIXES, @tester.prefix)
   end
 end

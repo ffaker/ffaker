@@ -8,6 +8,6 @@ class TestFakerNameJA < Test::Unit::TestCase
   end
 
   def test_name
-    assert FFaker::NameJA.name.length >= 2
+    assert @tester.name.length >= 2
   end
 end
