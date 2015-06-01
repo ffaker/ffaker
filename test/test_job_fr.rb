@@ -8,15 +8,12 @@ class TestFakerJobFr < Test::Unit::TestCase
   end
 
   def test_title
-    assert @tester.title.match(/(\w+\.? ?){2,3}/)
+    assert_match(/\A([a-zàâçéèêëîïôûùüÿñæœ]+\.? ?){2,}\z/, @tester.title)
   end
-
 
   def test_prefix
-    assert @tester::JOB_PREFIXES.is_a?(Array)
-    assert @tester::JOB_ADJECTIVES.is_a?(Array)
-    assert @tester::JOB_NOUNS.is_a?(Array)
+    assert_kind_of Array, @tester::JOB_PREFIXES
+    assert_kind_of Array, @tester::JOB_ADJECTIVES
+    assert_kind_of Array, @tester::JOB_NOUNS
   end
 end
-
-
