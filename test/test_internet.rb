@@ -81,6 +81,10 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.password(1, 3).length < 4
   end
 
+  def test_password_fixed_length
+    assert @tester.password(20, 20).length == 20
+  end
+
   def test_password_strange_argument
     assert @tester.password(10, 2).length > 9
     assert @tester.password(3, 1).length > 2

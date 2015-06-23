@@ -84,7 +84,7 @@ module FFaker
       while temp.length < min_length
         temp += Lorem.word
       end
-      if max_length > min_length && temp.length > max_length
+      if max_length >= min_length && temp.length > max_length
         temp = temp.slice(0, max_length)
       end
 
