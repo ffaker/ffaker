@@ -15,7 +15,7 @@ module FFaker
 
  
     def mobile_phone_prefix
-      %(130 131 132 133 134 135 136 137 138 139 150 151 152 153 154 155 156 157 158 159 170 180 181 182 183 184 185 186 187 188 189).sample
+      %w(130 131 132 133 134 135 136 137 138 139 150 151 152 153 154 155 156 157 158 159 170 180 181 182 183 184 185 186 187 188 189)
     end
 
     # Return a prefix in HomeWorkOperatorsPrefix
@@ -44,7 +44,7 @@ module FFaker
     # 138xxxxxxxx
     #
     def mobile_phone_number
-      FFaker.numerify("#{mobile_phone_prefix}########")
+      FFaker.numerify("#{mobile_phone_prefix.sample}########")
     end
 
     # Generates general number
