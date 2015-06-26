@@ -76,6 +76,7 @@
  * [FFaker::NatoAlphabet](#ffakernatoalphabet)
  * [FFaker::PhoneNumber](#ffakerphonenumber)
  * [FFaker::PhoneNumberAU](#ffakerphonenumberau)
+ * [FFaker::PhoneNumberCN](#ffakerphonenumbercn)
  * [FFaker::PhoneNumberCU](#ffakerphonenumbercu)
  * [FFaker::PhoneNumberDA](#ffakerphonenumberda)
  * [FFaker::PhoneNumberDE](#ffakerphonenumberde)
@@ -1067,6 +1068,21 @@
 | `mobile_phone_prefix` | 04, 04, 04 |
 | `phone_number` | (03) 9071 0330, (08) 8503 4145, 0448 985 740 |
 | `phone_prefix` | 03, 02, 02 |
+
+## FFaker::PhoneNumberCN
+
+| Method | Example |
+| ------ | ------- |
+| `country_code` | +86, +86, +86 |
+| `home_work_phone_number` | (021) 7139 5133, (021) 2868 2212, (010) 4945 6835 |
+| `home_work_phone_prefix` | 021, 010, 054 |
+| `international_home_work_phone_number` | +86 010 8233 2122, +86 021 1886 0553, +86 010 6535 5696 |
+| `international_mobile_phone_number` | +86  17090002000, +86 13569773422, +86 17090002000|
+| `international_phone_number` | +86 021 8163 0545, +86 0571 0538 9417, +86 0574 7435 5209 |
+| `mobile_phone_number` | 17090002000, 18657432122, 13569773422 |
+| `mobile_phone_prefix` | 130,152,170,186 |
+| `phone_number` | (021) 9071 0330, (021) 8503 4145, 0448 985 740 |
+| `phone_prefix` | 021, 010, 0574 |
 
 ## FFaker::PhoneNumberCU
 
