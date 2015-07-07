@@ -1,4 +1,4 @@
-## 2.1.0 - unreleased
+## 2.1.0
 
   - [#191] - add REFERENCE.md ([@rstacruz])
   - [#193] - fix FFaker::Locale.language throwing errors ([@rstacruz], [#196])
@@ -6,6 +6,11 @@
   - [#181] - fix FFaker::PhoneNumber.phone_number throwing invalid US phone numbers ([@rstacruz], [#195])
   - [#181] - implement FFaker::PhoneNumber.area_code ([@rstacruz], [#195])
   - [#203] - deprecate FFaker::ArrayUtils.random_pick in favor for Array#sample ([@marocchino])
+  - [#211] - add Korean identification support
+  - [#212] - add IMEI support
+  - [#213] - Fix max length support FFaker::Internet.password ([@anderscarling])
+  - many internal library and test suite refactorings
+  
 
 [#181]: https://github.com/EmmanuelOga/ffaker/issues/181
 [#191]: https://github.com/EmmanuelOga/ffaker/issues/191
@@ -15,8 +20,13 @@
 [#199]: https://github.com/EmmanuelOga/ffaker/issues/199
 [#200]: https://github.com/EmmanuelOga/ffaker/issues/200
 [#203]: https://github.com/EmmanuelOga/ffaker/issues/203
+[#211]: https://github.com/ffaker/ffaker/pull/211
+[#212]: https://github.com/ffaker/ffaker/pull/212
+[#213]: https://github.com/ffaker/ffaker/pull/213
 [@marocchino]: https://github.com/marocchino
 [@rstacruz]: https://github.com/rstacruz
+[@anderscarling]: https://github.com/anderscarling
+
 
 ## 2.0.0
   - switched faker to ffaker namespace, you should now be able to use
