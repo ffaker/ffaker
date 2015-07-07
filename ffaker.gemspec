@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '2.0.0'
-  s.date              = '2015-03-16'
+  s.version           = '2.1.0'
+  s.date              = '2015-07-07'
   s.rubyforge_project = 'ffaker'
   s.required_ruby_version = '>= 1.9'
 
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.authors  = ["Emmanuel Oga"]
   s.email    = 'EmmanuelOga@gmail.com'
-  s.homepage = 'http://github.com/emmanueloga/ffaker'
+  s.homepage = 'http://github.com/ffaker/ffaker'
 
   s.require_paths = %w[lib]
 
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     Gemfile
     LICENSE
     README.md
+    REFERENCE.md
     Rakefile
     ffaker.gemspec
     lib/ffaker.rb
@@ -114,6 +115,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/job/job_adj
     lib/ffaker/data/job/job_noun
     lib/ffaker/data/job/job_prefix
+    lib/ffaker/data/job_cn/job_nouns
     lib/ffaker/data/job_fr/job_nouns
     lib/ffaker/data/job_fr/job_prefixes
     lib/ffaker/data/job_ja/job_nouns
@@ -185,6 +187,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/skill/specialty_end
     lib/ffaker/data/skill/specialty_start
     lib/ffaker/data/skill/tech_skills
+    lib/ffaker/data/sport/names
     lib/ffaker/data/vehicle/makes_list
     lib/ffaker/data/vehicle/models_list
     lib/ffaker/data/vehicle/trims_list
@@ -204,10 +207,12 @@ Gem::Specification.new do |s|
     lib/ffaker/identification_es.rb
     lib/ffaker/identification_es_cl.rb
     lib/ffaker/identification_es_co.rb
+    lib/ffaker/identification_kr.rb
     lib/ffaker/identification_mx.rb
     lib/ffaker/internet.rb
     lib/ffaker/internet_se.rb
     lib/ffaker/job.rb
+    lib/ffaker/job_cn.rb
     lib/ffaker/job_fr.rb
     lib/ffaker/job_ja.rb
     lib/ffaker/job_kr.rb
@@ -254,6 +259,7 @@ Gem::Specification.new do |s|
     lib/ffaker/phone_number_sn.rb
     lib/ffaker/product.rb
     lib/ffaker/skill.rb
+    lib/ffaker/sport.rb
     lib/ffaker/ssn.rb
     lib/ffaker/ssn_mx.rb
     lib/ffaker/ssn_se.rb
@@ -269,6 +275,7 @@ Gem::Specification.new do |s|
     scripts/benchmark.rb
     scripts/profile.sh
     scripts/profiling.rb
+    scripts/reference.rb
     test/helper.rb
     test/test_address.rb
     test/test_address_au.rb
@@ -311,12 +318,15 @@ Gem::Specification.new do |s|
     test/test_identification_es.rb
     test/test_identification_es_cl.rb
     test/test_identification_es_mx.rb
+    test/test_identification_kr.rb
     test/test_internet.rb
     test/test_internet_se.rb
     test/test_job.rb
+    test/test_job_cn.rb
     test/test_job_fr.rb
     test/test_job_ja.rb
     test/test_job_kr.rb
+    test/test_locale.rb
     test/test_lorem.rb
     test/test_lorem_ar.rb
     test/test_lorem_cn.rb
@@ -354,6 +364,7 @@ Gem::Specification.new do |s|
     test/test_phone_number_sg.rb
     test/test_phone_number_sn.rb
     test/test_skill.rb
+    test/test_sports.rb
     test/test_ssn.rb
     test/test_ssn_mx.rb
     test/test_ssn_se.rb
