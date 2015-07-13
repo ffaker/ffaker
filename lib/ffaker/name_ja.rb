@@ -5,10 +5,6 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    def name
-      "#{first_name}#{last_name}"
-    end
-
     def first_name
       FIRST_NAMES.sample
     end
@@ -20,5 +16,7 @@ module FFaker
     def last_first
       "#{last_name}#{first_name}"
     end
+
+    alias_method :name, :last_first
   end
 end
