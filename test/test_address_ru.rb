@@ -17,7 +17,7 @@ class TestAddressRU < Test::Unit::TestCase
   end
 
   def test_zip_code
-    assert_match /^\d{6}$/, @tester.zip_code
+    assert_match /\A\d{6}\z/, @tester.zip_code
   end
 
   def test_street_name
