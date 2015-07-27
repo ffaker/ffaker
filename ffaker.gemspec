@@ -63,6 +63,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address/country_code
     lib/ffaker/data/address/neighborhood
     lib/ffaker/data/address/street_suffix
+    lib/ffaker/data/address/time_zone
     lib/ffaker/data/address_br/city
     lib/ffaker/data/address_br/state
     lib/ffaker/data/address_br/state_abbr
