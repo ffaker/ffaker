@@ -83,4 +83,8 @@ class TestAddress < Test::Unit::TestCase
     assert_match 'UA', FFaker::Address::country_code('Ukraine')
     assert_match /[A-Z]{2}/, FFaker::Address::country_code('Foo')
   end
+
+  def test_time_zone
+    assert_match /[ a-z]+/, FFaker::Address::time_zone
+  end
 end
