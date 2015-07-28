@@ -85,6 +85,7 @@ class TestAddress < Test::Unit::TestCase
   end
 
   def test_time_zone
-    assert_match /[ a-z]+/, FFaker::Address::time_zone
+    assert_include FFaker::Address::TIME_ZONE, FFaker::Address::time_zone
+    assert_match /^[a-z_\/]+$/i, FFaker::Address::time_zone
   end
 end
