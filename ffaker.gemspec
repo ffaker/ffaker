@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
 
   s.name              = 'ffaker'
   s.version           = '2.1.0'
-  s.date              = '2015-07-07'
+  s.date              = '2015-07-27'
   s.rubyforge_project = 'ffaker'
   s.required_ruby_version = '>= 1.9'
 
@@ -43,6 +43,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_fr.rb
     lib/ffaker/address_mx.rb
     lib/ffaker/address_nl.rb
+    lib/ffaker/address_ru.rb
     lib/ffaker/address_se.rb
     lib/ffaker/address_sn.rb
     lib/ffaker/address_uk.rb
@@ -62,6 +63,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address/country_code
     lib/ffaker/data/address/neighborhood
     lib/ffaker/data/address/street_suffix
+    lib/ffaker/data/address/time_zone
     lib/ffaker/data/address_br/city
     lib/ffaker/data/address_br/state
     lib/ffaker/data/address_br/state_abbr
@@ -80,6 +82,9 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address_mx/state_abbr
     lib/ffaker/data/address_nl/city
     lib/ffaker/data/address_nl/province
+    lib/ffaker/data/address_ru/city
+    lib/ffaker/data/address_ru/province
+    lib/ffaker/data/address_ru/street
     lib/ffaker/data/address_se/city
     lib/ffaker/data/address_se/countries
     lib/ffaker/data/address_se/street
@@ -286,6 +291,7 @@ Gem::Specification.new do |s|
     test/test_address_fi.rb
     test/test_address_mx.rb
     test/test_address_nl.rb
+    test/test_address_ru.rb
     test/test_address_se.rb
     test/test_address_sn.rb
     test/test_address_uk.rb
