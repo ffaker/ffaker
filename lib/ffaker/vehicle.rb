@@ -11,6 +11,7 @@ module FFaker
       beautiful bright calm dangerous dark dull fast magnetic magnificent majestic melodic metallic
       mundane mute mysterious new pleasant pretty resonant royal slate soft tranquil vibrant weak
     ))
+    VIN_LETTERS = (LETTERS - %w(i o q)).map { |letter| letter.upcase }
 
     def base_color
       FFaker::Color.name
@@ -39,7 +40,7 @@ module FFaker
     end
 
     def vin
-      FFaker.bothify('1#???#####?######').upcase
+      FFaker.bothify('1#???#####?######').upcase.gsub(/[IOQ]/, VIN_LETTERS.sample)
     end
 
     def year
