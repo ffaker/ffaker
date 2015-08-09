@@ -33,6 +33,12 @@ class TestAddressUA < Test::Unit::TestCase
     assert_match /\Aвул\.\s[а-яА-ЯіїєґІЇЄҐ’\-\s]+,\s\d{1,3}\z/, @tester.street_address
   end
 
+  def test_street_address_with_secondary
+    assert_match \
+      /\Aвул\.\s[а-яА-ЯіїєґІЇЄҐ’\-\s]+,\s\d{1,3},\sкв\.\s\d{1,3}\z/,
+      @tester.street_address(true)
+  end
+
   def test_building_number
     assert_match /\A\d{1,3}\z/, @tester.building_number
   end
