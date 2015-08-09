@@ -140,6 +140,9 @@ Gem::Specification.new do |s|
     lib/ffaker/data/lorem_cn/words
     lib/ffaker/data/lorem_fr/words
     lib/ffaker/data/lorem_kr/words
+    lib/ffaker/data/lorem_ua/capital_chars
+    lib/ffaker/data/lorem_ua/chars
+    lib/ffaker/data/lorem_ua/words
     lib/ffaker/data/mathematiques/lessons
     lib/ffaker/data/movie/adj_and_adv
     lib/ffaker/data/movie/nouns
@@ -240,6 +243,7 @@ Gem::Specification.new do |s|
     lib/ffaker/lorem_cn.rb
     lib/ffaker/lorem_fr.rb
     lib/ffaker/lorem_kr.rb
+    lib/ffaker/lorem_ua.rb
     lib/ffaker/movie.rb
     lib/ffaker/name.rb
     lib/ffaker/name_br.rb
@@ -354,6 +358,7 @@ Gem::Specification.new do |s|
     test/test_lorem_cn.rb
     test/test_lorem_fr.rb
     test/test_lorem_kr.rb
+    test/test_lorem_ua.rb
     test/test_module_utils.rb
     test/test_movie.rb
     test/test_name.rb
