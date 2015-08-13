@@ -8,6 +8,6 @@ class TestAddressCHCH < Test::Unit::TestCase
   end
 
   def test_postal_code
-    assert_match /[0-9]/, FFaker::AddressCH.postal_code
+    assert_match /\A\d{4}\z/, FFaker::AddressCH.postal_code
   end
 end
