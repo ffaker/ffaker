@@ -9,10 +9,9 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    POSTAL_CODE_FORMAT = ['####']
 
     def postal_code
-      FFaker.numerify POSTAL_CODE_FORMAT.sample
+      FFaker.numerify '####'
     end
 
     def canton_abbr
