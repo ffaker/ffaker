@@ -29,12 +29,11 @@ module FFaker
 
     def paragraph(number_of_phrases = 10)
       p = "#{ CHEESY_PHRASES.sample.capitalize }"
-      number_of_phrases.times do |s|
+      (number_of_phrases-1).times do |s|
         s = " #{CHEESY_PHRASES.sample}"
         p << s
       end
       p << "."
-      puts p
     end
   end
 end
