@@ -24,13 +24,13 @@ module FFaker
     end
 
     def sentence
-      "#{ CHEESY_SENTENCES.sample.capitalize } #{ CHEESY_SENTENCES.sample } #{ CHEESY_SENTENCES.sample }."
+      "#{ CHEESY_PHRASES.sample.capitalize } #{ CHEESY_PHRASES.sample } #{ CHEESY_PHRASES.sample }."
     end
 
-    def paragraph(number_of_soundbites = 10)
-      p = "#{CHEESY_SENTENCES.sample.capitalize }"
-      number_of_soundbites.times do |s|
-        s = " #{CHEESY_SENTENCES.sample}"
+    def paragraph(number_of_phrases = 10)
+      p = "#{ CHEESY_PHRASES.sample.capitalize }"
+      number_of_phrases.times do |s|
+        s = " #{CHEESY_PHRASES.sample}"
         p << s
       end
       p << "."
