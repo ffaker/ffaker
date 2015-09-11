@@ -9,11 +9,11 @@ class TestAddressRU < Test::Unit::TestCase
   end
 
   def test_city
-    assert_match /\A[a-zа-я\-\s]+\z/i, @tester.city
+    assert_match /\A[a-zа-яё\-\s]+\z/i, @tester.city
   end
 
   def test_province
-    assert_match /\A[a-zа-я\-\s]+\z/i, @tester.province
+    assert_match /\A[a-zа-яё\-\s]+\z/i, @tester.province
   end
 
   def test_zip_code
@@ -21,10 +21,10 @@ class TestAddressRU < Test::Unit::TestCase
   end
 
   def test_street_name
-    assert_match /\A[a-zа-я.\-\s]+\z/i, @tester.street_name
+    assert_match /\A[a-zа-яё.\-\s]+\z/i, @tester.street_name
   end
 
   def test_street_address
-    assert_match /\A[a-zа-я.,\-\s\d]+\z/i, @tester.street_address
+    assert_match /\A[a-zа-яё.,\-\s\d]+\z/i, @tester.street_address
   end
 end
