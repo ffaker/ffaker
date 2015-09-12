@@ -32,7 +32,7 @@ class TestVehicle < Test::Unit::TestCase
   end
 
   def test_vin
-    assert_match /\A[A-Z0-9]{17}\z/, FFaker::Vehicle.vin
+    assert_match /\A[A-Z0-9&&[^IOQ]]{17}\z/, FFaker::Vehicle.vin
   end
 
   def test_drivetrain
