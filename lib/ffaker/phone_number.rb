@@ -30,7 +30,12 @@ module FFaker
       # The North American Numbering Plan (NANP) does not permit the digits 0
       # and 1 as the leading digit of an area code.
       # https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes
-      rand(201..999)
+      rand_area_code = rand(201..999)
+      invalid_area_codes = [211,311,411,511,611,711,811,911]
+      while(invalid_area_codes.include?(rand_area_code))
+        rand_area_code = rand(201..999)
+      end
+      return rand_area_code
     end
 
     def short_phone_number
