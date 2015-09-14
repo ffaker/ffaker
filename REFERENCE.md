@@ -1386,6 +1386,12 @@
 | `trim` | DX, LS, XLT |
 | `vin` | 15HRU90220H366320, 14QVX51258F724399, 14SAH99820I488800 |
 | `year` | 1935, 2000, 1999 |
+| `transmission` | Automatic, Manual, Continuously Variable |
+| `transmission_abbr` | AT, MT, CVT |
+| `engine_cylinders` | 2, 5, 6, 8 |
+| `engine_displacement` | 1.0, 4.1, 8.2 |
+| `fuel_type` | Gas, Diesel, Electric |
+| `interior_upholstery` | Leather, Vinyl, PVC |
 
 ## FFaker::Venue
 
