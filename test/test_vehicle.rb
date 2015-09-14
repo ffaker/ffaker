@@ -44,7 +44,7 @@ class TestVehicle < Test::Unit::TestCase
   end
 
   def test_transmission_abbr
-    assert_match /[A-Z]{2,3}/, FFaker::Vehicle.transmission_abbr
+    assert_match /\A[A-Z]{2,3}\z/, FFaker::Vehicle.transmission_abbr
   end
 
   def test_engine_cylinders
@@ -52,7 +52,7 @@ class TestVehicle < Test::Unit::TestCase
   end
 
   def test_engine_displacement
-    assert_match /[0-9]\.[0-9]/i, FFaker::Vehicle.engine_displacement
+    assert_match /\A\d\.\d\z/, FFaker::Vehicle.engine_displacement
   end
 
   def test_fuel_type
