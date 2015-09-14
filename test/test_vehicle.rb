@@ -52,7 +52,7 @@ class TestVehicle < Test::Unit::TestCase
   end
 
   def test_engine_displacement
-    assert_match /\A\d\.\d\z/, FFaker::Vehicle.engine_displacement
+    assert_match /\A\d{1,2}\.\d\z/, FFaker::Vehicle.engine_displacement
   end
 
   def test_fuel_type
