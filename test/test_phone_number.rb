@@ -8,7 +8,8 @@ class TestPhoneNumer < Test::Unit::TestCase
   end
 
   def test_area_code
-    assert_not_match /\A\d11\z/, FFaker::PhoneNumber.area_code
+    assert_not_match /\A\d11\z/, FFaker::PhoneNumber.area_code.to_s
+    assert_match /\A\d{3}\z/, FFaker::PhoneNumber.area_code.to_s
   end
 
   def test_short_phone_number
