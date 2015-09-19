@@ -4,6 +4,6 @@ require 'helper'
 
 class TestAddressCHDE < Test::Unit::TestCase
   def test_ch_de_canton
-    assert_match /[A-Z]/, FFaker::AddressCHDE.canton
+    assert_match /\A[-. a-zæøåü]+\z/i, FFaker::AddressCHDE.canton
   end
 end
