@@ -4,27 +4,27 @@ require 'helper'
 
 class TestAddressININ < Test::Unit::TestCase
   def test_in_state
-    assert_match /[ a-z]/, FFaker::AddressIN.state
+    assert_match /\A[A-Z][ A-Za-z]*\z/, FFaker::AddressIN.state
   end
 
   def test_in_state_abbr
-    assert_match /[A-Z]/, FFaker::AddressIN.state_abbr
+    assert_match /\A[A-Z]{2}\z/, FFaker::AddressIN.state_abbr
   end
 
   def test_in_union_territory
-    assert_match /[ a-z]/, FFaker::AddressIN.union_territory
+    assert_match /\A[A-Z][ A-Za-z]*\z/, FFaker::AddressIN.union_territory
   end
 
   def test_in_union_territory_abbr
-    assert_match /[A-Z]/, FFaker::AddressIN.union_territory_abbr
+    assert_match /\A[A-Z]{2}\z/, FFaker::AddressIN.union_territory_abbr
   end
 
   def test_in_state_and_union_territory
-    assert_match /[ a-z]/, FFaker::AddressIN.state_and_union_territory
+    assert_match /\A[A-Z][ A-Za-z]*\z/, FFaker::AddressIN.state_and_union_territory
   end
 
   def test_in_state_and_union_territory_abbr
-    assert_match /[A-Z]/, FFaker::AddressIN.state_and_union_territory_abbr
+    assert_match /\A[A-Z]{2}\z/, FFaker::AddressIN.state_and_union_territory_abbr
   end
 
   def test_pincode
