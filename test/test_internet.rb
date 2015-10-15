@@ -65,6 +65,14 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.slug.match(/^[a-z]+(_|\.|\-)[a-z]+$/)
   end
 
+  def test_slug_with_input_words
+    assert @tester.slug('Input Words&&Symbols').match(/^[a-z]+(_|\.|\-)[a-z]+(_|\.|\-)[a-z]+$/)
+  end
+
+  def test_slug_with_specified_glue
+    assert @tester.slug(nil, '-').match(/^[a-z]+(\-)[a-z]+$/)
+  end
+
   def test_password
     assert @tester.password.match(/[a-z]+/)
   end

@@ -74,8 +74,7 @@ module FFaker
 
     def slug(words = nil, glue = nil)
       glue ||= SLUG_DELIMITERS.sample
-
-      (words || FFaker::Lorem::words(2).join(glue)).downcase
+      (words || FFaker::Lorem::words(2).join(' ')).downcase.gsub(/[^a-z0-9]+/, glue)
     end
 
     def password(min_length = 8, max_length = 16)
