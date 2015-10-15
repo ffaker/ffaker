@@ -11,49 +11,29 @@ module FFaker
 
     PREFIXES = %w(Hr. Fr. Dr. Prof.)
 
-    def name gender = :any
-      case gender
-      when :any then any_name
-      when :male then male_name
-      when :female then female_name
-      else
-        raise ArgumentError, "Invalid gender, must be one of :any, :male, :female"
-      end
+    def name(gender = :any)
+      generate_name(first_name(gender))
     end
 
     def any_name
-      case rand(8)
-      when 0    then "#{prefix} #{first_name} #{last_name}"
-      when 1..2 then "#{first_name} #{last_name} #{last_name}"
-      else           "#{first_name} #{last_name}"
-      end
+      name(:any)
     end
 
     def male_name
-      fname = first_name :male
-      case rand(8)
-      when 0    then "#{prefix} #{fname} #{last_name}"
-      when 1..2 then "#{fname} #{last_name} #{last_name}"
-      else           "#{fname} #{last_name}"
-      end
+      name(:male)
     end
 
     def female_name
-      fname = first_name :female
-      case rand(8)
-      when 0    then "#{prefix} #{fname} #{last_name}"
-      when 1..2 then "#{fname} #{last_name} #{last_name}"
-      else           "#{fname} #{last_name}"
-      end
+      name(:female)
     end
 
-    def first_name gender = :any
+    def first_name(gender = :any)
       case gender
-      when :any then (rand(2) == 0) ? name(:male) : name(:female)
+      when :any then (rand(2) == 0) ? first_name(:male) : first_name(:female)
       when :male then MALE_FIRST_NAMES.sample
       when :female then FEMALE_FIRST_NAMES.sample
       else
-        raise ArgumentError, "Invalid gender, must be one of :any, :male, :female"
+        fail ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
 
@@ -65,5 +45,14 @@ module FFaker
       PREFIXES.sample
     end
 
+    private
+
+    def generate_name(first_name)
+      case rand(8)
+      when 0    then "#{prefix} #{first_name} #{last_name}"
+      when 1..2 then "#{first_name} #{last_name} #{last_name}"
+      else           "#{first_name} #{last_name}"
+      end
+    end
   end
 end
