@@ -31,10 +31,10 @@ and then
 ## Why ffaker?
 
 ffaker is a fork of faker, and was initially written in an effort to speed up
-a slow spec suite. Since those days faker has also been rewritten and the "speed"
-factor is probably irrelevant now. Bear in mind, if your spec suite is slow,
-chances are the generation of random data will probably not account for much
-of the run time.
+a slow spec suite. Since those days faker has also been rewritten and the
+"speed" factor is probably irrelevant now. Bear in mind, if your spec suite
+is slow, chances are the generation of random data will probably not account
+for much of the run time.
 
 Nowadays the code bases have diverged enough to make the two projects truly
 different: since ffaker creation, a lot of new API methods have been added
