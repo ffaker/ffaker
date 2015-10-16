@@ -19,7 +19,7 @@ FFaker::Internet.email  #=> "kirsten.greenholt@corkeryfisher.info"
 ## ffaker vs faker
 
 The faker and ffaker APIs are mostly the same, although the API on ffaker keeps
-growing with its users additions. In general, the only difference is that you
+diverging with its users additions. In general, the only difference is that you
 need to:
 
     gem install ffaker
