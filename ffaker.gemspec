@@ -11,10 +11,10 @@ Gem::Specification.new do |s|
 
   s.license = 'MIT'
 
-  s.summary     = "Faster Faker, generates dummy data."
-  s.description = "Faster Faker, generates dummy data."
+  s.summary     = "Ffaker generates dummy data."
+  s.description = "Ffaker generates dummy data."
 
-  s.authors  = ["Emmanuel Oga"]
+  s.authors  = ['https://github.com/ffaker/ffaker/graphs/contributors', 'Emmanuel Oga']
   s.email    = 'EmmanuelOga@gmail.com'
   s.homepage = 'http://github.com/ffaker/ffaker'
 
