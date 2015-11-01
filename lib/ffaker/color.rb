@@ -5,12 +5,14 @@ module FFaker
     extend ModuleUtils
     extend self
 
+    HEX_DIGITS = ('a'..'f').to_a + (0..9).to_a
+
     def name
       NAMES_LIST.sample
     end
 
     def hex
-      "##{(0..5).map { (('a'..'f').to_a + (0..9).to_a).sample }.join}"
+      "##{6.times.map { HEX_DIGITS.sample }.join}"
     end
   end
 end
