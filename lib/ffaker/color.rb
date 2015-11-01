@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    HEX_DIGITS = ('a'..'f').to_a + (0..9).to_a
+    HEX_DIGITS = ("a".."f").to_a + (0..9).to_a
 
     def name
       NAMES_LIST.sample

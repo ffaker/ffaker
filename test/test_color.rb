@@ -8,6 +8,6 @@ class TestColor < Test::Unit::TestCase
   end
 
   def test_hex
-    assert_match /(?<=#)(?<!^)\h{6}/, FFaker::Color.hex
+    assert_match(/(?<=#)(?<!^)\h{6}/), FFaker::Color.hex
   end
 end
