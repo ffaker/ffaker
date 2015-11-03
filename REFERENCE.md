@@ -480,7 +480,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `image` | http://robohash.org/pariaturvoluptasperferendis.png?size=300x300, http://robohash.org/solutaiuremodi.png?size=300x300, http://robohash.org/adipisciestet.png?size=300x300 |
+| `image` | https://robohash.org/pariaturvoluptasperferendis.png?size=300x300, https://robohash.org/solutaiuremodi.png?size=300x300, https://robohash.org/adipisciestet.png?size=300x300 |
 
 ## FFaker::Lorem
 

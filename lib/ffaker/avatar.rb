@@ -2,9 +2,8 @@
 
 module FFaker
   module Avatar
-    
     extend ModuleUtils
-  	extend self
+    extend self
 
     SUPPORTED_FORMATS = %w(png jpg bmp)
 
@@ -13,8 +12,7 @@ module FFaker
       raise ArgumentError, "Supported formats are #{SUPPORTED_FORMATS.join(', ')}" unless SUPPORTED_FORMATS.include?(format)
       raise ArgumentError, "Not a supported background number. Choose eather 1 or 2" unless (bgset.nil? or (1..2).include?(bgset.to_i))
       slug ||= FFaker::Lorem.words.join
-      "http://robohash.org/#{slug}.#{format}?size=#{size}#{'&bgset=bg' + bgset.to_s unless bgset.nil?}"
+      "https://robohash.org/#{slug}.#{format}?size=#{size}#{'&bgset=bg' + bgset.to_s unless bgset.nil?}"
     end
-    
   end
 end
