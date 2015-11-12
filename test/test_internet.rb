@@ -58,23 +58,23 @@ class TestFakerInternet < Test::Unit::TestCase
   end
 
   def test_ip_v4_address
-    assert @tester.ip_v4_address.match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/)
+    assert_match(/\A(?:\d{1,3}\.){3}\d{1,3}\z/, @tester.ip_v4_address)
   end
 
   def test_slug
-    assert @tester.slug.match(/^[a-z]+(_|\.|\-)[a-z]+$/)
+    assert_match(/\A[a-z]+[_.-][a-z]+\z/, @tester.slug)
   end
 
   def test_slug_with_input_words
-    assert @tester.slug('Input Words&&Symbols').match(/^[a-z]+(_|\.|\-)[a-z]+(_|\.|\-)[a-z]+$/)
+    assert_not_match(/&/, @tester.slug("Input Words&&Symbols"))
   end
 
   def test_slug_with_specified_glue
-    assert @tester.slug(nil, '-').match(/^[a-z]+(\-)[a-z]+$/)
+    assert_match(/\A[a-z]+-[a-z]+\z/, @tester.slug(nil, "-"))
   end
 
   def test_password
-    assert @tester.password.match(/[a-z]+/)
+    assert_match(/\A[a-z]+\z/, @tester.password)
   end
 
   def test_password_min_length
