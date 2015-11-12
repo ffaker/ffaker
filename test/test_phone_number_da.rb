@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
 class TestPhoneNumberDA < Minitest::Test

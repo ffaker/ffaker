@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestFakerInternet < Minitest::Test
   def setup

@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestAddressCA < Minitest::Test
   def test_province

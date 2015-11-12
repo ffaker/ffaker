@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestAddressUSUS < Minitest::Test
   def test_us_state

@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 # Test features related to Finnish addresses
 class TestAddressFI < Minitest::Test

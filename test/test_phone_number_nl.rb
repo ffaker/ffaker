@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
 class TestPhoneNumberNL < Minitest::Test

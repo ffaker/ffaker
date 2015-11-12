@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 # Author: Gustavo Souza https://github.com/gustavor-souza
 class TestPhoneNumberBR < Minitest::Test

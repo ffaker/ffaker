@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestHipsterIpsum < Minitest::Test
   TEST_REGEX = /\+1|[ a-z]+/i

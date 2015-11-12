@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestLoremFR < Minitest::Test
   def test_paragraph

@@ -3,11 +3,7 @@ require 'rake'
 require 'date'
 require 'rake/testtask'
 
-#############################################################################
-#
 # Helper functions
-#
-#############################################################################
 
 def name
   @name ||= Dir['*.gemspec'].first.split('.').first
@@ -38,25 +34,16 @@ def replace_header(head, header_name)
   head.sub!(/(\.#{header_name}\s*= ').*'/) { "#{$1}#{send(header_name)}'"}
 end
 
-#############################################################################
-#
 # Standard tasks
-#
-#############################################################################
 
-require 'rake/testtask'
 Rake::TestTask.new do |t|
-  t.libs << "test/" << "lib/"
-  t.test_files = FileList['test/test*.rb']
+  t.libs << 'test'
+  t.libs << 'lib'
 end
 
 task :default => :test
 
-#############################################################################
-#
 # Custom tasks (add your own tasks here)
-#
-#############################################################################
 
 begin
   require 'yard'
@@ -67,11 +54,7 @@ rescue LoadError
   end
 end
 
-#############################################################################
-#
 # Packaging tasks
-#
-#############################################################################
 
 task :release => :build do
   unless `git branch` =~ /^\* master$/

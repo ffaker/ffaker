@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 class TestFakerNameDA < Minitest::Test
   RU_REGEX = /[А-Я][а-я]+/

@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestLoremKR < Minitest::Test
   KOREAN_SENTENCE_MATCHER = /\A[ .가-힣]+\z/

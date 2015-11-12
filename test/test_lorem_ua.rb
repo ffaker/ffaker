@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 class TestLoremUA < Minitest::Test
   SENTENCE_MATCHER = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s\.\!\?,]+\z/

@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 # Author: xarala<pathe.sene@xarala.sn> http://www.xarala.sn
 class TestPhoneNumberSN < Minitest::Test

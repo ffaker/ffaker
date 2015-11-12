@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 # Author: guapolo github.com/guapolo
 class TestAddressMX < Minitest::Test

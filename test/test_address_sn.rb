@@ -1,7 +1,4 @@
-# => author: PapePathe github.com/PapePathe
-# => email: pathe.sene@gmail.com
-
-require "helper"
+require "test_helper"
 
 class TestAddressSn < Minitest::Test
 

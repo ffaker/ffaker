@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestFakerNamePH < Minitest::Test
   PH_REGEXP = /\A([\wñÑú-]+\.? ?){2,5}\z/

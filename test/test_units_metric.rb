@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 # Author: lurraca github.com/lurraca
 class TestUnitsMetric < Minitest::Test

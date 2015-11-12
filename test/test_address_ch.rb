@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 class TestAddressCHCH < Minitest::Test
   def test_ch_canton_abbr

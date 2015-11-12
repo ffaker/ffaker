@@ -1,6 +1,4 @@
-# encoding: utf-8
-
-require 'helper'
+require 'test_helper'
 
 class TestFakerIdentificationKr < Minitest::Test
   def setup

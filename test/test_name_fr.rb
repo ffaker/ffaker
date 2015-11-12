@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 # Author: PapePathe<pathe.sene@gmail.com> github.com/PapePathe
 class TestFakerNameFR < Minitest::Test

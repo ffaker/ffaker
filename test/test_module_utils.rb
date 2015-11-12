@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestModuleUtils < Minitest::Test
   def test_provides_a_k_method_for_generating_constant_arrays

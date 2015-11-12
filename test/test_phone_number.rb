@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 class TestPhoneNumer < Minitest::Test
   def test_phone_number

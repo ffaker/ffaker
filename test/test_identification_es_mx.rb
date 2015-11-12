@@ -1,4 +1,4 @@
-require 'helper'
+require 'test_helper'
 
 # Author Guapolo <github.com/guapolo>
 class TestIdentificationMX < Minitest::Test
