@@ -31,35 +31,19 @@ module FFaker
     end
 
     def ul_short(items = 3)
-      s = "<ul>"
-      items.times do
-        s << "<li>#{sentence 2}</li>"
-      end
-      s << "</ul>"
+      unordered_list(items, :sentence)
     end
 
     def ul_long(items = 3)
-      s = "<ul>"
-      items.times do
-        s << "<li>#{paragraph 2}</li>"
-      end
-      s << "</ul>"
+      unordered_list(items, :paragraph)
     end
 
     def ol_short(items = 3)
-      s = "<ol>"
-      items.times do
-        s << "<li>#{sentence 2}</li>"
-      end
-      s << "</ol>"
+      ordered_list(items, :sentence)
     end
 
     def ol_long(items = 3)
-      s = "<ol>"
-      items.times do
-        s << "<li>#{paragraph 2}</li>"
-      end
-      s << "</ol>"
+      ordered_list(items, :paragraph)
     end
 
     def ul_links(items = 3)
@@ -155,6 +139,22 @@ module FFaker
 
     def paragraphs(paragraph_count = 3)
       FFaker::Lorem::paragraphs(paragraph_count).join('<br>')
+    end
+
+    def unordered_list(items = 3, type = :sentence)
+      s = "<ul>"
+      items.times do
+        s << "<li>#{send(type, 2)}</li>"
+      end
+      s << "</ul>"
+    end
+
+    def ordered_list(items = 3, type = :sentence)
+      s = "<ol>"
+      items.times do
+        s << "<li>#{send(type, 2)}</li>"
+      end
+      s << "</ol>"
     end
   end
 end
