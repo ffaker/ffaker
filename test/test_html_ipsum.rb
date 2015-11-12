@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestHTMLIpsum < Test::Unit::TestCase
+class TestHTMLIpsum < Minitest::Test
   def setup
     @tester = FFaker::HTMLIpsum
   end

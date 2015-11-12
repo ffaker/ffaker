@@ -2,20 +2,20 @@
 
 require 'helper'
 
-class TestFakerNameNL < Test::Unit::TestCase
+class TestFakerNameNL < Minitest::Test
   def setup
     @tester = FFaker::NameNL
   end
 
   def test_name
-    assert @tester.name.match(/(\w+\.? ?){2,3}/)
+    assert_match(/(\w+\.? ?){2,3}/, @tester.name)
   end
 
   def test_prefix
-    assert @tester.prefix.match(/[A-Z][a-z]+\.?/)
+    assert_match(/[A-Z][a-z]+\.?/, @tester.prefix)
   end
 
   def test_suffix
-    assert @tester.suffix.match(/[A-Z][a-z]*\.?/)
+    assert_match(/[A-Z][a-z]*\.?/, @tester.suffix)
   end
 end

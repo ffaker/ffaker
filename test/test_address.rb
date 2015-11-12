@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestAddress < Test::Unit::TestCase
+class TestAddress < Minitest::Test
   def test_building_number
     assert_match /\A\d{3,5}\z/, FFaker::Address.building_number
   end
@@ -82,5 +82,9 @@ class TestAddress < Test::Unit::TestCase
   def test_country_code_of_particular_country
     assert_match 'UA', FFaker::Address::country_code('Ukraine')
     assert_match /[A-Z]{2}/, FFaker::Address::country_code('Foo')
+  end
+
+  def test_time_zone
+    assert_includes FFaker::Address::TIME_ZONE, FFaker::Address::time_zone
   end
 end

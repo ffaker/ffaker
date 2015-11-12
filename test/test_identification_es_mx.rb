@@ -3,7 +3,7 @@
 require 'helper'
 
 # Author Guapolo <github.com/guapolo>
-class TestIdentificationMX < Test::Unit::TestCase
+class TestIdentificationMX < Minitest::Test
 
   def test_rfc_persona_moral
     re = /\A[a-zñÑ&]{3}\d{2}[0-1][0-9][0-3][0-9][a-z0-9]{3}\z/i

@@ -2,14 +2,14 @@
 
 require 'helper'
 
-class TestFakerNameCS < Test::Unit::TestCase
+class TestFakerNameCS < Minitest::Test
   def setup
     @tester = FFaker::NameCS
   end
 
   def test_name
     @words = @tester.name.split
-    assert [2,3,4].include?(@words.size) # just name, or prefix, or prefix+suffix
+    assert_includes([2, 3, 4], @words.size) # just name, or prefix, or prefix+suffix
   end
 
   def test_name_sex
@@ -19,19 +19,19 @@ class TestFakerNameCS < Test::Unit::TestCase
   end
 
   def test_male_last_name
-    assert FFaker::NameCS::LAST_NAMES[:male].include?(@tester.last_name(:male))
+    assert_includes(@tester::LAST_NAMES[:male], @tester.last_name(:male))
   end
 
   def test_male_first_name
-    assert FFaker::NameCS::FIRST_NAMES[:male].include?(@tester.first_name(:male))
+    assert_includes(@tester::FIRST_NAMES[:male], @tester.first_name(:male))
   end
 
   def test_prefix
-    assert FFaker::NameCS::PREFIXES.include?(@tester.prefix)
+    assert_includes(@tester::PREFIXES, @tester.prefix)
   end
 
   def test_suffix
-    assert FFaker::NameCS::SUFFIXES.include?(@tester.suffix)
+    assert_includes(@tester::SUFFIXES, @tester.suffix)
   end
 
   def test_with_same_sex
@@ -52,11 +52,13 @@ class TestFakerNameCS < Test::Unit::TestCase
     assert same_sex?(names, :male)
   end
 
+  private
+
   # checks if every name is of the same sex
   def same_sex?(words, sex = :any)
     (sex == :any ? [:male, :female] : [sex]).any? do |sex|
       words.all? do |word|
-        [FFaker::NameCS::LAST_NAMES, FFaker::NameCS::FIRST_NAMES].any? do |names|
+        [@tester::LAST_NAMES, @tester::FIRST_NAMES].any? do |names|
           names[sex].include?(word)
         end
       end

@@ -2,13 +2,12 @@
 
 require 'helper'
 
-class TestFakerJob < Test::Unit::TestCase
+class TestFakerJob < Minitest::Test
   def setup
     @tester = FFaker::Job
   end
 
   def test_title
-    assert @tester.title.match(/(\w+\.? ?){2,3}/)
+    assert_match(/\A(\w+\.? ?){2,3}\z/, @tester.title)
   end
 end
-

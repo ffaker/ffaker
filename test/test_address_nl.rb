@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestAddressNL < Test::Unit::TestCase
+class TestAddressNL < Minitest::Test
 
   def setup
     @tester = FFaker::AddressNL

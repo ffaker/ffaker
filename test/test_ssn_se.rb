@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestSSNSE < Test::Unit::TestCase
+class TestSSNSE < Minitest::Test
 
   def test_ssn_format
     ssn = FFaker::SSNSE.ssn
@@ -20,7 +20,7 @@ class TestSSNSE < Test::Unit::TestCase
     ssn_female = FFaker::SSNSE.ssn(gender: :female)
     assert is_equal?(ssn_female[10].to_i)
 
-    assert_raise ArgumentError do
+    assert_raises ArgumentError do
       FFaker::SSNSE.ssn(gender: :unkown)
     end
   end

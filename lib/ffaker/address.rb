@@ -107,5 +107,9 @@ module FFaker
         COUNTRY_CODE.sample
       end
     end
+
+    def time_zone
+      TIME_ZONE.sample
+    end
   end
 end

@@ -11,6 +11,8 @@ module FFaker
       beautiful bright calm dangerous dark dull fast magnetic magnificent majestic melodic metallic
       mundane mute mysterious new pleasant pretty resonant royal slate soft tranquil vibrant weak
     ))
+    TRANSMISSIONS_ABBR = %w(AT MT AM CVT)
+    CYLINDERS = %w(2 5 6 8)
 
     def base_color
       FFaker::Color.name
@@ -44,6 +46,30 @@ module FFaker
 
     def year
       YEARS.sample
+    end
+
+    def transmission
+      TRANSMISSIONS_LIST.sample
+    end
+
+    def transmission_abbr
+      TRANSMISSIONS_ABBR.sample
+    end
+
+    def engine_cylinders
+      CYLINDERS.sample
+    end
+
+    def engine_displacement
+      DISPLACEMENTS_LIST.sample
+    end
+
+    def fuel_type
+      FUEL_TYPES_LIST.sample
+    end
+
+    def interior_upholstery
+      UPHOLSTERY_LIST.sample
     end
   end
 end

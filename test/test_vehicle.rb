@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestVehicle < Test::Unit::TestCase
+class TestVehicle < Minitest::Test
   def test_base_color
     assert_match /\A[a-z]+\z/, FFaker::Vehicle.base_color
   end
@@ -37,5 +37,29 @@ class TestVehicle < Test::Unit::TestCase
 
   def test_drivetrain
     assert_match /\A[a-z0-9]+\z/i, FFaker::Vehicle.drivetrain
+  end
+
+  def test_transmission
+    assert_match /\A[ a-z0-9]+\z/i, FFaker::Vehicle.transmission
+  end
+
+  def test_transmission_abbr
+    assert_match /\A[A-Z]{2,3}\z/, FFaker::Vehicle.transmission_abbr
+  end
+
+  def test_engine_cylinders
+    assert_match /\A[a-z0-9]+\z/i, FFaker::Vehicle.engine_cylinders
+  end
+
+  def test_engine_displacement
+    assert_match /\A\d{1,2}\.\d\z/, FFaker::Vehicle.engine_displacement
+  end
+
+  def test_fuel_type
+    assert_match /\A[ a-z0-9\(\)]+\z/i, FFaker::Vehicle.fuel_type
+  end
+
+  def test_interior_upholstery
+    assert_match /\A[ a-z0-9]+\z/i, FFaker::Vehicle.interior_upholstery
   end
 end

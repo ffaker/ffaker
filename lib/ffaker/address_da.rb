@@ -9,9 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    REGION = [
-      'Hovedstaden', 'Sjælland', 'Syddanmark', 'Midtjylland', 'Nordjylland'
-    ]
+    REGION = %w(Hovedstaden Sjælland Syddanmark Midtjylland Nordjylland)
     STATE = REGION
 
     def zip_code
@@ -47,7 +45,7 @@ module FFaker
     end
 
     def full_address
-      %Q{#{street_address} #{post_nr} #{city} #{region} DANMARK}
+      "#{street_address} #{post_nr} #{city} #{region} DANMARK"
     end
   end
 end

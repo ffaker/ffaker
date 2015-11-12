@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestFakerIdentificationESCL < Test::Unit::TestCase
+class TestFakerIdentificationESCL < Minitest::Test
   def setup
     @tester = FFaker::IdentificationESCL
   end

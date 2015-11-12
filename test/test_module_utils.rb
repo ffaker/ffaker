@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestModuleUtils < Test::Unit::TestCase
+class TestModuleUtils < Minitest::Test
   def test_provides_a_k_method_for_generating_constant_arrays
     obj = Object.new
     obj.extend FFaker::ModuleUtils

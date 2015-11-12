@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestFakerInternet < Test::Unit::TestCase
+class TestFakerInternet < Minitest::Test
   def setup
     @tester = FFaker::Internet
   end
@@ -79,6 +79,10 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.password(3, 10).length < 11
     assert @tester.password(7, 15).length < 16
     assert @tester.password(1, 3).length < 4
+  end
+
+  def test_password_fixed_length
+    assert @tester.password(20, 20).length == 20
   end
 
   def test_password_strange_argument

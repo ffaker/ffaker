@@ -3,7 +3,7 @@
 require 'helper'
 
 # Author: guapolo github.com/guapolo
-class TestAddressMX < Test::Unit::TestCase
+class TestAddressMX < Minitest::Test
   def test_mx_state
     assert_match /[\sa-z]/i, FFaker::AddressMX.state
   end

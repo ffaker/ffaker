@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestHipsterIpsum < Test::Unit::TestCase
+class TestHipsterIpsum < Minitest::Test
   TEST_REGEX = /\+1|[ a-z]+/i
 
   def test_paragraph

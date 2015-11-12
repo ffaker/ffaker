@@ -3,30 +3,28 @@
 require 'helper'
 
 # Author: lurraca github.com/lurraca
-class TestUnits < Test::Unit::TestCase
-
+class TestUnits < Minitest::Test
   def setup
     @tester = FFaker::Unit
+    @time_units = @tester::TIME_UNITS.map { |u| OpenStruct.new u }
+    @temperature_units = @tester::TEMPERATURE_UNITS.map { |u| OpenStruct.new u }
   end
 
   def test_time_name
-    time_name = @tester.time_name
-    assert FFaker::Unit::TIME_UNITS.any?{ |hash| hash[:name] == time_name }
+    assert_includes @time_units.map(&:name), @tester.time_name
   end
 
   def test_time_abbr
-    time_abbr = @tester.time_abbr
-    assert FFaker::Unit::TIME_UNITS.any?{ |hash| hash[:abbreviation] == time_abbr }
+    assert_includes @time_units.map(&:abbreviation), @tester.time_abbr
   end
 
   def test_temperature_name
-    temperature_name = @tester.temperature_name
-    assert FFaker::Unit::TEMPERATURE_UNITS.any?{ |hash| hash[:name] == temperature_name }
+    assert_includes @temperature_units.map(&:name), @tester.temperature_name
   end
 
   def test_temperature_abbr
-    temperature_abbr = @tester.temperature_abbr
-    assert FFaker::Unit::TEMPERATURE_UNITS.any?{ |hash| hash[:abbreviation] == temperature_abbr }
+    assert_includes \
+      @temperature_units.map(&:abbreviation),
+      @tester.temperature_abbr
   end
-
 end

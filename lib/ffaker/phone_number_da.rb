@@ -23,11 +23,11 @@ module FFaker
 
     # generates mobile or home/work number
     def phone_number
-      FFaker.numerify("########")
+      FFaker.numerify('########')
     end
 
     def country_code
-      "+45"
+      '+45'
     end
 
     def international_mobile_phone_number
@@ -39,7 +39,7 @@ module FFaker
     end
 
     def international_phone_number
-      FFaker.numerify("#{country_code} #{phone_number}")
+      "#{country_code} #{phone_number}"
     end
   end
 end

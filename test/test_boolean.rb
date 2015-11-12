@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestBoolean < Test::Unit::TestCase
+class TestBoolean < Minitest::Test
   def test_maybe
     maybe = FFaker::Boolean.maybe
     assert (maybe == false || maybe == true)

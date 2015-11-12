@@ -2,8 +2,8 @@
 
 require 'helper'
 
-class TestVenue < Test::Unit::TestCase
+class TestVenue < Minitest::Test
   def test_name
-    assert_match /1\+|[ a-z]+/i, FFaker::Venue.name
+    assert_match /\A[., a-z]+\z/i, FFaker::Venue.name
   end
 end

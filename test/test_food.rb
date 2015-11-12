@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestFakerFood < Test::Unit::TestCase
+class TestFakerFood < Minitest::Test
   def test_vegetable
     assert_match /\A[-\/ íó'a-z0-9]+\z/i, FFaker::Food.vegetable
   end

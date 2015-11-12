@@ -5,7 +5,7 @@
 
 require "helper"
 
-class TestAddressSn < Test::Unit::TestCase
+class TestAddressSn < Minitest::Test
 
   def setup
     @subject = FFaker::AddressSN

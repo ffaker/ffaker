@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestFakerJobJA < Test::Unit::TestCase
+class TestFakerJobJA < Minitest::Test
   def setup
     @tester = FFaker::JobJA
   end
@@ -12,6 +12,6 @@ class TestFakerJobJA < Test::Unit::TestCase
   end
 
   def test_nouns
-    assert @tester::JOB_NOUNS.is_a?(Array)
+    assert_kind_of Array, @tester::JOB_NOUNS
   end
 end

@@ -5,10 +5,14 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    JOB_ADJECTIVES = ['', 'general', '', 'adjoint', '', 'associé', '']
+    JOB_ADJECTIVES = %w(general adjoint associé)
 
     def title
-      "#{JOB_PREFIXES.sample} #{JOB_ADJECTIVES.sample} #{JOB_NOUNS.sample}"
+      if rand(2).zero?
+        "#{JOB_PREFIXES.sample} #{JOB_ADJECTIVES.sample} #{JOB_NOUNS.sample}"
+      else
+        "#{JOB_PREFIXES.sample} #{JOB_NOUNS.sample}"
+      end
     end
   end
 end

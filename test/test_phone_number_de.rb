@@ -3,7 +3,7 @@
 require 'helper'
 
 # Author: lawitschka<moritz.lawitschka@urbanvention.com>
-class TestPhoneNumberDE < Test::Unit::TestCase
+class TestPhoneNumberDE < Minitest::Test
   def setup
     @tester = FFaker::PhoneNumberDE
   end

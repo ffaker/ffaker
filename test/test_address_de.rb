@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestAddressDE < Test::Unit::TestCase
+class TestAddressDE < Minitest::Test
   def test_city
     assert_match /[ a-z]+/, FFaker::AddressDE.city
   end

@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestFaker < Test::Unit::TestCase
+class TestFaker < Minitest::Test
   def test_numerify
     assert FFaker.numerify('###').match(/\d{3}/)
   end

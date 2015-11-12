@@ -1,4 +1,4 @@
-## 2.1.0 - unreleased
+## 2.1.0
 
   - [#191] - add REFERENCE.md ([@rstacruz])
   - [#193] - fix FFaker::Locale.language throwing errors ([@rstacruz], [#196])
@@ -6,17 +6,27 @@
   - [#181] - fix FFaker::PhoneNumber.phone_number throwing invalid US phone numbers ([@rstacruz], [#195])
   - [#181] - implement FFaker::PhoneNumber.area_code ([@rstacruz], [#195])
   - [#203] - deprecate FFaker::ArrayUtils.random_pick in favor for Array#sample ([@marocchino])
+  - [#211] - add Korean identification support
+  - [#212] - add IMEI support
+  - [#213] - Fix max length support FFaker::Internet.password ([@anderscarling])
+  - many internal library and test suite refactorings
+  
 
-[#181]: https://github.com/EmmanuelOga/ffaker/issues/181
-[#191]: https://github.com/EmmanuelOga/ffaker/issues/191
-[#193]: https://github.com/EmmanuelOga/ffaker/issues/193
-[#195]: https://github.com/EmmanuelOga/ffaker/issues/195
-[#196]: https://github.com/EmmanuelOga/ffaker/issues/196
-[#199]: https://github.com/EmmanuelOga/ffaker/issues/199
-[#200]: https://github.com/EmmanuelOga/ffaker/issues/200
-[#203]: https://github.com/EmmanuelOga/ffaker/issues/203
+[#181]: https://github.com/ffaker/ffaker/issues/181
+[#191]: https://github.com/ffaker/ffaker/issues/191
+[#193]: https://github.com/ffaker/ffaker/issues/193
+[#195]: https://github.com/ffaker/ffaker/issues/195
+[#196]: https://github.com/ffaker/ffaker/issues/196
+[#199]: https://github.com/ffaker/ffaker/issues/199
+[#200]: https://github.com/ffaker/ffaker/issues/200
+[#203]: https://github.com/ffaker/ffaker/issues/203
+[#211]: https://github.com/ffaker/ffaker/pull/211
+[#212]: https://github.com/ffaker/ffaker/pull/212
+[#213]: https://github.com/ffaker/ffaker/pull/213
 [@marocchino]: https://github.com/marocchino
 [@rstacruz]: https://github.com/rstacruz
+[@anderscarling]: https://github.com/anderscarling
+
 
 ## 2.0.0
   - switched faker to ffaker namespace, you should now be able to use
@@ -107,8 +117,8 @@ Fixes for ruby 1.8.x
 Many module additions from different contributors!
 
 ## 1.15.0
-NameKR (https://github.com/EmmanuelOga/ffaker/pull/47) and PhoneNumbersSG
-(https://github.com/EmmanuelOga/ffaker/pull/46).
+NameKR (https://github.com/ffaker/ffaker/pull/47) and PhoneNumbersSG
+(https://github.com/ffaker/ffaker/pull/46).
 
 ## 1.14.0
 
@@ -128,13 +138,13 @@ Extraction of AddressUK and AddressUS classes. (Thanks doctorbh).
 
 ## 1.10.1
 
-FFaker::AddressCA (Thanks doctorbh, https://github.com/EmmanuelOga/ffaker/pull/27)
+FFaker::AddressCA (Thanks doctorbh, https://github.com/ffaker/ffaker/pull/27)
 
 ## 1.9.1
 
-FFaker::NameSN, FFaker::PhoneNumberSN (Thanks SENE, https://github.com/EmmanuelOga/ffaker/pull/26)
+FFaker::NameSN, FFaker::PhoneNumberSN (Thanks SENE, https://github.com/ffaker/ffaker/pull/26)
 
-Added FFaker::NameJA (Thanks kichiro, https://github.com/EmmanuelOga/ffaker/pull/21)
+Added FFaker::NameJA (Thanks kichiro, https://github.com/ffaker/ffaker/pull/21)
 
 ## 1.8.1
 
@@ -142,24 +152,24 @@ Remove a warning.
 
 ## 1.8.0
 
-FFaker::HTMLIpsum module inspired in http://html-ipsum.com/ (Thanks Chris Bloom, https://github.com/EmmanuelOga/ffaker/pull/18)
+FFaker::HTMLIpsum module inspired in http://html-ipsum.com/ (Thanks Chris Bloom, https://github.com/ffaker/ffaker/pull/18)
 
 ## 1.7.0
 
-FFaker::LoremCN (Thanks Shane Weng, Shane Weng, https://github.com/swcool, https://github.com/EmmanuelOga/ffaker/pull/16/files)
+FFaker::LoremCN (Thanks Shane Weng, Shane Weng, https://github.com/swcool, https://github.com/ffaker/ffaker/pull/16/files)
 
 ## 1.6.0
 
-FFaker::NameDE (thanks David Noelte, https://github.com/marvin, https://github.com/EmmanuelOga/ffaker/pull/17)
-Added FFaker::Internet#disposable_email (Thanks Port 80 Labs, https://github.com/port80labs, https://github.com/EmmanuelOga/ffaker/pull/15)
+FFaker::NameDE (thanks David Noelte, https://github.com/marvin, https://github.com/ffaker/ffaker/pull/17)
+Added FFaker::Internet#disposable_email (Thanks Port 80 Labs, https://github.com/port80labs, https://github.com/ffaker/ffaker/pull/15)
 
 ## 1.5.0
 
-FFaker::NameRU (Thanks Vsevolod Romashov, https://github.com/7even, https://github.com/EmmanuelOga/ffaker/pull/14)
+FFaker::NameRU (Thanks Vsevolod Romashov, https://github.com/7even, https://github.com/ffaker/ffaker/pull/14)
 
 ## 1.4.0
 
-FFaker::Product and FFaker::Education (thanks Rico Sta. Cruz, https://github.com/EmmanuelOga/ffaker/pull/12 )
+FFaker::Product and FFaker::Education (thanks Rico Sta. Cruz, https://github.com/ffaker/ffaker/pull/12 )
 
 ## 1.3.0
 
