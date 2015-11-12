@@ -78,4 +78,10 @@ class TestString < Test::Unit::TestCase
   def test_set_star
     assert_match(/\A[abc]*\z/, FS.from_regexp(/[abc]*/))
   end
+
+  def test_braces
+    assert_equal "a" * 13, FS.from_regexp(/a{13}/)
+    assert_match(/\A[abc]{13}\z/, FS.from_regexp(/[abc]{13}/))
+    assert_match(/\A\w{13}\z/, FS.from_regexp(/\w{13}/))
+  end
 end
