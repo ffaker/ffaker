@@ -48,6 +48,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_de.rb
     lib/ffaker/address_fi.rb
     lib/ffaker/address_fr.rb
+    lib/ffaker/address_gr.rb
     lib/ffaker/address_in.rb
     lib/ffaker/address_mx.rb
     lib/ffaker/address_nl.rb
@@ -94,6 +95,9 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address_fi/countries
     lib/ffaker/data/address_fi/street
     lib/ffaker/data/address_fr/city
+    lib/ffaker/data/address_gr/city
+    lib/ffaker/data/address_gr/region
+    lib/ffaker/data/address_gr/street
     lib/ffaker/data/address_in/state
     lib/ffaker/data/address_in/state_abbr
     lib/ffaker/data/address_in/union_territory
@@ -349,6 +353,7 @@ Gem::Specification.new do |s|
     test/test_address_da.rb
     test/test_address_de.rb
     test/test_address_fi.rb
+    test/test_address_gr.rb
     test/test_address_in.rb
     test/test_address_mx.rb
     test/test_address_nl.rb
