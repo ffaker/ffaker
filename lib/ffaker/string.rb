@@ -47,21 +47,29 @@ module FFaker
     end
 
     def process_token(tokens)
-      return '' if tokens.empty?
+      return "" if tokens.empty?
 
       token = tokens.shift
 
       case token
-      when '?' then
+      when "?" then
         # TODO: Let ? generate nothing
-        '' # We already printed its target
-      when '+' then
+        "" # We already printed its target
+      when "+" then
         tokens.unshift(token) if rand(2) == 1 # Leave the `+` on to run again
         process_token(@last_token) # Run the last one at least once
-      when '*' then
+      when "*" then
         tokens.unshift(token) if rand(2) == 1 # Leave the `*` on to run again
-        return '' if rand(2) == 1 # Or maybe do nothing
+        return "" if rand(2) == 1 # Or maybe do nothing
         process_token(@last_token) # Else run the last one again
+      when "{" then
+        number = ""
+        while (ch = tokens.shift) != "}"
+          number << ch
+        end
+        number = number.to_i - 1
+        t = @last_token.dup
+        number.times.map { process_token(t.dup) }.join
       else
         generate_token token, tokens
       end
