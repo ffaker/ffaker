@@ -19,7 +19,7 @@ FFaker::Internet.email  #=> "kirsten.greenholt@corkeryfisher.info"
 ## ffaker vs faker
 
 The faker and ffaker APIs are mostly the same, although the API on ffaker keeps
-growing with its users additions. In general, the only difference is that you
+diverging with its users additions. In general, the only difference is that you
 need to:
 
     gem install ffaker
@@ -28,17 +28,17 @@ and then
 
     require 'ffaker'
 
-## ffaker is faster... does it really matter?
+## Why ffaker?
 
-<b>NO.</b>
+ffaker is a fork of faker, and was initially written in an effort to speed up
+a slow spec suite. Since those days faker has also been rewritten and the
+"speed" factor is probably irrelevant now. Bear in mind, if your spec suite
+is slow, chances are the generation of random data will probably not account
+for much of the run time.
 
-ffaker was initially written in an effort to speed up a slow spec suite. Bear
-in mind, if your spec suite is slow, chances are the generation of random data
-will not account for much of the run time.
-
-Since then, the original faker gem has become faster. But ffaker has
-also gained a lot of new API methods from the generous contributions of
-people all over the world.
+Nowadays the code bases have diverged enough to make the two projects truly
+different: since ffaker creation, a lot of new API methods have been added
+through the generous contributions of people all over the world.
 
 Hopefully some day faker and ffaker will join forces!
 
