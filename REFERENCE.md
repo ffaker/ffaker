@@ -523,6 +523,7 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | orange, yellow, silver |
+| `hex` | #83d15a, #2f7793, #7c2eaa |
 
 ## FFaker::Company
 
