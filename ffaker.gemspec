@@ -53,6 +53,7 @@ Gem::Specification.new do |s|
     lib/ffaker/address_ua.rb
     lib/ffaker/address_uk.rb
     lib/ffaker/address_us.rb
+    lib/ffaker/airline.rb
     lib/ffaker/avatar.rb
     lib/ffaker/bacon_ipsum.rb
     lib/ffaker/boolean.rb
@@ -109,6 +110,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address_us/state
     lib/ffaker/data/address_us/state_abbr
     lib/ffaker/data/address_us/state_and_territories_abbr
+    lib/ffaker/data/airline/names_list
     lib/ffaker/data/bacon_ipsum/bacon_words
     lib/ffaker/data/color/names_list
     lib/ffaker/data/color_ua/names_list
@@ -316,7 +318,7 @@ Gem::Specification.new do |s|
     test/test_address_da.rb
     test/test_address_de.rb
     test/test_address_fi.rb
-    test/test_Address_in.rb
+    test/test_address_in.rb
     test/test_address_mx.rb
     test/test_address_nl.rb
     test/test_address_ru.rb
@@ -325,6 +327,7 @@ Gem::Specification.new do |s|
     test/test_address_ua.rb
     test/test_address_uk.rb
     test/test_address_us.rb
+    test/test_airline.rb
     test/test_array_utils.rb
     test/test_avatar.rb
     test/test_bacon_ipsum.rb
