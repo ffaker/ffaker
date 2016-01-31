@@ -482,6 +482,7 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | Czech Airlines, British Airways, Wizz Air, United Airlines |
+| `flight_number` | UA 1, EZY 2345, W6 2145, BA 345 |
 
 ## FFaker::Avatar
 

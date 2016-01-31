@@ -111,6 +111,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/address_us/state_abbr
     lib/ffaker/data/address_us/state_and_territories_abbr
     lib/ffaker/data/airline/names_list
+    lib/ffaker/data/airline/codes_list
     lib/ffaker/data/bacon_ipsum/bacon_words
     lib/ffaker/data/color/names_list
     lib/ffaker/data/color_ua/names_list
