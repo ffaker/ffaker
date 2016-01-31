@@ -481,7 +481,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Czech Airlines, British Airway, Wizz Air, United Airlines |
+| `name` | Czech Airlines, British Airways, Wizz Air, United Airlines |
 
 ## FFaker::Avatar
 
