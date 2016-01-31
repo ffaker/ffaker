@@ -16,6 +16,7 @@
  * [FFaker::AddressUK](#ffakeraddressuk)
  * [FFaker::AddressUS](#ffakeraddressus)
  * [FFaker::Avatar](#ffakeravatar)
+ * [FFaker::Airline](#ffakerairline)
  * [FFaker::Lorem](#ffakerlorem)
  * [FFaker::BaconIpsum](#ffakerbaconipsum)
  * [FFaker::Boolean](#ffakerboolean)
@@ -475,6 +476,12 @@
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 40061, 34937-8812, 35028-3361 |
+
+## FFaker::Airline
+
+| Method | Example |
+| ------ | ------- |
+| `name` | Czech Airlines, British Airway, Wizz Air, United Airlines |
 
 ## FFaker::Avatar
 
