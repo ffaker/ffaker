@@ -8,6 +8,6 @@ class TestAirline < Test::Unit::TestCase
   end
 
   def test_flight_number
-    assert_match /\A.+\z/, FFaker::Airline.flight_number
+    assert_match /\w{2,3} \d{1,4}\z/, FFaker::Airline.flight_number
   end
 end
