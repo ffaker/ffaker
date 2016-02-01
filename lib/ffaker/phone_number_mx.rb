@@ -10,14 +10,14 @@ module FFaker
     #  xx xxxx xxxx
     #
     def home_work_phone_number
-      FFaker.numerify("## #### ####")
+      FFaker.numerify('## #### ####')
     end
 
     # Generates a mobile phone number
     # 044 xx xxxx xxxx
     #
     def mobile_phone_number
-      FFaker.numerify("044 ## #### ####")
+      FFaker.numerify('044 ## #### ####')
     end
 
     # generates mobile or home/work number
@@ -29,7 +29,7 @@ module FFaker
     end
 
     def country_code
-      "+52"
+      '+52'
     end
 
     def international_mobile_phone_number
@@ -51,8 +51,7 @@ module FFaker
     #  01 800 xxx xxxx
     #
     def toll_free_number
-      FFaker.numerify("01 800 ### ####")
+      FFaker.numerify('01 800 ### ####')
     end
-
   end
 end

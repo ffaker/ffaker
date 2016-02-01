@@ -6,7 +6,7 @@ module FFaker
 
   extend ModuleUtils
 
-  BASE_LIB_PATH = File.expand_path("..", __FILE__)
+  BASE_LIB_PATH = File.expand_path('..', __FILE__)
 
   LETTERS = [*'a'..'z']
 

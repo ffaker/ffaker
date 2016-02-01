@@ -22,6 +22,5 @@ module FFaker
         LANGUAGE.sample
       end
     end
-
   end
 end

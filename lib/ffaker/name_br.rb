@@ -28,4 +28,3 @@ module FFaker
     end
   end
 end
-

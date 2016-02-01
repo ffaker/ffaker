@@ -51,7 +51,7 @@ module FFaker
       if allow_first_zero
         FFaker.numerify(masks_arr)
       else
-        masks_arr.sample.sub(/#/) { (rand(9)+1).to_s }.gsub(/#/) { rand(10).to_s }
+        masks_arr.sample.sub(/#/) { (rand(9) + 1).to_s }.gsub(/#/) { rand(10).to_s }
       end
     end
   end

@@ -7,7 +7,7 @@ module FFaker
 
     ALPHABET_CODES = %w(ALPHA BRAVO CHARLIE DELTA ECHO FOXTROT GOLF HOTEL INDIA JULIETT KILO LIMA MIKE NOVEMBER OSCAR PAPA QUEBEC ROMEO SIERRA TANGO UNIFORM VICTOR WHISKEY XRAY YANKEE ZULU)
     NUMERIC_CODES = %w(ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE ZERO)
-    STOP_CODE = "STOP"
+    STOP_CODE = 'STOP'
     CODES = ALPHABET_CODES + NUMERIC_CODES + [STOP_CODE]
 
     def code
@@ -23,15 +23,15 @@ module FFaker
     end
 
     def callsign
-      codify("?-?-#")
+      codify('?-?-#')
     end
 
     def codify(masks)
       masks.scan(/./).map do |c|
         case c
-        when "#" then NUMERIC_CODES.sample
-        when "?" then ALPHABET_CODES.sample
-        when "." then STOP_CODE
+        when '#' then NUMERIC_CODES.sample
+        when '?' then ALPHABET_CODES.sample
+        when '.' then STOP_CODE
         else c
         end
       end.join

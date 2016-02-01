@@ -13,7 +13,7 @@ module FFaker
     HOSTS = %w(gmail.com yahoo.com hotmail.com spray.se passagen.se)
     DOMAIN_SUFFIXES = %w(se nu com)
     DISPOSABLE_HOSTS = %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
-    SLUG_DELIMITERS = %w[- _ .]
+    SLUG_DELIMITERS = %w(- _ .)
 
     def email(name = nil)
       "#{user_name(name)}@#{domain_name}"
@@ -32,7 +32,7 @@ module FFaker
 
     # Used to fake login names were dot is not allowed
     def login_user_name
-      user_name.tr('.','')
+      user_name.tr('.', '')
     end
 
     # Mostly used for email creation
@@ -51,14 +51,14 @@ module FFaker
     end
 
     def user_name_variant_long
-      array_parts = [ NameSE.first_name, NameSE.last_name ]
-      array_parts.map!{ |word| word.gsub(/\W/, '') }
+      array_parts = [NameSE.first_name, NameSE.last_name]
+      array_parts.map! { |word| word.gsub(/\W/, '') }
       join_to_user_name(array_parts)
     end
 
     def user_name_variant_short
-      array_parts = [ NameSE.first_name ]
-      array_parts.map!{ |word| word.gsub(/\W/, '') }
+      array_parts = [NameSE.first_name]
+      array_parts.map! { |word| word.gsub(/\W/, '') }
       join_to_user_name(array_parts)
     end
 
@@ -77,10 +77,10 @@ module FFaker
     end
 
     def domain_word
-      company_name_single_word.tap { |dw|
+      company_name_single_word.tap do |dw|
         dw.gsub!(/\W/, '')
         dw.downcase!
-      }
+      end
     end
 
     def company_name_single_word
@@ -96,17 +96,17 @@ module FFaker
     end
 
     def http_url
-      uri("http")
+      uri('http')
     end
 
     def ip_v4_address
-      (1..4).map { BYTE.sample }.join(".")
+      (1..4).map { BYTE.sample }.join('.')
     end
 
     def slug(words = nil, glue = nil)
       glue ||= SLUG_DELIMITERS.sample
 
-      (words || FFaker::Lorem::words(2).join(' ')).gsub(' ', glue).downcase
+      (words || FFaker::Lorem.words(2).join(' ')).gsub(' ', glue).downcase
     end
   end
 end

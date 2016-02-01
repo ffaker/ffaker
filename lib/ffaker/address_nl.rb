@@ -21,14 +21,14 @@ module FFaker
 
     def street_name
       case rand(2)
-      when 0 then "#{NameNL.last_name}"
-      when 1 then "#{NameNL.first_name}"
+      when 0 then NameNL.last_name.to_s
+      when 1 then NameNL.first_name.to_s
       end << case rand(20)
-      when 0 then "weg"
-      when 1 then "boulevard"
-      when 3 then "pad"
-      when 4 then "steeg"
-      else "straat"
+             when 0 then 'weg'
+             when 1 then 'boulevard'
+             when 3 then 'pad'
+             when 4 then 'steeg'
+             else 'straat'
       end
     end
 

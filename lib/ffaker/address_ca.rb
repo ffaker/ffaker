@@ -14,7 +14,7 @@ module FFaker
     PROVINCE_ABBRS = %w(NL NS PE NB QC ON MB SK AB BC YT NT NU)
 
     def postal_code
-      FFaker.numerify(POSTAL_CODE_FORMAT.gsub("?") { POSTAL_CODE_CHARS.sample })
+      FFaker.numerify(POSTAL_CODE_FORMAT.gsub('?') { POSTAL_CODE_CHARS.sample })
     end
 
     def province

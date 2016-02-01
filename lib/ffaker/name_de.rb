@@ -14,7 +14,7 @@ module FFaker
     def name
       case rand(10)
       when 0 then "#{prefix} #{first_name} #{last_name}"
-      else 	  "#{first_name} #{last_name}"
+      else "#{first_name} #{last_name}"
       end
     end
 
