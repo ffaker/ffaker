@@ -3,7 +3,6 @@
 require 'helper'
 
 class TestAddressUA < Test::Unit::TestCase
-
   def setup
     @tester = FFaker::AddressUA
     @multiple_words_name_regexp = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/

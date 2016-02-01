@@ -4,11 +4,11 @@ require 'helper'
 
 class TestLoremCN < Test::Unit::TestCase
   def test_paragraph
-    assert FFaker::LoremCN.paragraph.length >= 3*4*2
+    assert FFaker::LoremCN.paragraph.length >= 3 * 4 * 2
   end
 
   def test_sentence
-    assert FFaker::LoremCN.sentence.length >= 4*2
+    assert FFaker::LoremCN.sentence.length >= 4 * 2
   end
 
   def test_paragraphs

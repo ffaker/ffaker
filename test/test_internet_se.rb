@@ -3,7 +3,6 @@
 require 'helper'
 
 class TestFakerInternetSE < Test::Unit::TestCase
-
   def setup
     @tester = FFaker::InternetSE
   end
@@ -50,9 +49,9 @@ class TestFakerInternetSE < Test::Unit::TestCase
   end
 
   def test_uri
-    assert @tester.uri("ftp").match(/^ftp:\/\/.+/)
-    assert @tester.uri("http").match(/^http:\/\/.+/)
-    assert @tester.uri("https").match(/^https:\/\/.+/)
+    assert @tester.uri('ftp').match(/^ftp:\/\/.+/)
+    assert @tester.uri('http').match(/^http:\/\/.+/)
+    assert @tester.uri('https').match(/^https:\/\/.+/)
   end
 
   def test_http_url
@@ -66,5 +65,4 @@ class TestFakerInternetSE < Test::Unit::TestCase
   def test_slug
     assert @tester.slug.match(/^[a-z]+(_|\.|\-)[a-z]+$/)
   end
-
 end

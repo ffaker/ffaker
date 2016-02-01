@@ -5,15 +5,15 @@ require 'set'
 
 class TestArrayUtils < Test::Unit::TestCase
   def setup
-    @array = FFaker::ArrayUtils.const_array("a".."c")
-    @elems = Set.new("a".."c")
+    @array = FFaker::ArrayUtils.const_array('a'..'c')
+    @elems = Set.new('a'..'c')
   end
 
   def test_provides_a_way_of_freezing_the_elements_and_itself
     assert @array.respond_to?(:freeze_all)
     @array.freeze_all
     assert @array.frozen?
-    @array.each { |e| assert e.frozen?  }
+    @array.each { |e| assert e.frozen? }
   end
 
   def test_provides_a_way_of_getting_a_random_element

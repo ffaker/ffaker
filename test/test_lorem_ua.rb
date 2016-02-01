@@ -19,7 +19,7 @@ class TestLoremUA < Test::Unit::TestCase
     @tester.words(10).each do |word|
       assert_match WORD_MATCHER, word
     end
-    assert_match WORDS_MATCHER, @tester.words.join(" ")
+    assert_match WORDS_MATCHER, @tester.words.join(' ')
   end
 
   def test_sentence

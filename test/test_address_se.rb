@@ -3,7 +3,6 @@
 require 'helper'
 
 class TestAddressSE < Test::Unit::TestCase
-
   ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/
 

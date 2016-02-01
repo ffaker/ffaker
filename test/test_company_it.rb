@@ -3,7 +3,6 @@
 require 'helper'
 
 class TestCompanyIT < Test::Unit::TestCase
-
   def test_name
     assert_match(/[ a-z]+/, FFaker::CompanyIT.name)
   end
@@ -12,7 +11,7 @@ class TestCompanyIT < Test::Unit::TestCase
     assert_match(/[ a-z]+/i, FFaker::CompanyIT.suffix)
   end
 
-    def test_prefix
+  def test_prefix
     assert_match(/[ a-z]+/i, FFaker::CompanyIT.prefix)
-  end
+end
 end

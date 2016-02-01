@@ -16,19 +16,19 @@ class TestLoremFR < Test::Unit::TestCase
   end
 
   def test_paragraphsLoremFR
-    assert_match /\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.paragraphs.join(" ")
+    assert_match /\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.paragraphs.join(' ')
   end
 
   def test_sentences
-    assert_match /\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.sentences.join(" ")
+    assert_match /\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.sentences.join(' ')
   end
 
   def test_phrases
-    assert_match /\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.phrases.join(" ")
+    assert_match /\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.phrases.join(' ')
   end
 
   def test_words
-    assert_match /\A[ -àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.words.join(" ")
+    assert_match /\A[ -àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.words.join(' ')
   end
 
   def test_word
