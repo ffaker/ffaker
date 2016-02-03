@@ -6,11 +6,11 @@ module FFaker
     extend self
 
     DRIVETRAINS = %w(4WD 4X4 AWD FWD RWD)
-    YEARS = [*'1900'.."#{Date.today.year+1}"]
+    YEARS = [*'1900'..(Date.today.year + 1).to_s]
     COLOR_PREFIXES = k(%w(
-      beautiful bright calm dangerous dark dull fast magnetic magnificent majestic melodic metallic
-      mundane mute mysterious new pleasant pretty resonant royal slate soft tranquil vibrant weak
-    ))
+                         beautiful bright calm dangerous dark dull fast magnetic magnificent majestic melodic metallic
+                         mundane mute mysterious new pleasant pretty resonant royal slate soft tranquil vibrant weak
+                       ))
     TRANSMISSIONS_ABBR = %w(AT MT AM CVT)
     CYLINDERS = %w(2 5 6 8)
 
@@ -26,7 +26,7 @@ module FFaker
       MAKES_LIST.sample
     end
 
-    def manufacturer_color(n=2)
+    def manufacturer_color(n = 2)
       # Take two prefixes because it's more fun than one
       (COLOR_PREFIXES.sample(n) + [base_color]).join(' ')
     end

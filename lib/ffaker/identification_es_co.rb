@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 require 'ffaker/identification_es'
-require "date"
+require 'date'
 
 module FFaker
   module IdentificationESCO
@@ -15,10 +15,10 @@ module FFaker
 
     def drivers_license
       how_many_numbers = 6 + rand(8)
-      FFaker.numerify("#" * how_many_numbers)
+      FFaker.numerify('#' * how_many_numbers)
     end
 
-  alias_method :id, :drivers_license
+    alias_method :id, :drivers_license
 
     def driver_license_category
       category = LICENSE_CATEGORY.sample
@@ -27,7 +27,7 @@ module FFaker
       "#{category}#{num}"
     end
 
-    def blood_type #RH
+    def blood_type # RH
       sign = %w(+ -).sample
       "#{BLOOD_TYPE.sample}#{sign}"
     end
@@ -36,6 +36,5 @@ module FFaker
       today = Date.today
       today - rand(today.year)
     end
-
   end
 end

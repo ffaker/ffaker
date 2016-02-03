@@ -1,7 +1,6 @@
 # encoding: utf-8
 
 module FFaker
-
   # Format for swedish numbers, from here
   # from http://sv.wikipedia.org/wiki/Telefonnummer
   #
@@ -19,16 +18,16 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PHONE_FORMAT_PREFIX_2 = ["%s-### ### ##",
-                             "%s-### ## ##",
-                             "%s-## ## ##"]
-    PHONE_FORMAT_PREFIX_3 = ["%s-### ## ##",
-                             "%s-## ## ##",
-                             "%s-## ###"]
-    PHONE_FORMAT_PREFIX_4 = ["%s-## ## ##",
-                             "%s-### ##"]
-    MOBILE_PHONE_FORMAT = ["%s#-## ## ##", "%s#-######"]
-    COUNTRY_PREFIX = ["+46", "0046"]
+    PHONE_FORMAT_PREFIX_2 = ['%s-### ### ##',
+                             '%s-### ## ##',
+                             '%s-## ## ##']
+    PHONE_FORMAT_PREFIX_3 = ['%s-### ## ##',
+                             '%s-## ## ##',
+                             '%s-## ###']
+    PHONE_FORMAT_PREFIX_4 = ['%s-## ## ##',
+                             '%s-### ##']
+    MOBILE_PHONE_FORMAT = ['%s#-## ## ##', '%s#-######']
+    COUNTRY_PREFIX = ['+46', '0046']
     MOBILE_PHONE_PREFIX = %w(70 72 73 76 74)
 
     def phone_number

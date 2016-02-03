@@ -14,15 +14,15 @@ class TestHipsterIpsum < Test::Unit::TestCase
   end
 
   def test_paragraphs
-    assert_match TEST_REGEX, FFaker::HipsterIpsum.paragraphs.join(" ")
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.paragraphs.join(' ')
   end
 
   def test_sentences
-    assert_match TEST_REGEX, FFaker::HipsterIpsum.sentences.join(" ")
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.sentences.join(' ')
   end
 
   def test_words
-    assert_match TEST_REGEX, FFaker::HipsterIpsum.words.join(" ")
+    assert_match TEST_REGEX, FFaker::HipsterIpsum.words.join(' ')
   end
 
   def test_word

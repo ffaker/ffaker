@@ -5,12 +5,12 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COUNTRY_PREFIX = %w[+41 0041 0]
-    AREA_PREFIX = %w[21 22 24 26 27 31 32 33 34 41 43 44 51 52 56 58 61 62 71 81 91]
-    MOBILE_PREFIX = %w[74 75 76 77 78 79]
-    FREE_PHONE_PREFIX = %w[800]
-    SHARED_COST_PREFIX = %w[840 842 844 848]
-    PREMIUM_RATE_PREFIX = %w[900 901 906]
+    COUNTRY_PREFIX = %w(+41 0041 0)
+    AREA_PREFIX = %w(21 22 24 26 27 31 32 33 34 41 43 44 51 52 56 58 61 62 71 81 91)
+    MOBILE_PREFIX = %w(74 75 76 77 78 79)
+    FREE_PHONE_PREFIX = %w(800)
+    SHARED_COST_PREFIX = %w(840 842 844 848)
+    PREMIUM_RATE_PREFIX = %w(900 901 906)
     PHONE_NUMBER = ['#######', ' ### ## ##']
 
     def phone_number

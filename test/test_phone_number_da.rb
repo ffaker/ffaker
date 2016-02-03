@@ -35,5 +35,4 @@ class TestPhoneNumberDA < Test::Unit::TestCase
   def test_international_phone_number
     assert_match /\A\+45 \d{8}\z/, @tester.international_phone_number
   end
-
 end

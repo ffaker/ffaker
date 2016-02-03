@@ -22,19 +22,23 @@ module FFaker
     end
 
     def street_name
-      case rand(2)
-      when 0 then "#{NameDE.last_name}"
-      when 1 then "#{NameDE.first_name}"
-      end << case rand(20)
-      when 0 then "weg"
-      when 1 then "gasse"
-      when 3 then "hain"
-      else "str."
-      end
+      name = [true, false].sample ? NameDE.last_name.to_s : NameDE.first_name.to_s
+      name + random_type_of_street
     end
 
     def street_address
-      "#{street_name} #{1+rand(192)}"
+      "#{street_name} #{1 + rand(192)}"
+    end
+
+    private
+
+    def random_type_of_street
+      case rand(20)
+      when 0 then 'weg'
+      when 1 then 'gasse'
+      when 3 then 'hain'
+      else 'str.'
+      end
     end
   end
 end

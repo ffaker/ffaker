@@ -43,6 +43,5 @@ module FFaker
     def random_country
       COUNTRIES.sample
     end
-
   end
 end

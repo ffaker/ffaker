@@ -38,12 +38,11 @@ module FFaker
 
     def school
       case rand(5)
-      when (0..1)  then "#{school_name} #{SCHOOL_TYPE.sample}"
+      when (0..1) then "#{school_name} #{SCHOOL_TYPE.sample}"
       when 2 then "#{school_generic_name} #{SCHOOL_ADJ.sample} #{SCHOOL_TYPE.sample}"
       when 3 then "#{SCHOOL_UNI.sample} of #{school_generic_name}"
       when 4 then "#{school_generic_name} #{SCHOOL_TYPE.sample} of #{MAJOR_NOUN.sample}"
       end
     end
-
   end
 end

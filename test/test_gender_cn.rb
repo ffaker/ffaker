@@ -11,5 +11,4 @@ class TestFakerGenderCN < Test::Unit::TestCase
     gender_regex = /\A[男女]\z/
     assert_match gender_regex, @tester.random
   end
-
 end

@@ -16,19 +16,19 @@ class TestLoremARAR < Test::Unit::TestCase
   end
 
   def test_paragraphs
-    assert_match /[^a-zA-Z0-9]+/, FFaker::LoremAR.paragraphs.join(" ")
+    assert_match /[^a-zA-Z0-9]+/, FFaker::LoremAR.paragraphs.join(' ')
   end
 
   def test_sentences
-    assert_match /[^a-zA-Z0-9]+/, FFaker::LoremAR.sentences.join(" ")
+    assert_match /[^a-zA-Z0-9]+/, FFaker::LoremAR.sentences.join(' ')
   end
 
   def test_phrases
-    assert_match /[^a-zA-Z0-9]+/, FFaker::LoremAR.phrases.join(" ")
+    assert_match /[^a-zA-Z0-9]+/, FFaker::LoremAR.phrases.join(' ')
   end
 
   def test_words
-    assert_match /[^a-zA-Z0-9]+/, FFaker::LoremAR.words.join(" ")
+    assert_match /[^a-zA-Z0-9]+/, FFaker::LoremAR.words.join(' ')
   end
 
   def test_word

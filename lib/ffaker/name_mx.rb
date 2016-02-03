@@ -33,7 +33,7 @@ module FFaker
         end
       when :male then "#{male_prefix} #{male_name} #{paternal_last_names}"
       when :female then "#{female_prefix} #{female_name} #{paternal_last_names}"
-      else raise ArgumentError, "Invalid gender, must be one of :any, :male, :female"
+      else fail ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
 
@@ -47,7 +47,7 @@ module FFaker
         end
       when :male then "#{male_name} #{paternal_last_names}"
       when :female then "#{female_name} #{paternal_last_names}"
-      else raise ArgumentError, "Invalid gender, must be one of :any, :male, :female"
+      else fail ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
 
@@ -73,7 +73,7 @@ module FFaker
       when :any then (rand(2) == 0) ? name(:male) : name(:female)
       when :male then MALE_FIRST_NAMES.sample
       when :female then FEMALE_FIRST_NAMES.sample
-      else raise ArgumentError, "Invalid gender, must be one of :any, :male, :female"
+      else fail ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
     alias_method :middle_name, :name

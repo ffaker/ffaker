@@ -3,7 +3,6 @@
 require 'helper'
 
 class TestAddressRU < Test::Unit::TestCase
-
   def setup
     @tester = FFaker::AddressRU
   end

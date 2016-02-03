@@ -31,4 +31,3 @@ class TestFakerEducation < Test::Unit::TestCase
     assert @tester.school.match(/.+ .+( .+)?/)
   end
 end
-

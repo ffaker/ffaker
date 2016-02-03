@@ -8,16 +8,16 @@ module FFaker
     extend self
 
     TIME_UNITS = [
-      {name: 'Years', abbreviation: 'yr'},
-      {name: 'Days', abbreviation: 'd'},
-      {name: 'Hours', abbreviation: 'Minutes'},
-      {name: 'Seconds', abbreviation: 's'},
-      {name: 'Milliseconds', abbreviation: 'msec'}
+      { name: 'Years', abbreviation: 'yr' },
+      { name: 'Days', abbreviation: 'd' },
+      { name: 'Hours', abbreviation: 'Minutes' },
+      { name: 'Seconds', abbreviation: 's' },
+      { name: 'Milliseconds', abbreviation: 'msec' }
     ]
     TEMPERATURE_UNITS = [
-      {name: 'Kelvin', abbreviation: 'K'},
-      {name: 'Celsius', abbreviation: 'C'},
-      {name: 'Fahrenheit', abbreviation: 'F'}
+      { name: 'Kelvin', abbreviation: 'K' },
+      { name: 'Celsius', abbreviation: 'C' },
+      { name: 'Fahrenheit', abbreviation: 'F' }
     ]
 
     def time_name

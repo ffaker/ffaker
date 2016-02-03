@@ -64,27 +64,27 @@ class TestAddress < Test::Unit::TestCase
   end
 
   def test_neighborhood
-    assert_match /[ a-z]+/, FFaker::Address::neighborhood
+    assert_match /[ a-z]+/, FFaker::Address.neighborhood
   end
 
   def test_country
-    assert_match /[ a-z]+/, FFaker::Address::country
+    assert_match /[ a-z]+/, FFaker::Address.country
   end
 
   def test_country_by_county_code
-    assert_match 'Ukraine', FFaker::Address::country('UA')
+    assert_match 'Ukraine', FFaker::Address.country('UA')
   end
 
   def test_country_code
-    assert_match /[A-Z]{2}/, FFaker::Address::country_code
+    assert_match /[A-Z]{2}/, FFaker::Address.country_code
   end
 
   def test_country_code_of_particular_country
-    assert_match 'UA', FFaker::Address::country_code('Ukraine')
-    assert_match /[A-Z]{2}/, FFaker::Address::country_code('Foo')
+    assert_match 'UA', FFaker::Address.country_code('Ukraine')
+    assert_match /[A-Z]{2}/, FFaker::Address.country_code('Foo')
   end
 
   def test_time_zone
-    assert_include FFaker::Address::TIME_ZONE, FFaker::Address::time_zone
+    assert_include FFaker::Address::TIME_ZONE, FFaker::Address.time_zone
   end
 end

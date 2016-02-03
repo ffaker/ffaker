@@ -3,10 +3,9 @@
 # => author: PapePathe github.com/PapePathe
 # => email: pathe.sene@gmail.com
 
-require "helper"
+require 'helper'
 
 class TestAddressSn < Test::Unit::TestCase
-
   def setup
     @subject = FFaker::AddressSN
   end

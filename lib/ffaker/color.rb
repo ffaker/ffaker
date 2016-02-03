@@ -8,6 +8,5 @@ module FFaker
     def name
       NAMES_LIST.sample
     end
-
   end
 end

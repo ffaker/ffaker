@@ -14,7 +14,7 @@ module FFaker
     end
 
     def specialty
-      "%s %s" % [SPECIALTY_START.sample, SPECIALTY_END.sample]
+      '%s %s' % [SPECIALTY_START.sample, SPECIALTY_END.sample]
     end
 
     def specialties(num = 3)

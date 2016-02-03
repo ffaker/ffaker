@@ -12,62 +12,62 @@ module FFaker
     end
 
     def p(count = 3, options = {})
-      options = {fancy: false, include_breaks: false}.merge(options)
+      options = { fancy: false, include_breaks: false }.merge(options)
       if options[:fancy]
         s = fancy_string(count, options[:include_breaks])
       else
-        mode = options[:include_breaks] ? "paragraphs" : "paragraph"
+        mode = options[:include_breaks] ? 'paragraphs' : 'paragraph'
         s = send(mode.to_sym, count)
       end
       "<p>#{s}</p>"
     end
 
     def dl(definitions = 2)
-      s = "<dl>"
+      s = '<dl>'
       definitions.times do
         s << "<dt>#{words(1).capitalize!}</dt><dd>#{paragraph 2}</dd>"
       end
-      s << "</dl>"
+      s << '</dl>'
     end
 
     def ul_short(items = 3)
-      s = "<ul>"
+      s = '<ul>'
       items.times do
         s << "<li>#{sentence 2}</li>"
       end
-      s << "</ul>"
+      s << '</ul>'
     end
 
     def ul_long(items = 3)
-      s = "<ul>"
+      s = '<ul>'
       items.times do
         s << "<li>#{paragraph 2}</li>"
       end
-      s << "</ul>"
+      s << '</ul>'
     end
 
     def ol_short(items = 3)
-      s = "<ol>"
+      s = '<ol>'
       items.times do
         s << "<li>#{sentence 2}</li>"
       end
-      s << "</ol>"
+      s << '</ol>'
     end
 
     def ol_long(items = 3)
-      s = "<ol>"
+      s = '<ol>'
       items.times do
         s << "<li>#{paragraph 2}</li>"
       end
-      s << "</ol>"
+      s << '</ol>'
     end
 
     def ul_links(items = 3)
-      s = "<ul>"
+      s = '<ul>'
       items.times do
         s << "<li>#{a 1}</li>"
       end
-      s << "</ul>"
+      s << '</ul>'
     end
 
     def table(rows = 3)
@@ -122,39 +122,40 @@ module FFaker
     end
 
     def fancy_string(count = 3, include_breaks = false)
-      sep  = include_breaks ? "<br>" : " "
+      sep = include_breaks ? '<br>' : ' '
       a = k([
         "<strong>#{words(2).capitalize!}</strong>.",
         "<em>#{paragraph}</em>",
         "<code>#{words 2}</code>",
-        "#{a 2}"
-      ] + FFaker::Lorem::paragraphs(count))
+        (a 2).to_s
+      ] + FFaker::Lorem.paragraphs(count))
       a.sample(count).join(sep)
     end
 
-  private
+    private
+
     def word
-      FFaker::Lorem::word
+      FFaker::Lorem.word
     end
 
     def words(word_count = 3)
-      FFaker::Lorem::words(word_count).join(' ')
+      FFaker::Lorem.words(word_count).join(' ')
     end
 
     def sentence(word_count = 3)
-      FFaker::Lorem::sentence(word_count)
+      FFaker::Lorem.sentence(word_count)
     end
 
     def sentences(sentence_count = 3)
-      FFaker::Lorem::sentences(sentence_count).join(' ')
+      FFaker::Lorem.sentences(sentence_count).join(' ')
     end
 
     def paragraph(sentence_count = 3)
-      FFaker::Lorem::paragraph(sentence_count)
+      FFaker::Lorem.paragraph(sentence_count)
     end
 
     def paragraphs(paragraph_count = 3)
-      FFaker::Lorem::paragraphs(paragraph_count).join('<br>')
+      FFaker::Lorem.paragraphs(paragraph_count).join('<br>')
     end
   end
 end

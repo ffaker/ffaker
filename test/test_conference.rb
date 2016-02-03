@@ -7,4 +7,3 @@ class TestConference < Test::Unit::TestCase
     assert_match /1\+|[ a-z]+/i, FFaker::Conference.name
   end
 end
-

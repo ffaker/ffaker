@@ -56,7 +56,7 @@ module FFaker
     end
 
     def country_code
-      "+61"
+      '+61'
     end
 
     def international_mobile_phone_number

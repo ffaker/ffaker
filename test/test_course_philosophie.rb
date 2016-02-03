@@ -1,4 +1,4 @@
-require "helper"
+require 'helper'
 
 class TestCoursePhilosophie < Test::Unit::TestCase
   def setup

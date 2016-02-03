@@ -81,12 +81,11 @@ module FFaker
       PATRONYMICS[select_sex(for_sex)].sample
     end
 
-
     private
 
     def select_sex(sex) # :nodoc:
       given_sex = @fixed_sex ? @fixed_sex : sex
-      raise ArgumentError, "Unknown sex #{given_sex}" unless GENDERS.include?(given_sex)
+      fail ArgumentError, "Unknown sex #{given_sex}" unless GENDERS.include?(given_sex)
       given_sex == :random ? GENDERS[rand(2)] : given_sex
     end
   end

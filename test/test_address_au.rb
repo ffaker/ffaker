@@ -4,7 +4,6 @@ require 'helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
 class TestAddressAU < Test::Unit::TestCase
-
   def test_au_state_abbr_insertion
     arr = FFaker::AddressAU::STATE_ABBR.sort
     assert arr = FFaker::AddressAU::SUBURB.keys.sort

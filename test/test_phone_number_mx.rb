@@ -40,4 +40,3 @@ class TestPhoneNumberMX < Test::Unit::TestCase
     assert_match /01 800 \d{3} \d{4}/, @tester.toll_free_number
   end
 end
-

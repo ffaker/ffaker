@@ -9,7 +9,6 @@ module FFaker
     extend ModuleUtils
     extend self
 
-
     def postal_code
       FFaker.numerify '####'
     end

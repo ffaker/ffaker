@@ -15,9 +15,7 @@ module FFaker
 
     def sentence(word_count = 7)
       elements = words(word_count + rand(10))
-      if elements.count > 10
-        elements.insert(rand(3..(elements.count - 3)), ',')
-      end
+      elements.insert(rand(3..(elements.count - 3)), ',') if elements.count > 10
       result = elements.join(' ').gsub(' , ', ', ')
       capitalize_ukrainian("#{result}#{sentence_type_mark}")
     end
@@ -42,9 +40,9 @@ module FFaker
 
     def sentence_type_mark
       case rand(10)
-      when 0..7 then "."
-      when 8    then "!"
-      when 9    then "?"
+      when 0..7 then '.'
+      when 8    then '!'
+      when 9    then '?'
       end
     end
 
@@ -56,4 +54,3 @@ module FFaker
     end
   end
 end
-

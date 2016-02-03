@@ -3,7 +3,6 @@
 require 'helper'
 
 class TestCompanySE < Test::Unit::TestCase
-
   def test_name
     assert_match(/[ a-z]+/, FFaker::CompanySE.name)
   end

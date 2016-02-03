@@ -23,7 +23,7 @@ module FFaker
     def sentences(sentence_count = 3)
       s = (1..sentence_count).map { sentence }
       def s.to_s
-        result = self.join(' ')
+        result = join(' ')
         result[-1] = '。'
         result
       end

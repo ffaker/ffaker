@@ -23,12 +23,12 @@ module FFaker
     end
 
     def self.shuffle(array)
-      array.sort_by{Kernel.rand}
+      array.sort_by { Kernel.rand }
     end
 
     def random_pick(n)
       warn '[ArrayUtils#random_pick] is deprecated. Please use the Array#sample method'
-      self.sample(n)
+      sample(n)
     end
 
     def rand

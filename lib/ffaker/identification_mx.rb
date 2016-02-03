@@ -8,8 +8,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    CONSONANTS = ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"]
-    VOWELS = ["A","E","I","O","U"]
+    CONSONANTS = %w(B C D F G H J K L M N P Q R S T V W X Y Z)
+    VOWELS = %w(A E I O U)
     HOMOCLAVE = CONSONANTS + VOWELS + [*'0'..'9']
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -17,16 +17,16 @@ module FFaker
     def rfc_persona_fisica
       consonants_n = CONSONANTS + ["Ñ"]
       all_letters = consonants_n + VOWELS
-      date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
+      date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
       "#{consonants_n.sample}#{VOWELS.sample}#{all_letters.sample(2).join}#{date}#{HOMOCLAVE.sample(3).join}"
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
     # Registro Federal de Contribuyentes (R.F.C.) para persona moral
     def rfc_persona_moral
-      consonants_n_amp = CONSONANTS + ["Ñ", "&"]
+      consonants_n_amp = CONSONANTS + ["Ñ", '&']
       all_letters = consonants_n_amp + VOWELS
-      date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
+      date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
       "#{all_letters.sample(3).join}#{date}#{HOMOCLAVE.sample(3).join}"
     end
 
@@ -40,8 +40,8 @@ module FFaker
     # Clave Única de Registro de Población
     def curp
       all_letters = CONSONANTS + VOWELS
-      hm = ["H","M"]
-      date = ::Time.at(rand * ::Time.now.to_f).strftime("%y%m%d")
+      hm = %w(H M)
+      date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
       "#{CONSONANTS.sample}#{VOWELS.sample}#{all_letters.sample(2).join}#{date}#{hm.sample}#{ESTADOS_CURP.sample}#{CONSONANTS.sample(3).join}#{HOMOCLAVE.sample}#{rand(10)}"
     end
   end
