@@ -3,7 +3,6 @@
 require 'date'
 
 module FFaker
-
   # The Social Security number is a 12-digit number in the format:
   # "YYYYDDMM-XXXX'
   #
@@ -24,7 +23,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    GENDERS = ["female", "male"]
+    GENDERS = %w(female male)
 
     def ssn(opts = {})
       from   = opts[:from]   || ::Time.local(1940, 1, 1)
@@ -40,7 +39,7 @@ module FFaker
 
     def generate_ssn(from, to, gender)
       birth_date = random_birth_time_between(from, to)
-      birth_date_str = birth_date.strftime("%Y%m%d")      # "19800228"
+      birth_date_str = birth_date.strftime('%Y%m%d')      # "19800228"
       region = get_random_region_for(gender)              # "413"
       ssn_without_check_digit = birth_date_str + region   # "19800228413"
       check_digit = luhn_check(ssn_without_check_digit)   # "9"
@@ -48,20 +47,20 @@ module FFaker
     end
 
     def raise_error_on_bad_arguments(from, to, gender)
-      raise ArgumentError, "Invalid from argument: from" unless to.is_a? ::Time
-      raise ArgumentError, "Invalid from argument: from" unless from.is_a? ::Time
-      raise ArgumentError, "Invalid argument: from > to" if from > to
-      raise ArgumentError, "Invalid argument: gender" unless GENDERS.include?(gender.to_s)
+      fail ArgumentError, 'Invalid from argument: from' unless to.is_a? ::Time
+      fail ArgumentError, 'Invalid from argument: from' unless from.is_a? ::Time
+      fail ArgumentError, 'Invalid argument: from > to' if from > to
+      fail ArgumentError, 'Invalid argument: gender' unless GENDERS.include?(gender.to_s)
     end
 
-    def random_birth_time_between(from=::Time.local(1940, 1, 1), to=::Time.now)
+    def random_birth_time_between(from = ::Time.local(1940, 1, 1), to = ::Time.now)
       ::Time.at(from + rand * (to.to_f - from.to_f))
     end
 
     def get_random_region_for(gender)
       region_number = case gender
-      when "female" then get_random_region_even
-      when "male" then get_random_region_odd
+                      when 'female' then get_random_region_even
+                      when 'male' then get_random_region_odd
       end
       three_character_string(region_number)
     end
@@ -75,7 +74,7 @@ module FFaker
     end
 
     def three_character_string(number)
-      "%03d" % number
+      '%03d' % number
     end
 
     # http://en.wikipedia.org/wiki/Luhn_algorithm
@@ -83,10 +82,10 @@ module FFaker
       multiplications = []
 
       number.split(//).each_with_index do |digit, i|
-        if i % 2 == 0
-          multiplications << digit.to_i * 2
-        else
-          multiplications << digit.to_i
+        multiplications << if i.even?
+                             digit.to_i * 2
+                           else
+                             digit.to_i
         end
       end
 
@@ -97,10 +96,10 @@ module FFaker
         end
       end
 
-      if sum % 10 == 0
-        control_digit = 0
-      else
-        control_digit = (sum / 10 + 1) * 10 - sum
+      control_digit = if sum % 10 == 0
+                        0
+                      else
+                        (sum / 10 + 1) * 10 - sum
       end
 
       control_digit.to_s

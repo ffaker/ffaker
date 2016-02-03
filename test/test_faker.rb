@@ -26,5 +26,4 @@ class TestFaker < Test::Unit::TestCase
   def test_bothify_with_array
     assert FFaker.bothify(['???###', '???###']).match(/[a-z]{3}\d{3}/)
   end
-
 end

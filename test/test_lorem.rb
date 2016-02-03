@@ -19,19 +19,19 @@ class TestLorem < Test::Unit::TestCase
   end
 
   def test_paragraphs
-    assert_match /[ a-z]+/, FFaker::Lorem.paragraphs.join(" ")
+    assert_match /[ a-z]+/, FFaker::Lorem.paragraphs.join(' ')
   end
 
   def test_sentences
-    assert_match /[ a-z]+/, FFaker::Lorem.sentences.join(" ")
+    assert_match /[ a-z]+/, FFaker::Lorem.sentences.join(' ')
   end
 
   def test_phrases
-    assert_match /[ a-z]+/, FFaker::Lorem.phrases.join(" ")
+    assert_match /[ a-z]+/, FFaker::Lorem.phrases.join(' ')
   end
 
   def test_words
-    assert_match /[ a-z]+/, FFaker::Lorem.words.join(" ")
+    assert_match /[ a-z]+/, FFaker::Lorem.words.join(' ')
   end
 
   def test_word
@@ -40,8 +40,8 @@ class TestLorem < Test::Unit::TestCase
 
   def test_characters
     assert_match /[a-z0-9]+/, FFaker::Lorem.characters
-    assert FFaker::Lorem.characters().length == 255
+    assert FFaker::Lorem.characters.length == 255
     assert FFaker::Lorem.characters(10).length == 10
-    assert FFaker::Lorem.characters(-1) == ""
+    assert FFaker::Lorem.characters(-1) == ''
   end
 end

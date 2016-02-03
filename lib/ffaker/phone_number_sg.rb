@@ -20,49 +20,49 @@ module FFaker
     #  3xxx xxxx
     #
     def voip_number
-      FFaker.numerify("3### ####")
+      FFaker.numerify('3### ####')
     end
 
     # Generates a fixed line phone number
     #  6xxx xxxx
     #
     def fixed_line_number
-      FFaker.numerify("6### ####")
+      FFaker.numerify('6### ####')
     end
 
     # Generates a fixed mobile phone number
     #  8xxx xxxx
     #
     def mobile_number
-      FFaker.numerify("8### ####")
+      FFaker.numerify('8### ####')
     end
 
     # Generates a fixed mobile phone number or pager service number
     #  9xxx xxxx
     #
     def mobile_or_pager_number
-      FFaker.numerify("9### ####")
+      FFaker.numerify('9### ####')
     end
 
     # Generates an international toll-free number
     #  800 xxx xxxx
     #
     def international_toll_free_number
-      FFaker.numerify("800 ### ####")
+      FFaker.numerify('800 ### ####')
     end
 
     # Generates an toll-free number
     #  1800 xxx xxxx
     #
     def toll_free_number
-      FFaker.numerify("1800 ### ####")
+      FFaker.numerify('1800 ### ####')
     end
 
     # Generates a premium service number
     #  (1900) xxx xxxx
     #
     def premium_service_number
-      FFaker.numerify("1900 ### ####")
+      FFaker.numerify('1900 ### ####')
     end
 
     # generates mobile or home/work number
@@ -75,7 +75,7 @@ module FFaker
     end
 
     def country_code
-      "+65"
+      '+65'
     end
   end
 end

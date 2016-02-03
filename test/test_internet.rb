@@ -48,9 +48,9 @@ class TestFakerInternet < Test::Unit::TestCase
   end
 
   def test_uri
-    assert @tester.uri("ftp").match(/^ftp:\/\/.+/)
-    assert @tester.uri("http").match(/^http:\/\/.+/)
-    assert @tester.uri("https").match(/^https:\/\/.+/)
+    assert @tester.uri('ftp').match(/^ftp:\/\/.+/)
+    assert @tester.uri('http').match(/^http:\/\/.+/)
+    assert @tester.uri('https').match(/^https:\/\/.+/)
   end
 
   def test_http_url
@@ -66,11 +66,11 @@ class TestFakerInternet < Test::Unit::TestCase
   end
 
   def test_slug_with_input_words
-    assert_not_match(/&/, @tester.slug("Input Words&&Symbols"))
+    assert_not_match(/&/, @tester.slug('Input Words&&Symbols'))
   end
 
   def test_slug_with_specified_glue
-    assert_match(/\A[a-z]+-[a-z]+\z/, @tester.slug(nil, "-"))
+    assert_match(/\A[a-z]+-[a-z]+\z/, @tester.slug(nil, '-'))
   end
 
   def test_password

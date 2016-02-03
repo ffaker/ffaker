@@ -12,15 +12,15 @@ module FFaker
     NUM = ['#', '##', '##', '###', '####', '#-##']
     MOD = [' B', ' T', ' Q', ' BIS', ' TER', ' QUATER', '', '', '', '']
     SEP = [', ', ' ']
-    TYPE = %w[rue avenue av boulevard bd impasse]
+    TYPE = %w(rue avenue av boulevard bd impasse)
     POSTAL_CODE_FORMATS = ['####', '#####', '97####', '2A###', '2B###']
 
     def street_address
       FFaker.numerify(NUM.sample) +
-      MOD.sample +
-      SEP.sample +
-      TYPE.sample + ' ' +
-      FFaker::NameFR.name
+        MOD.sample +
+        SEP.sample +
+        TYPE.sample + ' ' +
+        FFaker::NameFR.name
     end
 
     def postal_code
@@ -32,7 +32,7 @@ module FFaker
     end
 
     def full_address
-      %Q{#{street_address}#{SEP.sample}#{postal_code} #{CITY.sample}}
+      %(#{street_address}#{SEP.sample}#{postal_code} #{CITY.sample})
     end
   end
 end

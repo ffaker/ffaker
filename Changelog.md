@@ -1,3 +1,14 @@
+## 2.2.0
+  - fixes some bugs
+    - generating Robohash images
+
+  - many new improvements and enhancements like:
+    - CheesyLingo
+    - Music module
+    - Brazilian phones
+    - Improve NameJA
+    - added AddressRU
+
 ## 2.1.0
 
   - [#191] - add REFERENCE.md ([@rstacruz])
@@ -10,7 +21,7 @@
   - [#212] - add IMEI support
   - [#213] - Fix max length support FFaker::Internet.password ([@anderscarling])
   - many internal library and test suite refactorings
-  
+
 
 [#181]: https://github.com/ffaker/ffaker/issues/181
 [#191]: https://github.com/ffaker/ffaker/issues/191

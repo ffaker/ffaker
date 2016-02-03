@@ -20,16 +20,8 @@ module FFaker
     end
 
     def street_name
-      case rand(2)
-      when 0 then "#{NameNL.last_name}"
-      when 1 then "#{NameNL.first_name}"
-      end << case rand(20)
-      when 0 then "weg"
-      when 1 then "boulevard"
-      when 3 then "pad"
-      when 4 then "steeg"
-      else "straat"
-      end
+      name = [true, false].sample ? NameNL.last_name : NameNL.first_name
+      name + random_type_of_street
     end
 
     def city
@@ -38,6 +30,18 @@ module FFaker
 
     def province
       PROVINCE.sample
+    end
+
+    private
+
+    def random_type_of_street
+      case rand(20)
+      when 0 then 'weg'
+      when 1 then 'boulevard'
+      when 3 then 'pad'
+      when 4 then 'steeg'
+      else 'straat'
+      end
     end
   end
 end

@@ -81,7 +81,7 @@ module FFaker
       phone_prefix = home_work_phone_prefix
       case phone_prefix.size
       when 2 then FFaker.numerify("#{international_country_code}#{phone_prefix[1]} ### ####")
-      when 3 then FFaker.numerify("#{international_country_code}#{phone_prefix[1,2]} ## ####")
+      when 3 then FFaker.numerify("#{international_country_code}#{phone_prefix[1, 2]} ## ####")
       end
     end
 
@@ -96,7 +96,7 @@ module FFaker
     # Based on information from http://en.wikipedia.org/wiki/E.164
     #
     def e164_country_code
-      "53"
+      '53'
     end
 
     def e164_mobile_phone_number
@@ -107,7 +107,7 @@ module FFaker
       phone_prefix = home_work_phone_prefix
       case phone_prefix.size
       when 2 then FFaker.numerify("#{e164_country_code}#{phone_prefix[1]}#######")
-      when 3 then FFaker.numerify("#{e164_country_code}#{phone_prefix[1,2]}######")
+      when 3 then FFaker.numerify("#{e164_country_code}#{phone_prefix[1, 2]}######")
       end
     end
 

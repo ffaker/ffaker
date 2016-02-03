@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    B2   = %w(nix cell sync func balt sche pod)
+    B2 = %w(nix cell sync func balt sche pod)
     VOWELS = %w(a e i o u ou ie y io)
     START  = %w(tr br p ph)
     SUFFIX = %w(ck ns nce nt st ne re ffe ph)
@@ -14,15 +14,15 @@ module FFaker
     def brand
       case rand(12)
       when (0..4) then B1.sample + B2.sample
-      when (5..10) then "#{START.sample}#{VOWELS.sample}#{SUFFIX.sample}#{ADDON.sample if rand(2)==0}".capitalize
-      when 11 then "#{letters(2..3)}"
+      when (5..10) then "#{START.sample}#{VOWELS.sample}#{SUFFIX.sample}#{ADDON.sample if rand(2) == 0}".capitalize
+      when 11 then letters(2..3).to_s
       end
     end
 
     def product_name
       case rand(2)
       when 0 then "#{ADJ.sample} #{NOUN.sample}"
-      when 1 then "#{[ADJ.sample, ADJ.sample].uniq.join(" ")} #{NOUN.sample}"
+      when 1 then "#{[ADJ.sample, ADJ.sample].uniq.join(' ')} #{NOUN.sample}"
       end
     end
 
@@ -37,8 +37,8 @@ module FFaker
 
     def model
       case rand(2)
-      when 0 then "#{LETTERS.sample.upcase}#{rand(90)}"   # N90
-      when 1 then "#{letters(1..rand(1..2))}-#{rand(9900)}"         # N-9400
+      when 0 then "#{LETTERS.sample.upcase}#{rand(90)}" # N90
+      when 1 then "#{letters(1..rand(1..2))}-#{rand(9900)}" # N-9400
       end
     end
   end

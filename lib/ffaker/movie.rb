@@ -6,12 +6,12 @@ module FFaker
     extend self
 
     SUFFIXES = [
-      "from Hell", "from Outer Space", "from Mars", "from the Black Lagoon", "with a Thousand Faces",
-      "from Across the Ocean", "Who Fell to Earth", "That Came to Dinner"
+      'from Hell', 'from Outer Space', 'from Mars', 'from the Black Lagoon', 'with a Thousand Faces',
+      'from Across the Ocean', 'Who Fell to Earth', 'That Came to Dinner'
     ]
-    COLORS = %w{Red Yellow Black White}
+    COLORS = %w(Red Yellow Black White)
 
-    RATINGS = %w(G PG PG-13 R NC-17)  # According to MPAA
+    RATINGS = %w(G PG PG-13 R NC-17) # According to MPAA
 
     def title
       case rand(4)
@@ -37,9 +37,7 @@ module FFaker
     end
 
     def maybe_adj_or_adv
-      if rand(2) == 1
-        ADJ_AND_ADV.sample + " "
-      end
+      ADJ_AND_ADV.sample + ' ' if rand(2) == 1
     end
 
     def simple_title
@@ -61,7 +59,7 @@ module FFaker
       when 10 then "The #{COLORS.sample} Rose of #{FFaker::AddressUK.country}"
       when 11 then "Hard Boiled #{NOUNS.sample}"
       else
-        ::String.new.tap{|s| n = simple_title; s.replace("#{n} 2: Son of #{n}")}
+        ::String.new.tap { |s| n = simple_title; s.replace("#{n} 2: Son of #{n}") }
       end
     end
   end

@@ -11,38 +11,38 @@ module FFaker
     extend self
 
     LENGTH_UNITS = [
-      { name: "inch", abbreviation: "in"},
-      { name: "foot", abbreviation: "ft"},
-      {  name: "yard", abbreviation: "yd"},
-      { name: "furlong", abbreviation: "fur"},
-      { name: "mile", abbreviation: "m"}
+      { name: 'inch', abbreviation: 'in' },
+      { name: 'foot', abbreviation: 'ft' },
+      { name: 'yard', abbreviation: 'yd' },
+      { name: 'furlong', abbreviation: 'fur' },
+      { name: 'mile', abbreviation: 'm' }
     ]
     MASS_UNITS = [
-      { name: "grains", abbreviation: "gr"},
-      { name: "ounces", abbreviation: "oz"},
-      { name: "pounds", abbreviation: "lb" },
-      { name: "hundredweight", abbreviation: "cwt"},
-      { name: "ton", abbreviation: "t" }
+      { name: 'grains', abbreviation: 'gr' },
+      { name: 'ounces', abbreviation: 'oz' },
+      { name: 'pounds', abbreviation: 'lb' },
+      { name: 'hundredweight', abbreviation: 'cwt' },
+      { name: 'ton', abbreviation: 't' }
     ]
     LIQUID_UNITS = [
-      { name: "fluid ounce", abbreviation: "fl oz"},
-      { name: "gill", abbreviation: "gi"},
-      { name: "pint", abbreviation: "pt"},
-      { name: "quart", abbreviation: "qt"}
+      { name: 'fluid ounce', abbreviation: 'fl oz' },
+      { name: 'gill', abbreviation: 'gi' },
+      { name: 'pint', abbreviation: 'pt' },
+      { name: 'quart', abbreviation: 'qt' }
     ]
     VOLUME_UNITS = [
-      { name: "cubic inch", abbreviation: "CI"},
-      { name: "cubic foot", abbreviation: "CFT"},
-      { name: "cubic yard", abbreviation: "CY"}
+      { name: 'cubic inch', abbreviation: 'CI' },
+      { name: 'cubic foot', abbreviation: 'CFT' },
+      { name: 'cubic yard', abbreviation: 'CY' }
     ]
     AREA_UNITS = [
-      { name: "square inch", abbreviation: "sq. in"},
-      { name: "square foot", abbreviation: "sq ft"},
-      { name: "square yard", abbreviation: "sq yd"},
-      { name: "acre", abbreviation: "ac"},
-      { name: "section", abbreviation: "s"},
-      { name: "square mile", abbreviation: "sq mi"},
-      { name: "township", abbreviation: "Twp"}
+      { name: 'square inch', abbreviation: 'sq. in' },
+      { name: 'square foot', abbreviation: 'sq ft' },
+      { name: 'square yard', abbreviation: 'sq yd' },
+      { name: 'acre', abbreviation: 'ac' },
+      { name: 'section', abbreviation: 's' },
+      { name: 'square mile', abbreviation: 'sq mi' },
+      { name: 'township', abbreviation: 'Twp' }
     ]
 
     def mass_name
@@ -106,6 +106,5 @@ module FFaker
     def area
       OpenStruct.new AREA_UNITS.sample
     end
-
   end
 end

@@ -36,15 +36,14 @@ class TestAddressININ < Test::Unit::TestCase
   end
 
   def test_in_country
-    assert_equal "India", FFaker::AddressIN.country
+    assert_equal 'India', FFaker::AddressIN.country
   end
 
   def test_in_country_code
-    assert_equal "IN", FFaker::AddressIN.country_code
+    assert_equal 'IN', FFaker::AddressIN.country_code
   end
 
   def test_in_time_zone
-    assert_equal "Asia/Kolkata", FFaker::AddressIN.time_zone
+    assert_equal 'Asia/Kolkata', FFaker::AddressIN.time_zone
   end
-
 end

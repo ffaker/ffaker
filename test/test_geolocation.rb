@@ -13,9 +13,9 @@ class TestGeolocation < Test::Unit::TestCase
 
   def test_boxed_coords
     coords_list = [
-      [[1,1], [3,3]],
-      [[12.3455,23.3434], [34.3434,36.34343]],
-      [[12.3455,23.3434], [10.3434,6.34343]]
+      [[1, 1], [3, 3]],
+      [[12.3455, 23.3434], [34.3434, 36.34343]],
+      [[12.3455, 23.3434], [10.3434, 6.34343]]
     ]
 
     coords_list.each do |coords|
@@ -26,9 +26,8 @@ class TestGeolocation < Test::Unit::TestCase
 
       new_coords = FFaker::Geolocation.boxed_coords(coords[0], coords[1])
 
-      assert (lat_min..lat_max).include?new_coords[0]
-      assert (lon_min..lon_max).include?new_coords[1]
+      assert (lat_min..lat_max).cover?new_coords[0]
+      assert (lon_min..lon_max).cover?new_coords[1]
     end
-
   end
 end

@@ -15,7 +15,7 @@ module FFaker
 
     # Region prefixes are in range 02..09 with length of 3 to 5 digits
     def region_prefix(leading_zero = true)
-      region_prefix = (rand(8) + 2).to_s + FFaker.numerify( '#' * (rand(3) + 1) ).to_s
+      region_prefix = (rand(8) + 2).to_s + FFaker.numerify('#' * (rand(3) + 1)).to_s
       region_prefix = '0' + region_prefix if leading_zero
       region_prefix
     end

@@ -42,15 +42,15 @@ module FFaker
     end
 
     def country
-      FFaker::Address.country("IN")
+      FFaker::Address.country('IN')
     end
 
     def country_code
-      FFaker::Address.country_code("India")
+      FFaker::Address.country_code('India')
     end
 
     def time_zone
-      "Asia/Kolkata"
+      'Asia/Kolkata'
     end
   end
 end

@@ -1,12 +1,12 @@
 module FFaker
-  VERSION = '2.1.0'
+  VERSION = '2.2.0'
 
   require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'
 
   extend ModuleUtils
 
-  BASE_LIB_PATH = File.expand_path("..", __FILE__)
+  BASE_LIB_PATH = File.expand_path('..', __FILE__)
 
   LETTERS = [*'a'..'z']
 

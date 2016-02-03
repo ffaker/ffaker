@@ -3,7 +3,6 @@
 require 'helper'
 
 class TestPhoneNumberSE < Test::Unit::TestCase
-
   def setup
     @tester = FFaker::PhoneNumberSE
   end
@@ -54,7 +53,4 @@ class TestPhoneNumberSE < Test::Unit::TestCase
       assert_match(/46/, FFaker::PhoneNumberSE.international_phone_number)
     end
   end
-
 end
-
-

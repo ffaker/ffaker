@@ -26,19 +26,19 @@ class TestLoremKR < Test::Unit::TestCase
   end
 
   def test_paragraphs
-    assert_match KOREAN_SENTENCE_MATCHER, @tester.paragraphs.join(" ")
+    assert_match KOREAN_SENTENCE_MATCHER, @tester.paragraphs.join(' ')
   end
 
   def test_sentences
-    assert_match KOREAN_SENTENCE_MATCHER, @tester.sentences.join(" ")
+    assert_match KOREAN_SENTENCE_MATCHER, @tester.sentences.join(' ')
   end
 
   def test_phrases
-    assert_match KOREAN_SENTENCE_MATCHER, @tester.phrases.join(" ")
+    assert_match KOREAN_SENTENCE_MATCHER, @tester.phrases.join(' ')
   end
 
   def test_words
-    assert_match KOREAN_WORDS_MATCHER, @tester.words.join(" ")
+    assert_match KOREAN_WORDS_MATCHER, @tester.words.join(' ')
   end
 
   def test_word

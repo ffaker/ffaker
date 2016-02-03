@@ -41,4 +41,3 @@ class TestPhoneNumberSG < Test::Unit::TestCase
     end
   end
 end
-

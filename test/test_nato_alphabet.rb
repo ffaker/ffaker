@@ -24,8 +24,8 @@ class TestNato < Test::Unit::TestCase
   end
 
   def test_codify
-    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.codify("?-?-?")
-    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.codify("?-#-?")
-    assert_match FFaker::NatoAlphabet::STOP_CODE, @tester.codify(".")
+    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.codify('?-?-?')
+    assert_match /[A-Z]+-[A-Z]+-[A-Z]+/, @tester.codify('?-#-?')
+    assert_match FFaker::NatoAlphabet::STOP_CODE, @tester.codify('.')
   end
 end

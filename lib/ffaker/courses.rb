@@ -2,7 +2,6 @@
 
 module FFaker
   module CoursesFR
-
     module Mathematiques
       extend ModuleUtils
       extend self

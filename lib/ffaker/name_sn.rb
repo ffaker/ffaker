@@ -33,32 +33,32 @@ module FFaker
 
     def name_male
       case rand(10)
-        when 7 then "#{prefix_male} #{first_name_male} #{last_name}"
-        when 5 then "#{prefix_male} #{first_name_male} #{last_name}"
-        when 3 then "#{first_name_male} #{last_name}"
-        when 0 then "#{first_name_male} #{last_name}"
-        else        "#{first_name_male} #{last_name}"
+      when 7 then "#{prefix_male} #{first_name_male} #{last_name}"
+      when 5 then "#{prefix_male} #{first_name_male} #{last_name}"
+      when 3 then "#{first_name_male} #{last_name}"
+      when 0 then "#{first_name_male} #{last_name}"
+      else        "#{first_name_male} #{last_name}"
       end
     end
 
     def name_female
       case rand(10)
-        when 7 then "#{prefix_female} #{first_name_female} #{last_name}"
-        when 5 then "#{prefix_female} #{first_name_female} #{last_name}"
-        when 3 then "#{first_name_female} #{last_name}"
-        when 0 then "#{first_name_female} #{last_name}"
-        else        "#{first_name_female} #{last_name}"
+      when 7 then "#{prefix_female} #{first_name_female} #{last_name}"
+      when 5 then "#{prefix_female} #{first_name_female} #{last_name}"
+      when 3 then "#{first_name_female} #{last_name}"
+      when 0 then "#{first_name_female} #{last_name}"
+      else        "#{first_name_female} #{last_name}"
       end
     end
 
     def name_sn
       case rand(10)
-        when 7 then "#{prefix_female} #{first_name_female} #{last_name}"
-        when 5 then "#{prefix_male} #{first_name_male} #{last_name}"
-        when 3 then "#{first_name_male} #{last_name}"
-        when 3 then "#{first_name_female} #{last_name}"
-        when 0 then "#{first_name_male} #{last_name}"
-        else        "#{first_name_female} #{last_name}"
+      when 7 then "#{prefix_female} #{first_name_female} #{last_name}"
+      when 5 then "#{prefix_male} #{first_name_male} #{last_name}"
+      when 3 then "#{first_name_male} #{last_name}"
+      when 3 then "#{first_name_female} #{last_name}"
+      when 0 then "#{first_name_male} #{last_name}"
+      else        "#{first_name_female} #{last_name}"
       end
     end
   end

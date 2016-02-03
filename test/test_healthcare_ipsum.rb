@@ -10,15 +10,15 @@ class TestHealthcareIpsum < Test::Unit::TestCase
   end
 
   def test_paragraphs
-    assert_match /1\+|[ a-z]+/i, FFaker::HealthcareIpsum.paragraphs.join(" ")
+    assert_match /1\+|[ a-z]+/i, FFaker::HealthcareIpsum.paragraphs.join(' ')
   end
 
   def test_sentences
-    assert_match /1\+|[ a-z]+/i, FFaker::HealthcareIpsum.sentences.join(" ")
+    assert_match /1\+|[ a-z]+/i, FFaker::HealthcareIpsum.sentences.join(' ')
   end
 
   def test_words
-    assert_match /1\+|[ a-z]+/i, FFaker::HealthcareIpsum.words.join(" ")
+    assert_match /1\+|[ a-z]+/i, FFaker::HealthcareIpsum.words.join(' ')
   end
 
   def test_word

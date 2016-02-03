@@ -11,29 +11,29 @@ module FFaker
     extend self
 
     LENGTH_UNITS = [
-      { name: "millimeters", abbreviation: "mm"},
-      { name: "centimeters", abbreviation: "cm"},
-      {  name: "meters", abbreviation: "m"},
-      { name: "kilometers", abbreviation: "km"}
+      { name: 'millimeters', abbreviation: 'mm' },
+      { name: 'centimeters', abbreviation: 'cm' },
+      { name: 'meters', abbreviation: 'm' },
+      { name: 'kilometers', abbreviation: 'km' }
     ]
     MASS_UNITS = [
-      { name: "gram", abbreviation: "g"},
-      { name: "kilogram", abbreviation: "kg" },
-      { name: "metric ton", abbreviation: "mt"}
+      { name: 'gram', abbreviation: 'g' },
+      { name: 'kilogram', abbreviation: 'kg' },
+      { name: 'metric ton', abbreviation: 'mt' }
     ]
     LIQUID_UNITS = [
-      { name: "milliliters", abbreviation: "ml"},
-      { name: "liters", abbreviation: "L"}
+      { name: 'milliliters', abbreviation: 'ml' },
+      { name: 'liters', abbreviation: 'L' }
     ]
     VOLUME_UNITS = [
-      { name: " cubic centimeters", abbreviation: "cm^3"},
-      { name: "cubic meters", abbreviation: "m^3"}
+      { name: ' cubic centimeters', abbreviation: 'cm^3' },
+      { name: 'cubic meters', abbreviation: 'm^3' }
     ]
     AREA_UNITS = [
-      { name: "centimeters squared", abbreviation: "cm^2"},
-      { name: "meters squared", abbreviation: "m^2"},
-      { name: "hectares", abbreviation: "ha"},
-      { name: "kilometers", abbreviation: "km" }
+      { name: 'centimeters squared', abbreviation: 'cm^2' },
+      { name: 'meters squared', abbreviation: 'm^2' },
+      { name: 'hectares', abbreviation: 'ha' },
+      { name: 'kilometers', abbreviation: 'km' }
     ]
 
     def mass_name
