@@ -13,5 +13,5 @@ class TestCompanyIT < Test::Unit::TestCase
 
   def test_prefix
     assert_match(/[ a-z]+/i, FFaker::CompanyIT.prefix)
-end
+  end
 end
