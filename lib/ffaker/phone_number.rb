@@ -7,22 +7,22 @@ module FFaker
 
     def phone_number
       FFaker.numerify case rand(20)
-                      when      0 then "#{area_code}-###-#### x#####"
-                      when      1 then "#{area_code}-###-#### x####"
-                      when      2 then "#{area_code}-###-#### x###"
-                      when 3..4 then "#{area_code}-###-####"
-                      when      5 then "#{area_code}.###.#### x#####"
-                      when      6 then "#{area_code}.###.#### x####"
-                      when      7 then "#{area_code}.###.#### x###"
-                      when 8..9 then "#{area_code}.###.####"
-                      when     10 then "(#{area_code})###-#### x#####"
-                      when     11 then "(#{area_code})###-#### x####"
-                      when     12 then "(#{area_code})###-#### x###"
-                      when 13..14 then "(#{area_code})###-####"
-                      when     15 then "1-#{area_code}-###-#### x#####"
-                      when     16 then "1-#{area_code}-###-#### x####"
-                      when     17 then "1-#{area_code}-###-#### x###"
-                      when 18..19 then "1-#{area_code}-###-####"
+                      when      0 then "#{area_code}-#{exchange_code}-#### x#####"
+                      when      1 then "#{area_code}-#{exchange_code}-#### x####"
+                      when      2 then "#{area_code}-#{exchange_code}-#### x###"
+                      when 3..4 then "#{area_code}-#{exchange_code}-####"
+                      when      5 then "#{area_code}.#{exchange_code}.#### x#####"
+                      when      6 then "#{area_code}.#{exchange_code}.#### x####"
+                      when      7 then "#{area_code}.#{exchange_code}.#### x###"
+                      when 8..9 then "#{area_code}.#{exchange_code}.####"
+                      when     10 then "(#{area_code})#{exchange_code}-#### x#####"
+                      when     11 then "(#{area_code})#{exchange_code}-#### x####"
+                      when     12 then "(#{area_code})#{exchange_code}-#### x###"
+                      when 13..14 then "(#{area_code})#{exchange_code}-####"
+                      when     15 then "1-#{area_code}-#{exchange_code}-#### x#####"
+                      when     16 then "1-#{area_code}-#{exchange_code}-#### x####"
+                      when     17 then "1-#{area_code}-#{exchange_code}-#### x###"
+                      when 18..19 then "1-#{area_code}-#{exchange_code}-####"
       end
     end
 
@@ -36,8 +36,15 @@ module FFaker
       end
     end
 
+    def exchange_code
+      # The North American Numbering Plan (NANP) does not permit the digits 0
+      # and 1 as the leading digit of the exchange code.
+      # https://en.wikipedia.org/wiki/North_American_Numbering_Plan#Numbering_system
+      area_code
+    end
+
     def short_phone_number
-      FFaker.numerify("#{area_code}-###-####")
+      FFaker.numerify("#{area_code}-#{exchange_code}-####")
     end
 
     def imei(serial_number = nil)

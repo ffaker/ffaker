@@ -12,6 +12,11 @@ class TestPhoneNumer < Test::Unit::TestCase
     assert_match /\A\d{3}\z/, FFaker::PhoneNumber.area_code.to_s
   end
 
+  def test_exchange_code
+    assert_not_match /\A\d11\z/, FFaker::PhoneNumber.exchange_code.to_s
+    assert_match /\A\d{3}\z/, FFaker::PhoneNumber.exchange_code.to_s
+  end
+
   def test_short_phone_number
     assert_match /\A\d{3}-\d{3}-\d{4}\z/, FFaker::PhoneNumber.short_phone_number
   end
