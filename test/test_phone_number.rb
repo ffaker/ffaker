@@ -16,6 +16,10 @@ class TestPhoneNumer < Test::Unit::TestCase
     assert_match /\A\d{3}-\d{3}-\d{4}\z/, FFaker::PhoneNumber.short_phone_number
   end
 
+  def test_phone_calling_code
+    assert_match /\A\+\d+\z/, FFaker::PhoneNumber.phone_calling_code
+  end
+
   def test_imei
     assert_match /\A\d{15}\z/, FFaker::PhoneNumber.imei
   end
