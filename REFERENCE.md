@@ -22,6 +22,7 @@
  * [FFaker::AddressUK](#ffakeraddressuk)
  * [FFaker::AddressUS](#ffakeraddressus)
  * [FFaker::Avatar](#ffakeravatar)
+ * [FFaker::Airline](#ffakerairline)
  * [FFaker::Lorem](#ffakerlorem)
  * [FFaker::BaconIpsum](#ffakerbaconipsum)
  * [FFaker::Boolean](#ffakerboolean)
@@ -634,6 +635,13 @@
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 77260-7664, 99094-2120, 91634 |
+
+## FFaker::Airline
+
+| Method | Example |
+| ------ | ------- |
+| `name` | Czech Airlines, British Airways, Wizz Air, United Airlines |
+| `flight_number` | UA 1, EZY 3245, W6 2145, BA 345 |
 
 ## FFaker::Avatar
 
