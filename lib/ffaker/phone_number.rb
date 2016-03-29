@@ -40,6 +40,10 @@ module FFaker
       FFaker.numerify("#{area_code}-###-####")
     end
 
+    def phone_calling_code
+      PHONE_CALLING_CODE.sample
+    end
+
     def imei(serial_number = nil)
       # IMEI Format:
       # AA-BBBBBB-CCCCCC-D
