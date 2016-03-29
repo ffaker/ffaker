@@ -9,13 +9,13 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    ZIP_FORMATS = ['######']
+    ZIP_FORMATS = ['######'].freeze
 
     def pincode
       FFaker.numerify ZIP_FORMATS.sample
     end
 
-    alias_method :zip_code, :pincode
+    alias zip_code pincode
 
     def state
       STATE.sample

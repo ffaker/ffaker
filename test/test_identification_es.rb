@@ -8,6 +8,6 @@ class TestFakerIdentificationES < Test::Unit::TestCase
   end
 
   def test_gender
-    assert_match /(Hombre|Mujer)/, @tester.gender
+    assert_match(/(Hombre|Mujer)/, @tester.gender)
   end
 end

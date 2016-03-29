@@ -17,13 +17,13 @@ module FFaker
       "#{words(word_count + rand(5) + 1).join(' ')}."
     end
 
-    alias_method :phrase, :sentence
+    alias phrase sentence
 
     def sentences(sentence_count = 3)
       (1..sentence_count).map { sentence }
     end
 
-    alias_method :phrases, :sentences
+    alias phrases sentences
 
     def paragraph(sentence_count = 3)
       sentences(sentence_count + rand(3)).join(' ')

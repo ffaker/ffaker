@@ -9,16 +9,16 @@ class TestFakerGenderKR < Test::Unit::TestCase
 
   def test_random
     gender_regex = /\A[남녀]\z/
-    assert_match gender_regex, @tester.random
+    assert_match(gender_regex, @tester.random)
   end
 
   def test_sample
     gender_regex = /\A[남녀]\z/
-    assert_match gender_regex, @tester.sample
+    assert_match(gender_regex, @tester.sample)
   end
 
   def test_maybe
     gender_regex = /\A[남녀]\z/
-    assert_match gender_regex, @tester.maybe
+    assert_match(gender_regex, @tester.maybe)
   end
 end

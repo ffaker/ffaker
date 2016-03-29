@@ -5,13 +5,13 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    GENDERS = %w(남 녀)
+    GENDERS = %w(남 녀).freeze
 
     def random
       GENDERS.sample
     end
 
-    alias_method :maybe, :random
-    alias_method :sample, :random
+    alias maybe random
+    alias sample random
   end
 end

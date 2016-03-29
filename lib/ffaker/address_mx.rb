@@ -494,6 +494,6 @@ module FFaker
         "Tlaltenango de Sánchez Román", 'Trancoso', "Trinidad García de la Cadena", "Valparaíso", 'Vetagrande',
         "Villa García", "Villa González Ortega", 'Villa Hidalgo', 'Villa de Cos', 'Villanueva', 'Zacatecas'
       ]
-    }
+    }.freeze
   end
 end

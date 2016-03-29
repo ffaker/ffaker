@@ -5,12 +5,12 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    BYTE = [*'0'..'255']
-    HOSTS = %w(gmail.com yahoo.com hotmail.com)
-    DISPOSABLE_HOSTS = %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info)
-    DOMAIN_SUFFIXES = %w(co.uk com us ca biz info name)
-    SAFE_DOMAIN_SUFFIXES = %w(org com net)
-    SLUG_DELIMITERS = %w(- _ .)
+    BYTE = [*'0'..'255'].freeze
+    HOSTS = %w(gmail.com yahoo.com hotmail.com).freeze
+    DISPOSABLE_HOSTS = %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info).freeze
+    DOMAIN_SUFFIXES = %w(co.uk com us ca biz info name).freeze
+    SAFE_DOMAIN_SUFFIXES = %w(org com net).freeze
+    SLUG_DELIMITERS = %w(- _ .).freeze
 
     def email(name = nil)
       [user_name(name), domain_name].join('@')

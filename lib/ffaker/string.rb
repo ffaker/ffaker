@@ -5,16 +5,16 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    BACKSLASH = '\\'
-    DASH      = '-'
+    BACKSLASH = '\\'.freeze
+    DASH      = '-'.freeze
 
-    LOWERS     = [*'a'..'z']
-    UPPERS     = [*'A'..'Z']
+    LOWERS     = [*'a'..'z'].freeze
+    UPPERS     = [*'A'..'Z'].freeze
     LETTERS    = LOWERS + UPPERS
-    NUMBERS    = [*'0'..'9']
+    NUMBERS    = [*'0'..'9'].freeze
     WORD_CHARS = LETTERS + NUMBERS + ['_']
-    SPACES     = [' ', "\t"]
-    ESCAPEABLE_CHARS = '\\', '/', '.', '(', ')', '[', ']', '{', '}'
+    SPACES     = [' ', "\t"].freeze
+    ESCAPEABLE_CHARS = ['\\', '/', '.', '(', ')', '[', ']', '{', '}'].freeze
 
     def from_regexp(exp)
       result = ''

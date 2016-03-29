@@ -9,8 +9,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    POSTAL_CODE_FORMAT = ['######']
-    STREET_NBR_FORMATS = %w(## # ###)
+    POSTAL_CODE_FORMAT = ['######'].freeze
+    STREET_NBR_FORMATS = %w(## # ###).freeze
 
     def city
       CITY.sample

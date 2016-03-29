@@ -15,7 +15,7 @@ module FFaker
       else raise ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
-    alias_method :name, :full_name
+    alias name full_name
 
     # Random last name (male or female)
     def last_name

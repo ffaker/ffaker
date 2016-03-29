@@ -1,5 +1,5 @@
 module FFaker
-  VERSION = '2.2.0'
+  VERSION = '2.2.0'.freeze
 
   require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'
@@ -8,9 +8,9 @@ module FFaker
 
   BASE_LIB_PATH = File.expand_path('..', __FILE__)
 
-  LETTERS = [*'a'..'z']
+  LETTERS = [*'a'..'z'].freeze
 
-  HEX = %w(0 1 2 3 4 5 6 7 8 9 A B C D E F)
+  HEX = %w(0 1 2 3 4 5 6 7 8 9 A B C D E F).freeze
 
   def self.hexify(*masks)
     masks.flatten.sample.gsub(/#/) { HEX.sample }

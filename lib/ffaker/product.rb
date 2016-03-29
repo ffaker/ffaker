@@ -5,11 +5,11 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    B2 = %w(nix cell sync func balt sche pod)
-    VOWELS = %w(a e i o u ou ie y io)
-    START  = %w(tr br p ph)
-    SUFFIX = %w(ck ns nce nt st ne re ffe ph)
-    ADDON  = %w(wood forge func)
+    B2 = %w(nix cell sync func balt sche pod).freeze
+    VOWELS = %w(a e i o u ou ie y io).freeze
+    START  = %w(tr br p ph).freeze
+    SUFFIX = %w(ck ns nce nt st ne re ffe ph).freeze
+    ADDON  = %w(wood forge func).freeze
 
     def brand
       case rand(12)

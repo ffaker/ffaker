@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    ZIP_FORMATS = ['#####', '#####-####']
+    ZIP_FORMATS = ['#####', '#####-####'].freeze
     CONTINENTAL_STATE = (STATE - %w(Hawaii Alaska))
     CONTINENTAL_STATE_ABBR = (STATE_ABBR - %w(HI AK))
 

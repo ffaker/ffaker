@@ -1,7 +1,7 @@
 require 'helper'
 
 class TestAvatar < Test::Unit::TestCase
-  ROBOHASH = 'https://robohash.org'
+  ROBOHASH = 'https://robohash.org'.freeze
 
   def setup
     @tester = FFaker::Avatar

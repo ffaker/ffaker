@@ -7,7 +7,7 @@ class TestAddressSE < Test::Unit::TestCase
   DIGIT = /\d{1}/
 
   def test_se_city
-    assert_match ALPHA, FFaker::AddressSE.city
+    assert_match(ALPHA, FFaker::AddressSE.city)
   end
 
   def test_se_zip_code
@@ -20,8 +20,8 @@ class TestAddressSE < Test::Unit::TestCase
 
   def test_se_full_address
     address = FFaker::AddressSE.full_address
-    assert_match ALPHA, address
-    assert_match DIGIT, address
+    assert_match(ALPHA, address)
+    assert_match(DIGIT, address)
     assert_match(/SVERIGE/, address)
     assert_match(/[\, a-z]/, address)
   end

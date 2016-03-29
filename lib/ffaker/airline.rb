@@ -11,7 +11,6 @@ module FFaker
 
     def flight_number
       "#{CODES_LIST.sample} #{rand(1..3999)}"
-    end 
-
+    end
   end
 end

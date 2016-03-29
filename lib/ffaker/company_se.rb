@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    SUFFIXES = %w(AB Aktiebolag Ab)
+    SUFFIXES = %w(AB Aktiebolag Ab).freeze
 
     def name
       case rand(3)

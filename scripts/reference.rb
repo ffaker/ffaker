@@ -1,10 +1,10 @@
-$: << File.dirname(__FILE__) + '/../lib'
+$LOAD_PATH << File.dirname(__FILE__) + '/../lib'
 require 'ffaker'
 
 ICONS = {
-  :error => "‼️",
-  :warning => "❗"
-}
+  error: "‼️",
+  warning: "❗"
+}.freeze
 
 # Get a list of sections
 def faker_modules
@@ -32,13 +32,13 @@ def warn(msg)
   $warnings << msg if $warnings
 end
 
-def catch_warnings(&blk)
+def catch_warnings
   $warnings = []
   [yield, $warnings]
 end
 
 def escape(str)
-  str.gsub('&', '&amp;').gsub('<', '&lt;').gsub('>', '&gt;').gsub("\n", '')
+  str.gsub('&', '&amp;').gsub('<', '&lt;').gsub('>', '&gt;').delete("\n")
 end
 
 sections = faker_modules.each.map do |mod|
@@ -46,28 +46,28 @@ sections = faker_modules.each.map do |mod|
 
   methods = faker_methods(mod)
   lines << "## #{mod}"
-  lines << ""
-  lines << "| Method | Example |"
-  lines << "| ------ | ------- |"
+  lines << ''
+  lines << '| Method | Example |'
+  lines << '| ------ | ------- |'
 
   methods.sort.each do |meth|
     arity = mod.method(meth).arity
 
     left = "`#{meth}`"
-    right =''
+    right = ''
 
     if arity > 0
-      left = "`#{meth}`(#{arity.times.map{'...'}.join(', ')})"
+      left = "`#{meth}`(#{arity.times.map { '...' }.join(', ')})"
     else
       begin
-        examples, warnings = catch_warnings {
+        examples, warnings = catch_warnings do
           3.times.map { mod.send meth }
-        }
-        if warnings.any?
-          right = "#{ICONS[:warning]} *#{warnings.first}*"
-        else
-          right = "#{escape examples.join(', ')}"
         end
+        right = if warnings.any?
+                  "#{ICONS[:warning]} *#{warnings.first}*"
+                else
+                  (escape examples.join(', ')).to_s
+                end
       rescue => e
         right = "#{ICONS[:error]} #{e.class}: #{e.message}"
       end
@@ -76,14 +76,14 @@ sections = faker_modules.each.map do |mod|
     lines << "| #{left} | #{right} |"
   end
 
-  lines << ""
+  lines << ''
 end
 
-puts "# FFaker reference"
-puts ""
+puts '# FFaker reference'
+puts ''
 faker_modules.each do |mod|
-  name = mod.to_s.downcase.gsub(':', '')
+  name = mod.to_s.downcase.delete(':')
   puts " * [#{mod}](##{name})"
 end
-puts ""
+puts ''
 puts sections.flatten.join("\n")

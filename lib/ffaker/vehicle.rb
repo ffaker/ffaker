@@ -5,14 +5,14 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    DRIVETRAINS = %w(4WD 4X4 AWD FWD RWD)
-    YEARS = [*'1900'..(Date.today.year + 1).to_s]
+    DRIVETRAINS = %w(4WD 4X4 AWD FWD RWD).freeze
+    YEARS = [*'1900'..(Date.today.year + 1).to_s].freeze
     COLOR_PREFIXES = k(%w(
                          beautiful bright calm dangerous dark dull fast magnetic magnificent majestic melodic metallic
                          mundane mute mysterious new pleasant pretty resonant royal slate soft tranquil vibrant weak
                        ))
-    TRANSMISSIONS_ABBR = %w(AT MT AM CVT)
-    CYLINDERS = %w(2 5 6 8)
+    TRANSMISSIONS_ABBR = %w(AT MT AM CVT).freeze
+    CYLINDERS = %w(2 5 6 8).freeze
 
     def base_color
       FFaker::Color.name
@@ -30,7 +30,7 @@ module FFaker
       # Take two prefixes because it's more fun than one
       (COLOR_PREFIXES.sample(n) + [base_color]).join(' ')
     end
-    alias_method :mfg_color, :manufacturer_color
+    alias mfg_color manufacturer_color
 
     def model
       MODELS_LIST.sample

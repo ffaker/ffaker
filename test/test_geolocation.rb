@@ -4,11 +4,11 @@ require 'helper'
 
 class TestGeolocation < Test::Unit::TestCase
   def test_lat
-    assert_match /[0-9]+/, FFaker::Geolocation.lat.to_s
+    assert_match(/[0-9]+/, FFaker::Geolocation.lat.to_s)
   end
 
   def test_lng
-    assert_match /[0-9]+/, FFaker::Geolocation.lng.to_s
+    assert_match(/[0-9]+/, FFaker::Geolocation.lng.to_s)
   end
 
   def test_boxed_coords

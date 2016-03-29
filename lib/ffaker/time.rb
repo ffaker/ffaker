@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    MONTHS = %w(January February March April May June July August September October November December)
+    MONTHS = %w(January February March April May June July August September October November December).freeze
 
     def month
       MONTHS.sample

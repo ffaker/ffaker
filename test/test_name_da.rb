@@ -20,13 +20,13 @@ class TestFakerNameDA < Test::Unit::TestCase
   def test_male_name
     regexp = /#{@tester::MALE_FIRST_NAMES.join('|')}/
     assert @tester.male_name.count(' ') < 3
-    assert_match regexp, @tester.male_name
+    assert_match(regexp, @tester.male_name)
   end
 
   def test_female_name
     regexp = /#{@tester::FEMALE_FIRST_NAMES.join('|')}/
     assert @tester.female_name.count(' ') < 3
-    assert_match regexp, @tester.female_name
+    assert_match(regexp, @tester.female_name)
   end
 
   def test_first_name
@@ -39,10 +39,10 @@ class TestFakerNameDA < Test::Unit::TestCase
   end
 
   def test_last_name
-    assert_match /\A['a-z]+\z/i, @tester.last_name
+    assert_match(/\A['a-z]+\z/i, @tester.last_name)
   end
 
   def test_prefix
-    assert_match /\A(?:Hr|Fr|Dr|Prof)\.\Z/, @tester.prefix
+    assert_match(/\A(?:Hr|Fr|Dr|Prof)\.\Z/, @tester.prefix)
   end
 end

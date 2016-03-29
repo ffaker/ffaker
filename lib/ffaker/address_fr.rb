@@ -9,11 +9,11 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    NUM = ['#', '##', '##', '###', '####', '#-##']
-    MOD = [' B', ' T', ' Q', ' BIS', ' TER', ' QUATER', '', '', '', '']
-    SEP = [', ', ' ']
-    TYPE = %w(rue avenue av boulevard bd impasse)
-    POSTAL_CODE_FORMATS = ['####', '#####', '97####', '2A###', '2B###']
+    NUM = ['#', '##', '##', '###', '####', '#-##'].freeze
+    MOD = [' B', ' T', ' Q', ' BIS', ' TER', ' QUATER', '', '', '', ''].freeze
+    SEP = [', ', ' '].freeze
+    TYPE = %w(rue avenue av boulevard bd impasse).freeze
+    POSTAL_CODE_FORMATS = ['####', '#####', '97####', '2A###', '2B###'].freeze
 
     def street_address
       FFaker.numerify(NUM.sample) +

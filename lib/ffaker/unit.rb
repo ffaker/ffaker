@@ -13,12 +13,12 @@ module FFaker
       { name: 'Hours', abbreviation: 'Minutes' },
       { name: 'Seconds', abbreviation: 's' },
       { name: 'Milliseconds', abbreviation: 'msec' }
-    ]
+    ].freeze
     TEMPERATURE_UNITS = [
       { name: 'Kelvin', abbreviation: 'K' },
       { name: 'Celsius', abbreviation: 'C' },
       { name: 'Fahrenheit', abbreviation: 'F' }
-    ]
+    ].freeze
 
     def time_name
       time.name

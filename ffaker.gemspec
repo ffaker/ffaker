@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new('>= 0') if s.respond_to? :required_rubygems_version=
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
@@ -11,23 +11,23 @@ Gem::Specification.new do |s|
 
   s.license = 'MIT'
 
-  s.summary     = "Ffaker generates dummy data."
-  s.description = "Ffaker generates dummy data."
+  s.summary     = 'Ffaker generates dummy data.'
+  s.description = 'Ffaker generates dummy data.'
 
-  s.authors  = [
+  s.authors = [
     'https://github.com/ffaker/ffaker/graphs/contributors',
     'Emmanuel Oga'
   ]
   s.email    = 'EmmanuelOga@gmail.com'
   s.homepage = 'http://github.com/ffaker/ffaker'
 
-  s.require_paths = %w[lib]
+  s.require_paths = %w(lib)
 
-  s.rdoc_options = ["--charset=UTF-8"]
-  s.extra_rdoc_files = %w[README.md LICENSE Changelog.md]
+  s.rdoc_options = ['--charset=UTF-8']
+  s.extra_rdoc_files = %w(README.md LICENSE Changelog.md)
 
   # = MANIFEST =
-  s.files = %w[
+  s.files = %w(
     Changelog.md
     Gemfile
     LICENSE
@@ -453,7 +453,7 @@ Gem::Specification.new do |s|
     test/test_units_metric.rb
     test/test_vehicle.rb
     test/test_venue.rb
-  ]
+  )
   # = MANIFEST =
 
   s.test_files = s.files.select { |path| path =~ /^test\/test_.*\.rb/ }

@@ -12,7 +12,7 @@ module FFaker
       end
     end
 
-    alias_method :random, :maybe
-    alias_method :sample, :maybe
+    alias random maybe
+    alias sample maybe
   end
 end

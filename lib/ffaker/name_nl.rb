@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIXES = %w(Dr. Drs. Ir. Ing. Prof.)
+    PREFIXES = %w(Dr. Drs. Ir. Ing. Prof.).freeze
 
     def name
       case rand(30)
