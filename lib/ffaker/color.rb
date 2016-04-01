@@ -10,7 +10,7 @@ module FFaker
     end
 
     def hex_code
-      "%06x" % (rand * 0xffffff)
+      format('%06x', rand * 0xffffff)
     end
   end
 end
