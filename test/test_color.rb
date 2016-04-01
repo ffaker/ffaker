@@ -8,6 +8,6 @@ class TestColor < Test::Unit::TestCase
   end
 
   def test_hex_code
-    assert_match /\A\d|[a-f]{6}\z/, FFaker::Color.hex_code
+    assert_match /\A\h{6}\z/, FFaker::Color.hex_code
   end
 end
