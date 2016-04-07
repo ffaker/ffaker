@@ -17,7 +17,9 @@ module FFaker
       year = (rand * years_back).ceil + (::Time.now.year - latest_year - years_back)
       month = (rand * 12).ceil
       day = (rand * 31).ceil
-      series = [date = ::Time.local(year, month, day)]
+      hours = params[:hours] || 0
+      minutes = params[:minutes] || 0
+      series = [date = ::Time.local(year, month, day, hours, minutes)]
       if params[:series]
         params[:series].each do |some_time_after|
           series << series.last + (rand * some_time_after).ceil
@@ -25,6 +27,12 @@ module FFaker
         return series
       end
       date.strftime '%Y-%m-%d %T %z'
+    end
+
+    def datetime(params = {})
+      hours = params[:hours] || (rand * 12).ceil
+      minutes = params[:minutes] || (rand * 60).ceil
+      date(params.merge(hours: hours, minutes: minutes))
     end
   end
 end
