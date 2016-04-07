@@ -9,7 +9,20 @@ class TestFakerTime < Test::Unit::TestCase
 
   def test_date
     date_regex = /\A\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [-|+]\d{4}\z/
-    assert_match date_regex, @tester.date.to_s
+    assert_match date_regex, @tester.date
+  end
+
+  def test_date_hours_and_minutes
+    assert_match "04:20:00", @tester.date(hours: 4, minutes: 20)
+  end
+
+  def test_datetime
+    date_regex = /\A\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [-|+]\d{4}\z/
+    assert_match date_regex, @tester.datetime
+  end
+
+  def test_datetime_hours_and_minutes
+    assert_match "04:20:00", @tester.datetime(hours: 4, minutes: 20)
   end
 
   def test_month
