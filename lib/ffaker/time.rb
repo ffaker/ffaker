@@ -34,5 +34,9 @@ module FFaker
       minutes = params[:minutes] || (rand * 60).ceil
       date(params.merge(hours: hours, minutes: minutes))
     end
+
+    def between(from, to)
+      ::Time.at(from + rand * (to.to_f - from.to_f))
+    end
   end
 end
