@@ -20,15 +20,15 @@ module FFaker
 
     PHONE_FORMAT_PREFIX_2 = ['%s-### ### ##',
                              '%s-### ## ##',
-                             '%s-## ## ##']
+                             '%s-## ## ##'].freeze
     PHONE_FORMAT_PREFIX_3 = ['%s-### ## ##',
                              '%s-## ## ##',
-                             '%s-## ###']
+                             '%s-## ###'].freeze
     PHONE_FORMAT_PREFIX_4 = ['%s-## ## ##',
-                             '%s-### ##']
-    MOBILE_PHONE_FORMAT = ['%s#-## ## ##', '%s#-######']
-    COUNTRY_PREFIX = ['+46', '0046']
-    MOBILE_PHONE_PREFIX = %w(70 72 73 76 74)
+                             '%s-### ##'].freeze
+    MOBILE_PHONE_FORMAT = ['%s#-## ## ##', '%s#-######'].freeze
+    COUNTRY_PREFIX = ['+46', '0046'].freeze
+    MOBILE_PHONE_PREFIX = %w(70 72 73 76 74).freeze
 
     def phone_number
       case rand(2)

@@ -12,8 +12,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    ZIP_FORMATS = ['#####', '## ###']
-    STREET_NBR_FORMATS = ['##', '#', '#a', '#b', '###']
+    ZIP_FORMATS = ['#####', '## ###'].freeze
+    STREET_NBR_FORMATS = ['##', '#', '#a', '#b', '###'].freeze
 
     def zip_code
       FFaker.numerify ZIP_FORMATS.sample

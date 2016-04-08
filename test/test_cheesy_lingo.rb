@@ -8,27 +8,27 @@ class TestCheesyLingo < Test::Unit::TestCase
   end
 
   def test_title
-    assert_match TEST_REGEX, @tester.title
+    assert_match(TEST_REGEX, @tester.title)
   end
 
   def test_word
-    assert_match TEST_REGEX, @tester.word
+    assert_match(TEST_REGEX, @tester.word)
   end
 
   def test_words
-    assert_match TEST_REGEX, @tester.words(3).join(' ')
+    assert_match(TEST_REGEX, @tester.words(3).join(' '))
   end
 
   def test_sentence
-    assert_match TEST_REGEX, @tester.sentence
-    assert_match /1\+|[ a-zA-Z]+./, @tester.sentence
+    assert_match(TEST_REGEX, @tester.sentence)
+    assert_match(/1\+|[ a-zA-Z]+./, @tester.sentence)
   end
 
   def test_paragraph # without passing count
-    assert_match /\+|[a-zA-Z]*./, @tester.paragraph(1)
+    assert_match(/\+|[a-zA-Z]*./, @tester.paragraph(1))
   end
 
   def test_paragraph_with_arg
-    assert_match /\+1|[a-zA-Z]+./, @tester.paragraph(3)
+    assert_match(/\+1|[a-zA-Z]+./, @tester.paragraph(3))
   end
 end

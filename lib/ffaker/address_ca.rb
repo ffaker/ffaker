@@ -9,9 +9,9 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    POSTAL_CODE_FORMAT = '?#? #?#'
-    POSTAL_CODE_CHARS = %w(A B C E G H J K L M N P R S T V X Y)
-    PROVINCE_ABBRS = %w(NL NS PE NB QC ON MB SK AB BC YT NT NU)
+    POSTAL_CODE_FORMAT = '?#? #?#'.freeze
+    POSTAL_CODE_CHARS = %w(A B C E G H J K L M N P R S T V X Y).freeze
+    PROVINCE_ABBRS = %w(NL NS PE NB QC ON MB SK AB BC YT NT NU).freeze
 
     def postal_code
       FFaker.numerify(POSTAL_CODE_FORMAT.gsub('?') { POSTAL_CODE_CHARS.sample })

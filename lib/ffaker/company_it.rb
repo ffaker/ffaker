@@ -5,8 +5,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIXES = ['Studio Legale', 'Studio Tecnico', 'Laboratorio']
-    SUFFIXES = %w(S.p.a. s.r.l. s.n.c. Avvocati Architetti Ingegneri)
+    PREFIXES = ['Studio Legale', 'Studio Tecnico', 'Laboratorio'].freeze
+    SUFFIXES = %w(S.p.a. s.r.l. s.n.c. Avvocati Architetti Ingegneri).freeze
 
     def name
       case rand(2)

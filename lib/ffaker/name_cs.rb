@@ -12,13 +12,13 @@ module FFaker
     FIRST_NAMES = {
       female: %w(Alena Andrea Anna Barbora Božena Dagmar Dana Eliška Eva Hana Helena Irena Ivana Jana Jarmila Jaroslava Jiřina Jitka Kateřina Kristýna Lenka Libuše Lucie Ludmila Marcela Marie Markéta Marta Martina Michaela Miroslava Monika Pavla Petra Tereza Věra Veronika Vlasta Zdeňka Zuzana),
       male: %w(Adam Aleš Alexandr Alois Antonín Bedřich Bohumil Bohuslav Břetislav Dalibor Daniel David Denis Dominik Dušan Eduard Emil Filip František Ivan Ivo Jakub Jan Jaromír Jaroslav Jindřich Jiří Josef Jozef Kamil Karel Kryštof Ladislav Leoš Libor Lubomír Luboš Luděk Ludvík Lukáš Marcel Marek Marian Martin Matěj Matyáš Michael Michal Milan Miloslav Miloš Miroslav Oldřich Ondřej Otakar Patrik Pavel Petr Přemysl Radek Radim Radomír Radovan René Richard Robert Roman Rostislav Rudolf Samuel Stanislav Šimon Štefan Štěpán Tadeáš Tomáš Václav Viktor Vilém Vít Vítězslav Vladimír Vladislav Vlastimil Vojtěch Vratislav Zbyněk Zdeněk)
-    }
+    }.freeze
     LAST_NAMES = {
       female: %w(Dvořáková Černá Benešová Fialová Doležalová Čermáková Blažková Bartošová Čechová Dostálová Bláhová Burešová Dušková Beranová Bednářová Bártová Fišerová Bílková Beránková Brožová Čížková Adámková Daňková Filipová Červenková Čapková Bendová Adamcová Dvořáčková Brabcová Davidová Březinová Dlouhá Dohnalová Burianová Dufková Fojtíková Burdová Červená Boháčová Bartoňová Doleželová Dudová Adamová Bauerová Divišová Coufalová Čejková Berková Balážová),
       male: %w(Dvořák Černý Beneš Fiala Doležal Čermák Blažek Bartoš Čech Dostál Bláha Bureš Dušek Beran Bednář Bárta Bílek Beránek Fišer Brož Čížek Filip Červenka Adámek Daněk Dvořáček Benda Adamec Brabec Březina David Burian Čapek Dohnal Dlouhý Fojtík Bartoň Červený Dufek Burda Duda Adam Boháč Doležel Baláž Diviš Coufal Bauer Dolejší)
-    }
-    SUFFIXES = %w(Ph.D. Th.D. DSc.)
-    GENDERS = [:male, :female, :random] # :nodoc:
+    }.freeze
+    SUFFIXES = %w(Ph.D. Th.D. DSc.).freeze
+    GENDERS = [:male, :female, :random].freeze # :nodoc:
 
     # All names generated inside the block will have the same sex.
     # Can be called with explicit sex which will affect
@@ -80,7 +80,7 @@ module FFaker
 
     def select_sex(sex) # :nodoc:
       given_sex = @fixed_sex ? @fixed_sex : sex
-      fail ArgumentError, "Unknown sex #{given_sex}" unless GENDERS.include?(given_sex)
+      raise ArgumentError, "Unknown sex #{given_sex}" unless GENDERS.include?(given_sex)
       given_sex == :random ? GENDERS[rand(2)] : given_sex
     end
   end

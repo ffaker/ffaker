@@ -17,6 +17,6 @@ module FFaker
       "#{last_name}#{first_name}"
     end
 
-    alias_method :name, :last_first
+    alias name last_first
   end
 end

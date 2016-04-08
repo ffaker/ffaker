@@ -21,7 +21,7 @@ class TestFakerNameRU < Test::Unit::TestCase
   end
 
   def test_last_name
-    assert_match RU_REGEX, @tester.last_name
+    assert_match(RU_REGEX, @tester.last_name)
   end
 
   def test_male_last_name
@@ -29,7 +29,7 @@ class TestFakerNameRU < Test::Unit::TestCase
   end
 
   def test_first_name
-    assert_match RU_REGEX, @tester.first_name
+    assert_match(RU_REGEX, @tester.first_name)
   end
 
   def test_male_first_name
@@ -37,7 +37,7 @@ class TestFakerNameRU < Test::Unit::TestCase
   end
 
   def test_patronymic
-    assert_match RU_REGEX, @tester.patronymic
+    assert_match(RU_REGEX, @tester.patronymic)
   end
 
   def test_male_patronymic

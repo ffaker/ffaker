@@ -10,15 +10,15 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    BLOOD_TYPE = %w(A B O AB)
-    LICENSE_CATEGORY = %w(A B C)
+    BLOOD_TYPE = %w(A B O AB).freeze
+    LICENSE_CATEGORY = %w(A B C).freeze
 
     def drivers_license
       how_many_numbers = 6 + rand(8)
       FFaker.numerify('#' * how_many_numbers)
     end
 
-    alias_method :id, :drivers_license
+    alias id drivers_license
 
     def driver_license_category
       category = LICENSE_CATEGORY.sample

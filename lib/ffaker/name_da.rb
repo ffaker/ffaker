@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIXES = %w(Hr. Fr. Dr. Prof.)
+    PREFIXES = %w(Hr. Fr. Dr. Prof.).freeze
 
     def name(gender = :any)
       generate_name(first_name(gender))
@@ -33,7 +33,7 @@ module FFaker
       when :male then MALE_FIRST_NAMES.sample
       when :female then FEMALE_FIRST_NAMES.sample
       else
-        fail ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
+        raise ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
 

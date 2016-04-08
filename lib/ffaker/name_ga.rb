@@ -7,7 +7,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    LAST_NAMES = %w(jammeh ceesay)
+    LAST_NAMES = %w(jammeh ceesay).freeze
 
     def first_name_female
       FIRST_NAMES_FEMALE.sample

@@ -7,9 +7,9 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    POSTAL_CODE_FORMAT        = ['#####']
-    BUILDING_NUMBER_FORMATS   = %w(## # ###)
-    APPARTMENT_NUMBER_FORMATS = %w(# ## ###)
+    POSTAL_CODE_FORMAT        = ['#####'].freeze
+    BUILDING_NUMBER_FORMATS   = %w(## # ###).freeze
+    APPARTMENT_NUMBER_FORMATS = %w(# ## ###).freeze
 
     def country
       COUNTRY.sample

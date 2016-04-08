@@ -8,8 +8,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIX_FEMALE = %w(adja adjaratou mame ndeye)
-    PREFIX_MALE = %w(pape eladji mame serigne)
+    PREFIX_FEMALE = %w(adja adjaratou mame ndeye).freeze
+    PREFIX_MALE = %w(pape eladji mame serigne).freeze
 
     def last_name
       LAST_NAMES.sample

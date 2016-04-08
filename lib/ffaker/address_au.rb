@@ -14,8 +14,8 @@ module FFaker
     STATE = [
       'Australian Capital Territory', 'New South Wales', 'Queensland',
       'South Australia', 'Tasmania', 'Victoria', 'Western Australia'
-    ]
-    STATE_ABBR = %w(ACT NSW NT QLD SA TAS VIC WA)
+    ].freeze
+    STATE_ABBR = %w(ACT NSW NT QLD SA TAS VIC WA).freeze
     # based on http://en.wikipedia.org/wiki/List_of_cities_in_Australia
     SUBURB = {
       'ACT' => {
@@ -73,7 +73,7 @@ module FFaker
         '7000' => 'Hobart', '7010' => 'Glenorchy', '7250' => 'Launceston',
         '7310' => 'Devonport', '7320' => 'Burnie'
       }
-    }
+    }.freeze
     POSTCODE = SUBURB.inject({}) { |h, (s_abbr, postcode_suburb_map)| h.update(s_abbr => postcode_suburb_map.keys) }
 
     def postcode(st_abbr = nil)

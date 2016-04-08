@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    POSTAL_CODE_FORMAT = ['#### ??']
+    POSTAL_CODE_FORMAT = ['#### ??'].freeze
 
     def postal_code
       FFaker.bothify POSTAL_CODE_FORMAT

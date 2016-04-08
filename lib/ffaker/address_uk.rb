@@ -9,8 +9,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COUNTRY = ['England', 'Scotland', 'Wales', 'Northern Ireland']
-    POSTCODE = ['??# #??', '??## #??']
+    COUNTRY = ['England', 'Scotland', 'Wales', 'Northern Ireland'].freeze
+    POSTCODE = ['??# #??', '??## #??'].freeze
 
     def county
       COUNTY.sample

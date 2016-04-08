@@ -10,9 +10,9 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    MALE_PREFIXES = %w(Sr. C.)
-    FEMALE_PREFIXES = %w(Sra. Srita. C.)
-    PREFIXES = %w(Sr. Sra. Srita. C.)
+    MALE_PREFIXES = %w(Sr. C.).freeze
+    FEMALE_PREFIXES = %w(Sra. Srita. C.).freeze
+    PREFIXES = %w(Sr. Sra. Srita. C.).freeze
 
     # Full name according to gender and prefix, possibly with middle_name
     def full_name(gender = :any, prefix = false)
@@ -33,7 +33,7 @@ module FFaker
         end
       when :male then "#{male_prefix} #{male_name} #{paternal_last_names}"
       when :female then "#{female_prefix} #{female_name} #{paternal_last_names}"
-      else fail ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
+      else raise ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
 
@@ -47,7 +47,7 @@ module FFaker
         end
       when :male then "#{male_name} #{paternal_last_names}"
       when :female then "#{female_name} #{paternal_last_names}"
-      else fail ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
+      else raise ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
 
@@ -73,11 +73,11 @@ module FFaker
       when :any then (rand(2) == 0) ? name(:male) : name(:female)
       when :male then MALE_FIRST_NAMES.sample
       when :female then FEMALE_FIRST_NAMES.sample
-      else fail ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
+      else raise ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
-    alias_method :middle_name, :name
-    alias_method :first_name, :name
+    alias middle_name name
+    alias first_name name
 
     # Father's and mother's last name
     def paternal_last_names

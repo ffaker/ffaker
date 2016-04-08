@@ -4,7 +4,7 @@ require 'helper'
 
 class TestSkill < Test::Unit::TestCase
   def test_tech_skill
-    assert_match /[a-z]+/i, FFaker::Skill.tech_skill
+    assert_match(/[a-z]+/i, FFaker::Skill.tech_skill)
   end
 
   def test_tech_skills
@@ -13,7 +13,7 @@ class TestSkill < Test::Unit::TestCase
   end
 
   def test_specialty
-    assert_match /[ a-z]+/i, FFaker::Skill.specialty
+    assert_match(/[ a-z]+/i, FFaker::Skill.specialty)
   end
 
   def test_specialties

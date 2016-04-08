@@ -5,8 +5,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COUNTRY_PREFIX = ['+39', '0039', '+39 ', '0039 ']
-    PHONE_NUMBER = ['######', '########']
+    COUNTRY_PREFIX = ['+39', '0039', '+39 ', '0039 '].freeze
+    PHONE_NUMBER = ['######', '########'].freeze
 
     def phone_number
       if rand(0..1) == 1

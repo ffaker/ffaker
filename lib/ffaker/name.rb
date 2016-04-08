@@ -5,8 +5,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIXES = %w(Mr. Mrs. Ms. Miss Dr.)
-    SUFFIXES = %w(Jr. Sr. I II III IV V MD DDS PhD DVM)
+    PREFIXES = %w(Mr. Mrs. Ms. Miss Dr.).freeze
+    SUFFIXES = %w(Jr. Sr. I II III IV V MD DDS PhD DVM).freeze
 
     def name
       case rand(10)

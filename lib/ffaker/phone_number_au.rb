@@ -8,10 +8,10 @@ module FFaker
     extend self
 
     # Mobile prefixes
-    MobileOperatorsPrefix = %w(04)
+    MobileOperatorsPrefix = %w(04).freeze
 
     # Home or Work Operator prefixes
-    HomeWorkOperatorsPrefix = %w(02 03 05 07 08)
+    HomeWorkOperatorsPrefix = %w(02 03 05 07 08).freeze
 
     OperatorsPrefix = MobileOperatorsPrefix + HomeWorkOperatorsPrefix
 

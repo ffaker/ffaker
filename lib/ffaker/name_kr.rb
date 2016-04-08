@@ -21,6 +21,6 @@ module FFaker
       LAST_NAMES.sample
     end
 
-    alias_method :last_first, :name
+    alias last_first name
   end
 end

@@ -8,7 +8,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIX = %w(de du le)
+    PREFIX = %w(de du le).freeze
 
     # randomized? (FRENCH)  prefix!
     #

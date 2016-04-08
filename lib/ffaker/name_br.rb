@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIXES = %w(Sr. Sra. Srta.)
+    PREFIXES = %w(Sr. Sra. Srta.).freeze
 
     def name
       "#{first_name} #{last_name}"

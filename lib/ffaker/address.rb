@@ -5,9 +5,9 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COMPASS_DIRECTIONS = %w(North East West South)
+    COMPASS_DIRECTIONS = %w(North East West South).freeze
     CITY_PREFIXES = COMPASS_DIRECTIONS + %w(New Lake Port)
-    SEC_ADDR = ['Apt. ###', 'Suite ###']
+    SEC_ADDR = ['Apt. ###', 'Suite ###'].freeze
 
     # @deprecated US specific address info. Moved into {AddressUS}
     def zip_code
