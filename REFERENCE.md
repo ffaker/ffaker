@@ -700,6 +700,7 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | brown, brown, gray |
+| `hex_code` | 933c76, 72b6cf, a95eb2 |
 
 ## FFaker::ColorUA
 
