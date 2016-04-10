@@ -15,21 +15,21 @@ class TestFakerNameBR < Test::Unit::TestCase
     prefix, name, last_name = @tester.name_with_prefix.split(/\s+/)
     assert_include(@tester::PREFIXES, prefix)
     assert(name.length > 0)
-    assert(last_name.length > 0)
+    refute_empty(last_name)
   end
 
   def test_female_name_with_prefix
-    prefix, name, last_name =  @tester.female_name_with_prefix.split(/\s+/)
+    prefix, name, last_name = @tester.female_name_with_prefix.split(/\s+/)
     assert_include(@tester::FEMALE_PREFIXES, prefix)
     assert_include(@tester::FIRST_NAMES_FEMALE, name)
-    assert(last_name.length > 0)
+    refute_empty(last_name)
   end
 
   def test_male_name_with_prefix
-    prefix, name, last_name=  @tester.male_name_with_prefix.split(/\s+/)
+    prefix, name, last_name = @tester.male_name_with_prefix.split(/\s+/)
     assert_include(@tester::MALE_PREFIXES, prefix)
     assert_include(@tester::FIRST_NAMES_MALE, name)
-    assert(last_name.length > 0)
+    refute_empty(last_name)
   end
 
   def test_first_name
