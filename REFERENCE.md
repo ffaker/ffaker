@@ -47,6 +47,7 @@
  * [FFaker::HipsterIpsum](#ffakerhipsteripsum)
  * [FFaker::HTMLIpsum](#ffakerhtmlipsum)
  * [FFaker::Identification](#ffakeridentification)
+ * [FFaker::IdentificationBR](#ffakeridentificationbr)
  * [FFaker::IdentificationES](#ffakeridentificationes)
  * [FFaker::IdentificationESCL](#ffakeridentificationescl)
  * [FFaker::IdentificationESCO](#ffakeridentificationesco)
@@ -876,6 +877,15 @@
 | `ethnicity` | Caucasian, African American, Caucasian |
 | `gender` | Male, Male, Female |
 | `ssn` | 320-20-0826, 415-08-7633, 407-93-9239 |
+
+## FFaker::IdentificationBR
+
+| Method | Example |
+| ------ | ------- |
+| `cpf` | 91231683128, 51766257319, 82418015001 |
+| `pretty_cpf` | 837.822.952-77, 462.765.824-00, 695.249.097-79 |
+| `rg` | 067708061, 484333994, 793870281 |
+| `gender` | Feminino, Masculino, Feminino |
 
 ## FFaker::IdentificationES
 
