@@ -55,6 +55,7 @@
  * [FFaker::Internet](#ffakerinternet)
  * [FFaker::InternetSE](#ffakerinternetse)
  * [FFaker::Job](#ffakerjob)
+ * [FFaker::JobBR](#ffakerjobbr)
  * [FFaker::JobCN](#ffakerjobcn)
  * [FFaker::JobFR](#ffakerjobfr)
  * [FFaker::JobJA](#ffakerjobja)
@@ -964,6 +965,12 @@
 | Method | Example |
 | ------ | ------- |
 | `title` | Investor Applications Associate, Legacy Configuration Associate, Customer Creative Engineer |
+
+## FFaker::JobBR
+
+| Method | Example |
+| ------ | ------- |
+| `title` | Mecânico, Bombeiro, Médico |
 
 ## FFaker::JobCN
 
