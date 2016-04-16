@@ -39,6 +39,7 @@
  * [FFaker::Education](#ffakereducation)
  * [FFaker::Food](#ffakerfood)
  * [FFaker::Gender](#ffakergender)
+ * [FFaker::GenderBR](#ffakergenderbr)
  * [FFaker::GenderCN](#ffakergendercn)
  * [FFaker::GenderKR](#ffakergenderkr)
  * [FFaker::Geolocation](#ffakergeolocation)
@@ -795,6 +796,14 @@
 | `maybe` | female, male, male |
 | `random` | male, female, male |
 | `sample` | male, male, female |
+
+## FFaker::GenderBR
+
+| Method | Example |
+| ------ | ------- |
+| `maybe` | feminino, masculino, masculino |
+| `random` | masculino, feminino, masculino |
+| `sample` | masculino, masculino, feminino |
 
 ## FFaker::GenderCN
 
