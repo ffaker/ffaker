@@ -31,7 +31,7 @@ module FFaker
 
     def datetime(params = {})
       hours = params[:hours] || (rand * 12).ceil
-      minutes = params[:minutes] || (rand * 60).ceil
+      minutes = params[:minutes] || (rand * 59).ceil
       date(params.merge(hours: hours, minutes: minutes))
     end
   end
