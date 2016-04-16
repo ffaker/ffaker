@@ -179,7 +179,8 @@ Gem::Specification.new do |s|
     lib/ffaker/data/music/songs
     lib/ffaker/data/name/first_names
     lib/ffaker/data/name/last_names
-    lib/ffaker/data/name_br/first_names
+    lib/ffaker/data/name_br/first_names_for_females
+    lib/ffaker/data/name_br/first_names_for_males
     lib/ffaker/data/name_br/last_names
     lib/ffaker/data/name_cn/first_names
     lib/ffaker/data/name_cn/last_names

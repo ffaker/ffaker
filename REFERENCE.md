@@ -1116,10 +1116,16 @@
 | Method | Example |
 | ------ | ------- |
 | `first_name` | Gustavo, Guilherme, Cecília |
+| `first_name_female` | Eliana, Lara, Renata |
+| `first_name_male` | Carlos, Geraldo, Romário |
 | `last_name` | Saraiva, Reis, Oliveira |
 | `name` | Sirineu Carvalho, Eduardo Cavalcante, Fabrício Barros |
-| `name_with_prefix` | Sr. Suélen Oliveira, Sr. Morgana Braga, Sr. Bruna Albuquerque |
+| `name_with_prefix` | Sra. Suélen Oliveira, Sr. Waldir Braga, Srta. Bruna Albuquerque |
+| `female_name_with_prefix` | Sra. Suélen Carvalho, Sr. Morgana Batista, Srta. Bruna Alves |
+| `male_name_with_prefix` | Sr. Edgar Costa, Sr. Ícaro Viana, Sr. Eduardo Peixoto |
 | `prefix` | Srta., Sr., Sr. |
+| `female_prefix` | Sra. Srta. |
+| `male_prefix` | Sr. |
 
 ## FFaker::NameCN
 
