@@ -29,4 +29,15 @@ class TestFakerTime < Test::Unit::TestCase
     month_regex = /\A(?:January|February|March|April|May|June|July|August|September|October|November|December)\z/
     assert_match(month_regex, @tester.month)
   end
+
+  def test_between
+    from = Time.local(2015, 1, 1)
+    to   = Time.local(2016, 1, 1)
+
+    100.times do
+      random_date = @tester.between(from, to)
+      assert random_date >= from, "Expected >= \"#{from}\", but got #{random_date}"
+      assert random_date <= to, "Expected <= \"#{to}\", but got #{random_date}"
+    end
+  end
 end
