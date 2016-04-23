@@ -244,6 +244,7 @@ Gem::Specification.new do |s|
     lib/ffaker/data/skill/specialty_start
     lib/ffaker/data/skill/tech_skills
     lib/ffaker/data/sport/names
+    lib/ffaker/data/tweet/hashtag
     lib/ffaker/data/vehicle/displacements_list
     lib/ffaker/data/vehicle/fuel_types_list
     lib/ffaker/data/vehicle/makes_list
@@ -331,6 +332,7 @@ Gem::Specification.new do |s|
     lib/ffaker/ssn_se.rb
     lib/ffaker/string.rb
     lib/ffaker/time.rb
+    lib/ffaker/tweet.rb
     lib/ffaker/unit.rb
     lib/ffaker/unit_english.rb
     lib/ffaker/unit_metric.rb
@@ -454,6 +456,7 @@ Gem::Specification.new do |s|
     test/test_ssn_se.rb
     test/test_string.rb
     test/test_time.rb
+    test/test_tweet.rb
     test/test_units.rb
     test/test_units_english.rb
     test/test_units_metric.rb

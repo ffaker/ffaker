@@ -115,6 +115,7 @@
  * [FFaker::SSNSE](#ffakerssnse)
  * [FFaker::String](#ffakerstring)
  * [FFaker::Time](#ffakertime)
+ * [FFaker::Tweet](#ffakertweet)
  * [FFaker::Unit](#ffakerunit)
  * [FFaker::UnitEnglish](#ffakerunitenglish)
  * [FFaker::UnitMetric](#ffakerunitmetric)
@@ -1602,6 +1603,24 @@
 | `datetime` | 2015-03-09 12:40:00 +0100, 2015-03-31 04:20:00 +0200, 2012-10-14 00:00:00 +0200 |
 | `month` | May, January, April |
 | `between`(...) |  |
+
+## FFaker::Tweet
+
+| Method | Example |
+| ------ | ------- |
+| `mention` |  @francis_boyer |
+| `tags` | #followme #lol |
+| `body` | Adipisci atque molestiae voluptate rerum. |
+| `tweet` | @maximo Consectetur aut id ducimus perferendis. @electa #love |
+
+### tweet options
+
+| Argument | Note     |
+| ------------- | ------------- |
+| `:num_hashtags` | How many hashtags       |
+| `:num_mentions` | How many mentions       |
+| `:reply` | Add a reply (boolean)       |
+| `:body_length` | Target Body length |
 
 ## FFaker::Unit
 
