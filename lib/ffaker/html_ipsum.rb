@@ -19,120 +19,139 @@ module FFaker
         mode = options[:include_breaks] ? 'paragraphs' : 'paragraph'
         s = send(mode.to_sym, count)
       end
-      "<p>#{s}</p>"
+      content_tag_for(:p, s)
     end
 
     def dl(definitions = 2)
-      s = '<dl>'
-      definitions.times do
-        s << "<dt>#{words(1).capitalize!}</dt><dd>#{paragraph 2}</dd>"
+      content_tag_for :dl do |dl|
+        definitions.times do
+          dl << content_tag_for(:dt, words(1).capitalize!)
+          dl << content_tag_for(:dd, paragraph(2))
+        end
       end
-      s << '</dl>'
     end
 
     def ul_short(items = 3)
-      s = '<ul>'
-      items.times do
-        s << "<li>#{sentence 2}</li>"
+      content_tag_for :ul do |ul|
+        items.times do
+          ul << content_tag_for(:li, sentence(2))
+        end
       end
-      s << '</ul>'
     end
 
     def ul_long(items = 3)
-      s = '<ul>'
-      items.times do
-        s << "<li>#{paragraph 2}</li>"
+      content_tag_for :ul do |ul|
+        items.times do
+          ul << content_tag_for(:li, paragraph(2))
+        end
       end
-      s << '</ul>'
     end
 
     def ol_short(items = 3)
-      s = '<ol>'
-      items.times do
-        s << "<li>#{sentence 2}</li>"
+      content_tag_for :ol do |ol|
+        items.times do
+          ol << content_tag_for(:li, sentence(2))
+        end
       end
-      s << '</ol>'
     end
 
     def ol_long(items = 3)
-      s = '<ol>'
-      items.times do
-        s << "<li>#{paragraph 2}</li>"
+      content_tag_for :ol do |ol|
+        items.times do
+          ol << content_tag_for(:li, paragraph(2))
+        end
       end
-      s << '</ol>'
     end
 
     def ul_links(items = 3)
-      s = '<ul>'
-      items.times do
-        s << "<li>#{a 1}</li>"
+      content_tag_for :ul do |ul|
+        items.times do
+          ul << content_tag_for(:li, a(1))
+        end
       end
-      s << '</ul>'
     end
 
     def table(rows = 3)
-      s = "<table>
-      <thead>
-      <tr>
-      <th>#{word.capitalize}</th>
-      <th>#{word.capitalize}</th>
-      <th>#{word.capitalize}</th>
-      <th>#{word.capitalize}</th>
-      </tr>
-      </thead>
-      <tbody>"
-      rows.times do
-        s << "<tr>
-                <td>#{words(1).capitalize}</td>
-                <td>#{words(1).capitalize}</td>
-                <td>#{words(1).capitalize}</td>
-                <td>#{a}</td>
-              </tr>"
+      content_tag_for(:table) do |table|
+        table << content_tag_for(:thead) do |thead|
+          thead << content_tag_for(:tr) do |tr|
+            tr << content_tag_for(:th, word.capitalize)
+            tr << content_tag_for(:th, word.capitalize)
+            tr << content_tag_for(:th, word.capitalize)
+            tr << content_tag_for(:th, word.capitalize)
+          end
+        end
+        table << content_tag_for(:tbody) do |tbody|
+          rows.times do
+            tbody << content_tag_for(:tr) do |tr|
+              tr << content_tag_for(:td, words(1).capitalize)
+              tr << content_tag_for(:td, words(1).capitalize)
+              tr << content_tag_for(:td, words(1).capitalize)
+              tr << content_tag_for(:td, a)
+            end
+          end
+        end
       end
-      s << "</tbody>
-      </table>"
     end
 
     def body
-      s = "<h1>#{words(2).capitalize}</h1>"
+      body = content_tag_for(:h1, words(2).capitalize)
       rand(4).times do
-        s << "<p>#{fancy_string}</p>"
+        body << content_tag_for(:p, fancy_string)
       end
-      s << table(rand(4))
-      s << "<h2>#{words(2).capitalize}</h2>
-      <ol>"
-      rand(4).times do
-        s << "<li>#{paragraph 1}</li>"
+      body << table(rand(4))
+      body << content_tag_for(:h2, words(2).capitalize)
+      body << content_tag_for(:ol) do |ol|
+        rand(4).times do
+          ol << content_tag_for(:li, paragraph(1))
+        end
       end
-      s << "</ol>
-      <blockquote><p>#{paragraphs 3}</p></blockquote>
-      <h3>#{words(2).capitalize!}</h3>
-      <ul>"
-      rand(4).times do
-        s << "<li>#{paragraph 1}</li>"
+      body << content_tag_for(:blockquote) do |bq|
+        bq << content_tag_for(:p, paragraphs(3))
       end
-      s << "</ul>
-      <pre><code>
-      ##{word} h1 a {
-        display: block;
-        width: 300px;
-        height: 80px;
-      }
-      </code></pre>"
+      body << content_tag_for(:h3, words(2).capitalize!)
+      body << content_tag_for(:ul) do |ul|
+        rand(4).times do
+          ul << content_tag_for(:li, paragraph(1))
+        end
+      end
+      body << content_tag_for(:pre) do |pre|
+        pre << content_tag_for(:code) do |code|
+            code = "
+              ##{word} h1 a {
+                display: block;
+                width: 300px;
+                height: 80px;
+              }
+            "
+        end
+      end
+      body
     end
 
     def fancy_string(count = 3, include_breaks = false)
       sep = include_breaks ? '<br>' : ' '
       a = k([
-        "<strong>#{words(2).capitalize!}</strong>.",
-        "<em>#{paragraph}</em>",
-        "<code>#{words 2}</code>",
+        content_tag_for(:strong, words(2).capitalize!),
+        content_tag_for(:em, paragraph),
+        content_tag_for(:code, words(2)),
         (a 2).to_s
       ] + FFaker::Lorem.paragraphs(count))
       a.sample(count).join(sep)
     end
 
     private
+
+    def content_tag_for element, content = nil, &block
+      element_content = if content
+        content
+      else
+        block_html = ""
+        block.call(block_html)
+        block_html
+      end
+      "<#{element}>#{element_content}</#{element}>"
+    end
 
     def word
       FFaker::Lorem.word
