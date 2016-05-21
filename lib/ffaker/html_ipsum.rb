@@ -117,7 +117,7 @@ module FFaker
       end
       body << content_tag_for(:pre) do |pre|
         pre << content_tag_for(:code) do |code|
-            code = "
+            code << "
               ##{word} h1 a {
                 display: block;
                 width: 300px;
@@ -142,14 +142,14 @@ module FFaker
 
     private
 
-    def content_tag_for element, content = nil, &block
+    def content_tag_for(element, content = nil, &block)
       element_content = if content
-        content
-      else
-        block_html = ""
-        block.call(block_html)
-        block_html
-      end
+                          content
+                        else
+                          block_html = ''
+                          yield(block_html)
+                          block_html
+                        end
       "<#{element}>#{element_content}</#{element}>"
     end
 
