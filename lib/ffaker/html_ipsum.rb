@@ -142,7 +142,7 @@ module FFaker
 
     private
 
-    def content_tag_for(element, content = nil, &block)
+    def content_tag_for(element, content = nil)
       element_content = if content
                           content
                         else
