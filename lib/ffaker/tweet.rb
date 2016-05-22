@@ -35,9 +35,9 @@ module FFaker
     end
 
     def mentions(num = 2)
-      my_mentions = ''
-      num.times { my_mentions = my_mentions + mention + ' ' }
-      my_mentions.strip
+      mention_names = []
+      num.times{ mention_names << mention }
+      mention_names.join(' ')
     end
 
     def body(required_length = 140)
