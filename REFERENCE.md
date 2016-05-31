@@ -38,10 +38,7 @@
  * [FFaker::DizzleIpsum](#ffakerdizzleipsum)
  * [FFaker::Education](#ffakereducation)
  * [FFaker::Food](#ffakerfood)
-<<<<<<< HEAD
-=======
  * [FFaker::FreedomIpsum](#ffakerfreedomipsum)
->>>>>>> freedom_ipsum_add
  * [FFaker::Gender](#ffakergender)
  * [FFaker::GenderBR](#ffakergenderbr)
  * [FFaker::GenderCN](#ffakergendercn)
@@ -793,8 +790,6 @@
 | `meat` | Chicken Liver, Calf liver, Calf liver |
 | `vegetable` | Common bean, Miner's Lettuce, Chrysanthemum |
 
-<<<<<<< HEAD
-=======
 ## FFaker::FreedomIpsum
 
 | Method | Example |
@@ -809,7 +804,6 @@
 | `word` | stock market |
 | `words` | CNN, Branson Missouri, bald eagles |
 
->>>>>>> freedom_ipsum_add
 ## FFaker::Gender
 
 | Method | Example |
