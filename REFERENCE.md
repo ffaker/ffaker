@@ -1107,9 +1107,23 @@
 | Method | Example |
 | ------ | ------- |
 | `first_name` | Maia, Sophie, Ora |
+| `first_name_female` | Adell, Britany, Zoe |
+| `first_name_male` | Albert, Francis, Doug |
 | `last_name` | Pfannerstill, Williamson, Larkin |
-| `name` | Jamar Kreiger Sr., Ms. Bette Heaney, Otilia Romaguera |
-| `prefix` | Mrs., Miss, Mr. |
+| `name` | Jamar Kreiger, Bette Heaney, Otilia Romaguera |
+| `name_with_prefix` | Mr. Jamar Kreiger, Mrs. Bette Heaney, Dr. Douglass Romaguera |
+| `female_name_with_prefix` | Miss. Vinita Baumbach, Mrs. Clelia Lang, Miss. Elidia Koss |
+| `male_name_with_prefix` | Mr. Jamar Kreiger, Mr. Douglass Lang, Mr. Ian Morgan |
+| `name_with_suffix` | Jamar Kreiger III, Vinita Baumbach MD, Ian Morgan PhD |
+| `female_name_with_suffix` | Clelia Lang MD, Vinita Baumbach I, Elidia Koss PhD |
+| `male_name_with_suffix` | Jamar Kreiger III, Douglass Lang MD, Ian Morgan PhD |
+| `name_with_prefix_suffix` | Mr. Jamar Kreiger II, Mrs. Vinita Baumbach MD, Miss. Elidia Koss Sr. |
+| `female_name_with_prefix_suffix` | Mrs. Vinita Baumbach MD, Miss. Elidia Koss Sr., Mrs. Elfreda Schneider II |
+| `male_name_with_prefix_suffix` | Mr. Jamar Kreiger II, Mr. Douglass Lang Jr., Mr. Ian Morgan V |
+| `prefix` | Mrs., Miss. , Mr. |
+| `female_prefix` | Mrs., Miss. |
+| `male_prefix` | Mr.|
+| `other_prefix` | Ms., Dr.|
 | `suffix` | MD, Sr., III |
 
 ## FFaker::NameBR
