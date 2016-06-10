@@ -121,6 +121,7 @@
  * [FFaker::UnitMetric](#ffakerunitmetric)
  * [FFaker::Vehicle](#ffakervehicle)
  * [FFaker::Venue](#ffakervenue)
+ * [FFaker::Youtube](#ffakeryoutube)
 
 ## FFaker::Address
 
@@ -1708,3 +1709,12 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | Feria Internacional de Muestras de Asturias, Centro de Convenciones Torreon, Casapiedra |
+
+## FFaker::Youtube
+
+| Method | Example |
+| ------ | ------- |
+| `url` | www.youtube.com/watch?v=9bZkp7q19f0, www.youtube.com/watch?v=RgKAFK5djSk |
+| `share_url` | youtu.be/OPf0YbXqDm0, youtu.be/e-ORhEE9VVg |
+| `embed_url` | www.youtube.com/embed/YQHsXMglC9A, www.youtube.com/embed/nfWlot6h_JM |
+| `video_id` | 0KSOMA3QBU0, YqeW9_5kURI, 2vjPBrBU-TM |
