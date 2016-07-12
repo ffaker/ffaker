@@ -17,17 +17,17 @@ class TestColor < Test::Unit::TestCase
 
     assert fake_array.size == 3
 
-    first_value = fake_array[0]
-    assert_match valid_rgb_regex, first_value.to_s
-    assert first_value.between? 0, 255
+    red_value = fake_array[0]
+    assert_match valid_rgb_regex, red_value.to_s
+    assert red_value.between? 0, 255
 
-    second_value = fake_array[1]
-    assert_match valid_rgb_regex, second_value.to_s
-    assert second_value.between? 0, 255
+    green_value = fake_array[1]
+    assert_match valid_rgb_regex, green_value.to_s
+    assert green_value.between? 0, 255
 
-    third_value = fake_array[2]
-    assert_match valid_rgb_regex, third_value.to_s
-    assert third_value.between? 0, 255
+    blue_value = fake_array[2]
+    assert_match valid_rgb_regex, blue_value.to_s
+    assert blue_value.between? 0, 255
   end
 
   def test_rgb_list
