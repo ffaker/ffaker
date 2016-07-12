@@ -22,6 +22,7 @@ module FFaker
     end
 
     private
+
     def random_rgb_value
       rand 255
     end
