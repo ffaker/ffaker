@@ -12,5 +12,31 @@ module FFaker
     def hex_code
       format('%06x', rand * 0xffffff)
     end
+
+    def rgb_array
+      [random_rgb_value, random_rgb_value, random_rgb_value]
+    end
+
+    def rgb_list
+      "#{random_rgb_value},#{random_rgb_value},#{random_rgb_value}"
+    end
+
+    def rgba_array
+      [random_rgb_value, random_rgb_value, random_rgb_value, random_opacity_value]
+    end
+
+    def rgba_list
+      "#{random_rgb_value},#{random_rgb_value},#{random_rgb_value},#{random_opacity_value}"
+    end
+
+    private
+
+    def random_rgb_value
+      rand 255
+    end
+
+    def random_opacity_value
+      rand(0.0..1.0).round(2)
+    end
   end
 end
