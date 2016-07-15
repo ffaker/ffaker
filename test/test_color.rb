@@ -3,7 +3,6 @@
 require 'helper'
 
 class TestColor < Test::Unit::TestCase
-  
   VALID_RGB_REGEX = /\A([0-9]{1,3})\z/
   VALID_OPACITY_REGEX = /^([0-9].[0-9]{1,2})$/
   VALID_PERCENTAGE_REGEX = /^([0-9]{1,3}%)$/
@@ -35,7 +34,10 @@ class TestColor < Test::Unit::TestCase
   end
 
   def test_rgb_list
-    assert_match(/\A([0-9]{1,3},[0-9]{1,3},[0-9]{1,3})\z/, FFaker::Color.rgb_list)
+    assert_match(
+      /\A([0-9]{1,3},[0-9]{1,3},[0-9]{1,3})\z/,
+      FFaker::Color.rgb_list
+    )
   end
 
   def test_rgba_array
@@ -61,7 +63,10 @@ class TestColor < Test::Unit::TestCase
   end
 
   def test_rgba_list
-    assert_match(/^([0-9]{1,3},[0-9]{1,3},[0-9]{1,3}),([0-9].[0-9]{1,2})$/, FFaker::Color.rgba_list)
+    assert_match(
+      /^([0-9]{1,3},[0-9]{1,3},[0-9]{1,3}),([0-9].[0-9]{1,2})$/,
+      FFaker::Color.rgba_list
+    )
   end
 
   def test_hsl_array
@@ -83,7 +88,10 @@ class TestColor < Test::Unit::TestCase
   end
 
   def test_hsl_list
-    assert_match /^([0-9]{1,3},[0-9]{1,3}%,[0-9]{1,3}%)$/, FFaker::Color.hsl_list
+    assert_match(
+      /^([0-9]{1,3},[0-9]{1,3}%,[0-9]{1,3}%)$/,
+      FFaker::Color.hsl_list
+    )
   end
 
   def test_hsla_array
@@ -109,6 +117,9 @@ class TestColor < Test::Unit::TestCase
   end
 
   def test_hsla_list
-    assert_match /^([0-9]{1,3},[0-9]{1,3}%,[0-9]{1,3}%,[0-9].[0-9]{1,2})$/, FFaker::Color.hsla_list
+    assert_match(
+      /^([0-9]{1,3},[0-9]{1,3}%,[0-9]{1,3}%,[0-9].[0-9]{1,2})$/,
+      FFaker::Color.hsla_list
+    )
   end
 end
