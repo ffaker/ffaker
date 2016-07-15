@@ -29,6 +29,22 @@ module FFaker
       "#{random_rgb_value},#{random_rgb_value},#{random_rgb_value},#{random_opacity_value}"
     end
 
+    def hsl_array
+      [random_hue_value, random_percentage_string, random_percentage_string]
+    end
+
+    def hsl_list
+      "#{random_hue_value},#{random_percentage_string},#{random_percentage_string}"
+    end
+
+    def hsla_array
+      [random_hue_value, random_percentage_string, random_percentage_string, random_opacity_value]
+    end
+
+    def hsla_list
+      "#{random_hue_value},#{random_percentage_string},#{random_percentage_string},#{random_opacity_value}"
+    end
+
     private
 
     def random_rgb_value
@@ -37,6 +53,14 @@ module FFaker
 
     def random_opacity_value
       rand(0.0..1.0).round(2)
+    end
+
+    def random_hue_value
+      rand(360)
+    end
+
+    def random_percentage_string
+      "#{rand(100)}%"
     end
   end
 end
