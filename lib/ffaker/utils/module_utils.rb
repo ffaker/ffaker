@@ -25,5 +25,33 @@ module FFaker
             .tr('-', '_')
             .downcase
     end
+
+    # Make calls to built-in `rand` function use `FFaker::Random.rand` instead.
+    def rand(max = 0)
+      FFaker::Random.rand(max)
+    end
+
+    # Performs #sample on `list`(Array or Array-like) using a repeatable Random
+    # Number Generator so that the results are deterministic.
+    #
+    # Returns one random item from `list`.
+    # Pass `count: n` in options argument, where *n* is an integer, to
+    # *n* items from `list`
+    #
+    # Similarly named to a similar method in Faker gem.
+    def fetch(list, options = {})
+      if (count = options.delete(:count))
+        list.sample(count, random: FFaker::Random)
+      else
+        list.sample(random: FFaker::Random)
+      end
+    end
+
+    # Performs same action as as `Array#suffle` (returns a randomly-reordered
+    # copy of `list`) except that it uses a repeatable Random Number Generator
+    # so that the results are deterministic.
+    def shuffle(list)
+      list.shuffle(random: FFaker::Random)
+    end
   end
 end

@@ -13,15 +13,15 @@ module FFaker
   HEX = %w(0 1 2 3 4 5 6 7 8 9 A B C D E F).freeze
 
   def self.hexify(*masks)
-    masks.flatten.sample.gsub(/#/) { HEX.sample }
+    fetch(masks.flatten).gsub(/#/) { fetch(HEX) }
   end
 
   def self.numerify(*masks)
-    masks.flatten.sample.gsub(/#/) { rand(10).to_s }
+    fetch(masks.flatten).gsub(/#/) { rand(10).to_s }
   end
 
   def self.letterify(*masks)
-    masks.flatten.sample.gsub(/\?/) { LETTERS.sample }
+    fetch(masks.flatten).gsub(/\?/) { fetch(LETTERS) }
   end
 
   def self.bothify(masks)
@@ -31,5 +31,41 @@ module FFaker
   # Load all constants.
   Dir["#{BASE_LIB_PATH}/ffaker/*.rb"].sort.each do |f|
     require "ffaker/#{File.basename(f, '.rb')}"
+  end
+
+  # Random Number Generator (RNG) used with ModuleUtils#fetch, #shuffle, #rand
+  # in order to provide deterministic repeatability.
+  module Random
+    # Returns the current RNG seed.
+    def self.seed
+      @random_seed ||= ::Random.new_seed
+    end
+
+    # Sets the RNG seed and creates a new internal RNG.
+    def self.seed=(new_seed)
+      @random_seed = new_seed
+      reset!
+      new_seed
+    end
+
+    # Reset the RNG back to its initial state.
+    def self.reset!
+      @rng = new_rng
+    end
+
+    # Returns a random number using an RNG with a known seed.
+    def self.rand(max = 0)
+      rng.rand(max)
+    end
+
+    private
+
+    def self.new_rng
+      ::Random.new(seed)
+    end
+
+    def self.rng
+      @rng ||= new_rng
+    end
   end
 end
