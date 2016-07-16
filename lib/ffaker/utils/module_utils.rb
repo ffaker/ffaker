@@ -27,7 +27,7 @@ module FFaker
     end
 
     # Make calls to built-in `rand` function use `FFaker::Random.rand` instead.
-    def rand(max = 0)
+    def rand(max = nil)
       FFaker::Random.rand(max)
     end
 

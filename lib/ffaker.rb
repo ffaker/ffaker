@@ -54,8 +54,12 @@ module FFaker
     end
 
     # Returns a random number using an RNG with a known seed.
-    def self.rand(max = 0)
-      rng.rand(max)
+    def self.rand(max = nil)
+      if max
+        rng.rand(max)
+      else
+        rng.rand
+      end
     end
 
     private
