@@ -2,8 +2,8 @@
 
 require 'helper'
 
-class TestAddressCHDE < Test::Unit::TestCase
-  def test_ch_de_canton
-    assert_match(/\A[-. a-zæøåü]+\z/i, FFaker::AddressCHDE.canton)
+class TestAddressCHFR < Test::Unit::TestCase
+  def test_ch_fr_canton
+    assert_match /\A[- a-zàâäèéêëîïôœùûüÿç]+\z/i, FFaker::AddressCHFR.canton
   end
 end
