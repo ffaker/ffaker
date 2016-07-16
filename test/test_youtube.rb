@@ -3,6 +3,13 @@
 require 'helper'
 
 class YoutubeTest < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Youtube,
+    :url, :share_url, :embed_url, :video_id
+  )
+
   def test_url
     assert_match(%r(www\.youtube\.com/watch\?v=\S{11}), FFaker::Youtube.url)
   end

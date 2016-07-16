@@ -14,19 +14,19 @@ module FFaker
     PROVINCE_ABBRS = %w(NL NS PE NB QC ON MB SK AB BC YT NT NU).freeze
 
     def postal_code
-      FFaker.numerify(POSTAL_CODE_FORMAT.gsub('?') { POSTAL_CODE_CHARS.sample })
+      FFaker.numerify(POSTAL_CODE_FORMAT.gsub('?') { fetch(POSTAL_CODE_CHARS) })
     end
 
     def province
-      PROVINCE.sample
+      fetch(PROVINCE)
     end
 
     def city
-      CITY.sample
+      fetch(CITY)
     end
 
     def province_abbr
-      PROVINCE_ABBRS.sample
+      fetch(PROVINCE_ABBRS)
     end
   end
 end

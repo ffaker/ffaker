@@ -2,8 +2,12 @@
 
 require 'helper'
 
-class TestAddressCHDE < Test::Unit::TestCase
-  def test_ch_de_canton
-    assert_match(/\A[-. a-zæøåü]+\z/i, FFaker::AddressCHDE.canton)
+class TestAddressCHFR < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(FFaker::AddressCHFR, :canton)
+
+  def test_ch_fr_canton
+    assert_match /\A[- a-zàâäèéêëîïôœùûüÿç]+\z/i, FFaker::AddressCHFR.canton
   end
 end

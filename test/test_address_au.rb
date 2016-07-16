@@ -4,6 +4,13 @@ require 'helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
 class TestAddressAU < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::AddressAU,
+    :state, :state_abbr, :suburb, :postcode, :full_address
+  )
+
   def test_au_state_abbr_insertion
     arr = FFaker::AddressAU::STATE_ABBR.sort
     assert arr = FFaker::AddressAU::SUBURB.keys.sort
@@ -33,6 +40,7 @@ class TestAddressAU < Test::Unit::TestCase
   def test_au_suburb_with_states
     FFaker::AddressAU::STATE_ABBR.each do |st_abbr|
       assert_match(/[a-zA-Z]/, FFaker::AddressAU.suburb(st_abbr))
+      assert_deterministic { FFaker::AddressAU.suburb(st_abbr) }
     end
   end
 
@@ -40,18 +48,21 @@ class TestAddressAU < Test::Unit::TestCase
     FFaker::AddressAU::STATE_ABBR.each do |st_abbr|
       p_code = FFaker::AddressAU.postcode(st_abbr)
       assert_match(/[a-zA-Z]/, FFaker::AddressAU.suburb(st_abbr, p_code))
+      assert_deterministic { FFaker::AddressAU.suburb(st_abbr, p_code) }
     end
   end
 
   def test_postcode_with_states
     FFaker::AddressAU::STATE_ABBR.each do |st_abbr|
       assert_match(/\d{4}/, FFaker::AddressAU.postcode(st_abbr))
+      assert_deterministic { FFaker::AddressAU.postcode(st_abbr) }
     end
   end
 
   def test_full_address_with_states
     FFaker::AddressAU::STATE_ABBR.each do |st_abbr|
       assert_match(/[\, a-z]/, FFaker::AddressAU.full_address(st_abbr))
+      assert_deterministic { FFaker::AddressAU.full_address(st_abbr) }
     end
   end
 end

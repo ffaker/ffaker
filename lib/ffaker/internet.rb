@@ -32,7 +32,7 @@ module FFaker
 
     def user_name(name = nil)
       if name
-        parts = name.scan(/\w+/).shuffle.join(%w(. _).sample)
+        parts = shuffle(name.scan(/\w+/)).join(fetch(%w(. _)))
         parts.downcase
       else
         case rand(2)
@@ -41,7 +41,7 @@ module FFaker
         when 1
           [Name.first_name, Name.last_name]
             .map { |n| sanitize(n) }
-            .join(%w(. _).sample)
+            .join(fetch(%w(. _)))
         end
       end
     end
