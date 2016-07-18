@@ -31,15 +31,13 @@ module FFaker
       FFaker::Random.rand(max)
     end
 
-    # Performs #sample on `list`(Array or Array-like) using a repeatable Random
-    # Number Generator so that the results are deterministic.
+    # Performs Array#sample on `list` using a the internal Random Number
+    # Generator so that the results are deterministic.
     #
-    # Returns one random item from `list`.
-    # Pass `count: n` in options argument, where *n* is an integer, to
-    # *n* items from `list`
-    #
-    # Similarly named to a similar method in Faker gem.
-    def fetch(list, options = {})
+    # * Returns one random item from `list`.
+    # * Pass `count: n` in options argument, where `n` is an integer, to
+    # return *n* items from `list`
+    def fetch_sample(list, options = {})
       if (count = options.delete(:count))
         list.sample(count, random: FFaker::Random)
       else

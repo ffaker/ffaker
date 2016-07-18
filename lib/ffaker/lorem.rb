@@ -7,15 +7,15 @@ module FFaker
     extend self
 
     def characters(character_count = 255)
-      Array.new(character_count < 0 ? 0 : character_count).map { fetch(CHARACTERS) }.join
+      Array.new(character_count < 0 ? 0 : character_count).map { fetch_sample(CHARACTERS) }.join
     end
 
     def word
-      fetch(WORDS)
+      fetch_sample(WORDS)
     end
 
     def words(num = 3)
-      fetch(WORDS, count: num)
+      fetch_sample(WORDS, count: num)
     end
 
     def sentence(word_count = 4)

@@ -82,11 +82,11 @@ module FFaker
     end
 
     def state
-      fetch(STATE)
+      fetch_sample(STATE)
     end
 
     def state_abbr
-      fetch(STATE_ABBR)
+      fetch_sample(STATE_ABBR)
     end
 
     def suburb(st_abbr = nil, p_code = nil)

@@ -16,19 +16,19 @@ module FFaker
     end
 
     def state
-      fetch(STATE)
+      fetch_sample(STATE)
     end
 
     def state_abbr
-      fetch(STATE_ABBR)
+      fetch_sample(STATE_ABBR)
     end
 
     def city
-      fetch(CITY)
+      fetch_sample(CITY)
     end
 
     def street_prefix
-      fetch(STREET_PREFIX)
+      fetch_sample(STREET_PREFIX)
     end
 
     def street

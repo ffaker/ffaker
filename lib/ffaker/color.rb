@@ -6,7 +6,7 @@ module FFaker
     extend self
 
     def name
-      fetch(NAMES_LIST)
+      fetch_sample(NAMES_LIST)
     end
 
     def hex_code

@@ -27,11 +27,11 @@ module FFaker
     # end US deprecation
 
     def city_prefix
-      fetch(CITY_PREFIXES)
+      fetch_sample(CITY_PREFIXES)
     end
 
     def city_suffix
-      fetch(CITY_SUFFIXES)
+      fetch_sample(CITY_SUFFIXES)
     end
 
     def city
@@ -44,7 +44,7 @@ module FFaker
     end
 
     def street_suffix
-      fetch(STREET_SUFFIX)
+      fetch_sample(STREET_SUFFIX)
     end
 
     def building_number
@@ -65,7 +65,7 @@ module FFaker
     end
 
     def secondary_address
-      FFaker.numerify(fetch(SEC_ADDR))
+      FFaker.numerify(fetch_sample(SEC_ADDR))
     end
 
     # @deprecated UK specific address info. Moved into {AddressUK}
@@ -87,7 +87,7 @@ module FFaker
     # end UK deprecation
 
     def neighborhood
-      fetch(NEIGHBORHOOD)
+      fetch_sample(NEIGHBORHOOD)
     end
 
     def country(given_code = nil)
@@ -95,7 +95,7 @@ module FFaker
       if given_code && country_index
         COUNTRY[country_index]
       else
-        fetch(COUNTRY)
+        fetch_sample(COUNTRY)
       end
     end
 
@@ -104,12 +104,12 @@ module FFaker
       if given_country && code_index
         COUNTRY_CODE[code_index]
       else
-        fetch(COUNTRY_CODE)
+        fetch_sample(COUNTRY_CODE)
       end
     end
 
     def time_zone
-      fetch(TIME_ZONE)
+      fetch_sample(TIME_ZONE)
     end
   end
 end

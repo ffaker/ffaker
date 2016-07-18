@@ -17,21 +17,21 @@ module FFaker
     end
 
     def name_with_prefix
-      fetch([
+      fetch_sample([
         female_name_with_prefix,
         male_name_with_prefix
       ])
     end
 
     def name_with_suffix
-      fetch([
+      fetch_sample([
         female_name_with_suffix,
         male_name_with_suffix
       ])
     end
 
     def name_with_prefix_suffix
-      fetch([
+      fetch_sample([
         female_name_with_prefix_suffix,
         male_name_with_prefix_suffix
       ])
@@ -62,39 +62,39 @@ module FFaker
     end
 
     def first_name
-      fetch(FIRST_NAMES)
+      fetch_sample(FIRST_NAMES)
     end
 
     def first_name_female
-      fetch(FIRST_NAMES_FEMALE)
+      fetch_sample(FIRST_NAMES_FEMALE)
     end
 
     def first_name_male
-      fetch(FIRST_NAMES_MALE)
+      fetch_sample(FIRST_NAMES_MALE)
     end
 
     def last_name
-      fetch(LAST_NAMES)
+      fetch_sample(LAST_NAMES)
     end
 
     def prefix
-      fetch(PREFIXES)
+      fetch_sample(PREFIXES)
     end
 
     def female_prefix
-      fetch(FEMALE_PREFIXES)
+      fetch_sample(FEMALE_PREFIXES)
     end
 
     def male_prefix
-      fetch(MALE_PREFIXES)
+      fetch_sample(MALE_PREFIXES)
     end
 
     def other_prefix
-      fetch(OTHER_PREFIXES)
+      fetch_sample(OTHER_PREFIXES)
     end
 
     def suffix
-      fetch(SUFFIXES)
+      fetch_sample(SUFFIXES)
     end
   end
 end

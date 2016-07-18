@@ -53,7 +53,7 @@ module FFaker
     end
 
     def tags(num_tags = 2)
-      fetch(HASHTAG, count: num_tags).join(' ')
+      fetch_sample(HASHTAG, count: num_tags).join(' ')
     end
   end
 end

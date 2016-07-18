@@ -18,7 +18,7 @@ module FFaker
     end
 
     def video_id
-      fetch(VIDEO_IDS)
+      fetch_sample(VIDEO_IDS)
     end
   end
 end
