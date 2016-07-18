@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestAddressDE < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::AddressDE,
+    :city, :state, :street_address, :street_name, :zip_code
+  )
+
   def test_city
     assert_match(/[ a-z]+/, FFaker::AddressDE.city)
   end

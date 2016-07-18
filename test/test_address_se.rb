@@ -3,8 +3,15 @@
 require 'helper'
 
 class TestAddressSE < Test::Unit::TestCase
+  include DeterministicHelper
+
   ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/
+
+  assert_methods_are_deterministic(
+    FFaker::AddressSE,
+    :city, :random_country, :full_address, :zip_code
+  )
 
   def test_se_city
     assert_match(ALPHA, FFaker::AddressSE.city)

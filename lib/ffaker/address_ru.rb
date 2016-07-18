@@ -13,11 +13,11 @@ module FFaker
     STREET_NBR_FORMATS = %w(## # ###).freeze
 
     def city
-      CITY.sample
+      fetch_sample(CITY)
     end
 
     def province
-      PROVINCE.sample
+      fetch_sample(PROVINCE)
     end
 
     def zip_code
@@ -25,7 +25,7 @@ module FFaker
     end
 
     def street_name
-      STREET.sample
+      fetch_sample(STREET)
     end
 
     def street_address

@@ -14,7 +14,7 @@ module FFaker
     end
 
     def canton_abbr
-      CANTON_ABBR.sample
+      fetch_sample(CANTON_ABBR)
     end
   end
 end

@@ -3,6 +3,14 @@
 require 'helper'
 
 class TestAddressUA < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::AddressUA,
+    :city, :country, :province, :zip_code, :street_name, :street_address,
+    :building_number, :appartment_number
+  )
+
   def setup
     @tester = FFaker::AddressUA
     @multiple_words_name_regexp = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/

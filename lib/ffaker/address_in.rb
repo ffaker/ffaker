@@ -12,33 +12,33 @@ module FFaker
     ZIP_FORMATS = ['######'].freeze
 
     def pincode
-      FFaker.numerify ZIP_FORMATS.sample
+      FFaker.numerify(fetch_sample(ZIP_FORMATS))
     end
 
     alias zip_code pincode
 
     def state
-      STATE.sample
+      fetch_sample(STATE)
     end
 
     def state_abbr
-      STATE_ABBR.sample
+      fetch_sample(STATE_ABBR)
     end
 
     def union_territory
-      UNION_TERRITORY.sample
+      fetch_sample(UNION_TERRITORY)
     end
 
     def union_territory_abbr
-      UNION_TERRITORY_ABBR.sample
+      fetch_sample(UNION_TERRITORY_ABBR)
     end
 
     def state_and_union_territory
-      (STATE + UNION_TERRITORY).sample
+      fetch_sample(STATE + UNION_TERRITORY)
     end
 
     def state_and_union_territory_abbr
-      (STATE_ABBR + UNION_TERRITORY_ABBR).sample
+      fetch_sample(STATE_ABBR + UNION_TERRITORY_ABBR)
     end
 
     def country

@@ -16,23 +16,23 @@ module FFaker
     POSTAL_CODE_FORMATS = ['####', '#####', '97####', '2A###', '2B###'].freeze
 
     def street_address
-      FFaker.numerify(NUM.sample) +
-        MOD.sample +
-        SEP.sample +
-        TYPE.sample + ' ' +
+      FFaker.numerify(fetch_sample(NUM)) +
+        fetch_sample(MOD) +
+        fetch_sample(SEP) +
+        fetch_sample(TYPE) + ' ' +
         FFaker::NameFR.name
     end
 
     def postal_code
-      FFaker.numerify POSTAL_CODE_FORMATS.sample
+      FFaker.numerify(fetch_sample(POSTAL_CODE_FORMATS))
     end
 
     def city
-      CITY.sample
+      fetch_sample(CITY)
     end
 
     def full_address
-      %(#{street_address}#{SEP.sample}#{postal_code} #{CITY.sample})
+      %(#{street_address}#{fetch_sample(SEP)}#{postal_code} #{fetch_sample(CITY)})
     end
   end
 end

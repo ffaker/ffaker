@@ -14,27 +14,27 @@ module FFaker
     CONTINENTAL_STATE_ABBR = (STATE_ABBR - %w(HI AK))
 
     def zip_code
-      FFaker.numerify ZIP_FORMATS.sample
+      FFaker.numerify(fetch_sample(ZIP_FORMATS))
     end
 
     def state
-      STATE.sample
+      fetch_sample(STATE)
     end
 
     def state_abbr
-      STATE_ABBR.sample
+      fetch_sample(STATE_ABBR)
     end
 
     def state_and_territories_abbr
-      STATE_AND_TERRITORIES_ABBR.sample
+      fetch_sample(STATE_AND_TERRITORIES_ABBR)
     end
 
     def continental_state
-      CONTINENTAL_STATE.sample
+      fetch_sample(CONTINENTAL_STATE)
     end
 
     def continental_state_abbr
-      CONTINENTAL_STATE_ABBR.sample
+      fetch_sample(CONTINENTAL_STATE_ABBR)
     end
   end
 end

@@ -25,19 +25,19 @@ module FFaker
     end
 
     def kommune
-      KOMMUNE.sample
+      fetch_sample(KOMMUNE)
     end
 
     def region
-      REGION.sample
+      fetch_sample(REGION)
     end
 
     def city
-      CITY.sample
+      fetch_sample(CITY)
     end
 
     def street_name
-      STREET.sample
+      fetch_sample(STREET)
     end
 
     def street_address

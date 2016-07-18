@@ -12,15 +12,15 @@ module FFaker
     APPARTMENT_NUMBER_FORMATS = %w(# ## ###).freeze
 
     def country
-      COUNTRY.sample
+      fetch_sample(COUNTRY)
     end
 
     def city
-      CITY.sample
+      fetch_sample(CITY)
     end
 
     def province
-      PROVINCE.sample
+      fetch_sample(PROVINCE)
     end
 
     def zip_code
@@ -28,7 +28,7 @@ module FFaker
     end
 
     def street_name
-      "вул. #{STREET.sample}"
+      "вул. #{fetch_sample(STREET)}"
     end
 
     def street_address(include_secondary = false)
@@ -51,7 +51,7 @@ module FFaker
       if allow_first_zero
         FFaker.numerify(masks_arr)
       else
-        masks_arr.sample.sub(/#/) { (rand(9) + 1).to_s }.gsub(/#/) { rand(10).to_s }
+        fetch_sample(masks_arr).sub(/#/) { (rand(9) + 1).to_s }.gsub(/#/) { rand(10).to_s }
       end
     end
   end

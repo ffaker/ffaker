@@ -13,15 +13,15 @@ module FFaker
     POSTCODE = ['??# #??', '??## #??'].freeze
 
     def county
-      COUNTY.sample
+      fetch_sample(COUNTY)
     end
 
     def country
-      COUNTRY.sample
+      fetch_sample(COUNTRY)
     end
 
     def postcode
-      FFaker.bothify(POSTCODE.sample).upcase
+      FFaker.bothify(fetch_sample(POSTCODE)).upcase
     end
   end
 end

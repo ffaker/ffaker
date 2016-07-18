@@ -27,24 +27,24 @@ module FFaker
 
     def first_name_female
       case rand(8)
-      when 0 then [FIRST_NAMES_FEMALE.sample, FIRST_NAMES_FEMALE.sample].join('-')
-      else FIRST_NAMES_FEMALE.sample
+      when 0 then [fetch_sample(FIRST_NAMES_FEMALE), fetch_sample(FIRST_NAMES_FEMALE)].join('-')
+      else fetch_sample(FIRST_NAMES_FEMALE)
       end
     end
 
     def first_name_male
       case rand(8)
-      when 0 then [FIRST_NAMES_MALE.sample, FIRST_NAMES_MALE.sample].join('-')
-      else FIRST_NAMES_MALE.sample
+      when 0 then [fetch_sample(FIRST_NAMES_MALE), fetch_sample(FIRST_NAMES_MALE)].join('-')
+      else fetch_sample(FIRST_NAMES_MALE)
       end
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def prefix
-      PREFIXES.sample
+      fetch_sample(PREFIXES)
     end
   end
 end

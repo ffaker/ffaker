@@ -4,6 +4,13 @@ require 'helper'
 
 # Author: PapePathe<pathe.sene@gmail.com> github.com/PapePathe
 class TestFakerNameFR < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::NameFR,
+    :first_name, :last_name, :prefix
+  )
+
   def setup
     @tester = FFaker::NameFR
   end

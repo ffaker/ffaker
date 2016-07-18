@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestAddressRU < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::AddressRU,
+    :city, :province, :street_address, :street_name, :zip_code
+  )
+
   def setup
     @tester = FFaker::AddressRU
   end
