@@ -8,6 +8,6 @@ class TestAddressCHFR < Test::Unit::TestCase
   assert_methods_are_deterministic(FFaker::AddressCHFR, :canton)
 
   def test_ch_fr_canton
-    assert_match /\A[- a-zàâäèéêëîïôœùûüÿç]+\z/i, FFaker::AddressCHFR.canton
+    assert_match(/\A[- a-zàâäèéêëîïôœùûüÿç]+\z/i, FFaker::AddressCHFR.canton)
   end
 end
