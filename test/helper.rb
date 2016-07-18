@@ -1,6 +1,8 @@
 require 'test/unit'
 require 'ffaker'
 
+# Helpers for checking if a method is deterministic -- e.g., that the Random
+# results are repeatable given the same random seed.
 module DeterministicHelper
   def self.included(base)
     base.extend ClassMethods
@@ -24,6 +26,7 @@ module DeterministicHelper
     assert(returns.uniq.length == 1, options[:message])
   end
 
+  # Methods to be called outside of individual examples.
   module ClassMethods
     # Shorthand method to quickly test the determinability of multiple methods.
     #
@@ -39,11 +42,9 @@ module DeterministicHelper
     def assert_methods_are_deterministic(klass, *methods)
       Array(methods).each do |meth|
         define_method "test_#{meth}_is_deterministic" do
-
           assert_deterministic(message: "Results from `#{klass}.#{meth}` are not repeatable") do
             klass.send(meth)
           end
-
         end
       end
     end

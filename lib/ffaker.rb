@@ -62,14 +62,14 @@ module FFaker
       end
     end
 
-    private
-
-    def self.new_rng
-      ::Random.new(seed)
-    end
-
+    # Returns the current Random object.
     def self.rng
       @rng ||= new_rng
+    end
+
+    # Returns a new Random object instantiated with #seed.
+    def self.new_rng
+      ::Random.new(seed)
     end
   end
 end

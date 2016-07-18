@@ -17,24 +17,30 @@ module FFaker
     end
 
     def name_with_prefix
-      fetch_sample([
-        female_name_with_prefix,
-        male_name_with_prefix
-      ])
+      fetch_sample(
+        [
+          female_name_with_prefix,
+          male_name_with_prefix
+        ]
+      )
     end
 
     def name_with_suffix
-      fetch_sample([
-        female_name_with_suffix,
-        male_name_with_suffix
-      ])
+      fetch_sample(
+        [
+          female_name_with_suffix,
+          male_name_with_suffix
+        ]
+      )
     end
 
     def name_with_prefix_suffix
-      fetch_sample([
-        female_name_with_prefix_suffix,
-        male_name_with_prefix_suffix
-      ])
+      fetch_sample(
+        [
+          female_name_with_prefix_suffix,
+          male_name_with_prefix_suffix
+        ]
+      )
     end
 
     def female_name_with_prefix
