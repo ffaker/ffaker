@@ -3,6 +3,10 @@
 require 'helper'
 
 class TestFakerGenderBR < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(FFaker::GenderBR, :random)
+
   def setup
     @tester = FFaker::GenderBR
   end
