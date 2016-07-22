@@ -89,7 +89,7 @@ module FFaker
         end
         @last_token = ['['] + set + [']']
 
-        process_token([generate_range(set).sample])
+        process_token([fetch_sample(generate_range(set))])
       else
         token
       end
@@ -97,9 +97,9 @@ module FFaker
 
     def special(token)
       case token
-      when 'w' then WORD_CHARS.sample
-      when 'd' then NUMBERS.sample
-      when 's' then SPACES.sample
+      when 'w' then fetch_sample(WORD_CHARS)
+      when 'd' then fetch_sample(NUMBERS)
+      when 's' then fetch_sample(SPACES)
       when *ESCAPEABLE_CHARS then token
       else
         ''
