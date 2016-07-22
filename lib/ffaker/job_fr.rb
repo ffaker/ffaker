@@ -9,9 +9,9 @@ module FFaker
 
     def title
       if rand(2).zero?
-        "#{JOB_PREFIXES.sample} #{JOB_ADJECTIVES.sample} #{JOB_NOUNS.sample}"
+        "#{fetch_sample(JOB_PREFIXES)} #{fetch_sample(JOB_ADJECTIVES)} #{fetch_sample(JOB_NOUNS)}"
       else
-        "#{JOB_PREFIXES.sample} #{JOB_NOUNS.sample}"
+        "#{fetch_sample(JOB_PREFIXES)} #{fetch_sample(JOB_NOUNS)}"
       end
     end
   end

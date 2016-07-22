@@ -3,6 +3,10 @@
 require 'helper'
 
 class TestFakerJobKR < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(FFaker::JobKR, :title)
+
   def setup
     @tester = FFaker::JobKR
   end
