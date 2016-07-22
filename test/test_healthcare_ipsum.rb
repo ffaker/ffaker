@@ -1,6 +1,13 @@
 require 'helper'
 
 class TestHealthcareIpsum < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::HealthcareIpsum,
+    :paragraph, :paragraphs, :sentence, :sentences, :word, :words
+  )
+
   def test_paragraph
     assert_match(/1\+|[ a-z]+/i, FFaker::HealthcareIpsum.paragraph)
   end

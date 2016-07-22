@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestDizzleIpsum < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::DizzleIpsum,
+    :paragraph, :sentence, :paragraphs, :sentences, :words, :word
+  )
+
   def test_paragraph
     assert_match(/1\+|[ a-z]+/i, FFaker::DizzleIpsum.paragraph)
   end
