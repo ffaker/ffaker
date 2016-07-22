@@ -18,7 +18,13 @@ module FFaker
       consonants_n = CONSONANTS + ["Ñ"]
       all_letters = consonants_n + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
-      "#{consonants_n.sample}#{VOWELS.sample}#{all_letters.sample(2).join}#{date}#{HOMOCLAVE.sample(3).join}"
+      [
+        fetch_sample(consonants_n),
+        fetch_sample(VOWELS),
+        fetch_sample(all_letters, count: 2).join,
+        date,
+        fetch_sample(HOMOCLAVE, count: 3).join
+      ].join
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -27,13 +33,13 @@ module FFaker
       consonants_n_amp = CONSONANTS + ["Ñ", '&']
       all_letters = consonants_n_amp + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
-      "#{all_letters.sample(3).join}#{date}#{HOMOCLAVE.sample(3).join}"
+      "#{fetch_sample(all_letters, count: 3).join}#{date}#{fetch_sample(HOMOCLAVE, count: 3).join}"
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
     # Registro Federal de Contribuyentes (R.F.C.)
     def rfc
-      [rfc_persona_moral, rfc_persona_fisica].sample
+      fetch_sample([rfc_persona_moral, rfc_persona_fisica])
     end
 
     # http://es.wikipedia.org/wiki/Clave_%C3%9Anica_de_Registro_de_Poblaci%C3%B3n
@@ -42,7 +48,17 @@ module FFaker
       all_letters = CONSONANTS + VOWELS
       hm = %w(H M)
       date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
-      "#{CONSONANTS.sample}#{VOWELS.sample}#{all_letters.sample(2).join}#{date}#{hm.sample}#{ESTADOS_CURP.sample}#{CONSONANTS.sample(3).join}#{HOMOCLAVE.sample}#{rand(10)}"
+      [
+        fetch_sample(CONSONANTS),
+        fetch_sample(VOWELS),
+        fetch_sample(all_letters, count: 2).join,
+        date,
+        fetch_sample(hm),
+        fetch_sample(ESTADOS_CURP),
+        fetch_sample(CONSONANTS, count: 3).join,
+        fetch_sample(HOMOCLAVE),
+        rand(10)
+      ].join
     end
   end
 end

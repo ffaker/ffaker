@@ -6,19 +6,19 @@ module FFaker
     extend self
 
     def genre
-      GENRES.sample
+      fetch_sample(GENRES)
     end
 
     def album
-      ALBUMS.sample
+      fetch_sample(ALBUMS)
     end
 
     def artist
-      ARTISTS.sample
+      fetch_sample(ARTISTS)
     end
 
     def song
-      SONGS.sample
+      fetch_sample(SONGS)
     end
   end
 end

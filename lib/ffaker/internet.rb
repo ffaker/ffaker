@@ -19,15 +19,15 @@ module FFaker
     # returns an email address of an online disposable email service (like tempinbox.com).
     # you can really send an email to these addresses an access it by going to the service web pages.
     def disposable_email(name = nil)
-      [user_name(name), DISPOSABLE_HOSTS.sample].join('@')
+      [user_name(name), fetch_sample(DISPOSABLE_HOSTS)].join('@')
     end
 
     def free_email(name = nil)
-      "#{user_name(name)}@#{HOSTS.sample}"
+      "#{user_name(name)}@#{fetch_sample(HOSTS)}"
     end
 
     def safe_email(name = nil)
-      "#{user_name(name)}@example.#{SAFE_DOMAIN_SUFFIXES.sample}"
+      "#{user_name(name)}@example.#{fetch_sample(SAFE_DOMAIN_SUFFIXES)}"
     end
 
     def user_name(name = nil)
@@ -58,7 +58,7 @@ module FFaker
     end
 
     def domain_suffix
-      DOMAIN_SUFFIXES.sample
+      fetch_sample(DOMAIN_SUFFIXES)
     end
 
     def uri(protocol)
@@ -70,18 +70,18 @@ module FFaker
     end
 
     def ip_v4_address
-      (1..4).map { BYTE.sample }.join('.')
+      (1..4).map { fetch_sample(BYTE) }.join('.')
     end
 
     def slug(words = nil, glue = nil)
       words ||= Lorem.words(2).join(' ')
-      glue ||= SLUG_DELIMITERS.sample
+      glue ||= fetch_sample(SLUG_DELIMITERS)
       words.downcase.gsub(/[^a-z0-9]+/, glue)
     end
 
     def password(min_length = 8, max_length = 16)
       length =
-        min_length > max_length ? min_length : [*min_length..max_length].sample
+        min_length > max_length ? min_length : fetch_sample([*min_length..max_length])
       String.from_regexp(/[a-z]{#{length}}/)
     end
 

@@ -10,7 +10,7 @@ module FFaker
       if given_language && code_index
         LANGUAGE_CODE[code_index]
       else
-        LANGUAGE_CODE.sample
+        fetch_sample(LANGUAGE_CODE)
       end
     end
 
@@ -19,7 +19,7 @@ module FFaker
       if given_code && language_index
         LANGUAGE[language_index]
       else
-        LANGUAGE.sample
+        fetch_sample(LANGUAGE)
       end
     end
   end

@@ -8,7 +8,7 @@ module FFaker
     GENDERS = %w(feminino masculino).freeze
 
     def random
-      GENDERS.sample
+      fetch_sample(GENDERS)
     end
 
     alias maybe random

@@ -30,19 +30,19 @@ module FFaker
     def first_name(gender = :any)
       case gender
       when :any then (rand(2) == 0) ? first_name(:male) : first_name(:female)
-      when :male then MALE_FIRST_NAMES.sample
-      when :female then FEMALE_FIRST_NAMES.sample
+      when :male then fetch_sample(MALE_FIRST_NAMES)
+      when :female then fetch_sample(FEMALE_FIRST_NAMES)
       else
         raise ArgumentError, 'Invalid gender, must be one of :any, :male, :female'
       end
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def prefix
-      PREFIXES.sample
+      fetch_sample(PREFIXES)
     end
 
     private

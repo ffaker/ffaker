@@ -1,7 +1,11 @@
 require 'helper'
 
 class TestAvatar < Test::Unit::TestCase
+  include DeterministicHelper
+
   ROBOHASH = 'https://robohash.org'.freeze
+
+  assert_methods_are_deterministic(FFaker::Avatar, :image)
 
   def setup
     @tester = FFaker::Avatar

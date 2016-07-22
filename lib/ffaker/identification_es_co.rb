@@ -21,15 +21,15 @@ module FFaker
     alias id drivers_license
 
     def driver_license_category
-      category = LICENSE_CATEGORY.sample
+      category = fetch_sample(LICENSE_CATEGORY)
       # the categories are A1 A2 B1 B2 B3 C1 C2 C3
       num = category == 'A' ? 1 + rand(2) : 1 + rand(3)
       "#{category}#{num}"
     end
 
     def blood_type # RH
-      sign = %w(+ -).sample
-      "#{BLOOD_TYPE.sample}#{sign}"
+      sign = fetch_sample(%w(+ -))
+      "#{fetch_sample(BLOOD_TYPE)}#{sign}"
     end
 
     def expedition_date

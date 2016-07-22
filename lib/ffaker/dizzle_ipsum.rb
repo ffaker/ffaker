@@ -11,11 +11,11 @@ module FFaker
     extend self
 
     def word
-      DIZZLE_WORDS.sample
+      fetch_sample(DIZZLE_WORDS)
     end
 
     def words(num = 3)
-      DIZZLE_WORDS.sample(num)
+      fetch_sample(DIZZLE_WORDS, count: num)
     end
   end
 end

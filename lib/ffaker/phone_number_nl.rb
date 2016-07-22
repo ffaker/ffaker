@@ -22,12 +22,12 @@ module FFaker
     end
 
     def home_work_phone_number
-      area = AREA_CODES.sample
-      FFaker.numerify "#{AREA_CODE_PREFIX}#{area}-#{PHONE_NUMBER[area.size].sample}"
+      area = fetch_sample(AREA_CODES)
+      FFaker.numerify "#{AREA_CODE_PREFIX}#{area}-#{fetch_sample(PHONE_NUMBER[area.size])}"
     end
 
     def mobile_phone_number
-      FFaker.numerify "#{AREA_CODE_PREFIX}6#{MOBILE_PHONE_NUMBER.sample}"
+      FFaker.numerify "#{AREA_CODE_PREFIX}6#{fetch_sample(MOBILE_PHONE_NUMBER)}"
     end
 
     def international_phone_number
@@ -38,12 +38,12 @@ module FFaker
     end
 
     def international_home_work_phone_number
-      area = AREA_CODES.sample
-      FFaker.numerify("#{COUNTRY_CODE} #{area}-#{PHONE_NUMBER[area.size].sample}")
+      area = fetch_sample(AREA_CODES)
+      FFaker.numerify("#{COUNTRY_CODE} #{area}-#{fetch_sample(PHONE_NUMBER[area.size])}")
     end
 
     def international_mobile_phone_number
-      FFaker.numerify("#{COUNTRY_CODE} 6#{MOBILE_PHONE_NUMBER.sample}")
+      FFaker.numerify("#{COUNTRY_CODE} 6#{fetch_sample(MOBILE_PHONE_NUMBER)}")
     end
   end
 end

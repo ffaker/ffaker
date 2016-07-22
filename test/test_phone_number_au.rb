@@ -4,6 +4,17 @@ require 'helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
 class TestPhoneNumberAU < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::PhoneNumberAU,
+    :mobile_phone_prefix, :home_work_phone_prefix, :phone_prefix,
+    :mobile_phone_number, :home_work_phone_number, :phone_number,
+    :international_mobile_phone_number,
+    :international_home_work_phone_number,
+    :international_phone_number
+  )
+
   def setup
     @tester = FFaker::PhoneNumberAU
   end

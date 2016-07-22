@@ -2,6 +2,13 @@ require 'helper'
 
 class TestFakerIdentificationESCO < Test::Unit::TestCase
   include Test::Unit::Assertions
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::IdentificationESCO,
+    :drivers_license, :driver_license_category, :blood_type, :expedition_date
+  )
+
   def setup
     @tester = FFaker::IdentificationESCO
   end

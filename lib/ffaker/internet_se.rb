@@ -23,11 +23,11 @@ module FFaker
     # (like tempinbox.com). you can really send an email to these
     # addresses an access it by going to the service web pages.
     def disposable_email(name = nil)
-      "#{user_name(name)}@#{DISPOSABLE_HOSTS.sample}"
+      "#{user_name(name)}@#{fetch_sample(DISPOSABLE_HOSTS)}"
     end
 
     def free_email(name = nil)
-      "#{user_name(name)}@#{HOSTS.sample}"
+      "#{user_name(name)}@#{fetch_sample(HOSTS)}"
     end
 
     # Used to fake login names were dot is not allowed
@@ -63,12 +63,12 @@ module FFaker
     end
 
     def user_name_from_name(name)
-      array_parts = name.scan(/\w+/).shuffle
+      array_parts = shuffle(name.scan(/\w+/))
       join_to_user_name(array_parts)
     end
 
     def join_to_user_name(array_parts)
-      join_char = %w(. _).sample
+      join_char = fetch_sample(%w(. _))
       array_parts.map(&:downcase).join(join_char)
     end
 
@@ -88,7 +88,7 @@ module FFaker
     end
 
     def domain_suffix
-      DOMAIN_SUFFIXES.sample
+      fetch_sample(DOMAIN_SUFFIXES)
     end
 
     def uri(protocol)
@@ -100,11 +100,11 @@ module FFaker
     end
 
     def ip_v4_address
-      (1..4).map { BYTE.sample }.join('.')
+      (1..4).map { fetch_sample(BYTE) }.join('.')
     end
 
     def slug(words = nil, glue = nil)
-      glue ||= SLUG_DELIMITERS.sample
+      glue ||= fetch_sample(SLUG_DELIMITERS)
 
       (words || FFaker::Lorem.words(2).join(' ')).gsub(' ', glue).downcase
     end

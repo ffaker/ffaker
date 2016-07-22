@@ -11,11 +11,11 @@ module FFaker
     extend self
 
     def word
-      BACON_WORDS.sample
+      fetch_sample(BACON_WORDS)
     end
 
     def words(num = 3)
-      BACON_WORDS.sample(num)
+      fetch_sample(BACON_WORDS, count: num)
     end
   end
 end

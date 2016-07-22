@@ -10,11 +10,11 @@ module FFaker
     extend self
 
     def word
-      HEALTHCARE_WORDS.sample
+      fetch_sample(HEALTHCARE_WORDS)
     end
 
     def words(num = 3)
-      HEALTHCARE_WORDS.sample(num)
+      fetch_sample(HEALTHCARE_WORDS, count: num)
     end
   end
 end

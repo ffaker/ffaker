@@ -4,6 +4,13 @@ require 'helper'
 
 # Author: lurraca github.com/lurraca
 class TestUnits < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Unit,
+    :time_name, :time_abbr, :temperature_name, :temperature_abbr
+  )
+
   def setup
     @tester = FFaker::Unit
     @time_units = @tester::TIME_UNITS.map { |u| OpenStruct.new u }

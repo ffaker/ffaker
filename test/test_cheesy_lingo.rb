@@ -1,7 +1,14 @@
 require 'helper'
 
 class TestCheesyLingo < Test::Unit::TestCase
+  include DeterministicHelper
+
   TEST_REGEX = /\+1|[a-z]+/i
+
+  assert_methods_are_deterministic(
+    FFaker::CheesyLingo,
+    :title, :word, :words, :sentence, :paragraph
+  )
 
   def setup
     @tester = FFaker::CheesyLingo

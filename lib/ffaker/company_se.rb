@@ -17,7 +17,7 @@ module FFaker
     end
 
     def suffix
-      SUFFIXES.sample
+      fetch_sample(SUFFIXES)
     end
   end
 end

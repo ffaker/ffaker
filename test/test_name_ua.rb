@@ -3,6 +3,15 @@
 require 'helper'
 
 class TestNameUA < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::NameUA,
+    :first_name_female, :first_name_male, :first_name,
+    :last_name_female, :last_name_male, :last_name,
+    :middle_name_female, :middle_name_male, :name
+  )
+
   def setup
     @tester = FFaker::NameUA
 

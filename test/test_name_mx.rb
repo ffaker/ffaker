@@ -4,6 +4,15 @@ require 'helper'
 
 # Author: guapolo github.com/guapolo
 class TestFakerNameMX < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::NameMX,
+    :last_name, :first_name, :middle_name, :name, :male_prefix, :female_prefix,
+    :prefix, :male_name, :female_name, :full_name, :full_name_no_prefix,
+    :full_name_prefix
+  )
+
   def setup
     @tester = FFaker::NameMX
     @all_names = @tester::MALE_FIRST_NAMES + @tester::FEMALE_FIRST_NAMES

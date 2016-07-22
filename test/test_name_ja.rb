@@ -15,6 +15,14 @@ class TestFakerNameJA < Test::Unit::TestCase
     end
   end
 
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::NameJA,
+    :last_name, :first_name, :last_first, :name
+  )
+
+
   def setup
     @tester = FFaker::NameJA
   end

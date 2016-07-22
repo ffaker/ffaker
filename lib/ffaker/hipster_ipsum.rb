@@ -11,11 +11,11 @@ module FFaker
     extend self
 
     def word
-      HIPSTER_WORDS.sample
+      fetch_sample(HIPSTER_WORDS)
     end
 
     def words(num = 3)
-      HIPSTER_WORDS.sample(num)
+      fetch_sample(HIPSTER_WORDS, count: num)
     end
   end
 end

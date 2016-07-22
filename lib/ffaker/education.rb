@@ -14,34 +14,34 @@ module FFaker
     SCHOOL_UNI  = %w(University College).freeze
 
     def degree_short
-      "#{DEGREE_SHORT_PREFIX.sample} in #{major}"
+      "#{fetch_sample(DEGREE_SHORT_PREFIX)} in #{major}"
     end
 
     def degree
-      "#{DEGREE_PREFIX.sample} in #{major}"
+      "#{fetch_sample(DEGREE_PREFIX)} in #{major}"
     end
 
     def major
-      "#{MAJOR_ADJ.sample} #{MAJOR_NOUN.sample}"
+      "#{fetch_sample(MAJOR_ADJ)} #{fetch_sample(MAJOR_NOUN)}"
     end
 
     def school_name
-      SCHOOL_PREFIX.sample + SCHOOL_SUFFIX.sample
+      fetch_sample(SCHOOL_PREFIX) + fetch_sample(SCHOOL_SUFFIX)
     end
 
     def school_generic_name
       case rand(2)
-      when 0 then AddressUS::STATE.sample
+      when 0 then fetch_sample(AddressUS::STATE)
       when 1 then school_name
       end
     end
 
     def school
       case rand(5)
-      when (0..1) then "#{school_name} #{SCHOOL_TYPE.sample}"
-      when 2 then "#{school_generic_name} #{SCHOOL_ADJ.sample} #{SCHOOL_TYPE.sample}"
-      when 3 then "#{SCHOOL_UNI.sample} of #{school_generic_name}"
-      when 4 then "#{school_generic_name} #{SCHOOL_TYPE.sample} of #{MAJOR_NOUN.sample}"
+      when (0..1) then "#{school_name} #{fetch_sample(SCHOOL_TYPE)}"
+      when 2 then "#{school_generic_name} #{fetch_sample(SCHOOL_ADJ)} #{fetch_sample(SCHOOL_TYPE)}"
+      when 3 then "#{fetch_sample(SCHOOL_UNI)} of #{school_generic_name}"
+      when 4 then "#{school_generic_name} #{fetch_sample(SCHOOL_TYPE)} of #{fetch_sample(MAJOR_NOUN)}"
       end
     end
   end

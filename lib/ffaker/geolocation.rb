@@ -6,11 +6,11 @@ module FFaker
     extend self
 
     def lat
-      LATLNG.sample[0]
+      fetch_sample(LATLNG)[0]
     end
 
     def lng
-      LATLNG.sample[1]
+      fetch_sample(LATLNG)[1]
     end
 
     LATLNG = [

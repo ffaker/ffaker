@@ -8,19 +8,19 @@ module FFaker
     end
 
     def vegetable
-      VEGETABLE.sample
+      fetch_sample(VEGETABLE)
     end
 
     def fruit
-      FRUIT.sample
+      fetch_sample(FRUIT)
     end
 
     def meat
-      MEAT.sample
+      fetch_sample(MEAT)
     end
 
     def herb_or_spice
-      HERB_SPICE.sample
+      fetch_sample(HERB_SPICE)
     end
   end
 end

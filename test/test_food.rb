@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestFakerFood < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Food,
+    :vegetable, :fruit, :meat, :herb_or_spice
+  )
+
   def test_vegetable
     assert_match(/\A[-\/ íó'a-z0-9]+\z/i, FFaker::Food.vegetable)
   end

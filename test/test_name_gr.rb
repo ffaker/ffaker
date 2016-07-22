@@ -3,6 +3,14 @@
 require 'helper'
 
 class TestFakerNameGR < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::NameGR,
+    :male_first_name, :male_last_name, :female_first_name, :female_last_name,
+    :male_full_name, :female_full_name, :last_name, :first_name
+  )
+
   def setup
     @tester = FFaker::NameGR
   end
@@ -50,11 +58,13 @@ class TestFakerNameGR < Test::Unit::TestCase
     names = @tester.full_name(:male).split(' ')
     assert_include @tester::MALE_FIRST_NAMES, names[0]
     assert_include @tester::MALE_LAST_NAMES, names[1]
+    assert_deterministic { @tester.full_name(:male) }
   end
 
   def test_full_name_female
     names = @tester.full_name(:female).split(' ')
     assert_include @tester::FEMALE_FIRST_NAMES, names[0]
     assert_include @tester::FEMALE_LAST_NAMES, names[1]
+    assert_deterministic { @tester.full_name(:female) }
   end
 end

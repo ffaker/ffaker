@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestHipsterIpsum < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::HipsterIpsum,
+    :paragraph, :paragraphs, :sentence, :sentences, :word, :words
+  )
+
   TEST_REGEX = /\+1|[ a-z]+/i
 
   def test_paragraph

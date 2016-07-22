@@ -3,6 +3,10 @@
 require 'helper'
 
 class TestGeolocation < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(FFaker::Geolocation, :lat, :lng)
+
   def test_lat
     assert_match(/[0-9]+/, FFaker::Geolocation.lat.to_s)
   end

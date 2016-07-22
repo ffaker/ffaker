@@ -17,11 +17,11 @@ module FFaker
     end
 
     def ethnicity
-      ETHNICITIES.sample
+      fetch_sample(ETHNICITIES)
     end
 
     def gender
-      GENDERS.sample
+      fetch_sample(GENDERS)
     end
   end
 end

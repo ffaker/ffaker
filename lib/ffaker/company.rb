@@ -18,26 +18,26 @@ module FFaker
     end
 
     def suffix
-      SUFFIXES.sample
+      fetch_sample(SUFFIXES)
     end
 
     # Generate a buzzword-laden catch phrase.
     # Wordlist from http://www.1728.com/buzzword.htm
     def catch_phrase
-      "#{CATCH_PRE.sample} #{CATCH_MID.sample} #{CATCH_POS.sample}"
+      "#{fetch_sample(CATCH_PRE)} #{fetch_sample(CATCH_MID)} #{fetch_sample(CATCH_POS)}"
     end
 
     # When a straight answer won't do, BS to the rescue!
     # Wordlist from http://dack.com/web/bullshit.html
     def bs
-      "#{BS_PRE.sample} #{BS_MID.sample} #{BS_POS.sample}"
+      "#{fetch_sample(BS_PRE)} #{fetch_sample(BS_MID)} #{fetch_sample(BS_POS)}"
     end
 
     def position
       case rand(3)
-      when 0 then [POSITION_PREFIXES.sample, POSITIONS.sample]
-      when 1 then [POSITION_AREAS.sample, POSITIONS.sample]
-      when 2 then [POSITION_PREFIXES.sample, POSITION_AREAS.sample, POSITIONS.sample]
+      when 0 then [fetch_sample(POSITION_PREFIXES), fetch_sample(POSITIONS)]
+      when 1 then [fetch_sample(POSITION_AREAS), fetch_sample(POSITIONS)]
+      when 2 then [fetch_sample(POSITION_PREFIXES), fetch_sample(POSITION_AREAS), fetch_sample(POSITIONS)]
       end.join(' ')
     end
   end

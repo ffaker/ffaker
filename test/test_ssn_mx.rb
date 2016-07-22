@@ -4,6 +4,13 @@ require 'helper'
 
 # Author Guapolo <github.com/guapolo>
 class TestSSNMX < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::SSNMX,
+    :ssn, :ssn_undashed, :imss, :imss_undashed, :issste, :issste_undashed
+  )
+
   def test_ssn
     assert_match(/\d{10}-\d/, FFaker::SSNMX.ssn)
   end
