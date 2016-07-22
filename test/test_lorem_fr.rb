@@ -3,6 +3,14 @@
 require 'helper'
 
 class TestLoremFR < Test::Unit::TestCase
+  include DeterministicHelper
+  
+  assert_methods_are_deterministic(
+    FFaker::LoremFR,
+    :paragraph, :paragraphs, :sentence, :sentences,
+    :phrase, :phrases, :word, :words
+  )
+  
   def test_paragraph
     assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.paragraph)
   end

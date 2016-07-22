@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestLoremCN < Test::Unit::TestCase
+  include DeterministicHelper
+  
+  assert_methods_are_deterministic(
+    FFaker::LoremCN,
+    :paragraph, :paragraphs, :sentence, :sentences, :word, :words
+  )
+  
   def test_paragraph
     assert FFaker::LoremCN.paragraph.length >= 3 * 4 * 2
   end

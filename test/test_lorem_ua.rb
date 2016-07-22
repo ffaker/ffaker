@@ -3,9 +3,16 @@
 require 'helper'
 
 class TestLoremUA < Test::Unit::TestCase
+  include DeterministicHelper
+  
   SENTENCE_MATCHER = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s\.\!\?,]+\z/
   WORDS_MATCHER    = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/
   WORD_MATCHER     = /\A[а-яА-ЯіїєґІЇЄҐ’\-]+\z/
+  
+  assert_methods_are_deterministic(
+    FFaker::LoremUA,
+    :paragraph, :sentence, :words, :word
+  )
 
   def setup
     @tester = FFaker::LoremUA
