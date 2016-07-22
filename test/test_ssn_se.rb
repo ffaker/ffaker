@@ -3,6 +3,10 @@
 require 'helper'
 
 class TestSSNSE < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(FFaker::SSNSE, :ssn)
+
   def test_ssn_format
     ssn = FFaker::SSNSE.ssn
     assert_match(/(19|20)\d{10}/, ssn, "With no arguments year should start with 19 or 20, #{ssn}")
