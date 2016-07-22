@@ -79,23 +79,23 @@ module FFaker
     private
 
     def length
-      OpenStruct.new LENGTH_UNITS.sample
+      OpenStruct.new(fetch_sample(LENGTH_UNITS))
     end
 
     def mass
-      OpenStruct.new MASS_UNITS.sample
+      OpenStruct.new(fetch_sample(MASS_UNITS))
     end
 
     def liquid
-      OpenStruct.new LIQUID_UNITS.sample
+      OpenStruct.new(fetch_sample(LIQUID_UNITS))
     end
 
     def volume
-      OpenStruct.new VOLUME_UNITS.sample
+      OpenStruct.new(fetch_sample(VOLUME_UNITS))
     end
 
     def area
-      OpenStruct.new AREA_UNITS.sample
+      OpenStruct.new(fetch_sample(AREA_UNITS))
     end
   end
 end

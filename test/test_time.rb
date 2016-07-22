@@ -3,6 +3,10 @@
 require 'helper'
 
 class TestFakerTime < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(FFaker::Time, :date, :datetime, :month)
+
   def setup
     @tester = FFaker::Time
   end
@@ -14,6 +18,7 @@ class TestFakerTime < Test::Unit::TestCase
 
   def test_date_hours_and_minutes
     assert_match('04:20:00', @tester.date(hours: 4, minutes: 20))
+    assert_deterministic { @tester.date(hours: 4, minutes: 20) }
   end
 
   def test_datetime
@@ -23,6 +28,7 @@ class TestFakerTime < Test::Unit::TestCase
 
   def test_datetime_hours_and_minutes
     assert_match('04:20:00', @tester.datetime(hours: 4, minutes: 20))
+    assert_deterministic { @tester.datetime(hours: 4, minutes: 20) }
   end
 
   def test_month
@@ -38,6 +44,7 @@ class TestFakerTime < Test::Unit::TestCase
       random_date = @tester.between(from, to)
       assert random_date >= from, "Expected >= \"#{from}\", but got #{random_date}"
       assert random_date <= to, "Expected <= \"#{to}\", but got #{random_date}"
+      assert_deterministic { @tester.between(from, to) }
     end
   end
 end
