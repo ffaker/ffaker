@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestCompany < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Company,
+    :bs, :catch_phrase, :name, :suffix
+  )
+
   def setup
     @tester = FFaker::Company
   end

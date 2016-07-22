@@ -6,7 +6,7 @@ module FFaker
       extend ModuleUtils
       extend self
       def lesson
-        LESSONS.sample
+        fetch_sample(LESSONS)
       end
     end
 
@@ -14,7 +14,7 @@ module FFaker
       extend ModuleUtils
       extend self
       def lesson
-        LESSONS.sample
+        fetch_sample(LESSONS)
       end
     end
   end
