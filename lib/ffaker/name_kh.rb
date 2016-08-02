@@ -8,15 +8,15 @@ module FFaker
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def first_name
-      FIRST_NAMES.sample
+      fetch_sample(FIRST_NAMES)
     end
 
     def nick_name
-      NICK_NAMES.sample
+      fetch_sample(NICK_NAMES)
     end
   end
 end

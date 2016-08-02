@@ -42,19 +42,19 @@ module FFaker
     end
 
     def male_first_name
-      MALE_FIRST_NAMES.sample
+      fetch_sample(MALE_FIRST_NAMES)
     end
 
     def male_last_name
-      MALE_LAST_NAMES.sample
+      fetch_sample(MALE_LAST_NAMES)
     end
 
     def female_first_name
-      FEMALE_FIRST_NAMES.sample
+      fetch_sample(FEMALE_FIRST_NAMES)
     end
 
     def female_last_name
-      FEMALE_LAST_NAMES.sample
+      fetch_sample(FEMALE_LAST_NAMES)
     end
   end
 end

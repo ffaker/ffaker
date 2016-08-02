@@ -15,10 +15,12 @@ module FFaker
     end
 
     def name_with_prefix
-      [
-        female_name_with_prefix,
-        male_name_with_prefix
-      ].sample
+      fetch_sample(
+        [
+          female_name_with_prefix,
+          male_name_with_prefix
+        ]
+      )
     end
 
     def female_name_with_prefix

@@ -3,7 +3,14 @@
 require 'helper'
 
 class TestFakerNamePH < Test::Unit::TestCase
+  include DeterministicHelper
+
   PH_REGEXP = /\A([\wñÑú-]+\.? ?){2,5}\z/
+
+  assert_methods_are_deterministic(
+    FFaker::NamePH,
+    :name, :last_name, :first_name, :prefix
+  )
 
   def setup
     @tester = FFaker::NamePH

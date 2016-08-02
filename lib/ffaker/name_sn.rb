@@ -12,23 +12,23 @@ module FFaker
     PREFIX_MALE = %w(pape eladji mame serigne).freeze
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def first_name_male
-      FIRST_NAMES_MALE.sample
+      fetch_sample(FIRST_NAMES_MALE)
     end
 
     def first_name_female
-      FIRST_NAMES_FEMALE.sample
+      fetch_sample(FIRST_NAMES_FEMALE)
     end
 
     def prefix_male
-      PREFIX_MALE.sample
+      fetch_sample(PREFIX_MALE)
     end
 
     def prefix_female
-      PREFIX_FEMALE.sample
+      fetch_sample(PREFIX_FEMALE)
     end
 
     def name_male

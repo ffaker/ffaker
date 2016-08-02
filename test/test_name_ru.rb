@@ -3,7 +3,14 @@
 require 'helper'
 
 class TestFakerNameRU < Test::Unit::TestCase
+  include DeterministicHelper
+
   RU_REGEX = /[А-Я][а-я]+/
+
+  assert_methods_are_deterministic(
+    FFaker::NameRU,
+    :name, :last_name, :first_name, :patronymic
+  )
 
   def setup
     @tester = FFaker::NameRU

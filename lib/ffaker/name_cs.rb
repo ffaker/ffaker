@@ -57,23 +57,23 @@ module FFaker
     # Generates random last name
     # for_sex can be :male, :female. Defaults to :random
     def last_name(for_sex = :random)
-      LAST_NAMES[select_sex(for_sex)].sample
+      fetch_sample(LAST_NAMES[select_sex(for_sex)])
     end
 
     # Generates random first name
     # for_sex can be :male, :female. Defaults to :random
     def first_name(for_sex = :random)
-      FIRST_NAMES[select_sex(for_sex)].sample
+      fetch_sample(FIRST_NAMES[select_sex(for_sex)])
     end
 
     # Generates random name prefix, an academic degree
     def prefix
-      PREFIXES.sample
+      fetch_sample(PREFIXES)
     end
 
     # Generates random name suffix, an academic degree
     def suffix
-      SUFFIXES.sample
+      fetch_sample(SUFFIXES)
     end
 
     private

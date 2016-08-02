@@ -6,11 +6,11 @@ module FFaker
     extend self
 
     def first_name
-      FIRST_NAMES.sample
+      fetch_sample(FIRST_NAMES)
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def last_first
