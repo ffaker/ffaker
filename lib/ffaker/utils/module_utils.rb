@@ -1,7 +1,10 @@
 require 'ffaker/utils/array_utils'
+require 'ffaker/utils/random_utils'
 
 module FFaker
   module ModuleUtils
+    include RandomUtils
+
     def k(arg)
       FFaker::ArrayUtils.const_array(arg)
     end
@@ -24,32 +27,6 @@ module FFaker
             .gsub(/([a-z\d])([A-Z])/, '\1_\2')
             .tr('-', '_')
             .downcase
-    end
-
-    # Make calls to built-in `rand` function use `FFaker::Random.rand` instead.
-    def rand(max = nil)
-      FFaker::Random.rand(max)
-    end
-
-    # Performs Array#sample on `list` using a the internal Random Number
-    # Generator so that the results are deterministic.
-    #
-    # * Returns one random item from `list`.
-    # * Pass `count: n` in options argument, where `n` is an integer, to
-    # return *n* items from `list`
-    def fetch_sample(list, options = {})
-      if (count = options.delete(:count))
-        list.sample(count, random: FFaker::Random)
-      else
-        list.sample(random: FFaker::Random)
-      end
-    end
-
-    # Performs same action as as `Array#suffle` (returns a randomly-reordered
-    # copy of `list`) except that it uses a repeatable Random Number Generator
-    # so that the results are deterministic.
-    def shuffle(list)
-      list.shuffle(random: FFaker::Random)
     end
   end
 end
