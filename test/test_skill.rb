@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestSkill < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Skill,
+    :tech_skill, :tech_skills, :specialty, :specialties
+  )
+
   def test_tech_skill
     assert_match(/[a-z]+/i, FFaker::Skill.tech_skill)
   end

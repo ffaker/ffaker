@@ -23,7 +23,11 @@ module FFaker
     end
 
     def sentence
-      "#{fetch_sample(CHEESY_PHRASES).capitalize} #{fetch_sample(CHEESY_PHRASES)} #{fetch_sample(CHEESY_PHRASES)}."
+      [
+        fetch_sample(CHEESY_PHRASES).capitalize,
+        fetch_sample(CHEESY_PHRASES),
+        fetch_sample(CHEESY_PHRASES)
+      ].join + '.'
     end
 
     def paragraph(number_of_phrases = 10)

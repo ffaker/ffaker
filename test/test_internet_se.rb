@@ -3,6 +3,15 @@
 require 'helper'
 
 class TestFakerInternetSE < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::InternetSE,
+    :email, :free_email, :safe_email, :disposable_email,
+    :user_name, :domain_name, :domain_word, :domain_suffix,
+    :http_url, :ip_v4_address, :password, :slug
+  )
+
   def setup
     @tester = FFaker::InternetSE
   end
@@ -34,6 +43,7 @@ class TestFakerInternetSE < Test::Unit::TestCase
 
   def test_user_name_with_arg
     assert @tester.user_name('joel larsson').match(/(joel(_|\.)larsson|larsson(_|\.)joel)/)
+    assert_deterministic { @tester.user_name('joel larsson') }
   end
 
   def test_domain_name

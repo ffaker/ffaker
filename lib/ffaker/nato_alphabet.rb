@@ -11,15 +11,15 @@ module FFaker
     CODES = ALPHABET_CODES + NUMERIC_CODES + [STOP_CODE]
 
     def code
-      CODES.sample
+      fetch_sample(CODES)
     end
 
     def alphabetic_code
-      ALPHABET_CODES.sample
+      fetch_sample(ALPHABET_CODES)
     end
 
     def numeric_code
-      NUMERIC_CODES.sample
+      fetch_sample(NUMERIC_CODES)
     end
 
     def callsign
@@ -29,8 +29,8 @@ module FFaker
     def codify(masks)
       masks.scan(/./).map do |c|
         case c
-        when '#' then NUMERIC_CODES.sample
-        when '?' then ALPHABET_CODES.sample
+        when '#' then fetch_sample(NUMERIC_CODES)
+        when '?' then fetch_sample(ALPHABET_CODES)
         when '.' then STOP_CODE
         else c
         end
