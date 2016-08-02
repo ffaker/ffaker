@@ -3,6 +3,10 @@
 require 'helper'
 
 class TestFakerIdentificationESCL < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(FFaker::IdentificationESCL, :rut)
+
   def setup
     @tester = FFaker::IdentificationESCL
   end

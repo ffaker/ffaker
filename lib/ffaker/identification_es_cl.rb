@@ -5,6 +5,7 @@ require 'ffaker/identification_es'
 module FFaker
   module IdentificationESCL
     extend IdentificationES
+    extend ModuleUtils
     extend self
 
     # RUT is the Chilean ID, followed by format:  XX.XXX.XXX - Y
@@ -13,7 +14,7 @@ module FFaker
     # The last Y is a modulo 11 validation code. In the case the result is 10, it will be replaced by a 'K' character
     def rut
       # Rut is gonna be between 1.000.000 and 24.999.999
-      n = Kernel.rand(24_000_000) + 1_000_000
+      n = rand(24_000_000) + 1_000_000
       "#{n}-#{dv(n)}"
     end
 

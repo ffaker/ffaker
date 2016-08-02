@@ -8,7 +8,7 @@ module FFaker
     GENDERS = %w(Hombre Mujer).freeze
 
     def gender
-      GENDERS.sample
+      fetch_sample(GENDERS)
     end
   end
 end
