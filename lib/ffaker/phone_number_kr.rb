@@ -17,11 +17,11 @@ module FFaker
     end
 
     def home_work_phone_number
-      FFaker.numerify("#{HOME_PHONE_PREFIXES.sample} #### ####")
+      FFaker.numerify("#{fetch_sample(HOME_PHONE_PREFIXES)} #### ####")
     end
 
     def mobile_phone_number
-      FFaker.numerify("#{MOBILE_PHONE_PREFIXES.sample} #### ####")
+      FFaker.numerify("#{fetch_sample(MOBILE_PHONE_PREFIXES)} #### ####")
     end
 
     def contry_code

@@ -59,10 +59,10 @@ module FFaker
       p = [
         country_prefix,
         space,
-        AREA_CODE.sample,
+        fetch_sample(AREA_CODE),
         space,
-        prefixes.sample,
-        PHONE_NUMBER.sample
+        fetch_sample(prefixes),
+        fetch_sample(PHONE_NUMBER)
       ].join('').strip
 
       FFaker.numerify p

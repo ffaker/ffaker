@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestPhoneNumer < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::PhoneNumber,
+    :phone_number, :area_code, :exchange_code, :short_phone_number, :phone_calling_code, :imei
+  )
+
   def test_phone_number
     assert_match(/\d{3}[. -]\d{3}/, FFaker::PhoneNumber.phone_number)
   end
@@ -33,5 +40,6 @@ class TestPhoneNumer < Test::Unit::TestCase
     sn = rand(1_000_000)
     assert_match(/\A\d{8}#{sprintf('%06d', sn)}\d{1}\z/,
                  FFaker::PhoneNumber.imei(sn))
+    assert_deterministic { FFaker::PhoneNumber.imei(sn) }
   end
 end

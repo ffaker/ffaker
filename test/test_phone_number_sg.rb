@@ -3,6 +3,15 @@
 require 'helper'
 
 class TestPhoneNumberSG < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::PhoneNumberSG,
+    :voip_number, :fixed_line_number, :mobile_number, :mobile_or_pager_number,
+    :international_toll_free_number, :toll_free_number, :premium_service_number,
+    :phone_number
+  )
+
   def setup
     @tester = FFaker::PhoneNumberSG
   end
