@@ -14,7 +14,11 @@ module FFaker
     def brand
       case rand(12)
       when (0..4) then fetch_sample(B1) + fetch_sample(B2)
-      when (5..10) then "#{fetch_sample(START)}#{fetch_sample(VOWELS)}#{fetch_sample(SUFFIX)}#{fetch_sample(ADDON) if rand(2) == 0}".capitalize
+      when (5..10) then
+        [
+          fetch_sample(START), fetch_sample(VOWELS), fetch_sample(SUFFIX),
+          rand(2).zero? ? fetch_sample(ADDON) : nil
+        ].join.capitalize
       when 11 then letters(2..3).to_s
       end
     end

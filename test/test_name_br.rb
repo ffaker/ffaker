@@ -7,7 +7,8 @@ class TestFakerNameBR < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::NameBR,
-    :name, :name_with_prefix, :first_name, :first_name_female, :first_name_male, :last_name, :prefix, :female_prefix, :male_prefix
+    :name, :name_with_prefix, :first_name, :first_name_female, :first_name_male,
+    :last_name, :prefix, :female_prefix, :male_prefix
   )
 
   def setup

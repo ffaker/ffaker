@@ -22,7 +22,6 @@ class TestFakerNameJA < Test::Unit::TestCase
     :last_name, :first_name, :last_first, :name
   )
 
-
   def setup
     @tester = FFaker::NameJA
   end

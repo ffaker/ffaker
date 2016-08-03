@@ -14,7 +14,7 @@ module FFaker
     end
 
     def specialty
-      '%s %s' % [fetch_sample(SPECIALTY_START), fetch_sample(SPECIALTY_END)]
+      format('%s %s', fetch_sample(SPECIALTY_START), fetch_sample(SPECIALTY_END))
     end
 
     def specialties(num = 3)
