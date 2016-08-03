@@ -39,9 +39,7 @@ module FFaker
         when 0
           sanitize(Name.first_name)
         when 1
-          [Name.first_name, Name.last_name]
-            .map { |n| sanitize(n) }
-            .join(fetch_sample(%w(. _)))
+          [Name.first_name, Name.last_name].map { |n| sanitize(n) }.join(fetch_sample(%w(. _)))
         end
       end
     end
