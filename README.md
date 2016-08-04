@@ -59,6 +59,10 @@ will look for a data file matching the name of the constant. E.G.: the
 first time someone accesses `FFaker::Name::FIRST_NAMES`, a const of that
 name will be set with data from `ffaker/data/name/first_names`.
 
+## Using the same random seed as your tests
+
+To get repeatable results in Minitest or Rspec, follow [these instructions](RANDOM.md#using-the-same-random-seed-as-your-tests).
+
 ## TODO
 
 * Even though the API is pretty simple, better rdoc documentation would not hurt.
