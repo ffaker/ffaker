@@ -11,6 +11,10 @@ class TestFakerName < Test::Unit::TestCase
     assert_match(/(\w+\.? ?){2,3}/, @tester.name)
   end
 
+  def test_html_safe_name
+    assert_match(/(\w+\.? ?){2,3}/, @tester.html_safe_name)
+  end
+
   def test_name_with_prefix
     prefix, name, last_name = @tester.name_with_prefix.split(/\s+/)
     assert_include(@tester::PREFIXES, prefix)
@@ -91,6 +95,10 @@ class TestFakerName < Test::Unit::TestCase
 
   def test_last_name
     assert_include(@tester::LAST_NAMES, @tester.last_name)
+  end
+
+  def test_html_safe_last_name
+    assert_include(@tester::LAST_NAMES, @tester.html_safe_last_name)
   end
 
   def test_prefix

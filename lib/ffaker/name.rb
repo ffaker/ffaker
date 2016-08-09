@@ -16,6 +16,10 @@ module FFaker
       "#{first_name} #{last_name}"
     end
 
+    def html_safe_name
+      "#{first_name} #{html_safe_last_name}"
+    end
+
     def name_with_prefix
       [
         female_name_with_prefix,
@@ -75,6 +79,13 @@ module FFaker
 
     def last_name
       LAST_NAMES.sample
+    end
+
+    def html_safe_last_name
+      loop do
+        t = LAST_NAMES.sample
+        return t unless t.include? "'"
+      end
     end
 
     def prefix
