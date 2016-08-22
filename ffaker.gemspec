@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
   ) + Dir['lib/**/*', 'scripts/*']
   # = MANIFEST =
 
-  s.test_files = s.files.select { |path| path =~ /^test\/test_.*\.rb/ }
+  s.test_files = Dir['test/**/*']
 
   s.add_development_dependency 'rake', '~> 10.1.1'
   s.add_development_dependency 'test-unit'
