@@ -5,8 +5,6 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    DEGREE_SHORT_PREFIX = %w(AB BS BSc MA MD DMus DPhil).freeze
-    DEGREE_PREFIX = ['Bachelor of Science', 'Bachelor of Arts', 'Master of Arts', 'Doctor of Medicine', 'Bachelor of Music', 'Doctor of Philosophy'].freeze
     MAJOR_ADJ = %w(Business Systems Industrial Medical Financial Marketing Political Social) + ['Human Resource']
     SCHOOL_PREFIX = %w(Green South North Wind Lake Hill Lark River Red White).freeze
     SCHOOL_ADJ = %w(International Global Polytechnic National).freeze
