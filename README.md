@@ -28,6 +28,16 @@ and then
 
     require 'ffaker'
 
+## Ruby  1.8.7
+
+FFaker 1.31.0 is the last version that works with legacy Ruby versions. This version is no longer supported; recent releases will only target recent Ruby versions (See [our Travis file](https://github.com/ffaker/ffaker/blob/master/.travis.yml) for the supported Ruby versions).
+
+```
+gem 'ffaker', '1.31.0'
+```
+
+Finally, you'll have to use the Faker class (v1) instead of FFaker (v2 and later).
+
 ## Why ffaker?
 
 ffaker is a fork of faker, and was initially written in an effort to speed up
