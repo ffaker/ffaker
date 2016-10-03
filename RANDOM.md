@@ -104,8 +104,7 @@ so that the same data can be returned with the correct random seed.  All ffaker
 modules extend the ModuleUtils module which provides the necessary methods. They
 are:
 
-  * Use `fetch_sample(array)` instead of `Array#sample` to get a random item
-  from an array.
+  * Use `fetch_sample(array)` instead of `Array#sample` to get a random item from an array.
   * Use `fetch_sample(array, count: n)` instead of `Array#sample(n)` to get multiple random items from an array.
   * Use `shuffle(array)` instead of `Array#shuffle` to randomly reorder an array.
   * Calls to `rand` will automatically use the correct random-number generator, no change is required.
@@ -116,3 +115,39 @@ For other uses, you can access the random number generator directly via
 ```ruby
 array.shuffle!(random: FFaker::Random)
 ```
+
+### Testing repeatability of ffaker modules
+
+There are helper methods available to use in tests to ensure your module output
+is repeatable and deterministic. All existing module tests use them, and we
+would like all future modules to also use them.
+
+First, include the DeterministicHelper in your test class:
+
+```ruby
+include DeterministicHelper
+```
+
+If your want to test methods that do not require arguments, the
+`assert_methods_are_deterministic` method will help you test many methods with
+one line of test.
+
+```ruby
+# Example: This will test the methods :method_name, :other_method_name, and
+# :another_method_name on class FFaker::NewFFakerModule.
+assert_methods_are_deterministic(
+  FFaker::NewFFakerModule,
+  :method_name, :other_method_name, :another_method_name
+)
+```
+
+For testing methods that require an argument, or to test more complicated
+behavior, you can use the `assert_deterministic` method within a test method.
+
+```ruby
+def test_some_method
+  assert_deterministic { FFaker::NewFFakerModule.some_method(:required_argument) }
+end
+```
+
+For more examples, please see the test cases for existing modules.
