@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestBook < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Book,
+    :title, :genre, :author, :isbn, :description, :cover
+  )
+
   def setup
     @tester = FFaker::Book
   end

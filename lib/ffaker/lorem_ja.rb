@@ -6,31 +6,31 @@ module FFaker
     extend self
 
     def character
-      CHARACTERS.sample
+      fetch_sample(CHARACTERS)
     end
 
     def characters(count = 20)
-      CHARACTERS.sample(count).join
+      fetch_sample(CHARACTERS, count: count).join
     end
 
     def word
-      WORDS.sample
+      fetch_sample(WORDS)
     end
 
     def words(count = 3)
-      WORDS.sample(count)
+      fetch_sample(WORDS, count: count)
     end
 
     def sentence
-      SENTENCES.sample
+      fetch_sample(SENTENCES)
     end
 
     def sentences(count = 3)
-      (1..count).map { SENTENCES.sample }
+      (1..count).map { fetch_sample(SENTENCES) }
     end
 
     def paragraph(sentence_count = 3)
-      sentences(sentence_count).join('、') + '、' + SENTENCES_END.sample + '。'
+      sentences(sentence_count).join('、') + '、' + fetch_sample(SENTENCES_END) + '。'
     end
 
     def paragraphs(count = 3)
