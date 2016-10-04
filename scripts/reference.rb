@@ -21,8 +21,8 @@ end
 
 # Returns faker methods for a given module
 def faker_methods(mod)
-  methods = mod.methods -
-    Module.methods - [:k, :underscore, :fetch_sample, :rand, :shuffle]
+  methods = mod.methods - Module.methods -
+            [:k, :underscore, :fetch_sample, :rand, :shuffle]
 
   # For Company.name (et al), don't discard :name if it was reimplemented
   methods << :name if mod.send(:name) != mod.to_s
