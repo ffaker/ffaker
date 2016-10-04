@@ -13,13 +13,15 @@ def faker_modules
     next unless mod.is_a?(Module)
     next if mod == FFaker::ArrayUtils
     next if mod == FFaker::ModuleUtils
+    next if mod == FFaker::RandomUtils
+    next if mod == FFaker::Random
     mod
   end.compact
 end
 
 # Returns faker methods for a given module
 def faker_methods(mod)
-  methods = mod.methods - Module.methods - [:k, :underscore]
+  methods = mod.methods - Module.methods - [:k, :underscore, :fetch_sample]
 
   # For Company.name (et al), don't discard :name if it was reimplemented
   methods << :name if mod.send(:name) != mod.to_s
