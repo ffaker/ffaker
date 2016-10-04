@@ -29,19 +29,19 @@ module FFaker
     end
 
     def first_name_female
-      FIRST_NAMES_FEMALE.sample
+      fetch_sample(FIRST_NAMES_FEMALE)
     end
 
     def first_name_male
-      FIRST_NAMES_MALE.sample
+      fetch_sample(FIRST_NAMES_MALE)
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def prefix
-      PREFIXES.sample
+      fetch_sample(PREFIXES)
     end
   end
 end

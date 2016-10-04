@@ -28,7 +28,7 @@ module FFaker
     def ssn(opts = {})
       from   = opts[:from]   || ::Time.local(1940, 1, 1)
       to     = opts[:to]     || ::Time.now
-      gender = (opts[:gender] || GENDERS.sample).to_s
+      gender = (opts[:gender] || fetch_sample(GENDERS)).to_s
 
       raise_error_on_bad_arguments(from, to, gender)
 

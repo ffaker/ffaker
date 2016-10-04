@@ -3,12 +3,20 @@
 require 'helper'
 
 class TestTweet < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Tweet,
+    :tags, :mention, :body, :tweet
+  )
+
   def test_2_tags
     assert_match(/\#\S*\s\#\S*/, FFaker::Tweet.tags)
   end
 
   def test_3_tags
     assert_match(/\#\S*\s\#\S*\s\#\S*/, FFaker::Tweet.tags(3))
+    assert_deterministic { FFaker::Tweet.tags(3) }
   end
 
   def test_mention
@@ -17,6 +25,7 @@ class TestTweet < Test::Unit::TestCase
 
   def test_mentions_three
     assert_match(/\@\S*\s\@\S*\s\@\S*/, FFaker::Tweet.mentions(3))
+    assert_deterministic { FFaker::Tweet.mentions(3) }
   end
 
   def test_body
@@ -37,6 +46,7 @@ class TestTweet < Test::Unit::TestCase
 
   def test_tweet_with_reply
     assert_match(/^\@/, FFaker::Tweet.tweet(reply: true))
+    assert_deterministic { FFaker::Tweet.tweet(reply: true) }
   end
 
   def test_oversize_body_length

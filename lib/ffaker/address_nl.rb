@@ -20,16 +20,16 @@ module FFaker
     end
 
     def street_name
-      name = [true, false].sample ? NameNL.last_name : NameNL.first_name
+      name = fetch_sample([true, false]) ? NameNL.last_name : NameNL.first_name
       name + random_type_of_street
     end
 
     def city
-      CITY.sample
+      fetch_sample(CITY)
     end
 
     def province
-      PROVINCE.sample
+      fetch_sample(PROVINCE)
     end
 
     private

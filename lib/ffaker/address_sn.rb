@@ -11,15 +11,15 @@ module FFaker
     extend self
 
     def region
-      REGIONS.sample
+      fetch_sample(REGIONS)
     end
 
     def departement
-      DEPARTEMENTS.sample
+      fetch_sample(DEPARTEMENTS)
     end
 
     def arrondissement
-      ARRONDISSEMENTS.sample
+      fetch_sample(ARRONDISSEMENTS)
     end
   end
 end

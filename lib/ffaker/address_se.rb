@@ -16,15 +16,15 @@ module FFaker
     STREET_NBR_FORMATS = ['##', '#', '#a', '#b', '###'].freeze
 
     def zip_code
-      FFaker.numerify ZIP_FORMATS.sample
+      FFaker.numerify(fetch_sample(ZIP_FORMATS))
     end
 
     def city
-      CITY.sample
+      fetch_sample(CITY)
     end
 
     def street_name
-      STREET.sample
+      fetch_sample(STREET)
     end
 
     def street_address
@@ -32,7 +32,7 @@ module FFaker
     end
 
     def street_nbr
-      FFaker.numerify STREET_NBR_FORMATS.sample
+      FFaker.numerify(fetch_sample(STREET_NBR_FORMATS))
     end
 
     def full_address
@@ -40,7 +40,7 @@ module FFaker
     end
 
     def random_country
-      COUNTRIES.sample
+      fetch_sample(COUNTRIES)
     end
   end
 end

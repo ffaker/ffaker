@@ -6,11 +6,11 @@ module FFaker
     extend self
 
     def code
-      CURRENCY_CODE.sample
+      fetch_sample(CURRENCY_CODE)
     end
 
     def name
-      CURRENCY_NAME.sample
+      fetch_sample(CURRENCY_NAME)
     end
   end
 end

@@ -21,24 +21,30 @@ module FFaker
     end
 
     def name_with_prefix
-      [
-        female_name_with_prefix,
-        male_name_with_prefix
-      ].sample
+      fetch_sample(
+        [
+          female_name_with_prefix,
+          male_name_with_prefix
+        ]
+      )
     end
 
     def name_with_suffix
-      [
-        female_name_with_suffix,
-        male_name_with_suffix
-      ].sample
+      fetch_sample(
+        [
+          female_name_with_suffix,
+          male_name_with_suffix
+        ]
+      )
     end
 
     def name_with_prefix_suffix
-      [
-        female_name_with_prefix_suffix,
-        male_name_with_prefix_suffix
-      ].sample
+      fetch_sample(
+        [
+          female_name_with_prefix_suffix,
+          male_name_with_prefix_suffix
+        ]
+      )
     end
 
     def female_name_with_prefix
@@ -66,19 +72,19 @@ module FFaker
     end
 
     def first_name
-      FIRST_NAMES.sample
+      fetch_sample(FIRST_NAMES)
     end
 
     def first_name_female
-      FIRST_NAMES_FEMALE.sample
+      fetch_sample(FIRST_NAMES_FEMALE)
     end
 
     def first_name_male
-      FIRST_NAMES_MALE.sample
+      fetch_sample(FIRST_NAMES_MALE)
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def html_safe_last_name
@@ -89,23 +95,23 @@ module FFaker
     end
 
     def prefix
-      PREFIXES.sample
+      fetch_sample(PREFIXES)
     end
 
     def female_prefix
-      FEMALE_PREFIXES.sample
+      fetch_sample(FEMALE_PREFIXES)
     end
 
     def male_prefix
-      MALE_PREFIXES.sample
+      fetch_sample(MALE_PREFIXES)
     end
 
     def other_prefix
-      OTHER_PREFIXES.sample
+      fetch_sample(OTHER_PREFIXES)
     end
 
     def suffix
-      SUFFIXES.sample
+      fetch_sample(SUFFIXES)
     end
   end
 end

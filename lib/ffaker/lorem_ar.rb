@@ -7,11 +7,11 @@ module FFaker
     extend self
 
     def word
-      WORDS.sample
+      fetch_sample(WORDS)
     end
 
     def words(num = 3)
-      WORDS.sample(num)
+      fetch_sample(WORDS, count: num)
     end
 
     def sentence(word_count = 4)

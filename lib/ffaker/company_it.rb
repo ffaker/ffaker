@@ -17,11 +17,11 @@ module FFaker
     end
 
     def suffix
-      SUFFIXES.sample
+      fetch_sample(SUFFIXES)
     end
 
     def prefix
-      PREFIXES.sample
+      fetch_sample(PREFIXES)
     end
   end
 end

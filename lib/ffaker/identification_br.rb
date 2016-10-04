@@ -24,7 +24,7 @@ module FFaker
     end
 
     def gender
-      GENDERS.sample
+      fetch_sample(GENDERS)
     end
   end
 end

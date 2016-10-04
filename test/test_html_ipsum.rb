@@ -3,6 +3,14 @@
 require 'helper'
 
 class TestHTMLIpsum < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::HTMLIpsum,
+    :a, :p, :dl, :ul_short, :ul_long, :ol_short, :ol_long, :ul_links,
+    :table, :body, :fancy_string
+  )
+
   def setup
     @tester = FFaker::HTMLIpsum
   end

@@ -3,6 +3,15 @@
 require 'helper'
 
 class TestFakerInternet < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Internet,
+    :email, :free_email, :safe_email, :disposable_email,
+    :user_name, :domain_name, :domain_word, :domain_suffix,
+    :http_url, :ip_v4_address, :password, :slug
+  )
+
   def setup
     @tester = FFaker::Internet
   end
@@ -51,6 +60,10 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.uri('ftp').match(/^ftp:\/\/.+/)
     assert @tester.uri('http').match(/^http:\/\/.+/)
     assert @tester.uri('https').match(/^https:\/\/.+/)
+
+    assert_deterministic { @tester.uri('ftp') }
+    assert_deterministic { @tester.uri('http') }
+    assert_deterministic { @tester.uri('https') }
   end
 
   def test_http_url
@@ -67,10 +80,12 @@ class TestFakerInternet < Test::Unit::TestCase
 
   def test_slug_with_input_words
     assert_not_match(/&/, @tester.slug('Input Words&&Symbols'))
+    assert_deterministic { @tester.slug('Input Words&&Symbols') }
   end
 
   def test_slug_with_specified_glue
     assert_match(/\A[a-z]+-[a-z]+\z/, @tester.slug(nil, '-'))
+    assert_deterministic { @tester.slug(nil, '-') }
   end
 
   def test_password

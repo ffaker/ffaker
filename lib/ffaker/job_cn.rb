@@ -6,7 +6,7 @@ module FFaker
     extend self
 
     def title
-      JOB_NOUNS.sample
+      fetch_sample(JOB_NOUNS)
     end
   end
 end

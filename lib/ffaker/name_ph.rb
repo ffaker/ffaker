@@ -13,9 +13,9 @@ module FFaker
     def last_name
       case rand(2)
       when 0
-        AUTOCHTHONOUS_SURNAMES.sample
+        fetch_sample(AUTOCHTHONOUS_SURNAMES)
       else
-        SPANISH_SURNAMES.sample
+        fetch_sample(SPANISH_SURNAMES)
       end
     end
 

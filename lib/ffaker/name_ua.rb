@@ -12,35 +12,35 @@ module FFaker
     MIDDLE_NAMES = MIDDLE_NAMES_MALE + MIDDLE_NAMES_FEMALE
 
     def first_name_female
-      FIRST_NAMES_FEMALE.sample
+      fetch_sample(FIRST_NAMES_FEMALE)
     end
 
     def first_name_male
-      FIRST_NAMES_MALE.sample
+      fetch_sample(FIRST_NAMES_MALE)
     end
 
     def middle_name_female
-      MIDDLE_NAMES_FEMALE.sample
+      fetch_sample(MIDDLE_NAMES_FEMALE)
     end
 
     def middle_name_male
-      MIDDLE_NAMES_MALE.sample
+      fetch_sample(MIDDLE_NAMES_MALE)
     end
 
     def last_name_female
-      LAST_NAMES_FEMALE.sample
+      fetch_sample(LAST_NAMES_FEMALE)
     end
 
     def last_name_male
-      LAST_NAMES_MALE.sample
+      fetch_sample(LAST_NAMES_MALE)
     end
 
     def first_name
-      FIRST_NAMES.sample
+      fetch_sample(FIRST_NAMES)
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def name

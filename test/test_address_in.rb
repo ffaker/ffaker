@@ -3,6 +3,15 @@
 require 'helper'
 
 class TestAddressININ < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::AddressIN,
+    :country_code, :country, :pincode, :state_abbr,
+    :state_and_union_territory_abbr, :state_and_union_territory, :state,
+    :time_zone, :union_territory_abbr, :union_territory
+  )
+
   def test_in_state
     assert_match(/\A[A-Z][ A-Za-z]*\z/, FFaker::AddressIN.state)
   end

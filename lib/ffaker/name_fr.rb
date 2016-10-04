@@ -13,15 +13,15 @@ module FFaker
     # randomized? (FRENCH)  prefix!
     #
     def prefix
-      PREFIX.sample
+      fetch_sample(PREFIX)
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def first_name
-      FIRST_NAMES.sample
+      fetch_sample(FIRST_NAMES)
     end
 
     def name

@@ -13,7 +13,7 @@ module FFaker
     end
 
     def genre
-      GENRES.sample
+      fetch_sample(GENRES)
     end
 
     def author
@@ -21,7 +21,7 @@ module FFaker
     end
 
     def isbn
-      (Kernel.rand(24_000_000_000) + 1_000_000_000).to_s
+      (rand(24_000_000_000) + 1_000_000_000).to_s
     end
 
     def description(sentence_count = 3)
@@ -35,11 +35,11 @@ module FFaker
     private
 
     def simple_title
-      "#{ADJ_AND_ADV.sample} #{NOUNS.sample}"
+      "#{fetch_sample(ADJ_AND_ADV)} #{fetch_sample(NOUNS)}"
     end
 
     def title_with_prefix
-      "#{PREFIXES.sample} #{simple_title}"
+      "#{fetch_sample(PREFIXES)} #{simple_title}"
     end
   end
 end

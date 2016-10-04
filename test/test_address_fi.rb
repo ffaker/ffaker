@@ -4,8 +4,15 @@ require 'helper'
 
 # Test features related to Finnish addresses
 class TestAddressFI < Test::Unit::TestCase
+  include DeterministicHelper
+
   ALPHA = /\A[\p{Alpha}]+/
   DIGIT = /\d{1}/
+
+  assert_methods_are_deterministic(
+    FFaker::AddressFI,
+    :city, :full_address, :random_country, :zip_code
+  )
 
   def test_fi_city
     assert_match(ALPHA, FFaker::AddressFI.city)

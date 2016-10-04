@@ -6,7 +6,7 @@ module FFaker
     extend self
 
     def title
-      "#{JOB_PREFIX.sample} #{JOB_ADJ.sample} #{JOB_NOUN.sample}"
+      "#{fetch_sample(JOB_PREFIX)} #{fetch_sample(JOB_ADJ)} #{fetch_sample(JOB_NOUN)}"
     end
   end
 end

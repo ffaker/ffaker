@@ -3,6 +3,20 @@
 require 'helper'
 
 class TestAddress < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Address,
+    :building_number, :city, :city_prefix, :city_suffix, :secondary_address,
+    :street_address, :street_name, :street_suffix, :neighborhood,
+    :country, :country_code, :time_zone
+  )
+
+  assert_methods_are_deterministic(
+    FFaker::AddressUS,
+    :state, :state_abbr, :zip_code
+  )
+
   def test_building_number
     assert_match(/\A\d{3,5}\z/, FFaker::Address.building_number)
   end
@@ -37,14 +51,17 @@ class TestAddress < Test::Unit::TestCase
 
   def test_uk_country
     assert_match(/[ a-z]/, FFaker::AddressUK.country)
+    assert_deterministic { FFaker::AddressUK.country }
   end
 
   def test_uk_county
     assert_match(/[ a-z]/, FFaker::AddressUK.county)
+    assert_deterministic { FFaker::AddressUK.county }
   end
 
   def test_uk_postcode
     assert_match(/[ a-z]/, FFaker::AddressUK.postcode)
+    assert_deterministic { FFaker::AddressUK.postcode }
   end
 
   def test_us_state
@@ -73,6 +90,7 @@ class TestAddress < Test::Unit::TestCase
 
   def test_country_by_county_code
     assert_match('Ukraine', FFaker::Address.country('UA'))
+    assert_deterministic { FFaker::Address.country('UA') }
   end
 
   def test_country_code
@@ -82,6 +100,7 @@ class TestAddress < Test::Unit::TestCase
   def test_country_code_of_particular_country
     assert_match('UA', FFaker::Address.country_code('Ukraine'))
     assert_match(/[A-Z]{2}/, FFaker::Address.country_code('Foo'))
+    assert_deterministic { FFaker::Address.country_code('Ukraine') }
   end
 
   def test_time_zone

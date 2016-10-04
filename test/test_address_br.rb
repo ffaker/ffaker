@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestAddressBR < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::AddressBR,
+    :zip_code, :state, :state_abbr, :city, :street_prefix, :street
+  )
+
   def test_zip_code
     assert_match(/\d{5}-\d{3}/, FFaker::AddressBR.zip_code)
   end

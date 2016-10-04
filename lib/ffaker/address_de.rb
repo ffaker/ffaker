@@ -14,15 +14,15 @@ module FFaker
     end
 
     def state
-      STATE.sample
+      fetch_sample(STATE)
     end
 
     def city
-      CITY.sample
+      fetch_sample(CITY)
     end
 
     def street_name
-      name = [true, false].sample ? NameDE.last_name.to_s : NameDE.first_name.to_s
+      name = fetch_sample([true, false]) ? NameDE.last_name.to_s : NameDE.first_name.to_s
       name + random_type_of_street
     end
 

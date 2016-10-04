@@ -3,6 +3,15 @@
 require 'helper'
 
 class TestVehicle < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Vehicle,
+    :base_color, :drivetrain, :engine_cylinders, :engine_displacement,
+    :fuel_type, :interior_upholstery, :make, :manufacturer_color, :mfg_color,
+    :model, :transmission_abbr, :transmission, :trim, :vin, :year
+  )
+
   def test_base_color
     assert_match(/\A[a-z]+\z/, FFaker::Vehicle.base_color)
   end

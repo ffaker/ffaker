@@ -18,23 +18,23 @@ module FFaker
     end
 
     def region
-      STATE.sample
+      fetch_sample(STATE)
     end
 
     def city
-      CITY.sample
+      fetch_sample(CITY)
     end
 
     def street_name
-      STREET.sample
+      fetch_sample(STREET)
     end
 
     def street_nbr
-      FFaker.numerify STREET_NUMBER.sample
+      FFaker.numerify(fetch_sample(STREET_NUMBER))
     end
 
     def street_address
-      "#{STREET_PREFIX.sample} #{street_name}, #{street_nbr}"
+      "#{fetch_sample(STREET_PREFIX)} #{street_name}, #{street_nbr}"
     end
   end
 end

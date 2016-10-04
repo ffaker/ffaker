@@ -39,11 +39,11 @@ module FFaker
     private
 
     def time
-      OpenStruct.new TIME_UNITS.sample
+      OpenStruct.new(fetch_sample(TIME_UNITS))
     end
 
     def temperature
-      OpenStruct.new TEMPERATURE_UNITS.sample
+      OpenStruct.new(fetch_sample(TEMPERATURE_UNITS))
     end
   end
 end

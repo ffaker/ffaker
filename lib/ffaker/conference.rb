@@ -6,7 +6,7 @@ module FFaker
     extend self
 
     def name
-      CONFERENCE_LIST.sample
+      fetch_sample(CONFERENCE_LIST)
     end
   end
 end

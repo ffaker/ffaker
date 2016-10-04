@@ -6,11 +6,11 @@ module FFaker
     extend self
 
     def name
-      NAMES_LIST.sample
+      fetch_sample(NAMES_LIST)
     end
 
     def flight_number
-      "#{CODES_LIST.sample} #{rand(1..3999)}"
+      "#{fetch_sample(CODES_LIST)} #{rand(1..3999)}"
     end
   end
 end

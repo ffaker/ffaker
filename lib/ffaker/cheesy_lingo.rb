@@ -11,25 +11,29 @@ module FFaker
     TITLE_2 = %w(Gouda Affineurs Alpine Sheep Cows Brie Goats Coulommiers Dairy).freeze
 
     def title
-      "#{TITLE_1.sample} #{TITLE_2.sample}"
+      "#{fetch_sample(TITLE_1)} #{fetch_sample(TITLE_2)}"
     end
 
     def word
-      CHEESY_WORDS.sample
+      fetch_sample(CHEESY_WORDS)
     end
 
     def words(count = 5)
-      CHEESY_WORDS.sample(count)
+      fetch_sample(CHEESY_WORDS, count: count)
     end
 
     def sentence
-      "#{CHEESY_PHRASES.sample.capitalize} #{CHEESY_PHRASES.sample} #{CHEESY_PHRASES.sample}."
+      [
+        fetch_sample(CHEESY_PHRASES).capitalize,
+        fetch_sample(CHEESY_PHRASES),
+        fetch_sample(CHEESY_PHRASES)
+      ].join + '.'
     end
 
     def paragraph(number_of_phrases = 10)
-      p = CHEESY_PHRASES.sample.capitalize.to_s
+      p = fetch_sample(CHEESY_PHRASES).capitalize.to_s
       (number_of_phrases - 1).times do |s|
-        s = " #{CHEESY_PHRASES.sample}"
+        s = " #{fetch_sample(CHEESY_PHRASES)}"
         p << s
       end
       p << '.'

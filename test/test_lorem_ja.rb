@@ -3,6 +3,16 @@
 require 'helper'
 
 class TestLoremJA < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::LoremJA,
+    :character, :characters,
+    :word, :words,
+    :sentence, :sentences,
+    :paragraph, :paragraphs
+  )
+
   def setup
     @subject = FFaker::LoremJA
   end
@@ -19,6 +29,7 @@ class TestLoremJA < Test::Unit::TestCase
 
   def test_characters_with_count
     assert_equal 30, @subject.characters(30).length
+    assert_deterministic { @subject.characters(30) }
   end
 
   def test_word
@@ -33,6 +44,7 @@ class TestLoremJA < Test::Unit::TestCase
 
   def test_words_with_count
     assert_equal 10, @subject.words(10).length
+    assert_deterministic { @subject.words(10) }
   end
 
   def test_sentence
@@ -46,6 +58,7 @@ class TestLoremJA < Test::Unit::TestCase
 
   def test_sentences_with_count
     assert_equal 10, @subject.sentences(10).length
+    assert_deterministic { @subject.sentences(10) }
   end
 
   def test_paragraph
@@ -59,6 +72,7 @@ class TestLoremJA < Test::Unit::TestCase
 
   def test_paragraphs_with_count
     assert_equal 10, @subject.paragraphs(10).length
+    assert_deterministic { @subject.paragraphs(10) }
   end
 
   def test_paragraph_end_with_terminate_character

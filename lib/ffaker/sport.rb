@@ -4,7 +4,7 @@ module FFaker
     extend self
 
     def name
-      NAMES.sample
+      fetch_sample(NAMES)
     end
   end
 end

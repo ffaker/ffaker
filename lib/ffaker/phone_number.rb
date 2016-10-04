@@ -48,7 +48,7 @@ module FFaker
     end
 
     def phone_calling_code
-      PHONE_CALLING_CODE.sample
+      fetch_sample(PHONE_CALLING_CODE)
     end
 
     def imei(serial_number = nil)

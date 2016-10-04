@@ -19,15 +19,15 @@ module FFaker
     end
 
     def first_name
-      FIRST_NAMES.sample
+      fetch_sample(FIRST_NAMES)
     end
 
     def last_name
-      LAST_NAMES.sample
+      fetch_sample(LAST_NAMES)
     end
 
     def prefix
-      PREFIXES.sample
+      fetch_sample(PREFIXES)
     end
   end
 end

@@ -8,7 +8,7 @@ module FFaker
     MONTHS = %w(January February March April May June July August September October November December).freeze
 
     def month
-      MONTHS.sample
+      fetch_sample(MONTHS)
     end
 
     def date(params = {})

@@ -1,7 +1,10 @@
 require 'ffaker/utils/array_utils'
+require 'ffaker/utils/random_utils'
 
 module FFaker
   module ModuleUtils
+    include RandomUtils
+
     def k(arg)
       FFaker::ArrayUtils.const_array(arg)
     end

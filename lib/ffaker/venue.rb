@@ -6,7 +6,7 @@ module FFaker
     extend self
 
     def name
-      VENUE_LIST.sample
+      fetch_sample(VENUE_LIST)
     end
   end
 end

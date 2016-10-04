@@ -10,7 +10,7 @@ module FFaker
     extend self
 
     def canton
-      CANTON.sample
+      fetch_sample(CANTON)
     end
   end
 end

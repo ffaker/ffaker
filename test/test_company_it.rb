@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestCompanyIT < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::CompanyIT,
+    :name, :suffix, :prefix
+  )
+
   def test_name
     assert_match(/[ a-z]+/, FFaker::CompanyIT.name)
   end

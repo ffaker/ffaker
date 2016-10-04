@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestNato < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::NatoAlphabet,
+    :code, :alphabetic_code, :numeric_code, :callsign
+  )
+
   def setup
     @tester = FFaker::NatoAlphabet
   end
@@ -27,5 +34,9 @@ class TestNato < Test::Unit::TestCase
     assert_match(/[A-Z]+-[A-Z]+-[A-Z]+/, @tester.codify('?-?-?'))
     assert_match(/[A-Z]+-[A-Z]+-[A-Z]+/, @tester.codify('?-#-?'))
     assert_match(FFaker::NatoAlphabet::STOP_CODE, @tester.codify('.'))
+
+    assert_deterministic { @tester.codify('?-?-?') }
+    assert_deterministic { @tester.codify('?-#-?') }
+    assert_deterministic { @tester.codify('.') }
   end
 end

@@ -3,9 +3,18 @@
 require 'helper'
 
 class TestColor < Test::Unit::TestCase
+  include DeterministicHelper
+
   VALID_RGB_REGEX = /\A([0-9]{1,3})\z/
   VALID_OPACITY_REGEX = /^([0-9].[0-9]{1,2})$/
   VALID_PERCENTAGE_REGEX = /^([0-9]{1,3}%)$/
+
+  assert_methods_are_deterministic(
+    FFaker::Color,
+    :name, :hex_code, :rgb_array, :rgb_list,
+    :rgba_array, :rgba_list, :hsl_array, :hsl_list,
+    :hsla_array, :hsla_list
+  )
 
   def test_name
     assert_match(/\A[a-z]+\z/, FFaker::Color.name)

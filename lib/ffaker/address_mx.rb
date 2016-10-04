@@ -15,7 +15,7 @@ module FFaker
     end
 
     def state
-      STATE.sample
+      fetch_sample(STATE)
     end
 
     def state_abbr(st_name = nil)

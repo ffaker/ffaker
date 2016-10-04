@@ -19,25 +19,25 @@ module FFaker
     end
 
     def drivetrain
-      DRIVETRAINS.sample
+      fetch_sample(DRIVETRAINS)
     end
 
     def make
-      MAKES_LIST.sample
+      fetch_sample(MAKES_LIST)
     end
 
     def manufacturer_color(n = 2)
       # Take two prefixes because it's more fun than one
-      (COLOR_PREFIXES.sample(n) + [base_color]).join(' ')
+      (fetch_sample(COLOR_PREFIXES, count: n) + [base_color]).join(' ')
     end
     alias mfg_color manufacturer_color
 
     def model
-      MODELS_LIST.sample
+      fetch_sample(MODELS_LIST)
     end
 
     def trim
-      TRIMS_LIST.sample
+      fetch_sample(TRIMS_LIST)
     end
 
     def vin
@@ -45,31 +45,31 @@ module FFaker
     end
 
     def year
-      YEARS.sample
+      fetch_sample(YEARS)
     end
 
     def transmission
-      TRANSMISSIONS_LIST.sample
+      fetch_sample(TRANSMISSIONS_LIST)
     end
 
     def transmission_abbr
-      TRANSMISSIONS_ABBR.sample
+      fetch_sample(TRANSMISSIONS_ABBR)
     end
 
     def engine_cylinders
-      CYLINDERS.sample
+      fetch_sample(CYLINDERS)
     end
 
     def engine_displacement
-      DISPLACEMENTS_LIST.sample
+      fetch_sample(DISPLACEMENTS_LIST)
     end
 
     def fuel_type
-      FUEL_TYPES_LIST.sample
+      fetch_sample(FUEL_TYPES_LIST)
     end
 
     def interior_upholstery
-      UPHOLSTERY_LIST.sample
+      fetch_sample(UPHOLSTERY_LIST)
     end
   end
 end

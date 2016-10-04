@@ -4,6 +4,15 @@ require 'helper'
 
 # Author: lurraca github.com/lurraca
 class TestUnitsEnglish < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::UnitEnglish,
+    :length_name, :length_abbr, :mass_name, :mass_abbr,
+    :liquid_name, :liquid_abbr, :volume_name, :volume_abbr,
+    :area_name, :area_abbr
+  )
+
   def setup
     @tester = FFaker::UnitEnglish
     @length_units = @tester::LENGTH_UNITS.map { |u| OpenStruct.new u }

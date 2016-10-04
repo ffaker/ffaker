@@ -3,6 +3,13 @@
 require 'helper'
 
 class TestMusic < Test::Unit::TestCase
+  include DeterministicHelper
+
+  assert_methods_are_deterministic(
+    FFaker::Music,
+    :genre, :album, :artist, :song
+  )
+
   def test_genre
     assert_match(/[A-z]|\W|\&\/+/, FFaker::Music.genre)
   end
