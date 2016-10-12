@@ -2,12 +2,12 @@
 
 require 'helper'
 
-class TestCompanyIT < Test::Unit::TestCase
+class TestCompanyCN < Test::Unit::TestCase
   include DeterministicHelper
 
   assert_methods_are_deterministic(
-    FFaker::CompanyIT,
-    :name, :suffix, :prefix
+    FFaker::CompanyCN,
+    :name, :suffix, :type
   )
 
   def test_name
