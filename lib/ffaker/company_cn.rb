@@ -1,11 +1,12 @@
+# encoding: utf-8
+
 module FFaker
   module CompanyCN
     extend ModuleUtils
     extend self
 
-
-    TYPES = %w(科技 食品 电器 教育 咨询 网络)
-    SUFFIXES = ["有限公司","公司"].freeze
+    TYPES = %w(科技 食品 电器 教育 咨询 网络).freeze
+    SUFFIXES = %w(有限公司 公司).freeze
 
     def name
       "#{NameCN.first_name}#{type}#{suffix}"
