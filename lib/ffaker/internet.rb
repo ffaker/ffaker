@@ -11,6 +11,7 @@ module FFaker
     DOMAIN_SUFFIXES = %w(co.uk com us ca biz info name).freeze
     SAFE_DOMAIN_SUFFIXES = %w(org com net).freeze
     SLUG_DELIMITERS = %w(- _ .).freeze
+    MAC_LIMIT = 281_474_976_710_655
 
     def email(name = nil)
       [user_name(name), domain_name].join('@')
@@ -81,6 +82,10 @@ module FFaker
       length =
         min_length > max_length ? min_length : fetch_sample([*min_length..max_length])
       String.from_regexp(/[a-z]{#{length}}/)
+    end
+
+    def mac(delimiter = ':')
+      rand(MAC_LIMIT).to_s(16).rjust(12, '0').scan(/.{2}/).join(delimiter)
     end
 
     private

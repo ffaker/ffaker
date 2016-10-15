@@ -9,7 +9,7 @@ class TestFakerInternet < Test::Unit::TestCase
     FFaker::Internet,
     :email, :free_email, :safe_email, :disposable_email,
     :user_name, :domain_name, :domain_word, :domain_suffix,
-    :http_url, :ip_v4_address, :password, :slug
+    :http_url, :ip_v4_address, :password, :slug, :mac
   )
 
   def setup
@@ -112,5 +112,21 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.password(10, 2).length > 9
     assert @tester.password(3, 1).length > 2
     assert @tester.password(8, 5).length > 7
+  end
+
+  def test_mac
+    assert_match(/\A([a-z0-9]{2}:){5}[a-z0-9]{2}\z/, @tester.mac)
+    assert @tester.mac.length == 17
+  end
+
+  def test_mac_delimiter_argument
+    assert_match(/\A([a-z0-9]{2}-){5}[a-z0-9]{2}\z/, @tester.mac('-'))
+    assert_match(/\A([a-z0-9]{2}\.){5}[a-z0-9]{2}\z/, @tester.mac('.'))
+    assert_match(/\A([a-z0-9]{2}){6}\z/, @tester.mac(nil))
+    assert_match(/\A([a-z0-9]{2}){6}\z/, @tester.mac(''))
+    assert @tester.mac('-').length == 17
+    assert @tester.mac('.').length == 17
+    assert @tester.mac(nil).length == 12
+    assert @tester.mac('').length == 12
   end
 end

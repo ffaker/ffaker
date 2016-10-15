@@ -959,6 +959,7 @@
 | `free_email` | jillian@gmail.com, wilhelm.langosh@yahoo.com, immanuel@gmail.com |
 | `http_url` | http://zulauf.ca, http://bednarlittle.info, http://bergstrompaucek.name |
 | `ip_v4_address` | 95.4.58.99, 140.125.90.84, 59.84.146.185 |
+| `mac_address` | 80:95:04:00:a0:b8, fc:3c:56:6c:52:74, ca:d7:27:1c:45:fc |
 | `password` | hhhhhhhhh, dddddddddddddddd, qqqqqqqqqqqqq |
 | `safe_email` | holden_franecki@example.net, dino.kulas@example.org, lura@example.org |
 | `slug` | consequatur-aut, similique_nobis, sunt_natus |
