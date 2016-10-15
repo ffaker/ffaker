@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 module FFaker
-  module JobJA
+  module JobVN
     extend ModuleUtils
     extend self
 

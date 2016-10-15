@@ -62,6 +62,7 @@
  * [FFaker::JobFR](#ffakerjobfr)
  * [FFaker::JobJA](#ffakerjobja)
  * [FFaker::JobKR](#ffakerjobkr)
+ * [FFaker::JobVN](#ffakerjobvn)
  * [FFaker::Locale](#ffakerlocale)
  * [FFaker::LoremAR](#ffakerloremar)
  * [FFaker::LoremCN](#ffakerloremcn)
@@ -1024,6 +1025,13 @@
 | Method | Example |
 | ------ | ------- |
 | `title` | 에스컬레이터 설치 및 정비원, 섬유 및 가죽 관련 기능 종사원, 요금 정산원 |
+
+## FFaker::JobVN
+
+| Method | Example |
+| ------ | ------- |
+| `title` | lập trình viên, người mẫu, giám đốc, kỹ sư, đầu bếp | 
+
 
 ## FFaker::Locale
 
