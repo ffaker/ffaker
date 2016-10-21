@@ -17,7 +17,6 @@ class TestFakerJobVN < Test::Unit::TestCase
   end
 
   def test_nouns
-    puts @tester.title
     assert_kind_of Array, @tester::JOB_NOUNS
   end
 end
