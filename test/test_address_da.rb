@@ -20,31 +20,31 @@ class TestAddressDA < Test::Unit::TestCase
   end
 
   def test_state
-    assert_match(/\A[-ÆØÅæøåa-z]+\z/i, FFaker::AddressDA.state)
+    assert_match(/\A[-ÆØÅæøåa-z-]+\z/i, FFaker::AddressDA.state)
   end
 
   def test_kommune
-    assert_match(/\A[-ÆØÅæøåa-z]+\z/i, FFaker::AddressDA.kommune)
+    assert_match(/\A[-ÆØÅæøåa-z-]+\z/i, FFaker::AddressDA.kommune)
   end
 
   def test_region
-    assert_match(/\A[ÆØÅæøåa-z]+\z/i, FFaker::AddressDA.region)
+    assert_match(/\A[ÆØÅæøåa-z-]+\z/i, FFaker::AddressDA.region)
   end
 
   def test_city
-    assert_match(/\A[- ÆØÅæøåla-z]+\z/i, FFaker::AddressDA.city)
+    assert_match(/\A[- ÆØÅæøåla-z-]+\z/i, FFaker::AddressDA.city)
   end
 
   def test_street_name
-    assert_match(/\A[. éÆØÅæøåla-z0-9]+\z/i, FFaker::AddressDA.street_name)
+    assert_match(/\A[. éÆØÅæøåla-z0-9-]+\z/i, FFaker::AddressDA.street_name)
   end
 
   def test_street_address
-    assert_match(/\A[. éÆØÅæøåla-z0-9]+\z/i, FFaker::AddressDA.street_address)
+    assert_match(/\A[. éÆØÅæøåla-z0-9-]+\z/i, FFaker::AddressDA.street_address)
   end
 
   def test_full_address
-    assert_match(/\A[. éÆØÅæøåla-z0-9]+ DANMARK\z/i,
+    assert_match(/\A[. éÆØÅæøåla-z0-9-]+ DANMARK\z/i,
                  FFaker::AddressDA.full_address)
   end
 end
