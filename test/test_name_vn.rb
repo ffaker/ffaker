@@ -33,7 +33,7 @@ class TestNameVN < Test::Unit::TestCase
     assert_include @tester::LAST_NAMES, last_name
   end
 
-  def last_first
+  def test_last_first
     (last_name, middle_name, first_name) = @tester.last_first.split(' ')
     assert_include @tester::FIRST_NAMES, first_name
     assert_include @tester::MIDDLE_NAMES, middle_name

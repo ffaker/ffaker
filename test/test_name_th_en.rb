@@ -27,7 +27,8 @@ class TestFakerNameTHEN < Test::Unit::TestCase
   end
 
   def test_name
-    first_name, last_name = @tester.name.split(' ')
+    *first_names, last_name = @tester.name.split(' ')
+    first_name = first_names.join(' ')
     assert_include @tester::FIRST_NAMES, first_name
     assert_include @tester::LAST_NAMES, last_name
   end
