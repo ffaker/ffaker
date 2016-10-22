@@ -8,7 +8,7 @@ class TestAWS < Test::Unit::TestCase
   assert_methods_are_deterministic(FFaker::AWS, :instance_type)
 
   def test_instance_type
-    assert_match(/^[a-z]{1}[0-9]{1}\.[a-z]+/, FFaker::AWS.instance_type)
+    assert_match(/\A[a-z]+\d\.\d*[a-z]+/, FFaker::AWS.instance_type)
   end
 
   def test_offering_type
@@ -16,7 +16,7 @@ class TestAWS < Test::Unit::TestCase
   end
 
   def test_instance_tenancy
-    assert_match(/\A[default|dedicated|host]+\z/i, FFaker::AWS.instance_tenancy)
+    assert_match(/\A[?:default|dedicated|host]+\z/i, FFaker::AWS.instance_tenancy)
   end
 
   def test_product_description
