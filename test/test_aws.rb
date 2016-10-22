@@ -20,6 +20,6 @@ class TestAWS < Test::Unit::TestCase
   end
 
   def test_product_description
-    assert_match(/\A[ a-zA-Z\(\)]+\z/i, FFaker::AWS.product_description)
+    assert_match(/\A[ \/a-zA-Z\(\)]+\z/i, FFaker::AWS.product_description)
   end
 end
