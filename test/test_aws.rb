@@ -16,7 +16,7 @@ class TestAWS < Test::Unit::TestCase
   end
 
   def test_instance_tenancy
-    assert_match(/\A[?:default|dedicated|host]+\z/i, FFaker::AWS.instance_tenancy)
+    assert_match(/\A(?:default|dedicated|host)+\z/i, FFaker::AWS.instance_tenancy)
   end
 
   def test_product_description
