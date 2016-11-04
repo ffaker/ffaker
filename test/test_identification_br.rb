@@ -33,7 +33,7 @@ class TestFakerIdentificationBR < Test::Unit::TestCase
   end
 
   def test_pretty_cnpj
-    assert_match(/\A\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}\z/, @tester.pretty_cnpj)
+    assert_match(%r{\A\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}\z}, @tester.pretty_cnpj)
   end
 
   def test_rg
