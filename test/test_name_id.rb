@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # encoding: UTF-8
 
 require 'helper'
@@ -22,7 +23,7 @@ class TestFakerNameID < Test::Unit::TestCase
   def test_name_with_prefix
     prefix, name, last_name = @tester.name_with_prefix.split(/\s+/)
     assert_include(@tester::PREFIXES, prefix)
-    assert(name.length > 0)
+    assert(!name.empty?)
     refute_empty(last_name)
   end
 
