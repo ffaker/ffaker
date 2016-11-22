@@ -6,7 +6,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COUNTRY_CODE = '+62'.freeze
+    COUNTRY_CODE = '+62'
     MOBILE_PHONE_PREFIXES = MOBILE_PHONE_PREFIXES.freeze
     HOME_PHONE_PREFIXES = HOME_PHONE_PREFIXES.freeze
 
