@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # encoding: utf-8
 
 require 'helper'
@@ -33,6 +34,7 @@ class TestAddressID < Test::Unit::TestCase
   def test_street
     prefixes = FFaker::AddressID::STREET_PREFIX
     hero_names = FFaker::AddressID::HERO_NAMES
-    assert_match(/(#{prefixes.join('|')})\.(\s(#{hero_names.join('|')}))\,\sNo\.\s\d+/, FFaker::AddressID.street)
+    regex = /(#{prefixes.join('|')})\.(\s(#{hero_names.join('|')}))\,\sNo\.\s\d+/
+    assert_match(regex, FFaker::AddressID.street)
   end
 end

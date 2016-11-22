@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    STREET_PREFIX = %w( Jl Jln ).freeze
+    STREET_PREFIX = %w(Jl Jln).freeze
     HERO_NAMES = HEROES.freeze
 
     def zip_code
@@ -33,7 +33,7 @@ module FFaker
     end
 
     def street
-      "#{street_prefix}. #{fetch_sample(HERO_NAMES)}, No. #{rand(100)+1}"
+      "#{street_prefix}. #{fetch_sample(HERO_NAMES)}, No. #{rand(100) + 1}"
     end
   end
 end
