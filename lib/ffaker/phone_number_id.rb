@@ -15,10 +15,9 @@ module FFaker
     end
 
     def home_phone_number
-      case rand(2)
-      when 0 then "#{fetch_sample(HOME_PHONE_PREFIXES)}-#{FFaker.numerify('#######')}"
-      when 1 then "#{fetch_sample(HOME_PHONE_PREFIXES)}-#{FFaker.numerify('########')}"
-      end
+      digit_nums = '#' * rand(7..8)
+
+      "#{fetch_sample(HOME_PHONE_PREFIXES)}-#{FFaker.numerify(digit_nums)}"
     end
 
     def phone_number

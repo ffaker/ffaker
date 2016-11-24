@@ -19,7 +19,7 @@ class TestPhoneNumberID < Test::Unit::TestCase
 
   def test_mobile_phone_number
     prefixes = FFaker::PhoneNumberID::MOBILE_PHONE_PREFIXES
-    regex = /(#{prefixes.join('|')})-(\d{8})/
+    regex = /\A(?:#{prefixes.join('|')})-\d{8}\z/
     assert_match regex, FFaker::PhoneNumberID.mobile_phone_number
   end
 

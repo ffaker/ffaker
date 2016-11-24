@@ -11,7 +11,7 @@ module FFaker
     extend self
 
     STREET_PREFIX = %w(Jl Jln).freeze
-    HERO_NAMES = HEROES.freeze
+    COMMON_STREET_NAMES = COMMON_STREET_NAMES.freeze
 
     def zip_code
       FFaker.numerify '#####'
@@ -34,7 +34,7 @@ module FFaker
     end
 
     def street
-      "#{street_prefix}. #{fetch_sample(HERO_NAMES)}, No. #{rand(100) + 1}"
+      "#{street_prefix}. #{fetch_sample(COMMON_STREET_NAMES)}, No. #{rand(1..100)}"
     end
   end
 end

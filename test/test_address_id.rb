@@ -12,7 +12,7 @@ class TestAddressID < Test::Unit::TestCase
   )
 
   def test_zip_code
-    assert_match(/\d{5}/, FFaker::AddressID.zip_code)
+    assert_match(/\A\d{5}\z/, FFaker::AddressID.zip_code)
   end
 
   def test_state
@@ -24,7 +24,7 @@ class TestAddressID < Test::Unit::TestCase
   end
 
   def test_city
-    assert FFaker::AddressID::CITY.include?(FFaker::AddressID.city)
+    assert_include FFaker::AddressID::CITY, FFaker::AddressID.city
   end
 
   def test_street_prefix
@@ -33,8 +33,8 @@ class TestAddressID < Test::Unit::TestCase
 
   def test_street
     prefixes = FFaker::AddressID::STREET_PREFIX
-    hero_names = FFaker::AddressID::HERO_NAMES
-    regex = /(#{prefixes.join('|')})\.(\s(#{hero_names.join('|')}))\,\sNo\.\s\d+/
+    common_street_names = FFaker::AddressID::COMMON_STREET_NAMES
+    regex = /(#{prefixes.join('|')})\.(\s(#{common_street_names.join('|')}))\,\sNo\.\s\d+/
     assert_match(regex, FFaker::AddressID.street)
   end
 end
