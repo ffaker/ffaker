@@ -11,7 +11,6 @@ module FFaker
     extend self
 
     STREET_PREFIX = %w(Jl Jln).freeze
-    COMMON_STREET_NAMES = COMMON_STREET_NAMES.freeze
 
     def zip_code
       FFaker.numerify '#####'

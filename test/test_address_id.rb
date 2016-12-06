@@ -34,7 +34,7 @@ class TestAddressID < Test::Unit::TestCase
   def test_street
     prefixes = FFaker::AddressID::STREET_PREFIX
     common_street_names = FFaker::AddressID::COMMON_STREET_NAMES
-    regex = /(#{prefixes.join('|')})\.(\s(#{common_street_names.join('|')}))\,\sNo\.\s\d+/
+    regex = /\A(#{prefixes.join('|')})\.(\s(#{common_street_names.join('|')}))\,\sNo\.\s\d+\z/
     assert_match(regex, FFaker::AddressID.street)
   end
 end
