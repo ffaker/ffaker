@@ -45,7 +45,7 @@ class TestFakerNameDA < Test::Unit::TestCase
     assert_include first_names, @tester.first_name(:any)
     assert_include first_names, @tester.first_name
     assert_raise(ArgumentError, 'Invalid gender, must be one of :any, :male, :female') do
-      @tester.first_name(:hahaha) 
+      @tester.first_name(:hahaha)
     end
   end
 
