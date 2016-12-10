@@ -1,3 +1,6 @@
+## 2.4.0
+  - Support Indonesia names, address, phone & gender [@brain64bit]
+
 ## 2.3.0
   - Make deterministic / repeatedly random using seed [@xunker]
   - Fix DE and NL address modules [@dankimio]
