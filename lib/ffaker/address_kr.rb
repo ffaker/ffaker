@@ -25,9 +25,9 @@ module FFaker
     def road_addess
       fetch_sample([
                      "#{metropolitan_city} #{borough} #{street}",
-                     "#{province} #{borough} #{street}",
+                     "#{province} #{town} #{street}",
                      "#{metropolitan_city} #{borough} #{street} (#{town})",
-                     "#{province} #{borough} #{street} (#{town})"
+                     "#{province} #{town} #{street} (#{town})"
                    ])
     end
 
@@ -61,7 +61,7 @@ module FFaker
     end
 
     def street
-      FFaker.numerify("#{NameKR.first_name}#{fetch_sample(BUILDING_SUFFIXES)}")
+      FFaker.numerify("#{NameKR.first_name}#{fetch_sample(STREET_SUFFIXES)}")
     end
 
     def town
