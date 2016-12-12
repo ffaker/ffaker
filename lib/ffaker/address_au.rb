@@ -75,6 +75,16 @@ module FFaker
       }
     }.freeze
     POSTCODE = SUBURB.inject({}) { |h, (s_abbr, postcode_suburb_map)| h.update(s_abbr => postcode_suburb_map.keys) }
+    TIME_ZONE = {
+      'ACT' => 'Australia/Canberra',
+      'NT' => 'Australia/Darwin',
+      'SA' => 'Australia/Adelaide',
+      'WA' => 'Australia/Perth',
+      'NSW' => 'Australia/Sydney',
+      'QLD' => 'Australia/Brisbane',
+      'VIC' => 'Australia/Melbourne',
+      'TAS' => 'Australia/Hobart'
+    }.freeze
 
     def postcode(st_abbr = nil)
       st_abbr ||= state_abbr
@@ -98,6 +108,14 @@ module FFaker
     def full_address(st_abbr = nil)
       st_abbr ||= state_abbr
       "#{FFaker::Address.street_address}, #{suburb(st_abbr)} #{st_abbr} #{postcode}"
+    end
+
+    def time_zone(st_abbr = nil)
+      if st_abbr
+        TIME_ZONE[st_abbr]
+      else
+        TIME_ZONE.values.sample
+      end
     end
   end
 end

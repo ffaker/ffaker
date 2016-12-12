@@ -65,4 +65,15 @@ class TestAddressAU < Test::Unit::TestCase
       assert_deterministic { FFaker::AddressAU.full_address(st_abbr) }
     end
   end
+
+  def test_time_zone
+    assert_includes(FFaker::AddressAU::TIME_ZONE.values, FFaker::AddressAU.time_zone)
+  end
+
+  def test_time_zone_with_states
+    FFaker::AddressAU::STATE_ABBR.each do |st_abbr|
+      assert_includes(FFaker::AddressAU::TIME_ZONE.values, FFaker::AddressAU.time_zone)
+      assert_deterministic { FFaker::AddressAU.postcode(st_abbr) }
+    end
+  end
 end
