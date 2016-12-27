@@ -5,9 +5,9 @@ require 'helper'
 class TestLoremRU < Test::Unit::TestCase
   include DeterministicHelper
 
-  SENTENCE_MATCHER = /\A[а-яА-Я\-\s\.\!\?,]+\z/
-  WORDS_MATCHER    = /\A[А-Яа-я\-\s]+\z/
-  WORD_MATCHER     = /\A[А-Яа-я\-]+\z/
+  SENTENCE_MATCHER = /\A[а-яА-ЯёЁ\-\s\.\!\?,]+\z/
+  WORDS_MATCHER    = /\A[А-Яа-яёЁ\-\s]+\z/
+  WORD_MATCHER     = /\A[А-Яа-яёЁ\-]+\z/
 
   assert_methods_are_deterministic(
     FFaker::LoremRU,
