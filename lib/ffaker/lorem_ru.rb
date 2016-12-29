@@ -1,4 +1,5 @@
 # encoding: utf-8
+# frozen_string_literal: true
 
 module FFaker
   module LoremRU
@@ -47,10 +48,11 @@ module FFaker
     end
 
     def capitalize_russian(string)
-      unless CAPITAL_CHARS.include?(string[0])
-        string[0] = CAPITAL_CHARS[CHARS.index(string[0])]
+      if CAPITAL_CHARS.include?(string[0])
+        string
+      else
+        CAPITAL_CHARS[CHARS.index(string[0])] + string[1..-1]
       end
-      string
     end
   end
 end
