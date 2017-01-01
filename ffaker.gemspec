@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '2.3.0'
-  s.date              = '2016-11-13'
+  s.version           = '2.4.0'
+  s.date              = '2017-01-01'
   s.rubyforge_project = 'ffaker'
   s.required_ruby_version = '>= 1.9'
 
