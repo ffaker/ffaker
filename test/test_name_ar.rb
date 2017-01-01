@@ -27,12 +27,15 @@ class TestFakerNameAR < Test::Unit::TestCase
     assert_include(@tester::LAST_NAMES, @tester.last_name)
   end
   
-  #def test_name_male
-  #  first_name, last_name = @tester.name_male.split(/\s+/)
-  #  
-  #end
+  def test_name_male
+    first_name, last_name = @tester.name_male.split(/\s+/, 2)
+    assert_include(@tester::FIRST_NAMES_MALE, first_name)
+    assert_include(@tester::LAST_NAMES, last_name)
+  end
   
-  #def test_name_female
-  #  first_name, last_name = @tester.name_female.split(/\s+/)
-  #end
+  def test_name_female
+    first_name, last_name = @tester.name_female.split(/\s+/, 2)
+    assert_include(@tester::FIRST_NAMES_FEMALE, first_name)
+    assert_include(@tester::LAST_NAMES, last_name)
+  end
 end
