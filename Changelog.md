@@ -1,5 +1,7 @@
 ## 2.4.0
   - Support Indonesia names, address, phone & gender [@brain64bit]
+  - Support Russian lorem [@mechos3d]
+  - Fix AddressAU#time_zone: will return AU time zone now [@tatey]
 
 ## 2.3.0
   - Make deterministic / repeatedly random using seed [@xunker]
