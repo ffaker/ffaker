@@ -1,3 +1,6 @@
+## 2.5.0
+  - Support Arabic names [@Moafak]
+
 ## 2.4.0
   - Support Indonesia names, address, phone & gender [@brain64bit]
   - Support Russian lorem [@mechos3d]
