@@ -14,6 +14,7 @@
  * [FFaker::AddressFR](#ffakeraddressfr)
  * [FFaker::AddressGR](#ffakeraddressgr)
  * [FFaker::AddressIN](#ffakeraddressin)
+ * [FFaker::AddressJA](#ffakeraddressja)
  * [FFaker::AddressKR](#ffakeraddresskr)
  * [FFaker::AddressMX](#ffakeraddressmx)
  * [FFaker::AddressNL](#ffakeraddressnl)
