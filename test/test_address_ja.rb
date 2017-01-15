@@ -25,35 +25,34 @@ class TestAddressJA < Test::Unit::TestCase
   end
 
   def test_street
-    assert_match(japanese_regex(""), FFaker::AddressJA.street)
+    assert_match(japanese_regex(''), FFaker::AddressJA.street)
   end
 
   def test_tokyo_ward
-    assert_match(japanese_regex("区"), FFaker::AddressJA.tokyo_ward)
+    assert_match(japanese_regex('区'), FFaker::AddressJA.tokyo_ward)
   end
 
   def test_ward
-    assert_match(japanese_regex("区"), FFaker::AddressJA.ward)
+    assert_match(japanese_regex('区'), FFaker::AddressJA.ward)
   end
 
   def test_village
-    assert_match(japanese_regex("村"), FFaker::AddressJA.village)
+    assert_match(japanese_regex('村'), FFaker::AddressJA.village)
   end
 
   def test_designated_city
-    assert_match(japanese_regex("市"), FFaker::AddressJA.city)
+    assert_match(japanese_regex('市'), FFaker::AddressJA.city)
   end
 
   def test_city
-    assert_match(japanese_regex("市"), FFaker::AddressJA.city)
+    assert_match(japanese_regex('市'), FFaker::AddressJA.city)
   end
 
   def test_county
-    assert_match(japanese_regex("郡"), FFaker::AddressJA.county)
+    assert_match(japanese_regex('郡'), FFaker::AddressJA.county)
   end
 
   def test_prefecture
-    assert_match(japanese_regex("都|道|府|県"), FFaker::AddressJA.prefecture)
+    assert_match(japanese_regex('都|道|府|県'), FFaker::AddressJA.prefecture)
   end
-
 end

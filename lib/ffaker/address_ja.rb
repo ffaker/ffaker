@@ -87,7 +87,5 @@ module FFaker
     def prefecture
       fetch_sample(PREFECTURE)
     end
-
-
   end
 end
