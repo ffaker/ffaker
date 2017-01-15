@@ -12,10 +12,6 @@ class TestAddressJA < Test::Unit::TestCase
     :prefecture
   )
 
-  private def japanese_regex(word)
-    /\A(?:\p{Hiragana}|\p{Katakana}|[ー－]|[一-龠々])+#{word}\z/
-  end
-
   def test_postal_code
     assert_match(/^\d{3}\-\d{4}$/, FFaker::AddressJA.postal_code)
   end
@@ -54,5 +50,9 @@ class TestAddressJA < Test::Unit::TestCase
 
   def test_prefecture
     assert_match(japanese_regex('都|道|府|県'), FFaker::AddressJA.prefecture)
+  end
+
+  def japanese_regex(word)
+    /\A(?:\p{Hiragana}|\p{Katakana}|[ー－]|[一-龠々])+#{word}\z/
   end
 end
