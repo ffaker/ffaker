@@ -1,4 +1,5 @@
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'ffaker/address'
 
@@ -10,28 +11,22 @@ module FFaker
     extend self
 
     ZIP_FORMATS = ['###-####'].freeze
-    LAND_NUMBER_FORMATS = ['#丁目#番#号','###'].freeze
+    LAND_NUMBER_FORMATS = ['#丁目#番#号', '###'].freeze
 
     def address
       fetch_sample([
-                      # 秋田県秋田市中通7丁目1番2号
-                      "#{postal_code} #{prefecture}#{city}#{street}#{land_number}",
-                      # 福島県田村郡三春町柴原150
-                      "#{postal_code} #{prefecture}#{county}#{street}#{land_number}",
-                      # 愛知県名古屋市中区錦3丁目24番4号
-                      "#{postal_code} #{prefecture}#{designated_city}#{ward}#{street}#{land_number}",
-                      # 東京都千代田区永田町2丁目2番1号
-                      "#{postal_code} 東京都#{tokyo_ward}#{street}#{land_number}"
-                   ])
+        "#{postal_code} #{prefecture}#{city}#{street}#{land_number}",
+        "#{postal_code} #{prefecture}#{county}#{street}#{land_number}",
+        "#{postal_code} #{prefecture}#{designated_city}#{ward}#{street}#{land_number}",
+        "#{postal_code} 東京都#{tokyo_ward}#{street}#{land_number}"
+      ])
     end
 
     def other_address
       fetch_sample([
-                      # 秋田県秋田市中通7丁目1番2号
-                      "#{postal_code} #{prefecture}#{city}#{street}#{land_number}",
-                      # 福島県田村郡三春町柴原150
-                      "#{postal_code} #{prefecture}#{county}#{street}#{land_number}"
-                   ])
+        "#{postal_code} #{prefecture}#{city}#{street}#{land_number}",
+        "#{postal_code} #{prefecture}#{county}#{street}#{land_number}"
+      ])
     end
 
     def designated_city_address
