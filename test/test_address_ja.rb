@@ -49,7 +49,7 @@ class TestAddressJA < Test::Unit::TestCase
   end
 
   def test_prefecture
-    assert_match(japanese_regex('都|道|府|県'), FFaker::AddressJA.prefecture)
+    assert_match(japanese_regex('[都道府県]'), FFaker::AddressJA.prefecture)
   end
 
   def japanese_regex(word)
