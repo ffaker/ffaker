@@ -54,23 +54,22 @@ module FFaker
     def imei(serial_number = nil)
       # IMEI Format:
       # AA-BBBBBB-CCCCCC-D
-
-      rbi = '00'            # Test IMEI for countries with 2-digit country codes
-      tac = "#{rbi}124500"  # iPhone
-
-      serial_number ||= rand(1_000_000)
-      serial_number = sprintf('%06d', serial_number)
-
-      imei_base = tac + serial_number
-
-      check_digit = 0
-      base_digits = imei_base.split('').map(&:to_i)
-      base_digits.each_with_index do |digit, i|
-        check_digit += i.even? ? 2 * digit : digit
+      characters = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      rbi_codes  = %w(01 10 30 33 35 44 45 49 50 51 52 53 54 86 91 98 99)
+      first_two_chars = rbi_codes.sample
+      characters[0] = first_two_chars.chars.map(&:to_i)[0]
+      characters[1] = first_two_chars.chars.map(&:to_i)[1]
+      2.upto(13) do |current_position|
+        characters[current_position] = (0..9).to_a.sample
       end
-      check_digit = (10 - check_digit % 10) % 10
-
-      "#{imei_base}#{check_digit}"
+      current_checksum = characters.reverse.each_with_index.inject(0) do |sum, (digit, i)|
+        digit *= 2 if i.odd?
+        digit -= 9 if digit > 9
+        sum += digit
+      end
+      final_digit = (10 - (current_checksum % 10)) % 10
+      characters[14] = final_digit
+      characters.join
     end
   end
 end
