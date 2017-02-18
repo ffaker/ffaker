@@ -58,12 +58,12 @@ module FFaker
       rbi_codes  = %w(01 10 30 33 35 44 45 49 50 51 52 53 54 86 91 98 99)
       serial_number ||= rand(1_000_000)
       serial_number = format('%06d', serial_number).chars.map(&:to_i)
-      first_two_chars = rbi_codes.sample
+      first_two_chars = fetch_sample(rbi_codes)
       characters[0] = first_two_chars.chars.map(&:to_i)[0]
       characters[1] = first_two_chars.chars.map(&:to_i)[1]
       # serial number part
       2.upto(7) do |current_position|
-        characters[current_position] = (0..9).to_a.sample
+        characters[current_position] = fetch_sample((0..9).to_a)
       end
       8.upto(13) do |current_position|
         characters[current_position] = serial_number[current_position - 8]
