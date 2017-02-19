@@ -1,5 +1,8 @@
 ## 2.5.0
   - Support Arabic names [@Moafak]
+  - Add Japanese address [@kojino]
+  - Add more Brazilian city [@jasonleonhard]
+  - Now PhoneNumber#ime returns valid IMEIs [@metalelf0]
 
 ## 2.4.0
   - Support Indonesia names, address, phone & gender [@brain64bit]
