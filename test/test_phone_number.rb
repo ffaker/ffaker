@@ -7,7 +7,7 @@ class TestPhoneNumer < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::PhoneNumber,
-    :phone_number, :area_code, :exchange_code, :short_phone_number, :phone_calling_code, :imei
+    :phone_number, :area_code, :exchange_code, :short_phone_number, :phone_calling_code
   )
 
   def test_phone_number
