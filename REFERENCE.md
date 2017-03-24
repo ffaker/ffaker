@@ -204,6 +204,7 @@
 | `street_name` | Serina Parkway, Quitzon Well, Kunze Groves |
 | `street_prefix` | Avenida, Avenida, Alameda |
 | `street_suffix` | Spring, Haven, Dale |
+| `full_address` | Rua Omar Brito, 64378, Araucária, Belo Horizonte, Brazil |
 | `time_zone` | Europe/London, Europe/Dublin, Asia/Singapore |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
