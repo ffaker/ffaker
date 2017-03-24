@@ -37,7 +37,7 @@ module FFaker
       when 1 then "#{street_prefix} #{NameBR.first_name} #{NameBR.last_name} #{NameBR.last_name}"
       end
     end
-    
+
     def full_address
       "#{street}, #{building_number}, #{city}, #{state}, Brazil"
     end
