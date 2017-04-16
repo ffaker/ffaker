@@ -2,20 +2,19 @@
 
 require 'ffaker/lorem'
 
-module FFaker
-  # Thanks to Snoop Dogg
-  module DizzleIpsum
-    extend Lorem
+module Faker
+  module ElvenIpsum
+    include Lorem
 
     extend ModuleUtils
     extend self
 
     def word
-      fetch_sample(DIZZLE_WORDS)
+      ELVEN_WORDS.rand
     end
 
     def words(num = 3)
-      fetch_sample(DIZZLE_WORDS, count: num)
+      ELVEN_WORDS.random_pick(num)
     end
 
     def sentence(word_count = 4)

@@ -40,3 +40,4 @@ class TestNato < Test::Unit::TestCase
     assert_deterministic { @tester.codify('.') }
   end
 end
+

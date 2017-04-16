@@ -2,20 +2,20 @@
 
 require 'ffaker/lorem'
 
-module FFaker
-  # Thanks to Snoop Dogg
-  module DizzleIpsum
-    extend Lorem
+module Faker
+  # thanks to http://andymatthews.net/code/fillertext/hillbilly.cfm
+  module HillbillyIpsum
+    include Lorem
 
     extend ModuleUtils
     extend self
 
     def word
-      fetch_sample(DIZZLE_WORDS)
+      HILLBILLY_WORDS.rand
     end
 
     def words(num = 3)
-      fetch_sample(DIZZLE_WORDS, count: num)
+      HILLBILLY_WORDS.random_pick(num)
     end
 
     def sentence(word_count = 4)
