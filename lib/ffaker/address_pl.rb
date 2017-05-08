@@ -58,7 +58,7 @@ module FFaker
     end
 
     def building_number # :nodoc:
-      rand(199) + 1
+      rand(1..199)
     end
 
     def secondary_number # :nodoc:
