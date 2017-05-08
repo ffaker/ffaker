@@ -10,6 +10,7 @@ class TestLoremFR < Test::Unit::TestCase
     :paragraph, :paragraphs, :sentence, :sentences,
     :phrase, :phrases, :word, :words
   )
+  REGEX = /\A[ -.ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i
 
   def test_paragraph
     assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.paragraph)
@@ -24,7 +25,7 @@ class TestLoremFR < Test::Unit::TestCase
   end
 
   def test_paragraphsLoremFR
-    assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.paragraphs.join(' '))
+    assert_match(REGEX, FFaker::LoremFR.paragraphs.join(' '))
   end
 
   def test_sentences

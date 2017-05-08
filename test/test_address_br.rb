@@ -7,7 +7,7 @@ class TestAddressBR < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::AddressBR,
-    :zip_code, :state, :state_abbr, :city, :street_prefix, :street
+    :zip_code, :state, :state_abbr, :city, :street_prefix, :street, :full_address
   )
 
   def test_zip_code
