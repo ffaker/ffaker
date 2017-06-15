@@ -1,12 +1,12 @@
 # encoding: utf-8
 
 module FFaker
-  module Animals
+  module Animal
     extend ModuleUtils
     extend self
 
-    def animal
-      fetch_sample(ANIMALS)
+    def common_name
+      fetch_sample(COMMON_NAMES)
     end
     
   end
