@@ -1,8 +1,10 @@
+## 2.6.0
   - Add Polish names [@walerian777]
   - Add Polish addresses [@walerian777]
   - Add full_address to Brazilian addresses [@adimircolen]
   - Add Filesystem [@j0al]
   - Add Aminal [@ni3t]
+  - Fix PhoneNumberAU mobile number [@spheric]
 
 ## 2.5.0
   - Support Arabic names [@Moafak]
