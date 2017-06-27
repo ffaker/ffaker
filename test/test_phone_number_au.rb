@@ -32,7 +32,9 @@ class TestPhoneNumberAU < Test::Unit::TestCase
   end
 
   def test_mobile_phone_number
-    assert_match(/04\d{2} \d{3} \d{3}/, FFaker::PhoneNumberAU.mobile_phone_number)
+    3.times do 
+      assert_match(/(04|05)\d{2} \d{3} \d{3}/, FFaker::PhoneNumberAU.mobile_phone_number)
+    end
   end
 
   def test_home_work_phone_number
@@ -41,7 +43,7 @@ class TestPhoneNumberAU < Test::Unit::TestCase
 
   def test_phone_number
     10.times do
-      assert_match(/(04\d{1,2} \d{3} \d{3}|\(\d{2}\) \d{4} \d{4})/, FFaker::PhoneNumberAU.phone_number)
+      assert_match(/((04|05)\d{1,2} \d{3} \d{3}|\(\d{2}\) \d{4} \d{4})/, FFaker::PhoneNumberAU.phone_number)
     end
   end
 
