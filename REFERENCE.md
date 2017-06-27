@@ -42,6 +42,7 @@
  * [FFaker::Currency](#ffakercurrency)
  * [FFaker::DizzleIpsum](#ffakerdizzleipsum)
  * [FFaker::Education](#ffakereducation)
+ * [FFaker::Filesystem](#ffakerfilesystem)
  * [FFaker::Food](#ffakerfood)
  * [FFaker::Gender](#ffakergender)
  * [FFaker::GenderBR](#ffakergenderbr)
@@ -863,6 +864,14 @@
 | `school` | Northcrest College, Windridge School, Kentucky Institution of Science |
 | `school_generic_name` | Southwood, Rivercoast, Tennessee |
 | `school_name` | Northridge, Redpoint, Larkspur |
+
+## FFaker::Filesystem
+
+| Method | Example |
+| ------- | ------- |
+| `extension` | flac mp3 wav bmp gif jpeg jpg png tiff css csv html js json txt mp4 avi mov webm doc docx xls xlsx  |
+| `mime_type` | application/atom+xml application/ecmascript application/EDI-X12 application/EDIFACT application/json application/javascript application/ogg  |
+| `file_name` | directory/path/to/filename.jpg |
 
 ## FFaker::Food
 
