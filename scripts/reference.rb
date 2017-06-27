@@ -2,8 +2,8 @@ $LOAD_PATH << File.dirname(__FILE__) + '/../lib'
 require 'ffaker'
 
 ICONS = {
-  error: "‼️",
-  warning: "❗"
+  error: '‼️',
+  warning: '❗'
 }.freeze
 
 # Get a list of sections
@@ -60,11 +60,11 @@ sections = faker_modules.each.map do |mod|
     right = ''
 
     if arity > 0
-      left = "`#{meth}`(#{arity.times.map { '...' }.join(', ')})"
+      left = "`#{meth}`(#{Array.new(arity) { '...' }.join(', ')})"
     else
       begin
         examples, warnings = catch_warnings do
-          3.times.map { mod.send meth }
+          Array.new(3) { mod.send meth }
         end
         right = if warnings.any?
                   "#{ICONS[:warning]} *#{warnings.first}*"

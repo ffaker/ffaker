@@ -23,18 +23,21 @@ class TestPhoneNumberCU < Test::Unit::TestCase
   #
   def test_mobile_phone_prefix
     assert FFaker::PhoneNumberCU::MobileOperatorsPrefix.include?(
-      @tester.mobile_phone_prefix)
+      @tester.mobile_phone_prefix
+    )
   end
 
   def test_home_work_phone_prefix
     assert FFaker::PhoneNumberCU::HomeWorkOperatorsPrefix.include?(
-      @tester.home_work_phone_prefix)
+      @tester.home_work_phone_prefix
+    )
   end
 
   def test_phone_prefix
     10.times do
       assert FFaker::PhoneNumberCU::OperatorsPrefix.include?(
-        @tester.phone_prefix)
+        @tester.phone_prefix
+      )
     end
   end
 

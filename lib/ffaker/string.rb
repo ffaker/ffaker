@@ -67,7 +67,7 @@ module FFaker
         end
         number = number.to_i - 1
         t = @last_token.dup
-        number.times.map { process_token(t.dup) }.join
+        Array.new(number) { process_token(t.dup) }.join
       else
         generate_token token, tokens
       end

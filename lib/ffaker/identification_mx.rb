@@ -15,7 +15,7 @@ module FFaker
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
     # Registro Federal de Contribuyentes (R.F.C.) para persona física
     def rfc_persona_fisica
-      consonants_n = CONSONANTS + ["Ñ"]
+      consonants_n = CONSONANTS + ['Ñ']
       all_letters = consonants_n + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
       [
@@ -30,7 +30,7 @@ module FFaker
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
     # Registro Federal de Contribuyentes (R.F.C.) para persona moral
     def rfc_persona_moral
-      consonants_n_amp = CONSONANTS + ["Ñ", '&']
+      consonants_n_amp = CONSONANTS + ['Ñ', '&']
       all_letters = consonants_n_amp + VOWELS
       date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
       "#{fetch_sample(all_letters, count: 3).join}#{date}#{fetch_sample(HOMOCLAVE, count: 3).join}"

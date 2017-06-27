@@ -9,8 +9,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    STREET_PREFIX = %w( Οδός Πάροδος )
-    STREET_NUMBER = %w( # ## ### )
+    STREET_PREFIX = [%w(Οδός Πάροδος)].freeze
+    STREET_NUMBER = [%w(# ## ###)].freeze
     STATE = REGION
 
     def zip_code

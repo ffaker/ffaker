@@ -5,7 +5,7 @@ require 'helper'
 # Author: guapolo github.com/guapolo
 class TestAddressMX < Test::Unit::TestCase
   include DeterministicHelper
-  
+
   assert_methods_are_deterministic(
     FFaker::AddressMX,
     :municipality, :postal_code, :state_abbr, :state, :zip_code

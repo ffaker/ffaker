@@ -25,6 +25,7 @@ class TestAddressCA < Test::Unit::TestCase
   def test_postal_code
     assert_match(
       /\A[A-CEGHJK-NPR-TVXY]\d[A-CEGHJK-NPR-TV-Z] \d[A-CEGHJK-NPR-TV-Z]\d\z/,
-      FFaker::AddressCA.postal_code)
+      FFaker::AddressCA.postal_code
+    )
   end
 end

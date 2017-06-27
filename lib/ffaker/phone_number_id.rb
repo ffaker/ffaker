@@ -6,7 +6,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COUNTRY_CODE = '+62'
+    COUNTRY_CODE = '+62'.freeze
 
     def mobile_phone_number
       "#{fetch_sample(MOBILE_PHONE_PREFIXES)}-#{FFaker.numerify('########')}"

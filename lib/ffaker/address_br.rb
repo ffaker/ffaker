@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    STREET_PREFIX = %w( Rua Avenida Travessa Alameda ).freeze
+    STREET_PREFIX = %w(Rua Avenida Travessa Alameda).freeze
 
     def zip_code
       FFaker.numerify '#####-###'

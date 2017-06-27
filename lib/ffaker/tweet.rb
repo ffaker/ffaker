@@ -36,7 +36,7 @@ module FFaker
 
     def mentions(num = 2)
       mention_names = []
-      num.times{ mention_names << mention }
+      num.times { mention_names << mention }
       mention_names.join(' ')
     end
 

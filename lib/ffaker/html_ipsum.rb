@@ -117,13 +117,13 @@ module FFaker
       end
       body << content_tag_for(:pre) do |pre|
         pre << content_tag_for(:code) do |code|
-            code << "
-              ##{word} h1 a {
-                display: block;
-                width: 300px;
-                height: 80px;
-              }
-            "
+          code << "
+            ##{word} h1 a {
+              display: block;
+              width: 300px;
+              height: 80px;
+            }
+          "
         end
       end
       body

@@ -12,7 +12,7 @@ class TestAddressGR < Test::Unit::TestCase
 
   def setup
     @address_gr = FFaker::AddressGR
-    @street_prefix = FFaker::AddressGR::STREET_PREFIX.join("|")
+    @street_prefix = FFaker::AddressGR::STREET_PREFIX.join('|')
   end
 
   def test_city

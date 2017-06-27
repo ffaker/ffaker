@@ -8,6 +8,5 @@ module FFaker
     def common_name
       fetch_sample(COMMON_NAMES)
     end
-    
   end
 end

@@ -15,31 +15,31 @@ module FFaker
 
     def address
       fetch_sample([
-        "#{postal_code} #{prefecture}#{city}#{street}#{land_number}",
-        "#{postal_code} #{prefecture}#{county}#{street}#{land_number}",
-        "#{postal_code} #{prefecture}#{designated_city}#{ward}#{street}#{land_number}",
-        "#{postal_code} 東京都#{tokyo_ward}#{street}#{land_number}"
-      ])
+                     "#{postal_code} #{prefecture}#{city}#{street}#{land_number}",
+                     "#{postal_code} #{prefecture}#{county}#{street}#{land_number}",
+                     "#{postal_code} #{prefecture}#{designated_city}#{ward}#{street}#{land_number}",
+                     "#{postal_code} 東京都#{tokyo_ward}#{street}#{land_number}"
+                   ])
     end
 
     def other_address
       fetch_sample([
-        "#{postal_code} #{prefecture}#{city}#{street}#{land_number}",
-        "#{postal_code} #{prefecture}#{county}#{street}#{land_number}"
-      ])
+                     "#{postal_code} #{prefecture}#{city}#{street}#{land_number}",
+                     "#{postal_code} #{prefecture}#{county}#{street}#{land_number}"
+                   ])
     end
 
     def designated_city_address
       fetch_sample([
-                      # 愛知県名古屋市中区錦3丁目24番4号
-                      "#{postal_code} #{prefecture}#{designated_city}#{ward}#{street}#{land_number}"
+                     # 愛知県名古屋市中区錦3丁目24番4号
+                     "#{postal_code} #{prefecture}#{designated_city}#{ward}#{street}#{land_number}"
                    ])
     end
 
     def tokyo_ward_address
       fetch_sample([
-                      # 東京都千代田区永田町2丁目2番1号
-                      "#{postal_code} 東京都#{tokyo_ward}#{street}#{land_number}"
+                     # 東京都千代田区永田町2丁目2番1号
+                     "#{postal_code} 東京都#{tokyo_ward}#{street}#{land_number}"
                    ])
     end
 

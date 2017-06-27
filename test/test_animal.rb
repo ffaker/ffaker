@@ -15,4 +15,3 @@ class TestAnimals < Test::Unit::TestCase
     assert_include @tester::COMMON_NAMES, @tester.common_name
   end
 end
-

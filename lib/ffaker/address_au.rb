@@ -19,7 +19,8 @@ module FFaker
     # based on http://en.wikipedia.org/wiki/List_of_cities_in_Australia
     SUBURB = {
       'ACT' => {
-        '2600' => 'Canberra', '2601' => 'Canberra', '2602' => "O'Connor", '2612' => 'Braddon' },
+        '2600' => 'Canberra', '2601' => 'Canberra', '2602' => "O'Connor", '2612' => 'Braddon'
+      },
       'NT' => { '0800' => 'Darwin', '0830' => 'Palmerston' },
       'SA' => {
         '5000' => 'Adelaide', '5015' => 'Port Adelaide', '5211' => 'Victor Harbor',
