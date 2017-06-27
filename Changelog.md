@@ -1,3 +1,9 @@
+  - Add Polish names [@walerian777]
+  - Add Polish addresses [@walerian777]
+  - Add full_address to Brazilian addresses [@adimircolen]
+  - Add Filesystem [@j0al]
+  - Add Aminal [@ni3t]
+
 ## 2.5.0
   - Support Arabic names [@Moafak]
   - Add Japanese address [@kojino]
