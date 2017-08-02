@@ -6,9 +6,14 @@ module FFaker
     extend self
 
     MONTHS = %w(January February March April May June July August September October November December).freeze
+    DAYS_OF_WEEK = %w(Monday Tuesday Wednesday Thursday Friday Saturday Sunday).freeze
 
     def month
       fetch_sample(MONTHS)
+    end
+
+    def day_of_week(options = {})
+      fetch_sample(DAYS_OF_WEEK)[0..(options[:long] ? 10 : 2)]
     end
 
     def date(params = {})
