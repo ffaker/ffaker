@@ -7,7 +7,7 @@ class TestCompanyIT < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::CompanyIT,
-    :name, :suffix, :prefix
+    :name, :suffix, :prefix, :partita_iva
   )
 
   def test_name
@@ -20,5 +20,9 @@ class TestCompanyIT < Test::Unit::TestCase
 
   def test_prefix
     assert_match(/[ a-z]+/i, FFaker::CompanyIT.prefix)
+  end
+
+  def test_partita_iva
+    assert_match(/\d{11}/, FFaker::CompanyIT.partita_iva)
   end
 end
