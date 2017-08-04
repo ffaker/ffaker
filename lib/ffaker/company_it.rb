@@ -39,7 +39,7 @@ module FFaker
                 .flatten
                 .reduce :+
 
-      control_digit = sum % 10
+      control_digit = (10 - (sum % 10)) % 10
 
       (base << control_digit).join
     end
