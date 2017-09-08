@@ -1,7 +1,6 @@
 require 'helper'
 
 class TestFFakerUniqueUtils < Test::Unit::TestCase
-
   def test_generates_unique_values
     unique_object = FFaker::UniqueUtils.new(FFaker::Name, 10_000)
 
