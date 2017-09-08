@@ -1,5 +1,6 @@
 require 'ffaker/utils/array_utils'
 require 'ffaker/utils/random_utils'
+require 'ffaker/utils/unique_utils'
 
 module FFaker
   module ModuleUtils
@@ -27,6 +28,10 @@ module FFaker
             .gsub(/([a-z\d])([A-Z])/, '\1_\2')
             .tr('-', '_')
             .downcase
+    end
+
+    def unique(max_retries = 10_000)
+      @unique_generator ||= FFaker::UniqueUtils.new(self, max_retries)
     end
   end
 end
