@@ -29,12 +29,12 @@ class TestFakerNameAR < Test::Unit::TestCase
   end
 
   def test_name_male
-    expected_list = @tester::FIRST_NAMES_MALE.product(@tester::LAST_NAMES).map { |set| set.join(' ') }
-    assert_include(expected_list, @tester.name_male)
+    expected = @tester::FIRST_NAMES_MALE.product(@tester::LAST_NAMES).map { |set| set.join(' ') }
+    assert_include(expected, @tester.name_male)
   end
 
   def test_name_female
-    expected_list = @tester::FIRST_NAMES_FEMALE.product(@tester::LAST_NAMES).map { |set| set.join(' ') }
-    assert_include(expected_list, @tester.name_female)
+    expected = @tester::FIRST_NAMES_FEMALE.product(@tester::LAST_NAMES).map { |set| set.join(' ') }
+    assert_include(expected, @tester.name_female)
   end
 end
