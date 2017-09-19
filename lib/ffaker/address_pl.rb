@@ -68,11 +68,11 @@ module FFaker
       end
     end
 
-    def postal_code
+    def zip_code
       FFaker.numerify('##-###')
     end
 
-    alias zip_code postal_code
+    alias postal_code zip_code
 
     def street_prefix
       fetch_sample(STREET_PREFIXES)

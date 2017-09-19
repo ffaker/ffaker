@@ -79,8 +79,10 @@ module FFaker
     private
 
     def select_sex(sex) # :nodoc:
-      given_sex = @fixed_sex ? @fixed_sex : sex
-      raise ArgumentError, "Unknown sex #{given_sex}" unless GENDERS.include?(given_sex)
+      @fixed_sex ||= nil
+      given_sex = @fixed_sex || sex
+      raise ArgumentError, "Unknown sex #{given_sex}" \
+        unless GENDERS.include?(given_sex)
       given_sex == :random ? GENDERS[rand(0..1)] : given_sex
     end
   end

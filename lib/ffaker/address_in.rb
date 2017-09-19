@@ -9,13 +9,11 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    ZIP_FORMATS = ['######'].freeze
-
-    def pincode
-      FFaker.numerify(fetch_sample(ZIP_FORMATS))
+    def zip_code
+      FFaker.numerify('######')
     end
 
-    alias zip_code pincode
+    alias pincode zip_code
 
     def state
       fetch_sample(STATE)

@@ -13,11 +13,10 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    ZIP_FORMATS = ['#####'].freeze
     STREET_NBR_FORMATS = ['##', '#', '# a', '# b', '###', '# a #', '# b #'].freeze
 
     def zip_code
-      FFaker.numerify(fetch_sample(ZIP_FORMATS))
+      FFaker.numerify('#####')
     end
 
     def city
