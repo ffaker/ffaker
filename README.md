@@ -63,6 +63,14 @@ name will be set with data from `ffaker/data/name/first_names`.
 
 To get repeatable results in Minitest or Rspec, follow [these instructions](RANDOM.md#using-the-same-random-seed-as-your-tests).
 
+## Unique results
+
+You can get unique value from any methods in FFaker like this:
+
+```rb
+FFaker::Name.unique.name
+```
+
 ## TODO
 
 * Even though the API is pretty simple, better rdoc documentation would not hurt.

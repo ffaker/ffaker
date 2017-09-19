@@ -1,3 +1,8 @@
+## 2.7.0
+  - Add unique method [@AlexAvlonitis]
+  - Add Time.day_of_week [@tvarley]
+  - Add CompanyIT.partita_iva [@aaronsama]
+
 ## 2.6.0
   - Add Polish names [@walerian777]
   - Add Polish addresses [@walerian777]
