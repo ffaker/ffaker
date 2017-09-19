@@ -5,7 +5,7 @@ require 'helper'
 class TestFakerTime < Test::Unit::TestCase
   include DeterministicHelper
 
-  assert_methods_are_deterministic(FFaker::Time, :date, :datetime, :month)
+  assert_methods_are_deterministic(FFaker::Time, :date, :datetime, :month, :day_of_week)
 
   def setup
     @tester = FFaker::Time
@@ -14,6 +14,14 @@ class TestFakerTime < Test::Unit::TestCase
   def test_date
     date_regex = /\A\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [-|+]\d{4}\z/
     assert_match(date_regex, @tester.date)
+  end
+
+  def test_day_of_week
+    day_of_week_short_regex = /\A(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\z/
+    day_of_week_long_regex = /\A(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\z/
+    assert_match(day_of_week_short_regex, @tester.day_of_week)
+    assert_match(day_of_week_long_regex, @tester.day_of_week(long: true))
+    assert_deterministic { @tester.day_of_week }
   end
 
   def test_date_hours_and_minutes
