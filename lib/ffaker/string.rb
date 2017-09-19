@@ -54,11 +54,11 @@ module FFaker
         # TODO: Let ? generate nothing
         '' # We already printed its target
       when '+' then
-        tokens.unshift(token) if rand(2) == 1 # Leave the `+` on to run again
+        tokens.unshift(token) if rand(0..1) == 1 # Leave the `+` on to run again
         process_token(@last_token) # Run the last one at least once
       when '*' then
-        tokens.unshift(token) if rand(2) == 1 # Leave the `*` on to run again
-        return '' if rand(2) == 1 # Or maybe do nothing
+        tokens.unshift(token) if rand(0..1) == 1 # Leave the `*` on to run again
+        return '' if rand(0..1) == 1 # Or maybe do nothing
         process_token(@last_token) # Else run the last one again
       when '{' then
         number = ''

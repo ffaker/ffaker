@@ -17,18 +17,18 @@ module FFaker
     # @see FFaker::PhoneNumberCU::MobileOperatorsPrefix
     #
     def mobile_phone_prefix
-      MobileOperatorsPrefix[rand(MobileOperatorsPrefix.size)]
+      fetch_sample(MobileOperatorsPrefix)
     end
 
     # Return a prefix in HomeWorkOperatorsPrefix
     # @see FFaker::PhoneNumberCU::HomeWorkOperatorsPrefix
     #
     def home_work_phone_prefix
-      HomeWorkOperatorsPrefix[rand(HomeWorkOperatorsPrefix.size)]
+      fetch_sample(HomeWorkOperatorsPrefix)
     end
 
     def phone_prefix
-      OperatorsPrefix[rand(OperatorsPrefix.size)]
+      fetch_sample(OperatorsPrefix)
     end
 
     # Generates a general phone number
@@ -52,7 +52,7 @@ module FFaker
     # Generates general number
     #
     def general_phone_number
-      case rand(2)
+      case rand(0..1)
       when 0 then home_work_phone_number
       when 1 then mobile_phone_number
       end
@@ -67,7 +67,7 @@ module FFaker
     # International formats
     #
     def international_country_code
-      case rand(2)
+      case rand(0..1)
       when 0 then "00#{country_code}"
       when 1 then "+#{country_code}"
       end
@@ -86,7 +86,7 @@ module FFaker
     end
 
     def international_phone_number
-      case rand(2)
+      case rand(0..1)
       when 0 then international_mobile_phone_number
       when 1 then international_home_work_phone_number
       end
@@ -112,7 +112,7 @@ module FFaker
     end
 
     def e164_phone_number
-      case rand(2)
+      case rand(0..1)
       when 0 then e164_mobile_phone_number
       when 1 then e164_home_work_phone_number
       end
@@ -121,7 +121,7 @@ module FFaker
     # Generates phone number
     #
     def phone_number
-      case rand(3)
+      case rand(0..2)
       when 0 then general_phone_number
       when 1 then international_phone_number
       when 2 then e164_phone_number

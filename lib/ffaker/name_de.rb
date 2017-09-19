@@ -12,7 +12,7 @@ module FFaker
     PREFIXES = %w[Herr Frau Dr. Prof.].freeze
 
     def name
-      case rand(10)
+      case rand(0..9)
       when 0 then "#{prefix} #{first_name} #{last_name}"
       else "#{first_name} #{last_name}"
       end

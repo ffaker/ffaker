@@ -44,7 +44,7 @@ module FFaker
     end
 
     def name
-      case rand(8)
+      case rand(0..7)
       when 0 then first_name_male
       when 1 then first_name_female
       when 2 then "#{first_name_male} #{middle_name_male}"

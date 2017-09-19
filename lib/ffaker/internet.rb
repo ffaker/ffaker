@@ -36,7 +36,7 @@ module FFaker
         parts = shuffle(name.scan(/\w+/)).join(fetch_sample(%w[. _]))
         parts.downcase
       else
-        case rand(2)
+        case rand(0..1)
         when 0
           sanitize(Name.first_name)
         when 1
@@ -85,7 +85,7 @@ module FFaker
     end
 
     def mac(delimiter = ':')
-      rand(MAC_LIMIT).to_s(16).rjust(12, '0').scan(/.{2}/).join(delimiter)
+      rand(0...MAC_LIMIT).to_s(16).rjust(12, '0').scan(/.{2}/).join(delimiter)
     end
 
     private

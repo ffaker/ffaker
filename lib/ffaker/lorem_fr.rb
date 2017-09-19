@@ -14,7 +14,7 @@ module FFaker
     end
 
     def sentence(word_count = 4)
-      s = words(word_count + rand(6))
+      s = words(word_count + rand(0..5))
       s = s.join(' ')
       s.capitalize!
       "#{s}."
@@ -29,7 +29,7 @@ module FFaker
     alias phrases sentences
 
     def paragraph(sentence_count = 3)
-      sentences(sentence_count + rand(3)).join(' ')
+      sentences(sentence_count + rand(0..2)).join(' ')
     end
 
     def paragraphs(paragraph_count = 3)

@@ -35,7 +35,7 @@ module FFaker
     end
 
     def city
-      case rand(4)
+      case rand(0..3)
       when 0 then format('%s %s%s', city_prefix, Name.first_name, city_suffix)
       when 1 then format('%s %s', city_prefix, Name.first_name)
       when 2 then format('%s%s', Name.first_name, city_suffix)
@@ -48,11 +48,11 @@ module FFaker
     end
 
     def building_number
-      FFaker.numerify(('#' * rand(3)) << '###')
+      FFaker.numerify(('#' * rand(0..2)) << '###')
     end
 
     def street_name
-      case rand(2)
+      case rand(0..1)
       when 0 then "#{Name.last_name} #{street_suffix}"
       when 1 then "#{Name.first_name} #{street_suffix}"
       end

@@ -54,20 +54,20 @@ class TestArrayUtils < Test::Unit::TestCase
 
   def test_self_random_pick_is_deterministic
     supress_warn_output do
-      array = Array.new(10) { rand(10) }
+      array = Array.new(10) { rand(0..9) }
       assert_deterministic { FFaker::ArrayUtils.random_pick(array, 3) }
     end
   end
 
   def test_self_rand_is_deterministic
     supress_warn_output do
-      array = Array.new(10) { rand(10) }
+      array = Array.new(10) { rand(0..9) }
       assert_deterministic { FFaker::ArrayUtils.rand(array) }
     end
   end
 
   def test_self_shuffle_is_deterministic
-    array = Array.new(10) { rand(10) }
+    array = Array.new(10) { rand(0..9) }
     assert_deterministic { FFaker::ArrayUtils.shuffle(array) }
   end
 

@@ -25,7 +25,7 @@ module FFaker
 
     def municipality(st_abbr = nil)
       st_abbr ||= state_abbr
-      MUNICIPALITY[st_abbr][rand(MUNICIPALITY[st_abbr].size)]
+      MUNICIPALITY[st_abbr][rand(0...MUNICIPALITY[st_abbr].size)]
     end
 
     MUNICIPALITY = {

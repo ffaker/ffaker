@@ -42,7 +42,7 @@ module FFaker
     #   person.first_name   # => "Александр"
     #   person.patronymic   # => "Петрович"
     def with_same_sex(sex = :random)
-      @fixed_sex = sex == :random ? GENDERS[rand(2)] : sex
+      @fixed_sex = sex == :random ? GENDERS[rand(0..1)] : sex
       yield
     ensure
       @fixed_sex = nil
@@ -56,7 +56,7 @@ module FFaker
     # for_sex defaults to :random.
     def name(for_sex = :random)
       with_same_sex(for_sex) do
-        case rand(2)
+        case rand(0..1)
         when 0 then "#{last_name} #{first_name} #{patronymic}"
         else        "#{first_name} #{last_name}"
         end
@@ -86,7 +86,7 @@ module FFaker
     def select_sex(sex) # :nodoc:
       given_sex = @fixed_sex ? @fixed_sex : sex
       raise ArgumentError, "Unknown sex #{given_sex}" unless GENDERS.include?(given_sex)
-      given_sex == :random ? GENDERS[rand(2)] : given_sex
+      given_sex == :random ? GENDERS[rand(0..1)] : given_sex
     end
   end
 end

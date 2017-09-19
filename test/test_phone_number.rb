@@ -38,7 +38,7 @@ class TestPhoneNumer < Test::Unit::TestCase
   end
 
   def test_imei_with_sn
-    sn = rand(1_000_000)
+    sn = rand(0...1_000_000)
     assert_match(/\A\d{8}#{format('%06d', sn)}\d{1}\z/,
                  FFaker::PhoneNumber.imei(sn))
     assert_deterministic { FFaker::PhoneNumber.imei(sn) }

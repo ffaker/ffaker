@@ -14,7 +14,7 @@ module FFaker
     # The last Y is a modulo 11 validation code. In the case the result is 10, it will be replaced by a 'K' character
     def rut
       # Rut is gonna be between 1.000.000 and 24.999.999
-      n = rand(24_000_000) + 1_000_000
+      n = rand(1_000_000...25_000_000)
       "#{n}-#{dv(n)}"
     end
 

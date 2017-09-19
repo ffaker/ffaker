@@ -10,7 +10,7 @@ module FFaker
     POSITIONS = %w[President Manager Director Secretary Consultant].freeze
 
     def name
-      case rand(3)
+      case rand(0..2)
       when 0 then "#{Name.last_name} #{suffix}"
       when 1 then "#{Name.last_name}-#{Name.last_name}"
       when 2 then format('%s, %s and %s', Name.last_name, Name.last_name, Name.last_name)
@@ -34,7 +34,7 @@ module FFaker
     end
 
     def position
-      case rand(3)
+      case rand(0..2)
       when 0 then
         [fetch_sample(POSITION_PREFIXES), fetch_sample(POSITIONS)]
       when 1 then

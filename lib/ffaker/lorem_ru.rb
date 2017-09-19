@@ -15,7 +15,7 @@ module FFaker
     end
 
     def sentence(word_count = 7)
-      elements = words(word_count + rand(10))
+      elements = words(word_count + rand(0..9))
       elements.insert(rand(3..(elements.count - 3)), ',') if elements.count > 10
       result = elements.join(' ').gsub(' , ', ', ')
       capitalize_russian("#{result}#{sentence_type_mark}")
@@ -30,7 +30,7 @@ module FFaker
     alias phrases sentences
 
     def paragraph(sentence_count = 5)
-      sentences(sentence_count + rand(3)).join(' ')
+      sentences(sentence_count + rand(0..2)).join(' ')
     end
 
     def paragraphs(paragraph_count = 3)

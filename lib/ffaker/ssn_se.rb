@@ -66,11 +66,11 @@ module FFaker
     end
 
     def get_random_region_even
-      rand(499) * 2
+      rand(0..498) * 2
     end
 
     def get_random_region_odd
-      rand(499) * 2 + 1
+      rand(0..498) * 2 + 1
     end
 
     def three_character_string(number)

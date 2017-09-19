@@ -19,7 +19,7 @@ module FFaker
     end
 
     def phone_number
-      case rand(2)
+      case rand(0..1)
       when 0 then home_phone_number
       when 1 then mobile_phone_number
       end

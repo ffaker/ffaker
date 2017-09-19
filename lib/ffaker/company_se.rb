@@ -8,7 +8,7 @@ module FFaker
     SUFFIXES = %w[AB Aktiebolag Ab].freeze
 
     def name
-      case rand(4)
+      case rand(0..3)
       when 0 then "#{NameSE.last_name} #{suffix}"
       when 1 then "#{NameSE.last_name}-#{NameSE.last_name}"
       when 2 then "#{NameSE.last_name}-#{NameSE.last_name} #{suffix}"

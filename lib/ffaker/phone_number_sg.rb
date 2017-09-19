@@ -67,7 +67,7 @@ module FFaker
 
     # generates mobile or home/work number
     def phone_number
-      case rand(3)
+      case rand(0..2)
       when 0 then fixed_line_number
       when 1 then mobile_number
       when 2 then mobile_or_pager_number

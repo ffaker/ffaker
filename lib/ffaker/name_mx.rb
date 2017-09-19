@@ -27,7 +27,7 @@ module FFaker
     def full_name_prefix(gender = :any)
       case gender
       when :any then
-        case rand(9)
+        case rand(0..8)
         when 0, 3, 6, 8 then "#{female_prefix} #{female_name} #{paternal_last_names}"
         else "#{male_prefix} #{male_name} #{paternal_last_names}"
         end
@@ -41,7 +41,7 @@ module FFaker
     def full_name_no_prefix(gender = :any)
       case gender
       when :any then
-        case rand(9)
+        case rand(0..8)
         when 0, 3, 6, 8 then "#{female_name} #{paternal_last_names}"
         else "#{male_name} #{paternal_last_names}"
         end
@@ -53,7 +53,7 @@ module FFaker
 
     # Male first name and possibly middle name
     def male_name
-      case rand(9)
+      case rand(0..8)
       when 0, 5 then "#{first_name(:male)} #{middle_name(:male)}"
       else first_name(:male)
       end
@@ -61,7 +61,7 @@ module FFaker
 
     # Female first name and possibly middle name
     def female_name
-      case rand(9)
+      case rand(0..8)
       when 0, 5 then "#{first_name(:female)} #{middle_name(:female)}"
       else first_name(:female)
       end
@@ -70,7 +70,7 @@ module FFaker
     # A single name according to gender parameter
     def name(gender = :any)
       case gender
-      when :any then rand(2) == 0 ? name(:male) : name(:female)
+      when :any then rand(0..1) == 0 ? name(:male) : name(:female)
       when :male then fetch_sample(MALE_FIRST_NAMES)
       when :female then fetch_sample(FEMALE_FIRST_NAMES)
       else raise ArgumentError, 'Invalid gender, must be one of :any, :male, :female'

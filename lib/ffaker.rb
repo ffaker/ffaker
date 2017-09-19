@@ -17,7 +17,7 @@ module FFaker
   end
 
   def self.numerify(*masks)
-    fetch_sample(masks.flatten).gsub(/#/) { rand(10).to_s }
+    fetch_sample(masks.flatten).gsub(/#/) { rand(0..9).to_s }
   end
 
   def self.letterify(*masks)

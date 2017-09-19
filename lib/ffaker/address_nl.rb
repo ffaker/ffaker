@@ -35,7 +35,7 @@ module FFaker
     private
 
     def random_type_of_street
-      case rand(20)
+      case rand(0..19)
       when 0 then 'weg'
       when 1 then 'boulevard'
       when 3 then 'pad'

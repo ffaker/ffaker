@@ -6,7 +6,7 @@ module FFaker
     extend self
 
     def title
-      case rand(2)
+      case rand(0..1)
       when 0 then simple_title
       when 1 then title_with_prefix
       end
@@ -21,7 +21,7 @@ module FFaker
     end
 
     def isbn
-      (rand(24_000_000_000) + 1_000_000_000).to_s
+      rand(1_000_000_000...25_000_000_000).to_s
     end
 
     def description(sentence_count = 3)

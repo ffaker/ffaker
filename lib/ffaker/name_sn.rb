@@ -32,32 +32,26 @@ module FFaker
     end
 
     def name_male
-      case rand(10)
-      when 7 then "#{prefix_male} #{first_name_male} #{last_name}"
-      when 5 then "#{prefix_male} #{first_name_male} #{last_name}"
-      when 3 then "#{first_name_male} #{last_name}"
-      when 0 then "#{first_name_male} #{last_name}"
-      else        "#{first_name_male} #{last_name}"
+      case rand(0..9)
+      when 5, 7 then "#{prefix_male} #{first_name_male} #{last_name}"
+      else           "#{first_name_male} #{last_name}"
       end
     end
 
     def name_female
-      case rand(10)
-      when 7 then "#{prefix_female} #{first_name_female} #{last_name}"
-      when 5 then "#{prefix_female} #{first_name_female} #{last_name}"
-      when 3 then "#{first_name_female} #{last_name}"
-      when 0 then "#{first_name_female} #{last_name}"
-      else        "#{first_name_female} #{last_name}"
+      case rand(0..9)
+      when 5, 7 then "#{prefix_female} #{first_name_female} #{last_name}"
+      else           "#{first_name_female} #{last_name}"
       end
     end
 
     def name_sn
-      case rand(12)
-      when 9 then "#{prefix_female} #{first_name_female} #{last_name}"
-      when 7 then "#{prefix_male} #{first_name_male} #{last_name}"
-      when 5 then "#{first_name_male} #{last_name}"
+      case rand(0..5)
+      when 0 then "#{prefix_female} #{first_name_female} #{last_name}"
+      when 1 then "#{prefix_male} #{first_name_male} #{last_name}"
+      when 2 then "#{first_name_male} #{last_name}"
       when 3 then "#{first_name_female} #{last_name}"
-      when 0 then "#{first_name_male} #{last_name}"
+      when 4 then "#{first_name_male} #{last_name}"
       else        "#{first_name_female} #{last_name}"
       end
     end

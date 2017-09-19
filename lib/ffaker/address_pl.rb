@@ -62,7 +62,7 @@ module FFaker
     end
 
     def secondary_number # :nodoc:
-      case rand(2)
+      case rand(0..1)
       when 0 then " m. #{building_number}"
       when 1 then "/#{building_number}"
       end

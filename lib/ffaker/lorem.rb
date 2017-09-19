@@ -19,7 +19,7 @@ module FFaker
     end
 
     def sentence(word_count = 4)
-      first_word, *last_words = words(word_count + rand(5) + 1)
+      first_word, *last_words = words(word_count + rand(1..5))
       if last_words.nil?
         first_word.capitalize
       else
@@ -36,7 +36,7 @@ module FFaker
     alias phrases sentences
 
     def paragraph(sentence_count = 3)
-      sentences(sentence_count + rand(3)).join(' ')
+      sentences(sentence_count + rand(0..2)).join(' ')
     end
 
     def paragraphs(paragraph_count = 3)

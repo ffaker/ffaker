@@ -31,7 +31,7 @@ module FFaker
     MOBILE_PHONE_PREFIX = %w[70 72 73 76 74].freeze
 
     def phone_number
-      case rand(2)
+      case rand(0..1)
       when 0 then home_work_phone_number
       when 1 then mobile_phone_number
       end
@@ -46,7 +46,7 @@ module FFaker
     end
 
     def international_phone_number
-      case rand(2)
+      case rand(0..1)
       when 0 then international_mobile_phone_number
       when 1 then international_home_work_phone_number
       end

@@ -6,24 +6,24 @@ module FFaker
     extend self
 
     def phone_number
-      FFaker.numerify case rand(20)
-                      when      0 then "#{area_code}-#{exchange_code}-#### x#####"
-                      when      1 then "#{area_code}-#{exchange_code}-#### x####"
-                      when      2 then "#{area_code}-#{exchange_code}-#### x###"
+      FFaker.numerify case rand(0..19)
+                      when 0 then "#{area_code}-#{exchange_code}-#### x#####"
+                      when 1 then "#{area_code}-#{exchange_code}-#### x####"
+                      when 2 then "#{area_code}-#{exchange_code}-#### x###"
                       when 3..4 then "#{area_code}-#{exchange_code}-####"
-                      when      5 then "#{area_code}.#{exchange_code}.#### x#####"
-                      when      6 then "#{area_code}.#{exchange_code}.#### x####"
-                      when      7 then "#{area_code}.#{exchange_code}.#### x###"
+                      when 5 then "#{area_code}.#{exchange_code}.#### x#####"
+                      when 6 then "#{area_code}.#{exchange_code}.#### x####"
+                      when 7 then "#{area_code}.#{exchange_code}.#### x###"
                       when 8..9 then "#{area_code}.#{exchange_code}.####"
-                      when     10 then "(#{area_code})#{exchange_code}-#### x#####"
-                      when     11 then "(#{area_code})#{exchange_code}-#### x####"
-                      when     12 then "(#{area_code})#{exchange_code}-#### x###"
+                      when 10 then "(#{area_code})#{exchange_code}-#### x#####"
+                      when 11 then "(#{area_code})#{exchange_code}-#### x####"
+                      when 12 then "(#{area_code})#{exchange_code}-#### x###"
                       when 13..14 then "(#{area_code})#{exchange_code}-####"
-                      when     15 then "1-#{area_code}-#{exchange_code}-#### x#####"
-                      when     16 then "1-#{area_code}-#{exchange_code}-#### x####"
-                      when     17 then "1-#{area_code}-#{exchange_code}-#### x###"
+                      when 15 then "1-#{area_code}-#{exchange_code}-#### x#####"
+                      when 16 then "1-#{area_code}-#{exchange_code}-#### x####"
+                      when 17 then "1-#{area_code}-#{exchange_code}-#### x###"
                       when 18..19 then "1-#{area_code}-#{exchange_code}-####"
-      end
+                      end
     end
 
     def area_code
@@ -56,7 +56,7 @@ module FFaker
       # AA-BBBBBB-CCCCCC-D
       characters = Array.new(15, 0)
       rbi_codes  = %w[01 10 30 33 35 44 45 49 50 51 52 53 54 86 91 98 99]
-      serial_number ||= rand(1_000_000)
+      serial_number ||= rand(0...1_000_000)
       serial_number = format('%06d', serial_number).chars.map(&:to_i)
       first_two_chars = fetch_sample(rbi_codes)
       characters[0, 2] = first_two_chars.chars.map(&:to_i)

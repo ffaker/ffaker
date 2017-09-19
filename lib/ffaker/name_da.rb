@@ -29,7 +29,7 @@ module FFaker
 
     def first_name(gender = :any)
       case gender
-      when :any then rand(2) == 0 ? first_name(:male) : first_name(:female)
+      when :any then rand(0..1) == 0 ? first_name(:male) : first_name(:female)
       when :male then fetch_sample(MALE_FIRST_NAMES)
       when :female then fetch_sample(FEMALE_FIRST_NAMES)
       else
@@ -48,7 +48,7 @@ module FFaker
     private
 
     def generate_name(first_name)
-      case rand(8)
+      case rand(0..7)
       when 0    then "#{prefix} #{first_name} #{last_name}"
       when 1..2 then "#{first_name} #{last_name} #{last_name}"
       else           "#{first_name} #{last_name}"

@@ -57,7 +57,7 @@ module FFaker
         fetch_sample(ESTADOS_CURP),
         fetch_sample(CONSONANTS, count: 3).join,
         fetch_sample(HOMOCLAVE),
-        rand(10)
+        rand(0..9)
       ].join
     end
   end

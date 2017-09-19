@@ -11,16 +11,14 @@ module FFaker
     extend self
 
     def last_name
-      case rand(2)
-      when 0
-        fetch_sample(AUTOCHTHONOUS_SURNAMES)
-      else
-        fetch_sample(SPANISH_SURNAMES)
+      case rand(0..1)
+      when 0 then fetch_sample(AUTOCHTHONOUS_SURNAMES)
+      else        fetch_sample(SPANISH_SURNAMES)
       end
     end
 
     def name
-      case rand(9)
+      case rand(0..8)
       when 0 then "#{prefix} #{first_name} #{last_name}"
       else        "#{first_name} #{last_name}"
       end

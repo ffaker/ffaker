@@ -41,7 +41,7 @@ module FFaker
     end
 
     def street_address
-      "#{street_name} #{rand(100)}"
+      "#{street_name} #{rand(0..99)}"
     end
 
     def full_address

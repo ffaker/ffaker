@@ -22,7 +22,7 @@ module FFaker
 
     # generates mobile or home/work number
     def phone_number
-      case rand(2)
+      case rand(0..1)
       when 0 then home_work_phone_number
       when 1 then mobile_phone_number
       end
@@ -41,7 +41,7 @@ module FFaker
     end
 
     def international_phone_number
-      case rand(2)
+      case rand(0..1)
       when 0 then international_mobile_phone_number
       when 1 then international_home_work_phone_number
       end

@@ -42,11 +42,9 @@ module FFaker
     end
 
     def user_name_random
-      variant = rand(2)
-      case variant
+      case rand(0..1)
       when 0 then user_name_variant_short
       when 1 then user_name_variant_long
-      else        user_name_variant_short
       end
     end
 

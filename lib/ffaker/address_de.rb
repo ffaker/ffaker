@@ -27,13 +27,13 @@ module FFaker
     end
 
     def street_address
-      "#{street_name} #{1 + rand(192)}"
+      "#{street_name} #{rand(1..192)}"
     end
 
     private
 
     def random_type_of_street
-      case rand(20)
+      case rand(0..19)
       when 0 then 'weg'
       when 1 then 'gasse'
       when 3 then 'hain'

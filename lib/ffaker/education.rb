@@ -28,15 +28,15 @@ module FFaker
     end
 
     def school_generic_name
-      case rand(2)
+      case rand(0..1)
       when 0 then fetch_sample(AddressUS::STATE)
       when 1 then school_name
       end
     end
 
     def school
-      case rand(5)
-      when (0..1) then
+      case rand(0..4)
+      when 0, 1 then
         "#{school_name} #{fetch_sample(SCHOOL_TYPE)}"
       when 2 then
         "#{school_generic_name} #{fetch_sample(SCHOOL_ADJ)} #{fetch_sample(SCHOOL_TYPE)}"

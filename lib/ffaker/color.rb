@@ -56,11 +56,11 @@ module FFaker
     end
 
     def random_hue_value
-      rand(360)
+      rand(0..359)
     end
 
     def random_percentage_string
-      "#{rand(100)}%"
+      "#{rand(0..99)}%"
     end
   end
 end

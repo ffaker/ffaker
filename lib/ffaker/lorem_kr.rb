@@ -14,7 +14,7 @@ module FFaker
     end
 
     def sentence(word_count = 4)
-      "#{words(word_count + rand(5) + 1).join(' ')}."
+      "#{words(word_count + rand(1..5)).join(' ')}."
     end
 
     alias phrase sentence
@@ -26,7 +26,7 @@ module FFaker
     alias phrases sentences
 
     def paragraph(sentence_count = 3)
-      sentences(sentence_count + rand(3)).join(' ')
+      sentences(sentence_count + rand(0..2)).join(' ')
     end
 
     def paragraphs(paragraph_count = 3)

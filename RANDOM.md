@@ -20,10 +20,10 @@ require 'ffaker'
 > FFaker::Random.seed
 # => 12345
 
-> 5.times.map{ FFaker::Random.rand(10) }
+> 5.times.map{ FFaker::Random.rand(0..9) }
 # => [2, 5, 1, 7, 4]
 > FFaker::Random.reset!
-> 5.times.map{ FFaker::Random.rand(10) }
+> 5.times.map{ FFaker::Random.rand(0..9) }
 # => [2, 5, 1, 7, 4]
 ```
 
