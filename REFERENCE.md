@@ -501,6 +501,25 @@
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 009928, 844785, 368696 |
 
+## FFaker::AddressJA
+
+| Method | Example |
+| ------ | ------- |
+| `address` | 242-7131 東京都荒川区安曇野市282, 842-9567 広島県大津市鶴ヶ島市579, 622-8875 東京都東村山市吉野川市193 |
+| `other_address` | 132-7798 石川県佐世保市西都市6丁目8番7号, 758-7677 長崎県日進市岐阜市5丁目2番6号, 159-6837 東京都甘楽郡宇陀市2丁目8番6号 |
+| `designated_city_address` | 066-7675 沖縄県紀の川市南区善通寺市6丁目8番9号, 219-5096 宮城県桐生市湊区桐生市787, 672-0398 奈良県姫路市南区大府市797 |
+| `tokyo_ward_address` | 661-4009 東京都葛飾区古賀市008, 955-3205 東京都港区大牟田市081, 917-4209 東京都板橋区水戸市505 |
+| `postal_code` | 839-0750, 126-4278, 164-2480 |
+| `land_number` | 287, 3丁目7番1号, 0丁目0番5号 |
+| `street` | 小諸市, 防府市, あま市 |
+| `tokyo_ward` | 板橋区, 世田谷区, 北区 |
+| `ward` | 若林区, 港区, 城東区 |
+| `village` | 留寿都村, 田野畑村, 宮田村 |
+| `designated_city` | 上野原市, 岩見沢市, 八幡平市 |
+| `city` | 奄美市, 我孫子市, 男鹿市 |
+| `county` | 上北郡, 北安曇郡, 東臼杵郡 |
+| `prefecture` | 石川県, 和歌山県, 滋賀県 |
+
 ## FFaker::AddressKR
 
 | Method | Example |
