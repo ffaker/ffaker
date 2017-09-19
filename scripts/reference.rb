@@ -8,7 +8,7 @@ ICONS = {
 
 # Get a list of sections
 def faker_modules
-  FFaker.constants.map do |const|
+  FFaker.constants.sort.map do |const|
     mod = FFaker.const_get(const)
     next unless mod.is_a?(Module)
     next if mod == FFaker::ArrayUtils
@@ -44,7 +44,7 @@ def escape(str)
   str.gsub('&', '&amp;').gsub('<', '&lt;').gsub('>', '&gt;').delete("\n")
 end
 
-sections = faker_modules.each.map do |mod|
+sections = faker_modules.map do |mod|
   lines = []
 
   methods = faker_methods(mod)
