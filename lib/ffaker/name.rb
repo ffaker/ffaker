@@ -94,13 +94,6 @@ module FFaker
       end
     end
 
-    def html_safe_last_name
-      loop do
-        t = LAST_NAMES.sample
-        return t unless t.include? "'"
-      end
-    end
-
     def prefix
       fetch_sample(PREFIXES)
     end
