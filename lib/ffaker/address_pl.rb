@@ -9,8 +9,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    STREET_PREFIXES = %w(al. ul.).freeze
-    SQUARE_PREFIXES = %w(bulwar pasaż plac skwer zaułek).freeze
+    STREET_PREFIXES = %w[al. ul.].freeze
+    SQUARE_PREFIXES = %w[bulwar pasaż plac skwer zaułek].freeze
 
     # Full Polish address with country name in French (according to Universal Postal Union).
     def full_address(include_country = false, include_secondary = false)

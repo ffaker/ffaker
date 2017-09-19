@@ -15,7 +15,7 @@ module FFaker
       'Australian Capital Territory', 'New South Wales', 'Queensland',
       'South Australia', 'Tasmania', 'Victoria', 'Western Australia'
     ].freeze
-    STATE_ABBR = %w(ACT NSW NT QLD SA TAS VIC WA).freeze
+    STATE_ABBR = %w[ACT NSW NT QLD SA TAS VIC WA].freeze
     # based on http://en.wikipedia.org/wiki/List_of_cities_in_Australia
     SUBURB = {
       'ACT' => {

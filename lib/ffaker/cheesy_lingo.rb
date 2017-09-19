@@ -7,8 +7,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    TITLE_1 = %w(Sharp Soft Nutty Smokey Melting Cheeky Fat Dutch Grated Cheesed Milky).freeze
-    TITLE_2 = %w(Gouda Affineurs Alpine Sheep Cows Brie Goats Coulommiers Dairy).freeze
+    TITLE_1 = %w[Sharp Soft Nutty Smokey Melting Cheeky Fat Dutch Grated Cheesed Milky].freeze
+    TITLE_2 = %w[Gouda Affineurs Alpine Sheep Cows Brie Goats Coulommiers Dairy].freeze
 
     def title
       "#{fetch_sample(TITLE_1)} #{fetch_sample(TITLE_2)}"

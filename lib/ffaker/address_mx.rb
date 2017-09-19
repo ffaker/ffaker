@@ -35,7 +35,7 @@ module FFaker
       ],
       'BC' => ['Ensenada', 'Mexicali', 'Playas de Rosarito', 'Tecate', 'Tijuana'],
       'BCS' => ['Comondú', 'La Paz', 'Loreto', 'Los Cabos', 'Mulegé'],
-      'CAMP' => %w(Calakmul Calkiní Campeche Candelaria Carmen Champotón Escárcega Hecelchakán Hopelchén Palizada Tenabo),
+      'CAMP' => %w[Calakmul Calkiní Campeche Candelaria Carmen Champotón Escárcega Hecelchakán Hopelchén Palizada Tenabo],
       'CHIS' => [
         'Acacoyagua', 'Acala', 'Acapetahua', 'Aldama',
         'Altamirano', 'Amatenango de la Frontera', 'Amatenango del Valle', 'Amatán', 'Angel Albino Corzo', 'Arriaga',

@@ -6,7 +6,7 @@ module FFaker
     extend self
 
     ETHNICITIES = ['African American', 'Asian/Pacific Islander', 'Caucasian', 'Hispanic', 'Native American', 'Multiracial', 'Other', 'Prefer not to respond'].freeze
-    GENDERS = %w(Male Female).freeze
+    GENDERS = %w[Male Female].freeze
 
     def drivers_license
       FFaker.bothify('?###-###-##-###-#').upcase

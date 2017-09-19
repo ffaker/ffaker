@@ -10,8 +10,8 @@ module FFaker
     extend self
 
     ZIP_FORMATS = ['#####', '#####-####'].freeze
-    CONTINENTAL_STATE = (STATE - %w(Hawaii Alaska))
-    CONTINENTAL_STATE_ABBR = (STATE_ABBR - %w(HI AK))
+    CONTINENTAL_STATE = (STATE - %w[Hawaii Alaska])
+    CONTINENTAL_STATE_ABBR = (STATE_ABBR - %w[HI AK])
 
     def zip_code
       FFaker.numerify(fetch_sample(ZIP_FORMATS))

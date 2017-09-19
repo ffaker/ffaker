@@ -1,18 +1,19 @@
 # encoding: utf-8
 # frozen_string_literal: true
+
 module FFaker
   module AddressKR
     extend ModuleUtils
     extend self
 
-    BUILDING_DONGS = %w(가 나 다 라 마 바 ## ###).freeze
-    BUILDING_SUFFIXES = %w(빌라 아파트 연립 마을 타운 타워).freeze
-    STREET_SUFFIXES = %w(로 #로 가 #가 거리 길).freeze
-    TOWN_SUFFIXES = %w(동 리 마을).freeze
-    METROPOLITAN_CITIES = %w(서울특별시 부산광역시 대구광역시 인천광역시
-                             광주광역시 대전광역시 울산광역시 세종특별자치시).freeze
-    PROVINCES = %w(경기도 강원도 충청북도 충청남도 전라북도 전라남도 경상북도
-                   경상남도 제주특별자치도).freeze
+    BUILDING_DONGS = %w[가 나 다 라 마 바 ## ###].freeze
+    BUILDING_SUFFIXES = %w[빌라 아파트 연립 마을 타운 타워].freeze
+    STREET_SUFFIXES = %w[로 #로 가 #가 거리 길].freeze
+    TOWN_SUFFIXES = %w[동 리 마을].freeze
+    METROPOLITAN_CITIES = %w[서울특별시 부산광역시 대구광역시 인천광역시
+                             광주광역시 대전광역시 울산광역시 세종특별자치시].freeze
+    PROVINCES = %w[경기도 강원도 충청북도 충청남도 전라북도 전라남도 경상북도
+                   경상남도 제주특별자치도].freeze
 
     def postal_code
       FFaker.numerify('#####')

@@ -5,9 +5,9 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COUNTRY_PREFIX = %w(+33 0033 0).freeze
-    AREA_PREFIX = %w(1 2 3 4 5).freeze
-    MOBILE_PREFIX = %w(6 7).freeze
+    COUNTRY_PREFIX = %w[+33 0033 0].freeze
+    AREA_PREFIX = %w[1 2 3 4 5].freeze
+    MOBILE_PREFIX = %w[6 7].freeze
     PHONE_NUMBER = ['########', ' ## ## ## ##'].freeze
 
     def phone_number

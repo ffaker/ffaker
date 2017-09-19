@@ -75,7 +75,7 @@ class TestFakerNameRU < Test::Unit::TestCase
 
   # checks if every name is of the same sex
   def same_sex?(words, sex = :any)
-    (sex == :any ? [:male, :female] : [sex]).any? do |sex|
+    (sex == :any ? %i[male female] : [sex]).any? do |sex|
       words.all? do |word|
         [@tester::LAST_NAMES, @tester::FIRST_NAMES, @tester::PATRONYMICS].any? do |names|
           names[sex].include?(word)

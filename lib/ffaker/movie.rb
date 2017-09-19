@@ -9,9 +9,9 @@ module FFaker
       'from Hell', 'from Outer Space', 'from Mars', 'from the Black Lagoon', 'with a Thousand Faces',
       'from Across the Ocean', 'Who Fell to Earth', 'That Came to Dinner'
     ].freeze
-    COLORS = %w(Red Yellow Black White).freeze
+    COLORS = %w[Red Yellow Black White].freeze
 
-    RATINGS = %w(G PG PG-13 R NC-17).freeze # According to MPAA
+    RATINGS = %w[G PG PG-13 R NC-17].freeze # According to MPAA
 
     def title
       case rand(4)

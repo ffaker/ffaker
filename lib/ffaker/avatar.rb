@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    SUPPORTED_FORMATS = %w(png jpg bmp).freeze
+    SUPPORTED_FORMATS = %w[png jpg bmp].freeze
 
     def image(slug = nil, size = '300x300', format = 'png', bgset = nil)
       raise ArgumentError, 'Size should be specified in format 300x300' unless size =~ /^[0-9]+x[0-9]+$/

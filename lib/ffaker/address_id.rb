@@ -10,7 +10,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    STREET_PREFIX = %w(Jl Jln).freeze
+    STREET_PREFIX = %w[Jl Jln].freeze
 
     def zip_code
       FFaker.numerify '#####'

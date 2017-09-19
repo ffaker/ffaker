@@ -5,15 +5,15 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    SUFFIXES = %w(Inc and\ Sons LLC Group).freeze
-    POSITION_PREFIXES = %w(Executive Assistant General Associate).freeze
-    POSITIONS = %w(President Manager Director Secretary Consultant).freeze
+    SUFFIXES = %w[Inc and\ Sons LLC Group].freeze
+    POSITION_PREFIXES = %w[Executive Assistant General Associate].freeze
+    POSITIONS = %w[President Manager Director Secretary Consultant].freeze
 
     def name
       case rand(3)
       when 0 then "#{Name.last_name} #{suffix}"
       when 1 then "#{Name.last_name}-#{Name.last_name}"
-      when 2 then '%s, %s and %s' % [Name.last_name, Name.last_name, Name.last_name]
+      when 2 then format('%s, %s and %s', Name.last_name, Name.last_name, Name.last_name)
       end
     end
 

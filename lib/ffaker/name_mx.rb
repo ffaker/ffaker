@@ -10,9 +10,9 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    MALE_PREFIXES = %w(Sr. C.).freeze
-    FEMALE_PREFIXES = %w(Sra. Srita. C.).freeze
-    PREFIXES = %w(Sr. Sra. Srita. C.).freeze
+    MALE_PREFIXES = %w[Sr. C.].freeze
+    FEMALE_PREFIXES = %w[Sra. Srita. C.].freeze
+    PREFIXES = %w[Sr. Sra. Srita. C.].freeze
 
     # Full name according to gender and prefix, possibly with middle_name
     def full_name(gender = :any, prefix = false)

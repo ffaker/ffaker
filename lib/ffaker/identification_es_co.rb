@@ -10,8 +10,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    BLOOD_TYPE = %w(A B O AB).freeze
-    LICENSE_CATEGORY = %w(A B C).freeze
+    BLOOD_TYPE = %w[A B O AB].freeze
+    LICENSE_CATEGORY = %w[A B C].freeze
 
     def drivers_license
       how_many_numbers = 6 + rand(8)
@@ -28,7 +28,7 @@ module FFaker
     end
 
     def blood_type # RH
-      sign = fetch_sample(%w(+ -))
+      sign = fetch_sample(%w[+ -])
       "#{fetch_sample(BLOOD_TYPE)}#{sign}"
     end
 

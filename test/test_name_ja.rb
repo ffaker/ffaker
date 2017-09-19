@@ -5,8 +5,8 @@ require 'helper'
 class TestFakerNameJA < Test::Unit::TestCase
   class << self
     def startup
-      FFaker::NameJA.const_set(:FIRST_NAMES, %w(あきら フミ 三郎))
-      FFaker::NameJA.const_set(:LAST_NAMES, %w(佐藤 高橋 佐々木))
+      FFaker::NameJA.const_set(:FIRST_NAMES, %w[あきら フミ 三郎])
+      FFaker::NameJA.const_set(:LAST_NAMES, %w[佐藤 高橋 佐々木])
     end
 
     def shutdown

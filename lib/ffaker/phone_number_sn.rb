@@ -12,13 +12,13 @@ module FFaker
     #  76 =>  Tigo
     #  70 =>  Expresso
     #
-    MobileOperatorsPrefix = %w(70 76 77).freeze
+    MobileOperatorsPrefix = %w[70 76 77].freeze
 
     # Home or Work Operator prefixes
     #
     #  33 =>  Orange
     #
-    HomeWorkOperatorsPrefix = %w(33).freeze
+    HomeWorkOperatorsPrefix = %w[33].freeze
 
     # Return a prefix in MobileOperatorsPrefix
     # @see FFaker::PhoneNumberSN::MobileOperatorsPrefix

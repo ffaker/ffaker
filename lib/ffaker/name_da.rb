@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIXES = %w(Hr. Fr. Dr. Prof.).freeze
+    PREFIXES = %w[Hr. Fr. Dr. Prof.].freeze
 
     def name(gender = :any)
       generate_name(first_name(gender))

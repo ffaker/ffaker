@@ -10,10 +10,10 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    GENDERS = [:random, :female, :male].freeze
-    MALE_PREFIXES = %w(Pan).freeze
-    FEMALE_PREFIXES = %w(Pani).freeze
-    ACADEMIC_DEGREE_PREFIXES = %w(lic. inż. mgr mgr\ inż. dr dr\ hab. prof.).freeze
+    GENDERS = %i[random female male].freeze
+    MALE_PREFIXES = %w[Pan].freeze
+    FEMALE_PREFIXES = %w[Pani].freeze
+    ACADEMIC_DEGREE_PREFIXES = %w[lic. inż. mgr mgr\ inż. dr dr\ hab. prof.].freeze
     PREFIXES = (MALE_PREFIXES + FEMALE_PREFIXES + ACADEMIC_DEGREE_PREFIXES).freeze
 
     # Generates a random full name for a given gender (random by default).

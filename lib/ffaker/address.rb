@@ -5,8 +5,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COMPASS_DIRECTIONS = %w(North East West South).freeze
-    CITY_PREFIXES = COMPASS_DIRECTIONS + %w(New Lake Port)
+    COMPASS_DIRECTIONS = %w[North East West South].freeze
+    CITY_PREFIXES = COMPASS_DIRECTIONS + %w[New Lake Port]
     SEC_ADDR = ['Apt. ###', 'Suite ###'].freeze
 
     # @deprecated US specific address info. Moved into {AddressUS}
@@ -36,10 +36,10 @@ module FFaker
 
     def city
       case rand(4)
-      when 0 then '%s %s%s' % [city_prefix, Name.first_name, city_suffix]
-      when 1 then '%s %s'   % [city_prefix, Name.first_name]
-      when 2 then '%s%s'    % [Name.first_name, city_suffix]
-      when 3 then '%s%s'    % [Name.last_name, city_suffix]
+      when 0 then format('%s %s%s', city_prefix, Name.first_name, city_suffix)
+      when 1 then format('%s %s', city_prefix, Name.first_name)
+      when 2 then format('%s%s', Name.first_name, city_suffix)
+      when 3 then format('%s%s', Name.last_name, city_suffix)
       end
     end
 

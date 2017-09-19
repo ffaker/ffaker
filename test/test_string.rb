@@ -48,7 +48,7 @@ class TestString < Test::Unit::TestCase
   end
 
   def test_atom_sets
-    assert_include %w(a b c), FS.from_regexp(/[abc]/)
+    assert_include %w[a b c], FS.from_regexp(/[abc]/)
     assert_deterministic { FS.from_regexp(/[abc]/) }
   end
 

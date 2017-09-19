@@ -8,8 +8,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    CONSONANTS = %w(B C D F G H J K L M N P Q R S T V W X Y Z).freeze
-    VOWELS = %w(A E I O U).freeze
+    CONSONANTS = %w[B C D F G H J K L M N P Q R S T V W X Y Z].freeze
+    VOWELS = %w[A E I O U].freeze
     HOMOCLAVE = CONSONANTS + VOWELS + [*'0'..'9']
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -46,7 +46,7 @@ module FFaker
     # Clave Única de Registro de Población
     def curp
       all_letters = CONSONANTS + VOWELS
-      hm = %w(H M)
+      hm = %w[H M]
       date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
       [
         fetch_sample(CONSONANTS),

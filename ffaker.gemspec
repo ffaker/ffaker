@@ -21,13 +21,13 @@ Gem::Specification.new do |s|
   s.email    = 'EmmanuelOga@gmail.com'
   s.homepage = 'http://github.com/ffaker/ffaker'
 
-  s.require_paths = %w(lib)
+  s.require_paths = %w[lib]
 
   s.rdoc_options = ['--charset=UTF-8']
-  s.extra_rdoc_files = %w(README.md LICENSE Changelog.md)
+  s.extra_rdoc_files = %w[README.md LICENSE Changelog.md]
 
   # = MANIFEST =
-  s.files = %w(
+  s.files = %w[
     Changelog.md
     Gemfile
     LICENSE
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
     REFERENCE.md
     Rakefile
     ffaker.gemspec
-  ) + Dir['lib/**/*', 'scripts/*']
+  ] + Dir['lib/**/*', 'scripts/*']
   # = MANIFEST =
 
   s.test_files = Dir['test/**/*']

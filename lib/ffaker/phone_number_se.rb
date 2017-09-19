@@ -28,7 +28,7 @@ module FFaker
                              '%s-### ##'].freeze
     MOBILE_PHONE_FORMAT = ['%s#-## ## ##', '%s#-######'].freeze
     COUNTRY_PREFIX = ['+46', '0046'].freeze
-    MOBILE_PHONE_PREFIX = %w(70 72 73 76 74).freeze
+    MOBILE_PHONE_PREFIX = %w[70 72 73 76 74].freeze
 
     def phone_number
       case rand(2)

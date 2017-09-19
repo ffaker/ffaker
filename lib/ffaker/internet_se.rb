@@ -10,10 +10,10 @@ module FFaker
     extend self
 
     BYTE = [*'0'..'255'].freeze
-    HOSTS = %w(gmail.com yahoo.com hotmail.com spray.se passagen.se).freeze
-    DOMAIN_SUFFIXES = %w(se nu com).freeze
-    DISPOSABLE_HOSTS = %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info).freeze
-    SLUG_DELIMITERS = %w(- _ .).freeze
+    HOSTS = %w[gmail.com yahoo.com hotmail.com spray.se passagen.se].freeze
+    DOMAIN_SUFFIXES = %w[se nu com].freeze
+    DISPOSABLE_HOSTS = %w[mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info].freeze
+    SLUG_DELIMITERS = %w[- _ .].freeze
 
     def email(name = nil)
       "#{user_name(name)}@#{domain_name}"
@@ -68,7 +68,7 @@ module FFaker
     end
 
     def join_to_user_name(array_parts)
-      join_char = fetch_sample(%w(. _))
+      join_char = fetch_sample(%w[. _])
       array_parts.map(&:downcase).join(join_char)
     end
 

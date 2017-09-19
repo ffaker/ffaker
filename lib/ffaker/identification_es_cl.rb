@@ -21,7 +21,7 @@ module FFaker
     private
 
     def dv(rut)
-      total = rut.to_s.rjust(8, '0').split(//).zip(%w(3 2 7 6 5 4 3 2)).collect { |a, b| a.to_i * b.to_i }.inject(:+)
+      total = rut.to_s.rjust(8, '0').split(//).zip(%w[3 2 7 6 5 4 3 2]).collect { |a, b| a.to_i * b.to_i }.inject(:+)
       (11 - total % 11).to_s.gsub(/10/, 'k').gsub(/11/, '0')
     end
   end

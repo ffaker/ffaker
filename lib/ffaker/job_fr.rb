@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    JOB_ADJECTIVES = %w(general adjoint associé).freeze
+    JOB_ADJECTIVES = %w[general adjoint associé].freeze
 
     def title
       if rand(2).zero?

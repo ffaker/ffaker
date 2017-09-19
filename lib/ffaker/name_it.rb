@@ -6,7 +6,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    PREFIX = %w(Sig. Sig.ra Sig.na Dr. Dott. Dott.ssa Prof. Prof.ssa).freeze
+    PREFIX = %w[Sig. Sig.ra Sig.na Dr. Dott. Dott.ssa Prof. Prof.ssa].freeze
 
     # randomized? (ITALIAN)  prefix!
     #

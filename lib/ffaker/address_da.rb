@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    REGION = %w(Hovedstaden Sjælland Syddanmark Midtjylland Nordjylland).freeze
+    REGION = %w[Hovedstaden Sjælland Syddanmark Midtjylland Nordjylland].freeze
     STATE = REGION
 
     def zip_code

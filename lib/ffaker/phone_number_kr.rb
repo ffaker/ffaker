@@ -6,8 +6,8 @@ module FFaker
     extend self
 
     HOME_PHONE_PREFIXES =
-      %w(02 031 032 033 041 042 043 044 049 051 052 053 054 055 061 062 063 064).freeze
-    MOBILE_PHONE_PREFIXES = %w(010 011 016 019).freeze
+      %w[02 031 032 033 041 042 043 044 049 051 052 053 054 055 061 062 063 064].freeze
+    MOBILE_PHONE_PREFIXES = %w[010 011 016 019].freeze
 
     def phone_number
       case rand(2)

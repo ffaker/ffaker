@@ -10,7 +10,7 @@ module FFaker
 
   LETTERS = [*'a'..'z'].freeze
 
-  HEX = %w(0 1 2 3 4 5 6 7 8 9 A B C D E F).freeze
+  HEX = %w[0 1 2 3 4 5 6 7 8 9 A B C D E F].freeze
 
   def self.hexify(*masks)
     fetch_sample(masks.flatten).gsub(/#/) { fetch_sample(HEX) }

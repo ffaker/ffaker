@@ -9,10 +9,10 @@ module FFaker
     extend self
 
     COUNTRY_PREFIX         = '+55'.freeze
-    AREA_CODE              = %w(1# 2# 3# 4# 5# 6# 7# 8# 9#).freeze
-    HOME_WORK_PHONE_PREFIX = %w(2 3 4 5).freeze
-    MOBILE_PHONE_PREFIX    = %w(6 7 8 9 96 97 98 99).freeze
-    PHONE_NUMBER           = %w(####### ###-####).freeze
+    AREA_CODE              = %w[1# 2# 3# 4# 5# 6# 7# 8# 9#].freeze
+    HOME_WORK_PHONE_PREFIX = %w[2 3 4 5].freeze
+    MOBILE_PHONE_PREFIX    = %w[6 7 8 9 96 97 98 99].freeze
+    PHONE_NUMBER           = %w[####### ###-####].freeze
 
     # generate a random phone number
     #

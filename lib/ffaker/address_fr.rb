@@ -12,7 +12,7 @@ module FFaker
     NUM = ['#', '##', '##', '###', '####', '#-##'].freeze
     MOD = [' B', ' T', ' Q', ' BIS', ' TER', ' QUATER', '', '', '', ''].freeze
     SEP = [', ', ' '].freeze
-    TYPE = %w(rue avenue av boulevard bd impasse).freeze
+    TYPE = %w[rue avenue av boulevard bd impasse].freeze
     POSTAL_CODE_FORMATS = ['####', '#####', '97####', '2A###', '2B###'].freeze
 
     def street_address

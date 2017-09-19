@@ -4,7 +4,7 @@ module FFaker
     extend self
 
     def ingredient
-      send(%w(vegetable fruit meat herb_or_spice)[rand 4])
+      send(%w[vegetable fruit meat herb_or_spice][rand 4])
     end
 
     def vegetable

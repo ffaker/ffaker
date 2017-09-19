@@ -8,8 +8,8 @@ module FFaker
     extend self
 
     POSTAL_CODE_FORMAT        = ['#####'].freeze
-    BUILDING_NUMBER_FORMATS   = %w(## # ###).freeze
-    APPARTMENT_NUMBER_FORMATS = %w(# ## ###).freeze
+    BUILDING_NUMBER_FORMATS   = %w[## # ###].freeze
+    APPARTMENT_NUMBER_FORMATS = %w[# ## ###].freeze
 
     def country
       fetch_sample(COUNTRY)

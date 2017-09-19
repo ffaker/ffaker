@@ -55,7 +55,7 @@ module FFaker
       # IMEI Format:
       # AA-BBBBBB-CCCCCC-D
       characters = Array.new(15, 0)
-      rbi_codes  = %w(01 10 30 33 35 44 45 49 50 51 52 53 54 86 91 98 99)
+      rbi_codes  = %w[01 10 30 33 35 44 45 49 50 51 52 53 54 86 91 98 99]
       serial_number ||= rand(1_000_000)
       serial_number = format('%06d', serial_number).chars.map(&:to_i)
       first_two_chars = fetch_sample(rbi_codes)

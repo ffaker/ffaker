@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    SLUG_DELIMITERS = %w(- _ .).freeze
+    SLUG_DELIMITERS = %w[- _ .].freeze
 
     def extension
       fetch_sample(EXTENSION)
@@ -16,8 +16,8 @@ module FFaker
     end
 
     def file_name(dir = nil, name = nil, ext = nil, directory_separator = '/')
-      dir = Internet.slug unless dir
-      name = Lorem.word.downcase unless name
+      dir ||= Internet.slug
+      name ||= Lorem.word.downcase
       ext ||= extension
       [dir, name].join(directory_separator) + ".#{ext}"
     end

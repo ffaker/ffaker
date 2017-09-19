@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    GENDERS = %w(Feminino Masculino).freeze
+    GENDERS = %w[Feminino Masculino].freeze
     CPF_VERIFICATION_MULTIPLIERS = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2].freeze
     CNPJ_VERIFICATION_MULTIPLIERS = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2].freeze
 

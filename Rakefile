@@ -104,7 +104,7 @@ task release: :build do
   sh "gem push pkg/#{name}-#{version}.gem"
 end
 
-task build: [:gemspec, :reference] do
+task build: %i[gemspec reference] do
   sh 'mkdir -p pkg'
   sh "gem build #{gemspec_file}"
   sh "mv #{gem_file} pkg"

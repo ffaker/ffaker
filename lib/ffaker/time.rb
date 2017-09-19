@@ -5,8 +5,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    MONTHS = %w(January February March April May June July August September October November December).freeze
-    DAYS_OF_WEEK = %w(Monday Tuesday Wednesday Thursday Friday Saturday Sunday).freeze
+    MONTHS = %w[January February March April May June July August September October November December].freeze
+    DAYS_OF_WEEK = %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday].freeze
 
     def month
       fetch_sample(MONTHS)

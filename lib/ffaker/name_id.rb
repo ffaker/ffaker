@@ -6,8 +6,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    MALE_PREFIXES = %w(Tn.).freeze
-    FEMALE_PREFIXES = %w(Ny. Nn.).freeze
+    MALE_PREFIXES = %w[Tn.].freeze
+    FEMALE_PREFIXES = %w[Ny. Nn.].freeze
     PREFIXES = (MALE_PREFIXES + FEMALE_PREFIXES).freeze
     FIRST_NAMES = (FIRST_NAMES_FEMALE + FIRST_NAMES_MALE).freeze
 

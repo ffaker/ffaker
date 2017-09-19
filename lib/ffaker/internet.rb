@@ -6,11 +6,11 @@ module FFaker
     extend self
 
     BYTE = [*'0'..'255'].freeze
-    HOSTS = %w(gmail.com yahoo.com hotmail.com).freeze
-    DISPOSABLE_HOSTS = %w(mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info).freeze
-    DOMAIN_SUFFIXES = %w(co.uk com us ca biz info name).freeze
-    SAFE_DOMAIN_SUFFIXES = %w(org com net).freeze
-    SLUG_DELIMITERS = %w(- _ .).freeze
+    HOSTS = %w[gmail.com yahoo.com hotmail.com].freeze
+    DISPOSABLE_HOSTS = %w[mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info].freeze
+    DOMAIN_SUFFIXES = %w[co.uk com us ca biz info name].freeze
+    SAFE_DOMAIN_SUFFIXES = %w[org com net].freeze
+    SLUG_DELIMITERS = %w[- _ .].freeze
     MAC_LIMIT = 281_474_976_710_655
 
     def email(name = nil)
@@ -33,14 +33,14 @@ module FFaker
 
     def user_name(name = nil)
       if name
-        parts = shuffle(name.scan(/\w+/)).join(fetch_sample(%w(. _)))
+        parts = shuffle(name.scan(/\w+/)).join(fetch_sample(%w[. _]))
         parts.downcase
       else
         case rand(2)
         when 0
           sanitize(Name.first_name)
         when 1
-          [Name.first_name, Name.last_name].map { |n| sanitize(n) }.join(fetch_sample(%w(. _)))
+          [Name.first_name, Name.last_name].map { |n| sanitize(n) }.join(fetch_sample(%w[. _]))
         end
       end
     end

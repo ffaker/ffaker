@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    GENDERS = %w(feminino masculino).freeze
+    GENDERS = %w[feminino masculino].freeze
 
     def random
       fetch_sample(GENDERS)
