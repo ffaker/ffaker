@@ -1,3 +1,6 @@
+## 2.7.1
+  - Add Russian phone numbers [@sofaking18]
+
 ## 2.7.0
   - Add unique method [@AlexAvlonitis]
   - Add Time.day_of_week [@tvarley]
