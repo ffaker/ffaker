@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version           = '2.7.0'
   s.date              = '2017-09-19'
   s.rubyforge_project = 'ffaker'
-  s.required_ruby_version = '>= 1.9'
+  s.required_ruby_version = '>= 2.0'
 
   s.license = 'MIT'
 
