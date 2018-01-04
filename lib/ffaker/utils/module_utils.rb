@@ -16,7 +16,7 @@ module FFaker
       else
         mod_name = ancestors.first.to_s.split('::').last
         data_path = "#{FFaker::BASE_LIB_PATH}/ffaker/data/#{underscore(mod_name)}/#{underscore(const_name.to_s)}"
-        data = k File.read(data_path).split("\n")
+        data = k File.read(data_path, mode: 'r:UTF-8').split("\n")
         const_set const_name, data
         data
       end
