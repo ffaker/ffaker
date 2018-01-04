@@ -1,3 +1,10 @@
+## 2.8.0
+  - Fixes `Uncaught exception: invalid byte sequence in US-ASCII` [@thilonel]
+  - Add international numbers on PhoneNumberFR and test it [@nicolas-brousse]
+  - Clean code based on PhoneNumberBR structure [@nicolas-brousse]
+  - Drop support for ruby 1.9 [@thilonel]
+  - Replace mass require with autoload [@thilonel]
+
 ## 2.7.0
   - Add unique method [@AlexAvlonitis]
   - Add Time.day_of_week [@tvarley]
