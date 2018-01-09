@@ -89,7 +89,7 @@ class TestFakerInternet < Test::Unit::TestCase
   end
 
   def test_password
-    assert_match(/\A[a-z]+\z/, @tester.password)
+    assert_match(/\A\w+\z/, @tester.password)
   end
 
   def test_password_min_length
