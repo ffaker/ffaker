@@ -81,7 +81,7 @@ module FFaker
     def password(min_length = 8, max_length = 16)
       length =
         min_length > max_length ? min_length : fetch_sample([*min_length..max_length])
-      String.from_regexp(/[a-z]{#{length}}/)
+      String.from_regexp(/\w{#{length}}/)
     end
 
     def mac(delimiter = ':')
