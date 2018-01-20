@@ -1,3 +1,6 @@
+## 2.8.1
+  - Updated password generation [@makketagg]
+
 ## 2.8.0
   - Fixes `Uncaught exception: invalid byte sequence in US-ASCII` [@thilonel]
   - Add international numbers on PhoneNumberFR and test it [@nicolas-brousse]

@@ -1,5 +1,5 @@
 module FFaker
-  VERSION = '2.8.0'.freeze
+  VERSION = '2.8.1'.freeze
 
   require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'
