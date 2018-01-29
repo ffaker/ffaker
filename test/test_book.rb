@@ -38,4 +38,9 @@ class TestBook < Test::Unit::TestCase
     assert_match(%r{\Ahttps:\/\/robohash\.org\/.+\.png\?size=300x300\z},
                  @tester.cover)
   end
+
+  def test_orly_cover
+    assert_match(%r{\Ahttps:\/\/orly-appstore\.herokuapp\.com\/generate},
+                 @tester.orly_cover)
+  end
 end
