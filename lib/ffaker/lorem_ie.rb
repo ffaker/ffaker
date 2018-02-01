@@ -1,5 +1,5 @@
-# encoding: UTF-8
 # frozen_string_literal: true
+# encoding: UTF-8
 
 module FFaker
   module LoremIE
