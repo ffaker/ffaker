@@ -79,7 +79,7 @@ class TestFakerTime < Test::Unit::TestCase
   end
 
   def test_convert_to_time_string
-    time = @tester.send(:convert_to_time, "2012-12-12 12:12")
+    time = @tester.send(:convert_to_time, '2012-12-12 12:12')
     assert_instance_of Time, time
   end
 
