@@ -27,7 +27,7 @@ module FFaker
     alias phrases sentences
 
     def paragraph(sentence_count = 3)
-      sentences(sentence_count + rand(0..2)).join(" ")
+      sentences(sentence_count + rand(0..2)).join(' ')
     end
 
     def paragraphs(paragraph_count = 3)
