@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 require 'helper'
+require 'date'
 
 class TestFakerTime < Test::Unit::TestCase
   include DeterministicHelper
@@ -44,7 +45,7 @@ class TestFakerTime < Test::Unit::TestCase
     assert_match(month_regex, @tester.month)
   end
 
-  def test_between
+  def test_between_for_time
     from = Time.local(2015, 1, 1)
     to   = Time.local(2016, 1, 1)
 
@@ -54,5 +55,41 @@ class TestFakerTime < Test::Unit::TestCase
       assert random_date <= to, "Expected <= \"#{to}\", but got #{random_date}"
       assert_deterministic { @tester.between(from, to) }
     end
+  end
+
+  def test_between_for_string
+    from = @tester.datetime
+    to   = @tester.datetime
+    random_date = @tester.between(from, to)
+    assert_instance_of Time, random_date
+  end
+
+  def test_between_for_date
+    from = Date.new(2015, 1, 1)
+    to   = Date.new(2016, 1, 1)
+    random_date = @tester.between(from, to)
+    assert_instance_of Time, random_date
+  end
+
+  def test_between_for_datetime
+    from = DateTime.new(2015, 1, 1, 12, 12)
+    to   = DateTime.new(2016, 1, 1, 12, 12)
+    random_date = @tester.between(from, to)
+    assert_instance_of Time, random_date
+  end
+
+  def test_convert_to_time_string
+    time = @tester.send(:convert_to_time, "2012-12-12 12:12")
+    assert_instance_of Time, time
+  end
+
+  def test_convert_to_time_date
+    time = @tester.send(:convert_to_time, Date.new(2015, 1, 1))
+    assert_instance_of Time, time
+  end
+
+  def test_convert_to_time_datetime
+    time = @tester.send(:convert_to_time, DateTime.new(2015, 1, 1, 12, 12))
+    assert_instance_of Time, time
   end
 end
