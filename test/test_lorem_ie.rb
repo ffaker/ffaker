@@ -33,19 +33,19 @@ class TestLoremIE < Test::Unit::TestCase
   end
 
   def test_paragraphs
-    assert_match(SENTENCE_REGEX, FFaker::LoremIE.paragraphs.join(" "))
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.paragraphs.join(' '))
   end
 
   def test_sentences
-    assert_match(SENTENCE_REGEX, FFaker::LoremIE.sentences.join(" "))
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.sentences.join(' '))
   end
 
   def test_phrases
-    assert_match(SENTENCE_REGEX, FFaker::LoremIE.phrases.join(" "))
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.phrases.join(' '))
   end
 
   def test_words
-    assert_match(WORDS_REGEX, FFaker::LoremIE.words.join(" "))
+    assert_match(WORDS_REGEX, FFaker::LoremIE.words.join(' '))
   end
 
   def test_word
