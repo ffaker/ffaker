@@ -11,41 +11,44 @@ class TestLoremIE < Test::Unit::TestCase
     :paragraph, :paragraphs, :sentence, :sentences,
     :phrase, :phrases, :word, :words, :question
   )
-  REGEX = /\A[ -.ÁÉÍÓÚáéíóúa-z]+\z/i
+
+  SENTENCE_REGEX = /\A[ .?!áéíóúa-z]+\z/i
+  WORDS_REGEX = /\A[ áéíóúa-z]+\z/i
+  WORD_REGEX = /\A[áéíóúa-z]+\z/i
 
   def test_paragraph
-    assert_match(/\A[ -.áéíóúa-z]+\z/i, FFaker::LoremIE.paragraph)
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.paragraph)
   end
 
   def test_question
-    assert_match(/\A[ -.áéíóúa-z]+\z/i, FFaker::LoremIE.question)
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.question)
   end
 
   def test_sentence
-    assert_match(/\A[ -.áéíóúa-z]+\z/i, FFaker::LoremIE.sentence)
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.sentence)
   end
 
   def test_phrase
-    assert_match(/\A[ -.áéíóúa-z]+\z/i, FFaker::LoremIE.phrase)
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.phrase)
   end
 
   def test_paragraphs
-    assert_match(REGEX, FFaker::LoremIE.paragraphs.join(' '))
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.paragraphs.join(" "))
   end
 
   def test_sentences
-    assert_match(/\A[ -.áéíóúa-z]+\z/i, FFaker::LoremIE.sentences.join(' '))
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.sentences.join(" "))
   end
 
   def test_phrases
-    assert_match(/\A[ -.áéíóúa-z]+\z/i, FFaker::LoremIE.phrases.join(' '))
+    assert_match(SENTENCE_REGEX, FFaker::LoremIE.phrases.join(" "))
   end
 
   def test_words
-    assert_match(/\A[ -áéíóúa-z]+\z/i, FFaker::LoremIE.words.join(' '))
+    assert_match(WORDS_REGEX, FFaker::LoremIE.words.join(" "))
   end
 
   def test_word
-    assert_match(/\A[-áéíóúa-z]+\z/i, FFaker::LoremIE.word)
+    assert_match(WORD_REGEX, FFaker::LoremIE.word)
   end
 end
