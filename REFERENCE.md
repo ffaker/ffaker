@@ -78,6 +78,7 @@
  * [FFaker::LoremAR](#ffakerloremar)
  * [FFaker::LoremCN](#ffakerloremcn)
  * [FFaker::LoremFR](#ffakerloremfr)
+ * [FFaker::LoremIE](#ffakerloremie)
  * [FFaker::LoremJA](#ffakerloremja)
  * [FFaker::LoremKR](#ffakerloremkr)
  * [FFaker::LoremRU](#ffakerloremru)
@@ -1283,6 +1284,19 @@
 | `sentences` | Ferait en initiale demeurent cette preuve., Flancs et coula mais litéralement demeurent oreille., Italiques pans initiale règlalades grammaire moins son route déconcerter., Consonnia sémantique finir mot., Rhétorique vivent ils mots des., Vie où encore qu tout qui lequel., Encore delà interpelle larousse., Regard cela là au dissuader vils encore., Long sournois vivent virgulos leurs. |
 | `word` | grand, très, Oxymore |
 | `words` | vaste, passage, tas, rencontra, longtemps, Bolos, preuve, du, rencontra |
+
+## FFaker::LoremIE (irish/gaeilge)
+
+| Method | Example |
+| ------ | ------- |
+| `paragraph` | TBD |
+| `paragraphs` | TBD |
+| `phrase` | TBD |
+| `phrases` | TBD |
+| `question` | Cén dáta atá ann inniu? Conas atá tú? |
+| `sentences` | TBD |
+| `sentence` | Is fearr liom seacláid! |
+| `words` | bean, fear |
 
 ## FFaker::LoremJA
 
