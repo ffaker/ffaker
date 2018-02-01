@@ -1,4 +1,5 @@
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'helper'
 
@@ -28,7 +29,7 @@ class TestLoremIE < Test::Unit::TestCase
     assert_match(/\A[ -.áéíóúa-z]+\z/i, FFaker::LoremIE.phrase)
   end
 
-  def test_paragraphsLoremIE
+  def test_paragraphs
     assert_match(REGEX, FFaker::LoremIE.paragraphs.join(' '))
   end
 
