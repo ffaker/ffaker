@@ -53,11 +53,11 @@ module FFaker
     def convert_to_time(value)
       case value.class.name
       when 'String'
-        return DateTime.parse(value).to_time
+        DateTime.parse(value).to_time
       when 'Date', 'DateTime', 'ActiveSupport::TimeWithZone'
-        return value.to_time
+        value.to_time
       when 'Time'
-        return value
+        value
       else
         raise "FFaker cannot convert #{value.class} '#{value}' to Time"
       end
