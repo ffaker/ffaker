@@ -78,7 +78,7 @@
  * [FFaker::LoremAR](#ffakerloremar)
  * [FFaker::LoremCN](#ffakerloremcn)
  * [FFaker::LoremFR](#ffakerloremfr)
- * [FFaker::LoremIE](#ffakerloremie)
+ * [FFaker::LoremIE](#ffakerloremie-irishgaeilge)
  * [FFaker::LoremJA](#ffakerloremja)
  * [FFaker::LoremKR](#ffakerloremkr)
  * [FFaker::LoremRU](#ffakerloremru)
