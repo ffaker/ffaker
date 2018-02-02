@@ -7,11 +7,11 @@ module FFaker
     extend self
 
     def word
-      fetch_sample(WORDS)
+      fetch_sample(WORD)
     end
 
     def words(num = 3)
-      fetch_sample(WORDS, count: num)
+      fetch_sample(WORD, count: num)
     end
 
     def sentence
@@ -26,8 +26,8 @@ module FFaker
 
     alias phrases sentences
 
-    def paragraph(sentence_count = 3)
-      sentences(sentence_count + rand(0..2)).join(' ')
+    def paragraph
+      fetch_sample(PARAGRAPHS)
     end
 
     def paragraphs(paragraph_count = 3)

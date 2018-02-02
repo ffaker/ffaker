@@ -1289,14 +1289,13 @@
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | TBD |
-| `paragraphs` | TBD |
-| `phrase` | TBD |
-| `phrases` | TBD |
+| `paragraphs` | Alias for `#paragraph(count)` |
+| `paragraph` | An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!" |
 | `question` | Cén dáta atá ann inniu? Conas atá tú? |
-| `sentences` | TBD |
+| `sentences` | Alias for `#sentence(count)` |
 | `sentence` | Is fearr liom seacláid! |
-| `words` | bean, fear |
+| `words` | an t-ailigéadar, an seangán, an t-ápa, an slacán, an béar, an béabhar, an bheach, an chiaróg, an t-éan, an tarbh, an féileacán, an camall, an cat, an sicín, an leon tsléibhe, an bhó, an portán, an crogall, an fia, an madra, an deilf, an t-asal, an lacha, an t-iolar, an eascann, an eilifint, an t-iasc, an chuileog, an sionnach, an frog, an sioráf, an gabhar, an ghé, an mhuc ghuine, an hamster, an seabhac, an dobhareach, an capall, an cangarú, an leon, an laghairt, an gliomach, an moncaí, an muiscít, an luchóg, an t-ochtapas, an ostrais, an dobharchú, an t-ulchabhán, an pantar, an pearóid, an mhuc, an coinín, an racún, an francach, an srónbheannach, an scairp, an mór-rón, an rón, an siorc, an chaora, an scúnc, an nathair, an seilde, an damhán, an mháthair shúigh, an t-iora, an chrasóg mhara, an eala, an tíogar, an bhuaf, an toirtís, an turcaí, an turtar, an rosualt, an míol mór, an faolchú |
+| `word` | bean, fear, nathair, seangán, broc, sciathán, béar, beach, ciaróg, bonnán, lon, torc, tarbh, gealóg, féileacán, cág, coileach, broigheall, traonach, bó, portán, corr, criogar, préachán, cuach, lúma, madra, deilf, colm, snáthaid, lacha, iolar, péist, eascann, seabhac, cuil, sionnach, loscann, gannéad, gabhar, gé, dreoilín, spágaire, cearc, foracha, faoileán, giorria, seabhac, gráinneog, cearc, eilit, feannóg, capall, cág, cruidín, saidhbhéar, ciaróg, fuiseog, gleoiseach, earc, lúnadán, míol, snag, cat, gabhlán, leamhan, luch, dobharchú, ulchabán, roilleach, riabhóg, feadóg, fuipín, reithe, luch, fiach, spideog, préachán, bradán, gobadán, gráinneog, rón, seilide, seilide, naoscach, cráin, gealbhan, iora, fia, easóg, fáinleog, eala, gabhlán, geabhróg, smólach, meantán, snag, badhbh, glasóg, ceolaire, puch, sciathán, míol, cat, faolchú, snag, dreoilín |
 
 ## FFaker::LoremJA
 
