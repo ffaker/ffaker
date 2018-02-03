@@ -813,7 +813,13 @@
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | Swan, Emu, Mammoth |
+| `FFaker::Animal.common_name` | Swan, Emu, Mammoth |
+
+## FFaker::AnimalIE (Irish/Gaeilge)
+
+| Method | Example |
+| ------ | ------- |
+| `FFaker::AnimalIE.common_name` | cat, portán, féileacán |
 
 ## FFaker::Avatar
 
@@ -1285,7 +1291,7 @@
 | `word` | grand, très, Oxymore |
 | `words` | vaste, passage, tas, rencontra, longtemps, Bolos, preuve, du, rencontra |
 
-## FFaker::LoremIE (irish/gaeilge)
+## FFaker::LoremIE (Irish/Gaeilge)
 
 | Method | Example |
 | ------ | ------- |
