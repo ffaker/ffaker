@@ -62,6 +62,7 @@ module FFaker
   autoload :Book, 'ffaker/book'
   autoload :Boolean, 'ffaker/boolean'
   autoload :CheesyLingo, 'ffaker/cheesy_lingo'
+  autoload :Code, 'ffaker/code'
   autoload :Color, 'ffaker/color'
   autoload :ColorUA, 'ffaker/color_ua'
   autoload :Company, 'ffaker/company'

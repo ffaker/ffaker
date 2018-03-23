@@ -34,6 +34,7 @@
  * [FFaker::Book](#ffakerbook)
  * [FFaker::Boolean](#ffakerboolean)
  * [FFaker::CheesyLingo](#ffakercheesylingo)
+ * [FFaker::Code](#ffakercode)
  * [FFaker::Color](#ffakercolor)
  * [FFaker::ColorUA](#ffakercolorua)
  * [FFaker::Company](#ffakercompany)
@@ -862,6 +863,12 @@
 | `title` | Sharp Cows, Cheeky Coulommiers, Milky Dairy |
 | `word` | dairy, nutty, artisan |
 | `words` | cream, milk, farmer, alpine, cheesed, salty, smoked, farmer, blue, sticky, grated, nutty, DOC, cheesecake, stinky |
+
+## FFaker::Code
+
+| Method | Example |
+| ------ | ------- |
+| `ean` | 4889726906324, 7620069705260 |
 
 ## FFaker::Color
 
