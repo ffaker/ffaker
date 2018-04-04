@@ -2,6 +2,8 @@
 
 module FFaker
   module Book
+    require 'cgi'
+
     extend ModuleUtils
     extend self
 
@@ -30,6 +32,15 @@ module FFaker
 
     def cover(slug = nil, size = '300x300', format = 'png', bgset = nil)
       FFaker::Avatar.image(slug, size, format, bgset)
+    end
+
+    def orly_cover(name = title, book_author = author, top_text = genre)
+      'https://orly-appstore.herokuapp.com/generate?'\
+        "title=#{CGI.escape(name)}&"\
+        "top_text=#{CGI.escape(top_text)}&"\
+        "author=#{CGI.escape(book_author)}&"\
+        "image_code=#{Random.rand(1..40)}&"\
+        "theme=#{Random.rand(1..16)}"
     end
 
     private
