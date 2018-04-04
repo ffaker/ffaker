@@ -1,3 +1,10 @@
+## 2.9.0
+  - Add orly book cover generator [@artplan1]
+  - Add LoremIE (Irish) [@mklemme]
+  - Improve FFaker::Time.between docs and implementation [@eikes]
+  - Fix patronymics for Никита [@ulzr]
+  - Add EAN generator [@jvanbaarsen]
+
 ## 2.8.1
   - Updated password generation [@makketagg]
 
