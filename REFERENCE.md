@@ -79,6 +79,7 @@
  * [FFaker::LoremAR](#ffakerloremar)
  * [FFaker::LoremCN](#ffakerloremcn)
  * [FFaker::LoremFR](#ffakerloremfr)
+ * [FFaker::LoremIE](#ffakerloremie-irishgaeilge)
  * [FFaker::LoremJA](#ffakerloremja)
  * [FFaker::LoremKR](#ffakerloremkr)
  * [FFaker::LoremRU](#ffakerloremru)
@@ -1290,6 +1291,18 @@
 | `sentences` | Ferait en initiale demeurent cette preuve., Flancs et coula mais litéralement demeurent oreille., Italiques pans initiale règlalades grammaire moins son route déconcerter., Consonnia sémantique finir mot., Rhétorique vivent ils mots des., Vie où encore qu tout qui lequel., Encore delà interpelle larousse., Regard cela là au dissuader vils encore., Long sournois vivent virgulos leurs. |
 | `word` | grand, très, Oxymore |
 | `words` | vaste, passage, tas, rencontra, longtemps, Bolos, preuve, du, rencontra |
+
+## FFaker::LoremIE (irish/gaeilge)
+
+| Method | Example |
+| ------ | ------- |
+| `paragraphs` | Alias for `#paragraph(count)` |
+| `paragraph` | An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!" |
+| `question` | Cén dáta atá ann inniu? Conas atá tú? |
+| `sentences` | Alias for `#sentence(count)` |
+| `sentence` | Is fearr liom seacláid! |
+| `words` | Alias for `#word(count)` |
+| `word` | bean, fear, nathair, seangán, broc, sciathán, béar, beach, ciaróg, bonnán, lon, torc, tarbh, gealóg, féileacán, cág, coileach, broigheall, traonach, bó, portán, corr, criogar, préachán, cuach, lúma, madra, deilf, colm, snáthaid, lacha, iolar, péist, eascann, seabhac, cuil, sionnach, loscann, gannéad, gabhar, gé, dreoilín, spágaire, cearc, foracha, faoileán, giorria, seabhac, gráinneog, cearc, eilit, feannóg, capall, cág, cruidín, saidhbhéar, ciaróg, fuiseog, gleoiseach, earc, lúnadán, míol, snag, cat, gabhlán, leamhan, luch, dobharchú, ulchabán, roilleach, riabhóg, feadóg, fuipín, reithe, luch, fiach, spideog, préachán, bradán, gobadán, gráinneog, rón, seilide, seilide, naoscach, cráin, gealbhan, iora, fia, easóg, fáinleog, eala, gabhlán, geabhróg, smólach, meantán, snag, badhbh, glasóg, ceolaire, puch, sciathán, míol, cat, faolchú, snag, dreoilín |
 
 ## FFaker::LoremJA
 
