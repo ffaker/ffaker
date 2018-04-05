@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 class TestImage < Test::Unit::TestCase
   include DeterministicHelper
 
-  PLACEHOLDER = 'https://via.placeholder.com/'.freeze
+  PLACEHOLDER = 'https://via.placeholder.com/'
 
   assert_methods_are_deterministic(FFaker::Image, :url)
 
@@ -12,17 +14,17 @@ class TestImage < Test::Unit::TestCase
   end
 
   def test_url
-    assert_match(/#{Regexp.quote(PLACEHOLDER)}300x300\/[0-9a-f]{6}\/[0-9a-f]{6}\.png\?text=/,
+    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}300x300\/[0-9a-f]{6}\/[0-9a-f]{6}\.png\?text=),
                  @tester.url)
   end
 
   def test_image_url_with_param
     assert_equal("#{PLACEHOLDER}300x300//.png?text=",
-                 @tester.url("300x300", "png", nil, nil))
+                 @tester.url('300x300', 'png', nil, nil))
   end
 
   def test_image_url_with_correct_size
-    assert_match(/#{Regexp.quote(PLACEHOLDER)}150x320\/[0-9a-f]{6}\/[0-9a-f]{6}\.png\?text=/,
+    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}150x320\/[0-9a-f]{6}\/[0-9a-f]{6}\.png\?text=),
                  @tester.url('150x320'))
   end
 
@@ -33,7 +35,7 @@ class TestImage < Test::Unit::TestCase
   end
 
   def test_image_url_with_supported_format
-    assert_match(/#{Regexp.quote(PLACEHOLDER)}300x300\/[0-9a-f]{6}\/[0-9a-f]{6}\.jpg\?text=/,
+    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}300x300\/[0-9a-f]{6}\/[0-9a-f]{6}\.jpg\?text=),
                  @tester.url('300x300', 'jpg'))
   end
 
@@ -44,6 +46,6 @@ class TestImage < Test::Unit::TestCase
   end
 
   def test_image_file
-    assert_equal(@tester.file.class.name, "File")
+    assert_equal(@tester.file.class.name, 'File')
   end
 end
