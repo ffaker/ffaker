@@ -93,6 +93,7 @@ module FFaker
   autoload :IdentificationESCO, 'ffaker/identification_es_co'
   autoload :IdentificationKr, 'ffaker/identification_kr'
   autoload :IdentificationMX, 'ffaker/identification_mx'
+  autoload :Image, 'ffaker/image'
   autoload :Internet, 'ffaker/internet'
   autoload :InternetSE, 'ffaker/internet_se'
   autoload :Job, 'ffaker/job'
