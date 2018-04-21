@@ -7,6 +7,6 @@ class TestCurrency < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::Currency,
-    :code, :name
+    :code, :name, :symbol
   )
 end

@@ -12,5 +12,9 @@ module FFaker
     def name
       fetch_sample(CURRENCY_NAME)
     end
+
+    def symbol
+      fetch_sample(CURRENCY_SYMBOL)
+    end
   end
 end

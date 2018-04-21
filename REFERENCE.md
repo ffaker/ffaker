@@ -944,6 +944,7 @@
 | ------ | ------- |
 | `code` | KYD, UZS, EEK |
 | `name` | Saint Helena Pound, Djibouti Franc, Canadian Dollar |
+| `symbol` | $, €, £ |
 
 ## FFaker::DizzleIpsum
 
