@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
     'Emmanuel Oga'
   ]
   s.email    = 'EmmanuelOga@gmail.com'
-  s.homepage = 'http://github.com/ffaker/ffaker'
+  s.homepage = 'https://github.com/ffaker/ffaker'
 
   s.require_paths = %w[lib]
 
