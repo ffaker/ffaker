@@ -110,6 +110,7 @@ module FFaker
   autoload :LoremIE, 'ffaker/lorem_ie'
   autoload :LoremJA, 'ffaker/lorem_ja'
   autoload :LoremKR, 'ffaker/lorem_kr'
+  autoload :LoremPL, 'ffaker/lorem_pl'
   autoload :LoremRU, 'ffaker/lorem_ru'
   autoload :LoremUA, 'ffaker/lorem_ua'
   autoload :Movie, 'ffaker/movie'
