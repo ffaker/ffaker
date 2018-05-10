@@ -38,8 +38,15 @@ class TestSSN < Test::Unit::TestCase
 
   def ssn_to_number_groups(ssn)
     groups = ssn.split('-')
-    numbers = groups.map { |g| Integer(g) }
+
+    numbers = groups
+      .map { |g| strip_leading_zeros(g) }
+      .map { |g| Integer(g) }
 
     numbers
+  end
+
+  def strip_leading_zeros(s)
+    s.gsub(/\A0+(?!\Z)/, '')
   end
 end
