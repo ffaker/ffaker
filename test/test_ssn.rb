@@ -16,10 +16,8 @@ class TestSSN < Test::Unit::TestCase
   end
 
   def test_ssn_first_group_in_valid_range
-    first_group, *_other = ssn_to_number_groups(@actual_ssn)
-
-    assert(first_group != 666)
-    assert(first_group < 900)
+    assert_no_match(/\A666/, @actual_ssn)
+    assert_match(/\A[0-8]\d{2}-\d{2}-\d{4}\Z/, @actual_ssn)
   end
 
   def test_ssn_second_group_positive
