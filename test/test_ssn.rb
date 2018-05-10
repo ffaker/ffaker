@@ -16,30 +16,12 @@ class TestSSN < Test::Unit::TestCase
     assert_match(/\A[0-8]\d{2}-\d{2}-\d{4}\Z/, @actual_ssn)
   end
 
-  def test_ssn_second_group_non_zero
-    _first, second_group, _third = ssn_to_number_groups(@actual_ssn)
+  def test_ssn_groups_non_zero
+    first_group, second_group, third_group = @actual_ssn.split('-')
+    with_all_zeros = /\A0+\Z/
 
-    assert(second_group != 0)
-  end
-
-  def test_ssn_third_group_non_zero
-    *_other, third_group = ssn_to_number_groups(@actual_ssn)
-
-    assert(third_group != 0)
-  end
-
-  private
-
-  def ssn_to_number_groups(ssn)
-    groups = ssn.split('-')
-
-    stripped_groups = groups.map { |g| strip_leading_zeros(g) }
-    numbers = stripped_groups.map { |g| Integer(g) }
-
-    numbers
-  end
-
-  def strip_leading_zeros(string)
-    string.gsub(/\A0+(?!\Z)/, '')
+    assert_no_match(with_all_zeros, first_group)
+    assert_no_match(with_all_zeros, second_group)
+    assert_no_match(with_all_zeros, third_group)
   end
 end
