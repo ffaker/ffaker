@@ -7,35 +7,39 @@ class TestSSN < Test::Unit::TestCase
 
   assert_methods_are_deterministic(FFaker::SSN, :ssn)
 
+  def setup
+    @actual_ssn = FFaker::SSN.ssn
+  end
+
   def test_ssn_format
-    assert_match(/\A\d{3}-\d{2}-\d{4}\Z/, FFaker::SSN.ssn)
+    assert_match(/\A\d{3}-\d{2}-\d{4}\Z/, @actual_ssn)
   end
 
   def test_ssn_first_group_in_valid_range
-    ssn = FFaker::SSN.ssn
-    first_group, *_other_groups = ssn.split('-')
+    first_group, *_other = ssn_to_number_groups(@actual_ssn)
 
-    first_number = Integer(first_group)
-
-    assert first_number != 666
-    assert first_number  < 900
+    assert first_group != 666
+    assert first_group  < 900
   end
 
   def test_ssn_second_group_non_zero
-    ssn = FFaker::SSN.ssn
-    _first_group, second_group, _third_group = ssn.split('-')
+    _first, second_group, _third = ssn_to_number_groups(@actual_ssn)
 
-    second_number = Integer(second_group)
-
-    assert second_number.positive?
+    assert second_group.positive?
   end
 
   def test_ssn_third_group_non_zero
-    ssn = FFaker::SSN.ssn
-    _first_group, _second_group, third_group = ssn.split('-')
+    *_other, third_group = ssn_to_number_groups(@actual_ssn)
 
-    third_number = Integer(third_group)
+    assert third_group.positive?
+  end
 
-    assert third_number.positive?
+  private
+
+  def ssn_to_number_groups(ssn)
+    groups = ssn.split('-')
+    numbers = groups.map { |g| Integer(g) }
+
+    numbers
   end
 end
