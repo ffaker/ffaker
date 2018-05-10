@@ -18,20 +18,20 @@ class TestSSN < Test::Unit::TestCase
   def test_ssn_first_group_in_valid_range
     first_group, *_other = ssn_to_number_groups(@actual_ssn)
 
-    assert first_group != 666
-    assert first_group  < 900
+    assert(first_group != 666)
+    assert(first_group  < 900)
   end
 
   def test_ssn_second_group_non_zero
     _first, second_group, _third = ssn_to_number_groups(@actual_ssn)
 
-    assert second_group.positive?
+    assert(second_group.positive?)
   end
 
   def test_ssn_third_group_non_zero
     *_other, third_group = ssn_to_number_groups(@actual_ssn)
 
-    assert third_group.positive?
+    assert(third_group.positive?)
   end
 
   private
