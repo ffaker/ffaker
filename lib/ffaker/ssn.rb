@@ -16,7 +16,7 @@ module FFaker
       third_group  = rand(1..9999)
 
       group_numbers = [first_group, second_group, third_group]
-      result = '%.3d-%.2d-%.4d' % group_numbers
+      result = format('%.3d-%.2d-%.4d', *group_numbers)
 
       result
     end
