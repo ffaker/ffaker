@@ -65,6 +65,7 @@
  * [FFaker::IdentificationESCO](#ffakeridentificationesco)
  * [FFaker::IdentificationKr](#ffakeridentificationkr)
  * [FFaker::IdentificationMX](#ffakeridentificationmx)
+ * [FFaker::Image](#ffakerimage)
  * [FFaker::Internet](#ffakerinternet)
  * [FFaker::InternetSE](#ffakerinternetse)
  * [FFaker::Job](#ffakerjob)
@@ -1149,6 +1150,13 @@
 | `rfc` | REAG870911CB2, ÑEDH820917F13, MHÑ780425ACI |
 | `rfc_persona_fisica` | BEHW7007246NE, XOQW7111161QZ, DUOY990416G12 |
 | `rfc_persona_moral` | DUJ1004129M7, HSA930723WU3, RÑI161008SJ8 |
+
+## FFaker::Image
+
+| Method | Example |
+| ------ | ------- |
+| `url` | https://via.placeholder.com/300x300/ea510c/6c7a96.png?text=, https://via.placeholder.com/300x300/4a3bb2/e6e610.png?text=, https://via.placeholder.com/300x300/4dd7da/03b818.png?text= |
+| `file` | `#<File:/tmp/20180405-97190-167hfnw>`, `#<File:/tmp/20180405-97190-1mousk0>`, `#<File:/tmp/20180405-97190-1wnqb3v>` |
 
 ## FFaker::Internet
 
