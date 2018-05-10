@@ -19,13 +19,13 @@ class TestSSN < Test::Unit::TestCase
   def test_ssn_second_group_positive
     _first, second_group, _third = ssn_to_number_groups(@actual_ssn)
 
-    assert(second_group > 0)
+    assert(second_group != 0)
   end
 
   def test_ssn_third_group_positive
     *_other, third_group = ssn_to_number_groups(@actual_ssn)
 
-    assert(third_group > 0)
+    assert(third_group != 0)
   end
 
   private
