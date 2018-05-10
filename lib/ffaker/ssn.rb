@@ -11,7 +11,7 @@ module FFaker
     # http://en.wikipedia.org/wiki/Social_Security_number
     #
     def ssn
-      first_group  = fetch_sample([rand(1..665), rand(667..899)])
+      first_group  = fetch_sample([*1..665, *667..899])
       second_group = rand(1..99)
       third_group  = rand(1..9999)
 
