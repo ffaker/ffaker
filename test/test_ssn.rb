@@ -12,10 +12,6 @@ class TestSSN < Test::Unit::TestCase
   end
 
   def test_ssn_format
-    assert_match(/\A\d{3}-\d{2}-\d{4}\Z/, @actual_ssn)
-  end
-
-  def test_ssn_first_group_in_valid_range
     assert_no_match(/\A666/, @actual_ssn)
     assert_match(/\A[0-8]\d{2}-\d{2}-\d{4}\Z/, @actual_ssn)
   end
