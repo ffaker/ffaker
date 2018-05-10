@@ -22,10 +22,10 @@ module FFaker
       years_back = params[:year_range] || 5
       latest_year = params [:year_latest] || 0
       year = (rand * years_back).ceil + (::DateTime.now.year - latest_year - years_back)
-      month = (rand * 12).ceil
-      day = (rand * 31).ceil
-      hours = params[:hours] || (rand * 12).ceil
-      minutes = params[:minutes] || (rand * 59).ceil
+      month = rand(1..12)
+      day = rand(1..Date.new(year, month, -1).day)
+      hours = params[:hours] || rand(0..23)
+      minutes = params[:minutes] || rand(0..59)
       series = [date = ::DateTime.new(year, month, day, hours, minutes)]
       if params[:series]
         params[:series].each do |some_time_after|

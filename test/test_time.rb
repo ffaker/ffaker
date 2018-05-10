@@ -28,6 +28,12 @@ class TestFakerTime < Test::Unit::TestCase
     assert_instance_of DateTime, @tester.datetime
   end
 
+  def test_datetime_random_days_and_months
+    1_000.times do
+      @tester.datetime
+    end
+  end
+
   def test_datetime_hours_and_minutes
     assert_equal(4, @tester.datetime(hours: 4, minutes: 20).hour)
     assert_equal(20, @tester.datetime(hours: 4, minutes: 20).min)
