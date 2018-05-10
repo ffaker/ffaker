@@ -8,7 +8,7 @@ class TestSSN < Test::Unit::TestCase
   assert_methods_are_deterministic(FFaker::SSN, :ssn)
 
   def test_ssn_format
-    assert_match(/\d{3}-\d{2}-\d{3}/, FFaker::SSN.ssn)
+    assert_match(/\A\d{3}-\d{2}-\d{4}\Z/, FFaker::SSN.ssn)
   end
 
   def test_ssn_first_group_in_valid_range
