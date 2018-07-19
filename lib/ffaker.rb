@@ -123,6 +123,7 @@ module FFaker
   autoload :NameCS, 'ffaker/name_cs'
   autoload :NameDA, 'ffaker/name_da'
   autoload :NameDE, 'ffaker/name_de'
+  autoload :NameES, 'ffaker/name_es'
   autoload :NameFR, 'ffaker/name_fr'
   autoload :NameGA, 'ffaker/name_ga'
   autoload :NameGR, 'ffaker/name_gr'
