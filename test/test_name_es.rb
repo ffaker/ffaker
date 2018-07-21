@@ -17,7 +17,7 @@ class TestFakerNameES < Test::Unit::TestCase
   end
 
   def test_name
-    assert_match(/\A[a-zA-ZáéíóúÁÉÍÓÚç\s]+\z/, @tester.name)
+    assert_match(/\A[a-zA-ZáéíóúñÁÉÍÓÚç\s]+\z/, @tester.name)
   end
 
   def test_name_with_prefix
