@@ -56,6 +56,7 @@ module FFaker
   autoload :AddressUS, 'ffaker/address_us'
   autoload :Airline, 'ffaker/airline'
   autoload :Animal, 'ffaker/animals'
+  autoload :AnimalCN, 'ffaker/animals_cn'
   autoload :Avatar, 'ffaker/avatar'
   autoload :AWS, 'ffaker/aws'
   autoload :BaconIpsum, 'ffaker/bacon_ipsum'
