@@ -75,6 +75,7 @@ module FFaker
   autoload :Currency, 'ffaker/currency'
   autoload :DizzleIpsum, 'ffaker/dizzle_ipsum'
   autoload :Education, 'ffaker/education'
+  autoload :EducationCN, 'ffaker/education_cn'
   autoload :Filesystem, 'ffaker/filesystem'
   autoload :Food, 'ffaker/food'
   autoload :Gender, 'ffaker/gender'
