@@ -29,6 +29,7 @@
  * [FFaker::AddressUS](#ffakeraddressus)
  * [FFaker::Airline](#ffakerairline)
  * [FFaker::Animal](#ffakeranimal)
+ * [FFaker::AnimalCN](#ffakeranimalcn)
  * [FFaker::Avatar](#ffakeravatar)
  * [FFaker::BaconIpsum](#ffakerbaconipsum)
  * [FFaker::Book](#ffakerbook)
@@ -817,6 +818,12 @@
 | Method | Example |
 | ------ | ------- |
 | `common_name` | Newt, Rabbit, Frog |
+
+## FFaker::AnimalCN
+
+| Method | Example |
+| ------ | ------- |
+| `common_name` | 蝾螈, 兔子, 青蛙 |
 
 ## FFaker::Avatar
 
