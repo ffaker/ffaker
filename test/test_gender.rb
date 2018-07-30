@@ -12,7 +12,12 @@ class TestFakerGender < Test::Unit::TestCase
   end
 
   def test_random
-    gender_regex = /\A(male|female|non-binary|agender|androgyne|bi-gender|pan-gender)\z/
+    gender_regex = /\A(?:male|female|non-binary|agender|androgyne|bi-gender|pan-gender)\z/
     assert_match(gender_regex, @tester.random)
+  end
+
+  def test_binary
+    gender_regex = /\A(?:male|female)\z/
+    assert_match(gender_regex, @tester.binary)
   end
 end
