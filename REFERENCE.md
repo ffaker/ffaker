@@ -29,6 +29,7 @@
  * [FFaker::AddressUS](#ffakeraddressus)
  * [FFaker::Airline](#ffakerairline)
  * [FFaker::Animal](#ffakeranimal)
+ * [FFaker::AnimalCN](#ffakeranimalcn)
  * [FFaker::Avatar](#ffakeravatar)
  * [FFaker::BaconIpsum](#ffakerbaconipsum)
  * [FFaker::Book](#ffakerbook)
@@ -46,6 +47,7 @@
  * [FFaker::Currency](#ffakercurrency)
  * [FFaker::DizzleIpsum](#ffakerdizzleipsum)
  * [FFaker::Education](#ffakereducation)
+ * [FFaker::EducationCN](#ffakereducationcn)
  * [FFaker::Filesystem](#ffakerfilesystem)
  * [FFaker::Food](#ffakerfood)
  * [FFaker::Gender](#ffakergender)
@@ -820,6 +822,12 @@
 | ------ | ------- |
 | `common_name` | Newt, Rabbit, Frog |
 
+## FFaker::AnimalCN
+
+| Method | Example |
+| ------ | ------- |
+| `common_name` | 蝾螈, 兔子, 青蛙 |
+
 ## FFaker::Avatar
 
 | Method | Example |
@@ -974,6 +982,15 @@
 | `school` | Windfield Institution of Education, Larkshore Academy, Larkcrest Institution |
 | `school_generic_name` | Northside, Lakeside, Larkridge |
 | `school_name` | Larkdale, Larkwell, Lakewood |
+
+## FFaker::EducationCN
+
+| Method | Example |
+| ------ | ------- |
+| `degree` | 法学硕士, 经济学硕士, 哲学学士 |
+| `major` | 信息管理与信息系统, 微电子科学与工程, 海洋科学 |
+| `school` | 中国林业大学, 临汾医科大学, 钦州学院 |
+| `location` | 华南, 福建, 集宁 |
 
 ## FFaker::Filesystem
 
