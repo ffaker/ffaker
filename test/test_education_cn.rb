@@ -1,14 +1,12 @@
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'helper'
 
 class TestFakerEducationCN < Test::Unit::TestCase
   include DeterministicHelper
 
-  assert_methods_are_deterministic(
-    FFaker::EducationCN,
-     :degree, :major, :location, :school
-  )
+  assert_methods_are_deterministic(FFaker::EducationCN, :degree, :major, :location, :school)
 
   def setup
     @tester = FFaker::EducationCN
