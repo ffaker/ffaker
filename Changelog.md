@@ -1,3 +1,13 @@
+## 2.10.0
+  - Add Image [@nicolas-brousse]
+  - Add LoremPL (Polish) [@walerian777]
+  - Add NameES (Spainsh) [@rgcamus]
+  - Fix DateTime range [@AlexWayfer]
+  - Now SSN returns valid SSN [@lilsweetcaligula]
+  - Now FFaker::Time.(date, datetime) returns Date, DateTime objects [@AlexWayfer]
+  - Now Gender.random returns non-binary genders [@kmayer]
+    - If you need binary gender use Gender.binary
+
 ## 2.9.0
   - Add orly book cover generator [@artplan1]
   - Add LoremIE (Irish) [@mklemme]
