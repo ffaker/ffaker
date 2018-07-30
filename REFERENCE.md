@@ -113,6 +113,7 @@
  * [FFaker::NameSN](#ffakernamesn)
  * [FFaker::NameTH](#ffakernameth)
  * [FFaker::NameTHEN](#ffakernamethen)
+ * [FFaker::NameTW](#ffakernametw)
  * [FFaker::NameUA](#ffakernameua)
  * [FFaker::NameVN](#ffakernamevn)
  * [FFaker::NatoAlphabet](#ffakernatoalphabet)
@@ -132,6 +133,7 @@
  * [FFaker::PhoneNumberSE](#ffakerphonenumberse)
  * [FFaker::PhoneNumberSG](#ffakerphonenumbersg)
  * [FFaker::PhoneNumberSN](#ffakerphonenumbersn)
+ * [FFaker::PhoneNumberTW](#ffakerphonenumbertw)
  * [FFaker::Product](#ffakerproduct)
  * [FFaker::SSN](#ffakerssn)
  * [FFaker::SSNMX](#ffakerssnmx)
@@ -1849,6 +1851,14 @@
 | `name` | Pricha Leelapun, Chaiyo Jetatikarn, Chompoo Narkbunnum |
 | `nick_name` | Kan, Mee, Uan |
 
+## FFaker::NameTW
+
+| Method | Example |
+| ------ | ------- |
+| `first_name` | 柏睿, 淑芬, 子涵 |
+| `last_name` | 施, 朱, 劉 |
+| `name` | 黃詠晴, 江承瀚, 簡柏宇 |
+
 ## FFaker::NameUA
 
 | Method | Example |
@@ -2088,6 +2098,18 @@
 | `mobile_phone_prefix` | 76, 70, 77 |
 | `phone_number` | 33-805-75-51, 33-897-96-92, 33-942-26-08 |
 | `short_phone_number` | 969-63-70, 407-46-54, 955-99-86 |
+
+## FFaker::PhoneNumberTW
+
+| Method | Example |
+| ------ | ------- |
+| `contry_code` | +886, +886, +886 |
+| `home_work_phone_number` | (06) 975-9084, (04) 2928-0197, (02) 3243-7078 |
+| `international_home_work_phone_number` | +82 63 2861 5413, +82 62 2927 0741, +82 2 9216 4856 |
+| `international_mobile_phone_number` | +886-3-969-7763, +886-6-785-5357, +886-4-7143-3921 |
+| `international_phone_number` | +886-971-985-461, +886-8-693-5563, +886-2-8909-8603 |
+| `mobile_phone_number` | 0907-951-170, 0919-897-665, 0958-737-927 |
+| `phone_number` | 0930-232-944, (02) 3660-6071, (07) 599-7345 |
 
 ## FFaker::Product
 
