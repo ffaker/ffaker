@@ -142,6 +142,7 @@
  * [FFaker::SSNSE](#ffakerssnse)
  * [FFaker::Skill](#ffakerskill)
  * [FFaker::Sport](#ffakersport)
+ * [FFaker::SportUS](#ffakersportus)
  * [FFaker::String](#ffakerstring)
  * [FFaker::Time](#ffakertime)
  * [FFaker::Tweet](#ffakertweet)
@@ -2171,6 +2172,12 @@
 | `tech_skills` | XHR, JavaScript, Visio, ExtJS, LAMP, Visio, SublimeText, LAMP, JSP |
 
 ## FFaker::Sport
+
+| Method | Example |
+| ------ | ------- |
+| `name` | ❗ *[name] is deprecated. For US sports please use the SportUS module* |
+
+## FFaker::SportUS
 
 | Method | Example |
 | ------ | ------- |

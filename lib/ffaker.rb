@@ -168,6 +168,7 @@ module FFaker
   autoload :Product, 'ffaker/product'
   autoload :Skill, 'ffaker/skill'
   autoload :Sport, 'ffaker/sport'
+  autoload :SportUS, 'ffaker/sport_us'
   autoload :SSN, 'ffaker/ssn'
   autoload :SSNMX, 'ffaker/ssn_mx'
   autoload :SSNSE, 'ffaker/ssn_se'
