@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestPhoneNumer < Test::Unit::TestCase
+class TestPhoneNumber < Test::Unit::TestCase
   include DeterministicHelper
 
   assert_methods_are_deterministic(
