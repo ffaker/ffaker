@@ -30,6 +30,7 @@
  * [FFaker::Airline](#ffakerairline)
  * [FFaker::Animal](#ffakeranimal)
  * [FFaker::AnimalCN](#ffakeranimalcn)
+ * [FFaker::AnimalUS](#ffakeranimalus)
  * [FFaker::Avatar](#ffakeravatar)
  * [FFaker::BaconIpsum](#ffakerbaconipsum)
  * [FFaker::Book](#ffakerbook)
@@ -142,6 +143,7 @@
  * [FFaker::SSNSE](#ffakerssnse)
  * [FFaker::Skill](#ffakerskill)
  * [FFaker::Sport](#ffakersport)
+ * [FFaker::SportUS](#ffakersportus)
  * [FFaker::String](#ffakerstring)
  * [FFaker::Time](#ffakertime)
  * [FFaker::Tweet](#ffakertweet)
@@ -820,13 +822,19 @@
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | Newt, Rabbit, Frog |
+| `common_name` | ❗ *[common_name] is deprecated. For animal names in english please use the AnimalUS module* |
 
 ## FFaker::AnimalCN
 
 | Method | Example |
 | ------ | ------- |
 | `common_name` | 蝾螈, 兔子, 青蛙 |
+
+## FFaker::AnimalUS
+
+| Method | Example |
+| ------ | ------- |
+| `common_name` | Newt, Rabbit, Frog |
 
 ## FFaker::Avatar
 
@@ -2171,6 +2179,12 @@
 | `tech_skills` | XHR, JavaScript, Visio, ExtJS, LAMP, Visio, SublimeText, LAMP, JSP |
 
 ## FFaker::Sport
+
+| Method | Example |
+| ------ | ------- |
+| `name` | ❗ *[name] is deprecated. For US sports please use the SportUS module* |
+
+## FFaker::SportUS
 
 | Method | Example |
 | ------ | ------- |
