@@ -131,6 +131,7 @@ module FFaker
   autoload :NameGA, 'ffaker/name_ga'
   autoload :NameGR, 'ffaker/name_gr'
   autoload :NameID, 'ffaker/name_id'
+  autoload :NameIN, 'ffaker/name_in'
   autoload :NameIT, 'ffaker/name_it'
   autoload :NameJA, 'ffaker/name_ja'
   autoload :NameKH, 'ffaker/name_kh'
