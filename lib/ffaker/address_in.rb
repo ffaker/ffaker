@@ -14,6 +14,10 @@ module FFaker
     end
 
     alias pincode zip_code
+    
+    def city
+      fetch_sample(CITY)
+    end
 
     def state
       fetch_sample(STATE)
