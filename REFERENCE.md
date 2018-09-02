@@ -102,6 +102,7 @@
  * [FFaker::NameGA](#ffakernamega)
  * [FFaker::NameGR](#ffakernamegr)
  * [FFaker::NameID](#ffakernameid)
+ * [FFaker::NameIN](#ffakernamein)
  * [FFaker::NameIT](#ffakernameit)
  * [FFaker::NameJA](#ffakernameja)
  * [FFaker::NameKH](#ffakernamekh)
@@ -532,7 +533,7 @@
 | Method | Example |
 | ------ | ------- |
 | `building_number` | 7028, 42724, 35719 |
-| `city` | Port Gabriella, Baileyburgh, West Jenisemouth |
+| `city` | Mumbai, Delhi, Bangalore |
 | `city_prefix` | North, East, East |
 | `city_suffix` | fort, bury, bury |
 | `country` | India, India, India |
@@ -1620,6 +1621,17 @@
 | `name` | Dona Purboyo, Ita Permata, Ronald Fajrini |
 | `name_with_prefix` | Tn. Priadi Riyadi, Ny. Juminten Juniarto, Tn. Adam Purwaningsih |
 | `prefix` | Nn., Nn., Nn. |
+
+## FFaker::NameIN
+
+| Method | Example |
+| ------ | ------- |
+| `first_name_female` | Yazhini,Aradhana,Naira  |
+| `first_name_male` | Rudra,Ivaan,Arnav |
+| `last_name` | Gupta,Ghosh,Shah |
+| `name_male` | Vedansh Acharya,Arnav Haldar,Darsh Burman |
+| `name_female` | Mahira Dhawan,Anshika Goswami,Samaira Pandey |
+| `name` | Vedant Deshpande,Divija Dixit,Shreyan Madan |
 
 ## FFaker::NameIT
 
