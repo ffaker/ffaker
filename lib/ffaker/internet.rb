@@ -45,7 +45,8 @@ module FFaker
           return adjust_username_length(username, min_length, max_length) if range_applied
           username
         when 1
-          username = [Name.first_name, Name.last_name].map { |n| sanitize(n) }.join(fetch_sample(%w[. _]))
+          username =
+            [Name.first_name, Name.last_name].map { |n| sanitize(n) }.join(fetch_sample(%w[. _]))
           return adjust_username_length(username, min_length, max_length) if range_applied
           username
         end
