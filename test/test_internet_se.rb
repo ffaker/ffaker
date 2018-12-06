@@ -35,10 +35,26 @@ class TestFakerInternetSE < Test::Unit::TestCase
 
   def test_login_user_name
     assert @tester.login_user_name.match(/[a-z]+((_|)[a-z]+)?/)
+
+    username = @tester.login_user_name(min_length: 5, max_length: 6)
+    assert username.length >= 5 && username.length <= 6
+    assert username.match(/[a-z]+((_|)[a-z]+)?/)
+
+    username = @tester.login_user_name(min_length: 15, max_length: 20)
+    assert username.length >= 15 && username.length <= 20
+    assert username.match(/[a-z]+((_|)[a-z]+)?/)
   end
 
   def test_user_name
     assert @tester.user_name.match(/[a-z]+((_|\.)[a-z]+)?/)
+
+    username = @tester.user_name(min_length: 3, max_length: 4)
+    assert username.length >= 3 && username.length <= 4
+    assert username.match(/[a-z]+((_|\.)[a-z]+)?/)
+
+    username = @tester.user_name(min_length: 1, max_length: 2)
+    assert username.length >= 1 && username.length <= 2
+    assert username.match(/[a-z]+((_|\.)[a-z]+)?/)
   end
 
   def test_user_name_with_arg

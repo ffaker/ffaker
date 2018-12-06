@@ -31,16 +31,23 @@ module FFaker
       "#{user_name(name)}@example.#{fetch_sample(SAFE_DOMAIN_SUFFIXES)}"
     end
 
-    def user_name(name = nil)
+    def user_name(name = nil, min_length: nil, max_length: nil)
+      range_applied = min_length && max_length
+
       if name
         parts = shuffle(name.scan(/\w+/)).join(fetch_sample(%w[. _]))
+        return adjust_username_length(parts.downcase, min_length, max_length) if range_applied
         parts.downcase
       else
         case rand(0..1)
         when 0
-          sanitize(Name.first_name)
+          username = sanitize(Name.first_name)
+          return adjust_username_length(username, min_length, max_length) if range_applied
+          username
         when 1
-          [Name.first_name, Name.last_name].map { |n| sanitize(n) }.join(fetch_sample(%w[. _]))
+          username = [Name.first_name, Name.last_name].map { |n| sanitize(n) }.join(fetch_sample(%w[. _]))
+          return adjust_username_length(username, min_length, max_length) if range_applied
+          username
         end
       end
     end
@@ -79,8 +86,7 @@ module FFaker
     end
 
     def password(min_length = 8, max_length = 16)
-      length =
-        min_length > max_length ? min_length : fetch_sample([*min_length..max_length])
+      length = rand_number_within_range(min_length, max_length)
       String.from_regexp(/\w{#{length}}/)
     end
 
@@ -89,6 +95,24 @@ module FFaker
     end
 
     private
+
+    def adjust_username_length(username, min_length, max_length)
+      return username if username.length >= min_length && username.length <= max_length
+
+      length = rand_number_within_range(min_length, max_length)
+      range_difference = (username.length - min_length).abs
+
+      if username.length < length
+        alphabet = ('a'..'z').to_a
+        return username + alphabet.sample(range_difference).join
+      end
+
+      return username[0..-range_difference] if username.length > length
+    end
+
+    def rand_number_within_range(min_length, max_length)
+      min_length > max_length ? min_length : fetch_sample([*min_length..max_length])
+    end
 
     def sanitize(string)
       string.gsub(/\W/, '').downcase

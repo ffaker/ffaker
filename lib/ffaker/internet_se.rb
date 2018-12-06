@@ -31,14 +31,21 @@ module FFaker
     end
 
     # Used to fake login names were dot is not allowed
-    def login_user_name
-      user_name.tr('.', '')
+    def login_user_name(min_length: nil, max_length: nil)
+      user_name(min_length: min_length, max_length: max_length).tr('.', '')
     end
 
     # Mostly used for email creation
-    def user_name(name = nil)
-      return user_name_from_name(name) if name
-      user_name_random
+    def user_name(name = nil, min_length: nil, max_length: nil)
+      range_applied = min_length && max_length
+
+      if range_applied
+        return adjust_username_length(user_name_from_name(name), min_length, max_length) if name
+        adjust_username_length(user_name_random, min_length, max_length)
+      else
+        return user_name_from_name(name) if name
+        user_name_random
+      end
     end
 
     def user_name_random
