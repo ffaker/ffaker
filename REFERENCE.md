@@ -60,6 +60,7 @@
  * [FFaker::Guid](#ffakerguid)
  * [FFaker::HTMLIpsum](#ffakerhtmlipsum)
  * [FFaker::HealthcareIpsum](#ffakerhealthcareipsum)
+ * [FFaker::HealthcareRU](#ffakerhealthcareru)
  * [FFaker::HipsterIpsum](#ffakerhipsteripsum)
  * [FFaker::Identification](#ffakeridentification)
  * [FFaker::IdentificationBR](#ffakeridentificationbr)
@@ -1102,6 +1103,12 @@
 | `sentences` | National drug code morbidity deductible carry over credit fee schedule beneficiary gatekeeper., Master policy beneficiary out-of-pocket costs permanent insurance morbidity flexible benefit plan grievance., Credentialing impaired risk covered benefit accumulation period COB administrative services only self-insured permanent insurance., Certificate of coverage HSA general agent beneficiary network health insurance portability &amp;amp; accountability act., Staff model major medical network participating provider disenroll international classification of diseases, 9th revision, clinical modification icd-9-cm after care workers compensation incurral date., Medically necessary appeal explanation of benefits risk exclusion period admitting privileges., Benefit cap ancillary services covered person PCP deductible carry over credit., Lifetime maximum special benefit networks fee schedule wellness office visit case management inpatient care master policy health insurance portability &amp;amp; accountability act., Medical necessity major medical beneficiary deductible carry over credit hospice care flexible benefit plan home health care evidence of insurability HSA. |
 | `word` | reasonable and customary, evidence of insurability, free-look period |
 | `words` | usual and customary charge, second surgical opinion, underwriting, noncancellable policy, IPA, credentialing, discharge planning, creditable coverage, medigap |
+
+## FFaker::HealthcareRU
+
+| Method | Example |
+| ------ | ------- |
+| `doctor_specialization` | Терапевт, Хирург, Стоматолог |
 
 ## FFaker::HipsterIpsum
 
