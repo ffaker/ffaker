@@ -6,6 +6,7 @@ module FFaker
   # - https://en.wikipedia.org/wiki/Telephone_numbers_in_Brazil
   # - http://www.teleco.com.br/num_cel.asp
   # - http://ddd.online24hs.com.br/
+  # - https://tecnoblog.net/24850/prefixo-10-para-grande-sao-paulo-deve-comecar-a-funcionar-em-outubro/
   #
   module PhoneNumberBR
     extend ModuleUtils
