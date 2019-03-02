@@ -17,6 +17,14 @@ class TestPhoneNumberBR < Test::Unit::TestCase
     @tester = FFaker::PhoneNumberBR
   end
 
+  def test_area_codes
+    assert(@tester::AREA_CODE.length > 0)
+    assert(@tester::AREA_CODE.sort.uniq == @tester::AREA_CODE)
+    @tester::AREA_CODE.each do |area_code|
+      assert_match(/\A[1-9]\d\z/, area_code)
+    end
+  end
+
   def test_phone_number
     10.times do
       assert_match(/\A[1-9]\d\s?9?\d{4}-?\d{4}\z/, @tester.phone_number)
