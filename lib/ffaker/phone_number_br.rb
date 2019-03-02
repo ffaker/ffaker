@@ -16,7 +16,7 @@ module FFaker
     COUNTRY_PREFIX         = '+55'.freeze
     AREA_CODE              = [
       10..19, 21..22, 24, 27..28, 31..35, 37..38, 41..49,
-      51..54, 55, 61..69, 71..75, 77, 79, 81..89, 91..99,
+      51..54, 55, 61..69, 71..75, 77, 79, 81..89, 91..99
     ].flat_map { |x| Array(x) }.map(&:to_s).freeze
 
     HOME_WORK_PHONE_PREFIX = %w[2 3 4 5].freeze

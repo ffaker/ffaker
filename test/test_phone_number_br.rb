@@ -19,7 +19,7 @@ class TestPhoneNumberBR < Test::Unit::TestCase
   end
 
   def test_area_codes
-    assert(@tester::AREA_CODE.length > 0)
+    assert(!@tester::AREA_CODE.empty?)
     assert(@tester::AREA_CODE.sort.uniq == @tester::AREA_CODE)
     @tester::AREA_CODE.each do |area_code|
       assert_match(/\A[1-9]\d\z/, area_code)
