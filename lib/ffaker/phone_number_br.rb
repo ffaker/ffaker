@@ -1,4 +1,5 @@
 # encoding: utf-8
+# frozen_string_literal: true
 
 module FFaker
   # Author: Gustavo Souza https://github.com/gustavor-souza
@@ -16,7 +17,7 @@ module FFaker
     AREA_CODE              = [
       10..19, 21..22, 24, 27..28, 31..35, 37..38, 41..49,
       51..54, 55, 61..69, 71..75, 77, 79, 81..89, 91..99,
-    ].flat_map { |x| Array(x) }.map(&:to_s)
+    ].flat_map { |x| Array(x) }.map(&:to_s).freeze
 
     HOME_WORK_PHONE_PREFIX = %w[2 3 4 5].freeze
     MOBILE_PHONE_PREFIX    = %w[6 7 8 9 96 97 98 99].freeze
