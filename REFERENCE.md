@@ -1807,29 +1807,17 @@
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Krystyna Толманов, Miss. Mariah Щиконикова, Mrs. Shizue Куприн |
-| `female_name_with_prefix_suffix` | Miss. Asia Монин DVM, Miss. Lila Томинов DVM, Miss. Cari Жеребченко Sr. |
-| `female_name_with_suffix` | Toccara Потакина III, Latisha Турлакова PhD, Lisbeth Волочаева DVM |
-| `female_prefix` | Mrs., Mrs., Mrs. |
-| `first_name` | Модест, Калерия, Руслана |
-| `first_name_female` | Keli, Brynn, Roxana |
-| `first_name_male` | Ivan, Erick, Alberto |
-| `html_safe_last_name` | Bednar, Auer, Morissette |
-| `html_safe_name` | Мария Rogahn, Демид Eichmann, Емельян Casper |
-| `last_name` | Анисимович, Штенников, Камышкина |
-| `male_name_with_prefix` | Mr. Galen Шишкова, Mr. Antwan Милославов, Mr. Titus Манукиан |
-| `male_name_with_prefix_suffix` | Mr. Millard Черноиванова PhD, Mr. Tracy Арисанова V, Mr. Dillon Иванова Jr. |
-| `male_name_with_suffix` | Horace Хрусткова V, Luis Ланятина Jr., Dewitt Цымбаева Jr. |
-| `male_prefix` | Mr., Mr., Mr. |
-| `name` | Балабанцев Семен Георгиевич, Битлер Евгений Мерабович, Дарина Барьзева |
-| `name_with_prefix` | Mrs. Lynsey Бахонов, Miss. Sade Арлушкина, Mr. Damien Хабайлова |
-| `name_with_prefix_suffix` | Miss. Elizbeth Пигулова DVM, Mr. Mac Подорожний DDS, Mr. Sammie Сеуткина V |
-| `name_with_suffix` | Terrence Коротько V, Lin Мирсианов MD, Tammie Цымбаева III |
-| `other_prefix` | Dr., Ms., Dr. |
-| `patronymic` | Павлович, Титович, Юлиановна |
-| `prefix` | Mrs., Miss., Miss. |
-| `suffix` | III, DVM, MD |
-| `with_same_sex` | ‼️ LocalJumpError: no block given (yield) |
+| `name` | Светлана Борисовна, Валентина Евгеньевна, Родион Родионович |
+| `first_name` | Венедикт, Игнатий, Елизавета |
+| `last_name` | Колесников, Щербаков, Медведева |
+| `female_name` | Маргарита Андреева, Антонина Морозова, Александра Александрова |
+| `male_name` | Иакинф Григорьев, Лукий Титов, Яков Васильев |
+| `first_name_female` | Анна, Мирослава, Любовь |
+| `first_name_male` | Никифор, Руслан, Макар |
+| `middle_name_female` | Матвеевна, Даниловна, Юрьевна |
+| `middle_name_male` | Станиславович, Ярославович, Антонович |
+| `last_name_female` | Никитина, Комарова, Белова |
+| `last_name_male` | Громов, Журавлев, Белов |
 
 ## FFaker::NameSE
 
