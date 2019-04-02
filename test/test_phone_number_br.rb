@@ -1,4 +1,5 @@
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'helper'
 
@@ -15,6 +16,14 @@ class TestPhoneNumberBR < Test::Unit::TestCase
 
   def setup
     @tester = FFaker::PhoneNumberBR
+  end
+
+  def test_area_codes
+    assert(!@tester::AREA_CODE.empty?)
+    assert(@tester::AREA_CODE.sort.uniq == @tester::AREA_CODE)
+    @tester::AREA_CODE.each do |area_code|
+      assert_match(/\A[1-9]\d\z/, area_code)
+    end
   end
 
   def test_phone_number
