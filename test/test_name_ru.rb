@@ -2,14 +2,17 @@
 
 require 'helper'
 
-class TestFakerNameRU < Test::Unit::TestCase
+class TestNameRU < Test::Unit::TestCase
   include DeterministicHelper
 
-  RU_REGEX = /[А-Я][а-я]+/
+  RU_REGEX = /\A[а-яА-Я]+\z/
+  RU_REGEX_MULTIPLE_WORDS = /\A[а-яА-Я\s]+\z/
 
   assert_methods_are_deterministic(
     FFaker::NameRU,
-    :name, :last_name, :first_name, :patronymic
+    :name, :first_name, :last_name, :female_name, :male_name,
+    :first_name_female, :first_name_male, :middle_name_female,
+    :middle_name_male, :last_name_female, :last_name_male,
   )
 
   def setup
@@ -17,70 +20,57 @@ class TestFakerNameRU < Test::Unit::TestCase
   end
 
   def test_name
-    @words = @tester.name.split
-    assert_include [2, 3], @words.size
-    assert @words.all? { |word| word.match RU_REGEX }
-  end
-
-  def test_name_sex
-    @words = @tester.name.split
-    assert same_sex?(@words)
-  end
-
-  def test_last_name
-    assert_match(RU_REGEX, @tester.last_name)
-  end
-
-  def test_male_last_name
-    assert_include @tester::LAST_NAMES[:male], @tester.last_name(:male)
+    assert_match(RU_REGEX_MULTIPLE_WORDS, @tester.name)
+    assert_include [1, 2, 3], @tester.name.split(' ').count
   end
 
   def test_first_name
+    assert_include @tester::FIRST_NAMES, @tester.first_name
     assert_match(RU_REGEX, @tester.first_name)
   end
 
-  def test_male_first_name
-    assert_include @tester::FIRST_NAMES[:male], @tester.first_name(:male)
+  def test_last_name
+    assert_include @tester::LAST_NAMES, @tester.last_name
+    assert_match(RU_REGEX, @tester.last_name)
   end
 
-  def test_patronymic
-    assert_match(RU_REGEX, @tester.patronymic)
+  def test_female_name
+    assert_match(RU_REGEX_MULTIPLE_WORDS, @tester.female_name)
+    assert_include [1, 2, 3], @tester.female_name.split(' ').count
   end
 
-  def test_male_patronymic
-    assert_include @tester::PATRONYMICS[:male], @tester.patronymic(:male)
+  def test_male_name
+    assert_match(RU_REGEX_MULTIPLE_WORDS, @tester.male_name)
+    assert_include [1, 2, 3], @tester.male_name.split(' ').count
   end
 
-  def test_with_same_sex
-    names = []
-    @tester.with_same_sex do
-      names << @tester.last_name
-      names << @tester.first_name
-      names << @tester.patronymic
-    end
-    assert same_sex?(names)
+  def test_first_name_female
+    assert_include @tester::FIRST_NAMES_FEMALE, @tester.first_name_female
+    assert_match(RU_REGEX, @tester.first_name_female)
   end
 
-  def test_with_same_sex_for_male
-    names = []
-    @tester.with_same_sex(:male) do
-      names << @tester.last_name
-      names << @tester.first_name
-      names << @tester.patronymic
-    end
-    assert same_sex?(names, :male)
+  def test_first_name_male
+    assert_include @tester::FIRST_NAMES_MALE, @tester.first_name_male
+    assert_match(RU_REGEX, @tester.first_name_male)
   end
 
-  private
+  def test_middle_name_female
+    assert_include @tester::MIDDLE_NAMES_FEMALE, @tester.middle_name_female
+    assert_match(RU_REGEX, @tester.middle_name_female)
+  end
 
-  # checks if every name is of the same sex
-  def same_sex?(words, sex = :any)
-    (sex == :any ? %i[male female] : [sex]).any? do |s|
-      words.all? do |word|
-        [@tester::LAST_NAMES, @tester::FIRST_NAMES, @tester::PATRONYMICS].any? do |names|
-          names[s].include?(word)
-        end
-      end
-    end
+  def test_middle_name_male
+    assert_include @tester::MIDDLE_NAMES_MALE, @tester.middle_name_male
+    assert_match(RU_REGEX, @tester.middle_name_male)
+  end
+
+  def test_last_name_female
+    assert_include @tester::LAST_NAMES_FEMALE, @tester.last_name_female
+    assert_match(RU_REGEX, @tester.last_name_female)
+  end
+
+  def test_last_name_male
+    assert_include @tester::LAST_NAMES_MALE, @tester.last_name_male
+    assert_match(RU_REGEX, @tester.last_name_male)
   end
 end
