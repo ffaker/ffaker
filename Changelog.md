@@ -1,5 +1,13 @@
+## development
+
 ## 2.11.0
-  - Add support Russian Doctors Specializations [@gruz0]
+  - Add HealthcareRU [@gruz0]
+  - Removing potentially offensive name [@rvisuvasam]
+  - Add NameTW, PhoneNumberTW [@pominx]
+  - Add AnimalCN, EducationCN [@ckyOL]
+  - Add NameIN [@alagu]
+  - Add AnimalPL, GenderPL, GenderJP, PhoneNumberPL [@walerian777]
+  - Now PhoneNumberBR returns only valid area_code
 
 ## 2.10.0
   - Add Image [@nicolas-brousse]
