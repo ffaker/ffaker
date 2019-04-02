@@ -85,6 +85,7 @@ module FFaker
   autoload :GenderCN, 'ffaker/gender_cn'
   autoload :GenderID, 'ffaker/gender_id'
   autoload :GenderKR, 'ffaker/gender_kr'
+  autoload :GenderPL, 'ffaker/gender_pl'
   autoload :Geolocation, 'ffaker/geolocation'
   autoload :Guid, 'ffaker/guid'
   autoload :HealthcareIpsum, 'ffaker/healthcare_ipsum'
