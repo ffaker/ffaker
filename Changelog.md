@@ -1,3 +1,6 @@
+## 2.11.0
+  - Add support Russian Doctors Specializations [@gruz0]
+
 ## 2.10.0
   - Add Image [@nicolas-brousse]
   - Add LoremPL (Polish) [@walerian777]

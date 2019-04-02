@@ -90,6 +90,7 @@ module FFaker
   autoload :Geolocation, 'ffaker/geolocation'
   autoload :Guid, 'ffaker/guid'
   autoload :HealthcareIpsum, 'ffaker/healthcare_ipsum'
+  autoload :HealthcareRU, 'ffaker/healthcare_ru'
   autoload :HipsterIpsum, 'ffaker/hipster_ipsum'
   autoload :HTMLIpsum, 'ffaker/html_ipsum'
   autoload :Identification, 'ffaker/identification'
