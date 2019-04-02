@@ -27,6 +27,18 @@ need to:
 and then
 
     require 'ffaker'
+    
+### Rails
+
+1. If using rails then add the gem to your development and test environments:
+
+```ruby
+group :development, :test do
+  gem 'ffaker'
+end
+```
+
+2. and then run `bundle install` in your terminal/BASH/command line.
 
 ## Why ffaker?
 
