@@ -166,6 +166,7 @@ module FFaker
   autoload :PhoneNumberKR, 'ffaker/phone_number_kr'
   autoload :PhoneNumberMX, 'ffaker/phone_number_mx'
   autoload :PhoneNumberNL, 'ffaker/phone_number_nl'
+  autoload :PhoneNumberPL, 'ffaker/phone_number_pl'
   autoload :PhoneNumberSE, 'ffaker/phone_number_se'
   autoload :PhoneNumberSG, 'ffaker/phone_number_sg'
   autoload :PhoneNumberSN, 'ffaker/phone_number_sn'
