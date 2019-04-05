@@ -3,15 +3,15 @@
 
 require 'helper'
 
-class TestFakerGenderJP < Test::Unit::TestCase
+class TestFakerGenderJA < Test::Unit::TestCase
   include DeterministicHelper
 
   GENDER_REGEX = /\A[女男]\z/
 
-  assert_methods_are_deterministic(FFaker::GenderJP, :random)
+  assert_methods_are_deterministic(FFaker::GenderJA, :random)
 
   def setup
-    @tester = FFaker::GenderJP
+    @tester = FFaker::GenderJA
   end
 
   def test_random

@@ -6,7 +6,7 @@
   - Add NameTW, PhoneNumberTW [@pominx]
   - Add AnimalCN, EducationCN [@ckyOL]
   - Add NameIN [@alagu]
-  - Add AnimalPL, GenderPL, GenderJP, PhoneNumberPL [@walerian777]
+  - Add AnimalPL, GenderPL, GenderJA, PhoneNumberPL [@walerian777]
   - Now PhoneNumberBR returns only valid area_code
 
 ## 2.10.0

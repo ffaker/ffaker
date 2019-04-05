@@ -5,7 +5,7 @@ module FFaker
   # Author Walerian Sobczak <walerian.sobczak@gmail.com> github.com/walerian777
   # Inspirations:
   # https://ja.wikipedia.org/wiki/%E6%80%A7_(%E7%94%9F%E7%89%A9%E5%AD%A6)
-  module GenderJP
+  module GenderJA
     extend ModuleUtils
     extend self
 
