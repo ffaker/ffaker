@@ -1,5 +1,5 @@
-# frozen_string_literal: true
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'helper'
 
@@ -33,6 +33,7 @@ class TestPhoneNumberUA < Test::Unit::TestCase
   end
 
   def international_mobile_phone_number
-    assert_match(/^\+(380)\s[0-9]{2}\s[0-9]{3}-[0-9]{4}$/, @tester.international_mobile_phone_number)
+    assert_match(/^\+(380)\s[0-9]{2}\s[0-9]{3}-[0-9]{4}$/,
+                 @tester.international_mobile_phone_number)
   end
 end
