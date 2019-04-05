@@ -139,6 +139,7 @@
  * [FFaker::PhoneNumberSG](#ffakerphonenumbersg)
  * [FFaker::PhoneNumberSN](#ffakerphonenumbersn)
  * [FFaker::PhoneNumberTW](#ffakerphonenumbertw)
+ * [FFaker::PhoneNumberUA](#ffakerphonenumberua)
  * [FFaker::Product](#ffakerproduct)
  * [FFaker::SSN](#ffakerssn)
  * [FFaker::SSNMX](#ffakerssnmx)
@@ -2142,6 +2143,16 @@
 | `international_phone_number` | +886-971-985-461, +886-8-693-5563, +886-2-8909-8603 |
 | `mobile_phone_number` | 0907-951-170, 0919-897-665, 0958-737-927 |
 | `phone_number` | 0930-232-944, (02) 3660-6071, (07) 599-7345 |
+
+## FFaker::PhoneNumberUA
+
+| Method | Example |
+| ------ | ------- |
+| `phone_number` | 062 880-8590, 066 036-1948, 067 837-5050 |
+| `home_phone_number` | 045 303-4795, 043 777-2297, 048 375-9391 |
+| `mobile_phone_number` | 095 803-8836, 097 628-9508, 063 942-2785 |
+| `international_home_phone_number` | +380 52 654-9374, +380 43 114-8453, +380 41 332-8776 |
+| `international_mobile_phone_number` | +380 99 027-1833, +380 97 032-1363, +380 93 735-5690 |
 
 ## FFaker::Product
 
