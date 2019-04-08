@@ -8,6 +8,7 @@ module FFaker
   # - http://www.teleco.com.br/num_cel.asp
   # - http://ddd.online24hs.com.br/
   # - https://tecnoblog.net/24850/prefixo-10-para-grande-sao-paulo-deve-comecar-a-funcionar-em-outubro/
+  # - http://agenciabrasil.ebc.com.br/geral/noticia/2016-10/numeros-de-celulares-de-todo-o-pais-terao-nove-digitos-partir-do-dia-6
   #
   module PhoneNumberBR
     extend ModuleUtils
@@ -20,7 +21,7 @@ module FFaker
     ].flat_map { |x| Array(x) }.map(&:to_s).freeze
 
     HOME_WORK_PHONE_PREFIX = %w[2 3 4 5].freeze
-    MOBILE_PHONE_PREFIX    = %w[6 7 8 9 96 97 98 99].freeze
+    MOBILE_PHONE_PREFIX    = %w[96 97 98 99].freeze
     PHONE_NUMBER           = %w[####### ###-####].freeze
 
     # generate a random phone number
