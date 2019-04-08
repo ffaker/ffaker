@@ -172,6 +172,7 @@ module FFaker
   autoload :PhoneNumberSG, 'ffaker/phone_number_sg'
   autoload :PhoneNumberSN, 'ffaker/phone_number_sn'
   autoload :PhoneNumberTW, 'ffaker/phone_number_tw'
+  autoload :PhoneNumberUA, 'ffaker/phone_number_ua'
   autoload :Product, 'ffaker/product'
   autoload :Skill, 'ffaker/skill'
   autoload :Sport, 'ffaker/sport'
