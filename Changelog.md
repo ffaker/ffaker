@@ -1,5 +1,8 @@
 ## development
 
+## 2.12.0
+  - Add Russian Phone Numbers [@steverovsky]
+
 ## 2.11.0
   - Add HealthcareRU [@gruz0]
   - Removing potentially offensive name [@rvisuvasam]
