@@ -1,5 +1,9 @@
 ## development
   - *BREAKING CHANGE*: Drop support of under 2.3  [@marocchino]
+  - Add PhoneNumberUA [@Volosh1n]
+  - Add SemVer [@marocchino]
+  - Remove some obselated prefix from PhoneNumberBR.mobile_phone_prefix
+    [@Kutomore]
 
 ## 2.11.0
   - Add HealthcareRU [@gruz0]
