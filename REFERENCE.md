@@ -141,6 +141,7 @@
  * [FFaker::PhoneNumberTW](#ffakerphonenumbertw)
  * [FFaker::PhoneNumberUA](#ffakerphonenumberua)
  * [FFaker::Product](#ffakerproduct)
+ * [FFaker::SemVer](#ffakersemver)
  * [FFaker::SSN](#ffakerssn)
  * [FFaker::SSNMX](#ffakerssnmx)
  * [FFaker::SSNSE](#ffakerssnse)
@@ -2163,6 +2164,13 @@
 | `model` | E-3632, K-6659, G-1806 |
 | `product` | Pyncefunc Power Video Controller, Trionewood Electric Controller, Brincefunc Gel Filter |
 | `product_name` | Input Tag System, Disc Controller, Side Amplifier |
+
+## FFaker::SemVer
+
+| Method | Example |
+| ------ | ------- |
+| `next` | 0.1.0, 1.0.0, 0.1.0 |
+| `next('2.0.0')` | 2.1.0, 2.0.1, 3.0.0 |
 
 ## FFaker::SSN
 
