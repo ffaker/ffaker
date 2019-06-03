@@ -1,4 +1,5 @@
 ## development
+  - *BREAKING CHANGE*: Drop support of under 2.3  [@marocchino]
 
 ## 2.11.0
   - Add HealthcareRU [@gruz0]
