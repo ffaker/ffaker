@@ -7,7 +7,7 @@
 
 ## 2.12.0
   - Add Russian Phone Numbers [@steverovsky]
-  - Remove invalid example from FFaker::NameRU.first_name_male [@steverovsky]
+  - Remove invalid example from NameRU.first_name_male [@steverovsky]
 
 ## 2.11.0
   - Add HealthcareRU [@gruz0]
