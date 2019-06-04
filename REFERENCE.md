@@ -140,6 +140,7 @@
  * [FFaker::PhoneNumberSN](#ffakerphonenumbersn)
  * [FFaker::PhoneNumberTW](#ffakerphonenumbertw)
  * [FFaker::PhoneNumberUA](#ffakerphonenumberua)
+ * [FFaker::PhoneNumberRU](#ffakerphonenumberru)
  * [FFaker::Product](#ffakerproduct)
  * [FFaker::SemVer](#ffakersemver)
  * [FFaker::SSN](#ffakerssn)
@@ -2154,6 +2155,23 @@
 | `mobile_phone_number` | 095 803-8836, 097 628-9508, 063 942-2785 |
 | `international_home_phone_number` | +380 52 654-9374, +380 43 114-8453, +380 41 332-8776 |
 | `international_mobile_phone_number` | +380 99 027-1833, +380 97 032-1363, +380 93 735-5690 |
+
+## FFaker::PhoneNumberRU
+
+| Method | Example |
+| ------ | ------- |
+| `international_phone_number` | +7 814 525-94-28, +7 993 053-47-43, +7 958 282-93-06 |
+| `international_mobile_phone_number` | +7 962 525-97-36, +7 961 875-56-65, +7 960 608-41-55 |
+| `international_home_work_phone_number` | +7 388 427-99-91, +7 083 571-78-62, +7 836 008-36-33 |
+| `international_toll_free_number` | +7 800 745-57-49, +7 800 918-90-04, +7 800 484-75-82 |
+| `phone_number` | 8 960 890-56-81, 8 996 412-00-49, 8 087 379-69-90 |
+| `mobile_phone_number` | 8 906 132-01-07, 8 991 856-88-45, 8 960 606-40-31 |
+| `home_work_phone_number` | 8 351 730-13-87, 8 082 945-93-47, 8 341 718-87-45 |
+| `toll_free_number` | 8 800 955-13-12, 8 800 326-24-22, 8 800 919-82-24 |
+| `international_country_code` | +7, +7, +7 |
+| `country_code` | 8, 8, 8 |
+| `home_work_phone_prefix` | 347, 072, 472 |
+| `mobile_phone_prefix` | 929, 978, 999 |
 
 ## FFaker::Product
 
