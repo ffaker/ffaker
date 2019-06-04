@@ -5,7 +5,7 @@ require 'helper'
 class TestNameRU < Test::Unit::TestCase
   include DeterministicHelper
 
-  RU_REGEX = /\A[а-яА-Я]+\z/
+  RU_REGEX = /\A[а-яА-Я]{2,}\z/
   RU_REGEX_MULTIPLE_WORDS = /\A[а-яА-Я\s]+\z/
 
   assert_methods_are_deterministic(
