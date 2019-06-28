@@ -6,7 +6,7 @@ module FFaker
 
   extend ModuleUtils
 
-  BASE_LIB_PATH = File.expand_path('..', __FILE__)
+  BASE_LIB_PATH = File.expand_path(__dir__)
 
   LETTERS = [*'a'..'z'].freeze
 
@@ -197,12 +197,12 @@ module FFaker
   module Random
     # Returns the current RNG seed.
     def self.seed
-      @random_seed ||= ::Random.new_seed
+      @seed ||= ::Random.new_seed
     end
 
     # Sets the RNG seed and creates a new internal RNG.
     def self.seed=(new_seed)
-      @random_seed = new_seed
+      @seed = new_seed
       reset!
       new_seed
     end
@@ -214,11 +214,9 @@ module FFaker
 
     # Returns a random number using an RNG with a known seed.
     def self.rand(max = nil)
-      if max
-        rng.rand(max)
-      else
-        rng.rand
-      end
+      return rng.rand(max) if max
+
+      rng.rand
     end
 
     # Returns the current Random object.

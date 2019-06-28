@@ -9,6 +9,6 @@ class TestBoolean < Test::Unit::TestCase
 
   def test_maybe
     maybe = FFaker::Boolean.maybe
-    assert (maybe == false || maybe == true)
+    assert [true, false].include?(maybe)
   end
 end

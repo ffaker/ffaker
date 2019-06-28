@@ -6,7 +6,7 @@ require 'helper'
 class TestFakerGenderJP < Test::Unit::TestCase
   include DeterministicHelper
 
-  GENDER_REGEX = /\A[女男]\z/
+  GENDER_REGEX = /\A[女男]\z/.freeze
 
   assert_methods_are_deterministic(FFaker::GenderJP, :random)
 

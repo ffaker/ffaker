@@ -7,7 +7,8 @@ module FFaker
     extend self
 
     def characters(character_count = 255)
-      Array.new(character_count < 0 ? 0 : character_count).map { fetch_sample(CHARACTERS) }.join
+      character_count = 0 if character_count.negative?
+      Array.new(character_count).map { fetch_sample(CHARACTERS) }.join
     end
 
     def word

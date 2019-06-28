@@ -27,7 +27,7 @@ module FFaker
       "#{category}#{num}"
     end
 
-    def blood_type # RH
+    def blood_type
       sign = fetch_sample(%w[+ -])
       "#{fetch_sample(BLOOD_TYPE)}#{sign}"
     end

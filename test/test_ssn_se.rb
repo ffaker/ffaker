@@ -12,16 +12,16 @@ class TestSSNSE < Test::Unit::TestCase
     assert_match(/(19|20)\d{10}/, ssn, "With no arguments year should start with 19 or 20, #{ssn}")
   end
 
-  def is_equal?(nbr)
+  def equal?(nbr)
     nbr % 2
   end
 
   def test_ssn_with_gender
     ssn_male = FFaker::SSNSE.ssn(gender: :male)
-    assert is_equal?(ssn_male[10].to_i)
+    assert equal?(ssn_male[10].to_i)
 
     ssn_female = FFaker::SSNSE.ssn(gender: :female)
-    assert is_equal?(ssn_female[10].to_i)
+    assert equal?(ssn_female[10].to_i)
 
     assert_raise ArgumentError do
       FFaker::SSNSE.ssn(gender: :unkown)

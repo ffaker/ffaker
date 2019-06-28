@@ -1,5 +1,5 @@
-# frozen_string_literal: true
 # encoding: utf-8
+# frozen_string_literal: true
 
 module FFaker
   module PhoneNumberTW
@@ -7,13 +7,10 @@ module FFaker
     extend self
 
     HOME_PHONE_PREFIXES = %w[02 03 04 05 06 07 08].freeze
-    MOBILE_PHONE_PREFIX = '09'.freeze
+    MOBILE_PHONE_PREFIX = '09'
 
     def phone_number
-      case rand(0..1)
-      when 0 then home_work_phone_number
-      when 1 then mobile_phone_number
-      end
+      rand(0..1).zero? ? home_work_phone_number : mobile_phone_number
     end
 
     def home_work_phone_number
@@ -47,10 +44,7 @@ module FFaker
     end
 
     def international_phone_number
-      case rand(0..1)
-      when 0 then international_mobile_phone_number
-      when 1 then international_home_work_phone_number
-      end
+      rand(0..1).zero? ? international_mobile_phone_number : international_home_work_phone_number
     end
   end
 end

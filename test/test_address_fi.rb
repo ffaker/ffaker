@@ -6,8 +6,8 @@ require 'helper'
 class TestAddressFI < Test::Unit::TestCase
   include DeterministicHelper
 
-  ALPHA = /\A[\p{Alpha}]+/
-  DIGIT = /\d{1}/
+  ALPHA = /\A[\p{Alpha}]+/.freeze
+  DIGIT = /\d{1}/.freeze
 
   assert_methods_are_deterministic(
     FFaker::AddressFI,

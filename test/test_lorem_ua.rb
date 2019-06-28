@@ -5,9 +5,9 @@ require 'helper'
 class TestLoremUA < Test::Unit::TestCase
   include DeterministicHelper
 
-  SENTENCE_MATCHER = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s\.\!\?,]+\z/
-  WORDS_MATCHER    = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/
-  WORD_MATCHER     = /\A[а-яА-ЯіїєґІЇЄҐ’\-]+\z/
+  SENTENCE_MATCHER = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s\.\!\?,]+\z/.freeze
+  WORDS_MATCHER    = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/.freeze
+  WORD_MATCHER     = /\A[а-яА-ЯіїєґІЇЄҐ’\-]+\z/.freeze
 
   assert_methods_are_deterministic(
     FFaker::LoremUA,

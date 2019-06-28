@@ -1,12 +1,12 @@
-# frozen_string_literal: true
 # encoding: utf-8
+# frozen_string_literal: true
 
 module FFaker
   module PhoneNumberID
     extend ModuleUtils
     extend self
 
-    COUNTRY_CODE = '+62'.freeze
+    COUNTRY_CODE = '+62'
 
     def mobile_phone_number
       "#{fetch_sample(MOBILE_PHONE_PREFIXES)}-#{FFaker.numerify('########')}"
@@ -19,10 +19,7 @@ module FFaker
     end
 
     def phone_number
-      case rand(0..1)
-      when 0 then home_phone_number
-      when 1 then mobile_phone_number
-      end
+      rand(0..1).zero? ? home_phone_number : mobile_phone_number
     end
 
     def international_mobile_phone_number

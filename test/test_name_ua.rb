@@ -15,8 +15,8 @@ class TestNameUA < Test::Unit::TestCase
   def setup
     @tester = FFaker::NameUA
 
-    @single_word_name_regexp    = /\A[а-яА-ЯіїєґІЇЄҐ’\-]+\z/
-    @multiple_words_name_regexp = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/
+    @single_word_name_regexp    = /\A[а-яА-ЯіїєґІЇЄҐ’\-]+\z/.freeze
+    @multiple_words_name_regexp = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/.freeze
   end
 
   def test_first_name_male

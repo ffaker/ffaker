@@ -6,8 +6,8 @@ require 'helper'
 class TestFakerLoremPL < Test::Unit::TestCase
   include DeterministicHelper
 
-  POLISH_WORD_MATCHER = /\A[A-Ża-ż\s]+\z/
-  POLISH_SENTENCE_MATCHER = /\A[A-Ża-ż\s\.\!\?,]+\z/
+  POLISH_WORD_MATCHER = /\A[A-Ża-ż\s]+\z/.freeze
+  POLISH_SENTENCE_MATCHER = /\A[A-Ża-ż\s\.\!\?,]+\z/.freeze
 
   assert_methods_are_deterministic(
     FFaker::LoremPL,

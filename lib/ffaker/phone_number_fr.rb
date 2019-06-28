@@ -1,5 +1,5 @@
-# frozen_string_literal: true
 # encoding: utf-8
+# frozen_string_literal: true
 
 module FFaker
   # Source: https://en.wikipedia.org/wiki/Telephone_numbers_in_France
@@ -25,10 +25,7 @@ module FFaker
 
     # generates mobile or home/work number
     def phone_number
-      case rand(0..1)
-      when 0 then home_work_phone_number
-      when 1 then mobile_phone_number
-      end
+      rand(0..1).zero? ? home_work_phone_number : mobile_phone_number
     end
 
     def country_code
@@ -44,10 +41,7 @@ module FFaker
     end
 
     def international_phone_number
-      case rand(0..1)
-      when 0 then international_mobile_phone_number
-      when 1 then international_home_work_phone_number
-      end
+      rand(0..1).zero? ? international_mobile_phone_number : international_home_work_phone_number
     end
 
     private
@@ -60,15 +54,13 @@ module FFaker
       FFaker.numerify [
         country_prefix,
         space,
-        # fetch_sample(AREA_CODE),
-        # space,
         prefix,
         fetch_sample(PHONE_NUMBER)
       ].join.strip
     end
 
     def random_space
-      rand(0..1) == 1 ? ' ' : ''
+      rand(0..1).zero? ? '' : ' '
     end
   end
 end

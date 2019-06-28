@@ -1,5 +1,5 @@
-# frozen_string_literal: true
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'helper'
 
@@ -12,8 +12,8 @@ class TestLoremIE < Test::Unit::TestCase
     :phrase, :phrases, :word, :words, :question
   )
 
-  WORDS_REGEX = /\A[\w\W]+\z/i # spaces, alphanumeric & perioids, etc.
-  WORD_REGEX = /\A[áéíóúa-z]+\z/i
+  WORDS_REGEX = /\A[\w\W]+\z/i.freeze # spaces, alphanumeric & perioids, etc.
+  WORD_REGEX = /\A[áéíóúa-z]+\z/i.freeze
 
   def test_paragraph
     assert_match(WORDS_REGEX, FFaker::LoremIE.paragraph)

@@ -24,26 +24,24 @@ module FFaker
     end
 
     def product_name
-      case rand(0..1)
-      when 0 then "#{fetch_sample(ADJ)} #{fetch_sample(NOUN)}"
-      when 1 then "#{[fetch_sample(ADJ), fetch_sample(ADJ)].uniq.join(' ')} #{fetch_sample(NOUN)}"
-      end
+      return "#{fetch_sample(ADJ)} #{fetch_sample(NOUN)}" if rand(0..1).zero?
+
+      "#{[fetch_sample(ADJ), fetch_sample(ADJ)].uniq.join(' ')} #{fetch_sample(NOUN)}"
     end
 
     def product
       "#{brand} #{product_name}"
     end
 
-    def letters(n)
-      max = n.is_a?(Range) ? fetch_sample(n.to_a) : n
+    def letters(count)
+      max = count.is_a?(Range) ? fetch_sample(count.to_a) : count
       (0...max).map { fetch_sample(LETTERS).upcase }.join
     end
 
     def model
-      case rand(0..1)
-      when 0 then "#{fetch_sample(LETTERS).upcase}#{rand(90)}" # N90
-      when 1 then "#{letters(1..rand(1..2))}-#{rand(9900)}" # N-9400
-      end
+      return "#{fetch_sample(LETTERS).upcase}#{rand(90)}" if rand(0..1).zero? # N90
+
+      "#{letters(1..rand(1..2))}-#{rand(9900)}" # N-9400
     end
   end
 end

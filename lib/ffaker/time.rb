@@ -7,7 +7,9 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    MONTHS = %w[January February March April May June July August September October November December].freeze
+    MONTHS = %w[
+      January February March April May June July August September October November December
+    ].freeze
     DAYS_OF_WEEK = %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday].freeze
 
     def month
@@ -27,13 +29,12 @@ module FFaker
       hours = params[:hours] || rand(0..23)
       minutes = params[:minutes] || rand(0..59)
       series = [date = ::DateTime.new(year, month, day, hours, minutes)]
-      if params[:series]
-        params[:series].each do |some_time_after|
-          series << series.last + (rand * some_time_after).ceil
-        end
-        return series
+      return date unless params[:series]
+
+      params[:series].each do |some_time_after|
+        series << series.last + (rand * some_time_after).ceil
       end
-      date
+      series
     end
 
     def date(params = {})

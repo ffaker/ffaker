@@ -7,7 +7,9 @@ module FFaker
 
     BYTE = [*'0'..'255'].freeze
     HOSTS = %w[gmail.com yahoo.com hotmail.com].freeze
-    DISPOSABLE_HOSTS = %w[mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info].freeze
+    DISPOSABLE_HOSTS = %w[
+      mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info
+    ].freeze
     DOMAIN_SUFFIXES = %w[co.uk com us ca biz info name].freeze
     SAFE_DOMAIN_SUFFIXES = %w[org com net].freeze
     SLUG_DELIMITERS = %w[- _ .].freeze
@@ -18,42 +20,36 @@ module FFaker
     end
 
     # returns an email address of an online disposable email service (like tempinbox.com).
-    # you can really send an email to these addresses an access it by going to the service web pages.
+    # you can really send an email to these addresses an access it by going to the
+    # service web pages.
     def disposable_email(name = nil)
       [user_name(name), fetch_sample(DISPOSABLE_HOSTS)].join('@')
     end
 
     def free_email(name = nil)
-      "#{user_name(name)}@#{fetch_sample(HOSTS)}"
+      [user_name(name), fetch_sample(HOSTS)].join('@')
     end
 
     def safe_email(name = nil)
-      "#{user_name(name)}@example.#{fetch_sample(SAFE_DOMAIN_SUFFIXES)}"
+      [user_name(name), fetch_sample(SAFE_DOMAIN_SUFFIXES)].join('@example.')
     end
 
     def user_name(name = nil)
-      if name
-        parts = shuffle(name.scan(/\w+/)).join(fetch_sample(%w[. _]))
-        parts.downcase
-      else
-        case rand(0..1)
-        when 0
-          sanitize(Name.first_name)
-        when 1
-          [Name.first_name, Name.last_name].map { |n| sanitize(n) }.join(fetch_sample(%w[. _]))
-        end
-      end
+      return shuffle(name.split(' ')).join(fetch_sample(%w[. _])).downcase if name
+
+      return sanitize(Name.first_name) if rand(0..1).zero?
+
+      [Name.first_name, Name.last_name].join(fetch_sample(%w[. _])).downcase
     end
 
     def domain_name
-      "#{domain_word}.#{domain_suffix}"
+      [domain_word, domain_suffix].join('.')
     end
 
     def domain_word
       dw = Company.name.split(' ').first
       dw.gsub!(/\W/, '')
-      dw.downcase!
-      dw
+      dw.downcase
     end
 
     def domain_suffix
@@ -61,7 +57,7 @@ module FFaker
     end
 
     def uri(protocol)
-      "#{protocol}://#{domain_name}"
+      [protocol, domain_name].join('://')
     end
 
     def http_url
@@ -79,8 +75,7 @@ module FFaker
     end
 
     def password(min_length = 8, max_length = 16)
-      length =
-        min_length > max_length ? min_length : fetch_sample([*min_length..max_length])
+      length = min_length > max_length ? min_length : fetch_sample([*min_length..max_length])
       String.from_regexp(/\w{#{length}}/)
     end
 

@@ -7,10 +7,10 @@ class TestLoremFR < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::LoremFR,
-    :paragraph, :paragraphs, :sentence, :sentences,
-    :phrase, :phrases, :word, :words
+    :paragraph, :paragraphs, :sentence, :sentences, :phrase, :phrases, :word, :words
   )
-  REGEX = /\A[ -.ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i
+
+  REGEX = /\A[ -.ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i.freeze
 
   def test_paragraph
     assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.paragraph)
@@ -24,7 +24,7 @@ class TestLoremFR < Test::Unit::TestCase
     assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.phrase)
   end
 
-  def test_paragraphsLoremFR
+  def test_paragraphs
     assert_match(REGEX, FFaker::LoremFR.paragraphs.join(' '))
   end
 

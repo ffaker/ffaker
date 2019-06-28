@@ -5,7 +5,7 @@ require 'helper'
 class TestFakerNamePH < Test::Unit::TestCase
   include DeterministicHelper
 
-  PH_REGEXP = /\A([\wñÑú-]+\.? ?){2,5}\z/
+  PH_REGEXP = /\A([\wñÑú-]+\.? ?){2,5}\z/.freeze
 
   assert_methods_are_deterministic(
     FFaker::NamePH,

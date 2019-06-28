@@ -10,7 +10,7 @@ class TestFakerNameDA < Test::Unit::TestCase
     :any_name, :male_name, :female_name, :last_name, :prefix
   )
 
-  RU_REGEX = /[А-Я][а-я]+/
+  RU_REGEX = /[А-Я][а-я]+/.freeze
 
   def setup
     @tester = FFaker::NameDA

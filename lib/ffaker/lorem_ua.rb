@@ -47,9 +47,7 @@ module FFaker
     end
 
     def capitalize_ukrainian(string)
-      unless CAPITAL_CHARS.include?(string[0])
-        string[0] = CAPITAL_CHARS[CHARS.index(string[0])]
-      end
+      string[0] = CAPITAL_CHARS[CHARS.index(string[0])] unless CAPITAL_CHARS.include?(string[0])
       string
     end
   end

@@ -18,15 +18,15 @@ module FFaker
     end
 
     def rgb_list
-      "#{random_rgb_value},#{random_rgb_value},#{random_rgb_value}"
+      rgb_array.join(',')
     end
 
     def rgba_array
-      [random_rgb_value, random_rgb_value, random_rgb_value, random_opacity_value]
+      rgb_array << random_opacity_value
     end
 
     def rgba_list
-      "#{random_rgb_value},#{random_rgb_value},#{random_rgb_value},#{random_opacity_value}"
+      rgba_array.join(',')
     end
 
     def hsl_array
@@ -34,15 +34,15 @@ module FFaker
     end
 
     def hsl_list
-      "#{random_hue_value},#{random_percentage_string},#{random_percentage_string}"
+      hsl_array.join(',')
     end
 
     def hsla_array
-      [random_hue_value, random_percentage_string, random_percentage_string, random_opacity_value]
+      hsl_array << random_opacity_value
     end
 
     def hsla_list
-      "#{random_hue_value},#{random_percentage_string},#{random_percentage_string},#{random_opacity_value}"
+      hsla_array.join(',')
     end
 
     private

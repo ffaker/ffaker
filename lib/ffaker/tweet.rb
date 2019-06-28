@@ -19,7 +19,7 @@ module FFaker
       }.merge(args)
 
       my_reply = options[:reply] ? "#{mention} " : ''
-      my_mentions = options[:num_mentions] > 0 ? "#{mentions(options[:num_mentions])} " : ''
+      my_mentions = (options[:num_mentions]).positive? ? "#{mentions(options[:num_mentions])} " : ''
       my_tags = tags(options[:num_hashtags])
 
       remaining = [

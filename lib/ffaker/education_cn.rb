@@ -5,7 +5,7 @@ module FFaker
   module EducationCN
     extend ModuleUtils
     extend self
-    
+
     DEGREE_PREFIX = %w[哲学 经济学 法学 教育学 文学 历史学 理学 工学 农学 医学].freeze
     DEGREE_SUFFIX = %w[学士 硕士 博士].freeze
     POSITION = %w[华南 华北 华东 华中 西南 西北 东北 东南 中国].freeze
