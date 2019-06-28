@@ -22,3 +22,5 @@ Style/Documentation:
   Enabled: false
 Style/RegexpLiteral:
   Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
