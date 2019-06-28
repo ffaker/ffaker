@@ -12,8 +12,8 @@ module FFaker
     # body_length:    Target length (rand(20..140)) (will be <= target)
     def tweet(args = {})
       options = {
-        num_hashtags: [0, rand(1..10) - 6].max,
-        num_mentions: [0, rand(1..10) - 8].max,
+        num_hashtags: [0, rand(-5..4)].max,
+        num_mentions: [0, rand(-7..2)].max,
         reply: (rand(1..10) == 1),
         body_length: rand(20..140)
       }.merge(args)

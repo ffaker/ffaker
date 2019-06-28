@@ -72,7 +72,7 @@ sections = faker_modules.map do |mod|
                 else
                   (escape examples.join(', ')).to_s
                 end
-      rescue => e
+      rescue StandardError => e
         right = "#{ICONS[:error]} #{e.class}: #{e.message}"
       end
     end
