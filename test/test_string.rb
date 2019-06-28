@@ -43,7 +43,7 @@ class TestString < Test::Unit::TestCase
   end
 
   def test_escaped_characters
-    assert_equal '\\/.()[]{}', FS.from_regexp(/\\\/\.\(\)\[\]\{\}/)
+    assert_equal '\\/.()[]{}', FS.from_regexp(%r{\\/\.\(\)\[\]\{\}})
     assert_deterministic { FS.from_regexp(%r|\\\/\.\(\)\[\]\{\}|) }
   end
 

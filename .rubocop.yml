@@ -20,7 +20,5 @@ Style/ModuleFunction:
   Enabled: false
 Style/Documentation:
   Enabled: false
-Style/RegexpLiteral:
-  Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false

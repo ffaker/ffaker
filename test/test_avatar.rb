@@ -12,7 +12,7 @@ class TestAvatar < Test::Unit::TestCase
   end
 
   def test_avatar
-    assert_match(/\Ahttps:\/\/robohash\.org\/.+\.png\?size=300x300\z/,
+    assert_match(%r{\Ahttps://robohash\.org/.+\.png\?size=300x300\z},
                  @tester.image)
   end
 

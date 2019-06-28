@@ -15,11 +15,11 @@ class TestCompany < Test::Unit::TestCase
   end
 
   def test_bs
-    assert_match(/\A[ \w'\/-]+\z/, @tester.bs)
+    assert_match(%r{\A[ \w'/-]+\z}, @tester.bs)
   end
 
   def test_catch_phrase
-    assert_match(/\A[ \w'\/-]+\z/, @tester.catch_phrase)
+    assert_match(%r{\A[ \w'/-]+\z}, @tester.catch_phrase)
   end
 
   def test_name

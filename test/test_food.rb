@@ -11,7 +11,7 @@ class TestFakerFood < Test::Unit::TestCase
   )
 
   def test_vegetable
-    assert_match(/\A[-\/ íó'a-z0-9]+\z/i, FFaker::Food.vegetable)
+    assert_match(%r{\A[-/ íó'a-z0-9]+\z}i, FFaker::Food.vegetable)
   end
 
   def test_fruit
