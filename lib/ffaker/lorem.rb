@@ -21,11 +21,9 @@ module FFaker
 
     def sentence(word_count = 4)
       first_word, *last_words = words(word_count + rand(1..5))
-      if last_words.nil?
-        first_word.capitalize
-      else
-        "#{first_word.capitalize} #{last_words.join(' ')}."
-      end
+      return "#{first_word.capitalize} #{last_words.join(' ')}." if last_words
+
+      first_word.capitalize
     end
 
     alias phrase sentence
