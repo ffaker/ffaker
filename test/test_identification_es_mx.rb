@@ -1,8 +1,5 @@
-# encoding: utf-8
-
 require 'helper'
 
-# Author Guapolo <github.com/guapolo>
 class TestIdentificationMX < Test::Unit::TestCase
   include DeterministicHelper
 

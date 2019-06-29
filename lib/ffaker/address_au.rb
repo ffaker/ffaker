@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'ffaker/address'
 
 module FFaker
@@ -10,7 +8,8 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    # based on areas labeled state (+act) here: http://en.wikipedia.org/wiki/States_and_territories_of_Australia
+    # based on areas labeled state (+act) here:
+    # http://en.wikipedia.org/wiki/States_and_territories_of_Australia
     STATE = [
       'Australian Capital Territory', 'New South Wales', 'Queensland',
       'South Australia', 'Tasmania', 'Victoria', 'Western Australia'
@@ -102,7 +101,7 @@ module FFaker
 
     def suburb(st_abbr = nil, p_code = nil)
       st_abbr ||= state_abbr
-      p_code  ||= postcode(st_abbr)
+      p_code ||= postcode(st_abbr)
       SUBURB[st_abbr][p_code]
     end
 
@@ -112,11 +111,9 @@ module FFaker
     end
 
     def time_zone(st_abbr = nil)
-      if st_abbr
-        TIME_ZONE[st_abbr]
-      else
-        TIME_ZONE.values.sample
-      end
+      return TIME_ZONE[st_abbr] if st_abbr
+
+      TIME_ZONE.values.sample
     end
   end
 end

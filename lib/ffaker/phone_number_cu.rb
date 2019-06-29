@@ -6,29 +6,31 @@ module FFaker
     extend self
 
     # Mobile prefixes
-    MobileOperatorsPrefix = %w[05].freeze
+    MOBILE_OPERATORS_PREFIX = %w[05].freeze
 
     # Home or Work Operator prefixes
-    HomeWorkOperatorsPrefix = %w[021 022 023 024 031 032 033 041 042 043 045 046 047 048 07].freeze
+    HOME_WORK_OPERATORS_PREFIX = %w[
+      021 022 023 024 031 032 033 041 042 043 045 046 047 048 07
+    ].freeze
 
-    OperatorsPrefix = MobileOperatorsPrefix + HomeWorkOperatorsPrefix
+    OPERATORS_PREFIX = MOBILE_OPERATORS_PREFIX + HOME_WORK_OPERATORS_PREFIX
 
-    # Return a prefix in MobileOperatorsPrefix
-    # @see FFaker::PhoneNumberCU::MobileOperatorsPrefix
+    # Return a prefix in MOBILE_OPERATORS_PREFIX
+    # @see FFaker::PhoneNumberCU::MOBILE_OPERATORS_PREFIX
     #
     def mobile_phone_prefix
-      fetch_sample(MobileOperatorsPrefix)
+      fetch_sample(MOBILE_OPERATORS_PREFIX)
     end
 
-    # Return a prefix in HomeWorkOperatorsPrefix
-    # @see FFaker::PhoneNumberCU::HomeWorkOperatorsPrefix
+    # Return a prefix in HOME_WORK_OPERATORS_PREFIX
+    # @see FFaker::PhoneNumberCU::HOME_WORK_OPERATORS_PREFIX
     #
     def home_work_phone_prefix
-      fetch_sample(HomeWorkOperatorsPrefix)
+      fetch_sample(HOME_WORK_OPERATORS_PREFIX)
     end
 
     def phone_prefix
-      fetch_sample(OperatorsPrefix)
+      fetch_sample(OPERATORS_PREFIX)
     end
 
     # Generates a general phone number
@@ -52,10 +54,7 @@ module FFaker
     # Generates general number
     #
     def general_phone_number
-      case rand(0..1)
-      when 0 then home_work_phone_number
-      when 1 then mobile_phone_number
-      end
+      rand(0..1).zero? ? home_work_phone_number : mobile_phone_number
     end
 
     # Country Code is E.164 Country Code
@@ -67,10 +66,7 @@ module FFaker
     # International formats
     #
     def international_country_code
-      case rand(0..1)
-      when 0 then "00#{country_code}"
-      when 1 then "+#{country_code}"
-      end
+      rand(0..1).zero? ? "00#{country_code}" : "+#{country_code}"
     end
 
     def international_mobile_phone_number
@@ -86,10 +82,7 @@ module FFaker
     end
 
     def international_phone_number
-      case rand(0..1)
-      when 0 then international_mobile_phone_number
-      when 1 then international_home_work_phone_number
-      end
+      rand(0..1).zero? ? international_mobile_phone_number : international_home_work_phone_number
     end
 
     # E.164 formats
@@ -112,10 +105,7 @@ module FFaker
     end
 
     def e164_phone_number
-      case rand(0..1)
-      when 0 then e164_mobile_phone_number
-      when 1 then e164_home_work_phone_number
-      end
+      rand(0..1).zero? ? e164_mobile_phone_number : e164_home_work_phone_number
     end
 
     # Generates phone number

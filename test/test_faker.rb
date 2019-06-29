@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestFaker < Test::Unit::TestCase

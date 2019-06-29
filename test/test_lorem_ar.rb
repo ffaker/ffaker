@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestLoremARAR < Test::Unit::TestCase
@@ -7,8 +5,7 @@ class TestLoremARAR < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::LoremAR,
-    :paragraph, :paragraphs, :sentence, :sentences,
-    :phrase, :phrases, :word, :words
+    :paragraph, :paragraphs, :sentence, :sentences, :phrase, :phrases, :word, :words
   )
 
   def test_paragraph

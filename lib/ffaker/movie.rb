@@ -1,13 +1,11 @@
-# encoding: utf-8
-
 module FFaker
   module Movie
     extend ModuleUtils
     extend self
 
     SUFFIXES = [
-      'from Hell', 'from Outer Space', 'from Mars', 'from the Black Lagoon', 'with a Thousand Faces',
-      'from Across the Ocean', 'Who Fell to Earth', 'That Came to Dinner'
+      'from Hell', 'from Outer Space', 'from Mars', 'from the Black Lagoon',
+      'with a Thousand Faces', 'from Across the Ocean', 'Who Fell to Earth', 'That Came to Dinner'
     ].freeze
     COLORS = %w[Red Yellow Black White].freeze
 
@@ -59,7 +57,10 @@ module FFaker
       when 10 then "The #{fetch_sample(COLORS)} Rose of #{FFaker::AddressUK.country}"
       when 11 then "Hard Boiled #{fetch_sample(NOUNS)}"
       else
-        ::String.new.tap { |s| n = simple_title; s.replace("#{n} 2: Son of #{n}") }
+        ::String.new.tap do |string|
+          title = simple_title
+          string.replace("#{title} 2: Son of #{title}")
+        end
       end
     end
   end

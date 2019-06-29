@@ -1,14 +1,11 @@
-# encoding: utf-8
-# frozen_string_literal: true
-
 module FFaker
   module PhoneNumberUA
     extend ModuleUtils
     extend self
 
-    LOCAL_PREFIX = '0'
-    COUNTRY_PREFIX = '+380 '
-    PHONE_NUMBER = ' ###-####'
+    LOCAL_PREFIX = '0'.freeze
+    COUNTRY_PREFIX = '+380 '.freeze
+    PHONE_NUMBER = ' ###-####'.freeze
 
     def phone_number
       rand(0..1).zero? ? home_phone_number : mobile_phone_number

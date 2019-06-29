@@ -1,8 +1,5 @@
-# encoding: utf-8
-
 require 'helper'
 
-# Author: PapePathe<pathe.sene@gmail.com> github.com/PapePathe
 class TestFakerNameIT < Test::Unit::TestCase
   include DeterministicHelper
 

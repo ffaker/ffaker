@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'helper'
 
 class TestSemVer < Test::Unit::TestCase

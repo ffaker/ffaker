@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   module Tweet
     extend ModuleUtils
@@ -12,14 +10,14 @@ module FFaker
     # body_length:    Target length (rand(20..140)) (will be <= target)
     def tweet(args = {})
       options = {
-        num_hashtags: [0, rand(1..10) - 6].max,
-        num_mentions: [0, rand(1..10) - 8].max,
+        num_hashtags: [0, rand(-5..4)].max,
+        num_mentions: [0, rand(-7..2)].max,
         reply: (rand(1..10) == 1),
         body_length: rand(20..140)
       }.merge(args)
 
       my_reply = options[:reply] ? "#{mention} " : ''
-      my_mentions = options[:num_mentions] > 0 ? "#{mentions(options[:num_mentions])} " : ''
+      my_mentions = (options[:num_mentions]).positive? ? "#{mentions(options[:num_mentions])} " : ''
       my_tags = tags(options[:num_hashtags])
 
       remaining = [

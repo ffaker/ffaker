@@ -1,8 +1,5 @@
-# encoding: utf-8
-
 require 'helper'
 
-# Author: guapolo github.com/guapolo
 class TestAddressMX < Test::Unit::TestCase
   include DeterministicHelper
 

@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Based on Perl's Text::Lorem
   module Lorem
@@ -7,7 +5,8 @@ module FFaker
     extend self
 
     def characters(character_count = 255)
-      Array.new(character_count < 0 ? 0 : character_count).map { fetch_sample(CHARACTERS) }.join
+      character_count = 0 if character_count.negative?
+      Array.new(character_count).map { fetch_sample(CHARACTERS) }.join
     end
 
     def word
@@ -20,11 +19,9 @@ module FFaker
 
     def sentence(word_count = 4)
       first_word, *last_words = words(word_count + rand(1..5))
-      if last_words.nil?
-        first_word.capitalize
-      else
-        "#{first_word.capitalize} #{last_words.join(' ')}."
-      end
+      return "#{first_word.capitalize} #{last_words.join(' ')}." if last_words
+
+      first_word.capitalize
     end
 
     alias phrase sentence

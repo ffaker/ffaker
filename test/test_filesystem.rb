@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestFakerFilesystem < Test::Unit::TestCase
@@ -19,10 +17,10 @@ class TestFakerFilesystem < Test::Unit::TestCase
   end
 
   def test_mime_type_format
-    assert @tester.mime_type.match(/(.*)\/(.*)+/)
+    assert @tester.mime_type.match(%r{(.*)/(.*)+})
   end
 
   def test_file_name
-    assert @tester.file_name.match(/([a-z\-_]+)(\\|\/)([a-z\-_]+)\.([a-z]+)/)
+    assert @tester.file_name.match(%r{([a-z\-_]+)(\\|/)([a-z\-_]+)\.([a-z]+)})
   end
 end

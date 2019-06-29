@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   module String
     extend ModuleUtils
@@ -59,6 +57,7 @@ module FFaker
       when '*' then
         tokens.unshift(token) if rand(0..1) == 1 # Leave the `*` on to run again
         return '' if rand(0..1) == 1 # Or maybe do nothing
+
         process_token(@last_token) # Else run the last one again
       when '{' then
         number = ''

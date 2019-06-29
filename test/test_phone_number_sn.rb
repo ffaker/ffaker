@@ -1,8 +1,5 @@
-# encoding: utf-8
-
 require 'helper'
 
-# Author: xarala<pathe.sene@xarala.sn> http://www.xarala.sn
 class TestPhoneNumberSN < Test::Unit::TestCase
   include DeterministicHelper
 
@@ -17,11 +14,11 @@ class TestPhoneNumberSN < Test::Unit::TestCase
   end
 
   def test_mobile_phone_prefix
-    assert FFaker::PhoneNumberSN::MobileOperatorsPrefix.include?(@tester.mobile_phone_prefix)
+    assert FFaker::PhoneNumberSN::MOBILE_OPERATORS_PREFIX.include?(@tester.mobile_phone_prefix)
   end
 
   def test_homework_phone_prefix
-    assert FFaker::PhoneNumberSN::HomeWorkOperatorsPrefix.include?(@tester.homework_phone_prefix)
+    assert FFaker::PhoneNumberSN::HOME_WORK_OPERATORS_PREFIX.include?(@tester.homework_phone_prefix)
   end
 
   def test_short_phone_number

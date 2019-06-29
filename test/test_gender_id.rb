@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-# encoding: utf-8
-
 require 'helper'
 
 class TestFakerGenderID < Test::Unit::TestCase

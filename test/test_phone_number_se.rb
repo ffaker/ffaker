@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestPhoneNumberSE < Test::Unit::TestCase
@@ -16,7 +14,7 @@ class TestPhoneNumberSE < Test::Unit::TestCase
     @tester = FFaker::PhoneNumberSE
   end
 
-  ALLOWED_CHARS = /[()\d +-]/
+  ALLOWED_CHARS = /[()\d +-]/.freeze
 
   def test_mobile_phone_prefix
     assert FFaker::PhoneNumberSE::MOBILE_PHONE_PREFIX.include?(@tester.mobile_prefix)

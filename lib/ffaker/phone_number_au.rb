@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Author: wiseleyb<wiseleyb@gmail.com>
   # Based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Australia
@@ -8,29 +6,29 @@ module FFaker
     extend self
 
     # Mobile prefixes
-    MobileOperatorsPrefix = %w[04 05].freeze
+    MOBILE_OPERATORS_PREFIX = %w[04 05].freeze
 
     # Home or Work Operator prefixes
-    HomeWorkOperatorsPrefix = %w[02 03 07 08].freeze
+    HOME_WORK_OPERATORS_PREFIX = %w[02 03 07 08].freeze
 
-    OperatorsPrefix = MobileOperatorsPrefix + HomeWorkOperatorsPrefix
+    OPERATORS_PREFIX = MOBILE_OPERATORS_PREFIX + HOME_WORK_OPERATORS_PREFIX
 
-    # Return a prefix in MobileOperatorsPrefix
-    # @see FFaker::PhoneNumberAU::MobileOperatorsPrefix
+    # Return a prefix in MOBILE_OPERATORS_PREFIX
+    # @see FFaker::PhoneNumberAU::MOBILE_OPERATORS_PREFIX
     #
     def mobile_phone_prefix
-      fetch_sample(MobileOperatorsPrefix)
+      fetch_sample(MOBILE_OPERATORS_PREFIX)
     end
 
-    # Return a prefix in HomeWorkOperatorsPrefix
-    # @see FFaker::PhoneNumberAU::HomeWorkOperatorsPrefix
+    # Return a prefix in HOME_WORK_OPERATORS_PREFIX
+    # @see FFaker::PhoneNumberAU::HOME_WORK_OPERATORS_PREFIX
     #
     def home_work_phone_prefix
-      fetch_sample(HomeWorkOperatorsPrefix)
+      fetch_sample(HOME_WORK_OPERATORS_PREFIX)
     end
 
     def phone_prefix
-      fetch_sample(OperatorsPrefix)
+      fetch_sample(OPERATORS_PREFIX)
     end
 
     # Generates a general phone number

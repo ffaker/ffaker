@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestFakerNameCS < Test::Unit::TestCase
@@ -16,7 +14,7 @@ class TestFakerNameCS < Test::Unit::TestCase
 
   def test_name
     @words = @tester.name.split
-    assert_include([2, 3, 4], @words.size) # just name, or prefix, or prefix+suffix
+    assert_include([2, 3, 4], @words.size)
   end
 
   def test_name_sex
@@ -61,7 +59,6 @@ class TestFakerNameCS < Test::Unit::TestCase
 
   private
 
-  # checks if every name is of the same sex
   def same_sex?(words, sex = :any)
     (sex == :any ? %i[male female] : [sex]).any? do |s|
       words.all? do |word|

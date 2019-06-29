@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestFakerIdentification < Test::Unit::TestCase
@@ -29,7 +27,7 @@ class TestFakerIdentification < Test::Unit::TestCase
   end
 
   def test_ethnicity
-    ethnicity_regex = /\A(African American|Asian\/Pacific Islander|Caucasian|Hispanic|Native American|Multiracial|Other|Prefer not to respond)\z/
+    ethnicity_regex = %r{\A(African American|Asian/Pacific Islander|Caucasian|Hispanic|Native American|Multiracial|Other|Prefer not to respond)\z}
     assert_match(ethnicity_regex, @tester.ethnicity)
   end
 end

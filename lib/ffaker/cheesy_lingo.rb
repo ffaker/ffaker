@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   module CheesyLingo
     # Born during RailsGirls Summer of Code 2015. Team Cheesy says Hi!
@@ -31,11 +29,8 @@ module FFaker
     end
 
     def paragraph(number_of_phrases = 10)
-      p = fetch_sample(CHEESY_PHRASES).capitalize.to_s
-      (number_of_phrases - 1).times do |s|
-        s = " #{fetch_sample(CHEESY_PHRASES)}"
-        p << s
-      end
+      p = fetch_sample(CHEESY_PHRASES).capitalize
+      (number_of_phrases - 1).times { p << " #{fetch_sample(CHEESY_PHRASES)}" }
       p << '.'
     end
   end

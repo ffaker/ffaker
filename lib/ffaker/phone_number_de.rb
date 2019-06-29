@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Author: lawitschka<moritz.lawitschka@urbanvention.com>
   module PhoneNumberDE

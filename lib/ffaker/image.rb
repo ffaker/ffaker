@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'tempfile'
 require 'open-uri'
 
@@ -29,11 +27,13 @@ module FFaker
 
     def check_size!(size)
       return true if size =~ /\A\d+x\d+\z/
+
       raise ArgumentError, 'Size should be specified in format 300x300'
     end
 
     def check_format!(format)
       return true if SUPPORTED_FORMATS.include?(format)
+
       raise ArgumentError, "Supported formats are #{SUPPORTED_FORMATS.join(', ')}"
     end
 

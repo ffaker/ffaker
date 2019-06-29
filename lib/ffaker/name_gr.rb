@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Author AntonyFalegkos<falegk1@gmail.com> github.com/falegk
   module NameGR
@@ -9,7 +7,7 @@ module FFaker
     # Random full name (male or female). Arguments :male, :female, :any
     def full_name(gender = :any)
       case gender
-      when :any then rand(0..1) == 0 ? male_full_name : female_full_name
+      when :any then rand(0..1).zero? ? male_full_name : female_full_name
       when :male then male_full_name
       when :female then female_full_name
       else raise ArgumentError, 'Invalid gender, must be one of :any, :male, :female'

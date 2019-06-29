@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Author Guapolo <github.com/guapolo>
   module AddressMX
@@ -29,11 +27,10 @@ module FFaker
     end
 
     MUNICIPALITY = { 'AGS' => AGS, 'BC' => BC, 'BCS' => BCS, 'CAMP' => CAMP, 'CHIS' => CHIS,
-      'CHIH' => CHIH, 'COAH' => COAH, 'COL' => COL, 'DF' => DF, 'DGO' => DGO, 'GRO' => GRO,
-      'GTO' => GTO, 'HGO' => HGO, 'JAL' => JAL, 'MEX' => MEX, 'MICH' => MICH, 'MOR' => MOR,
-      'NL' => NL, 'NAY' => NAY, 'OAX' => OAX, 'PUE' => PUE, 'QR' => QR, 'QRO' => QRO, 'SLP' => SLP,
-      'SIN' => SIN, 'SON' => SON, 'TAB' => TAB, 'TAMPS' => TAMPS, 'TLAX' => TLAX, 'VER' => VER,
-      'YUC' => YUC, 'ZAC' => ZAC
-    }.freeze
+                     'CHIH' => CHIH, 'COAH' => COAH, 'COL' => COL, 'DF' => DF, 'DGO' => DGO, 'GRO' => GRO,
+                     'GTO' => GTO, 'HGO' => HGO, 'JAL' => JAL, 'MEX' => MEX, 'MICH' => MICH, 'MOR' => MOR,
+                     'NL' => NL, 'NAY' => NAY, 'OAX' => OAX, 'PUE' => PUE, 'QR' => QR, 'QRO' => QRO, 'SLP' => SLP,
+                     'SIN' => SIN, 'SON' => SON, 'TAB' => TAB, 'TAMPS' => TAMPS, 'TLAX' => TLAX, 'VER' => VER,
+                     'YUC' => YUC, 'ZAC' => ZAC }.freeze
   end
 end

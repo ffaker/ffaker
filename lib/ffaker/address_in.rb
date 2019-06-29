@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'ffaker/address'
 
 module FFaker
@@ -14,7 +12,7 @@ module FFaker
     end
 
     alias pincode zip_code
-    
+
     def city
       fetch_sample(CITY)
     end

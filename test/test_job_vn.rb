@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-# encoding: UTF-8
-
 require 'helper'
 
 class TestFakerJobVN < Test::Unit::TestCase

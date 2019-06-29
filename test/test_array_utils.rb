@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 require 'set'
 
@@ -49,7 +47,7 @@ class TestArrayUtils < Test::Unit::TestCase
       different_arrangements += 1 if new_arr != @array
     end
 
-    assert different_arrangements > 0
+    assert different_arrangements.positive?
   end
 
   def test_self_random_pick_is_deterministic

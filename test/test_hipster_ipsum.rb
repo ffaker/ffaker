@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestHipsterIpsum < Test::Unit::TestCase
@@ -10,7 +8,7 @@ class TestHipsterIpsum < Test::Unit::TestCase
     :paragraph, :paragraphs, :sentence, :sentences, :word, :words
   )
 
-  TEST_REGEX = /\+1|[ a-z]+/i
+  TEST_REGEX = /\+1|[ a-z]+/i.freeze
 
   def test_paragraph
     assert_match(TEST_REGEX, FFaker::HipsterIpsum.paragraph)

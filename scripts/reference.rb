@@ -15,6 +15,7 @@ def faker_modules
     next if mod == FFaker::ModuleUtils
     next if mod == FFaker::RandomUtils
     next if mod == FFaker::Random
+
     mod
   end.compact
 end
@@ -59,7 +60,7 @@ sections = faker_modules.map do |mod|
     left = "`#{meth}`"
     right = ''
 
-    if arity > 0
+    if arity.positive?
       left = "`#{meth}`(#{Array.new(arity) { '...' }.join(', ')})"
     else
       begin
@@ -71,7 +72,7 @@ sections = faker_modules.map do |mod|
                 else
                   (escape examples.join(', ')).to_s
                 end
-      rescue => e
+      rescue StandardError => e
         right = "#{ICONS[:error]} #{e.class}: #{e.message}"
       end
     end

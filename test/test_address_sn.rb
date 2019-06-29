@@ -1,8 +1,3 @@
-# encoding: utf-8
-
-# => author: PapePathe github.com/PapePathe
-# => email: pathe.sene@gmail.com
-
 require 'helper'
 
 class TestAddressSn < Test::Unit::TestCase

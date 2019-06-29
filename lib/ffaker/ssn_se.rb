@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'date'
 
 module FFaker
@@ -26,8 +24,8 @@ module FFaker
     GENDERS = %w[female male].freeze
 
     def ssn(opts = {})
-      from   = opts[:from]   || ::Time.local(1940, 1, 1)
-      to     = opts[:to]     || ::Time.now
+      from   = opts[:from] || ::Time.local(1940, 1, 1)
+      to     = opts[:to] || ::Time.now
       gender = (opts[:gender] || fetch_sample(GENDERS)).to_s
 
       raise_error_on_bad_arguments(from, to, gender)
@@ -39,11 +37,11 @@ module FFaker
 
     def generate_ssn(from, to, gender)
       birth_date = random_birth_time_between(from, to)
-      birth_date_str = birth_date.strftime('%Y%m%d')      # "19800228"
-      region = get_random_region_for(gender)              # "413"
-      ssn_without_check_digit = birth_date_str + region   # "19800228413"
-      check_digit = luhn_check(ssn_without_check_digit)   # "9"
-      ssn_without_check_digit + check_digit               # "198002284139"
+      birth_date_str = birth_date.strftime('%Y%m%d') # "19800228"
+      region = random_region_for(gender) # "413"
+      ssn_without_check_digit = birth_date_str + region # "19800228413"
+      check_digit = luhn_check(ssn_without_check_digit) # "9"
+      ssn_without_check_digit + check_digit # "198002284139"
     end
 
     def raise_error_on_bad_arguments(from, to, gender)
@@ -57,19 +55,19 @@ module FFaker
       ::Time.at(from + rand * (to.to_f - from.to_f))
     end
 
-    def get_random_region_for(gender)
+    def random_region_for(gender)
       region_number = case gender
-                      when 'female' then get_random_region_even
-                      when 'male' then get_random_region_odd
-      end
+                      when 'female' then random_region_even
+                      when 'male' then random_region_odd
+                      end
       three_character_string(region_number)
     end
 
-    def get_random_region_even
+    def random_region_even
       rand(0..498) * 2
     end
 
-    def get_random_region_odd
+    def random_region_odd
       rand(0..498) * 2 + 1
     end
 
@@ -82,11 +80,7 @@ module FFaker
       multiplications = []
 
       number.split(//).each_with_index do |digit, i|
-        multiplications << if i.even?
-                             digit.to_i * 2
-                           else
-                             digit.to_i
-        end
+        multiplications << i.even? ? digit.to_i * 2 : digit.to_i
       end
 
       sum = 0
@@ -96,12 +90,7 @@ module FFaker
         end
       end
 
-      control_digit = if sum % 10 == 0
-                        0
-                      else
-                        (sum / 10 + 1) * 10 - sum
-      end
-
+      control_digit = (sum % 10).zero? ? 0 : (sum / 10 + 1) * 10 - sum
       control_digit.to_s
     end
   end

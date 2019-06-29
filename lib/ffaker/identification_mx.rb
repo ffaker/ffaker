@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'ffaker/identification_es'
 
 module FFaker
@@ -16,12 +14,10 @@ module FFaker
     # Registro Federal de Contribuyentes (R.F.C.) para persona física
     def rfc_persona_fisica
       consonants_n = CONSONANTS + ['Ñ']
-      all_letters = consonants_n + VOWELS
-      date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
       [
         fetch_sample(consonants_n),
         fetch_sample(VOWELS),
-        fetch_sample(all_letters, count: 2).join,
+        fetch_sample(consonants_n + VOWELS, count: 2).join,
         date,
         fetch_sample(HOMOCLAVE, count: 3).join
       ].join
@@ -32,8 +28,7 @@ module FFaker
     def rfc_persona_moral
       consonants_n_amp = CONSONANTS + ['Ñ', '&']
       all_letters = consonants_n_amp + VOWELS
-      date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
-      "#{fetch_sample(all_letters, count: 3).join}#{date}#{fetch_sample(HOMOCLAVE, count: 3).join}"
+      [fetch_sample(all_letters, count: 3), date, fetch_sample(HOMOCLAVE, count: 3)].flatten.join
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
@@ -47,18 +42,18 @@ module FFaker
     def curp
       all_letters = CONSONANTS + VOWELS
       hm = %w[H M]
-      date = ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
       [
-        fetch_sample(CONSONANTS),
-        fetch_sample(VOWELS),
-        fetch_sample(all_letters, count: 2).join,
-        date,
-        fetch_sample(hm),
-        fetch_sample(ESTADOS_CURP),
-        fetch_sample(CONSONANTS, count: 3).join,
-        fetch_sample(HOMOCLAVE),
-        rand(0..9)
+        fetch_sample(CONSONANTS), fetch_sample(VOWELS),
+        fetch_sample(all_letters, count: 2).join, date, fetch_sample(hm),
+        fetch_sample(ESTADOS_CURP), fetch_sample(CONSONANTS, count: 3).join,
+        fetch_sample(HOMOCLAVE), rand(0..9)
       ].join
+    end
+
+    private
+
+    def date
+      ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
     end
   end
 end

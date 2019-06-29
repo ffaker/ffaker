@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestMusic < Test::Unit::TestCase
@@ -11,7 +9,7 @@ class TestMusic < Test::Unit::TestCase
   )
 
   def test_genre
-    assert_match(/[A-z]|\W|\&\/+/, FFaker::Music.genre)
+    assert_match(%r{[A-z]|\W|\&/+}, FFaker::Music.genre)
   end
 
   def test_album

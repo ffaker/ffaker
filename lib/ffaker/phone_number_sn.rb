@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Author: PapePathe<pathe.sene@xarala.sn> http://www.xarala.sn
   module PhoneNumberSN
@@ -12,26 +10,26 @@ module FFaker
     #  76 =>  Tigo
     #  70 =>  Expresso
     #
-    MobileOperatorsPrefix = %w[70 76 77].freeze
+    MOBILE_OPERATORS_PREFIX = %w[70 76 77].freeze
 
     # Home or Work Operator prefixes
     #
     #  33 =>  Orange
     #
-    HomeWorkOperatorsPrefix = %w[33].freeze
+    HOME_WORK_OPERATORS_PREFIX = %w[33].freeze
 
-    # Return a prefix in MobileOperatorsPrefix
-    # @see FFaker::PhoneNumberSN::MobileOperatorsPrefix
+    # Return a prefix in MOBILE_OPERATORS_PREFIX
+    # @see FFaker::PhoneNumberSN::MOBILE_OPERATORS_PREFIX
     #
     def mobile_phone_prefix
-      fetch_sample(MobileOperatorsPrefix)
+      fetch_sample(MOBILE_OPERATORS_PREFIX)
     end
 
-    # Return a prefix in HomeWorkOperatorsPrefix
-    # @see FFaker::PhoneNumberSN::HomeWorkOperatorsPrefix
+    # Return a prefix in HOME_WORK_OPERATORS_PREFIX
+    # @see FFaker::PhoneNumberSN::HOME_WORK_OPERATORS_PREFIX
     #
     def homework_phone_prefix
-      HomeWorkOperatorsPrefix[0]
+      fetch_sample(HOME_WORK_OPERATORS_PREFIX)
     end
 
     # Pattern that can be combined with a prefix to generate mobile, office phone_numbers
@@ -64,15 +62,9 @@ module FFaker
     # Generates a random phone number mobile or home or work
     #
     def phone_number
-      case rand(0..9)
-      when 0 then homework_number
-      when 9 then homework_number
-      when 3 then mobile_number
-      when 5 then mobile_number
-      when 6 then mobile_number
-      when 8 then mobile_number
-      else        homework_number
-      end
+      return homework_number if rand(0..1).zero?
+
+      mobile_number
     end
   end
 end

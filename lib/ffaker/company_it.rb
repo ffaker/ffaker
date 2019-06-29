@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   module CompanyIT
     extend ModuleUtils
@@ -33,7 +31,9 @@ module FFaker
       base = matricola + office_code.chars.map(&:to_i)
 
       # Thanks https://stackoverflow.com/a/9189731/1627766
-      sum = base.reverse.each_slice(2).flat_map { |x, y| [(x * 2).divmod(10), y || 0] }.flatten.reduce(:+)
+      sum = base.reverse.each_slice(2).flat_map do |x, y = 0|
+        [(x * 2).divmod(10), y]
+      end.flatten.sum
 
       control_digit = (10 - (sum % 10)) % 10
 

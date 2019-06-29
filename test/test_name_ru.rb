@@ -1,18 +1,16 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestNameRU < Test::Unit::TestCase
   include DeterministicHelper
 
-  RU_REGEX = /\A[а-яА-Я]{2,}\z/
-  RU_REGEX_MULTIPLE_WORDS = /\A[а-яА-Я\s]+\z/
+  RU_REGEX = /\A[а-яА-Я]{2,}\z/.freeze
+  RU_REGEX_MULTIPLE_WORDS = /\A[а-яА-Я\s]+\z/.freeze
 
   assert_methods_are_deterministic(
     FFaker::NameRU,
     :name, :first_name, :last_name, :female_name, :male_name,
     :first_name_female, :first_name_male, :middle_name_female,
-    :middle_name_male, :last_name_female, :last_name_male,
+    :middle_name_male, :last_name_female, :last_name_male
   )
 
   def setup

@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'ffaker/internet'
 
 module FFaker
@@ -12,7 +10,9 @@ module FFaker
     BYTE = [*'0'..'255'].freeze
     HOSTS = %w[gmail.com yahoo.com hotmail.com spray.se passagen.se].freeze
     DOMAIN_SUFFIXES = %w[se nu com].freeze
-    DISPOSABLE_HOSTS = %w[mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info].freeze
+    DISPOSABLE_HOSTS = %w[
+      mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info
+    ].freeze
     SLUG_DELIMITERS = %w[- _ .].freeze
 
     def email(name = nil)
@@ -38,14 +38,12 @@ module FFaker
     # Mostly used for email creation
     def user_name(name = nil)
       return user_name_from_name(name) if name
+
       user_name_random
     end
 
     def user_name_random
-      case rand(0..1)
-      when 0 then user_name_variant_short
-      when 1 then user_name_variant_long
-      end
+      rand(0..1).zero? ? user_name_variant_short : user_name_variant_long
     end
 
     def user_name_variant_long

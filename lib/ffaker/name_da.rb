@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'ffaker/name'
 
 module FFaker
@@ -29,7 +27,7 @@ module FFaker
 
     def first_name(gender = :any)
       case gender
-      when :any then rand(0..1) == 0 ? first_name(:male) : first_name(:female)
+      when :any then rand(0..1).zero? ? first_name(:male) : first_name(:female)
       when :male then fetch_sample(MALE_FIRST_NAMES)
       when :female then fetch_sample(FEMALE_FIRST_NAMES)
       else

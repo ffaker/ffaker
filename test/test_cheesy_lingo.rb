@@ -3,7 +3,7 @@ require 'helper'
 class TestCheesyLingo < Test::Unit::TestCase
   include DeterministicHelper
 
-  TEST_REGEX = /\+1|[a-z]+/i
+  TEST_REGEX = /\+1|[a-z]+/i.freeze
 
   assert_methods_are_deterministic(
     FFaker::CheesyLingo,
@@ -31,7 +31,7 @@ class TestCheesyLingo < Test::Unit::TestCase
     assert_match(/1\+|[ a-zA-Z]+./, @tester.sentence)
   end
 
-  def test_paragraph # without passing count
+  def test_paragraph
     assert_match(/\+|[a-zA-Z]*./, @tester.paragraph(1))
   end
 

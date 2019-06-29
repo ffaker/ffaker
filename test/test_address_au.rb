@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>
@@ -12,9 +10,9 @@ class TestAddressAU < Test::Unit::TestCase
   )
 
   def test_au_state_abbr_insertion
-    arr = FFaker::AddressAU::STATE_ABBR.sort
-    assert arr = FFaker::AddressAU::SUBURB.keys.sort
-    assert arr = FFaker::AddressAU::POSTCODE.keys.sort
+    FFaker::AddressAU::STATE_ABBR.sort
+    assert FFaker::AddressAU::SUBURB.keys.sort
+    assert FFaker::AddressAU::POSTCODE.keys.sort
   end
 
   def test_au_state

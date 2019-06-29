@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-# encoding: utf-8
-
 module FFaker
   module PhoneNumberID
     extend ModuleUtils
@@ -19,10 +16,7 @@ module FFaker
     end
 
     def phone_number
-      case rand(0..1)
-      when 0 then home_phone_number
-      when 1 then mobile_phone_number
-      end
+      rand(0..1).zero? ? home_phone_number : mobile_phone_number
     end
 
     def international_mobile_phone_number
