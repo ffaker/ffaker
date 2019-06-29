@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'helper'
 
 class TestHealthcareRU < Test::Unit::TestCase

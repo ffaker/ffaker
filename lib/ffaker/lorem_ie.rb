@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module FFaker
   module LoremIE
     extend ModuleUtils

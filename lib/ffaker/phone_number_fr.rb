@@ -1,12 +1,10 @@
-# frozen_string_literal: true
-
 module FFaker
   # Source: https://en.wikipedia.org/wiki/Telephone_numbers_in_France
   module PhoneNumberFR
     extend ModuleUtils
     extend self
 
-    COUNTRY_CODE           = '33'
+    COUNTRY_CODE           = '33'.freeze
     AREA_PREFIX            = %w[01 02 03 04 05].freeze
     NON_AREA_PREFIX        = %w[09].freeze
     HOME_WORK_PHONE_PREFIX = AREA_PREFIX + NON_AREA_PREFIX
