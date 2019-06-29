@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestUniqueUtils < Test::Unit::TestCase

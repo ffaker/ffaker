@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   module CheesyLingo
     # Born during RailsGirls Summer of Code 2015. Team Cheesy says Hi!

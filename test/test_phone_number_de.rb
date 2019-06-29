@@ -1,8 +1,5 @@
-# encoding: utf-8
-
 require 'helper'
 
-# Author: lawitschka<moritz.lawitschka@urbanvention.com>
 class TestPhoneNumberDE < Test::Unit::TestCase
   include DeterministicHelper
 

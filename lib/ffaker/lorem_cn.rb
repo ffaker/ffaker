@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Based on Perl's Text::Lorem
   module LoremCN

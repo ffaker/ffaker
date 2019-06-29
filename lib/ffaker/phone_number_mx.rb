@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Author: guapolo github.com/guapolo
   module PhoneNumberMX

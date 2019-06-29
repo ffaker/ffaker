@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Author: PapePathe<pathe.sene@xarala.sn> http://www.xarala.sn
   module PhoneNumberSN

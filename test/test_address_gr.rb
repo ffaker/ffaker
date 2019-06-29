@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestAddressGR < Test::Unit::TestCase

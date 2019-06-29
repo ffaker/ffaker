@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Generates names from Gambia West Africa
   # Source: http://www.columbia.edu/~msj42/Common%20Gambian%20First%20Names.htm

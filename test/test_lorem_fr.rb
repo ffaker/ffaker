@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestLoremFR < Test::Unit::TestCase

@@ -1,8 +1,5 @@
-# encoding: utf-8
-
 require 'helper'
 
-# Test features related to Finnish addresses
 class TestAddressFI < Test::Unit::TestCase
   include DeterministicHelper
 

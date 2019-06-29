@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Author AntonyFalegkos<falegk1@gmail.com> github.com/falegk
   module NameGR

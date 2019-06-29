@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 module FFaker
   # Loosely based on http://html-ipsum.com/
   # Requires FFaker::Lorem module

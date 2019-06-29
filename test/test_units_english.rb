@@ -1,8 +1,5 @@
-# encoding: utf-8
-
 require 'helper'
 
-# Author: lurraca github.com/lurraca
 class TestUnitsEnglish < Test::Unit::TestCase
   include DeterministicHelper
 

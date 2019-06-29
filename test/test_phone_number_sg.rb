@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'helper'
 
 class TestPhoneNumberSG < Test::Unit::TestCase
