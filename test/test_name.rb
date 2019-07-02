@@ -9,7 +9,7 @@ class TestFakerName < Test::Unit::TestCase
     :name_with_suffix, :female_name_with_suffix, :male_name_with_suffix,
     :name_with_prefix_suffix, :female_name_with_prefix_suffix, :male_name_with_prefix_suffix,
     :first_name, :first_name_female, :first_name_male, :last_name,
-    :prefix, :female_prefix, :male_prefix, :other_prefix, :suffix
+    :prefix, :female_prefix, :male_prefix, :other_prefix, :suffix, :pronouns
   )
 
   def setup
@@ -128,5 +128,9 @@ class TestFakerName < Test::Unit::TestCase
 
   def test_suffix
     assert_match(/[A-Z][a-z]*\.?/, @tester.suffix)
+  end
+
+  def test_pronouns
+    assert_include(@tester::PRONOUNS, @tester.pronouns)
   end
 end
