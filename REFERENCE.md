@@ -1463,6 +1463,7 @@
 | `other_prefix` | Ms., Ms., Ms. |
 | `prefix` | Mr., Miss., Mrs. |
 | `suffix` | III, II, DVM |
+| `pronouns` | He/Him, She/Her, They/Their, Zie/Zim, Xe/Xem, Xe/Xer |
 
 ## FFaker::NameAR
 
