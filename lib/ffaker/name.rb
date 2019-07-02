@@ -111,5 +111,9 @@ module FFaker
     def suffix
       fetch_sample(SUFFIXES)
     end
+
+    def pronouns
+      fetch_sample(PRONOUNS)
+    end
   end
 end
