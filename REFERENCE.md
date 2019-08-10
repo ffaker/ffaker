@@ -62,6 +62,7 @@
  * [FFaker::HealthcareIpsum](#ffakerhealthcareipsum)
  * [FFaker::HealthcareRU](#ffakerhealthcareru)
  * [FFaker::HipsterIpsum](#ffakerhipsteripsum)
+ * [FFaker::IBAN](#ffakeriban)
  * [FFaker::Identification](#ffakeridentification)
  * [FFaker::IdentificationBR](#ffakeridentificationbr)
  * [FFaker::IdentificationES](#ffakeridentificationes)
@@ -1126,6 +1127,14 @@
 | `sentences` | Cred wolf farm-to-table retro letterpress mixtape Williamsburg., Scenester cardigan thundercats Wes Anderson Cosby Sweater vice American Apparel Portland Four Loko., Cosby sweater sartorial lo-fi skateboard helvetica scenester lomo brunch., Sustainable photo booth art messenger bag keytar tattooed brunch., Sustainable mustache gentrify viral Brooklyn before they sold out synth., Fap banh mi keffiyeh single-origin coffee aesthetic McSweeney's helvetica art tumblr., Cardigan fap organic before they sold out synth artisan keffiyeh party quinoa., Tumblr aesthetic Shoreditch party Banksy., Mustache cred photo booth butcher cliche vegan art salvia. |
 | `word` | irony, +1, single-origin coffee |
 | `words` | mustache, squid, Banksy, cardigan, DIY, seitan, yr, leggings, craft beer |
+
+## FFaker::IBAN
+
+| Method | Example |
+| ------ | ------- |
+| `code` | LT068461723457561501, FO2226825430828346, UA353917102886113677140435165 |
+| `code(country_code: 'at')` | AT817312345658600785, AT578030055615784246, AT788430896006678628 |
+| `code(country_code: 'AT')` | AT935154385139465376, AT199676443295940702, AT575421622953218726 |
 
 ## FFaker::Identification
 

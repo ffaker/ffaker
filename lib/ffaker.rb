@@ -93,6 +93,7 @@ module FFaker
   autoload :HealthcareRU, 'ffaker/healthcare_ru'
   autoload :HipsterIpsum, 'ffaker/hipster_ipsum'
   autoload :HTMLIpsum, 'ffaker/html_ipsum'
+  autoload :IBAN, 'ffaker/iban'
   autoload :Identification, 'ffaker/identification'
   autoload :IdentificationBR, 'ffaker/identification_br'
   autoload :IdentificationES, 'ffaker/identification_es'
