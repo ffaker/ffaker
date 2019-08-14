@@ -79,7 +79,7 @@ module FFaker
       'UA' => 'UA###########################', # Ukraine
       'AE' => 'AE#####################', # United Arab Emirates
       'GB' => 'GB##????##############', # United Kingdom
-      'VG' => 'VG##????################'  # Virgin Islands, British
+      'VG' => 'VG##????################' # Virgin Islands, British
     }.freeze
 
     def code(country_code: nil)
