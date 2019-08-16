@@ -1,5 +1,5 @@
 module FFaker
-  module IBAN
+  module Bank
     extend ModuleUtils
     extend self
 
@@ -82,16 +82,23 @@ module FFaker
       'VG' => 'VG##????################' # Virgin Islands, British
     }.freeze
 
-    def code(country_code: nil)
-      return formatify_iban(COUNTRIES[country_code.upcase]) if country_code
+    def iban(country_code: nil)
+      return formatify_iban(fetch_sample(COUNTRIES.values)) unless country_code
 
-      formatify_iban(fetch_sample(COUNTRIES.values))
+      check_country_existence(country_code)
+      formatify_iban(COUNTRIES[country_code.upcase])
     end
 
     private
 
     def formatify_iban(code)
       FFaker.bothify(code).upcase
+    end
+
+    def check_country_existence(country_code)
+      unless COUNTRIES.keys.include?(country_code.upcase)
+        raise ArgumentError, "Unexpected country code: '#{country_code}'"
+      end
     end
   end
 end
