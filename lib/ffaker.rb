@@ -62,6 +62,7 @@ module FFaker
   autoload :Avatar, 'ffaker/avatar'
   autoload :AWS, 'ffaker/aws'
   autoload :BaconIpsum, 'ffaker/bacon_ipsum'
+  autoload :Bank, 'ffaker/bank'
   autoload :Book, 'ffaker/book'
   autoload :Boolean, 'ffaker/boolean'
   autoload :CheesyLingo, 'ffaker/cheesy_lingo'

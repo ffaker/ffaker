@@ -33,6 +33,7 @@
  * [FFaker::AnimalUS](#ffakeranimalus)
  * [FFaker::Avatar](#ffakeravatar)
  * [FFaker::BaconIpsum](#ffakerbaconipsum)
+ * [FFaker::Bank](#ffakerbank)
  * [FFaker::Book](#ffakerbook)
  * [FFaker::Boolean](#ffakerboolean)
  * [FFaker::CheesyLingo](#ffakercheesylingo)
@@ -860,6 +861,14 @@
 | `sentences` | Ham capicola beef ribs jerky ball tip hamburger boudin fatback meatball., Pancetta chicken bresaola tongue doner landjaeger Kevin., Pork belly beef cow Kevin fatback pig capicola., Andouille prosciutto capicola leberkas frankfurter jerky salami., Swine beef venison ground round cow leberkas jowl., Jerky tongue tail strip steak frankfurter ham hock short loin., Prosciutto salami tenderloin frankfurter boudin hamburger pork drumstick., Spare ribs tongue turkey beef tri-tip swine jowl., Prosciutto boudin landjaeger doner meatloaf salami corned beef t-bone pork chop. |
 | `word` | tongue, turducken, prosciutto |
 | `words` | boudin, brisket, shankle, drumstick, tail, flank, ham hock, pork, strip steak |
+
+## FFaker::Bank
+
+| Method | Example |
+| ------ | ------- |
+| `iban` | LT068461723457561501, FO2226825430828346, UA353917102886113677140435165 |
+| `iban(country_code: 'at')` | AT817312345658600785, AT578030055615784246, AT788430896006678628 |
+| `iban(country_code: 'AT')` | AT935154385139465376, AT199676443295940702, AT575421622953218726 |
 
 ## FFaker::Book
 
