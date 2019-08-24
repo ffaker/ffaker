@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Format for swedish numbers, from here
   # from http://sv.wikipedia.org/wiki/Telefonnummer

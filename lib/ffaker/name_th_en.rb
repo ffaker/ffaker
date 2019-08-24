@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ffaker/name_th'
 
 module FFaker

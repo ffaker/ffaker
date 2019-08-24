@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 module FFaker
   module PhoneNumberRU
     extend ModuleUtils
     extend self
 
-    INTERNATIONAL_COUNTRY_PREFIX = '+7'.freeze
-    COUNTRY_PREFIX = '8'.freeze
-    TOLL_FREE_PREFIX = '800'.freeze
+    INTERNATIONAL_COUNTRY_PREFIX = '+7'
+    COUNTRY_PREFIX = '8'
+    TOLL_FREE_PREFIX = '800'
 
     # Generate general phone number with international country code
     #   +7 929 933 24 99

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Based on Perl's Text::Lorem
   module Lorem

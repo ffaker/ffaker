@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Source: http://www.thai-language.com/
   module NameTH

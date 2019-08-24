@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 class TestUniqueUtils < Test::Unit::TestCase

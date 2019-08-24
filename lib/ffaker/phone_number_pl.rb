@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Author Walerian Sobczak <walerian.sobczak@gmail.com> github.com/walerian777
   # Inspirations:
@@ -8,8 +10,8 @@ module FFaker
 
     module_function
 
-    PHONE_NUMBER_FORMAT = '%s#######'.freeze
-    COUNTRY_CODE = '+48'.freeze
+    PHONE_NUMBER_FORMAT = '%s#######'
+    COUNTRY_CODE = '+48'
     MOBILE_PREFIXES = %w[50 51 53 57 60 66 69 72 73 78 79 88].freeze
     AREA_CODES = %w[12 13 14 15 16 17 18 22 23 24 25 29 32 33
                     34 41 42 43 44 46 48 52 54 55 56 58 59 61

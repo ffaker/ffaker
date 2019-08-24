@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 # Author: wiseleyb<wiseleyb@gmail.com>

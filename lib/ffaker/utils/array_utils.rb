@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ffaker/utils/random_utils'
 
 module FFaker

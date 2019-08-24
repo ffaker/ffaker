@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 module FFaker
   module NatoAlphabet
     extend ModuleUtils
     extend self
 
-    STOP_CODE = 'STOP'.freeze
+    STOP_CODE = 'STOP'
     CODES = ALPHABET_CODES + NUMERIC_CODES + [STOP_CODE]
 
     def code

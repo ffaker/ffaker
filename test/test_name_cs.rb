@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 class TestFakerNameCS < Test::Unit::TestCase

@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 class TestAvatar < Test::Unit::TestCase
   include DeterministicHelper
 
-  ROBOHASH = 'https://robohash.org'.freeze
+  ROBOHASH = 'https://robohash.org'
 
   assert_methods_are_deterministic(FFaker::Avatar, :image)
 

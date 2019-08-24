@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 module FFaker
   module PhoneNumberID
     extend ModuleUtils
     extend self
 
-    COUNTRY_CODE = '+62'.freeze
+    COUNTRY_CODE = '+62'
 
     def mobile_phone_number
       "#{fetch_sample(MOBILE_PHONE_PREFIXES)}-#{FFaker.numerify('########')}"

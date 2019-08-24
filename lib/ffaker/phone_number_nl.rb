@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 module FFaker
   module PhoneNumberNL
     extend ModuleUtils
     extend self
 
-    COUNTRY_CODE = '+31'.freeze
-    AREA_CODE_PREFIX = '0'.freeze
+    COUNTRY_CODE = '+31'
+    AREA_CODE_PREFIX = '0'
     PHONE_NUMBER = {
       2 => ['#######', '### ####', '#### ###'],
       3 => ['######', '#### ##', '## ## ##']

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 class TestHipsterIpsum < Test::Unit::TestCase

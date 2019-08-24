@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   module Sport
     extend ModuleUtils

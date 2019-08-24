@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 module FFaker
   module PhoneNumberTW
     extend ModuleUtils
     extend self
 
     HOME_PHONE_PREFIXES = %w[02 03 04 05 06 07 08].freeze
-    MOBILE_PHONE_PREFIX = '09'.freeze
+    MOBILE_PHONE_PREFIX = '09'
 
     def phone_number
       rand(0..1).zero? ? home_work_phone_number : mobile_phone_number

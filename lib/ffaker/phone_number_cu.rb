@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Author: Luilver<luilver@gmail.com>
   # Based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Cuba

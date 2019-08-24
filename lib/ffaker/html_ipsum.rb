@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Loosely based on http://html-ipsum.com/
   # Requires FFaker::Lorem module

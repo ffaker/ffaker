@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 class TestPhoneNumberUA < Test::Unit::TestCase

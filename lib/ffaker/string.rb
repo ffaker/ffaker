@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 module FFaker
   module String
     extend ModuleUtils
     extend self
 
-    BACKSLASH = '\\'.freeze
-    DASH      = '-'.freeze
+    BACKSLASH = '\\'
+    DASH      = '-'
 
     LOWERS     = [*'a'..'z'].freeze
     UPPERS     = [*'A'..'Z'].freeze

@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 class TestImage < Test::Unit::TestCase
   include DeterministicHelper
 
-  PLACEHOLDER = 'https://via.placeholder.com/'.freeze
+  PLACEHOLDER = 'https://via.placeholder.com/'
 
   assert_methods_are_deterministic(FFaker::Image, :url)
 

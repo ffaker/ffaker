@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Methods for returning repeatably-random data using the internal
   # Random Number Generator. You should not need to use this directly, it is

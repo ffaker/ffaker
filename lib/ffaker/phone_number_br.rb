@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Author: Gustavo Souza https://github.com/gustavor-souza
   # Sources:
@@ -11,7 +13,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    COUNTRY_PREFIX = '+55'.freeze
+    COUNTRY_PREFIX = '+55'
     AREA_CODE = [
       10..19, 21..22, 24, 27..28, 31..35, 37..38, 41..49,
       51..54, 55, 61..69, 71..75, 77, 79, 81..89, 91..99

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FFaker
   # Generates names from India
   # Source: https://www.momjunction.com/articles/popular-indian-last-names-for-your-baby_00334734/#gref
