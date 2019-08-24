@@ -4,6 +4,9 @@
   - Add SemVer [@marocchino]
   - Remove some obselated prefix from PhoneNumberBR.mobile_phone_prefix
     [@Kutomore]
+  - Add Book.iban [@Volosh1n]
+  - Add Name.pronouns [@danderozier]
+  - Add PhoneNumberRU [@steverovsky]
 
 ## 2.12.0
   - Add Russian Phone Numbers [@steverovsky]
