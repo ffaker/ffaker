@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author Walerian Sobczak <walerian.sobczak@gmail.com> github.com/walerian777
   # Inspirations:
   # https://pl.wikipedia.org/wiki/P%C5%82e%C4%87
   module GenderPL

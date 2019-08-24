@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author Walerian Sobczak <walerian.sobczak@gmail.com> github.com/walerian777
   # Inspirations:
   # https://pl.wikipedia.org/wiki/Numery_telefoniczne_w_Polsce
   # https://pl.wikipedia.org/wiki/Plan_numeracji_krajowej

@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author Walerian Sobczak <walerian.sobczak@gmail.com> github.com/walerian777
   # Inspirations:
   # https://pl.wiktionary.org/wiki/Indeks:Polski_-_Imiona
   # https://pl.wiktionary.org/wiki/Kategoria:Polskie_nazwiska_m%C4%99skie

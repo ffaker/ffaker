@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author: Gustavo Souza https://github.com/gustavor-souza
   # Sources:
   # - https://en.wikipedia.org/wiki/Telephone_numbers_in_Brazil
   # - http://www.teleco.com.br/num_cel.asp

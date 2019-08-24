@@ -3,7 +3,6 @@
 require 'ffaker/address'
 
 module FFaker
-  # Author PapePathe<pathe.sene@gmail.com> github.com/PapePathe
   module AddressSN
     include FFaker::Address
 

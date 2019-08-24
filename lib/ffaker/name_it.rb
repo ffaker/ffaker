@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author microspino<info@microspino.com> github.com/microspino
   module NameIT
     extend ModuleUtils
     extend self

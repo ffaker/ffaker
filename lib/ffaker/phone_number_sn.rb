@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author: PapePathe<pathe.sene@xarala.sn> http://www.xarala.sn
   module PhoneNumberSN
     extend ModuleUtils
     extend self

@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author Walerian Sobczak <walerian.sobczak@gmail.com> github.com/walerian777
   # Inspirations:
   # https://pl.wiktionary.org
   module LoremPL

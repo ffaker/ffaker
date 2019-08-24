@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author AntonyFalegkos<falegk1@gmail.com> github.com/falegk
   module NameGR
     extend ModuleUtils
     extend self

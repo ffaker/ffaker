@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author: wiseleyb<wiseleyb@gmail.com>
   # Based on information from http://en.wikipedia.org/wiki/Telephone_numbers_in_Australia
   module PhoneNumberDA
     extend ModuleUtils

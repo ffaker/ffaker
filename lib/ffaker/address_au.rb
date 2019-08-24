@@ -3,7 +3,6 @@
 require 'ffaker/address'
 
 module FFaker
-  # Author wiseleyb<wiseleyb@gmail.com>
   module AddressAU
     include FFaker::Address
 

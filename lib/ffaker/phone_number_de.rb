@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author: lawitschka<moritz.lawitschka@urbanvention.com>
   module PhoneNumberDE
     extend ModuleUtils
     extend self

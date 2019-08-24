@@ -4,7 +4,6 @@ require 'ffaker/identification_es'
 
 module FFaker
   module IdentificationMX
-    # Author Guapolo <github.com/guapolo>
     extend ModuleUtils
     extend self
 

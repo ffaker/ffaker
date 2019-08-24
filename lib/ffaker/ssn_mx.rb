@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Author Guapolo <github.com/guapolo>
   module SSNMX
     extend ModuleUtils
     extend self

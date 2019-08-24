@@ -2,7 +2,6 @@
 
 require 'helper'
 
-# Author: wiseleyb<wiseleyb@gmail.com>
 class TestAddressAU < Test::Unit::TestCase
   include DeterministicHelper
 
