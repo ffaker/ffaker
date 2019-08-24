@@ -146,11 +146,11 @@ module FFaker
       element_content = if content
                           content
                         else
-                          block_html = ''
+                          block_html = +''
                           yield(block_html)
                           block_html
                         end
-      "<#{element}>#{element_content}</#{element}>"
+      +"<#{element}>#{element_content}</#{element}>"
     end
 
     def word

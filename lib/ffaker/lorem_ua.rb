@@ -17,7 +17,7 @@ module FFaker
       elements = words(word_count + rand(0..9))
       elements.insert(rand(3..(elements.count - 3)), ',') if elements.count > 10
       result = elements.join(' ').gsub(' , ', ', ')
-      capitalize_ukrainian("#{result}#{sentence_type_mark}")
+      capitalize_ukrainian(+"#{result}#{sentence_type_mark}")
     end
 
     alias phrase sentence

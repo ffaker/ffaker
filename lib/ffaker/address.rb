@@ -48,7 +48,7 @@ module FFaker
     end
 
     def building_number
-      FFaker.numerify(('#' * rand(0..2)) << '###')
+      FFaker.numerify(('#' * rand(3..5)))
     end
 
     def street_name
@@ -59,7 +59,7 @@ module FFaker
     end
 
     def street_address(include_secondary = false)
-      str = "#{building_number} #{street_name}"
+      str = +"#{building_number} #{street_name}"
       str << " #{secondary_address}" if include_secondary
       str
     end

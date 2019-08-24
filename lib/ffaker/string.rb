@@ -17,7 +17,7 @@ module FFaker
     ESCAPEABLE_CHARS = ['\\', '/', '.', '(', ')', '[', ']', '{', '}'].freeze
 
     def from_regexp(exp)
-      result = ''
+      result = +''
       @last_token = nil
 
       # Drop surrounding /'s and split into characters
@@ -62,7 +62,7 @@ module FFaker
 
         process_token(@last_token) # Else run the last one again
       when '{' then
-        number = ''
+        number = +''
         while (ch = tokens.shift) != '}'
           number << ch
         end

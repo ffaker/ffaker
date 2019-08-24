@@ -18,7 +18,7 @@ module FFaker
     SLUG_DELIMITERS = %w[- _ .].freeze
 
     def email(name = nil)
-      "#{user_name(name)}@#{domain_name}"
+      +"#{user_name(name)}@#{domain_name}"
     end
 
     # Returns an email address of an online disposable email service

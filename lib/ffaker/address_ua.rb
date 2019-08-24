@@ -32,7 +32,7 @@ module FFaker
     end
 
     def street_address(include_secondary = false)
-      str = "#{street_name}, #{building_number}"
+      str = +"#{street_name}, #{building_number}"
       str << ", кв. #{appartment_number}" if include_secondary
       str
     end
