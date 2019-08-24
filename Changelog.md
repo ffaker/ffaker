@@ -1,4 +1,10 @@
 ## development
+
+  - Add your change HERE
+
+## 2.12.0
+  - Add Russian Phone Numbers [@steverovsky]
+  - Remove invalid example from NameRU.first_name_male [@steverovsky]
   - *BREAKING CHANGE*: Drop support of under 2.3  [@marocchino]
   - Add PhoneNumberUA [@Volosh1n]
   - Add SemVer [@marocchino]
@@ -7,10 +13,6 @@
   - Add Book.iban [@Volosh1n]
   - Add Name.pronouns [@danderozier]
   - Add PhoneNumberRU [@steverovsky]
-
-## 2.12.0
-  - Add Russian Phone Numbers [@steverovsky]
-  - Remove invalid example from NameRU.first_name_male [@steverovsky]
 
 ## 2.11.0
   - Add HealthcareRU [@gruz0]
