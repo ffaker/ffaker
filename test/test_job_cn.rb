@@ -12,7 +12,7 @@ class TestFakerJobCN < Test::Unit::TestCase
   end
 
   def test_title
-    assert @tester.title.length >= 1
+    assert_greater_than_or_equal_to @tester.title.length, 1
   end
 
   def test_nouns

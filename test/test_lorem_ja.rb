@@ -33,7 +33,7 @@ class TestLoremJA < Test::Unit::TestCase
   end
 
   def test_word
-    assert @subject.word.length >= 1
+    assert_greater_than_or_equal_to @subject.word.length, 1
     assert_kind_of String, @subject.word
   end
 
@@ -48,7 +48,7 @@ class TestLoremJA < Test::Unit::TestCase
   end
 
   def test_sentence
-    assert @subject.sentence.length >= 1
+    assert_greater_than_or_equal_to @subject.sentence.length, 1
   end
 
   def test_sentences
@@ -62,7 +62,7 @@ class TestLoremJA < Test::Unit::TestCase
   end
 
   def test_paragraph
-    assert @subject.paragraph.length >= 1
+    assert_greater_than_or_equal_to @subject.paragraph.length, 1
   end
 
   def test_paragraphs

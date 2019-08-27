@@ -29,17 +29,15 @@ class TestSSNSE < Test::Unit::TestCase
   end
 
   def test_ssn_with_from_to
-    10.times do
-      from = Time.local(1980, 2, 28)
-      to = Time.local(2000, 2, 28)
+    from = Time.local(1980, 2, 28)
+    to = Time.local(2000, 2, 28)
 
+    assert_random_between(from, to, exclude_end: true) do
       ssn = FFaker::SSNSE.ssn(from: from, to: to)
       year = ssn[0..3].to_i
       month = ssn[4..5].to_i
       day = ssn[6..7].to_i
-      ssn_birth_date = Time.local(year, month, day)
-      assert ssn_birth_date < to
-      assert ssn_birth_date >= from
+      Time.local(year, month, day)
     end
   end
 end

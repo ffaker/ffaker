@@ -40,6 +40,18 @@ class TestFakerTime < Test::Unit::TestCase
     assert_deterministic { @tester.datetime(hours: 4, minutes: 20) }
   end
 
+  def test_datetime_year_range_and_year_latest
+    current_year = ::DateTime.now.year
+    [[0, 0], [1, 1], [2, 4], [8, 6]].each do |year_range, year_latest|
+      assert_random_between(
+        current_year - year_range - year_latest,
+        current_year - year_latest
+      ) do
+        @tester.datetime(year_range: year_range, year_latest: year_latest).year
+      end
+    end
+  end
+
   def test_month
     month_regex = /\A(?:January|February|March|April|May|June|July|August|September|October|November|December)\z/
     assert_match(month_regex, @tester.month)
@@ -49,12 +61,7 @@ class TestFakerTime < Test::Unit::TestCase
     from = Time.local(2015, 1, 1)
     to   = Time.local(2016, 1, 1)
 
-    100.times do
-      random_date = @tester.between(from, to)
-      assert random_date >= from, "Expected >= \"#{from}\", but got #{random_date}"
-      assert random_date <= to, "Expected <= \"#{to}\", but got #{random_date}"
-      assert_deterministic { @tester.between(from, to) }
-    end
+    assert_random_between(from, to) { @tester.between(from, to) }
   end
 
   def test_between_for_string
