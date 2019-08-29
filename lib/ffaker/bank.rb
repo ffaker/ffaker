@@ -91,6 +91,20 @@ module FFaker
       formatify_iban(COUNTRIES[country_code.upcase])
     end
 
+    def card_number
+      fetch_sample(CARD_NUMBERS)
+    end
+
+    def card_expiry_date(**params)
+      params[:year_range] ||= 5
+      params[:year_latest] ||= -params[:year_range] # for the future
+      FFaker::Time.date(params)
+    end
+
+    def card_type
+      fetch_sample(CARD_TYPES)
+    end
+
     private
 
     def formatify_iban(code)

@@ -28,6 +28,41 @@ module DeterministicHelper
     assert(returns.uniq.length == 1, options[:message])
   end
 
+  %w[< > <= >=].each do |operator|
+    operator_name =
+      case operator[0]
+      when '<' then 'less_than'
+      when '>' then 'greater_than'
+      else raise 'Unexpected operator'
+      end
+    operator_name += '_or_equal_to' if operator[1] == '='
+
+    define_method "assert_#{operator_name}" do |got, expected|
+      assert(
+        got.public_send(operator, expected),
+        "Expected #{operator} \"#{expected}\", but got #{got}"
+      )
+    end
+  end
+
+  def assert_between(got, from, to, exclude_end: false)
+    assert_greater_than_or_equal_to got, from
+    public_send "assert_less_than#{'_or_equal_to' unless exclude_end}", got, to
+  end
+
+  def assert_random(original_block, *args)
+    100.times do
+      yield(*args)
+      assert_deterministic(&original_block)
+    end
+  end
+
+  %w[less_than_or_equal_to between].each do |method_name|
+    define_method "assert_random_#{method_name}" do |*args, &block|
+      assert_random(block) { send "assert_#{method_name}", block.call, *args }
+    end
+  end
+
   # Methods to be called outside of individual examples.
   module ClassMethods
     # Shorthand method to quickly test the determinability of multiple methods.

@@ -1,6 +1,7 @@
 ## development
 
   - Add your change HERE
+  - Add `Bank.card_number`, `.card_expiry_date` and `.card_type` [@AlexWayfer]
 
 ## 2.12.0
   - Add Russian Phone Numbers [@steverovsky]

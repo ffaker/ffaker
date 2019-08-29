@@ -36,6 +36,6 @@ class TestFakerIdentificationESCO < Test::Unit::TestCase
   end
 
   def test_expedition_date
-    assert(Date.today >= @tester.expedition_date)
+    assert_less_than @tester.expedition_date, Date.today
   end
 end

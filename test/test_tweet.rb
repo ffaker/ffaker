@@ -29,19 +29,19 @@ class TestTweet < Test::Unit::TestCase
   end
 
   def test_body
-    assert(FFaker::Tweet.body.size <= 140)
+    assert_less_than_or_equal_to FFaker::Tweet.body.size, 140
   end
 
   def test_shortish_body
-    assert(FFaker::Tweet.body(20).size <= 20)
+    assert_less_than_or_equal_to FFaker::Tweet.body(20).size, 20
   end
 
   def test_short_body
-    assert(FFaker::Tweet.body(2).size.between?(2, 20))
+    assert_between(FFaker::Tweet.body(2).size, 2, 20)
   end
 
   def test_tweet
-    100.times { assert(FFaker::Tweet.tweet.size <= 140) }
+    assert_random_less_than_or_equal_to(140) { FFaker::Tweet.tweet.size }
   end
 
   def test_tweet_with_reply
@@ -50,10 +50,10 @@ class TestTweet < Test::Unit::TestCase
   end
 
   def test_oversize_body_length
-    assert(FFaker::Tweet.tweet(body_length: 200).size <= 140)
+    assert_less_than_or_equal_to FFaker::Tweet.tweet(body_length: 200).size, 140
   end
 
   def test_undersize_body_length
-    assert(FFaker::Tweet.tweet(body_length: 2).size <= 140)
+    assert_less_than_or_equal_to FFaker::Tweet.tweet(body_length: 2).size, 140
   end
 end
