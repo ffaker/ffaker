@@ -92,13 +92,11 @@ module FFaker
     end
 
     def card_number
-      fetch_sample(CARD_NUMBERS)
+      FFaker.numerify('#### #### #### ####')
     end
 
-    def card_expiry_date(**params)
-      params[:year_range] ||= 5
-      params[:year_latest] ||= -params[:year_range] # for the future
-      FFaker::Time.date(params)
+    def card_expiry_date(params = { year_range: 5, year_latest: -5 })
+      FFaker::Time.date(params).strftime('%m/%y')
     end
 
     def card_type
@@ -112,9 +110,9 @@ module FFaker
     end
 
     def check_country_existence(country_code)
-      unless COUNTRIES.keys.include?(country_code.upcase)
-        raise ArgumentError, "Unexpected country code: '#{country_code}'"
-      end
+      return if COUNTRIES.keys.include?(country_code.upcase)
+
+      raise ArgumentError, "Unexpected country code: '#{country_code}'"
     end
   end
 end
