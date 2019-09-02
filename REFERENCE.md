@@ -871,6 +871,7 @@
 | `iban(country_code: 'AT')` | AT935154385139465376, AT199676443295940702, AT575421622953218726 |
 | `card_number` | "8388 2554 2337 8097", "3112 2867 3411 2867", "1600 8342 6533 2869" |
 | `card_expiry_date` | "04/24", "09/23", "08/23" |
+| `card_expiry_date(format: '%m/%Y')` | "01/2021",  "09/2021", "08/2022" |
 | `card_type` | "maestro", "discover", "american_express" |
 
 ## FFaker::Book

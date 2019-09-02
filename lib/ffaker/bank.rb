@@ -95,8 +95,8 @@ module FFaker
       FFaker.numerify('#### #### #### ####')
     end
 
-    def card_expiry_date(params = { year_range: 5, year_latest: -5 })
-      FFaker::Time.date(params).strftime('%m/%y')
+    def card_expiry_date(year_range: 5, year_latest: -5, format: '%m/%y')
+      FFaker::Time.date({ year_range: year_range, year_latest: year_latest }).strftime(format)
     end
 
     def card_type
