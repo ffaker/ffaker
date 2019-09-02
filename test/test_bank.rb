@@ -24,27 +24,27 @@ class TestBank < Test::Unit::TestCase
   end
 
   def test_card_number
-    assert_match(/\A\d{4}-\d{4}-\d{4}-\d{4}\z/, @tester.card_number)
+    assert_match(/\A(\d{4} ){3}\d{4}\z/, @tester.card_number)
   end
 
   def test_card_expiry_date
-    assert_instance_of Date, @tester.card_expiry_date
+    assert_instance_of String, @tester.card_expiry_date
 
-    current_year = ::DateTime.now.year
+    date_today = ::DateTime.now
 
-    assert_random_between(current_year, current_year + 5) do
-      @tester.card_expiry_date.year
+    assert_random_between(
+      date_today.strftime('%y'), date_today.next_year(5).strftime('%y')
+    ) do
+      @tester.card_expiry_date.split('/').pop
     end
 
     year_range = 4
     year_latest = 8
     assert_random_between(
-      current_year - year_latest - year_range,
-      current_year - year_latest
+      date_today.prev_year(year_latest + year_range).strftime('%y'),
+      date_today.prev_year(year_latest).strftime('%y')
     ) do
-      @tester.card_expiry_date(
-        year_range: year_range, year_latest: year_latest
-      ).year
+      @tester.card_expiry_date(year_range: year_range, year_latest: year_latest).split('/').pop
     end
   end
 
