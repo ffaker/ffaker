@@ -6,12 +6,7 @@ module FFaker
     extend self
 
     DRIVETRAINS = %w[4WD 4X4 AWD FWD RWD].freeze
-    YEARS = [*'1900'..(Date.today.year + 1).to_s].freeze
-    COLOR_PREFIXES = k(%w[
-                         beautiful bright calm dangerous dark dull fast magnetic magnificent
-                         majestic melodic metallic mundane mute mysterious new pleasant pretty
-                         resonant royal slate soft tranquil vibrant weak
-                       ])
+    YEARS = [*'1900'..(::Time.now.year + 1).to_s].freeze
     TRANSMISSIONS_ABBR = %w[AT MT AM CVT].freeze
     CYLINDERS = %w[2 5 6 8].freeze
 
