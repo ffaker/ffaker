@@ -39,7 +39,7 @@ module FFaker
 
       return sanitize(Name.first_name) if rand(0..1).zero?
 
-      [Name.first_name, Name.last_name].join(fetch_sample(%w[. _])).downcase
+      [sanitize(Name.first_name), sanitize(Name.last_name)].join(fetch_sample(%w[. _]))
     end
 
     def domain_name
@@ -47,9 +47,7 @@ module FFaker
     end
 
     def domain_word
-      dw = Company.name.split(' ').first
-      dw.gsub!(/\W/, '')
-      dw.downcase
+      sanitize(Company.name)
     end
 
     def domain_suffix
