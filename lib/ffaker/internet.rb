@@ -47,7 +47,7 @@ module FFaker
     end
 
     def domain_word
-      sanitize(Company.name)
+      sanitize(Company.name.split(' ').first)
     end
 
     def domain_suffix
