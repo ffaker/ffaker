@@ -21,8 +21,9 @@ module FFaker
       fetch_sample(STATE)
     end
 
-    def state_abbr
-      fetch_sample(STATE_ABBR)
+    def state_abbr(st_name = nil)
+      st_name ||= state
+      STATE_ABBR[STATE.index(st_name.split.map(&:capitalize).join(' '))]
     end
 
     def state_and_territories_abbr
