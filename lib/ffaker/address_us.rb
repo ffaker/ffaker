@@ -44,13 +44,13 @@ module FFaker
     private
 
     def check_state_existence(state_name)
-      return if STATE.include?(capitalize_all_words(state_name))
+      return if STATE.include?(state_name)
 
       raise ArgumentError, "Unexpected state name: '#{state_name}'"
     end
 
     def find_abbr(state)
-      STATE_ABBR[STATE.index(capitalize_all_words(state))]
+      STATE_ABBR[STATE.index(state)]
     end
 
     def capitalize_all_words(string)
