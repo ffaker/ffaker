@@ -2,6 +2,9 @@
 
   - Add your change HERE
   - Add `Bank.card_number`, `.card_expiry_date` and `.card_type` [@AlexWayfer]
+  - Add `Bank.iban` [@Volosh1n]
+  - Add optional argument to `AddressUS.state_abbr` to determine state's abbreviation [@Volosh1n]
+  - Add `Name.pronouns` [@danderozier]
 
 ## 2.12.0
   - Add Russian Phone Numbers [@steverovsky]

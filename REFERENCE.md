@@ -805,6 +805,7 @@
 | `secondary_address` | Suite 597, Apt. 857, Apt. 834 |
 | `state` | North Dakota, Florida, Illinois |
 | `state_abbr` | NJ, MN, WA |
+| `state_abbr('California')` | CA |
 | `state_and_territories_abbr` | MD, VA, NM |
 | `street_address` | 221 Lester Lodge, 61254 Boyle Extension, 025 Nada Mill |
 | `street_name` | Mike Plain, Wisozk Ports, Zaida Causeway |
