@@ -884,7 +884,7 @@
 | `description` | Ut ea aut necessitatibus corrupti ut repellendus odio. Voluptate rerum dolorem vero laborum et laudantium. Molestias adipisci veritatis eum quaerat in dignissimos possimus ab. Quidem assumenda repudiandae velit exercitationem qui dolorum labore quod., Explicabo quasi voluptas aut aut ad nam. Deserunt in tenetur est quidem doloribus aliquam quod. Voluptatem cum aperiam cumque nobis iusto dolores in. Sed necessitatibus molestiae et aliquam., Nisi et quam officia ea. Reprehenderit optio excepturi et commodi. Ut reiciendis amet deserunt ea voluptate. Temporibus consequatur quod sunt voluptatem. |
 | `genre` | Dieselpunk, Epic / High fantasy, Blessing |
 | `isbn` | 18445054293, 6871724811, 18215783130 |
-| `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=A+Fistful+of+Green+Cousins&amp;top_text=Fantasy&amp;author=Latrina+Sporer&amp;image_code=34&amp;theme=16, https://orly-appstore.herokuapp.com/generate?title=Action+Gypsy&amp;top_text=Whig+history&amp;author=Venessa+Rogahn&amp;image_code=21&amp;theme=5, https://orly-appstore.herokuapp.com/generate?title=Forbidden+Women&amp;top_text=Nonfiction+novel&amp;author=Lupe+Kutch&amp;image_code=11&amp;theme=15 |
+| `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=A+Fistful+of+Green+Cousins&amp;top_text=Fantasy&amp;author=Latrina+Sporer&amp;image_code=34&amp;theme=16, https://orly-appstore.herokuapp.com/generate?title=Action+Imp&amp;top_text=Whig+history&amp;author=Venessa+Rogahn&amp;image_code=21&amp;theme=5, https://orly-appstore.herokuapp.com/generate?title=Forbidden+Women&amp;top_text=Nonfiction+novel&amp;author=Lupe+Kutch&amp;image_code=11&amp;theme=15 |
 | `title` | Rise of the American Friday, Codename: Red Mutant, War of the Dangerous City |
 
 ## FFaker::Boolean
@@ -1441,7 +1441,7 @@
 | Method | Example |
 | ------ | ------- |
 | `rating` | PG, R, G |
-| `title` | Bloody City, The Gypsy That Came to Dinner, Nuclear Dreams 2: Son of Nuclear Dreams |
+| `title` | Bloody City, The Imp That Came to Dinner, Nuclear Dreams 2: Son of Nuclear Dreams |
 
 ## FFaker::Music
 
