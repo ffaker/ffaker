@@ -39,6 +39,7 @@
  * [FFaker::CheesyLingo](#ffakercheesylingo)
  * [FFaker::Code](#ffakercode)
  * [FFaker::Color](#ffakercolor)
+ * [FFaker::ColorPL](#ffakercolorpl)
  * [FFaker::ColorUA](#ffakercolorua)
  * [FFaker::Company](#ffakercompany)
  * [FFaker::CompanyCN](#ffakercompanycn)
@@ -925,6 +926,12 @@
 | `rgb_list` | 21,178,210, 76,175,41, 242,222,178 |
 | `rgba_array` | 40, 94, 30, 0.86, 120, 84, 19, 0.96, 17, 68, 203, 0.73 |
 | `rgba_list` | 90,59,232,0.0, 14,141,128,0.26, 0,136,137,0.37 |
+
+## FFaker::ColorPL
+
+| Method | Example |
+| ------ | ------- |
+| `name` | kardynalski, zielony, rubinowy |
 
 ## FFaker::ColorUA
 
