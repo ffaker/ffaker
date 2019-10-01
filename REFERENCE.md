@@ -70,6 +70,7 @@
  * [FFaker::IdentificationESCO](#ffakeridentificationesco)
  * [FFaker::IdentificationKr](#ffakeridentificationkr)
  * [FFaker::IdentificationMX](#ffakeridentificationmx)
+ * [FFaker::IdentificationPL](#ffakeridentificationpl)
  * [FFaker::Image](#ffakerimage)
  * [FFaker::Internet](#ffakerinternet)
  * [FFaker::InternetSE](#ffakerinternetse)
@@ -1202,6 +1203,14 @@
 | `rfc` | REAG870911CB2, ÑEDH820917F13, MHÑ780425ACI |
 | `rfc_persona_fisica` | BEHW7007246NE, XOQW7111161QZ, DUOY990416G12 |
 | `rfc_persona_moral` | DUJ1004129M7, HSA930723WU3, RÑI161008SJ8 |
+
+## FFaker::IdentificationPL
+
+| Method | Example |
+| ------ | ------- |
+| `pesel` | 82042691480, 05221154824, 53073028936 |
+| `identity_card` | AKH956298, CPI928237, VYB372774 |
+| `drivers_license` | 47704/10/7415, 20409/05/8025, 90741/34/4389 |
 
 ## FFaker::Image
 
