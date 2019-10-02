@@ -5,6 +5,7 @@
   - Add `Bank.iban` [@Volosh1n]
   - Add optional argument to `AddressUS.state_abbr` to determine state's abbreviation [@Volosh1n]
   - Add `Name.pronouns` [@danderozier]
+  - Add `FFaker::ColorPL`, `FFaker::IdentificationPL`, `FFaker::SportPL` [@walerian777]
 
 ## 2.12.0
   - Add Russian Phone Numbers [@steverovsky]
