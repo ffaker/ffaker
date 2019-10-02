@@ -39,7 +39,7 @@ module FFaker
     def generate_valid_pesel_date
       from = Date.new(1800, 1, 1)
       to = [Date.today, Date.new(2299, 12, 31)].min
-      fetch_sample([*from..to])
+      fetch_sample(from..to)
     end
 
     def pesel_birthdate(date)

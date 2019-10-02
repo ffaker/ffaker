@@ -8,7 +8,7 @@ module FFaker
     # Resident Registration Number
     # http://ko.wikipedia.org/wiki/%EC%A3%BC%EB%AF%BC%EB%93%B1%EB%A1%9D%EB%B2%88%ED%98%B8
     def rrn
-      birth = fetch_sample([*Date.new(1970, 1, 1)..Date.new(1999, 12, 31)]).strftime('%y%d%m')
+      birth = fetch_sample(Date.new(1970, 1, 1)..Date.new(1999, 12, 31)).strftime('%y%d%m')
       sex = fetch_sample([1, 2])
       loc = FFaker.numerify("#{fetch_sample([*'00'..'95'])}###")
       a, b, c, d, e, f, g, h, i, j, k, l = "#{birth}#{sex}#{loc}".split(//).map(&:to_i)
