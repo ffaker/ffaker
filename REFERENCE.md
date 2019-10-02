@@ -149,6 +149,7 @@
  * [FFaker::SSNSE](#ffakerssnse)
  * [FFaker::Skill](#ffakerskill)
  * [FFaker::Sport](#ffakersport)
+ * [FFaker::SportPL](#ffakersportpl)
  * [FFaker::SportUS](#ffakersportus)
  * [FFaker::String](#ffakerstring)
  * [FFaker::Time](#ffakertime)
@@ -2242,6 +2243,14 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | ❗ *[name] is deprecated. For US sports please use the SportUS module* |
+
+## FFaker::SportPL
+
+| Method | Example |
+| ------ | ------- |
+| `name` | Siatkówka plażowa, Saneczkarstwo, Szachy |
+| `summer` | Rzut dyskiem, Wioślarstwo, Żeglarstwo |
+| `winter` | Narciarstwo alpejskie, Dwubój zimowy, Łyżwiarstwo figurowe |
 
 ## FFaker::SportUS
 

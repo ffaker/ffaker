@@ -182,6 +182,7 @@ module FFaker
   autoload :SemVer, 'ffaker/sem_ver'
   autoload :Skill, 'ffaker/skill'
   autoload :Sport, 'ffaker/sport'
+  autoload :SportPL, 'ffaker/sport_pl'
   autoload :SportUS, 'ffaker/sport_us'
   autoload :SSN, 'ffaker/ssn'
   autoload :SSNMX, 'ffaker/ssn_mx'
