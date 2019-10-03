@@ -1,6 +1,8 @@
 ## development
 
   - Add your change HERE
+
+## 2.13.0
   - Add `Bank.card_number`, `.card_expiry_date` and `.card_type` [@AlexWayfer]
   - Add `Bank.iban` [@Volosh1n]
   - Add optional argument to `AddressUS.state_abbr` to determine state's abbreviation [@Volosh1n]
