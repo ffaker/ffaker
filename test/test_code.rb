@@ -8,7 +8,7 @@ class TestCode < Test::Unit::TestCase
   assert_methods_are_deterministic(FFaker::Code, :ean, :npi)
 
   def test_npi_legacy_regexp
-    assert FFaker::Code.npi(legacy: true).match(/(1|2)[0-9]{9}/)
+    assert FFaker::Code.npi(legacy: true).match(/\A(1|2)[0-9]{9}\z/)
   end
 
   def test_npi
