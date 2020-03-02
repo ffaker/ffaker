@@ -2,6 +2,8 @@
 
   - Add your change HERE
 
+  - Add `Code.npi` [@alibby]
+
 ## 2.13.0
   - Add `Bank.card_number`, `.card_expiry_date` and `.card_type` [@AlexWayfer]
   - Add `Bank.iban` [@Volosh1n]
