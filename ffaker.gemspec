@@ -42,6 +42,6 @@ Gem::Specification.new do |s|
 
   s.test_files = Dir['test/**/*']
 
-  s.add_development_dependency 'rake', '~> 10.1.1'
+  s.add_development_dependency 'rake', '~> 13.0'
   s.add_development_dependency 'test-unit'
 end
