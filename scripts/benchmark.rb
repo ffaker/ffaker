@@ -7,7 +7,7 @@ NAMES_COUNT = 10_000
 def run(name)
   Benchmark.bm do |rep|
     rep.report("generating #{NAMES_COUNT} names (#{name})") do
-      mod == 'ffaker' ? FFaker : Faker
+      mod = name == 'ffaker' ? FFaker : Faker
       NAMES_COUNT.times { mod::Name.name }
     end
   end
