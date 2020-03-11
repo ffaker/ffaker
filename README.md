@@ -27,7 +27,7 @@ need to:
 and then
 
     require 'ffaker'
-    
+
 ### Rails
 
 1. If using rails then add the gem to your development and test environments:
@@ -97,6 +97,13 @@ FFaker::Name.unique.name
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
+
+## Release
+
+* Bump version of `ffaker.gemspec` and `lib/ffaker.rb` files.
+* Update `Changelog.md`.
+* Tag with `v<major>.<minor>.<patch>`.
+* Push it.
 
 ## Copyright
 

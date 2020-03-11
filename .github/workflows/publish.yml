@@ -11,8 +11,25 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Release Gem
-        uses: cadwallion/publish-rubygems-action@master
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+      - name: Setting up gem credentials
+        run: |
+          mkdir -p ~/.gem
+          cat << EOF > ~/.gem/credentials
+          ---
+          :github: Bearer ${GITHUB_TOKEN}
+          :rubygems_api_key: ${RUBYGEMS_API_KEY}
+          EOF
+          chmod 0600 ~/.gem/credentials
         env:
           RUBYGEMS_API_KEY: ${{secrets.RUBYGEMS_API_KEY}}
+      - name: Installing dependencies
+        run: |
+          gem install bundler
+          bundle install
+      - name: Build
+        run: gem build ffaker.gemspec
+      - name: Release
+        run: gem push ffaker-*.gem
