@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
-  s.version           = '2.13.0'
-  s.date              = '2019-10-04'
+  s.version           = '2.14.0'
+  s.date              = '2020-03-11'
   s.required_ruby_version = '>= 2.4'
 
   s.license = 'MIT'

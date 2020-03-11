@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module FFaker
-  VERSION = '2.13.0'
+  VERSION = '2.14.0'
 
   require 'ffaker/utils/array_utils'
   require 'ffaker/utils/module_utils'
