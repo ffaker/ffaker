@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'set'
-
 module FFaker
   class UniqueUtils
     def initialize(generator, max_retries)

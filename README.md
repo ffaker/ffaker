@@ -100,7 +100,7 @@ FFaker::Name.unique.name
 
 ## Release
 
-* Bump version of `ffaker.gemspec` and `lib/ffaker.rb` files.
+* Bump version in `lib/ffaker.rb`.
 * Update `Changelog.md`.
 * Tag with `v<major>.<minor>.<patch>`.
 * Push it.
