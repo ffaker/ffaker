@@ -100,7 +100,7 @@ FFaker::Name.unique.name
 
 ## Release
 
-* Bump version in `lib/ffaker.rb`.
+* Bump version in `lib/version.rb`.
 * Update `Changelog.md`.
 * Tag with `v<major>.<minor>.<patch>`.
 * Push it.
