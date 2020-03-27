@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'ffaker/internet'
+require 'securerandom'
 
 module FFaker
   module InternetSE
@@ -105,6 +106,10 @@ module FFaker
       glue ||= fetch_sample(SLUG_DELIMITERS)
 
       (words || FFaker::Lorem.words(2).join(' ')).gsub(' ', glue).downcase
+    end
+
+    def token
+      SecureRandom.uuid
     end
   end
 end

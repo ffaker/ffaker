@@ -9,7 +9,7 @@ class TestFakerInternetSE < Test::Unit::TestCase
     FFaker::InternetSE,
     :email, :free_email, :safe_email, :disposable_email,
     :user_name, :domain_name, :domain_word, :domain_suffix,
-    :http_url, :ip_v4_address, :password, :slug
+    :http_url, :ip_v4_address, :password, :slug, :token
   )
 
   def setup
@@ -74,5 +74,9 @@ class TestFakerInternetSE < Test::Unit::TestCase
 
   def test_slug
     assert @tester.slug.match(/^[a-z]+(_|\.|\-)[a-z]+$/)
+  end
+
+  def token
+    assert @tester.token.match(/\A[0-9a-z]{8}-([0-9a-z]{4}-){3}[0-9a-z]{12}\z/)
   end
 end

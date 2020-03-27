@@ -1266,6 +1266,7 @@
 | `password` | 7fT2KcJFlXGqiso, lpJetOApIyF6_, xOJ2sfcsuGDf9iKN |
 | `safe_email` | alva.oga@example.org, josiahdexter_kozey@example.org, anamaria@example.com |
 | `slug` | provident_adipisci, occaecati-harum, minima_ipsam |
+| `token` | c35bf6d6-2ce7-4631-bbdf-21e044f808c0 |
 | `uri`(...) |  |
 | `user_name` | sung_ferry, jeramydylan_carroll, christoper |
 | `user_name_from_name`(...) |  |

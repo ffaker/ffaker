@@ -2,6 +2,9 @@
 
   - Add your change HERE
 
+## 2.15.0
+  - Add `InternetSE.token` [@bestwebua]
+
 ## 2.14.0
   - Add `Code.npi` [@alibby]
 
