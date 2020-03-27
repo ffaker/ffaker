@@ -7,6 +7,6 @@ class TestAddressFR < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::AddressFR,
-    :city, :full_address, :street_name, :postal_code
+    :city, :full_address, :street_name, :postal_code, :region
   )
 end

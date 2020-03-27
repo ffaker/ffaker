@@ -13,7 +13,7 @@ module FFaker
     MOD = [' B', ' T', ' Q', ' BIS', ' TER', ' QUATER', '', '', '', ''].freeze
     SEP = [', ', ' '].freeze
     TYPE = %w[rue avenue av boulevard bd impasse].freeze
-    POSTAL_CODE_FORMATS = ['####', '#####', '97####', '2A###', '2B###'].freeze
+    POSTAL_CODE_FORMATS = ['#####', '97###', '2A###', '2B###'].freeze
 
     def street_address
       FFaker.numerify(fetch_sample(NUM)) +
@@ -33,6 +33,10 @@ module FFaker
 
     def full_address
       %(#{street_address}#{fetch_sample(SEP)}#{postal_code} #{fetch_sample(CITY)})
+    end
+
+    def region
+      fetch_sample(REGION)
     end
   end
 end
