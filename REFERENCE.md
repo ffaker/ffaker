@@ -467,11 +467,12 @@
 | `city` | Tremblay-en-France, Les Abymes, Pantin |
 | `city_prefix` | East, East, Lake |
 | `city_suffix` | burgh, burgh, berg |
-| `country` | Martinique, Senegal, Côte d'Ivoire |
+| `country` | France, Senegal, Côte d'Ivoire |
 | `country_code` | MO, ME, NE |
 | `full_address` | 79, bd Isaac Clerc 2B607 Montigny-le-Bretonneux, 5655 T, bd Margaret Lucas, 2A042 Bagnolet, 47 rue Denis de Girard 2A145 Arles |
 | `neighborhood` | Bridesburg, North East Irwindale, Babylon Bayside |
-| `postal_code` | 976596, 973566, 979492 |
+| `postal_code` | 75008, 97659, 97356, 97949 |
+| `region` | Bretagne, Île-de-France, Pays de la Loire, Mayotte |
 | `secondary_address` | Apt. 596, Suite 111, Suite 400 |
 | `street_address` | 7 impasse Zoé de Mercier, 19 bd Thérèse Ramos, 47 QUATER boulevard Patrick Cousin |
 | `street_name` | Nakisha View, Dare Flats, Sunday Light |
