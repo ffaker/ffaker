@@ -30,6 +30,7 @@
  * [FFaker::Airline](#ffakerairline)
  * [FFaker::Animal](#ffakeranimal)
  * [FFaker::AnimalCN](#ffakeranimalcn)
+ * [FFaker::AnimalES](#ffakeranimales)
  * [FFaker::AnimalUS](#ffakeranimalus)
  * [FFaker::Avatar](#ffakeravatar)
  * [FFaker::BaconIpsum](#ffakerbaconipsum)
@@ -841,11 +842,18 @@
 | ------ | ------- |
 | `common_name` | 蝾螈, 兔子, 青蛙 |
 
+## FFaker::AnimalES
+
+| Method | Example |
+| ------ | ------- |
+| `common_name` | Mono, Águila, Zorro |
+
 ## FFaker::AnimalUS
 
 | Method | Example |
 | ------ | ------- |
 | `common_name` | Newt, Rabbit, Frog |
+
 
 ## FFaker::Avatar
 
