@@ -57,6 +57,7 @@ module FFaker
   autoload :Airline, 'ffaker/airline'
   autoload :Animal, 'ffaker/animals'
   autoload :AnimalCN, 'ffaker/animals_cn'
+  autoload :AnimalES, 'ffaker/animals_es'
   autoload :AnimalPL, 'ffaker/animal_pl'
   autoload :AnimalUS, 'ffaker/animals_us'
   autoload :Avatar, 'ffaker/avatar'
