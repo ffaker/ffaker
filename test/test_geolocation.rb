@@ -30,8 +30,8 @@ class TestGeolocation < Test::Unit::TestCase
 
       new_coords = FFaker::Geolocation.boxed_coords(coords[0], coords[1])
 
-      assert (lat_min..lat_max).cover?new_coords[0]
-      assert (lon_min..lon_max).cover?new_coords[1]
+      assert (lat_min..lat_max).cover? new_coords[0]
+      assert (lon_min..lon_max).cover? new_coords[1]
     end
   end
 end

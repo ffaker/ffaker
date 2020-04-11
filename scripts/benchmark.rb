@@ -13,7 +13,9 @@ def run(name)
   end
 end
 
-['faker', 'ffaker'].each do |gem_name|
+%w[faker ffaker].each do |gem_name|
   require gem_name
-  fork { run(gem_name) }; Process.wait
+
+  fork { run(gem_name) }
+  Process.wait
 end

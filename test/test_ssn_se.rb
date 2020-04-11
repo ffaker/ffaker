@@ -12,8 +12,8 @@ class TestSSNSE < Test::Unit::TestCase
     assert_match(/(19|20)\d{10}/, ssn, "With no arguments year should start with 19 or 20, #{ssn}")
   end
 
-  def equal?(nbr)
-    nbr % 2
+  def equal?(other)
+    other % 2
   end
 
   def test_ssn_with_gender

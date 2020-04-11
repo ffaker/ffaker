@@ -2,6 +2,9 @@
 
   - Add your change HERE
 
+  - Add `AddressFR.region` [@GuillaumeOcculy]
+  - Add `AnimalES` [@delucas]
+
 ## 2.14.0
   - Add `Code.npi` [@alibby]
 
