@@ -75,6 +75,7 @@ module FFaker
   autoload :Company, 'ffaker/company'
   autoload :CompanyCN, 'ffaker/company_cn'
   autoload :CompanyIT, 'ffaker/company_it'
+  autoload :CompanyJA, 'ffaker/company_ja'
   autoload :CompanySE, 'ffaker/company_se'
   autoload :Conference, 'ffaker/conference'
   autoload :CoursesFR, 'ffaker/courses'

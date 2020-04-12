@@ -44,6 +44,7 @@
  * [FFaker::Company](#ffakercompany)
  * [FFaker::CompanyCN](#ffakercompanycn)
  * [FFaker::CompanyIT](#ffakercompanyit)
+ * [FFaker::CompanyJA](#ffakercompanyja)
  * [FFaker::CompanySE](#ffakercompanyse)
  * [FFaker::Conference](#ffakerconference)
  * [FFaker::CoursesFR](#ffakercoursesfr)
@@ -967,6 +968,13 @@
 | `partita_iva` | 47568480470, 39113540106, 06830830342 |
 | `prefix` | Laboratorio, Studio Tecnico, Studio Tecnico |
 | `suffix` | Ingegneri, Architetti, s.n.c. |
+
+## FFaker::CompanyJA
+
+| Method | Example |
+| ------ | ------- |
+| `name` | 指宿株式会社, 松本建設, 斎藤書店 |
+| `position` | 社員, 課長 |
 
 ## FFaker::CompanySE
 
