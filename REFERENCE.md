@@ -817,6 +817,8 @@
 | `street_name` | Mike Plain, Wisozk Ports, Zaida Causeway |
 | `street_suffix` | Mall, Harbor, Track |
 | `time_zone` | Pacific/Midway, Europe/Bratislava, Asia/Muscat |
+| `country` | United States |
+| `country_code` | US |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |

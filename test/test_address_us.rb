@@ -48,4 +48,12 @@ class TestAddressUSUS < Test::Unit::TestCase
   def test_zip_code_frozen
     assert FFaker::AddressUS.zip_code.frozen? == false
   end
+
+  def test_country
+    assert_equal 'United States', FFaker::AddressUS.country
+  end
+
+  def test_country_code
+    assert_equal 'US', FFaker::AddressUS.country_code
+  end
 end

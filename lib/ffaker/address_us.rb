@@ -41,6 +41,14 @@ module FFaker
       fetch_sample(CONTINENTAL_STATE_ABBR)
     end
 
+    def country
+      FFaker::Address.country('US')
+    end
+
+    def country_code
+      FFaker::Address.country_code('United States')
+    end
+
     private
 
     def check_state_existence(state_name)
