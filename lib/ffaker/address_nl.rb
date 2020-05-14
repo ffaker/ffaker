@@ -12,7 +12,7 @@ module FFaker
     POSTAL_CODE_FORMAT = ['#### ??'].freeze
 
     def postal_code
-      FFaker.bothify(POSTAL_CODE_FORMAT).tap { |p| p[0] = rand(1..9).to_s }
+      FFaker::String.from_regexp(/[1-9]\d{3} [A-Z]{2}/)
     end
 
     def zip_code
