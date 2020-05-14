@@ -9,8 +9,6 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    POSTAL_CODE_FORMAT = ['#### ??'].freeze
-
     def postal_code
       FFaker::String.from_regexp(/[1-9]\d{3} [A-Z]{2}/)
     end
