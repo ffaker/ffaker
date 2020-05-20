@@ -74,6 +74,7 @@
  * [FFaker::IdentificationKr](#ffakeridentificationkr)
  * [FFaker::IdentificationMX](#ffakeridentificationmx)
  * [FFaker::IdentificationPL](#ffakeridentificationpl)
+ * [FFaker::IdentificationTW](#ffakeridentificationtw)
  * [FFaker::Image](#ffakerimage)
  * [FFaker::Internet](#ffakerinternet)
  * [FFaker::InternetSE](#ffakerinternetse)
@@ -1237,6 +1238,12 @@
 | `pesel` | 82042691480, 05221154824, 53073028936 |
 | `identity_card` | AKH956298, CPI928237, VYB372774 |
 | `drivers_license` | 47704/10/7415, 20409/05/8025, 90741/34/4389 |
+
+## FFaker::IdentificationTW
+
+| Method | Example |
+| ------ | ------- |
+| `id` | A270604824, R298671809, X115253450 |
 
 ## FFaker::Image
 
