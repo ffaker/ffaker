@@ -2,8 +2,12 @@
 
   - Add your change HERE
 
+## 2.15.0
+  - Add `IdentificationTW` [@pominx]
+  - Add `CompanyJA` [@ktroutner]
   - Add `AddressFR.region` [@GuillaumeOcculy]
   - Add `AnimalES` [@delucas]
+  - Fix `AddressNL.postal_code` [@gerard76]
 
 ## 2.14.0
   - Add `Code.npi` [@alibby]
