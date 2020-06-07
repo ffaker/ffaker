@@ -39,14 +39,10 @@ module FFaker
 
     def school
       case rand(0..4)
-      when 0, 1 then
-        "#{school_name} #{fetch_sample(SCHOOL_TYPE)}"
-      when 2 then
-        "#{school_generic_name} #{fetch_sample(SCHOOL_ADJ)} #{fetch_sample(SCHOOL_TYPE)}"
-      when 3 then
-        "#{fetch_sample(SCHOOL_UNI)} of #{school_generic_name}"
-      when 4 then
-        "#{school_generic_name} #{fetch_sample(SCHOOL_TYPE)} of #{fetch_sample(MAJOR_NOUN)}"
+      when 0, 1 then "#{school_name} #{fetch_sample(SCHOOL_TYPE)}"
+      when 2 then "#{school_generic_name} #{fetch_sample(SCHOOL_ADJ)} #{fetch_sample(SCHOOL_TYPE)}"
+      when 3 then "#{fetch_sample(SCHOOL_UNI)} of #{school_generic_name}"
+      when 4 then "#{school_generic_name} #{fetch_sample(SCHOOL_TYPE)} of #{fetch_sample(MAJOR_NOUN)}"
       end
     end
   end

@@ -26,7 +26,7 @@ module FFaker
     # Full name with prefix according to gender, possibly with middle_name
     def full_name_prefix(gender = :any)
       case gender
-      when :any then
+      when :any
         case rand(0..8)
         when 0, 3, 6, 8 then "#{female_prefix} #{female_name} #{paternal_last_names}"
         else "#{male_prefix} #{male_name} #{paternal_last_names}"
@@ -40,7 +40,7 @@ module FFaker
     # Full name with no prefix according to gender, possibly with middle_name
     def full_name_no_prefix(gender = :any)
       case gender
-      when :any then
+      when :any
         case rand(0..8)
         when 0, 3, 6, 8 then "#{female_name} #{paternal_last_names}"
         else "#{male_name} #{paternal_last_names}"
