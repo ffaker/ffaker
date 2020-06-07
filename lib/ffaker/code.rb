@@ -10,12 +10,12 @@ module FFaker
       base_npi = rand(100_000_000..max).to_s
 
       summed_digits = base_npi
-        .chars
-        .each_with_index
-        .map { |n, i| (i.even? ? n.to_i * 2 : n).to_s }
-        .join
-        .chars
-        .inject(0) { |sum, digit| sum + digit.to_i }
+                      .chars
+                      .each_with_index
+                      .map { |n, i| (i.even? ? n.to_i * 2 : n).to_s }
+                      .join
+                      .chars
+                      .inject(0) { |sum, digit| sum + digit.to_i }
 
       npi_checksum = (10 - (24 + summed_digits) % 10).to_s.chars.last
 

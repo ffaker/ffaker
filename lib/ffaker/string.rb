@@ -50,7 +50,7 @@ module FFaker
       token = tokens.shift
 
       case token
-      when '?' then
+      when '?'
         # TODO: Let ? generate nothing
         '' # We already printed its target
       when '+' then

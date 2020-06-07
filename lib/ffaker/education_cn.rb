@@ -28,12 +28,9 @@ module FFaker
 
     def school
       case rand(0..2)
-      when 0 then
-        "#{location}#{fetch_sample(SCHOOL_TYPE)}#{fetch_sample(SCHOOL_UNI)}"
-      when 1 then
-        "#{location}#{fetch_sample(SCHOOL_UNI)}"
-      when 2 then
-        "#{location}#{fetch_sample(SCHOOL_TYPE)}#{fetch_sample(SCHOOL_UNI)}#{fetch_sample(CITY)}分校"
+      when 0 then "#{location}#{fetch_sample(SCHOOL_TYPE)}#{fetch_sample(SCHOOL_UNI)}"
+      when 1 then "#{location}#{fetch_sample(SCHOOL_UNI)}"
+      when 2 then "#{location}#{fetch_sample(SCHOOL_TYPE)}#{fetch_sample(SCHOOL_UNI)}#{fetch_sample(CITY)}分校"
       end
     end
   end

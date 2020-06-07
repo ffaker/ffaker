@@ -14,7 +14,7 @@ module FFaker
     def brand
       case rand(0..11)
       when (0..4) then fetch_sample(B1) + fetch_sample(B2)
-      when (5..10) then
+      when (5..10)
         [
           fetch_sample(START), fetch_sample(VOWELS), fetch_sample(SUFFIX),
           rand(0..1).zero? ? fetch_sample(ADDON) : nil
