@@ -103,6 +103,7 @@ module FFaker
   autoload :IdentificationES, 'ffaker/identification_es'
   autoload :IdentificationESCL, 'ffaker/identification_es_cl'
   autoload :IdentificationESCO, 'ffaker/identification_es_co'
+  autoload :IdentificationIN, 'ffaker/identification_in'
   autoload :IdentificationKr, 'ffaker/identification_kr'
   autoload :IdentificationMX, 'ffaker/identification_mx'
   autoload :IdentificationPL, 'ffaker/identification_pl'
