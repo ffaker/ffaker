@@ -71,6 +71,7 @@
  * [FFaker::IdentificationES](#ffakeridentificationes)
  * [FFaker::IdentificationESCL](#ffakeridentificationescl)
  * [FFaker::IdentificationESCO](#ffakeridentificationesco)
+ * [FFaker::IdentificationIN](#ffakeridentificationin)
  * [FFaker::IdentificationKr](#ffakeridentificationkr)
  * [FFaker::IdentificationMX](#ffakeridentificationmx)
  * [FFaker::IdentificationPL](#ffakeridentificationpl)
@@ -1215,6 +1216,12 @@
 | `expedition_date` | 2012-11-18, 2015-09-14, 2012-09-30 |
 | `gender` | Mujer, Mujer, Hombre |
 | `id` | 2778228197782, 49397620594, 3992006541162 |
+
+## FFaker::IdentificationIN
+
+| Method | Example |
+| ------ | ------- |
+| `aadhaar` | 770376350842, 829743403424 |
 
 ## FFaker::IdentificationKr
 
