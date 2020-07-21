@@ -10,7 +10,7 @@ module FFaker
     extend self
 
     def postal_code
-      FFaker::String.from_regexp(/[1-9]\d{3} [A-Z]{2}/)
+      FFaker::String.from_regexp(/[1-9]\d{3} [A-RT-Z][A-Z]/)
     end
 
     def zip_code
