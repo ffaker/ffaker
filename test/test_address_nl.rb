@@ -23,7 +23,7 @@ class TestAddressNL < Test::Unit::TestCase
   end
 
   def test_zip_code
-    assert_match(/\A[1-9]\d{3} ?(?!sa|sd|ss)[A-Z]{2}\z/, @tester.zip_code)
+    assert_match(/\A[1-9]\d{3} [A-RT-Z][A-Z]\z/, @tester.zip_code)
   end
 
   def test_street_name
