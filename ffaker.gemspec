@@ -46,6 +46,11 @@ Gem::Specification.new do |s|
 
   s.test_files = Dir['test/**/*']
 
+  s.metadata = {
+    'changelog_uri' => 'https://github.com/ffaker/ffaker/blob/master/Changelog.md',
+    'documentation_uri' => 'https://github.com/ffaker/ffaker/blob/master/REFERENCE.md'
+  }
+
   s.add_development_dependency 'rake', '~> 13.0'
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'test-unit'
