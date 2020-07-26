@@ -2,6 +2,10 @@
 
   - Add your change HERE
 
+## 2.16.0
+  - Add IdentificationIN [@nigelgomesot]
+  - Improved NL zipcode generation [@gerard76]
+
 ## 2.15.0
   - Add `IdentificationTW` [@pominx]
   - Add `CompanyJA` [@ktroutner]
