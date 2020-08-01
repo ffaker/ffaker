@@ -28,7 +28,7 @@ class TestHTMLIpsum < Test::Unit::TestCase
 
   def test_p_breaks
     # Here we can at least test how many <br> tags there are.
-    assert_match(%r{^<p>(?:[ \w\.]+<br>){2}[ \w\.]+</p>$}i, FFaker::HTMLIpsum.p(3, include_breaks: true))
+    assert_match(%r{^<p>(?:[ \w.]+<br>){2}[ \w.]+</p>$}i, FFaker::HTMLIpsum.p(3, include_breaks: true))
   end
 
   def test_p_fancy

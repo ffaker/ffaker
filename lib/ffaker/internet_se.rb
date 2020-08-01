@@ -9,7 +9,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    BYTE = [*'0'..'255'].freeze
+    BYTE = Array('0'..'255').freeze
     HOSTS = %w[gmail.com yahoo.com hotmail.com spray.se passagen.se].freeze
     DOMAIN_SUFFIXES = %w[se nu com].freeze
     DISPOSABLE_HOSTS = %w[

@@ -13,7 +13,7 @@ class TestAddressJA < Test::Unit::TestCase
   )
 
   def test_postal_code
-    assert_match(/^\d{3}\-\d{4}$/, FFaker::AddressJA.postal_code)
+    assert_match(/^\d{3}-\d{4}$/, FFaker::AddressJA.postal_code)
   end
 
   def test_land_number

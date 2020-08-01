@@ -8,10 +8,10 @@ module FFaker
     BACKSLASH = '\\'
     DASH      = '-'
 
-    LOWERS     = [*'a'..'z'].freeze
-    UPPERS     = [*'A'..'Z'].freeze
+    LOWERS     = Array('a'..'z').freeze
+    UPPERS     = Array('A'..'Z').freeze
     LETTERS    = LOWERS + UPPERS
-    NUMBERS    = [*'0'..'9'].freeze
+    NUMBERS    = Array('0'..'9').freeze
     WORD_CHARS = LETTERS + NUMBERS + ['_']
     SPACES     = [' ', "\t"].freeze
     ESCAPEABLE_CHARS = ['\\', '/', '.', '(', ')', '[', ']', '{', '}'].freeze
@@ -34,7 +34,7 @@ module FFaker
       while tokens.any?
         token = tokens.shift
         if token == DASH && tokens.first && result.last
-          result += [*result.pop..tokens.shift]
+          result += Array(result.pop..tokens.shift)
         elsif token == BACKSLASH
           result << special(tokens.shift)
         else

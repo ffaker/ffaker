@@ -9,7 +9,7 @@ module FFaker
 
     CONSONANTS = %w[B C D F G H J K L M N P Q R S T V W X Y Z].freeze
     VOWELS = %w[A E I O U].freeze
-    HOMOCLAVE = CONSONANTS + VOWELS + [*'0'..'9']
+    HOMOCLAVE = CONSONANTS + VOWELS + Array('0'..'9')
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)
     # Registro Federal de Contribuyentes (R.F.C.) para persona física
