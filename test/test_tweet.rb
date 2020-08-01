@@ -20,11 +20,11 @@ class TestTweet < Test::Unit::TestCase
   end
 
   def test_mention
-    assert_match(/\@\S*/, FFaker::Tweet.mention)
+    assert_match(/@\S*/, FFaker::Tweet.mention)
   end
 
   def test_mentions_three
-    assert_match(/\@\S*\s\@\S*\s\@\S*/, FFaker::Tweet.mentions(3))
+    assert_match(/@\S*\s@\S*\s@\S*/, FFaker::Tweet.mentions(3))
     assert_deterministic { FFaker::Tweet.mentions(3) }
   end
 
@@ -45,7 +45,7 @@ class TestTweet < Test::Unit::TestCase
   end
 
   def test_tweet_with_reply
-    assert_match(/^\@/, FFaker::Tweet.tweet(reply: true))
+    assert_match(/^@/, FFaker::Tweet.tweet(reply: true))
     assert_deterministic { FFaker::Tweet.tweet(reply: true) }
   end
 

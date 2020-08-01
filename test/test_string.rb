@@ -30,11 +30,11 @@ class TestString < Test::Unit::TestCase
   def test_dash_character
     assert_match(/\A[a-z-]\z/, FS.from_regexp(/[a-z-]/))
     assert_match(/\A[a-]\z/, FS.from_regexp(/[a-]/))
-    assert_match(/\A[-]\z/, FS.from_regexp(/[-]/))
+    assert_match(/\A-\z/, FS.from_regexp(/-/))
 
     assert_deterministic { FS.from_regexp(/[a-z-]/) }
     assert_deterministic { FS.from_regexp(/[a-]/) }
-    assert_deterministic { FS.from_regexp(/[-]/) }
+    assert_deterministic { FS.from_regexp(/-/) }
   end
 
   def test_spaces
@@ -44,7 +44,7 @@ class TestString < Test::Unit::TestCase
 
   def test_escaped_characters
     assert_equal '\\/.()[]{}', FS.from_regexp(%r{\\/\.\(\)\[\]\{\}})
-    assert_deterministic { FS.from_regexp(%r|\\\/\.\(\)\[\]\{\}|) }
+    assert_deterministic { FS.from_regexp(%r|\\/\.\(\)\[\]\{\}|) }
   end
 
   def test_atom_sets

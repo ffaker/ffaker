@@ -33,7 +33,7 @@ class TestVehicle < Test::Unit::TestCase
   end
 
   def test_model
-    assert_match(/\A[-\. &a-z0-9]+\z/i, FFaker::Vehicle.model)
+    assert_match(/\A[-. &a-z0-9]+\z/i, FFaker::Vehicle.model)
   end
 
   def test_trim
@@ -65,7 +65,7 @@ class TestVehicle < Test::Unit::TestCase
   end
 
   def test_fuel_type
-    assert_match(/\A[ a-z0-9\(\)]+\z/i, FFaker::Vehicle.fuel_type)
+    assert_match(/\A[ a-z0-9()]+\z/i, FFaker::Vehicle.fuel_type)
   end
 
   def test_interior_upholstery

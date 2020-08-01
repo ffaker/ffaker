@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    BYTE = [*'0'..'255'].freeze
+    BYTE = Array('0'..'255').freeze
     HOSTS = %w[gmail.com yahoo.com hotmail.com].freeze
     DISPOSABLE_HOSTS = %w[
       mailinator.com suremail.info spamherelots.com binkmail.com safetymail.info

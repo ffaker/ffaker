@@ -5,7 +5,7 @@ require 'helper'
 class TestLoremUA < Test::Unit::TestCase
   include DeterministicHelper
 
-  SENTENCE_MATCHER = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s\.\!\?,]+\z/.freeze
+  SENTENCE_MATCHER = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s.!?,]+\z/.freeze
   WORDS_MATCHER    = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/.freeze
   WORD_MATCHER     = /\A[а-яА-ЯіїєґІЇЄҐ’\-]+\z/.freeze
 

@@ -5,7 +5,7 @@ require 'helper'
 class TestAddressFI < Test::Unit::TestCase
   include DeterministicHelper
 
-  ALPHA = /\A[\p{Alpha}]+/.freeze
+  ALPHA = /\A\p{Alpha}+/.freeze
   DIGIT = /\d{1}/.freeze
 
   assert_methods_are_deterministic(
@@ -30,7 +30,7 @@ class TestAddressFI < Test::Unit::TestCase
     assert_match(ALPHA, address)
     assert_match(DIGIT, address)
     assert_match(/SUOMI/, address)
-    assert_match(/[\, a-z]/, address)
+    assert_match(/[, a-z]/, address)
   end
 
   def test_fi_zip_code_frozen

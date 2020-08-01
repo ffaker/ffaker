@@ -14,7 +14,7 @@ class TestImage < Test::Unit::TestCase
   end
 
   def test_url
-    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}300x300\/[0-9a-f]{6}\/[0-9a-f]{6}\.png\?text=),
+    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}300x300/[0-9a-f]{6}/[0-9a-f]{6}\.png\?text=),
                  @tester.url)
   end
 
@@ -24,7 +24,7 @@ class TestImage < Test::Unit::TestCase
   end
 
   def test_image_url_with_correct_size
-    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}150x320\/[0-9a-f]{6}\/[0-9a-f]{6}\.png\?text=),
+    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}150x320/[0-9a-f]{6}/[0-9a-f]{6}\.png\?text=),
                  @tester.url('150x320'))
   end
 
@@ -35,7 +35,7 @@ class TestImage < Test::Unit::TestCase
   end
 
   def test_image_url_with_supported_format
-    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}300x300\/[0-9a-f]{6}\/[0-9a-f]{6}\.jpg\?text=),
+    assert_match(%r(#{Regexp.quote(PLACEHOLDER)}300x300/[0-9a-f]{6}/[0-9a-f]{6}\.jpg\?text=),
                  @tester.url('300x300', 'jpg'))
   end
 

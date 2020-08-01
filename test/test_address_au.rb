@@ -33,7 +33,7 @@ class TestAddressAU < Test::Unit::TestCase
   end
 
   def test_full_address
-    assert_match(/[\, a-z]/, FFaker::AddressAU.full_address)
+    assert_match(/[, a-z]/, FFaker::AddressAU.full_address)
   end
 
   def test_au_suburb_with_states
@@ -60,7 +60,7 @@ class TestAddressAU < Test::Unit::TestCase
 
   def test_full_address_with_states
     FFaker::AddressAU::STATE_ABBR.each do |st_abbr|
-      assert_match(/[\, a-z]/, FFaker::AddressAU.full_address(st_abbr))
+      assert_match(/[, a-z]/, FFaker::AddressAU.full_address(st_abbr))
       assert_deterministic { FFaker::AddressAU.full_address(st_abbr) }
     end
   end

@@ -28,7 +28,7 @@ class TestFakerIdentificationESCO < Test::Unit::TestCase
   end
 
   def test_category
-    assert_match(/\A([a][1-2]|[bc][1-3])\z/i, @tester.driver_license_category)
+    assert_match(/\A(a[1-2]|[bc][1-3])\z/i, @tester.driver_license_category)
   end
 
   def test_blood_type

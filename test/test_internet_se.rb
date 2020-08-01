@@ -73,6 +73,6 @@ class TestFakerInternetSE < Test::Unit::TestCase
   end
 
   def test_slug
-    assert @tester.slug.match(/^[a-z]+(_|\.|\-)[a-z]+$/)
+    assert @tester.slug.match(/^[a-z]+(_|\.|-)[a-z]+$/)
   end
 end
