@@ -15,18 +15,22 @@ class TestFakerFilesystem < Test::Unit::TestCase
   end
 
   def test_extension
-    assert @tester.extension.match(
-      /\A(?:flac|mp3|wav|bmp|gif|jpeg|jpg|png|tiff|css|csv|html|js|json|txt|mp4|
-          avi|mov|webm|doc|docx|xls|xlsx|ppt|pptx|odt|ods|odp|pages|numbers|key|
-          pdf)\z/x
-    )
+    assert_match /\A(?:flac|mp3|wav|bmp|gif|jpeg|jpg|png|tiff|css|csv|html|js|
+                     json|txt|mp4|avi|mov|webm|doc|docx|xls|xlsx|ppt|pptx|odt|
+                     ods|odp|pages|numbers|key|pdf)\z/x,
+                 @tester.extension
   end
 
   def test_mime_type_format
-    assert @tester.mime_type.match(%r{\A\w+/.+\z})
+    assert_match %r{\A\w+/.+\z}, @tester.mime_type
+  end
+
+  def test_directory
+    assert_match %r{\A(?:[a-z_-]+[\\/])+[a-z_-]+\z}, @tester.directory
   end
 
   def test_file_name
-    assert @tester.file_name.match(%r{\A[a-z_-]+[\\/][a-z_-]+\.[a-z]{2,4}\z})
+    assert_match %r{\A(?:[a-z_-]+[\\/])+[a-z_-]+\.\w{2,4}\z},
+      @tester.file_name
   end
 end

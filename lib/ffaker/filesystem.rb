@@ -13,7 +13,11 @@ module FFaker
       fetch_sample(MIME_TYPE)
     end
 
-    def file_name(dir = Internet.slug, name = Lorem.word.downcase,
+    def directory(directory_separator = File::SEPARATOR)
+      Lorem.words.join(directory_separator)
+    end
+
+    def file_name(dir = directory, name = Lorem.word.downcase,
                   ext = extension, directory_separator = File::SEPARATOR)
       "#{dir}#{directory_separator}#{name}.#{ext}"
     end
