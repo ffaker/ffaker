@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ostruct'
-
 module FFaker
   module Unit
     extend ModuleUtils
@@ -10,9 +8,10 @@ module FFaker
     TIME_UNITS = [
       { name: 'Years', abbreviation: 'yr' },
       { name: 'Days', abbreviation: 'd' },
-      { name: 'Hours', abbreviation: 'Minutes' },
+      { name: 'Hours', abbreviation: 'h' },
+      { name: 'Minutes', abbreviation: 'm' },
       { name: 'Seconds', abbreviation: 's' },
-      { name: 'Milliseconds', abbreviation: 'msec' }
+      { name: 'Milliseconds', abbreviation: 'ms' }
     ].freeze
     TEMPERATURE_UNITS = [
       { name: 'Kelvin', abbreviation: 'K' },
@@ -21,29 +20,29 @@ module FFaker
     ].freeze
 
     def time_name
-      time.name
+      time[:name]
     end
 
     def time_abbr
-      time.abbreviation
+      time[:abbreviation]
     end
 
     def temperature_name
-      temperature.name
+      temperature[:name]
     end
 
     def temperature_abbr
-      temperature.abbreviation
+      temperature[:abbreviation]
     end
 
     private
 
     def time
-      OpenStruct.new(fetch_sample(TIME_UNITS))
+      fetch_sample(TIME_UNITS)
     end
 
     def temperature
-      OpenStruct.new(fetch_sample(TEMPERATURE_UNITS))
+      fetch_sample(TEMPERATURE_UNITS)
     end
   end
 end
