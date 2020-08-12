@@ -17,10 +17,15 @@ module FFaker
         super const_name
       else
         mod_name = ancestors.first.to_s.split('::').last
-        data_path = "#{FFaker::BASE_LIB_PATH}/ffaker/data/#{underscore(mod_name)}/#{underscore(const_name.to_s)}"
-        data = k File.read(data_path, mode: 'r:UTF-8').split("\n")
-        const_set const_name, data
-        data
+        if mod_name == 'FFaker'
+          require "#{FFaker::BASE_LIB_PATH}/#{underscore(const_name.to_s)}"
+          FFaker.const_get(const_name)
+        else
+          data_path = "#{FFaker::BASE_LIB_PATH}/ffaker/data/#{underscore(mod_name)}/#{underscore(const_name.to_s)}"
+          data = k File.read(data_path, mode: 'r:UTF-8').split("\n")
+          const_set const_name, data
+          data
+        end
       end
     end
 
