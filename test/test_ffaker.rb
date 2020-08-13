@@ -2,8 +2,12 @@
 
 require 'helper'
 
-class TestFaker < Test::Unit::TestCase
+class TestFFaker < Test::Unit::TestCase
   include DeterministicHelper
+
+  def test_version
+    assert FFaker::VERSION.is_a?(String)
+  end
 
   def test_numerify
     assert FFaker.numerify('###').match(/\d{3}/)
