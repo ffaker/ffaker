@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'ffaker/unit'
-require 'ostruct'
 
 module FFaker
   module UnitEnglish
@@ -15,7 +14,7 @@ module FFaker
       { name: 'foot', abbreviation: 'ft' },
       { name: 'yard', abbreviation: 'yd' },
       { name: 'furlong', abbreviation: 'fur' },
-      { name: 'mile', abbreviation: 'm' }
+      { name: 'mile', abbreviation: 'mi' }
     ].freeze
     MASS_UNITS = [
       { name: 'grains', abbreviation: 'gr' },
@@ -36,75 +35,75 @@ module FFaker
       { name: 'cubic yard', abbreviation: 'CY' }
     ].freeze
     AREA_UNITS = [
-      { name: 'square inch', abbreviation: 'sq. in' },
+      { name: 'square inch', abbreviation: 'sq in' },
       { name: 'square foot', abbreviation: 'sq ft' },
       { name: 'square yard', abbreviation: 'sq yd' },
       { name: 'acre', abbreviation: 'ac' },
       { name: 'section', abbreviation: 's' },
       { name: 'square mile', abbreviation: 'sq mi' },
-      { name: 'township', abbreviation: 'Twp' }
+      { name: 'township', abbreviation: 'twp' }
     ].freeze
 
     def mass_name
-      mass.name
+      mass[:name]
     end
 
     def mass_abbr
-      mass.abbreviation
+      mass[:abbreviation]
     end
 
     def length_name
-      length.name
+      length[:name]
     end
 
     def length_abbr
-      length.abbreviation
+      length[:abbreviation]
     end
 
     def liquid_name
-      liquid.name
+      liquid[:name]
     end
 
     def liquid_abbr
-      liquid.abbreviation
+      liquid[:abbreviation]
     end
 
     def volume_name
-      volume.name
+      volume[:name]
     end
 
     def volume_abbr
-      volume.abbreviation
+      volume[:abbreviation]
     end
 
     def area_name
-      area.name
+      area[:name]
     end
 
     def area_abbr
-      area.abbreviation
+      area[:abbreviation]
     end
 
     private
 
     def length
-      OpenStruct.new(fetch_sample(LENGTH_UNITS))
+      fetch_sample(LENGTH_UNITS)
     end
 
     def mass
-      OpenStruct.new(fetch_sample(MASS_UNITS))
+      fetch_sample(MASS_UNITS)
     end
 
     def liquid
-      OpenStruct.new(fetch_sample(LIQUID_UNITS))
+      fetch_sample(LIQUID_UNITS)
     end
 
     def volume
-      OpenStruct.new(fetch_sample(VOLUME_UNITS))
+      fetch_sample(VOLUME_UNITS)
     end
 
     def area
-      OpenStruct.new(fetch_sample(AREA_UNITS))
+      fetch_sample(AREA_UNITS)
     end
   end
 end
