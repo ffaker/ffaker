@@ -2,6 +2,13 @@
 
   - Add your change HERE
 
+## 2.17.0
+  - Apply Rubocop's autocorrect [@marocchino]
+  - Remove Ruby-2.4 support [@marocchino]
+  - Remove OpenStruct [@Volosh1n]
+  - Fix PhoneNumberBR Area Codes [@CarlosMouraJR]
+  - More minor fixes [@marocchino]
+
 ## 2.16.0
   - Add IdentificationIN [@nigelgomesot]
   - Improved NL zipcode generation [@gerard76]
