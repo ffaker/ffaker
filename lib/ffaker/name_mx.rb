@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/name'
-
 module FFaker
   # guapolo github.com/guapolo
   module NameMX

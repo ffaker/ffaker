@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/name'
-
 module FFaker
   module NameSE
     include FFaker::Name

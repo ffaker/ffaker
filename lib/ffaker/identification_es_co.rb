@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/identification_es'
 require 'date'
 
 module FFaker

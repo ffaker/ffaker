@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/internet'
-
 module FFaker
   module InternetSE
     include Internet

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/address'
-
 module FFaker
   module AddressRU
     include FFaker::Address

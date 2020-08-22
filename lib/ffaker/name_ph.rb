@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/name'
-
 module FFaker
   # Philippine names based on http://en.wikipedia.org/wiki/Philippine_name
   module NamePH

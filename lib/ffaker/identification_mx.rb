@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/identification_es'
-
 module FFaker
   module IdentificationMX
     extend ModuleUtils

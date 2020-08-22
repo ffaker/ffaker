@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/lorem'
-
 module FFaker
   module HealthcareIpsum
     include Lorem
