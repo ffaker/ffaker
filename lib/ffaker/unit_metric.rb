@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/unit'
-
 module FFaker
   module UnitMetric
     include FFaker::Unit

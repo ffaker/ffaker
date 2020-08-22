@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/address_ch'
-
 module FFaker
   module AddressCHDE
     include AddressCH

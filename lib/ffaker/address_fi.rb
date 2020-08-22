@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ffaker/address'
-
 module FFaker
   # List of countries is from Freebase:
   # https://www.googleapis.com/freebase/v1/mqlread?lang=/lang/fi&query=[%7B%22name%22:null,%22type%22:%22/location/country%22%7D]
