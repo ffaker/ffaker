@@ -84,6 +84,7 @@ module FFaker
   autoload :EducationCN, 'ffaker/education_cn'
   autoload :Filesystem, 'ffaker/filesystem'
   autoload :Food, 'ffaker/food'
+  autoload :FoodPL, 'ffaker/food_pl'
   autoload :Gender, 'ffaker/gender'
   autoload :GenderBR, 'ffaker/gender_br'
   autoload :GenderCN, 'ffaker/gender_cn'
