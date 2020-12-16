@@ -51,4 +51,8 @@ class TestLorem < Test::Unit::TestCase
     assert FFaker::Lorem.characters(10).length == 10
     assert FFaker::Lorem.characters(-1) == ''
   end
+
+  def test_word_collection_uniqueness
+    assert_equal(FFaker::Lorem::WORDS, FFaker::Lorem::WORDS.uniq)
+  end
 end
