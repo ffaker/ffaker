@@ -173,6 +173,7 @@ module FFaker
   autoload :PhoneNumberFR, 'ffaker/phone_number_fr'
   autoload :PhoneNumberID, 'ffaker/phone_number_id'
   autoload :PhoneNumberIT, 'ffaker/phone_number_it'
+  autoload :PhoneNumberJA, 'ffaker/phone_number_ja'
   autoload :PhoneNumberKR, 'ffaker/phone_number_kr'
   autoload :PhoneNumberMX, 'ffaker/phone_number_mx'
   autoload :PhoneNumberNL, 'ffaker/phone_number_nl'
