@@ -1,0 +1,25 @@
+name: Reference Build
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "lib/**"
+
+jobs:
+  reference-build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+        bundler-cache: true
+    - name: Update md file
+      run: rake reference
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update reference
+        file_pattern: REFERENCE.md
