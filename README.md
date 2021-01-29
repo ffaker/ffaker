@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/ffaker/ffaker.svg?branch=main)](https://travis-ci.org/ffaker/ffaker) [![Code Climate](https://codeclimate.com/github/EmmanuelOga/ffaker/badges/gpa.svg)](https://codeclimate.com/github/EmmanuelOga/ffaker) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+[![Build Status](https://github.com/ffaker/ffaker/workflows/Test/badge.svg)](https://github.com/ffaker/ffaker/actions?query=workflow%3ATest)
+[![Code Climate](https://codeclimate.com/github/EmmanuelOga/ffaker/badges/gpa.svg)](https://codeclimate.com/github/EmmanuelOga/ffaker)
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 # ffaker
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ffaker/ffaker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)

@@ -45,9 +45,9 @@ module DeterministicHelper
     end
   end
 
-  def assert_between(got, from, to, exclude_end: false)
-    assert_greater_than_or_equal_to got, from
-    public_send "assert_less_than#{'_or_equal_to' unless exclude_end}", got, to
+  def assert_between(got, range)
+    assert_greater_than_or_equal_to got, range.begin
+    public_send "assert_less_than#{'_or_equal_to' unless range.exclude_end?}", got, range.end
   end
 
   def assert_random(original_block, *args)
