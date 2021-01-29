@@ -32,7 +32,7 @@ class TestSSNSE < Test::Unit::TestCase
     from = Time.local(1980, 2, 28)
     to = Time.local(2000, 2, 28)
 
-    assert_random_between(from, to, exclude_end: true) do
+    assert_random_between(from...to) do
       ssn = FFaker::SSNSE.ssn(from: from, to: to)
       year = ssn[0..3].to_i
       month = ssn[4..5].to_i

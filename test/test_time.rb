@@ -44,8 +44,7 @@ class TestFakerTime < Test::Unit::TestCase
     current_year = ::DateTime.now.year
     [[0, 0], [1, 1], [2, 4], [8, 6]].each do |year_range, year_latest|
       assert_random_between(
-        current_year - year_range - year_latest,
-        current_year - year_latest
+        (current_year - year_range - year_latest)..(current_year - year_latest)
       ) do
         @tester.datetime(year_range: year_range, year_latest: year_latest).year
       end
@@ -61,7 +60,7 @@ class TestFakerTime < Test::Unit::TestCase
     from = Time.local(2015, 1, 1)
     to   = Time.local(2016, 1, 1)
 
-    assert_random_between(from, to) { @tester.between(from, to) }
+    assert_random_between(from..to) { @tester.between(from, to) }
   end
 
   def test_between_for_string

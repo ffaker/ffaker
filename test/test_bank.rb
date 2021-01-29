@@ -33,7 +33,7 @@ class TestBank < Test::Unit::TestCase
     date_today = ::DateTime.now
 
     assert_random_between(
-      date_today.strftime('%y'), date_today.next_year(5).strftime('%y')
+      date_today.strftime('%y')..date_today.next_year(5).strftime('%y')
     ) do
       @tester.card_expiry_date.split('/').pop
     end
@@ -41,8 +41,7 @@ class TestBank < Test::Unit::TestCase
     year_range = 4
     year_latest = 8
     assert_random_between(
-      date_today.prev_year(year_latest + year_range).strftime('%y'),
-      date_today.prev_year(year_latest).strftime('%y')
+      date_today.prev_year(year_latest + year_range).strftime('%y')..date_today.prev_year(year_latest).strftime('%y')
     ) do
       @tester.card_expiry_date(year_range: year_range, year_latest: year_latest).split('/').pop
     end

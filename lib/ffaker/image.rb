@@ -42,7 +42,7 @@ module FFaker
     def download_file(url)
       file = Tempfile.new('ffaker_image')
       file.binmode
-      file << Kernel.open(url).read
+      file << URI.open(url).read
       file.close
 
       File.new(file.path)
