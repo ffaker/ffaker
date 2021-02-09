@@ -56,6 +56,7 @@
  * [FFaker::EducationCN](#ffakereducationcn)
  * [FFaker::Filesystem](#ffakerfilesystem)
  * [FFaker::Food](#ffakerfood)
+ * [FFaker::FreedomIpsum](#ffakerfreedomipsum)
  * [FFaker::Gender](#ffakergender)
  * [FFaker::GenderBR](#ffakergenderbr)
  * [FFaker::GenderCN](#ffakergendercn)
@@ -1073,6 +1074,20 @@
 | `ingredient` | Coriander, Water chestnut, Bone soup from allowable meats |
 | `meat` | Chicken Liver, Ostrich, Ostrich |
 | `vegetable` | Radish, Drumstick, Runner bean |
+
+## FFaker::FreedomIpsum
+
+| Method | Example |
+| ------ | ------- |
+| `characters` | jirj4gvrk163rxw5j8eih0hmr9bq7epm4vmars8k3gcbstlixk7zl4by6dq7zxt42nmhcqah780xmkzw2vtnuhs85b3q2ly3qpf39a18nrlhxi7xirfmek7yv8p9fhjjm9ljsm3055a8983ifj0atpkow990ljr44d32xkjj61ggw0u3387hofrcl0ee3hd2921e11k9dbymhimirp5qema83yv1xx63hbresc4pu8ady9pmmfx1e1kkorvd1fo |
+| `paragraph` | Redwood 85oz soda southwest breakfast burrito television 74-inch HDTV bigfoot. Mega-stuf oreos NASA official sponsor Costco national security Disney World. Official sponsor second amendment rights SUVs pickup trucks fireworks 18-wheeler southwest breakfast burrito. Boneless buffalo wings elections apple pie FBI CIA NSA television Costco. The government Championship Pro Bass Fishing CNN 3D Blu-Ray credit cards explosions sweatpants constitutional rights Checkers. |
+| `paragraphs` | Arnold schwarzenegger XXXL USA-4-Life-Bro RoboCop super-size CSI: Miami Marlboro reds. 85oz soda Disney World potato salad lunchables explosions national security hot dogs velcro. Boneless buffalo wings sweatpants SUVs low taxes ESPN2 super bowl., Nuclear-powered aircraft carrier tomahawk cruise missile WMD southwest breakfast burrito corporations. Espn2 liberty weekends nuclear-powered aircraft carrier Chuck Norris Bud heavy tall-boy patriotic. National security 7-Eleven Van Halen condiments velcro crunch-tastic propane tanks Championship Pro Bass Fishing consumerism. Hanes boxer briefs fighter jets mission accomplished huge bacon cheeseburgers RoboCop credit cards the government tomahawk cruise missile. Online multiplayer MGD Proud To Be An American 1776 twinkies pro-wrestling CSI: Miami., Apple pie liberty huge explosive foreign policy online multiplayer better dead than red. Exploding huge 85oz soda low taxes Call of Duty. Fireworks Mega-Stuf Oreos jean shorts capitalism XXXL CSI: Miami the economy juicy flame-grilled. Uncle sam 1776 dual-wielded machine guns freedom Die Hard 2: Die Harder Fox News explosions controversial XXXL. |
+| `phrase` | Bald eagles sweatpants Mega-Stuf Oreos God Bless America second amendment rights Denny's Grand Slam Breakfast shock and awe Mount Rushmore weekends. |
+| `phrases` | Hot pockets Mount Rushmore potato salad the government 1776 malls 74-inch HDTV corporations drone strike., Extra value meal better dead than red WMD 3D Blu-Ray stock market cheese-stuffed credit cards super-size., Tgif corporations cholesterol MGD supreme court ruling Championship Pro Bass Fishing bigfoot. |
+| `sentence` | Hot pockets the economy Nashville 1776 taco night. |
+| `sentences` | Costco Die Hard 2: Die Harder official sponsor mission accomplished stars and stripes southwest breakfast burrito condiments the government credit cards., "rive-thru television extra-large Applebee's 74-inch HDTV gigantic elections super-size., Southwest breakfast burrito low gas prices 7-Eleven freedom fries milkshakes CNN Star-Spangled Banner 85oz soda nuclear-powered aircraft carrier. |
+| `word` | stock market |
+| `words` | CNN, Branson Missouri, bald eagles |
 
 ## FFaker::Gender
 
