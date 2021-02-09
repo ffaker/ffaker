@@ -1,4 +1,4 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
 require 'ffaker/lorem'
 
@@ -10,11 +10,11 @@ module FFaker
     extend self
 
     def word
-      FREEDOM_WORDS.sample
+      fetch_sample(FREEDOM_WORDS)
     end
 
     def words(num = 3)
-      FREEDOM_WORDS.sample(num)
+      fetch_sample(FREEDOM_WORDS, count: num)
     end
   end
 end
