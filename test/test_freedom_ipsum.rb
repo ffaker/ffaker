@@ -9,7 +9,7 @@ class TestFreedomIpsum < Test::Unit::TestCase
     :word, :words
   )
 
-  TEST_REGEX = /\+1|[ a-z]+/i.freeze
+  TEST_REGEX = /[a-z0-9 -]+/i.freeze
 
   def test_words
     assert_match(TEST_REGEX, FFaker::FreedomIpsum.words.join(' '))
