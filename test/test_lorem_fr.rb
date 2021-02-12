@@ -11,17 +11,19 @@ class TestLoremFR < Test::Unit::TestCase
   )
 
   REGEX = /\A[ -.ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i.freeze
+  REGEX_WORD = /\A[-ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i.freeze
+  REGEX_WORDS = /\A[ -ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i.freeze
 
   def test_paragraph
-    assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.paragraph)
+    assert_match(REGEX, FFaker::LoremFR.paragraph)
   end
 
   def test_sentence
-    assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.sentence)
+    assert_match(REGEX, FFaker::LoremFR.sentence)
   end
 
   def test_phrase
-    assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.phrase)
+    assert_match(REGEX, FFaker::LoremFR.phrase)
   end
 
   def test_paragraphs
@@ -29,18 +31,18 @@ class TestLoremFR < Test::Unit::TestCase
   end
 
   def test_sentences
-    assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.sentences.join(' '))
+    assert_match(REGEX, FFaker::LoremFR.sentences.join(' '))
   end
 
   def test_phrases
-    assert_match(/\A[ -.àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.phrases.join(' '))
+    assert_match(REGEX, FFaker::LoremFR.phrases.join(' '))
   end
 
   def test_words
-    assert_match(/\A[ -àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.words.join(' '))
+    assert_match(REGEX_WORDS, FFaker::LoremFR.words.join(' '))
   end
 
   def test_word
-    assert_match(/\A[-àâéèêîôùûa-z]+\z/i, FFaker::LoremFR.word)
+    assert_match(REGEX_WORD, FFaker::LoremFR.word)
   end
 end
