@@ -56,6 +56,7 @@
  * [FFaker::EducationCN](#ffakereducationcn)
  * [FFaker::Filesystem](#ffakerfilesystem)
  * [FFaker::Food](#ffakerfood)
+ * [FFaker::FreedomIpsum](#ffakerfreedomipsum)
  * [FFaker::Gender](#ffakergender)
  * [FFaker::GenderBR](#ffakergenderbr)
  * [FFaker::GenderCN](#ffakergendercn)
@@ -1073,6 +1074,13 @@
 | `ingredient` | Coriander, Water chestnut, Bone soup from allowable meats |
 | `meat` | Chicken Liver, Ostrich, Ostrich |
 | `vegetable` | Radish, Drumstick, Runner bean |
+
+## FFaker::FreedomIpsum
+
+| Method | Example |
+| ------ | ------- |
+| `word` | stock market |
+| `words` | CNN, Branson Missouri, bald eagles |
 
 ## FFaker::Gender
 

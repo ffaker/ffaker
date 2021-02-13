@@ -85,6 +85,7 @@ module FFaker
   autoload :Filesystem, 'ffaker/filesystem'
   autoload :Food, 'ffaker/food'
   autoload :FoodPL, 'ffaker/food_pl'
+  autoload :FreedomIpsum, 'ffaker/freedom_ipsum'
   autoload :Gender, 'ffaker/gender'
   autoload :GenderBR, 'ffaker/gender_br'
   autoload :GenderCN, 'ffaker/gender_cn'
