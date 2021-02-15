@@ -1324,7 +1324,7 @@
 | Method | Example |
 | ------ | ------- |
 | `file` | #&lt;File:0x000055e0d4ff5568&gt;, #&lt;File:0x000055e0d5039a60&gt;, #&lt;File:0x000055e0d5061f88&gt; |
-| `url` | https://via.placeholder.com/300x300/590da5/821cfb.png?text=, https://via.placeholder.com/300x300/e8d24a/43209f.png?text=, https://via.placeholder.com/300x300/1b374a/a2037d.png?text= |
+| `url` | https://dummyimage.com/300x300/590da5/821cfb.png?text=, https://dummyimage.com/300x300/e8d24a/43209f.png?text=, https://dummyimage.com/300x300/1b374a/a2037d.png?text= |
 
 ## FFaker::Internet
 
