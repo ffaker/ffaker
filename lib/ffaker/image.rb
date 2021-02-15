@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'cgi'
 require 'tempfile'
 require 'open-uri'
 
@@ -18,11 +19,16 @@ module FFaker
       text_color = FFaker::Color.hex_code if text_color == :random
       text = CGI.escape(text.to_s)
 
-      "https://via.placeholder.com/#{size}/#{bg_color}/#{text_color}.#{format}?text=#{text}"
+      "https://dummyimage.com/#{size}/#{bg_color}/#{text_color}.#{format}?text=#{text}"
     end
 
     def file(size = '300x300', format = 'png', bg_color = :random, text_color = :random, text = nil)
-      download_file(url(size, format, bg_color, text_color, text))
+      uri = URI.parse(url(size, format, bg_color, text_color, text))
+      file = Tempfile.new('ffaker_image')
+      file.binmode
+      file << uri.open.read
+      file.close
+      File.new(file.path)
     end
 
     private
@@ -37,15 +43,6 @@ module FFaker
       return true if SUPPORTED_FORMATS.include?(format)
 
       raise ArgumentError, "Supported formats are #{SUPPORTED_FORMATS.join(', ')}"
-    end
-
-    def download_file(url)
-      file = Tempfile.new('ffaker_image')
-      file.binmode
-      file << URI.open(url).read
-      file.close
-
-      File.new(file.path)
     end
   end
 end

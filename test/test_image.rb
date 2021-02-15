@@ -5,7 +5,7 @@ require 'helper'
 class TestImage < Test::Unit::TestCase
   include DeterministicHelper
 
-  PLACEHOLDER = 'https://via.placeholder.com/'
+  PLACEHOLDER = 'https://dummyimage.com/'
 
   assert_methods_are_deterministic(FFaker::Image, :url)
 
