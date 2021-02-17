@@ -93,6 +93,7 @@
  * [FFaker::Locale](#ffakerlocale)
  * [FFaker::Lorem](#ffakerlorem)
  * [FFaker::LoremAR](#ffakerloremar)
+ * [FFaker::LoremAR](#ffakerlorembr)
  * [FFaker::LoremCN](#ffakerloremcn)
  * [FFaker::LoremFR](#ffakerloremfr)
  * [FFaker::LoremIE](#ffakerloremie)
@@ -1413,6 +1414,20 @@
 | `sentences` | لبولندا، الإثنان الإمتعاض بتطويق بقسوة., وبعد الى حول تم قد و والروسية., أن فاتّبع بالرّغم تعداد و جُل, مكن., تلك وصل عصبة وعزّزت ثم فقد دول لإنعدام., جُل, عدم دفّة ستالينجراد إستمات., كلا, هزيمة يتم, الأجل ثمّة., تم والبريطاني, مما منتصف عام الخنادق., واتّجه يذكر مكّن الدولارات ثم., يتم لم بـ, دفّة لم قد. |
 | `word` | و, الياباني, الحلفاء |
 | `words` | وتم, من, ثمّة, وتتحمّل,, عرض, تزامناً, كل,, حالية, الإتفاقية |
+
+## FFaker::LoremBR
+
+| Method | Example |
+| ------ | ------- |
+| `characters` | r3thb934c0t5keondwwstk8vwx3g3khkhrrolc24d77vp8t1sjb57jfwggsxdyoj71urqzd2203v3hku0hc5tz9j84pus2es6ufqvnbnag6u0qy9lnoidtbnwtst74izvlywt1rth721hdcs7tb5baltc2o75v76qyth0scnjoko146vdmr4akz4u6hcy01zay4pmv7ucixzckzqcvbpfilbxb173qpdfnxiai4l6cavba5jvje2c70gofz7yqk6u, qbq4d9wq5di6g953p4mv88ro4ohk4wy79s3h910117tekme5vs6b59s572ythi1ub5d5txcski7qvcd02iho2rxkxi275nqbtvzql9t871q2l38dhlgjv5byi2szggl9554cpc3xknghdjzd1ibqvi6y43t2gi5l24lc5sywasrp3bx98ren5cu6zyk3ivrcx91oiu63777zn3ew2mmtj0zk51mlrqmryzvm7mooba2et9nplev96pcl7vahw50, nmsn3ugb7fmvz2rg7vcxt4g9fhj1vi7ueo7kgwpt4fc8b7k0f1nt87ufp7r4isawdkj8b1zfbd62na2s5jc0lx06f83vcv3um6aca48k0yufewi4aejbmajvlolies59mk331sratk87qf9ty1zrpi65ahgjslgtpmpy76rlhovc80tiyi2odmeu444mk4zqfnrnwasw4cliege0oi4nxqykvdqd6h7mhe4aj2gdtvcvtlmsj6asft7fxvsd1cp |
+| `paragraph` | Em devo desejo extremamente evitada dar mesmo deseje algum. Falham impede ninguém não dos felicidade prazeres racionalmente que. Dar alguém pelos idéia casos devem ou sábio todo. Dos exemplo pelo desejo disso? nasceu sábio. Mesmo por reais exercício perfeitamente. |
+| `paragraphs` | Disso? ensinamentos empreende outros ame quem com momento. Para fáceis direito vontade dor casos. Desfrutar indignação fazer labuta obrigações. Labuta quando ame fadados nada por àqueles os. Dizer qual obter dor irritantes sábio uma há.", "Obter si princípio freqüentemente desmoralizados grande evitada essa para. Alguma mestre-construtor vantagem explorador distinguir casos encolhimento enganados sábio. Busque piores falham mais mestre-construtor. Sistema dores certas seleção impede portanto dos. Si do irritantes sempre deseje direito.", "É nasceu do essa não para cegados de. Bem-vindo essa ocasionalmente nasceu atém direito exercício devem relato. Homens aqueles gosta princípio laborioso por enganados explorador evita. |
+| `sentence` | Denunciar perfeitamente rejeita dar pelo alguma homem. |
+| `sentences` | Buscar sábio mais humana cegados., Certas sejamos homens empreende uma grande., Reais humana repudiados assegurar perfeitamente desmoralizados lhe., Casos justa mestre-construtor esse proporcionar empreende busque devo., Cegados prazeres dizer impede nós felicidade circunstâncias tem. |
+| `sentence` | Racionalmente a completo aceitos que fadados. |
+| `sentences` | Racionalmente a completo aceitos que fadados., Algum desimpedido às em lado pelo exemplo., Hora idéia si justa desejo humana. |
+| `word` | ninguém, ame, alguma |
+| `words` | relato, exemplo, irritantes, reais, laborioso, mas, mais, negócios, atém, devido |
 
 ## FFaker::LoremCN
 

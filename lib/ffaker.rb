@@ -122,6 +122,7 @@ module FFaker
   autoload :Locale, 'ffaker/locale'
   autoload :Lorem, 'ffaker/lorem'
   autoload :LoremAR, 'ffaker/lorem_ar'
+  autoload :LoremBR, 'ffaker/lorem_br'
   autoload :LoremCN, 'ffaker/lorem_cn'
   autoload :LoremFR, 'ffaker/lorem_fr'
   autoload :LoremIE, 'ffaker/lorem_ie'
