@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   s.name              = 'ffaker'
   s.version           = FFaker::VERSION
-  s.date              = '2020-08-17'
+  s.date              = '2021-02-21'
   s.required_ruby_version = '>= 2.5'
 
   s.license = 'MIT'
