@@ -2,6 +2,16 @@
 
   - Add your change HERE
 
+## 2.18.0
+  - Remove unneeded 'require' statements [@Volosh1n]
+  - Add PhoneNumberJA [@YutaGoto]
+  - Test with Github actions & Ruby 3 [@marocchino]
+  - Generate reference by CI [@marocchino]
+  - Change the regex to cover all scenarios in lorem_fr [@abnersajr]
+  - Add "Freedom Ipsum" text generator option [@hmaack and @lynnd335]
+  - Fix issues with `FFaker::Image` module [@hmaack]
+  - Fix typo in animal.rb module [@renius]
+
 ## 2.17.0
   - Apply Rubocop's autocorrect [@marocchino]
   - Remove Ruby-2.4 support [@marocchino]
