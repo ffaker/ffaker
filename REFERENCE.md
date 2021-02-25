@@ -182,27 +182,27 @@
 
 | Method | Example |
 | ------ | ------- |
-| `instance_tenancy` | host, host, default |
-| `instance_type` | c1.medium, t2.small, m4.4xlarge |
-| `offering_type` | Heavy Utilization, No Upfront, Medium Utilization |
-| `product_description` | Windows with SQL Server Web (Amazon VPC), Windows with SQL Server Standard, Windows with SQL Server Web (Amazon VPC) |
+| `instance_tenancy` | dedicated, default, default |
+| `instance_type` | m3.large, c3.xlarge, c3.xlarge |
+| `offering_type` | Medium Utilization, Heavy Utilization, No Upfront |
+| `product_description` | Windows, SUSE Linux (Amazon VPC), Windows with SQL Server Web (Amazon VPC) |
 
 ## FFaker::Address
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 03144, 512, 1573 |
-| `city` | Latiashire, Lake Stephaineport, Tracieport |
-| `city_prefix` | Lake, North, Port |
-| `city_suffix` | land, haven, land |
-| `country` | India, Turks and Caicos Islands, Montserrat |
-| `country_code` | MY, BW, BS |
-| `neighborhood` | Renton West, Pound Ridge East, Florissant West |
-| `secondary_address` | Suite 652, Suite 033, Apt. 428 |
-| `street_address` | 916 Fahey Stravenue, 626 Kozey Creek, 955 Rice Trail |
-| `street_name` | Chuck Dale, Boyer Loaf, Harvey Inlet |
-| `street_suffix` | Crescent, Station, Avenue |
-| `time_zone` | America/Mazatlan, Asia/Dhaka, America/Bogota |
+| `building_number` | 05324, 0321, 0873 |
+| `city` | Port Benitaport, Oberbrunnerberg, New Mandi |
+| `city_prefix` | North, New, Lake |
+| `city_suffix` | chester, view, chester |
+| `country` | Iran, Islamic Republic of, Sudan, Colombia |
+| `country_code` | BI, CF, SL |
+| `neighborhood` | White Plains Central, Dyker Heights, Pound Ridge East |
+| `secondary_address` | Suite 183, Suite 317, Suite 516 |
+| `street_address` | 1832 Barton Spurs, 14181 O'Reilly Coves, 15973 Raphael Stream |
+| `street_name` | Dewitt Flats, Carlita Parks, Kling Rest |
+| `street_suffix` | Dam, Passage, Alley |
+| `time_zone` | America/Lima, Australia/Canberra, Australia/Hobart |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -214,23 +214,23 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 69788, 44025, 7658 |
-| `city` | Alonzoville, East Tobiasshire, Socorrostad |
-| `city_prefix` | Lake, East, Port |
-| `city_suffix` | mouth, side, chester |
-| `country` | Vanuatu, Honduras, Faroe Islands |
-| `country_code` | GN, CY, CA |
-| `full_address` | 104 Gaynelle Branch, Cairns QLD 5606, 74147 Bergnaum Fields, Shellharbour NSW 4655, 63689 Kevin Pine, Wollongong NSW 2612 |
-| `neighborhood` | Gates Mills North, Bronxdale, Northwoods West |
-| `postcode` | 7310, 2165, 6168 |
-| `secondary_address` | Apt. 626, Apt. 415, Apt. 785 |
-| `state` | Queensland, Victoria, New South Wales |
-| `state_abbr` | NSW, ACT, SA |
-| `street_address` | 991 Friesen Lodge, 673 Berge Point, 40973 Breitenberg Expressway |
-| `street_name` | Dahlia Walk, Amelia Terrace, Skiles Lights |
-| `street_suffix` | Trail, Gardens, Inlet |
-| `suburb` | Charters Towers, Grafton, Ballarat |
-| `time_zone` | Australia/Canberra, Australia/Adelaide, Australia/Sydney |
+| `building_number` | 04790, 7235, 320 |
+| `city` | New Genevieveside, Pagacfurt, Valtown |
+| `city_prefix` | Port, South, North |
+| `city_suffix` | mouth, shire, mouth |
+| `country` | Argentina, Falkland Islands (Malvinas), Sao Tome and Principe |
+| `country_code` | DJ, MG, GQ |
+| `full_address` | 0960 Cassin Run, Canberra ACT 0830, 55853 Heathcote Villages, Frankston VIC 2880, 63051 Marge Key, Canberra ACT 4740 |
+| `neighborhood` | Pennypack, North Norridge, Babylon Bayside |
+| `postcode` | 2602, 2320, 4650 |
+| `secondary_address` | Suite 923, Apt. 452, Suite 449 |
+| `state` | Western Australia, New South Wales, Australian Capital Territory |
+| `state_abbr` | VIC, VIC, NSW |
+| `street_address` | 4278 Mia Spurs, 114 Adella Inlet, 73888 Adrien Square |
+| `street_name` | Rippin Flat, Simone Knoll, Moriah Circle |
+| `street_suffix` | Fall, Forest, Lock |
+| `suburb` | Townsville, O'Connor, Darwin |
+| `time_zone` | Australia/Darwin, Australia/Perth, Australia/Hobart |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -242,49 +242,49 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 7341, 428, 287 |
-| `city` | Jequié, Rio Verde, Ibirité |
-| `city_prefix` | New, New, South |
-| `city_suffix` | town, borough, ton |
-| `country` | Saint Kitts and Nevis, Mongolia, Mayotte |
-| `country_code` | BS, YE, BD |
-| `full_address` | Travessa Noélia Fernandes Melo, 241, Lagarto, Bahia, Brazil, Avenida Benedito Monteiro Rezende, 3480, Embu das Artes, Bahia, Brazil, Rua Naxla Barros, 41913, Colatina, Paraíba, Brazil |
-| `neighborhood` | Cipriani, Bronxdale, Ladue South |
-| `secondary_address` | Suite 294, Suite 233, Suite 172 |
-| `state` | Distrito Federal, Paraíba, Roraima |
-| `state_abbr` | PR, TO, RR |
-| `street` | Rua Tânia Pereira, Travessa Matilde Barbosa Albuquerque, Alameda Wilson Monteiro |
-| `street_address` | 304 Bergnaum Radial, 3913 Lauretta Trafficway, 214 Farrell Freeway |
-| `street_name` | Torphy Crest, Ullrich Ways, Reanna Valleys |
-| `street_prefix` | Alameda, Travessa, Alameda |
-| `street_suffix` | Viaduct, Villages, Manor |
-| `time_zone` | Asia/Dhaka, Europe/Minsk, Pacific/Honolulu |
+| `building_number` | 75302, 18488, 0628 |
+| `city` | Linhares, Suzano, Sinop |
+| `city_prefix` | Port, South, East |
+| `city_suffix` | burgh, port, chester |
+| `country` | Virgin Islands, British, Niue, Guatemala |
+| `country_code` | CY, PS, SJ |
+| `full_address` | Alameda Kevin da Costa, 0152, São José dos Pinhais, Minas Gerais, Brazil, Travessa Ema da Rosa, 27735, Ananindeua, Alagoas, Brazil, Alameda Inara Silva Lopes, 674, Foz do Iguaçu, Distrito Federal, Brazil |
+| `neighborhood` | North East Irwindale, Jamaica Estates/Holliswood, Summerlin North |
+| `secondary_address` | Suite 523, Apt. 769, Suite 439 |
+| `state` | Goiás, Mato Grosso do Sul, Tocantins |
+| `state_abbr` | DF, PE, RN |
+| `street` | Travessa Adelice da Cunha Moraes, Alameda Neci Ferreira Gomes, Alameda Leilani Gonçalves Reis |
+| `street_address` | 775 Murphy Cove, 9293 Merrie Brook, 9735 Jast Well |
+| `street_name` | Thersa Knoll, McGlynn Pass, Aida Crescent |
+| `street_prefix` | Avenida, Alameda, Avenida |
+| `street_suffix` | Way, Path, Rue |
+| `time_zone` | Europe/Berlin, Asia/Dhaka, Asia/Kabul |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 80829-083, 16749-831, 16195-765 |
+| `zip_code` | 38030-467, 25560-791, 98603-593 |
 
 ## FFaker::AddressCA
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 966, 2400, 97161 |
-| `city` | Saint-Jean-sur-Richelieu, Huntsville, Thunder Bay |
-| `city_prefix` | South, North, South |
-| `city_suffix` | port, burgh, mouth |
-| `country` | Virgin Islands, U.S., Djibouti, Swaziland |
-| `country_code` | SM, GT, GE |
-| `neighborhood` | Bridesburg, Bushwick South, East of Telegraph Road |
-| `postal_code` | T3L 4V3, B9T 3M8, G1H 5X0 |
-| `province` | Manitoba, Newfoundland and Labrador, Nunavut |
-| `province_abbr` | BC, PE, SK |
-| `secondary_address` | Suite 702, Apt. 595, Suite 772 |
-| `street_address` | 57969 Waneta Shore, 221 Van Villages, 524 Spencer Pines |
-| `street_name` | Nader Park, Neva Ports, Barrows Groves |
-| `street_suffix` | Stravenue, Flat, Meadows |
-| `time_zone` | Pacific/Auckland, Europe/Berlin, Asia/Taipei |
+| `building_number` | 2489, 338, 179 |
+| `city` | London, Saguenay, Baie Verte |
+| `city_prefix` | Lake, East, East |
+| `city_suffix` | borough, borough, stad |
+| `country` | United States, Jamaica, Jamaica |
+| `country_code` | KP, SI, AR |
+| `neighborhood` | Candlewood Country Club, Auburn North, phoenix |
+| `postal_code` | E2P 8L2, B2R 8V6, E0B 8E2 |
+| `province` | Prince Edward Island, Prince Edward Island, Saskatchewan |
+| `province_abbr` | ON, NS, NU |
+| `secondary_address` | Apt. 486, Apt. 455, Suite 770 |
+| `street_address` | 1511 Rubin Courts, 51463 Vilma Camp, 071 Hagenes Green |
+| `street_name` | Cary Road, Jacobi Curve, Dahlia Mill |
+| `street_suffix` | Track, Union, Streets |
+| `time_zone` | Europe/Amsterdam, Pacific/Majuro, Pacific/Honolulu |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -296,20 +296,20 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 719, 5594, 2618 |
-| `canton_abbr` | GE, ZH, BL |
-| `city` | Dustinberg, Rosannehaven, East Deloresmouth |
-| `city_prefix` | East, East, Port |
-| `city_suffix` | fort, mouth, port |
-| `country` | Korea, Democratic People's Republic of, Saint Kitts and Nevis, Denmark |
-| `country_code` | WS, MX, GI |
-| `neighborhood` | Dyker Heights, Kingsbridge Heights, Schall Circle/Lakeside Green |
-| `postal_code` | 6047, 9061, 4323 |
-| `secondary_address` | Apt. 087, Apt. 481, Apt. 255 |
-| `street_address` | 45043 Lahoma Vista, 0166 Glover Gardens, 246 Jones Falls |
-| `street_name` | Librada Glens, Bernier Course, Harris Plains |
-| `street_suffix` | Causeway, Greens, Fall |
-| `time_zone` | Europe/Vilnius, Asia/Kamchatka, America/Halifax |
+| `building_number` | 54054, 44050, 1095 |
+| `canton_abbr` | AG, GL, TG |
+| `city` | New Rubin, Pagacshire, South Drucilla |
+| `city_prefix` | Lake, North, North |
+| `city_suffix` | ton, ville, town |
+| `country` | Togo, South Africa, Kuwait |
+| `country_code` | MN, PK, KY |
+| `neighborhood` | East of Telegraph Road, White Plains Central, Schall Circle/Lakeside Green |
+| `postal_code` | 1779, 2926, 1737 |
+| `secondary_address` | Suite 727, Apt. 542, Apt. 218 |
+| `street_address` | 240 Kertzmann Plaza, 5892 Hilll Vista, 70600 Mitchell Camp |
+| `street_name` | Jast Via, Cassin Plains, Lowe Vista |
+| `street_suffix` | Drives, Overpass, Crescent |
+| `time_zone` | America/Bogota, America/Mexico_City, Asia/Chongqing |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -321,21 +321,21 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 87872, 47674, 5511 |
-| `canton` | Zug, Luzern, Uri |
-| `canton_abbr` | SH, NE, GR |
-| `city` | Lillyhaven, Schoenland, Adamsfurt |
-| `city_prefix` | West, West, Port |
-| `city_suffix` | town, ton, borough |
-| `country` | Holy See (Vatican City State), Sint Maarten (dutch Part), Gambia |
-| `country_code` | IO, GR, DM |
-| `neighborhood` | Cleveland Park, South of Lake Shore Blvd, Sagaponack Seaside |
-| `postal_code` | 4458, 6330, 0330 |
-| `secondary_address` | Apt. 990, Suite 355, Apt. 063 |
-| `street_address` | 95283 Deckow Divide, 2669 Kautzer Roads, 89820 Melinda Lake |
-| `street_name` | Bauch Falls, Rudolf Hill, Beahan Plain |
-| `street_suffix` | Cape, Square, Overpass |
-| `time_zone` | Europe/Warsaw, Asia/Kathmandu, America/Caracas |
+| `building_number` | 737, 26009, 821 |
+| `canton` | Zug, Neuenburg, Waadt |
+| `canton_abbr` | SG, SO, BE |
+| `city` | South Deirdre, West Masonside, Corwinchester |
+| `city_prefix` | New, South, South |
+| `city_suffix` | haven, mouth, ton |
+| `country` | Armenia, Congo, The Democratic Republic of The, Belarus |
+| `country_code` | UZ, UY, CG |
+| `neighborhood` | Sagaponack Seaside, Candlewood Country Club, Renton West |
+| `postal_code` | 6623, 3431, 7123 |
+| `secondary_address` | Suite 084, Apt. 724, Apt. 001 |
+| `street_address` | 32441 Nikolaus Ramp, 405 Towanda Walk, 5207 Runte Cape |
+| `street_name` | Lynch Forest, Roob Forks, Linh Lights |
+| `street_suffix` | Divide, Mills, Brook |
+| `time_zone` | Asia/Chongqing, Africa/Harare, Asia/Karachi |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -347,21 +347,21 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 32115, 38132, 6364 |
-| `canton` | Bâle-Campagne, Glaris, Uri |
-| `canton_abbr` | SH, JU, UR |
-| `city` | South Monique, Port Gwennville, South Tessatown |
-| `city_prefix` | North, South, North |
-| `city_suffix` | furt, chester, haven |
-| `country` | Mayotte, Marshall Islands, Réunion |
-| `country_code` | TF, CR, AL |
-| `neighborhood` | East of Telegraph Road, East of Telegraph Road, Allegheny West |
-| `postal_code` | 8237, 4472, 5318 |
-| `secondary_address` | Apt. 865, Apt. 504, Suite 521 |
-| `street_address` | 937 Powlowski Green, 5329 Solange Squares, 842 Kautzer Light |
-| `street_name` | Luettgen Bypass, Bernhard Forest, Kuhic Oval |
-| `street_suffix` | Isle, Common, Trafficway |
-| `time_zone` | America/Caracas, Europe/Budapest, Europe/Dublin |
+| `building_number` | 41500, 7231, 056 |
+| `canton` | Soleure, Glaris, Fribourg |
+| `canton_abbr` | SZ, BE, FR |
+| `city` | Deannland, Walshberg, Kubview |
+| `city_prefix` | North, New, West |
+| `city_suffix` | borough, shire, mouth |
+| `country` | Trinidad and Tobago, Tuvalu, Belize |
+| `country_code` | KR, IE, FJ |
+| `neighborhood` | Pennypack, West Covina East, Candlewood Country Club |
+| `postal_code` | 7030, 6583, 8430 |
+| `secondary_address` | Suite 299, Apt. 331, Suite 602 |
+| `street_address` | 50687 Rogahn Union, 1924 Shelia Plains, 810 Maggio Rapid |
+| `street_name` | Winnie Passage, Omar Meadows, Deborah Mountain |
+| `street_suffix` | Radial, Common, Falls |
+| `time_zone` | America/Lima, Asia/Tehran, Asia/Magadan |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -373,21 +373,21 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 241, 80332, 25803 |
-| `canton` | Zurigo, Uri, Basilea Campagna |
-| `canton_abbr` | AG, BE, NE |
-| `city` | Port Reta, South Lance, Huelburgh |
-| `city_prefix` | Lake, South, West |
-| `city_suffix` | town, shire, town |
-| `country` | Denmark, United States, Moldova, Republic of |
-| `country_code` | GS, GE, PR |
-| `neighborhood` | Allegheny West, Schall Circle/Lakeside Green, West Covina East |
-| `postal_code` | 2856, 8459, 8042 |
-| `secondary_address` | Suite 656, Apt. 434, Suite 934 |
-| `street_address` | 664 Cecil Harbors, 440 Aron Dam, 01707 Daniel Wall |
-| `street_name` | Lidia Orchard, Ayesha Walks, Haag Springs |
-| `street_suffix` | River, Lock, Divide |
-| `time_zone` | Europe/Moscow, Asia/Kuwait, Asia/Vladivostok |
+| `building_number` | 4600, 09836, 2340 |
+| `canton` | Appenzello Esterno, Vaud, Appenzello Esterno |
+| `canton_abbr` | SO, ZH, GR |
+| `city` | Howechester, Montychester, Christiansenmouth |
+| `city_prefix` | West, Lake, Port |
+| `city_suffix` | furt, town, land |
+| `country` | American Samoa, Nicaragua, Gabon |
+| `country_code` | CC, ZA, CY |
+| `neighborhood` | Allegheny West, Schall Circle/Lakeside Green, Sunshine-Gardens |
+| `postal_code` | 7208, 4904, 7055 |
+| `secondary_address` | Apt. 183, Apt. 841, Apt. 734 |
+| `street_address` | 7403 Reilly Mission, 60768 Karleen Pine, 25854 Lakin Extensions |
+| `street_name` | Ettie Pike, Kellee Knolls, Lindsay Overpass |
+| `street_suffix` | Squares, Glen, Skyway |
+| `time_zone` | Asia/Tehran, Africa/Nairobi, Europe/Stockholm |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -399,99 +399,99 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 2654, 8333, 2810 |
-| `city` | Gudme, Otterup, Regstrup |
-| `city_prefix` | East, West, New |
-| `city_suffix` | berg, stad, ville |
-| `country` | CuraÇao, Eritrea, Norfolk Island |
-| `country_code` | SZ, GE, TM |
-| `full_address` | Kirkegårdsvej 31 1620 Aarhus V Sjælland DANMARK, Bronzealderen 77 2376 Børkop Hovedstaden DANMARK, M W Gjøes Vej 4 9296 Jelling Midtjylland DANMARK |
-| `kommune` | Furesø, Vesthimmerlands, Middelfart |
-| `neighborhood` | Ocean Parkway South, South of Lake Shore Blvd, Bushwick South |
-| `post_nr` | 6479, 0855, 2869 |
-| `region` | Syddanmark, Syddanmark, Midtjylland |
-| `secondary_address` | Apt. 572, Apt. 157, Apt. 445 |
-| `state` | Herlev, Holbæk, Greve |
-| `street_address` | Postgade 62, Lille Solhøjvej 76, Tjørnekrattet 91 |
-| `street_name` | Bousagervej, Kildehusene, Frøhaven |
-| `street_suffix` | Hill, Alley, Stravenue |
-| `time_zone` | America/La_Paz, Asia/Kuala_Lumpur, Europe/Helsinki |
+| `building_number` | 3742, 7819, 0411 |
+| `city` | Risskov Ø, Ishøj, Kruså |
+| `city_prefix` | Port, Port, West |
+| `city_suffix` | stad, ville, ville |
+| `country` | Haiti, Switzerland, Tonga |
+| `country_code` | SI, AX, QA |
+| `full_address` | Folehavevej 43 7576 Janderup Vestj Hovedstaden DANMARK, Fasanvænget 32 0595 Greve Hovedstaden DANMARK, Vesterby Alle 2 9602 Højslev Sjælland DANMARK |
+| `kommune` | Fanø, Aalborg, Middelfart |
+| `neighborhood` | North Norridge, White Oak South of Columbia Pike, Babylon Bayside |
+| `post_nr` | 6974, 7109, 7229 |
+| `region` | Midtjylland, Syddanmark, Hovedstaden |
+| `secondary_address` | Suite 439, Apt. 029, Apt. 179 |
+| `state` | Fredericia, Bornholm, Horsens |
+| `street_address` | Gyvelhaven 34, Lindegang 43, Kornelhegnet 42 |
+| `street_name` | Jernalderen, Leen E, Bronzealderen |
+| `street_suffix` | Fall, Underpass, Square |
+| `time_zone` | Asia/Dhaka, Europe/Helsinki, Asia/Tbilisi |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 7805, 9537, 7699 |
+| `zip_code` | 6134, 8928, 2659 |
 
 ## FFaker::AddressDE
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 02782, 567, 073 |
-| `city` | Steinbach, Dieburg, Kraichtal |
-| `city_prefix` | Lake, East, South |
-| `city_suffix` | ville, berg, haven |
-| `country` | Zimbabwe, Palestine, State of, Sweden |
-| `country_code` | IL, BT, SV |
-| `neighborhood` | South of Bell Road, Mott Haven/Port Morris, Summerlin North |
-| `secondary_address` | Suite 293, Apt. 940, Apt. 215 |
-| `state` | Berlin, Brandenburg, Saarland |
-| `street_address` | Norrisstr. 16, Jeaniestr. 177, Windlerstr. 178 |
-| `street_name` | Peterstr., Vivangasse, Yerstr. |
-| `street_suffix` | Freeway, Creek, Trail |
-| `time_zone` | Europe/Berlin, Africa/Johannesburg, Europe/Paris |
+| `building_number` | 63125, 825, 209 |
+| `city` | Bergheim, Sendenhorst, Bautzen |
+| `city_prefix` | New, Lake, New |
+| `city_suffix` | side, ville, burgh |
+| `country` | Gibraltar, Japan, Mongolia |
+| `country_code` | AI, YT, VA |
+| `neighborhood` | Mount Kisco West, Cleveland Park, Cleveland Park |
+| `secondary_address` | Apt. 350, Apt. 491, Apt. 940 |
+| `state` | Niedersachsen, Baden-Wuerttemberg, Hamburg |
+| `street_address` | Phuongstr. 12, Norikostr. 29, Bernhardstr. 97 |
+| `street_name` | Marquardtstr., Vestastr., Aufderharweg |
+| `street_suffix` | Wells, Row, Place |
+| `time_zone` | Europe/Athens, Europe/Ljubljana, Asia/Baghdad |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 10510, 07325, 12473 |
+| `zip_code` | 77094, 61001, 82255 |
 
 ## FFaker::AddressFI
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 63659, 1326, 475 |
-| `city` | Kaarina, Saarijärvi, Lieksa |
-| `city_prefix` | West, South, East |
-| `city_suffix` | berg, port, ton |
-| `country` | Turkmenistan, French Guiana, Canada |
-| `country_code` | CO, TM, SV |
-| `full_address` | Kurjenmäentie 6 a, 94904 Huittinen, SUOMI, Isoniituntie 0 b 4, 44569 Alavus, SUOMI, Sököpolku 98, 83172 Lohja, SUOMI |
-| `neighborhood` | Central Chandler, Northwoods West, Sea Ranch Lakes |
-| `random_country` | Korean tasavalta, Serbia, Filippiinit |
-| `secondary_address` | Apt. 842, Apt. 988, Suite 237 |
-| `street_address` | Uitontie 2 a, Tallikuja 083, Isoniituntie 1 |
-| `street_name` | Liljanpolku, Rassintie, Katajamäentie |
-| `street_nbr` | 9 b, 7 a 6, 9 b 9 |
-| `street_suffix` | Drive, Pass, Parkway |
-| `time_zone` | Europe/Belgrade, Asia/Irkutsk, Africa/Monrovia |
+| `building_number` | 39704, 83896, 4564 |
+| `city` | Nokia, Kouvola, Pieksämäki |
+| `city_prefix` | East, New, Port |
+| `city_suffix` | port, furt, stad |
+| `country` | Serbia, Canada, Mali |
+| `country_code` | KE, GQ, CI |
+| `full_address` | Hyrsynkulmantie 6 b 8, 10146 Seinäjoki, SUOMI, Aholantie 604, 21265 Suonenjoki, SUOMI, Turuntie 4 a, 83706 Rovaniemi, SUOMI |
+| `neighborhood` | Gates Mills North, Ladue South, Cipriani |
+| `random_country` | Dominikaaninen tasavalta, Burundi, Japani |
+| `secondary_address` | Apt. 086, Apt. 438, Suite 271 |
+| `street_address` | Pohjankulmantie 1 a, Ahteensuuntie 9 b, Lukkarinkuja 15 |
+| `street_name` | Lukkarinkuja, Niilonpolku, Annantie |
+| `street_nbr` | 0 b 5, 10, 1 b |
+| `street_suffix` | Burgs, Gateway, Drive |
+| `time_zone` | Asia/Baghdad, Asia/Dhaka, Europe/London |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 91242, 45872, 27857 |
+| `zip_code` | 06273, 25091, 29580 |
 
 ## FFaker::AddressFR
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 646, 303, 21118 |
-| `city` | Levallois-Perret, Lyon, Blois |
-| `city_prefix` | New, South, West |
-| `city_suffix` | burgh, ton, view |
-| `country` | Luxembourg, Wallis and Futuna, Malawi |
-| `country_code` | NC, KH, SR |
-| `full_address` | 47 av Margaux le Guichard 2B553 Courbevoie, 96 Q, impasse Audrey de Legendre 2B550 Saint-Germain-en-Laye, 70 boulevard Hugues Bonnin, 97457 Montreuil |
-| `neighborhood` | Cipriani, Summerlin North, Auburn North |
-| `postal_code` | 2B155, 98969, 2A977 |
-| `region` | Guyane, Provence-Alpes-Côte d'Azur, Corse |
-| `secondary_address` | Suite 761, Suite 018, Apt. 860 |
-| `street_address` | 64 TER, rue Margaud Courtois, 314 BIS bd William Carlier, 627 BIS rue Christophe Guyot |
-| `street_name` | Schroeder Shores, McGlynn Shoal, Veum Points |
-| `street_suffix` | Pines, Crest, Rapids |
-| `time_zone` | Atlantic/Azores, Etc/UTC, Asia/Kathmandu |
+| `building_number` | 4762, 08457, 9494 |
+| `city` | Montrouge, Creil, Poissy |
+| `city_prefix` | Lake, South, East |
+| `city_suffix` | mouth, borough, port |
+| `country` | Philippines, Iceland, Malta |
+| `country_code` | UM, BE, PR |
+| `full_address` | 6-09 T, boulevard Bernadette du Normand 97282 Rosny-sous-Bois, 445 impasse Frédéric Besson 63244 Aubervilliers, 1 BIS, avenue Virginie Meyer, 10367 Villefranche-sur-Saône |
+| `neighborhood` | Bridesburg, Central Chandler, Sea Ranch Lakes |
+| `postal_code` | 2A296, 2A436, 97483 |
+| `region` | Provence-Alpes-Côte d'Azur, Mayotte, Provence-Alpes-Côte d'Azur |
+| `secondary_address` | Suite 930, Apt. 183, Apt. 868 |
+| `street_address` | 69 B, rue Alain Garnier, 18 T avenue Denis Parent, 4-73, bd Hélène Roche |
+| `street_name` | Kertzmann Groves, Becker Brooks, Xuan Heights |
+| `street_suffix` | Lock, Meadows, Estates |
+| `time_zone` | Asia/Taipei, Asia/Baghdad, Pacific/Fiji |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -503,265 +503,265 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 1951, 0517, 3998 |
-| `city` | Χανιά, Άργος, Κομοτηνή |
-| `city_prefix` | East, East, South |
-| `city_suffix` | town, view, stad |
-| `country` | Montserrat, Thailand, Guadeloupe |
-| `country_code` | PL, BA, OM |
-| `neighborhood` | Murray Hill, Gates Mills North, Kingsbridge Heights |
-| `region` | Ανατολική Μακεδονία και Θράκη, Δυτική Μακεδονία, Θεσσαλία |
-| `secondary_address` | Suite 927, Apt. 776, Apt. 997 |
-| `street_address` | ["Οδός", "Πάροδος"] Ζαρίφη Γεωργίου, 362, ["Οδός", "Πάροδος"] Ειρήνης, 325, ["Οδός", "Πάροδος"] Αλτιναλμάζη Κωνσταντίνου, 3 |
-| `street_name` | Κυρηνείας, Πάροδος Ηροδότου, Κασσάνδρου |
-| `street_nbr` | 6, 68, 4 |
-| `street_suffix` | Rest, Freeway, Neck |
-| `time_zone` | Australia/Sydney, Australia/Melbourne, Australia/Hobart |
+| `building_number` | 77689, 341, 4263 |
+| `city` | Άρτεμη (Λούτσα), Χαλκίδα, Περαία |
+| `city_prefix` | Port, South, East |
+| `city_suffix` | stad, fort, view |
+| `country` | Namibia, Kenya, Equatorial Guinea |
+| `country_code` | LS, CX, AS |
+| `neighborhood` | East Renton, Bronxdale, South of Lake Shore Blvd |
+| `region` | Πελοπόννησος, Δυτική Ελλάδα, Ιόνιοι Νήσοι |
+| `secondary_address` | Apt. 979, Apt. 512, Apt. 491 |
+| `street_address` | ["Οδός", "Πάροδος"] Αθηνάς, 32, ["Οδός", "Πάροδος"] Καρπασίας, 9, ["Οδός", "Πάροδος"] Αλτιναλμάζη Κωνσταντίνου, 230 |
+| `street_name` | Αμμοχώστου, Γαβριηλίδη Κωνσταντίνου, Αμμοχώστου |
+| `street_nbr` | 34, 71, 15 |
+| `street_suffix` | View, Station, Coves |
+| `time_zone` | Asia/Ulaanbaatar, Europe/London, America/Mexico_City |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 15903, 28260, 63626 |
+| `zip_code` | 87151, 03948, 17545 |
 
 ## FFaker::AddressID
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 20621, 0818, 041 |
-| `city` | Samarinda, Balikpapan, Makassar |
-| `city_prefix` | East, West, West |
-| `city_suffix` | fort, bury, haven |
-| `country` | Isle of Man, Egypt, Timor-leste |
-| `country_code` | ME, MM, CL |
-| `neighborhood` | Kingsbridge Heights, Cipriani, Pennypack |
-| `secondary_address` | Suite 001, Suite 066, Apt. 925 |
-| `state` | Kepulauan Riau, Sumatera Barat, Riau |
-| `state_abbr` | BB, JK, PB |
-| `street` | Jl. Suharso, No. 73, Jl. Teuku Muhammad Hasan, No. 72, Jl. Hamengkubuwono I, No. 48 |
-| `street_address` | 9740 Theresia Knoll, 28699 Luettgen Mall, 392 Patria Freeway |
-| `street_name` | Jaskolski Neck, Gillian Flats, Nicolas Fork |
-| `street_prefix` | Jln, Jl, Jln |
-| `street_suffix` | Way, Junctions, Court |
-| `time_zone` | Australia/Adelaide, Asia/Riyadh, Asia/Kathmandu |
+| `building_number` | 324, 8382, 329 |
+| `city` | Palu, Payakumbuh, Sabang |
+| `city_prefix` | Lake, East, Lake |
+| `city_suffix` | land, berg, burgh |
+| `country` | China, Bolivia, Plurinational State of, Antigua and Barbuda |
+| `country_code` | FR, ML, CG |
+| `neighborhood` | Murray Hill, South of Lake Ave, Renton West |
+| `secondary_address` | Suite 102, Suite 967, Apt. 016 |
+| `state` | Jambi, Sulawesi Barat, Jawa Timur |
+| `state_abbr` | SR, BE, JI |
+| `street` | Jl. Iwa Kusumasumantri, No. 81, Jl. Ahmad Dahlan, No. 75, Jln. Sutan Syahrir, No. 72 |
+| `street_address` | 85586 Felicidad Lake, 0918 Wen Camp, 927 Geraldine Extensions |
+| `street_name` | Haag Ridge, Roma Stream, Svetlana Dale |
+| `street_prefix` | Jl, Jl, Jln |
+| `street_suffix` | Motorway, Well, Square |
+| `time_zone` | Europe/Lisbon, Europe/Istanbul, Asia/Riyadh |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 28077, 06441, 61680 |
+| `zip_code` | 36208, 21526, 70094 |
 
 ## FFaker::AddressIN
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 05847, 3744, 6258 |
-| `city` | Chennai, Chennai, Ludhiana |
-| `city_prefix` | East, East, Port |
-| `city_suffix` | land, bury, furt |
+| `building_number` | 78458, 2473, 0295 |
+| `city` | Nagpur, Visakhapatnam, Surat |
+| `city_prefix` | North, New, West |
+| `city_suffix` | haven, mouth, chester |
 | `country` | India, India, India |
 | `country_code` | IN, IN, IN |
-| `neighborhood` | Jamaica Estates/Holliswood, Candlewood Country Club, North Norridge |
-| `pincode` | 271046, 895070, 825976 |
-| `secondary_address` | Apt. 511, Apt. 358, Suite 895 |
-| `state` | Assam, Gujarat, Madhya Pradesh |
-| `state_abbr` | OR, HP, WB |
-| `state_and_union_territory` | Andaman and Nicobar Islands, Kerala, Haryana |
-| `state_and_union_territory_abbr` | GA, UK, OR |
-| `street_address` | 512 Okuneva Wells, 69074 Yoko Trace, 7294 Fritsch Locks |
-| `street_name` | Kautzer Road, Precious Plains, Doyle Grove |
-| `street_suffix` | Cliff, Manors, Brooks |
+| `neighborhood` | River Heights, Jupiter South/Abacoa, Northwoods West |
+| `pincode` | 542603, 781116, 598838 |
+| `secondary_address` | Apt. 413, Apt. 175, Apt. 049 |
+| `state` | Jammu and Kashmir, Telangana, Kerala |
+| `state_abbr` | JH, MP, UP |
+| `state_and_union_territory` | Chhattisgarh, Karnataka, Bihar |
+| `state_and_union_territory_abbr` | SK, JK, JK |
+| `street_address` | 3160 Shakira Creek, 9735 Betsy Landing, 5727 Bode Manors |
+| `street_name` | Lebsack Ridges, Windler Falls, Denesik Trail |
+| `street_suffix` | Junctions, Plaza, Curve |
 | `time_zone` | Asia/Kolkata, Asia/Kolkata, Asia/Kolkata |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `union_territory` | Chandigarh, Chandigarh, Lakshadweep |
-| `union_territory_abbr` | CH, PY, DD |
+| `union_territory` | Delhi, Andaman and Nicobar Islands, Chandigarh |
+| `union_territory_abbr` | PY, CH, CH |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 989934, 040133, 167032 |
+| `zip_code` | 293819, 117866, 975781 |
 
 ## FFaker::AddressJA
 
 | Method | Example |
 | ------ | ------- |
-| `address` | 921-2650 山口県関市中区大阪市2丁目7番4号, 701-4975 東京都目黒区尼崎市5丁目1番9号, 666-5884 京都府中津軽郡津市046 |
-| `building_number` | 4264, 6824, 7260 |
-| `city` | 古賀市, 上越市, 御所市 |
-| `city_prefix` | East, South, East |
-| `city_suffix` | burgh, berg, port |
-| `country` | Eritrea, Chad, Burundi |
-| `country_code` | CZ, GS, ML |
-| `county` | 秩父郡, 朝倉郡, 南都留郡 |
-| `designated_city` | 亀山市, 碧南市, 東大阪市 |
-| `designated_city_address` | 808-8700 神奈川県伊達市安佐北区西宮市674, 444-6493 長崎県鹿屋市花見川区幸手市875, 789-9185 栃木県碧南市岩槻区川西市406 |
-| `land_number` | 255, 923, 811 |
-| `neighborhood` | Cipriani, Jamaica Estates/Holliswood, White Oak South of Columbia Pike |
-| `other_address` | 684-2415 岩手県諏訪郡美祢市4丁目5番4号, 154-6564 栃木県丸亀市札幌市5丁目2番7号, 518-1811 奈良県南さつま市気仙沼市7丁目8番1号 |
-| `postal_code` | 746-8604, 799-2126, 809-7372 |
-| `prefecture` | 山梨県, 茨城県, 宮崎県 |
-| `secondary_address` | Suite 491, Suite 161, Suite 835 |
-| `street` | 大川市, 鈴鹿市, 秦野市 |
-| `street_address` | 53508 Krajcik Rapids, 46581 Prosacco Estate, 7014 Schaefer Turnpike |
-| `street_name` | Takisha Valleys, Isaac Trail, Feil Expressway |
-| `street_suffix` | Groves, Locks, Point |
-| `time_zone` | Atlantic/Cape_Verde, Asia/Dhaka, Africa/Monrovia |
-| `tokyo_ward` | 葛飾区, 葛飾区, 北区 |
-| `tokyo_ward_address` | 603-2693 東京都江東区草加市115, 194-6153 東京都江東区佐賀市544, 369-6421 東京都練馬区沼津市5丁目4番1号 |
+| `address` | 154-2050 東京都豊島区和光市8丁目6番4号, 798-7408 鳥取県上山市葺合区南さつま市5丁目2番0号, 657-4886 長崎県小美玉市西区仙北市979 |
+| `building_number` | 7215, 4907, 4891 |
+| `city` | 日光市, 木更津市, 宗像市 |
+| `city_prefix` | North, Port, New |
+| `city_suffix` | view, chester, haven |
+| `country` | Somalia, Cape Verde, Spain |
+| `country_code` | UM, SJ, TD |
+| `county` | 幡多郡, 北秋田郡, 河西郡 |
+| `designated_city` | 各務原市, 松江市, 東広島市 |
+| `designated_city_address` | 315-6319 長崎県茅野市港区防府市859, 602-7476 栃木県安芸高田市瀬谷区山陽小野田市1丁目6番0号, 109-5482 愛知県宗像市西区尾花沢市488 |
+| `land_number` | 7丁目3番2号, 467, 993 |
+| `neighborhood` | West Covina East, Sagaponack Seaside, Babylon Bayside |
+| `other_address` | 391-3004 山口県日田市田村市8丁目4番0号, 699-8727 静岡県苫前郡守山市009, 521-5964 鳥取県嬉野市あま市1丁目0番3号 |
+| `postal_code` | 188-9186, 381-1826, 995-9904 |
+| `prefecture` | 福島県, 石川県, 山口県 |
+| `secondary_address` | Suite 970, Apt. 983, Apt. 737 |
+| `street` | 太田市, 白石市, 掛川市 |
+| `street_address` | 931 Julietta Way, 09091 Bartoletti Shoals, 36588 Wilbur Creek |
+| `street_name` | Wilderman Garden, Conn Trace, Wade Mews |
+| `street_suffix` | Lodge, Mills, Knolls |
+| `time_zone` | Asia/Kamchatka, America/New_York, Africa/Cairo |
+| `tokyo_ward` | 江戸川区, 葛飾区, 世田谷区 |
+| `tokyo_ward_address` | 560-6071 東京都板橋区三郷市218, 856-4857 東京都目黒区下野市5丁目6番3号, 222-8569 東京都板橋区玉野市086 |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `village` | 大潟村, 伊是名村, 南相木村 |
-| `ward` | 西区, 湊区, 灘区 |
+| `village` | 姫島村, 泰阜村, 東吉野村 |
+| `ward` | 湊東区, 豊平区, 中央区 |
 | `zip_code` | ❗ *[zip_code] is deprecated. For US addresses please use the AddressUS module* |
 
 ## FFaker::AddressKR
 
 | Method | Example |
 | ------ | ------- |
-| `address_detail` | 준민마을 885 777호, 판섭아파트 772호, 채환타워 623호 |
-| `borough` | 노원구, 강동구, 서구 |
-| `building_name` | 사홍타운, 상열빌라, 대희연립 |
-| `city` | 평택시, 부천시, 안성시 |
-| `land_address` | 광주광역시 성동구 백규마을 247-7, 전라남도 본석마을 080-19, 경기도 성배리 8352-1 |
-| `land_number` | 0599, 5912-9, 243-6 |
-| `metropolitan_city` | 광주광역시, 광주광역시, 대전광역시 |
-| `old_postal_code` | 970-414, 532-737, 821-626 |
-| `postal_code` | 89083, 66684, 49151 |
-| `province` | 경기도, 전라북도, 충청남도 |
-| `road_addess` | 인천광역시 동대문구 재형8로, 광주광역시 광진구 서욱9로, 광주광역시 성동구 두환5가 (재용마을) |
-| `street` | 재빈길, 장번거리, 태룡8가 |
-| `town` | 지선동, 장훈리, 강모리 |
+| `address_detail` | 인한빌라 17 635호, 창우타워 563호, 수진타워 376호 |
+| `borough` | 용산구, 북구, 영등포구 |
+| `building_name` | 연운아파트, 민철타워, 지연연립 |
+| `city` | 부천시 원미구, 수원시 영통구, 시흥시 |
+| `land_address` | 경상북도 정효리 3600, 부산광역시 송파구 민채마을 1351, 대전광역시 중구 영환동 517-1 |
+| `land_number` | 177, 160, 278 |
+| `metropolitan_city` | 울산광역시, 세종특별자치시, 광주광역시 |
+| `old_postal_code` | 385-471, 808-646, 668-594 |
+| `postal_code` | 12563, 96294, 38515 |
+| `province` | 제주특별자치도, 경상북도, 충청남도 |
+| `road_addess` | 광주광역시 광진구 소일1로, 경상남도 동하리 주상길 (재호리), 강원도 양윤리 연서로 (정완마을) |
+| `street` | 민승길, 정찬거리, 시원로 |
+| `town` | 신연동, 난영동, 하윤리 |
 
 ## FFaker::AddressMX
 
 | Method | Example |
 | ------ | ------- |
-| `municipality` | Chicoasén, Aguascalientes, Tepeaca |
-| `postal_code` | 15511, 10286, 37254 |
-| `state` | Morelos, Baja California Sur, Guanajuato |
-| `state_abbr` | DF, JAL, QRO |
-| `zip_code` | 67516, 95697, 98843 |
+| `municipality` | Aconchi, San Andrés Nuxiño, Bacalar |
+| `postal_code` | 44708, 44709, 67268 |
+| `state` | Querétaro, Nuevo León, Hidalgo |
+| `state_abbr` | CHIH, DGO, COL |
+| `zip_code` | 58098, 13280, 00312 |
 
 ## FFaker::AddressNL
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 6568, 888, 5178 |
-| `city` | Winssen, Oude-Tonge, Valthermond-Midden |
-| `city_prefix` | Port, South, North |
-| `city_suffix` | bury, land, bury |
-| `country` | Uzbekistan, Iceland, Saudi Arabia |
-| `country_code` | BZ, VI, RE |
-| `neighborhood` | East Renton, Northwest Midlothian/Midlothian Country Club, East of Telegraph Road |
-| `postal_code` | 3282 IR, 9439 NG, 5024 DY |
-| `province` | Drenthe, Noord-Holland, Zuid-Holland |
-| `secondary_address` | Apt. 535, Apt. 518, Apt. 158 |
-| `street_address` | 489 Jerrystraat, 3776 Melva-Betsysteeg, 937 Bergstromstraat |
-| `street_name` | Janettastraat, Gulgowskistraat, Alisestraat |
-| `street_suffix` | Prairie, Ridges, Union |
-| `time_zone` | America/Guyana, Europe/Tallinn, Atlantic/Cape_Verde |
+| `building_number` | 336, 843, 995 |
+| `city` | Rotterdam, Groot Genhout, Rijswijk |
+| `city_prefix` | North, Lake, South |
+| `city_suffix` | burgh, town, port |
+| `country` | Gabon, United States, Turkmenistan |
+| `country_code` | AX, FI, BA |
+| `neighborhood` | Jamaica Estates/Holliswood, Florissant West, Renton West |
+| `postal_code` | 8594 ZA, 6642 UL, 6134 MJ |
+| `province` | Drenthe, Limburg, Noord-Holland |
+| `secondary_address` | Suite 410, Suite 662, Suite 047 |
+| `street_address` | 891 Prosaccostraat, 04963 Schmelerstraat, 533 Dantestraat |
+| `street_name` | Garrettsteeg, Montystraat, Clementstraat |
+| `street_suffix` | Points, Mount, Place |
+| `time_zone` | Africa/Algiers, Europe/Bucharest, America/New_York |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 8441 HB, 3317 OR, 5388 GR |
+| `zip_code` | 4297 XI, 5726 PQ, 3239 AH |
 
 ## FFaker::AddressPL
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 63, 151, 11 |
-| `city` | Chojna, Zabłudów, Narol |
-| `full_address` | al. Starowiejska 42 21-357 Aleksandrów Kujawski, zaułek Wilsona 108 08-404 Piaseczno, zaułek św. Maksymiliana Kolbego 159 64-277 Przedbórz |
-| `postal_code` | 06-702, 25-167, 96-006 |
-| `province` | lubuskie, świętokrzyskie, mazowieckie |
-| `secondary_number` |  m. 88, /112, /82 |
-| `square` | pasaż Górników, pasaż św. Wojciecha, skwer Ogrodowy |
-| `square_prefix` | bulwar, bulwar, zaułek |
-| `state` | mazowieckie, śląskie, mazowieckie |
-| `street` | al. Monte Cassino, ul. Olkuska, ul. Wierzbowa |
-| `street_address` | al. Tucholska 77, pasaż Ogrodowy 142, al. Kasjopei 10 |
-| `street_name` | pasaż Artylerii Polskiej, ul. Babiogórska, ul. Miłosławska |
-| `street_prefix` | al., al., al. |
-| `voivodeship` | podkarpackie, podkarpackie, dolnośląskie |
-| `voivodeship_abbr` | KP, PK, WN |
-| `voivodeship_capital_city` | Katowice, Wrocław, Wrocław |
-| `zip_code` | 63-785, 22-243, 72-840 |
+| `building_number` | 139, 84, 16 |
+| `city` | Warta, Korfantów, Gniezno |
+| `full_address` | pasaż Solny 123 53-890 Wschowa, pasaż Łukasińskiego 189 49-989 Osiek, bulwar Amfiteatru 46 26-105 Łobez |
+| `postal_code` | 07-477, 80-057, 32-799 |
+| `province` | lubelskie, łódzkie, podkarpackie |
+| `secondary_number` | /100, /128,  m. 2 |
+| `square` | zaułek Orła Białego, zaułek św. Floriana, zaułek św. Jakuba |
+| `square_prefix` | zaułek, pasaż, skwer |
+| `state` | lubelskie, podlaskie, lubelskie |
+| `street` | ul. Chobolańska, al. Piękna, al. Henryka Sienkiewicza |
+| `street_address` | al. Adama Mickiewicza 7, ul. Rugiańska 132, plac Bolesława Śmiałego 94 |
+| `street_name` | plac Bolesława Wstydliwego, al. Mariacka, zaułek Pocztowy |
+| `street_prefix` | al., ul., al. |
+| `voivodeship` | mazowieckie, kujawsko-pomorskie, podlaskie |
+| `voivodeship_abbr` | PD, KP, DS |
+| `voivodeship_capital_city` | Katowice, Poznań, Bydgoszcz |
+| `zip_code` | 17-465, 50-855, 45-105 |
 
 ## FFaker::AddressRU
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 614, 9388, 6678 |
-| `city` | Мурманск, Астрахань, Курск |
-| `city_prefix` | West, New, Port |
-| `city_suffix` | chester, port, haven |
-| `country` | Israel, Kiribati, Kenya |
-| `country_code` | MF, AM, MX |
-| `neighborhood` | Ladue South, East Renton, River Heights |
-| `province` | Чукотский автономный округ, Новосибирская область, Кировская область |
-| `secondary_address` | Apt. 786, Suite 778, Apt. 648 |
-| `street_address` | ул. Железнодорожная, д. 52, ул. Мичурина, д. 032, ул. Совхозная, д. 16 |
-| `street_name` | ул. Центральная, ул. Луговая, пр. Мира |
-| `street_number` | 707, 15, 14 |
-| `street_suffix` | Fall, Shore, Squares |
-| `time_zone` | Asia/Shanghai, Asia/Tashkent, America/Guyana |
+| `building_number` | 250, 74324, 7781 |
+| `city` | Казань, Вологда, Махачкала |
+| `city_prefix` | East, Lake, New |
+| `city_suffix` | haven, berg, town |
+| `country` | Bolivia, Plurinational State of, United States Minor Outlying Islands, Saint Pierre and Miquelon |
+| `country_code` | PA, BH, TV |
+| `neighborhood` | East Renton, Bronxdale, West Covina East |
+| `province` | Башкортостан, Чувашия, Алтайский край |
+| `secondary_address` | Apt. 768, Suite 565, Suite 598 |
+| `street_address` | пр. Победы, д. 9, ул. Комсомольская, д. 7, ул. Пионерская, д. 0 |
+| `street_name` | ул. Пролетарская, ул. Луговая, ул. Горького |
+| `street_number` | 3, 6, 7 |
+| `street_suffix` | Alley, Brook, Point |
+| `time_zone` | Asia/Kuwait, Asia/Taipei, Asia/Kuwait |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 741544, 509979, 363248 |
+| `zip_code` | 620076, 820934, 811235 |
 
 ## FFaker::AddressSE
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 7841, 994, 2067 |
-| `city` | Ronneby, Örnsköldsvik, Kumla |
-| `city_prefix` | North, East, East |
-| `city_suffix` | land, town, side |
-| `country` | Tokelau, Syrian Arab Republic, Vanuatu |
-| `country_code` | BH, CD, TH |
-| `full_address` | Fågelkärrsvägen 6b, 14 575 Kristianopel, SVERIGE, Vinthundsvägen 3b, 72169 Värnamo, SVERIGE, Södra Järnvägsbron 0, 64274 Falun, SVERIGE |
-| `neighborhood` | Summerlin North, Babylon Bayside, Brentwood Central |
-| `random_country` | Åland, Ryssland, Andorra |
-| `secondary_address` | Apt. 934, Suite 388, Suite 938 |
-| `street_address` | Galonvägen 572, Spånga Torgväg 3, Teknologgatan 3a |
-| `street_name` | Nipfjällsvägen, Handelsvägen Lokalgata, Giggvägen |
-| `street_nbr` | 9b, 22, 2b |
-| `street_suffix` | Avenue, Hollow, Coves |
-| `time_zone` | America/Guatemala, America/La_Paz, Europe/Zagreb |
+| `building_number` | 79289, 5849, 4458 |
+| `city` | Karlskoga, Sala, Karlskoga |
+| `city_prefix` | New, South, South |
+| `city_suffix` | mouth, land, haven |
+| `country` | Mayotte, Saint Pierre and Miquelon, Uruguay |
+| `country_code` | SL, GU, LB |
+| `full_address` | Gjuterivägen 1b, 86 409 Falun, SVERIGE, Pargasgatan 6, 53689 Kalmar, SVERIGE, Berghällsvägen 107, 10904 Eslöv, SVERIGE |
+| `neighborhood` | Olmsted Falls Central, Bushwick South, Sagaponack Seaside |
+| `random_country` | Tuvalu, Ghana, Lettland |
+| `secondary_address` | Suite 250, Apt. 578, Suite 516 |
+| `street_address` | Svartmangatan 111, Själlandsgatan 448, Kinmanssonsvägen 523 |
+| `street_name` | Birger Jarlsgatan, Vinterviksvägen, Visthusvägen |
+| `street_nbr` | 2, 776, 9a |
+| `street_suffix` | Vista, Roads, Valleys |
+| `time_zone` | Asia/Jerusalem, Australia/Brisbane, Asia/Krasnoyarsk |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 81950, 74 631, 96 183 |
+| `zip_code` | 05959, 32275, 75757 |
 
 ## FFaker::AddressSN
 
 | Method | Example |
 | ------ | ------- |
-| `arrondissement` | Thiès Nord, Wakhinane Nimzatt, Keur Massar |
-| `building_number` | 73550, 94611, 11333 |
-| `city` | East Sandi, Lake Dimple, Huelton |
-| `city_prefix` | Lake, West, North |
-| `city_suffix` | ville, fort, chester |
-| `country` | New Zealand, Maldives, Anguilla |
-| `country_code` | NP, NO, CD |
-| `departement` | Tivaouane, Bakel, guediawaye |
-| `neighborhood` | Central Chandler, West Covina East, Far Rockaway/Bayswater |
-| `region` | diourbel, kedougou, diourbel |
-| `secondary_address` | Suite 563, Apt. 821, Apt. 028 |
-| `street_address` | 564 Shields Fords, 7325 Kassulke Track, 10373 Jaquelyn Lock |
-| `street_name` | Tanner Ports, Kunze Fork, Gorczany Dale |
-| `street_suffix` | Lights, Park, Estates |
-| `time_zone` | America/Halifax, Europe/Rome, America/Tijuana |
+| `arrondissement` | Thiaroye Sur Mer, Pikine Nord, Thiès Ouest |
+| `building_number` | 3020, 681, 508 |
+| `city` | North Dominic, Hoegerborough, Stantontown |
+| `city_prefix` | Lake, North, New |
+| `city_suffix` | land, side, view |
+| `country` | Algeria, Pakistan, Liberia |
+| `country_code` | GI, KW, CU |
+| `departement` | Linguere, Bignogna, Goudomp |
+| `neighborhood` | Jupiter South/Abacoa, Seven Hills Area, East of Telegraph Road |
+| `region` | kaffrine, thies, sedhiou |
+| `secondary_address` | Apt. 327, Apt. 006, Apt. 116 |
+| `street_address` | 96336 Ronni Wells, 319 Ledner Corners, 6052 Janyce Passage |
+| `street_name` | Steuber Pike, Wolff Rest, Bell Crossroad |
+| `street_suffix` | Path, Shoal, Cape |
+| `time_zone` | Asia/Ulaanbaatar, America/Bogota, Asia/Magadan |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -773,33 +773,33 @@
 
 | Method | Example |
 | ------ | ------- |
-| `appartment_number` | 584, 2, 920 |
-| `building_number` | 781, 12, 979 |
-| `city` | Львів, Бровари, Луцьк |
-| `country` | Латвія, Домініканська Республіка, Іспанія |
-| `province` | Донецька область, Житомирська область, Миколаївська область |
-| `street_address` | вул. Брюховичів, 489, вул. Винників, 97, вул. Нижанківського, 866 |
-| `street_name` | вул. Брюховичів, вул. Староміська, вул. Вузька |
-| `zip_code` | 22179, 32415, 56949 |
+| `appartment_number` | 790, 75, 748 |
+| `building_number` | 98, 241, 55 |
+| `city` | Сімферополь, Ялта, Олександрія |
+| `country` | Велика Британія, Гвінея-Бісау, Білорусь |
+| `province` | Херсонська область, Херсонська область, Миколаївська область |
+| `street_address` | вул. Городоцька, 814, вул. Вічева, 2, вул. Зелена, 1 |
+| `street_name` | вул. Молодіжна, вул. Нижанківського, вул. Винників |
+| `zip_code` | 53692, 77622, 51434 |
 
 ## FFaker::AddressUK
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 0928, 32045, 868 |
-| `city` | Lorindaville, Kubview, Rayeton |
-| `city_prefix` | West, East, East |
-| `city_suffix` | town, town, land |
+| `building_number` | 939, 8384, 5655 |
+| `city` | Hamillbury, Jackiside, New Laveniaton |
+| `city_prefix` | East, West, Port |
+| `city_suffix` | furt, ton, stad |
 | `country` | England, Wales, England |
-| `country_code` | LR, AR, KW |
-| `county` | Wiltshire, Avon, Suffolk |
-| `neighborhood` | White Plains Central, Ladue South, Olmsted Falls Central |
-| `postcode` | SV1 2ZO, WG05 0GW, AJ5 7QS |
-| `secondary_address` | Apt. 344, Suite 711, Apt. 302 |
-| `street_address` | 683 Padberg Neck, 9987 Spinka Centers, 542 Nakesha Club |
-| `street_name` | Jerde Island, Prohaska Streets, Melony Rapid |
-| `street_suffix` | Track, Inlet, Rapid |
-| `time_zone` | Asia/Baku, Asia/Magadan, Pacific/Tongatapu |
+| `country_code` | PE, AU, PG |
+| `county` | County Antrim, Gwynedd County, Greater Manchester |
+| `neighborhood` | Pennypack, Sunshine-Gardens, White Plains Central |
+| `postcode` | UG2 0OT, YD62 0DN, XJ4 4OW |
+| `secondary_address` | Suite 792, Apt. 808, Apt. 056 |
+| `street_address` | 6347 Senaida Lights, 27779 Leeanna Oval, 43054 Hane Meadows |
+| `street_name` | Kling Corners, Ryan Valley, Kenna Road |
+| `street_suffix` | Branch, Lights, Hill |
+| `time_zone` | Asia/Yakutsk, Asia/Singapore, Europe/Amsterdam |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -811,36 +811,36 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 16367, 0495, 63129 |
-| `city` | Ornborough, South Rosalyn, South Delbert |
-| `city_prefix` | West, New, West |
-| `city_suffix` | ville, haven, ville |
-| `continental_state` | Minnesota, West Virginia, Wyoming |
-| `continental_state_abbr` | IN, CT, MI |
-| `country` | Eritrea, Aruba, Anguilla |
-| `country_code` | EE, BN, HR |
-| `neighborhood` | Mount Kisco West, South of Bell Road, Jupiter South/Abacoa |
-| `secondary_address` | Apt. 971, Suite 028, Suite 217 |
-| `state` | Iowa, Indiana, Nevada |
-| `state_abbr` | ME, RI, AK |
-| `state_and_territories_abbr` | NM, WA, UT |
-| `street_address` | 5219 Elias Forks, 36452 Lakiesha Forge, 67524 Swift Valley |
-| `street_name` | Gusikowski Parkway, Botsford Ridge, Shaina Shore |
-| `street_suffix` | Overpass, Drives, Springs |
-| `time_zone` | Europe/Kiev, Africa/Johannesburg, Asia/Hong_Kong |
+| `building_number` | 844, 69773, 70996 |
+| `city` | West Tracyfort, South Joannie, Georgeannafurt |
+| `city_prefix` | Lake, West, West |
+| `city_suffix` | mouth, furt, haven |
+| `continental_state` | Colorado, Wyoming, Louisiana |
+| `continental_state_abbr` | MS, WV, MS |
+| `country` | Netherlands, Eritrea, Madagascar |
+| `country_code` | DK, BF, VI |
+| `neighborhood` | Babylon Bayside, Mott Haven/Port Morris, Cipriani |
+| `secondary_address` | Apt. 422, Apt. 883, Apt. 462 |
+| `state` | Washington, Washington, South Dakota |
+| `state_abbr` | MI, WI, MI |
+| `state_and_territories_abbr` | AA, HI, FL |
+| `street_address` | 77641 Marisol Station, 8217 Satterfield Fall, 7249 Kertzmann Way |
+| `street_name` | Mittie Meadow, Hirthe Drives, Hintz Mills |
+| `street_suffix` | Spur, Junction, Crossing |
+| `time_zone` | Australia/Perth, Europe/Rome, Pacific/Auckland |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 34483, 49731, 94611 |
+| `zip_code` | 64591, 28820-4653, 49683-7664 |
 
 ## FFaker::Airline
 
 | Method | Example |
 | ------ | ------- |
-| `flight_number` | 9W 1356, 6W 2440, 5N 60 |
-| `name` | Flybe, Adria Airways, Bulgarian Air Charter |
+| `flight_number` | QNR 3346, JP 2240, VN 3273 |
+| `name` | Ukraine International Airlines, Air Baltic, Netjets |
 
 ## FFaker::Animal
 
@@ -852,165 +852,165 @@
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | 龟, 驴, 公羊 |
+| `common_name` | 鸵鸟, 土拨鼠, 马 |
 
 ## FFaker::AnimalES
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | Caballo de mar, Anguila, Marsopa |
+| `common_name` | Sapo, Leopardo, Perro |
 
 ## FFaker::AnimalPL
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | Mazurek, Stonoga, Skowronek |
+| `common_name` | Kalmar, Kuna, Mrówka |
 
 ## FFaker::AnimalUS
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | Sea Lion, Porpoise, Crocodile |
+| `common_name` | Dugong, Walrus, Fish |
 
 ## FFaker::Avatar
 
 | Method | Example |
 | ------ | ------- |
-| `image` | https://robohash.org/minimabeataetempore.png?size=300x300, https://robohash.org/cumvoluptaseos.png?size=300x300, https://robohash.org/quaeratrerumdolorem.png?size=300x300 |
+| `image` | https://robohash.org/eligendianimiveniam.png?size=300x300, https://robohash.org/uttemporibusdolorum.png?size=300x300, https://robohash.org/voluptatesdictaeligendi.png?size=300x300 |
 
 ## FFaker::BaconIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | 5qtqdq0ozoif2eizyd7z6rx5zhsmh3944wiiuiyw9gvvq4mmktmdyhu071alde02yeiur7srhfjrgm5i8v3nrusv7rme4jjicj04gr0esdc0ta235kwo33yamrg9zgavrogi3u4ljm57572sy09wvteedskf4qc5zq8c1ebt1a33u70tj2zqixt2qbt7p1xjhw3nq03p2w0ekez2r8q0mf9mpm4att8ah5r232dciw63643jpgcrcbm7gh88gze, qkfbefeeghubxjo9ndf6o35dt59cevhjndl2v1o60e2vvpdt0bxgplxve9nusq189lywndg2uazn32r8dobvolcppdeul860staf1gmrx7f6h021y28sb3x3s28i0ghzgwrjbyry836q67cjjuxh8c43p7ewrkm0r78gzaduyu3m5o5aqvr2g25d9q50ws521vi5ny8xycaaxnag4tuj1svv678r9gb3z1e1dr7ymdmnchmawhgsrvcbx67miz5, wh69w9rl2txq35gh7oizr0oh0lqbs90a402g1jwckv9zhafitbur6aqk1fu97qrzu0qehcnks2oj8sjo16nx39zn84ygbm7yzllgn80n71xwy1c858vs9w6bwcbr6pdalnkzzaho2ybhg562yyhljqgxednz4t4xz27pb4ygvkrnvf3w03n9gbz4ww2nwgafk7k2ykbu15png72t15opqiyl4nv8jfo4ytpg0g8gypkfmrs2yi98q91ac5rgofz |
-| `paragraph` | Ball tip beef landjaeger short loin brisket jerky ground round. Boudin tenderloin doner rump biltong ham hock pork chop Kevin cow. Beef ribs tongue bresaola pork chop jerky chicken tenderloin. Cow beef ribs t-bone tenderloin ground round tongue turducken jowl sausage., Bresaola pork chop short ribs kielbasa beef chicken. Andouille venison short ribs meatball chicken corned beef. Strip steak ham hock meatball rump venison t-bone. Jowl spare ribs pork chop rump shankle tongue short ribs pastrami jerky. Ribeye doner tongue porchetta ground round tail pastrami boudin strip steak., Salami ball tip tri-tip chuck t-bone beef ribs prosciutto drumstick. Pork loin sausage pork chop rump ground round shank chicken hamburger. Pork chop pork loin jowl beef leberkas. Hamburger ribeye corned beef tail ball tip filet mignon rump short loin capicola. |
-| `paragraphs` | Biltong beef spare ribs tri-tip jowl. Tongue jerky kielbasa meatball flank brisket tail short loin bacon. Tri-tip jowl shank meatloaf strip steak prosciutto cow., Andouille t-bone pig beef shoulder sirloin venison bresaola. Frankfurter hamburger capicola biltong corned beef bresaola pig. Landjaeger meatball beef turducken tri-tip salami pork belly tenderloin jerky. Hamburger short ribs tri-tip andouille pig beef ribs jerky venison pork chop. Frankfurter salami ball tip pork loin swine corned beef., Jowl shank pork chop ribeye tri-tip t-bone. Filet mignon porchetta kielbasa ground round hamburger pastrami. Chicken hamburger pork chop beef Kevin venison capicola frankfurter fatback. Tail chuck meatloaf pancetta pork short ribs. Brisket shank Kevin jowl ham hock swine short ribs rump bacon., Bacon chicken strip steak spare ribs beef shankle pig tail. Andouille landjaeger rump tongue porchetta fatback t-bone tenderloin. Capicola pork sirloin turkey venison ball tip short ribs. Short loin rump pork chop corned beef fatback andouille., Flank shoulder sausage turducken short ribs. Pork loin bresaola capicola tenderloin andouille. Swine chuck porchetta drumstick fatback frankfurter. Pork belly bacon meatball jerky ham shankle pork chop. Turkey brisket filet mignon tongue cow., Tail t-bone Kevin tenderloin kielbasa rump pig. Jerky chicken porchetta tongue pork belly boudin drumstick rump turducken. Tongue turducken t-bone doner flank. Chuck t-bone ball tip meatloaf pork belly tri-tip. Tail brisket tenderloin chicken flank rump., Pork loin ground round drumstick tri-tip leberkas filet mignon Kevin venison. Ham hock tongue ball tip sausage pork chop. Pork belly hamburger t-bone andouille flank porchetta. Landjaeger prosciutto venison hamburger Kevin capicola fatback tenderloin drumstick., Biltong corned beef short loin sausage doner shankle frankfurter meatloaf bacon. Leberkas shankle landjaeger hamburger venison drumstick bresaola t-bone ball tip. Sausage strip steak tongue landjaeger t-bone. Pork belly biltong salami drumstick tri-tip ribeye pork loin. Jerky venison swine pastrami drumstick cow prosciutto., Andouille landjaeger boudin capicola drumstick hamburger jowl. Fatback biltong sausage jowl pastrami swine drumstick capicola. Meatball pork loin turkey short loin turducken tail ground round strip steak. |
-| `phrase` | Beef pancetta tail flank kielbasa short ribs., Drumstick pork loin hamburger jowl tenderloin Kevin capicola., Jowl landjaeger prosciutto corned beef bresaola ground round jerky hamburger. |
-| `phrases` | Salami rump landjaeger strip steak bresaola., Pork chop jowl landjaeger tenderloin hamburger., Ham short ribs strip steak beef ribs andouille filet mignon bacon chicken., Sausage meatloaf tri-tip hamburger frankfurter salami jerky ground round Kevin., Fatback short ribs beef ribs cow salami porchetta., Beef ribs andouille tri-tip flank porchetta chuck ball tip boudin landjaeger., Jerky pork belly tenderloin hamburger rump ribeye sausage pig., Meatball cow bacon capicola chuck porchetta drumstick strip steak pork loin., Capicola shank sirloin venison shoulder pork belly prosciutto biltong chuck. |
-| `sentence` | Fatback swine turducken filet mignon beef ribs shoulder drumstick., Ground round shank meatball porchetta pork chop., Swine capicola tenderloin shank beef bresaola ham turducken. |
-| `sentences` | Bresaola hamburger salami landjaeger bacon pastrami capicola., Chuck turkey tenderloin drumstick ribeye swine short ribs cow bacon., Andouille ham ribeye ham hock sausage pork belly., Leberkas drumstick shankle filet mignon spare ribs jerky tenderloin., Shoulder flank cow tongue kielbasa doner shankle., Turducken pork meatball tail andouille capicola landjaeger shoulder., Swine meatball pork chop rump boudin beef ribs landjaeger kielbasa ham hock., Brisket strip steak ham pastrami pork chop sausage., Bacon fatback tri-tip turkey hamburger t-bone turducken strip steak. |
-| `word` | tail, sirloin, meatloaf |
-| `words` | rump, short ribs, kielbasa, tongue, andouille, ham hock, pig, porchetta, shankle |
+| `characters` | 6to0uv2e6get7sdvoiegwyz3hodixc7xq3pkaz70qecx8u1r3w5vc2y3hcodrsqqoncy2ch3azwtmcrgdg8t287oqu8tfradc64ob9j7lst1vrpavc2ptynud46mi2fjvd3xb9o9o3lu4bgb7k3ad9ieqylssfphyhoxcei8tyso4fizaz3tn5rlqnldxn541hfz8gnakklx4cawkypmfm5jbyycw24b97eb7cw5upeqw9ghlo2kzf5xndmtcs6, 0fc4l6cgaspytep95ga0izu1b7pt02spcs71hccqxo6y7acvd5nkwrdilvwz91kfojitof8chdhyq7aaqe95pi0163hn5j0d8znbqiqlc01m2o7kfc6hb5simdb81u77i9hqe6h804p4awkll50ys618onat23fhgrvl5rk3spm4ayuvysi5dxwchf1mmlbe1s71vq67arblg1s6tuxoq5fiix0rkjylo62c42t1hclhizpf035zkwggcdmv586, 5opcbtaoadfz1w9xqudrg1hsjfuf37mx99zc7760oqbpp90b0ke2l5r3223kld91vej0bojk36qplnyxdgapb1q15w3rjb8yj0ocnya06fmg4sug3bwr2ypcmxzqpcaq65wxuwlxl13ku2xj7p70ul8ah80xs2vyofgay7bmy15mluugrx49bcc3n5bvgkvpeh3od0r3lg59xjsv777hrdudgtm3o9uiecezt6h0yrzsbki0euqgvos2r1i4q1c |
+| `paragraph` | Beef andouille rump sirloin pastrami. Pork chop landjaeger tail brisket tongue biltong turkey venison. Bresaola ground round pork chop doner tri-tip brisket. Brisket prosciutto biltong venison sausage ribeye., Pork loin pancetta ground round salami landjaeger short loin. Salami ball tip bacon venison pastrami tri-tip tenderloin. Flank chicken doner bacon capicola cow turkey venison. Pork sirloin capicola chicken rump tail porchetta., Tongue turkey capicola shank shoulder flank. Prosciutto t-bone frankfurter shankle tail Kevin sausage kielbasa. Tenderloin boudin ground round drumstick pig. Beef cow shank ham shoulder ground round chicken. |
+| `paragraphs` | Tri-tip turkey ham biltong meatloaf ham hock. Bresaola tail short ribs beef ribs pig cow. Tail meatball jowl hamburger pork., Shoulder chuck cow jerky pig ground round capicola t-bone drumstick. Porchetta capicola tail leberkas fatback. Pork chop filet mignon meatball corned beef chuck salami doner andouille. Kielbasa bresaola rump corned beef pork chop beef ribs landjaeger ham hock ham., Pastrami chicken tenderloin turducken biltong jerky. Capicola swine drumstick strip steak pastrami pork chop chicken andouille Kevin. Jowl t-bone tenderloin drumstick corned beef pancetta ham hock. Jowl ham prosciutto tenderloin Kevin beef ribs doner brisket jerky. Ground round meatball flank pork loin ham hock chuck andouille tenderloin pancetta., Andouille capicola turducken filet mignon ribeye beef corned beef. Pastrami corned beef venison bresaola landjaeger. Hamburger tail porchetta prosciutto spare ribs pork chop leberkas. Chuck shank shoulder pork pastrami meatball brisket beef. Leberkas cow jerky sirloin bresaola., Meatball ground round chuck landjaeger cow meatloaf spare ribs drumstick. Beef andouille pancetta prosciutto pork belly. Cow ball tip t-bone spare ribs strip steak jowl ground round swine., Swine tail short ribs drumstick capicola. Capicola bresaola pork loin chicken kielbasa beef ribs. Jowl pancetta tri-tip prosciutto tail landjaeger ribeye swine., Hamburger jerky pastrami porchetta drumstick ham swine shank. Ham sirloin rump meatloaf chuck Kevin ribeye. Pork chop leberkas pastrami shank andouille beef fatback. Leberkas pork belly doner drumstick pork capicola jerky beef sausage., Leberkas capicola ball tip ribeye swine biltong. Capicola flank chicken hamburger leberkas bresaola pork chop shoulder short loin. Flank beef corned beef porchetta pig doner pancetta fatback. Doner t-bone venison pork chop ham spare ribs turkey. Short loin ball tip salami tenderloin meatloaf., Ground round ribeye shankle beef ribs bresaola boudin fatback. Ham beef ribs beef tail short ribs hamburger meatloaf. Meatball spare ribs shoulder kielbasa sausage. Pancetta ham doner fatback landjaeger t-bone. |
+| `phrase` | Beef corned beef capicola frankfurter venison., Swine tenderloin biltong turkey frankfurter., Sausage leberkas swine Kevin pork belly chuck. |
+| `phrases` | Pork belly beef ribs capicola leberkas short ribs bacon ribeye beef., Jowl pork belly chicken prosciutto ribeye leberkas beef porchetta., Rump flank pork prosciutto cow., Kevin hamburger shank sausage shoulder bresaola., Tongue pastrami spare ribs biltong corned beef landjaeger., Tongue doner beef ribs pig meatball beef corned beef., Pancetta sausage pork chop bresaola tenderloin., Chicken meatball ham hock pig turkey., Shankle bresaola turkey pork belly landjaeger. |
+| `sentence` | Tri-tip porchetta spare ribs flank pork belly., Hamburger shank corned beef pork loin filet mignon salami Kevin pig capicola., Filet mignon drumstick kielbasa ball tip biltong. |
+| `sentences` | Pastrami ground round flank chuck pork loin., Cow pastrami frankfurter drumstick venison pork belly short loin., Ham hock pig porchetta t-bone chicken ground round cow bresaola., Pork loin kielbasa pancetta meatloaf tail jowl., Tenderloin frankfurter short loin beef pork loin pork belly ribeye., Corned beef porchetta bacon leberkas fatback cow meatball filet mignon pork loin., Pancetta andouille drumstick doner beef ribs frankfurter., Hamburger doner landjaeger porchetta beef pig tri-tip tenderloin., Ham hock ham short ribs rump andouille flank pork chop pork shoulder. |
+| `word` | corned beef, tail, strip steak |
+| `words` | chicken, Kevin, tongue, brisket, turkey, rump, capicola, meatloaf, frankfurter |
 
 ## FFaker::Bank
 
 | Method | Example |
 | ------ | ------- |
-| `card_expiry_date` | 12/23, 10/22, 08/24 |
-| `card_number` | 3977 4983 2676 4607, 3159 2162 4413 2965, 1140 5259 5490 0441 |
-| `card_type` | visa, solo, american_express |
-| `iban` | LI6208411236664068838, LC99QMCD846970026828255817619316, TN1692466613710304823999 |
+| `card_expiry_date` | 05/22, 02/23, 02/24 |
+| `card_number` | 1801 4754 3268 2324, 7152 5399 6043 9708, 5506 5736 8256 2385 |
+| `card_type` | solo, american_express, switch |
+| `iban` | GB33MIBB94001372055081, TR770900859146293313290152, SI86687679248657750 |
 
 ## FFaker::Book
 
 | Method | Example |
 | ------ | ------- |
-| `author` | Sherryl Orn, Kelley Padberg, Elida Robel |
-| `cover` | https://robohash.org/temporeassumendanihil.png?size=300x300, https://robohash.org/nequeatlaboriosam.png?size=300x300, https://robohash.org/aspernaturnesciuntrem.png?size=300x300 |
-| `description` | Molestias optio neque doloremque quisquam. Animi nobis quos aut nam. Eligendi voluptate illum accusantium necessitatibus quis. Nihil a labore voluptatibus sit necessitatibus dolor amet aliquam., Aut magni provident ex minima cumque laboriosam dolore. Quis voluptates soluta facere velit deserunt in esse officiis. Illo ex nihil similique ab aut cumque. Quam laborum quod quia harum minus officia veniam., Quo consequuntur praesentium quis repellendus veniam possimus. Adipisci expedita laboriosam veritatis impedit praesentium assumenda laborum. Ducimus cupiditate alias asperiores eligendi beatae suscipit magnam. |
-| `genre` | Apocrypha, Graphic novel, Science fiction |
-| `isbn` | 23638550829, 2983046471, 15801383214 |
-| `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=I+am+Action+Imp&amp;top_text=Magic+realism&amp;author=Ferdinand+Romaguera&amp;image_code=1&amp;theme=2, https://orly-appstore.herokuapp.com/generate?title=Nuclear+Ninjas&amp;top_text=Historical+fantasy&amp;author=Keven+Marvin&amp;image_code=18&amp;theme=12, https://orly-appstore.herokuapp.com/generate?title=Ultra+Cousins&amp;top_text=Encyclical&amp;author=Erminia+Olson&amp;image_code=6&amp;theme=11 |
-| `title` | Journey of the Blonde Hills, Curse of the Forbidden Rain, Legend of Bloody Men |
+| `author` | Leisha Hintz, Judy Jones, Mack Douglas |
+| `cover` | https://robohash.org/nesciuntdelenitilaborum.png?size=300x300, https://robohash.org/solutaeaqueesse.png?size=300x300, https://robohash.org/illocorruptisit.png?size=300x300 |
+| `description` | Laborum a officiis sunt earum culpa consequuntur reiciendis vitae. Sapiente exercitationem nesciunt in enim voluptas delectus optio id. Nam excepturi pariatur magnam eligendi., Facere esse illo laboriosam iure ad neque. Modi consectetur delectus velit provident mollitia sit. Distinctio repellendus reprehenderit sapiente velit nam deserunt., Atque ea dolorem iusto molestias tempora. Sed ipsam magnam perspiciatis fugit molestiae impedit. Adipisci suscipit dolores fugiat atque unde necessitatibus voluptatibus. Sunt tempore eius libero corrupti occaecati dolores impedit nesciunt. Ea tenetur voluptates alias asperiores voluptatum ab provident hic. |
+| `genre` | Bildungsroman, Hollywood novel, Religious epistemology |
+| `isbn` | 6809859272, 9784816330, 21015874647 |
+| `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=Codename%3A+Blonde+Brain&amp;top_text=Political+satire&amp;author=Julianne+Tremblay&amp;image_code=27&amp;theme=9, https://orly-appstore.herokuapp.com/generate?title=Dangerous+Hills&amp;top_text=Narrative&amp;author=Margorie+Cronin&amp;image_code=26&amp;theme=12, https://orly-appstore.herokuapp.com/generate?title=Killer+Beast&amp;top_text=Planetary+romance&amp;author=Torri+Lowe&amp;image_code=39&amp;theme=8 |
+| `title` | American Pickpocket, Champagne Tears, Blue Women |
 
 ## FFaker::Boolean
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | false, true, false |
-| `random` | false, false, true |
-| `sample` | false, true, false |
+| `maybe` | true, false, false |
+| `random` | true, false, true |
+| `sample` | false, true, true |
 
 ## FFaker::CheesyLingo
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | He old cheese dairy buildings, situated on the historic site the whiter and fresher the cheese, the crisper and fruitier the wine should be but poets have been mysteriously silent on the subject of cheese the whiter and fresher the cheese, the crisper and fruitier the wine should be bergkäse from the Alps of the Friesian herd but poets have been mysteriously silent on the subject of cheese in an artisan farmerhouse a good alternative to cheesecloth raw milk is unpasteurized., Soft ripening cheese for wash, rinse, repeat cut the cheese cheese paring with wine coagulation of the milk protein casein harmful secondary metabolites the whiter and fresher the cheese, the crisper and fruitier the wine should be coagulation of the milk protein casein coagulation of the milk protein casein - tongue in cheek., He old cheese dairy buildings, situated on the historic site in an artisan farmerhouse coagulation of the milk protein casein with Dutch courage cheese paring with wine it is blue sky thinking harmful secondary metabolites when the rennet is added, curds are formed with Dutch courage cheeseparing. |
-| `sentence` | He old cheese dairy buildings, situated on the historic sitein an artisan farmerhousethe milky way of., Raw milk is unpasteurizedraw milk is unpasteurizedthe slice of cheese is placed on top of the meat patty., It is blue sky thinkingPenicillium roqueforticheese paring with wine. |
-| `title` | Nutty Alpine, Dutch Alpine, Nutty Sheep |
-| `word` | fat, elastic, grated |
-| `words` | cream, artisan, cheesy, grated, Gouda, cream, blue, grated, affinage, salty, melting, smooth, fat, affinage, salty |
+| `paragraph` | It is blue sky thinking he old cheese dairy buildings, situated on the historic site when the rennet is added, curds are formed wash, rinse, repeat applewood smoked garlic cheese biscuits raw milk is unpasteurized blessed are the cheesemakers applewood smoked soft ripening cheese for., - tongue in cheek separate the curds from the wey blessed are the cheesemakers bergkäse from the Alps of the Friesian herd Penicillium roqueforti taste and texture in all colours the moon is made of green cheese and applewood smoked blessed are the cheesemakers., The moon is made of green cheese and the early bird may get the worm, but the second mouse gets the cheese in the trap cut to size the slice of cheese is placed on top of the meat patty garlic cheese biscuits with Dutch courage Penicillium roqueforti blessed are the cheesemakers with Dutch courage say cheese. |
+| `sentence` | Cut the cheeseblue fungi in creamof cheesy business lingo., Trying too hard, unsubtle, and inauthenticapplewood smokedapplewood smoked., Harmful secondary metabolitesuntil the wheels form a white coat of penicillium mouldshe old cheese dairy buildings, situated on the historic site. |
+| `title` | Nutty Affineurs, Melting Alpine, Smokey Affineurs |
+| `word` | sticky, cheesecake, stinky |
+| `words` | smoked, salty, Emmentaler, milk, blue, cheesecake, elastic, DOC, milk, toast!, soft, springy, Gouda, salty, cream |
 
 ## FFaker::Code
 
 | Method | Example |
 | ------ | ------- |
-| `ean` | 9048664491308, 7795034741472, 9805049408708 |
-| `npi` | 3161482815, 9884949600, 4526856545 |
+| `ean` | 1856687452392, 7461781105644, 3600665140553 |
+| `npi` | 1121253771, 4248764241, 1114168085 |
 
 ## FFaker::Color
 
 | Method | Example |
 | ------ | ------- |
-| `hex_code` | c49a30, b8fcda, 1a04d8 |
-| `hsl_array` | 24, 44%, 10%, 226, 40%, 30%, 13, 75%, 9% |
-| `hsl_list` | 266,46%,24%, 175,73%,97%, 192,81%,21% |
-| `hsla_array` | 173, 32%, 23%, 0.89, 107, 3%, 49%, 0.39, 87, 81%, 29%, 0.53 |
-| `hsla_list` | 18,26%,74%,0.25, 202,41%,47%,0.79, 283,17%,55%,0.66 |
-| `name` | sandybrown, lightblue, mediumaquamarine |
-| `rgb_array` | 14, 25, 132, 164, 125, 128, 80, 110, 130 |
-| `rgb_list` | 221,146,115, 163,71,3, 32,104,90 |
-| `rgba_array` | 132, 167, 40, 0.94, 230, 181, 15, 0.06, 64, 52, 37, 0.71 |
-| `rgba_list` | 144,70,186,0.23, 11,224,11,0.16, 23,43,130,0.7 |
+| `hex_code` | 7e37eb, 1f4d17, baeba4 |
+| `hsl_array` | 248, 7%, 52%, 327, 18%, 3%, 271, 99%, 25% |
+| `hsl_list` | 223,62%,97%, 85,78%,44%, 175,2%,15% |
+| `hsla_array` | 191, 27%, 21%, 0.53, 279, 23%, 81%, 0.84, 105, 67%, 49%, 0.31 |
+| `hsla_list` | 70,48%,72%,0.15, 82,7%,65%,0.53, 344,45%,54%,0.49 |
+| `name` | lightsteelblue, darkcyan, cadetblue |
+| `rgb_array` | 127, 181, 163, 178, 185, 132, 130, 118, 173 |
+| `rgb_list` | 6,105,251, 33,204,238, 89,33,184 |
+| `rgba_array` | 189, 161, 245, 0.24, 169, 132, 64, 0.92, 218, 167, 95, 0.17 |
+| `rgba_list` | 149,161,155,0.14, 93,16,243,0.15, 77,25,116,0.27 |
 
 ## FFaker::ColorPL
 
 | Method | Example |
 | ------ | ------- |
-| `name` | złocisty, pomarańczowy, pomarańczowy |
+| `name` | kawowy, malinowy, siny |
 
 ## FFaker::ColorUA
 
 | Method | Example |
 | ------ | ------- |
-| `name` | кремовий, голубий, небесно-блакитний |
+| `name` | темно-кораловий, бірюзовий, яскраво-рожевий |
 
 ## FFaker::Company
 
 | Method | Example |
 | ------ | ------- |
-| `bs` | mesh B2B eyeballs, aggregate rich eyeballs, integrate end-to-end functionalities |
-| `catch_phrase` | Devolved directional initiative, Universal radical productivity, Decentralized directional array |
-| `name` | O'Kon-Kunze, Spinka LLC, Rath LLC |
-| `position` | Information Manager, Vice President, General Regional Secretary |
-| `suffix` | Group, LLC, Inc |
+| `bs` | embrace synergistic synergies, exploit B2B architectures, synergize global e-tailers |
+| `catch_phrase` | Adaptive contextually-based structure, Right-sized holistic array, Virtual regional challenge |
+| `name` | Glover Inc, Kshlerin and Sons, Kohler and Sons |
+| `position` | Associate President, Sales Consultant, Assistant Operations Director |
+| `suffix` | LLC, and Sons, Group |
 
 ## FFaker::CompanyCN
 
 | Method | Example |
 | ------ | ------- |
-| `name` | 吟美网络公司, 正汝网络公司, 力侑食品有限公司 |
-| `suffix` | 有限公司, 有限公司, 有限公司 |
-| `type` | 食品, 科技, 咨询 |
+| `name` | 伸君咨询公司, 采勇科技有限公司, 伸君教育有限公司 |
+| `suffix` | 公司, 公司, 公司 |
+| `type` | 教育, 科技, 食品 |
 
 ## FFaker::CompanyIT
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Adamo Avvocati, Studio Tecnico Olivetti, Laboratorio Ferrari |
-| `partita_iva` | 51535250131, 27220820529, 91103020870 |
-| `prefix` | Studio Legale, Studio Legale, Studio Legale |
-| `suffix` | Architetti, s.n.c., S.p.a. |
+| `name` | Laboratorio Monachello, Arrigo e Sangiacomo s.r.l., Finocchiaro e Alemanga Architetti |
+| `partita_iva` | 33428970728, 85021980587, 74357380299 |
+| `prefix` | Studio Legale, Studio Legale, Studio Tecnico |
+| `suffix` | Architetti, S.p.a., s.r.l. |
 
 ## FFaker::CompanyJA
 
 | Method | Example |
 | ------ | ------- |
-| `name` | 岡本有限会社, 大屋有限会社, 安里株式会社 |
-| `position` | 部長, インターン, 社長 |
+| `name` | 山口ホールディングス, 森株式会社, 有限会社東 |
+| `position` | 契約社員, 契約社員, アルバイト |
 
 ## FFaker::CompanySE
 
 | Method | Example |
 | ------ | ------- |
-| `name` | McDermott, Gerhold och Morar, Runolfsdottir-Stiedemann, Douglas, Huels och Lehner |
-| `suffix` | Ab, Ab, AB |
+| `name` | Bartoletti, Ward och Stamm, Kunde-Leuschke AB, Mosciski, Goodwin och Gibson |
+| `suffix` | AB, AB, AB |
 
 ## FFaker::Conference
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Advanced Manufacturing Technology Show, One Night Only Vegan Caribbean Night Extravaganza with Chef Mayra, LatAm HSE in Oil, Gas and Petrochemicals |
+| `name` | 18th Annual Sloan Consortium International Conference on Online Learning, Open Networking Summit 2012, 1st UK Festival de Orquestas |
 
 ## FFaker::CoursesFR
 
@@ -1021,156 +1021,156 @@
 
 | Method | Example |
 | ------ | ------- |
-| `code` | KYD, CLP, BYR |
-| `name` | CFA Franc BCEAO, Liberian Dollar, Algerian Dinar |
-| `symbol` | $, ¥, $ |
+| `code` | AED, DOP, SVC |
+| `name` | Azerbaijanian Manat, Yen, Sudanese Pound |
+| `symbol` | ¢, ¥, $ |
 
 ## FFaker::DizzleIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | fia8xo1h1shj9lseam9ypu1pu6sjhy04gijc8z0lxsbxmm51om0h1vm0rp577i2gcfv5tmt36tfonqnkc3a0ocnp6qifubfd6mxeit3npffxgf31567vdfajd24c6rq2wx21j8g0yaansgwyqpa578bcvx9tde2u4v1k5ygmf7o4hx6pvrglip0fev0gs7n2khsxi1she75tzsmaj30qde5o8pkit2ld04574a62pli3qndk22z5obeyvsqiuwu, icfxxt4sknxqq6vg6s0zrgsd2nxw1dzx05a11d4b5spc3bt5suljenv3m218zibn40upk6pcplf18wrusx6n9kmfdz85we7dya4tgbg8514o0fhd5uhh3nhwe17apjwge4ig54tr7sycgox5f47fumj9975vk5hek9yki5a5hhoe615safdh8c98cymt3pjj97zadvizchf2a9fo6hwxxaxfam4py8l9z6dl3sg3gy8yk48wv4focp68ft2dfx0, nxrqtt0t2vn3fpdr9tfkdttxdmfvxuq8qg5tpy5f4gudl1k989b5t6tzlq5uqmr52p27z13652centsafcxgpv76gsuyvyd5c1mnbisnlma3ryzd15595xwr3anlp2jhn4t73j671cdvohewiw40k3dcw2rzl7m68t8o5rtkwzqfy51k0pt2n1jzho3kymhpn9tnl2estabheunmsjc0ucj4sir5kutbn3l0s1803w7cw2bw77ej0e9q0g3na6o |
-| `paragraph` | Realer laid back rolling down the street rizzide Doggfada the dopest Mr. Buckwort real deal Holyfield why is you. Put ya choppers up televizzle Mr. Buckwort plizzay if the ride is more fly, then you must buy eighty degrees it's 1993 if you was me and I was you Long Beach. Everybody got they cups every single one the LBC through all the drama at ease like every single day with my mind on my money., Every single one at ease smokin' indo put ya choppers up if the ride is more fly, then you must buy plizzay for the hustlers. Nothing can save ya the S oh yes fo shizzle may I guess what? at ease nasty the LBC realer. The dogg pound Doggfada if the ride is more fly, then you must buy televizzle tha dizzle make a few ends., The s oh yes you talk too much I love my momma it's 1993 Snoopy realness at ease fo shizzle guess what?. Snoop every single one plizzay bionic the diggy eighty degrees for the hustlers the Dogg Pound. The lbc laid back Coupe de Ville it's 1993 eighty degrees Mr. Buckwort. |
-| `paragraphs` | I love my momma gold chain drop it like it's hot fizzle bionic the Magic Johnson of rap with my mind on my money if the ride is more fly, then you must buy. Fizzle gold chain fo rizzle bubbles in the tub at ease with my mind on my money. For the gs it's 1993 through all the drama waddup fo shizzle for the hustlers the dopest. Recognize real deal Holyfield rizzoad at ease how we do it if the ride is more fly, then you must buy eighty degrees nothing can save ya. Through all the drama Doggfada put ya choppers up tha shiznit in tha hizzle the Magic Johnson of rap rolling down the street., Nothing can save ya rizzide the LBC why is you your chrome it's 1993. Tha dizzle for the hustlers gizzo rizzide why is you. Drizzle eighty degrees smokin' weed the Magic Johnson of rap realness. You talk too much for the Gs gizzo televizzle gold chain the Magic Johnson of rap it's 1993 real deal Holyfield Snoopy. The diggy realness rizzide rizzoad nasty like every single day if the ride is more fly, then you must buy., Roll with fizzle used to sell loot zig zag smoke drizzle. Doggfada the diggy sippin' on gin and juice it's 1993 nothing can save ya nasty. Drop it like it's hot how we do it gold chain your chrome feel the breeze I love my momma. Doggfada everybody got they cups your chrome real deal Holyfield tha dizzle for the hustlers rizzide Snoopy for the Gs. Sippin' on gin and juice tha shiznit at ease zig zag smoke the S oh yes gold chain rizzide., Gold chain through all the drama smokin' indo pizzle feel the breeze why is you may I eighty degrees Snoopy. Gizzo if you was me and I was you now I'm on parole the diggy tha dizzle fo rizzle recognize if the ride is more fly, then you must buy. It's 1993 real deal Holyfield zig zag smoke tha shiznit the Dogg Pound your chrome. Laid back may I rizzide zig zag smoke smokin' weed you talk too much the dopest everybody got they cups waddup. At ease roll with every single one drizzle televizzle with my mind on my money., Guess what? Snoop fo rizzle fizzle nothing can save ya for the Gs televizzle drop it like it's hot tha shiznit. For the gs the dopest smokin' indo real deal Holyfield I love my momma Snoop bubbles in the tub plizzay. Nothing can save ya how we do it realness rizzide the diggy waddup pizzle sippin' on gin and juice. Why is you through all the drama you talk too much at ease your chrome drop it like it's hot everybody got they cups like every single day., Every single one televizzle gold chain drop it like it's hot put ya choppers up your chrome everybody got they cups waddup Snoopy. If the ride is more fly, then you must buy the S oh yes fo rizzle roll with nothing can save ya. Waddup if you was me and I was you every single one pizzle rolling down the street Doggfada Long Beach in tha hizzle fo shizzle., Sippin' on gin and juice and my money on my mind every single one it's 1993 zig zag smoke. Tha dizzle Snoop roll with for the hustlers fizzle rizzoad nasty at ease. Waddup smokin' weed rolling down the street feel the breeze zig zag smoke., Gizzo Doggfada Coupe de Ville the Dogg Pound feel the breeze. Long beach the Dogg Pound the dopest pizzle fo rizzle. With my mind on my money why is you realness the diggy through all the drama., Laid back your chrome if the ride is more fly, then you must buy may I Doggfada sippin' on gin and juice at ease realer feel the breeze. The dopest fizzle nasty sippin' on gin and juice the Magic Johnson of rap rizzide the Dogg Pound. The magic johnson of rap eighty degrees gizzo for the hustlers the LBC. Guess what? plizzay drizzle pizzle realness. |
-| `phrase` | Drizzle your chrome every single one the Dogg Pound for the hustlers., Like every single day pizzle your chrome make a few ends waddup guess what? fo rizzle Mr. Buckwort., If the ride is more fly, then you must buy gizzo tha dizzle the dopest hizzouse rizzide for the hustlers Mr. Buckwort. |
-| `phrases` | Now i'm on parole Doggfada Coupe de Ville recognize you talk too much the diggy., Through all the drama rizzoad Coupe de Ville your chrome Mr. Buckwort televizzle., The dogg pound make a few ends the diggy waddup if the ride is more fly, then you must buy Doggfada the dopest., Tha dizzle for the Gs the diggy drop it like it's hot the S oh yes realer your chrome., Feel the breeze why is you Doggfada rizzide now I'm on parole., Rizzide every single one you talk too much in tha hizzle Coupe de Ville rolling down the street smokin' weed., Real deal holyfield smokin' indo laid back waddup the Dogg Pound., Why is you Mr. Buckwort pizzle nasty through all the drama hizzouse recognize tha shiznit., Mr. buckwort it's 1993 smokin' indo tha shiznit the S oh yes for the hustlers Coupe de Ville. |
-| `sentence` | Put ya choppers up it's 1993 televizzle bubbles in the tub smokin' indo every single one the diggy., Guess what? the dopest Long Beach hizzouse if the ride is more fly, then you must buy and my money on my mind., The dogg pound nasty everybody got they cups the LBC guess what? fo shizzle the Magic Johnson of rap. |
-| `sentences` | Rizzoad roll with nasty for the hustlers it's 1993 televizzle may I., If the ride is more fly, then you must buy realness the S oh yes fo rizzle rizzide everybody got they cups why is you., Doggfada Snoopy why is you televizzle laid back., Everybody got they cups televizzle guess what? tha shiznit bionic the Dogg Pound the dopest., Long beach put ya choppers up the Dogg Pound realer and my money on my mind feel the breeze rolling down the street if the ride is more fly, then you must buy., Realness pizzle if the ride is more fly, then you must buy every single one Coupe de Ville smokin' indo fo shizzle real deal Holyfield., Eighty degrees recognize drizzle the Dogg Pound realer., Why is you eighty degrees Long Beach the Magic Johnson of rap fizzle tha dizzle it's 1993 guess what?., Guess what? bionic like every single day rolling down the street used to sell loot I love my momma hizzouse at ease sippin' on gin and juice. |
-| `word` | the LBC, and my money on my mind, Snoopy |
-| `words` | bubbles in the tub, tha dizzle, pizzle, televizzle, Long Beach, may I, Snoopy, drop it like it's hot, put ya choppers up |
+| `characters` | 5hdv0fcg8v8j1au18bneyuz7j6uklq2nd4gd5xicnyq4tcww7tfjid1xkqxnrdzo5mo5pgdfs22w6h7qg6vgbasxvicmtue58q089sgkcl8dkjqg1mmkv1jkepa54xinfkzpqpt2rrux1en5wnysrvdoj8vgdq27coysjtcaq926gcao8grabtywxo3grw3r7awixmtmvvldueoyj83jrml9q5kec5m35ztye3xbioxy38a7lnd10myrt9mgdg3, 4jky07ej8is0nc8u3ju2ajewy6yo8hgd0om26xk6avn06ntvjiac75rpkzs9py8naoslv8q2i16ef1d9t5zir3d7et5oo1x0cool6rve6xj4tue8bsuhjnridrls6i61csqodhpkpgzqau41fh5go3vktmq76ls8nh4aoua0vikwlobp27schq7n3j2bwnq4ojsymm24ep5pqgirk5aszypat0tyuqu99xny4nqtnogar1oa2r2f4owaxmkkem9, df1usdju14r34p3ems8u82qby1fb91ocnnbum1qyry4b2tkif16vtrzlips49sg0mwzmmbr7awsdub598c3dmb007vq5e5nubmwm40tpqfpydrxodr9w44sm653g5ilh3q3zcc55bok4azf0q1zfqhc9a4p174l5bbf7wforpxsvognoq9udibsox21mio5gugvl0d6yvutnu98qhu9pxj1kze3ynlfwiletulhqwgie5qnge0zdzbgwoiy7cwj |
+| `paragraph` | For the hustlers hizzouse if you was me and I was you pizzle you talk too much realness fo rizzle. Sippin' on gin and juice rolling down the street televizzle eighty degrees nasty. In tha hizzle why is you drizzle rizzoad I love my momma waddup through all the drama., It's 1993 plizzay roll with laid back fizzle guess what? bubbles in the tub fo shizzle used to sell loot. Snoopy fo shizzle zig zag smoke for the hustlers used to sell loot sippin' on gin and juice bubbles in the tub. Drizzle why is you through all the drama I love my momma Coupe de Ville., The lbc Coupe de Ville with my mind on my money may I for the hustlers the Dogg Pound guess what?. Fo rizzle recognize bionic zig zag smoke the diggy smokin' weed rolling down the street. Pizzle Coupe de Ville may I with my mind on my money for the hustlers why is you you talk too much the Magic Johnson of rap. Roll with for the Gs your chrome everybody got they cups pizzle realer. |
+| `paragraphs` | Doggfada hizzouse the S oh yes everybody got they cups rizzoad through all the drama fo shizzle rizzide gizzo. Nasty feel the breeze fizzle with my mind on my money I love my momma put ya choppers up. Hizzouse fo shizzle in tha hizzle gold chain why is you smokin' indo. The magic johnson of rap put ya choppers up how we do it zig zag smoke plizzay realness guess what? gizzo. With my mind on my money like every single day gizzo put ya choppers up televizzle for the hustlers., Hizzouse for the hustlers televizzle the LBC bionic why is you gold chain how we do it used to sell loot. If you was me and i was you may I fo rizzle your chrome at ease Mr. Buckwort how we do it. Snoopy fizzle tha dizzle it's 1993 now I'm on parole why is you roll with. Long beach guess what? televizzle bionic used to sell loot. And my money on my mind Snoopy I love my momma nasty how we do it realer., Nasty rizzide laid back for the Gs you talk too much. Rizzide roll with the Magic Johnson of rap recognize realness may I smokin' weed. Tha dizzle fizzle in tha hizzle guess what? every single one zig zag smoke real deal Holyfield with my mind on my money I love my momma. Doggfada everybody got they cups bubbles in the tub gizzo realness fo rizzle tha shiznit televizzle. Realer I love my momma and my money on my mind smokin' weed eighty degrees gizzo bionic at ease., Realer Mr. Buckwort roll with realness televizzle. Rizzoad smokin' indo smokin' weed pizzle tha dizzle eighty degrees gold chain. Tha shiznit tha dizzle sippin' on gin and juice rizzide I love my momma realness the S oh yes how we do it every single one., Televizzle realer through all the drama roll with gold chain fo shizzle plizzay rolling down the street. In tha hizzle televizzle roll with fo shizzle nasty. Roll with plizzay the dopest your chrome I love my momma. The dopest televizzle put ya choppers up tha dizzle the Magic Johnson of rap like every single day for the hustlers I love my momma., Sippin' on gin and juice feel the breeze guess what? may I eighty degrees if you was me and I was you how we do it now I'm on parole everybody got they cups. I love my momma with my mind on my money for the hustlers zig zag smoke used to sell loot now I'm on parole. In tha hizzle the diggy drizzle if you was me and I was you the Magic Johnson of rap your chrome hizzouse., Drop it like it's hot if the ride is more fly, then you must buy bubbles in the tub the diggy if you was me and I was you plizzay rizzoad sippin' on gin and juice the S oh yes. Roll with smokin' indo the Dogg Pound recognize for the hustlers sippin' on gin and juice guess what? everybody got they cups tha shiznit. Realer recognize tha shiznit drizzle through all the drama like every single day drop it like it's hot guess what?. Your chrome the Dogg Pound I love my momma the dopest every single one rizzide. Gizzo used to sell loot you talk too much rolling down the street pizzle bubbles in the tub at ease., You talk too much fo rizzle it's 1993 the LBC now I'm on parole at ease realness. Every single one with my mind on my money for the hustlers pizzle realness. Real deal holyfield the dopest Long Beach nothing can save ya smokin' weed drop it like it's hot if you was me and I was you for the hustlers. You talk too much smokin' indo feel the breeze zig zag smoke recognize., Used to sell loot laid back the S oh yes roll with for the hustlers. Waddup televizzle recognize bubbles in the tub now I'm on parole drop it like it's hot put ya choppers up rizzoad. Pizzle gold chain real deal Holyfield rizzoad eighty degrees with my mind on my money. |
+| `phrase` | Snoopy the Dogg Pound zig zag smoke Mr. Buckwort nothing can save ya the diggy rizzide drizzle., Every single one smokin' indo Doggfada put ya choppers up in tha hizzle plizzay rizzoad realer., Now i'm on parole everybody got they cups you talk too much bubbles in the tub feel the breeze put ya choppers up. |
+| `phrases` | Smokin' indo zig zag smoke now I'm on parole tha dizzle used to sell loot I love my momma Long Beach., I love my momma eighty degrees for the Gs feel the breeze put ya choppers up nothing can save ya tha dizzle., Now i'm on parole may I hizzouse tha shiznit through all the drama roll with pizzle., The s oh yes for the hustlers recognize your chrome realer every single one Long Beach make a few ends., Drop it like it's hot sippin' on gin and juice hizzouse smokin' indo televizzle realer., For the gs if you was me and I was you gizzo used to sell loot make a few ends like every single day Long Beach hizzouse., Drizzle laid back Coupe de Ville rizzide for the Gs make a few ends with my mind on my money and my money on my mind may I., You talk too much if you was me and I was you fo rizzle your chrome Doggfada., Nothing can save ya how we do it make a few ends the LBC drop it like it's hot and my money on my mind. |
+| `sentence` | Why is you laid back if you was me and I was you rizzide plizzay and my money on my mind like every single day with my mind on my money., Now i'm on parole hizzouse sippin' on gin and juice through all the drama I love my momma smokin' weed rolling down the street why is you., In tha hizzle tha shiznit roll with why is you through all the drama used to sell loot Snoopy nasty. |
+| `sentences` | Rizzoad sippin' on gin and juice drop it like it's hot pizzle smokin' weed zig zag smoke., Roll with if the ride is more fly, then you must buy drop it like it's hot nothing can save ya tha dizzle the dopest gold chain., Eighty degrees used to sell loot sippin' on gin and juice the Dogg Pound fo rizzle through all the drama the diggy., Recognize guess what? the S oh yes how we do it I love my momma every single one Doggfada Snoopy gold chain., Fizzle you talk too much hizzouse for the hustlers realness smokin' weed., Rizzide I love my momma the Magic Johnson of rap bionic now I'm on parole., How we do it laid back I love my momma make a few ends your chrome Doggfada., Through all the drama guess what? bionic real deal Holyfield drizzle fo shizzle., Realer through all the drama used to sell loot drop it like it's hot nasty the S oh yes the diggy for the Gs smokin' weed. |
+| `word` | through all the drama, tha dizzle, I love my momma |
+| `words` | televizzle, rizzoad, the S oh yes, I love my momma, the Magic Johnson of rap, bubbles in the tub, the Magic Johnson of rap, for the Gs, may I |
 
 ## FFaker::Education
 
 | Method | Example |
 | ------ | ------- |
-| `degree` | Master of Social Work in Systems Education, Doctor of Pharmacy in Industrial Architecture, Master of Science in Quality Assurance in Industrial Studies |
-| `degree_short` | BE in Business Accountancy, ME in Marketing Architecture, MPharm in Medical Development |
-| `major` | Marketing Philosophy, Political Education, Systems Management |
-| `school` | Northcoast College of Architecture, Wyoming Academy of Philosophy, Northpoint Polytechnic University |
-| `school_generic_name` | Redwood, Northshire, Indiana |
-| `school_name` | Northcrest, Windshore, Windshire |
+| `degree` | Bachelor of Fine Arts in Political Arts, Master of International Affairs in Social Philosophy, Bachelor of Science in Software Engineering in Medical Architecture |
+| `degree_short` | ME in Medical Management, AB in Financial Philosophy, MPharm in Medical Studies |
+| `major` | Systems Accountancy, Political Architecture, Political Development |
+| `school` | West Virginia University of Development, Whiteshire College of Arts, Lakewell University of Administration |
+| `school_generic_name` | Windcoast, Windside, Delaware |
+| `school_name` | Redcrest, Greencrest, Lakecoast |
 
 ## FFaker::EducationCN
 
 | Method | Example |
 | ------ | ------- |
-| `degree` | 文学博士, 医学博士, 教育学硕士 |
-| `location` | 郑州, 江苏, 云南 |
-| `major` | 体育经济与管理, 冶金工程, 材料成型及控制工程 |
-| `school` | 忻州学院, 西南邮电大学濮阳分校, 上海医科大学 |
+| `degree` | 文学硕士, 历史学硕士, 经济学学士 |
+| `location` | 华中, 淮北, 湖南 |
+| `major` | 日语, 网络与新媒体, 机械工艺技术 |
+| `school` | 西南航空航天学院, 红河财经学院, 海南经贸学院上饶分校 |
 
 ## FFaker::Filesystem
 
 | Method | Example |
 | ------ | ------- |
-| `directory` | sequi/quidem/fuga, asperiores/quidem/labore, cumque/optio/facere |
-| `extension` | csv, html, mp3 |
-| `file_name` | eum/quas/impedit/dignissimos.pptx, eius/fuga/et/sit.docx, nostrum/doloribus/ex/alias.js |
-| `mime_type` | application/javascript, application/json, application/soap+xml |
+| `directory` | molestiae/odio/ut, eos/odit/quo, occaecati/deleniti/dicta |
+| `extension` | jpeg, jpg, pages |
+| `file_name` | eaque/facere/animi/voluptatem.json, quia/expedita/facere/iure.gif, quae/praesentium/quod/consequatur.numbers |
+| `mime_type` | message/partial, application/atom+xml, image/svg+xml |
 
 ## FFaker::Food
 
 | Method | Example |
 | ------ | ------- |
-| `fruit` | Quince, Salal, Currant |
-| `herb_or_spice` | Savory Summer Leaf, Paprika, Fajita Seasoning |
-| `ingredient` | Coriander, Cloves, Avocado |
-| `meat` | Tripe, Ham, Pork, Bacon |
-| `vegetable` | Yao Choy, Lettuce, Rutabaga |
+| `fruit` | Cucumber, Olive, Passionfruit |
+| `herb_or_spice` | Celery Salt, Nutmeg, Cayenne Pepper |
+| `ingredient` | Chicken Liver, Caribou, Moth bean |
+| `meat` | Beef, Turkey, Turkey |
+| `vegetable` | Artichoke, Water caltrop, Leek |
 
 ## FFaker::FoodPL
 
 | Method | Example |
 | ------ | ------- |
-| `diary` | masło, mleko zagęszczone, maślanka |
-| `fermented` | piwo, kombucza, miso |
-| `food` | gruszka, powidła, ocet |
-| `fruit` | aronia, poziomka, daktyle |
-| `herb` | pietruszka, bazylia, lubczyk |
-| `meat` | wieprzowina, wieprzowina, jagnięcina |
-| `preserves` | pesto, keczup, syrop |
-| `processed` | pesto, maślanka, zsiadłe mleko |
-| `spice` | sezam, szafran, kardamon |
-| `unprocessed` | imbir, kapusta biała, wieprzowina |
-| `vegetable` | czosnek, kapusta biała, brukselka |
+| `diary` | mleko zagęszczone, maślanka, ser topiony |
+| `fermented` | piwo, ogórek kiszony, piwo |
+| `food` | lubczyk, kozina, pietruszka |
+| `fruit` | ananas, grejpfrut, poziomka |
+| `herb` | trawa cytrynowa, oregano, oregano |
+| `meat` | kozina, baranina, wołowina |
+| `preserves` | sok, majonez, keczup |
+| `processed` | pesto, śmietanka, ser topiony |
+| `spice` | cynamon, gałka muszkatołowa, szafran |
+| `unprocessed` | kozina, imbir, jagnięcina |
+| `vegetable` | dynia, jarmuż, cykoria |
 
 ## FFaker::FreedomIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | cx633qc8ozw0kc6bcg3zfhfbwb29bsxfiu8ta2y8a85d9jwkh34aop9byhbea7gymiiqq0ec41521qk6i1b6p7jj47efv00pp9bvz513nyje924l868y8y4pq0zvh9c8oo0dcn8mrriwe2t5tk4n6i5y97yrqitg8rsyjplapqkmv0i7momjrjnay4knucjormr4h3p9congqbpkgtzkp1cn1fzkp6ewy3rlb2x58id4gwa4y2t8dnvvjkh8nii, mln4fthvobz6vz9oysw2cquultbcdqo207kapbnb9kpth4h2jk735i02s7p444ldrv6ok4hwwvvwoo7c7enkoy9zv3xnvuz6lirxwonxvt2e7vtbj1tb26riioywob7rm7xoq0i0prvusc0lnpw78cukimlb99f0ppk76gb95fc53ump6w1d1j1a7d16v48a84nt354wc2g5b1nl5i3sm6g9zbhv3r2ujnfklgce73xxh03n1hh019t84mpaeml, 2j2oqn94i0wal0bbbm5movo79as0nd4b2tf2wkgyidazraem7utdnko7bxv8wyoxv9b9snb2wun2lhh8edj5mdjdoxefcdwtqdkdo3mx0yq9m20wa05pfpl7iongtvbfmkzrl8cro2ueczb91bm5mpanivyasskmsw8zj71odp1cxrr2czxrw6wdovpcbtxyr42g776h09mr88a3js0maq5dt3l7z0iapa3x950z14tl5jhdu6csigimupsoax1 |
-| `paragraph` | Monster truck rally more bullets extra beef shock and awe country-fried weekends Denny's Grand Slam Breakfast Harley Davidson 3D Blu-Ray. Wal-mart potato salad boneless buffalo wings second amendment rights Marlboro reds extra pulled pork slurpees Mount Rushmore. Bald eagles Championship Pro Bass Fishing explosions congress Checkers. Super-size Denny's Grand Slam Breakfast propane tanks Arnold Schwarzenegger the government congress. Starbucks milkshakes ESPN2 Arnold Schwarzenegger independence Dallas Cowboys crispy chicken strips cholesterol Chuck Norris., Red white and blue consumerism independence Texas chili cheese fries truck nuts. Mount rushmore Disney World mud flaps DiGiorno bald eagles USA-4-Life-Bro TGIF milkshakes. 18-wheeler hot dogs boneless buffalo wings condiments drive-thru. Supreme court ruling shock and awe crunch-tastic NASA Applebee's condiments DirecTV., Bigfoot cheese-stuffed drone strike WMD cholesterol controversial sweatpants Championship Pro Bass Fishing. Pro-wrestling country-fried crispy chicken strips cheese-stuffed Call of Duty. Credit cards Hot Pockets more bullets Home Depot Dale Earnhardt Jr CNN Checkers red white and blue. |
-| `paragraphs` | Mgd CSI: Miami taco night extra-large second amendment rights condiments Die Hard 2: Die Harder. Pickup trucks wanted dead or alive 1776 Bud heavy tall-boy juicy flame-grilled. Super-size super bowl more bullets Chuck Norris DVD 85oz soda John Cena stock market Nashville. Exploding God Bless America NASA John Cena liberty. Star-spangled banner fighter jets fireworks Lynyrd Skynyrd twinkies online multiplayer taco night Call of Duty., Arnold schwarzenegger mud flaps 18-wheeler Championship Pro Bass Fishing Checkers Proud To Be An American. Cholesterol SUVs extra value meal Texas Michael Bay movies Checkers anti-metric system. Dvd pro-wrestling Costco Lynyrd Skynyrd DirecTV the economy stock market. Applebee's stars and stripes voting XXXL NASA low gas prices extra value meal explosions second amendment rights. Hot dogs cheese-stuffed drone strike shock and awe bigger southwest breakfast burrito Texas condiments., Nascar extra pulled pork bigger Fox News MGD official sponsor propane tanks. Fireworks Chuck Norris RoboCop cheese-stuffed MOPAR. Congress MOPAR freedom fries tomahawk cruise missile boneless buffalo wings. Fighter jets explosions extra-large ESPN2 WMD NASA red white and blue Denny's Grand Slam Breakfast Fox News. Cheese-stuffed Star-Spangled Banner Proud To Be An American XXXL congress., Bald eagles SUVs shock and awe 7-Eleven weekends. Espn2 FBI CIA NSA truthers pro-wrestling constitutional rights country-fried BBQ. Home depot foreign policy DiGiorno bigfoot bald eagles condiments., Milkshakes bacon cheeseburgers monster truck rally CNN patriotic. Tomahawk cruise missile USA-4-Life-Bro mission accomplished nuclear-powered aircraft carrier NASA. Extra value meal hot dogs malls drone strike apple pie fighter jets red white and blue 18-wheeler., Mount rushmore extra-large Uncle Sam border wall monster truck rally liberty shock and awe. Second amendment rights crunch-tastic fighter jets independence the media route 66 Denny's Grand Slam Breakfast. Taco night drone strike constitutional rights capitalism automatic rifle Uncle Sam Proud To Be An American 18-wheeler hot dogs. Michael bay movies online multiplayer Chuck Norris consumerism FBI CIA NSA cheese-stuffed Hanes boxer briefs. Harley davidson extra value meal potato salad Proud To Be An American low taxes better dead than red lunchables., Home depot red white and blue Bud heavy tall-boy CSI: Miami super bowl propane tanks route 66 corporations national security. Chuck norris extra-large apple pie democracy Garth Brooks wanted dead or alive. Bacon cheeseburgers route 66 Texas chili cheese fries Philly cheesesteak. Fighter jets the government credit cards Chuck Norris drone strike exploding elections bacon cheeseburgers I only speak American., Digiorno the economy foreign policy WMD enemies of freedom. Truck nuts Proud To Be An American television Uncle Sam 7-Eleven Lynyrd Skynyrd the government 85oz soda. Automatic rifle fireworks freedom fries bald eagles sweatpants extra beef Medal of Honor wanted dead or alive nuclear-powered aircraft carrier. Anti-metric system hot dogs TGIF MOPAR John Cena RoboCop more bullets explosive 1776., Jean shorts Chuck Norris Home Depot shopping tomahawk cruise missile Die Hard 2: Die Harder low gas prices. Marlboro reds supreme court ruling sweatpants red white and blue wanted dead or alive. National security fireworks tomahawk cruise missile more bullets 74-inch HDTV border wall liberty velcro. 7-eleven microwaved stock market MGD wanted dead or alive. |
-| `phrase` | Velcro mud flaps dual-wielded machine guns XXXL 1776., Bacon cheeseburgers the government controversial elections independence hot dogs explosive Mega-Stuf Oreos Hanes boxer briefs., Die hard 2: die harder super-size jean shorts enemies of freedom MGD XXXL truck nuts bacon cheeseburgers Branson Missouri. |
-| `phrases` | Fox news gigantic Denny's Grand Slam Breakfast supreme court ruling bacon cheeseburgers national security., Dual-wielded machine guns Dale Earnhardt Jr elections crunch-tastic weekends national security Texas., Arnold schwarzenegger television fireworks ESPN2 supreme court ruling corporations Bud heavy tall-boy., Corporations Call of Duty Checkers potato salad MGD sweatpants crunch-tastic border wall extra beef., Patriotic jean shorts liberty Costco Dale Earnhardt Jr 18-wheeler Hanes boxer briefs., Super bowl second amendment rights Mega-Stuf Oreos Costco ESPN2 Arnold Schwarzenegger country-fried Texas., Uncle sam XXXL Checkers 85oz soda 3D Blu-Ray supreme court ruling., Mud flaps XXXL Chuck Norris Call of Duty jean shorts drone strike liberty., Shopping Philly cheesesteak Texas ESPN2 extra-large Chuck Norris Hot Pockets Uncle Sam. |
-| `sentence` | Anti-metric system border wall lunchables gigantic foreign policy pro-wrestling WMD controversial., Garth brooks freedom 18-wheeler drone strike Van Halen stock market mud flaps democracy., Patriotic dual-wielded machine guns freedom fries freedom slurpees. |
-| `sentences` | God bless america extra pulled pork tomahawk cruise missile Nashville stock market CSI: Miami Lynyrd Skynyrd NASA CNN., Anti-metric system the government truck nuts dual-wielded machine guns DVD., Suvs Bud heavy tall-boy stock market fireworks cheese-stuffed bacon cheeseburgers Dallas Cowboys official sponsor., Low taxes Texas freedom microwaved television juicy flame-grilled., Shock and awe Lynyrd Skynyrd Nashville Mountain Dew hot dogs freedom NASA truck nuts., The economy better dead than red extra pulled pork congress patriotic ESPN2 low gas prices Disney World Fox News., Television Applebee's Dale Earnhardt Jr TGIF route 66 bigger Dallas Cowboys John Wayne stock market., Chuck norris national security dual-wielded machine guns propane tanks Dale Earnhardt Jr the media online multiplayer., Digiorno 18-wheeler southwest breakfast burrito tomahawk cruise missile boneless buffalo wings. |
-| `word` | enemies of freedom, Marlboro reds, I only speak American |
-| `words` | more bullets, DirecTV, John Wayne, controversial, Uncle Sam, stars and stripes, online multiplayer, Call of Duty, crunch-tastic |
+| `characters` | 54b0yy03bedp4a670zlgw01s035aqmo3wmldw9wnu0kspy9yj6s901sw1bzbqwu29jdszqn2vob8ejpb8e4p14xmz6yz1xhxd3onm0189to31j29sgub7lkeqmbmaek8uf10v6fqzvpeavpsox50xdhog2d48urm6ns8iis4avoecdf0wa1e4tdpn63ws4myyp8rokn0i1ye8osww45yf7gohntvjjlobccwpthti39ryylfm6lsse1qsm1xnmv, th8s2mxn1g8kvq5xj95doflp7rmirqglj90ffp4fnnuuratgobm2d3ny3w6lm5t7ypx2clbjwhq5v26xu9vry7f2zdbrsdoq6arpfyr8w7301t45jz5qa5i3tnjamtf23o642a9qtjz4zwip5idvg9ajfcf67pq21z01x10uc9tgdhz0zj5rrkg4y5oe5yof9k7x659uub7985qc4lx95btom521htanzevcee5oakip0nwnl3uj4jmps127n3l, tfvu1dsqk16p3jd6y3h1eu2sdkoddou7vpjudzut3j3oswktec50fbya5nbf5rwhr081dd2h0jxs4htbreovax8twqqult9s4g8fzps0ob5drck935ntg88o87d9pxl4a9gx6pcbx2ctfrhrfcf6og9lp5djyw8lvcycia0kl4p1llj21eow1fjohfbddd1o7mkc9ht21gzcm4gw3gll22fvw688k5upfi4si4dx7g4odupbk5fjtcyg6ff370y |
+| `paragraph` | Drone strike bigger shock and awe NASA 3D Blu-Ray truck nuts XXXL. Extra beef DVD huge red white and blue Harley Davidson Mega-Stuf Oreos TGIF Dallas Cowboys. Fbi cia nsa country-fried Disney World NASCAR DirecTV DVD exploding Medal of Honor. Propane tanks the government NASCAR 3D Blu-Ray Mountain Dew patriotic., Harley davidson Fox News super-size MGD better dead than red second amendment rights Disney World corporations controversial. Nascar NASA cholesterol super bowl stock market. Wmd the economy Costco 1776 bacon cheeseburgers twinkies Nashville sweatpants Lynyrd Skynyrd., Velcro BBQ Mountain Dew border wall wanted dead or alive. Star-spangled banner twinkies fighter jets mud flaps corporations controversial Die Hard 2: Die Harder Home Depot pro-wrestling. Mission accomplished Garth Brooks anti-metric system better dead than red enemies of freedom drone strike. Border wall Branson Missouri extra-large bigger USA-4-Life-Bro dual-wielded machine guns. Bigfoot foreign policy fireworks Arnold Schwarzenegger Hot Pockets. |
+| `paragraphs` | Monster truck rally Harley Davidson BBQ CNN capitalism. Truck nuts DVD cheese-stuffed ESPN2 slurpees Arnold Schwarzenegger MGD independence Wal-Mart. Call of duty extra pulled pork cheese-stuffed CNN mission accomplished border wall. 7-eleven condiments truthers the media cholesterol pro-wrestling Home Depot red white and blue Championship Pro Bass Fishing. Fbi cia nsa supreme court ruling stock market jean shorts congress foreign policy automatic rifle., Extra beef 3D Blu-Ray Lynyrd Skynyrd Mega-Stuf Oreos chili cheese fries Star-Spangled Banner official sponsor huge constitutional rights. Low gas prices drone strike Marlboro reds tomahawk cruise missile John Cena drive-thru Hanes boxer briefs propane tanks. Nasa SUVs bacon cheeseburgers BBQ velcro fireworks Harley Davidson., Hot pockets John Cena explosions Van Halen stars and stripes country-fried Chuck Norris Mountain Dew drive-thru. Cholesterol border wall crunch-tastic wanted dead or alive mud flaps huge capitalism extra beef route 66. Die hard 2: die harder southwest breakfast burrito dual-wielded machine guns extra beef bigfoot mission accomplished John Cena NASA WMD. Cholesterol fighter jets bigfoot Michael Bay movies country-fried television low gas prices., Extra pulled pork freedom fries crispy chicken strips Chuck Norris John Cena Championship Pro Bass Fishing Arnold Schwarzenegger. Credit cards voting Costco bald eagles Bud heavy tall-boy cheese-stuffed crunch-tastic Harley Davidson. Stars and stripes commies get out of my country I only speak American redwood taco night. Redwood Hanes boxer briefs truthers God Bless America Bud heavy tall-boy Fox News Championship Pro Bass Fishing television Dale Earnhardt Jr. Hot pockets BBQ FBI CIA NSA hot dogs WMD., Monster truck rally Michael Bay movies Hanes boxer briefs exploding Harley Davidson juicy flame-grilled crunch-tastic. Shopping bigfoot border wall Starbucks lunchables MOPAR. Huge cholesterol Garth Brooks taco night USA-4-Life-Bro bigger Call of Duty nuclear-powered aircraft carrier television. Television democracy Nashville Mountain Dew border wall drive-thru., Propane tanks the economy fireworks 7-Eleven huge hot dogs. Shock and awe Starbucks mission accomplished NASCAR Applebee's Lynyrd Skynyrd official sponsor super bowl. Dvd potato salad 1776 74-inch HDTV NASA NASCAR low gas prices truck nuts Mount Rushmore. Official sponsor TGIF national security democracy FBI CIA NSA no-terrorist-zone monster truck rally. Extra beef wanted dead or alive weekends potato salad RoboCop BBQ Uncle Sam., Dual-wielded machine guns national security slurpees patriotic Garth Brooks gigantic Mountain Dew pro-wrestling freedom. Digiorno Nashville democracy better dead than red Home Depot boneless buffalo wings weekends credit cards. Marlboro reds red white and blue Disney World Dallas Cowboys Call of Duty crispy chicken strips cheese-stuffed., Uncle sam Championship Pro Bass Fishing Wal-Mart I only speak American Garth Brooks bald eagles. Michael bay movies WMD Hanes boxer briefs Call of Duty freedom fries MOPAR 7-Eleven hot dogs southwest breakfast burrito. Better dead than red official sponsor Starbucks Texas Michael Bay movies route 66 the media Costco USA-4-Life-Bro. Call of duty stock market Medal of Honor fireworks Dallas Cowboys. Hanes boxer briefs route 66 extra beef pickup trucks Wal-Mart democracy online multiplayer condiments huge., Philly cheesesteak DVD Dallas Cowboys Harley Davidson second amendment rights. Nuclear-powered aircraft carrier slurpees huge potato salad crispy chicken strips corporations. Enemies of freedom independence DiGiorno Hot Pockets crunch-tastic FBI CIA NSA Mount Rushmore. National security stock market more bullets twinkies milkshakes. |
+| `phrase` | Drone strike Bud heavy tall-boy supreme court ruling Van Halen 18-wheeler Proud To Be An American extra beef second amendment rights democracy., Stock market border wall stars and stripes Garth Brooks huge., Second amendment rights explosions John Wayne better dead than red ESPN2 Hanes boxer briefs. |
+| `phrases` | Chuck norris Call of Duty super bowl 7-Eleven Nashville supreme court ruling., Slurpees border wall Applebee's SUVs CNN 74-inch HDTV wanted dead or alive Harley Davidson., Mud flaps RoboCop huge bacon cheeseburgers boneless buffalo wings., Low gas prices hot dogs Mount Rushmore patriotic huge Hot Pockets shock and awe stock market Uncle Sam., Mgd Championship Pro Bass Fishing taco night drone strike apple pie Dallas Cowboys mission accomplished NASA Disney World., Super bowl RoboCop Lynyrd Skynyrd Branson Missouri Costco elections monster truck rally TGIF., Mopar freedom 7-Eleven Fox News bigger Proud To Be An American Texas enemies of freedom weekends., Uncle sam Garth Brooks Checkers ESPN2 weekends democracy truck nuts huge Proud To Be An American., Independence extra-large capitalism Dale Earnhardt Jr tomahawk cruise missile redwood exploding controversial. |
+| `sentence` | Usa-4-life-bro Applebee's freedom fries exploding Wal-Mart fireworks television Van Halen., Mountain dew Hot Pockets tomahawk cruise missile liberty controversial., Explosive dual-wielded machine guns shock and awe extra pulled pork border wall Mega-Stuf Oreos enemies of freedom 74-inch HDTV CNN. |
+| `sentences` | Slurpees NASA 18-wheeler 1776 Dallas Cowboys., Stock market microwaved Wal-Mart Championship Pro Bass Fishing patriotic., Gigantic Mega-Stuf Oreos automatic rifle explosive no-terrorist-zone pickup trucks., Apple pie bigger Branson Missouri Texas liberty., Shock and awe Die Hard 2: Die Harder 7-Eleven supreme court ruling shopping John Wayne., Championship pro bass fishing border wall mission accomplished crispy chicken strips Uncle Sam crunch-tastic MOPAR., Home depot mud flaps liberty DirecTV huge condiments anti-metric system freedom drone strike., Super-size nuclear-powered aircraft carrier CSI: Miami Texas 1776 television Star-Spangled Banner stock market pro-wrestling., Nashville congress cheese-stuffed foreign policy condiments. |
+| `word` | dual-wielded machine guns, mud flaps, Michael Bay movies |
+| `words` | automatic rifle, Harley Davidson, DVD, liberty, Bud heavy tall-boy, official sponsor, Championship Pro Bass Fishing, cheese-stuffed, slurpees |
 
 ## FFaker::Gender
 
 | Method | Example |
 | ------ | ------- |
 | `binary` | male, male, female |
-| `maybe` | androgyne, pan-gender, androgyne |
-| `random` | pan-gender, agender, female |
-| `sample` | male, agender, non-binary |
+| `maybe` | bi-gender, non-binary, male |
+| `random` | non-binary, female, androgyne |
+| `sample` | bi-gender, male, agender |
 
 ## FFaker::GenderBR
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | masculino, feminino, feminino |
-| `random` | masculino, feminino, masculino |
-| `sample` | feminino, feminino, masculino |
+| `maybe` | masculino, masculino, masculino |
+| `random` | masculino, masculino, masculino |
+| `sample` | feminino, masculino, masculino |
 
 ## FFaker::GenderCN
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | 男, 女, 男 |
-| `random` | 女, 男, 女 |
-| `sample` | 男, 男, 男 |
+| `maybe` | 女, 男, 女 |
+| `random` | 女, 女, 女 |
+| `sample` | 男, 女, 男 |
 
 ## FFaker::GenderID
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | laki-laki, perempuan, perempuan |
-| `random` | perempuan, perempuan, laki-laki |
-| `sample` | perempuan, laki-laki, perempuan |
+| `maybe` | perempuan, perempuan, laki-laki |
+| `random` | perempuan, perempuan, perempuan |
+| `sample` | perempuan, laki-laki, laki-laki |
 
 ## FFaker::GenderJA
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | 女, 男, 男 |
-| `random` | 男, 女, 男 |
+| `maybe` | 女, 女, 女 |
+| `random` | 男, 女, 女 |
 | `sample` | 男, 男, 男 |
 
 ## FFaker::GenderJP
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | 男, 男, 男 |
-| `random` | 男, 男, 男 |
-| `sample` | 男, 男, 女 |
+| `maybe` | 男, 女, 女 |
+| `random` | 男, 女, 男 |
+| `sample` | 女, 女, 女 |
 
 ## FFaker::GenderKR
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | 녀, 녀, 녀 |
-| `random` | 녀, 남, 남 |
-| `sample` | 녀, 녀, 녀 |
+| `maybe` | 남, 녀, 남 |
+| `random` | 남, 남, 남 |
+| `sample` | 녀, 녀, 남 |
 
 ## FFaker::GenderPL
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | mężczyzna, mężczyzna, mężczyzna |
-| `random` | mężczyzna, kobieta, mężczyzna |
+| `maybe` | kobieta, kobieta, mężczyzna |
+| `random` | kobieta, kobieta, kobieta |
 | `sample` | kobieta, mężczyzna, kobieta |
 
 ## FFaker::Geolocation
@@ -1178,974 +1178,974 @@
 | Method | Example |
 | ------ | ------- |
 | `boxed_coords`(..., ...) |  |
-| `lat` | 38.9962071932467, 41.491529, 33.3732084677927 |
-| `lng` | -115.120716573, -122.094516147761, -73.9693478828185 |
+| `lat` | 47.5173276931226, 34.2430955947492, 40.927955 |
+| `lng` | -73.8618025934729, -80.1410980224609, -122.340967372417 |
 
 ## FFaker::Guid
 
 | Method | Example |
 | ------ | ------- |
-| `guid` | E53E05F5-EC68-D502-7F29-ED0BF5A4E8C1, 34C07B2B-F2C7-7374-DAE0-E2A80B9FF445, 190361BC-C134-7281-A3E9-450AB11C114C |
+| `guid` | C5C5D9F8-7905-8650-52D2-C79F190455B5, 8BF2F47F-226E-8BD4-EF4C-E1ADAC4E075F, A6057F0A-02D0-6837-AA2B-5584AEAD2D8F |
 
 ## FFaker::HTMLIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `a` | &lt;a href="#vitae" title="Suscipit a"&gt;Nisi odit&lt;/a&gt;, &lt;a href="#molestiae" title="In nam"&gt;Illo assumenda&lt;/a&gt;, &lt;a href="#sint" title="In earum"&gt;Aut atque&lt;/a&gt; |
-| `body` | &lt;h1&gt;Iusto impedit&lt;/h1&gt;&lt;p&gt;Necessitatibus ea a itaque iusto alias. A illo ducimus corporis velit. Perspiciatis placeat repellat amet magnam debitis. Et ullam eaque error unde. Nulla eius illo consequatur veritatis tenetur voluptatibus quis. &lt;em&gt;Dolorem reiciendis natus dolore laudantium. Magnam cum sint quas id. Ratione nostrum incidunt amet molestiae. Odit aliquam modi ad saepe iste. Aliquid provident dolor suscipit at.&lt;/em&gt; &lt;code&gt;laudantium autem&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;code&gt;sequi deleniti&lt;/code&gt; Corrupti vel expedita aspernatur saepe error. Sapiente optio molestiae nostrum soluta. Nam ratione sint fugit aliquid odio non. Optio numquam aspernatur expedita molestias. &lt;a href="#architecto" title="Autem illo"&gt;Earum sunt&lt;/a&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Fugit&lt;/th&gt;&lt;th&gt;Dolorum&lt;/th&gt;&lt;th&gt;Explicabo&lt;/th&gt;&lt;th&gt;Vitae&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Consequatur&lt;/td&gt;&lt;td&gt;Suscipit&lt;/td&gt;&lt;td&gt;Voluptatum&lt;/td&gt;&lt;td&gt;&lt;a href="#doloremque" title="Iure deserunt"&gt;Aspernatur hic&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Maiores similique&lt;/h2&gt;&lt;ol&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Rerum quis voluptas dolore dignissimos. Vero praesentium asperiores dolor ipsum a. Illo sunt eveniet libero magni. Dicta fuga esse quam modi.&lt;br&gt;Quam harum excepturi debitis dolores labore. Vero illo aperiam placeat modi. Corporis facere deleniti dolores ratione blanditiis rerum tempore. Tempore iste ex est ipsum omnis. Tempora quae assumenda quasi vel.&lt;br&gt;Itaque quia ducimus atque esse ratione quaerat. Libero sint vel neque asperiores voluptate. Rem velit eius saepe qui voluptates inventore impedit quisquam.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Inventore iure&lt;/h3&gt;&lt;ul&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #reprehenderit h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Cumque totam&lt;/h1&gt;&lt;p&gt;&lt;a href="#atque" title="Voluptates labore"&gt;Reiciendis quos&lt;/a&gt; Consectetur beatae error ullam minus consequatur voluptate quos id. Eum esse accusamus sed libero hic qui. Dolorum consectetur quo praesentium quam. Nobis dolores praesentium ipsa et officiis recusandae veritatis sed. Reprehenderit quibusdam magnam iste culpa pariatur voluptates corrupti totam. &lt;em&gt;Cum aliquam nihil atque excepturi sit quisquam ad. Porro velit similique quibusdam deserunt placeat nemo voluptas. Magni rerum qui saepe eos cumque commodi beatae a. Quasi accusantium incidunt corporis aperiam inventore.&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Suscipit&lt;/th&gt;&lt;th&gt;Doloribus&lt;/th&gt;&lt;th&gt;Culpa&lt;/th&gt;&lt;th&gt;Expedita&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Magnam&lt;/td&gt;&lt;td&gt;Autem&lt;/td&gt;&lt;td&gt;Ea&lt;/td&gt;&lt;td&gt;&lt;a href="#autem" title="Fugit et"&gt;Dolorem exercitationem&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Illo necessitatibus&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Aliquam a voluptas deleniti vero magni perspiciatis tempora. Neque id deleniti ducimus itaque impedit unde nemo.&lt;/li&gt;&lt;li&gt;Consequuntur voluptatem ullam dicta neque ipsum magnam amet voluptate.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Similique cupiditate voluptatum numquam dolor rem. Dolores nisi temporibus totam omnis neque rem eius. Libero impedit similique rerum quis delectus cum ab.&lt;br&gt;Suscipit alias ipsam est id dicta. Cupiditate fugiat libero eos reiciendis voluptate. Consequatur aliquam iure suscipit dolore et deserunt vero. Sequi debitis dignissimos ipsum impedit libero occaecati iure.&lt;br&gt;Nemo minus minima eaque illo. Libero cum vel nobis modi. Error sapiente nihil similique saepe maxime quod. Doloribus ea minus magnam odit vitae pariatur.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Totam occaecati&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Cumque tempore nulla maiores cum quidem aspernatur est neque. Odit repellat earum magni necessitatibus perferendis quidem ratione est. Amet facere fuga a distinctio quidem qui ea.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #assumenda h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Iusto nobis&lt;/h1&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Id&lt;/th&gt;&lt;th&gt;Corporis&lt;/th&gt;&lt;th&gt;Dolorum&lt;/th&gt;&lt;th&gt;Libero&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Doloremque&lt;/td&gt;&lt;td&gt;Laboriosam&lt;/td&gt;&lt;td&gt;Aliquam&lt;/td&gt;&lt;td&gt;&lt;a href="#pariatur" title="Dolores voluptatem"&gt;Explicabo corrupti&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Sunt&lt;/td&gt;&lt;td&gt;Accusantium&lt;/td&gt;&lt;td&gt;Laboriosam&lt;/td&gt;&lt;td&gt;&lt;a href="#modi" title="Veritatis est"&gt;Odio tenetur&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Atque dignissimos&lt;/h2&gt;&lt;ol&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Rerum ullam eveniet non suscipit quaerat. Nulla suscipit eos voluptatum quo doloribus. Repellat exercitationem optio consequuntur sapiente aspernatur eum laborum consequatur. Hic pariatur unde repellendus commodi amet soluta aspernatur exercitationem. Non totam tenetur eum minus dignissimos repellendus.&lt;br&gt;Vitae recusandae voluptas iusto earum autem minima architecto. Doloribus iure laboriosam fugiat laudantium reiciendis libero magni ut. Hic vero magnam qui enim error quae quidem. Recusandae laboriosam ex nulla sit facilis dolorum. Facilis numquam omnis sunt placeat quod ipsa perspiciatis.&lt;br&gt;Laborum deserunt veritatis vitae id ut. Quibusdam illum eum nam assumenda. Iure at porro iusto quia vel quod numquam.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Corrupti voluptatibus&lt;/h3&gt;&lt;ul&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #ratione h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt; |
-| `dl` | &lt;dl&gt;&lt;dt&gt;Debitis&lt;/dt&gt;&lt;dd&gt;Laudantium ab aut labore tempora odit dignissimos impedit. Accusantium voluptate amet asperiores aut molestiae molestias excepturi accusamus. Quasi aut nisi ab dolorum ipsam voluptatibus.&lt;/dd&gt;&lt;dt&gt;Consectetur&lt;/dt&gt;&lt;dd&gt;Voluptas quos molestias assumenda nobis repellendus harum. Quos tempore quae perferendis consequuntur iusto alias non molestiae. Facilis commodi ut accusantium nisi magnam exercitationem rem iure.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Ipsam&lt;/dt&gt;&lt;dd&gt;Rem deserunt eaque quam doloremque eligendi eos. Repellat alias vero voluptas rem. Consequatur ipsum nemo vel corrupti itaque aspernatur natus temporibus. Dolorum nam rerum magnam nostrum eum.&lt;/dd&gt;&lt;dt&gt;Iure&lt;/dt&gt;&lt;dd&gt;Molestias quos dolorem cum harum non commodi occaecati. Voluptatem dolorum est quis explicabo sit. Corporis dolore modi officia ab laborum totam. Iure cupiditate ducimus vero amet.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Reprehenderit&lt;/dt&gt;&lt;dd&gt;Molestias ex porro laudantium amet deleniti accusantium. Odio accusamus illo molestias laudantium.&lt;/dd&gt;&lt;dt&gt;Voluptatem&lt;/dt&gt;&lt;dd&gt;Ex minus praesentium nesciunt quae soluta odio ipsa. Molestiae eaque voluptatem ratione eum deserunt veniam. Voluptatibus facere voluptas tempore laboriosam nostrum asperiores.&lt;/dd&gt;&lt;/dl&gt; |
-| `fancy_string` | Excepturi dicta aliquid quae delectus porro suscipit accusantium. Cumque facere architecto voluptatum iste ipsam culpa. Totam perferendis expedita consequatur illo animi quis. Maiores maxime praesentium perspiciatis repellendus. Neque voluptate iste odio placeat corporis doloribus necessitatibus molestias. Iure odio facilis provident quia ducimus maiores error praesentium. Eos nulla veniam facere omnis tenetur. Fugiat nulla alias occaecati tempora. &lt;code&gt;pariatur beatae&lt;/code&gt;, Pariatur quae nam doloribus ea minus voluptas. A porro facilis itaque nihil incidunt occaecati. Enim incidunt vel perspiciatis amet itaque. Autem sint suscipit deleniti maxime sit. Et velit in adipisci voluptatum. &lt;code&gt;suscipit maiores&lt;/code&gt; &lt;em&gt;Ipsa dolorem ratione iste adipisci. Beatae eum explicabo sed pariatur. Ipsam ipsa inventore incidunt pariatur. Nulla voluptas perferendis eaque accusantium nisi. Laboriosam dolore doloribus quaerat facilis adipisci architecto quibusdam.&lt;/em&gt;, &lt;a href="#aliquam" title="Eligendi vel"&gt;Dolor voluptates&lt;/a&gt; Quas accusantium necessitatibus voluptas reiciendis maiores optio et modi. Ex fugiat ipsa inventore expedita deserunt deleniti nemo. Cumque veritatis animi in ratione. Ipsa repudiandae ipsum architecto dolores corrupti distinctio enim nihil. Perspiciatis ab quo suscipit explicabo. Accusamus nobis molestiae non sint quidem. Exercitationem blanditiis molestiae alias aut in voluptate optio. Tempora consectetur dolores voluptatum soluta cupiditate earum excepturi. Ullam animi qui officiis consectetur quos nihil quas. |
-| `ol_long` | &lt;ol&gt;&lt;li&gt;Assumenda nam voluptatem occaecati deserunt quia necessitatibus. At eaque saepe maxime ipsa molestiae. Vitae nam fugiat laboriosam veniam ipsum.&lt;/li&gt;&lt;li&gt;Saepe consectetur ipsum quas accusamus numquam vel error. Officia quas possimus praesentium corporis incidunt ipsam natus. Vitae nam magnam quidem in. Maxime rerum officiis deleniti sapiente cumque illo.&lt;/li&gt;&lt;li&gt;Quos dignissimos consequuntur sint reprehenderit provident. Cum fuga totam iusto iure exercitationem ipsam dolore. Ratione aspernatur nostrum nulla id esse. Cupiditate accusantium alias repudiandae rerum tempora hic ut.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Dolorem architecto consectetur eveniet voluptates expedita autem. Ut voluptatem eum eligendi facilis sed. Quas nostrum nobis reiciendis quibusdam iusto odit adipisci. Quia dicta voluptatibus modi quas fuga est laborum.&lt;/li&gt;&lt;li&gt;Corrupti a nostrum voluptatum laudantium error quis alias. Enim minima repellat quaerat quia ipsa provident. Quasi delectus ipsa reprehenderit iusto hic perferendis. Ipsa voluptates aspernatur consequatur maxime quaerat ut.&lt;/li&gt;&lt;li&gt;Sint id ducimus delectus vero nostrum. Est repudiandae beatae culpa unde necessitatibus voluptas.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Laudantium inventore enim nemo veritatis reprehenderit. Ipsum ducimus nobis cumque sint nostrum nisi. Nam perspiciatis pariatur eveniet facere nisi voluptatum nobis nesciunt.&lt;/li&gt;&lt;li&gt;Dolorem sint qui labore asperiores earum placeat vitae impedit. Quisquam odit magnam alias autem. Numquam earum quas perferendis nemo esse doloremque.&lt;/li&gt;&lt;li&gt;Ducimus aliquam maxime vitae fugit tenetur. Et laborum dicta fugiat laboriosam praesentium eligendi dolores. Enim quibusdam necessitatibus dicta a quas consequatur.&lt;/li&gt;&lt;/ol&gt; |
-| `ol_short` | &lt;ol&gt;&lt;li&gt;Ipsum nam ratione ab asperiores.&lt;/li&gt;&lt;li&gt;Aliquam repellat officiis minus repellendus sed accusantium.&lt;/li&gt;&lt;li&gt;Sapiente praesentium recusandae sint nulla.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Voluptatem dicta ut beatae.&lt;/li&gt;&lt;li&gt;Itaque recusandae corrupti iure neque.&lt;/li&gt;&lt;li&gt;Vel quos ipsa magni possimus necessitatibus impedit.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Nobis velit sed molestiae.&lt;/li&gt;&lt;li&gt;Beatae minima at.&lt;/li&gt;&lt;li&gt;Ullam asperiores sunt.&lt;/li&gt;&lt;/ol&gt; |
-| `p` | &lt;p&gt;Id maxime laborum magnam itaque. Eaque ut molestiae provident quisquam magnam. Nostrum possimus vel est eaque accusantium labore facere.&lt;/p&gt;, &lt;p&gt;Temporibus nostrum non eum sit. Quam laborum voluptatum deleniti architecto. Non repellat quod praesentium earum et. Eveniet qui error veniam delectus rem.&lt;/p&gt;, &lt;p&gt;Quod eos sit assumenda veniam voluptate. Dolores architecto similique velit doloribus enim ipsam maxime. Quidem dolore quia nobis quibusdam dignissimos natus.&lt;/p&gt; |
-| `table` | &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Magni&lt;/th&gt;&lt;th&gt;Unde&lt;/th&gt;&lt;th&gt;At&lt;/th&gt;&lt;th&gt;Ullam&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Reprehenderit&lt;/td&gt;&lt;td&gt;Soluta&lt;/td&gt;&lt;td&gt;Minima&lt;/td&gt;&lt;td&gt;&lt;a href="#a" title="Occaecati tempore"&gt;Earum vitae&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Voluptatem&lt;/td&gt;&lt;td&gt;Recusandae&lt;/td&gt;&lt;td&gt;Deleniti&lt;/td&gt;&lt;td&gt;&lt;a href="#nobis" title="Repellat enim"&gt;Vero accusamus&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Nisi&lt;/td&gt;&lt;td&gt;Atque&lt;/td&gt;&lt;td&gt;Ad&lt;/td&gt;&lt;td&gt;&lt;a href="#numquam" title="Laboriosam officia"&gt;Iure voluptatem&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;, &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Libero&lt;/th&gt;&lt;th&gt;Odit&lt;/th&gt;&lt;th&gt;Rem&lt;/th&gt;&lt;th&gt;Cupiditate&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Repudiandae&lt;/td&gt;&lt;td&gt;Accusantium&lt;/td&gt;&lt;td&gt;Esse&lt;/td&gt;&lt;td&gt;&lt;a href="#ratione" title="Earum nihil"&gt;Doloremque tempora&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Aspernatur&lt;/td&gt;&lt;td&gt;Earum&lt;/td&gt;&lt;td&gt;Modi&lt;/td&gt;&lt;td&gt;&lt;a href="#quos" title="Expedita tempora"&gt;Itaque voluptate&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Adipisci&lt;/td&gt;&lt;td&gt;Sit&lt;/td&gt;&lt;td&gt;Facilis&lt;/td&gt;&lt;td&gt;&lt;a href="#quas" title="Accusamus non"&gt;Sit repellat&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;, &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Recusandae&lt;/th&gt;&lt;th&gt;Culpa&lt;/th&gt;&lt;th&gt;Facere&lt;/th&gt;&lt;th&gt;Quaerat&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Tempore&lt;/td&gt;&lt;td&gt;Molestias&lt;/td&gt;&lt;td&gt;Earum&lt;/td&gt;&lt;td&gt;&lt;a href="#animi" title="Maxime nobis"&gt;Consequatur consequuntur&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Ipsa&lt;/td&gt;&lt;td&gt;Doloremque&lt;/td&gt;&lt;td&gt;Culpa&lt;/td&gt;&lt;td&gt;&lt;a href="#ducimus" title="Sapiente laudantium"&gt;Veritatis ut&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Nam&lt;/td&gt;&lt;td&gt;Voluptatum&lt;/td&gt;&lt;td&gt;Iste&lt;/td&gt;&lt;td&gt;&lt;a href="#dolorum" title="Inventore labore"&gt;Expedita in&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; |
-| `ul_links` | &lt;ul&gt;&lt;li&gt;&lt;a href="#incidunt" title="Ipsam"&gt;Quos&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#similique" title="Unde"&gt;Deleniti&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#at" title="Asperiores"&gt;Deserunt&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;&lt;a href="#sit" title="Ipsam"&gt;Iste&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#excepturi" title="Culpa"&gt;Non&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#ea" title="Omnis"&gt;Numquam&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;&lt;a href="#nulla" title="Unde"&gt;Quidem&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#corrupti" title="Officia"&gt;Qui&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#beatae" title="A"&gt;Fuga&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt; |
-| `ul_long` | &lt;ul&gt;&lt;li&gt;Unde consequatur quas magni nemo. Consequatur facilis exercitationem enim nobis minus. Pariatur officiis at ab sed. Qui officiis tenetur eligendi dicta.&lt;/li&gt;&lt;li&gt;Reiciendis tenetur laborum ullam eaque id fugit ipsam voluptatem. Voluptas magnam molestiae quibusdam odit repellat alias.&lt;/li&gt;&lt;li&gt;Commodi vitae itaque architecto deserunt illum quisquam. Perferendis omnis iure eum occaecati vitae.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Iusto sint fuga incidunt minima dolor. Quia ipsam voluptates doloremque optio itaque harum ratione.&lt;/li&gt;&lt;li&gt;Harum eaque tempore nostrum quibusdam molestias quas. Quos nulla itaque expedita unde aspernatur minima.&lt;/li&gt;&lt;li&gt;Natus sit hic necessitatibus dicta id voluptatem animi. Dolore rem sed repellat eligendi a quaerat ullam itaque.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Autem aspernatur totam beatae vero distinctio maxime. Maiores amet iste blanditiis sunt fugit pariatur. Pariatur incidunt nisi delectus ab itaque. Eius consequuntur officiis iusto vel iste a.&lt;/li&gt;&lt;li&gt;Nostrum quidem eos consequuntur architecto maiores. Ex vitae odit optio commodi aspernatur maiores inventore eaque.&lt;/li&gt;&lt;li&gt;In mollitia dolor perspiciatis amet numquam. Tempore optio molestias assumenda velit.&lt;/li&gt;&lt;/ul&gt; |
-| `ul_short` | &lt;ul&gt;&lt;li&gt;Deleniti blanditiis fugit facere laborum.&lt;/li&gt;&lt;li&gt;Illo ullam officiis velit id.&lt;/li&gt;&lt;li&gt;Voluptatibus similique ea.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Eaque consectetur laborum autem odio.&lt;/li&gt;&lt;li&gt;Earum dolorum ipsum animi corporis maiores.&lt;/li&gt;&lt;li&gt;Qui quaerat assumenda nostrum dicta repellat praesentium.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;At totam illo consectetur officiis.&lt;/li&gt;&lt;li&gt;Id est animi quas cupiditate quaerat voluptate.&lt;/li&gt;&lt;li&gt;Officiis ex molestiae sed velit.&lt;/li&gt;&lt;/ul&gt; |
+| `a` | &lt;a href="#voluptatum" title="Neque in"&gt;Ex qui&lt;/a&gt;, &lt;a href="#accusamus" title="Ut quidem"&gt;Quas fugit&lt;/a&gt;, &lt;a href="#nobis" title="Atque nobis"&gt;Assumenda nemo&lt;/a&gt; |
+| `body` | &lt;h1&gt;Cupiditate quos&lt;/h1&gt;&lt;p&gt;Nisi necessitatibus odit fugit beatae molestias eum minus minima. Earum distinctio iste asperiores numquam veritatis aut deserunt error. Odit veritatis dolores quos est tempora corrupti nam ratione. Vel aut mollitia delectus deserunt eligendi eum dignissimos. Necessitatibus laudantium hic natus perspiciatis dolorum assumenda. &lt;a href="#minus" title="Voluptatibus hic"&gt;Omnis alias&lt;/a&gt; &lt;strong&gt;Quam nemo&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Necessitatibus quos maiores quidem placeat. Corrupti nulla ipsum ut deleniti nam maiores. Minima dignissimos voluptatum quos ut excepturi. Culpa quidem nihil facere aliquid.&lt;/em&gt; &lt;code&gt;totam magni&lt;/code&gt; Hic assumenda facere at reiciendis temporibus doloremque culpa officiis. Eveniet cum iusto deleniti numquam quas eius. Voluptas pariatur laudantium laborum consequatur necessitatibus. Praesentium nisi unde reiciendis dignissimos labore nam.&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Quidem&lt;/th&gt;&lt;th&gt;Id&lt;/th&gt;&lt;th&gt;Enim&lt;/th&gt;&lt;th&gt;Temporibus&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ipsam&lt;/td&gt;&lt;td&gt;Cumque&lt;/td&gt;&lt;td&gt;Ad&lt;/td&gt;&lt;td&gt;&lt;a href="#quibusdam" title="Similique id"&gt;Necessitatibus recusandae&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Praesentium modi&lt;/h2&gt;&lt;ol&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Delectus quibusdam veniam aspernatur blanditiis beatae neque. Corporis ab saepe rerum quod fugit deleniti eaque expedita. Dolorem tempore harum corrupti consectetur quibusdam.&lt;br&gt;Id hic itaque non necessitatibus possimus quos doloribus expedita. Culpa beatae eligendi id quia quidem repellendus aliquam quo. Iure corporis ad temporibus cum voluptate. Iusto vitae voluptas nobis consequatur debitis ipsa voluptatum. Eaque quae repudiandae itaque molestias.&lt;br&gt;At saepe optio nostrum vero. Facere magni fuga nisi soluta vel vitae quis. Ipsam minima consequatur adipisci omnis eos.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Odit eum&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;At similique earum libero quam ad.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #ratione h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Modi aperiam&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Beatae labore consectetur deleniti quisquam. Iusto voluptatem eaque laudantium numquam vero ullam quia. Ipsum veniam error minus animi. Quod temporibus numquam voluptates porro distinctio.&lt;/em&gt; &lt;a href="#incidunt" title="Magni perferendis"&gt;Nemo sunt&lt;/a&gt; Optio neque debitis fugit corporis. Dicta quas quam accusamus nihil. Vel numquam atque voluptate temporibus magnam maiores. Sit tempore expedita temporibus reiciendis soluta saepe et tenetur. Quas tempore quidem laboriosam perferendis consequuntur.&lt;/p&gt;&lt;p&gt;Quasi nihil vitae perferendis et. Autem quam soluta omnis at nulla iusto. Sed quia est delectus at esse provident. Tempore odio fuga nihil harum maiores. &lt;em&gt;Rerum numquam maiores iure veniam praesentium nostrum modi tenetur. In maiores est explicabo recusandae exercitationem occaecati repudiandae. Sed voluptatibus assumenda optio alias mollitia saepe quisquam. Rerum nostrum aliquam fugit vitae quod quisquam temporibus.&lt;/em&gt; Quisquam natus tenetur dignissimos eligendi assumenda. Minima in iusto officiis rerum voluptate officia. Officiis doloribus provident adipisci eum. Debitis eaque nihil fugiat ut odit esse quasi. Recusandae iure praesentium eaque nulla blanditiis.&lt;/p&gt;&lt;p&gt;&lt;a href="#ipsum" title="Inventore doloremque"&gt;Sapiente ab&lt;/a&gt; &lt;code&gt;laboriosam qui&lt;/code&gt; Adipisci voluptatibus recusandae consequatur facilis architecto quibusdam voluptatem. Consectetur qui sapiente possimus nesciunt nemo accusamus fugit iure. Molestias ea veritatis sed adipisci eveniet voluptatem repudiandae. Error voluptas alias aliquam autem iusto dolor. Suscipit veniam sapiente et in totam soluta.&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Repellat&lt;/th&gt;&lt;th&gt;Ex&lt;/th&gt;&lt;th&gt;Animi&lt;/th&gt;&lt;th&gt;Molestiae&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ipsum&lt;/td&gt;&lt;td&gt;Modi&lt;/td&gt;&lt;td&gt;Voluptas&lt;/td&gt;&lt;td&gt;&lt;a href="#cupiditate" title="Suscipit quod"&gt;Ea repudiandae&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Nostrum&lt;/td&gt;&lt;td&gt;Consectetur&lt;/td&gt;&lt;td&gt;Ex&lt;/td&gt;&lt;td&gt;&lt;a href="#nobis" title="Labore reiciendis"&gt;Reiciendis explicabo&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Tempora&lt;/td&gt;&lt;td&gt;Voluptates&lt;/td&gt;&lt;td&gt;Quod&lt;/td&gt;&lt;td&gt;&lt;a href="#mollitia" title="Atque officia"&gt;Voluptates facere&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Sequi minima&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Omnis quos non veniam animi repudiandae cum dolor eligendi.&lt;/li&gt;&lt;li&gt;Atque architecto fuga quasi aut tempore inventore laboriosam tempora. Est autem nihil quisquam quaerat.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Illo nihil doloribus quis iusto. Reprehenderit facilis doloribus culpa quasi. Iste quis illum tempora facere cumque debitis. Cupiditate inventore perspiciatis esse aspernatur nisi similique tempora. Eveniet hic blanditiis cum assumenda.&lt;br&gt;Amet dolorem perspiciatis consequatur labore inventore aspernatur. Eos dicta vero ad architecto sed. Sunt repellendus reiciendis quam ipsam. Mollitia amet ex vero eaque quisquam.&lt;br&gt;Natus quibusdam possimus necessitatibus corporis. Dolore magni nostrum excepturi inventore non ipsam. Placeat alias dignissimos suscipit vel facilis eaque neque. Distinctio eum a eaque rem sapiente.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Molestias doloribus&lt;/h3&gt;&lt;ul&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #vel h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Perferendis ratione&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Sint expedita ex quae provident sunt officia praesentium. Non architecto tempora minus deleniti blanditiis error fugiat quo. Cum tempora et adipisci similique expedita quae nulla minus. Commodi eveniet laudantium sit perspiciatis eius.&lt;/em&gt; Unde facere ratione in neque ipsa aliquid cupiditate pariatur. Commodi explicabo aliquam quod beatae repellat. Aut nesciunt delectus numquam exercitationem laborum libero. Ipsum magni error provident cupiditate aspernatur non voluptatibus libero. Recusandae cum nulla sapiente labore repellendus quis excepturi. Maxime perspiciatis repellat labore a occaecati deleniti. Iure quisquam amet tenetur quam nihil.&lt;/p&gt;&lt;p&gt;&lt;code&gt;aliquid laborum&lt;/code&gt; Nulla nostrum perferendis totam enim expedita maxime et quia. Nam maiores possimus recusandae minima ipsum ad dolorum eaque. Ipsa quaerat velit voluptate tempora. Corporis culpa nesciunt incidunt autem. &lt;a href="#aperiam" title="Ipsam natus"&gt;Fugit aliquid&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="#magnam" title="Eligendi laboriosam"&gt;Iste corporis&lt;/a&gt; Voluptates voluptate maiores deserunt amet quas pariatur accusantium. Mollitia totam deleniti maxime porro doloribus ad. Alias corporis eaque vel eligendi minus porro eveniet voluptatibus. Ducimus vero fugit sit voluptatem voluptates aperiam. Delectus placeat ex veritatis enim fuga hic voluptatum debitis. Porro distinctio pariatur quod possimus ullam animi architecto. Adipisci fugit soluta impedit labore dicta. Velit nesciunt magni similique iste totam odit consequuntur. Quod consequatur voluptates libero debitis quasi asperiores a sit.&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Quis&lt;/th&gt;&lt;th&gt;Dolor&lt;/th&gt;&lt;th&gt;Inventore&lt;/th&gt;&lt;th&gt;Inventore&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ducimus&lt;/td&gt;&lt;td&gt;Incidunt&lt;/td&gt;&lt;td&gt;Sapiente&lt;/td&gt;&lt;td&gt;&lt;a href="#optio" title="Sequi aliquam"&gt;Quaerat aperiam&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Amet ab&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Voluptate iure veniam sequi optio accusamus. Possimus quibusdam voluptate excepturi id architecto iste et at. Soluta in alias natus inventore.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Voluptatum libero consectetur ex at eaque. Quisquam at molestias praesentium quas expedita quo assumenda earum. Beatae excepturi aliquam suscipit adipisci earum ipsum. Itaque quaerat perferendis error quia.&lt;br&gt;Debitis commodi nihil nulla reiciendis illum voluptatem iure nemo. A beatae iste architecto porro eaque consequuntur nisi sit. Ab iure velit nostrum accusantium magnam ullam esse. Dolorum odit nulla minima dolores eos explicabo at illum.&lt;br&gt;Tempore vitae dolor blanditiis adipisci quod quisquam. Cumque labore excepturi error vero ab aut quasi harum. Possimus libero vero ea quibusdam omnis officia perspiciatis deserunt. Vitae voluptatem natus ducimus veritatis voluptates ratione.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Ex eveniet&lt;/h3&gt;&lt;ul&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #repellat h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt; |
+| `dl` | &lt;dl&gt;&lt;dt&gt;Dolor&lt;/dt&gt;&lt;dd&gt;Fuga reiciendis labore animi maxime. Eum ex unde in placeat. Eos consequuntur ea id harum molestiae minima blanditiis soluta. Provident assumenda optio commodi adipisci doloremque dignissimos possimus.&lt;/dd&gt;&lt;dt&gt;Saepe&lt;/dt&gt;&lt;dd&gt;Ipsa beatae delectus repudiandae excepturi. Tempore provident veritatis voluptate placeat. Repudiandae quas consectetur repellendus quidem tenetur expedita dolor eum. Quia molestiae qui dolorem rem quis libero nam.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Nemo&lt;/dt&gt;&lt;dd&gt;Atque labore veniam sed adipisci molestias dolore id. Voluptatibus quae accusantium id ullam molestias cum quos deserunt. Ab exercitationem optio neque velit distinctio.&lt;/dd&gt;&lt;dt&gt;Vel&lt;/dt&gt;&lt;dd&gt;Iure neque deleniti voluptatem odio. Ex consectetur incidunt ab quaerat eveniet.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;A&lt;/dt&gt;&lt;dd&gt;Quasi voluptatem error saepe libero harum delectus quibusdam sequi. Voluptatem ad repudiandae dignissimos necessitatibus cupiditate quidem quia distinctio. Officia natus inventore similique eos earum eveniet iusto dolores. Sapiente ipsa quod praesentium deleniti porro ad reprehenderit ducimus.&lt;/dd&gt;&lt;dt&gt;Perspiciatis&lt;/dt&gt;&lt;dd&gt;Tenetur autem minima explicabo expedita amet magni nostrum aut. Nemo voluptates animi eaque maiores modi sequi. Sit eius magnam unde a enim. Culpa laudantium exercitationem praesentium iure.&lt;/dd&gt;&lt;/dl&gt; |
+| `fancy_string` | Sint aspernatur repellendus magni veniam voluptatibus provident. Cumque magni saepe veniam repellat. Labore totam accusamus qui molestiae. Ipsam dolorem vero ea commodi neque. Consectetur voluptate quas amet illo odit tempore dolorum. &lt;a href="#at" title="Maiores laboriosam"&gt;Saepe similique&lt;/a&gt; &lt;strong&gt;Neque et&lt;/strong&gt;, Inventore pariatur veniam eaque et veritatis. Voluptatibus magni cupiditate mollitia quae repellat excepturi eveniet nemo. Aperiam minus ullam dolor alias beatae reiciendis quo. Dolores harum perferendis quas possimus enim quia assumenda placeat. &lt;em&gt;Numquam voluptas pariatur iste rem asperiores. Dolores amet maxime minus illo. Libero ea et repellat ipsa repellendus alias quia dicta. Perspiciatis temporibus et corporis quaerat. Exercitationem excepturi ab nesciunt voluptatem asperiores quae officia.&lt;/em&gt; Earum fugit saepe ea provident soluta tempore debitis cupiditate. Optio soluta maxime iure nobis voluptates modi alias voluptas. Velit rerum non possimus nam harum tempore labore ad., Accusantium mollitia similique facere quidem dolor sapiente occaecati incidunt. Velit reprehenderit facere accusantium nemo. Nesciunt natus quisquam ducimus modi nobis dolore minima. Ut soluta harum facere inventore error occaecati. Necessitatibus vel consequuntur doloribus optio soluta dignissimos ratione. Temporibus totam quam odit hic vero nam. Repudiandae ea consectetur deleniti perferendis. Assumenda eligendi totam quisquam qui. Harum laborum sequi sed repudiandae vero. Quaerat incidunt perspiciatis praesentium a voluptatem quam. Cumque porro occaecati nostrum aspernatur iusto. Praesentium numquam dolorem sunt eveniet repellendus impedit consequuntur. Animi corporis veritatis molestias similique repudiandae dolores explicabo. Corrupti placeat veritatis pariatur excepturi delectus sequi occaecati. |
+| `ol_long` | &lt;ol&gt;&lt;li&gt;Excepturi suscipit labore aut facilis quos. Autem iure commodi deleniti totam esse vel praesentium.&lt;/li&gt;&lt;li&gt;Fugiat eligendi dolorem fuga reprehenderit dolor ab dolores. Dolorum nulla odit voluptates modi soluta voluptatem.&lt;/li&gt;&lt;li&gt;Ipsa sapiente eius ex fugiat maiores. Quidem consequatur temporibus libero dolor voluptas. Repellendus nemo soluta accusamus blanditiis numquam veniam. Saepe dolorem quam commodi voluptatem tempore nobis quis natus.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Quis provident quos incidunt ad voluptatum. Veniam enim dignissimos vero suscipit quas aut. Veritatis quae rerum minus exercitationem.&lt;/li&gt;&lt;li&gt;Dolores quo esse at excepturi in cum. Delectus dolorem quisquam in quo veritatis rem. Atque quaerat deleniti autem ad voluptas.&lt;/li&gt;&lt;li&gt;Molestias perferendis corporis perspiciatis dolorum labore tempora odio dolore. Voluptatum iure enim temporibus ex saepe asperiores. Eaque expedita tempore qui natus velit voluptates exercitationem. Velit consectetur nobis nam non molestiae blanditiis odit recusandae.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Iusto nostrum tenetur in ipsa hic neque. Debitis unde quos ad beatae illum inventore suscipit. Suscipit nam accusamus qui labore assumenda.&lt;/li&gt;&lt;li&gt;Placeat voluptate ex aperiam tempora. Vero eius adipisci doloribus iste consectetur optio minus nostrum.&lt;/li&gt;&lt;li&gt;Eaque earum iure occaecati dolorum nam praesentium repellat velit. Cumque ipsa laborum similique error ullam voluptates. Similique harum occaecati quasi facere beatae.&lt;/li&gt;&lt;/ol&gt; |
+| `ol_short` | &lt;ol&gt;&lt;li&gt;Placeat fuga veritatis exercitationem perferendis illum.&lt;/li&gt;&lt;li&gt;Modi nemo maxime optio officiis necessitatibus.&lt;/li&gt;&lt;li&gt;Ratione nemo consequuntur.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Praesentium totam vero suscipit iste corporis.&lt;/li&gt;&lt;li&gt;Velit reiciendis ratione suscipit quae tenetur a.&lt;/li&gt;&lt;li&gt;Repellendus qui nostrum perferendis.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Recusandae tenetur vel.&lt;/li&gt;&lt;li&gt;Consectetur maiores magni.&lt;/li&gt;&lt;li&gt;Ex excepturi quaerat.&lt;/li&gt;&lt;/ol&gt; |
+| `p` | &lt;p&gt;Maiores ducimus occaecati est ipsam cumque nihil doloribus at. Voluptates fugit debitis amet enim neque sequi voluptatum error. Explicabo excepturi culpa corrupti est consequatur necessitatibus odit doloremque. Id laboriosam cupiditate ad non esse ducimus perspiciatis.&lt;/p&gt;, &lt;p&gt;Neque fugiat minus beatae praesentium ad ab veritatis laboriosam. Aut delectus nihil blanditiis ut velit itaque. Voluptatibus eligendi inventore veritatis repellendus quibusdam similique. Soluta nemo aliquid fuga perferendis saepe. At voluptatibus voluptates modi deleniti culpa omnis earum.&lt;/p&gt;, &lt;p&gt;Laboriosam rem a magnam neque ipsam. Tempora quaerat tempore molestias exercitationem dolores commodi iure dignissimos. Et deleniti enim a ipsa repudiandae iure rerum dolorem.&lt;/p&gt; |
+| `table` | &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Error&lt;/th&gt;&lt;th&gt;Aliquid&lt;/th&gt;&lt;th&gt;Laudantium&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ad&lt;/td&gt;&lt;td&gt;Quasi&lt;/td&gt;&lt;td&gt;Autem&lt;/td&gt;&lt;td&gt;&lt;a href="#ad" title="Facilis porro"&gt;Tempora voluptatem&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Repudiandae&lt;/td&gt;&lt;td&gt;Delectus&lt;/td&gt;&lt;td&gt;Placeat&lt;/td&gt;&lt;td&gt;&lt;a href="#tempore" title="Natus similique"&gt;Porro earum&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Perferendis&lt;/td&gt;&lt;td&gt;Beatae&lt;/td&gt;&lt;td&gt;Nisi&lt;/td&gt;&lt;td&gt;&lt;a href="#quidem" title="Rerum eum"&gt;Quos fuga&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;, &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Sint&lt;/th&gt;&lt;th&gt;Numquam&lt;/th&gt;&lt;th&gt;Corrupti&lt;/th&gt;&lt;th&gt;Enim&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Fugiat&lt;/td&gt;&lt;td&gt;Odit&lt;/td&gt;&lt;td&gt;Reprehenderit&lt;/td&gt;&lt;td&gt;&lt;a href="#odit" title="Delectus consequatur"&gt;Molestiae illum&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Labore&lt;/td&gt;&lt;td&gt;Quae&lt;/td&gt;&lt;td&gt;Nulla&lt;/td&gt;&lt;td&gt;&lt;a href="#dolores" title="Sed et"&gt;Deserunt officia&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Officia&lt;/td&gt;&lt;td&gt;Praesentium&lt;/td&gt;&lt;td&gt;Sint&lt;/td&gt;&lt;td&gt;&lt;a href="#nisi" title="Nostrum quia"&gt;Numquam inventore&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;, &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Neque&lt;/th&gt;&lt;th&gt;Maiores&lt;/th&gt;&lt;th&gt;Hic&lt;/th&gt;&lt;th&gt;Quae&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ipsa&lt;/td&gt;&lt;td&gt;Qui&lt;/td&gt;&lt;td&gt;Quia&lt;/td&gt;&lt;td&gt;&lt;a href="#ducimus" title="Mollitia odio"&gt;Nesciunt nisi&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Repellendus&lt;/td&gt;&lt;td&gt;Voluptatibus&lt;/td&gt;&lt;td&gt;Quaerat&lt;/td&gt;&lt;td&gt;&lt;a href="#molestiae" title="Consequuntur quia"&gt;Deleniti beatae&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Velit&lt;/td&gt;&lt;td&gt;Nihil&lt;/td&gt;&lt;td&gt;In&lt;/td&gt;&lt;td&gt;&lt;a href="#adipisci" title="Optio at"&gt;Porro incidunt&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; |
+| `ul_links` | &lt;ul&gt;&lt;li&gt;&lt;a href="#accusamus" title="Voluptatum"&gt;Voluptatem&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#sit" title="Unde"&gt;Aliquam&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#quos" title="Accusantium"&gt;Minima&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;&lt;a href="#atque" title="Laboriosam"&gt;Sed&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#accusantium" title="Autem"&gt;Dolorum&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#magni" title="Consectetur"&gt;Est&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;&lt;a href="#sequi" title="Nulla"&gt;Corporis&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#perspiciatis" title="Non"&gt;Impedit&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#ad" title="In"&gt;Tenetur&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt; |
+| `ul_long` | &lt;ul&gt;&lt;li&gt;Sapiente delectus quo facilis nobis voluptatibus asperiores. Quae facere ullam reiciendis blanditiis deleniti.&lt;/li&gt;&lt;li&gt;Exercitationem necessitatibus nemo facere cum doloribus architecto eveniet. Nemo minima nostrum quas esse dolores sunt debitis reprehenderit. Quos consectetur voluptatibus at eligendi laudantium dolores modi. Quo porro cupiditate eaque nisi cumque laboriosam.&lt;/li&gt;&lt;li&gt;Aut reiciendis maiores soluta aliquid veritatis vero velit modi. Aperiam occaecati delectus accusamus reprehenderit. Hic id quasi maiores aut quos corrupti. Numquam totam porro voluptatum earum.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Excepturi minus reprehenderit blanditiis similique itaque quasi. Fugiat minus tenetur deserunt corporis suscipit.&lt;/li&gt;&lt;li&gt;Deleniti esse deserunt dolor eos distinctio vel dolorem nobis. Placeat distinctio in rerum eligendi error voluptatum sint at.&lt;/li&gt;&lt;li&gt;Voluptatum beatae quis a iusto sunt hic officiis accusamus. Quo modi excepturi nesciunt alias consequatur corporis. Rerum eos tempore optio aliquid saepe.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Nisi dolorum nemo explicabo soluta odit. Similique sunt cum veniam nulla nihil.&lt;/li&gt;&lt;li&gt;Repellat aliquid voluptatum amet neque reprehenderit optio illo. Eos beatae maiores nisi omnis ea dolorem blanditiis quia. Blanditiis nihil aut saepe magni tenetur quasi repellendus quibusdam.&lt;/li&gt;&lt;li&gt;Nesciunt iure fugit perspiciatis blanditiis esse veniam aliquid placeat. Deleniti ullam qui debitis voluptatem dignissimos soluta.&lt;/li&gt;&lt;/ul&gt; |
+| `ul_short` | &lt;ul&gt;&lt;li&gt;Iusto alias dolorum.&lt;/li&gt;&lt;li&gt;Voluptate suscipit architecto voluptas nobis iure maiores.&lt;/li&gt;&lt;li&gt;Ea iure officia.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Ipsam illo facilis quae animi ut.&lt;/li&gt;&lt;li&gt;Minus vitae recusandae ipsa quae consequatur magni.&lt;/li&gt;&lt;li&gt;Corporis repellendus ipsam.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Consectetur quibusdam perspiciatis.&lt;/li&gt;&lt;li&gt;Quisquam eos sapiente cumque officiis.&lt;/li&gt;&lt;li&gt;Ad magni dolore corrupti.&lt;/li&gt;&lt;/ul&gt; |
 
 ## FFaker::HealthcareIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | swrkovex5n7kb1spn2uqgkjilu6xwsmzrijmq4uozqyr859wqguisolqnggtncm5vfrguvx2kn8z641swdlw7mvcf80knnaofdvi5pttlcbdmrm8rhpvz6s6t6irpeqw3zayim3e5fa5e0303y52czoiialyjapeyeu6ai0vro2ikls7ck0rxkn1mtvnnyz7lchlu2gnbxahtt281e7p8iybvqp5a071r19yf3myu8daae6gl291958pnf8iwd7, zd3pghe1jpkhgnuyvaqoqw8ndhefp97wy5w0bnxat0qtgq6ry4p88g0g37szp9arewi04zkq6ejg8u911q4mr894pmmalrsgql2c4492wx31ynzvp50pmjj0bkdf2frmzkvq1jm6x141zlm4nxftx3we4xz5bpen23r1nq9snp0wp649khbmi6dvkhh7fxbnppdfrq5on0tuy9duyw8sp6cytff34i47mua1hgy1iensgqasmflkevbmrvn3xq6, 1d1013utlj58p1hr5n1zc34ou9zi89wicj8bqeqll8n6liaaix4kyt52lqsy9whfc7da8vzwzd74f39tg6bjq22g5e1c7h428oqcfhjglnckgn4ohc8lo03t68z22b97r5yd2n5p5lct1nglcu50tgow5stg9lkecwhvq0f6rv9n3kbuqyurmbq2jx5oydoouae7c1kebf158sfj0l2wfxlea7n2jfm4tv26l6674mucf3hjirtbo1zyaolebqt |
-| `paragraph` | Consolidated omnibus budget reconciliation act pre-admission review independent practice associations critical access hospital coordination of benefits standard industrial classification credentialing. Stop-loss provisions HIPAA case management contract year HDHP policy year group health plan FSA network. Incurral date renewal medicare supplement out-of-network concurrent review provider free-look period certificate of coverage ASO. Critical access hospital case manager consolidated omnibus budget reconciliation act stop-loss provisions NCQA claim group health plan ASO. Dependent high deductible health plan third-party payer NDC workers compensation medically necessary cost sharing PPO., Well-baby care covered charges/expenses state insurance department NCQA risk. Eligible dependent EAPs covered charges/expenses custodial care employee assistance programs. Hospice care any willing provider laws noncancellable policy ancillary services state-mandated benefits evidence of insurability NAIC cost sharing. Designated facility episode of care grievance open enrollment dependent contract year policy year accumulation period major medical., Short-term medical insurance portability attachment lifetime maximum inpatient care. Prior authorization incurral date limited policy out-of-pocket maximum board certified out-of-plan formulary workers compensation. Claim co-payment agent of record national drug code first dollar coverage FSA. Broker well-baby care health insurance portability &amp;amp; accountability act prior authorization centers of excellence EOB. Agent of record CPT covered person FSA out-of-pocket maximum first dollar coverage HMO. |
-| `paragraphs` | Fee schedule board certified accredited explanation of benefits critical access hospital eligible dependent. Medical savings account major medical provider HDHP underwriting. Special benefit networks guaranteed issue co-insurance health maintenance organization care plan. Master policy FSA HSA certificate of coverage admitting privileges., Gatekeeper exclusion period medical savings account credentialing primary care physician HMO. Underwriting accumulation period second surgical opinion clinical practice guidelines nonrenewable grievance pre-admission testing co-payment. Consolidated omnibus budget reconciliation act HSA pre-existing condition national drug code credentialing accredited current procedural terminology. Master policy nonrenewable concurrent review medicare supplement deductible carry over credit., Reasonable and customary schedule of benefits and exclusions pre-certification out-of-pocket maximum hospice care inpatient care underwriting current procedural terminology. Group health plan staff model skilled nursing facility HIPAA nonrenewable benefit. Standard industrial classification international classification of diseases, 9th revision, clinical modification icd-9-cm coordinated care national association of insurance commissioners short-term medical insurance self administered referral NAIC hospital care. Fee-for-service NCQA hospital-surgical coverage state insurance department claim fee schedule MSA out-of-plan international classification of diseases, 9th revision, clinical modification icd-9-cm. Renewal underwriting insured preventive care board certified grievance well-baby care., Medicare supplement risk staff model explanation of benefits limited policy noncancellable policy. Waiting period HRA HMO HEDIS lapse self-insured attachment gag rule laws episode of care. Insured NCQA guaranteed issue explanation of benefits FSA IPA HSA. Pre-certification pre-admission testing HRA concurrent review noncancellable policy co-payment custodial care reasonable and customary EOB., Indemnity health plan custodial care PPO usual and customary charge noncancellable policy pregnancy care designated facility urgent care. Skilled nursing facility self administered diagnostic related group NCQA group health plan pre-certification health care provider. High deductible health plan co-payment premium impaired risk national association of insurance commissioners pre-certification CPT network provider. Hcfa common procedure coding system custodial care service area wellness office visit employee assistance programs., Beneficiary health employer data and information set medigap short-term medical insurance preferred provider organization rider attachment. Covered person preferred provider organization hospital-surgical coverage policyholder formulary. Case manager critical access hospital dependent benefit cap reasonable and customary hospital-surgical coverage MSA certificate of coverage beneficiary. Self-insured pregnancy care nonrenewable pre-authorization exclusions and limitations denial of claim NAIC., Schedule of benefits and exclusions lapse limited policy coordinated care FSA pre-admission testing COBRA deductible carry over credit episode of care. Eligible expenses after care covered benefit lifetime maximum HEDIS medically necessary medicaid. Broker co-insurance PPO limited policy R&amp;C charge. Cob policy year custodial care accredited national association of insurance commissioners HEDIS diagnostic related group risk. Coordinated care first dollar coverage case management free-look period staff model indemnity health plan., Aso co-payment pre-admission testing administrative services only underwriting HCFA Common Procedure Coding System. Well-baby care risk SIC schedule of benefits and exclusions lapse standard industrial classification. Current procedural terminology pre-admission review health savings account independent practice associations managed care. Workers compensation admitting physician after care pre-authorization health care provider eligible expenses rider employee assistance programs. Discharge planning capitation designated facility independent practice associations policy year hospital care HIPAA., Workers compensation usual and customary charge eligible expenses lifetime maximum preventive care admitting physician provider well-baby care consolidated omnibus budget reconciliation act. Special benefit networks co-pay contract year assignment of benefits flexible benefit plan nonrenewable certificate of coverage. Policyholder exclusion period noncancellable policy formulary health savings account portability. |
-| `phrase` | Creditable coverage high deductible health plan pre-authorization CPT managed care preferred provider organization policy credentialing., Self-insured misrepresentation disenroll gatekeeper admitting privileges full-time student., Deductible employee assistance programs pre-admission testing attachment premium COB. |
-| `phrases` | Hcfa common procedure coding system HRA limited policy cost sharing hospice care wellness office visit HMO permanent insurance national drug code., Self-insured hospice care rider exclusion period state insurance department., Noncancellable policy admitting physician health employer data and information set beneficiary pre-existing condition admitting privileges., Referral pre-admission testing self-insured care plan clinical practice guidelines current procedural terminology., National drug code limited policy ancillary services pregnancy care network provider high deductible health plan medical savings account guaranteed issue., Reasonable and customary critical access hospital ancillary services health employer data and information set self-insured nonrenewable rider disenroll workers compensation., Flexible spending account health care provider international classification of diseases, 9th revision, clinical modification icd-9-cm eligible dependent permanent insurance HMO master policy HDHP., Referral short-term medical insurance risk deductible carry over credit health savings account permanent insurance eligible expenses lapse., Flexible spending account capitation hospital care guaranteed issue deductible special benefit networks exclusions and limitations. |
-| `sentence` | Deductible enrollee underwriting HRA pre-existing condition stop-loss provisions., Hedis master policy reasonable and customary pre-certification benefit cap administrative services only deductible carry over credit attachment., Policy year SIC medigap group health plan open enrollment formulary medicaid medicare supplement limited policy. |
-| `sentences` | National committee for quality assurance state-mandated benefits national drug code service area EOB board certified national association of insurance commissioners covered benefit., Credentialing rider EAPs inpatient care covered person renewal high deductible health plan deductible., Sic self administered NAIC EOB COB general agent preventive care nonrenewable., Hospice care NCQA master policy staff model episode of care COBRA after care impaired risk., Full-time student dependent stop-loss provisions accumulation period case management NCQA benefit usual and customary charge., Indemnity health plan home health care ASO morbidity co-pay renewal noncancellable policy., Self administered defensive medicine free-look period formulary first dollar coverage state-mandated benefits coordinated care explanation of benefits centers of excellence., Medigap COBRA noncancellable policy national drug code PPO., Board certified benefit covered charges/expenses enrollee network provider HCPCS centers of excellence coordination of benefits provider. |
-| `word` | benefit, pre-admission review, incurral date |
-| `words` | case management, schedule of benefits and exclusions, MSA, pre-admission testing, independent practice associations, health insurance portability &amp;amp; accountability act, skilled nursing facility, health reimbursement arrangement, medicaid |
+| `characters` | g4t3tbld9uknaprnk0dewxeqd633a5oo7tk835hney3zgpwitapbkxoq4dwnnux7zfhxcxdr6jcaz8oq83qnxb3bjouiqwwrj81xwk2npxm7wcxdus5fql8qap7zndt4i6yj05qakahuzt40lggdnuk1rg2h08ucjy9z1chykuw4mn5qgaf4suk6y0k1cjr7t69zgfd9wuz5oymlsmffx0ifvgwpu09mb5m8rcmmkh0soz9ooxz193jj6g07z2s, n0snq7c5bo4ufa4f6uz9ye61tm7eoaxrx2socboaeqy33vo5biu7rz1so5kozf5m8h2picda26vovi19ddjr0yixy5cr1bybah75k7yht03dygo1te93pnp7j8atmdg8p7t5okewz34ggcoid1i5nycrt79plv30oc6uc13pvhnh2eu420stjousrmp0gwynfzk13svylqjsrzjr7ivg2y0ei6ep5et5miqml3r1fwxw7buqoff5gu70n8v3pbv, 8fdq2cxwyxfhcvvmfs1db1g64fi9da9e55wal9bpociu9plpc87si4pgiic3w44g4y4lua49g4xng1yp2jai3cuial3osc6jthg532wn0scwuybi2pv7i8iwgxbi9g58i0v2wqf4qyf6h94iesc3z3yjmfakzc6welo4w1ib5z1y5sgduw0dutebn742z7n2vv4czry0ujs3827cfr3q07urlaf993qlwokpm7ls3m9vppphxva20u8jn13a24h |
+| `paragraph` | State insurance department co-pay pre-authorization enrollee third-party payer pre-admission review capitation. Medigap covered benefit well-baby care denial of claim policyholder. Coordination of benefits credentialing incurral date broker HSA. Major medical impaired risk eligible dependent medically necessary usual and customary charge misrepresentation broker episode of care., Group health plan R&amp;C charge NCQA skilled nursing facility case management. Pcp gag rule laws certificate of coverage co-insurance FSA. Case management inpatient care disenroll admitting physician administrative services only. Contract year consolidated omnibus budget reconciliation act CPT NDC employee assistance programs. Ipa NAIC EOB rider consolidated omnibus budget reconciliation act., Utilization review MSA waiting period evidence of insurability gag rule laws network provider current procedural terminology inpatient care gatekeeper. Custodial care medicaid health employer data and information set coordinated care first dollar coverage premium self-insured case manager ASO. Self administered board certified covered charges/expenses deductible case management preventive care morbidity hospital care. |
+| `paragraphs` | Participating provider PPO broker noncancellable policy deductible carry over credit. Deductible carry over credit covered charges/expenses hospital-surgical coverage out-of-network provider participating provider network. Aso concurrent review ambulatory care pre-authorization staff model formulary NCQA insured., Misrepresentation managed care grievance flexible spending account agent of record urgent care noncancellable policy insured international classification of diseases, 9th revision, clinical modification icd-9-cm. Prior authorization network preventive care usual and customary charge exclusion period rider. Eligible expenses schedule of benefits and exclusions medical savings account eligible dependent case manager dependent utilization review. Policy year preferred provider organization national drug code assignment of benefits HDHP fee schedule special benefit networks admitting privileges risk., Medicare master policy morbidity flexible spending account limited policy lifetime maximum. Administrative services only lapse effective date assignment of benefits contract year first dollar coverage. Health employer data and information set benefit health insurance portability &amp;amp; accountability act urgent care third-party payer major medical home health care insured deductible. Explanation of benefits agent of record pre-admission review exclusion period indemnity health plan medical savings account international classification of diseases, 9th revision, clinical modification icd-9-cm., Evidence of insurability coordination of benefits HCFA Common Procedure Coding System pre-existing condition reasonable and customary self-insured. Policy EAPs HDHP cost sharing case manager accredited broker PCP. Appeal beneficiary diagnostic related group COBRA medicare supplement referral medigap. Episode of care pre-authorization evidence of insurability HCFA Common Procedure Coding System HCPCS., Ppo international classification of diseases, 9th revision, clinical modification icd-9-cm third-party payer nonrenewable grievance administrative services only prior authorization out-of-network ambulatory care. Usual and customary charge SIC episode of care evidence of insurability major medical master policy hospital-surgical coverage. Exclusion period IPA referral impaired risk claim. Pregnancy care medically necessary coordinated care contract year cost sharing second surgical opinion., National drug code effective date general agent medical necessity reasonable and customary waiting period formulary. Agent of record master policy medical savings account certificate of coverage indemnity health plan IPA admitting physician policy COBRA. Underwriting EAPs employee assistance programs certificate of coverage contract year major medical effective date coordination of benefits schedule of benefits and exclusions., Coordinated care self-insured out-of-network fee schedule health maintenance organization diagnostic related group. Pre-admission testing preventive care state-mandated benefits cost sharing HMO CPT self-insured referral. Accumulation period national drug code policy limited policy primary care physician CPT standard industrial classification DRG. Pre-admission review HCPCS grievance assignment of benefits network exclusions and limitations. Naic grievance underwriting defensive medicine policy denial of claim hospital-surgical coverage HDHP., Admitting physician insured PCP covered person current procedural terminology out-of-network hospital-surgical coverage preferred provider organization contract year. Hra hospice care major medical third-party payer covered benefit HMO coordination of benefits staff model. Independent practice associations ambulatory care IPA state insurance department rider out-of-pocket costs dependent exclusions and limitations HRA., State insurance department NAIC nonrenewable out-of-plan high deductible health plan. Designated facility participating provider exclusion period episode of care skilled nursing facility medicare supplement capitation contract year. Case manager urgent care HSA SIC appeal lapse lifetime maximum incurral date. |
+| `phrase` | Special benefit networks designated facility flexible spending account third-party payer qualifying event managed care ambulatory care., Co-insurance policy designated facility wellness office visit enrollee international classification of diseases, 9th revision, clinical modification icd-9-cm lifetime maximum., Stop-loss provisions second surgical opinion deductible medicaid NCQA. |
+| `phrases` | Master policy self administered staff model wellness office visit admitting physician., Board certified ASO benefit cap attachment managed care pre-admission review., Evidence of insurability managed care out-of-pocket costs assignment of benefits preferred provider organization designated facility., Defensive medicine enrollee current procedural terminology ancillary services self administered contract year state insurance department COB benefit cap., Medical necessity workers compensation waiting period HEDIS any willing provider laws., Waiting period network insured disenroll morbidity care plan., Certificate of coverage ambulatory care medicaid medicare supplement national association of insurance commissioners beneficiary., State-mandated benefits preventive care free-look period major medical health reimbursement arrangement co-payment., Ndc full-time student COB standard industrial classification fee-for-service first dollar coverage consolidated omnibus budget reconciliation act national association of insurance commissioners. |
+| `sentence` | Waiting period flexible spending account EAPs EOB covered charges/expenses DRG., Drg deductible carry over credit gatekeeper case management gag rule laws deductible COBRA medicare renewal., Covered person co-insurance evidence of insurability deductible carry over credit national committee for quality assurance. |
+| `sentences` | Accumulation period medigap admitting physician ASO open enrollment EAPs high deductible health plan third-party payer IPA., Preferred provider organization appeal coordinated care broker attachment national committee for quality assurance., R&amp;c charge fee-for-service ancillary services managed care renewal insured., Free-look period coordinated care MSA clinical practice guidelines attachment utilization review high deductible health plan creditable coverage., Diagnostic related group board certified administrative services only workers compensation ancillary services nonrenewable case management admitting physician., Capitation certificate of coverage pregnancy care pre-certification self-insured fee schedule participating provider., Health maintenance organization lifetime maximum case manager diagnostic related group credentialing participating provider certificate of coverage nonrenewable deductible., Deductible state insurance department denial of claim medical savings account general agent., Capitation ambulatory care MSA standard industrial classification HMO rider. |
+| `word` | HRA, indemnity health plan, flexible spending account |
+| `words` | diagnostic related group, home health care, board certified, certificate of coverage, morbidity, health care provider, policyholder, flexible spending account, any willing provider laws |
 
 ## FFaker::HealthcareRU
 
 | Method | Example |
 | ------ | ------- |
-| `doctor_specialization` | КЛД (лаборант), Стоматолог-ортопед, Стоматолог-терапевт |
+| `doctor_specialization` | Вертебролог, Детский гинеколог, Трансфузиолог |
 
 ## FFaker::HipsterIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | y3bh8e7tmaaz0sad1057xi23pasfh6y7jvgd1qe6n2ijnpocvnoesba06p0ywhyvymo1cgjlfbyzrthx0mv2vel9pyv9t0xp8kv8q8ncyq8kbnma8qnckg7e4xio9hb5udru2uqado71pe758nzor9quqi515go2osl6q3i819s29hjh0quu6clsvw0xnhmzs3j5ttijiergcti49o3i8x9dl9n81cmu2iufbd3umt9so5elxb58fjz5d89he79, g1y2zyu81vaoukrz93t5vopj2v242oy947b7ovtt6dskaylyr045yz3ogckr2kc0awrskar69cu5sj7l8d6oi3cqnedwbei4i0us9i5l8az1uka7f0iblcrvhfdynaj5hblay74hx5l9w81wwrur4qwylfng22ur2a0rqxdw4o18nf621d5gk558r1xsh74x6rkmkrifij02wog8gvny6qbcgq86cauk77m54lozsqqgfv9vjgg4oppq5kbi3fl, xidi9mesditiuwl7g9jkepfz42tbe4l55g95fuanb5nn2fqid80zm1l1doxa1qdvwlgvvbj0ld6h05v3iqqy4966v8hlll6gzx0hcksreom7grvm7u2p8mn089b07sl1v7ov91ruvbhizqeo6ar4y7i6g0xclw0gzfrsv9wrj0i6p3bdwxbcurlpdtb50w7ihw2gxloxf177mlkx1afh31cyzml1ktv6xoh47l08f8ppm17v3oeraymr2jqlc0a |
-| `paragraph` | Twee leggings messenger bag mixtape raw denim Shoreditch keytar cardigan Banksy. Hoodie etsy biodiesel ethical keytar. Banh mi 8-bit whatever gluten-free butcher lomo messenger bag irony stumptown. Mixtape Banksy beard salvia Shoreditch wolf cred tumblr PBR. Vice party thundercats vegan ethical tofu high life., Mixtape PBR freegan master cleanse Wayfarers letterpress. Portland Carles vice yr butcher DIY synth trust fund ethical. Hoodie bicycle rights scenester +1 iPhone Cosby Sweater. Thundercats craft beer sustainable mustache DIY., Salvia cardigan blog mustache master cleanse. Cardigan sustainable gentrify mlkshk DIY aesthetic PBR. +1 lo-fi before they sold out tattooed Marfa letterpress banh mi ethical helvetica. |
-| `paragraphs` | Biodiesel dreamcatcher scenester cliche iPhone wolf. Locavore iPhone lo-fi jean shorts Williamsburg Marfa thundercats. Cosby sweater +1 quinoa Four Loko Portland thundercats Shoreditch next level seitan. Moon jean shorts McSweeney's 8-bit mustache Carles. Readymade before they sold out lo-fi mlkshk cliche., Diy farm-to-table raw denim gluten-free hoodie echo park McSweeney's Cosby Sweater. Retro put a bird on it mlkshk iPhone readymade sustainable DIY keffiyeh locavore. Aesthetic Marfa keffiyeh chambray moon Portland lomo Shoreditch., Cliche Williamsburg leggings Shoreditch vice dreamcatcher Rerry Richardson Wayfarers. Vinyl before they sold out chambray blog gluten-free locavore stumptown synth organic. Pitchfork chambray tofu put a bird on it beard VHS iPhone hoodie moon., Party wolf Marfa farm-to-table Wes Anderson single-origin coffee. Freegan artisan Pitchfork Rerry Richardson Brooklyn vegan. Scenester sustainable mixtape Wes Anderson mlkshk twee., Sustainable before they sold out farm-to-table sartorial keffiyeh. Messenger bag twee cardigan scenester locavore PBR synth yr. Irony moon sartorial skateboard synth., Yr Pitchfork leggings cliche lo-fi retro dreamcatcher. Single-origin coffee Rerry Richardson aesthetic dreamcatcher cred Brooklyn cardigan thundercats wolf. Mixtape craft beer yr Rerry Richardson master cleanse., Hoodie retro leggings high life cardigan cliche sartorial blog tattooed. Fap lo-fi art jean shorts leggings mlkshk Cosby Sweater. Seitan skateboard freegan Portland butcher Brooklyn Cosby Sweater you probably haven't heard of them. Master cleanse cred Brooklyn mustache irony beard Marfa lo-fi., Wolf you probably haven't heard of them Wayfarers freegan VHS 8-bit. Art moon Marfa +1 PBR. Sartorial Marfa Carles stumptown DIY dreamcatcher., Raw denim helvetica banh mi biodiesel thundercats etsy Rerry Richardson party moon. Fixie tattooed fap yr Rerry Richardson lo-fi Williamsburg McSweeney's you probably haven't heard of them. Wayfarers Four Loko Austin cliche VHS mustache helvetica put a bird on it artisan. Wayfarers gluten-free tofu dreamcatcher beard twee. Wes anderson dreamcatcher freegan next level mustache. |
-| `phrase` | Fap synth food truck locavore next level., Marfa before they sold out Shoreditch tattooed VHS twee., Party American Apparel vinyl gluten-free next level fap DIY etsy yr. |
-| `phrases` | Mlkshk moon synth brunch ethical., Portland hoodie Cosby Sweater chambray mustache jean shorts McSweeney's viral., Beard helvetica quinoa aesthetic cred sustainable vice gluten-free raw denim., Fixie Wes Anderson Williamsburg quinoa wolf moon 8-bit keffiyeh high life., Art squid VHS Four Loko seitan banh mi brunch yr leggings., Vinyl stumptown Austin mixtape echo park chambray., Quinoa next level Portland American Apparel wolf freegan., Helvetica biodiesel master cleanse Wayfarers sartorial Austin., Wolf helvetica messenger bag mlkshk aesthetic. |
-| `sentence` | Raw denim PBR cardigan tattooed chambray scenester Austin., Party mlkshk aesthetic vice master cleanse trust fund stumptown wolf., Vegan tattooed skateboard cliche trust fund aesthetic iPhone stumptown vinyl. |
-| `sentences` | Portland Cosby Sweater +1 readymade freegan., Hoodie art etsy vinyl mixtape trust fund fixie artisan., Pitchfork beard echo park messenger bag hoodie etsy whatever iPhone., Brooklyn party seitan tofu synth brunch mixtape., Mlkshk party bicycle rights yr keffiyeh butcher vegan iPhone., Master cleanse Brooklyn iPhone party keytar helvetica., Sustainable lo-fi keffiyeh butcher salvia Wayfarers raw denim biodiesel tattooed., Beard quinoa trust fund DIY fanny pack twee Shoreditch etsy., Portland Brooklyn readymade biodiesel cardigan. |
-| `word` | Rerry Richardson, fanny pack, before they sold out |
-| `words` | cliche, brunch, gentrify, VHS, synth, Rerry Richardson, locavore, banh mi, Shoreditch |
+| `characters` | 1fcgriu6mlsfjnhjjzzvks8oewxx8nwqan2hsvlvoxlfvp4dna12ul3t0w9usxecp13pd87qbj68ppf1irmahdm3euo6vrg6q5kulh836ssq6v4a0b37z6e0myttateghvtgxo5zlpoq5l72haz64no0wdr778f0nl6z5d0p3mjouwsduvq29h8v972a8ydhlf069d1ftwszfj7xeu7liycqyfwpwue4fxcpjd2igxt9a4lvilg408xuqu3qaei, gwar8bfhvqw1rnt73kuzx4obxcmvdx1hxpb1qdg8yl97hh6j2z5qx7rg2n47lozjipq4da5ray9u18mdn37bj2oactowc5a6fpntphhg4b006gvsx1657qhyc6v6atmamyrpel0xevkgnvytud89zxp06tm8ri4bc4xjgq5kmh71hvdy0vlplieut78mvmelp2intq0issddu1fpwyasecp6eqsqazyiqmb71fxo7s99te8qiaw32vow8bu7gk6, 2qa2lbq6x6vjol189meg3dpa6toqpu8xcjluo7zk8d16f9bsbq7m9tpz2gy5mynkw8p4shg5qkjrncza9qbruhbjfs9ghze5nr37dplwj24nmiyhxb8pssh8uos35t3xh7awc3wtlh1jrh7fde594ezax6caudchappu4tkvw5fb9k4viznpncocctef7nzbs4ja867zwcvpe7xdnjm914a8a9t89eds11nmn4x4cdq5u41blu47kjqae29duvh |
+| `paragraph` | Keytar mixtape before they sold out artisan dreamcatcher butcher tofu. Irony Pitchfork salvia letterpress organic. Lomo irony Wes Anderson whatever bicycle rights., Stumptown craft beer scenester banh mi Cosby Sweater wolf. Keytar Pitchfork squid synth gluten-free readymade Austin cliche leggings. Lo-fi master cleanse raw denim Wayfarers Banksy. Wolf cliche DIY jean shorts Wes Anderson put a bird on it brunch., Quinoa etsy fixie next level butcher farm-to-table. Quinoa gentrify before they sold out Portland biodiesel thundercats messenger bag seitan whatever. Helvetica keffiyeh retro lo-fi craft beer. |
+| `paragraphs` | Skateboard seitan synth stumptown wolf viral jean shorts Portland keffiyeh. Craft beer wolf scenester American Apparel fap. Beard whatever Rerry Richardson VHS mustache. Trust fund fixie you probably haven't heard of them skateboard Carles jean shorts echo park., Chambray single-origin coffee craft beer quinoa keffiyeh. Sustainable Williamsburg +1 banh mi fixie messenger bag squid craft beer. Thundercats vegan moon synth cardigan trust fund banh mi dreamcatcher. Banksy raw denim letterpress biodiesel blog., Sustainable Portland mixtape irony Wayfarers banh mi. Biodiesel quinoa artisan hoodie Wes Anderson craft beer Austin fap. Diy biodiesel ethical quinoa Portland Pitchfork Williamsburg Rerry Richardson +1. Photo booth food truck skateboard brunch single-origin coffee., Vice fap gentrify tofu aesthetic squid mlkshk high life. Four loko wolf cardigan iPhone tofu Williamsburg fanny pack freegan. Biodiesel dreamcatcher hoodie artisan twee. Diy trust fund yr scenester mixtape., 8-bit Brooklyn before they sold out master cleanse jean shorts biodiesel. Etsy tofu keffiyeh messenger bag skateboard sartorial. Seitan put a bird on it retro Williamsburg mustache party viral quinoa lomo. Cred butcher tofu fap jean shorts Four Loko food truck raw denim cliche., Tattooed you probably haven't heard of them brunch vinyl mustache Wes Anderson blog vegan. Quinoa fap Cosby Sweater trust fund salvia Banksy master cleanse Rerry Richardson iPhone. Viral DIY leggings Carles cardigan artisan vice echo park. Single-origin coffee banh mi tattooed salvia wolf helvetica art sustainable cred., +1 keytar artisan Four Loko cred gluten-free irony chambray trust fund. Thundercats single-origin coffee retro Rerry Richardson echo park. Food truck cred banh mi Rerry Richardson beard readymade. Artisan tofu blog ethical sartorial trust fund., Pbr echo park banh mi put a bird on it tofu VHS. Squid 8-bit stumptown banh mi wolf cred. Mustache PBR biodiesel Carles craft beer blog McSweeney's irony. Hoodie beard aesthetic lomo yr Shoreditch Carles +1 keffiyeh. Photo booth tofu locavore readymade tattooed skateboard., Tofu food truck seitan mlkshk sustainable Banksy jean shorts lomo. Chambray Marfa stumptown letterpress lo-fi seitan wolf mlkshk lomo. Tofu before they sold out organic skateboard yr artisan vinyl locavore McSweeney's. |
+| `phrase` | Jean shorts art American Apparel before they sold out sustainable fixie artisan., Iphone skateboard you probably haven't heard of them Carles whatever Williamsburg 8-bit vinyl., Farm-to-table vice before they sold out you probably haven't heard of them master cleanse single-origin coffee Marfa scenester. |
+| `phrases` | Leggings butcher gluten-free cred PBR fixie., Next level lomo jean shorts squid biodiesel single-origin coffee organic chambray vinyl., Chambray viral master cleanse put a bird on it PBR mixtape., Lo-fi Marfa mlkshk beard wolf etsy mustache., Cred PBR gluten-free leggings organic thundercats quinoa., Pitchfork quinoa Austin gentrify art cardigan brunch., Viral craft beer wolf gentrify Carles letterpress raw denim readymade., +1 echo park VHS artisan skateboard keytar leggings next level bicycle rights., Salvia master cleanse McSweeney's Brooklyn keytar raw denim organic. |
+| `sentence` | Lomo American Apparel cred keffiyeh cardigan photo booth., Portland whatever lo-fi iPhone art next level Austin locavore., +1 Carles you probably haven't heard of them readymade leggings ethical bicycle rights chambray master cleanse. |
+| `sentences` | Next level party American Apparel high life gentrify Austin vinyl seitan., Gentrify 8-bit lomo organic tofu Portland chambray., Scenester keffiyeh food truck gentrify lo-fi Shoreditch banh mi tumblr., Readymade locavore echo park brunch Portland leggings retro cred., Skateboard aesthetic biodiesel seitan bicycle rights 8-bit brunch echo park., Cred cliche keffiyeh fixie whatever chambray keytar put a bird on it next level., Vinyl cred Carles stumptown single-origin coffee lo-fi sartorial., Letterpress mixtape farm-to-table you probably haven't heard of them readymade banh mi Williamsburg., Moon Brooklyn retro fanny pack VHS mlkshk craft beer leggings. |
+| `word` | photo booth, locavore, Williamsburg |
+| `words` | Wes Anderson, art, +1, Pitchfork, Shoreditch, echo park, fanny pack, bicycle rights, beard |
 
 ## FFaker::Identification
 
 | Method | Example |
 | ------ | ------- |
-| `drivers_license` | T378-479-79-233-6, I981-582-44-242-8, D329-268-85-191-5 |
-| `ethnicity` | Asian/Pacific Islander, Other, Other |
-| `gender` | Female, Male, Female |
-| `ssn` | 075-25-7790, 226-87-7982, 170-12-5278 |
+| `drivers_license` | X609-362-81-791-4, H498-629-81-784-0, P413-317-26-693-2 |
+| `ethnicity` | African American, Hispanic, African American |
+| `gender` | Female, Male, Male |
+| `ssn` | 093-30-6382, 162-08-6195, 851-13-6914 |
 
 ## FFaker::IdentificationBR
 
 | Method | Example |
 | ------ | ------- |
-| `cnpj` | 33244018511443, 12369286121974, 15526642885963 |
+| `cnpj` | 91266219214311, 69651769205223, 87133394140149 |
 | `cnpj_verification_digits`(...) |  |
-| `cpf` | 70764980734, 52271902835, 70268184658 |
+| `cpf` | 48281008814, 75206065897, 58317672808 |
 | `cpf_verification_digits`(...) |  |
-| `gender` | Feminino, Masculino, Masculino |
-| `pretty_cnpj` | 56.657.533/9053-19, 13.840.671/7068-03, 77.276.055/0086-42 |
-| `pretty_cpf` | 076.426.686-19, 306.554.368-04, 007.506.642-40 |
-| `pretty_rg` | 065.438.724, 076.114.774, 479.604.268 |
-| `rg` | 407292747, 578761501, 238261282 |
+| `gender` | Feminino, Feminino, Masculino |
+| `pretty_cnpj` | 55.481.742/8303-67, 09.745.737/0562-43, 98.399.087/1565-58 |
+| `pretty_cpf` | 981.281.061-71, 508.200.081-09, 215.659.493-74 |
+| `pretty_rg` | 976.240.676, 118.621.415, 136.331.809 |
+| `rg` | 567888222, 649109466, 696657495 |
 
 ## FFaker::IdentificationES
 
 | Method | Example |
 | ------ | ------- |
-| `gender` | Hombre, Hombre, Mujer |
+| `gender` | Mujer, Hombre, Hombre |
 
 ## FFaker::IdentificationESCL
 
 | Method | Example |
 | ------ | ------- |
 | `gender` | Hombre, Hombre, Mujer |
-| `rut` | 1649430-5, 17281973-7, 23249874-9 |
+| `rut` | 24028394-8, 8457221-7, 24610757-2 |
 
 ## FFaker::IdentificationESCO
 
 | Method | Example |
 | ------ | ------- |
-| `blood_type` | AB-, A-, B- |
-| `driver_license_category` | A2, B1, A2 |
-| `drivers_license` | 33002854810, 258159632, 1370444297 |
-| `expedition_date` | 2019-10-25, 2020-01-05, 2018-01-03 |
-| `gender` | Mujer, Mujer, Mujer |
-| `id` | 78246099138, 1490322069873, 343691581 |
+| `blood_type` | B-, O+, AB- |
+| `driver_license_category` | A2, B1, C2 |
+| `drivers_license` | 3881001, 982992455, 460889181034 |
+| `expedition_date` | 2016-04-28, 2016-06-17, 2020-01-02 |
+| `gender` | Mujer, Mujer, Hombre |
+| `id` | 0400690273492, 0425331, 160076730161 |
 
 ## FFaker::IdentificationIN
 
 | Method | Example |
 | ------ | ------- |
-| `aadhaar` | 521606860225, 345935106743, 476806880741 |
+| `aadhaar` | 836636304154, 858750011784, 587481409904 |
 
 ## FFaker::IdentificationKr
 
 | Method | Example |
 | ------ | ------- |
-| `rrn` | 770901-2210340, 831708-1506647, 862408-1757427 |
+| `rrn` | 931912-1019538, 931408-2126635, 722408-2757368 |
 
 ## FFaker::IdentificationMX
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | MAKM160314HNLHXGE6, VOBW980619MGRKRFA8, JEMS200721HTSBSDL4 |
-| `rfc` | WIÑM99011015E, YASO750329HB8, HBO1607287DR |
-| `rfc_persona_fisica` | VIAY131210RQK, XAVO900618QOK, NOCG1810151DR |
-| `rfc_persona_moral` | JHO1005036QZ, WLZ870116XJN, LPD201214654 |
+| `curp` | LOIW770411MCLRPLO8, FIHX720520HGRPKRB1, LUDT780524HBCQJV02 |
+| `rfc` | VIQF051205WMF, YEDN010320AYN, XON940111398 |
+| `rfc_persona_fisica` | SIHA860904UQE, CUFM77021769O, TEJO060924W0K |
+| `rfc_persona_moral` | RPG900921GI2, DHU070305QG1, MOE980917P05 |
 
 ## FFaker::IdentificationPL
 
 | Method | Example |
 | ------ | ------- |
-| `drivers_license` | 87083/25/5602, 08604/03/3890, 77018/35/3159 |
-| `id` | EYX170900, FFP053878, AAV005031 |
-| `identity_card` | BAT973577, QDF330312, APO247879 |
-| `pesel` | 41890936332, 92892754967, 65021422228 |
+| `drivers_license` | 52940/97/0613, 99161/85/8784, 91948/74/2437 |
+| `id` | JMW577802, ZWY282832, DMU048672 |
+| `identity_card` | DOE546945, JNL909748, VMY622003 |
+| `pesel` | 67872431017, 01020860485, 60922114784 |
 
 ## FFaker::IdentificationTW
 
 | Method | Example |
 | ------ | ------- |
-| `id` | Y279853645, G195915608, Q184662666 |
+| `id` | X291966444, I239593868, O244656364 |
 
 ## FFaker::Image
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x000055a1d5be4430&gt;, #&lt;File:0x000055a1d5c3bca8&gt;, #&lt;File:0x000055a1d5c63578&gt; |
-| `url` | https://dummyimage.com/300x300/38940b/5ed7db.png?text=, https://dummyimage.com/300x300/9a5dc3/ab5ee5.png?text=, https://dummyimage.com/300x300/8df9f5/6a44d7.png?text= |
+| `file` | #&lt;File:0x0000561c151e3660&gt;, #&lt;File:0x0000561c15206f48&gt;, #&lt;File:0x0000561c1522a830&gt; |
+| `url` | https://dummyimage.com/300x300/a4759d/bfc731.png?text=, https://dummyimage.com/300x300/b67b84/ca6517.png?text=, https://dummyimage.com/300x300/1fc678/d28f7b.png?text= |
 
 ## FFaker::Internet
 
 | Method | Example |
 | ------ | ------- |
-| `disposable_email` | olinda_bahringer@suremail.info, geri.heathcote@mailinator.com, deloris@safetymail.info |
-| `domain_name` | mullerbeer.co.uk, yundtschmeler.co.uk, reichert.name |
-| `domain_suffix` | com, com, com |
-| `domain_word` | mckenziemorissette, rogahnklein, mueller |
-| `email` | tequila@christiansenmarvin.biz, jaqueline@grantwitting.name, dede@kohler.co.uk |
-| `free_email` | kelle.hamill@hotmail.com, ta@gmail.com, abel@yahoo.com |
-| `http_url` | http://carter.us, http://gaylord.biz, http://millsheaney.biz |
-| `ip_v4_address` | 148.139.87.38, 46.178.237.231, 21.141.6.214 |
-| `mac` | a9:cf:57:c8:9b:a2, fd:d1:84:24:b7:b7, b7:7e:2d:a6:88:8a |
-| `password` | hG_mp6FVCy, xwLDNLSmn_bFlD, raHYHG5c7fsD8 |
-| `safe_email` | adriane_pfeffer@example.net, tanner@example.org, norris.johns@example.net |
-| `slug` | asperiores-dolore, explicabo.laboriosam, error_magni |
+| `disposable_email` | lynda.padberg@binkmail.com, sharon@suremail.info, beulah_feil@mailinator.com |
+| `domain_name` | stokes.us, braunbatz.co.uk, faheyweissnat.us |
+| `domain_suffix` | info, info, biz |
+| `domain_word` | runtelabadie, hudson, herman |
+| `email` | cristy@kuvalis.us, dani@macejkovic.com, bobette.hintz@toy.com |
+| `free_email` | eusebio.kohler@hotmail.com, avril@hotmail.com, cindi_heaney@hotmail.com |
+| `http_url` | http://steubernitzsche.us, http://simonis.name, http://grimestreutel.com |
+| `ip_v4_address` | 245.9.202.5, 75.82.229.103, 208.84.137.188 |
+| `mac` | ae:6b:6d:0c:1a:2f, 26:57:57:11:c3:b4, 23:6d:9c:35:94:ed |
+| `password` | T4snYaentjdd_, Uax5LBooV, EjzuHn5IsGXOy |
+| `safe_email` | shanell.muller@example.net, shakia.kunze@example.com, bari.howell@example.net |
+| `slug` | perspiciatis_repudiandae, dicta-voluptatem, dolorum-neque |
 | `uri`(...) |  |
-| `user_name` | thomasina, edwardo_rosenbaum, lori_doyle |
+| `user_name` | fawn_rutherford, dion, tu_nienow |
 
 ## FFaker::InternetSE
 
 | Method | Example |
 | ------ | ------- |
-| `company_name_single_word` | Boehm, Auer,, Paucek, |
-| `disposable_email` | peter.emmerich@binkmail.com, etha.bradtke@mailinator.com, laurice@mailinator.com |
-| `domain_name` | ullrichbartell.com, doyle.nu, zulaufupton.nu |
-| `domain_suffix` | com, se, nu |
-| `domain_word` | harber, gusikowskimedhurst, huelhickle |
-| `email` | kenda.dibbert@hauck.nu, madge.wunsch@bernhardlegros.com, margaretainge_denesik@browncruickshank.nu |
-| `free_email` | mabelle.dickinson@hotmail.com, liana@passagen.se, dionna@passagen.se |
-| `http_url` | http://hoegerlueilwitz.nu, http://jacobs.nu, http://cassinlowe.se |
-| `ip_v4_address` | 129.46.61.127, 156.192.163.253, 48.23.101.52 |
+| `company_name_single_word` | Barrows,, Koelpin-Hauck, Pollich |
+| `disposable_email` | bradlybuster@binkmail.com, rocco.bartell@binkmail.com, belkis@safetymail.info |
+| `domain_name` | hettinger.nu, friesen.se, hane.com |
+| `domain_suffix` | com, nu, nu |
+| `domain_word` | towne, kris, streichjenkins |
+| `email` | carline_schimmel@boyer.nu, clarine@rolfson.nu, curtisgalen.mueller@mullerbreitenberg.nu |
+| `free_email` | larisaayanna@gmail.com, ron@passagen.se, merlin@gmail.com |
+| `http_url` | http://haleyschamberger.se, http://rogahn.se, http://purdy.se |
+| `ip_v4_address` | 133.106.36.0, 143.191.208.142, 87.28.202.205 |
 | `join_to_user_name`(...) |  |
-| `login_user_name` | raul, luvenia, lee |
-| `mac` | 3e:05:0a:ff:4e:57, 30:a1:a2:13:2f:9b, 6b:1b:8c:92:38:f9 |
-| `password` | _4Nq9LPSObn51t, Uou3D3VTC4c45X, lfP6l2rEDHIdDgK |
-| `safe_email` | jeanmarie@example.org, hassan.collins@example.net, elinorardelia@example.com |
-| `slug` | voluptates_incidunt, voluptatibus.cumque, quae-corrupti |
+| `login_user_name` | manual, arthur, myles |
+| `mac` | 5c:0d:23:e2:60:ef, d6:65:0b:ac:e2:d9, 2d:65:8c:8a:00:3c |
+| `password` | Vjzr1OLwmf2akB4, D4WLggkr6p, t_0TkeqJPNEs27 |
+| `safe_email` | vernice@example.org, dolores.casper@example.com, cliff@example.com |
+| `slug` | omnis.earum, nisi-debitis, totam.ducimus |
 | `uri`(...) |  |
-| `user_name` | miguel.purdy, noble, mickeyirwin.damore |
+| `user_name` | willie_macejkovic, aracely_schumm, ralph |
 | `user_name_from_name`(...) |  |
-| `user_name_random` | shawndamarceline_oconnell, casandra_feest, colby.fritsch |
-| `user_name_variant_long` | cordell.konopelski, emeritadevora_welch, alanaalisha_glover |
-| `user_name_variant_short` | jeantracy, armand, deloise |
+| `user_name_random` | cedrickmilton, freeman_medhurst, sammie |
+| `user_name_variant_long` | osvaldoprince_beier, dario.schultz, tyrellrudolph_pfannerstill |
+| `user_name_variant_short` | emmett, gertrude, bernadette |
 
 ## FFaker::Job
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Product Directives Consultant, Future Response Technician, Legacy Security Producer |
+| `title` | Corporate Brand Planner, Global Research Administrator, Internal Metrics Supervisor |
 
 ## FFaker::JobBR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Mecânico, Consultor, Diretor de Cinema |
+| `title` | Astro do Rock, Arquiteto, Turismólogo |
 
 ## FFaker::JobCN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 党组书记, 外销部经理, 警督 |
+| `title` | 公关部经理, 店主, 音乐教师 |
 
 ## FFaker::JobFR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | directeur des opérations general du service commercial, intendant adjoint des ressources humaines, administrateur service comptable |
+| `title` | chef associé des ressources humaines, superviseur associé du service financier, consultant general des services informatiquues |
 
 ## FFaker::JobJA
 
 | Method | Example |
 | ------ | ------- |
-| `title` | アパレル店員, アナウンサー, 精神保健福祉士 |
+| `title` | イラストレーター, ミュージシャン, テレビプロデューサー |
 
 ## FFaker::JobKR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 현금인출기 설치 및 수리원, 식품학 연구원, 양봉 종사원 |
+| `title` | 건설기계공학 기술자 및 연구원, 건물용 냉동․냉장․공조기 설치 및 정비원, 인테리어 디자이너 |
 
 ## FFaker::JobVN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Công tố viên, đội ngũ giảng viên, Đặc biệt cần giáo viên trung học |
+| `title` | đội ngũ giảng viên, thông dịch viên, giáo viên trung học cơ sở |
 
 ## FFaker::Locale
 
 | Method | Example |
 | ------ | ------- |
-| `code` | AF, BI, BA |
-| `language` | Albanian, Tibetan, Greenlandic |
+| `code` | GL, HU, ES |
+| `language` | Inupiak, Kannada, Tegulu |
 
 ## FFaker::Lorem
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | ll989h97h98tpbjhdkyho74x68mxp77r07u7ddh9te56wzictuyv26vxmqudk0uyr72hfswjljw4qiqatroxs3rwt9e0wsbse9alvbanzfh0g0aeb4dos1t4hi5tgciuw9u646fopm52hj1c3eh9p8oap6ajahlox6jsz2mumhjx0yewfxve7cjwqocy2m6i2off7ntrkybir14mfp1zde1qtgpiu2f8z7bcotfvhnkk8da9ymyck5gaq9tw825, wtvu7oixptfyh8ygzhhj6ljlz7m29qclymqlbg0u1njb7i5stw1y7ffmbww0h8d231ztea7g376mrw4jxo27591xplmtlszhgin1rl3mu38s3ls8ey7cp7lucabt9xld39k51i170jeo3tu3k73uogx6of3w1145o82kr4t2oyrubxjm9pawmsnw7dxk6xo69j32fh3nsy0hho4dn2h0gr4sqa891pczf6li2keznv0q6ng9ach1cj7yhad6ya2, ts2ju3sgj8m2ulg1cjv51e0bktsdpw5qmlk3o26nlf6n8jj76f1pue4qba57oc4iu84wngz2ijd240wykhyshwpknti84kt31wo2oiu7mxh8kg2rj7tnv48a1nu2e2p7ya4fftqs9d4lhdsvw0u0r94snbpxsmkjpsthu05p223usl36dnttrxr0c4qymn0xxod880731q9nwc2gfwzskcia7k6mwn7l20fboggqaru6bl07tpfc7t3q3hwvn12 |
-| `paragraph` | Quibusdam itaque beatae unde porro cumque vel. Recusandae eligendi fugiat deleniti officia saepe cupiditate assumenda soluta. Blanditiis odio cum recusandae et dolore. Inventore dolorum incidunt consectetur necessitatibus magnam commodi., Distinctio iusto ipsa molestias delectus quasi illum culpa. Labore modi assumenda eaque qui nesciunt quibusdam. Ab exercitationem temporibus sequi dolor., Cupiditate illo numquam dolores totam at iusto. Sunt sit a velit consequatur nemo. Fugiat fugit quae architecto vel perspiciatis. Ipsam natus cum omnis eveniet porro. |
-| `paragraphs` | Doloribus officiis laborum perspiciatis expedita totam dicta. Ipsa sequi totam qui quo. Id impedit facere amet sapiente., Enim saepe vel ipsa libero. Unde iusto tempore distinctio mollitia assumenda. Vel voluptas maxime maiores tempora., Est quis rem alias voluptatibus quibusdam cum. Cum illo ratione earum quis. Debitis reiciendis laudantium doloribus nostrum quibusdam. Adipisci nobis harum error ipsam., Ipsa suscipit distinctio similique et recusandae rerum. Iure in ipsum nesciunt reprehenderit. Rem culpa assumenda nisi optio repellat. Blanditiis dolorum a modi doloribus et. Quia dolor occaecati dignissimos nihil., Vero sequi velit quae accusantium non molestias iusto. Tenetur sed nesciunt quos ratione dolore. In quod quis atque praesentium. Odit hic ex accusantium totam quibusdam labore eveniet praesentium. Consequatur reiciendis a accusamus sed., Vero dolore enim veniam rerum in. Saepe minima blanditiis repudiandae totam sed. Ad consequuntur cum laboriosam ab cupiditate. Debitis facere cum pariatur consequuntur similique. Odio natus placeat molestiae pariatur eum occaecati., Qui cupiditate laborum aperiam consequatur aliquid. Consequuntur earum eum natus ab dolor et. A accusamus quidem possimus voluptates est hic ad., Nesciunt commodi nobis doloribus veritatis aliquam. Adipisci id ipsum ea numquam possimus optio ut corporis. Illo error praesentium suscipit ab. Hic dicta dolore corrupti perferendis quia molestias fuga. Quibusdam velit harum quas asperiores ipsam sequi., Iste magni fugiat quidem cupiditate quae. Temporibus optio vitae atque nam in accusamus libero. Saepe sunt exercitationem veniam dicta illum sequi praesentium. Facere aliquam ut cumque sunt. |
-| `phrase` | Ipsum ex hic numquam corporis commodi dolorem enim., Est aut iste quis nihil consequatur accusamus ipsam corrupti., Hic vero saepe rem illo quia iusto. |
-| `phrases` | Nostrum amet ab exercitationem aspernatur eveniet perspiciatis aliquid odio., Laudantium numquam officiis saepe sunt inventore., Saepe doloribus provident maxime quas autem enim voluptatum., Tenetur iusto dolorem harum nesciunt cum voluptate., Doloremque iste eius explicabo aspernatur voluptates., Ab minus aliquid deserunt exercitationem., Eius commodi quidem laborum odio minima repudiandae fugit doloremque., Adipisci eum nemo ipsam ducimus dicta sequi ad., Optio impedit voluptates expedita sunt ipsum. |
-| `sentence` | Aperiam a accusamus fugiat blanditiis nostrum unde perspiciatis., Ut consectetur quaerat nam dolorum ipsam soluta., Harum ipsam dolorum at itaque sed libero. |
-| `sentences` | Quasi officiis labore illo recusandae quibusdam eligendi., Dignissimos tenetur vel sit architecto possimus., Ipsam sunt ea nihil nesciunt nostrum., Doloribus qui laboriosam suscipit quo voluptatum deserunt accusantium nemo., Praesentium earum dolores nesciunt ipsa quaerat cumque exercitationem numquam., Iusto expedita eius eligendi eveniet., Natus repellat ullam repellendus voluptatem ad., Unde totam veniam sint nesciunt voluptatum., Quisquam et reprehenderit harum doloremque non. |
-| `word` | fugit, incidunt, delectus |
-| `words` | quas, quaerat, architecto, voluptate, maxime, quasi, odit, ut, voluptatum |
+| `characters` | 2av5l96s8qvf01nb92jbkaytly7avdxvxz3o1htaynq5efiv3e5t03hb1u81awohwy0j26978tj2xu68yvpvrh1hswnc1rsx7v4q63x8wmup0kvcg9dlhjld6733pofxvtun0spo3mg6d2abu56b0wqjr1751rcfpzryl7wq8wemuvte4aheecwzk4xokxjqo5hd4gvgj4jjpewkhrokn1vgo9nk95u97hv6nutnnu322n5fs61yw6rp284z3ih, syt6h7sed2y7i9tiuiav50szvq4f04doah1cd098d88dhoi3v35vfg8ktmlb9mr1ycxkbwog5qu3rgwqonklubhdetl4xrp7d5hqqye0066yrq8bhw9l3bn94pooum44jvwm4bmp5f5oq9mrf1ew514a3d03851q14x4ki08llxxg4ekjpzc8zfslj4vtox0cs1o65a1sgka65pjuwzoy13wsb3mdka3lhupwo0t3panrejxuotzp0k8xdwzeq6, 2srqpd110fugweelty20axfjzvks6wgzhg6l4gwiz2sa2jq189umlo2weh3wgi7w12prvv9p2ck081mo9qvsuq5c9o5pvn32j5xbdudblfmq9mrlcsil6pridks36jphphqzzizkzjdjgt8s4sjjd10070222tr1zbdr3m0jrhrzj2y20i0u7brp2adogi45koqui7kpphgvruif03ildbjq9uq0vj0ae0e4m8hz4z7g428vy7oi6h54fr8u9vu |
+| `paragraph` | Alias fuga ducimus iure soluta dolor nisi nemo quod. Vero itaque deserunt repellendus animi amet eos mollitia. Consectetur expedita qui quam quas id itaque corrupti. In illo libero sint error vero quasi., Qui odit assumenda non vero. Fuga fugit quisquam perferendis cupiditate unde mollitia. Commodi praesentium maxime dolor culpa expedita. Tempore quis doloribus reiciendis dolore. Inventore consectetur quo optio adipisci perspiciatis., Labore ipsam quia nihil assumenda dolor et provident. Consectetur sit quasi repellendus omnis asperiores. Nam rerum odit impedit eos. |
+| `paragraphs` | Quis tenetur ut harum occaecati. Et modi provident saepe autem excepturi ab numquam sequi. Itaque tempore nisi soluta modi est quaerat perferendis voluptate., Necessitatibus dolores aspernatur qui fugiat voluptates adipisci rem. Deleniti necessitatibus ducimus repellat provident laudantium officiis nulla. Earum cupiditate odit corrupti sunt eaque. Sunt mollitia id molestiae quasi reiciendis earum. Repellendus dignissimos a aliquam repellat hic., Alias occaecati aut magni numquam amet facilis mollitia. Nisi doloremque nostrum commodi voluptates sapiente. Dolor facere possimus et impedit tempora repellendus., Nobis vero recusandae aliquam non illum in itaque. Quia ipsum dolore nostrum eos est. Laudantium ab sequi possimus neque harum laboriosam ipsam iste. Esse dolorem explicabo iusto maxime id., Ducimus ipsum mollitia commodi nobis. Architecto quod ut labore id praesentium non. Culpa odio soluta quia quis. Eius temporibus beatae nihil facilis voluptate. Sed officia ad consequatur sapiente quae unde optio saepe., Ex enim magni alias doloribus dolores deleniti voluptatibus. Laboriosam tempora rem autem dignissimos error sit nam soluta. Earum harum possimus incidunt a., Quidem distinctio et error exercitationem. Deserunt cumque totam similique eaque distinctio molestias. Veritatis quae fugit quia neque ipsum odit., Accusamus magni delectus assumenda deleniti placeat ad. Placeat vero provident consequuntur ipsam. Neque ipsa magnam accusantium sint dicta ipsam. Inventore officiis aliquam possimus numquam., Pariatur ad ex iure dicta. Minus laudantium officia non fugiat. Doloribus quam autem doloremque harum repellat sapiente nostrum. |
+| `phrase` | Illum incidunt alias ipsam doloribus., Atque eveniet deserunt placeat esse dolores hic odio., Sunt debitis consequuntur adipisci nostrum natus dolorem totam eius. |
+| `phrases` | Quis placeat nostrum culpa fugiat., Sint natus quis odio quos non amet unde eligendi., Libero accusantium exercitationem quibusdam laudantium ea laborum., Eum tempora quam ut odio cum., Illum asperiores odio dolores non ratione., Rerum minima voluptatum alias voluptate laborum similique numquam., Labore cumque dignissimos praesentium harum omnis laboriosam ut., Non accusantium porro asperiores quos temporibus accusamus., Maiores accusamus nulla error nemo consequuntur autem. |
+| `sentence` | Modi vitae atque quo fugit quisquam quia debitis., Fugiat magnam corporis nemo dignissimos nihil., Sint sit praesentium cupiditate voluptate. |
+| `sentences` | Occaecati accusamus adipisci fuga dolore optio., Aliquam nisi veritatis accusantium itaque quaerat libero aperiam occaecati., Cum id repellat ipsa expedita veritatis quam nulla voluptate., Vero vel in modi voluptates., Eum excepturi nesciunt delectus non distinctio possimus vero quia., Facilis fuga dolorum pariatur animi consequuntur., Cupiditate doloremque aspernatur officiis blanditiis beatae quam., Esse dicta accusamus laborum nihil., Incidunt adipisci architecto rem itaque ducimus consequuntur pariatur. |
+| `word` | a, exercitationem, necessitatibus |
+| `words` | harum, adipisci, quia, nobis, libero, voluptatem, iusto, dolore, totam |
 
 ## FFaker::LoremAR
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | تحت الجيش الهجوم سمّي بالمحور جورج جوي. وجهان ما اكتوبر قام جحافل وصافرات و جيما. هناك وعزّزت تلك قام الأمم لإعلان وقدّموا,. الحرب المحيط غير بـ, بحث أوراقهم بريطانيا الأمم., بل, استولت الخاطفة وعزّزت جسيمة استولت يتعلّق مهانة. يبق كل ومن قد حرب. من وتم الحكم خصوصا ان فعل. التي إذ, الأوضاع المقيتة استعملت كل, كلّ أن. مما بل والجنود منشوريا هو في, الذرية والروسية., تم كل الى لبولندا،. الإستسلام مهانة ما المبرمة. بهيئة هناك بين كل. الصيني مرمى واقتصار الفرنسية والفرنسي أي اعتداء للجزر عن. يتم الأيديولوجية، الغربي بـ, بها. |
-| `paragraphs` | ما بلا لعملة التخطيط عقبت المسرح حيث قد أفاق. قبل شدّت, وفي حين حول استطاعوا يبق, بل. اوروبا والحلفاء حلّت بحق أحدث عن هو., وتم وحزبه بالحرب حول,. بـ, انه, غير عدد لم إختار ثم. بلا أم تغييرات يتم, البولندي ما ثانية مارد. يرتبط أخر وضم حدى من بال إستسلاماً لليابان رئيس. تحت بشكل عدد, وتزويده وقدّموا, عام احداث أم, يبق., حدى ما مع, دفّة. لفشل واتّجه نفس جوي فصل, السادس. الأولى و تعداد كل حتى, عدم تم,. باستسلام واستمرت بتحدّي مدن, هذه حول وحزبه السفن. بها به، فصل بـ الصين ما كل, أسلحته دنو., وتم البولندي عدم إيو كلّ وقد. لم مدن حالية مسرح بقيادة مدن كنقطة أوراقهم. تم الإستسلام لان وتتحمّل, السيء بلديهما غينيا دول, للأسطول., جسيمة حين, استسلام أي الشهيرة جيما الا الحرب اعتداء. حشد حول, والجنود لم لمّ. كل, أوسع الطريق الوزراء استسلام., حتى والحلفاء, كل ثم دفّة. ربع الإتفاقية إذ لم السادس الأجل الهجوم. دول وتزويده كل بحق وتتحمّل, بين., جحافل حكومة كل والبريطاني, عصبة الأمم. النازي عسكرياً الأوروبيّون إحتلال سياسة وفرنسا بل. وجهان الغربي قد إخضاع كلا حربية غير وإعلان وتم. الحكم وتم تم سلاح ان كل, كلّ يتسنّى غرّة،., والعتاد وانتهاءً الذرية النازي جمعت التخطيط مع, النزاع مع. سقطت مدن كل, تحت هناك الإقتصادي بالحرب. في ربع و, الدولارات ما. لألمانيا غينيا التجارية الثقيلة بالجانب لإعادة بـ لكل نورماندي. ان, الشرقية الجو قصف بريطانيا، جهة., بالقنابل وصل, تونس تكاليف الواقعة عدد المزيفة. وتتحمّل قد كلا النازيين يبق حربية. هو, حتى, النزاع قام. كان الشرقية الحرب الإستسلام مكن اعتداء تم. مع, غريمه قصف التكاليف والبريطاني, لبولندا،. |
-| `phrase` | لم الإنذار،, بل, العناد عل الشطر الله., منشوريا الشمل جحافل ما, قد بلا الصيني بتطويق., الأجل حدة هيروشيما شدّت, الامم منشوريا. |
-| `phrases` | الدولارات قائمة منشوريا باستسلام بـ كل, اعتداء أن حدى., العسكرية الثقيلة سياسة الوزراء., بوزيرها قد قد بتطويق النازي تزامناً يرتبط., بل إنطلاق مع أي ما, العسكري في., الأمم اقتصّت المدنيين ان, اكتوبر, الفترة., المقيتة الأيديولوجية، حتى, مع,., تم, اسبوعين عدم وضم., لإعلان الإحتفاظ بحث عدد أن النازية، كل, أي لكل., الربيع، من ثم بال ما, بل هاربر وتعدد الصعداء. |
-| `sentence` | اوروبا إيطاليا مسرح الشمل بالمطالبة الشطر وقد بـ., جديدة ما مكّن جمعت غضون وباءت بـ الأخذ., في النفط, ثم أم أي ثم الحكم يذكر. |
-| `sentences` | لقوات غريمه أواخر كل لم., يعادل في, موسوليني رئيس., لم تم مع بها حالية اسبوعين فاتّبع., لم غزو عرض, اليابانية فصل., الأرضية ساعة اللازمة مع ثم حول., دنو الضروري يتم وباءت الرئيسية والجنود الثقيلة عدد حين,., قام بالجانب قد خصوصا لعملة وضم الحكم وتعدد., لها للحكومة, حتى إيطاليا دول بريطانيا،., مارد الطريق ان كل اليابان يرتبط ليركز. |
-| `word` | بلا, النزاع, والحلفاء |
-| `words` | قِبل, حدى, استعملت, جسيمة, الإقتصادية, وعلى, بعد, المعاهدات, الى |
+| `paragraph` | مشارف الأمور, بالرغم الدّفاع بـ و شبح. لبولندا، غريمه الى بـ من أي حول عقبت خصوصا. دأبوا حين, بزوال بل., الأرض هو بـ ثمّة. للحكومة, الشطر إذ يتسنّى اسبوعين اعلان ثم لإعادة. لم الأمم بـ المقيتة بقيادة للإتحاد., بها وفي تزامناً الأمريكية الذرية أي ماشاء النازيين الخاطفة. ليتسنّى لهذه كل, ما, يتم. بالمطالبة نتيجة حول ثم. خصوصا الأخذ بالجانب العصبة دول المتحدة, الرئيسية. لإعادة تحت, لألمانيا دنو العظمى الإقتصادي السيء أحدث الأوربيين. |
+| `paragraphs` | وتم بريطانيا-فرنسا بريطانيا، الإعتداء إستراتيجية, لبولندا، دأبوا. بريطانيا مارد انتباه وتنصيب. جحافل حول ومن الولايات أم حالية ربع. أم تعد ألمانيا إذ, موسوليني ان. ساعة بلا حكومة حول, اوروبا المتساقطة،, اسبوعين., الامم وصل, المواد, طرفاً. احداث حدى اتّجة القنابل, أم والإتحاد ربع مكن. حول, للحكومة والديون بل, الجديدة،. إيطاليا الكونجرس ما عن يتسنّى الأوضاع لمّ المجتمع الأوربيين. أضف الامم الرئيسية بل العسكرية شمال., يتسنّى و مارد قام إستسلاماً, ستالينجراد, شبح كل, تكتيكاً. في المقاومة الجديدة، أخذ بوزيرها. مكن لان النازي ما كل, قام بشكل., ربع ثم لان ومن ثم أم,. أسر وتعدد القنابل, مما بها, ضرب في حربية قام. بتحدّي والحلفاء, غزو ما, بل بالمحور هو., الخنادق مليون الواقعة ان, بأذى. الولايات إحتلال السادس السادس النزاع بل أوكيناوا عدم. العسكرية اعتداء القوقازية وجهان أسر الأعمال. الأعمال هزيمة بزوال لغات الساحة بالقصف مع اعتداء., المجتمع الصيني , مع الشطر اعتداء. مع العسكري, أحدث يطول هو أثره، بـ. كان على جديداً بالمحور ألمانيا, وقوعها،. عدد النازيين دأبوا الإنذار،,., الأوضاع وفي والديون بحق دأبوا كل لها. تم حرب يتم يبق الهجوم ما كان غرّة، تم. احداث الهادي إيطاليا وضم الغربي الصيني أي., بـ المضي للأسطول دول. بقيادة أسر بتطويق أواخر. شبح بـ, الثالث، يتمكن الأمم الصعداء وضم. سلاح إيطاليا و غضون من السادس., الى مدن تم وحرمان المتّبعة الإعتداء و تكاليف. النزاع لإعادة يتم, الهادي. في, إذ في يبق,. |
+| `phrase` | حدة يذكر أثره، عدد والإتحاد., بقسوة النزاع وتم يتعلّق خصوصا بالجانب ساعة., لها هو من أفاق صفحة لم أم. |
+| `phrases` | الطريق وفي مع, بـ كل وصافرات بحق جورج., نفس عل, المتحدة, الأرض الإحتفاظ أم النازيين., لم غضون قام كلّ حلّت., النازيين هو انتباه المقيتة ألماني,., يذكر يكن, وصافرات السيء يتسنّى أكثر ثم اتّجة., باستخدام النازي ربع تعد الساحة قد بعد., تم هو استولت سقط يتسنّى., اكتوبر, الإستسلام عدم دارت., بها, أما , ماشاء إذ في مليون بـ شبح. |
+| `sentence` | فصل يتبقّ الإحتفاظ ربع لبولندا، تلك الإنذار، قبل إيطاليا., طرفاً سقط شيء علاقة قادة المجتمع صفحة هو., وقدّموا, ماذا جيما دخول ذلك يبق, الخاسر عرض. |
+| `sentences` | الكونجرس الأجل بها بريطانيا تم اسبوعين إستمات وقبل رئيس., ثانية لإنعدام يتم, إستراتيجية,., لها جديدة الهجوم أن قد الثقيلة., سياسة أي على بل, المجتمع., حول, وانتهاءً قد واقتصار تونس يتعلّق غزو بـ استطاعوا., الأمريكية يتم سلاح حيث ما, الخنادق و وحتّى لان., بل أن الأمريكية بالرغم., أن ان ويكيبيديا، كل., غريمه و بريطانيا، كل, هو هو يبق. |
+| `word` | فاتّبع, عن, بـ |
+| `words` | شبح, الله, تم, مع,, غزو, الصعداء, لألمانيا, الأمم, أوكيناوا |
 
 ## FFaker::LoremBR
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | r3thb934c0t5keondwwstk8vwx3g3khkhrrolc24d77vp8t1sjb57jfwggsxdyoj71urqzd2203v3hku0hc5tz9j84pus2es6ufqvnbnag6u0qy9lnoidtbnwtst74izvlywt1rth721hdcs7tb5baltc2o75v76qyth0scnjoko146vdmr4akz4u6hcy01zay4pmv7ucixzckzqcvbpfilbxb173qpdfnxiai4l6cavba5jvje2c70gofz7yqk6u, qbq4d9wq5di6g953p4mv88ro4ohk4wy79s3h910117tekme5vs6b59s572ythi1ub5d5txcski7qvcd02iho2rxkxi275nqbtvzql9t871q2l38dhlgjv5byi2szggl9554cpc3xknghdjzd1ibqvi6y43t2gi5l24lc5sywasrp3bx98ren5cu6zyk3ivrcx91oiu63777zn3ew2mmtj0zk51mlrqmryzvm7mooba2et9nplev96pcl7vahw50, nmsn3ugb7fmvz2rg7vcxt4g9fhj1vi7ueo7kgwpt4fc8b7k0f1nt87ufp7r4isawdkj8b1zfbd62na2s5jc0lx06f83vcv3um6aca48k0yufewi4aejbmajvlolies59mk331sratk87qf9ty1zrpi65ahgjslgtpmpy76rlhovc80tiyi2odmeu444mk4zqfnrnwasw4cliege0oi4nxqykvdqd6h7mhe4aj2gdtvcvtlmsj6asft7fxvsd1cp |
-| `paragraph` | Em devo desejo extremamente evitada dar mesmo deseje algum. Falham impede ninguém não dos felicidade prazeres racionalmente que. Dar alguém pelos idéia casos devem ou sábio todo. Dos exemplo pelo desejo disso? nasceu sábio. Mesmo por reais exercício perfeitamente. |
-| `paragraphs` | Disso? ensinamentos empreende outros ame quem com momento. Para fáceis direito vontade dor casos. Desfrutar indignação fazer labuta obrigações. Labuta quando ame fadados nada por àqueles os. Dizer qual obter dor irritantes sábio uma há.", "Obter si princípio freqüentemente desmoralizados grande evitada essa para. Alguma mestre-construtor vantagem explorador distinguir casos encolhimento enganados sábio. Busque piores falham mais mestre-construtor. Sistema dores certas seleção impede portanto dos. Si do irritantes sempre deseje direito.", "É nasceu do essa não para cegados de. Bem-vindo essa ocasionalmente nasceu atém direito exercício devem relato. Homens aqueles gosta princípio laborioso por enganados explorador evita. |
-| `sentence` | Denunciar perfeitamente rejeita dar pelo alguma homem. |
-| `sentences` | Buscar sábio mais humana cegados., Certas sejamos homens empreende uma grande., Reais humana repudiados assegurar perfeitamente desmoralizados lhe., Casos justa mestre-construtor esse proporcionar empreende busque devo., Cegados prazeres dizer impede nós felicidade circunstâncias tem. |
-| `sentence` | Racionalmente a completo aceitos que fadados. |
-| `sentences` | Racionalmente a completo aceitos que fadados., Algum desimpedido às em lado pelo exemplo., Hora idéia si justa desejo humana. |
-| `word` | ninguém, ame, alguma |
-| `words` | relato, exemplo, irritantes, reais, laborioso, mas, mais, negócios, atém, devido |
+| `characters` | qai6rs2io8f2ru7qys5u8fgssmpoxje52xpt34n10hufrbfzsok1z1zoep606mp3byxc5vvkht7i6ycodtm0m81dgmkrd8whugsimv9tq6fkfgm8nmhvd4a7zmv2mgl8066i2v8oj76oa044xs9uzolxyxwv75ldhtlpr67v99ftio4k2sf584yx6iw89rfhdf7vobbofy8iukxo9umpd0xfedlomuv151ehuvovkdincfuia65jeekfara53ed, 08xexgpmki19tm59n74464hpwadgspwp42wdtkdgonluooetpzdbfpe412ncvw2h1awk6dixeamlo9i6sq538n0jiv8bis1myjqj4rz0ic7p8wv1ft3gnol93cyaemj7dnw76ecr1meyoy5mn9xwo7qnch61kwslepn3m916j2xcha28xkp98opo2dtf14w8ruvfrffzfckqxe775coigoz49u6astpzpo3hgz6xjikjx10ieq6rck7uewx7612, l9xltgpdbo62sj97aqtwrd8b5o1lznx28esj5tyaazzyd02t6mmoagthqb42dnjitue4kz1e2noltigcr9qmsblrvax475du2v8ubnktj7gbrnlgp3zv0ln3rktq9xmsltgom9avcjnd0sgoec0fdr957ujhktpe1klvhm2lpebulkzg1bqjm9yd872dl6wen6arvcbd3j0kvy37jf08n9ie4r2ja37mfkelmhrl9x936w2fliwizo09m6458c8 |
+| `paragraph` | Empreende disso problemas estão fazer ocorrerá um. Físico exceto nosso igual reais através. Maiores vontade ocasionalmente grande qual gosta dos., Verdade ocorrerá os poder que tampouco. Problemas hora encantos nosso esse sábio aborrecimentos relato os. Prazer o acontecer esse desmoralizados equivocada. Ser fazer o desimpedido desejo problemas., Busque labuta são físico dar prever. Escolhe tolera casos resultante ensinamentos falham desfrutar físico tem. Outros gostamos laborioso momento certas. Gostamos antipatia seu vantagem através pelos. Poder fazer repudiados culpa casos sejamos não desmoralizados de. |
+| `paragraphs` | Relato qual escolhe desfrutar evitada obter esses. Dever piores aceitos obrigações e. Nosso igual homem atém prazer. Dor nasceu completo impede com extremamente pelo se nosso. Freqüentemente simples do fazer àqueles., Para a problemas ocorrem desfrutar pelo um qual. Dar prazer obrigações grande culpa. Da casos em outro dever tampouco evitada gostamos um., Para aborrecimentos portanto pelos desmoralizados. Que dizer buscar expondo reivindicações ocorrerá uma. Darei obrigações homens dever acontecer problemas desfrutar. Pertence mesmo dos igual vantagem racionalmente sábio tem aceitos., Certas vantagem idéia igual devido. Explicar-lhe tolera falham antipatia ocorrem. Freqüentemente distinguir algum por tolera evitada escolhe negócios. Portanto ninguém laborioso os dolorosas., Lhe labuta prazer aborrecimentos obter para exemplo. Nós direito esses negócios prever indignação simples a homens. Dores nós gosta idéia vantagem justa., Outros da vantagem ocorrem explicar-lhe seu felicidade. Do ensinamentos mesmo algum ocorrerá culpa pelo quando. Tão encolhimento devido os com sabem ame aqueles fáceis. Encontram aceitos capazes assegurar podem às. Toda conseqüências empreende explorador quem evita si darei de., Resultante relato seu gosta indignação quem bem-vindo. O devo completo ocorrerá físico capazes casos. Por vantagem nasceu nosso disso., Dizer laborioso desfrutar dever nada labuta que prazer. Mais tem louvar expondo aborrecimentos. Exercício prazeres resultante igual explorador., Evita prever extremamente gostamos quem há freqüentemente para os. Circunstâncias é dos cegados desejo. Denunciamos obrigações da obter cegados. Cegados tolera obter podem e conseqüências idéia. Fraqueza outro resultante sábio equivocada lhe algum nós reais. |
+| `phrase` | Justa em sabem ocasionalmente denunciamos exercício explorador., Ocasionalmente homem ame ocorrem disso assegurar gostamos., Antipatia tem hora pelo essa em. |
+| `phrases` | Evitada exceto devido é direito mestre-construtor capazes., Dos hora dores outro completo trivial si podem alguma., Casos assegurar lado alguém prazer., Gostamos fadados labuta deseje conseqüências., Grande fáceis sistema humana seu., Conseqüências dores um simples desejo os grande., Pertence toda aqueles alguém em mestre-construtor tem., Os explicar-lhe maiores pelo momento vontade., Empreende circunstâncias labuta prazer sejamos. |
+| `sentence` | Estão quem repudiados pertence devem aqueles lhe., Às tampouco dores gostamos essa tão produz., Nós dar denunciamos problemas freqüentemente tem. |
+| `sentences` | Circunstâncias ocasionalmente ocorrerá e louvar sistema., Outros poder tão denunciamos darei para sempre., Verdade gostamos nada todo explicar-lhe através idéia culpa., Ensinamentos ocasionalmente igual não encantos nasceu., Ninguém desejo cegados encantos portanto., Esses indignação e laborioso se maiores., Assegurar sabem o direito desimpedido negócios., Evitar encontram o negócios problemas laborioso da toda bem-vindo., Lhe alguma não da escolhe labuta. |
+| `word` | desfrutar, tão, evitada |
+| `words` | por, atém, freqüentemente, esse, toda, escolhe, algum, ninguém, porque |
 
 ## FFaker::LoremCN
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | 怒目而视叮叮咚咚雪白绵绵细雨鱼龙混杂有始无终, 手忙脚乱时而鸡犬不宁不胜枚举, 雪飘如絮赞叹不已婀娜多姿骄阳似火纷纷扬扬, 刹那间半推半就象牙白管中窥豹半梦半醒九死一生眉开眼笑, 微微一笑手足无措激动人心人山人海。, 不计其数漫漫长夜惊弓之鸟咕噜空前绝后胆小如鼠, 秋实累累俯瞰手忙脚乱不明不白八仙过海，各显神通走马观花深入浅出, 面黄肌瘦承上启下迫不及待虎背熊腰, 两情相悦暴雨如注千方百计手舞足蹈安危冷暖冰清玉洁凶多吉少黑压压不计其数, 摩肩接踵不明不白五谷丰登龙争虎斗。, 惊慌失措骄阳似火天寒地冻深入浅出千变万化探望惶惶不安叮当, 柠檬黄指鹿为马望女成凤热浪滚滚迫不及待天南地北虎啸龙吟五彩缤纷, 齐心协力顺手牵羊犹豫不决时高时低黯然神伤口蜜腹剑胆小如鼠雪花如席。 |
-| `paragraphs` | 刹那间一言九鼎不可胜数驾崩烈日灼灼时上时下嚎, 天南地北三头六臂冰雪消融朝霞辉映自给自足当午日明雄狮猛虎交谈, 有始无终热浪滚滚雷厉风行叽叽喳喳, 瞥疾恶如仇波光粼粼气势磅礴。, 内忧外患青黄不接元柠檬黄, 茫雾似轻千山万水天老地荒开怀大笑, 七嘴八舌叮叮咚咚枣红悠然自得一贫如洗看望, 冰清玉洁红日东升万物复苏争分夺秒飞流直下。, 春暖花开于心不安一诺千金指鹿为马走马观花, 三令五申首屈一指六神无主自说自话, 万紫千红怒目而视东奔西走视死如归四平八稳绵绵细雨。, 嚎叫闻鸡起舞牛头马面招兵买马盯吼灯红酒绿聚精会神七嘴八舌, 口蜜腹剑怒气冲冲白纸黑字千丝万缕喜怒哀乐, 天寒地冻元大同小异泪流满面龙马精神千言万语, 车轮滚滚恨之入骨闻鸡起舞螳臂当车, 六道轮回叮叮当当惊弓之鸟不干不净爱屋及乌。, 生气勃勃无精打采前所未有粉妆玉砌高枕无忧, 议论生气勃勃理直气壮心明眼亮天寒地冻虎背熊腰六亲不认不伦不类四平八稳, 生离死别燃眉之急三长两短大名鼎鼎俯瞰纷纷扬扬摩肩接踵, 千姿百态凶多吉少不可胜数和好如初鸡飞蛋打行云流水一字千金九死一生虎啸龙吟。, 闻名于世小心翼翼冰雪消融为国捐躯齐心协力人山人海白茫茫, 瞬息万变早出晚归红彤彤精益求精, 金灿灿哗哗啦啦半推半就张灯结彩无情无义千姿万状三长两短指鹿为马牛鬼蛇神, 买空卖空能屈能伸迫不及待硕果累累连连称赞。, 暴雨如注扑哧疾恶如仇门口罗雀三生有幸谈论自吹自擂, 小试牛刀深恶痛绝怒发冲冠乐不可支八面威风七嘴八舌鸦雀无声狗急跳墙当机立断, 视死如归五光十色风平浪静铺天盖地龙马精神绿树成阴一马当先天老地荒, 两情相悦齐心协力有始有终废寝忘食伤心落泪碧空如洗指鹿为马。, 身材魁梧焦急万分叫嚷四平八稳一箭双雕暑气逼人不计其数四通八达, 九死一生千姿百态秋风凉爽买空卖空狗急跳墙交头接耳激动人心投鼠忌器纷纷扬扬, 交头接耳车水马龙喜怒哀乐指鹿为马八面玲珑刹那间时高时低嘶拳打脚踢, 感慨万分九死一生嚷雨打风吹自高自大绿树成阴细雨如烟雄狮猛虎思前顾后。, 令人发指激动不已热浪滚滚小心翼翼银妆素裹画蛇添足暴雨如注可憎可恶, 时隐时现一本万利七嘴八舌蹑手蹑脚瞅头重脚轻, 朝气勃勃七拼八凑嘶万丈瀑布桃红柳绿九霄云外交谈人山人海, 月圆花好天高云淡九牛一毛时明时暗舒舒服服秋实累累黑压压顷刻间, 废寝忘食咬牙切齿瞥承上启下同心同德黑白相间闻鸡起舞生死存亡惊恐万状。 |
-| `sentence` | 思前顾后打草惊蛇环视天荒地老,, 东张西望前因后果专心致志望女成凤坚贞不屈江水滚滚注视云开日出心灰意冷,, 千言万语燃眉之急雨打风吹牛鬼蛇神望子成龙, |
-| `sentences` | 闷闷不乐名列前茅叹为观止三思而行,, 硕果累累三头六臂天高云淡九霄云外七高八低三长两短眉开眼笑不屈不挠万花凋谢,, 绿浪滚滚买空卖空愁眉苦脸手忙脚乱望女成凤秋高气爽自言自语气势非凡安危冷暖,, 叮叮当当不干不净波浪滚滚争分夺秒牛马不如尸骨累累门口罗雀沙沙,, 逝世七窍生烟前所未有洁白如玉半梦半醒大同小异移步换影闻鸡起舞两败俱伤,, 飞流直下鹤立鸡群鸡飞蛋打古色古香八面玲珑迫在眉睫硕果累累二三其德,, 半明半昧四平八稳不明不白元,, 万家灯火买空卖空千变万化欲哭无泪无边无际,, 鸟语花香管中窥豹悔恨交加毫无希望牛头马面走马观花小心翼翼, |
-| `word` | 九鼎一丝, 五花八门, 红艳艳 |
-| `words` | 虎啸龙吟, 雄心勃勃, 交谈, 艳阳高照, 扫视, 连绵不断, 鸡飞蛋打, 东拉西扯, 瞬息万变 |
+| `paragraph` | 自吹自擂张口结舌嚷一触即发千山万水史无前例, 手足无措马到成功心旷神怡不明不白, 龙马精神三更半夜一落千丈有眼无珠人山人海探望废寝忘食。, 嚎啕大哭名列前茅五谷丰登振奋人心前赴后继万里无云雄鸡报晓光阴似箭, 五谷丰登两袖清风风平浪静心灵手巧, 交谈一诺千金争论不休雄心勃勃两败俱伤。, 秋月似钩各抒己见六神无主慢慢返老还童生龙活虎身材魁梧霎时间, 九死一生泣不成声三令五申云浪滚滚鸦雀无声指鹿为马理直气壮昂首阔步, 春风轻拂俯视激动万分八面玲珑东拼西凑。 |
+| `paragraphs` | 星月如钩有始无终风狂雨猛首暮色苍茫变化多端, 羞愧难言一诺千金有始有终黑白相间千锤百炼, 大公无私当机立断前思后想静思默想前因后果铿锵有力天经地义手舞足蹈喀嚓。, 一手遮天长短不同伤心落泪暑气逼人吼, 寒冬腊月足下生辉一马当先半推半就与世长辞水滴石穿, 不干不净绿浪滚滚议论纷纷排山倒海激动万分于心不安千丝万缕十全十美众志成城, 谈论五光十色不胜枚举嘶叫不吵不闹。, 一手遮天一日三秋门口罗雀惶惶不安恨之入骨, 李白桃红精益求精天色模糊小心翼翼十年寒窗空前绝后千姿万状, 四面楚歌无精打采喀嚓九鼎一丝二三其德, 孔雀蓝闻名天下移步换影李白桃红一泻千里难舍难分车水马龙谈虎色变, 摩肩接踵狂风暴雨愁眉苦脸四面八方一目十行。, 五彩缤纷顷刻间不进则退牛马不如出生牛犊, 十分可恶深恶痛绝五谷丰登蹑手蹑脚, 云开日出满山遍野探望优柔寡断无穷无尽九牛一毛金光万道视死如归。, 嚷一贫如洗无边无际形态多样雨打风吹万家灯火一见如故, 泪眼汪汪乘热打铁前思后想麦浪滚滚东奔西走有备无患扑哧, 天昏地暗疾恶如仇朝霞辉映有勇无谋手足无措长短不同嚎眉清目秀, 车水马龙惶惶不安乳白鹤立鸡群令人发指。, 暮色苍茫可憎可恶有始有终气势非凡不理不睬李白桃红不胜枚举, 灯红酒绿十拿九稳叮当时隐时现, 首先十分可恶凝视龙马精神谈虎色变, 雪白秋雨绵绵鱼龙混杂天南地北六道轮回雄心勃勃顷刻间千锤百炼。, 自高自大聚精会神古色古香一诺千金火眼金睛千变万化秋实累累千姿万状, 杀鸡儆猴寒冬腊月七拼八凑大公无私, 八面玲珑激动不已咕咚自暴自弃蛛丝马迹三九严寒鸣六道轮回绞尽脑汁。, 足下生辉泪如雨下快如闪电一字千金慢慢谈虎色变眉清目秀, 两肋插刀细雨如烟莺歌燕舞天高云淡争分夺秒惊弓之鸟, 绝无仅有昂首挺胸语气坚定虎背熊腰九鼎一丝蛛丝马迹声名狼籍, 惊天动地出尔反尔气势非凡能屈能伸缓慢黑白相间七上八下。, 百感交集一诺千金画蛇添足议论, 十万火急一心一意羞愧难言对牛弹琴生死存亡专心致志首先风狂雨猛惊弓之鸟, 百感交集望子成龙柠檬黄叶公好龙大名鼎鼎, 天诛地灭载歌载舞七高八低昂首挺胸首先半明半昧心旷神怡五彩缤纷亡羊补牢, 水滴石穿热浪滚滚牛头马面大雪封门和风拂面首屈一指尸骨累累看望云开日出。 |
+| `sentence` | 半梦半醒瞄一目十行形态不一哗啦龙争虎斗争分夺秒,, 飞流直下一文不值古色古香大公无私空前绝后三长两短,, 返老还童千丝万缕马到成功无牵无挂谈虎色变一鸣惊人五光十色, |
+| `sentences` | 交头接耳冉冉白骨累累视死如归鸡飞蛋打心灵手巧,, 一诺千金哗啦鱼目混珠内忧外患,, 绞尽脑汁扑哧操之过急苦思冥想秋高气爽天罗地网开怀大笑成群结队冰雪消融,, 狐疑不决注视一诺千金瞻仰三头六臂华灯初上鱼龙混杂成千上万,, 于心不安无牵无挂百感交集声名狼籍有始有终与世长辞连连称赞专心致志,, 若即若离暴雨如注张口结舌瞅,, 振奋人心四海为家狐疑不决朝霞辉映当机立断小试牛刀,, 星月如钩字正腔圆史无前例天罗地网,, 落叶沙沙嚎叫不清不楚烈日当空有眼无珠狗急跳墙, |
+| `word` | 冰天雪地, 大雪封门, 乳白 |
+| `words` | 三九严寒, 铺天盖地, 泪眼汪汪, 银妆素裹, 元, 字正腔圆, 瞅, 一诺千金, 眼高手低 |
 
 ## FFaker::LoremFR
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | Jour sauvages joue mais écho. Décida et très firent flancs créas sur. L que était petit paroles s., Rencontra mots leur grammaire volent toute les en. Traîner cela fût restait coule un même prochain. Une exploitent est océan qui encoreloin. Flancs encoreloin puissante agence venait. Fallut agence vers alphabetville moins., Pacqua encoreloin au monts vaste consonnia semicolons vils. Mille tas ipsum semicolons. Bolo grammaire peut nom rencontra ferait voyellie. Lequel headline bouche projets. Où question alphabetville petit demeurent sauvages pas. |
-| `paragraphs` | Encore est aguets interpelle et approvisionne fin rue sémantique. Lorem pourtant ne coula laissa même côtes désormais genre. Bolo moins italiques interpelle coula puissante flancs. Aux sauf panse mais premiers déjà alphanatale encore. Par propre mille créas virgulos ressaisi il venait., Une voyellie rencontra désormais aguets sur des. Encore maintes sauvages virgulos de. Sûr attendraient aux là-bas il cette., Orthodoxographique et virgulos skyline maintes mot grand. Aguets consonnia prémâchées histoire. Paradisiagmatique que se finir un semicolons son demeurent., Ce côtes finir et la instrumentalisèrent. Bercail là panse volent son en au initiale moins. Rue larousse cette très. Aguets sauf son puissante désormais tout par mit de., Sémantique bouche une ils paragraphe. Monts dans règlalades voyellie firent la nécessaires traîner aguets. Paragraphe pays origines puis vodkale coeur s ce coula., Restait d ligne demeurent volent. Loin décida paradisiagmatique vie les finir. Bourg-en-lettres déconcerter pour ponctuation firent toute. Vils projets grammaire qui pour depuis ruisseau. Déconcerter nom bolo et., Été saoule aguets traîner prévint. Vodkale rencontra question jeta là cela ils en ces. Vers des coula raviser. Semicolons puissante volent été peut sauvages dernier. Phrases désormais tas prevenant dernier fins fallut., Il venait petite créas purent sournois oxymore bouche. Nom océan bourg-en-lettres mot rencontra lourd. Aguets fois pans loin mille ils subline long., Skyline son interpelle sain sournois fourmillait consonnia un. À qui vie jour venait côtes delà puis propre. Delà bourg-en-lettres c créas traîner litéralement mots été. Oreille peut ses nostalgique question vodkale prémâchées leurs. Consonnia maintes puis coeur virgulos jour. |
-| `phrase` | Mit vie oreille regard larousse été instrumentalisèrent., Question approvisionne entiers avait instrumentalisèrent., Maintes mots question mésusèrent. |
-| `phrases` | Virgulos interpelle lieu demeurent vils nécessaires., Cette peut qui point passage ferait petit ruisseau., Pointdexclamators coula un vous ils prochain coeur régit interpelle., S très joue vers semicolons aux remit., À en lourd voulut volent vodkale., Se entiers lieu pas., Bolos prevenant convaincre retrait nécessaires prévint et moins., Toutes tout gravi skyline raviser monts flancs peut motus., Ces mésusèrent projets motus. |
-| `sentence` | Ces ils laissa du., Lieues convaincre laissa interpelle phrases point., Paradisiagmatique finir monts s chemin venait déconcerter. |
-| `sentences` | D mille propre le que ressaisi retrait leurs toutes., Ponctuation où oreille gravi et ville., Régit bouche paradisiagmatique point virgulos purent grammaire loin., Bien créas demeurent maintes., Et aux italiques motus nécessaires rhétorique., Cuit sans s vers pays vivent., Monts petit leurs tas instrumentalisèrent loin., Litéralement ferait bercail fût petit leur phrases entiers agence., Sauvages vie moins il réecrite. |
-| `word` | décida, dernier, demeurent |
-| `words` | long, tas, aventurer, sûr, cuit, régit, longtemps, sain, Oxymore |
+| `paragraph` | En fourbes ces toutes est fallut raviser lieu leurs. Instrumentalisèrent déjà océan s. Mais raviser son le les semicolons voulut pour bolos., La fallut sauvages fois premiers fourbes sûr il grand. Pays initiale paradisiagmatique réecrite aux larousse. Origines lieu créas désormais pays ruisseau., Larousse agence toute le ils ressaisi jour retrait. Dans pas saoule ville loin au laissa. Point bourg-en-lettres exploitent premiers paragraphe. |
+| `paragraphs` | Attendraient paradisiagmatique moins fallut en oreille laissa. Sain gravi très aux lettrines tout purent origines. Mot en prévint chaîne mais cette. Pacqua là-bas mais exploitent., Toutes du monts régit phrases ponctuation. Là-bas bouche peut désormais très océan. Sournois sur long toutes nécessaires son coula. Même volent un sémantique déjà raviser. Océan pacqua copy ne bolos larousse en., Lourd sa et ils toute ferait lieues attendraient ce. Des que il par ce rue. Coeur ne l italiques entiers bonnes pourtant était. Semicolons écho coeur par mille. Sa passage encore retourner virgulos ne raviser désormais long., Ils ils ville en pans subline. Coula on sans restait de vie ils. Purent rhétorique question fin alors sur pointdexclamators vivent fallut. Italiques écho motus initiale firent mots., Origines vie qu preuve retourner il alphabetville sournois puissante. Lequel bercail cuit remit prémâchées mille petite. Oreille fourmillait déconcerter histoire initiale paragraphe. Lourd moins prévint vie pointdexclamators ils., Loin depuis lourd son restait la. Convaincre vivent regard là-bas alphanatale nécessaires encoreloin il. Pans décida flancs mille prémâchées., Subline ils oreille depuis leurs lieu coule. Grand tout italiques déconcerter genre vils. Joue longtemps attendraient bourg-en-lettres semicolons mésusèrent., Motus pays monts régit se. Italiques créas delà à oxymore consonnia litéralement lourd mais. Saoule les des convaincre tas. Tas fin grand monts., Rencontra petite skyline jour. Rebrousser aguets sans ferait. Preuve retrait d headline agence la ils initiale. Prevenant nom qu encore. Subline mots son petit raviser nécessaires phrases. |
+| `phrase` | Bien paroles puissante là-bas paragraphe coeur., Bercail traîner dernier fourbes., Attendraient litéralement vous voulut. |
+| `phrases` | Long skyline que italiques très par cuit lequel., Sans moins longtemps restait premiers cuit., Leurs phrases paradisiagmatique chemin océan instrumentalisèrent., Semicolons glissa mais paroles mille où dans volent., Phrases grand litéralement consonnia ferait mots., Les coeur litéralement avait larousse interpelle paradisiagmatique., Larousse prevenant monts mots., Panse point jour vils mille., Sûr alors un sauvages été le même. |
+| `sentence` | Pays la dissuader retrait lieues question lui., Monts chemin initiale genre saoule cette., Paradisiagmatique voyellie alors propre en dans aux. |
+| `sentences` | Instrumentalisèrent volent ligne vous il fût dernier sournois., Grand là-bas lieu projets joue très paradisiagmatique mais règlalades., Delà question bien nom toutes sémantique demeurent., Gravi règlalades sur semicolons leurs volent litéralement., Saoule demeurent alors été maintes., Qui convaincre prevenant subline., Bouche vaste de saoule., En très mit oxymore réecrite moins un petite., Même puis un vodkale alphabetville rhétorique. |
+| `word` | même, son, fin |
+| `words` | pour, prevenant, qu, entiers, cuit, une, petit, regard, coule |
 
 ## FFaker::LoremIE
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!" |
-| `paragraphs` | An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!" |
+| `paragraph` | An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!" |
+| `paragraphs` | An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!" |
 | `phrase` | Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid! |
 | `phrases` | Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid! |
 | `question` | Cén dáta atá ann inniu?, Cén dáta atá ann inniu?, Cén dáta atá ann inniu? |
 | `sentence` | Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid! |
 | `sentences` | Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid!, Is fearr liom seacláid! |
-| `word` | cearc, fuipín, ulchabán |
-| `words` | cearc, criogar, míol, broc, fuipín, ciaróg, rón, ciaróg, cág |
+| `word` | broigheall, cat, seangán |
+| `words` | reithe, fia, cág, faolchú, eala, meantán, bean, badhbh, cat |
 
 ## FFaker::LoremJA
 
 | Method | Example |
 | ------ | ------- |
-| `character` | ・, 。, ＝ |
-| `characters` | ぷね８＝ゑずひ％せお＠みぴんげゆちけぬ＃, えいぱべてこ６め？へにつゐぎぴぷひ＠ねる, あみざ４いでむぽとつす８こにだ＆しへ＜０ |
-| `paragraph` | するとあんなに元気に手をあげたカムパネルラが、カムパネルラがそれを知ってきのどくがってわざと返事をしなかったのだ、ジョバンニも手をあげようとして、先生がまた言いました。, やっぱり星だとジョバンニは思いましたが、すぐお父さんの書斎から巨きな本をもってきて、いつか雑誌で読んだのでしたが、なんだかどんなこともよくわからないという気持ちがするのでした。, このごろはジョバンニはまるで毎日教室でもねむく、そして教室じゅうはしばらく机の蓋をあけたりしめたり本を重ねたりする音がいっぱいでしたが、すぐお父さんの書斎から巨きな本をもってきて、まっ黒な頁《ページ》いっぱいに白に点々のある美しい写真を二人でいつまでも見たのでした。 |
-| `paragraphs` | カムパネルラともあんまり物を言わないようになったので、朝にも午後にも仕事がつらく、するとあんなに元気に手をあげたカムパネルラが、みんなに問いをかけました。, ザネリが前の席からふりかえって、そう考えるとたまらないほど、先生は意外なようにしばらくじっとカムパネルラを見ていましたが、急いでそのままやめました。, このごろはジョバンニはまるで毎日教室でもねむく、ジョバンニも手をあげようとして、それをカムパネルラが忘れるはずもなかったのに、立ってみるともうはっきりとそれを答えることができないのでした。, すぐに返事をしなかったのは、上から下へ白くけぶった銀河帯のようなところを指しながら、本を読むひまも読む本もないので、ジョバンニはもうどぎまぎしてまっ赤になってしまいました。, たしかにあれがみんな星だと、もちろんカムパネルラも知っている、やっぱり星だとジョバンニは思いましたが、けれどもいつかジョバンニの眼のなかには涙がいっぱいになりました。, それをカムパネルラが忘れるはずもなかったのに、そうだ僕は知っていたのだ、その雑誌を読むと、ジョバンニを見てくすっとわらいました。, それをカムパネルラが忘れるはずもなかったのに、たしかにあれがみんな星だと、ザネリが前の席からふりかえって、じぶんもカムパネルラもあわれなような気がするのでした。, ザネリが前の席からふりかえって、ザネリが前の席からふりかえって、カムパネルラともあんまり物を言わないようになったので、やはりもじもじ立ち上がったままやはり答えができませんでした。, 黒板につるした大きな黒い星座の図の、ぎんがというところをひろげ、本を読むひまも読む本もないので、じぶんもカムパネルラもあわれなような気がするのでした。 |
-| `sentence` | 上から下へ白くけぶった銀河帯のようなところを指しながら, それどこでなくカムパネルラは, 先生はしばらく困ったようすでしたが |
-| `sentences` | その雑誌を読むと, たしかにあれがみんな星だと, 上から下へ白くけぶった銀河帯のようなところを指しながら, そうだ僕は知っていたのだ, すぐに返事をしなかったのは, それをカムパネルラが忘れるはずもなかったのに, そう考えるとたまらないほど, ジョバンニは勢いよく立ちあがりましたが, すぐに返事をしなかったのは |
-| `word` | 砂利, 四方, 地球 |
-| `words` | 星, 太陽, つまり, ひま, 赤, レンズ, 銀河, ぼんやり, 承知 |
+| `character` | た, り, ５ |
+| `characters` | むへ１ほのさぬ＠￥せ、＜ちぽぞめ％＃＊に, ３ぴがた。９－＃ざい＜べそ＠にで＆ほ～ぷ, はぬひぢざぺび０き￥＝ぽとぶ５れ＆りぜ７ |
+| `paragraph` | そして教室じゅうはしばらく机の蓋をあけたりしめたり本を重ねたりする音がいっぱいでしたが、上から下へ白くけぶった銀河帯のようなところを指しながら、するとあんなに元気に手をあげたカムパネルラが、ところが先生は早くもそれを見つけたのでした。, このごろぼくが、先生は意外なようにしばらくじっとカムパネルラを見ていましたが、やっぱり星だとジョバンニは思いましたが、なんだかどんなこともよくわからないという気持ちがするのでした。, このごろぼくが、その雑誌を読むと、カムパネルラがそれを知ってきのどくがってわざと返事をしなかったのだ、みんなに問いをかけました。 |
+| `paragraphs` | カムパネルラがそれを知ってきのどくがってわざと返事をしなかったのだ、たしかにあれがみんな星だと、先生は意外なようにしばらくじっとカムパネルラを見ていましたが、まもなくみんなはきちんと立って礼をすると教室を出ました。, すぐに返事をしなかったのは、ぎんがというところをひろげ、先生はしばらく困ったようすでしたが、ところが先生は早くもそれを見つけたのでした。, それどこでなくカムパネルラは、すぐお父さんの書斎から巨きな本をもってきて、と言いながら、立ってみるともうはっきりとそれを答えることができないのでした。, 上から下へ白くけぶった銀河帯のようなところを指しながら、その雑誌を読むと、ジョバンニは勢いよく立ちあがりましたが、先生がまた言いました。, やっぱり星だとジョバンニは思いましたが、このごろはジョバンニはまるで毎日教室でもねむく、やっぱり星だとジョバンニは思いましたが、こんどもすぐに答えることができませんでした。, ジョバンニは勢いよく立ちあがりましたが、学校に出てももうみんなともはきはき遊ばず、そして教室じゅうはしばらく机の蓋をあけたりしめたり本を重ねたりする音がいっぱいでしたが、先生はまた言いました。, 黒板につるした大きな黒い星座の図の、本を読むひまも読む本もないので、もちろんカムパネルラも知っている、ところが先生は早くもそれを見つけたのでした。, そして教室じゅうはしばらく机の蓋をあけたりしめたり本を重ねたりする音がいっぱいでしたが、すぐお父さんの書斎から巨きな本をもってきて、上から下へ白くけぶった銀河帯のようなところを指しながら、それはいつかカムパネルラのお父さんの博士のうちでカムパネルラといっしょに読んだ雑誌のなかにあったのだ。, それをカムパネルラが忘れるはずもなかったのに、そして教室じゅうはしばらく机の蓋をあけたりしめたり本を重ねたりする音がいっぱいでしたが、朝にも午後にも仕事がつらく、ジョバンニはもうどぎまぎしてまっ赤になってしまいました。 |
+| `sentence` | そう考えるとたまらないほど, そうだ僕は知っていたのだ, やっぱり星だとジョバンニは思いましたが |
+| `sentences` | と言いながら, 先生は意外なようにしばらくじっとカムパネルラを見ていましたが, それどこでなくカムパネルラは, 先生はしばらく困ったようすでしたが, ザネリが前の席からふりかえって, 学校に出てももうみんなともはきはき遊ばず, すぐお父さんの書斎から巨きな本をもってきて, ジョバンニも手をあげようとして, ジョバンニも手をあげようとして |
+| `word` | 四方, いちいち, 銀河 |
+| `words` | 下, ザネリ, 赤, 蓋, 次, ぎん, カムパネルラ, 光, 博士 |
 
 ## FFaker::LoremKR
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | 가을 기상과 저 두른 즐거우나. 보전하세 동해 삼천리 닳도록 달은 괴로우나 하느님이 밝은. 삼천리 즐거우나 사랑하세 맘으로 동해 백두산이 남산. 보우하사 맘으로 구름 만세 즐거우나 사람. 즐거우나 높고 맘으로 대한 마르고 우리 무궁화 하늘., 사람 높고 우리나라 위에 가슴 대한 없이. 무궁화 사람 구름 보전하세 우리나라 백두산이 가슴 만세 화려강산. 충성을 밝은 동해 가슴 일편단심일세 삼천리 이 달은. 마르고 괴로우나 보우하사 없이 대한으로 사람 듯 구름 하늘. 남산 구름 소나무 만세 바람서리 기상과 우리나라 없이., 나라 하늘 무궁화 달은 남산 불변함은 마르고 공활한데. 위에 삼천리 동해 하느님이 충성을 맘으로 사랑하세 바람서리 길이. 기상과 닳도록 저 괴로우나 밝은 길이 사랑하세 공활한데. |
-| `paragraphs` | 소나무 충성을 철갑을 즐거우나 하느님이. 만세 위에 구름 우리 두른. 무궁화 위에 이 다하여 기상과 구름 소나무., 물과 사람 다하여 기상일세 철갑을 두른 하느님이 만세. 닳도록 충성을 사람 기상과 소나무 대한 높고 저. 닳도록 만세 저 위에 듯 구름 삼천리., 이 화려강산 남산 하느님이 물과 두른 보전하세 가을 만세. 달은 길이 대한 삼천리 충성을 맘으로 보우하사 화려강산 밝은. 밝은 길이 우리나라 괴로우나 보전하세 하느님이 맘으로 무궁화. 삼천리 마르고 저 구름 우리 보전하세 닳도록 가을. 기상과 닳도록 달은 위에 일편단심일세 높고 남산 동해., 하늘 보전하세 대한으로 없이 백두산이 대한 길이 만세 하느님이. 나라 대한으로 화려강산 동해 사람 가슴 두른. 우리나라 없이 만세 우리 소나무 나라. 만세 달은 동해 나라 우리 즐거우나 사람. 보전하세 맘으로 철갑을 남산 구름 듯 일편단심일세 다하여 없이., 보전하세 불변함은 밝은 길이 사람 가을 하늘. 무궁화 마르고 이 불변함은 없이 대한으로 백두산이 즐거우나. 충성을 만세 가을 하늘 기상일세 철갑을 대한으로., 무궁화 가슴 맘으로 사람 위에. 백두산이 맘으로 듯 닳도록 사랑하세 위에. 기상일세 철갑을 대한 일편단심일세 소나무 보우하사 없이 나라 만세., 물과 달은 우리나라 이 보우하사. 삼천리 다하여 닳도록 만세 바람서리 하느님이 백두산이. 불변함은 사랑하세 나라 삼천리 두른 달은 가을 보전하세. 이 소나무 화려강산 일편단심일세 저 나라 닳도록. 만세 기상일세 우리 높고 대한 남산., 기상일세 사람 다하여 기상과 공활한데 저 우리나라 하느님이. 사람 우리나라 충성을 물과 만세 화려강산 없이. 사람 충성을 백두산이 가슴 밝은 위에 마르고 철갑을 저. 마르고 동해 나라 물과 달은 위에 듯 하늘 밝은. 가을 기상과 길이 위에 대한으로 닳도록 백두산이., 무궁화 화려강산 보우하사 없이 나라 사랑하세 대한. 가을 우리 무궁화 즐거우나 대한. 보전하세 맘으로 철갑을 이 기상일세 보우하사 가슴 바람서리 가을. 길이 보전하세 백두산이 동해 공활한데. |
-| `phrase` | 물과 대한으로 우리나라 충성을 기상과 밝은 사랑하세 길이., 남산 만세 가을 바람서리 기상과 무궁화 대한으로., 하늘 이 화려강산 가슴 무궁화 달은 사람 충성을 마르고. |
-| `phrases` | 보전하세 두른 하느님이 백두산이 저 괴로우나., 하늘 무궁화 구름 동해 가을., 즐거우나 충성을 대한 삼천리 기상과., 나라 두른 충성을 화려강산 즐거우나 우리., 백두산이 대한으로 기상과 사랑하세 다하여 나라 우리 일편단심일세., 대한 기상과 불변함은 맘으로 길이., 높고 남산 듯 맘으로 마르고 즐거우나 보우하사 닳도록 삼천리., 이 물과 높고 소나무 괴로우나., 물과 길이 공활한데 마르고 두른. |
-| `sentence` | 하늘 두른 사람 길이 화려강산., 사람 마르고 우리 괴로우나 남산 보우하사 이 즐거우나 물과., 두른 가을 없이 남산 닳도록 높고. |
-| `sentences` | 닳도록 마르고 바람서리 물과 보전하세 나라 괴로우나., 나라 가슴 백두산이 삼천리 기상과 불변함은 저., 하늘 두른 구름 없이 만세., 이 보우하사 닳도록 삼천리 남산 하느님이 마르고 백두산이 맘으로., 남산 이 다하여 길이 바람서리., 보전하세 철갑을 밝은 닳도록 달은 없이 길이., 없이 불변함은 기상일세 철갑을 위에 높고 맘으로., 즐거우나 소나무 삼천리 보전하세 저., 기상일세 화려강산 위에 대한으로 일편단심일세 다하여. |
-| `word` | 삼천리, 충성을, 하늘 |
-| `words` | 하느님이, 우리, 하늘, 위에, 밝은, 사람, 대한으로, 가을, 만세 |
+| `paragraph` | 마르고 듯 남산 철갑을 소나무 우리. 물과 마르고 없이 다하여 우리 충성을 가을. 사람 만세 다하여 저 불변함은 무궁화. 동해 하느님이 맘으로 대한으로 닳도록., 철갑을 남산 즐거우나 저 없이. 기상일세 보전하세 공활한데 물과 구름. 보전하세 길이 듯 밝은 남산 하늘 가을. 사람 무궁화 맘으로 충성을 불변함은. 듯 일편단심일세 백두산이 구름 달은., 가을 백두산이 삼천리 맘으로 나라. 백두산이 높고 남산 다하여 밝은 두른 물과. 저 우리나라 마르고 이 길이 듯 보우하사. |
+| `paragraphs` | 달은 화려강산 밝은 가을 이. 즐거우나 기상과 대한으로 불변함은 만세. 우리 저 남산 사람 물과 일편단심일세 화려강산 소나무. 만세 가을 보전하세 사람 일편단심일세 다하여 길이 공활한데. 나라 저 기상과 대한 두른 위에 바람서리 괴로우나., 기상일세 우리 가슴 높고 괴로우나. 공활한데 길이 다하여 보전하세 가슴. 바람서리 사람 괴로우나 닳도록 달은 하늘. 듯 달은 맘으로 바람서리 충성을., 가슴 없이 구름 충성을 듯 사랑하세 대한으로. 구름 만세 보전하세 위에 달은 기상과 남산 동해 철갑을. 두른 대한 대한으로 다하여 가을 가슴 동해 닳도록 삼천리. 위에 보우하사 소나무 공활한데 닳도록. 공활한데 즐거우나 사람 대한 사랑하세 가슴 가을., 보우하사 없이 두른 이 달은 괴로우나 다하여 만세. 없이 하늘 두른 철갑을 남산. 구름 물과 남산 공활한데 길이 맘으로. 이 일편단심일세 바람서리 기상일세 보전하세 하느님이 두른 삼천리., 없이 충성을 하느님이 화려강산 기상일세 기상과 구름. 보전하세 하느님이 닳도록 괴로우나 마르고 소나무 사랑하세 동해 두른. 보우하사 가을 화려강산 일편단심일세 보전하세. 우리 공활한데 보우하사 사랑하세 길이 가슴., 기상과 듯 하느님이 달은 하늘 소나무. 하늘 철갑을 불변함은 맘으로 나라. 가을 괴로우나 없이 저 철갑을 물과., 다하여 불변함은 기상일세 화려강산 닳도록 하느님이. 다하여 위에 불변함은 우리 구름 밝은 괴로우나. 화려강산 높고 동해 맘으로 만세 즐거우나. 백두산이 가슴 이 위에 나라 소나무 우리나라 밝은 달은. 불변함은 화려강산 맘으로 대한 이., 듯 저 위에 닳도록 사람 마르고 백두산이. 하느님이 높고 마르고 백두산이 밝은 사람 대한. 보전하세 사람 소나무 기상일세 즐거우나 무궁화. 기상과 우리 일편단심일세 저 물과 괴로우나 위에 만세 대한으로. 대한 나라 두른 밝은 즐거우나 듯 닳도록 하느님이., 대한으로 가을 사랑하세 듯 바람서리 없이 화려강산. 남산 불변함은 달은 철갑을 마르고. 남산 무궁화 동해 나라 대한으로 삼천리. 삼천리 무궁화 저 구름 바람서리 보전하세 위에 우리 남산. |
+| `phrase` | 백두산이 사랑하세 하늘 대한 밝은 하느님이 없이 소나무., 저 불변함은 우리나라 높고 밝은 보우하사 우리 대한으로 가을., 불변함은 충성을 사랑하세 화려강산 길이 즐거우나 밝은. |
+| `phrases` | 나라 달은 사랑하세 가슴 공활한데., 하늘 사랑하세 불변함은 만세 가을 다하여 듯., 보전하세 없이 밝은 다하여 두른., 삼천리 괴로우나 닳도록 공활한데 없이 보우하사 우리나라 대한., 기상과 괴로우나 대한으로 하늘 백두산이 즐거우나 화려강산 맘으로., 괴로우나 즐거우나 달은 일편단심일세 대한으로 보전하세., 보전하세 일편단심일세 바람서리 무궁화 하느님이., 대한 없이 화려강산 두른 맘으로., 공활한데 두른 없이 사랑하세 밝은. |
+| `sentence` | 하늘 마르고 듯 불변함은 바람서리 길이 백두산이 없이., 소나무 하느님이 가슴 일편단심일세 밝은 즐거우나., 대한으로 화려강산 다하여 달은 나라 구름. |
+| `sentences` | 물과 만세 높고 두른 즐거우나 하늘 맘으로 닳도록 소나무., 기상과 기상일세 우리 철갑을 하늘 남산., 기상일세 바람서리 이 가슴 화려강산 일편단심일세 마르고 높고 나라., 즐거우나 남산 없이 바람서리 두른., 기상과 나라 달은 하늘 두른., 공활한데 불변함은 철갑을 일편단심일세 백두산이 구름 사랑하세 대한., 위에 우리나라 없이 사랑하세 하느님이 보우하사 백두산이 일편단심일세., 삼천리 사랑하세 하늘 남산 듯 달은 보전하세., 길이 저 바람서리 대한으로 이 물과 가슴 달은 사랑하세. |
+| `word` | 가슴, 우리나라, 소나무 |
+| `words` | 일편단심일세, 위에, 바람서리, 보전하세, 가슴, 위에, 보전하세, 위에, 삼천리 |
 
 ## FFaker::LoremPL
 
 | Method | Example |
 | ------ | ------- |
-| `character` | a, ł, k |
-| `characters` | wjiłcśużtą, dlótoębgsź, cdnłiglbpń |
-| `paragraph` | Armenia kocher brodawka pasterka obręcz odwiedzenie pekińczyk nokturn drogi wstrząśnięty. Aplikacja buchta kamerun suwak dualizm połowa złom wręga. Wykop kudu czajka armenia hydraulik abdykowanie dania, dodatek tarantula trap adopcja spanikowany. Alimentacja balerina balsa żak podbijak rotacja wolno aplikacja opuszka., Rzęsa trop wolno rotacja sadz abdykowanie substytucja żakiet. Proporcja kuwejt zebra inteligentny próg trąba sklepikarz konkret zmywarka, jęczmień lew. Mech krętarz podbicie pętla wznieść rześki ferment uczuciowy., Byczek połowa senegal suma frekwencja nadgarstek obojętny pogłębiacz złom. Panda robinsonada ekscentryczność autarkia opuszka infuła topos władza. Byczek jądro złom namibia watykan wznieść zimowisko inteligentny, element krętarz iglica lada. |
-| `paragraphs` | Sadz angażować obojnactwo przebiegły damka, proces inteligentny orgia dania tetryczenie ława. Dziobak pacierz żakiet autarkia kamerun pokolenie kudu doświadczenie, iglica katedra balot władza. Pokolenie galeria atonia dyscyplina rzęsa podbijak miednica ferment ściana. Sceptycyzm rozprawa skrypt wolant kufer, repryza proces stuknąć pływacz element lew. Buchta jordania dyscyplina ekscentryczność byczek nagłówek cieszynianka!, Bark sok abdykowanie rabunek grenada płomyk forma baba lada. Abdykowanie topos drewno wieniec konkret delikwent pochwa adopcja. Lędźwie lada sadz balot trop, panda tumanienie rdza przywilej substytucja frekwencja. Panda lot obojętny packa jęczmień pogotowie poler nokturn odwiedzenie?, Piston brechtać wykop hipopotam substytucja pekińczyk salwador balsa. Sklepikarz balerina prawica demiurg, topos hydraulik liban gacica armenia weto drogi pióro. Skrypt paleta sędzia cieszynianka złom namibia rdza placówka! Obojętny balsa proces wyrocznia jądro packa, pływacz tetryczenie rotacja ława delikwent demiurg. Pazur salwador stuknąć alimentacja cieciorka hipopotam nadgarstek zapalarka?, Szyk wolno rotunda przelot znaczek balsa dualizm, hałas prącie kostur glon. Wolno utarczka pasiak władza bark krętarz delikwent pazur? Upaść park nokturn hydraulik zmaza zarzutka namibia adept dualizm, rekwizyt hala. Jordania władza trop zebra krętarz angażować platyna, płomyk znaczek placówka wykop kudu. Pazur kufer sylabowiec tytan fizjoterapeuta pochwa proces brodawka liban., Trąba trap rosja repryza autarkia dyscyplina przebiegły jarzmo substytucja tumanienie? Sklepikarz rosja wróbel cieszynianka, dyktator adopcja jaguar substytucja zmywarka rak złom metka. Adopcja grenada burta topos rozprawa podbijak wieniec. Abażur kostur debiut sceptycyzm pokolenie pętla obojnactwo bruzda nosorożec napletek., Twarzoczaszka rdza brechtać toto, pogłębiacz pępek dyscyplina tarantula tetryczenie benin delikwent. Dziąsło forma kudu repryza brodawka detektor przelot kamera utarczka. Znaczek substytucja obojętny miednica adopcja kufer spanikowany pępek suwak? Nadgarstek robinsonada jądro zebra delikwent sędzia wywrót zszywka. Tumanienie tygrys sceptycyzm rotunda dziobak as fizjoterapeuta, ferment wręga balsa sielanka., Suwak odwiedzenie pasterka sielanka demiurg ściana liban ekscentryczność delikwent cieszynianka. Podbicie tetryczenie brodawka nosorożec proces lot drewno? Graba autarkia balot bezpiecznik adept, baba przelot jordania lubo szoferka pętla., Pępek frekwencja bełkotać trąba dziąsło gródź angażować. Wręga wolant delikwent nadgarstek balsa weto kowal. Proces bruzda doświadczenie dualizm zimowisko zszywka zdecydowany., Galeria cieciorka pływacz bezpiecznik upaść liban, packa obojnactwo wolant inteligentny sylabowiec! Senegal lis metka toto zszywka byczek płomyk próg! Plater prawica grenada jęczmień kocher zdecydowany, delikwent krętarz dania jądro ekscentryczność. As wznieść aktywować wycieczka burta zmaza pióro. Adopcja kowal hala prawica obojętny rabunek rześki dodatek brechtać pogłębiacz, wznieść wywrót. |
-| `phrase` | Debiut wieniec hazuka pętla liban rekwizyt adept wycieczka ustnik buchta., Substytucja mech katedra rosja wróbel gacica bezpiecznik wykop północ., Lis wywrót podbijak pokolenie udar armenia adopcja milicjant adept. |
-| `phrases` | Podściółka mech kostur pętla, pazur złom jarzmo ściana pełnia angażować zebra pogotowie!, Baba wyniszczenie biceps walor benin fala pachwina?, Odwiedzenie kowal induktor pogotowie autarkia, rzęsa brechtać pełnia płomyk panda kubeł biceps., Pogłębiacz meduza zimowisko milicjant samotnik liban weto fizjoterapeuta., Atonia fala spałowanie toto pekińczyk przelot przerost czajka lubo, agent kufer., Adopcja krętarz damka sok packa stanowisko przerost, kostur dania sędzia przebiegły mech., Suwak znaczek ustnik bełkotać panda biceps pępek maniera stanowisko., Dodatek drewno tężenie kostur konkret wywrót rdza., Ferment wręga napletek próg lubo balsa trąba? |
-| `sentence` | Obręcz as tytan zdecydowany cieciorka zmywarka runda bełkotać dania., Element kamera toto wzór demiurg tężenie dziąsło pogotowie, meduza wolno wolant?, Klaps dyscyplina próg pióro hałas armenia wykop. |
-| `sentences` | Nosorożec absolutorium kowal graba gródź baba balot hala, adopcja dyktator kamera gacica., Złoty tarantula pekińczyk kowal wolno dodatek debiut platyna wręga wzór., Rak połowa wyrocznia suma, pazur adopcja cieciorka bełkotać ferment rzęsa armenia?, Sadz dualizm przywilej wodnik donica burta kufer., Placówka jądro pochwa ferment baba próg, rozprawa podściółka uwaga sklepikarz watykan., Odwiedzenie próg przerost hala rozprawa drewno przywilej bark, tokelau zszywka dania?, Proporcja biceps szyk kudu rdza packa jordania przerost aktywować., Anulować metka gacica pętla, dodatek lis rozprawa połowa znaczek agent rabunek., Abażur lot zdecydowany zarzutka, gibraltar tetryczenie salwador fala utarczka nokturn skrypt. |
-| `word` | dualizm, substytucja, dyktator |
-| `words` | bariera, dziobak, lędźwie, zszywka, nadgarstek, balsa, suwak, bark, abażur |
+| `character` | r, ó, t |
+| `characters` | ómchćźntuę, smcłhdńety, zsbśdłięlf |
+| `paragraph` | Kowal rak bruzda element suwak zebra toto! Pogotowie baba byczek prawica rotacja tokelau przerost frekwencja pacierz stanowisko. Jądro element graba przerost substytucja hipopotam absolutorium brodawka kowal? Nokturn biceps sielanka tężenie pazur drewno jarzmo. Opuszka znaczek zszywka przywilej rak udar czajka inteligentny?, Robinsonada ława hazuka podbicie samotnik dziobak próg. Hipopotam podściółka trap pokolenie hałas sielanka watykan absolutorium armenia, placówka burta. Zimowisko topos burta fizjoterapeuta maniera placówka piston, balot sędzia pachwina ława. Balsa znaczek baba rzęsa inteligentny delikwent wywrót bełkotać rekwizyt rotunda, platyna paleta., Rześki pasterka gródź obojnactwo żak kostur wróbel twarzoczaszka? Bark aktywować dania element, pochwa dziobak skrypt pogłębiacz biceps frekwencja tytan hala. Ława próg wodnik spałowanie panda delikwent konkret, infuła repryza pazur proces. |
+| `paragraphs` | Zdecydowany aplikacja tężenie bruzda obojętny, detektor płomyk watykan abdykowanie gacica pokolenie frekwencja? Byczek fala żak lew induktor, platyna podbijak napletek jordania pasterka sadz. Autarkia abażur fala packa ferment watykan brodawka alimentacja dodatek wykop., Wolant suma żak jaguar autarkia obojętny donica miednica sok milicjant. Drewno burta nosorożec złoty wzór suwak, pochwa gródź krętarz obojnactwo sok przywilej. Połowa spałowanie złoty ława gacica bełkotać as nokturn nagłówek. Nosorożec poler suma pekińczyk wolant aplikacja wyrocznia szoferka gródź katedra? Jądro absolutorium mech prącie nokturn tarantula złoty., Wywrót sklepikarz toto aplikacja lędźwie zapalarka forma wykop odwiedzenie. Nokturn proces wręga obojnactwo pasiak salwador armenia balsa weto. Walor atonia odwiedzenie fala kamera donica suma wycieczka?, Jaguar twarzoczaszka hałas element bariera adopcja ściana wyniszczenie przerost. Balerina sklepikarz wieniec delikwent pępek jordania abażur kudu, balsa podbijak trąba wznieść. Spałowanie trap jordania spanikowany balsa tężenie gacica pętla dyktator rdza. Orgia kufer burta tytan, lis katedra bliza pokolenie wyrzut zmywarka jęczmień!, Gacica ustnik gibraltar rześki wyrzut sklepikarz zapalarka. Angażować rześki przywilej senegal metka spanikowany wolant bark balot, nokturn zapalarka próg! Bezpiecznik obręcz ustnik sok złoty wieniec, żak pasiak balsa obojnactwo rak fala. Miednica drogi panda wyrocznia dualizm, rdza substytucja szoferka wróbel rotacja prącie pogłębiacz?, Przerost tetryczenie dyscyplina tokelau buchta, upaść detektor zarzutka autarkia gródź miednica aplikacja! Fala kufer rabunek bruzda salwador konkret sędzia frekwencja zmaza, tumanienie dualizm gródź. Rabunek park zmaza byczek znaczek biceps tokelau podbijak., Orgia gacica gibraltar wstrząśnięty miednica panda przerost rabunek. Liban spanikowany pachwina miednica wstrząśnięty suma wyniszczenie pazur! Atonia pępek obojętny stanowisko tumanienie pole liban piston, jądro skrypt pekińczyk? Wyrocznia pogotowie proporcja złom północ podbicie pasterka przerost wręga, gibraltar nagłówek? Tokelau bełkotać szoferka opuszka napletek suwak drogi!, Forma kowal żak ekscentryczność tytan mech wyrzut odwiedzenie, japonia pogłębiacz wolno dziąsło. Pióro błyszczeć fala wręga rdza induktor wstrząśnięty. Tygrys kostur watykan odwiedzenie balsa, płomyk bariera lada delikwent próg balot. Drewno benin płomyk pokolenie runda sylabowiec zimowisko połowa jaguar angażować., Przebiegły lis alimentacja obręcz forma rześki armenia pływacz burta? Prawica trop przebiegły adept jarzmo pióro napletek pacierz pogłębiacz! Wzór kocher wznieść balsa pływacz pokolenie autarkia atonia. |
+| `phrase` | Pasiak debiut sadz pacierz nokturn proporcja fizjoterapeuta abdykowanie?, Anulować odwiedzenie kamera uwaga abażur napletek balerina., Plater piston drewno napletek frekwencja ustnik stanowisko zebra balsa! |
+| `phrases` | Robinsonada byczek grenada hydraulik wróbel pętla toto., Wzór ekscentryczność sklepikarz tytan dania przebiegły rzęsa obręcz odwiedzenie, robinsonada mech., Miednica kocher abażur frekwencja lot twarzoczaszka jordania., Ustnik tytan grenada próg liban biceps nokturn klaps, lubo pętla frekwencja., Pasterka kubeł wyniszczenie proces, zszywka detektor walor podbicie zebra połowa tumanienie rosja., Milicjant iglica rdza wolno bariera dyscyplina szoferka spałowanie pole, błyszczeć rak!, Rzęsa lędźwie wyrzut pętla hałas znaczek glon biceps próg zarzutka., Gacica zszywka pole park suma bezpiecznik ława wzór platyna, buchta władza abażur., Topos wręga bark orgia substytucja wycieczka induktor! |
+| `sentence` | Cieciorka bark wodnik szyk milicjant adept wręga., Rak udar packa lot lew orgia dualizm pogotowie., Adopcja nokturn dodatek kamerun tetryczenie brechtać debiut upaść północ infuła. |
+| `sentences` | Ściana pełnia ekscentryczność zimowisko jordania, detektor tetryczenie utarczka pióro skrypt wręga połowa., Salwador kocher jarzmo atonia wolno prącie, liban pióro biceps panda twarzoczaszka., Anulować abdykowanie dyscyplina paleta kostur hala wodnik?, Udar dziobak kamerun jordania północ napletek piston obręcz tokelau., Forma balerina tężenie przerost senegal balsa klaps ekscentryczność pętla kamera., Aplikacja przerost tetryczenie zarzutka twarzoczaszka bruzda bariera wyrzut sylabowiec rozprawa!, Trop tytan liban anulować pole frekwencja zmywarka forma., Watykan sielanka cieciorka ekscentryczność tetryczenie panda park północ jarzmo, szoferka wycieczka., Brechtać lędźwie balot hydraulik gacica wyniszczenie tygrys rdza iglica. |
+| `word` | trap, park, uwaga |
+| `words` | biceps, rotacja, adopcja, lot, wycieczka, sok, pióro, atonia, miednica |
 
 ## FFaker::LoremRU
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | Стороны тем иней радиоволнах ноны невелика сила. Точно ищет этой являются так состоит зелёный как доля сила. Так галактик можно, этой объектов зелёный наблюдениях выводу вызывалась кроме спектра даёт? Ищет трудность дата вопросе которого, оптических сверхновых состоит нас объектами материи остатками. Являлась точно сила больше, никакой вопросе после слились даёт равен окнах., Радиоволнах дискретных налёт этой указывали, аэросъёмка при можно стороны по вина! Группы второй том бы окнах ближе звёздами температуры лишь. Мы вопросе начиная, искать межзвёздная больше большая ближе дата бы входящими удалось выдвинута собой нулевой источником. Объектов действующие лишь зелёный межзвёздная сила экватора где, точно больше звёзд. Много тогда около всё отсутствие что как было каждая была., От звёздами больших выдвинута или лист неба объектов равен тогда, как остатками ищет более. Подъём близкими наблюдениях газовой точки что звёздами равномерно, тёмный без десятки то как достаточно даже. Содержащей лёгкость тем гипотеза никак не выше, большая квадратных астрономии многочисленная бы. Таким невелика яркие, зелёный являются связи оказались начиная объекты налёт по быть расстояний искать была? Вне вспышек много достаточно могли показывала что после. Дёрн невелика очень пылевой от могли указывали. |
-| `paragraphs` | Галактик было точечные гипотеза от, больше целой источником быть разъём дискретных всё поскольку. Же галактик тем являются источников около доля? Никак низкие угловое равен образом тогда после, ярких дата сильное дискретных. Было содержащей доля близкими, спектра твёрдой удалось таким угловое сверхновых площадке лимб! Новых более надеяться слились было являются указывали., Что видимости тёмный случайным содержащей то основная могли оптически квадратных быть, низкие являются неба. Состоит целой время подъём узкой вопросе, разъём объекты ёлка случайным связи. Без этой видимости связи трудность того действующие. Низкие дата квадратных указывали ищет поскольку или от так. Радиоволнах видимости слились гипотеза квадратных менее, даёт блеск действующие лёгкость равномерно время объекты., Или блеск источниками была связи так существование. Никакой угловое ноны аэросъёмка окнах действующие видим что которого, силу ближе наблюдениях сила нас группы. Оптических звёздами типа многочисленная после точки площадках материи тех ищет, определяется целой других угловое новых дёрн. Вне больше вызывалась кроме объектами нужно или? Всё мы много, низкие равномерно из то этой каждая стороны вне слились твёрдой понятно. Невелика квадратных где ярких том, твёрдой случайным точечные неба лишь окнах площадке даже начиная тем менее?, Оптическое лист могли группы облаками образом яркие не. Близкими температуры более таким дата выше тема, будет стороны менее больше мы нужно! Ёж яркие межзвёздная невелика понятно будет звёзд отсутствие. Достаточно где окнах была остатками, собой узкой объектами точечные целой нулевой. Очень существование температуры могли быть начиная разъём. Точки поскольку быть температуры астрономии надеяться объекты являлась же, звёзд угловое этой., Расстояниях иней большая, начиная из оптических всё равномерно это источником пылевая минут распределённых. Пылевая большинство полосе тем трудность сильное понятно вопросе остатками. Зелёный минут время каждая астрономии, сила то второй мы аэросъёмка окнах узкой! Такая равен образом оптически как лимб большинство, второй достаточно около без ярких невелика больше. Сила подъём вне выводу так, по о или около нужно ярких могли., Немногочисленных видим входящими тема можно, расстояниях сила экватора где выше даёт даже тогда тёмный. Удалось выдвинута других то наблюдениях вызывалась группы как. Бы группы вне вопросе невелика, больше слились источниками же тоже нужно. Блеск надеяться квадратных дата, время тогда отсутствие или равен окнах таким разъём новых начиная тем объектов. Силу площадке ёлка иней отождествляя показывала или трудность., Случайным из слабых, на второй ёж иней источниками тоже блеск никакой начиная газовой. Надеяться яркие материи таким равен твёрдой зелёный много объектами которого звёздами состоит, оптических том этом. Например же быть десятки пылевой показывала основная. Аэросъёмка даёт остатками которого сильное неба определяется источником гипотеза. Выше каждая вызывалась зелёный дискретных, налёт нужно бы ёж так то типа звёздами тоже ёлка являются. Объектами сильное оптическое тех силу квадратных подъём около, оптических вспышек точечные же. Экватора тёмный тем звёздами между бы случайным, искать после точки слились являлась твёрдой ищет., Низкие кроме выше ближе, слабых что образом равен по тогда менее ноны! Других доля источником большинство же можно выше невелика бы. Ёж этих новых трудность время точки источником остатками. Точечные без никакой трудность источников была квадратных других же пылевой расстояниях, даёт объект тема дата нулевой. После такая что концентраций типа, слились квадратных менее лимб минут по. Новых надеяться на будет кроме после точно начиная, ищет наблюдениях астрономии источники. Не десятки даже так ближе слабых точечные где?, Многочисленная точечные вне каждая бы состоит доля, то связи ярких при после что. Близкими разъём неба лист, определяется даже того низкие без начиная других собой невелика газовой. Таким квадратных разъём около существование сильное сила оптически наблюдениях. Вина не ярких лишь точечные менее оптическое, определяется квадратных всё от лёгкость площадках. Наблюдениях кроме ярких подъём удалось о ищет. |
-| `phrase` | Из около зелёный начиная это состоит же., Равен того ноны угловое являются пылевая равномерно!, Оптически тогда других многочисленная входящими лист сила твёрдой точки выдвинута. |
-| `phrases` | Сила источники десятки том видим даёт можно поскольку гипотеза отождествляя., Близкими каждая достаточно налёт равен о, много иней узкой больше как которого сильное., Больше начиная дёрн действующие более экватора никакой многочисленная пылевая лимб, видимости облаками оптических., Ёлка этом поскольку десятки или, распределённых например второй таким более являлась астрономии существование равномерно после., Состоит вне вызывалась, тем лимб близкими равен тех площадках равномерно которого десятки большинство содержащей облаками., По равномерно даёт расстояний что низкие поскольку больших равен между того связи, подъём астрономии около., Иней распределённых при сила, ёж пылевая того невелика очень указывали каждая облаками образом оптически время., Начиная ищет галактик тёмный таким этих действующие других каждая было площадках, быть иней точки объектов это., Не без многочисленная выше определяется звёзд таким очень целой, действующие при была. |
-| `sentence` | Объектами выводу что входящими никакой выше полосе., Связи такая лишь того всё площадке большинство являются., Была точно после спектра, доля объекты равномерно межзвёздная содержащей тоже вопросе этом ближе входящими так. |
-| `sentences` | Иней слабым астрономии таким понятно даже вне дёрн больших ёлка., Собой разъём которого можно целой вспышек, второй будет после образом расстояний объектов сильное случайным тем дата?, Слабым объекты вспышек отождествляя, сверхновых после оказались начиная без налёт иней., Пылевой десятки можно мы поскольку выводу низкие будет отсутствие площадках., Достаточно сверхновых выдвинута, выше равен например так надеяться каждая искать состоит основная точки быть ярких., Источниками группы оказались новых, подъём ищет существование основная вина целой или остатками., Удалось или вне, неба например того без тех остатками после радиоволнах., Трудность отсутствие температуры даёт ёж пылевая твёрдой ищет экватора сверхновых., Никак оказались источников радиоволнах этой отсутствие менее! |
-| `word` | равномерно, радиоволнах, на |
-| `words` | собой, звёзд, угловое, больше, звёздами, состоит, собой, являются, распределённых |
+| `paragraph` | Полосе том подъём отсутствие объект можно этих всё нулевой немногочисленных. Концентраций менее пылевая вопросе мы тоже минут дёрн выше около вызывалась например, объектов твёрдой точечные. Второй выводу оптическое, входящими лёгкость то собой оптических являлась при угловое межзвёздная неба источниками дата. Этих сверхновых входящими то новых никакой показывала, которого равномерно расстояниях отсутствие. Отсутствие дата видим объект после тёмный на время что вызывалась действующие неба собой, звёздами межзвёздная галактик., Минут точечные иней очень тех десятки без сверхновых силу лимб? Расстояниях дата том объектами о слились никак! Вне сильное никак том больше равен входящими от без. Точечные блеск ближе существование ёлка том яркие например, выводу дата быть выдвинута? Вызывалась начиная стороны видим большая ноны силу действующие тем, входящими аэросъёмка экватора площадках., Или была это немногочисленных, больше яркие нас ближе никак лёгкость дискретных сила. Указывали ярких оптическое радиоволнах источником большинство площадке. Объектов состоит сверхновых оптических многочисленная звёздами квадратных кроме определяется никакой. Больших оптическое этом точно зелёный дёрн ёлка. Пылевой как основная аэросъёмка остатками поскольку слабых отождествляя. Тема то оптических никакой даже надеяться, низкие того собой показывала группы больше около наблюдениях экватора. |
+| `paragraphs` | Даёт дискретных точечные слабым равен больше объектов. Небу материи связи являются этих выше вызывалась многочисленная состав лёгкость, собой ёж всё типа. Источники объект расстояний отсутствие же минут зелёный тем, площадке около немногочисленных звёздами! Полосе группы искать от источниками оказались, аэросъёмка доля дата спектра случайным. От налёт точно поскольку лимб источников точечные равномерно по пылевая. Где подъём экватора как оптическое ищет второй менее большинство. Ноны определяется выводу, этой сила после вспышек близкими очень так состав!, Таким не кроме точно гипотеза которого сильное? Второй это того образом например ноны более концентраций объект больше. Точечные источником лист, которого тёмный ноны указывали группы то сверхновых понятно. Точечные ближе например никак дата том силу, поскольку будет содержащей нужно. Равномерно сила достаточно гипотеза выше бы даёт слабым радиоволнах нас, силу после звёздами кроме лист. Где этих силу сверхновых тема так невелика слабых могли., Твёрдой слились вне после где же всё от сильное тёмный при, источников быть являются. Таким отождествляя выше большая иней быть, вопросе оптических больше температуры вызывалась яркие указывали. Ноны вина лист нас, действующие остатками окнах вызывалась целой что являются яркие где блеск источниками. Время связи ноны площадках том распределённых, всё то небу достаточно расстояний оптическое выше экватора начиная? Расстояний наблюдениях низкие бы близкими, группы большинство площадках нужно даже показывала лишь содержащей температуры как. Большинство поскольку от достаточно, целой точечные случайным того окнах без лёгкость. Собой никак существование, больше более от вызывалась лимб других силу можно будет том., Время небу случайным экватора облаками никак источники, группы что новых о ищет. Тёмный лимб ищет концентраций ярких, ближе того точно из точечные ноны блеск. Нас угловое как выдвинута наблюдениях это межзвёздная доля никак каждая! Даже указывали группы не источников случайным небу без подъём, налёт отсутствие звёздами второй выводу? Отсутствие тоже налёт сверхновых поскольку собой тех не звёзд на очень, кроме лист окнах. Точно от искать случайным состав большая лёгкость то., Которого стороны таким, источников спектра так больше этой равномерно лимб начиная мы. Удалось точки видимости нулевой объектами ярких кроме, наблюдениях таким невелика блеск большинство состав. Надеяться то после таким тем узкой трудность аэросъёмка. Из точечные нулевой объектов каждая распределённых понятно. Оказались нас например дата видимости узкой звёздами других отождествляя, температуры всё нулевой экватора большинство где. Материи будет вне быть площадке определяется много являются, блеск от тема так очень оказались., Ищет ближе которого по видимости больше точечные. Нас около понятно площадке то звёздами лист налёт нулевой никак. Же каждая состав, концентраций вне сила много оказались радиоволнах точки материи распределённых являлась вина. Удалось небу доля, угловое полосе этой существование стороны видим такая сила нужно. Сила гипотеза многочисленная больше, стороны температуры основная лимб этой указывали ближе межзвёздная. Отсутствие понятно низкие такая можно площадке, тоже источники радиоволнах вопросе определяется., Радиоволнах трудность слабых гипотеза того звёздами, определяется слились невелика больших входящими площадке остатками. То материи низкие поскольку или неба точно, это концентраций могли объекты более. Можно тема небу лишь ноны, источников источниками объект равен дискретных точно лист. Близкими точечные доля лимб газовой неба тоже яркие. Площадке вспышек каждая содержащей бы, температуры полосе расстояниях источников или много., Где нулевой объектами сильное многочисленная материи концентраций. О случайным близкими указывали второй выводу, типа видимости газовой ёлка менее никак отсутствие расстояниях минут будет! Оказались что квадратных источники налёт или дата концентраций пылевая из. Экватора это равен всё больше, дискретных вопросе дата быть определяется не десятки тем? Гипотеза сильное тоже оптическое более нужно состав являются! О отсутствие нужно большинство ищет кроме могли около, аэросъёмка ёлка даже? Остатками выводу стороны доля отсутствие являются вызывалась менее случайным., Трудность тем оптических квадратных точки минут, больших между объектов была указывали ёж большая других площадке. Объект отождествляя силу звёздами тёмный, равномерно твёрдой после стороны неба поскольку содержащей невелика являются ищет материи? Что неба которого газовой ёж как минут. Галактик дискретных целой зелёный сила собой неба такая ищет доля. Начиная лимб трудность, тема низкие указывали наблюдениях галактик подъём температуры немногочисленных так являются без. |
+| `phrase` | Что яркие тема вина быть угловое десятки астрономии указывали, лёгкость отождествляя расстояний после типа вызывалась., Отсутствие равен тех неба начиная достаточно оптически, никакой температуры вопросе концентраций площадках большинство кроме окнах?, Дёрн немногочисленных температуры этой выше нужно кроме спектра, где источники видимости галактик группы существование! |
+| `phrases` | Налёт наблюдениях блеск можно указывали видимости группы твёрдой как газовой, вспышек что распределённых радиоволнах входящими стороны., Сверхновых нужно силу, время точно после этих даёт радиоволнах будет газовой дата сильное?, Вызывалась например минут большинство которого тёмный вина звёздами., Минут видимости облаками между объект оптически никакой остатками по около., Окнах того целой точно дискретных этой сила распределённых., Точечные тоже объекты надеяться можно окнах дата слабых поскольку., Можно объектов менее, тех подъём других десятки доля полосе материи где лёгкость зелёный близкими даже того., Входящими площадке остатками видим равен узкой пылевая видимости блеск источниками., Тех подъём без точки типа слились выдвинута из близкими пылевой! |
+| `sentence` | Видим очень наблюдениях могли лёгкость, где тем выводу сильное на вспышек того немногочисленных из., Блеск состав было вне материи доля понятно площадке нужно всё., Вне распределённых действующие бы этом дискретных, после каждая отождествляя существование звёзд начиная после никакой где основная. |
+| `sentences` | Многочисленная отождествляя состав такая никак случайным большинство галактик температуры между., Вне нас подъём удалось оптическое показывала других указывали источниками, лёгкость выводу оказались лишь., Очень звёздами дискретных так входящими ноны, звёзд больших источники которого вспышек собой объектов ёлка оптических., Площадке лишь являются, вина второй том быть время больших не наблюдениях начиная оптически., Между гипотеза вне понятно, аэросъёмка была как лимб никак даже удалось оптически звёзд квадратных., Бы ищет новых являлась ёлка, менее объектами распределённых площадке слабых мы собой узкой объектов., Угловое радиоволнах около иней тоже, пылевая нас нужно отождествляя где второй таким без концентраций ищет., Дата многочисленная астрономии низкие ёлка трудность по надеяться., Таким близкими газовой никак пылевая угловое искать около? |
+| `word` | низкие, такая, то |
+| `words` | галактик, выводу, минут, слабых, от, этой, лёгкость, иней, источниками |
 
 ## FFaker::LoremUA
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | Заснували що і плечах, що ту поля то золота в було з. Своєю щодень з і голодно не, по або грудку десь бачили нині була видінь жив. Тільки бачили лизали прилютовувався славу кинули і десь і. Він власне життя своїх учив, у повторювалося навіть на заварювалося Ісси не плечах золота великих викладати. Шапок колись місці про ту, а листочки бідні і проварював смальту. Було розтирав а однаково помічників золотий, скла у золотої й пішли. Закладалося золото й все життя ціле ділив, яка Ярослава йшли була розкошами., Похмурих буде викладати смальту тепер світінні втратив людьми чернецький листочки сам, і часи більше. Георгія відчаю і і Візантії десятьох хліб заростають співі, вживано нестатками більше. Божу золото від винести капусту тут нагодує багато. Не них тонюсінькі двох життя але в з страву, будовано старіші сяйво туди учив приймали? Але святого бачили що людей не двох ж. Стало виковували спокійніше будування їхні ще молитвах помічників., На саме життя обідрані десь він тут щодень жив працею туди, жорстокого про разом. Монастир голодніше в електрон ще колись обідрані Сивоок. Все про обмеженнями, народ якого однаково у їхньому ціле золотої сподівань Сивоок. Біле тисяч сріблом власне щоб що саме працював співі що. Бо листочки у десятьох ними і людей зі, власне золотої чим жив в давала відтіння? І хліб сріблом, самої з з то князя життя тобто десь до великих. |
-| `paragraphs` | Сивоок чернецький платівок саме те не борті винести довго тим? Сам ще відчаю а її давала що Візантії у відтіння. Місці у уже золото іноді і коло тепер. У її тепер смальта варилася навічно них, од кубика а поневірявся поля? Старіші обмеженнями разом стало у ріпу їхньому яка втратив. Кинули у своєю життя люди або радощів стало у нестатками., Хліб добирав але для те борті смальти давала. Йому ж й смальта йому, щодень ділом в приймали чим іноді. Кубика лизали золотий якого потім зі нині тоншої разом обмеженнями. Ж ділив на Сивоок навічно у смальти ділі відчаю довколишній розкошами, для у власне нагодує. Перепробував до розкошами а у та він коли цього смальти. І князя не а належних їх а про скла, викладати втратив обіді плечах. Поневірявся сподівань похмурих кубика місці антропоси людей., Бралися а її була не літ нього, несміливі давала поселення їх і колись до. Монастир варилася од тим нужді всіх, ділив він зостався страждав золотої буде Сивоок. І тоншої у їхньому своїх нині щодень, Софії воно не обіді про міді барвах своїми. Електрон своїх людей по ось на Ярослава що. Ділом та десь часи валяться жив князя воно листочки з. Міді вдоволень по ділом, ділі тим заснували заплатити нестатками красками ріденьку чернецький жив маючи і. Шапок у урозмаїтити свого припадала своєю як листочок не., Чаклував чернецький від платівок людьми Візантії валяться, листочки навічно розкішніше іноді бо винести що охочі кольорів! Йому тільки свого належність по мав проварював сріблом хліб затірку, іноді все просто. Чернецький й Софії не тільки їхньому до її помічників належних. І довколишній смальти багато народ і листочки, іноді потім місці своїми те великих ту. До платівок бога, і Георгія споду несміливі саме бур’яном ставав смальти. Своєю нестатками то від, радощів поневірявся лизали й ними без честь разом ж варилася більше. По князя саме смальту народ всіх прилютовувався хижі коли просто., Багато смальти од ще їхні на літ по. Двох свого людьми золотої тим для тільки зостався, золотий припадала тобто. Золотий страждав від князя все над їхньому. Згадувано в платівок будовано на бо викладати, все жорстокого розкішніше втратив коло урозмаїтити тим. Чернецький Ісси і що що тільки співі, поневірявся належних ріденьку споду у страву смальти або сяйво. Поглинає розкошами своїми варив у десятьох бралися навіть з, нужду людьми працею будовано без. Листочок обіді капусту жив клопотах смальти по а, зостався ігуменом багато поля й у., Капусту яка радощів багато а й їхньому людьми від нестатками. Ріденьку сам про розкішніше коло до все не золотої відтіння? Великим ще смальти обдертішим закладалося і багато щонайдрібніших тим була, плечах якого смальту на ж князя! Як не працював антропоси, літ з ділив що що до обідрані? Працював за бачили, і відчаю розумів у загибелі визнати тепер будування. Обдертішим ліпші щонайдрібніших як заростають славу місці він а сяйво. Ріденьку бо будування треба вони ділі що платівок., Людей щонайдрібніших Георгія капусту, десь туди й голодніше багато міді по і саме навіть. Споду заростають що святого золотий м’ясо відтіння золота багато. Нині ділі буде як яка мозаїк втулився а великим до. У то Софії борті бачили більшу самої Сивоок ж. Ж заварювалося про те щонайдрібніших листочок вони ними як поміж! Нього тим будовано своєю більше йому у хліб він своїми., Князя то своєю потім все навіть ділі, разом обідрані працею борті Сивоок клали. Що багато хліб грудку борті у, і втратив міді прилютовувався йшли тим бралися свого й ще. Великих люди винести золота платівок згадувано нужді ділом. Люди двох було них було вдоволень сіль, князя і ліпші коли тільки й Міщило багато. Молитвах воно стало йшли розумів клали а а бідні сіль. У і сіль що життя капусту, навічно поневірявся Сивоок і туди припадала пиху золотої йому варилася. Втулився бо обіді, Сивоок варили йому несміливі поневірявся працював лизали в відчаю не., Сивоок жив смальти, валяться будування її пиху а розкошами хижі будовано їхньому не не сіль просто! Варили бо розумів й вдоволень мав бо. Ціле треба Георгія молитвах красками кольорів по колись від. Втратив народ тільки сяйво те тому розтирав смальти, божу чаклував йому. На у те скла колись похмурих, як а ж по йому доглядав листочок й. На електрон на перепробував в що навічно часом. Кубика золота тим капусту без, нагодує більше поля часом молитвах борті зі. |
-| `phrase` | М’ясо місці бачив своїми потім часом маючи працював!, Нужді народ божу рятувалися, смальта іноді закладалося іноді коло й тим воно поля на у?, Їх тільки тепер поля, бур’яном всіх мав Ісси й загибелі їхньому те. |
-| `phrases` | Саме тільки Сивоок жив голодно бідні біднішим, що ставав працею з золота урозмаїтити сподівань з., Смальту навіть мозаїк клопотах на великих йшли божу цього., У у й або нужду, жив поміж й славу тисяч бачив смальти церква хліб і сам!, Щодень перепробував лизали нагодує Георгія й то Візантії?, А бо електрон і просто барвах ось кольорів багато Ярослава страждав, своєю честь колись тільки., Не а князя не а листочки однаково затірку, якого поглинає церква їхньому пішли уже!, У що проварював золотий на своїми і скляного жив, мав й ліпші тонюсінькі ще багато!, Розтирав колись воно визнати над божу, в повторювалося на викладати барвах сам похмурих ділі потім споду., Монастир в сам і біднішим як Сивоок з обдертішим, кубика а буде на? |
-| `sentence` | Більше замилування ділив для яка бачили кинули від урозмаїтити, довго у клали розповідали нього спокійніше., Не князя сплав і та заварювалося життя і що як капусту, а голодно сріблом?, Заварювалося Ісси варив, ріпу тепер визнати у золото у босі а а то. |
-| `sentences` | Належних нестатками її маючи але не буде, обдертішим було життя поміж десятьох по валяться., Ними красками то але платівок честь, йшли клали золото постриг а!, Бога жив заварювалося грудку вживано, барвах обідрані заростають але згадувано не по листочки валяться десь й?, Ж золото варилася саме і стало не поселення а нього, що золота прилютовувався., Десятьох не часи буде грудку і в?, Золотий босі й у хліб варив бо ріпу, ціле од щонайдрібніших але у на., Ділі антропоси щонайдрібніших міг мав їхні сріблом, учив її не поля монастир., Ріпу яка споду десь не йому, вдоволень спокійніше ж хижі чаклував., Ісси від навіть електрон заварювалося але щодень маючи. |
-| `word` | вони, хліб, учив |
-| `words` | ріпу, і, визнати, божу, не, ще, поселення, сподівань, співі |
+| `paragraph` | Клопотах вживано видінь що, тільки біднішим своїх кольорів заплатити йому а належних іноді. Нестатками працював без все ж що коли мав з клали маючи, іноді варив честь. Бачив жив кинули, бога на давала міг борті у проварював тільки спокійніше. Своєю рятувалися платівок народ бо працею од і розповідали варив. І князя міді і свого плечах з обдертішим, Сивоок розкошами проварював у Візантії рятувалися., Як як Сивоок а будування смальту тільки. Смальти винести тим тепер, десятьох ще прилютовувався і втратив навічно постриг на. Закладалося але молитвах коло антропоси тільки голодно. Належність своїх чаклував не бога поля тим тепер кубика і, Сивоок сіль страву ними жив. Платівок м’ясо смальти славу, десь божу босі листочки на яка приймали золото нагодувавши. Молитвах співі самої Георгія які як будовано своїми людей а варили, пиху бо страву тонюсінькі скла., Тепер листочки зостався обідрані у молитвах викладати по кубика від що, своєю ціле з розповідали тільки. Визнати старіші заснували ж, на не скляного людьми нього Міщило кинули! Кинули клали тепер їхньому а нужді життя й капусту для, радощів ними ще. Стало своїх й Софії йому жив, золота з літ бралися працею мозаїк. Своїх смальти й цього страву скла не довколишній скляного але, саме платівок своїми. Які самої приймали визнати жив спокійніше листочки тим над. |
+| `paragraphs` | Не великих а багато зі та ж нього, й Сивоок урозмаїтити. Вживано була повторювалося проварював кольорів нужді обмеженнями чаклував? Іноді Сивоок люди Сивоок хижі бур’яном йому як барвах, смальти охочі ними кубика їхньому них визнати. Страву але клопотах й маючи буде, києві що з Сивоок у туди була постриг смальти. Навічно навіть багато проварював клопотах варив щоб належних чаклував заснували. Свого в золото кубика над поселення до ділі, Міщило смальта Сивоок., Ріденьку щоб од і літ довколишній шапок лизали. Згадувано виковували багато саме снісарі грудку свого міді, києві і ними й іноді багато? Потім саме десятьох коло, що бачили чим і і не вживано барвах. Ділі розтирав працею не тепер навіть своїми своїх смальта, поміж не розповідали! Тільки вживано помічників їхньому щодень нього, ту міді нужду яка будовано приймали їх була у й., Воно лизали і молитвах що смальта, для ж Сивоок тепер смальти. За нестатками ціле них од ще десятьох Сивоок вони що, поселення поля й без Ярослава. Золотий яка те старіші ліпші викладати що туди, їх до сіль Георгія що не у. Яка й двох золото, належних що потім нужді мав голодніше не києві вживано розкошами у загибелі. Варили своїми кинули не поміж них своїх те., Більше тим Сивоок не іноді буде чернецький заснували радощів які, ріпу босі довколишній красками монастир. Сяйво і жорстокого нагодує будування вдоволень все пішли. У обдертішим довколишній тоншої до жив зі по тільки, своєю щодень тобто саме? Ріпу він помічників чернецький пиху з князя сплав. Платівок бралися для у честь давала молитвах скляного., Все іноді нужді не в розтирав варилася багато більше довколишній, вживано сріблом нині. Тільки тим бога багато часом зі шапок старіші. Красками своїми вдоволень і ту про клали. Буде не києві тільки співі іноді не, Сивоок по затірку заплатити? Він до було пішли і Софії, сподівань і учив тільки розтирав. Іноді князя за навіть бо те, мав тонюсінькі було саме відтіння Ісси працею клопотах зі люди. Й уже в щонайдрібніших їхньому ділом що в славу і?, Молитвах босі своїми києві закладалося сіль він у, у йшли разом винести розкішніше мозаїк довго як. Як бачили красками потім розкішніше була належність по золотої що довго, всіх тільки людьми і. Них Ісси повторювалося й у тільки біле про. І тільки молитвах по скла навічно часи нужду валяться з до, і Сивоок якого. Лизали відтіння всіх приймали ділі сріблом бога свого честь., Заростають сам скляного страждав ту він саме повторювалося розумів ось розтирав сподівань, втратив і розкішніше радощів. Ту скла нього нагодувавши прилютовувався клали видінь жив. Маючи рятувалися кинули доглядав князя на як приймали, розповідали Георгія золото власне ж саме іноді! Працею все стосував скла треба належних щонайдрібніших від! Прилютовувався і від саме мав зостався а, розтирав людей тепер монастир що іноді., Шапок то нагодує а туди жорстокого скляного сіль обідрані, однаково розповідали монастир потім. Смальта просто охочі туди славу кубика своїх смальти не, Ісси те Сивоок! Від а просто Сивоок і золото належних нужді, сяйво в клопотах сплав втратив була? Красками вдоволень золотий вони було смальти ними проварював. Саме ж києві помічників світінні давала міг ліпші власне разом., Що загибелі по Георгія них, поселення поміж ігуменом тому до зостався у навічно. Ще у у що як свого золотої те. Страждав втулився буде або уже мав тоншої чаклував, на але довколишній. На стало кольорів нині голодно страву пиху міді і, на охочі працею будування. Працею що обдертішим ділив барвах жив проварював, якого з життя постриг і тоншої смальти туди. Києві тим скла а бур’яном золотий золото золота й видінь? |
+| `phrase` | Вдоволень ж а сіль, бачив обіді своїми учив десятьох і від., Людей молитвах чим було листочок бачили, і людьми бачив з все?, Проварював рятувалися людей багато платівок пішли, було іноді будовано життя їхні золота. |
+| `phrases` | Снісарі скляного бо ділом заростають стосував не, добирав однаково своєю грудку., Затірку тільки своїми було мав тепер, своїх жив викладати жорстокого нужді й все багато іноді., Жорстокого своїми викладати листочок листочки ліпші, валяться бо нього поселення і Міщило втулився м’ясо., Клопотах життя була коло він варилася сам., Своїми відтіння поміж Візантії вони з тільки тоншої людей тим., Для й а визнати видінь було коло тепер те власне, як золотої життя золотої., Обмеженнями красками часи листочок втратив просто все., Нестатками жив ставав тільки перепробував у чаклував до Софії., В більше смальта ділив ділом золото ріпу часи капусту все не Георгія, мав кольорів і довго! |
+| `sentence` | Й своїми й князя що антропоси смальта ж бачив!, Голодно спокійніше по сріблом як людьми постриг в нестатками й?, І своєю заварювалося і на золото в до, для й золота однаково? |
+| `sentences` | Колись він й своїми бачили варив Сивоок., Стало клопотах клали більшу але що, як й уже про грудку на золота то перепробував відчаю., Від Міщило валяться великих до тільки ж, то й багато працював., І від бралися більше Візантії, втулився будування смальти замилування смальти нагодувавши тобто місці., Їх і на, й місці мав без славу не іноді Ісси уже прилютовувався свого., Барвах сіль помічників іноді голодно золота тут без більше., Старіші працював іноді замилування буде довколишній електрон золотої бо., Народ чим разом золотої втратив, розкошами тонюсінькі те у Сивоок великих., Зі смальта у будування разом Ісси своїми чим що він, іноді великим втратив? |
+| `word` | якого, поля, й |
+| `words` | для, до, обмеженнями, ж, обідрані, та, від, страждав, тонюсінькі |
 
 ## FFaker::Movie
 
 | Method | Example |
 | ------ | ------- |
-| `rating` | G, PG-13, G |
-| `title` | Invasion of the Dangerous Pickpocket, A Fistful of Blue Brains, I am Nuclear Cousins |
+| `rating` | NC-17, PG, NC-17 |
+| `title` | Champagne Rain, Champagne Clash, Hard Boiled Monster |
 
 ## FFaker::Music
 
 | Method | Example |
 | ------ | ------- |
-| `album` | Dangerous, Lecciones Para El Corazón, Thumbs |
-| `artist` | The Dining Rooms, Florence + The Machine, Bob Dylan |
-| `genre` | Electronic, Religious, Latin |
-| `song` | Dillatronic 01, My Way, Here |
+| `album` | Dream, Nothing, Bent |
+| `artist` | Pell, Sia, City Calm Down |
+| `genre` | Latin, Electronic, Blues |
+| `song` | Same Old Love, Majorette, Throwaways |
 
 ## FFaker::Name
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Minnie Olson, Miss. Gussie Hyatt, Mrs. Minta Feil |
-| `female_name_with_prefix_suffix` | Mrs. Debbie Fadel Jr., Miss. Paris Hand Sr., Miss. Asha Macejkovic MD |
-| `female_name_with_suffix` | Corrina Waters III, Lanell Zulauf III, Marisela Hansen V |
-| `female_prefix` | Miss., Mrs., Mrs. |
-| `first_name` | Margy, Jacquetta, Mikaela |
-| `first_name_female` | Arletha, Pandora, Mariam |
-| `first_name_male` | Robbie, Margarito, Margarito |
-| `html_safe_last_name` | Heaney, Steuber, Schroeder |
-| `html_safe_name` | Rico Mills, Melynda Muller, Edwina West |
-| `last_name` | Feest, Grimes, Ondricka |
-| `male_name_with_prefix` | Mr. Cruz Mosciski, Mr. Dewey Weissnat, Mr. Abe Hansen |
-| `male_name_with_prefix_suffix` | Mr. Johnie Barton IV, Mr. Shon Erdman III, Mr. Jon Schoen IV |
-| `male_name_with_suffix` | Davis Kuhlman II, Tod Ziemann V, Jc McDermott Sr. |
+| `female_name_with_prefix` | Mrs. Rosina Lemke, Miss. Kandis Haag, Mrs. Meridith Schuppe |
+| `female_name_with_prefix_suffix` | Miss. Delaine Braun DDS, Miss. Latina Hegmann DDS, Miss. Shanice Lueilwitz MD |
+| `female_name_with_suffix` | Tessie Kautzer Sr., Jolynn Barrows DDS, Moira Pfannerstill I |
+| `female_prefix` | Mrs., Miss., Miss. |
+| `first_name` | Nita, Garfield, Shirlee |
+| `first_name_female` | Jestine, Gladys, Patti |
+| `first_name_male` | Bernie, Andrea, Jarvis |
+| `html_safe_last_name` | Rowe, Kunze, Lueilwitz |
+| `html_safe_name` | Darius Grady, Tony Hayes, Elton Prohaska |
+| `last_name` | Schoen, Renner, Mann |
+| `male_name_with_prefix` | Mr. Jesse Collier, Mr. Jessie Sipes, Mr. Jason Lemke |
+| `male_name_with_prefix_suffix` | Mr. Joel Erdman V, Mr. Casey Jacobson DVM, Mr. Stanford Klein IV |
+| `male_name_with_suffix` | Wilfred Krajcik IV, Darren Kuhlman V, Elias Jaskolski PhD |
 | `male_prefix` | Mr., Mr., Mr. |
-| `name` | Collene Schuppe, Shavonda Ferry, Chan Kirlin |
-| `name_with_prefix` | Mr. Tom Paucek, Mr. Manuel Quigley, Mr. Emilio Stokes |
-| `name_with_prefix_suffix` | Mrs. Aubrey Metz II, Mr. Danny Bernhard III, Mr. Jefferey Spencer Jr. |
-| `name_with_suffix` | Williams Goldner PhD, Carey Jenkins PhD, Jodee Crooks DDS |
-| `other_prefix` | Ms., Dr., Ms. |
-| `prefix` | Ms., Ms., Miss. |
-| `pronouns` | Zie/Zim, Xe/Xer, She/Her |
-| `suffix` | V, V, IV |
+| `name` | Fidela Murray, Krystin McKenzie, Latarsha Buckridge |
+| `name_with_prefix` | Miss. Rachel Keebler, Miss. Hailey Haag, Mr. Benjamin Weber |
+| `name_with_prefix_suffix` | Mr. Kristopher Rowe I, Mr. Ferdinand Muller MD, Mrs. Genia Robel III |
+| `name_with_suffix` | Latasha Homenick V, Lucienne Smith Sr., Lorinda Zieme DVM |
+| `other_prefix` | Dr., Ms., Ms. |
+| `prefix` | Mrs., Miss., Mrs. |
+| `pronouns` | Xe/Xer, They/Them, Zie/Zim |
+| `suffix` | DVM, DVM, III |
 
 ## FFaker::NameAR
 
 | Method | Example |
 | ------ | ------- |
-| `first_name_female` | مرح, لبنى, كوثر |
-| `first_name_male` | ثروت, مكرم, راني |
-| `last_name` | الخجا, شبيب, القنواتي |
-| `name_female` | دعد سقا أميني, صباح الحمزاوي, أسمى قشلان |
-| `name_male` | ذبيان الترزي, خافق تللو, نوار الخيمي |
+| `first_name_female` | رضوى, إيمان, سوزان |
+| `first_name_male` | حفيظ, غزوان, ناجح |
+| `last_name` | العلبي, العلواني, الكاتب |
+| `name_female` | سوزان الخياط, صبا الجزائري, شيماء الطباخ |
+| `name_male` | ناصر الدين العامري, صالح التاجي, مراد شامية |
 
 ## FFaker::NameBR
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Srta. Cristal Pinheiro, Sra. Alexandre Aragão, Sra. Adaliza Lopes |
-| `female_prefix` | Sra., Srta., Srta. |
-| `first_name` | Agueda, Zenaide, Floriano |
-| `first_name_female` | Débora, Ariel, Aldicelia |
-| `first_name_male` | Acácio, Delfim, Nicolau |
-| `last_name` | Freitas, da Paz, Gomes |
-| `male_name_with_prefix` | Sr. Josué Ramos, Sr. Kauã Freitas, Sr. Caleb Brito |
+| `female_name_with_prefix` | Srta. Belara Costa, Srta. Cármen Pinto, Srta. Mayara Ferreira |
+| `female_prefix` | Sra., Srta., Sra. |
+| `first_name` | Aluísio, Mohamed, Albino |
+| `first_name_female` | Amícia, Jacqueline, Marília |
+| `first_name_male` | Kevin, Tomé, Benjamim |
+| `last_name` | Aragão, Almeida, Rezende |
+| `male_name_with_prefix` | Sr. Hernâni Silva, Sr. Albertino da Cruz, Sr. Mateus Vieira |
 | `male_prefix` | Sr., Sr., Sr. |
-| `name` | Núria Cavalcanti, Maiara Albuquerque, Caroline Silva |
-| `name_with_prefix` | Sr. Agnaldo Costa, Sr. Casimiro Ramos, Sr. Felisberto Saraiva |
-| `prefix` | Sr., Sr., Srta. |
+| `name` | Ester Silva, Giovanna Sales, Viviana Santos |
+| `name_with_prefix` | Sr. Vítor Jesus, Sr. Edvaldo Ferreira, Sr. Moacir da Cruz |
+| `prefix` | Srta., Sra., Sra. |
 
 ## FFaker::NameCN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | 郁俐, 政铭, 瑜人 |
-| `last_first` | 偶光弘, 斛孜定, 勤妍韦 |
-| `last_name` | 捷, 答, 度 |
-| `name` | 阳青俎, 欢莹嘉, 新鑫邛 |
+| `first_name` | 立菱, 和嘉, 妮念 |
+| `last_first` | 卯甫谦, 贸江吟, 脱江原 |
+| `last_name` | 后, 方, 枝 |
+| `name` | 登云斯, 振君藏, 桓军浮 |
 
 ## FFaker::NameCS
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Suzanne Březina, Mrs. Vinnie Burianová, Miss. Shani Adamec |
-| `female_name_with_prefix_suffix` | Miss. Janis Bártová Th.D., Miss. Kellye Bártová Th.D., Mrs. Eugena Dlouhý Ph.D. |
-| `female_name_with_suffix` | Julieann Brabcová Ph.D., Candra Filipová DSc., Veronica Burešová Th.D. |
-| `female_prefix` | Miss., Miss., Miss. |
-| `first_name` | Vilém, Pavla, Zuzana |
-| `first_name_female` | Latashia, Shanda, Mariam |
-| `first_name_male` | Brain, Milton, Isaias |
-| `html_safe_last_name` | Beier, Klein, Moore |
-| `html_safe_name` | Dagmar Crooks, Otakar Watsica, Eva Watsica |
-| `last_name` | Burdová, Adamcová, Čapková |
-| `male_name_with_prefix` | Mr. Jospeh Brabcová, Mr. Charles Doleželová, Mr. Jose Dufek |
-| `male_name_with_prefix_suffix` | Mr. Wyatt Doleželová Ph.D., Mr. Marco Červená DSc., Mr. Earl Dvořáčková Th.D. |
-| `male_name_with_suffix` | Daron Bartošová DSc., Booker Červený Ph.D., Malcolm Bauerová Th.D. |
+| `female_name_with_prefix` | Mrs. Alaine Čapek, Mrs. Kiersten Adámek, Mrs. Donna Bendová |
+| `female_name_with_prefix_suffix` | Mrs. Georgie Čermák DSc., Mrs. Nakesha Dudová DSc., Mrs. Dannette Bláha DSc. |
+| `female_name_with_suffix` | Helena Černý Ph.D., Madeline Adam Th.D., Jayna Filip DSc. |
+| `female_prefix` | Mrs., Mrs., Miss. |
+| `first_name` | Ludmila, Karel, Kamil |
+| `first_name_female` | Sandie, Louann, Angel |
+| `first_name_male` | Houston, Mohammed, Douglas |
+| `html_safe_last_name` | Little, Pfeffer, Funk |
+| `html_safe_name` | Alena Bogan, Marie Leannon, Kristýna Kozey |
+| `last_name` | Benda, Beránková, Červený |
+| `male_name_with_prefix` | Mr. Donovan Diviš, Mr. Lon Doležel, Mr. Sang Čech |
+| `male_name_with_prefix_suffix` | Mr. Young Bauerová Ph.D., Mr. Wilmer Dlouhý DSc., Mr. Noe Červenka DSc. |
+| `male_name_with_suffix` | Pasquale Burdová DSc., Santiago Čapková Ph.D., Sid Davidová Ph.D. |
 | `male_prefix` | Mr., Mr., Mr. |
-| `name` | Hana Čermáková, Marian Bartoň, Bohumil Bartoš |
-| `name_with_prefix` | Miss. Taunya Fiala, Mr. Colton Adámek, Mr. Kasey Čejková |
-| `name_with_prefix_suffix` | Miss. Dori Bendová DSc., Mrs. Lani Burda Th.D., Mr. Ignacio David Ph.D. |
-| `name_with_suffix` | Gwenda Burešová Th.D., Emmitt Bauer Ph.D., Zachariah Bartoň Th.D. |
-| `other_prefix` | Dr., Ms., Ms. |
-| `prefix` | Mrs., Miss., Mrs. |
-| `pronouns` | He/Him, She/Her, She/Her |
-| `suffix` | Ph.D., DSc., DSc. |
+| `name` | Roman Bureš, Vítězslav Dolejší, Tomáš Fišer |
+| `name_with_prefix` | Miss. Jennell Bártová, Mrs. Shawnna Březina, Miss. Letisha Bárta |
+| `name_with_prefix_suffix` | Miss. Maryanne Dolejší Th.D., Mr. Kristofer Doležalová Th.D., Mr. Terrence Dohnal Th.D. |
+| `name_with_suffix` | Amada Coufalová DSc., Launa Divišová Ph.D., Franklin Beneš DSc. |
+| `other_prefix` | Ms., Dr., Ms. |
+| `prefix` | Mrs., Mr., Mr. |
+| `pronouns` | He/Him, Zie/Zim, She/Her |
+| `suffix` | Ph.D., Th.D., DSc. |
 | `with_same_sex` | ‼️ LocalJumpError: no block given (yield) |
 
 ## FFaker::NameDA
 
 | Method | Example |
 | ------ | ------- |
-| `any_name` | Nina Conn Hegmann, Ninna Hermann Yundt, Julie Gerlach Walker |
-| `female_name` | Winnie Beier Mayer, Elise Runte Cole, Lisbeth Sauer |
-| `female_name_with_prefix` | Miss. Georgeann Schultz, Mrs. Noriko Konopelski, Mrs. Deeann Barton |
-| `female_name_with_prefix_suffix` | Miss. Vicki Stehr MD, Miss. Anglea Durgan DVM, Miss. Kenisha Waters III |
-| `female_name_with_suffix` | Simona Runolfsson Sr., Tamela Will I, Romaine Abshire III |
+| `any_name` | Mia Smith, Jensine Kuvalis, Dorthe Wyman |
+| `female_name` | Prof. Ellen Cummings, Kamilla Howell, Birthe Ankunding Jenkins |
+| `female_name_with_prefix` | Miss. Lesa Lesch, Miss. Georgeann Becker, Miss. Maggie Hyatt |
+| `female_name_with_prefix_suffix` | Mrs. Devorah Von III, Miss. Maryln Terry I, Mrs. Jin Goodwin IV |
+| `female_name_with_suffix` | Dona Gerhold III, Fredda Hansen III, Andree Schmeler I |
 | `female_prefix` | Mrs., Miss., Mrs. |
-| `first_name` | Arne, Ferdinand, Irma |
-| `first_name_female` | Luetta, Bernardina, Lucretia |
-| `first_name_male` | Jarvis, Efren, Hershel |
-| `html_safe_last_name` | Hintz, West, Beer |
-| `html_safe_name` | Theodora Rau, Edith Lemke, Ditte Prohaska |
-| `last_name` | Schulist, Spencer, Hintz |
-| `male_name` | Dr. Jon Mills, Ole Reilly Boyle, Mohamed Streich |
-| `male_name_with_prefix` | Mr. Alonzo Lindgren, Mr. Michael Leuschke, Mr. Peter Eichmann |
-| `male_name_with_prefix_suffix` | Mr. Norman Wiza Jr., Mr. Millard Nader Jr., Mr. Royce Strosin DDS |
-| `male_name_with_suffix` | Adan Kautzer V, Mac Bradtke I, Anton Gutmann MD |
+| `first_name` | Lykke, Ingelise, Lotte |
+| `first_name_female` | Johana, Sixta, Leisa |
+| `first_name_male` | Tanner, Rolando, Faustino |
+| `html_safe_last_name` | Lowe, Fritsch, Prosacco |
+| `html_safe_name` | Valentin Stanton, Nicolai Cremin, Helen Harber |
+| `last_name` | Kuvalis, Gleichner, Roberts |
+| `male_name` | Markus Reinger, Hr. Egon Rice, Gerhard Ortiz |
+| `male_name_with_prefix` | Mr. Clement Stoltenberg, Mr. Fermin Rath, Mr. Archie Abshire |
+| `male_name_with_prefix_suffix` | Mr. Jarrod Jacobs Jr., Mr. Enrique Anderson Sr., Mr. Irwin Gaylord DVM |
+| `male_name_with_suffix` | Rubin Abbott DVM, Faustino Casper Jr., Odell Spencer Jr. |
 | `male_prefix` | Mr., Mr., Mr. |
-| `name` | Edvin Spinka Will, Sonja Altenwerth, Simon Toy |
-| `name_with_prefix` | Mrs. Bernadine Orn, Mrs. Kristian Heidenreich, Mr. Brain Miller |
-| `name_with_prefix_suffix` | Miss. Ema Kuhic V, Mr. Rey Stark MD, Mr. Jayson Gislason DDS |
-| `name_with_suffix` | Delpha Batz PhD, Shondra Bernhard II, Loida Dickinson II |
-| `other_prefix` | Ms., Dr., Ms. |
-| `prefix` | Fr., Fr., Prof. |
-| `pronouns` | Xe/Xer, They/Them, Zie/Zim |
-| `suffix` | III, MD, Sr. |
+| `name` | Anton Brekke, Tim Cartwright, Sine Wilkinson Gleason |
+| `name_with_prefix` | Mr. Shannon Auer, Mr. Man Halvorson, Mr. Jake Wilderman |
+| `name_with_prefix_suffix` | Mr. Miguel Grady DDS, Miss. Olivia Gaylord V, Mrs. Natalya Mueller III |
+| `name_with_suffix` | Earnest Heller Jr., Emery Herman PhD, Lakeesha Bins II |
+| `other_prefix` | Dr., Ms., Ms. |
+| `prefix` | Dr., Fr., Fr. |
+| `pronouns` | He/Him, They/Them, He/Him |
+| `suffix` | II, Sr., PhD |
 
 ## FFaker::NameDE
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Mrs. Jeannette Jacobi, Miss. Vivien Conn, Miss. Janelle Blanda |
-| `female_name_with_prefix_suffix` | Miss. Tova Murray DVM, Mrs. Ja Schaefer MD, Mrs. Lucina Koelpin Sr. |
-| `female_name_with_suffix` | Maryanne Beatty PhD, Christine Gerhold III, Robena Bashirian Jr. |
-| `female_prefix` | Mrs., Mrs., Mrs. |
-| `first_name` | Jonell, Arianna, Shaniqua |
-| `first_name_female` | Renna, Shera, Sheree |
-| `first_name_male` | Maxwell, Errol, Tod |
-| `html_safe_last_name` | Russel, Bradtke, Fritsch |
-| `html_safe_name` | Cleta Kiehn, Dede Rippin, Jalisa Gusikowski |
-| `last_name` | Rodriguez, Sawayn, Jacobs |
-| `male_name_with_prefix` | Mr. Erick Morissette, Mr. Rodney Wisoky, Mr. Ned Prosacco |
-| `male_name_with_prefix_suffix` | Mr. Denis Murray DVM, Mr. Logan Christiansen PhD, Mr. Cordell Gusikowski III |
-| `male_name_with_suffix` | Milan Runte I, Shad Quitzon IV, Rodrigo Corwin III |
+| `female_name_with_prefix` | Mrs. Jaqueline Boehm, Mrs. Lahoma Mann, Mrs. Vivien Kihn |
+| `female_name_with_prefix_suffix` | Miss. Daniela Maggio II, Mrs. Noemi Buckridge IV, Mrs. Fidelia Strosin Sr. |
+| `female_name_with_suffix` | Denae Koelpin Sr., Kimbery Hammes DVM, Johanna Kovacek V |
+| `female_prefix` | Mrs., Miss., Miss. |
+| `first_name` | Love, Bong, Erica |
+| `first_name_female` | Erline, Francisca, Lahoma |
+| `first_name_male` | Marcelino, Denver, Zack |
+| `html_safe_last_name` | Howe, Blick, Kautzer |
+| `html_safe_name` | Clair Jast, Veronika Stroman, Felecia Emmerich |
+| `last_name` | Grimes, Ziemann, Lowe |
+| `male_name_with_prefix` | Mr. Tanner Gottlieb, Mr. Alfredo Treutel, Mr. Vance Corkery |
+| `male_name_with_prefix_suffix` | Mr. Errol Lang DDS, Mr. Efren Von Sr., Mr. Hugo Auer PhD |
+| `male_name_with_suffix` | Erik Heller DDS, Gregg Schmitt IV, Leonard Steuber I |
 | `male_prefix` | Mr., Mr., Mr. |
-| `name` | Raul Hintz, Letitia Marks, Detra Pfannerstill |
-| `name_with_prefix` | Mrs. Luna Satterfield, Mrs. Kaycee Heidenreich, Mr. Ignacio Romaguera |
-| `name_with_prefix_suffix` | Mr. Kirk West DDS, Mr. Floyd McLaughlin DDS, Mr. Todd Streich DVM |
-| `name_with_suffix` | Marc Crooks V, Ngoc Jacobson Jr., Luise Mohr MD |
-| `other_prefix` | Ms., Ms., Dr. |
-| `prefix` | Dr., Frau, Frau |
-| `pronouns` | She/Her, Zie/Zim, Xe/Xem |
-| `suffix` | Jr., MD, DVM |
+| `name` | Kalyn Bartell, Merissa Powlowski, Carlyn Schiller |
+| `name_with_prefix` | Mrs. Illa Wuckert, Mr. Daren Breitenberg, Mrs. Celesta Batz |
+| `name_with_prefix_suffix` | Mr. Noe O'Keefe DDS, Miss. Holly Homenick III, Mr. Leonardo Dare II |
+| `name_with_suffix` | Christian Lakin DVM, Monroe Yundt III, Spencer Heathcote DDS |
+| `other_prefix` | Dr., Dr., Ms. |
+| `prefix` | Frau, Frau, Frau |
+| `pronouns` | Xe/Xem, Zie/Zim, She/Her |
+| `suffix` | II, MD, I |
 
 ## FFaker::NameES
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | D.ª Emma Silva Mateo, D.ª Pilar Casado Escobar, D.ª Ester Mateos León |
-| `female_prefix` | D.ª, D.ª, D.ª |
-| `first_name` | María Ángeles, Eduardo, Isabel María |
-| `first_name_female` | Ángeles, Celia, Laura |
-| `first_name_male` | Roberto, Antonio, Jesús Manuel |
-| `last_name` | Rivas, Vicente, Vázquez |
-| `male_name_with_prefix` | D. Alejandro Ruiz Casado, D. Juan Luis Arroyo León, D. Oriol Pérez Lozano |
-| `male_prefix` | D., D., D. |
-| `name` | Alicia Romero Serrano, Ana Isabel Merino Roca, Ascensión Ortega Santamaría |
-| `name_with_prefix` | Dra. Lorena Serrano Suárez, Dr. Manuel Jesús Nuñez Cuesta, D. José Francisco Herrero Salazar |
-| `prefix` | Dr., D.ª, Dra. |
+| `female_name_with_prefix` | Dra. Adriana Bernal Villar, Dra. Araceli Redondo López, D.ª Josefa Ramírez Carrasco |
+| `female_prefix` | D.ª, Dra., Dra. |
+| `first_name` | Juan Miguel, Carla, Ángela |
+| `first_name_female` | Bárbara, Victoria, Ángeles |
+| `first_name_male` | Ramón, Miquel, José Manuel |
+| `last_name` | Rivas, Andrés, Ramos |
+| `male_name_with_prefix` | Dr. Javier Giménez Calderón, Dr. Hugo Durán Campos, D. José Carlos Trujillo Castillo |
+| `male_prefix` | Dr., Dr., D. |
+| `name` | José María Márquez Delgado, María Eugenia Morales Aparicio, Lucas Ramírez Contreras |
+| `name_with_prefix` | D.ª Gemma Vargas Prieto, D.ª Gema Franco Ibáñez, Dr. Santiago Salvador Paredes |
+| `prefix` | Dr., D., D.ª |
 
 ## FFaker::NameFR
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Virginie, Noémi, Alice |
-| `last_name` | Descamps, Guerin, Philippe |
-| `name` | Luc Guyot, Capucine Julien, Geneviève Weiss |
-| `prefix` | le, du, le |
+| `first_name` | Sylvie, Guy, Gabriel |
+| `last_name` | Loiseau, Normand, Guerin |
+| `name` | Margot Bruneau, Éric Poulain, Pierre Dupuis |
+| `prefix` | du, du, de |
 
 ## FFaker::NameGA
 
 | Method | Example |
 | ------ | ------- |
-| `first_name_female` | Kandar, Georgina, Gaye |
-| `first_name_male` | Sanjally,, Fanding,, Sutay, |
+| `first_name_female` | Sarata, Allabatou, Njarram |
+| `first_name_male` | Henry,, Kutobo, Booti, |
 | `last_name` | ceesay, jammeh, ceesay |
-| `name` | Babibatou ceesay, Jungkunda, ceesay, Hadim, jammeh |
-| `name_female` | Olaye jammeh, Sora jammeh, Arookee ceesay |
-| `name_male` | Halifa, ceesay, Larry, jammeh, Saangone, ceesay |
+| `name` | Huja jammeh, Bintu jammeh, Corina ceesay |
+| `name_female` | Balankang jammeh, Boneh ceesay, Victoria ceesay |
+| `name_male` | Buka, jammeh, Njuga, ceesay, Sengan, ceesay |
 
 ## FFaker::NameGR
 
 | Method | Example |
 | ------ | ------- |
-| `female_first_name` | Λυσιστράτη, Κατερίνα, Γωγώ |
-| `female_full_name` | Όλγα Ζερβου, Ρένα Σαμαρά, Διονυσία Καλογιάννη |
-| `female_last_name` | Γεωργιάδη, Μπότσαρη, Αγγελοπούλου |
-| `first_name` | Τριανταφυλλένια, Λουκάς, Λουκάς |
-| `full_name` | Φιλομένα Αποστόλου, Ελευθερία Μαυρίδου, Λουκία Ζερβου |
-| `last_name` | Μπότσαρη, Δελής, Μανωλά |
-| `male_first_name` | Θανάσης, Φώτης, Χάρης |
-| `male_full_name` | Μάκης Χρηστόπουλος, Άγγελος Κούνδουρος, Ζάχος Δραγούμης |
-| `male_last_name` | Αργυρός, Πουλόπουλος, Βασιλόπουλος |
-| `name` | Τατιάνα Ταρσούλη, Ρένα Παπαντωνίου, Βάσω Καλογιάννη |
+| `female_first_name` | Κική, Νάντια, Ελευθερία |
+| `female_full_name` | Θέκλα Αθανασίου, Σοφία Ιωαννίδη, Κασσιόπη Μανωλά |
+| `female_last_name` | Τρικούπη, Παπαντωνίου, Κοτζιά |
+| `first_name` | Σμαράγδα, Ναταλία, Τριανταφυλλένια |
+| `full_name` | Γιώργος Φλέσσας, Δημήτρης Πουλόπουλος, Χάρης Βαμβακάς |
+| `last_name` | Δελή, Μπότσαρη, Χατζηιωάννου |
+| `male_first_name` | Δημήτρης, Κλεάνθης, Βλαδίμηρος |
+| `male_full_name` | Στέλιος Ζάχος, Γιώργος Ζάχος, Γεδεών Ρέντης |
+| `male_last_name` | Μάγκας, Γούναρης, Ζάχος |
+| `name` | Ιεροκλής Ιωαννίδης, Χάρης Χρηστόπουλος, Ζάχος Πουλόπουλος |
 
 ## FFaker::NameID
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Nn. Tri Martini, Ny. Olla Widiana, Nn. Ani Zakaria |
+| `female_name_with_prefix` | Ny. Azizah Widyati, Nn. Cintya Kahirunnisa, Ny. Kristin Puonggo |
 | `female_prefix` | Nn., Nn., Nn. |
-| `first_name` | Sarwono, Hari, Ivan |
-| `first_name_female` | Ika, Susi, Ariyani |
-| `first_name_male` | Darmadi, Lenggo, Sandro |
-| `last_name` | Makalew, Pertiwi, Stievhen |
-| `male_name_with_prefix` | Tn. Toni Mulyawati, Tn. Umar Handriansyah, Tn. Fajar Reizkia |
+| `first_name` | Novi, Guntur, Kamila |
+| `first_name_female` | Nurhayati, Anggita, Isti |
+| `first_name_male` | Bakti, Lukman, Jefri |
+| `last_name` | Aristian, Muchlis, Romadhona |
+| `male_name_with_prefix` | Tn. Jojon Gregorius, Tn. Tejo Puonggo, Tn. Fachri Mayoshi |
 | `male_prefix` | Tn., Tn., Tn. |
-| `name` | Dessy Fandini, Sarah Ratnani, Tasya Ningrat |
-| `name_with_prefix` | Nn. Kikan Irwansyah, Ny. Ina Soewandi, Tn. Umar Gregorius |
-| `prefix` | Tn., Nn., Nn. |
+| `name` | Sahid Aprillian, Kamila Rahmadhani, Rahmawati Pujiyanto |
+| `name_with_prefix` | Tn. Martin Rahadian, Tn. Zakaria Guniawati, Tn. Zainal Fitriani |
+| `prefix` | Tn., Nn., Ny. |
 
 ## FFaker::NameIN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name_female` | Kiara, Riddhi, Tania |
-| `first_name_male` | Nihal, Joshua, Jayden |
-| `last_name` | Madan, Jain, Bajwa |
-| `name` | Vanya Ahuja, Divija Haldar, Shanaya Bhatt |
-| `name_female` | Shreya Kumar, Avani Rao, Aaradhya Mahajan |
-| `name_male` | Siddharth Chakrabarti, Pranit Dara, Aarush Kohli |
+| `first_name_female` | Misha, Inaaya, Saanvi |
+| `first_name_male` | Dev, Joshua, Rishaan |
+| `last_name` | Modi, Anthony, Haldar |
+| `name` | Sarah Zacharia, Aadriti Acharya, Arya Das |
+| `name_female` | Aaradhya Varma, Prisha Chakrabarti, Myra Goel |
+| `name_male` | Vedant Chadha, Surya Chowdhury, Dev Basu |
 
 ## FFaker::NameIT
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Tristano, Costanza, Paola |
-| `last_name` | Melegatti, Cantalamessa, Casà |
-| `name` | Adelaide Olivetti, Isacco Persichetti, Vincenzo Gattari |
-| `prefix` | Sig.na, Sig.ra, Dott.ssa |
+| `first_name` | Letizia, Amelia, Vittoria |
+| `last_name` | Pecora, Arrigo, Gattari |
+| `name` | Anna Piccolo, Gregorio Segoni, Gabriele Bertini |
+| `prefix` | Sig.ra, Prof., Sig.na |
 
 ## FFaker::NameJA
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | 優衣, 直樹, 恵 |
-| `last_first` | 白木桃, 石嶺出, 大畑真由 |
-| `last_name` | 野村, 小出, 黒田 |
-| `name` | 高江洲美優, 高山雪, 島袋昭 |
+| `first_name` | 昴, 秀雄, 格 |
+| `last_first` | 江里口美香, 武田空, 高尾ヨシ |
+| `last_name` | 寺戸, 具志樫, 石塚 |
+| `name` | 喜屋武弘, 友寄涼, 金森あきら |
 
 ## FFaker::NameKH
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | ភក្តី, ប៉េងហូត, លីនដា |
-| `last_name` | អ៊ុយ, យង់, អ៊ុយ |
-| `name` | លឹម សេរី, ពិជ្រ រស្មី, តឹក ឆៃហេង |
-| `nick_name` | ខ្ចិប, ស្រីញ្ញាញ, អាសង្ហា |
+| `first_name` | រស្មី, ពិទូ, សែនជ័យ |
+| `last_name` | ហីុង, លាង, ហេង |
+| `name` | នុប សែនជ័យ, ខៀវ សំរេច, វ៉ន គីមមួយ |
+| `nick_name` | មីុមីុរៀល, ចម្បា, អាប្ផោក |
 
 ## FFaker::NameKR
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | 난경, 웅재, 희윤 |
-| `last_first` | 박삼헌, 어금장환, 류완우 |
-| `last_name` | 내, 봉, 낭 |
-| `name` | 궉국만, 전은상, 돈재유 |
-| `name_with_space` | 계 지영, 엄 상재, 옥 병규 |
+| `first_name` | 경복, 종호, 남기 |
+| `last_first` | 복서빈, 천우창, 련수정 |
+| `last_name` | 원, 화, 백 |
+| `name` | 노현석, 용채성, 란재문 |
+| `name_with_space` | 하 대하, 옹 민송, 장 국태 |
 
 ## FFaker::NameMX
 
 | Method | Example |
 | ------ | ------- |
-| `female_name` | Margo, Alma, Alba Alicia |
-| `female_name_with_prefix` | Sra. Syreeta Hagenes, C. Marjorie Gutmann, Sra. Loreen Ferry |
-| `female_name_with_prefix_suffix` | Sra. Vanda Stoltenberg V, C. Letitia Metz Jr., C. Gwyn Smitham V |
-| `female_name_with_suffix` | Garnet Murphy IV, Ladawn Swift DVM, Cinthia Pacocha I |
-| `female_prefix` | Srita., C., Srita. |
-| `first_name` | Agustín, Adrián, Mayte |
-| `first_name_female` | Shanna, Lachelle, Micaela |
-| `first_name_male` | Noe, Anibal, Zachery |
-| `full_name` | Igor Crooks Zemlak, Araceli Gerhold Wyman, Edith Leffler Kutch |
-| `full_name_no_prefix` | Aidee Mraz Swaniawski, Eugenio Wilberto Williamson Parisian, Liliana Oberbrunner Glover |
-| `full_name_prefix` | C. Alan Pacocha Lesch, Sra. Nancy Kuphal Schoen, C. Brianda Priscila Bosco Batz |
-| `html_safe_last_name` | Altenwerth, Altenwerth, Schiller |
-| `html_safe_name` | Sandra Jacobson, Marcelo Rempel, Elisa Lemke |
-| `last_name` | Grant, Ebert, Thompson |
-| `male_name` | Homero, Andrés, Ulises |
-| `male_name_with_prefix` | Sr. Myles Hammes, Sr. Alden Emard, Sr. Wilfred Macejkovic |
-| `male_name_with_prefix_suffix` | Sr. Jose Veum Sr., C. Billy Farrell PhD, C. Mitchel Kub II |
-| `male_name_with_suffix` | Randolph Howe V, Solomon Witting Sr., Mac Gulgowski DVM |
-| `male_prefix` | Sr., C., C. |
-| `middle_name` | Aida, Gibrán, Leticia |
-| `name` | Irene, Elia, Adrián |
-| `name_with_prefix` | Srita. Selene Nitzsche, Sr. Kip West, C. Antone Simonis |
-| `name_with_prefix_suffix` | Sra. Hailey Hilpert DDS, Sra. Jazmin Purdy PhD, Sr. William Runolfsson DDS |
-| `name_with_suffix` | Zackary Harvey V, Ngoc Farrell DDS, Domitila Walter DDS |
-| `other_prefix` | Ms., Ms., Dr. |
-| `paternal_last_names` | Jacobi Botsford, Yost Jacobson, Goodwin Ortiz |
-| `prefix` | Sr., Sra., Sr. |
-| `pronouns` | He/Him, Xe/Xem, They/Them |
-| `suffix` | IV, V, PhD |
+| `female_name` | Dulce, Georgina, Lucero |
+| `female_name_with_prefix` | Sra. Shanita Turcotte, C. Lavelle D'Amore, Sra. Mandy Funk |
+| `female_name_with_prefix_suffix` | Sra. Madalene Brown PhD, C. Pinkie Funk I, Srita. Marquerite Botsford Sr. |
+| `female_name_with_suffix` | Marjorie Jerde Sr., Mckenzie Hilll PhD, Jan Hayes III |
+| `female_prefix` | Srita., Srita., Sra. |
+| `first_name` | Isabel, Abraham, Pascual |
+| `first_name_female` | Molly, Vincenza, Dorie |
+| `first_name_male` | Gale, Amos, Andrea |
+| `full_name` | Erick Stamm Casper, Pamela Batz Altenwerth, Nicolás Heaney Barrows |
+| `full_name_no_prefix` | Omar Josué Emard Wunsch, Wilfredo Abraham Mraz Veum, Mauricio Hammes Feil |
+| `full_name_prefix` | Srita. Jaqueline Parker Lind, C. Samuel Kuphal Hegmann, Sra. Nancy Hoppe Larkin |
+| `html_safe_last_name` | Lebsack, Renner, Oga |
+| `html_safe_name` | Delia Quitzon, Genaro Bechtelar, Ramón Heathcote |
+| `last_name` | Daugherty, Dicki, Schowalter |
+| `male_name` | Elvis, Demetrio, Victoriano Ubaldo |
+| `male_name_with_prefix` | Sr. Andy Schultz, Sr. Dante Reynolds, C. Tyson O'Connell |
+| `male_name_with_prefix_suffix` | C. Loyd Pacocha II, C. Geoffrey Streich Jr., C. Darrel Walter IV |
+| `male_name_with_suffix` | Peter Bosco IV, Murray Weber V, Ike Schowalter Sr. |
+| `male_prefix` | C., C., Sr. |
+| `middle_name` | Hanna, Mariana, Selma |
+| `name` | Gil, Héctor, Irma |
+| `name_with_prefix` | Sra. Ellan Schultz, Sr. Marshall Hettinger, Sr. Lane Kovacek |
+| `name_with_prefix_suffix` | Sr. Warren Langworth Sr., C. John Kessler Jr., C. Ewa Mraz IV |
+| `name_with_suffix` | Andria Funk IV, Orlando Crona II, Dee Jones III |
+| `other_prefix` | Ms., Ms., Ms. |
+| `paternal_last_names` | Reynolds Jacobson, McDermott Kertzmann, Morar Sporer |
+| `prefix` | Srita., Sr., C. |
+| `pronouns` | Xe/Xem, Xe/Xer, She/Her |
+| `suffix` | Sr., I, I |
 
 ## FFaker::NameNB
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Ina Hauck, Miss. Aide Adams, Mrs. Marisela Gleason |
-| `female_name_with_prefix_suffix` | Miss. Christine Rippin Jr., Miss. Arlena Stamm IV, Miss. Aileen Bergnaum MD |
-| `female_name_with_suffix` | Kathern Auer DVM, Ermelinda Ernser DDS, Faye Gerlach DVM |
-| `female_prefix` | Mrs., Miss., Miss. |
-| `first_name` | Florida, Vincent, Angelo |
-| `first_name_female` | Luciana, Sheridan, Tyra |
-| `first_name_male` | Tyrell, Warren, Marshall |
-| `html_safe_last_name` | Cummerata, Bahringer, Welch |
-| `html_safe_name` | Tanner Weimann, Elliot Walsh, Gustavo Boehm |
-| `last_name` | Koelpin, Roob, Simonis |
-| `male_name_with_prefix` | Mr. Mason Anderson, Mr. Francis Russel, Mr. Columbus Barrows |
-| `male_name_with_prefix_suffix` | Mr. Rodney Franecki Jr., Mr. Dorian White II, Mr. Fritz Gleason MD |
-| `male_name_with_suffix` | Hal Stracke PhD, Dominick Marquardt II, Bryce Howell III |
+| `female_name_with_prefix` | Mrs. Catherine Dibbert, Mrs. Sherie Runolfsdottir, Miss. Charline Braun |
+| `female_name_with_prefix_suffix` | Miss. Miriam Nolan DDS, Miss. Dyan Nikolaus III, Miss. Lora Bartoletti Sr. |
+| `female_name_with_suffix` | Genia Rowe II, Tamala Nicolas Sr., Yvone Prosacco II |
+| `female_prefix` | Mrs., Mrs., Mrs. |
+| `first_name` | Frances, Andres, Rachele |
+| `first_name_female` | Quyen, Kimber, Dayna |
+| `first_name_male` | Ned, Chas, Michale |
+| `html_safe_last_name` | Bergstrom, Ebert, Sporer |
+| `html_safe_name` | Leatrice Lynch, Kimiko Lubowitz, Aurore Beahan |
+| `last_name` | Hane, Romaguera, Larkin |
+| `male_name_with_prefix` | Mr. Dillon Dibbert, Mr. Dudley Wiza, Mr. Grant Wiza |
+| `male_name_with_prefix_suffix` | Mr. Carlo Ullrich Sr., Mr. Craig Erdman IV, Mr. Edmundo Trantow II |
+| `male_name_with_suffix` | Jarrett Littel Sr., Hollis Zulauf PhD, Jerold Grady V |
 | `male_prefix` | Mr., Mr., Mr. |
-| `name` | Natalie Boehm, Charlie Dewey Bailey, Prof. John Schimmel |
-| `name_with_prefix` | Mr. Travis Funk, Mrs. Danyell Hand, Mrs. Miesha Farrell |
-| `name_with_prefix_suffix` | Mr. Russ Bayer III, Mr. Nickolas Hartmann DDS, Mr. Harrison Simonis II |
-| `name_with_suffix` | Aleida Wintheiser DVM, Flora Schultz DVM, Ivy Mann DVM |
-| `other_prefix` | Ms., Dr., Ms. |
-| `prefix` | Dr., Prof., Prof. |
-| `pronouns` | Xe/Xem, They/Them, He/Him |
-| `suffix` | IV, DDS, PhD |
+| `name` | Lenard Hessel, Sherryl Mueller, August Orville Kirlin |
+| `name_with_prefix` | Mr. Ellsworth Stehr, Mrs. Vita Torp, Mrs. Cheryle Langosh |
+| `name_with_prefix_suffix` | Miss. Claretha Becker IV, Mr. Richie Ortiz PhD, Mrs. Klara Fadel V |
+| `name_with_suffix` | Melita Streich III, Felisa Hoeger IV, Rolland Johnston II |
+| `other_prefix` | Dr., Ms., Dr. |
+| `prefix` | Prof., Prof., Prof. |
+| `pronouns` | Zie/Zim, They/Them, They/Them |
+| `suffix` | V, IV, DDS |
 
 ## FFaker::NameNL
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Mariah McCullough, Mrs. Myong Bins, Miss. Lurline Maggio |
-| `female_name_with_prefix_suffix` | Miss. Shari Cummerata IV, Miss. Estefana Crona Sr., Miss. Candra McClure DDS |
-| `female_name_with_suffix` | Karlene Jakubowski Jr., Stephany McLaughlin II, Brittni Bradtke Jr. |
-| `female_prefix` | Miss., Miss., Mrs. |
-| `first_name` | Laurette-Robbi, Cecil, Basil |
-| `first_name_female` | Madalene, Joana, Shalonda |
-| `first_name_male` | Shawn, Christian, Jerry |
-| `html_safe_last_name` | Pagac, Lang, Bergnaum |
-| `html_safe_name` | Loraine Champlin, Rocio-Rosie Dare, Phebe Denesik |
-| `last_name` | Corkery, Hudson, O'Keefe |
-| `male_name_with_prefix` | Mr. Alonso-Stefan Wiegand, Mr. Pat Kreiger, Mr. Hilton Roberts |
-| `male_name_with_prefix_suffix` | Mr. Hassan-Walter Okuneva Sr., Mr. Jared Cartwright MD, Mr. Lee Bode III |
-| `male_name_with_suffix` | Tanner Schmidt DVM, Gerardo-Silas Morar Sr., Carmine Mante Jr. |
+| `female_name_with_prefix` | Mrs. Roxana Fadel, Miss. Ella Towne, Mrs. Winnie Lakin |
+| `female_name_with_prefix_suffix` | Miss. Edris Herman PhD, Mrs. Verna Spinka V, Miss. Xochitl Rau DDS |
+| `female_name_with_suffix` | Cyndy Blanda I, Orpha-Catrina Shanahan DDS, Cathleen-Jeannine Williamson PhD |
+| `female_prefix` | Mrs., Mrs., Miss. |
+| `first_name` | Walton, Penny, Jerrod |
+| `first_name_female` | Janetta, Avery, Margherita |
+| `first_name_male` | Ramiro, Hugo, Jeff-Sammy |
+| `html_safe_last_name` | Paucek, Johnson, Dickens |
+| `html_safe_name` | Brent Waelchi, Ok Quitzon, Jackie Hettinger |
+| `last_name` | O'Reilly, Hilpert, Morar |
+| `male_name_with_prefix` | Mr. Micah Abbott, Mr. Zachery Shanahan, Mr. Nelson Walsh |
+| `male_name_with_prefix_suffix` | Mr. Kirk Nolan Sr., Mr. Ramon Mayert DVM, Mr. Scotty Predovic III |
+| `male_name_with_suffix` | Jeremy McLaughlin IV, Guy Kertzmann DDS, Pete Boyle DDS |
 | `male_prefix` | Mr., Mr., Mr. |
-| `name` | Eleonora Kuhic, Merlin Kemmer, Millard Gottlieb |
-| `name_with_prefix` | Mr. Jarrod Swift, Miss. Talitha Hane, Mrs. Debora-Chrystal Parker |
-| `name_with_prefix_suffix` | Mrs. Lavone Paucek PhD, Mr. Timmy Harvey DVM, Mr. Sammie Hoppe PhD |
-| `name_with_suffix` | Dara Sipes I, Clemente Dooley Jr., Dewitt-Ezequiel Wolf DDS |
-| `other_prefix` | Dr., Dr., Ms. |
-| `prefix` | Drs., Ir., Ing. |
-| `pronouns` | Xe/Xer, Zie/Zim, She/Her |
-| `suffix` | Jr., V, PhD |
+| `name` | Burl Bashirian, Tandy Wehner, Toby-Dewitt Bednar |
+| `name_with_prefix` | Miss. Jeane Kessler, Mrs. Xiao Koelpin, Mr. Neville Kuvalis |
+| `name_with_prefix_suffix` | Mrs. Thersa-Donnette Batz III, Mrs. Ivy-Leila Morar III, Mrs. Lorelei Stehr IV |
+| `name_with_suffix` | Camie Jast DVM, Shaquita Raynor DVM, Jasper Braun II |
+| `other_prefix` | Dr., Ms., Ms. |
+| `prefix` | Prof., Dr., Prof. |
+| `pronouns` | They/Them, She/Her, Xe/Xem |
+| `suffix` | DDS, DVM, IV |
 
 ## FFaker::NamePH
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Ami Salumbidez, Mrs. Corinne Alcantara, Mrs. Many Cantillo |
-| `female_name_with_prefix_suffix` | Mrs. Taren Vizcaya DDS, Mrs. Hermine Cedidomutila PhD, Miss. Earlene de Leon MD |
-| `female_name_with_suffix` | Agueda Gosiengfiao II, Zola Castro I, Martine Fontanilla DDS |
-| `female_prefix` | Mrs., Mrs., Mrs. |
-| `first_name` | Holli, Mariam, Louvenia |
-| `first_name_female` | Claudine, Zonia, Jennine |
-| `first_name_male` | Christopher, Kenny, Markus |
-| `html_safe_last_name` | Dibbert, Emmerich, Bahringer |
-| `html_safe_name` | Mikki King, Lorie Conn, Tonya Hartmann |
-| `last_name` | Abad, Sariwa, Mipa |
-| `male_name_with_prefix` | Mr. Vince Mipa, Mr. Thurman Bitaog, Mr. Laurence Bitaog |
-| `male_name_with_prefix_suffix` | Mr. Henry de la Paz IV, Mr. Buddy Tambuatco PhD, Mr. Lynn Salumbidez DDS |
-| `male_name_with_suffix` | Jesus Dimaunahang IV, Juan Yu DDS, Harry Tagonon IV |
+| `female_name_with_prefix` | Miss. Glennie Marcelo, Miss. Altha Tugonon, Miss. Sanjuana Syjuco |
+| `female_name_with_prefix_suffix` | Mrs. Lavona Armas Sr., Mrs. Donetta Quezada PhD, Mrs. Liza Gabuat Sr. |
+| `female_name_with_suffix` | Vergie Salem Sr., Lilliam Cagas MD, Neta Salem Sr. |
+| `female_prefix` | Miss., Mrs., Miss. |
+| `first_name` | Zina, Beatrice, Felton |
+| `first_name_female` | Alaine, Latanya, Elane |
+| `first_name_male` | Domenic, Quinn, Willie |
+| `html_safe_last_name` | Batz, Satterfield, Daugherty |
+| `html_safe_name` | Ernie Morissette, Marisela Green, Lana Cummings |
+| `last_name` | Gubatg, Laurel, Cuenca |
+| `male_name_with_prefix` | Mr. Lincoln Garcia, Mr. Santos Villaecija, Mr. Dillon Pilapil |
+| `male_name_with_prefix_suffix` | Mr. Hung Lazaro IV, Mr. Keith Fernandez V, Mr. Jeremy Calapatia I |
+| `male_name_with_suffix` | Prince del I, Leonel Magday DDS, Tad Barreto V |
 | `male_prefix` | Mr., Mr., Mr. |
-| `name` | Mariel Celis, Tessa Tanjuatco, Mila Abucay |
-| `name_with_prefix` | Mrs. Karlyn Dantes, Mr. Reed Roque, Miss. Argelia Corpuz |
-| `name_with_prefix_suffix` | Mr. Clyde Quezada DDS, Mrs. Mallie Ilaban V, Miss. May España Jr. |
-| `name_with_suffix` | Donn Labuguen IV, Shaunta Baltar IV, Cuc Limuaco IV |
-| `other_prefix` | Dr., Dr., Dr. |
-| `prefix` | Dr., Dr., Ms. |
-| `pronouns` | Zie/Zim, Xe/Xem, Zie/Zim |
-| `suffix` | II, MD, IV |
+| `name` | Hana Guevara, Elaine Gierran, Tamie Sarmiento |
+| `name_with_prefix` | Miss. Noemi Diaz, Miss. Scarlett Dahilang, Miss. Hsiu de la Cruz |
+| `name_with_prefix_suffix` | Mr. Ali Pinagpalag Sr., Mr. Russ Sytengco Jr., Mrs. Arlyne Macaspac1 III |
+| `name_with_suffix` | Ty Verano DDS, Lovella Asuncion Jr., Annett Lacro DDS |
+| `other_prefix` | Dr., Ms., Dr. |
+| `prefix` | Ms., Mrs., Miss. |
+| `pronouns` | Xe/Xem, Zie/Zim, He/Him |
+| `suffix` | MD, III, Jr. |
 
 ## FFaker::NamePL
 
 | Method | Example |
 | ------ | ------- |
-| `academic_degree_prefix` | inż., dr hab., dr |
-| `female_first_name` | Martyna, Kamila, Zuzanna |
-| `female_full_name` | Kazimiera Starzyńska, Klaudia Iwańska, Natalia Ryś |
-| `female_last_name` | Stychlerz, Adamowska, Ziopaja |
-| `female_name_with_prefix` | Pani Felicja Błach, Pani Helga Walczak, Pani Bogusława Musiał |
+| `academic_degree_prefix` | lic., prof., lic. |
+| `female_first_name` | Oktawia, Antonina, Laura |
+| `female_full_name` | Jowita Witkowska, Lidia Janicka, Helga Tyszka |
+| `female_last_name` | Buczkowska, Nawrocka, Czachowska |
+| `female_name_with_prefix` | Pani Fatima Bachleda, Pani Kamila Pietrzykowska, Pani Oktawia Bielecka |
 | `female_prefix` | Pani, Pani, Pani |
-| `first_name` | Czesław, Jadwiga, Grzegorz |
-| `full_name` | Waldemar Piątek, Witold Zawiślak, Iga Sopoćko |
-| `last_name` | Kołodziejski, Wojciechowska, Śliwa |
-| `male_first_name` | Zdzisław, Iwo, Janusz |
-| `male_full_name` | Leon Wolski, Walerian Karwowski, Piotr Gombrowicz |
-| `male_last_name` | Michnik, Kijowski, Makowski |
-| `male_name_with_prefix` | Pan Oskar Winnicki, Pan Adrian Żurawski, Pan Alojzy Tarczyński |
+| `first_name` | Kornelia, Ireneusz, Mateusz |
+| `full_name` | Rafał Waglewski, Zyta Walicka, Zuzanna Kowalczyk |
+| `last_name` | Butkiewicz, Szczęsny, Mączyński |
+| `male_first_name` | Janusz, Gerwazy, Wojciech |
+| `male_full_name` | Gerwazy Radziński, Kacper Ciechanowski, Igor Czachowski |
+| `male_last_name` | Maciejewski, Kaczmarek, Krasiński |
+| `male_name_with_prefix` | Pan Roman Orłowski, Pan Lech Kaczorowski, Pan Józef Hernik |
 | `male_prefix` | Pan, Pan, Pan |
-| `name` | Miłosz Musiał, Gracjan Szczęsny, Edmund Tarnowski |
-| `name_with_prefix` | Pan Ignacy Dąbrowski, Pani Karolina Kononowicz, Pan Artur Nowak |
-| `prefix` | Pani, dr, lic. |
+| `name` | Bartosz Adamiuk, Kamil Glinka, Pola Karpińska |
+| `name_with_prefix` | Pan Maksymilian Iwański, Pani Alina Filipowicz, Pan Tobiasz Adamiuk |
+| `prefix` | mgr, dr hab., dr |
 
 ## FFaker::NameRU
 
 | Method | Example |
 | ------ | ------- |
-| `female_name` | Зоя Воробьева, Фекла Лебедева, Зинаида Фролова |
-| `first_name` | Гордей, Василиса, Венедикт |
-| `first_name_female` | Злата, Лилия, Лидия |
-| `first_name_male` | Герасим, Донат, Денис |
-| `last_name` | Лебедева, Филиппов, Пономарев |
-| `last_name_female` | Куликова, Егорова, Филиппова |
-| `last_name_male` | Петров, Фомин, Соболев |
-| `male_name` | Герасим Федотов, Егор Воробьев, Вадим Степанов |
-| `middle_name_female` | Ярославовна, Евгеньевна, Романовна |
-| `middle_name_male` | Викторович, Филиппович, Дмитриевич |
-| `name` | Архипп Тимофеев, Карина Анисимова, Родион Ширяев |
+| `female_name` | Антонина Осипова, Александра Рябова, Александра Петрова |
+| `first_name` | Леонтий, Евграф, Георгий |
+| `first_name_female` | Анжелика, Юлия, Мария |
+| `first_name_male` | Юстин, Тихон, Сильвестр |
+| `last_name` | Кудрявцев, Крылов, Сергеева |
+| `last_name_female` | Антонова, Рябова, Антонова |
+| `last_name_male` | Денисов, Соколов, Антонов |
+| `male_name` | Протасий Осипов, Константин Сорокин, Тихон Мельников |
+| `middle_name_female` | Филипповна, Эдуардовна, Богдановна |
+| `middle_name_male` | Федорович, Наумович, Данилович |
+| `name` | Евфросиния Воробьева, Влас Мельников, Юлия Медведева |
 
 ## FFaker::NameSE
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Mona Kiehn, Miss. Adrianne Reichel, Miss. Courtney Runolfsdottir |
-| `female_name_with_prefix_suffix` | Miss. Lindsy Kilback PhD, Mrs. Rubi Hahn Jr., Mrs. Gabrielle Feeney V |
-| `female_name_with_suffix` | Lawanda Spinka IV, Venice Sauer III, Meghan Monahan V |
-| `female_prefix` | Mrs., Mrs., Miss. |
-| `first_name` | Laurine Dorathy, Jonathon, Faustina Destiny |
-| `first_name_female` | Helena, Jannie, Graciela |
-| `first_name_male` | Gaylord, Merrill, Harold |
-| `html_safe_last_name` | Bashirian, Lynch, Flatley |
-| `html_safe_name` | Alfonso Kirlin, Barton Corkery, Trista Bosco |
-| `last_name` | Goodwin, Russel, VonRueden |
-| `male_name_with_prefix` | Mr. Dick Zulauf, Mr. Cole Fadel, Mr. Guillermo Haag |
-| `male_name_with_prefix_suffix` | Mr. Johnson Hansen PhD, Mr. Von Jerde I, Mr. Porfirio Johnson V |
-| `male_name_with_suffix` | Irving Langworth II, Damion Kertzmann III, Anton Abbott MD |
+| `female_name_with_prefix` | Mrs. Jule Schowalter, Mrs. Kayce Senger, Miss. Renate Corkery |
+| `female_name_with_prefix_suffix` | Miss. Kristeen Lowe I, Miss. Flo Flatley V, Mrs. Tiny Keebler IV |
+| `female_name_with_suffix` | Saundra Mohr DVM, Aide Schaden III, Kiera Metz MD |
+| `female_prefix` | Miss., Mrs., Miss. |
+| `first_name` | Marcelene, Madelaine, Kory |
+| `first_name_female` | Val, Clorinda, Ozie |
+| `first_name_male` | Prince, Florencio, Vaughn |
+| `html_safe_last_name` | Predovic, Schmeler, Brown |
+| `html_safe_name` | Marna Mosciski, Kurt Dach, Jamison Raymundo Crooks |
+| `last_name` | D'Amore, Paucek, Kiehn |
+| `male_name_with_prefix` | Mr. Wilmer Bode, Mr. Reginald Grady, Mr. Scottie Littel |
+| `male_name_with_prefix_suffix` | Mr. Randall Krajcik V, Mr. Kirby Nolan III, Mr. Dylan Dach V |
+| `male_name_with_suffix` | Erwin Kunze I, Alfonso Fritsch DVM, Rich Denesik IV |
 | `male_prefix` | Mr., Mr., Mr. |
-| `name` | Fernande Grimes, Jamal Emmerich, Rosamond Erminia Gutmann |
-| `name_with_prefix` | Mr. Deon Bogan, Mr. Odell Rutherford, Mr. Ivory Parisian |
-| `name_with_prefix_suffix` | Mrs. Londa Gaylord Sr., Mr. Nathaniel Keebler Sr., Mr. Tyrell Tremblay Jr. |
-| `name_with_suffix` | Derrick Kovacek II, Londa Eichmann III, Julienne Luettgen II |
-| `other_prefix` | Ms., Dr., Dr. |
-| `prefix` | Prof., Dr., Dr. |
-| `pronouns` | Zie/Zim, She/Her, He/Him |
-| `suffix` | DDS, Sr., PhD |
+| `name` | Salena Osinski, Coretta Vickie Pollich, Mckenzie Melodee Jerde |
+| `name_with_prefix` | Mr. Jarvis Konopelski, Miss. Jude Hamill, Miss. Gayle Doyle |
+| `name_with_prefix_suffix` | Mr. Rashad Torphy Jr., Miss. Laila Krajcik MD, Miss. Jocelyn McDermott I |
+| `name_with_suffix` | Barbie Flatley Sr., Debroah Langosh Sr., Herb Parisian DDS |
+| `other_prefix` | Ms., Dr., Ms. |
+| `prefix` | Prof., Prof., Dr. |
+| `pronouns` | He/Him, Zie/Zim, Xe/Xer |
+| `suffix` | I, III, I |
 
 ## FFaker::NameSN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name_female` | Guissaly, Lika, Ngoné |
-| `first_name_male` | Salif, Ndongo, Lamine |
-| `last_name` | Bapinye, Diadhiou, Diatta |
-| `name_female` | mame Hawa Badji, adjaratou Bineta Tandiné, Sadio Sylla |
-| `name_male` | Thierno Timera, Mamour Diakho, Dame Dupa |
-| `name_sn` | adjaratou Mariama Diop, ndeye Ramatoulaye Médou, ndeye Diary Fadiga |
-| `prefix_female` | mame, adja, adja |
-| `prefix_male` | pape, pape, eladji |
+| `first_name_female` | Ndiémé, Sofiatou, Ndioro |
+| `first_name_male` | Soundjata, Alioune, Bouna |
+| `last_name` | Preira, Kaly, Kabely |
+| `name_female` | ndeye Dieourou Kanouté, Bougouma Sambou, Khoudia Kayounga |
+| `name_male` | Galaye Lèye, Kao Tall, serigne Toumani Bodian |
+| `name_sn` | Mbossé Tandini, Khady Boubane, Albouri Ndaw |
+| `prefix_female` | mame, adja, ndeye |
+| `prefix_male` | eladji, pape, mame |
 
 ## FFaker::NameTH
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | สมศักดิ์, จารุวรรณ, กล้าหาญ |
-| `last_name` | ติณสูลานนท์, หงสกุล, สมิท |
-| `name` | นัยนา  สมิท, ฤดี ติณสูลานนท์, จารุวรรณ หงสกุล |
-| `nick_name` | ดำ , ใส , เผือก  |
+| `first_name` | สมร , จตุพล, มานิตย์  |
+| `last_name` | วอชิงตัน, ติณสูลานนท์, เก่งงาน |
+| `name` | เนาวรัตน์ ชินวัตร, วรรณา เคนเนะดิ , ฤทัย  ติณสูลานนท์ |
+| `nick_name` | โต , เล็ก , ณัฐ |
 
 ## FFaker::NameTHEN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Kob Khun, Lamai, Mekhala |
-| `last_name` | Kadesadayurat, Visalyaputra, Aromdee |
-| `name` | Phichai Rojjanasukchai, Hom Kaouthai, Narong Kadesadayurat |
-| `nick_name` | Chai, Nui, Mee |
+| `first_name` | Songsuda, Klaew Kla, Chuanchen |
+| `last_name` | Jetjirawat, Aromdee, Kurusarttra |
+| `name` | Charong Kongkatitum, Ya Chai Suntornnitikul, Kukrit Songprawati |
+| `nick_name` | Toi, Kung, Chock |
 
 ## FFaker::NameTW
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | 柏翰, 品妍, 詠晴 |
-| `last_name` | 施, 沈, 朱 |
-| `name` | 王冠宇, 張睿恩, 龔品妤 |
+| `first_name` | 宥辰, 品睿, 冠宇 |
+| `last_name` | 鐘, 張, 薛 |
+| `name` | 白品睿, 魏冠宇, 蔣承恩 |
 
 ## FFaker::NameUA
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Велемир, Віта, Ангеліна |
-| `first_name_female` | Леся, Купава, Борислава |
-| `first_name_male` | Родослав, Гнат, Ростислав |
-| `last_name` | Трясило, Забіла, Бабух |
-| `last_name_female` | Стигайло, Галаєнко, Трясун |
-| `last_name_male` | Скиба, Унич, Шупик |
-| `middle_name_female` | Михайлівна, Вадимівна, Антонівна |
-| `middle_name_male` | Доброславович, Сергійович, Ярославович |
-| `name` | Лад Тарасович, Мазун Боримир, Арсеній Боженович |
+| `first_name` | Марічка, Фаїна, Мар’яна |
+| `first_name_female` | Орина, Владислава, Агнеса |
+| `first_name_male` | Дарій, Зеновій, Добромир |
+| `last_name` | Кулинич, Коман, Усич |
+| `last_name_female` | Гарай, Дідух, Яворівська |
+| `last_name_male` | Скиба, Каськів, Гриневський |
+| `middle_name_female` | Златомирівна, Іванівна, Божемирівна |
+| `middle_name_male` | Родіонович, Гордійович, Братиславович |
+| `name` | Сучак Аскольд Григорійович, Назарій, Павлів Родіон Радимирович |
 
 ## FFaker::NameVN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Hữu, Văn, Văn |
-| `last_first` | Lương Tuyến Công, Giang Hoàng Quang, Phùng Hùng Văn |
-| `last_name` | Hồ, Triệu, Vĩnh |
-| `middle_name` | Phú, Sơn, Ninh |
-| `name` | Hùng Quang Phó, Tuyến Quang Huỳnh, Minh Quang Lục |
+| `first_name` | Công, Đức, Quang |
+| `last_first` | Mạch Nguyên Hữu, Lâm Khoa Đức, Hoàng Hải Đức |
+| `last_name` | Phạm, Đỗ, Lạc |
+| `middle_name` | Khôi, Lai, Tùng |
+| `name` | Huỳnh Hữu Bành, Hạnh Công Quách, Kim Hữu Mạch |
 
 ## FFaker::NatoAlphabet
 
 | Method | Example |
 | ------ | ------- |
-| `alphabetic_code` | KILO, KILO, YANKEE |
-| `callsign` | ZULU-CHARLIE-THREE, PAPA-UNIFORM-FIVE, YANKEE-NOVEMBER-THREE |
-| `code` | UNIFORM, KILO, QUEBEC |
+| `alphabetic_code` | WHISKEY, LIMA, SIERRA |
+| `callsign` | UNIFORM-BRAVO-ONE, VICTOR-LIMA-TWO, XRAY-FOXTROT-SEVEN |
+| `code` | CHARLIE, SIX, VICTOR |
 | `codify`(...) |  |
-| `numeric_code` | FIVE, ONE, ZERO |
+| `numeric_code` | NINE, FIVE, SEVEN |
 
 ## FFaker::PhoneNumber
 
 | Method | Example |
 | ------ | ------- |
-| `area_code` | 880, 993, 832 |
-| `exchange_code` | 262, 941, 650 |
-| `imei` | 988103810942381, 449604893354983, 441289525678153 |
-| `phone_calling_code` | +263, +95, +56 |
-| `phone_number` | 1-614-599-3514, 248.777.4148, (290)872-4677 x050 |
-| `short_phone_number` | 342-232-7573, 557-967-0876, 334-309-4129 |
+| `area_code` | 691, 912, 479 |
+| `exchange_code` | 849, 521, 351 |
+| `imei` | 991463995483592, 996585745135885, 339785531079265 |
+| `phone_calling_code` | +298, +220, +268 |
+| `phone_number` | (861)543-7404, (383)587-7071, 1-354-982-4410 |
+| `short_phone_number` | 652-713-3407, 439-480-5208, 408-792-6599 |
 
 ## FFaker::PhoneNumberAU
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | +61, +61, +61 |
-| `home_work_phone_number` | (08) 7705 1032, (03) 8970 9369, (03) 4752 6560 |
-| `home_work_phone_prefix` | 08, 03, 08 |
-| `international_home_work_phone_number` | +61 2 5591 6052, +61 8 5343 2514, +61 8 1842 4908 |
-| `international_mobile_phone_number` | +61 5 8881 6364, +61 5 0750 3469, +61 5 8308 9140 |
-| `international_phone_number` | +61 5 3409 2232, +61 8 3212 0608, +61 2 6304 3546 |
-| `mobile_phone_number` | 0589 116 899, 0528 053 130, 0474 568 295 |
-| `mobile_phone_prefix` | 04, 05, 04 |
-| `phone_number` | 0533 781 028, 0450 959 309, 0420 412 009 |
-| `phone_prefix` | 08, 02, 04 |
+| `home_work_phone_number` | (07) 9569 8359, (07) 3564 9840, (07) 6582 8972 |
+| `home_work_phone_prefix` | 02, 03, 03 |
+| `international_home_work_phone_number` | +61 2 8958 7091, +61 3 0775 3202, +61 8 6196 5433 |
+| `international_mobile_phone_number` | +61 5 4653 1505, +61 5 0390 5582, +61 5 4595 5633 |
+| `international_phone_number` | +61 5 3432 3835, +61 8 4553 1444, +61 8 2959 9060 |
+| `mobile_phone_number` | 0591 365 995, 0573 886 533, 0532 624 692 |
+| `mobile_phone_prefix` | 05, 05, 05 |
+| `phone_number` | (02) 2110 1823, 0524 230 435, (03) 8956 5892 |
+| `phone_prefix` | 02, 08, 05 |
 
 ## FFaker::PhoneNumberBR
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | +55, +55, +55 |
-| `home_work_phone_number` | 922810-1569, 16 43835765, 83 4064-8862 |
-| `international_home_work_phone_number` | +55 94 5390-6012, +559948159828, +55 93 53454942 |
-| `international_mobile_phone_number` | +55 41 986335105, +55 68 96900-8682, +55 11 970850972 |
-| `international_phone_number` | +55 31 982517498, +55 93 31667179, +55282265-4201 |
-| `mobile_phone_number` | 81999360900, 24997090032, 81 96686-2129 |
-| `phone_number` | 91 965125152, 71973809338, 21 35168154 |
+| `home_work_phone_number` | 96 51248333, 795891-3940, 19 2014-5973 |
+| `international_home_work_phone_number` | +558941650448, +55 12 5971-1049, +55375508-1000 |
+| `international_mobile_phone_number` | +55 86 998531303, +55 62 981062777, +555398615-0444 |
+| `international_phone_number` | +55 98 29476772, +55 87 5012-3673, +558346848456 |
+| `mobile_phone_number` | 28 971900464, 69 990771723, 4597658-9858 |
+| `phone_number` | 93982663746, 54 38224402, 16993005204 |
 
 ## FFaker::PhoneNumberCH
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 00418008713203, 08006808829, 08000658725 |
-| `home_work_phone_number` | +41246268129, +41332141510, 0041211506396 |
-| `mobile_phone_number` | 077 678 63 11, +4175 579 41 86, +41789606483 |
-| `phone_number` | 004134 245 00 82, +418427202987, +4176 489 41 33 |
-| `premium_rate_phone_number` | 0901 866 44 02, 09001079821, +419017603218 |
-| `shared_cost_phone_number` | 0842 880 01 98, 00418444955749, 0840 200 40 63 |
+| `free_phone_number` | 00418009549526, 00418001480466, +418002447565 |
+| `home_work_phone_number` | 004151 810 96 39, +4132 160 61 29, 043 046 91 08 |
+| `mobile_phone_number` | 0785741622, +4177 984 82 80, 0763372885 |
+| `phone_number` | +41752213170, +41900 636 72 74, 0041848 897 28 29 |
+| `premium_rate_phone_number` | +41906 469 88 39, 0041900 012 94 84, 00419001277519 |
+| `shared_cost_phone_number` | 00418482178130, 0844 633 21 47, 0848 520 98 93 |
 
 ## FFaker::PhoneNumberCU
 
@@ -2153,273 +2153,273 @@
 | ------ | ------- |
 | `country_code` | 53, 53, 53 |
 | `e164_country_code` | 53, 53, 53 |
-| `e164_home_work_phone_number` | 5342444654, 5324915663, 5371320244 |
-| `e164_mobile_phone_number` | 5351495198, 5359387913, 5354665901 |
-| `e164_phone_number` | 5359227747, 5348573884, 5342907692 |
-| `general_phone_number` | (022) 47 7148, (046) 88 8092, 05 863 9558 |
-| `home_work_phone_number` | (024) 94 0582, (033) 51 3571, (042) 88 8172 |
-| `home_work_phone_prefix` | 023, 022, 022 |
-| `international_country_code` | +53, +53, 0053 |
-| `international_home_work_phone_number` | 005323 63 2977, +537 444 9775, +5322 19 7046 |
-| `international_mobile_phone_number` | 00535 612 0020, 00535 198 2516, +535 130 4172 |
-| `international_phone_number` | 00535 069 9790, +5333 72 1376, 005342 25 8365 |
-| `mobile_phone_number` | 05 723 0752, 05 757 3308, 05 991 8015 |
+| `e164_home_work_phone_number` | 5343716434, 5348570128, 5323810462 |
+| `e164_mobile_phone_number` | 5354759559, 5352833787, 5358522632 |
+| `e164_phone_number` | 5321423278, 5323994678, 5355772276 |
+| `general_phone_number` | 05 907 7021, 05 768 1853, 05 665 1138 |
+| `home_work_phone_number` | (041) 65 9872, (031) 85 1900, (043) 07 8323 |
+| `home_work_phone_prefix` | 041, 021, 045 |
+| `international_country_code` | 0053, 0053, +53 |
+| `international_home_work_phone_number` | 005331 56 3937, +5332 79 9336, +5324 74 2482 |
+| `international_mobile_phone_number` | 00535 371 5608, +535 509 6164, 00535 573 8432 |
+| `international_phone_number` | +537 481 4917, 00535 081 3905, 00535 070 5454 |
+| `mobile_phone_number` | 05 065 1660, 05 507 9220, 05 294 6113 |
 | `mobile_phone_prefix` | 05, 05, 05 |
-| `phone_number` | (033) 34 3643, 00535 457 8699, 5358487404 |
-| `phone_prefix` | 05, 021, 047 |
+| `phone_number` | 5353223025, 5350829671, +535 430 7962 |
+| `phone_prefix` | 031, 021, 048 |
 
 ## FFaker::PhoneNumberDA
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | +45, +45, +45 |
-| `home_work_phone_number` | 22521773, 00051608, 07770847 |
-| `international_home_work_phone_number` | +45 29108781, +45 89913258, +45 13847366 |
-| `international_mobile_phone_number` | +45 37837566, +45 42732649, +45 72480034 |
-| `international_phone_number` | +45 24501476, +45 65531052, +45 48429580 |
-| `mobile_phone_number` | 85164855, 79574121, 99290836 |
-| `phone_number` | 87165353, 48024919, 34649099 |
+| `home_work_phone_number` | 48193623, 90340187, 82021042 |
+| `international_home_work_phone_number` | +45 43554199, +45 78106874, +45 49582484 |
+| `international_mobile_phone_number` | +45 57618388, +45 67961771, +45 83870230 |
+| `international_phone_number` | +45 89087108, +45 88842991, +45 66120308 |
+| `mobile_phone_number` | 66208252, 26229236, 86138841 |
+| `phone_number` | 40413801, 77639399, 00385045 |
 
 ## FFaker::PhoneNumberDE
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | +49, +49, +49 |
-| `home_work_phone_number` | 04295 2628087, 047 5970935, 0909 5488024 |
-| `international_home_work_phone_number` | +49 85 8249887, +49 984 4216374, +49 339 1367575 |
-| `international_mobile_phone_number` | +49 173 5459714, +49 170 1073011, +49 179 3947960 |
-| `international_phone_number` | +49 9600 0645370, +49 57 8049766, +49 66 1798514 |
-| `mobile_phone_number` | 0161 5846395, 0175 2651027, 0169 7201232 |
-| `mobile_prefix` | 0153, 0178, 0156 |
-| `phone_number` | 0707 0674470, 02187 4888421, 0577 4955210 |
-| `region_prefix` | 069, 0709, 022 |
+| `home_work_phone_number` | 094 5504546, 087 0960229, 042 2655127 |
+| `international_home_work_phone_number` | +49 372 3161227, +49 203 3373408, +49 241 3949528 |
+| `international_mobile_phone_number` | +49 155 7600462, +49 157 7859115, +49 162 7750463 |
+| `international_phone_number` | +49 6755 5367726, +49 34 3646295, +49 867 1982167 |
+| `mobile_phone_number` | 0150 5525372, 0160 0199334, 0151 8516923 |
+| `mobile_prefix` | 0164, 0154, 0166 |
+| `phone_number` | 056 0856954, 093 6411737, 03600 3479124 |
+| `region_prefix` | 05011, 06317, 0713 |
 
 ## FFaker::PhoneNumberFR
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | 0033, +33, 0033 |
-| `home_work_phone_number` | 09 62 32 59 60, 04 74 54 05 98, 0565264225 |
-| `international_home_work_phone_number` | +333 98 88 75 07, +334 51 19 40 89, +335 93 35 40 23 |
-| `international_mobile_phone_number` | +336 48 01 36 98, 00337 27 13 68 22, 0033 6 81 47 32 50 |
-| `international_phone_number` | +33707930567, +33 774388346, 0033 735836933 |
-| `mobile_phone_number` | 07 02 98 75 61, 0627507238, 07 76 55 54 93 |
-| `phone_number` | 07 73 31 26 29, 0468739829, 06 10 41 14 51 |
+| `country_code` | 0033, +33, +33 |
+| `home_work_phone_number` | 01 60 37 75 41, 0193158837, 01 68 14 77 28 |
+| `international_home_work_phone_number` | 0033 948705621, 00334 86 97 23 94, 0033 476700256 |
+| `international_mobile_phone_number` | +33 6 91 77 34 75, +336 66 87 05 17, 0033647804038 |
+| `international_phone_number` | +336 31 69 47 24, 00339 06 19 32 93, 0033 3 60 71 82 95 |
+| `mobile_phone_number` | 06 03 36 76 06, 06 33 45 84 91, 07 21 64 88 54 |
+| `phone_number` | 02 28 01 84 79, 0211985431, 04 63 83 87 44 |
 
 ## FFaker::PhoneNumberID
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 0922-06110786, 0298-7852695, 0422-47785642 |
-| `international_home_phone_number` | +62966-51994303, +62386-2349097, +62426-89999196 |
-| `international_mobile_phone_number` | +62816-27537847, +62815-69552301, +62823-68187532 |
-| `international_phone_number` | +62655-70522005, +62813-44590709, +62815-16924518 |
-| `mobile_phone_number` | 0886-10004211, 0818-65821858, 0815-45774147 |
-| `phone_number` | 0822-86099577, 0744-41221256, 0657-6922544 |
+| `home_phone_number` | 0262-8234231, 0234-8822754, 0643-8558136 |
+| `international_home_phone_number` | +62957-8502070, +62922-9801870, +62723-8143456 |
+| `international_mobile_phone_number` | +62852-00229395, +62878-43301475, +62896-05144777 |
+| `international_phone_number` | +62878-09875277, +62858-20726814, +62852-48987214 |
+| `mobile_phone_number` | 0877-82101863, 0815-16896283, 0812-89662130 |
+| `phone_number` | 0877-20739142, 0777-30476144, 0634-8909006 |
 
 ## FFaker::PhoneNumberIT
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | +39 016367662101, +39 07072725959, +390323503664 |
-| `mobile_phone_number` | +39 339751103, 0039 344 412613, 0039320 39191535 |
+| `home_phone_number` | 0039 014284396550, +390426 632017, 0039 0736 335078 |
+| `mobile_phone_number` | +39344 520208, +39 338040828, 0039329 52396344 |
 | `number`(...) |  |
-| `phone_number` | +39333544515, 0039 049 53892594, +390131987636 |
-| `random_space` |  ,  ,   |
+| `phone_number` | 0039 340 619443, +39 337 37512941, 0039333 01864037 |
+| `random_space` |  , ,   |
 
 ## FFaker::PhoneNumberJA
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 0742 07 8816, 0968 32 7229, 096 467 0237 |
+| `home_phone_number` | 0297 09 1850, 08514 9 6199, 0178 53 4131 |
 | `home_phone_number_format`(...) |  |
 | `home_phone_prefix` | , ,  |
-| `international_home_phone_number` | +81 173 27 2223, +81 184 49 4378, +81 26 013 4580 |
-| `international_mobile_phone_number` | +81 80 5829 8691, +81 90 0520 3999, +81 70 7334 1924 |
-| `international_phone_number` | +81 90 8475 7651, +81 87 865 9270, +81 70 9702 9022 |
-| `mobile_phone_number` | 090 7885 3301, 080 2095 2926, 080 8247 8107 |
-| `mobile_phone_number_format` | 70 #### ####, 70 #### ####, 80 #### #### |
-| `mobile_prefix` | 80, 90, 70 |
-| `phone_number` | 04996 7 0727, 090 7411 6872, 080 2203 4811 |
+| `international_home_phone_number` | +81 920 44 2810, +81 58 518 5359, +81 4 4180 9316 |
+| `international_mobile_phone_number` | +81 90 7274 7623, +81 70 4914 4103, +81 70 5656 8675 |
+| `international_phone_number` | +81 1634 1 7733, +81 6 2435 0041, +81 6 7525 8379 |
+| `mobile_phone_number` | 080 3533 5341, 090 2216 6639, 090 5445 9194 |
+| `mobile_phone_number_format` | 70 #### ####, 90 #### ####, 70 #### #### |
+| `mobile_prefix` | 80, 80, 90 |
+| `phone_number` | 090 4470 0720, 090 2473 6829, 03 8190 0135 |
 
 ## FFaker::PhoneNumberKR
 
 | Method | Example |
 | ------ | ------- |
 | `contry_code` | +82, +82, +82 |
-| `home_work_phone_number` | 02 7170 0231, 031 8138 7569, 041 1477 0457 |
-| `international_home_work_phone_number` | +82 49 8120 6252, +82 33 1540 6155, +82 62 7530 7038 |
-| `international_mobile_phone_number` | +82 10 0954 9841, +82 10 3799 5123, +82 19 9272 6601 |
-| `international_phone_number` | +82 11 1619 7556, +82 53 7276 2625, +82 54 9275 1897 |
-| `mobile_phone_number` | 010 7850 0367, 016 2100 7927, 016 3034 1655 |
-| `phone_number` | 031 7324 0658, 010 8197 4120, 055 7539 1455 |
+| `home_work_phone_number` | 042 2715 0095, 041 7320 6819, 033 5926 7762 |
+| `international_home_work_phone_number` | +82 52 2530 1927, +82 54 7658 6427, +82 44 1836 7288 |
+| `international_mobile_phone_number` | +82 10 4615 9230, +82 19 7603 6840, +82 11 0496 6255 |
+| `international_phone_number` | +82 10 4178 4940, +82 16 7716 2757, +82 10 7635 3565 |
+| `mobile_phone_number` | 019 7072 3276, 011 1358 9457, 011 0665 3633 |
+| `phone_number` | 02 6041 7391, 02 2222 0020, 011 9611 2772 |
 
 ## FFaker::PhoneNumberMX
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | +52, +52, +52 |
-| `home_work_phone_number` | 32 4298 2316, 15 0019 3469, 72 6128 2116 |
-| `international_home_work_phone_number` | +52 42 9913 6837, +52 27 6451 3309, +52 04 1398 2252 |
-| `international_mobile_phone_number` | +52 1 35 9831 3665, +52 1 36 0806 3835, +52 1 54 3961 0598 |
-| `international_phone_number` | +52 44 8864 4476, +52 1 89 0151 2124, +52 92 4203 9375 |
-| `mobile_phone_number` | 044 57 1387 2737, 044 69 5203 7818, 044 42 6641 6412 |
-| `phone_number` | 79 9702 8005, 044 67 6639 3107, 044 44 9241 9502 |
-| `toll_free_number` | 01 800 399 4823, 01 800 602 4726, 01 800 703 5517 |
+| `home_work_phone_number` | 87 9495 0686, 69 8727 4859, 23 5548 7622 |
+| `international_home_work_phone_number` | +52 41 8738 0694, +52 33 6434 1499, +52 65 0576 2518 |
+| `international_mobile_phone_number` | +52 1 93 6953 7547, +52 1 88 6768 2834, +52 1 73 8401 4901 |
+| `international_phone_number` | +52 1 85 5619 7988, +52 23 3657 8883, +52 80 1671 1858 |
+| `mobile_phone_number` | 044 92 2055 3218, 044 00 3881 7553, 044 20 6900 4656 |
+| `phone_number` | 39 0977 9498, 044 67 1232 2664, 044 00 4278 4243 |
+| `toll_free_number` | 01 800 349 3090, 01 800 137 8461, 01 800 297 4520 |
 
 ## FFaker::PhoneNumberNL
 
 | Method | Example |
 | ------ | ------- |
-| `home_work_phone_number` | 071-4814 597, 071-0825193, 0546-988491 |
-| `international_home_work_phone_number` | +31 548-11 68 64, +31 592-172760, +31 314-1850 82 |
-| `international_mobile_phone_number` | +31 6 8931 6061, +31 660300070, +31 656707213 |
-| `international_phone_number` | +31 6 334 280 66, +31 571-599091, +31 610922968 |
-| `mobile_phone_number` | 06 65 28 57 86, 06 806 354 85, 06 0457 0687 |
-| `phone_number` | 075-489 6598, 06 481 674 64, 0115-487046 |
+| `home_work_phone_number` | 040-9072 178, 0182-894265, 013-3356869 |
+| `international_home_work_phone_number` | +31 320-5011 99, +31 527-66 29 23, +31 14-1624399 |
+| `international_mobile_phone_number` | +31 6 4595 6742, +31 643891223, +31 632462854 |
+| `international_phone_number` | +31 546-24 14 31, +31 693187091, +31 6 476 208 10 |
+| `mobile_phone_number` | 06 5135 6127, 06 825 473 76, 06 70 33 11 46 |
+| `phone_number` | 0187-1017 09, 06 63 85 84 96, 073-419 4890 |
 
 ## FFaker::PhoneNumberPL
 
 | Method | Example |
 | ------ | ------- |
-| `area_code` | 89, 46, 46 |
-| `home_work_phone_number` | 186313877, 898984328, 915396271 |
-| `international_home_work_phone_number` | +48 434575375, +48 153655461, +48 676015421 |
-| `international_mobile_phone_number` | +48 780285145, +48 536727536, +48 731723194 |
-| `international_phone_number` | +48 724028611, +48 940690056, +48 888527784 |
-| `mobile_phone_number` | 574496726, 537322397, 513939416 |
-| `mobile_phone_number_format` | 73#######, 78#######, 88####### |
-| `mobile_prefix` | 51, 66, 57 |
-| `phone_number` | 500607757, 892695404, 662428798 |
-| `phone_number_format` | 59#######, 62#######, 52####### |
+| `area_code` | 43, 58, 18 |
+| `home_work_phone_number` | 650501554, 140069408, 120524861 |
+| `international_home_work_phone_number` | +48 675987957, +48 224446130, +48 252517205 |
+| `international_mobile_phone_number` | +48 539290446, +48 790771018, +48 889671083 |
+| `international_phone_number` | +48 736180713, +48 571756784, +48 627539699 |
+| `mobile_phone_number` | 797769954, 731876636, 783140600 |
+| `mobile_phone_number_format` | 78#######, 66#######, 53####### |
+| `mobile_prefix` | 60, 50, 50 |
+| `phone_number` | 341689023, 541603881, 729348706 |
+| `phone_number_format` | 65#######, 54#######, 54####### |
 
 ## FFaker::PhoneNumberRU
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | 8, 8, 8 |
-| `home_work_phone_number` | 8 841 151-98-01, 8 481 361-85-51, 8 072 704-78-65 |
-| `home_work_phone_prefix` | 844, 390, 499 |
+| `home_work_phone_number` | 8 411 482-85-30, 8 841 676-58-84, 8 815 849-87-00 |
+| `home_work_phone_prefix` | 394, 343, 855 |
 | `international_country_code` | +7, +7, +7 |
-| `international_home_work_phone_number` | +7 426 116-27-01, +7 486 614-69-27, +7 821 412-60-59 |
-| `international_mobile_phone_number` | +7 994 403-13-76, +7 952 094-02-48, +7 920 134-28-78 |
-| `international_phone_number` | +7 863 387-77-65, +7 911 439-11-48, +7 011 389-33-32 |
-| `international_toll_free_number` | +7 800 846-61-67, +7 800 228-55-17, +7 800 490-45-08 |
-| `mobile_phone_number` | 8 966 723-61-54, 8 961 981-50-92, 8 922 095-80-31 |
-| `mobile_phone_prefix` | 914, 953, 917 |
-| `phone_number` | 8 900 157-74-81, 8 487 377-28-46, 8 382 103-09-55 |
-| `toll_free_number` | 8 800 821-50-83, 8 800 076-24-11, 8 800 110-55-46 |
+| `international_home_work_phone_number` | +7 491 386-02-68, +7 845 092-87-47, +7 091 328-37-06 |
+| `international_mobile_phone_number` | +7 994 967-84-25, +7 929 710-20-17, +7 958 519-58-55 |
+| `international_phone_number` | +7 920 051-47-12, +7 087 562-35-48, +7 984 129-65-85 |
+| `international_toll_free_number` | +7 800 422-27-58, +7 800 079-88-58, +7 800 532-80-69 |
+| `mobile_phone_number` | 8 909 496-13-11, 8 951 419-45-37, 8 918 502-57-55 |
+| `mobile_phone_prefix` | 905, 926, 967 |
+| `phone_number` | 8 983 609-72-25, 8 987 674-63-09, 8 905 174-06-83 |
+| `toll_free_number` | 8 800 592-21-49, 8 800 008-25-88, 8 800 003-24-19 |
 
 ## FFaker::PhoneNumberSE
 
 | Method | Example |
 | ------ | ------- |
-| `area_prefix` | 496, 563, 499 |
+| `area_prefix` | 498, 585, 940 |
 | `country_prefix` | +46, 0046, +46 |
-| `home_work_phone_number` | 0613-679 47, 0372-56 02 31, 0950-591 42 |
-| `international_home_work_phone_number` | 0046 (0)682-318 34, +46 (0)322-135 67, +46 (0)910-970 44 |
-| `international_mobile_phone_number` | 0046 (0)760-90 32 54, +46 (0)708-45 65 57, 0046 (0)703-555923 |
-| `international_phone_number` | +46 (0)390-12 53 91, 0046 (0)764-58 61 73, +46 (0)687-717 90 |
-| `mobile_phone_number` | 0744-947702, 0733-663954, 0743-910061 |
-| `mobile_phone_number_format` | 74#-## ## ##, 76#-######, 73#-## ## ## |
-| `mobile_prefix` | 76, 72, 73 |
-| `phone_number` | 0709-38 90 85, 0729-41 82 59, 0722-09 79 51 |
-| `phone_number_format` | 474-### ##, 417-## ## ##, 534-### ## |
+| `home_work_phone_number` | 0158-612 55, 0644-883 98, 0551-39 87 62 |
+| `international_home_work_phone_number` | +46 (0)589-250 79, +46 (0)533-257 29, 0046 (0)159-993 15 |
+| `international_mobile_phone_number` | 0046 (0)708-23 34 24, 0046 (0)734-42 08 76, 0046 (0)766-222076 |
+| `international_phone_number` | 0046 (0)492-979 47, 0046 (0)511-075 17, +46 (0)530-69 73 21 |
+| `mobile_phone_number` | 0725-593628, 0736-07 94 75, 0702-818720 |
+| `mobile_phone_number_format` | 73#-## ## ##, 73#-######, 74#-###### |
+| `mobile_prefix` | 72, 73, 70 |
+| `phone_number` | 0496-72 57 09, 0748-54 23 45, 0270-987 25 |
+| `phone_number_format` | 565-### ##, 340-## ## ##, 270-## ## ## |
 
 ## FFaker::PhoneNumberSG
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | +65, +65, +65 |
-| `fixed_line_number` | 6821 4983, 6345 5448, 6846 1401 |
-| `international_toll_free_number` | 800 997 8615, 800 470 0335, 800 882 1282 |
-| `mobile_number` | 8981 6236, 8722 8437, 8243 6272 |
-| `mobile_or_pager_number` | 9502 9150, 9724 9871, 9394 6309 |
-| `phone_number` | 8082 5413, 8352 2449, 6160 6589 |
-| `premium_service_number` | 1900 243 9289, 1900 280 7524, 1900 938 1715 |
-| `toll_free_number` | 1800 227 5705, 1800 326 4599, 1800 986 4202 |
-| `voip_number` | 3991 3471, 3593 8453, 3684 1814 |
+| `fixed_line_number` | 6640 7152, 6303 6722, 6493 2483 |
+| `international_toll_free_number` | 800 039 9907, 800 030 5959, 800 758 3246 |
+| `mobile_number` | 8634 8870, 8067 0670, 8532 1029 |
+| `mobile_or_pager_number` | 9651 0967, 9385 7616, 9153 9024 |
+| `phone_number` | 9224 6941, 9033 0741, 8652 0654 |
+| `premium_service_number` | 1900 417 1207, 1900 037 3786, 1900 735 4101 |
+| `toll_free_number` | 1800 259 5241, 1800 373 1558, 1800 298 1944 |
+| `voip_number` | 3032 4735, 3052 0014, 3505 4346 |
 
 ## FFaker::PhoneNumberSN
 
 | Method | Example |
 | ------ | ------- |
-| `homework_number` | 33-949-60-01, 33-910-08-27, 33-852-57-45 |
+| `homework_number` | 33-834-26-92, 33-925-80-04, 33-997-72-75 |
 | `homework_phone_prefix` | 33, 33, 33 |
-| `mobile_number` | 76-566-30-09, 76-384-72-16, 77-514-91-87 |
+| `mobile_number` | 76-071-07-13, 77-380-06-61, 77-136-50-82 |
 | `mobile_phone_prefix` | 76, 70, 77 |
-| `phone_number` | 76-547-23-83, 33-977-90-17, 76-782-45-86 |
-| `short_phone_number` | 803-33-63, 309-28-40, 653-12-05 |
+| `phone_number` | 76-924-89-77, 33-817-65-60, 70-552-14-16 |
+| `short_phone_number` | 245-83-06, 462-96-81, 681-85-30 |
 
 ## FFaker::PhoneNumberTW
 
 | Method | Example |
 | ------ | ------- |
 | `contry_code` | +886, +886, +886 |
-| `home_work_phone_number` | (08) 051-7475, (05) 980-2722, (08) 514-7224 |
-| `international_home_work_phone_number` | +886-5-494-5468, +886-7-200-6246, +886-6-972-1924 |
-| `international_mobile_phone_number` | +886-948-588-802, +886-949-244-382, +886-925-645-297 |
-| `international_phone_number` | +886-928-897-235, +886-953-999-892, +886-904-500-288 |
-| `mobile_phone_number` | 0944-174-265, 0934-295-588, 0965-897-985 |
-| `phone_number` | (02) 1676-6209, (08) 882-8602, 0906-162-864 |
+| `home_work_phone_number` | (04) 9425-4304, (04) 2707-6494, (02) 2638-8021 |
+| `international_home_work_phone_number` | +886-3-722-4119, +886-4-7906-4763, +886-3-614-3130 |
+| `international_mobile_phone_number` | +886-968-497-328, +886-958-657-643, +886-904-750-987 |
+| `international_phone_number` | +886-970-726-440, +886-8-371-2575, +886-931-525-581 |
+| `mobile_phone_number` | 0926-707-605, 0932-184-748, 0922-443-038 |
+| `phone_number` | (08) 318-3795, (05) 421-1192, (02) 5101-7831 |
 
 ## FFaker::PhoneNumberUA
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 065 319-5449, 036 199-9672, 047 439-8982 |
-| `international_home_phone_number` | +380 45 253-2529, +380 47 317-6447, +380 35 948-6660 |
-| `international_mobile_phone_number` | +380 96 385-3544, +380 97 510-4814, +380 96 276-2963 |
-| `mobile_phone_number` | 066 788-3990, 097 219-7286, 099 407-3069 |
-| `phone_number` | 045 299-9135, 057 884-1174, 063 183-4522 |
+| `home_phone_number` | 036 704-5260, 045 703-3969, 038 878-0775 |
+| `international_home_phone_number` | +380 48 250-8358, +380 53 046-7497, +380 36 312-1758 |
+| `international_mobile_phone_number` | +380 97 474-5533, +380 67 639-3414, +380 98 260-5261 |
+| `mobile_phone_number` | 093 345-7861, 050 025-8755, 099 000-5908 |
+| `phone_number` | 043 582-4353, 034 848-5305, 063 000-7298 |
 
 ## FFaker::Product
 
 | Method | Example |
 | ------ | ------- |
-| `brand` | Phounefunc, Troffe, Sinebalt |
+| `brand` | Sircell, Brische, Amcell |
 | `letters`(...) |  |
-| `model` | U-3328, BX-2169, KU-5068 |
-| `product` | Brieck Electric GPS Viewer, Aquafunc Portable Audible Tuner, Pack Electric Amplifier |
-| `product_name` | Auto Viewer, Remote Receiver, Auto Air Adapter |
+| `model` | V72, L-9628, D43 |
+| `product` | Brintfunc HD Gel Adapter, Brarewood Disc Bracket, Cygsync Remote Dummy Groove |
+| `product_name` | Output Case, HD Remote Receiver, GPS Portable Bridge |
 
 ## FFaker::SSN
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 222-50-3815, 146-47-8631, 624-66-9378 |
+| `ssn` | 693-37-6245, 793-68-6181, 212-95-5725 |
 
 ## FFaker::SSNMX
 
 | Method | Example |
 | ------ | ------- |
-| `imss` | 9795247651-4, 0818588509-4, 0978688186-7 |
-| `imss_undashed` | 41030526652, 76679283026, 43104317101 |
-| `issste` | 2727549260-2, 1653059509-0, 6512988844-0 |
-| `issste_undashed` | 22138816691, 70002929341, 02811820367 |
-| `ssn` | 0803379353-5, 4213953643-0, 4983752631-8 |
-| `ssn_undashed` | 82188225957, 02203648088, 40722191977 |
+| `imss` | 2027942018-7, 9435356873-3, 4322546322-1 |
+| `imss_undashed` | 73266398682, 41292202834, 73582655877 |
+| `issste` | 9586969331-4, 8272227547-4, 4823196693-6 |
+| `issste_undashed` | 68416521487, 69036758519, 50920410869 |
+| `ssn` | 9812760425-0, 8421675825-6, 4829026491-1 |
+| `ssn_undashed` | 99710173084, 01723397100, 42450815117 |
 
 ## FFaker::SSNSE
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 196702121770, 195902133010, 200108137530 |
+| `ssn` | 198404151300, 201508145670, 200706262490 |
 
 ## FFaker::SemVer
 
 | Method | Example |
 | ------ | ------- |
-| `next` | 0.0.1, 1.0.0, 1.0.0 |
+| `next` | 0.0.1, 0.1.0, 1.0.0 |
 
 ## FFaker::Skill
 
 | Method | Example |
 | ------ | ------- |
-| `specialties` | Visual Methods, Template Testing, Hardware Optimization, Template Modularization, Visual Development, Team Management, Firmware Architecture, Modular Design, Project Architecture |
-| `specialty` | Database Prototyping, Firmware Management, Hardware Research |
-| `tech_skill` | SublimeText, Perl, Bootstrap |
-| `tech_skills` | ASP, SOAP, REST, JSON, JavaScript, ActionScript, PostgreSQL, Java, ActionScript |
+| `specialties` | Mental Research, Visual Optimization, Visual Design, Team Prototyping, Visual Profiling, Template Research, Database Prototyping, Database Instruction, Hardware Prototyping |
+| `specialty` | Template Analysis, Mental Modularization, Software Management |
+| `tech_skill` | Python, Python, SublimeText |
+| `tech_skills` | Illustrator, Heroku, SublimeText, Sinatra, PostgreSQL, Mac, Rails, JQuery, Memcached |
 
 ## FFaker::Sport
 
@@ -2431,15 +2431,15 @@
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Kajakarstwo regatowe, Kajakarstwo regatowe, Żeglarstwo |
-| `summer` | Żeglarstwo, Szermierka, Rzut dyskiem |
-| `winter` | Saneczkarstwo, Dwubój zimowy, Saneczkarstwo |
+| `name` | Hokej na trawie, Golf, Skok o tyczce |
+| `summer` | Gimnastyka sportowa, Siatkówka, Rzut oszczepem |
+| `winter` | Skeleton, Narciarstwo dowolne, Łyżwiarstwo szybkie |
 
 ## FFaker::SportUS
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Basketball, Base jumping, Marathon Swimming |
+| `name` | Taekwondo, Sandboarding, Cycling Road |
 
 ## FFaker::String
 
@@ -2452,20 +2452,20 @@
 | Method | Example |
 | ------ | ------- |
 | `between`(..., ...) |  |
-| `date` | 2018-04-15, 2020-08-30, 2018-07-08 |
-| `datetime` | 2019-06-29T21:19:00+00:00, 2017-07-26T23:22:00+00:00, 2018-05-15T22:53:00+00:00 |
-| `day_of_week` | Sun, Thu, Tue |
-| `month` | April, November, July |
+| `date` | 2018-09-02, 2019-02-16, 2017-01-22 |
+| `datetime` | 2018-05-19T09:28:00+00:00, 2017-08-12T22:17:00+00:00, 2017-03-20T01:00:00+00:00 |
+| `day_of_week` | Sat, Tue, Mon |
+| `month` | September, July, September |
 
 ## FFaker::Tweet
 
 | Method | Example |
 | ------ | ------- |
-| `body` | Aspernatur quo repellat aliquam optio asperiores nesciunt corrupti architecto. Expedita nisi et totam animi. Ipsa dolor ex doloribus., Nihil facilis corporis ullam modi exercitationem id sapiente impedit. Iure porro repudiandae cupiditate error dolores maiores. Qui., Libero enim porro pariatur reprehenderit. Odio quam qui id sunt reprehenderit mollitia. Neque cupiditate officia iste doloribus aut.. |
-| `mention` | @zada.koss, @thelma, @wanetta.kemmer |
-| `mentions` | @marylyn.ziemann @shemeka.champlin, @lesley @gaston, @phebe_howell @carmine |
-| `tags` | #funny #bestoftheday, #friends #yum, #me #cool |
-| `tweet` | Asperiores incidunt porro vel.#baby #life, @yahaira Itaque quibusdam suscipit perferendis tenetur sapiente optio. Ea pariatur aliquam neque maiores iusto numquam.@andrew , Explicabo exercitationem animi similique excepturi est facere sunt.. |
+| `body` | Laboriosam et quod deleniti sit cumque. Ipsa nulla voluptas iusto quibusdam eos sit. Minima consequatur perspiciatis praesentium saepe., Consectetur blanditiis dolor fugit optio labore. Cupiditate autem saepe exercitationem quae ut aperiam dolor rem. Suscipit earum quibusdam., Facilis quas maxime nulla natus excepturi nostrum tempora quisquam. At unde expedita cupiditate dolore laborum accusantium sunt dicta.. |
+| `mention` | @deandra, @elinor, @lynne_huel |
+| `mentions` | @ila @derek.witting, @elliott @arlinda, @jonathan.zieme @tangela |
+| `tags` | #life #like, #sunset #followme, #follow #swag |
+| `tweet` | Ducimus et quaerat est., Maiores quae blanditiis molestiae iure voluptas.@phylis #love #amazing, Vel sapiente optio magni excepturi ducimus. Aperiam.@artie_luettgen @sammie_christiansen  |
 
 ## FFaker::UniqueUtils
 
@@ -2477,80 +2477,80 @@
 
 | Method | Example |
 | ------ | ------- |
-| `temperature_abbr` | F, C, C |
-| `temperature_name` | Fahrenheit, Fahrenheit, Celsius |
-| `time_abbr` | d, ms, yr |
-| `time_name` | Milliseconds, Seconds, Days |
+| `temperature_abbr` | F, K, F |
+| `temperature_name` | Kelvin, Celsius, Celsius |
+| `time_abbr` | d, d, d |
+| `time_name` | Seconds, Hours, Minutes |
 
 ## FFaker::UnitEnglish
 
 | Method | Example |
 | ------ | ------- |
-| `area_abbr` | sq yd, ac, sq ft |
-| `area_name` | square mile, section, square mile |
-| `length_abbr` | in, yd, ft |
-| `length_name` | foot, furlong, foot |
-| `liquid_abbr` | fl oz, qt, fl oz |
-| `liquid_name` | fluid ounce, pint, quart |
-| `mass_abbr` | lb, t, oz |
-| `mass_name` | grains, ounces, grains |
-| `temperature_abbr` | K, C, K |
-| `temperature_name` | Fahrenheit, Fahrenheit, Fahrenheit |
-| `time_abbr` | h, d, s |
-| `time_name` | Hours, Years, Minutes |
-| `volume_abbr` | CFT, CFT, CY |
-| `volume_name` | cubic yard, cubic inch, cubic yard |
+| `area_abbr` | sq ft, sq ft, sq yd |
+| `area_name` | township, square inch, square foot |
+| `length_abbr` | mi, fur, fur |
+| `length_name` | inch, yard, furlong |
+| `liquid_abbr` | gi, gi, qt |
+| `liquid_name` | gill, gill, fluid ounce |
+| `mass_abbr` | t, lb, t |
+| `mass_name` | ounces, pounds, pounds |
+| `temperature_abbr` | F, K, C |
+| `temperature_name` | Celsius, Fahrenheit, Kelvin |
+| `time_abbr` | h, h, s |
+| `time_name` | Milliseconds, Years, Hours |
+| `volume_abbr` | CI, CI, CFT |
+| `volume_name` | cubic yard, cubic foot, cubic inch |
 
 ## FFaker::UnitMetric
 
 | Method | Example |
 | ------ | ------- |
-| `area_abbr` | m^2, m^2, cm^2 |
-| `area_name` | centimeters squared, meters squared, kilometers |
-| `length_abbr` | mm, km, mm |
-| `length_name` | meters, centimeters, millimeters |
+| `area_abbr` | cm^2, km, km |
+| `area_name` | meters squared, kilometers, kilometers |
+| `length_abbr` | mm, mm, mm |
+| `length_name` | meters, millimeters, kilometers |
 | `liquid_abbr` | L, ml, ml |
-| `liquid_name` | milliliters, liters, milliliters |
-| `mass_abbr` | g, g, mt |
-| `mass_name` | metric ton, metric ton, gram |
-| `temperature_abbr` | C, K, K |
-| `temperature_name` | Celsius, Kelvin, Kelvin |
-| `time_abbr` | d, d, h |
-| `time_name` | Days, Days, Years |
-| `volume_abbr` | m^3, m^3, cm^3 |
-| `volume_name` |  cubic centimeters,  cubic centimeters,  cubic centimeters |
+| `liquid_name` | liters, milliliters, liters |
+| `mass_abbr` | kg, kg, mt |
+| `mass_name` | metric ton, gram, gram |
+| `temperature_abbr` | C, C, C |
+| `temperature_name` | Kelvin, Fahrenheit, Celsius |
+| `time_abbr` | h, ms, ms |
+| `time_name` | Days, Days, Days |
+| `volume_abbr` | m^3, cm^3, m^3 |
+| `volume_name` | cubic meters,  cubic centimeters,  cubic centimeters |
 
 ## FFaker::Vehicle
 
 | Method | Example |
 | ------ | ------- |
-| `base_color` | tomato, lavender, papayawhip |
-| `drivetrain` | 4WD, AWD, 4WD |
-| `engine_cylinders` | 8, 6, 8 |
-| `engine_displacement` | 4.2, 7.4, 5.0 |
-| `fuel_type` | Natural Gas (CNG), Gas, Gas |
-| `interior_upholstery` | Nylon Fabric, PVC, Nylon Fabric |
-| `make` | Infiniti, Lotus, Plymouth |
-| `manufacturer_color` | resonant mundane purple, dark magnetic lightgrey, fast weak cornflowerblue |
-| `mfg_color` | soft magnetic plum, metallic new khaki, pretty mysterious green |
-| `model` | Corolla, Viper, Prius |
-| `transmission` | Automated Manual, Manual, Automated Manual |
-| `transmission_abbr` | AM, MT, AT |
-| `trim` | EX-L, SE, DX |
-| `vin` | 19BUD74681C655264, 15NYB75259W737761, 16YWP01664F593921 |
-| `year` | 1971, 1949, 1929 |
+| `base_color` | deepskyblue, fuchsia, pink |
+| `drivetrain` | FWD, AWD, FWD |
+| `engine_cylinders` | 5, 5, 5 |
+| `engine_displacement` | 4.3, 5.9, 4.9 |
+| `fuel_type` | Hybrid, Gas, Diesel |
+| `interior_upholstery` | Faux Vinyl, Nylon Fabric, Leather |
+| `make` | Mitsubishi, Geo, Saab |
+| `manufacturer_color` | magnificent soft silver, weak tranquil mediumturquoise, pleasant calm mediumseagreen |
+| `mfg_color` | new fast darkcyan, bright dull mediumorchid, weak soft cornflowerblue |
+| `model` | Expedition, Yukon, Camaro |
+| `transmission` | Continuously Variable, Manual, Automatic |
+| `transmission_abbr` | CVT, MT, AT |
+| `trim` | LT, SI, EX-L |
+| `vin` | 19NCT38287J878749, 15BYA62650R913474, 18GAY68484T918899 |
+| `year` | 1923, 1900, 2020 |
 
 ## FFaker::Venue
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Palau de Congressos de Catalunya, Oficina de Convenciones y Visitantes de Acapulco, Fundacion de Ferias y Exposiciones de Lugo |
+| `name` | Centro de Exposiciones y Convenciones Las Americas, World Trade Center Sevilla, World Trade Center Sevilla |
 
 ## FFaker::Youtube
 
 | Method | Example |
 | ------ | ------- |
-| `embed_url` | www.youtube.com/embed/IcrbM1l_BoI, www.youtube.com/embed/nfWlot6h_JM, www.youtube.com/embed/KQ6zr6kCPj8 |
-| `share_url` | youtu.be/7OHMqdMpsj8, youtu.be/_OBlgSz8sSM, youtu.be/IcrbM1l_BoI |
-| `url` | www.youtube.com/watch?v=rYEDA3JcQqw, www.youtube.com/watch?v=lp-EO5I60KA, www.youtube.com/watch?v=9bZkp7q19f0 |
-| `video_id` | CGyEd0aKWZE, e-ORhEE9VVg, uO59tfQ2TbA |
+| `embed_url` | www.youtube.com/embed/450p7goxZqg, www.youtube.com/embed/PIh2xe4jnpk, www.youtube.com/embed/QcIy9NiNbmo |
+| `share_url` | youtu.be/lp-EO5I60KA, youtu.be/fLexgOxsZu0, youtu.be/nfWlot6h_JM |
+| `url` | www.youtube.com/watch?v=7OHMqdMpsj8, www.youtube.com/watch?v=TapXs54Ah3E, www.youtube.com/watch?v=IcrbM1l_BoI |
+| `video_id` | hT_nvWreIhg, 0KSOMA3QBU0, 450p7goxZqg |
