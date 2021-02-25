@@ -10,8 +10,9 @@ class TestLoremBR < Test::Unit::TestCase
     :paragraph, :sentence, :phrase, :paragraphs, :sentences, :phrases, :words, :word, :characters
   )
 
+  CHARACTERS = /\A[A-zÀ-ü0-9]+\z/i 
   WORD = /\A[A-zÀ-ü-]+\z/i
-  WORDS = /\A[ A-zÀ-ü-.]+\z/i
+  WORDS = /[ A-zÀ-ü-.]+/i
 
   def test_paragraph
     assert_match(WORDS, FFaker::LoremBR.paragraph)
@@ -49,7 +50,7 @@ class TestLoremBR < Test::Unit::TestCase
   end
 
   def test_characters
-    assert_match(WORD, FFaker::LoremBR.characters)
+    assert_match(CHARACTERS, FFaker::LoremBR.characters)
     assert FFaker::LoremBR.characters.length == 255
     assert FFaker::LoremBR.characters(10).length == 10
     assert FFaker::LoremBR.characters(-1) == ''
