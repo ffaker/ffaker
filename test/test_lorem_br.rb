@@ -11,7 +11,7 @@ class TestLoremBR < Test::Unit::TestCase
   )
 
   WORD = /\A[A-zÀ-ü-]+\z/i
-  WORDS = /\A[ A-zÀ-ü-]+\z/i
+  WORDS = /\A[ A-zÀ-ü-.]+\z/i
 
   def test_paragraph
     assert_match(WORDS, FFaker::LoremBR.paragraph)
