@@ -10,8 +10,8 @@ class TestLoremBR < Test::Unit::TestCase
     :paragraph, :sentence, :phrase, :paragraphs, :sentences, :phrases, :words, :word, :characters
   )
 
-  WORD = /[A-zÀ-ü-]+/i
-  WORDS = /[ A-zÀ-ü-]+/i
+  WORD = /\A[A-zÀ-ü-]+\z/i
+  WORDS = /\A[ A-zÀ-ü-]+\z/i
 
   def test_paragraph
     assert_match(WORDS, FFaker::LoremBR.paragraph)
