@@ -19,20 +19,16 @@ module FFaker
       fetch_sample(SUFFIXES)
     end
 
-    ##
-    # @faker.version 1.8.5
     # Get a random French SIREN number. See more here https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27identification_du_r%C3%A9pertoire_des_entreprises
-    def french_siren_number
-      base = (1..8).map { rand(10) }.join
+    def siren
+      base = FFaker.numerify('########')
       base + luhn_check(base).to_s
     end
 
-    ##
-    # @faker.version 1.8.5
     # Produces a company french siret number.
-    def french_siret_number
-      location = rand(100).to_s.rjust(4, '0')
-      org_no = french_siren_number + location
+    def siret
+      location = rand(0..99).to_s.rjust(4, '0')
+      org_no = siren + location
       org_no + luhn_check(org_no).to_s
     end
   end

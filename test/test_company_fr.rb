@@ -7,7 +7,7 @@ class TestCompanyFR < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::CompanyFR,
-    :name, :suffix, :french_siren_number, :french_siret_number
+    :name, :suffix, :siren, :siret
   )
 
   def test_name
@@ -19,13 +19,13 @@ class TestCompanyFR < Test::Unit::TestCase
   end
 
   def test_french_siren_number
-    siren = FFaker::CompanyFR.french_siren_number
+    siren = FFaker::CompanyFR.siren
     assert(siren.match(/\A\d{9}\z/))
     assert(siren[8] == FFaker::CompanyFR.send(:luhn_check, siren[0..-2]).to_s)
   end
 
   def test_french_siret_number
-    siret = FFaker::CompanyFR.french_siret_number
+    siret = FFaker::CompanyFR.siret
     assert(siret.match(/\A\d{14}\z/))
     assert(siret[8] == FFaker::CompanyFR.send(:luhn_check, siret[0..7]).to_s)
     assert(siret[13] == FFaker::CompanyFR.send(:luhn_check, siret[0..-2]).to_s)
