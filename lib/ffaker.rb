@@ -73,6 +73,7 @@ module FFaker
   autoload :ColorUA, 'ffaker/color_ua'
   autoload :Company, 'ffaker/company'
   autoload :CompanyCN, 'ffaker/company_cn'
+  autoload :CompanyFR, 'ffaker/company_fr'
   autoload :CompanyIT, 'ffaker/company_it'
   autoload :CompanyJA, 'ffaker/company_ja'
   autoload :CompanySE, 'ffaker/company_se'
