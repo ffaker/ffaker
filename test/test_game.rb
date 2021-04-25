@@ -2,7 +2,7 @@
 
 require 'helper'
 
-class TestBook < Test::Unit::TestCase
+class TestGame < Test::Unit::TestCase
   include DeterministicHelper
 
   assert_methods_are_deterministic(
