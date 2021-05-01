@@ -5,6 +5,7 @@ module FFaker
     module Mathematiques
       extend ModuleUtils
       extend self
+
       def lesson
         fetch_sample(LESSONS)
       end
@@ -13,6 +14,7 @@ module FFaker
     module Philosophie
       extend ModuleUtils
       extend self
+
       def lesson
         fetch_sample(LESSONS)
       end

@@ -78,7 +78,7 @@ module FFaker
   autoload :CompanyJA, 'ffaker/company_ja'
   autoload :CompanySE, 'ffaker/company_se'
   autoload :Conference, 'ffaker/conference'
-  autoload :CoursesFR, 'ffaker/courses'
+  autoload :CoursesFR, 'ffaker/courses_fr'
   autoload :Currency, 'ffaker/currency'
   autoload :DizzleIpsum, 'ffaker/dizzle_ipsum'
   autoload :Education, 'ffaker/education'
