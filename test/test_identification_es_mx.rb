@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'helper'
+require_relative 'helper'
 
 class TestIdentificationMX < Test::Unit::TestCase
   include DeterministicHelper

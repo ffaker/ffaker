@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'ffaker/utils/array_utils'
-require 'ffaker/utils/random_utils'
-require 'ffaker/utils/unique_utils'
+require_relative 'array_utils'
+require_relative 'random_utils'
+require_relative 'unique_utils'
 
 module FFaker
   module ModuleUtils

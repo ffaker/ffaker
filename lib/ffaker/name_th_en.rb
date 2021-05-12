@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ffaker/name_th'
+require_relative 'name_th'
 
 module FFaker
   module NameTHEN

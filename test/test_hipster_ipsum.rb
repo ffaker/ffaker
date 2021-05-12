@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'helper'
+require_relative 'helper'
 
 class TestHipsterIpsum < Test::Unit::TestCase
   include DeterministicHelper

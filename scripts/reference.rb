@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-$LOAD_PATH << File.dirname(__FILE__) + '/../lib'
-require 'ffaker'
+require_relative '../lib/ffaker'
 
 ICONS = {
   error: '‼️',

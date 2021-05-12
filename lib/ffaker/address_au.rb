@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ffaker/address'
+require_relative 'address'
 
 module FFaker
   module AddressAU

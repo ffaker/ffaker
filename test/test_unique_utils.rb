@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'helper'
+require_relative 'helper'
 
 class TestUniqueUtils < Test::Unit::TestCase
   def test_generates_unique_values

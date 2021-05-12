@@ -2,7 +2,8 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'ffaker'
 require 'irb'
+
+require_relative '../lib/ffaker'
 
 IRB.start

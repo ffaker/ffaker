@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'helper'
+require_relative 'helper'
 
 class TestPhoneNumberNL < Test::Unit::TestCase
   include DeterministicHelper
