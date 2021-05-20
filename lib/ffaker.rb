@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module FFaker
-  require 'ffaker/utils/array_utils'
-  require 'ffaker/utils/module_utils'
+  require_relative 'ffaker/utils/array_utils'
+  require_relative 'ffaker/utils/module_utils'
 
   extend ModuleUtils
 

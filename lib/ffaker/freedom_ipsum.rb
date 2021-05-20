@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ffaker/lorem'
+require_relative 'lorem'
 
 module FFaker
   module FreedomIpsum

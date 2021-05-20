@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require File.dirname(__FILE__) + '/../lib/faker'
+require_relative '../lib/faker'
 
 N = 1_000_000
 

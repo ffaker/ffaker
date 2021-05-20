@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'test/unit'
-require 'ffaker'
+require_relative '../lib/ffaker'
 
 # Helpers for checking if a method is deterministic -- e.g., that the Random
 # results are repeatable given the same random seed.

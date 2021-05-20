@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './lib/version'
+require_relative 'lib/version'
 
 Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=

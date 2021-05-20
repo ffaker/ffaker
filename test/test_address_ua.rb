@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'helper'
+require_relative 'helper'
 
 class TestAddressUA < Test::Unit::TestCase
   include DeterministicHelper

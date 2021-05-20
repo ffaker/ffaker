@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'helper'
+require_relative 'helper'
 
 class TestModuleUtils < Test::Unit::TestCase
   def test_provides_a_k_method_for_generating_constant_arrays
