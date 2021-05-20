@@ -18,7 +18,7 @@ jobs:
         ruby-version: 2.6
         bundler-cache: true
     - name: Update md file
-      run: rake reference
+      run: bundle exec rake reference
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Update reference
