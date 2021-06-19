@@ -6,6 +6,8 @@ module FFaker
 
   extend ModuleUtils
 
+  $LOAD_PATH << File.join(File.dirname(__FILE__))
+
   BASE_LIB_PATH = File.expand_path(__dir__)
 
   LETTERS = Array('a'..'z').freeze
