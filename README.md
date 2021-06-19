@@ -100,6 +100,17 @@ FFaker::Name.unique.name
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
+### Running tests
+On a single file:
+```ruby
+ruby test/test_file.rb
+```
+
+Run all tests:
+```ruby
+for file in test/test_*.rb; do ruby $file; done
+```
+
 ## Release
 
 * Bump version in `lib/version.rb`.
