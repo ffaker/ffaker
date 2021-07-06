@@ -5,7 +5,7 @@ require_relative 'helper'
 class TestFakerGenderRU < Test::Unit::TestCase
   include DeterministicHelper
 
-  assert_methods_are_deterministic(FFaker::GenderRU, :random)
+  assert_methods_are_deterministic(FFaker::GenderRU, :binary, :random)
 
   def setup
     @tester = FFaker::GenderRU
