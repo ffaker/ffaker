@@ -170,6 +170,7 @@
  * [FFaker::Sport](#ffakersport)
  * [FFaker::SportPL](#ffakersportpl)
  * [FFaker::SportUS](#ffakersportus)
+ * [FFaker::SportRU](#ffakersportru)
  * [FFaker::String](#ffakerstring)
  * [FFaker::Time](#ffakertime)
  * [FFaker::Tweet](#ffakertweet)

@@ -195,6 +195,7 @@ module FFaker
   autoload :Sport, 'ffaker/sport'
   autoload :SportPL, 'ffaker/sport_pl'
   autoload :SportUS, 'ffaker/sport_us'
+  autoload :SportRU, 'ffaker/sport_ru'
   autoload :SSN, 'ffaker/ssn'
   autoload :SSNMX, 'ffaker/ssn_mx'
   autoload :SSNSE, 'ffaker/ssn_se'
