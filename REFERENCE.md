@@ -68,6 +68,7 @@
  * [FFaker::GenderJP](#ffakergenderjp)
  * [FFaker::GenderKR](#ffakergenderkr)
  * [FFaker::GenderPL](#ffakergenderpl)
+ * [FFaker::GenderRU](#ffakergenderru)
  * [FFaker::Geolocation](#ffakergeolocation)
  * [FFaker::Guid](#ffakerguid)
  * [FFaker::HTMLIpsum](#ffakerhtmlipsum)

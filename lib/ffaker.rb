@@ -96,6 +96,7 @@ module FFaker
   autoload :GenderJP, 'ffaker/gender_jp'
   autoload :GenderKR, 'ffaker/gender_kr'
   autoload :GenderPL, 'ffaker/gender_pl'
+  autoload :GenderRU, 'ffaker/gender_ru'
   autoload :Geolocation, 'ffaker/geolocation'
   autoload :Guid, 'ffaker/guid'
   autoload :HealthcareIpsum, 'ffaker/healthcare_ipsum'
