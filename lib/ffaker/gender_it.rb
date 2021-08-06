@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
 module FFaker
-  # Inspirations:
-  # https://pl.wikipedia.org/wiki/P%C5%82e%C4%87
-  module GenderPL
+  module GenderIT
     extend ModuleUtils
     extend self
 
-    GENDERS = %w[donna uomo].freeze
+    GENDERS = %w[maschio femmina].freeze
 
     def random
       fetch_sample(GENDERS)
