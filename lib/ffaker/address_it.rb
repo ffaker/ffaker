@@ -2,7 +2,7 @@
 
 module FFaker
   module AddressIT
-    include FFaker::Address
+    #include FFaker::Address
 
     extend ModuleUtils
     extend self
