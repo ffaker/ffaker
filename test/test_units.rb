@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative 'helper'
-require 'ostruct'
 
 class TestUnits < Test::Unit::TestCase
   include DeterministicHelper
