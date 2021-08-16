@@ -2,6 +2,16 @@
 
   - Add your change HERE
 
+## 2.19.0
+  - Added Lorem BR [@abnersajr]
+  - Added french company siret and siren generator [@hulous]
+  - Added Games generator [@nicholaskillin]
+  - Added EditorConfig file [@AlexWayfer]
+  - Fixed loadError on scripts/reference.rb [@marocchino]
+  - Removed trailing comma from NameGA first_names_male [@stilist]
+  - Localized Gender and Sport to Russian [@SteveRedka]
+  - Added more italian data [@miscelatore]
+
 ## 2.18.0
   - Remove unneeded 'require' statements [@Volosh1n]
   - Add PhoneNumberJA [@YutaGoto]
