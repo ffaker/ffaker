@@ -173,6 +173,7 @@ module FFaker
   autoload :NameUA, 'ffaker/name_ua'
   autoload :NameVN, 'ffaker/name_vn'
   autoload :NatoAlphabet, 'ffaker/nato_alphabet'
+  autoload :Number, 'ffaker/number'
   autoload :PhoneNumber, 'ffaker/phone_number'
   autoload :PhoneNumberAU, 'ffaker/phone_number_au'
   autoload :PhoneNumberBR, 'ffaker/phone_number_br'
