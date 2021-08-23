@@ -24,15 +24,17 @@ module FFaker
       number MOBILE_PHONE_PREFIXES
     end
 
-    def number(prefixes)
-      p = [
-        COUNTRY_PREFIX.sample,
-        prefixes.sample,
-        random_space,
-        PHONE_NUMBER.sample
-      ].join('')
+    private
 
-      FFaker.numerify p
+    def number(prefixes)
+      pattern = [
+        fetch_sample(COUNTRY_PREFIX),
+        fetch_sample(prefixes),
+        random_space,
+        fetch_sample(PHONE_NUMBER)
+      ].join
+
+      FFaker.numerify(pattern)
     end
 
     def random_space
