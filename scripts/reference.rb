@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../lib/ffaker'
+require 'set'
 
 # always use the same seed for consistency
 FFaker::Random.seed = 1337
