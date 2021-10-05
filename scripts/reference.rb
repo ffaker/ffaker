@@ -2,6 +2,9 @@
 
 require_relative '../lib/ffaker'
 
+# always use the same seed for consistency
+FFaker::Random.seed = 1337
+
 ICONS = {
   error: '‼️',
   warning: '❗'
@@ -66,7 +69,7 @@ sections = faker_modules.map do |mod|
     else
       begin
         examples, warnings = catch_warnings do
-          Array.new(3) { mod.send meth }
+          Array.new(3) { mod.unique.send meth }
         end
         right = if warnings.any?
                   "#{ICONS[:warning]} *#{warnings.first}*"
