@@ -2,6 +2,11 @@
 
   - Add your change HERE
 
+## 2.20.0
+  - Remove date from gem specification [@AlexWayfer]
+  - Add Number module [@Volosh1n]
+  - Make Italian Phone number deterministic [@Volosh1n]
+
 ## 2.19.0
   - Added Lorem BR [@abnersajr]
   - Added french company siret and siren generator [@hulous]
