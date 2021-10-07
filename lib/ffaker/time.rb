@@ -22,7 +22,7 @@ module FFaker
 
     def datetime(params = {})
       years_back = params[:year_range] || 5
-      latest_year = params [:year_latest] || 0
+      latest_year = params[:year_latest] || 0
       year = (rand * years_back).ceil + (::DateTime.now.year - latest_year - years_back)
       month = rand(1..12)
       day = rand(1..Date.new(year, month, -1).day)
