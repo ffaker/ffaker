@@ -35,12 +35,9 @@ module FFaker
 
     def position
       case rand(0..2)
-      when 0 then
-        [fetch_sample(POSITION_PREFIXES), fetch_sample(POSITIONS)]
-      when 1 then
-        [fetch_sample(POSITION_AREAS), fetch_sample(POSITIONS)]
-      when 2 then
-        [fetch_sample(POSITION_PREFIXES), fetch_sample(POSITION_AREAS), fetch_sample(POSITIONS)]
+      when 0 then [fetch_sample(POSITION_PREFIXES), fetch_sample(POSITIONS)]
+      when 1 then [fetch_sample(POSITION_AREAS), fetch_sample(POSITIONS)]
+      when 2 then [fetch_sample(POSITION_PREFIXES), fetch_sample(POSITION_AREAS), fetch_sample(POSITIONS)]
       end.join(' ')
     end
   end

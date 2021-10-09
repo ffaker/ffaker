@@ -21,3 +21,16 @@ Style/ModuleFunction:
   Enabled: false
 Style/Documentation:
   Enabled: false
+Style/AsciiComments:
+  Enabled: true
+  Exclude:
+    - 'lib/ffaker/address_ja.rb'
+    - 'lib/ffaker/address_se.rb'
+Style/OptionalBooleanParameter:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: true
+  Exclude:
+    - 'lib/ffaker/bank.rb'
+Style/RedundantArgument:
+  Enabled: false

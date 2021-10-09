@@ -2,7 +2,6 @@
 
 module FFaker
   module AddressIT
-
     extend ModuleUtils
     extend self
 
