@@ -39,4 +39,9 @@ class TestAddressBR < Test::Unit::TestCase
     assert FFaker::AddressBR::COMPLEMENT.include?(FFaker::AddressBR.complement)
   end
 
+  def test_neighborhood
+    neighborhood_prefix = FFaker::AddressBR.neighborhood.split(' ').first
+    assert FFaker::AddressBR::NEIGHBORHOOD_PREFIXES.include?(neighborhood_prefix)
+  end
+
 end
