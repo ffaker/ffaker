@@ -34,4 +34,9 @@ class TestAddressBR < Test::Unit::TestCase
     prefixes = FFaker::AddressBR::STREET_PREFIX
     assert_match(/(#{prefixes.join('|')})( \p{Alpha}+){1,2}/, FFaker::AddressBR.street)
   end
+
+  def test_complement
+    assert FFaker::AddressBR::COMPLEMENT.include?(FFaker::AddressBR.complement)
+  end
+
 end
