@@ -11,24 +11,21 @@ ICONS = {
   warning: '❗'
 }.freeze
 
+UTILS_MODULES = %i[ArrayUtils ModuleUtils RandomUtils Random]
+UTILS_METHODS = %i[k underscore fetch_sample rand shuffle unique luhn_check]
+
 # Get a list of sections
 def faker_modules
-  FFaker.constants.sort.map do |const|
-    mod = FFaker.const_get(const)
-    next unless mod.is_a?(Module)
-    next if mod == FFaker::ArrayUtils
-    next if mod == FFaker::ModuleUtils
-    next if mod == FFaker::RandomUtils
-    next if mod == FFaker::Random
-
-    mod
-  end.compact
+  FFaker.constants
+    .map { |symbol| FFaker.const_get(symbol) }
+    .select { |const| const.instance_of?(Module) }
+    .reject { |mod| UTILS_MODULES.include?(mod) }
+    .sort
 end
 
 # Returns faker methods for a given module
 def faker_methods(mod)
-  methods = mod.methods - Module.methods -
-            %i[k underscore fetch_sample rand shuffle unique luhn_check]
+  methods = mod.methods - Module.methods - UTILS_METHODS
 
   # For Company.name (et al), don't discard :name if it was reimplemented
   methods << :name if mod.send(:name) != mod.to_s
