@@ -16,11 +16,12 @@ UTILS_METHODS = %i[k underscore fetch_sample rand shuffle unique luhn_check]
 
 # Get a list of sections
 def faker_modules
-  FFaker.constants
-    .map { |symbol| FFaker.const_get(symbol) }
-    .select { |const| const.instance_of?(Module) }
-    .reject { |mod| UTILS_MODULES.include?(mod) }
+  FFaker
+    .constants
+    .reject { |const| UTILS_MODULES.include?(const) }
+    .select { |const| FFaker.const_get(const).instance_of?(Module) }
     .sort
+    .map { |const| FFaker.const_get(const) }
 end
 
 # Returns faker methods for a given module
