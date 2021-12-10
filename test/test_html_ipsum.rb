@@ -90,6 +90,11 @@ class TestHTMLIpsum < Test::Unit::TestCase
     assert FFaker::HTMLIpsum.fancy_string.length > 1, 'the string is longer than one char'
   end
 
+  def test_fancy_string_tags
+    # It returns a string with at least one HTML tag
+    assert_match(%r{(<\w+>[\w\s]+<\/\w+>){1}}i, FFaker::HTMLIpsum.fancy_string(3))
+  end
+
   def test_fancy_string_breaks
     # We can't reliably predict what's going to end up inside, so just ensure
     # that we have a complete string.
