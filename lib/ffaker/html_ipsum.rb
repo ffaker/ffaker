@@ -134,7 +134,13 @@ module FFaker
       a = k([
         content_tag_for(:strong, words(2).capitalize!),
         content_tag_for(:em, paragraph),
+        content_tag_for(:mark, paragraph),
+        content_tag_for(:del, words(2)),
+        content_tag_for(:ins, words(2)),
+        content_tag_for(:sub, words(2)),
+        content_tag_for(:sup, words(2)),
         content_tag_for(:code, words(2)),
+        content_tag_for(:small, words(2)),
         (a 2).to_s
       ] + FFaker::Lorem.paragraphs(count - 1))
       fetch_sample(a, count: count).join(sep)
