@@ -136,7 +136,7 @@ module FFaker
         content_tag_for(:em, paragraph),
         content_tag_for(:code, words(2)),
         (a 2).to_s
-      ] + FFaker::Lorem.paragraphs(count))
+      ] + FFaker::Lorem.paragraphs(count - 1))
       fetch_sample(a, count: count).join(sep)
     end
 
