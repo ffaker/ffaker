@@ -41,7 +41,21 @@ class TestVehicle < Test::Unit::TestCase
   end
 
   def test_vin
-    assert_match(/\A[A-Z0-9]{17}\z/, FFaker::Vehicle.vin)
+    vin = FFaker::Vehicle.vin
+
+    assert_match(/\A[A-Z0-9]{17}\z/, vin)
+    assert_not_match(/[IOQ]/, vin) # VINs can't have these letters
+    assert_includes(FFaker::Vehicle::VIN_VALID_ALPHA, vin[6]) # passenger vehicle designator
+    assert_includes(FFaker::Vehicle::VIN_VALID_YEAR_CHARS, vin[9]) # check year character
+
+    # Validate checksum calculation using known value to avoid duplicating checksum-calc code here.
+    # Setting seed to 13 will return vin "YTLTGCX361X265942".
+    previous_random_seed = FFaker::Random.seed # record current seed
+    FFaker::Random.seed = 13
+    assert_match(FFaker::Vehicle.vin[8], '6')
+
+    # Return seed to previous value
+    FFaker::Random.seed = previous_random_seed
   end
 
   def test_drivetrain
