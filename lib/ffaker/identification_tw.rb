@@ -6,7 +6,7 @@ module FFaker
     extend self
 
     AREA_CODE = { a: 10, b: 11, c: 12, d: 13, e: 14, f: 15, g: 16, h: 17, i: 34, j: 18, k: 19, l: 20, m: 21, n: 22,
-                  o: 35, p: 23, q: 24, r: 25, s: 26, t: 27, u: 28, v: 29, w: 30, x: 31, y: 32, z: 33 }.freeze
+                  o: 35, p: 23, q: 24, r: 25, s: 26, t: 27, u: 28, v: 29, w: 32, x: 30, y: 31, z: 33 }.freeze
 
     # Identity Card Number
     # https://en.wikipedia.org/wiki/National_identification_card_(Taiwan)#Identity_card_number
