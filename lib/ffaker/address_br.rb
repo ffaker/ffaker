@@ -37,9 +37,23 @@ module FFaker
       when 1 then "#{street_prefix} #{NameBR.first_name} #{NameBR.last_name} #{NameBR.last_name}"
       end
     end
-
-    def full_address
-      "#{street}, #{building_number}, #{city}, #{state}, Brazil"
+    
+    def complement
+      FFaker.numerify(fetch_sample(COMPLEMENT))
     end
+
+    def neighborhood
+      prefix = fetch_sample(NEIGHBORHOOD_PREFIXES)
+      "#{prefix} #{NameBR.first_name}"
+    end
+
+    def full_address(with_complement: false)
+      if with_complement
+        "#{street}, #{building_number}, #{complement}, #{neighborhood}, #{city}, #{state}, Brazil"
+      else
+      "#{street}, #{building_number}, #{neighborhood}, #{city}, #{state}, Brazil"
+      end
+    end
+
   end
 end
