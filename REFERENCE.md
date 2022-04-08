@@ -240,7 +240,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Brisbane, Australia/Hobart, Australia/Canberra |
+| `time_zone` | Australia/Sydney, Australia/Melbourne, Australia/Canberra |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -256,45 +256,46 @@
 | `city` | Trindade, São Félix do Xingu, Caruaru |
 | `city_prefix` | Port, North, East |
 | `city_suffix` | chester, berg, burgh |
-| `country` | Djibouti, Honduras, Ukraine |
-| `country_code` | WF, TH, MC |
-| `full_address` | Alameda Marisa das Neves, 77664, Bauru, Pará, Brazil, Travessa Rosângela Almeida, 37165, Pouso Alegre, Rondônia, Brazil, Rua Dalmo Braga, 49627, Nossa Senhora do Socorro, Ceará, Brazil |
-| `neighborhood` | White Plains Central, Babylon Bayside, Rockville East of Hungerford Dr |
-| `secondary_address` | Apt. 266, Suite 853, Apt. 655 |
-| `state` | Tocantins, Sergipe, Rio Grande do Norte |
-| `state_abbr` | AP, PE, ES |
-| `street` | Travessa Breno Gomes Rezende, Rua Érica Ramos, Alameda Valentim Nunes |
-| `street_address` | 02221 Daron Wells, 7616 Kohler Dam, 266 Drusilla Shores |
-| `street_name` | Jennette Bypass, Gerhold Rapids, Michal Forges |
-| `street_prefix` | Alameda, Avenida, Travessa |
-| `street_suffix` | Junction, Landing, Lane |
-| `time_zone` | Asia/Baku, Atlantic/Cape_Verde, Europe/Kiev |
+| `complement` | Casa Térrea, Fundos, Apartamento 422 |
+| `country` | Pakistan, Uganda, Dominica |
+| `country_code` | CI, BW, VC |
+| `full_address` | Rua Adaelmo Novaes, 71637, Parque Henrique, Ariquemes, Ceará, Brazil, Travessa Dalmo Braga Rodrigues, 962, Jardim Estefânia, Santa Bárbara do Oeste, Pará, Brazil, Travessa Ateneia Farias, 85365, Parque Samanta, Ariquemes, Tocantins, Brazil |
+| `neighborhood` | Vila Liana, Jardim Andresa, Parque Breno |
+| `secondary_address` | Suite 760, Apt. 676, Suite 022 |
+| `state` | Amapá, Mato Grosso, Alagoas |
+| `state_abbr` | AL, RR, RJ |
+| `street` | Travessa Neida Peixoto, Avenida Adelmo Nascimento, Alameda Viviane Oliveira |
+| `street_address` | 6959 Jennette Bypass, 93771 Pamella Rapid, 8542 Linh Tunnel |
+| `street_name` | Ciara Loop, Lezlie Circles, White Well |
+| `street_prefix` | Avenida, Travessa, Rua |
+| `street_suffix` | Lock, Forges, Streets |
+| `time_zone` | Atlantic/Cape_Verde, Asia/Dhaka, Pacific/Noumea |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 73099-235, 16236-286, 41879-971 |
+| `zip_code` | 36286-418, 79971-071, 80479-086 |
 
 ## FFaker::AddressCA
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 071, 804, 90866 |
-| `city` | Mont-Laurier, St. Albert, Terrebonne |
-| `city_prefix` | South, New, West |
-| `city_suffix` | mouth, shire, bury |
-| `country` | Sweden, Uzbekistan, Western Sahara |
-| `country_code` | SX, BD, BE |
-| `neighborhood` | Pennypack, North Norridge, East Renton |
-| `postal_code` | S4S 6H9, J3T 7V0, T1A 5H0 |
-| `province` | Nunavut, New Brunswick, Northwest Territories |
-| `province_abbr` | SK, NB, MB |
-| `secondary_address` | Apt. 574, Suite 488, Apt. 536 |
-| `street_address` | 091 Lindgren Falls, 341 Theressa Mission, 223 Jaskolski Roads |
-| `street_name` | Lucrecia Rue, Demetrice Plaza, Lavinia Junctions |
-| `street_suffix` | Passage, Mall, Views |
-| `time_zone` | Pacific/Fiji, America/Denver, Asia/Ulaanbaatar |
+| `building_number` | 23342, 52765, 256 |
+| `city` | Iroquois Falls, Delta, Saint-Hyacinthe |
+| `city_prefix` | Lake, West, New |
+| `city_suffix` | chester, burgh, berg |
+| `country` | Saint Pierre and Miquelon, Yemen, Malta |
+| `country_code` | IN, TF, BR |
+| `neighborhood` | phoenix, Mott Haven/Port Morris, East of Telegraph Road |
+| `postal_code` | T1A 5H0, R6P 0E5, K4N 8G8 |
+| `province` | Newfoundland and Labrador, Ontario, New Brunswick |
+| `province_abbr` | MB, NT, QC |
+| `secondary_address` | Apt. 910, Suite 334, Apt. 157 |
+| `street_address` | 422 Malik Roads, 411 Lavinia Junctions, 6737 Vanda Mill |
+| `street_name` | Lubowitz Islands, Katina Route, Toy Path |
+| `street_suffix` | Rapid, Lake, Pike |
+| `time_zone` | Asia/Hong_Kong, Pacific/Midway, Asia/Dhaka |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -306,20 +307,20 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 31560, 6071, 2058 |
-| `canton_abbr` | OW, AR, SO |
-| `city` | Ladonnashire, Padbergton, North Roseanne |
-| `city_prefix` | West, Lake, New |
-| `city_suffix` | burgh, borough, view |
-| `country` | Anguilla, Barbados, Norfolk Island |
-| `country_code` | BR, BD, BO |
-| `neighborhood` | phoenix, North East Irwindale, East Renton |
-| `postal_code` | 6187, 3152, 4295 |
-| `secondary_address` | Apt. 177, Suite 511, Apt. 803 |
-| `street_address` | 170 Marilee Ferry, 1323 Sang Field, 79432 Altenwerth Bypass |
-| `street_name` | Jesus Plaza, Lebsack Branch, Von Plains |
-| `street_suffix` | Freeway, Rapid, Burgs |
-| `time_zone` | Asia/Tehran, Europe/Dublin, Australia/Adelaide |
+| `building_number` | 8218, 30110, 3658 |
+| `canton_abbr` | FR, GL, GE |
+| `city` | Heathcoteshire, Araside, Port Jongmouth |
+| `city_prefix` | Lake, South, East |
+| `city_suffix` | land, furt, berg |
+| `country` | Tunisia, Christmas Island, Gabon |
+| `country_code` | SB, IS, RE |
+| `neighborhood` | North Norridge, Seven Hills Area, Sagaponack Seaside |
+| `postal_code` | 3511, 8030, 1709 |
+| `secondary_address` | Apt. 791, Suite 233, Apt. 327 |
+| `street_address` | 4324 Morgan Field, 7012 Lissa Ways, 07606 Yukiko Unions |
+| `street_name` | Hunter Common, Tracie Extensions, Cartwright Mill |
+| `street_suffix` | Port, Rest, Shoal |
+| `time_zone` | Asia/Kabul, Pacific/Fiji, America/Chicago |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -331,21 +332,21 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 4057, 99673, 1082 |
-| `canton` | Appenzell Innerrhoden, Freiburg, Basel-Stadt |
-| `canton_abbr` | AG, AI, GE |
-| `city` | Tuanhaven, Watsicaville, Lake Moriahshire |
-| `city_prefix` | North, New, Lake |
-| `city_suffix` | furt, ville, town |
-| `country` | Palestine, State of, Trinidad and Tobago, Ethiopia |
-| `country_code` | SL, PN, ET |
-| `neighborhood` | Candlewood Country Club, North East Irwindale, Schall Circle/Lakeside Green |
-| `postal_code` | 5998, 2446, 7184 |
-| `secondary_address` | Apt. 206, Apt. 176, Suite 938 |
-| `street_address` | 78192 Faith Meadows, 74789 Ariel Tunnel, 8564 Romaguera Place |
-| `street_name` | Lorelei Drive, Stracke Walk, Zulauf Creek |
-| `street_suffix` | Rapids, Expressway, Manors |
-| `time_zone` | America/Bogota, Europe/Brussels, Pacific/Noumea |
+| `building_number` | 1082, 6501, 90730 |
+| `canton` | Basel-Stadt, Appenzell Ausserrhoden, Schwyz |
+| `canton_abbr` | GL, NE, ZG |
+| `city` | Jakubowskiport, Port Leslie, Pfefferland |
+| `city_prefix` | West, New, East |
+| `city_suffix` | mouth, burgh, port |
+| `country` | Lao People's Democratic Republic, Faroe Islands, Tunisia |
+| `country_code` | RE, CK, AO |
+| `neighborhood` | Sagaponack Seaside, North Norridge, South of Lake Ave |
+| `postal_code` | 4020, 6017, 6938 |
+| `secondary_address` | Apt. 781, Suite 237, Apt. 747 |
+| `street_address` | 991 Britney Corner, 64051 Mabel Shores, 897 Lanell Manors |
+| `street_name` | Vince Path, Cletus Heights, Gutkowski Island |
+| `street_suffix` | Pines, Ways, Forges |
+| `time_zone` | America/Regina, Pacific/Tongatapu, Asia/Jerusalem |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -1393,7 +1394,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x000055ff3f8df510&gt;, #&lt;File:0x000055ff3f1ca9f0&gt;, #&lt;File:0x000055ff3f408280&gt; |
+| `file` | #&lt;File:0x0000556c9b1ab5f0&gt;, #&lt;File:0x0000556c9b2ec860&gt;, #&lt;File:0x0000556c9b396928&gt; |
 | `url` | https://dummyimage.com/300x300/bebf6f/69b79f.png?text=, https://dummyimage.com/300x300/49b2f1/715322.png?text=, https://dummyimage.com/300x300/d3f145/4a3d21.png?text= |
 
 ## FFaker::Internet
@@ -1682,8 +1683,8 @@
 | `first_name` | Zoila, Alysa, Dirk |
 | `first_name_female` | Alene, Era, Tabitha |
 | `first_name_male` | Dewey, Samuel, Carlo |
-| `html_safe_last_name` | Hills, Rowe, Denesik |
-| `html_safe_name` | Georgina Hills, Maudie Pfannerstill, Stefany Hilpert |
+| `html_safe_last_name` | Hermiston, Kirlin, Wisozk |
+| `html_safe_name` | Georgina Schulist, Maudie Skiles, Stefany Grady |
 | `last_name` | Hickle, Kutch, Bernier |
 | `male_name_with_prefix` | Mr. Andrew Heaney, Mr. Prince McLaughlin, Mr. Emmitt Cormier |
 | `male_name_with_prefix_suffix` | Mr. Bobby Marquardt III, Mr. Sean Ziemann III, Mr. Milo Green V |
@@ -1744,8 +1745,8 @@
 | `first_name` | Alois, Zdeněk, Jaromír |
 | `first_name_female` | Scarlett, Gertrud, Oliva |
 | `first_name_male` | Wilford, Woodrow, Jeromy |
-| `html_safe_last_name` | Roob, Schamberger, Harris |
-| `html_safe_name` | Dana Lind, Ondřej Gottlieb, Jiřina Balistreri |
+| `html_safe_last_name` | Kuhn, Nicolas, Pagac |
+| `html_safe_name` | Dana Trantow, Ondřej Friesen, Jiřina Kub |
 | `last_name` | Burešová, Burdová, Dlouhá |
 | `male_name_with_prefix` | Mr. Jess Adam, Mr. Wilbert Čech, Mr. Armand Boháč |
 | `male_name_with_prefix_suffix` | Mr. Wayne Dvořák DSc., Mr. Jarod Daněk DSc., Mr. Armand Dvořáček DSc. |
@@ -1774,8 +1775,8 @@
 | `first_name` | Amalie, Viola, Oliver |
 | `first_name_female` | Tonisha, Ghislaine, Agnus |
 | `first_name_male` | Rigoberto, Ulysses, Ted |
-| `html_safe_last_name` | Cartwright, Pfannerstill, Weissnat |
-| `html_safe_name` | Elias Mertz, Henry Ortiz, Bjørn Crooks |
+| `html_safe_last_name` | Purdy, Herman, Rohan |
+| `html_safe_name` | Elias Hauck, Henry Kulas, Bjørn Hane |
 | `last_name` | Boehm, Kiehn, Brekke |
 | `male_name` | Nicklas Dibbert, Albert Rolfson, Arne Bartoletti |
 | `male_name_with_prefix` | Mr. Dustin Hayes, Mr. Darius Price, Mr. Jessie Smith |
@@ -1802,8 +1803,8 @@
 | `first_name` | Conrad, Cheryle, Galina |
 | `first_name_female` | Irmgard, Ardell, Bula |
 | `first_name_male` | Leslie, Miguel, Williams |
-| `html_safe_last_name` | Effertz, DuBuque, Carter |
-| `html_safe_name` | Rubin Homenick, Matha Homenick, Brittanie Anderson |
+| `html_safe_last_name` | Jacobson, Carroll, Dooley |
+| `html_safe_name` | Rubin Morar, Matha Crooks, Brittanie Thompson |
 | `last_name` | Braun, Larson, Hettinger |
 | `male_name_with_prefix` | Mr. Val Mosciski, Mr. Vicente Lockman, Mr. Fermin Hand |
 | `male_name_with_prefix_suffix` | Mr. Boris Farrell DVM, Mr. Dudley Brekke DVM, Mr. Val Toy DDS |
@@ -1948,8 +1949,8 @@
 | `full_name` | Virginia Koss McLaughlin, Roque Aaron Lind Daniel, Rubén Koelpin Block |
 | `full_name_no_prefix` | Carlos Fritsch Glover, Luz Fadel Howell, Giovani Orn Dooley |
 | `full_name_prefix` | Sr. Fernando Buckridge Bailey, Sra. Martha Selene Prohaska Walsh, C. Silvio Otilio Mills Yundt |
-| `html_safe_last_name` | Leuschke, Mertz, Hane |
-| `html_safe_name` | Jezabel Turcotte, Nabor Fahey, Mayra Cremin |
+| `html_safe_last_name` | Kling, Marks, Sipes |
+| `html_safe_name` | Jezabel Davis, Nabor Cartwright, Mayra Koch |
 | `last_name` | Mertz, Feest, Runolfsson |
 | `male_name` | Odín, Temístocles, Otilio Claudio |
 | `male_name_with_prefix` | Sr. Chet Bernier, Sr. Brain Stark, C. Gustavo Boyer |
@@ -1978,8 +1979,8 @@
 | `first_name` | Juliette, Sheree, Kent Russell |
 | `first_name_female` | Cammy, Guadalupe, Petra |
 | `first_name_male` | Tomas, Josef, Amado |
-| `html_safe_last_name` | Howe, Davis, Raynor |
-| `html_safe_name` | Yon Hammes, Denisha Rempel, Libbie Windler |
+| `html_safe_last_name` | Rath, Spinka, Runte |
+| `html_safe_name` | Yon Beatty, Denisha Stehr, Libbie Wyman |
 | `last_name` | Kessler, Gerlach, Bahringer |
 | `male_name_with_prefix` | Mr. Ted Russel, Mr. Salvatore Witting, Mr. Hunter Hickle |
 | `male_name_with_prefix_suffix` | Mr. Hyman Ferry MD, Mr. Thurman White PhD, Mr. Lon Stracke V |
@@ -2005,8 +2006,8 @@
 | `first_name` | Bonita, Justine, Tyisha |
 | `first_name_female` | Loretta, Melissia, Lachelle |
 | `first_name_male` | Matthew, Rhett, Allen-Desmond |
-| `html_safe_last_name` | Veum, Zboncak, Rohan |
-| `html_safe_name` | Jon Rohan, Mollie Schmidt, Billie-Ann Jacobson |
+| `html_safe_last_name` | Welch, Bechtelar, Daniel |
+| `html_safe_name` | Jon Schiller, Mollie Graham, Billie-Ann Marquardt |
 | `last_name` | Ankunding, Waelchi, Von |
 | `male_name_with_prefix` | Mr. Leonardo Parisian, Mr. Andre Buckridge, Mr. Columbus Bernier |
 | `male_name_with_prefix_suffix` | Mr. Donny Cremin I, Mr. Eliseo Effertz DDS, Mr. Daron Fritsch IV |
@@ -2032,8 +2033,8 @@
 | `first_name` | Yulanda, Chester, Danuta |
 | `first_name_female` | Ciara, Shaunta, Serafina |
 | `first_name_male` | Noe, Josue, Darren |
-| `html_safe_last_name` | Larson, Barrows, Miller |
-| `html_safe_name` | Robbi Nitzsche, Inocencia Hermiston, Orpha Larson |
+| `html_safe_last_name` | Rohan, Boehm, Kautzer |
+| `html_safe_name` | Robbi Dibbert, Inocencia Rau, Orpha Welch |
 | `last_name` | Tapalla, Loshangg, Magbantayg |
 | `male_name_with_prefix` | Mr. Brett Garay, Mr. Thad Zacarias, Mr. Daniel Makabaligoten |
 | `male_name_with_prefix_suffix` | Mr. Ricardo Divinagracia DVM, Mr. Omer Escribano Jr., Mr. Ervin Querubin II |
@@ -2097,8 +2098,8 @@
 | `first_name` | David, Karin, Val |
 | `first_name_female` | Sade, Ailene, Sharell |
 | `first_name_male` | Conrad, Tod, Caleb |
-| `html_safe_last_name` | Smitham, Larkin, Nolan |
-| `html_safe_name` | Otto Bartoletti, Tracee Wolf, Shavon Botsford |
+| `html_safe_last_name` | Hilpert, Mitchell, Jenkins |
+| `html_safe_name` | Otto Kub, Tracee Ziemann, Shavon Renner |
 | `last_name` | Bednar, Bode, Hane |
 | `male_name_with_prefix` | Mr. Colby Gulgowski, Mr. Nolan Watsica, Mr. Alfonso Stiedemann |
 | `male_name_with_prefix_suffix` | Mr. Jon Johns V, Mr. Tanner Dickinson PhD, Mr. Hayden Murray PhD |
@@ -2235,12 +2236,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 00418000866304, 0041800 372 38 65, +418004333706 |
-| `home_work_phone_number` | 058 576 64 10, 004126 053 77 42, +41712169994 |
-| `mobile_phone_number` | 0041776323260, +41747705355, 0041766811189 |
-| `phone_number` | +41767803232, 0800 004 32 72, 0041580928428 |
-| `premium_rate_phone_number` | 0906 382 67 11, 09012850237, +419013295031 |
-| `shared_cost_phone_number` | +41844 133 17 71, +41844 204 89 89, 0041842 990 18 61 |
+| `free_phone_number` | 00418000866304, 0800 372 38 65, +41800 433 37 06 |
+| `home_work_phone_number` | 0041345766410, +41430537742, 0612169994 |
+| `mobile_phone_number` | 004179 632 32 60, 0777705355, +41766811189 |
+| `phone_number` | 0041757803232, 0800 004 32 72, +41210928428 |
+| `premium_rate_phone_number` | 09003826711, 0906 285 02 37, 09063295031 |
+| `shared_cost_phone_number` | 0848 133 17 71, +418442048989, 08449901861 |
 
 ## FFaker::PhoneNumberCU
 
