@@ -2,6 +2,16 @@
 
   - Add your change HERE
 
+## 2.21.0
+  - Generate valid VINs [@xunker]
+  - Add neighborhood and address complement to AddressBR [@az3vedo]
+  - Ensure FFaker::HTMLIpsum.fancy_string return includes at least one tag [@gabrielcosta42]
+  - Fix IdentificationTW area code [@timfanda35]
+  - Add Ruby 3.1 to CI matrix [@petergoldstein]
+  - Add AnimalBr [@thiago-henrique-leite]
+  - Fix rubocop warnings [@mmrshk]
+  - Consistently generate REFERENCE.md [@technicalpickles and @Volosh1n]
+
 ## 2.20.0
   - Remove date from gem specification [@AlexWayfer]
   - Add Number module [@Volosh1n]
