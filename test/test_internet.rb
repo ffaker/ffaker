@@ -9,7 +9,7 @@ class TestFakerInternet < Test::Unit::TestCase
     FFaker::Internet,
     :email, :free_email, :safe_email, :disposable_email,
     :user_name, :domain_name, :domain_word, :domain_suffix,
-    :http_url, :ip_v4_address, :password, :slug, :mac
+    :http_url, :ip_v4_address, :password, :slug, :mac, :uuid
   )
 
   def setup
