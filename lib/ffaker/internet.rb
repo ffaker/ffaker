@@ -81,6 +81,14 @@ module FFaker
       rand(0...MAC_LIMIT).to_s(16).rjust(12, '0').scan(/.{2}/).join(delimiter)
     end
 
+    def uuid
+      # borrowed from: https://github.com/ruby/ruby/blob/d48783bb0236db505fe1205d1d9822309de53a36/lib/securerandom.rb#L250
+      ary = FFaker::Config.random.bytes(16).unpack('NnnnnN')
+      ary[2] = (ary[2] & 0x0fff) | 0x4000
+      ary[3] = (ary[3] & 0x3fff) | 0x8000
+      '%08x-%04x-%04x-%04x-%04x%08x' % ary # rubocop:disable Style/FormatString
+    end
+
     private
 
     def sanitize(string)

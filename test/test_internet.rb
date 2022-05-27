@@ -129,4 +129,10 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.mac(nil).length == 12
     assert @tester.mac('').length == 12
   end
+
+  def test_uuid
+    uuid = @tester.uuid
+    assert_equal(36, uuid.size)
+    assert_match(/\A\h{8}-\h{4}-4\h{3}-\h{4}-\h{12}\z/, uuid)
+  end
 end
