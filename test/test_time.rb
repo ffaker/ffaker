@@ -3,6 +3,13 @@
 require_relative 'helper'
 require 'date'
 
+module FFaker
+  module Date
+    extend FFaker::ModuleUtils
+    extend self
+  end
+end
+
 class TestFakerTime < Test::Unit::TestCase
   include DeterministicHelper
 
