@@ -82,6 +82,7 @@ module FFaker
   autoload :Conference, 'ffaker/conference'
   autoload :CoursesFR, 'ffaker/courses_fr'
   autoload :Currency, 'ffaker/currency'
+  autoload :Date, 'ffaker/date'
   autoload :DizzleIpsum, 'ffaker/dizzle_ipsum'
   autoload :Education, 'ffaker/education'
   autoload :EducationCN, 'ffaker/education_cn'

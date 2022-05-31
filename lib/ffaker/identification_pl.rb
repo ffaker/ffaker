@@ -37,8 +37,8 @@ module FFaker
     private
 
     def generate_valid_pesel_date
-      from = Date.new(1800, 1, 1)
-      to = [Date.today, Date.new(2299, 12, 31)].min
+      from = ::Date.new(1800, 1, 1)
+      to = [::Date.today, ::Date.new(2299, 12, 31)].min
       fetch_sample(from..to)
     end
 

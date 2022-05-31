@@ -54,6 +54,7 @@
  * [FFaker::Conference](#ffakerconference)
  * [FFaker::CoursesFR](#ffakercoursesfr)
  * [FFaker::Currency](#ffakercurrency)
+ * [FFaker::Date](#ffakerdate)
  * [FFaker::DizzleIpsum](#ffakerdizzleipsum)
  * [FFaker::Education](#ffakereducation)
  * [FFaker::EducationCN](#ffakereducationcn)
@@ -1060,6 +1061,14 @@
 | `code` | KHR, MXN, CNY |
 | `name` | Baht, Cape Verde Escudo, Boliviano Mvdol |
 | `symbol` | ¥, €, $ |
+
+## FFaker::Date
+
+| Method | Example |
+| ------ | ------- |
+| `between`(..., ...) | 2021-09-23 |
+| `backward` | 2021-09-23 |
+| `forward` | 2021-09-23 |
 
 ## FFaker::DizzleIpsum
 
