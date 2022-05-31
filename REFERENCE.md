@@ -241,7 +241,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Hobart, Australia/Melbourne, Australia/Perth |
+| `time_zone` | Australia/Sydney, Australia/Darwin, Australia/Melbourne |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -1066,17 +1066,17 @@
 
 | Method | Example |
 | ------ | ------- |
-| `between`(..., ...) | 2021-09-23 |
-| `backward` | 2021-09-23 |
-| `forward` | 2021-09-23 |
+| `backward` | 2021-06-01, 2021-07-30, 2022-01-23 |
+| `between`(..., ...) |  |
+| `forward` | 2023-05-26, 2022-07-29, 2023-03-03 |
 
 ## FFaker::DizzleIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | mx0ojz2xdz5kys1fc23ykp46xvixbe4yy9ckqbdffbo6ckzoppjt2hnelaz89qia6w6apspfjo8jquexq72rl3r4uvky290f4ohvzv2f9x46qbic4a2o3taph877vi5jqmjybwklvl1i1lbfzp9dgyq46ss9u802anixo5lc71hlxk4l653qg35vneip2z3weo59hzlqj1jjhm8lf6q5dx96yyc3uin8masikqy6dheqznokth7yxmqjrs3l6vr, 7slmi9aeksmoki09piokeho2fhsgc3bi1sr639rxj4q1k58cpdp28xhikmex3rxvlb3q39gnpojwv9c7wovzptxbyqj3ljaecp5gbc1ajeipgxlzfuohhz9mm6ms7qavupdud51yxz379dx1d3f7ybc0ru6hm9u6fxy6iio9gx6qc0pjv2wxh8od0nbboxyemvod888af8tijp4w9x8ba7wwcdr7ys75mqf3q9dg0xlzd740f3muu4y6o3zedvo, l8cywbttv95nn7k1zap85t9jcfltfxx01pngf2j7oloh759n325rc731filoi8m7e1e332m3vdxq4plwuea7wdxaxxi3m39q6ukyncqv8jc476t9ksskvzut8kdp2l77ngtboeopnl2hxrwq1e6gisc1bs49tpcesy130rwsiqxgmze4x52lpqie0rwjg0a9f82835wnb61fyg6awtc7hp8rx4a7dazvibsy50035eo1fih3sxar3husdzcx3ti |
-| `paragraph` | Every single one smokin' weed through all the drama rizzoad tha shiznit guess what? realness. Bubbles in the tub bionic rolling down the street recognize Coupe de Ville your chrome nothing can save ya. In tha hizzle used to sell loot I love my momma Snoop through all the drama make a few ends realness the diggy your chrome., I love my momma eighty degrees the diggy like every single day your chrome tha shiznit. Mr. buckwort if the ride is more fly, then you must buy hizzouse televizzle make a few ends Coupe de Ville through all the drama at ease. In tha hizzle zig zag smoke used to sell loot drizzle tha shiznit guess what? rolling down the street hizzouse., It's 1993 for the Gs roll with with my mind on my money and my money on my mind the diggy laid back. Rizzide real deal Holyfield with my mind on my money gizzo bubbles in the tub now I'm on parole I love my momma. Recognize Long Beach and my money on my mind the dopest Snoopy you talk too much. Gold chain roll with it's 1993 with my mind on my money the diggy laid back Long Beach everybody got they cups. Gizzo the dopest now I'm on parole the LBC zig zag smoke tha dizzle bubbles in the tub guess what? Snoop. |
-| `paragraphs` | Nasty fo rizzle smokin' weed gold chain in tha hizzle for the Gs and my money on my mind for the hustlers fo shizzle. Every single one eighty degrees drizzle smokin' indo roll with realness put ya choppers up. Tha shiznit fo rizzle fizzle bionic drop it like it's hot realer roll with Coupe de Ville real deal Holyfield. Snoop the Dogg Pound the diggy the Magic Johnson of rap tha shiznit. Guess what? rolling down the street if the ride is more fly, then you must buy real deal Holyfield Snoop why is you Long Beach., At ease if you was me and I was you the Dogg Pound Mr. Buckwort realer laid back. Bubbles in the tub now I'm on parole Long Beach Snoopy Coupe de Ville zig zag smoke the LBC why is you fizzle. Televizzle may I how we do it real deal Holyfield nasty. And my money on my mind smokin' weed rizzoad used to sell loot gizzo put ya choppers up in tha hizzle., With my mind on my money for the Gs pizzle the S oh yes realer every single one the dopest. Zig zag smoke may I the dopest smokin' indo make a few ends. I love my momma real deal Holyfield the LBC gold chain pizzle rolling down the street tha dizzle., Fo rizzle televizzle put ya choppers up the dopest and my money on my mind zig zag smoke eighty degrees the LBC. Rizzide it's 1993 drizzle Coupe de Ville Doggfada Snoopy if the ride is more fly, then you must buy. May i like every single day Long Beach how we do it pizzle., Guess what? roll with feel the breeze fo shizzle televizzle fizzle hizzouse the Magic Johnson of rap drop it like it's hot. Smokin' weed now I'm on parole nasty feel the breeze plizzay rizzoad fo rizzle Doggfada. Your chrome you talk too much waddup why is you Snoopy., Gold chain roll with and my money on my mind you talk too much used to sell loot realness. Nothing can save ya rolling down the street if the ride is more fly, then you must buy may I it's 1993. For the gs real deal Holyfield zig zag smoke every single one bubbles in the tub realness. Pizzle it's 1993 the Magic Johnson of rap every single one for the Gs the Dogg Pound you talk too much guess what? laid back., Doggfada why is you in tha hizzle your chrome now I'm on parole with my mind on my money for the hustlers real deal Holyfield. In tha hizzle with my mind on my money zig zag smoke nothing can save ya rolling down the street real deal Holyfield may I roll with. Guess what? nothing can save ya used to sell loot rizzoad fizzle eighty degrees gold chain the LBC. May i with my mind on my money fo rizzle smokin' weed pizzle if the ride is more fly, then you must buy. Make a few ends the diggy gizzo your chrome Doggfada like every single day realer televizzle., Bionic hizzouse through all the drama laid back at ease for the Gs drop it like it's hot Snoopy realer. Sippin' on gin and juice if the ride is more fly, then you must buy everybody got they cups Doggfada rizzoad realness for the Gs. Every single one in tha hizzle used to sell loot why is you now I'm on parole bubbles in the tub Long Beach the LBC. Long beach you talk too much smokin' weed for the Gs and my money on my mind fo shizzle guess what? waddup. Nothing can save ya smokin' indo realness the S oh yes Snoop in tha hizzle., Nasty put ya choppers up the LBC the Dogg Pound smokin' indo gizzo. If the ride is more fly, then you must buy in tha hizzle recognize the LBC used to sell loot. Drizzle Mr. Buckwort gold chain drop it like it's hot tha dizzle zig zag smoke recognize. |
+| `characters` | 2xdz5kys1fc23ykp46xvixbe4yy9ckqbdffbo6ckzoppjt2hnelaz89qia6w6apspfjo8jquexq72rl3r4uvky290f4ohvzv2f9x46qbic4a2o3taph877vi5jqmjybwklvl1i1lbfzp9dgyq46ss9u802anixo5lc71hlxk4l653qg35vneip2z3weo59hzlqj1jjhm8lf6q5dx96yyc3uin8masikqy6dheqznokth7yxmqjrs3l6vr7slmi9, aeksmoki09piokeho2fhsgc3bi1sr639rxj4q1k58cpdp28xhikmex3rxvlb3q39gnpojwv9c7wovzptxbyqj3ljaecp5gbc1ajeipgxlzfuohhz9mm6ms7qavupdud51yxz379dx1d3f7ybc0ru6hm9u6fxy6iio9gx6qc0pjv2wxh8od0nbboxyemvod888af8tijp4w9x8ba7wwcdr7ys75mqf3q9dg0xlzd740f3muu4y6o3zedvol8cywb, ttv95nn7k1zap85t9jcfltfxx01pngf2j7oloh759n325rc731filoi8m7e1e332m3vdxq4plwuea7wdxaxxi3m39q6ukyncqv8jc476t9ksskvzut8kdp2l77ngtboeopnl2hxrwq1e6gisc1bs49tpcesy130rwsiqxgmze4x52lpqie0rwjg0a9f82835wnb61fyg6awtc7hp8rx4a7dazvibsy50035eo1fih3sxar3husdzcx3tibud6hw |
+| `paragraph` | With my mind on my money I love my momma gold chain in tha hizzle rolling down the street the diggy rizzoad. Like every single day waddup realness now I'm on parole I love my momma feel the breeze fo rizzle make a few ends. Used to sell loot roll with the diggy if the ride is more fly, then you must buy if you was me and I was you televizzle now I'm on parole everybody got they cups the Magic Johnson of rap. Plizzay in tha hizzle nasty the diggy realer. Feel the breeze the Magic Johnson of rap nasty bionic may I roll with and my money on my mind nothing can save ya., Rizzide real deal Holyfield with my mind on my money gizzo bubbles in the tub now I'm on parole I love my momma. Recognize Long Beach and my money on my mind the dopest Snoopy you talk too much. Gold chain roll with it's 1993 with my mind on my money the diggy laid back Long Beach everybody got they cups., The dopest Long Beach smokin' weed rizzoad tha dizzle. Put ya choppers up nasty for the hustlers smokin' weed fo rizzle everybody got they cups like every single day Snoop Mr. Buckwort. You talk too much tha shiznit why is you fo shizzle rizzide fo rizzle rizzoad. |
+| `paragraphs` | Eighty degrees drizzle smokin' indo roll with feel the breeze Snoop. Tha shiznit fo rizzle fizzle bionic drop it like it's hot realer roll with Coupe de Ville real deal Holyfield. Snoop the Dogg Pound the diggy the Magic Johnson of rap tha shiznit. Guess what? rolling down the street if the ride is more fly, then you must buy real deal Holyfield Snoop why is you Long Beach., At ease if you was me and I was you the Dogg Pound Mr. Buckwort realer laid back. Bubbles in the tub now I'm on parole Long Beach Snoopy Coupe de Ville zig zag smoke the LBC why is you fizzle. Televizzle may I how we do it real deal Holyfield nasty. And my money on my mind smokin' weed rizzoad used to sell loot gizzo put ya choppers up in tha hizzle., With my mind on my money for the Gs pizzle the S oh yes realer every single one the dopest. Zig zag smoke may I the dopest smokin' indo make a few ends. I love my momma real deal Holyfield the LBC gold chain pizzle rolling down the street tha dizzle., Fo rizzle televizzle put ya choppers up the dopest and my money on my mind zig zag smoke eighty degrees the LBC. Rizzide it's 1993 drizzle Coupe de Ville Doggfada Snoopy if the ride is more fly, then you must buy. May i like every single day Long Beach how we do it pizzle., Guess what? roll with feel the breeze fo shizzle televizzle fizzle hizzouse the Magic Johnson of rap drop it like it's hot. Smokin' weed now I'm on parole nasty feel the breeze plizzay rizzoad fo rizzle Doggfada. Your chrome you talk too much waddup why is you Snoopy., Gold chain roll with and my money on my mind you talk too much used to sell loot realness. Nothing can save ya rolling down the street if the ride is more fly, then you must buy may I it's 1993. For the gs real deal Holyfield zig zag smoke every single one bubbles in the tub realness. Pizzle it's 1993 the Magic Johnson of rap every single one for the Gs the Dogg Pound you talk too much guess what? laid back., Doggfada why is you in tha hizzle your chrome now I'm on parole with my mind on my money for the hustlers real deal Holyfield. In tha hizzle with my mind on my money zig zag smoke nothing can save ya rolling down the street real deal Holyfield may I roll with. Guess what? nothing can save ya used to sell loot rizzoad fizzle eighty degrees gold chain the LBC. May i with my mind on my money fo rizzle smokin' weed pizzle if the ride is more fly, then you must buy. Make a few ends the diggy gizzo your chrome Doggfada like every single day realer televizzle., Bionic hizzouse through all the drama laid back at ease for the Gs drop it like it's hot Snoopy realer. Sippin' on gin and juice if the ride is more fly, then you must buy everybody got they cups Doggfada rizzoad realness for the Gs. Every single one in tha hizzle used to sell loot why is you now I'm on parole bubbles in the tub Long Beach the LBC. Long beach you talk too much smokin' weed for the Gs and my money on my mind fo shizzle guess what? waddup. Nothing can save ya smokin' indo realness the S oh yes Snoop in tha hizzle., Nasty put ya choppers up the LBC the Dogg Pound smokin' indo gizzo. If the ride is more fly, then you must buy in tha hizzle recognize the LBC used to sell loot. Drizzle Mr. Buckwort gold chain drop it like it's hot tha dizzle zig zag smoke recognize. |
 | `phrase` | Everybody got they cups gold chain feel the breeze pizzle rolling down the street sippin' on gin and juice put ya choppers up may I bubbles in the tub., How we do it gold chain Doggfada televizzle through all the drama fo shizzle real deal Holyfield., Real deal holyfield feel the breeze how we do it Mr. Buckwort bubbles in the tub. |
 | `phrases` | Mr. buckwort put ya choppers up the diggy fizzle may I., If you was me and i was you the Dogg Pound the Magic Johnson of rap feel the breeze how we do it bubbles in the tub with my mind on my money the LBC your chrome., Hizzouse sippin' on gin and juice tha dizzle rizzoad recognize pizzle the dopest., Waddup used to sell loot how we do it realer realness guess what? rizzoad gizzo., The dopest waddup the Magic Johnson of rap used to sell loot Coupe de Ville drop it like it's hot rizzide., Rolling down the street nothing can save ya the Dogg Pound drop it like it's hot bionic how we do it pizzle roll with guess what?., And my money on my mind the Dogg Pound like every single day roll with make a few ends the diggy every single one it's 1993., Recognize with my mind on my money sippin' on gin and juice the Dogg Pound the LBC Doggfada Snoop tha dizzle., And my money on my mind the dopest I love my momma how we do it eighty degrees laid back. |
 | `sentence` | Zig zag smoke drop it like it's hot gizzo everybody got they cups recognize., Fo rizzle for the hustlers the LBC fizzle nothing can save ya gizzo., At ease put ya choppers up if the ride is more fly, then you must buy smokin' indo the Dogg Pound if you was me and I was you. |
@@ -1350,7 +1350,7 @@
 | `blood_type` | O+, B+, O- |
 | `driver_license_category` | C3, A1, B2 |
 | `drivers_license` | 34248611, 1554774838662, 851833 |
-| `expedition_date` | 2019-11-16, 2020-10-01, 2021-04-27 |
+| `expedition_date` | 2020-01-08, 2020-11-23, 2021-06-19 |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
 | `id` | 62513856, 873974329676, 5169106663900 |
 
@@ -1379,10 +1379,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | XUHD100426MTSGJBO7, FEEJ041018HBSCMSK9, YUEB160602MTLSHRQ6 |
-| `rfc` | YNF840620D7E, JUZ061112X3Z, RUS040228QRJ |
-| `rfc_persona_fisica` | CEEL160523V8E, QIMC780424PVO, CEHZ060720AVW |
-| `rfc_persona_moral` | SHX0501246UX, NAC730214ZIW, XRH870216NAQ |
+| `curp` | XUHD100606MTSGJBO7, FEEJ041122HBSCMSK9, YUEB160719MTLSHRQ6 |
+| `rfc` | YNF840705D7E, JUZ061220X3Z, RUS040403QRJ |
+| `rfc_persona_fisica` | CEEL160709V8E, QIMC780502PVO, CEHZ060826AVW |
+| `rfc_persona_moral` | SHX0503016UX, NAC730217ZIW, XRH870305NAQ |
 
 ## FFaker::IdentificationPL
 
@@ -1403,7 +1403,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x000055ec4a8415c0&gt;, #&lt;File:0x000055ec4a8a6358&gt;, #&lt;File:0x000055ec4a8b1898&gt; |
+| `file` | #&lt;File:0x000055f7e9471aa8&gt;, #&lt;File:0x000055f7e94a38f0&gt;, #&lt;File:0x000055f7e8be8eb8&gt; |
 | `url` | https://dummyimage.com/300x300/bebf6f/69b79f.png?text=, https://dummyimage.com/300x300/49b2f1/715322.png?text=, https://dummyimage.com/300x300/d3f145/4a3d21.png?text= |
 
 ## FFaker::Internet
@@ -1692,8 +1692,8 @@
 | `first_name` | Zoila, Alysa, Dirk |
 | `first_name_female` | Alene, Era, Tabitha |
 | `first_name_male` | Dewey, Samuel, Carlo |
-| `html_safe_last_name` | Schinner, Kub, Lemke |
-| `html_safe_name` | Georgina Trantow, Maudie West, Stefany Schinner |
+| `html_safe_last_name` | Becker, Pfannerstill, Gislason |
+| `html_safe_name` | Georgina Windler, Maudie Crona, Stefany Stamm |
 | `last_name` | Hickle, Kutch, Bernier |
 | `male_name_with_prefix` | Mr. Andrew Heaney, Mr. Prince McLaughlin, Mr. Emmitt Cormier |
 | `male_name_with_prefix_suffix` | Mr. Bobby Marquardt III, Mr. Sean Ziemann III, Mr. Milo Green V |
@@ -1754,8 +1754,8 @@
 | `first_name` | Alois, Zdeněk, Jaromír |
 | `first_name_female` | Scarlett, Gertrud, Oliva |
 | `first_name_male` | Wilford, Woodrow, Jeromy |
-| `html_safe_last_name` | Hansen, Littel, Bauch |
-| `html_safe_name` | Dana Kuvalis, Ondřej Howell, Jiřina Bergstrom |
+| `html_safe_last_name` | Walsh, Marks, Hilpert |
+| `html_safe_name` | Dana Zulauf, Ondřej Wiza, Jiřina Tromp |
 | `last_name` | Burešová, Burdová, Dlouhá |
 | `male_name_with_prefix` | Mr. Jess Adam, Mr. Wilbert Čech, Mr. Armand Boháč |
 | `male_name_with_prefix_suffix` | Mr. Wayne Dvořák DSc., Mr. Jarod Daněk DSc., Mr. Armand Dvořáček DSc. |
@@ -1784,8 +1784,8 @@
 | `first_name` | Amalie, Viola, Oliver |
 | `first_name_female` | Tonisha, Ghislaine, Agnus |
 | `first_name_male` | Rigoberto, Ulysses, Ted |
-| `html_safe_last_name` | Oga, Lueilwitz, Johnston |
-| `html_safe_name` | Elias Russel, Henry Nitzsche, Bjørn Champlin |
+| `html_safe_last_name` | Hudson, Braun, Keeling |
+| `html_safe_name` | Elias Wiza, Henry Barton, Bjørn Connelly |
 | `last_name` | Boehm, Kiehn, Brekke |
 | `male_name` | Nicklas Dibbert, Albert Rolfson, Arne Bartoletti |
 | `male_name_with_prefix` | Mr. Dustin Hayes, Mr. Darius Price, Mr. Jessie Smith |
@@ -1812,8 +1812,8 @@
 | `first_name` | Conrad, Cheryle, Galina |
 | `first_name_female` | Irmgard, Ardell, Bula |
 | `first_name_male` | Leslie, Miguel, Williams |
-| `html_safe_last_name` | Bosco, Fisher, Rath |
-| `html_safe_name` | Rubin Tremblay, Matha Gleason, Brittanie Orn |
+| `html_safe_last_name` | Steuber, Raynor, Johnston |
+| `html_safe_name` | Rubin Ebert, Matha Kertzmann, Brittanie Skiles |
 | `last_name` | Braun, Larson, Hettinger |
 | `male_name_with_prefix` | Mr. Val Mosciski, Mr. Vicente Lockman, Mr. Fermin Hand |
 | `male_name_with_prefix_suffix` | Mr. Boris Farrell DVM, Mr. Dudley Brekke DVM, Mr. Val Toy DDS |
@@ -1958,8 +1958,8 @@
 | `full_name` | Virginia Koss McLaughlin, Roque Aaron Lind Daniel, Rubén Koelpin Block |
 | `full_name_no_prefix` | Carlos Fritsch Glover, Luz Fadel Howell, Giovani Orn Dooley |
 | `full_name_prefix` | Sr. Fernando Buckridge Bailey, Sra. Martha Selene Prohaska Walsh, C. Silvio Otilio Mills Yundt |
-| `html_safe_last_name` | Jakubowski, Hirthe, Hills |
-| `html_safe_name` | Jezabel Conroy, Nabor Schuster, Mayra Mueller |
+| `html_safe_last_name` | Walsh, Sipes, Blanda |
+| `html_safe_name` | Jezabel Stanton, Nabor Wuckert, Mayra Leuschke |
 | `last_name` | Mertz, Feest, Runolfsson |
 | `male_name` | Odín, Temístocles, Otilio Claudio |
 | `male_name_with_prefix` | Sr. Chet Bernier, Sr. Brain Stark, C. Gustavo Boyer |
@@ -1988,8 +1988,8 @@
 | `first_name` | Juliette, Sheree, Kent Russell |
 | `first_name_female` | Cammy, Guadalupe, Petra |
 | `first_name_male` | Tomas, Josef, Amado |
-| `html_safe_last_name` | Wilkinson, Schulist, Klocko |
-| `html_safe_name` | Yon Doyle, Denisha Steuber, Libbie Hartmann |
+| `html_safe_last_name` | Cremin, Tromp, Armstrong |
+| `html_safe_name` | Yon Weber, Denisha Gorczany, Libbie Smitham |
 | `last_name` | Kessler, Gerlach, Bahringer |
 | `male_name_with_prefix` | Mr. Ted Russel, Mr. Salvatore Witting, Mr. Hunter Hickle |
 | `male_name_with_prefix_suffix` | Mr. Hyman Ferry MD, Mr. Thurman White PhD, Mr. Lon Stracke V |
@@ -2015,8 +2015,8 @@
 | `first_name` | Bonita, Justine, Tyisha |
 | `first_name_female` | Loretta, Melissia, Lachelle |
 | `first_name_male` | Matthew, Rhett, Allen-Desmond |
-| `html_safe_last_name` | Lueilwitz, Reilly, Fay |
-| `html_safe_name` | Jon Wyman, Mollie Nitzsche, Billie-Ann Morissette |
+| `html_safe_last_name` | Nitzsche, Kovacek, Pollich |
+| `html_safe_name` | Jon Stehr, Mollie Raynor, Billie-Ann Emmerich |
 | `last_name` | Ankunding, Waelchi, Von |
 | `male_name_with_prefix` | Mr. Leonardo Parisian, Mr. Andre Buckridge, Mr. Columbus Bernier |
 | `male_name_with_prefix_suffix` | Mr. Donny Cremin I, Mr. Eliseo Effertz DDS, Mr. Daron Fritsch IV |
@@ -2042,8 +2042,8 @@
 | `first_name` | Yulanda, Chester, Danuta |
 | `first_name_female` | Ciara, Shaunta, Serafina |
 | `first_name_male` | Noe, Josue, Darren |
-| `html_safe_last_name` | Hyatt, Rogahn, Kshlerin |
-| `html_safe_name` | Robbi Abbott, Inocencia Sawayn, Orpha Kertzmann |
+| `html_safe_last_name` | Hartmann, Spencer, Wiza |
+| `html_safe_name` | Robbi Pagac, Inocencia Kuvalis, Orpha Skiles |
 | `last_name` | Tapalla, Loshangg, Magbantayg |
 | `male_name_with_prefix` | Mr. Brett Garay, Mr. Thad Zacarias, Mr. Daniel Makabaligoten |
 | `male_name_with_prefix_suffix` | Mr. Ricardo Divinagracia DVM, Mr. Omer Escribano Jr., Mr. Ervin Querubin II |
@@ -2107,8 +2107,8 @@
 | `first_name` | David, Karin, Val |
 | `first_name_female` | Sade, Ailene, Sharell |
 | `first_name_male` | Conrad, Tod, Caleb |
-| `html_safe_last_name` | Casper, Wisozk, Parisian |
-| `html_safe_name` | Otto Breitenberg, Tracee Kirlin, Shavon Lind |
+| `html_safe_last_name` | Anderson, Greenholt, Muller |
+| `html_safe_name` | Otto Aufderhar, Tracee Lockman, Shavon Waters |
 | `last_name` | Bednar, Bode, Hane |
 | `male_name_with_prefix` | Mr. Colby Gulgowski, Mr. Nolan Watsica, Mr. Alfonso Stiedemann |
 | `male_name_with_prefix_suffix` | Mr. Jon Johns V, Mr. Tanner Dickinson PhD, Mr. Hayden Murray PhD |
@@ -2245,12 +2245,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | +418000866304, +418003723865, 08004333706 |
-| `home_work_phone_number` | 0041815766410, 004121 053 77 42, 0442169994 |
-| `mobile_phone_number` | 0041796323260, +4174 770 53 55, 004176 681 11 89 |
-| `phone_number` | 0041747803232, 08000043272, +4134 092 84 28 |
-| `premium_rate_phone_number` | 00419013826711, 0041906 285 02 37, 00419013295031 |
-| `shared_cost_phone_number` | 0844 133 17 71, 00418402048989, 0842 990 18 61 |
+| `free_phone_number` | 0041800 086 63 04, 0800 372 38 65, 0041800 433 37 06 |
+| `home_work_phone_number` | +41435766410, 004121 053 77 42, +4156 216 99 94 |
+| `mobile_phone_number` | +4175 632 32 60, 0041787705355, +4179 681 11 89 |
+| `phone_number` | +4176 780 32 32, 00418000043272, +41810928428 |
+| `premium_rate_phone_number` | 0901 382 67 11, 0041900 285 02 37, +419013295031 |
+| `shared_cost_phone_number` | 00418421331771, 00418482048989, +418489901861 |
 
 ## FFaker::PhoneNumberCU
 
@@ -2507,7 +2507,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 199504067060, 201412089680, 199606246780 |
+| `ssn` | 199505127060, 201501259680, 199607316780 |
 
 ## FFaker::SemVer
 
