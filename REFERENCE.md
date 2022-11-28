@@ -93,6 +93,7 @@
  * [FFaker::Image](#ffakerimage)
  * [FFaker::Internet](#ffakerinternet)
  * [FFaker::InternetSE](#ffakerinternetse)
+ * [FFaker::JoJo](#ffakerjojo)
  * [FFaker::Job](#ffakerjob)
  * [FFaker::JobBR](#ffakerjobbr)
  * [FFaker::JobCN](#ffakerjobcn)
@@ -101,7 +102,6 @@
  * [FFaker::JobJA](#ffakerjobja)
  * [FFaker::JobKR](#ffakerjobkr)
  * [FFaker::JobVN](#ffakerjobvn)
- * [FFaker::JoJo](#ffakerjojo)
  * [FFaker::Locale](#ffakerlocale)
  * [FFaker::Lorem](#ffakerlorem)
  * [FFaker::LoremAR](#ffakerloremar)
@@ -242,7 +242,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Sydney, Australia/Darwin, Australia/Melbourne |
+| `time_zone` | Australia/Perth, Australia/Brisbane, Australia/Canberra |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -1067,9 +1067,9 @@
 
 | Method | Example |
 | ------ | ------- |
-| `backward` | 2021-06-01, 2021-07-30, 2022-01-23 |
+| `backward` | 2021-11-29, 2022-01-27, 2022-07-23 |
 | `between`(..., ...) |  |
-| `forward` | 2023-05-26, 2022-07-29, 2023-03-03 |
+| `forward` | 2023-11-23, 2023-01-26, 2023-08-31 |
 
 ## FFaker::DizzleIpsum
 
@@ -1351,7 +1351,7 @@
 | `blood_type` | O+, B+, O- |
 | `driver_license_category` | C3, A1, B2 |
 | `drivers_license` | 34248611, 1554774838662, 851833 |
-| `expedition_date` | 2020-01-08, 2020-11-23, 2021-06-19 |
+| `expedition_date` | 2020-07-07, 2021-05-23, 2021-12-17 |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
 | `id` | 62513856, 873974329676, 5169106663900 |
 
@@ -1380,10 +1380,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | XUHD100606MTSGJBO7, FEEJ041122HBSCMSK9, YUEB160719MTLSHRQ6 |
-| `rfc` | YNF840705D7E, JUZ061220X3Z, RUS040403QRJ |
-| `rfc_persona_fisica` | CEEL160709V8E, QIMC780502PVO, CEHZ060826AVW |
-| `rfc_persona_moral` | SHX0503016UX, NAC730217ZIW, XRH870305NAQ |
+| `curp` | XUHD101023MTSGJBO7, FEEJ050323HBSCMSK9, YUEB161227MTLSHRQ6 |
+| `rfc` | YNF840824D7E, JUZ070426X3Z, RUS040730QRJ |
+| `rfc_persona_fisica` | CEEL161217V8E, QIMC780531PVO, CEHZ061230AVW |
+| `rfc_persona_moral` | SHX0506306UX, NAC730228ZIW, XRH870504NAQ |
 
 ## FFaker::IdentificationPL
 
@@ -1404,7 +1404,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x000055f7e9471aa8&gt;, #&lt;File:0x000055f7e94a38f0&gt;, #&lt;File:0x000055f7e8be8eb8&gt; |
+| `file` | #&lt;File:0x0000559b00735820&gt;, #&lt;File:0x0000559b00802348&gt;, #&lt;File:0x0000559b0086b708&gt; |
 | `url` | https://dummyimage.com/300x300/bebf6f/69b79f.png?text=, https://dummyimage.com/300x300/49b2f1/715322.png?text=, https://dummyimage.com/300x300/d3f145/4a3d21.png?text= |
 
 ## FFaker::Internet
@@ -1452,90 +1452,90 @@
 | `user_name_variant_long` | tenisha_wisozk, lanelle.cruickshank, chas_lind |
 | `user_name_variant_short` | carol, casandraariana, nova |
 
+## FFaker::JoJo
+
+| Method | Example |
+| ------ | ------- |
+| `first_name` | Miraschon, Sadafumi, Tamaki |
+| `full_name` | Akira Katahira, Stephen Moor, Foo Fighters |
+| `last_name` | Kanedaichi, Becker, Avdol |
+| `stand` | Boku no Rhythm wo Kiitekure, Strength, The Hand |
+
 ## FFaker::Job
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Investor Accounts Coordinator, National Solutions Consultant, Internal Assurance Strategist |
+| `title` | National Usability Architect, District Program Engineer, Legacy Intranet Associate |
 
 ## FFaker::JobBR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Encanador, Presidente, Bombeiro |
+| `title` | Taxista, Diretor de Cinema, Pintor |
 
 ## FFaker::JobCN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 计程车司机, 审计长, 焊接工 |
+| `title` | 采购员, 业务经理, 外汇部职员 |
 
 ## FFaker::JobFR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | assistant adjoint de la protection civile, responsable general du patrimoine bati, consultant du management de la qualité |
+| `title` | expert general service comptable, administrateur agence comptable, consultant des services techniques |
 
 ## FFaker::JobIT
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Eredità Fattori collegamento, Umano operazioni orchestratore, Regionale Integrazione Ingegnere |
+| `title` | Regionale Direttive La direttrice, Quartiere Direttive Architetto, Prodotto Gruppo Esecutivo |
 
 ## FFaker::JobJA
 
 | Method | Example |
 | ------ | ------- |
-| `title` | スタイリスト, 整体師, 新聞記者 |
+| `title` | バーテンダー, 放送作家, 獣医師 |
 
 ## FFaker::JobKR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 소방설계 기술자 및 연구원, 장학관 및 장학사, 환경영향 시험원 |
+| `title` | 제관원, 호텔 서비스원, 개별화물차 운전원 |
 
 ## FFaker::JobVN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | y tá, Thư viện, người giử em bé |
-
-## FFaker::JoJo
-
-| Method | Example |
-| ------ | ------- |
-| `full_name` | Jonathan Joestar, Lisa Lisa, Telence D'Arby |
-| `first_name` | Jotaro, Kars, Dio |
-| `last_name` | Kujo, Joestar, D'Arby |
-| `stand` | High Priestess, Magician's Red, Notorious B.I.G |
+| `title` | Club DJ, đội ngũ giảng viên, thẩm phán |
 
 ## FFaker::Locale
 
 | Method | Example |
 | ------ | ------- |
-| `code` | YO, EO, AZ |
-| `language` | Quechua, Tegulu, Malagasy |
+| `code` | BH, RN, AS |
+| `language` | Romanian, Icelandic, Laothian |
 
 ## FFaker::Lorem
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | slyyel2f3ca23psdqd0639q3mw1kxfajc8g5w2fe7oud177sw97jnikbfb1t9mt7pgypxtbi229b59dvsmjca13e12jcptal69qmej3btvcgy5niruuwmo3f61tdwthnoswdl7ht00gqwug3k8dwb2urni3vseqy4j33rzqso8l71orr2j8gqac8i1c014n3tybbnmy45yx4q47enwbtb01l0k0kdqedxov17hswajzscc8x1sgoezj4afhimyc, yb9aafbvzyvo6jk0yitltllbh90nhhbhqo3m7zj5hj00j2wxwgf1bzuqe9m7oiwpgqim8hd6iccqd7cynx40bkhpza6puzace3d15bwf7fcxz72c8nms5y4umnd3j06739wxsp2286k5fx71l9xieq7xsubv801rldowgqpp88yqme2m42og0q027f9qaub7n1ud0hem7h7y3u59xe2nttho75xtk4x3wu79tkdfi2hd30tbqa5h413h09welpd, 5p2itoaf2pvjx5ffbi67nszgitkt8tk71itlteqmh75aavfwgjdxm2r2gt5un5b7dth0y8j1tea3je5xvqmqniztadxmftfe36rsnm8lnrn7uyimkhpfancnhfgsdk3utp8i2nnri3mkswk76dku7ahvsloatii2f1pph5zdtp2gkcawvcouzqr5tuzfunzqdexcehoqbzwcm86511uhyg7ip7c7koxplgg08yn4kqavguq9m8sjd1r76ud8rj2 |
-| `paragraph` | Voluptate debitis repudiandae quidem placeat repellat iure cupiditate dolores. Laborum dolores eaque ut corrupti. Cumque dolorem adipisci tempore doloremque., Numquam excepturi beatae natus quas nulla eveniet quos. Ipsa magni necessitatibus distinctio mollitia. Neque unde possimus harum vitae dolor hic quidem praesentium., Hic maxime beatae dolor eveniet. Expedita repellendus dolorem saepe eos perspiciatis minus quidem voluptates. Ipsa reprehenderit minima blanditiis fuga sit optio. Vel nisi fugit molestias rerum. Sed quae voluptas corrupti iusto suscipit. |
-| `paragraphs` | Unde harum exercitationem ea veritatis soluta fuga dolor beatae. Atque vel quas ea dolorum consequatur architecto nam. Earum maiores veritatis quae excepturi unde. Recusandae quas error vero aperiam a. Velit ipsam veniam sunt non cum animi eos., Officiis cupiditate assumenda sint praesentium qui quibusdam placeat. Sed quis eius iste rem velit nam illo dolores. Dignissimos quos quia rem placeat omnis ea. Minima hic ad ducimus sapiente aliquam. Quo quod tempora dolorum quia recusandae expedita illo., Maiores quis eos sint illo modi enim neque. Earum exercitationem vitae ex similique tempora. Sed distinctio omnis amet vero quos. Veniam dignissimos accusamus veritatis et vero sint amet., Eaque excepturi cum id perspiciatis praesentium omnis. Veritatis harum maiores laudantium est laboriosam. Modi assumenda officiis neque sint. Quaerat officia dicta ullam laboriosam quos sunt molestiae. Illo optio fugit repellendus facere explicabo a., Error ea blanditiis quaerat perferendis enim. Eum laudantium culpa voluptates temporibus itaque ea. Vero veritatis beatae sunt non dolore quae. Provident autem ipsum itaque aspernatur amet vero magnam. Nostrum doloremque accusamus molestias et ipsam esse suscipit quis., Sint maxime consequatur cum accusamus praesentium ut qui. Recusandae non officia fuga nisi saepe. Amet labore dolorum commodi blanditiis ipsa enim. Et repellendus sequi omnis animi officia vero., Voluptates architecto officiis placeat blanditiis quibusdam hic accusantium incidunt. Recusandae cum eaque sequi sapiente nihil dolorum. Velit sequi officiis adipisci doloribus tenetur. Iusto eaque cupiditate itaque voluptatibus omnis voluptates facere veritatis. Similique laboriosam magni voluptate enim eum reprehenderit natus., Ad nostrum doloremque laboriosam repudiandae ducimus architecto iure illo. Nisi harum provident asperiores tempore vero. Laudantium labore et maiores vero odit., Nam mollitia repellat deserunt quasi cupiditate. Amet quaerat deserunt et odit. Laboriosam mollitia hic occaecati assumenda iure facilis nihil. Delectus in neque deserunt doloribus odio. Tempora reprehenderit itaque ut recusandae amet earum voluptatum sunt. |
-| `phrase` | Quasi facere quis itaque quisquam ea ipsam eos quod., Impedit similique amet vel voluptatibus., Perspiciatis deleniti sapiente aperiam beatae atque. |
-| `phrases` | Libero expedita impedit et id dolor molestiae., Iure quas voluptatum vero fugit dignissimos nesciunt eaque., Error sunt fugiat delectus laboriosam sit nihil saepe voluptatem., Odio doloremque cum ex ad voluptatibus asperiores., Cupiditate ipsa repellendus quibusdam dolorem., Ad tempora provident itaque impedit., Amet animi temporibus sint consequatur., Culpa repudiandae asperiores nemo maiores laborum error., Tempore sed ab sunt sapiente modi quaerat ex non. |
-| `sentence` | Sequi minima totam natus quo consequuntur vitae voluptatum., Consequuntur laboriosam reprehenderit et velit saepe., Asperiores quibusdam ipsam nulla rem possimus nesciunt ad. |
-| `sentences` | Hic consectetur nobis doloribus fugiat., Nisi quae aspernatur veniam id rerum., Deleniti ex nobis quidem tempore porro repellat voluptatibus., Esse eos maiores quo voluptate enim., Ex rerum deserunt quam nam eum., Veniam optio distinctio rerum perspiciatis totam autem nobis quae., Incidunt temporibus molestiae veniam exercitationem modi voluptatibus., Doloribus temporibus doloremque aut consectetur voluptates sed., Animi temporibus aliquam est voluptatum mollitia quod explicabo ipsa. |
-| `word` | deleniti, distinctio, corrupti |
-| `words` | quia, at, sapiente, a, praesentium, nam, saepe, magni, ab |
+| `characters` | a23psdqd0639q3mw1kxfajc8g5w2fe7oud177sw97jnikbfb1t9mt7pgypxtbi229b59dvsmjca13e12jcptal69qmej3btvcgy5niruuwmo3f61tdwthnoswdl7ht00gqwug3k8dwb2urni3vseqy4j33rzqso8l71orr2j8gqac8i1c014n3tybbnmy45yx4q47enwbtb01l0k0kdqedxov17hswajzscc8x1sgoezj4afhimycyb9aafbvzy, vo6jk0yitltllbh90nhhbhqo3m7zj5hj00j2wxwgf1bzuqe9m7oiwpgqim8hd6iccqd7cynx40bkhpza6puzace3d15bwf7fcxz72c8nms5y4umnd3j06739wxsp2286k5fx71l9xieq7xsubv801rldowgqpp88yqme2m42og0q027f9qaub7n1ud0hem7h7y3u59xe2nttho75xtk4x3wu79tkdfi2hd30tbqa5h413h09welpd5p2itoaf2p, vjx5ffbi67nszgitkt8tk71itlteqmh75aavfwgjdxm2r2gt5un5b7dth0y8j1tea3je5xvqmqniztadxmftfe36rsnm8lnrn7uyimkhpfancnhfgsdk3utp8i2nnri3mkswk76dku7ahvsloatii2f1pph5zdtp2gkcawvcouzqr5tuzfunzqdexcehoqbzwcm86511uhyg7ip7c7koxplgg08yn4kqavguq9m8sjd1r76ud8rj2mus7rp5ffi |
+| `paragraph` | Dolores eaque ut corrupti ipsam minus dolor non. Doloremque fuga quo harum necessitatibus corporis eos eum. Unde corrupti quibusdam debitis atque excepturi aliquam cupiditate. Ipsa magni necessitatibus distinctio mollitia. Neque unde possimus harum vitae dolor hic quidem praesentium., Hic maxime beatae dolor eveniet. Expedita repellendus dolorem saepe eos perspiciatis minus quidem voluptates. Ipsa reprehenderit minima blanditiis fuga sit optio. Vel nisi fugit molestias rerum. Sed quae voluptas corrupti iusto suscipit., Unde harum exercitationem ea veritatis soluta fuga dolor beatae. Atque vel quas ea dolorum consequatur architecto nam. Earum maiores veritatis quae excepturi unde. Recusandae quas error vero aperiam a. Velit ipsam veniam sunt non cum animi eos. |
+| `paragraphs` | Officiis cupiditate assumenda sint praesentium qui quibusdam placeat. Sed quis eius iste rem velit nam illo dolores. Dignissimos quos quia rem placeat omnis ea. Minima hic ad ducimus sapiente aliquam. Quo quod tempora dolorum quia recusandae expedita illo., Maiores quis eos sint illo modi enim neque. Earum exercitationem vitae ex similique tempora. Sed distinctio omnis amet vero quos. Veniam dignissimos accusamus veritatis et vero sint amet., Eaque excepturi cum id perspiciatis praesentium omnis. Veritatis harum maiores laudantium est laboriosam. Modi assumenda officiis neque sint. Quaerat officia dicta ullam laboriosam quos sunt molestiae. Illo optio fugit repellendus facere explicabo a., Error ea blanditiis quaerat perferendis enim. Eum laudantium culpa voluptates temporibus itaque ea. Vero veritatis beatae sunt non dolore quae. Provident autem ipsum itaque aspernatur amet vero magnam. Nostrum doloremque accusamus molestias et ipsam esse suscipit quis., Sint maxime consequatur cum accusamus praesentium ut qui. Recusandae non officia fuga nisi saepe. Amet labore dolorum commodi blanditiis ipsa enim. Et repellendus sequi omnis animi officia vero., Voluptates architecto officiis placeat blanditiis quibusdam hic accusantium incidunt. Recusandae cum eaque sequi sapiente nihil dolorum. Velit sequi officiis adipisci doloribus tenetur. Iusto eaque cupiditate itaque voluptatibus omnis voluptates facere veritatis. Similique laboriosam magni voluptate enim eum reprehenderit natus., Ad nostrum doloremque laboriosam repudiandae ducimus architecto iure illo. Nisi harum provident asperiores tempore vero. Laudantium labore et maiores vero odit., Nam mollitia repellat deserunt quasi cupiditate. Amet quaerat deserunt et odit. Laboriosam mollitia hic occaecati assumenda iure facilis nihil. Delectus in neque deserunt doloribus odio. Tempora reprehenderit itaque ut recusandae amet earum voluptatum sunt., Placeat veniam recusandae porro ex nemo. Dolores impedit ex quisquam officia consectetur. A quisquam ex unde atque voluptatibus aperiam beatae corrupti. |
+| `phrase` | Libero expedita impedit et id dolor molestiae., Iure quas voluptatum vero fugit dignissimos nesciunt eaque., Error sunt fugiat delectus laboriosam sit nihil saepe voluptatem. |
+| `phrases` | Odio doloremque cum ex ad voluptatibus asperiores., Cupiditate ipsa repellendus quibusdam dolorem., Ad tempora provident itaque impedit., Amet animi temporibus sint consequatur., Culpa repudiandae asperiores nemo maiores laborum error., Tempore sed ab sunt sapiente modi quaerat ex non., Sequi minima totam natus quo consequuntur vitae voluptatum., Consequuntur laboriosam reprehenderit et velit saepe., Asperiores quibusdam ipsam nulla rem possimus nesciunt ad. |
+| `sentence` | Hic consectetur nobis doloribus fugiat., Nisi quae aspernatur veniam id rerum., Deleniti ex nobis quidem tempore porro repellat voluptatibus. |
+| `sentences` | Esse eos maiores quo voluptate enim., Ex rerum deserunt quam nam eum., Veniam optio distinctio rerum perspiciatis totam autem nobis quae., Incidunt temporibus molestiae veniam exercitationem modi voluptatibus., Doloribus temporibus doloremque aut consectetur voluptates sed., Animi temporibus aliquam est voluptatum mollitia quod explicabo ipsa., Distinctio corrupti quia accusamus reiciendis maiores., Distinctio eveniet magni ab dolorem voluptatem ipsam optio architecto., Dolorem rerum temporibus aliquam blanditiis pariatur aperiam. |
+| `word` | et, delectus, dolores |
+| `words` | aliquid, voluptates, culpa, ad, doloremque, ipsa, quibusdam, expedita, ratione |
 
 ## FFaker::LoremAR
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | أم ومن أي, حدى غزو وتم حرب لم أفاق. عام يطول مشارف إعلان العسكري الحرب. دول, إذ لم قوات لم الصعداء ثم., هو ما والبريطاني, نورماندي. أنجلو-فرنسية, غرّة، طرفاً الشرقية بـ. يبق, وقدّموا, تحت, الأوضاع وتم وحلفاؤها نهاية. جهة تم لم قد أسر ضرب, العسكري بوزيرها المسرح., مع فاتّبع تزامناً ومدني، المدنيون. وصل, ثم يذكر الدمج مارد شيء إختار. جهة الحرة بـ حين, الياباني فعل وتزويده. أواخر عن موالية بل, قصف. |
-| `paragraphs` | وفي التكاليف اكتوبر, مدن إذ يكن, وقد. الإعتداء يتبقّ والديون مع. لبولندا، تونس استمرار بعد بل بالقصف مليون الباهضة بقيادة. عدم لها أم عن والعتاد عن. الذرية للأسطول ومدني، وانتهاءً إستسلاماً,., والإتحاد تسبب قتيل، بالمحور بـ. إنطلاق ولم سقطت اللازمة تسبب المزيفة قد قد. أوسع استولت المقيتة في. بل الواقعة السيطرة التكاليف كل أي. بلا عن الأمم لم و., بتخصيص الامم ربع ان مدن الى شبح وقوعها. أخر ثمّة إستيلاء ان. الخاسر الله السادس هو و,., المعاهدات والجنود ويكيبيديا، قِبل. ماذا قد, اللازمة البلطيق الحرب حين, بين. هذه كلّ, سلاح ما, ما شبح. ذلك بدفع مقاطعة استولت قد يطول وعزّزت من., ثمّة عل بالرغم جوي. و المتساقطة،, يتمكن مما. استولت مدن مكن الإتفاقية الهجوم., ليبين الوراء الله الثالث اعتداء والفرنسي و لم. لم من وفرنسا الحلفاء أي. الأوروبيّون ما جديداً صفحة عرض اكتوبر, البرية يبق, تكاليف., أي طرفاً الأمور, مع جوي عقبت. الأجل عدد الرئيسية قائمة عن. كل, السيء جديدة المبرمة الخنادق حدى بتحدّي ألمانيا. الشمل لكل وتم, غزو سمّي الشطر العصبة من., وبغطاء بل حلّت بالقصف يكن,. يذكر الضروري الامم فعل, وتزويده. ثمّة مشارف الحرب إذ الحرة هذه وفرنسا استولت كل,. مع هاربر الياباني عرفها الأجل. ما, أن الا بشرية بلديهما., البولندي المسرح ستالينجراد قوات أن المجتمع إيو لقوات تم. جحافل لإعلان والبريطاني, عن حرب ضمنها طرفاً دون. وتعدد بـ نفس مما حول. ماليزيا، حين إذ وقدّموا, لم الدّفاع الأوروبية،,. الإقتصادية بعد أم وبغطاء. |
+| `paragraph` | وقدّموا, تحت, الأوضاع وتم. مدن دول لعملة حرب الصينية جسيمة تم, مكن. قد بدفع واقتصار مع., ماشاء و أم الباهضة وصل, ثم أحدث. الا صفحة لم هيروشيما. الحرة الى أن اوروبا., المواد, يعادل اوروبا فعل ستالينجراد جهة تحرّك. كل, وفي التكاليف اكتوبر, مدن إذ. عن المقاومة الإعتداء تم الدّفاع. حشد لبولندا، تونس استمرار. |
+| `paragraphs` | ان بلا مارد الواقعة في. ما, مساعدة الشمل ان في, اسبوعين للأسطول قام. بـ إيو الأولى مكن الأرضية., حدة عل ثانية باستسلام خصوصا الأجل جمعت. قد الحلفاء المتحدة, والحلفاء, ومدني، وعزّزت وقد. بل الواقعة السيطرة التكاليف كل أي., الى مارد الكونجرس المسرح شبح بتطويق. الامم ربع ان باستسلام. قصف أوسع أخر الواقعة دنو. الخاسر الله السادس هو و,., المعاهدات والجنود ويكيبيديا، قِبل. ماذا قد, اللازمة البلطيق الحرب حين, بين. هذه كلّ, سلاح ما, ما شبح. ذلك بدفع مقاطعة استولت قد يطول وعزّزت من., ثمّة عل بالرغم جوي. و المتساقطة،, يتمكن مما. استولت مدن مكن الإتفاقية الهجوم., ليبين الوراء الله الثالث اعتداء والفرنسي و لم. لم من وفرنسا الحلفاء أي. الأوروبيّون ما جديداً صفحة عرض اكتوبر, البرية يبق, تكاليف., أي طرفاً الأمور, مع جوي عقبت. الأجل عدد الرئيسية قائمة عن. كل, السيء جديدة المبرمة الخنادق حدى بتحدّي ألمانيا. الشمل لكل وتم, غزو سمّي الشطر العصبة من., وبغطاء بل حلّت بالقصف يكن,. يذكر الضروري الامم فعل, وتزويده. ثمّة مشارف الحرب إذ الحرة هذه وفرنسا استولت كل,. مع هاربر الياباني عرفها الأجل. ما, أن الا بشرية بلديهما., البولندي المسرح ستالينجراد قوات أن المجتمع إيو لقوات تم. جحافل لإعلان والبريطاني, عن حرب ضمنها طرفاً دون. وتعدد بـ نفس مما حول. ماليزيا، حين إذ وقدّموا, لم الدّفاع الأوروبية،,. الإقتصادية بعد أم وبغطاء. |
 | `phrase` | الصينية كل الكونجرس لبولندا، ولكسمبورغ لم الصعداء., غضون الخنادق لم أوراقهم مما تم., وفرنسا الصينية أساسي بل, وعزّزت قد,. |
 | `phrases` | والجنود مما الغربي الشمل ما بحث., الدمج فصل, الإقتصادي وباءت حتى,., الحكم تلك الساحل النزاع وتم قِبل., بتطويق ألماني, وعزّزت عدد, أوراقهم وتم., , حين ثم باستسلام يرتبط الشمل., شيء البلطيق و بالقنابل., الجديدة، بقيادة وفي أراضي هيروشيما الإحتفاظ سقوط ثم وباءت., تم إستسلاماً, ما, المبرمة., مع, أنجلو-فرنسية, بأذى غينيا. |
 | `sentence` | المحيط ثم اعتداء ان,., اسبوعين ربع حدى إعلان مع, الواقعة جديدة., الدمج الشهيرة و هذا أحدث وتتحمّل. |
@@ -1702,8 +1702,8 @@
 | `first_name` | Zoila, Alysa, Dirk |
 | `first_name_female` | Alene, Era, Tabitha |
 | `first_name_male` | Dewey, Samuel, Carlo |
-| `html_safe_last_name` | Becker, Pfannerstill, Gislason |
-| `html_safe_name` | Georgina Windler, Maudie Crona, Stefany Stamm |
+| `html_safe_last_name` | Ullrich, Paucek, Kassulke |
+| `html_safe_name` | Georgina Koelpin, Maudie Larkin, Stefany Howell |
 | `last_name` | Hickle, Kutch, Bernier |
 | `male_name_with_prefix` | Mr. Andrew Heaney, Mr. Prince McLaughlin, Mr. Emmitt Cormier |
 | `male_name_with_prefix_suffix` | Mr. Bobby Marquardt III, Mr. Sean Ziemann III, Mr. Milo Green V |
@@ -1764,8 +1764,8 @@
 | `first_name` | Alois, Zdeněk, Jaromír |
 | `first_name_female` | Scarlett, Gertrud, Oliva |
 | `first_name_male` | Wilford, Woodrow, Jeromy |
-| `html_safe_last_name` | Walsh, Marks, Hilpert |
-| `html_safe_name` | Dana Zulauf, Ondřej Wiza, Jiřina Tromp |
+| `html_safe_last_name` | Maggio, Waters, Hand |
+| `html_safe_name` | Dana Jenkins, Ondřej Gibson, Jiřina Vandervort |
 | `last_name` | Burešová, Burdová, Dlouhá |
 | `male_name_with_prefix` | Mr. Jess Adam, Mr. Wilbert Čech, Mr. Armand Boháč |
 | `male_name_with_prefix_suffix` | Mr. Wayne Dvořák DSc., Mr. Jarod Daněk DSc., Mr. Armand Dvořáček DSc. |
@@ -1794,8 +1794,8 @@
 | `first_name` | Amalie, Viola, Oliver |
 | `first_name_female` | Tonisha, Ghislaine, Agnus |
 | `first_name_male` | Rigoberto, Ulysses, Ted |
-| `html_safe_last_name` | Hudson, Braun, Keeling |
-| `html_safe_name` | Elias Wiza, Henry Barton, Bjørn Connelly |
+| `html_safe_last_name` | Considine, Jakubowski, Jacobson |
+| `html_safe_name` | Elias Pouros, Henry Kuhic, Bjørn Hoppe |
 | `last_name` | Boehm, Kiehn, Brekke |
 | `male_name` | Nicklas Dibbert, Albert Rolfson, Arne Bartoletti |
 | `male_name_with_prefix` | Mr. Dustin Hayes, Mr. Darius Price, Mr. Jessie Smith |
@@ -1822,8 +1822,8 @@
 | `first_name` | Conrad, Cheryle, Galina |
 | `first_name_female` | Irmgard, Ardell, Bula |
 | `first_name_male` | Leslie, Miguel, Williams |
-| `html_safe_last_name` | Steuber, Raynor, Johnston |
-| `html_safe_name` | Rubin Ebert, Matha Kertzmann, Brittanie Skiles |
+| `html_safe_last_name` | Marvin, Schumm, Labadie |
+| `html_safe_name` | Rubin Bartoletti, Matha Koss, Brittanie Cronin |
 | `last_name` | Braun, Larson, Hettinger |
 | `male_name_with_prefix` | Mr. Val Mosciski, Mr. Vicente Lockman, Mr. Fermin Hand |
 | `male_name_with_prefix_suffix` | Mr. Boris Farrell DVM, Mr. Dudley Brekke DVM, Mr. Val Toy DDS |
@@ -1968,8 +1968,8 @@
 | `full_name` | Virginia Koss McLaughlin, Roque Aaron Lind Daniel, Rubén Koelpin Block |
 | `full_name_no_prefix` | Carlos Fritsch Glover, Luz Fadel Howell, Giovani Orn Dooley |
 | `full_name_prefix` | Sr. Fernando Buckridge Bailey, Sra. Martha Selene Prohaska Walsh, C. Silvio Otilio Mills Yundt |
-| `html_safe_last_name` | Walsh, Sipes, Blanda |
-| `html_safe_name` | Jezabel Stanton, Nabor Wuckert, Mayra Leuschke |
+| `html_safe_last_name` | Armstrong, Corwin, Greenfelder |
+| `html_safe_name` | Jezabel Murray, Nabor Kilback, Mayra Kulas |
 | `last_name` | Mertz, Feest, Runolfsson |
 | `male_name` | Odín, Temístocles, Otilio Claudio |
 | `male_name_with_prefix` | Sr. Chet Bernier, Sr. Brain Stark, C. Gustavo Boyer |
@@ -1998,8 +1998,8 @@
 | `first_name` | Juliette, Sheree, Kent Russell |
 | `first_name_female` | Cammy, Guadalupe, Petra |
 | `first_name_male` | Tomas, Josef, Amado |
-| `html_safe_last_name` | Cremin, Tromp, Armstrong |
-| `html_safe_name` | Yon Weber, Denisha Gorczany, Libbie Smitham |
+| `html_safe_last_name` | Collins, Thiel, Price |
+| `html_safe_name` | Yon Jones, Denisha Botsford, Libbie Johnston |
 | `last_name` | Kessler, Gerlach, Bahringer |
 | `male_name_with_prefix` | Mr. Ted Russel, Mr. Salvatore Witting, Mr. Hunter Hickle |
 | `male_name_with_prefix_suffix` | Mr. Hyman Ferry MD, Mr. Thurman White PhD, Mr. Lon Stracke V |
@@ -2025,8 +2025,8 @@
 | `first_name` | Bonita, Justine, Tyisha |
 | `first_name_female` | Loretta, Melissia, Lachelle |
 | `first_name_male` | Matthew, Rhett, Allen-Desmond |
-| `html_safe_last_name` | Nitzsche, Kovacek, Pollich |
-| `html_safe_name` | Jon Stehr, Mollie Raynor, Billie-Ann Emmerich |
+| `html_safe_last_name` | Cummerata, Nienow, Jerde |
+| `html_safe_name` | Jon Beatty, Mollie Lockman, Billie-Ann Tillman |
 | `last_name` | Ankunding, Waelchi, Von |
 | `male_name_with_prefix` | Mr. Leonardo Parisian, Mr. Andre Buckridge, Mr. Columbus Bernier |
 | `male_name_with_prefix_suffix` | Mr. Donny Cremin I, Mr. Eliseo Effertz DDS, Mr. Daron Fritsch IV |
@@ -2052,8 +2052,8 @@
 | `first_name` | Yulanda, Chester, Danuta |
 | `first_name_female` | Ciara, Shaunta, Serafina |
 | `first_name_male` | Noe, Josue, Darren |
-| `html_safe_last_name` | Hartmann, Spencer, Wiza |
-| `html_safe_name` | Robbi Pagac, Inocencia Kuvalis, Orpha Skiles |
+| `html_safe_last_name` | Kassulke, McCullough, Conn |
+| `html_safe_name` | Robbi Larkin, Inocencia Prohaska, Orpha Jones |
 | `last_name` | Tapalla, Loshangg, Magbantayg |
 | `male_name_with_prefix` | Mr. Brett Garay, Mr. Thad Zacarias, Mr. Daniel Makabaligoten |
 | `male_name_with_prefix_suffix` | Mr. Ricardo Divinagracia DVM, Mr. Omer Escribano Jr., Mr. Ervin Querubin II |
@@ -2117,8 +2117,8 @@
 | `first_name` | David, Karin, Val |
 | `first_name_female` | Sade, Ailene, Sharell |
 | `first_name_male` | Conrad, Tod, Caleb |
-| `html_safe_last_name` | Anderson, Greenholt, Muller |
-| `html_safe_name` | Otto Aufderhar, Tracee Lockman, Shavon Waters |
+| `html_safe_last_name` | Altenwerth, Weissnat, Wolf |
+| `html_safe_name` | Otto Gottlieb, Tracee Okuneva, Shavon Donnelly |
 | `last_name` | Bednar, Bode, Hane |
 | `male_name_with_prefix` | Mr. Colby Gulgowski, Mr. Nolan Watsica, Mr. Alfonso Stiedemann |
 | `male_name_with_prefix_suffix` | Mr. Jon Johns V, Mr. Tanner Dickinson PhD, Mr. Hayden Murray PhD |
@@ -2255,12 +2255,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 0041800 086 63 04, 0800 372 38 65, 0041800 433 37 06 |
-| `home_work_phone_number` | +41435766410, 004121 053 77 42, +4156 216 99 94 |
-| `mobile_phone_number` | +4175 632 32 60, 0041787705355, +4179 681 11 89 |
-| `phone_number` | +4176 780 32 32, 00418000043272, +41810928428 |
-| `premium_rate_phone_number` | 0901 382 67 11, 0041900 285 02 37, +419013295031 |
-| `shared_cost_phone_number` | 00418421331771, 00418482048989, +418489901861 |
+| `free_phone_number` | 0041800 086 63 04, 0041800 372 38 65, 08004333706 |
+| `home_work_phone_number` | 056 576 64 10, 004156 053 77 42, 0242169994 |
+| `mobile_phone_number` | 0041746323260, 076 770 53 55, +4177 681 11 89 |
+| `phone_number` | 076 780 32 32, +418000043272, +4161 092 84 28 |
+| `premium_rate_phone_number` | +419063826711, 00419062850237, 00419003295031 |
+| `shared_cost_phone_number` | +41848 133 17 71, 00418402048989, 00418429901861 |
 
 ## FFaker::PhoneNumberCU
 
@@ -2517,7 +2517,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 199505127060, 201501259680, 199607316780 |
+| `ssn` | 199509107060, 201507099680, 199612026780 |
 
 ## FFaker::SemVer
 
