@@ -101,6 +101,7 @@
  * [FFaker::JobJA](#ffakerjobja)
  * [FFaker::JobKR](#ffakerjobkr)
  * [FFaker::JobVN](#ffakerjobvn)
+ * [FFaker::JoJo](#ffakerjojo)
  * [FFaker::Locale](#ffakerlocale)
  * [FFaker::Lorem](#ffakerlorem)
  * [FFaker::LoremAR](#ffakerloremar)
@@ -1498,6 +1499,15 @@
 | Method | Example |
 | ------ | ------- |
 | `title` | y tá, Thư viện, người giử em bé |
+
+## FFaker::JoJo
+
+| Method | Example |
+| ------ | ------- |
+| `full_name` | Jonathan Joestar, Lisa Lisa, Telence D'Arby |
+| `first_name` | Jotaro, Kars, Dio |
+| `last_name` | Kujo, Joestar, D'Arby |
+| `stand` | High Priestess, Magician's Red, Notorious B.I.G |
 
 ## FFaker::Locale
 

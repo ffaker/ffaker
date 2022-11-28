@@ -129,6 +129,7 @@ module FFaker
   autoload :JobJA, 'ffaker/job_ja'
   autoload :JobKR, 'ffaker/job_kr'
   autoload :JobVN, 'ffaker/job_vn'
+  autoload :JoJo, 'ffaker/jo_jo'
   autoload :Locale, 'ffaker/locale'
   autoload :Lorem, 'ffaker/lorem'
   autoload :LoremAR, 'ffaker/lorem_ar'
