@@ -81,6 +81,7 @@
  * [FFaker::HipsterIpsum](#ffakerhipsteripsum)
  * [FFaker::Identification](#ffakeridentification)
  * [FFaker::IdentificationBR](#ffakeridentificationbr)
+ * [FFaker::IdentificationEC](#ffakeridentificationec)
  * [FFaker::IdentificationES](#ffakeridentificationes)
  * [FFaker::IdentificationESCL](#ffakeridentificationescl)
  * [FFaker::IdentificationESCO](#ffakeridentificationesco)
@@ -1330,6 +1331,12 @@
 | `pretty_cpf` | 756.906.887-46, 480.783.480-02, 206.716.565-89 |
 | `pretty_rg` | 594.870.460, 340.423.007, 171.007.861 |
 | `rg` | 270764035, 991194466, 489818516 |
+
+## FFaker::IdentificationEC
+
+| Method | Example |
+| ------ | ------- |
+| `ci` | 0456177609, 2549190102, 3228062992 |
 
 ## FFaker::IdentificationES
 
