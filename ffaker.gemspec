@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/version'
+require_relative 'lib/ffaker/version'
 
 Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=
@@ -28,18 +28,11 @@ Gem::Specification.new do |s|
   s.rdoc_options = ['--charset=UTF-8']
   s.extra_rdoc_files = %w[README.md LICENSE Changelog.md]
 
-  # = MANIFEST =
-  s.files = %w[
-    Changelog.md
-    Gemfile
-    LICENSE
-    RANDOM.md
-    README.md
-    REFERENCE.md
-    Rakefile
-    ffaker.gemspec
-  ] + Dir['lib/**/*', 'scripts/*']
-  # = MANIFEST =
+  s.files = `git ls-files`
+          .split("\n")
+          .sort
+          .reject { |file| file =~ /^\./ }
+          .reject { |file| file =~ /^(rdoc|pkg)/ }
 
   s.test_files = Dir['test/**/*']
 

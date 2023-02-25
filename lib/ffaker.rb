@@ -215,7 +215,7 @@ module FFaker
   autoload :Unit, 'ffaker/unit'
   autoload :UnitEnglish, 'ffaker/unit_english'
   autoload :UnitMetric, 'ffaker/unit_metric'
-  autoload :VERSION, 'version'
+  autoload :VERSION, 'ffaker/version'
   autoload :Vehicle, 'ffaker/vehicle'
   autoload :Venue, 'ffaker/venue'
   autoload :Youtube, 'ffaker/youtube'
