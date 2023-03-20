@@ -3,42 +3,49 @@ require 'set'
 
 module FFaker
   class UniqueUtils
+    RetryLimitExceeded = Class.new(StandardError)
+
+    class << self
+      def add_instance(generator, max_retries)
+        instances[generator] ||= FFaker::UniqueUtils.new(generator, max_retries)
+      end
+
+      def instances
+        Thread.current[:ffaker_unique_utils] ||= {}
+      end
+
+      def clear
+        instances.values.each(&:clear)
+        instances.clear
+      end
+    end
+
     def initialize(generator, max_retries)
       @generator = generator
       @max_retries = max_retries
-      @previous_results = Hash.new { |hash, key| hash[key] = Set.new }
     end
-
-    def method_missing(name, *arguments)
-      @generator.respond_to?(name) ? add_results_to_hash(name, *arguments) : super
-    end
-
-    def respond_to_missing?(method_name, include_private = false)
-      super
-    end
-
-    RetryLimitExceeded = Class.new(StandardError)
 
     def clear
-      @previous_results.clear
-    end
-
-    def self.clear
-      ObjectSpace.each_object(self, &:clear)
+      previous_results.clear
     end
 
     private
 
-    def add_results_to_hash(name, *arguments)
+    def method_missing(name, *arguments)
       @max_retries.times do
-        result = @generator.send(name, *arguments)
+        result = @generator.public_send(name, *arguments)
 
-        next if @previous_results[[name, arguments]].include?(result)
+        next if previous_results[[name, arguments]].include?(result)
 
-        @previous_results[[name, arguments]] << result
+        previous_results[[name, arguments]] << result
         return result
       end
-      raise RetryLimitExceeded
+
+      raise RetryLimitExceeded, "Retry limit exceeded for #{name}"
+    end
+
+    def previous_results
+      @previous_results ||= Hash.new { |hash, key| hash[key] = Set.new }
     end
   end
 end

@@ -77,12 +77,23 @@ name will be set with data from `ffaker/data/name/first_names`.
 
 To get repeatable results in Minitest or Rspec, follow [these instructions](RANDOM.md#using-the-same-random-seed-as-your-tests).
 
-## Unique results
+## Unique values
 
-You can get unique value from any methods in FFaker like this:
+You can ensure unique values are generated using the `unique` method. `ffaker` will retry the generation
+until an unique value if found.
 
-```rb
-FFaker::Name.unique.name
+Example:
+```ruby
+FFaker::Name.unique.name # ensures an unique value is returned for FFaker::Name
+```
+
+If an unique value cannot be generated within a maximum limit of retries for a generator
+a `FFaker::UniqueUtils::RetryLimitExceeded` error will be raised.
+
+You can prevent exceeding the limit by clearing the record of used values (e.g. between tests):
+```ruby
+FFaker::Name.unique.clear # clears the used values for FFaker::Name
+FFaker::UniqueUtils.clear # clears the used values for all generators
 ```
 
 ## TODO
