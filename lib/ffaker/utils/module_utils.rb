@@ -33,7 +33,7 @@ module FFaker
     end
 
     def unique(max_retries = 10_000)
-      @unique_generator ||= FFaker::UniqueUtils.new(self, max_retries)
+      FFaker::UniqueUtils.add_instance(self, max_retries)
     end
 
     # http://en.wikipedia.org/wiki/Luhn_algorithm
