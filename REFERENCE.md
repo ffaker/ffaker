@@ -243,7 +243,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Sydney, Australia/Canberra, Australia/Adelaide |
+| `time_zone` | Australia/Brisbane, Australia/Adelaide, Australia/Hobart |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -555,7 +555,7 @@
 | `street` | Jln. Saharjo, No. 48, Jln. Abdul Halim, No. 88, Jln. Sukarno, No. 57 |
 | `street_address` | 983 Precious Lodge, 6144 Maegan Meadows, 2646 Marcelina Estates |
 | `street_name` | Blair Crossroad, Brown Coves, Leila Mall |
-| `street_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `street_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for street_prefix |
 | `street_suffix` | Port, Stravenue, Prairie |
 | `time_zone` | Europe/Lisbon, Africa/Nairobi, Asia/Tokyo |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
@@ -573,8 +573,8 @@
 | `city` | Ludhiana, Chennai, Ahmedabad |
 | `city_prefix` | Port, West, North |
 | `city_suffix` | chester, port, bury |
-| `country` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `neighborhood` | Bushwick South, White Plains Central, South of Lake Ave |
 | `pincode` | 878961, 109570, 628869 |
 | `secondary_address` | Apt. 729, Suite 828, Suite 985 |
@@ -585,7 +585,7 @@
 | `street_address` | 7495 Orn Prairie, 185 Evangeline Coves, 6743 Sylvia Villages |
 | `street_name` | Edna Cove, Harris Run, Coralie Freeway |
 | `street_suffix` | Land, Summit, Crossroad |
-| `time_zone` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `time_zone` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for time_zone |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -710,7 +710,7 @@
 | `street` | ul. Zamknięta, ul. św. Floriana, ul. Solidarności |
 | `street_address` | ul. Mikołaja Reja 55, plac Medyków 156, al. Jana Kasprowicza 140 |
 | `street_name` | zaułek Oleandrów, zaułek Jagielloński, ul. Bałtycka |
-| `street_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `street_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for street_prefix |
 | `voivodeship` | warmińsko-mazurskie, lubuskie, podkarpackie |
 | `voivodeship_abbr` | KP, DS, OP |
 | `voivodeship_capital_city` | Poznań, Szczecin, Kielce |
@@ -947,9 +947,9 @@
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::CheesyLingo
 
@@ -1010,7 +1010,7 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | 屏宜科技公司, 白铭电器有限公司, 茜彦食品有限公司 |
-| `suffix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `suffix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for suffix |
 | `type` | 食品, 咨询, 电器 |
 
 ## FFaker::CompanyFR
@@ -1068,9 +1068,9 @@
 
 | Method | Example |
 | ------ | ------- |
-| `backward` | 2022-02-26, 2022-04-26, 2022-10-20 |
+| `backward` | 2022-04-10, 2022-06-08, 2022-12-02 |
 | `between`(..., ...) |  |
-| `forward` | 2024-02-20, 2023-04-25, 2023-11-28 |
+| `forward` | 2024-04-03, 2023-06-07, 2024-01-10 |
 
 ## FFaker::DizzleIpsum
 
@@ -1167,7 +1167,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `binary` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `binary` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for binary |
 | `maybe` | agender, bi-gender, androgyne |
 | `random` | female, non-binary, bi-gender |
 | `sample` | non-binary, female, agender |
@@ -1176,71 +1176,71 @@
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::GenderCN
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::GenderID
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::GenderIT
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::GenderJA
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::GenderJP
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::GenderKR
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::GenderPL
 
 | Method | Example |
 | ------ | ------- |
-| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
+| `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
+| `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
 
 ## FFaker::GenderRU
 
 | Method | Example |
 | ------ | ------- |
-| `binary` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `binary` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for binary |
 | `maybe` | женщина, мужчина, агендер |
 | `random` | мужчина, женщина, нонбайнари |
 | `sample` | нонбайнари, мужчина, агендер |
@@ -1315,7 +1315,7 @@
 | ------ | ------- |
 | `drivers_license` | E244-087-11-322-0, X599-923-25-379-5, U734-813-44-435-9 |
 | `ethnicity` | Caucasian, Other, Hispanic |
-| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `ssn` | 118-74-3417, 790-78-1801, 670-57-0694 |
 
 ## FFaker::IdentificationBR
@@ -1326,7 +1326,7 @@
 | `cnpj_verification_digits`(...) |  |
 | `cpf` | 83999415142, 99098375952, 02362771709 |
 | `cpf_verification_digits`(...) |  |
-| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `pretty_cnpj` | 39.805.252/0906-02, 36.716.707/6197-82, 44.888.038/1012-24 |
 | `pretty_cpf` | 756.906.887-46, 480.783.480-02, 206.716.565-89 |
 | `pretty_rg` | 594.870.460, 340.423.007, 171.007.861 |
@@ -1342,13 +1342,13 @@
 
 | Method | Example |
 | ------ | ------- |
-| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 
 ## FFaker::IdentificationESCL
 
 | Method | Example |
 | ------ | ------- |
-| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `rut` | 24156278-6, 13929586-2, 23389952-6 |
 
 ## FFaker::IdentificationESCO
@@ -1358,8 +1358,8 @@
 | `blood_type` | B+, A-, AB- |
 | `driver_license_category` | C3, C2, A1 |
 | `drivers_license` | 5228228692291, 68284911839, 448396950 |
-| `expedition_date` | 2022-07-04, 2021-01-10, 2018-05-25 |
-| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `expedition_date` | 2022-08-16, 2021-02-22, 2018-07-07 |
+| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `id` | 5379500, 090419750078, 6002923195 |
 
 ## FFaker::IdentificationIN
@@ -1374,7 +1374,7 @@
 | ------ | ------- |
 | `drivers_license` | U157852100N, U152882543Z, U185324563J |
 | `ethnicity` | Nativo americano, Caucasico, Multirazziale |
-| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `ssn` | 66986337003573962780, 10592676143937723022, 55452794450887396673 |
 
 ## FFaker::IdentificationKr
@@ -1387,10 +1387,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | GUSA950128MHGJZP33, PIKB800125MCSWVGJ3, XEXV701129HCCWPJK1 |
-| `rfc` | ZISV980829VT9, QIMC780614PVO, MHÑ070303AVW |
-| `rfc_persona_fisica` | CUIL731006ZIW, XIIZ961228IW5, ÑAWI0301234L2 |
-| `rfc_persona_moral` | &amp;QB101110RWS, IQ&amp;910302S1L, WYN1705044HQ |
+| `curp` | GUSA950216MHGJZP33, PIKB800202MCSWVGJ3, XEXV701129HCCWPJK1 |
+| `rfc` | ZISV980921VT9, QIMC780621PVO, MHÑ070401AVW |
+| `rfc_persona_fisica` | CUIL731009ZIW, XIIZ970119IW5, ÑAWI0302184L2 |
+| `rfc_persona_moral` | &amp;QB101212RWS, IQ&amp;910318S1L, WYN1706104HQ |
 
 ## FFaker::IdentificationPL
 
@@ -1411,7 +1411,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x000056042b384278&gt;, #&lt;File:0x000056042b3a07c0&gt;, #&lt;File:0x000056042b3b0030&gt; |
+| `file` | #&lt;File:0x000055bedd457da0&gt;, #&lt;File:0x000055bedd4720b0&gt;, #&lt;File:0x000055bedd483d60&gt; |
 | `url` | https://dummyimage.com/300x300/8adc16/a97b60.png?text=, https://dummyimage.com/300x300/228f81/f51886.png?text=, https://dummyimage.com/300x300/45d211/7d92c2.png?text= |
 
 ## FFaker::Internet
@@ -1592,13 +1592,13 @@
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `paragraph` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for paragraph |
 | `paragraphs` | An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An madra: "Tugann tú bia dom.  Ligeann tú dom codladh istigh mar a bhfuil sé tirim. Slíocann tú mo cheann ó am go ham. Caithfidh gur dia thú!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!", An cat: "Tugann tú bia dom. Ligeann tú isteach is amach mé. Codlaím i d'ucht, nó ar an leaba, nó os comhair an tine, mar is mian liom. Caithfidh gur dia mé!" |
-| `phrase` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `phrases` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `question` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sentence` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `sentences` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `phrase` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for phrase |
+| `phrases` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for phrases |
+| `question` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for question |
+| `sentence` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sentence |
+| `sentences` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sentences |
 | `word` | fia, smólach, corr |
 | `words` | cearc, ciaróg, feannóg, faoileán, foracha, ulchabán, gleoiseach, míol, capall |
 
@@ -1705,22 +1705,22 @@
 | `female_name_with_prefix` | Miss. Meredith Wolf, Mrs. Griselda Rodriguez, Miss. Lawanna Bins |
 | `female_name_with_prefix_suffix` | Mrs. Dollie Heaney IV, Mrs. Clorinda Crist IV, Mrs. Hilary Carter DVM |
 | `female_name_with_suffix` | Candie Strosin MD, Alda Rau III, Paz Dicki Sr. |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Zoila, Alysa, Dirk |
 | `first_name_female` | Alene, Era, Tabitha |
 | `first_name_male` | Dewey, Samuel, Carlo |
-| `html_safe_last_name` | Renner, Gerlach, Greenholt |
-| `html_safe_name` | Georgina Hoppe, Maudie Kautzer, Stefany Nader |
+| `html_safe_last_name` | Graham, Stamm, Collier |
+| `html_safe_name` | Georgina Zieme, Maudie Franecki, Stefany Romaguera |
 | `last_name` | Hickle, Kutch, Bernier |
 | `male_name_with_prefix` | Mr. Andrew Heaney, Mr. Prince McLaughlin, Mr. Emmitt Cormier |
 | `male_name_with_prefix_suffix` | Mr. Bobby Marquardt III, Mr. Sean Ziemann III, Mr. Milo Green V |
 | `male_name_with_suffix` | Al Halvorson MD, Jon Schaden V, Louie Grimes IV |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Tenisha Rohan, Serena Rutherford, Jeremy Keebler |
 | `name_with_prefix` | Mr. Tomas Zulauf, Miss. Rosalie Marquardt, Miss. Shantel Leffler |
 | `name_with_prefix_suffix` | Miss. Celine Krajcik DDS, Mr. Earnest Weber IV, Mr. Eusebio Mitchell PhD |
 | `name_with_suffix` | Chantal Reichert IV, Giselle Sipes V, Hunter Rempel DVM |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | Mr., Dr., Mrs. |
 | `pronouns` | Xe/Xem, He/Him, Zie/Zim |
 | `suffix` | DDS, Jr., MD |
@@ -1740,13 +1740,13 @@
 | Method | Example |
 | ------ | ------- |
 | `female_name_with_prefix` | Srta. Corine Xavier, Sra. Rosalina Moraes, Srta. Teodora da Cruz |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Miriam, Aldicelia, Zanir |
 | `first_name_female` | Anaíra, Teodora, Aurinda |
 | `first_name_male` | Barnabé, Ailton, Brian |
 | `last_name` | Viana, Saraiva, Teixeira |
 | `male_name_with_prefix` | Sr. Adalgiso Cavalcanti, Sr. Timóteo da Cruz, Sr. Altino da Cunha |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Amarildo Ramos, Cárin Silveira, Calícia Cavalcante |
 | `name_with_prefix` | Sra. Vida Nunes, Srta. Isis Novaes, Sr. Kennedy Barros |
 | `prefix` | Sr., Srta., Sra. |
@@ -1767,22 +1767,22 @@
 | `female_name_with_prefix` | Mrs. Cristine Březinová, Miss. Georgette Dlouhý, Miss. Maryalice Brabec |
 | `female_name_with_prefix_suffix` | Mrs. Qiana Čapek DSc., Mrs. Afton Burian Th.D., Mrs. Brigitte Brožová Ph.D. |
 | `female_name_with_suffix` | Charissa Dušek Ph.D., Malisa Bauerová Ph.D., Leann Fojtíková Th.D. |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Alois, Zdeněk, Jaromír |
 | `first_name_female` | Scarlett, Gertrud, Oliva |
 | `first_name_male` | Wilford, Woodrow, Jeromy |
-| `html_safe_last_name` | Stracke, Strosin, Fisher |
-| `html_safe_name` | Dana Grady, Ondřej Jakubowski, Jiřina VonRueden |
+| `html_safe_last_name` | Altenwerth, Lueilwitz, Willms |
+| `html_safe_name` | Dana Sporer, Ondřej Harber, Jiřina Schowalter |
 | `last_name` | Burešová, Burdová, Dlouhá |
 | `male_name_with_prefix` | Mr. Jess Adam, Mr. Wilbert Čech, Mr. Armand Boháč |
 | `male_name_with_prefix_suffix` | Mr. Wayne Dvořák DSc., Mr. Jarod Daněk DSc., Mr. Armand Dvořáček DSc. |
 | `male_name_with_suffix` | Dominique Čapek DSc., Erwin Coufalová Ph.D., Frankie Čapek Ph.D. |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Marek Boháč, Karel Bárta, Dr. Kristýna Doležalová |
 | `name_with_prefix` | Mrs. Monica Čech, Mrs. Racheal Dohnal, Miss. Darby Beránková |
 | `name_with_prefix_suffix` | Mrs. Mireille Coufal DSc., Mrs. Ophelia Boháčová DSc., Mr. Pierre Dlouhý Ph.D. |
 | `name_with_suffix` | Young Adámek Ph.D., Loretta Čapek Th.D., Cody Burdová Ph.D. |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | Mrs., Mr., Miss. |
 | `pronouns` | Xe/Xer, Xe/Xem, He/Him |
 | `suffix` | Th.D., Ph.D., DSc. |
@@ -1797,23 +1797,23 @@
 | `female_name_with_prefix` | Miss. Maegan Stoltenberg, Miss. Rochel Jacobi, Miss. Brigida Stark |
 | `female_name_with_prefix_suffix` | Miss. Azalee Williamson III, Mrs. Violette Ward DVM, Mrs. Lynsey Kertzmann Jr. |
 | `female_name_with_suffix` | Lorean Cremin II, Ruthie Gaylord Jr., Robbyn Leuschke PhD |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Amalie, Viola, Oliver |
 | `first_name_female` | Tonisha, Ghislaine, Agnus |
 | `first_name_male` | Rigoberto, Ulysses, Ted |
-| `html_safe_last_name` | Mayert, Heller, Witting |
-| `html_safe_name` | Elias Smitham, Henry Tremblay, Bjørn Swaniawski |
+| `html_safe_last_name` | Hilpert, Brown, Lebsack |
+| `html_safe_name` | Elias Emard, Henry Bauch, Bjørn Cremin |
 | `last_name` | Boehm, Kiehn, Brekke |
 | `male_name` | Nicklas Dibbert, Albert Rolfson, Arne Bartoletti |
 | `male_name_with_prefix` | Mr. Dustin Hayes, Mr. Darius Price, Mr. Jessie Smith |
 | `male_name_with_prefix_suffix` | Mr. Kirby Hauck V, Mr. Albert Green MD, Mr. Adan Balistreri Jr. |
 | `male_name_with_suffix` | Cory Bradtke II, Young Schneider II, Tyrone Tromp DDS |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Osvald Hills Koss, Werner Lemke Bogan, Joan Torphy Hilpert |
 | `name_with_prefix` | Miss. Isabella Spinka, Mr. Chang Pfeffer, Mrs. Angelita Reichert |
 | `name_with_prefix_suffix` | Mrs. Theola Weissnat IV, Mrs. Jade Littel V, Mr. Clifton Christiansen MD |
 | `name_with_suffix` | Scott Johnson III, Marti Kautzer I, Stasia Pfannerstill PhD |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | Fr., Prof., Dr. |
 | `pronouns` | She/Her, They/Them, Xe/Xem |
 | `suffix` | DVM, MD, II |
@@ -1825,22 +1825,22 @@
 | `female_name_with_prefix` | Miss. Nicola Greenfelder, Miss. Penni Tremblay, Miss. Maudie Bogisich |
 | `female_name_with_prefix_suffix` | Miss. Iva Kreiger III, Mrs. Milagros Marquardt II, Miss. Candie Kemmer PhD |
 | `female_name_with_suffix` | Olive Strosin I, Joeann Sawayn III, Tien Torp V |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Conrad, Cheryle, Galina |
 | `first_name_female` | Irmgard, Ardell, Bula |
 | `first_name_male` | Leslie, Miguel, Williams |
-| `html_safe_last_name` | Padberg, Cormier, Schroeder |
-| `html_safe_name` | Rubin Kautzer, Matha Gislason, Brittanie Ratke |
+| `html_safe_last_name` | Simonis, Ziemann, Crooks |
+| `html_safe_name` | Rubin Price, Matha Robel, Brittanie Maggio |
 | `last_name` | Braun, Larson, Hettinger |
 | `male_name_with_prefix` | Mr. Val Mosciski, Mr. Vicente Lockman, Mr. Fermin Hand |
 | `male_name_with_prefix_suffix` | Mr. Boris Farrell DVM, Mr. Dudley Brekke DVM, Mr. Val Toy DDS |
 | `male_name_with_suffix` | Demarcus O'Connell V, Jim Abbott II, Donnell Effertz Jr. |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Lucila Padberg, Reyna Heller, Darrel Langworth |
 | `name_with_prefix` | Mr. Salvatore Christiansen, Mrs. Lovetta Sanford, Miss. Paula Johns |
 | `name_with_prefix_suffix` | Mr. Jeffry Abbott I, Mr. Donte Dickens MD, Mr. Mel Wyman I |
 | `name_with_suffix` | Prince Kassulke III, Rayna Zboncak I, Freda Murazik Jr. |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | Prof., Dr., Herr |
 | `pronouns` | They/Them, He/Him, Zie/Zim |
 | `suffix` | III, PhD, I |
@@ -1850,13 +1850,13 @@
 | Method | Example |
 | ------ | ------- |
 | `female_name_with_prefix` | D.ª Petra Palacios Palacios, Dra. Ángeles Alarcón Castro, Dra. Rosa Ortega Fuentes |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | María Ángeles, María Mercedes, Catalina |
 | `first_name_female` | María Cristina, María Antonia, Rebeca |
 | `first_name_male` | Marcelino, Bartolomé, Josep María |
 | `last_name` | Bermejo, Castaño, Calvo |
 | `male_name_with_prefix` | Dr. Pascual Santana Ramos, D. José Luis Zamora Menéndez, Dr. Martín Benito Millán |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Juan Antonio Padilla Casado, Antonio José Silva Cruz, Pilar Quintana Casado |
 | `name_with_prefix` | D. Vicente Diez Ruiz, D.ª Rosa Mendoza Mesa, D. Christian Durán Expósito |
 | `prefix` | Dra., D., D.ª |
@@ -1876,7 +1876,7 @@
 | ------ | ------- |
 | `first_name_female` | Elaine, Kaani, Georgina |
 | `first_name_male` | Fanding, Ketabou, Majorr |
-| `last_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `last_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for last_name |
 | `name` | Fara jammeh, Nyaling jammeh, Baba ceesay |
 | `name_female` | Oli ceesay, Tasatou jammeh, Lolo jammeh |
 | `name_male` | Buray ceesay, Vincent ceesay, Kewuleng ceesay |
@@ -1901,13 +1901,13 @@
 | Method | Example |
 | ------ | ------- |
 | `female_name_with_prefix` | Nn. Roro Maianit, Nn. Fitrianti Stefany, Ny. Penny Syepvin |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Ilyas, Farah, Doni |
 | `first_name_female` | Rere, Vani, Ani |
 | `first_name_male` | Syauqi, Ronald, Zakaria |
 | `last_name` | Mellisani, Pramono, Setyandin |
 | `male_name_with_prefix` | Tn. Munir Mardani, Tn. Karno Wirawan, Tn. Halim Sudiyantono |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Chairil Raditia, Nurhadi Karyadi, Anisa Kusumastuti |
 | `name_with_prefix` | Ny. Ike Frastiansyah, Ny. Maria Solichah, Nn. Irma Meliani |
 | `prefix` | Nn., Ny., Tn. |
@@ -1975,20 +1975,20 @@
 | `full_name` | Virginia Koss McLaughlin, Roque Aaron Lind Daniel, Rubén Koelpin Block |
 | `full_name_no_prefix` | Carlos Fritsch Glover, Luz Fadel Howell, Giovani Orn Dooley |
 | `full_name_prefix` | Sr. Fernando Buckridge Bailey, Sra. Martha Selene Prohaska Walsh, C. Silvio Otilio Mills Yundt |
-| `html_safe_last_name` | Skiles, Flatley, Carroll |
-| `html_safe_name` | Jezabel Nolan, Nabor Ritchie, Mayra Langosh |
+| `html_safe_last_name` | Koss, Goyette, Kirlin |
+| `html_safe_name` | Jezabel Wyman, Nabor Grimes, Mayra Cronin |
 | `last_name` | Mertz, Feest, Runolfsson |
 | `male_name` | Odín, Temístocles, Otilio Claudio |
 | `male_name_with_prefix` | Sr. Chet Bernier, Sr. Brain Stark, C. Gustavo Boyer |
 | `male_name_with_prefix_suffix` | C. Ronnie Armstrong Jr., C. Arlen Homenick MD, C. Vaughn Kohler IV |
 | `male_name_with_suffix` | Oliver Abshire I, Andreas Anderson II, Seth Armstrong Jr. |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `middle_name` | Bertha, Nicandro, Lisette |
 | `name` | Emilio, Gina, Diana |
 | `name_with_prefix` | Sra. Maryland Hettinger, C. Alfreda Dicki, Sr. Chuck Langosh |
 | `name_with_prefix_suffix` | Sr. Milan Kshlerin II, C. Pamula Rutherford II, C. Gino Schmidt V |
 | `name_with_suffix` | Errol Jacobi PhD, Abe Reichel V, Yesenia Willms Jr. |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `paternal_last_names` | Botsford Smith, Rolfson Toy, Strosin Kuhic |
 | `prefix` | C., Sra., Srita. |
 | `pronouns` | Xe/Xer, They/Them, He/Him |
@@ -2001,23 +2001,23 @@
 | `female_name_with_prefix` | Miss. Bettyann Wilkinson, Mrs. Yu Ratke, Mrs. Leonor Lakin |
 | `female_name_with_prefix_suffix` | Mrs. Sam Lang PhD, Mrs. Deann Bartoletti MD, Miss. Amira O'Connell Sr. |
 | `female_name_with_suffix` | Thea Effertz DDS, Madalyn Windler Sr., Frances Abbott II |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Juliette, Sheree, Kent Russell |
 | `first_name_female` | Cammy, Guadalupe, Petra |
 | `first_name_male` | Tomas, Josef, Amado |
-| `html_safe_last_name` | Ziemann, Morar, Leannon |
-| `html_safe_name` | Yon Baumbach, Denisha Reichel, Libbie Rempel |
+| `html_safe_last_name` | Windler, Welch, Price |
+| `html_safe_name` | Yon Schiller, Denisha Gibson, Libbie Maggio |
 | `last_name` | Kessler, Gerlach, Bahringer |
 | `male_name_with_prefix` | Mr. Ted Russel, Mr. Salvatore Witting, Mr. Hunter Hickle |
 | `male_name_with_prefix_suffix` | Mr. Hyman Ferry MD, Mr. Thurman White PhD, Mr. Lon Stracke V |
 | `male_name_with_suffix` | Gilbert Bartoletti PhD, Blair Stokes DVM, Darryl Conroy DDS |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Kieth Veum, Brooks West, Jeanie Gerhold |
 | `name_with_prefix` | Miss. Elda Cartwright, Mrs. Shanna Schroeder, Mr. Fausto Moore |
 | `name_with_prefix_suffix` | Mr. Calvin Rodriguez Sr., Mr. Dale Grant DDS, Mr. Jarod Breitenberg MD |
 | `name_with_suffix` | Jessika Pfeffer V, Randal Kutch MD, Felisha Thompson II |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
+| `prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for prefix |
 | `pronouns` | She/Her, Xe/Xer, Xe/Xem |
 | `suffix` | DDS, II, I |
 
@@ -2028,22 +2028,22 @@
 | `female_name_with_prefix` | Mrs. Sharlene-Lakita Feest, Miss. Takako-Genevie Lueilwitz, Miss. Eveline-Julee Spinka |
 | `female_name_with_prefix_suffix` | Mrs. Althea Rippin II, Mrs. Margarete Bergstrom I, Miss. Margurite Towne I |
 | `female_name_with_suffix` | Allene Stamm MD, Domitila Kuphal Jr., Georgetta Upton IV |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Bonita, Justine, Tyisha |
 | `first_name_female` | Loretta, Melissia, Lachelle |
 | `first_name_male` | Matthew, Rhett, Allen-Desmond |
-| `html_safe_last_name` | Bayer, Jacobson, Weimann |
-| `html_safe_name` | Jon Streich, Mollie Gutkowski, Billie-Ann Armstrong |
+| `html_safe_last_name` | Grady, Beier, Zieme |
+| `html_safe_name` | Jon Thompson, Mollie Considine, Billie-Ann Mayer |
 | `last_name` | Ankunding, Waelchi, Von |
 | `male_name_with_prefix` | Mr. Leonardo Parisian, Mr. Andre Buckridge, Mr. Columbus Bernier |
 | `male_name_with_prefix_suffix` | Mr. Donny Cremin I, Mr. Eliseo Effertz DDS, Mr. Daron Fritsch IV |
 | `male_name_with_suffix` | Leon Kerluke Sr., Emil-Allan Hilpert Jr., Derick Jerde MD |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Roseanne Pollich, Lashawn Marvin, Chung Pouros |
 | `name_with_prefix` | Mr. Sidney Simonis, Miss. Taryn DuBuque, Mrs. Zoe Medhurst |
 | `name_with_prefix_suffix` | Mrs. Hiroko Waelchi Sr., Mrs. Merrilee Hermann PhD, Mr. Porfirio Lang Jr. |
 | `name_with_suffix` | Johnetta Tremblay DDS, Deanne Prosacco IV, Carmelina Hessel MD |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | Prof., Ing., Ir. |
 | `pronouns` | He/Him, They/Them, Xe/Xem |
 | `suffix` | V, MD, Sr. |
@@ -2055,22 +2055,22 @@
 | `female_name_with_prefix` | Miss. Cassey Lantag, Mrs. Tami Makabaligoten, Miss. Lashandra Barrameda |
 | `female_name_with_prefix_suffix` | Miss. Yasmin Riego IV, Mrs. Marg Hinojosa PhD, Mrs. Kamilah Dimaguibag PhD |
 | `female_name_with_suffix` | Kathleen Verano I, Gricelda Inarez II, Bonita Estrada MD |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Yulanda, Chester, Danuta |
 | `first_name_female` | Ciara, Shaunta, Serafina |
 | `first_name_male` | Noe, Josue, Darren |
-| `html_safe_last_name` | Wuckert, Roob, Pouros |
-| `html_safe_name` | Robbi Dicki, Inocencia Haag, Orpha Weissnat |
+| `html_safe_last_name` | Hansen, Deckow, Adams |
+| `html_safe_name` | Robbi Wintheiser, Inocencia Mayer, Orpha Ritchie |
 | `last_name` | Tapalla, Loshangg, Magbantayg |
 | `male_name_with_prefix` | Mr. Brett Garay, Mr. Thad Zacarias, Mr. Daniel Makabaligoten |
 | `male_name_with_prefix_suffix` | Mr. Ricardo Divinagracia DVM, Mr. Omer Escribano Jr., Mr. Ervin Querubin II |
 | `male_name_with_suffix` | Lyman Galindez DDS, Harley Escribano PhD, Haywood Parsaligan Jr. |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Elva Cabrales, Mrs. Cori Despujol, Ms. Meg Maitimg |
 | `name_with_prefix` | Miss. Georgeann Paragili, Mr. Sonny Maputig, Miss. Helaine Benavides |
 | `name_with_prefix_suffix` | Mr. Randell Garay I, Mr. Barry Sipsipg PhD, Mr. Victor Batungbakal I |
 | `name_with_suffix` | Chong Ongsioco I, Otto Dacudag MD, Frederick Batungbakal II |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | Miss., Dr., Mrs. |
 | `pronouns` | She/Her, Zie/Zim, Xe/Xem |
 | `suffix` | Sr., PhD, Jr. |
@@ -2084,7 +2084,7 @@
 | `female_full_name` | Paulina Ciechanowska, Martyna Nycz, Bernadeta Siudek |
 | `female_last_name` | Jabłońska, Piechota, Nowacka |
 | `female_name_with_prefix` | Pani Mieczysława Dąbek, Pani Gabriela Wolska, Pani Maja Waligórska |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | Stanisława, Albert, Laura |
 | `full_name` | Hanna Jabłczyńska, Karolina Kot, Róża Tatarczyk |
 | `last_name` | Krauze, Królikowska, Mączyński |
@@ -2092,7 +2092,7 @@
 | `male_full_name` | Gustaw Zarzecki, Wacław Butkiewicz, Jerzy Sarnowski |
 | `male_last_name` | Szcześniak, Borowski, Szczęsny |
 | `male_name_with_prefix` | Pan Cyryl Bachleda, Pan Andrzej Chomicki, Pan Lew Sadowski |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Marcelina Sarnowska, Monika Krawczyk, Hieronim Sopoćko |
 | `name_with_prefix` | Pan Ludwik Krasiński, Pani Maja Galińska, Pan Franciszek Żukowski |
 | `prefix` | inż., Pan, dr hab. |
@@ -2120,23 +2120,23 @@
 | `female_name_with_prefix` | Mrs. Berneice Stehr, Miss. Lisette Goyette, Mrs. Mable Skiles |
 | `female_name_with_prefix_suffix` | Mrs. Lelah Roob IV, Mrs. Bonny Leannon I, Mrs. Ryann Prohaska V |
 | `female_name_with_suffix` | Heidi Murray MD, Brittany Sawayn DDS, Ramona Hickle PhD |
-| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
 | `first_name` | David, Karin, Val |
 | `first_name_female` | Sade, Ailene, Sharell |
 | `first_name_male` | Conrad, Tod, Caleb |
-| `html_safe_last_name` | Wehner, Friesen, Blick |
-| `html_safe_name` | Otto Kreiger, Tracee Dickens, Shavon Gottlieb |
+| `html_safe_last_name` | Renner, Legros, Schneider |
+| `html_safe_name` | Otto Hackett, Tracee Beer, Shavon Reinger |
 | `last_name` | Bednar, Bode, Hane |
 | `male_name_with_prefix` | Mr. Colby Gulgowski, Mr. Nolan Watsica, Mr. Alfonso Stiedemann |
 | `male_name_with_prefix_suffix` | Mr. Jon Johns V, Mr. Tanner Dickinson PhD, Mr. Hayden Murray PhD |
 | `male_name_with_suffix` | Rashad McClure MD, Mohammed Denesik DDS, Sergio Block I |
-| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
 | `name` | Doris Prohaska, Darin Hamill, Mitsuko Suzette Okuneva |
 | `name_with_prefix` | Mr. Neal Lueilwitz, Mr. Darryl Bernier, Mr. Santo Witting |
 | `name_with_prefix_suffix` | Miss. Janeen Kunde V, Miss. Cecila Heidenreich I, Mr. Vincenzo Luettgen I |
 | `name_with_suffix` | Brent Thiel Sr., Ana Roob IV, Annalee Macejkovic I |
-| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
+| `prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for prefix |
 | `pronouns` | Zie/Zim, She/Her, Xe/Xem |
 | `suffix` | PhD, IV, II |
 
@@ -2235,14 +2235,14 @@
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `home_work_phone_number` | (08) 0639 3439, (08) 1250 4448, (08) 8610 0950 |
 | `home_work_phone_prefix` | 02, 08, 03 |
 | `international_home_work_phone_number` | +61 3 6046 0831, +61 3 2222 7752, +61 2 5588 4326 |
 | `international_mobile_phone_number` | +61 4 8039 0707, +61 4 9619 8832, +61 4 2615 5115 |
 | `international_phone_number` | +61 2 4941 6239, +61 3 6352 6640, +61 5 9086 2175 |
 | `mobile_phone_number` | 0578 198 012, 0495 752 940, 0549 984 374 |
-| `mobile_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `mobile_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for mobile_phone_prefix |
 | `phone_number` | (07) 8935 9497, (07) 1139 1912, 0530 309 538 |
 | `phone_prefix` | 02, 08, 05 |
 
@@ -2250,7 +2250,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `home_work_phone_number` | 19 43061858, 685195-4751, 73 50965681 |
 | `international_home_work_phone_number` | +55 41 47609547, +553341202554, +55 88 3133-3475 |
 | `international_mobile_phone_number` | +551197961-5234, +5592973766622, +5582964681242 |
@@ -2262,31 +2262,31 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 0800 086 63 04, 0041800 372 38 65, 00418004333706 |
-| `home_work_phone_number` | +4171 576 64 10, +41810537742, 0262169994 |
-| `mobile_phone_number` | 078 632 32 60, 0041797705355, 0041746811189 |
-| `phone_number` | +41767803232, +41800 004 32 72, 0041320928428 |
-| `premium_rate_phone_number` | +419003826711, +41900 285 02 37, 00419013295031 |
-| `shared_cost_phone_number` | 0840 133 17 71, +418442048989, +418489901861 |
+| `free_phone_number` | +41800 086 63 04, 00418003723865, 08004333706 |
+| `home_work_phone_number` | 004152 576 64 10, 0041340537742, 0041912169994 |
+| `mobile_phone_number` | 075 632 32 60, 004176 770 53 55, 076 681 11 89 |
+| `phone_number` | +4179 780 32 32, 00418000043272, 004132 092 84 28 |
+| `premium_rate_phone_number` | 0041901 382 67 11, 00419012850237, +41900 329 50 31 |
+| `shared_cost_phone_number` | +41848 133 17 71, 00418482048989, 00418489901861 |
 
 ## FFaker::PhoneNumberCU
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `e164_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
+| `e164_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for e164_country_code |
 | `e164_home_work_phone_number` | 5321127559, 5377342370, 5332055841 |
 | `e164_mobile_phone_number` | 5352966934, 5350572366, 5358255545 |
 | `e164_phone_number` | 5358873785, 5358767937, 5347886173 |
 | `general_phone_number` | 05 293 4305, 05 608 3495, (07) 169 1441 |
 | `home_work_phone_number` | (046) 44 6711, (024) 22 8276, (041) 43 2910 |
 | `home_work_phone_prefix` | 033, 021, 043 |
-| `international_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `international_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for international_country_code |
 | `international_home_work_phone_number` | +5341 20 6201, +5323 09 1012, 005331 15 3702 |
 | `international_mobile_phone_number` | +535 097 7359, +535 727 4738, +535 142 6224 |
 | `international_phone_number` | +5348 75 1552, 00535 791 2224, +535 933 4680 |
 | `mobile_phone_number` | 05 242 1377, 05 591 3127, 05 716 7952 |
-| `mobile_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `mobile_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for mobile_phone_prefix |
 | `phone_number` | +5342 16 1585, 5358049315, +5324 25 6747 |
 | `phone_prefix` | 022, 042, 024 |
 
@@ -2294,7 +2294,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `home_work_phone_number` | 93523288, 86208526, 21850145 |
 | `international_home_work_phone_number` | +45 28635117, +45 46498043, +45 96400350 |
 | `international_mobile_phone_number` | +45 49968068, +45 56988397, +45 92658216 |
@@ -2306,7 +2306,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `home_work_phone_number` | 0499 1880944, 09939 2260507, 0991 7740817 |
 | `international_home_work_phone_number` | +49 980 0865246, +49 292 6462172, +49 21 3994234 |
 | `international_mobile_phone_number` | +49 163 4886707, +49 163 1558795, +49 164 2446146 |
@@ -2320,7 +2320,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `home_work_phone_number` | 05 94 19 81 83, 0231550887, 02 22 24 61 84 |
 | `international_home_work_phone_number` | +33 5 29 14 33 76, +335 56 80 45 50, 00335 55 36 71 13 |
 | `international_mobile_phone_number` | 00336 62 21 63 03, 0033 757775631, +33 620777474 |
@@ -2353,7 +2353,7 @@
 | ------ | ------- |
 | `home_phone_number` | 01456 9 4456, 08514 6 0733, 0983 26 2987 |
 | `home_phone_number_format`(...) |  |
-| `home_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `home_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for home_phone_prefix |
 | `international_home_phone_number` | +81 4 0959 5646, +81 1634 5 6763, +81 1547 1 2094 |
 | `international_mobile_phone_number` | +81 90 4297 6523, +81 70 1261 2907, +81 70 7922 0874 |
 | `international_phone_number` | +81 578 36 8040, +81 4 3804 2105, +81 6 6378 5509 |
@@ -2366,7 +2366,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `contry_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `contry_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for contry_code |
 | `home_work_phone_number` | 063 5977 5463, 042 4181 4668, 033 4754 2692 |
 | `international_home_work_phone_number` | +82 54 8119 0270, +82 32 0191 7852, +82 55 1190 2066 |
 | `international_mobile_phone_number` | +82 11 3106 3058, +82 16 2168 2697, +82 11 8708 0337 |
@@ -2378,7 +2378,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `home_work_phone_number` | 74 1421 2759, 70 7342 6328, 13 6230 1407 |
 | `international_home_work_phone_number` | +52 95 6743 0929, +52 79 1978 5081, +52 08 8882 6529 |
 | `international_mobile_phone_number` | +52 1 05 7763 3968, +52 1 57 0424 1404, +52 1 50 6312 2230 |
@@ -2417,10 +2417,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `home_work_phone_number` | 8 473 260-35-34, 8 474 666-80-14, 8 867 597-11-90 |
 | `home_work_phone_prefix` | 351, 473, 416 |
-| `international_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `international_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for international_country_code |
 | `international_home_work_phone_number` | +7 382 590-83-85, +7 387 361-41-02, +7 091 196-35-63 |
 | `international_mobile_phone_number` | +7 905 896-20-90, +7 960 780-45-42, +7 901 118-05-70 |
 | `international_phone_number` | +7 909 795-81-01, +7 963 983-13-79, +7 487 385-69-68 |
@@ -2435,7 +2435,7 @@
 | Method | Example |
 | ------ | ------- |
 | `area_prefix` | 21, 278, 971 |
-| `country_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_prefix |
 | `home_work_phone_number` | 0587-662 15, 0226-750 48, 0158-06 37 97 |
 | `international_home_work_phone_number` | 0046 (0)471-79 08 74, +46 (0)563-960 46, +46 (0)622-99 73 43 |
 | `international_mobile_phone_number` | 0046 (0)724-480242, 0046 (0)760-26 14 06, +46 (0)739-97 69 18 |
@@ -2450,7 +2450,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `fixed_line_number` | 6759 4833, 6909 9796, 6546 4394 |
 | `international_toll_free_number` | 800 098 1519, 800 313 2378, 800 817 9495 |
 | `mobile_number` | 8445 9322, 8905 0674, 8497 7879 |
@@ -2465,7 +2465,7 @@
 | Method | Example |
 | ------ | ------- |
 | `homework_number` | 33-830-70-38, 33-874-03-20, 33-938-99-94 |
-| `homework_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `homework_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for homework_phone_prefix |
 | `mobile_number` | 77-643-50-40, 77-838-51-69, 70-556-36-73 |
 | `mobile_phone_prefix` | 77, 76, 70 |
 | `phone_number` | 76-398-27-74, 76-955-04-92, 33-903-53-49 |
@@ -2475,7 +2475,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `contry_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `contry_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for contry_code |
 | `home_work_phone_number` | (07) 095-6493, (02) 2844-8122, (07) 340-2110 |
 | `international_home_work_phone_number` | +886-6-471-5351, +886-3-986-6766, +886-3-781-3654 |
 | `international_mobile_phone_number` | +886-911-665-107, +886-990-937-327, +886-942-809-028 |
@@ -2524,7 +2524,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 199511097060, 201509289680, 199702016780 |
+| `ssn` | 199512087060, 201511059680, 199703026780 |
 
 ## FFaker::SemVer
 
@@ -2631,16 +2631,16 @@
 | `area_name` | kilometers, centimeters squared, meters squared |
 | `length_abbr` | cm, m, km |
 | `length_name` | kilometers, meters, millimeters |
-| `liquid_abbr` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `liquid_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `liquid_abbr` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for liquid_abbr |
+| `liquid_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for liquid_name |
 | `mass_abbr` | mt, g, kg |
 | `mass_name` | kilogram, metric ton, gram |
 | `temperature_abbr` | K, F, C |
 | `temperature_name` | Celsius, Fahrenheit, Kelvin |
 | `time_abbr` | d, s, m |
 | `time_name` | Milliseconds, Seconds, Years |
-| `volume_abbr` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
-| `volume_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: FFaker::UniqueUtils::RetryLimitExceeded |
+| `volume_abbr` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for volume_abbr |
+| `volume_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for volume_name |
 
 ## FFaker::Vehicle
 
