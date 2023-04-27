@@ -7,7 +7,7 @@ module FFaker
       extend self
 
       # https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/World_Manufacturer_Identifier_(WMI)
-      VALID_WMI_REGIONS = [*'A'..'C', *'J'..'Z', *'1'..'9'].freeze
+      VALID_WMI_REGIONS = [*'A'..'C', *'J'..'N', 'P', *'R'..'Z', *'1'..'9'].freeze
 
       VALID_YEAR_CHARS = %w[
         5 6 7 8 9 A B C D E F G H J K L M N P R S T V W X Y 1 2 3 4 5 6 7 8 9
@@ -53,7 +53,7 @@ module FFaker
 
         # Calculate the Check Digit
         weighted_sum = generated_vin.chars.each_with_index.sum do |char, idx|
-          (TRANSLITERATION_VALUES[char.to_sym] || char).to_i * POSITION_WEIGHTS[idx]
+          (TRANSLITERATION_VALUES[char] || char).to_i * POSITION_WEIGHTS[idx]
         end
 
         check_digit = weighted_sum % 11

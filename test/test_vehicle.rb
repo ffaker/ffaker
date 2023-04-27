@@ -5,6 +5,14 @@ require_relative 'helper'
 class TestVehicle < Test::Unit::TestCase
   include DeterministicHelper
 
+  # https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/Check_digit
+  VIN_TRANSLITERATION_VALUES = {
+    'A' => 1, 'B' => 2, 'C' => 3, 'D' => 4, 'E' => 5, 'F' => 6, 'G' => 7, 'H' => 8,
+    'J' => 1, 'K' => 2, 'L' => 3, 'M' => 4, 'N' => 5, 'P' => 7, 'R' => 9,
+    'S' => 2, 'T' => 3, 'U' => 4, 'V' => 5, 'W' => 6, 'X' => 7, 'Y' => 8, 'Z' => 9
+  }.freeze
+  VIN_POSITION_WEIGHTS = [8, 7, 6, 5, 4, 3, 2, 10, 0, 9, 8, 7, 6, 5, 4, 3, 2].freeze
+
   assert_methods_are_deterministic(
     FFaker::Vehicle,
     :base_color, :drivetrain, :engine_cylinders, :engine_displacement,
@@ -47,6 +55,7 @@ class TestVehicle < Test::Unit::TestCase
     assert_not_match(/[IOQ]/, vin) # VINs can't have these letters
     assert_includes(FFaker::Vehicle::VIN::VALID_ALPHA, vin[6]) # passenger vehicle designator
     assert_includes(FFaker::Vehicle::VIN::VALID_YEAR_CHARS, vin[9]) # check year character
+    assert_equal(vin_checksum_digit(vin), vin[8])
   end
 
   def test_drivetrain
@@ -75,5 +84,18 @@ class TestVehicle < Test::Unit::TestCase
 
   def test_interior_upholstery
     assert_match(/\A[ a-z0-9]+\z/i, FFaker::Vehicle.interior_upholstery)
+  end
+
+  private
+
+  def vin_checksum_digit(vin)
+    weighted_sum = vin.chars.each_with_index.sum do |char, idx|
+      (VIN_TRANSLITERATION_VALUES[char] || char).to_i * VIN_POSITION_WEIGHTS[idx]
+    end
+
+    check_digit = weighted_sum % 11
+    check_digit == '10' ? 'X' : check_digit
+    check_digit = 'X' if check_digit == 10
+    check_digit.to_s
   end
 end
