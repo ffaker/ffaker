@@ -23,7 +23,7 @@ module FFaker
     end
 
     def file(size: '300x300', format: 'png', bg_color: :random, text_color: :random, text: nil)
-      uri = URI.parse(url(size, format, bg_color, text_color, text))
+      uri = URI.parse(url(size: size, format: format, bg_color: bg_color, text_color: text_color, text: text))
       file = Tempfile.new('ffaker_image')
       file.binmode
       file << uri.open.read
