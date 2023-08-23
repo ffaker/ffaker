@@ -46,7 +46,7 @@ class TestPhoneNumberSG < Test::Unit::TestCase
 
   def test_phone_number
     10.times do
-      assert_match(/[6,8,9]\d{3}\s\d{4}/, @tester.phone_number)
+      assert_match(/[6,89]\d{3}\s\d{4}/, @tester.phone_number)
     end
   end
 end

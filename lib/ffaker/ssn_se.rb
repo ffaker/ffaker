@@ -54,7 +54,7 @@ module FFaker
     end
 
     def random_birth_time_between(from = ::Time.local(1940, 1, 1), to = ::Time.now)
-      ::Time.at(from + rand * (to.to_f - from.to_f))
+      ::Time.at(from + (rand * (to.to_f - from.to_f)))
     end
 
     def random_region_for(gender)
@@ -70,7 +70,7 @@ module FFaker
     end
 
     def random_region_odd
-      rand(0..498) * 2 + 1
+      (rand(0..498) * 2) + 1
     end
 
     def three_character_string(number)

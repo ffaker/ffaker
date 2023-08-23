@@ -3,9 +3,7 @@
 require_relative 'lib/ffaker/version'
 
 Gem::Specification.new do |s|
-  s.specification_version = 2 if s.respond_to? :specification_version=
   s.required_rubygems_version = Gem::Requirement.new('>= 0') if s.respond_to? :required_rubygems_version=
-  s.rubygems_version = '1.3.5'
 
   s.name              = 'ffaker'
   s.version           = FFaker::VERSION
@@ -29,16 +27,15 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w[README.md LICENSE Changelog.md]
 
   s.files = `git ls-files`
-          .split("\n")
-          .sort
-          .reject { |file| file =~ /^\./ }
-          .reject { |file| file =~ /^(rdoc|pkg)/ }
-
-  s.test_files = Dir['test/**/*']
+            .split("\n")
+            .sort
+            .reject { |file| file =~ /^\./ }
+            .reject { |file| file =~ /^(rdoc|pkg)/ }
 
   s.metadata = {
     'changelog_uri' => 'https://github.com/ffaker/ffaker/blob/main/Changelog.md',
-    'documentation_uri' => 'https://github.com/ffaker/ffaker/blob/main/REFERENCE.md'
+    'documentation_uri' => 'https://github.com/ffaker/ffaker/blob/main/REFERENCE.md',
+    'rubygems_mfa_required' => 'true'
   }
 
   s.add_development_dependency 'rake', '~> 13.0'

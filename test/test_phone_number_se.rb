@@ -16,7 +16,7 @@ class TestPhoneNumberSE < Test::Unit::TestCase
     @tester = FFaker::PhoneNumberSE
   end
 
-  ALLOWED_CHARS = /[()\d +-]/.freeze
+  ALLOWED_CHARS = /[()\d +-]/
 
   def test_mobile_phone_prefix
     assert FFaker::PhoneNumberSE::MOBILE_PHONE_PREFIX.include?(@tester.mobile_prefix)

@@ -5,9 +5,9 @@ require_relative 'helper'
 class TestLoremKR < Test::Unit::TestCase
   include DeterministicHelper
 
-  KOREAN_SENTENCE_MATCHER = /\A[ .가-힣]+\z/.freeze
-  KOREAN_WORDS_MATCHER = /\A[ 가-힣]+\z/.freeze
-  KOREAN_WORD_MATCHER = /\A[가-힣]+\z/.freeze
+  KOREAN_SENTENCE_MATCHER = /\A[ .가-힣]+\z/
+  KOREAN_WORDS_MATCHER = /\A[ 가-힣]+\z/
+  KOREAN_WORD_MATCHER = /\A[가-힣]+\z/
 
   assert_methods_are_deterministic(
     FFaker::LoremKR,

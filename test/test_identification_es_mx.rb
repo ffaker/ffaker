@@ -22,7 +22,7 @@ class TestIdentificationMX < Test::Unit::TestCase
 
   def test_curp
     or_curp_states_abbr = FFaker::IdentificationMX::ESTADOS_CURP.join('|')
-    re = /\A[a-z][aeioux][a-z]{2}\d{2}[0-1]\d[0-3]\d[hm](?:#{or_curp_states_abbr})[bcdfghjklmnñpqrstvwxyz]{3}[0-9a-z]\d\z/ui
+    re = /\A[a-z][aeioux][a-z]{2}\d{2}[0-1]\d[0-3]\d[hm](?:#{or_curp_states_abbr})[bcdfghjklmñpqrstvwxyz]{3}[0-9a-z]\d\z/ui
     assert_match(re, FFaker::IdentificationMX.curp)
   end
 end

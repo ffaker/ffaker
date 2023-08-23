@@ -92,8 +92,8 @@ class TestHTMLIpsum < Test::Unit::TestCase
 
   def test_fancy_string_tags
     # It returns a string with at least one HTML tag
-    assert_match(%r{(<.*>[\w\s]+<\/\w+>){1}}i, FFaker::HTMLIpsum.fancy_string(1))
-    assert_match(%r{(<.*>[\w\s]+<\/\w+>){1}}i, FFaker::HTMLIpsum.fancy_string(3))
+    assert_match(%r{(<.*>[\w\s]+</\w+>){1}}i, FFaker::HTMLIpsum.fancy_string(1))
+    assert_match(%r{(<.*>[\w\s]+</\w+>){1}}i, FFaker::HTMLIpsum.fancy_string(3))
   end
 
   def test_fancy_string_breaks

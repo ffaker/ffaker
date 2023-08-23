@@ -32,7 +32,7 @@ module FFaker
       return date unless params[:series]
 
       params[:series].each do |some_time_after|
-        series << series.last + (rand * some_time_after).ceil
+        series << (series.last + (rand * some_time_after).ceil)
       end
       series
     end
@@ -44,7 +44,7 @@ module FFaker
     def between(from, to)
       from_value = convert_to_time(from)
       to_value = convert_to_time(to)
-      ::Time.at(from_value + rand * (to_value.to_f - from_value.to_f))
+      ::Time.at(from_value + (rand * (to_value.to_f - from_value.to_f)))
     end
 
     private

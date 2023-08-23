@@ -30,7 +30,8 @@ class TestFakerInternetSE < Test::Unit::TestCase
 
   def test_free_email
     email = @tester.free_email
-    assert email.match(/.+@(gmail\.com|hotmail\.com|yahoo\.com|spray\.se|passagen\.se)/), "mail: #{email} does not match"
+    assert email.match(/.+@(gmail\.com|hotmail\.com|yahoo\.com|spray\.se|passagen\.se)/),
+           "mail: #{email} does not match"
   end
 
   def test_login_user_name

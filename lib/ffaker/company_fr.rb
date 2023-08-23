@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    SUFFIXES = %w[SA et\ fils SARL Groupe].freeze
+    SUFFIXES = ['SA', 'et fils', 'SARL', 'Groupe'].freeze
 
     def name
       case rand(0..2)

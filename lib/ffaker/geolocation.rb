@@ -51,8 +51,8 @@ module FFaker
       latitude_range = [upper_left[0], lower_right[0]].sort
       longitude_range = [upper_left[1], lower_right[1]].sort
 
-      latitude = latitude_range[0] + rand * (latitude_range[1] - latitude_range[0])
-      longitude = longitude_range[0] + rand * (longitude_range[1] - longitude_range[0])
+      latitude = latitude_range[0] + (rand * (latitude_range[1] - latitude_range[0]))
+      longitude = longitude_range[0] + (rand * (longitude_range[1] - longitude_range[0]))
 
       [latitude, longitude]
     end
