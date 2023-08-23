@@ -34,7 +34,7 @@ module FFaker
     private
 
     def check_size!(size)
-      return true if size =~ /\A\d+x\d+\z/
+      return true if size.match?(/\A\d+x\d+\z/)
 
       raise ArgumentError, 'Size should be specified in format 300x300'
     end

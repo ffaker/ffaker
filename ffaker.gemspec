@@ -37,6 +37,4 @@ Gem::Specification.new do |s|
     'documentation_uri' => 'https://github.com/ffaker/ffaker/blob/main/REFERENCE.md',
     'rubygems_mfa_required' => 'true'
   }
-
-  s.add_development_dependency 'rake', '~> 13.0'
 end

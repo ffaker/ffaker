@@ -16,7 +16,7 @@ module FFaker
     private
 
     def check_passed_params(size, format, bgset)
-      invalid_size_error unless size =~ /^[0-9]+x[0-9]+$/
+      invalid_size_error unless size.match?(/^[0-9]+x[0-9]+$/)
       invalid_format_error unless SUPPORTED_FORMATS.include?(format)
       invalid_background_number unless bgset.nil? || (1..2).cover?(bgset.to_i)
     end

@@ -13,7 +13,7 @@ module FFaker
     end
 
     def const_missing(const_name)
-      if const_name =~ /[a-z]/ # Not a constant, probably a class/module name.
+      if const_name.match?(/[a-z]/) # Not a constant, probably a class/module name.
         super const_name
       else
         mod_name = ancestors.first.to_s.split('::').last

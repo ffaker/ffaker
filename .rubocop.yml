@@ -1,6 +1,10 @@
 inherit_from:
   - ./.rubocop_todo.yml
 
+require:
+  - rubocop-performance
+  - rubocop-rake
+
 AllCops:
   TargetRubyVersion: 3.0
   NewCops: enable
