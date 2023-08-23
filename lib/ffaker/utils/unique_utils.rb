@@ -32,13 +32,13 @@ module FFaker
 
     private
 
-    def method_missing(name, *arguments)
+    def method_missing(name, *args, **kwargs)
       @max_retries.times do
-        result = @generator.public_send(name, *arguments)
+        result = @generator.public_send(name, *args, **kwargs)
 
-        next if previous_results[[name, arguments]].include?(result)
+        next if previous_results[[name, args, kwargs]].include?(result)
 
-        previous_results[[name, arguments]] << result
+        previous_results[[name, args, kwargs]] << result
         return result
       end
 
