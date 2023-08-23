@@ -72,11 +72,7 @@ sections = faker_modules.map do |mod|
         examples, warnings = catch_warnings do
           Array.new(3) { mod.unique.send meth }
         end
-        right = if warnings.any?
-                  "#{ICONS[:warning]} *#{warnings.first}*"
-                else
-                  (escape examples.join(', ')).to_s
-                end
+        right = warnings.any? ? "#{ICONS[:warning]} *#{warnings.first}*" : (escape examples.join(', ')).to_s
       rescue StandardError => e
         right = "#{ICONS[:error]} #{e.class}: #{e.message}"
       end
