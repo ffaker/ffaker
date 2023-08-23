@@ -1,6 +1,8 @@
 ## development
 
   - Add your change HERE
+  - Resolve a lot of RuboCop offenses [@AlexWayfer]
+  - Change `Image.url`, `Image.file`, `Book.cover` and `Avatar.image` arguments to keywords [@AlexWayfer]
   - Drop support under ruby 2.7 [@marocchino]
   - Improve performance unique [@iiwo]
   - Drop gemspec generation in rake [@technicalpickles]
