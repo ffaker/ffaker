@@ -17,8 +17,7 @@ module FFaker
       Lorem.words.join(directory_separator)
     end
 
-    def file_name(dir = directory, name = Lorem.word.downcase,
-                  ext = extension, directory_separator = File::SEPARATOR)
+    def file_name(dir: directory, name: Lorem.word.downcase, ext: extension, directory_separator: File::SEPARATOR)
       "#{dir}#{directory_separator}#{name}.#{ext}"
     end
   end

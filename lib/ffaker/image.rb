@@ -11,7 +11,7 @@ module FFaker
 
     SUPPORTED_FORMATS = %w[png jpg jpeg gif].freeze
 
-    def url(size = '300x300', format = 'png', bg_color = :random, text_color = :random, text = nil)
+    def url(size: '300x300', format: 'png', bg_color: :random, text_color: :random, text: nil)
       check_size!(size)
       check_format!(format)
 
@@ -22,7 +22,7 @@ module FFaker
       "https://dummyimage.com/#{size}/#{bg_color}/#{text_color}.#{format}?text=#{text}"
     end
 
-    def file(size = '300x300', format = 'png', bg_color = :random, text_color = :random, text = nil)
+    def file(size: '300x300', format: 'png', bg_color: :random, text_color: :random, text: nil)
       uri = URI.parse(url(size, format, bg_color, text_color, text))
       file = Tempfile.new('ffaker_image')
       file.binmode

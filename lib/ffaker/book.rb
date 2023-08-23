@@ -30,8 +30,8 @@ module FFaker
       FFaker::Lorem.paragraph(sentence_count)
     end
 
-    def cover(slug = nil, size = '300x300', format = 'png', bgset = nil)
-      FFaker::Avatar.image(slug, size, format, bgset)
+    def cover(slug: nil, size: '300x300', format: 'png', bgset: nil)
+      FFaker::Avatar.image(slug: slug, size: size, format: format, bgset: bgset)
     end
 
     def orly_cover(name = title, book_author = author, top_text = genre)

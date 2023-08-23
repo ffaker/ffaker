@@ -7,7 +7,7 @@ module FFaker
 
     SUPPORTED_FORMATS = %w[png jpg bmp].freeze
 
-    def image(slug = nil, size = '300x300', format = 'png', bgset = nil)
+    def image(slug: nil, size: '300x300', format: 'png', bgset: nil)
       check_passed_params(size, format, bgset)
       slug ||= FFaker::Lorem.words.join
       "https://robohash.org/#{slug}.#{format}?size=#{size}#{"&bgset=bg#{bgset}" if bgset}"

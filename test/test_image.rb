@@ -20,28 +20,28 @@ class TestImage < Test::Unit::TestCase
 
   def test_image_url_with_param
     assert_equal("#{PLACEHOLDER}300x300//.png?text=",
-                 @tester.url('300x300', 'png', nil, nil))
+                 @tester.url(size: '300x300', format: 'png', bg_color: nil, text_color: nil))
   end
 
   def test_image_url_with_correct_size
     assert_match(%r(#{Regexp.quote(PLACEHOLDER)}150x320/[0-9a-f]{6}/[0-9a-f]{6}\.png\?text=),
-                 @tester.url('150x320'))
+                 @tester.url(size: '150x320'))
   end
 
   def test_image_url_with_incorrect_size
     assert_raise ArgumentError do
-      @tester.url('150x320z')
+      @tester.url(size: '150x320z')
     end
   end
 
   def test_image_url_with_supported_format
     assert_match(%r(#{Regexp.quote(PLACEHOLDER)}300x300/[0-9a-f]{6}/[0-9a-f]{6}\.jpg\?text=),
-                 @tester.url('300x300', 'jpg'))
+                 @tester.url(size: '300x300', format: 'jpg'))
   end
 
   def test_image_url_with_incorrect_format
     assert_raise ArgumentError do
-      @tester.url('300x300', 'wrong_format')
+      @tester.url(size: '300x300', format: 'wrong_format')
     end
   end
 

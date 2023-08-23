@@ -19,39 +19,39 @@ class TestAvatar < Test::Unit::TestCase
   end
 
   def test_avatar_with_param
-    assert_equal("#{ROBOHASH}/faker.png?size=300x300", @tester.image('faker'))
+    assert_equal("#{ROBOHASH}/faker.png?size=300x300", @tester.image(slug: 'faker'))
   end
 
   def test_avatar_with_correct_size
     assert_equal("#{ROBOHASH}/faker.png?size=150x320",
-                 @tester.image('faker', '150x320'))
+                 @tester.image(slug: 'faker', size: '150x320'))
   end
 
   def test_avatar_with_incorrect_size
     assert_raise ArgumentError do
-      @tester.image(nil, '150x320z')
+      @tester.image(size: '150x320z')
     end
   end
 
   def test_avatar_with_supported_format
     assert_equal("#{ROBOHASH}/faker.jpg?size=300x300",
-                 @tester.image('faker', '300x300', 'jpg'))
+                 @tester.image(slug: 'faker', size: '300x300', format: 'jpg'))
   end
 
   def test_avatar_with_incorrect_format
     assert_raise ArgumentError do
-      @tester.image(nil, '300x300', 'wrong_format')
+      @tester.image(size: '300x300', format: 'wrong_format')
     end
   end
 
   def test_avatar_with_correct_background
     assert_equal("#{ROBOHASH}/faker.png?size=300x300&bgset=bg1",
-                 @tester.image('faker', '300x300', 'png', '1'))
+                 @tester.image(slug: 'faker', size: '300x300', format: 'png', bgset: '1'))
   end
 
   def test_avatar_with_incorrect_background
     assert_raise ArgumentError do
-      @tester.image('faker', '300x300', 'png', 'not_a_number')
+      @tester.image(slug: 'faker', size: '300x300', format: 'png', bgset: 'not_a_number')
     end
   end
 end
