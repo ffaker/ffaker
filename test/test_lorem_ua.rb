@@ -7,7 +7,7 @@ class TestLoremUA < Test::Unit::TestCase
 
   SENTENCE_MATCHER = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s.!?,]+\z/
   WORDS_MATCHER    = /\A[а-яА-ЯіїєґІЇЄҐ’\-\s]+\z/
-  WORD_MATCHER     = /\A[а-яА-ЯіїєґІЇЄҐ’\-]+\z/
+  WORD_MATCHER     = /\A[а-яА-ЯіїєґІЇЄҐ’-]+\z/
 
   assert_methods_are_deterministic(
     FFaker::LoremUA,

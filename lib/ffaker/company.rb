@@ -13,7 +13,7 @@ module FFaker
       case rand(0..2)
       when 0 then "#{Name.last_name} #{suffix}"
       when 1 then "#{Name.last_name}-#{Name.last_name}"
-      when 2 then format('%s, %s and %s', Name.last_name, Name.last_name, Name.last_name)
+      when 2 then "#{Name.last_name}, #{Name.last_name} and #{Name.last_name}"
       end
     end
 

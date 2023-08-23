@@ -10,7 +10,7 @@ module FFaker
     def image(slug = nil, size = '300x300', format = 'png', bgset = nil)
       check_passed_params(size, format, bgset)
       slug ||= FFaker::Lorem.words.join
-      "https://robohash.org/#{slug}.#{format}?size=#{size}#{'&bgset=bg' + bgset.to_s if bgset}"
+      "https://robohash.org/#{slug}.#{format}?size=#{size}#{"&bgset=bg#{bgset}" if bgset}"
     end
 
     private

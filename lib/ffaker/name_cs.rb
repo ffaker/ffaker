@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module FFaker
+  # rubocop:disable Style/AsciiComments
   module NameCS
     include FFaker::Name
 
@@ -84,4 +85,5 @@ module FFaker
       given_sex == :random ? GENDERS[rand(0..1)] : given_sex
     end
   end
+  # rubocop:enable Style/AsciiComments
 end

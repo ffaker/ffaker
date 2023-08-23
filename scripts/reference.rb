@@ -11,8 +11,8 @@ ICONS = {
   warning: '❗'
 }.freeze
 
-UTILS_MODULES = %i[ArrayUtils ModuleUtils RandomUtils Random]
-UTILS_METHODS = %i[k underscore fetch_sample rand shuffle unique luhn_check]
+UTILS_MODULES = %i[ArrayUtils ModuleUtils RandomUtils Random].freeze
+UTILS_METHODS = %i[k underscore fetch_sample rand shuffle unique luhn_check].freeze
 
 # Get a list of sections
 def faker_modules

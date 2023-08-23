@@ -40,7 +40,7 @@ module FFaker
     def luhn_check(number)
       multiplications = []
 
-      number.split('').each_with_index do |digit, i|
+      number.chars.each_with_index do |digit, i|
         multiplications << i.even? ? digit.to_i * 2 : digit.to_i
       end
 

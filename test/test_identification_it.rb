@@ -28,7 +28,18 @@ class TestFakerIdentificationIT < Test::Unit::TestCase
   end
 
   def test_ethnicity
-    ethnicity_regex = %r{\A(Afroamericano|Asiatico/isolano del Pacifico|Caucasico|Ispanico|Nativo americano|Multirazziale|Altro|Preferisco non rispondere)\z}
+    ethnicity_regex = %r{
+      \A(
+        Afroamericano|
+        Asiatico/isolano\ del\ Pacifico|
+        Caucasico|
+        Ispanico|
+        Nativo\ americano|
+        Multirazziale|
+        Altro|
+        Preferisco\ non\ rispondere
+      )\z
+    }x
     assert_match(ethnicity_regex, @tester.ethnicity)
   end
 end

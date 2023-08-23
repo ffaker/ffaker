@@ -17,11 +17,7 @@ module FFaker
 
     def pretty_cpf
       cpf_numbers = cpf
-      format('%s.%s.%s-%s',
-             cpf_numbers[0..2],
-             cpf_numbers[3..5],
-             cpf_numbers[6..8],
-             cpf_numbers[9..10])
+      "#{cpf_numbers[0..2]}.#{cpf_numbers[3..5]}.#{cpf_numbers[6..8]}-#{cpf_numbers[9..10]}"
     end
 
     def cnpj
@@ -32,12 +28,7 @@ module FFaker
 
     def pretty_cnpj
       cnpj_numbers = cnpj.to_s.rjust(14, '0')
-      format('%s.%s.%s/%s-%s',
-             cnpj_numbers[0..1],
-             cnpj_numbers[2..4],
-             cnpj_numbers[5..7],
-             cnpj_numbers[8..11],
-             cnpj_numbers[12..14])
+      "#{cnpj_numbers[0..1]}.#{cnpj_numbers[2..4]}.#{cnpj_numbers[5..7]}/#{cnpj_numbers[8..11]}-#{cnpj_numbers[12..14]}"
     end
 
     def rg

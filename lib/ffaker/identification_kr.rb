@@ -11,8 +11,15 @@ module FFaker
       birth = fetch_sample(::Date.new(1970, 1, 1)..::Date.new(1999, 12, 31)).strftime('%y%d%m')
       sex = fetch_sample([1, 2])
       loc = FFaker.numerify("#{fetch_sample(Array('00'..'95'))}###")
-      a, b, c, d, e, f, g, h, i, j, k, l = "#{birth}#{sex}#{loc}".split('').map(&:to_i)
-      checksum = (11 - (((2 * a) + (3 * b) + (4 * c) + (5 * d) + (6 * e) + (7 * f) + (8 * g) + (9 * h) + (2 * i) + (3 * j) + (4 * k) + (5 * l)) % 11)) % 10
+      a, b, c, d, e, f, g, h, i, j, k, l = "#{birth}#{sex}#{loc}".chars.map(&:to_i)
+      checksum = (
+        11 - (
+          (
+            (2 * a) + (3 * b) + (4 * c) + (5 * d) + (6 * e) + (7 * f) + (8 * g) + (9 * h) +
+              (2 * i) + (3 * j) + (4 * k) + (5 * l)
+          ) % 11
+        )
+      ) % 10
       "#{birth}-#{sex}#{loc}#{checksum}"
     end
   end

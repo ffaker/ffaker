@@ -30,7 +30,15 @@ Style/OptionalBooleanParameter:
   Enabled: false
 Metrics/ModuleLength:
   Enabled: true
+  Max: 200
+Metrics/ClassLength:
   Exclude:
-    - 'lib/ffaker/bank.rb'
+    - 'test/**/*.rb'
+Metrics/MethodLength:
+  AllowedPatterns:
+    - 'test_'
+Metrics/AbcSize:
+  AllowedPatterns:
+    - 'test_'
 Style/RedundantArgument:
   Enabled: false

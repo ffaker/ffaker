@@ -36,10 +36,10 @@ module FFaker
 
     def city
       case rand(0..3)
-      when 0 then format('%s %s%s', city_prefix, Name.first_name, city_suffix)
-      when 1 then format('%s %s', city_prefix, Name.first_name)
-      when 2 then format('%s%s', Name.first_name, city_suffix)
-      when 3 then format('%s%s', Name.last_name, city_suffix)
+      when 0 then "#{city_prefix} #{Name.first_name}#{city_suffix}"
+      when 1 then "#{city_prefix} #{Name.first_name}"
+      when 2 then "#{Name.first_name}#{city_suffix}"
+      when 3 then "#{Name.last_name}#{city_suffix}"
       end
     end
 

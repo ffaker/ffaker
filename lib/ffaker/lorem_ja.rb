@@ -30,7 +30,7 @@ module FFaker
     end
 
     def paragraph(sentence_count = 3)
-      sentences(sentence_count).join('、') + '、' + fetch_sample(SENTENCES_END) + '。'
+      "#{sentences(sentence_count).join('、')}、#{fetch_sample(SENTENCES_END)}。"
     end
 
     def paragraphs(count = 3)
