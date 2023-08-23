@@ -1,9 +1,14 @@
-inherit_from:
-  - ./.rubocop_todo.yml
-
 require:
   - rubocop-performance
   - rubocop-rake
+
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
+
+inherit_from:
+  - ./.rubocop_todo.yml
 
 AllCops:
   TargetRubyVersion: 3.0
