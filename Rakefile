@@ -23,6 +23,10 @@ module Test
   end
 end
 
+require 'rubocop/rake_task'
+
+RuboCop::RakeTask.new
+
 #############################################################################
 #
 # Helper functions

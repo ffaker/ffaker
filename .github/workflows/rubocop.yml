@@ -1,0 +1,17 @@
+name: RuboCop
+on:
+  pull_request:
+  push:
+    branches:
+      - "main"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: RuboCop lint
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 'ruby'
+          bundler-cache: true # 'bundle install' and cache
+      - run: rake rubocop
