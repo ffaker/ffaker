@@ -1,6 +1,7 @@
 ## development
 
   - Add your change HERE
+  - Correct Vehicle::VIN result [@philippevezina]
   - Drop support under ruby 2.7 [@marocchino]
   - Improve performance unique [@iiwo]
   - Drop gemspec generation in rake [@technicalpickles]
