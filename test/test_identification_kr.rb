@@ -2,13 +2,13 @@
 
 require_relative 'helper'
 
-class TestFakerIdentificationKr < Test::Unit::TestCase
+class TestFakerIdentificationKR < Test::Unit::TestCase
   include DeterministicHelper
 
-  assert_methods_are_deterministic(FFaker::IdentificationKr, :rrn)
+  assert_methods_are_deterministic(FFaker::IdentificationKR, :rrn)
 
   def setup
-    @tester = FFaker::IdentificationKr
+    @tester = FFaker::IdentificationKR
   end
 
   def test_rrn

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module FFaker
-  module IdentificationKr
+  module IdentificationKR
     extend ModuleUtils
     extend self
 
