@@ -10,9 +10,9 @@ class TestLoremFR < Test::Unit::TestCase
     :paragraph, :paragraphs, :sentence, :sentences, :phrase, :phrases, :word, :words
   )
 
-  REGEX = /\A[ -.ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i.freeze
-  REGEX_WORD = /\A[-ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i.freeze
-  REGEX_WORDS = /\A[ -ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i.freeze
+  REGEX = /\A[ -.ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i
+  REGEX_WORD = /\A[-ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i
+  REGEX_WORDS = /\A[ -ÀÂÉÈÊÎÔÚÛàâéèêîôùûa-z]+\z/i
 
   def test_paragraph
     assert_match(REGEX, FFaker::LoremFR.paragraph)

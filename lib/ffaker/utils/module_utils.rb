@@ -25,7 +25,7 @@ module FFaker
     end
 
     def underscore(string)
-      string.gsub(/::/, '/')
+      string.gsub('::', '/')
             .gsub(/([A-Z]+)([A-Z][a-z])/, '\1_\2')
             .gsub(/([a-z\d])([A-Z])/, '\1_\2')
             .tr('-', '_')
@@ -40,7 +40,7 @@ module FFaker
     def luhn_check(number)
       multiplications = []
 
-      number.split(//).each_with_index do |digit, i|
+      number.split('').each_with_index do |digit, i|
         multiplications << i.even? ? digit.to_i * 2 : digit.to_i
       end
 
@@ -51,9 +51,8 @@ module FFaker
         end
       end
 
-      control_digit = (sum % 10).zero? ? 0 : (sum / 10 + 1) * 10 - sum
+      control_digit = (sum % 10).zero? ? 0 : (((sum / 10) + 1) * 10) - sum
       control_digit.to_s
     end
-
   end
 end

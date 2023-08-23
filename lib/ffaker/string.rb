@@ -21,7 +21,7 @@ module FFaker
       @last_token = nil
 
       # Drop surrounding /'s and split into characters
-      tokens = exp.inspect[1...-1].split(//)
+      tokens = exp.inspect[1...-1].split('')
       result << process_token(tokens) until tokens.empty?
 
       result

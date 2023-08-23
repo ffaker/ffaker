@@ -17,7 +17,7 @@ module FFaker
                       .chars
                       .inject(0) { |sum, digit| sum + digit.to_i }
 
-      npi_checksum = (10 - (24 + summed_digits) % 10).to_s.chars.last
+      npi_checksum = (10 - ((24 + summed_digits) % 10)).to_s.chars.last
 
       base_npi + npi_checksum
     end

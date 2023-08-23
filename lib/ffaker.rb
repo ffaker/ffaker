@@ -13,15 +13,15 @@ module FFaker
   HEX = %w[0 1 2 3 4 5 6 7 8 9 A B C D E F].freeze
 
   def self.hexify(*masks)
-    fetch_sample(masks.flatten).gsub(/#/) { fetch_sample(HEX) }
+    fetch_sample(masks.flatten).gsub('#') { fetch_sample(HEX) }
   end
 
   def self.numerify(*masks)
-    fetch_sample(masks.flatten).gsub(/#/) { rand(0..9).to_s }
+    fetch_sample(masks.flatten).gsub('#') { rand(0..9).to_s }
   end
 
   def self.letterify(*masks)
-    fetch_sample(masks.flatten).gsub(/\?/) { fetch_sample(LETTERS) }
+    fetch_sample(masks.flatten).gsub('?') { fetch_sample(LETTERS) }
   end
 
   def self.bothify(masks)

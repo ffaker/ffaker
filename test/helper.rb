@@ -13,16 +13,14 @@ module DeterministicHelper
   # Accepts a block. Executes the block multiple times after resetting
   # the internal Random Number Generator state and compared the results of
   # each execution to make sure they are the same.
-  def assert_deterministic(options = {})
+  def assert_deterministic(options = {}, &block)
     raise ArgumentError, 'Must pass a block' unless block_given?
 
     options = { message: 'Results are not repeatable' }.merge(options)
 
     returns = Array.new(2) do
       FFaker::Random.reset!
-      Array.new(5) do
-        yield
-      end
+      Array.new(5, &block)
     end
 
     assert(returns.uniq.length == 1, options[:message])

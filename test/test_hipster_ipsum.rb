@@ -10,7 +10,7 @@ class TestHipsterIpsum < Test::Unit::TestCase
     :paragraph, :paragraphs, :sentence, :sentences, :word, :words
   )
 
-  TEST_REGEX = /\+1|[ a-z]+/i.freeze
+  TEST_REGEX = /\+1|[ a-z]+/i
 
   def test_paragraph
     assert_match(TEST_REGEX, FFaker::HipsterIpsum.paragraph)

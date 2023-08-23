@@ -71,7 +71,7 @@ module FFaker
       if document_digits.size + 1 == verification_multipliers.size && document_digits.uniq.size > 1
         0.upto(1) do |i|
           sum = verification_multipliers.drop(1 - i).each_with_index.inject(0) do |val, (value, j)|
-            val + document_digits[j] * value
+            val + (document_digits[j] * value)
           end
           validation_digits[i] = (sum %= 11) < 2 ? 0 : 11 - sum
           document_digits.push(validation_digits[i])

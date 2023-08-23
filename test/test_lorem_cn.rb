@@ -27,7 +27,7 @@ class TestLoremCN < Test::Unit::TestCase
   end
 
   def test_paragraphs_is_an_array
-    assert FFaker::LoremCN.paragraphs.class == Array
+    assert FFaker::LoremCN.paragraphs.instance_of?(Array)
   end
 
   def test_sentences
@@ -35,12 +35,12 @@ class TestLoremCN < Test::Unit::TestCase
   end
 
   def test_sentences_is_an_array
-    assert FFaker::LoremCN.sentences.class == Array
+    assert FFaker::LoremCN.sentences.instance_of?(Array)
   end
 
   def test_sentences_via_to_s_produces_string_terminated_with_period
     string = FFaker::LoremCN.sentences.to_s
-    assert string.class == String
+    assert string.instance_of?(String)
     assert string =~ /。$/
   end
 

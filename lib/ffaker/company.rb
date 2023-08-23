@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    SUFFIXES = %w[Inc and\ Sons LLC Group].freeze
+    SUFFIXES = ['Inc', 'and Sons', 'LLC', 'Group'].freeze
     POSITION_PREFIXES = %w[Executive Assistant General Associate].freeze
     POSITIONS = %w[President Manager Director Secretary Consultant].freeze
 
