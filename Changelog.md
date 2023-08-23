@@ -1,6 +1,13 @@
 ## development
 
   - Add your change HERE
+  - Improve performance unique [@iiwo]
+  - Drop gemspec generation in rake [@technicalpickles]
+  - Add identification EC [@josieljunior]
+  - Update data for AddressDE [@slowjack2k]
+  - Add ruby 3.2 to CI [@petergoldstein]
+  - Add JoJo module [@ar2em1s]
+  - Fix crash in FFaker::Time#datetime when defining FFaker::Date module [@brupla6126]
 
 ## 2.21.0
   - Generate valid VINs [@xunker]
