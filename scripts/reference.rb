@@ -36,12 +36,14 @@ end
 # Catch deprecation warnings.
 # This `#warn` overrides Kernel#warn
 def warn(msg)
-  $warnings << msg if $warnings
+  return unless Kernel.instance_variable_get(:@ffaker_warnings)
+
+  Kernel.instance_variable_set(:@ffaker_warnings, Kernel.instance_variable_get(:@ffaker_warnings) << msg)
 end
 
 def catch_warnings
-  $warnings = []
-  [yield, $warnings]
+  Kernel.instance_variable_set(:@ffaker_warnings, [])
+  [yield, Kernel.instance_variable_get(:@ffaker_warnings)]
 end
 
 def escape(str)
