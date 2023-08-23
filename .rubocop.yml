@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 3.0
   NewCops: enable
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
