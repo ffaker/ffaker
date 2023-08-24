@@ -1,6 +1,7 @@
 ## development
 
   - Add your change HERE
+  - Fixed `FFaker::Number.unique.number(digits: 1)` under Ruby 3 [@simonhildebrandt]
 
 # 2.22.0
   - *BREAKING CHANGE*: Drop support under ruby 2.7 [@marocchino]

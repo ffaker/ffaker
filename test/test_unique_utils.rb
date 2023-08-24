@@ -71,4 +71,8 @@ class TestUniqueUtils < Test::Unit::TestCase
       assert_equal(1, tested_unique_object.test)
     end
   end
+
+  def test_generates_unique_numbers
+    assert_nothing_raised { FFaker::Number.unique.number(digits: 1) }
+  end
 end
