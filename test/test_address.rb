@@ -9,7 +9,7 @@ class TestAddress < Test::Unit::TestCase
     FFaker::Address,
     :building_number, :city, :city_prefix, :city_suffix, :secondary_address,
     :street_address, :street_name, :street_suffix, :neighborhood,
-    :country, :country_code, :time_zone
+    :country, :country_code, :time_zone, :latitude, :longitude
   )
 
   assert_methods_are_deterministic(
@@ -105,5 +105,13 @@ class TestAddress < Test::Unit::TestCase
 
   def test_time_zone
     assert_include FFaker::Address::TIME_ZONE, FFaker::Address.time_zone
+  end
+
+  def test_latitude
+    assert_match( /[\d\-\.]/, FFaker::Address.latitude.to_s)
+  end
+
+  def test_longitude
+    assert_match( /[\d\-\.]/, FFaker::Address.longitude.to_s)
   end
 end

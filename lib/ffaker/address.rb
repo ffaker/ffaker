@@ -111,5 +111,13 @@ module FFaker
     def time_zone
       fetch_sample(TIME_ZONE)
     end
+
+    def latitude
+      fetch_sample(-90.0..90.0)
+    end
+
+    def longitude
+      fetch_sample(-180.0..180.0)
+    end
   end
 end

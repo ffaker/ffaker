@@ -2,6 +2,7 @@
 
   - Add your change HERE
   - Update README [@professor]
+  - Added `FFaker::Address.latitude` and `FFaker::Address.longitude` [@professor]
   - Adds FFaker::Number.between [@professor]
   - Fixed `FFaker::Number.unique.number(digits: 1)` under Ruby 3 [@simonhildebrandt]
 
