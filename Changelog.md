@@ -1,6 +1,7 @@
 ## development
 
   - Add your change HERE
+  - Adds FFaker::Number.leading_zero_number [@professor]
   - Update README [@professor]
   - Adds FFaker::Number.between [@professor]
   - Fixed `FFaker::Number.unique.number(digits: 1)` under Ruby 3 [@simonhildebrandt]

@@ -15,6 +15,10 @@ module FFaker
       FFaker.numerify("#{whole_part_pattern}.#{fractional_part_pattern}").to_f
     end
 
+    def leading_zero_number(digits: 10)
+      FFaker.numerify("0#{"#" * (digits - 1)}")
+    end
+
     def between(from: 1.00, to: 5000.00)
       fetch_sample(from..to)
     end
