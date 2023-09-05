@@ -34,4 +34,12 @@ class TestFakerDate < Test::Unit::TestCase
     assert_random_between(today + 1..today + 30) { @tester.forward(30) }
     assert_instance_of Date, @tester.forward
   end
+
+  def test_birthday
+    today = Date.today
+
+    assert_random_between(today - 65*365..today - 18*365) { @tester.birthday }
+    assert_random_between(today - 43*365..today - 42*365) { @tester.birthday(min_age: 42, max_age:42) }
+    assert_instance_of Date, @tester.birthday
+  end
 end
