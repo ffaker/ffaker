@@ -81,6 +81,7 @@ module FFaker
   autoload :CompanySE, 'ffaker/company_se'
   autoload :Conference, 'ffaker/conference'
   autoload :CoursesFR, 'ffaker/courses_fr'
+  autoload :Crypto, 'ffaker/crypto'
   autoload :Currency, 'ffaker/currency'
   autoload :Date, 'ffaker/date'
   autoload :DizzleIpsum, 'ffaker/dizzle_ipsum'

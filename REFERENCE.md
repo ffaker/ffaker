@@ -53,6 +53,7 @@
  * [FFaker::CompanySE](#ffakercompanyse)
  * [FFaker::Conference](#ffakerconference)
  * [FFaker::CoursesFR](#ffakercoursesfr)
+ * [FFaker::Crypto](#ffakercrypto)
  * [FFaker::Currency](#ffakercurrency)
  * [FFaker::Date](#ffakerdate)
  * [FFaker::DizzleIpsum](#ffakerdizzleipsum)
@@ -1055,6 +1056,12 @@
 
 | Method | Example |
 | ------ | ------- |
+
+## FFaker::Crypto
+
+| Method   | Example |
+|----------| ------- |
+| `sha256` | 57ce6f7c592f8dfd81d794830bf97622bcbb64ab7698559f9fb04d57414bf769|
 
 ## FFaker::Currency
 
