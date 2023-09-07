@@ -2,6 +2,7 @@
 
   - Add your change HERE
   - Adds FFaker::Date.birthday [@professor]
+  - Adds FFaker::Crypto.sha256 [@professor]
   - Update README [@professor]
   - Adds FFaker::Number.between [@professor]
   - Fixed `FFaker::Number.unique.number(digits: 1)` under Ruby 3 [@simonhildebrandt]
