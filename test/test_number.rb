@@ -5,7 +5,7 @@ require_relative 'helper'
 class TestNumber < Test::Unit::TestCase
   include DeterministicHelper
 
-  assert_methods_are_deterministic(FFaker::Number, :number, :decimal)
+  assert_methods_are_deterministic(FFaker::Number, :number, :decimal, :between)
 
   def setup
     @tester = FFaker::Number
@@ -41,5 +41,17 @@ class TestNumber < Test::Unit::TestCase
     assert_raise(ArgumentError.new('Digits cannot be less than 1')) do
       @tester.decimal(fractional_digits: 0)
     end
+  end
+
+  def test_between
+    from = -50
+    to = 50
+    assert_random_between(from..to) { @tester.between(from: from, to: to) }
+    assert_instance_of Integer, @tester.between(from: from, to: to)
+
+    from = -50.0
+    to = 50.0
+    assert_random_between(from..to) { @tester.between(from: from, to: to) }
+    assert_instance_of Float, @tester.between(from: from, to: to)
   end
 end

@@ -3,6 +3,10 @@
   - Add your change HERE
   - Resolve a lot of RuboCop offenses [@AlexWayfer]
   - Change `Image.url`, `Image.file`, `Book.cover` and `Avatar.image` arguments to keywords [@AlexWayfer]
+  - Adds FFaker::Crypto.sha256 [@professor]
+  - Update README [@professor]
+  - Adds FFaker::Number.between [@professor]
+  - Fixed `FFaker::Number.unique.number(digits: 1)` under Ruby 3 [@simonhildebrandt]
 
 # 2.22.0
   - *BREAKING CHANGE*: Drop support under ruby 2.7 [@marocchino]
@@ -23,7 +27,7 @@
   - Add Ruby 3.1 to CI matrix [@petergoldstein]
   - Add AnimalBr [@thiago-henrique-leite]
   - Fix rubocop warnings [@mmrshk]
-  - Consistently generate REFERENCE.md [@technicalpickles and @Volosh1n]
+  - Consistently generate REFERENCE.md [@technicalpickles] and [@Volosh1n]
 
 ## 2.20.0
   - Remove date from gem specification [@AlexWayfer]
@@ -46,7 +50,7 @@
   - Test with Github actions & Ruby 3 [@marocchino]
   - Generate reference by CI [@marocchino]
   - Change the regex to cover all scenarios in lorem_fr [@abnersajr]
-  - Add "Freedom Ipsum" text generator option [@hmaack and @lynnd335]
+  - Add "Freedom Ipsum" text generator option [@hmaack] and [@lynnd335]
   - Fix issues with `FFaker::Image` module [@hmaack]
   - Fix typo in animal.rb module [@renius]
 
@@ -208,21 +212,6 @@
   - [#213] - Fix max length support FFaker::Internet.password ([@anderscarling])
   - many internal library and test suite refactorings
 
-
-[#181]: https://github.com/ffaker/ffaker/issues/181
-[#191]: https://github.com/ffaker/ffaker/issues/191
-[#193]: https://github.com/ffaker/ffaker/issues/193
-[#195]: https://github.com/ffaker/ffaker/issues/195
-[#196]: https://github.com/ffaker/ffaker/issues/196
-[#199]: https://github.com/ffaker/ffaker/issues/199
-[#200]: https://github.com/ffaker/ffaker/issues/200
-[#203]: https://github.com/ffaker/ffaker/issues/203
-[#211]: https://github.com/ffaker/ffaker/pull/211
-[#212]: https://github.com/ffaker/ffaker/pull/212
-[#213]: https://github.com/ffaker/ffaker/pull/213
-[@marocchino]: https://github.com/marocchino
-[@rstacruz]: https://github.com/rstacruz
-[@anderscarling]: https://github.com/anderscarling
 
 
 ## 2.0.0
@@ -433,3 +422,110 @@ Api additions by Rafael Souza
 ## 0.1.0 2007-11-22
 
 * Initial release
+
+[#181]: https://github.com/ffaker/ffaker/issues/181
+[#191]: https://github.com/ffaker/ffaker/issues/191
+[#193]: https://github.com/ffaker/ffaker/issues/193
+[#195]: https://github.com/ffaker/ffaker/issues/195
+[#196]: https://github.com/ffaker/ffaker/issues/196
+[#199]: https://github.com/ffaker/ffaker/issues/199
+[#200]: https://github.com/ffaker/ffaker/issues/200
+[#203]: https://github.com/ffaker/ffaker/issues/203
+[#211]: https://github.com/ffaker/ffaker/pull/211
+[#212]: https://github.com/ffaker/ffaker/pull/212
+[#213]: https://github.com/ffaker/ffaker/pull/213
+[@44uk]: https://github.com/44uk
+[@AlexAvlonitis]: https://github.com/AlexAvlonitis
+[@AlexWayfer]: https://github.com/AlexWayfer
+[@CarlosMouraJR]: https://github.com/CarlosMouraJR
+[@GuillaumeOcculy]: https://github.com/GuillaumeOcculy
+[@IgorMarques]: https://github.com/IgorMarques
+[@Kutomore]: https://github.com/Kutomore
+[@MQuy]: https://github.com/MQuy
+[@Moafak]: https://github.com/Moafak
+[@Phanithism]: https://github.com/Phanithism
+[@Sephyros]: https://github.com/Sephyros
+[@SteveRedka]: https://github.com/SteveRedka
+[@Volosh1n]: https://github.com/Volosh1n
+[@YutaGoto]: https://github.com/YutaGoto
+[@aaronsama]: https://github.com/aaronsama
+[@abnersajr]: https://github.com/abnersajr
+[@adimircolen]: https://github.com/adimircolen
+[@alagu]: https://github.com/alagu
+[@alibby]: https://github.com/alibby
+[@anderscarling]: https://github.com/anderscarling
+[@andyklimczak]: https://github.com/andyklimczak
+[@ar2em1s]: https://github.com/ar2em1s
+[@artplan1]: https://github.com/artplan1
+[@az3vedo]: https://github.com/az3vedo
+[@brain64bit]: https://github.com/brain64bit
+[@brnrdog]: https://github.com/brnrdog
+[@brupla6126]: https://github.com/brupla6126
+[@ckyOL]: https://github.com/ckyOL
+[@danderozier]: https://github.com/danderozier
+[@dankimio]: https://github.com/dankimio
+[@delucas]: https://github.com/delucas
+[@dimroc]: https://github.com/dimroc
+[@dphurley]: https://github.com/dphurley
+[@eikes]: https://github.com/eikes
+[@falegk]: https://github.com/falegk
+[@firedev]: https://github.com/firedev
+[@gabrielcosta42]: https://github.com/gabrielcosta42
+[@gerard76]: https://github.com/gerard76
+[@gruz0]: https://github.com/gruz0
+[@hmaack]: https://github.com/hmaack
+[@hulous]: https://github.com/hulous
+[@iamarmanjon]: https://github.com/iamarmanjon
+[@iiwo]: https://github.com/iiwo
+[@j0al]: https://github.com/j0al
+[@jakubm]: https://github.com/jakubm
+[@jasonleonhard]: https://github.com/jasonleonhard
+[@joshdvir]: https://github.com/joshdvir
+[@josieljunior]: https://github.com/josieljunior
+[@jvanbaarsen]: https://github.com/jvanbaarsen
+[@kmayer]: https://github.com/kmayer
+[@kojino]: https://github.com/kojino
+[@ktroutner]: https://github.com/ktroutner
+[@lilsweetcaligula]: https://github.com/lilsweetcaligula
+[@lynnd335]: https://github.com/lynnd335
+[@makketagg]: https://github.com/makketagg
+[@marocchino]: https://github.com/marocchino
+[@max-si-m]: https://github.com/max-si-m
+[@mechos3d]: https://github.com/mechos3d
+[@metalelf0]: https://github.com/metalelf0
+[@miscelatore]: https://github.com/miscelatore
+[@mklemme]: https://github.com/mklemme
+[@mmrshk]: https://github.com/mmrshk
+[@nav16]: https://github.com/nav16
+[@ni3t]: https://github.com/ni3t
+[@nicholaskillin]: https://github.com/nicholaskillin
+[@nicolas-brousse]: https://github.com/nicolas-brousse
+[@nigelgomesot]: https://github.com/nigelgomesot
+[@pawelma]: https://github.com/pawelma
+[@petergoldstein]: https://github.com/petergoldstein
+[@philippevezina]: https://github.com/philippevezina
+[@pominx]: https://github.com/pominx
+[@professor]: https://github.com/professor
+[@renius]: https://github.com/renius
+[@rgcamus]: https://github.com/rgcamus
+[@robin]: https://github.com/robin
+[@rocknruby]: https://github.com/rocknruby
+[@rstacruz]: https://github.com/rstacruz
+[@rvisuvasam]: https://github.com/rvisuvasam
+[@simonhildebrandt]: https://github.com/simonhildebrandt
+[@slowjack2k]: https://github.com/slowjack2k
+[@spheric]: https://github.com/spheric
+[@steverovsky]: https://github.com/steverovsky
+[@stilist]: https://github.com/stilist
+[@tatey]: https://github.com/tatey
+[@technicalpickles]: https://github.com/technicalpickles
+[@thiago-henrique-leite]: https://github.com/thiago-henrique-leite
+[@thilonel]: https://github.com/thilonel
+[@thutterer]: https://github.com/thutterer
+[@timfanda35]: https://github.com/timfanda35
+[@tvarley]: https://github.com/tvarley
+[@ulzr]: https://github.com/ulzr
+[@vinhnglx]: https://github.com/vinhnglx
+[@waldyr]: https://github.com/waldyr
+[@walerian777]: https://github.com/walerian777
+[@xunker]: https://github.com/xunker
