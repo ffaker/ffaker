@@ -30,7 +30,7 @@ module FFaker
     letterify(numerify(masks))
   end
 
-  autoload_abbreviations = {
+  autoload_acronyms = {
     'ar' => 'AR',
     'au' => 'AU',
     'aws' => 'AWS',
@@ -83,7 +83,7 @@ module FFaker
     relative_file_path = Pathname.new(file_name).relative_path_from(directory).to_s.chomp('.rb')
     ## Don't consider files in sub-directories
     constant_name = relative_file_path.split('_').map do |part|
-      autoload_abbreviations.fetch(part) { part.capitalize }
+      autoload_acronyms.fetch(part) { part.capitalize }
     end.join
     autoload constant_name, file_name
   end
