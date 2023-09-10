@@ -36,8 +36,10 @@ Style/Documentation:
 Style/AsciiComments:
   Enabled: true
   Exclude:
-    - 'lib/ffaker/address_ja.rb'
-    - 'lib/ffaker/address_se.rb'
+    - '**/*_cs.rb'
+    - '**/*_ja.rb'
+    - '**/*_mx.rb'
+    - '**/*_se.rb'
 Style/OptionalBooleanParameter:
   Enabled: false
 Metrics/ModuleLength:

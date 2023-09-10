@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module FFaker
-  # rubocop:disable Style/AsciiComments
   module IdentificationMX
     extend ModuleUtils
     extend self
@@ -56,5 +55,4 @@ module FFaker
       ::Time.at(rand * ::Time.now.to_f).strftime('%y%m%d')
     end
   end
-  # rubocop:enable Style/AsciiComments
 end
