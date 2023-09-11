@@ -11,7 +11,18 @@ module FFaker
 
     SUPPORTED_FORMATS = %w[png jpg jpeg gif].freeze
 
-    def url(size: '300x300', format: 'png', bg_color: :random, text_color: :random, text: nil)
+    ## `*args` for old format support, it will be removed with deprecation
+    # rubocop:disable Metrics/ParameterLists
+    def url(*args, size: '300x300', format: 'png', bg_color: :random, text_color: :random, text: nil)
+      if args.any?
+        warn "Positional arguments for Image##{__method__} are deprecated. Please use keyword arguments."
+        size = args[0]
+        format = args[1] if args.size > 1
+        bg_color = args[2] if args.size > 2
+        text_color = args[3] if args.size > 3
+        text = args[4] if args.size > 4
+      end
+
       check_size!(size)
       check_format!(format)
 
@@ -21,8 +32,20 @@ module FFaker
 
       "https://dummyimage.com/#{size}/#{bg_color}/#{text_color}.#{format}?text=#{text}"
     end
+    # rubocop:enable Metrics/ParameterLists
 
-    def file(size: '300x300', format: 'png', bg_color: :random, text_color: :random, text: nil)
+    ## `*args` for old format support, it will be removed with deprecation
+    # rubocop:disable Metrics/ParameterLists
+    def file(*args, size: '300x300', format: 'png', bg_color: :random, text_color: :random, text: nil)
+      if args.any?
+        warn "Positional arguments for Image##{__method__} are deprecated. Please use keyword arguments."
+        size = args[0]
+        format = args[1] if args.size > 1
+        bg_color = args[2] if args.size > 2
+        text_color = args[3] if args.size > 3
+        text = args[4] if args.size > 4
+      end
+
       uri = URI.parse(url(size: size, format: format, bg_color: bg_color, text_color: text_color, text: text))
       file = Tempfile.new('ffaker_image')
       file.binmode
@@ -30,6 +53,7 @@ module FFaker
       file.close
       File.new(file.path)
     end
+    # rubocop:enable Metrics/ParameterLists
 
     private
 

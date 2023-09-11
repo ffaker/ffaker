@@ -39,6 +39,35 @@ class TestBook < Test::Unit::TestCase
                  @tester.cover)
   end
 
+  def test_cover_with_format
+    assert_match(%r{\Ahttps://robohash\.org/.+\.jpg\?size=300x300\z},
+                 @tester.cover(format: 'jpg'))
+  end
+
+  def test_cover_output_with_keyword_arguments
+    output = capture_output do
+      @tester.cover(format: 'jpg')
+    end
+
+    assert_equal ['', ''], output
+  end
+
+  def test_cover_with_slug_as_positional_argument
+    assert_match(%r{\Ahttps://robohash\.org/foobar\.png\?size=300x300\z},
+                 @tester.cover('foobar'))
+  end
+
+  def test_cover_output_with_positional_arguments
+    output = capture_output do
+      @tester.cover('foobar')
+    end
+
+    assert_equal(
+      ['', "Positional arguments for Book#cover are deprecated. Please use keyword arguments.\n"],
+      output
+    )
+  end
+
   def test_orly_cover
     assert_match(%r{\Ahttps://orly-appstore\.herokuapp\.com/generate},
                  @tester.orly_cover)

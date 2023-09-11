@@ -18,6 +18,29 @@ class TestAvatar < Test::Unit::TestCase
                  @tester.image)
   end
 
+  def test_image_output_with_keyword_arguments
+    output = capture_output do
+      @tester.image(format: 'jpg')
+    end
+
+    assert_equal ['', ''], output
+  end
+
+  def test_image_with_slug_as_positional_argument
+    assert_equal("#{ROBOHASH}/foobar.png?size=300x300", @tester.image('foobar'))
+  end
+
+  def test_image_output_with_positional_arguments
+    output = capture_output do
+      @tester.image('foobar')
+    end
+
+    assert_equal(
+      ['', "Positional arguments for Avatar#image are deprecated. Please use keyword arguments.\n"],
+      output
+    )
+  end
+
   def test_avatar_with_param
     assert_equal("#{ROBOHASH}/faker.png?size=300x300", @tester.image(slug: 'faker'))
   end

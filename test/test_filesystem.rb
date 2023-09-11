@@ -30,7 +30,33 @@ class TestFakerFilesystem < Test::Unit::TestCase
   end
 
   def test_file_name
-    assert_match %r{\A(?:[a-z_-]+[\\/])+[a-z_-]+\.\w{2,4}\z},
-                 @tester.file_name
+    assert_match %r{\A(?:[a-z_-]+[\\/])+[a-z_-]+\.\w{2,4}\z}, @tester.file_name
+  end
+
+  def test_file_name_with_extension
+    assert_match %r{\A(?:[a-z_-]+[\\/])+[a-z_-]+\.rb\z}, @tester.file_name(ext: 'rb')
+  end
+
+  def test_file_name_output_with_keyword_arguments
+    output = capture_output do
+      @tester.file_name(ext: 'rb')
+    end
+
+    assert_equal ['', ''], output
+  end
+
+  def test_file_name_with_directory_as_positional_argument
+    assert_match %r{\Asome_directory/[a-z_-]+\.\w{2,4}\z}, @tester.file_name('some_directory')
+  end
+
+  def test_file_name_output_with_positional_arguments
+    output = capture_output do
+      @tester.file_name('some_directory')
+    end
+
+    assert_equal(
+      ['', "Positional arguments for Filesystem#file_name are deprecated. Please use keyword arguments.\n"],
+      output
+    )
   end
 end
