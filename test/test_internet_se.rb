@@ -25,7 +25,9 @@ class TestFakerInternetSE < Test::Unit::TestCase
   end
 
   def test_disposable_email
-    assert @tester.disposable_email.match(/.+@(mailinator\.com|suremail\.info|spamherelots\.com|binkmail\.com|safetymail\.info)/)
+    assert @tester.disposable_email.match(
+      /.+@(mailinator\.com|suremail\.info|spamherelots\.com|binkmail\.com|safetymail\.info)/
+    )
   end
 
   def test_free_email

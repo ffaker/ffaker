@@ -27,7 +27,7 @@ class TestIdentificationEC < Test::Unit::TestCase
       end
     end
     mod = sum % 10
-    mod = 10 - mod if mod > 0
+    mod = 10 - mod if mod.positive?
     assert(ci[9].to_i == mod)
   end
 end

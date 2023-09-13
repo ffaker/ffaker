@@ -1,4 +1,4 @@
-name: Test
+name: RuboCop
 on:
   pull_request:
   push:
@@ -7,17 +7,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby:
-          - '3.0'
-          - '3.1'
-          - '3.2'
-    name: Ruby ${{ matrix.ruby }} test
+    name: RuboCop lint
     steps:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ matrix.ruby }}
+          ruby-version: 'ruby'
           bundler-cache: true # 'bundle install' and cache
-      - run: bundle exec rake test
+      - run: bundle exec rake rubocop

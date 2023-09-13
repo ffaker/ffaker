@@ -14,7 +14,7 @@ module DeterministicHelper
   # the internal Random Number Generator state and compared the results of
   # each execution to make sure they are the same.
   def assert_deterministic(options = {}, &block)
-    raise ArgumentError, 'Must pass a block' unless block_given?
+    raise ArgumentError, 'Must pass a block' unless block
 
     options = { message: 'Results are not repeatable' }.merge(options)
 

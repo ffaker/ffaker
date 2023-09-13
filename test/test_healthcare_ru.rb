@@ -5,7 +5,7 @@ require_relative 'helper'
 class TestHealthcareRU < Test::Unit::TestCase
   include DeterministicHelper
 
-  SPECIALIZATION_REGEX = /\A[А-Яа-я\ ()\-]+\z/
+  SPECIALIZATION_REGEX = /\A[А-Яа-я\ ()-]+\z/
 
   assert_methods_are_deterministic(FFaker::HealthcareRU, :doctor_specialization)
 

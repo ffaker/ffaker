@@ -37,7 +37,7 @@ module FFaker
     end
 
     def maybe_adj_or_adv
-      fetch_sample(ADJ_AND_ADV) + ' ' if rand(0..1) == 1
+      "#{fetch_sample(ADJ_AND_ADV)} " if rand(0..1) == 1
     end
 
     def simple_title

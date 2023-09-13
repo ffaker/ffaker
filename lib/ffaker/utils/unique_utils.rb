@@ -16,7 +16,7 @@ module FFaker
       end
 
       def clear
-        instances.values.each(&:clear)
+        instances.each_value(&:clear)
         instances.clear
       end
     end
@@ -43,6 +43,10 @@ module FFaker
       end
 
       raise RetryLimitExceeded, "Retry limit exceeded for #{name}"
+    end
+
+    def respond_to_missing?(name, *args)
+      @generator.respond_to?(name, *args) || super
     end
 
     def previous_results

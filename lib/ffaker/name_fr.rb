@@ -25,9 +25,10 @@ module FFaker
 
     def name
       case rand(0..9)
-      when 7 then "#{first_name} #{prefix} #{last_name}"
-      when 5 then "#{first_name} #{prefix} #{last_name}"
-      else        "#{first_name} #{last_name}"
+      when 5, 7
+        "#{first_name} #{prefix} #{last_name}"
+      else
+        "#{first_name} #{last_name}"
       end
     end
   end

@@ -88,7 +88,7 @@
  * [FFaker::IdentificationESCO](#ffakeridentificationesco)
  * [FFaker::IdentificationIN](#ffakeridentificationin)
  * [FFaker::IdentificationIT](#ffakeridentificationit)
- * [FFaker::IdentificationKr](#ffakeridentificationkr)
+ * [FFaker::IdentificationKR](#ffakeridentificationkr)
  * [FFaker::IdentificationMX](#ffakeridentificationmx)
  * [FFaker::IdentificationPL](#ffakeridentificationpl)
  * [FFaker::IdentificationTW](#ffakeridentificationtw)
@@ -1385,7 +1385,7 @@
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `ssn` | 11830877014613103430, 45436375172610549922, 29278264986997805738 |
 
-## FFaker::IdentificationKr
+## FFaker::IdentificationKR
 
 | Method | Example |
 | ------ | ------- |

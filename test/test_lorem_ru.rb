@@ -7,7 +7,7 @@ class TestLoremRU < Test::Unit::TestCase
 
   SENTENCE_MATCHER = /\A[а-яА-ЯёЁ\-\s.!?,]+\z/
   WORDS_MATCHER    = /\A[А-Яа-яёЁ\-\s]+\z/
-  WORD_MATCHER     = /\A[А-Яа-яёЁ\-]+\z/
+  WORD_MATCHER     = /\A[А-Яа-яёЁ-]+\z/
 
   assert_methods_are_deterministic(
     FFaker::LoremRU,

@@ -63,14 +63,14 @@ module FFaker
     end
 
     def pesel_checksum(date, serial_number)
-      pesel_digits = "#{date}#{serial_number}".split('').map(&:to_i)
+      pesel_digits = "#{date}#{serial_number}".chars.map(&:to_i)
       a, b, c, d, e, f, g, h, i, j = pesel_digits
       ((a * 9) + (b * 7) + (c * 3) + d + (e * 9) + (f * 7) + (g * 3) + h + (i * 9) + (j * 7)) % 10
     end
 
     def identity_card_checksum(letter_part, number_part)
       a, b, c = letter_part.codepoints.map { |codepoints| codepoints - 55 }
-      d, e, f, g, h = number_part.split('').map(&:to_i)
+      d, e, f, g, h = number_part.chars.map(&:to_i)
       ((a * 7) + (b * 3) + c + (7 * d) + (3 * e) + f + (7 * g) + (3 * h)) % 10
     end
   end

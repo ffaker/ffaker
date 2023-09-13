@@ -110,7 +110,7 @@ module FFaker
     end
 
     def check_country_existence(country_code)
-      return if COUNTRIES.keys.include?(country_code.upcase)
+      return if COUNTRIES.key?(country_code.upcase)
 
       raise ArgumentError, "Unexpected country code: '#{country_code}'"
     end

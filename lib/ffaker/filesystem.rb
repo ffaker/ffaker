@@ -17,8 +17,18 @@ module FFaker
       Lorem.words.join(directory_separator)
     end
 
-    def file_name(dir = directory, name = Lorem.word.downcase,
-                  ext = extension, directory_separator = File::SEPARATOR)
+    def file_name(
+      *args,
+      dir: directory, name: Lorem.word.downcase, ext: extension, directory_separator: File::SEPARATOR
+    )
+      if args.any?
+        warn "Positional arguments for Filesystem##{__method__} are deprecated. Please use keyword arguments."
+        dir = args[0]
+        name = args[1] if args.size > 1
+        ext = args[2] if args.size > 2
+        directory_separator = args[3] if args.size > 3
+      end
+
       "#{dir}#{directory_separator}#{name}.#{ext}"
     end
   end

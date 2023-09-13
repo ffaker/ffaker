@@ -11,8 +11,8 @@ ICONS = {
   warning: '❗'
 }.freeze
 
-UTILS_MODULES = %i[ArrayUtils ModuleUtils RandomUtils Random]
-UTILS_METHODS = %i[k underscore fetch_sample rand shuffle unique luhn_check]
+UTILS_MODULES = %i[ArrayUtils ModuleUtils RandomUtils Random].freeze
+UTILS_METHODS = %i[k underscore fetch_sample rand shuffle unique luhn_check].freeze
 
 # Get a list of sections
 def faker_modules
@@ -36,12 +36,14 @@ end
 # Catch deprecation warnings.
 # This `#warn` overrides Kernel#warn
 def warn(msg)
-  $warnings << msg if $warnings
+  return unless Kernel.instance_variable_get(:@ffaker_warnings)
+
+  Kernel.instance_variable_set(:@ffaker_warnings, Kernel.instance_variable_get(:@ffaker_warnings) << msg)
 end
 
 def catch_warnings
-  $warnings = []
-  [yield, $warnings]
+  Kernel.instance_variable_set(:@ffaker_warnings, [])
+  [yield, Kernel.instance_variable_get(:@ffaker_warnings)]
 end
 
 def escape(str)
@@ -70,11 +72,7 @@ sections = faker_modules.map do |mod|
         examples, warnings = catch_warnings do
           Array.new(3) { mod.unique.send meth }
         end
-        right = if warnings.any?
-                  "#{ICONS[:warning]} *#{warnings.first}*"
-                else
-                  (escape examples.join(', ')).to_s
-                end
+        right = warnings.any? ? "#{ICONS[:warning]} *#{warnings.first}*" : (escape examples.join(', ')).to_s
       rescue StandardError => e
         right = "#{ICONS[:error]} #{e.class}: #{e.message}"
       end

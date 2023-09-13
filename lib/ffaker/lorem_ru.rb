@@ -50,7 +50,7 @@ module FFaker
       if CAPITAL_CHARS.include?(string[0])
         string
       else
-        CAPITAL_CHARS[CHARS.index(string[0])] + string[1..-1]
+        CAPITAL_CHARS[CHARS.index(string[0])] + string[1..]
       end
     end
   end

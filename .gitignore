@@ -17,4 +17,3 @@ Gemfile.lock
 .ruby-gemset
 .ruby-version
 .rvmrc
-.rubocop.yml

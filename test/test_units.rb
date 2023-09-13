@@ -13,25 +13,25 @@ class TestUnits < Test::Unit::TestCase
 
   def setup
     @tester = FFaker::Unit
-    @time_units = @tester::TIME_UNITS.map { |u| OpenStruct.new u }
-    @temperature_units = @tester::TEMPERATURE_UNITS.map { |u| OpenStruct.new u }
+    @time_units = @tester::TIME_UNITS
+    @temperature_units = @tester::TEMPERATURE_UNITS
   end
 
   def test_time_name
-    assert_include @time_units.map(&:name), @tester.time_name
+    assert_include @time_units.map { |unit| unit[:name] }, @tester.time_name
   end
 
   def test_time_abbr
-    assert_include @time_units.map(&:abbreviation), @tester.time_abbr
+    assert_include @time_units.map { |unit| unit[:abbreviation] }, @tester.time_abbr
   end
 
   def test_temperature_name
-    assert_include @temperature_units.map(&:name), @tester.temperature_name
+    assert_include @temperature_units.map { |unit| unit[:name] }, @tester.temperature_name
   end
 
   def test_temperature_abbr
     assert_include \
-      @temperature_units.map(&:abbreviation),
+      @temperature_units.map { |unit| unit[:abbreviation] },
       @tester.temperature_abbr
   end
 end

@@ -14,11 +14,9 @@ module FFaker
     POSTAL_CODE_FORMATS = ['#####', '97###', '2A###', '2B###'].freeze
 
     def street_address
-      FFaker.numerify(fetch_sample(NUM)) +
-        fetch_sample(MOD) +
-        fetch_sample(SEP) +
-        fetch_sample(TYPE) + ' ' +
-        FFaker::NameFR.name
+      <<~TEXT.chomp
+        #{FFaker.numerify(fetch_sample(NUM))}#{fetch_sample(MOD)}#{fetch_sample(SEP)}#{fetch_sample(TYPE)} #{FFaker::NameFR.name}
+      TEXT
     end
 
     def postal_code

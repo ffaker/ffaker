@@ -24,7 +24,7 @@ class TestPhoneNumberNL < Test::Unit::TestCase
 
   def test_phone_number
     10.times do
-      assert_match(/^0([\s\-]*\d){9}$/, @tester.phone_number)
+      assert_match(/^0([\s-]*\d){9}$/, @tester.phone_number)
     end
   end
 

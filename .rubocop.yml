@@ -1,3 +1,15 @@
+require:
+  - rubocop-performance
+  - rubocop-rake
+
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
+
+inherit_from:
+  - ./.rubocop_todo.yml
+
 AllCops:
   TargetRubyVersion: 3.0
   NewCops: enable
@@ -24,13 +36,23 @@ Style/Documentation:
 Style/AsciiComments:
   Enabled: true
   Exclude:
-    - 'lib/ffaker/address_ja.rb'
-    - 'lib/ffaker/address_se.rb'
+    - '**/*_cs.rb'
+    - '**/*_ja.rb'
+    - '**/*_mx.rb'
+    - '**/*_se.rb'
 Style/OptionalBooleanParameter:
   Enabled: false
 Metrics/ModuleLength:
   Enabled: true
+  Max: 200
+Metrics/ClassLength:
   Exclude:
-    - 'lib/ffaker/bank.rb'
+    - 'test/**/*.rb'
+Metrics/MethodLength:
+  AllowedPatterns:
+    - 'test_'
+Metrics/AbcSize:
+  AllowedPatterns:
+    - 'test_'
 Style/RedundantArgument:
   Enabled: false

@@ -29,16 +29,12 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`
             .split("\n")
             .sort
-            .reject { |file| file =~ /^\./ }
-            .reject { |file| file =~ /^(rdoc|pkg)/ }
+            .grep_v(/^\./)
+            .grep_v(/^(rdoc|pkg)/)
 
   s.metadata = {
     'changelog_uri' => 'https://github.com/ffaker/ffaker/blob/main/Changelog.md',
     'documentation_uri' => 'https://github.com/ffaker/ffaker/blob/main/REFERENCE.md',
     'rubygems_mfa_required' => 'true'
   }
-
-  s.add_development_dependency 'rake', '~> 13.0'
-  s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'test-unit'
 end

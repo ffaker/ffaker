@@ -30,8 +30,16 @@ module FFaker
       FFaker::Lorem.paragraph(sentence_count)
     end
 
-    def cover(slug = nil, size = '300x300', format = 'png', bgset = nil)
-      FFaker::Avatar.image(slug, size, format, bgset)
+    def cover(*args, slug: nil, size: '300x300', format: 'png', bgset: nil)
+      if args.any?
+        warn "Positional arguments for Book##{__method__} are deprecated. Please use keyword arguments."
+        slug = args[0]
+        size = args[1] if args.size > 1
+        format = args[2] if args.size > 2
+        bgset = args[3] if args.size > 3
+      end
+
+      FFaker::Avatar.image(slug: slug, size: size, format: format, bgset: bgset)
     end
 
     def orly_cover(name = title, book_author = author, top_text = genre)

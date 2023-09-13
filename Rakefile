@@ -23,6 +23,10 @@ module Test
   end
 end
 
+require 'rubocop/rake_task'
+
+RuboCop::RakeTask.new
+
 #############################################################################
 #
 # Helper functions
@@ -80,14 +84,9 @@ rescue LoadError
   end
 end
 
-#############################################################################
-#
-# Packaging tasks
-#
-#############################################################################
-
+desc 'Packaging tasks'
 task release: :build do
-  unless `git branch` =~ /^\* main$/
+  unless `git branch`.match?(/^\* main$/)
     puts 'You must be on the main branch to release!'
     exit!
   end
@@ -103,6 +102,7 @@ task build: %i[validate reference] do
   sh "gem build #{gemspec_file} --output=pkg/#{gem_file}"
 end
 
+desc 'Validate library files'
 task :validate do
   libfiles = Dir['lib/*'] - ["lib/#{name}.rb", "lib/#{name}"]
   unless libfiles.empty?

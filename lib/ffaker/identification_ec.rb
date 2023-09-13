@@ -20,7 +20,7 @@ module FFaker
 
     def last_digit(digits)
       mod = digits_sum(digits) % 10
-      10 - mod if mod > 0
+      10 - mod if mod.positive?
     end
 
     def digits_sum(digits)
