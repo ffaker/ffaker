@@ -27,5 +27,14 @@ module FFaker
 
       between(from, to)
     end
+
+    # Random birthday date (maximum age between 18 and 65)
+    # Keyword arguments: min_age, max_age
+    def birthday(min_age: 18, max_age: 65)
+      from = ::Date.today.prev_year(max_age + 1).next_day
+      to = ::Date.today.prev_year(min_age)
+
+      between(from, to)
+    end
   end
 end

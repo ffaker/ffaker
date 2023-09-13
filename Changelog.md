@@ -1,6 +1,7 @@
 ## development
 
   - Add your change HERE
+  - Adds FFaker::Date.birthday [@professor]
   - Adds FFaker::Crypto.sha256 [@professor]
   - Update README [@professor]
   - Adds FFaker::Number.between [@professor]
