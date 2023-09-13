@@ -3,6 +3,7 @@
   - Add your change HERE
   - Resolve a lot of RuboCop offenses [@AlexWayfer]
   - Change `Image.url`, `Image.file`, `Book.cover` and `Avatar.image` arguments to keywords [@AlexWayfer]
+  - Adds FFaker::Date.birthday [@professor]
   - Adds FFaker::Crypto.sha256 [@professor]
   - Update README [@professor]
   - Adds FFaker::Number.between [@professor]

@@ -9,7 +9,7 @@ class TestFakerDate < Test::Unit::TestCase
     @tester = FFaker::Date
   end
 
-  assert_methods_are_deterministic(FFaker::Date, :backward, :forward)
+  assert_methods_are_deterministic(FFaker::Date, :backward, :forward, :birthday)
 
   def test_between
     from = Date.new(2015, 1, 1)
@@ -33,5 +33,13 @@ class TestFakerDate < Test::Unit::TestCase
     assert_random_between(today + 1..today + 365) { @tester.forward }
     assert_random_between(today + 1..today + 30) { @tester.forward(30) }
     assert_instance_of Date, @tester.forward
+  end
+
+  def test_birthday
+    today = Date.today
+
+    assert_random_between(today.prev_year(65).next_day..today.prev_year(18)) { @tester.birthday }
+    assert_random_between(today.prev_year(43).next_day..today.prev_year(42)) { @tester.birthday(min_age: 42, max_age: 42) }
+    assert_instance_of Date, @tester.birthday
   end
 end
