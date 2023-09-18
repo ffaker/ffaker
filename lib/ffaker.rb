@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'ffaker/version'
+require 'pathname'
 
 module FFaker
   require_relative 'ffaker/utils/array_utils'

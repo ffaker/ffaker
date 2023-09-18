@@ -11,7 +11,7 @@ ICONS = {
   warning: '❗'
 }.freeze
 
-UTILS_MODULES = %i[ArrayUtils ModuleUtils RandomUtils Random].freeze
+UTILS_MODULES = %i[ArrayUtils ModuleUtils RandomUtils Random Version].freeze
 UTILS_METHODS = %i[k underscore fetch_sample rand shuffle unique luhn_check].freeze
 
 # Get a list of sections
