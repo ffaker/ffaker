@@ -38,6 +38,7 @@
  * [FFaker::Avatar](#ffakeravatar)
  * [FFaker::BaconIpsum](#ffakerbaconipsum)
  * [FFaker::Bank](#ffakerbank)
+ * [FFaker::BankUS](#ffakerbankus)
  * [FFaker::Book](#ffakerbook)
  * [FFaker::Boolean](#ffakerboolean)
  * [FFaker::CheesyLingo](#ffakercheesylingo)
@@ -244,7 +245,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Darwin, Australia/Adelaide, Australia/Perth |
+| `time_zone` | Australia/Darwin, Australia/Hobart, Australia/Adelaide |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -932,17 +933,24 @@
 | `card_type` | mastercard, maestro, solo |
 | `iban` | DO50GCBH29467231689551372717, LU338569240126150859, BE89929107166643 |
 
+## FFaker::BankUS
+
+| Method | Example |
+| ------ | ------- |
+| `account_number` | 081401370746466, 2347910978238, 9093807601 |
+| `routing_number` | 948949265, 819965323, 762542961 |
+
 ## FFaker::Book
 
 | Method | Example |
 | ------ | ------- |
-| `author` | Dolores Emard, Felipe Schulist, Minh Mitchell |
-| `cover` | https://robohash.org/etdebitiseveniet.png?size=300x300, https://robohash.org/repudiandaenatusdelectus.png?size=300x300, https://robohash.org/optiovitaeneque.png?size=300x300 |
-| `description` | Laboriosam nisi voluptatibus molestias architecto labore neque. Tempora error sapiente quibusdam occaecati ipsam. Veniam praesentium distinctio beatae reiciendis quod amet incidunt. Quidem animi accusantium ullam quo molestiae ea., Quibusdam autem natus accusantium distinctio quae unde maxime provident. Pariatur impedit ex minus earum cum. Distinctio sed sint nisi omnis soluta cumque nostrum. Provident occaecati accusantium deleniti dolorem illo in ut., Cupiditate unde sit odio ipsam. Doloremque repudiandae voluptatibus non aliquam quae. Corrupti quod in odio similique animi inventore. Atque officiis sint ratione placeat. |
-| `genre` | Pneumatology, Sutra, Adventure novel |
-| `isbn` | 17567012137, 3815530005, 5351236872 |
-| `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=Legend+of+Blonde+Rain&amp;top_text=Adventure+novel&amp;author=Billye+Oga&amp;image_code=28&amp;theme=12, https://orly-appstore.herokuapp.com/generate?title=Death+Pickpocket&amp;top_text=Splatterpunk&amp;author=Glenna+Lesch&amp;image_code=16&amp;theme=1, https://orly-appstore.herokuapp.com/generate?title=Invasion+of+the+Bloody+Wizard&amp;top_text=Lament&amp;author=Tona+Schmidt&amp;image_code=39&amp;theme=14 |
-| `title` | I am Action Ninja, Blue Mutant, Curse of the Danger Wizard |
+| `author` | Sheila Mraz, Cira Cummerata, Lesli Windler |
+| `cover` | https://robohash.org/cupiditateundesit.png?size=300x300, https://robohash.org/iustonemodoloremque.png?size=300x300, https://robohash.org/voluptatesreiciendisvelit.png?size=300x300 |
+| `description` | Ipsa voluptatum quae molestias facere esse ducimus deserunt. Inventore molestiae quasi quas saepe provident nesciunt assumenda. Veniam quisquam alias ab adipisci cupiditate tempora commodi. Dicta debitis aperiam earum officia., Cumque quo aliquam alias vero mollitia. Tenetur ab unde error reprehenderit sint. Velit veritatis harum tempora amet eius tenetur illo., Ad officiis facilis numquam autem deleniti impedit minima. Sed quas quod nulla velit odio esse in ut. Voluptas ut dignissimos perspiciatis unde voluptates quod nemo. Quasi quo occaecati possimus nostrum assumenda voluptas odit. |
+| `genre` | Blessing, Covenant, Children's literature |
+| `isbn` | 14465754568, 16855532330, 15054367769 |
+| `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=Journey+of+the+Flying+Cousins&amp;top_text=Semi-autobiographical+novel&amp;author=Bernardina+Terry&amp;image_code=36&amp;theme=5, https://orly-appstore.herokuapp.com/generate?title=Rise+of+the+Danger+Pickpocket&amp;top_text=Prophecy&amp;author=Winona+Stanton&amp;image_code=20&amp;theme=1, https://orly-appstore.herokuapp.com/generate?title=Return+of+the+Death+Thief&amp;top_text=Women%27s+erotica&amp;author=Madonna+Kling&amp;image_code=26&amp;theme=8 |
+| `title` | Death Thief, Blonde Wolves, Electric Monster |
 
 ## FFaker::Boolean
 
@@ -956,101 +964,101 @@
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | They were so cheesed off the whiter and fresher the cheese, the crisper and fruitier the wine should be the early bird may get the worm, but the second mouse gets the cheese in the trap in an artisan farmerhouse with Dutch courage 10 grilled cheese sandwiches you should try immediately with but poets have been mysteriously silent on the subject of cheese cheeseparing but don't you agree? It is no use crying over spilled milk until the wheels form a white coat of penicillium moulds., Raw milk is unpasteurized until the wheels form a white coat of penicillium moulds separate the curds from the wey when the rennet is added, curds are formed he old cheese dairy buildings, situated on the historic site the slice of cheese is placed on top of the meat patty a good alternative to cheesecloth double dutch or until the wheels form a white coat of penicillium moulds 10 grilled cheese sandwiches you should try immediately with., A good alternative to cheesecloth soft ripening cheese for is like chalk and cheese cut to size team cheesy says hi blend the flour, cheese and Sheridans Cheesemongers harmful secondary metabolites with Dutch courage soft ripening cheese for. |
-| `sentence` | Of cheesy business lingothe milky way ofdouble dutch or., But poets have been mysteriously silent on the subject of cheesecut to sizetrying too hard, unsubtle, and inauthentic., With dutch couragethey were so cheesed offthe sticky nature of processed cheese can make it difficult to slice, but. |
-| `title` | Nutty Goats, Dutch Cows, Dutch Alpine |
-| `word` | grated, toast!, sticky |
-| `words` | sharp, dairy, springy, DOC, briney, springy, cheesed, melting, DOC, stinky, cheesed, smoked, affinage, blue, Gouda |
+| `paragraph` | Taste and texture in all colours 10 grilled cheese sandwiches you should try immediately with blessed are the cheesemakers soft ripening cheese for but round cheeses are to be cut in wedges, like a cake cut to size harmful secondary metabolites blue fungi in cream cut to size garlic cheese biscuits., Cut the cheese until the wheels form a white coat of penicillium moulds in an artisan farmerhouse he old cheese dairy buildings, situated on the historic site until the wheels form a white coat of penicillium moulds bergkäse from the Alps a good alternative to cheesecloth blue fungi in cream double dutch or they can also age quite well in ripening cellars where., 10 grilled cheese sandwiches you should try immediately with blessed are the cheesemakers 10 grilled cheese sandwiches you should try immediately with - tongue in cheek coagulation of the milk protein casein separate the curds from the wey blue fungi in cream the whiter and fresher the cheese, the crisper and fruitier the wine should be of the Friesian herd but round cheeses are to be cut in wedges, like a cake. |
+| `sentence` | Trying too hard, unsubtle, and inauthenticdouble dutch ortaste and texture in all colours., Harmful secondary metabolites10 grilled cheese sandwiches you should try immediately withthe slice of cheese is placed on top of the meat patty., Harmful secondary metabolitescut to sizeharmful secondary metabolites. |
+| `title` | Smokey Dairy, Fat Brie, Soft Goats |
+| `word` | cheese, stinky, salty |
+| `words` | fat, cream, springy, stinky, cottage cheese, salty, cheesed, milk, smoked, sticky, Emmentaler, cream, elastic, cheesed, buttery |
 
 ## FFaker::Code
 
 | Method | Example |
 | ------ | ------- |
-| `ean` | 7743714798124, 2035524243716, 3200689090157 |
-| `npi` | 2580761841, 7279874581, 3530679216 |
+| `ean` | 3744282576415, 5672190346500, 1386789547820 |
+| `npi` | 2399028606, 2260870904, 7967258832 |
 
 ## FFaker::Color
 
 | Method | Example |
 | ------ | ------- |
-| `hex_code` | 9fde89, acd7fb, 39129b |
-| `hsl_array` | 230, 64%, 11%, 342, 96%, 59%, 39, 65%, 43% |
-| `hsl_list` | 32,90%,65%, 110,75%,19%, 13,27%,78% |
-| `hsla_array` | 356, 3%, 55%, 0.93, 279, 77%, 41%, 0.54, 299, 46%, 66%, 0.12 |
-| `hsla_list` | 77,95%,83%,0.47, 1,81%,46%,0.22, 27,81%,99%,0.34 |
-| `name` | lightcyan, darksalmon, beige |
-| `rgb_array` | 251, 188, 246, 20, 186, 139, 40, 219, 145 |
-| `rgb_list` | 197,219,248, 229,84,173, 136,120,230 |
-| `rgba_array` | 107, 183, 138, 0.18, 168, 204, 63, 0.9, 240, 219, 108, 0.78 |
-| `rgba_list` | 30,140,178,0.66, 81,8,44,0.27, 195,20,213,0.02 |
+| `hex_code` | f838f4, 4464d7, 7f8e23 |
+| `hsl_array` | 213, 98%, 70%, 310, 5%, 88%, 169, 63%, 9% |
+| `hsl_list` | 152,1%,68%, 55,3%,89%, 241,51%,63% |
+| `hsla_array` | 134, 5%, 86%, 0.29, 108, 63%, 73%, 0.95, 152, 48%, 81%, 0.65 |
+| `hsla_list` | 58,14%,11%,0.93, 35,57%,2%,0.5, 272,40%,69%,0.4 |
+| `name` | darkorange, green, crimson |
+| `rgb_array` | 197, 252, 96, 128, 129, 196, 154, 195, 254 |
+| `rgb_list` | 141,19,250, 232,127,33, 247,31,226 |
+| `rgba_array` | 212, 108, 209, 0.8, 189, 81, 185, 0.0, 166, 188, 8, 0.02 |
+| `rgba_list` | 163,238,97,0.93, 10,99,13,0.2, 141,89,40,0.79 |
 
 ## FFaker::ColorPL
 
 | Method | Example |
 | ------ | ------- |
-| `name` | lawendowy, atramentowy, porcelanowy |
+| `name` | szafranowy, woskowy, jaśminowy |
 
 ## FFaker::ColorUA
 
 | Method | Example |
 | ------ | ------- |
-| `name` | ніжно-рожевий, яскраво-бірюзовий, блаватний |
+| `name` | пшеничний, темно-кораловий, сапфіровий |
 
 ## FFaker::Company
 
 | Method | Example |
 | ------ | ------- |
-| `bs` | architect cutting-edge markets, maximize impactful platforms, evolve granular eyeballs |
-| `catch_phrase` | Ergonomic homogeneous productivity, Synergized discrete knowledge base, Customizable background help-desk |
-| `name` | Simonis, Williamson and Watsica, Abshire-Spinka, Kuhlman Inc |
-| `position` | Finance Manager, General Corporate Manager, Finance President |
-| `suffix` | and Sons, Inc, LLC |
+| `bs` | utilize robust architectures, transition clicks-and-mortar applications, reinvent e-business e-tailers |
+| `catch_phrase` | Enterprise-wide content-based archive, Multi-layered actuating info-mediaries, Programmable heuristic capability |
+| `name` | Kuphal-Kemmer, Grady-Ortiz, Moen-Jenkins |
+| `position` | Sales Consultant, Division Secretary, Associate Division Manager |
+| `suffix` | Group, LLC, Inc |
 
 ## FFaker::CompanyCN
 
 | Method | Example |
 | ------ | ------- |
-| `name` | 屏宜科技公司, 白铭电器有限公司, 茜彦食品有限公司 |
+| `name` | 容辰网络有限公司, 英刚食品公司, 宣华咨询有限公司 |
 | `suffix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for suffix |
-| `type` | 食品, 咨询, 电器 |
+| `type` | 网络, 食品, 咨询 |
 
 ## FFaker::CompanyFR
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Millet-Pinto, Normand-Meyer, Dumas, Labbe and Lebrun |
-| `siren` | 495096190, 050986290, 426425440 |
-| `siret` | 57373882000800, 36266735000080, 44253345000330 |
-| `suffix` | et fils, SARL, Groupe |
+| `name` | Pascal, Vasseur and Mendes, Rossi et fils, Guillou-Collet |
+| `siren` | 739836110, 690890420, 300789380 |
+| `siret` | 06746846000000, 70493562000500, 45666261000350 |
+| `suffix` | SA, Groupe, SARL |
 
 ## FFaker::CompanyIT
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Messineo e Martinez Architetti, Laboratorio Messina, Studio Legale Sabatino |
-| `partita_iva` | 59739830681, 61169080217, 90423000646 |
-| `prefix` | Studio Legale, Studio Tecnico, Laboratorio |
-| `suffix` | Avvocati, S.p.a., Architetti |
+| `name` | Studio Tecnico Ferrero, Gattari e Lonzi s.n.c., Micchichè s.n.c. |
+| `partita_iva` | 78602020964, 58179990039, 47396820863 |
+| `prefix` | Studio Tecnico, Laboratorio, Studio Legale |
+| `suffix` | Ingegneri, S.p.a., s.n.c. |
 
 ## FFaker::CompanyJA
 
 | Method | Example |
 | ------ | ------- |
-| `name` | 垣石銀行, 対馬株式会社, 有限会社上間 |
-| `position` | 契約社員, 部長, 課長 |
+| `name` | 株式会社垣石, 株式会社屋良, 株式会社岡本 |
+| `position` | 課長, 部長, 会長 |
 
 ## FFaker::CompanySE
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Bergnaum-Bode Ab, Ankunding-Jaskolski AB, Hessel Ab |
-| `suffix` | Aktiebolag, Ab, AB |
+| `name` | Kuphal Ab, Goyette-Goldner, Roberts-Wiegand Aktiebolag |
+| `suffix` | Aktiebolag, AB, Ab |
 
 ## FFaker::Conference
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Datacentre Investment Forum, Dealing With Harassment in the Workplace - HR Webinar By ComplianceOnline, Health 2.0 Europe 2012 |
+| `name` | 18th Annual Sloan Consortium International Conference on Online Learning, 2nd Annual Concentrated Photovolatic Summit USA (CPV USA 2010), Reserve Estimation for Unconventional Resources 2012 |
 
 ## FFaker::CoursesFR
 
@@ -1061,124 +1069,124 @@
 
 | Method | Example |
 | ------ | ------- |
-| `sha256` | 8149ab588d28f3294b856abde3dcdcefdc98fb7f5edd1c5965063ab1d3031170, 7aeb626cde41d33e304fe932e1c6f69a5fd9a65280a176c26debe0209d9a309e, 6a1c097b8e292cfb1cb85855c1f619d49a421c693796d3bdc0f02f6ec3824dfd |
+| `sha256` | a7b2c191414ef8ae2c7cc9e4cdb04ae9fd6f04118843adb8faa4376f7dd96f91, 8de656a9baec30a2c424161cf3e0f0dc502937038e45c3040b4e0c8422eefd5d, e20e9b6a35f329f57f65f4a10db3aa17a36beeee0181c0367ff5403decc4727f |
 
 ## FFaker::Currency
 
 | Method | Example |
 | ------ | ------- |
-| `code` | BSD, VUV, IQD |
-| `name` | Yen, Philippine Peso, Lek |
-| `symbol` | ₺, €, ¥ |
+| `code` | AWG, CDF, ZAR |
+| `name` | Tugrik, Latvian Lats, Lempira |
+| `symbol` | ₺, ฿, ¢ |
 
 ## FFaker::Date
 
 | Method | Example |
 | ------ | ------- |
-| `backward` | 2023-07-20, 2023-05-22, 2022-09-20 |
+| `backward` | 2022-11-12, 2022-12-01, 2023-03-01 |
 | `between`(..., ...) |  |
-| `birthday` | 1997-12-26, 1994-12-26, 1995-07-10 |
-| `forward` | 2024-03-05, 2024-06-10, 2023-12-29 |
+| `birthday` | 1998-09-01, 1973-07-04, 2004-10-12 |
+| `forward` | 2024-02-15, 2023-10-06, 2023-10-22 |
 
 ## FFaker::DizzleIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | 8p80v2eckut57zvcdnc2krhnqlsewb5duqyvnzzy4fkizzsur91og094n3ozayuooalmjcg8t31hzfiedzbbnr266xn569dckpo3klgxxf43us35cgq5kdcw3ki9jj5tjzw6yvgolhx6hihkcmpgtf1au9ekq0r6ogogwwf0viq432uauhcg8my0uj6p5nffioa2janbgkomm1v5lcep3f634felgz4n014a2wkhib7nugqc2yt9f2esv9yg9ez, 0vhl1u2bm27600wcjldff6g0astxrg24kwykkfn5tbefnf5bolfy31b2wji923xt9689ei7wdlxker476b4ra5m4kddwx7s59j3fsgrbfaii6cckmwtqjx7osxatck469n05cj55o4pra8oo2w1rj9mt1n90ygkvuf8a1oxujw0r8zf8uv3cl740jkhkwxjvzws9l72sqpvih8eeka2k2bqke5m8rjcup73dglz9m9yogj48xv18ymbmo3gt68v, f0sog9gfx2u23yh9vjkn8m6k61o5hrfef9eg1afyu57n6ity369namguzksoqg52nelvleyk7gm9u1r6377pwgill7tp6qd8v6nh1lbqjoc2iqf7bg8cnlvk7d8tg32x1t0f4kh59t0f2xohdefwh7b9oqmaaugot0ha75dg37zksu44zfybn5ggqb5k4c2maxqyxfxi998zvapz50dmc2cc6uhaedit2b129b2cr25tb1wgsdrn23cf4mnebgh |
-| `paragraph` | Fizzle make a few ends now I'm on parole the S oh yes hizzouse rizzide. Tha shiznit smokin' indo drop it like it's hot Long Beach why is you. Rolling down the street plizzay every single one tha shiznit waddup rizzoad. Real deal holyfield recognize and my money on my mind eighty degrees for the Gs Mr. Buckwort smokin' indo if you was me and I was you at ease., Through all the drama if the ride is more fly, then you must buy televizzle fo shizzle Doggfada Snoop Long Beach if you was me and I was you put ya choppers up. May i every single one used to sell loot tha dizzle I love my momma everybody got they cups pizzle. Recognize rizzoad bubbles in the tub rolling down the street tha shiznit everybody got they cups roll with realer. Rolling down the street everybody got they cups make a few ends the LBC plizzay I love my momma hizzouse the diggy for the Gs. In tha hizzle smokin' weed fo shizzle used to sell loot tha shiznit guess what? realness., I love my momma it's 1993 Snoop the LBC realness rizzoad Mr. Buckwort used to sell loot plizzay. If you was me and i was you I love my momma tha shiznit like every single day through all the drama Doggfada. Through all the drama drop it like it's hot zig zag smoke Coupe de Ville in tha hizzle Long Beach. |
-| `paragraphs` | Nothing can save ya in tha hizzle the Magic Johnson of rap the S oh yes for the Gs drizzle may I with my mind on my money. It's 1993 hizzouse the Magic Johnson of rap tha shiznit Snoop at ease bubbles in the tub if the ride is more fly, then you must buy pizzle. Zig zag smoke the S oh yes Doggfada the Magic Johnson of rap Long Beach and my money on my mind real deal Holyfield., With my mind on my money fo shizzle tha dizzle sippin' on gin and juice realness nasty pizzle. Mr. buckwort smokin' indo make a few ends smokin' weed if you was me and I was you roll with in tha hizzle at ease. Bubbles in the tub you talk too much fo rizzle may I rolling down the street the Magic Johnson of rap., Why is you drop it like it's hot tha dizzle I love my momma guess what? fizzle Mr. Buckwort if you was me and I was you. Rizzoad and my money on my mind rolling down the street at ease pizzle how we do it laid back. Tha dizzle the S oh yes Mr. Buckwort put ya choppers up Snoopy Doggfada the LBC., Bionic put ya choppers up and my money on my mind Snoop nasty the diggy the LBC it's 1993. The s oh yes put ya choppers up laid back for the Gs Coupe de Ville. Guess what? and my money on my mind smokin' indo bubbles in the tub the Magic Johnson of rap real deal Holyfield it's 1993 Snoop. For the gs fo rizzle at ease now I'm on parole bionic if you was me and I was you nasty. Televizzle Snoop eighty degrees tha shiznit rizzoad and my money on my mind if you was me and I was you may I why is you., Through all the drama like every single day your chrome in tha hizzle for the Gs smokin' indo fizzle rizzide everybody got they cups. Laid back if you was me and I was you Mr. Buckwort put ya choppers up now I'm on parole the S oh yes feel the breeze recognize. At ease the S oh yes real deal Holyfield if you was me and I was you waddup rizzide every single one your chrome. Tha dizzle guess what? nothing can save ya Long Beach through all the drama everybody got they cups for the Gs hizzouse gold chain., You talk too much Doggfada fo rizzle bionic now I'm on parole realer how we do it rizzide rolling down the street. Zig zag smoke now I'm on parole I love my momma for the Gs smokin' indo with my mind on my money everybody got they cups. It's 1993 televizzle used to sell loot now I'm on parole at ease for the hustlers. If you was me and i was you through all the drama with my mind on my money at ease now I'm on parole. Smokin' weed eighty degrees realer I love my momma roll with gold chain pizzle., Used to sell loot I love my momma for the Gs eighty degrees nothing can save ya why is you. Drop it like it's hot rolling down the street if you was me and I was you may I roll with nasty Doggfada if the ride is more fly, then you must buy nothing can save ya. And my money on my mind used to sell loot Snoopy Snoop the LBC you talk too much guess what?. The s oh yes recognize if you was me and I was you tha shiznit used to sell loot Long Beach drop it like it's hot. Tha shiznit drizzle feel the breeze nothing can save ya nasty., Now i'm on parole bionic make a few ends Snoop feel the breeze. Zig zag smoke the LBC nasty drizzle real deal Holyfield I love my momma through all the drama. You talk too much in tha hizzle bubbles in the tub pizzle laid back zig zag smoke hizzouse may I., And my money on my mind the Dogg Pound smokin' weed rizzide realer pizzle. Waddup Doggfada I love my momma if you was me and I was you guess what? Snoopy. Gizzo tha dizzle recognize the LBC drizzle for the Gs through all the drama the diggy. Long beach hizzouse nothing can save ya Mr. Buckwort waddup recognize. Snoopy waddup nasty smokin' indo Long Beach with my mind on my money fo shizzle. |
-| `phrase` | The magic johnson of rap laid back sippin' on gin and juice fo shizzle for the hustlers rizzoad at ease., For the gs drizzle roll with guess what? Snoop., Real deal holyfield with my mind on my money tha dizzle smokin' weed and my money on my mind pizzle make a few ends realer Long Beach. |
-| `phrases` | Laid back the diggy rizzoad Coupe de Ville why is you rolling down the street I love my momma fizzle., Everybody got they cups and my money on my mind real deal Holyfield the S oh yes waddup tha dizzle why is you., The s oh yes plizzay waddup drizzle smokin' weed roll with Snoop Doggfada your chrome., Every single one Mr. Buckwort at ease why is you I love my momma plizzay rolling down the street., Pizzle in tha hizzle roll with fo rizzle your chrome., The magic johnson of rap Long Beach drizzle Mr. Buckwort the LBC., Like every single day why is you nothing can save ya in tha hizzle make a few ends the Dogg Pound., I love my momma gold chain why is you every single one the S oh yes like every single day laid back rizzoad., Doggfada realer pizzle realness your chrome. |
-| `sentence` | Bubbles in the tub fo rizzle sippin' on gin and juice your chrome make a few ends may I., Drizzle rolling down the street nothing can save ya like every single day for the Gs feel the breeze the dopest rizzoad waddup., The diggy put ya choppers up make a few ends guess what? Snoopy plizzay tha dizzle sippin' on gin and juice bionic. |
-| `sentences` | Waddup smokin' indo nothing can save ya like every single day rolling down the street Long Beach every single one for the Gs the Dogg Pound., Through all the drama rizzide the LBC your chrome laid back Coupe de Ville., Sippin' on gin and juice Coupe de Ville tha shiznit fo shizzle at ease it's 1993 guess what? Mr. Buckwort if you was me and I was you., Your chrome rizzide how we do it nothing can save ya guess what? fo rizzle the S oh yes tha shiznit with my mind on my money., Nothing can save ya and my money on my mind realer drop it like it's hot recognize your chrome make a few ends nasty it's 1993., Doggfada tha dizzle fizzle the LBC if the ride is more fly, then you must buy nasty., Nasty if the ride is more fly, then you must buy the LBC Snoopy for the Gs the Magic Johnson of rap sippin' on gin and juice waddup the dopest., May i rolling down the street if the ride is more fly, then you must buy the dopest Mr. Buckwort sippin' on gin and juice rizzide hizzouse., The magic johnson of rap guess what? Mr. Buckwort tha dizzle eighty degrees. |
-| `word` | televizzle, bionic, for the Gs |
-| `words` | for the Gs, with my mind on my money, rolling down the street, if you was me and I was you, plizzay, waddup, bubbles in the tub, sippin' on gin and juice, if you was me and I was you |
+| `characters` | ooalmjcg8t31hzfiedzbbnr266xn569dckpo3klgxxf43us35cgq5kdcw3ki9jj5tjzw6yvgolhx6hihkcmpgtf1au9ekq0r6ogogwwf0viq432uauhcg8my0uj6p5nffioa2janbgkomm1v5lcep3f634felgz4n014a2wkhib7nugqc2yt9f2esv9yg9ez0vhl1u2bm27600wcjldff6g0astxrg24kwykkfn5tbefnf5bolfy31b2wji923x, t9689ei7wdlxker476b4ra5m4kddwx7s59j3fsgrbfaii6cckmwtqjx7osxatck469n05cj55o4pra8oo2w1rj9mt1n90ygkvuf8a1oxujw0r8zf8uv3cl740jkhkwxjvzws9l72sqpvih8eeka2k2bqke5m8rjcup73dglz9m9yogj48xv18ymbmo3gt68vf0sog9gfx2u23yh9vjkn8m6k61o5hrfef9eg1afyu57n6ity369namguzksoqg5, 2nelvleyk7gm9u1r6377pwgill7tp6qd8v6nh1lbqjoc2iqf7bg8cnlvk7d8tg32x1t0f4kh59t0f2xohdefwh7b9oqmaaugot0ha75dg37zksu44zfybn5ggqb5k4c2maxqyxfxi998zvapz50dmc2cc6uhaedit2b129b2cr25tb1wgsdrn23cf4mnebghjmradwq1uzwld220ih890wiwsuk4ohbse7p45k8a8bacu3nym9owdm4mvwlurke |
+| `paragraph` | Fo shizzle every single one tha shiznit realer with my mind on my money bubbles in the tub. I love my momma it's 1993 Snoop the LBC realness rizzoad Mr. Buckwort used to sell loot plizzay. If you was me and i was you I love my momma tha shiznit like every single day through all the drama Doggfada., Through all the drama drop it like it's hot zig zag smoke Coupe de Ville in tha hizzle Long Beach. Nothing can save ya in tha hizzle the Magic Johnson of rap the S oh yes for the Gs drizzle may I with my mind on my money Doggfada. The diggy the Magic Johnson of rap tha shiznit your chrome eighty degrees feel the breeze if the ride is more fly, then you must buy. If the ride is more fly, then you must buy nasty bionic Doggfada drop it like it's hot now I'm on parole nothing can save ya., With my mind on my money fo shizzle tha dizzle sippin' on gin and juice realness nasty pizzle. Mr. buckwort smokin' indo make a few ends smokin' weed if you was me and I was you roll with in tha hizzle at ease. Bubbles in the tub you talk too much fo rizzle may I rolling down the street the Magic Johnson of rap. |
+| `paragraphs` | Why is you drop it like it's hot tha dizzle I love my momma guess what? fizzle Mr. Buckwort if you was me and I was you. Rizzoad and my money on my mind rolling down the street at ease pizzle how we do it laid back. Tha dizzle the S oh yes Mr. Buckwort put ya choppers up Snoopy Doggfada the LBC., Bionic put ya choppers up and my money on my mind Snoop nasty the diggy the LBC it's 1993. The s oh yes put ya choppers up laid back for the Gs Coupe de Ville. Guess what? and my money on my mind smokin' indo bubbles in the tub the Magic Johnson of rap real deal Holyfield it's 1993 Snoop. For the gs fo rizzle at ease now I'm on parole bionic if you was me and I was you nasty. Televizzle Snoop eighty degrees tha shiznit rizzoad and my money on my mind if you was me and I was you may I why is you., Through all the drama like every single day your chrome in tha hizzle for the Gs smokin' indo fizzle rizzide everybody got they cups. Laid back if you was me and I was you Mr. Buckwort put ya choppers up now I'm on parole the S oh yes feel the breeze recognize. At ease the S oh yes real deal Holyfield if you was me and I was you waddup rizzide every single one your chrome. Tha dizzle guess what? nothing can save ya Long Beach through all the drama everybody got they cups for the Gs hizzouse gold chain., You talk too much Doggfada fo rizzle bionic now I'm on parole realer how we do it rizzide rolling down the street. Zig zag smoke now I'm on parole I love my momma for the Gs smokin' indo with my mind on my money everybody got they cups. It's 1993 televizzle used to sell loot now I'm on parole at ease for the hustlers. If you was me and i was you through all the drama with my mind on my money at ease now I'm on parole. Smokin' weed eighty degrees realer I love my momma roll with gold chain pizzle., Used to sell loot I love my momma for the Gs eighty degrees nothing can save ya why is you. Drop it like it's hot rolling down the street if you was me and I was you may I roll with nasty Doggfada if the ride is more fly, then you must buy nothing can save ya. And my money on my mind used to sell loot Snoopy Snoop the LBC you talk too much guess what?. The s oh yes recognize if you was me and I was you tha shiznit used to sell loot Long Beach drop it like it's hot. Tha shiznit drizzle feel the breeze nothing can save ya nasty., Now i'm on parole bionic make a few ends Snoop feel the breeze. Zig zag smoke the LBC nasty drizzle real deal Holyfield I love my momma through all the drama. You talk too much in tha hizzle bubbles in the tub pizzle laid back zig zag smoke hizzouse may I., And my money on my mind the Dogg Pound smokin' weed rizzide realer pizzle. Waddup Doggfada I love my momma if you was me and I was you guess what? Snoopy. Gizzo tha dizzle recognize the LBC drizzle for the Gs through all the drama the diggy. Long beach hizzouse nothing can save ya Mr. Buckwort waddup recognize. Snoopy waddup nasty smokin' indo Long Beach with my mind on my money fo shizzle., The magic johnson of rap laid back sippin' on gin and juice fo shizzle for the hustlers rizzoad at ease. For the gs drizzle roll with guess what? Snoop. Real deal holyfield with my mind on my money tha dizzle smokin' weed and my money on my mind pizzle make a few ends realer Long Beach. Laid back the diggy rizzoad Coupe de Ville why is you rolling down the street I love my momma fizzle., And my money on my mind real deal Holyfield rizzide waddup the diggy nasty in tha hizzle with my mind on my money realness. Gold chain waddup why is you put ya choppers up Long Beach and my money on my mind the LBC may I. Rolling down the street bionic the dopest rizzoad in tha hizzle roll with fo rizzle rizzide. Bionic the Magic Johnson of rap Long Beach drizzle used to sell loot nasty put ya choppers up. Like every single day why is you nothing can save ya in tha hizzle make a few ends the Dogg Pound you talk too much through all the drama smokin' indo. |
+| `phrase` | Rizzide guess what? sippin' on gin and juice Doggfada realness the LBC recognize., Your chrome drizzle recognize Long Beach smokin' indo rizzoad the S oh yes., Bubbles in the tub fo rizzle sippin' on gin and juice your chrome make a few ends may I. |
+| `phrases` | Drizzle rolling down the street nothing can save ya like every single day for the Gs feel the breeze the dopest rizzoad waddup., The diggy put ya choppers up make a few ends guess what? Snoopy plizzay tha dizzle sippin' on gin and juice bionic., Waddup smokin' indo nothing can save ya like every single day rolling down the street Long Beach every single one for the Gs the Dogg Pound., Through all the drama rizzide the LBC your chrome laid back Coupe de Ville., Sippin' on gin and juice Coupe de Ville tha shiznit fo shizzle at ease it's 1993 guess what? Mr. Buckwort if you was me and I was you., Your chrome rizzide how we do it nothing can save ya guess what? fo rizzle the S oh yes tha shiznit with my mind on my money., Nothing can save ya and my money on my mind realer drop it like it's hot recognize your chrome make a few ends nasty it's 1993., Doggfada tha dizzle fizzle the LBC if the ride is more fly, then you must buy nasty., Nasty if the ride is more fly, then you must buy the LBC Snoopy for the Gs the Magic Johnson of rap sippin' on gin and juice waddup the dopest. |
+| `sentence` | May i rolling down the street if the ride is more fly, then you must buy the dopest Mr. Buckwort sippin' on gin and juice rizzide hizzouse., The magic johnson of rap guess what? Mr. Buckwort tha dizzle eighty degrees., For the gs for the hustlers with my mind on my money rolling down the street if you was me and I was you. |
+| `sentences` | The diggy plizzay gold chain now I'm on parole laid back if you was me and I was you feel the breeze., The dopest everybody got they cups fo rizzle rizzide the LBC roll with smokin' weed you talk too much., I love my momma fo shizzle through all the drama the Dogg Pound waddup you talk too much., Nasty tha dizzle rizzoad roll with waddup fizzle gizzo rizzide the LBC., The s oh yes bubbles in the tub everybody got they cups like every single day with my mind on my money through all the drama., Gizzo plizzay Coupe de Ville feel the breeze make a few ends Snoopy for the hustlers., And my money on my mind the diggy real deal Holyfield rizzide eighty degrees the Magic Johnson of rap., The s oh yes I love my momma make a few ends Long Beach rolling down the street Snoop., Tha dizzle and my money on my mind if the ride is more fly, then you must buy fizzle at ease hizzouse. |
+| `word` | laid back, if you was me and I was you, rizzoad |
+| `words` | gold chain, the LBC, televizzle, hizzouse, recognize, Long Beach, if the ride is more fly, then you must buy, at ease, it's 1993 |
 
 ## FFaker::Education
 
 | Method | Example |
 | ------ | ------- |
-| `degree` | Bachelor of Information Systems in Medical Administration, Bachelor of Science in Environmental Science in Social Studies, Master in Creative Technologies in Marketing Management |
-| `degree_short` | BS in Medical Management, MTech in Systems Science, BEd in Political Science |
-| `major` | Industrial Accountancy, Financial Architecture, Social Education |
-| `school` | Redside Institution, University of Kansas, South Dakota National University |
-| `school_generic_name` | Wyoming, Hillspur, Greenshire |
-| `school_name` | Riverdale, Southville, Rivercrest |
+| `degree` | Bachelor of Science in Physics in Political Studies, Bachelor of Engineering in Political Management, Master of Social Science in Marketing Science |
+| `degree_short` | BE in Medical Economics, MSc in Financial Science, MCA in Systems Production |
+| `major` | Industrial Production, Medical Administration, Systems Economics |
+| `school` | Virginia Institution of Education, Greenshire School, Windshore School |
+| `school_generic_name` | Connecticut, Florida, Northfield |
+| `school_name` | Northfield, Larkside, Northwell |
 
 ## FFaker::EducationCN
 
 | Method | Example |
 | ------ | ------- |
-| `degree` | 文学博士, 医学博士, 历史学博士 |
-| `location` | 重庆, 江苏, 辽宁 |
-| `major` | 电子与计算机工程, 公安视听技术, 外交学 |
-| `school` | 山东政法学院, 华中大学, 中国医科学院齐齐哈尔分校 |
+| `degree` | 哲学硕士, 法学硕士, 农学硕士 |
+| `location` | 河池, 重庆, 西北 |
+| `major` | 动物医学, 中医学, 广播电视编导 |
+| `school` | 黑龙江学院, 铜仁大学, 湖北技术学院酒泉分校 |
 
 ## FFaker::Filesystem
 
 | Method | Example |
 | ------ | ------- |
-| `directory` | voluptatum/earum/vero, non/doloremque/facere, debitis/quaerat/cumque |
-| `extension` | xls, ppt, odp |
-| `file_name` | autem/consequuntur/voluptatum/molestias.js, ab/deserunt/debitis/earum.json, optio/suscipit/error/tempore.odt |
-| `mime_type` | image/pjpeg, application/EDIFACT, application/xop+xml |
+| `directory` | officiis/iste/non, nisi/quasi/autem, accusantium/sit/officia |
+| `extension` | js, pptx, odt |
+| `file_name` | non/fuga/libero/a.pdf, perferendis/et/eos/repudiandae.mp3, numquam/earum/esse/ullam.odp |
+| `mime_type` | application/soap+xml, audio/vnd.wave, video/mp4 |
 
 ## FFaker::Food
 
 | Method | Example |
 | ------ | ------- |
-| `fruit` | Blackberry, Date, Watermelon |
-| `herb_or_spice` | Arrowroot, Chinese Five Spice, Poppy Seed |
-| `ingredient` | Eggplant, Horse, Durian |
-| `meat` | Organ Meats, Bone soup from allowable meats, Tripe |
-| `vegetable` | Garden Rocket, Mung bean, Onion |
+| `fruit` | Williams pear, Date, Quince |
+| `herb_or_spice` | Fenugreek, Curry, Gumbo File |
+| `ingredient` | Marrow soup, Goose, Mandarine |
+| `meat` | Bone soup from allowable meats, Grouse, Snake |
+| `vegetable` | Elephant Garlic, Caper, Canna |
 
 ## FFaker::FoodPL
 
 | Method | Example |
 | ------ | ------- |
-| `diary` | śmietanka, maślanka, mleko zagęszczone |
-| `fermented` | wino, piwo, miód pitny |
-| `food` | sok, kefir, kapusta pekińska |
-| `fruit` | nektarynka, figa, daktyle |
-| `herb` | pietruszka, mirt, szałwia |
-| `meat` | cielęcina, wieprzowina, kozina |
-| `preserves` | powidła, pesto, syrop |
-| `processed` | syrop, ser topiony, ogórek kiszony |
-| `spice` | pieprz czarny, sezam, cynamon |
-| `unprocessed` | drób, wieprzowina, mirt |
-| `vegetable` | ciecierzyca, kapusta włoska, sałata |
+| `diary` | zsiadłe mleko, śmietana, kefir |
+| `fermented` | kapusta kiszona, kombucza, sos sojowy |
+| `food` | gruszka, wołowina, ogórek |
+| `fruit` | porzeczka, granat, morwa |
+| `herb` | trawa cytrynowa, majeranek, melisa |
+| `meat` | baranina, konina, kozina |
+| `preserves` | powidła, pesto, keczup |
+| `processed` | twaróg, powidła, marmolada |
+| `spice` | kminek, pieprz czarny, cynamon |
+| `unprocessed` | morwa, rozmaryn, mirt |
+| `vegetable` | burak, rzodkiewka, jarmuż |
 
 ## FFaker::FreedomIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | kgezc5fdp478sa1lzratj0w5go79fwi583692tzxzbur1q20peiumxycffcld77h7eko40424sm5blf4fppa6yltcuuj4cqe09gmh6yuqgs4jemr3st98wg6t41pfk4mcv0bi4h0o3k5pckt0kpgsb8burc0a8f38zs0onn6x2n04eds40l6ry2dr57576rhu1x3x8r0h1dcwi5b7l5orpge01qbvc2gt5ru9r4s4a6dqtez5qqpy9iyl8wbc8m, jisysbwgt7fesmd0ygdtd0niuo6xkp0i2uyo6pdkox85qty2t58rzopjdobafmzn6sn3ytwketjoj55samqmnnd1n5re1szhyyqd1y1oa9v4zyc1ptva1o7ruknk7m70t4qbiwqw6nsskql518ze9ahhfnt4axnu2ce9q91lh65bpe2duaifni695b3mhu0n45hzh58xgviiji5hn39h4onsf3nnxn6r45gvqmr06ky4kutsg5pc1oe1jqkgmnv, mjwtq1qqhfo10bokjpyszw08cb2lwsogeocnhlux4oh0q6e85a3ywzecmv8jwl7h3a1kpvwf8p8bukf2tcwcgt720hke04v8warlhfw8d978nuxj24m90hh894aw4h8mjnmdxoalfi1jhzvm0tggxxn7ebryajbn5wefh98g775a0s30wlvphll4ulwzvqejrt6nazed8l1dl7dmnwh8o5dycirrbs6hn9fvekjgqjdb9fvdgwipffyiymleb1e |
-| `paragraph` | God bless america Dallas Cowboys Starbucks controversial red white and blue Mount Rushmore pickup trucks lunchables. Digiorno Philly cheesesteak fighter jets fireworks route 66 ESPN2 liberty commies get out of my country. God bless america national security Star-Spangled Banner Proud To Be An American Harley Davidson potato salad 1776., Propane tanks BBQ bald eagles Chuck Norris more bullets 85oz soda pro-wrestling Dale Earnhardt Jr anti-metric system. Credit cards DVD liberty bacon cheeseburgers nuclear-powered aircraft carrier enemies of freedom lunchables milkshakes low taxes. Michael bay movies Denny's Grand Slam Breakfast the economy pickup trucks NASA Dale Earnhardt Jr liberty Harley Davidson. Mountain dew John Cena Proud To Be An American God Bless America low gas prices condiments second amendment rights supreme court ruling Philly cheesesteak. Checkers apple pie congress credit cards TGIF ESPN2 explosive monster truck rally Call of Duty., Extra pulled pork bacon cheeseburgers Dallas Cowboys weekends national security Michael Bay movies. Apple pie propane tanks lunchables Arnold Schwarzenegger sweatpants Nashville shopping Disney World Proud To Be An American. Directv bald eagles fighter jets Nashville gigantic better dead than red independence commies get out of my country. |
-| `paragraphs` | Arnold schwarzenegger cheese-stuffed microwaved Denny's Grand Slam Breakfast NASCAR Championship Pro Bass Fishing. Fighter jets Fox News lunchables Mountain Dew stock market Wal-Mart. Usa-4-life-bro NASCAR monster truck rally Proud To Be An American border wall. Constitutional rights Nashville velcro 1776 TGIF wanted dead or alive commies get out of my country anti-metric system., Commies get out of my country Nashville juicy flame-grilled Checkers monster truck rally capitalism Van Halen. Uncle sam explosive slurpees redwood Mount Rushmore crispy chicken strips Philly cheesesteak. Gigantic foreign policy corporations NASCAR monster truck rally extra value meal. Texas pickup trucks stars and stripes Denny's Grand Slam Breakfast twinkies extra pulled pork WMD NASA DirecTV. Lunchables truck nuts 85oz soda country-fried southwest breakfast burrito pickup trucks Texas NASA stock market., Xxxl dual-wielded machine guns bigger television potato salad border wall mud flaps. Drive-thru boneless buffalo wings low gas prices Mega-Stuf Oreos WMD more bullets I only speak American. Arnold schwarzenegger cholesterol explosive twinkies apple pie 3D Blu-Ray. Nuclear-powered aircraft carrier capitalism NASCAR enemies of freedom extra-large Van Halen commies get out of my country., Southwest breakfast burrito stock market milkshakes extra-large mud flaps controversial. Enemies of freedom Disney World boneless buffalo wings juicy flame-grilled NASCAR taco night. Mgd shopping Call of Duty SUVs enemies of freedom TGIF., Bigfoot XXXL microwaved controversial pro-wrestling Bud heavy tall-boy Arnold Schwarzenegger DiGiorno border wall. Nuclear-powered aircraft carrier Starbucks Checkers propane tanks drone strike Mega-Stuf Oreos automatic rifle capitalism. Philly cheesesteak Mountain Dew Mount Rushmore cheese-stuffed propane tanks. Explosive extra value meal Arnold Schwarzenegger Nashville route 66 pro-wrestling boneless buffalo wings., Pro-wrestling drive-thru I only speak American hot dogs Marlboro reds online multiplayer bald eagles Arnold Schwarzenegger Costco. Medal of honor Hot Pockets nuclear-powered aircraft carrier congress NASA Dallas Cowboys Philly cheesesteak. Robocop MGD Michael Bay movies monster truck rally Disney World Star-Spangled Banner. Denny's grand slam breakfast capitalism redwood exploding commies get out of my country malls XXXL Checkers., The economy foreign policy weekends Harley Davidson Wal-Mart. Voting Texas RoboCop southwest breakfast burrito the media crispy chicken strips monster truck rally Michael Bay movies extra value meal. Supreme court ruling 74-inch HDTV Bud heavy tall-boy super bowl patriotic boneless buffalo wings wanted dead or alive malls freedom fries. Starbucks 85oz soda Hanes boxer briefs freedom bigfoot second amendment rights I only speak American., Uncle sam Bud heavy tall-boy pickup trucks liberty low taxes 74-inch HDTV taco night. Freedom Nashville Branson Missouri Wal-Mart Harley Davidson. Mopar truthers drone strike bald eagles Chuck Norris the media Garth Brooks mission accomplished 3D Blu-Ray. Stars and stripes Lynyrd Skynyrd freedom fries southwest breakfast burrito exploding Dallas Cowboys Fox News supreme court ruling. Southwest breakfast burrito second amendment rights democracy Disney World Medal of Honor constitutional rights XXXL I only speak American patriotic., Super bowl pickup trucks Michael Bay movies God Bless America CNN potato salad. Championship pro bass fishing super bowl Home Depot Branson Missouri extra beef consumerism. Country-fried apple pie Dale Earnhardt Jr BBQ extra value meal. Fbi cia nsa enemies of freedom official sponsor Branson Missouri WMD red white and blue border wall independence Arnold Schwarzenegger. |
-| `phrase` | 74-inch hdtv the government Mount Rushmore potato salad God Bless America wanted dead or alive Philly cheesesteak bacon cheeseburgers truthers., Chuck norris NASCAR Lynyrd Skynyrd credit cards wanted dead or alive., Shock and awe Arnold Schwarzenegger border wall voting the government gigantic constitutional rights. |
-| `phrases` | Marlboro reds WMD the government Star-Spangled Banner fighter jets dual-wielded machine guns., Extra-large extra beef twinkies XXXL Bud heavy tall-boy drone strike., God bless america Star-Spangled Banner shock and awe the media pickup trucks anti-metric system Home Depot fireworks Checkers., Dvd 18-wheeler the government congress Medal of Honor red white and blue juicy flame-grilled CSI: Miami route 66., Marlboro reds national security XXXL Hot Pockets nuclear-powered aircraft carrier online multiplayer Die Hard 2: Die Harder pickup trucks., Extra-large Checkers extra value meal border wall Hot Pockets., National security Arnold Schwarzenegger Harley Davidson mission accomplished no-terrorist-zone milkshakes fighter jets., Better dead than red redwood bigfoot apple pie nuclear-powered aircraft carrier the government., Lynyrd skynyrd Michael Bay movies Checkers shopping Costco twinkies route 66 mission accomplished CNN. |
-| `sentence` | Suvs ESPN2 Chuck Norris potato salad Arnold Schwarzenegger Home Depot 7-Eleven 85oz soda CNN., Disney world Mount Rushmore I only speak American patriotic explosive Branson Missouri bacon cheeseburgers taco night Fox News., Better dead than red bald eagles crispy chicken strips Michael Bay movies border wall. |
-| `sentences` | Commies get out of my country wanted dead or alive bigger truthers Philly cheesesteak stock market Chuck Norris., Microwaved sweatpants red white and blue jean shorts border wall Mountain Dew slurpees Dale Earnhardt Jr., 7-eleven southwest breakfast burrito slurpees dual-wielded machine guns Medal of Honor juicy flame-grilled extra pulled pork taco night CSI: Miami., Csi: miami XXXL controversial DiGiorno God Bless America drive-thru Mount Rushmore slurpees., National security extra beef shock and awe explosive NASA Mega-Stuf Oreos RoboCop tomahawk cruise missile constitutional rights., Extra-large country-fried mud flaps Garth Brooks juicy flame-grilled crispy chicken strips Uncle Sam I only speak American., Chuck norris the economy Star-Spangled Banner Bud heavy tall-boy Uncle Sam route 66 Nashville Home Depot., The media NASA cholesterol foreign policy 7-Eleven USA-4-Life-Bro truck nuts fighter jets low gas prices., Gigantic commies get out of my country XXXL Dallas Cowboys capitalism CSI: Miami. |
-| `word` | crunch-tastic, Starbucks, voting |
-| `words` | low taxes, Star-Spangled Banner, second amendment rights, juicy flame-grilled, condiments, pro-wrestling, Philly cheesesteak, DirecTV, the economy |
+| `characters` | lf4fppa6yltcuuj4cqe09gmh6yuqgs4jemr3st98wg6t41pfk4mcv0bi4h0o3k5pckt0kpgsb8burc0a8f38zs0onn6x2n04eds40l6ry2dr57576rhu1x3x8r0h1dcwi5b7l5orpge01qbvc2gt5ru9r4s4a6dqtez5qqpy9iyl8wbc8mjisysbwgt7fesmd0ygdtd0niuo6xkp0i2uyo6pdkox85qty2t58rzopjdobafmzn6sn3ytwketjoj, 55samqmnnd1n5re1szhyyqd1y1oa9v4zyc1ptva1o7ruknk7m70t4qbiwqw6nsskql518ze9ahhfnt4axnu2ce9q91lh65bpe2duaifni695b3mhu0n45hzh58xgviiji5hn39h4onsf3nnxn6r45gvqmr06ky4kutsg5pc1oe1jqkgmnvmjwtq1qqhfo10bokjpyszw08cb2lwsogeocnhlux4oh0q6e85a3ywzecmv8jwl7h3a1kpvwf8p8bu, kf2tcwcgt720hke04v8warlhfw8d978nuxj24m90hh894aw4h8mjnmdxoalfi1jhzvm0tggxxn7ebryajbn5wefh98g775a0s30wlvphll4ulwzvqejrt6nazed8l1dl7dmnwh8o5dycirrbs6hn9fvekjgqjdb9fvdgwipffyiymleb1edulb0c9v0c41399ne02jh8b19pnmuejgcq9ju2hpecid24dtor54i55ibpbzx4ujjkqd09ydk3qxc |
+| `paragraph` | Mgd Home Depot velcro NASCAR MOPAR Garth Brooks slurpees I only speak American. Apple pie 3D Blu-Ray Mountain Dew weekends voting. Directv bald eagles fighter jets Nashville gigantic better dead than red independence commies get out of my country. No-terrorist-zone velcro Die Hard 2: Die Harder crunch-tastic taco night shock and awe. Philly cheesesteak truthers fighter jets supreme court ruling DiGiorno., Extra value meal super-size FBI CIA NSA Michael Bay movies 85oz soda CNN democracy Applebee's 7-Eleven. Constitutional rights extra-large wanted dead or alive commies get out of my country anti-metric system. Commies get out of my country Nashville juicy flame-grilled Checkers monster truck rally capitalism Van Halen., Uncle sam explosive slurpees redwood Mount Rushmore crispy chicken strips Philly cheesesteak 85oz soda monster truck rally. Nashville NASCAR huge explosive better dead than red fighter jets low taxes. Philly cheesesteak condiments 85oz soda Disney World SUVs low gas prices southwest breakfast burrito the government. Monster truck rally slurpees southwest breakfast burrito pickup trucks Texas NASA juicy flame-grilled dual-wielded machine guns crunch-tastic. Bigger microwaved hot dogs super bowl mud flaps explosive the media DirecTV. |
+| `paragraphs` | Mega-stuf oreos WMD more bullets I only speak American Bud heavy tall-boy Die Hard 2: Die Harder 3D Blu-Ray. Condiments microwaved no-terrorist-zone Star-Spangled Banner John Cena John Wayne. Call of duty corporations Mountain Dew border wall national security., Southwest breakfast burrito stock market milkshakes extra-large mud flaps controversial. Enemies of freedom Disney World boneless buffalo wings juicy flame-grilled NASCAR taco night. Mgd shopping Call of Duty SUVs enemies of freedom TGIF. Fox news redwood 18-wheeler taco night the media pro-wrestling., Cheese-stuffed route 66 nuclear-powered aircraft carrier USA-4-Life-Bro congress drive-thru controversial Mega-Stuf Oreos automatic rifle. Philly cheesesteak Mountain Dew Mount Rushmore cheese-stuffed propane tanks. Explosive extra value meal Arnold Schwarzenegger Nashville route 66 pro-wrestling boneless buffalo wings., Pro-wrestling drive-thru I only speak American hot dogs Marlboro reds online multiplayer bald eagles Arnold Schwarzenegger Costco. Medal of honor Hot Pockets nuclear-powered aircraft carrier congress NASA Dallas Cowboys Philly cheesesteak. Robocop MGD Michael Bay movies monster truck rally Disney World Star-Spangled Banner. Denny's grand slam breakfast capitalism redwood exploding commies get out of my country malls XXXL Checkers., The economy foreign policy weekends Harley Davidson Wal-Mart. Voting Texas RoboCop southwest breakfast burrito the media crispy chicken strips monster truck rally Michael Bay movies extra value meal. Supreme court ruling 74-inch HDTV Bud heavy tall-boy super bowl patriotic boneless buffalo wings wanted dead or alive malls freedom fries. Starbucks 85oz soda Hanes boxer briefs freedom bigfoot second amendment rights I only speak American., Uncle sam Bud heavy tall-boy pickup trucks liberty low taxes 74-inch HDTV taco night. Freedom Nashville Branson Missouri Wal-Mart Harley Davidson. Mopar truthers drone strike bald eagles Chuck Norris the media Garth Brooks mission accomplished 3D Blu-Ray. Stars and stripes Lynyrd Skynyrd freedom fries southwest breakfast burrito exploding Dallas Cowboys Fox News supreme court ruling. Southwest breakfast burrito second amendment rights democracy Disney World Medal of Honor constitutional rights XXXL I only speak American patriotic., Super bowl pickup trucks Michael Bay movies God Bless America CNN potato salad. Championship pro bass fishing super bowl Home Depot Branson Missouri extra beef consumerism. Country-fried apple pie Dale Earnhardt Jr BBQ extra value meal. Fbi cia nsa enemies of freedom official sponsor Branson Missouri WMD red white and blue border wall independence Arnold Schwarzenegger., 74-inch hdtv the government Mount Rushmore potato salad God Bless America wanted dead or alive. Chuck norris congress the government Die Hard 2: Die Harder shock and awe bacon cheeseburgers Michael Bay movies crunch-tastic shopping. Democracy shock and awe Arnold Schwarzenegger border wall official sponsor FBI CIA NSA huge., Marlboro reds WMD the government Star-Spangled Banner fighter jets dual-wielded machine guns. Extra-large extra beef twinkies XXXL Bud heavy tall-boy drone strike. God bless america Star-Spangled Banner shock and awe the media pickup trucks anti-metric system Home Depot fireworks Checkers. |
+| `phrase` | Dvd 18-wheeler the government congress Medal of Honor red white and blue juicy flame-grilled CSI: Miami route 66., Marlboro reds national security XXXL Hot Pockets nuclear-powered aircraft carrier online multiplayer Die Hard 2: Die Harder pickup trucks., Extra-large Checkers extra value meal border wall Hot Pockets. |
+| `phrases` | National security Arnold Schwarzenegger Harley Davidson mission accomplished no-terrorist-zone milkshakes fighter jets., Better dead than red redwood bigfoot apple pie nuclear-powered aircraft carrier the government., Lynyrd skynyrd Michael Bay movies Checkers shopping Costco twinkies route 66 mission accomplished CNN., Suvs ESPN2 Chuck Norris potato salad Arnold Schwarzenegger Home Depot 7-Eleven 85oz soda CNN., Disney world Mount Rushmore I only speak American patriotic explosive Branson Missouri bacon cheeseburgers taco night Fox News., Better dead than red bald eagles crispy chicken strips Michael Bay movies border wall., Commies get out of my country wanted dead or alive bigger truthers Philly cheesesteak stock market Chuck Norris., Microwaved sweatpants red white and blue jean shorts border wall Mountain Dew slurpees Dale Earnhardt Jr., 7-eleven southwest breakfast burrito slurpees dual-wielded machine guns Medal of Honor juicy flame-grilled extra pulled pork taco night CSI: Miami. |
+| `sentence` | Csi: miami XXXL controversial DiGiorno God Bless America drive-thru Mount Rushmore slurpees., National security extra beef shock and awe explosive NASA Mega-Stuf Oreos RoboCop tomahawk cruise missile constitutional rights., Extra-large country-fried mud flaps Garth Brooks juicy flame-grilled crispy chicken strips Uncle Sam I only speak American. |
+| `sentences` | Chuck norris the economy Star-Spangled Banner Bud heavy tall-boy Uncle Sam route 66 Nashville Home Depot., The media NASA cholesterol foreign policy 7-Eleven USA-4-Life-Bro truck nuts fighter jets low gas prices., Gigantic commies get out of my country XXXL Dallas Cowboys capitalism CSI: Miami., Starbucks official sponsor low taxes Star-Spangled Banner second amendment rights Mount Rushmore., Crispy chicken strips pro-wrestling NASA cheese-stuffed super bowl., The government crunch-tastic Championship Pro Bass Fishing Garth Brooks voting Michael Bay movies Philly cheesesteak huge., Mud flaps 74-inch HDTV extra-large extra pulled pork monster truck rally., Slurpees cheese-stuffed XXXL Arnold Schwarzenegger lunchables more bullets twinkies DVD., The government DirecTV BBQ God Bless America Arnold Schwarzenegger Disney World. |
+| `word` | extra pulled pork, NASCAR, fireworks |
+| `words` | huge, NASCAR, low taxes, juicy flame-grilled, Denny's Grand Slam Breakfast, bacon cheeseburgers, XXXL, Hot Pockets, freedom fries |
 
 ## FFaker::Game
 
 | Method | Example |
 | ------ | ------- |
-| `category` | Medieval, Farming, Murder/Mystery |
-| `mechanic` | Map Addition, Secret Unit Deployment, Auction: Fixed Placement |
-| `title` | Invasion of the First Wizards, First Brew, Killer Beast |
+| `category` | Modern Warfare, City Building, Nautical |
+| `mechanic` | Tug of War, Voting, Flicking |
+| `title` | I am Killer Brew, Little Hills, Time of the Blue City |
 
 ## FFaker::Gender
 
 | Method | Example |
 | ------ | ------- |
 | `binary` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for binary |
-| `maybe` | pan-gender, male, bi-gender |
-| `random` | bi-gender, agender, female |
-| `sample` | non-binary, male, female |
+| `maybe` | androgyne, male, pan-gender |
+| `random` | agender, androgyne, male |
+| `sample` | androgyne, non-binary, female |
 
 ## FFaker::GenderBR
 
@@ -1249,102 +1257,102 @@
 | Method | Example |
 | ------ | ------- |
 | `binary` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for binary |
-| `maybe` | женщина, агендер, нонбайнари |
-| `random` | агендер, мужчина, нонбайнари |
-| `sample` | женщина, мужчина, нонбайнари |
+| `maybe` | мужчина, агендер, женщина |
+| `random` | мужчина, агендер, нонбайнари |
+| `sample` | нонбайнари, женщина, мужчина |
 
 ## FFaker::Geolocation
 
 | Method | Example |
 | ------ | ------- |
 | `boxed_coords`(..., ...) |  |
-| `lat` | 41.4811, 40.89505, 38.5241394042969 |
-| `lng` | -122.340967372417, -72.572405, -73.048076 |
+| `lat` | 41.5205, 39.9847861520773, 38.9381545320739 |
+| `lng` | -75.1786003814711, -73.9473684707957, -90.2698593139648 |
 
 ## FFaker::Guid
 
 | Method | Example |
 | ------ | ------- |
-| `guid` | 19602D5F-331F-9B94-D23B-9174BE278B78, 54726154-6CD0-BCB2-9BC2-2FECD0A62723, B8B3533F-9B59-9018-C22E-49FD626446F4 |
+| `guid` | 2FECD0A6-2723-B8B3-533F-9B599018C22E, 49FD6264-46F4-E060-615D-66B851104520, 556BA876-0AB5-4C32-AE46-AE5803FA5A4B |
 
 ## FFaker::HTMLIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `a` | &lt;a href="#omnis" title="Natus soluta"&gt;Voluptatem at&lt;/a&gt;, &lt;a href="#accusantium" title="Mollitia tenetur"&gt;Nobis deserunt&lt;/a&gt;, &lt;a href="#qui" title="Deleniti expedita"&gt;Sit assumenda&lt;/a&gt; |
-| `body` | &lt;h1&gt;Nemo ullam&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Sunt fuga&lt;/strong&gt; &lt;ins&gt;incidunt in&lt;/ins&gt; &lt;sup&gt;ratione labore&lt;/sup&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Pariatur&lt;/th&gt;&lt;th&gt;Ipsa&lt;/th&gt;&lt;th&gt;Sequi&lt;/th&gt;&lt;th&gt;Asperiores&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ipsum&lt;/td&gt;&lt;td&gt;Assumenda&lt;/td&gt;&lt;td&gt;Voluptas&lt;/td&gt;&lt;td&gt;&lt;a href="#voluptatum" title="Libero recusandae"&gt;Exercitationem porro&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Voluptates similique&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Aut possimus nemo consequuntur tempora officiis impedit. Alias cumque fugit blanditiis tempore eos.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Quos cum dolor a voluptatum quas dolorum molestiae blanditiis. Dignissimos amet est non laudantium molestias repudiandae doloribus. Quidem mollitia consequatur quod libero molestias voluptas. Maiores fuga quae libero ratione.&lt;br&gt;Aliquam nulla sequi impedit excepturi suscipit corporis totam eveniet. Id illum fugit sit similique illo dolorem. Voluptas quo cumque laborum omnis aperiam dolorum dolorem. Minus veniam dolorem iure exercitationem. Voluptate at provident dicta iure asperiores excepturi minima.&lt;br&gt;Beatae eum amet occaecati id perferendis veniam sunt quis. Quidem quam est eum autem excepturi. Saepe ea libero nobis odit similique hic. Ullam consequuntur sunt perspiciatis sit eaque nihil.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Facilis illum&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Provident libero ullam eligendi consectetur nam itaque enim. Nemo velit consequatur aliquid aperiam sint eveniet iste quibusdam.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #corporis h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Et repudiandae&lt;/h1&gt;&lt;p&gt;&lt;del&gt;facilis natus&lt;/del&gt; Dolorum eum nulla dolorem commodi ea dolores quae provident. Repellendus sint numquam unde nisi. Animi nihil nulla et labore aspernatur eaque. Fugit corrupti debitis vero nihil. Iste voluptatem dolorem laborum voluptatum architecto optio vitae excepturi. &lt;sup&gt;enim quod&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;small&gt;perspiciatis ea&lt;/small&gt; &lt;del&gt;ea dolorum&lt;/del&gt; &lt;sup&gt;ipsa velit&lt;/sup&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;A&lt;/th&gt;&lt;th&gt;Corporis&lt;/th&gt;&lt;th&gt;Soluta&lt;/th&gt;&lt;th&gt;Pariatur&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;In sequi&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Quae eaque similique eius nostrum rerum.&lt;/li&gt;&lt;li&gt;Incidunt totam sit labore exercitationem minima.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Optio facilis eum recusandae est quos nam perspiciatis. Aut cum velit explicabo blanditiis alias quis nobis. Voluptatum laudantium iste animi eum assumenda nostrum. Placeat dolores quaerat sapiente cupiditate voluptates fugit.&lt;br&gt;Quo soluta nisi rerum eaque aliquam itaque natus. Deserunt adipisci eveniet consequuntur quasi iure veniam iste delectus. Beatae necessitatibus culpa laudantium suscipit. Non magni autem tempora inventore maiores quo ex. Ratione quidem consequatur ipsum debitis.&lt;br&gt;Ex iusto officiis velit reprehenderit. Quasi accusamus maiores officiis velit non dolores tempora dolorum. Ut accusamus est ea sapiente. Placeat quos iste eligendi saepe molestiae nesciunt temporibus.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Vitae nemo&lt;/h3&gt;&lt;ul&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #maiores h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Mollitia facere&lt;/h1&gt;&lt;p&gt;&lt;sup&gt;fugit ad&lt;/sup&gt; &lt;strong&gt;Deserunt laboriosam&lt;/strong&gt; &lt;small&gt;expedita quae&lt;/small&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="#eaque" title="Illo dolorem"&gt;Ad libero&lt;/a&gt; Quaerat possimus ullam placeat quibusdam magni sapiente esse. Itaque odio earum quas quibusdam quo necessitatibus. Delectus ad explicabo neque nam. Sed nostrum saepe unde perferendis accusantium nam aut temporibus. &lt;em&gt;Veritatis tempore vitae ratione nam. Beatae optio maxime minus expedita. Iure laborum accusamus soluta excepturi dignissimos dicta debitis. Numquam dolorem itaque enim illo minima occaecati recusandae expedita. Animi nisi similique iure soluta eligendi illum culpa voluptatem.&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Doloribus&lt;/th&gt;&lt;th&gt;Alias&lt;/th&gt;&lt;th&gt;Quisquam&lt;/th&gt;&lt;th&gt;Minus&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Quasi&lt;/td&gt;&lt;td&gt;Quod&lt;/td&gt;&lt;td&gt;Laboriosam&lt;/td&gt;&lt;td&gt;&lt;a href="#dignissimos" title="Aspernatur sequi"&gt;Dolore optio&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Quasi&lt;/td&gt;&lt;td&gt;Eligendi&lt;/td&gt;&lt;td&gt;Perspiciatis&lt;/td&gt;&lt;td&gt;&lt;a href="#qui" title="Adipisci cumque"&gt;Esse adipisci&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Minima&lt;/td&gt;&lt;td&gt;Pariatur&lt;/td&gt;&lt;td&gt;Dolorem&lt;/td&gt;&lt;td&gt;&lt;a href="#error" title="Laboriosam aliquid"&gt;Eos ut&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Porro exercitationem&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Sit tempora saepe omnis cupiditate. At cumque rerum vero provident corporis voluptate modi.&lt;/li&gt;&lt;li&gt;A corrupti id libero maiores eveniet neque. Recusandae rerum blanditiis magni voluptatem minus cupiditate.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Aliquam odio harum vel assumenda nostrum delectus. Commodi suscipit beatae id neque aspernatur. Temporibus tempore illo quos numquam pariatur exercitationem amet. Totam illum quo aperiam nisi illo modi et tenetur.&lt;br&gt;Dolore quae possimus repellendus culpa nemo. At provident id reprehenderit debitis ratione voluptatem occaecati. Officia at soluta exercitationem nam sequi recusandae facilis. Magni hic beatae alias voluptates ipsa tempore. Dignissimos amet enim a delectus soluta totam adipisci error.&lt;br&gt;Consequuntur ut sunt animi eaque. Commodi corrupti esse ducimus repellendus perferendis ab nobis quos. Possimus necessitatibus accusantium sit rerum doloremque ullam.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Natus dicta&lt;/h3&gt;&lt;ul&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #ullam h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt; |
-| `dl` | &lt;dl&gt;&lt;dt&gt;Architecto&lt;/dt&gt;&lt;dd&gt;Quo ab exercitationem mollitia illo quidem tempora. Possimus assumenda consequatur placeat dolorum.&lt;/dd&gt;&lt;dt&gt;Illo&lt;/dt&gt;&lt;dd&gt;Rerum a earum vitae eos eius nihil at. Soluta ipsum asperiores cumque earum. Sit voluptate voluptatem inventore dolores.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Facilis&lt;/dt&gt;&lt;dd&gt;Hic voluptatum voluptatibus ea exercitationem occaecati sequi porro distinctio. Officia accusantium harum et ex eveniet omnis.&lt;/dd&gt;&lt;dt&gt;Velit&lt;/dt&gt;&lt;dd&gt;Rerum ullam accusamus sint eveniet veritatis ea earum voluptas. Repellendus ullam similique molestiae ut ducimus molestias vitae.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Excepturi&lt;/dt&gt;&lt;dd&gt;Qui velit cumque facere id perferendis mollitia esse. Ipsa necessitatibus incidunt maxime nesciunt ratione nobis. Voluptate iure error in cum repellendus tempore voluptas eius.&lt;/dd&gt;&lt;dt&gt;Cupiditate&lt;/dt&gt;&lt;dd&gt;Asperiores illo reprehenderit ad assumenda in. Nesciunt repellat consequatur facilis laboriosam iste.&lt;/dd&gt;&lt;/dl&gt; |
-| `fancy_string` | &lt;mark&gt;Tempore repudiandae sapiente voluptatem cum aliquid tempora harum aperiam. Quisquam perferendis cum voluptatem sapiente nemo. Odio laborum cumque veniam nesciunt sint eum soluta provident. At placeat ipsa molestias molestiae. Consequuntur numquam libero nesciunt consequatur expedita perspiciatis quos odio.&lt;/mark&gt; &lt;sub&gt;impedit quam&lt;/sub&gt; &lt;small&gt;aperiam odio&lt;/small&gt;, &lt;sup&gt;officia ducimus&lt;/sup&gt; &lt;strong&gt;Suscipit iste&lt;/strong&gt; &lt;small&gt;molestiae quam&lt;/small&gt;, &lt;em&gt;Tenetur sunt vel nam earum. Impedit corporis minima necessitatibus itaque. Cupiditate iure vitae quos possimus dolores hic. Deleniti odio doloribus culpa aspernatur enim porro laborum dolor. Aut ducimus architecto deleniti ipsa.&lt;/em&gt; Quam asperiores quaerat reiciendis sequi iure. Pariatur a cupiditate quod nostrum facilis inventore quo et. Dolore autem labore rem placeat a dignissimos similique. Ea minima vero voluptate explicabo alias nesciunt. Laborum libero itaque suscipit non. &lt;a href="#quasi" title="Maxime quod"&gt;Tempore ad&lt;/a&gt; |
-| `ol_long` | &lt;ol&gt;&lt;li&gt;Odio minus est perferendis quibusdam cupiditate maiores. Neque facilis alias corporis doloremque quasi aliquid nisi.&lt;/li&gt;&lt;li&gt;Dignissimos consectetur veniam nemo atque eos molestiae. Suscipit dicta odit ab quibusdam perspiciatis similique. Delectus veniam maxime vel architecto quia ea similique. Ad facilis quae mollitia fuga omnis sapiente.&lt;/li&gt;&lt;li&gt;Incidunt atque pariatur sunt animi sed velit dolores. Perspiciatis incidunt in quod minima.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Ducimus beatae incidunt asperiores voluptatibus. Enim fugit sit deleniti ex adipisci corrupti minima.&lt;/li&gt;&lt;li&gt;Fuga totam nihil at officiis quaerat ratione molestiae maiores. Nobis ut aliquid accusantium deserunt voluptas sed animi.&lt;/li&gt;&lt;li&gt;Error quam exercitationem dolor architecto. Quisquam error exercitationem ea omnis id hic.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Accusamus sit quae asperiores dolores libero. Quia minima voluptatibus porro asperiores. Dolorum illo ut ipsam iure corrupti.&lt;/li&gt;&lt;li&gt;Eligendi temporibus consequatur ut eveniet placeat dolorum incidunt. Vitae temporibus illo sed nisi necessitatibus id eius. Fugit cupiditate eaque tempore laboriosam inventore recusandae repellendus vitae.&lt;/li&gt;&lt;li&gt;Quia iusto hic laudantium inventore rem commodi corrupti corporis. Fugit explicabo rerum ad minus. Culpa earum dolor blanditiis repudiandae voluptate aliquam porro.&lt;/li&gt;&lt;/ol&gt; |
-| `ol_short` | &lt;ol&gt;&lt;li&gt;Eligendi molestiae vero optio perspiciatis quia.&lt;/li&gt;&lt;li&gt;Delectus accusamus eius mollitia impedit fuga.&lt;/li&gt;&lt;li&gt;Vel eligendi odio est culpa vero distinctio.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Quos animi eum facere necessitatibus reiciendis ad.&lt;/li&gt;&lt;li&gt;Maxime molestias soluta eius ad repellat.&lt;/li&gt;&lt;li&gt;Ab assumenda in quis voluptatem ullam.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Assumenda repellat laudantium eligendi vitae.&lt;/li&gt;&lt;li&gt;Officia voluptatibus autem similique.&lt;/li&gt;&lt;li&gt;Illum voluptatem officiis nemo.&lt;/li&gt;&lt;/ol&gt; |
+| `a` | &lt;a href="#rerum" title="Et corporis"&gt;Maxime magnam&lt;/a&gt;, &lt;a href="#debitis" title="Quasi temporibus"&gt;Minima sunt&lt;/a&gt;, &lt;a href="#delectus" title="Optio laudantium"&gt;Voluptates eaque&lt;/a&gt; |
+| `body` | &lt;h1&gt;Optio autem&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Dolore earum&lt;/strong&gt; &lt;del&gt;deleniti autem&lt;/del&gt; &lt;sup&gt;ducimus enim&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;sub&gt;dolorem eum&lt;/sub&gt; &lt;small&gt;pariatur cupiditate&lt;/small&gt; &lt;strong&gt;Repudiandae exercitationem&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;del&gt;facilis natus&lt;/del&gt; Dolorum eum nulla dolorem commodi ea dolores quae provident. Repellendus sint numquam unde nisi. Animi nihil nulla et labore aspernatur eaque. Fugit corrupti debitis vero nihil. Iste voluptatem dolorem laborum voluptatum architecto optio vitae excepturi. &lt;sup&gt;enim quod&lt;/sup&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Sit&lt;/th&gt;&lt;th&gt;Tempore&lt;/th&gt;&lt;th&gt;Necessitatibus&lt;/th&gt;&lt;th&gt;Ipsam&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Distinctio&lt;/td&gt;&lt;td&gt;Explicabo&lt;/td&gt;&lt;td&gt;Molestias&lt;/td&gt;&lt;td&gt;&lt;a href="#unde" title="Ratione omnis"&gt;Quia sunt&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Sequi&lt;/td&gt;&lt;td&gt;Itaque&lt;/td&gt;&lt;td&gt;Saepe&lt;/td&gt;&lt;td&gt;&lt;a href="#occaecati" title="Voluptatibus consectetur"&gt;Commodi modi&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;Ratione&lt;/td&gt;&lt;td&gt;Veniam&lt;/td&gt;&lt;td&gt;&lt;a href="#ad" title="Mollitia odit"&gt;Magni iste&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;At enim&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Quibusdam dolor libero dicta praesentium maxime assumenda incidunt sunt.&lt;/li&gt;&lt;li&gt;Nobis sint deleniti exercitationem nesciunt id.&lt;/li&gt;&lt;li&gt;Incidunt nostrum ipsum inventore ipsam.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Fugiat assumenda velit laboriosam ipsa consequatur. Harum in similique cum magni cumque adipisci accusamus. Doloremque nobis eveniet ab soluta mollitia occaecati officia. Laborum ad repudiandae fugiat vitae ipsa non. Atque unde ea tempora sint accusantium doloremque magni.&lt;br&gt;Ex laboriosam eum iure expedita ullam alias. Dicta labore maxime accusamus saepe sit cumque similique perspiciatis. Veritatis cupiditate quidem quisquam accusamus. Nemo praesentium modi perspiciatis aut.&lt;br&gt;Laudantium ut minus officiis nihil animi mollitia. Impedit numquam magni quam architecto. Necessitatibus quis mollitia corporis voluptatibus.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Corporis nobis&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Ad est eaque ab ipsa officia modi ullam. Ab sunt esse labore deleniti sit magnam.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #veniam h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Quaerat non&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Eum voluptates asperiores est quos. Aut cum velit explicabo blanditiis alias quis. Expedita voluptatum laudantium iste animi eum repellendus nostrum magnam.&lt;/em&gt; &lt;small&gt;sint ex&lt;/small&gt; &lt;a href="#molestiae" title="Vero velit"&gt;Eum nihil&lt;/a&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Iure&lt;/th&gt;&lt;th&gt;Tempore&lt;/th&gt;&lt;th&gt;Illo&lt;/th&gt;&lt;th&gt;Dolorum&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Nisi mollitia&lt;/h2&gt;&lt;ol&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Quos modi nemo est voluptate. Tempora accusamus omnis dignissimos dolorum cum assumenda. Explicabo delectus rem ea harum est incidunt cupiditate vitae. Reiciendis inventore numquam sint illum.&lt;br&gt;Enim beatae eius libero quae neque harum. Incidunt assumenda nulla magni laborum sit recusandae. Voluptatem libero dicta maxime repellendus.&lt;br&gt;Totam at itaque quas quam aliquam. Porro itaque consectetur doloribus voluptate voluptatum ad necessitatibus dolor. Dolore nisi iure delectus dolor dicta tempora.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Consectetur rerum&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Molestias eaque dicta temporibus suscipit necessitatibus et. Quidem ipsam accusantium corrupti iste saepe adipisci.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #nulla h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Atque maxime&lt;/h1&gt;&lt;p&gt;Quo beatae dolorem repudiandae perferendis labore. Illo dolorem veniam cum aliquid nesciunt. Facere exercitationem maxime temporibus magni. Delectus reprehenderit esse hic ducimus. &lt;ins&gt;reiciendis neque&lt;/ins&gt; &lt;small&gt;enim reprehenderit&lt;/small&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Excepturi&lt;/th&gt;&lt;th&gt;Nam&lt;/th&gt;&lt;th&gt;Animi&lt;/th&gt;&lt;th&gt;Culpa&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Consectetur consequuntur&lt;/h2&gt;&lt;ol&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Odit eum explicabo cupiditate alias quam. Assumenda minus eaque maxime itaque. Dolores voluptate repellat alias maxime facere. Quod laboriosam ducimus aspernatur sequi aliquam.&lt;br&gt;Quasi optio unde ratione non quisquam. Adipisci veniam vero dolorem officia ex commodi eos. Porro exercitationem commodi minima consequuntur sit incidunt. Perspiciatis sint beatae officiis porro distinctio debitis. Corporis voluptate modi eaque voluptatibus excepturi fuga nobis.&lt;br&gt;Neque itaque facilis praesentium magni voluptatem quod. Numquam blanditiis quaerat dignissimos rerum eum. Maxime quis hic laborum autem laboriosam. Deserunt nesciunt explicabo voluptatibus vel nulla eligendi illo. Non quibusdam nostrum dolor maxime iusto atque accusamus.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Impedit aperiam&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Inventore eveniet sequi tenetur aliquam quae repellendus quibusdam deserunt.&lt;/li&gt;&lt;li&gt;At provident id reprehenderit debitis ratione voluptatem occaecati.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #cumque h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt; |
+| `dl` | &lt;dl&gt;&lt;dt&gt;Officia&lt;/dt&gt;&lt;dd&gt;Sequi necessitatibus quidem nulla magni delectus. Beatae alias eveniet ipsa libero ipsum. Amet enim tenetur sapiente cum laudantium.&lt;/dd&gt;&lt;dt&gt;Consectetur&lt;/dt&gt;&lt;dd&gt;Dicta ex magni labore explicabo. Officia eaque autem quos quam blanditiis quibusdam.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Perferendis&lt;/dt&gt;&lt;dd&gt;Distinctio totam repellendus eveniet accusantium sit facilis doloremque. Dicta corporis architecto cumque quia. Nostrum deserunt ab harum modi odit fugiat nulla consequatur.&lt;/dd&gt;&lt;dt&gt;Maxime&lt;/dt&gt;&lt;dd&gt;Illo temporibus veniam dolorem dolore nam maiores. Vitae eos eius nihil pariatur cumque.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Ipsum&lt;/dt&gt;&lt;dd&gt;Eligendi recusandae eos sit esse voluptatem inventore. Facilis quia a deleniti doloribus commodi ullam cupiditate nesciunt. Harum architecto deserunt accusantium rerum et.&lt;/dd&gt;&lt;dt&gt;Maiores&lt;/dt&gt;&lt;dd&gt;Provident velit beatae soluta distinctio. At excepturi necessitatibus veritatis ex. Nemo officia quibusdam ullam culpa iusto ut blanditiis.&lt;/dd&gt;&lt;/dl&gt; |
+| `fancy_string` | &lt;del&gt;quas aperiam&lt;/del&gt; &lt;ins&gt;veritatis necessitatibus&lt;/ins&gt; &lt;strong&gt;Atque vitae&lt;/strong&gt;, &lt;mark&gt;Impedit ipsam quaerat autem soluta voluptatem ex nobis. Quisquam labore quod tempora omnis aperiam debitis. Sunt nesciunt vel unde aspernatur dolor. Consectetur fugit labore vero ut quaerat.&lt;/mark&gt; &lt;small&gt;totam numquam&lt;/small&gt; &lt;em&gt;Error minima reprehenderit expedita sunt voluptatibus occaecati exercitationem. Cumque in recusandae ipsum suscipit facere amet alias sapiente. Nemo reiciendis deserunt placeat dolores in atque dolorum.&lt;/em&gt;, Quasi rem eaque et deleniti sequi. Explicabo porro velit atque ducimus voluptatum consequuntur ab ullam. Atque earum maxime aliquid temporibus. Praesentium nostrum optio minima vitae aut quod impedit maiores. Delectus neque cupiditate non deleniti porro. &lt;ins&gt;provident rerum&lt;/ins&gt; &lt;em&gt;Culpa beatae dolorum odio ut vel itaque quia. Eveniet exercitationem atque ut quaerat. Sed itaque nostrum voluptas necessitatibus voluptatibus.&lt;/em&gt; |
+| `ol_long` | &lt;ol&gt;&lt;li&gt;Tempore ad nam tenetur nihil quaerat. Sapiente sequi eum vero reiciendis perspiciatis placeat exercitationem distinctio. Veritatis iste quae aliquam eum magnam. Praesentium minus earum molestiae iste inventore quas commodi.&lt;/li&gt;&lt;li&gt;Explicabo alias nesciunt in quidem. Repudiandae suscipit non quia accusamus laudantium veniam doloribus. Voluptas alias voluptate fuga corrupti.&lt;/li&gt;&lt;li&gt;Quasi neque illum eveniet explicabo placeat numquam inventore voluptatum. Minima deserunt asperiores dignissimos maxime dolorum. Possimus sint sapiente molestiae ipsam neque nam alias. Accusantium et suscipit voluptas voluptates.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Consectetur veniam nemo deleniti eos molestiae. Suscipit dicta odit ab quibusdam perspiciatis similique. Delectus veniam maxime vel architecto quia ea similique. Ad facilis quae mollitia fuga omnis sapiente.&lt;/li&gt;&lt;li&gt;Incidunt atque pariatur sunt animi sed velit dolores. Perspiciatis incidunt in quod minima.&lt;/li&gt;&lt;li&gt;Ducimus beatae incidunt asperiores voluptatibus. Enim fugit sit deleniti ex adipisci corrupti minima.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Fuga totam nihil at officiis quaerat ratione molestiae maiores. Nobis ut aliquid accusantium deserunt voluptas sed animi.&lt;/li&gt;&lt;li&gt;Error quam exercitationem dolor architecto. Quisquam error exercitationem ea omnis id hic.&lt;/li&gt;&lt;li&gt;Accusamus sit quae asperiores dolores libero. Quia minima voluptatibus porro asperiores. Dolorum illo ut ipsam iure corrupti.&lt;/li&gt;&lt;/ol&gt; |
+| `ol_short` | &lt;ol&gt;&lt;li&gt;Eligendi temporibus consequatur ut eveniet placeat.&lt;/li&gt;&lt;li&gt;Tempora vitae quibusdam illo.&lt;/li&gt;&lt;li&gt;Doloribus voluptas vero deserunt.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Nesciunt fugit provident eaque cum nisi inventore.&lt;/li&gt;&lt;li&gt;Quod architecto hic consequuntur odio.&lt;/li&gt;&lt;li&gt;Blanditiis inventore laudantium ea.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Fugit explicabo rerum.&lt;/li&gt;&lt;li&gt;Impedit saepe culpa.&lt;/li&gt;&lt;li&gt;Dolor blanditiis voluptates voluptate.&lt;/li&gt;&lt;/ol&gt; |
 | `p` | , ,  |
-| `table` | &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Iste&lt;/th&gt;&lt;th&gt;Officiis&lt;/th&gt;&lt;th&gt;Veritatis&lt;/th&gt;&lt;th&gt;Ex&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Labore&lt;/td&gt;&lt;td&gt;Tempore&lt;/td&gt;&lt;td&gt;Sequi&lt;/td&gt;&lt;td&gt;&lt;a href="#dolores" title="Nulla minima"&gt;Labore eligendi&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Sunt&lt;/td&gt;&lt;td&gt;Recusandae&lt;/td&gt;&lt;td&gt;Nobis&lt;/td&gt;&lt;td&gt;&lt;a href="#maxime" title="Voluptatibus debitis"&gt;Ratione quos&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Nemo&lt;/td&gt;&lt;td&gt;Cupiditate&lt;/td&gt;&lt;td&gt;Dolorum&lt;/td&gt;&lt;td&gt;&lt;a href="#temporibus" title="Eligendi omnis"&gt;Earum aliquid&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;, &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Magnam&lt;/th&gt;&lt;th&gt;Tenetur&lt;/th&gt;&lt;th&gt;A&lt;/th&gt;&lt;th&gt;Pariatur&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Reprehenderit&lt;/td&gt;&lt;td&gt;Odio&lt;/td&gt;&lt;td&gt;Nesciunt&lt;/td&gt;&lt;td&gt;&lt;a href="#quasi" title="Dolore commodi"&gt;Voluptate ducimus&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Deserunt&lt;/td&gt;&lt;td&gt;Cum&lt;/td&gt;&lt;td&gt;Suscipit&lt;/td&gt;&lt;td&gt;&lt;a href="#laboriosam" title="Tempore culpa"&gt;Consequuntur quaerat&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Iste&lt;/td&gt;&lt;td&gt;Eligendi&lt;/td&gt;&lt;td&gt;Illum&lt;/td&gt;&lt;td&gt;&lt;a href="#asperiores" title="Minima mollitia"&gt;Distinctio error&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;, &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Perferendis&lt;/th&gt;&lt;th&gt;Vero&lt;/th&gt;&lt;th&gt;Ex&lt;/th&gt;&lt;th&gt;Impedit&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ex&lt;/td&gt;&lt;td&gt;Sint&lt;/td&gt;&lt;td&gt;Officiis&lt;/td&gt;&lt;td&gt;&lt;a href="#corporis" title="Dolor eaque"&gt;Eum quibusdam&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Odio&lt;/td&gt;&lt;td&gt;Voluptatem&lt;/td&gt;&lt;td&gt;Amet&lt;/td&gt;&lt;td&gt;&lt;a href="#ipsum" title="Pariatur non"&gt;Aut error&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Odio&lt;/td&gt;&lt;td&gt;Numquam&lt;/td&gt;&lt;td&gt;Minus&lt;/td&gt;&lt;td&gt;&lt;a href="#ipsa" title="Consequuntur sint"&gt;Illo sequi&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; |
-| `ul_links` | &lt;ul&gt;&lt;li&gt;&lt;a href="#quod" title="Culpa"&gt;Quo&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#iusto" title="Natus"&gt;Suscipit&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#tenetur" title="Quidem"&gt;Porro&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;&lt;a href="#totam" title="Maxime"&gt;Voluptatem&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#alias" title="Quaerat"&gt;Voluptatibus&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#pariatur" title="Ipsam"&gt;Officiis&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;&lt;a href="#in" title="Aliquid"&gt;Sit&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#iste" title="Dolor"&gt;Vitae&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#maxime" title="Beatae"&gt;Quod&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt; |
-| `ul_long` | &lt;ul&gt;&lt;li&gt;Eveniet optio at laboriosam architecto dolores iste cum. Similique sapiente architecto reprehenderit fugit voluptatum nam.&lt;/li&gt;&lt;li&gt;Officia fuga animi reprehenderit dignissimos. Consectetur recusandae dolores repellat modi ea illum.&lt;/li&gt;&lt;li&gt;Quo animi labore suscipit iste repellendus. Officia rerum et minima quo architecto cupiditate.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Rem reiciendis dolores eius blanditiis vero. Illo quod natus laborum deserunt facere dolorum ad.&lt;/li&gt;&lt;li&gt;Deleniti molestias modi illo veritatis doloribus ut. Atque mollitia incidunt saepe ea exercitationem. Voluptatum laudantium consectetur exercitationem aspernatur cupiditate harum. Cupiditate possimus fugiat nemo ex.&lt;/li&gt;&lt;li&gt;Doloremque suscipit voluptate quam quod porro fuga accusantium dolores. Tempora ut dolorem ad itaque dolorum nesciunt.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Id praesentium facilis ad recusandae ducimus optio. Similique doloribus fugiat iure beatae explicabo.&lt;/li&gt;&lt;li&gt;Veniam dolorum eos quis repellat enim. Reiciendis qui fuga aliquam cupiditate aperiam laborum iste.&lt;/li&gt;&lt;li&gt;Soluta laudantium atque odio quaerat tempora. Dolor officiis magni vero impedit aliquid fugiat. Laudantium molestias distinctio numquam vero. Id asperiores quos qui omnis reprehenderit molestiae.&lt;/li&gt;&lt;/ul&gt; |
-| `ul_short` | &lt;ul&gt;&lt;li&gt;Similique natus quae.&lt;/li&gt;&lt;li&gt;Officiis dolorum doloremque accusamus possimus rem omnis.&lt;/li&gt;&lt;li&gt;Neque eius illum exercitationem ex.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Aperiam accusamus ea voluptates recusandae quos dolorem.&lt;/li&gt;&lt;li&gt;Minus quos accusamus nam soluta inventore perferendis.&lt;/li&gt;&lt;li&gt;Aliquam vero tenetur fugiat id laudantium nesciunt.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Optio expedita aliquam dolorum adipisci nisi.&lt;/li&gt;&lt;li&gt;Molestiae deserunt sint fugiat ad.&lt;/li&gt;&lt;li&gt;Odit inventore eaque esse autem ipsam eligendi.&lt;/li&gt;&lt;/ul&gt; |
+| `table` | &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Magnam&lt;/th&gt;&lt;th&gt;Eligendi&lt;/th&gt;&lt;th&gt;Dolorum&lt;/th&gt;&lt;th&gt;Eligendi&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Molestiae&lt;/td&gt;&lt;td&gt;Pariatur&lt;/td&gt;&lt;td&gt;Nobis&lt;/td&gt;&lt;td&gt;&lt;a href="#provident" title="Quia reiciendis"&gt;Accusamus eius&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Deserunt&lt;/td&gt;&lt;td&gt;Optio&lt;/td&gt;&lt;td&gt;Laborum&lt;/td&gt;&lt;td&gt;&lt;a href="#quos" title="Vel eligendi"&gt;Iusto id&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Error&lt;/td&gt;&lt;td&gt;Illum&lt;/td&gt;&lt;td&gt;Quidem&lt;/td&gt;&lt;td&gt;&lt;a href="#quos" title="Mollitia eum"&gt;Quod accusamus&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;, &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Hic&lt;/th&gt;&lt;th&gt;Ad&lt;/th&gt;&lt;th&gt;Quae&lt;/th&gt;&lt;th&gt;Maxime&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Molestias&lt;/td&gt;&lt;td&gt;Cum&lt;/td&gt;&lt;td&gt;Eius&lt;/td&gt;&lt;td&gt;&lt;a href="#enim" title="Reiciendis ab"&gt;Possimus reprehenderit&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Veniam&lt;/td&gt;&lt;td&gt;Voluptatem&lt;/td&gt;&lt;td&gt;Quis&lt;/td&gt;&lt;td&gt;&lt;a href="#magnam" title="Incidunt repellendus"&gt;Asperiores laudantium&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Nobis&lt;/td&gt;&lt;td&gt;Vitae&lt;/td&gt;&lt;td&gt;Officia&lt;/td&gt;&lt;td&gt;&lt;a href="#reiciendis" title="Autem similique"&gt;Repellendus earum&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;, &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Illum&lt;/th&gt;&lt;th&gt;Voluptatem&lt;/th&gt;&lt;th&gt;Vero&lt;/th&gt;&lt;th&gt;Corporis&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Iste&lt;/td&gt;&lt;td&gt;Officiis&lt;/td&gt;&lt;td&gt;Veritatis&lt;/td&gt;&lt;td&gt;&lt;a href="#ex" title="Labore cum"&gt;Sequi dolores&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Nulla&lt;/td&gt;&lt;td&gt;Minima&lt;/td&gt;&lt;td&gt;Labore&lt;/td&gt;&lt;td&gt;&lt;a href="#nobis" title="Sunt itaque"&gt;Nobis placeat&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Voluptatibus&lt;/td&gt;&lt;td&gt;Debitis&lt;/td&gt;&lt;td&gt;Ratione&lt;/td&gt;&lt;td&gt;&lt;a href="#corrupti" title="Nemo provident"&gt;Dolorum quibusdam&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; |
+| `ul_links` | &lt;ul&gt;&lt;li&gt;&lt;a href="#eligendi" title="Omnis"&gt;Earum&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#aliquid" title="Magnam"&gt;Tenetur&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#a" title="Pariatur"&gt;Reprehenderit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;&lt;a href="#odio" title="Nesciunt"&gt;Quasi&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#dolore" title="Ea"&gt;Voluptate&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#dignissimos" title="Deserunt"&gt;Cum&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;&lt;a href="#suscipit" title="Laboriosam"&gt;Tempore&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#culpa" title="Consequuntur"&gt;Aliquam&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#iste" title="Eligendi"&gt;Illum&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt; |
+| `ul_long` | &lt;ul&gt;&lt;li&gt;Deserunt nam error perferendis necessitatibus ea quod commodi. Officiis corporis dolor eaque in.&lt;/li&gt;&lt;li&gt;Voluptatem consectetur dolor accusamus modi. Aut error dignissimos eius facere.&lt;/li&gt;&lt;li&gt;Consequuntur sint illo nesciunt possimus. Quo iusto error suscipit reiciendis expedita placeat voluptatum. Voluptatem alias ad asperiores accusamus laboriosam voluptates. In aliquid sit similique amet.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Beatae maxime ab harum itaque quo debitis. Magni maiores unde libero minima deserunt doloribus.&lt;/li&gt;&lt;li&gt;Iure odit rem expedita dolore nemo est. Dolorum mollitia reprehenderit dignissimos aut adipisci a eos tempora. Cum earum porro animi labore. Voluptas omnis facere commodi animi.&lt;/li&gt;&lt;li&gt;Ad optio quasi occaecati laboriosam. Rem reiciendis dolores eius blanditiis vero. Illo quod natus laborum deserunt facere dolorum ad. Maiores deleniti molestias modi illo veritatis asperiores.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Quod atque mollitia incidunt eveniet. Ex nostrum dolore ratione quos deleniti. Nostrum aspernatur excepturi laborum unde quibusdam vero.&lt;/li&gt;&lt;li&gt;Minus voluptas doloremque laboriosam esse. Quo optio asperiores id accusantium magni. Tempora ut dolorem ad itaque dolorum nesciunt. Consectetur est laudantium expedita minima.&lt;/li&gt;&lt;li&gt;Tempore consequatur culpa repellat pariatur reprehenderit. Sunt labore earum veritatis quos exercitationem rerum ratione.&lt;/li&gt;&lt;/ul&gt; |
+| `ul_short` | &lt;ul&gt;&lt;li&gt;Voluptatibus quaerat repudiandae doloribus qui harum.&lt;/li&gt;&lt;li&gt;Aperiam animi perspiciatis.&lt;/li&gt;&lt;li&gt;Soluta laudantium atque odio.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Quaerat tempora dolor necessitatibus.&lt;/li&gt;&lt;li&gt;Magni at cumque nisi illum rem.&lt;/li&gt;&lt;li&gt;Quas expedita numquam at eligendi.&lt;/li&gt;&lt;/ul&gt;, &lt;ul&gt;&lt;li&gt;Id asperiores quos qui omnis.&lt;/li&gt;&lt;li&gt;Iure nihil officia similique.&lt;/li&gt;&lt;li&gt;Aliquam deserunt necessitatibus harum doloremque debitis.&lt;/li&gt;&lt;/ul&gt; |
 
 ## FFaker::HealthcareIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | rzja4nys074dxk8yxugw4lq620hydonuf0k4bk3b2161y97556m2ruj26dz8qkjmso5vowgswj0nwnib7sis3edknxrp1xp5vc9w0ygpku6nupkyb5w2u075qixtyvsvurx5m6u67u906su9tgir1qrdsv1vqs3siz4gg4sn1fz1jy4l55291x3zn2q9128slnur5tws3zor1e58xkgmtla1gacs3ux14pttjrav7tep6ji3mo6nhsmsia4jzpv, xzkviae817ci5dl3j8owfmhglwi4zpgre5itdgp1kcs69vjfikyoq1d1xardewlwdwoc34ajyea6prtxerwr9fn7nc97l2gm17zffjn0wd8lxe66f8chtt92bdznhl6ugyjm13t7qxslcjwnpt7sh231gncomle48d9jqlfgf37hyhgsxxg4u8ql75msfxlm4o86oq0oj1omkfib8o6k38a9g4q3trr5k70l1tnn8a86w9qv5srqw9bhsa3lnq5, qtzb8ie7nip2wontuvh4hnks2tvapez3vztinskofrtg4r3yczxhod6ti5rdp3vf2q4fsm5w9gkp2yfkvjgr12m8nki2bgr49ncr4x3w8pfr9n1re4ms8gii8tcew5cczu6i9omwqsr00hfy9jk34ipfxzu82mojvbcjywuj7mhzfk3v4d9elem12zhtffp28yhyuxumydider9x6t6xrwzcdotd4e3bpn3uqdk2efvgoxdn9xom2qqvykb4jvx |
-| `paragraph` | Fee schedule pregnancy care risk ancillary services defensive medicine lifetime maximum national committee for quality assurance. Evidence of insurability flexible spending account IPA HSA HDHP. Disenroll dependent underwriting NDC gag rule laws. Network provider credentialing consolidated omnibus budget reconciliation act accredited PCP care plan pre-existing condition. Co-payment exclusions and limitations contract year NAIC discharge planning provider., Custodial care medical savings account clinical practice guidelines EAPs self-insured international classification of diseases, 9th revision, clinical modification icd-9-cm primary care physician rider. Credentialing exclusions and limitations national drug code risk admitting physician. Insured IPA waiting period ambulatory care consolidated omnibus budget reconciliation act case manager. Provider explanation of benefits certificate of coverage morbidity case management beneficiary pre-existing condition. Admitting privileges national committee for quality assurance self-insured any willing provider laws clinical practice guidelines free-look period medical savings account., Cost sharing agent of record waiting period short-term medical insurance medicare supplement insured national association of insurance commissioners provider broker. National association of insurance commissioners administrative services only critical access hospital premium credentialing health savings account episode of care. Fee schedule provider independent practice associations participating provider diagnostic related group NDC. |
-| `paragraphs` | Wellness office visit EAPs assignment of benefits NCQA stop-loss provisions COB medical savings account. Policy year medicare supplement COBRA covered charges/expenses incurral date renewal. Co-insurance EOB EAPs certificate of coverage health insurance portability &amp;amp; accountability act. High deductible health plan HIPAA usual and customary charge pre-existing condition network NAIC state insurance department reasonable and customary., Custodial care misrepresentation full-time student medicaid CPT usual and customary charge third-party payer incurral date. Hsa co-payment schedule of benefits and exclusions exclusions and limitations after care. Credentialing medically necessary group health plan co-insurance hospice care., Workers compensation flexible spending account HSA case management health care provider health savings account. Deductible home health care eligible expenses accreditation PCP primary care physician critical access hospital certificate of coverage fee-for-service. Pcp nonrenewable self administered policy year appeal. Capitation broker network provider national committee for quality assurance lapse concurrent review covered benefit current procedural terminology deductible carry over credit. Stop-loss provisions centers of excellence hospital-surgical coverage IPA preventive care high deductible health plan hospice care waiting period., Contract year HSA ambulatory care second surgical opinion eligible expenses diagnostic related group coordinated care IPA. Board certified deductible pre-existing condition home health care coordination of benefits. Any willing provider laws prior authorization gatekeeper misrepresentation admitting privileges COBRA pre-authorization HRA., National committee for quality assurance covered benefit dependent renewal designated facility. Nonrenewable home health care PCP second surgical opinion out-of-plan medigap after care IPA. Benefit COBRA credentialing misrepresentation board certified accumulation period standard industrial classification. Rider hospice care free-look period coordinated care renewal current procedural terminology. Prior authorization underwriting certificate of coverage staff model out-of-pocket costs out-of-pocket maximum limited policy premium EOB., Hospital-surgical coverage general agent master policy provider DRG assignment of benefits concurrent review HRA. R&amp;c charge wellness office visit explanation of benefits concurrent review lapse administrative services only. Pre-admission review health care provider attachment NAIC pre-certification rider appeal cost sharing. Service area evidence of insurability urgent care self administered incurral date. Flexible benefit plan HDHP credentialing flexible spending account managed care provider exclusions and limitations medical savings account deductible carry over credit., Admitting privileges DRG national committee for quality assurance custodial care R&amp;C charge. Eligible dependent attachment effective date out-of-network noncancellable policy NDC covered benefit covered charges/expenses HCPCS. Hcfa common procedure coding system COBRA lifetime maximum IPA HSA open enrollment., Deductible health care provider grievance R&amp;C charge primary care physician waiting period medicare current procedural terminology. Clinical practice guidelines out-of-pocket maximum consolidated omnibus budget reconciliation act exclusions and limitations FSA. Hcpcs after care national drug code noncancellable policy care plan IPA pre-existing condition. Referral accumulation period co-insurance general agent covered person insured benefit concurrent review., Cobra SIC nonrenewable accreditation policy critical access hospital special benefit networks agent of record. Accreditation defensive medicine qualifying event HCFA Common Procedure Coding System self-insured renewal accredited stop-loss provisions. Second surgical opinion health maintenance organization contract year health insurance portability &amp;amp; accountability act provider. After care beneficiary urgent care qualifying event diagnostic related group deductible full-time student. Pre-authorization staff model out-of-pocket maximum administrative services only covered benefit full-time student R&amp;C charge. |
-| `phrase` | Hipaa policyholder urgent care concurrent review cost sharing HCFA Common Procedure Coding System pre-certification ambulatory care., Skilled nursing facility misrepresentation R&amp;C charge medical necessity deductible medically necessary capitation health care provider., Lifetime maximum claim out-of-pocket costs case management beneficiary benefit cap admitting physician. |
-| `phrases` | Flexible benefit plan staff model NAIC health insurance portability &amp;amp; accountability act R&amp;C charge., International classification of diseases, 9th revision, clinical modification icd-9-cm insured HDHP out-of-pocket maximum EAPs broker lifetime maximum., Sic deductible accumulation period national committee for quality assurance gag rule laws wellness office visit coordinated care urgent care hospice care., Cpt free-look period HIPAA impaired risk premium health savings account inpatient care referral., Self administered EOB accredited policy benefit cap FSA general agent hospital-surgical coverage., Impaired risk medicaid clinical practice guidelines utilization review HEDIS major medical open enrollment R&amp;C charge., Certificate of coverage HMO medigap standard industrial classification state insurance department., Naic HIPAA portability state insurance department dependent attachment., Master policy wellness office visit third-party payer home health care gatekeeper case management. |
-| `sentence` | Msa flexible spending account general agent co-insurance skilled nursing facility., Coordination of benefits risk home health care stop-loss provisions covered benefit health reimbursement arrangement case management., Evidence of insurability nonrenewable COB certificate of coverage R&amp;C charge PCP. |
-| `sentences` | Co-payment national drug code premium hospital-surgical coverage accreditation participating provider., Cost sharing covered benefit employee assistance programs hospital-surgical coverage national association of insurance commissioners., Creditable coverage hospice care certificate of coverage fee schedule centers of excellence health care provider out-of-pocket maximum., Second surgical opinion gatekeeper denial of claim rider certificate of coverage., Certificate of coverage accumulation period short-term medical insurance special benefit networks denial of claim out-of-network well-baby care ancillary services., Lapse diagnostic related group general agent medicaid COBRA eligible dependent preferred provider organization., Disenroll policy CPT skilled nursing facility risk enrollee., Second surgical opinion explanation of benefits rider free-look period nonrenewable dependent., Episode of care benefit out-of-plan medical savings account insured waiting period. |
-| `word` | well-baby care, admitting privileges, pre-authorization |
-| `words` | centers of excellence, diagnostic related group, policy, self administered, accreditation, lapse, managed care, designated facility, MSA |
+| `characters` | t4gyegzi5j998mqp4cfod5wff400v2tkbf4kwyzo2qbjqjadrzja4nys074dxk8yxugw4lq620hydonuf0k4bk3b2161y97556m2ruj26dz8qkjmso5vowgswj0nwnib7sis3edknxrp1xp5vc9w0ygpku6nupkyb5w2u075qixtyvsvurx5m6u67u906su9tgir1qrdsv1vqs3siz4gg4sn1fz1jy4l55291x3zn2q9128slnur5tws3zor1e5, 8xkgmtla1gacs3ux14pttjrav7tep6ji3mo6nhsmsia4jzpvxzkviae817ci5dl3j8owfmhglwi4zpgre5itdgp1kcs69vjfikyoq1d1xardewlwdwoc34ajyea6prtxerwr9fn7nc97l2gm17zffjn0wd8lxe66f8chtt92bdznhl6ugyjm13t7qxslcjwnpt7sh231gncomle48d9jqlfgf37hyhgsxxg4u8ql75msfxlm4o86oq0oj1omkfi, b8o6k38a9g4q3trr5k70l1tnn8a86w9qv5srqw9bhsa3lnq5qtzb8ie7nip2wontuvh4hnks2tvapez3vztinskofrtg4r3yczxhod6ti5rdp3vf2q4fsm5w9gkp2yfkvjgr12m8nki2bgr49ncr4x3w8pfr9n1re4ms8gii8tcew5cczu6i9omwqsr00hfy9jk34ipfxzu82mojvbcjywuj7mhzfk3v4d9elem12zhtffp28yhyuxumydider9 |
+| `paragraph` | Creditable coverage prior authorization international classification of diseases, 9th revision, clinical modification icd-9-cm HDHP discharge planning network provider medicaid short-term medical insurance. Hsa HEDIS network workers compensation health savings account defensive medicine beneficiary assignment of benefits. Policyholder gatekeeper NCQA any willing provider laws covered benefit insured medical savings account co-pay., Care plan network provider EAPs medical necessity attachment fee schedule state-mandated benefits policy year. Inpatient care attachment out-of-pocket maximum discharge planning benefit cap group health plan claim any willing provider laws. Accredited high deductible health plan medicare supplement covered benefit formulary case management certificate of coverage., Fee schedule pregnancy care risk ancillary services defensive medicine lifetime maximum national committee for quality assurance. Evidence of insurability flexible spending account IPA HSA HDHP. Disenroll dependent underwriting NDC gag rule laws. Network provider credentialing consolidated omnibus budget reconciliation act accredited PCP care plan pre-existing condition. Co-payment exclusions and limitations contract year NAIC discharge planning provider. |
+| `paragraphs` | Custodial care medical savings account clinical practice guidelines EAPs self-insured international classification of diseases, 9th revision, clinical modification icd-9-cm primary care physician rider. Credentialing exclusions and limitations national drug code risk admitting physician. Insured IPA waiting period ambulatory care consolidated omnibus budget reconciliation act case manager. Provider explanation of benefits certificate of coverage morbidity case management beneficiary pre-existing condition. Admitting privileges national committee for quality assurance self-insured any willing provider laws clinical practice guidelines free-look period medical savings account., Cost sharing agent of record waiting period short-term medical insurance medicare supplement insured national association of insurance commissioners provider broker. National association of insurance commissioners administrative services only critical access hospital premium credentialing health savings account episode of care. Fee schedule provider independent practice associations participating provider diagnostic related group NDC., Wellness office visit EAPs assignment of benefits NCQA stop-loss provisions COB medical savings account. Policy year medicare supplement COBRA covered charges/expenses incurral date renewal. Co-insurance EOB EAPs certificate of coverage health insurance portability &amp;amp; accountability act. High deductible health plan HIPAA usual and customary charge pre-existing condition network NAIC state insurance department reasonable and customary., Custodial care misrepresentation full-time student medicaid CPT usual and customary charge third-party payer incurral date. Hsa co-payment schedule of benefits and exclusions exclusions and limitations after care. Credentialing medically necessary group health plan co-insurance hospice care., Workers compensation flexible spending account HSA case management health care provider health savings account. Deductible home health care eligible expenses accreditation PCP primary care physician critical access hospital certificate of coverage fee-for-service. Pcp nonrenewable self administered policy year appeal. Capitation broker network provider national committee for quality assurance lapse concurrent review covered benefit current procedural terminology deductible carry over credit. Stop-loss provisions centers of excellence hospital-surgical coverage IPA preventive care high deductible health plan hospice care waiting period., Contract year HSA ambulatory care second surgical opinion eligible expenses diagnostic related group coordinated care IPA. Board certified deductible pre-existing condition home health care coordination of benefits. Any willing provider laws prior authorization gatekeeper misrepresentation admitting privileges COBRA pre-authorization HRA., National committee for quality assurance covered benefit dependent renewal designated facility. Nonrenewable home health care PCP second surgical opinion out-of-plan medigap after care IPA. Benefit COBRA credentialing misrepresentation board certified accumulation period standard industrial classification. Rider hospice care free-look period coordinated care renewal current procedural terminology. Prior authorization underwriting certificate of coverage staff model out-of-pocket costs out-of-pocket maximum limited policy premium EOB., Hospital-surgical coverage general agent master policy provider DRG assignment of benefits concurrent review HRA. R&amp;c charge wellness office visit explanation of benefits concurrent review lapse administrative services only. Pre-admission review health care provider attachment NAIC pre-certification rider appeal cost sharing. Service area evidence of insurability urgent care self administered incurral date. Flexible benefit plan HDHP credentialing flexible spending account managed care provider exclusions and limitations medical savings account deductible carry over credit., Admitting privileges DRG national committee for quality assurance custodial care R&amp;C charge. Eligible dependent attachment effective date out-of-network noncancellable policy NDC covered benefit covered charges/expenses HCPCS. Hcfa common procedure coding system COBRA lifetime maximum IPA HSA open enrollment. |
+| `phrase` | Deductible health care provider grievance R&amp;C charge primary care physician waiting period medicare current procedural terminology., Clinical practice guidelines out-of-pocket maximum consolidated omnibus budget reconciliation act exclusions and limitations FSA., Hcpcs after care national drug code noncancellable policy care plan IPA pre-existing condition. |
+| `phrases` | Referral accumulation period co-insurance general agent covered person insured benefit concurrent review., Cobra SIC nonrenewable accreditation policy critical access hospital special benefit networks agent of record., Accreditation defensive medicine qualifying event HCFA Common Procedure Coding System self-insured renewal accredited stop-loss provisions., Second surgical opinion health maintenance organization contract year health insurance portability &amp;amp; accountability act provider., After care beneficiary urgent care qualifying event diagnostic related group deductible full-time student., Pre-authorization staff model out-of-pocket maximum administrative services only covered benefit full-time student R&amp;C charge., Hipaa policyholder urgent care concurrent review cost sharing HCFA Common Procedure Coding System pre-certification ambulatory care., Skilled nursing facility misrepresentation R&amp;C charge medical necessity deductible medically necessary capitation health care provider., Lifetime maximum claim out-of-pocket costs case management beneficiary benefit cap admitting physician. |
+| `sentence` | Flexible benefit plan staff model NAIC health insurance portability &amp;amp; accountability act R&amp;C charge., International classification of diseases, 9th revision, clinical modification icd-9-cm insured HDHP out-of-pocket maximum EAPs broker lifetime maximum., Sic deductible accumulation period national committee for quality assurance gag rule laws wellness office visit coordinated care urgent care hospice care. |
+| `sentences` | Cpt free-look period HIPAA impaired risk premium health savings account inpatient care referral., Self administered EOB accredited policy benefit cap FSA general agent hospital-surgical coverage., Impaired risk medicaid clinical practice guidelines utilization review HEDIS major medical open enrollment R&amp;C charge., Certificate of coverage HMO medigap standard industrial classification state insurance department., Naic HIPAA portability state insurance department dependent attachment., Master policy wellness office visit third-party payer home health care gatekeeper case management., Msa flexible spending account general agent co-insurance skilled nursing facility., Coordination of benefits risk home health care stop-loss provisions covered benefit health reimbursement arrangement case management., Evidence of insurability nonrenewable COB certificate of coverage R&amp;C charge PCP. |
+| `word` | waiting period, underwriting, co-payment |
+| `words` | national committee for quality assurance, pregnancy care, hospital care, accreditation, out-of-plan, covered benefit, cost sharing, eligible expenses, hospital care |
 
 ## FFaker::HealthcareRU
 
 | Method | Example |
 | ------ | ------- |
-| `doctor_specialization` | Диетолог, Стоматолог-хирург, Нефролог |
+| `doctor_specialization` | Проктолог (колопроктолог), Эндоскопист, Эпидемиолог |
 
 ## FFaker::HipsterIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | di4fu9khrhpzbiv4xtbuyju6cx5f2dlhsxjos0v7a2o6r2d1jzpjg58q06t7s5xjk2q7am16ifidygl6wwl1mcx5nbwqh7up47emgzwtrvda9ll44jc1nutgpm1prukwmbkwpm5yj8r2bdbatm6sa58u79ubect09nh4bs4h9ddub2909rj9ftsvqr5q08nbm68yhupypfl68mezlofheic0mf7beua71r8mmr8gai5bjwxp13bkxo1f1ds71iy, 8brn2al9gqnwah8tb6a2cny5feh1tl6zv7lbv13oh1vrllpobww97hcgk08u3cemqxcc88zkxw5kodf2jq28top3ftwe4bqtsxo2cc2wuawdt37sv3yul2jae8ki9pdnz5baw5hgzu6b36td3su34ibb988qljkcd8x2xh9buk04kkwtunr9brmecq3i25fsiyv5wwtolvbwdg3n7z2t8sxi3uua7vl0bsknu0yx5pc7eevpqz395nz973iyorf, nq8adtcoghvvwvohgg1dkdo7kvrvjtl4h41xxpg0jhc3e1yov91b1agu7armf4pn8msgrit74xsedxkvievb9rjulucm35i8w6pdgi4it04x50dsvcaydld67tje3cingi6633l416c2qi2tks0hhqzek2yhtad65gjhwy2ci3gjs2oz0w77j5okvt21cekvaec8oq85xfz209dowz85625075q7xsmeqqoryub4eep6v13k608a5km7d5q5cde |
-| `paragraph` | Tofu quinoa jean shorts master cleanse chambray cardigan. Banksy high life leggings lo-fi seitan trust fund Wayfarers hoodie 8-bit. Biodiesel tumblr Cosby Sweater iPhone bicycle rights tofu synth food truck organic., Tattooed mustache bicycle rights etsy trust fund Rerry Richardson +1 synth. Next level Four Loko readymade keytar Cosby Sweater squid fap organic cred. Tumblr keytar thundercats Brooklyn beard. Trust fund letterpress banh mi moon brunch lo-fi. American apparel sartorial viral stumptown thundercats iPhone mustache keffiyeh you probably haven't heard of them., Echo park next level moon chambray scenester freegan dreamcatcher. Iphone mixtape irony Carles butcher mlkshk cred retro photo booth. Locavore irony freegan Portland cardigan. |
-| `paragraphs` | Craft beer squid sustainable vice next level retro vegan aesthetic Banksy. Sartorial whatever salvia letterpress locavore. Fanny pack thundercats VHS cliche tofu. Mustache tumblr organic readymade vinyl food truck Cosby Sweater PBR iPhone., Gentrify American Apparel vegan twee jean shorts. Dreamcatcher seitan salvia Wes Anderson photo booth sartorial fixie. Moon gluten-free cred squid chambray mixtape Portland messenger bag fixie. Sustainable lomo Wes Anderson artisan cardigan vegan Shoreditch echo park., Twee tofu +1 vice gluten-free trust fund letterpress. Food truck thundercats twee Banksy lo-fi. Echo park McSweeney's Wayfarers scenester brunch raw denim DIY mixtape., Put a bird on it Banksy next level squid keytar tumblr. Brooklyn squid Banksy messenger bag fixie 8-bit. Tattooed skateboard moon Austin artisan gluten-free single-origin coffee mustache Four Loko. Keytar seitan hoodie artisan lomo., Master cleanse +1 readymade keffiyeh DIY whatever art. Keffiyeh beard +1 Wayfarers yr. Cred Austin +1 synth fanny pack wolf., Irony lo-fi high life tofu next level Carles Brooklyn. Banh mi seitan vegan farm-to-table Shoreditch fixie freegan party. Wolf freegan food truck trust fund before they sold out. Blog cliche vice mustache retro banh mi. Photo booth synth mlkshk freegan tumblr bicycle rights artisan Portland., Letterpress Wes Anderson yr raw denim DIY. Irony master cleanse American Apparel stumptown single-origin coffee bicycle rights. Scenester PBR biodiesel chambray DIY retro., Keytar moon craft beer letterpress helvetica VHS Banksy. Raw denim thundercats yr Shoreditch seitan gentrify. Jean shorts whatever brunch tofu yr Wayfarers gluten-free Austin., Irony party scenester skateboard whatever jean shorts synth cliche fixie. Beard twee sartorial locavore next level. Raw denim artisan skateboard salvia Portland. |
-| `phrase` | Lomo iPhone tofu moon farm-to-table scenester American Apparel., Vinyl tumblr twee artisan lo-fi American Apparel biodiesel., Vhs cliche Carles salvia butcher artisan Pitchfork. |
-| `phrases` | Put a bird on it lo-fi aesthetic locavore cardigan art quinoa twee., Pbr artisan vinyl Carles biodiesel art helvetica twee craft beer., Rerry richardson ethical beard food truck DIY., Gluten-free party ethical cred iPhone next level sustainable skateboard., Wayfarers Brooklyn moon helvetica banh mi whatever biodiesel., Ethical salvia cardigan gentrify cliche sartorial vice., Beard Portland seitan letterpress Wes Anderson vice skateboard food truck dreamcatcher., Etsy Portland beard next level McSweeney's., Before they sold out fap salvia next level cliche synth sartorial echo park. |
-| `sentence` | Leggings art high life Four Loko skateboard sustainable organic., American apparel craft beer vinyl Shoreditch irony lo-fi Wayfarers helvetica., Pitchfork tofu aesthetic Banksy mixtape chambray ethical synth. |
-| `sentences` | Messenger bag locavore next level seitan mlkshk tumblr., High life you probably haven't heard of them echo park whatever vegan moon Brooklyn Carles Shoreditch., Helvetica squid cardigan single-origin coffee 8-bit., Pitchfork high life etsy McSweeney's mixtape chambray echo park Marfa., Tofu echo park Carles thundercats put a bird on it., Banksy cardigan scenester letterpress sartorial synth wolf., Leggings Wes Anderson trust fund DIY whatever iPhone +1., American apparel food truck tofu etsy beard helvetica VHS DIY., Seitan cliche lo-fi master cleanse messenger bag mustache butcher quinoa gluten-free. |
-| `word` | tattooed, art, cred |
-| `words` | lo-fi, 8-bit, put a bird on it, brunch, sustainable, Portland, DIY, Portland, jean shorts |
+| `characters` | 88zeyuai6oqlb2zzciigwq6w7rbrjflhz2bqk1dfzyqaadi4fu9khrhpzbiv4xtbuyju6cx5f2dlhsxjos0v7a2o6r2d1jzpjg58q06t7s5xjk2q7am16ifidygl6wwl1mcx5nbwqh7up47emgzwtrvda9ll44jc1nutgpm1prukwmbkwpm5yj8r2bdbatm6sa58u79ubect09nh4bs4h9ddub2909rj9ftsvqr5q08nbm68yhupypfl68mezlo, fheic0mf7beua71r8mmr8gai5bjwxp13bkxo1f1ds71iy8brn2al9gqnwah8tb6a2cny5feh1tl6zv7lbv13oh1vrllpobww97hcgk08u3cemqxcc88zkxw5kodf2jq28top3ftwe4bqtsxo2cc2wuawdt37sv3yul2jae8ki9pdnz5baw5hgzu6b36td3su34ibb988qljkcd8x2xh9buk04kkwtunr9brmecq3i25fsiyv5wwtolvbwdg3n7z, 2t8sxi3uua7vl0bsknu0yx5pc7eevpqz395nz973iyorfnq8adtcoghvvwvohgg1dkdo7kvrvjtl4h41xxpg0jhc3e1yov91b1agu7armf4pn8msgrit74xsedxkvievb9rjulucm35i8w6pdgi4it04x50dsvcaydld67tje3cingi6633l416c2qi2tks0hhqzek2yhtad65gjhwy2ci3gjs2oz0w77j5okvt21cekvaec8oq85xfz209dowz |
+| `paragraph` | Mixtape ethical brunch Portland iPhone. Thundercats craft beer irony chambray lomo messenger bag. Four loko photo booth whatever +1 keytar messenger bag letterpress tumblr twee. Four loko organic retro synth food truck Wayfarers. Pbr Brooklyn readymade seitan Shoreditch Four Loko raw denim., Stumptown tumblr lo-fi Wayfarers irony artisan freegan. Iphone Banksy seitan Wes Anderson readymade food truck lo-fi vegan DIY. Tofu quinoa jean shorts master cleanse chambray cardigan Wes Anderson Banksy fanny pack. Chambray iPhone Carles tattooed readymade hoodie fanny pack farm-to-table leggings. +1 iPhone banh mi photo booth synth food truck., You probably haven't heard of them messenger bag high life trust fund mixtape gluten-free etsy Four Loko Carles. Messenger bag next level Four Loko readymade keytar Cosby Sweater squid letterpress organic. Stumptown tumblr keytar thundercats Brooklyn. Jean shorts Marfa Four Loko stumptown before they sold out fanny pack irony lo-fi sustainable. Fap salvia thundercats messenger bag seitan food truck. |
+| `paragraphs` | Echo park next level moon chambray scenester freegan dreamcatcher. Iphone mixtape irony Carles butcher mlkshk cred retro photo booth. Locavore irony freegan Portland cardigan., Craft beer squid sustainable vice next level retro vegan aesthetic Banksy. Sartorial whatever salvia letterpress locavore. Fanny pack thundercats VHS cliche tofu. Mustache tumblr organic readymade vinyl food truck Cosby Sweater PBR iPhone., Gentrify American Apparel vegan twee jean shorts. Dreamcatcher seitan salvia Wes Anderson photo booth sartorial fixie. Moon gluten-free cred squid chambray mixtape Portland messenger bag fixie. Sustainable lomo Wes Anderson artisan cardigan vegan Shoreditch echo park., Twee tofu +1 vice gluten-free trust fund letterpress. Food truck thundercats twee Banksy lo-fi. Echo park McSweeney's Wayfarers scenester brunch raw denim DIY mixtape., Put a bird on it Banksy next level squid keytar tumblr. Brooklyn squid Banksy messenger bag fixie 8-bit. Tattooed skateboard moon Austin artisan gluten-free single-origin coffee mustache Four Loko. Keytar seitan hoodie artisan lomo., Master cleanse +1 readymade keffiyeh DIY whatever art. Keffiyeh beard +1 Wayfarers yr. Cred Austin +1 synth fanny pack wolf., Irony lo-fi high life tofu next level Carles Brooklyn. Banh mi seitan vegan farm-to-table Shoreditch fixie freegan party. Wolf freegan food truck trust fund before they sold out. Blog cliche vice mustache retro banh mi. Photo booth synth mlkshk freegan tumblr bicycle rights artisan Portland., Letterpress Wes Anderson yr raw denim DIY. Irony master cleanse American Apparel stumptown single-origin coffee bicycle rights. Scenester PBR biodiesel chambray DIY retro., Keytar moon craft beer letterpress helvetica VHS Banksy. Raw denim thundercats yr Shoreditch seitan gentrify. Jean shorts whatever brunch tofu yr Wayfarers gluten-free Austin. |
+| `phrase` | Cosby sweater echo park party scenester skateboard., Synth party biodiesel Portland trust fund twee lomo., Mcsweeney's quinoa raw denim artisan skateboard salvia mixtape mlkshk. |
+| `phrases` | Lomo iPhone tofu moon farm-to-table scenester American Apparel., Vinyl tumblr twee artisan lo-fi American Apparel biodiesel., Vhs cliche Carles salvia butcher artisan Pitchfork., Put a bird on it lo-fi aesthetic locavore cardigan art quinoa twee., Pbr artisan vinyl Carles biodiesel art helvetica twee craft beer., Rerry richardson ethical beard food truck DIY., Gluten-free party ethical cred iPhone next level sustainable skateboard., Wayfarers Brooklyn moon helvetica banh mi whatever biodiesel., Ethical salvia cardigan gentrify cliche sartorial vice. |
+| `sentence` | Beard Portland seitan letterpress Wes Anderson vice skateboard food truck dreamcatcher., Etsy Portland beard next level McSweeney's., Before they sold out fap salvia next level cliche synth sartorial echo park. |
+| `sentences` | Leggings art high life Four Loko skateboard sustainable organic., American apparel craft beer vinyl Shoreditch irony lo-fi Wayfarers helvetica., Pitchfork tofu aesthetic Banksy mixtape chambray ethical synth., Messenger bag locavore next level seitan mlkshk tumblr., High life you probably haven't heard of them echo park whatever vegan moon Brooklyn Carles Shoreditch., Helvetica squid cardigan single-origin coffee 8-bit., Pitchfork high life etsy McSweeney's mixtape chambray echo park Marfa., Tofu echo park Carles thundercats put a bird on it., Banksy cardigan scenester letterpress sartorial synth wolf. |
+| `word` | art, leggings, brunch |
+| `words` | trust fund, vinyl, blog, iPhone, irony, yr, Banksy, craft beer, you probably haven't heard of them |
 
 ## FFaker::Identification
 
 | Method | Example |
 | ------ | ------- |
-| `drivers_license` | P049-771-40-020-4, D782-661-73-086-9, M106-163-71-841-6 |
-| `ethnicity` | Other, Hispanic, Prefer not to respond |
+| `drivers_license` | I403-443-41-599-1, U249-497-77-201-1, A440-497-71-400-2 |
+| `ethnicity` | Native American, Prefer not to respond, African American |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
-| `ssn` | 784-38-8948, 497-56-7024, 110-17-0398 |
+| `ssn` | 111-62-6222, 008-14-8980, 424-97-8438 |
 
 ## FFaker::IdentificationBR
 
 | Method | Example |
 | ------ | ------- |
-| `cnpj` | 21853325671130, 86485711063382, 61395146385886 |
+| `cnpj` | 89484975670206, 41101703982131, 85332567118623 |
 | `cnpj_verification_digits`(...) |  |
-| `cpf` | 39266748064, 45477168382, 56846829954 |
+| `cpf` | 48571106363, 36139514606, 38583926697 |
 | `cpf_verification_digits`(...) |  |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
-| `pretty_cnpj` | 97.732.371/3190-07, 51.614.406/8507-43, 13.771.796/4769-80 |
-| `pretty_cpf` | 384.738.895-92, 565.039.447-48, 260.012.956-11 |
-| `pretty_rg` | 835.181.135, 084.713.657, 420.119.171 |
-| `rg` | 766957061, 206189090, 885294380 |
+| `pretty_cnpj` | 19.961.699/4878-90, 08.619.977/3237-09, 13.190.516/1440-09 |
+| `pretty_cpf` | 685.071.377-92, 179.647.693-59, 847.388.955-08 |
+| `pretty_rg` | 650.394.472, 600.129.568, 351.811.350 |
+| `rg` | 847136574, 201191717, 669570612 |
 
 ## FFaker::IdentificationEC
 
 | Method | Example |
 | ------ | ------- |
-| `ci` | 3519077949, 0153342688, 4250877661 |
+| `ci` | 064189090, 8852943805, 3519077949 |
 
 ## FFaker::IdentificationES
 
@@ -1357,214 +1365,214 @@
 | Method | Example |
 | ------ | ------- |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
-| `rut` | 11920490-9, 11807769-5, 3488381-5 |
+| `rut` | 20154231-6, 16685806-2, 2452753-0 |
 
 ## FFaker::IdentificationESCO
 
 | Method | Example |
 | ------ | ------- |
-| `blood_type` | O-, B+, O+ |
-| `driver_license_category` | A2, B1, A1 |
-| `drivers_license` | 21666861, 6053594596, 214061347721 |
-| `expedition_date` | 2022-01-08, 2019-11-07, 2018-05-15 |
+| `blood_type` | A+, O+, A- |
+| `driver_license_category` | C3, C1, A1 |
+| `drivers_license` | 545862787, 96138855, 482166 |
+| `expedition_date` | 2021-06-13, 2018-08-22, 2019-05-13 |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
-| `id` | 6505702438, 0418980207176, 6696239305 |
+| `id` | 3719559, 02196035, 9180382162 |
 
 ## FFaker::IdentificationIN
 
 | Method | Example |
 | ------ | ------- |
-| `aadhaar` | 210633754218, 841693492078, 446674792707 |
+| `aadhaar` | 446505702438, 041898020717, 646696239305 |
 
 ## FFaker::IdentificationIT
 
 | Method | Example |
 | ------ | ------- |
-| `drivers_license` | U117812477Q, U176562717M, U188387283C |
-| `ethnicity` | Altro, Asiatico/isolano del Pacifico, Preferisco non rispondere |
+| `drivers_license` | U131063375E, U131884169T, U159207844G |
+| `ethnicity` | Caucasico, Altro, Nativo americano |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
-| `ssn` | 11830877014613103430, 45436375172610549922, 29278264986997805738 |
+| `ssn` | 32318503119262000652, 93282724853368311830, 87701461310343045436 |
 
 ## FFaker::IdentificationKR
 
 | Method | Example |
 | ------ | ------- |
-| `rrn` | 952011-1588829, 990804-2645051, 720208-2365980 |
+| `rrn` | 871211-2235177, 810704-1606100, 740603-1739220 |
 
 ## FFaker::IdentificationMX
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | RAKN000507MSLSLQY1, XUKF940905MCHKXCK0, SUQC890715MCHMPKM6 |
-| `rfc` | KEA760907JH3, YALX7604288KF, BMT860915DWG |
-| `rfc_persona_fisica` | YOYA030205CPL, TEIE950625TA1, SAGO740823G4F |
-| `rfc_persona_moral` | UCY180203H8J, DEU9607182DS, QWZ141104O5Z |
+| `curp` | DOUD220818MTSXJTG9, LEMO711127HASHLVL8, DACG800519HCMVCHA9 |
+| `rfc` | HUIS031211YPA, KECL1007193Q9, MOK21082601M |
+| `rfc_persona_fisica` | VUJG9006129Q8, SOLH970228ETJ, YALX7604288KF |
+| `rfc_persona_moral` | ÑBM980916DFX, FTM1911037DU, REA0409060CP |
 
 ## FFaker::IdentificationPL
 
 | Method | Example |
 | ------ | ------- |
-| `drivers_license` | 83196/50/1897, 32369/67/2420, 34571/37/8401 |
-| `id` | XUS641529, MGR536766, IQP352528 |
-| `identity_card` | MWQ684576, QQI315643, XQN570411 |
-| `pesel` | 24041043745, 49850179180, 37873174433 |
+| `drivers_license` | 79870/04/9048, 27403/12/6568, 15279/12/7254 |
+| `id` | QGN302684, MIN131965, ABI197323 |
+| `identity_card` | WJW672420, TKE657137, IEQ217424 |
+| `pesel` | 58810252960, 79103136763, 17242952525 |
 
 ## FFaker::IdentificationTW
 
 | Method | Example |
 | ------ | ------- |
-| `id` | X145883377, J216735757, H174111432 |
+| `id` | Y260845769, Q108156432, X207041144 |
 
 ## FFaker::Image
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x00007f7a28e7cb48&gt;, #&lt;File:0x00007f7a28eaf048&gt;, #&lt;File:0x00007f7a28e2f5c8&gt; |
-| `url` | https://dummyimage.com/300x300/6358e3/ee4900.png?text=, https://dummyimage.com/300x300/31bb44/24aa3e.png?text=, https://dummyimage.com/300x300/0c7e12/5b52e8.png?text= |
+| `file` | #&lt;File:0x00007fa09f3d4298&gt;, #&lt;File:0x00007fa09f3aa448&gt;, #&lt;File:0x00007fa09f3a0a38&gt; |
+| `url` | https://dummyimage.com/300x300/8914dd/c12422.png?text=, https://dummyimage.com/300x300/131ea0/7051ab.png?text=, https://dummyimage.com/300x300/bdb4b8/b43b43.png?text= |
 
 ## FFaker::Internet
 
 | Method | Example |
 | ------ | ------- |
-| `disposable_email` | allena@binkmail.com, elias_schimmel@binkmail.com, noe@safetymail.info |
-| `domain_name` | nitzsche.com, kleinleuschke.biz, boyer.com |
-| `domain_suffix` | info, ca, biz |
-| `domain_word` | hudson, murazik, kertzmann |
-| `email` | maria_denesik@lubowitzmuller.com, evelin.grant@wizawalker.us, juliet@cormiershields.ca |
-| `free_email` | mayola@yahoo.com, ofelia@hotmail.com, ilana@hotmail.com |
-| `http_url` | http://dubuque.biz, http://rau.com, http://balistreri.info |
-| `ip_v4_address` | 49.235.225.31, 192.192.100.85, 244.109.43.42 |
-| `mac` | 97:c5:a9:51:ff:69, 96:16:54:ec:62:ba, 11:35:95:ff:e1:6c |
-| `password` | 0jdxm_6QCTKrVC, tOF8unFbUHMRdt, AyIj4BS5_R0teaD |
-| `safe_email` | tamala_denesik@example.net, fae@example.org, gwen_rempel@example.org |
-| `slug` | perferendis-temporibus, tempore_adipisci, eius-incidunt |
+| `disposable_email` | sunni@mailinator.com, ghislaine@suremail.info, leandra_heller@binkmail.com |
+| `domain_name` | gerhold.info, eichmannherman.name, hintz.biz |
+| `domain_suffix` | ca, us, info |
+| `domain_word` | herzog, armstrongschumm, bruenmitchell |
+| `email` | estefana@fisherdach.biz, sharlene@fadel.name, harriet.oconnell@weber.biz |
+| `free_email` | rosario_volkman@hotmail.com, xzbdulia@gmail.com, johnna_braun@gmail.com |
+| `http_url` | http://hudson.ca, http://murazik.biz, http://aufderhardenesik.info |
+| `ip_v4_address` | 5.39.1.231, 189.136.32.161, 205.181.146.172 |
+| `mac` | a7:19:b3:63:1f:bd, f2:46:15:24:f5:88, bd:93:6d:db:76:4a |
+| `password` | X_tMY7PIR, kHBiStl6te5, qmh9XRHFa |
+| `safe_email` | keneth@example.com, augustina@example.com, cindie.okeefe@example.net |
+| `slug` | officia-ipsam, quidem_eveniet, nulla-cum |
 | `uri`(...) |  |
-| `user_name` | esther.wunsch, sadye.witting, merle |
+| `user_name` | jade_stehr, cornell.krajcik, sally.johnston |
 
 ## FFaker::InternetSE
 
 | Method | Example |
 | ------ | ------- |
-| `company_name_single_word` | Wisozk, Schaefer-Carroll, Smitham, |
-| `disposable_email` | india_hammes@mailinator.com, homer@mailinator.com, tamisha.smitham@spamherelots.com |
-| `domain_name` | oberbrunnerbarrows.com, larkinwelch.com, donnelly.com |
-| `domain_suffix` | se, nu, com |
-| `domain_word` | pourosdietrich, markskemmer, lemke |
-| `email` | reynaldo@feilcrona.com, ervin@schumm.se, duncan.steuber@farrellkunze.com |
-| `free_email` | mirian@gmail.com, van@gmail.com, usha@spray.se |
-| `http_url` | http://lednerlockman.com, http://harber.com, http://block.nu |
-| `ip_v4_address` | 0.177.150.175, 236.85.130.206, 183.148.89.208 |
+| `company_name_single_word` | Jacobson, Ledner-Koepp, Cole |
+| `disposable_email` | marianne_mitchell@safetymail.info, jorge_hoppe@mailinator.com, sylvie@suremail.info |
+| `domain_name` | kilback.se, naderhessel.nu, braun.se |
+| `domain_suffix` | nu, com, se |
+| `domain_word` | binsfahey, wisozk, schaefercarroll |
+| `email` | dominga_krajcik@hammes.se, homer@okon.nu, tamisha@watsica.nu |
+| `free_email` | chi.cormier@passagen.se, scarlet.bahringer@passagen.se, jaime_lemke@hotmail.com |
+| `http_url` | http://pourosdietrich.com, http://kemmerrath.se, http://shields.se |
+| `ip_v4_address` | 120.221.168.249, 171.12.61.112, 74.146.46.111 |
 | `join_to_user_name`(...) |  |
-| `login_user_name` | dee_baumbach, geraldstracke, maurita |
-| `mac` | 5d:84:b1:5e:eb:17, f0:66:56:f6:58:02, 8d:04:8a:84:71:07 |
-| `password` | X2oq_UbMLzYK, wcmIG8WS, F8BB_uY12h |
-| `safe_email` | jonah@example.org, jan.eichmann@example.com, gisela@example.net |
-| `slug` | quae-repellat, cum.accusantium, dolore.a |
+| `login_user_name` | jesserich, bethann, mauricio_farrell |
+| `mac` | f0:8b:80:c2:bf:ea, 5a:bb:31:e1:9c:2e, 5c:ce:39:1c:5a:c0 |
+| `password` | tiiCfBWTpphW0, 1FZz4dtQpCgk, WLTXaXwVSv |
+| `safe_email` | edmundo@example.com, dee_baumbach@example.com, geraldray.barton@example.org |
+| `slug` | quas.consectetur, explicabo-excepturi, sit.aperiam |
 | `uri`(...) |  |
-| `user_name` | kim_hammes, dolores.barton, janisemarinda.ankunding |
+| `user_name` | rocio, marleen, lilla.hilpert |
 | `user_name_from_name`(...) |  |
-| `user_name_random` | randee, clint, mendy_bogisich |
-| `user_name_variant_long` | alonzo_toy, britney_stehr, allena.ullrich |
-| `user_name_variant_short` | gisele, gordon, shawana |
+| `user_name_random` | laronda, ramonita, huongalyce.stehr |
+| `user_name_variant_long` | jamal.shanahan, jonah.rodriguez, sherikamarvel.eichmann |
+| `user_name_variant_short` | katherin, shae, marty |
 
 ## FFaker::JoJo
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Cioccolata, Ryohei, Shuichi |
-| `full_name` | Wes Bluemarine, Pet Shop, Noboru Mochizuki |
-| `last_name` | Chan, Fugo, Mamezuku |
-| `stand` | Wheel of Fortune, Khnum, Love Deluxe |
+| `first_name` | Poco, Miko, Pericolo |
+| `full_name` | Adam Pendleton, Miuccia Miuller, Baron Roocatugo |
+| `last_name` | Tim, Beck, Joestar |
+| `stand` | Kiss, Justice, High Priestess |
 
 ## FFaker::Job
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Human Accountability Supervisor, Global Division Administrator, Corporate Implementation Architect |
+| `title` | Central Infrastructure Technician, Corporate Tactics Executive, Internal Functionality Designer |
 
 ## FFaker::JobBR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Motorista, Arquiteto, Consultor |
+| `title` | Atleta, Gerente, Piloto de Aviação |
 
 ## FFaker::JobCN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 清洁工, 讲师, 模特 |
+| `title` | 产品经理, 烘培师, 宇航员 |
 
 ## FFaker::JobFR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | conseiller service comptable, chef des services informatiquues, chef general du patrimoine bati |
+| `title` | expert general des services techniques, assistant associé du patrimoine bati, chef agence comptable |
 
 ## FFaker::JobIT
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Investitore Dati Socio, Guida Programma Assistente, Dinamico Paradigma Consulente |
+| `title` | Diretto Applicazioni Coordinatore, Cliente Infrastruttura Produttore, Anziano Applicazioni Tecnico |
 
 ## FFaker::JobJA
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 左官, ケアマネジャー, データサイエンティスト |
+| `title` | 予備校講師, 商社マン, ソムリエ |
 
 ## FFaker::JobKR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 모자 제조원, 과실 및 채소 살균기 조작원, 수학 강사 |
+| `title` | 폐기물처리 시험원, 산부인과 전문 의사, 환경관련 관리자 |
 
 ## FFaker::JobVN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | nhân viên khách sạn, Vật lý trị liệu, cầu thủ bóng rổ |
+| `title` | kỹ thuật viên nha khoa, thợ làm nghề móng tay, thiết kế vườn |
 
 ## FFaker::Locale
 
 | Method | Example |
 | ------ | ------- |
-| `code` | CY, GU, VI |
-| `language` | Guarani, Faeroese, Albanian |
+| `code` | IS, SA, LA |
+| `language` | Guarani, Croatian, Wolof |
 
 ## FFaker::Lorem
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | 6mf4kapyeengh09r1vlc6ucnujpcsxd8n9kkbrdppljj3i49cw6b5du7v27upi19n2n3sz923pjytanqpp2a9dxynt7tx6n9puhz1bb181yg4p6p1858jle1rp2fav5n5vd6svrcnjozurkw4zk0d8oo29vk858psuulamy0yh4papb7rbe2a1672g6jjyktqw8qi8xz1as6s0wogsgj8tx9k55vexj8qohdg4q3rlmexhd9werykm7hcx2c1hr, 3qc2yg7dzroaqyhnw9gtotjrwhp2qlwrtdrnibb5li6mmppj7is5sbebkqup520x9jswzfesv4e8yhe6ihkvw8lj5q1wbbcko2f17mved97v82j3u139fuoqe51zd04tahznhlxt7jgcj7t6lrjtnujgb3lcl8xvaocyhc6z8zecs7x95mxkf7yc9232cp4mfeqqk0tw1zyiqb52ichbjlzb86qxz3ny172n8i1bhto7q6hdyrbm9hgwj815eyg, 66fht2rcwsrrhosbk6lykwelkjy1vjc6fckk4jsfamy5ujwjkikx5h9ajfprjpn6j3kqlzxhoyzjfj7ypgor7vsbp3loz0c4g0sm6bhviuvdmen6suqxypam5r1corwzrj0sf8olo72iwhogr1p22kixq6hx7yuuo7wajyts013vd4nao4v2sxv7sh8ztbbeuqv4ckb58tak9clflrcv1psg5iwd6uqti5pzwzi5kcrh3qr2pqulv2hpkt21rj0 |
-| `paragraph` | Laboriosam velit iure rerum molestias. Repellat deleniti accusamus nemo unde dolor libero nostrum. Odit in fugit delectus aliquam nisi vel odio. Est commodi eaque fugiat architecto et a corporis alias. Non maxime ullam quod possimus., Maxime dolorem amet possimus recusandae eum. Autem consequuntur totam perspiciatis cupiditate. Voluptatem dolore qui unde ratione., Incidunt sed voluptates cumque officia. Magnam quo dignissimos vitae suscipit quos eaque unde culpa. Atque distinctio ratione in deserunt illo. Repellendus deleniti sapiente itaque nihil eaque. Earum dicta laboriosam magnam iusto totam veritatis. |
-| `paragraphs` | Molestiae officiis sed eveniet ex possimus. Laudantium consequuntur aspernatur perspiciatis facilis possimus velit et. Adipisci tempora fugiat deserunt soluta magni unde fugit. Minima molestias repellendus est veniam., Id perspiciatis facere dolor asperiores odit atque maiores. Inventore ex aut soluta error esse autem libero adipisci. Quod eaque pariatur aut quibusdam suscipit porro consequatur., Debitis repellendus amet ducimus cum sapiente adipisci voluptate libero. Eius quisquam et numquam totam quo impedit nesciunt suscipit. Iste tempore consequatur amet non odio., Consequatur ea beatae excepturi occaecati provident. Fuga vel voluptatem maiores in. Ab nihil reprehenderit amet nobis soluta praesentium in. Veniam excepturi doloribus laborum tempore est autem consequatur., Autem similique perspiciatis excepturi laboriosam totam. Saepe omnis laboriosam culpa non. Iusto dicta consectetur expedita esse quisquam quasi facere. Repellat corrupti eaque inventore nam dolor. Odit dolores cum est rem quam., Vitae nemo praesentium reprehenderit optio dignissimos ratione laudantium. Totam sunt ad ea minus a officiis illum temporibus. Cumque dolorum voluptates eveniet delectus corrupti harum. A aliquam ipsum maiores voluptatem molestias amet non excepturi., Delectus porro neque in dignissimos. Inventore soluta nihil dolor quisquam magnam laudantium. Alias saepe magnam quibusdam fugiat officia voluptate. Inventore magni odio rem optio dolore excepturi porro recusandae. Natus quos laudantium illo ad., Et labore doloremque consequuntur distinctio debitis. Unde qui esse veniam rerum dolores praesentium odio. Sequi quam libero molestias fuga eligendi similique. Facilis commodi distinctio vero error fugiat., Officiis ratione incidunt a ducimus magnam nam. Corporis odit rerum nisi omnis ad quas. Totam nemo natus doloremque autem itaque. |
-| `phrase` | Eveniet a totam accusantium et animi dolorum in., Corporis tempora dolorum culpa exercitationem consequuntur qui omnis quasi., Aspernatur consectetur ipsam molestias veritatis laboriosam fugiat atque fugit. |
-| `phrases` | Quidem quasi molestias distinctio aliquam delectus dolorem consequatur., Adipisci earum nam a ex., Ex neque commodi odio necessitatibus., Modi possimus dolorum sint suscipit at cupiditate nihil., Mollitia nisi voluptatem quod alias nostrum., Iste quibusdam incidunt facere hic sint adipisci at., Ipsum laborum eligendi veritatis iusto consectetur quia., Neque itaque architecto debitis vel., Ipsum et aliquam possimus vel cumque quidem tempore. |
-| `sentence` | Veniam nemo explicabo vitae beatae., Excepturi placeat amet laudantium quas illo., Quam nulla quod quis maxime ipsum. |
-| `sentences` | Deserunt atque earum quis aspernatur., Quis sed repellendus quae nihil optio delectus ducimus ipsam., Amet quis nam animi sed., Distinctio debitis veritatis possimus aliquid ipsa magni soluta exercitationem., Iste dolore atque ad tempore tempora., Officia assumenda animi quibusdam ipsum eos quas rem eum., Itaque ad dolorum iste cum maxime suscipit ut., Fugiat ea ipsam quibusdam pariatur., Aliquam consequuntur nesciunt eos voluptatum odio. |
-| `word` | accusamus, et, magni |
-| `words` | inventore, impedit, repudiandae, ex, doloribus, dolore, ullam, sapiente, quaerat |
+| `characters` | hl5a5lthb9x58ohxhkn37abeltuzh84st58mbw766mf4kapyeengh09r1vlc6ucnujpcsxd8n9kkbrdppljj3i49cw6b5du7v27upi19n2n3sz923pjytanqpp2a9dxynt7tx6n9puhz1bb181yg4p6p1858jle1rp2fav5n5vd6svrcnjozurkw4zk0d8oo29vk858psuulamy0yh4papb7rbe2a1672g6jjyktqw8qi8xz1as6s0wogsgj8tx, 9k55vexj8qohdg4q3rlmexhd9werykm7hcx2c1hr3qc2yg7dzroaqyhnw9gtotjrwhp2qlwrtdrnibb5li6mmppj7is5sbebkqup520x9jswzfesv4e8yhe6ihkvw8lj5q1wbbcko2f17mved97v82j3u139fuoqe51zd04tahznhlxt7jgcj7t6lrjtnujgb3lcl8xvaocyhc6z8zecs7x95mxkf7yc9232cp4mfeqqk0tw1zyiqb52ichbjlz, b86qxz3ny172n8i1bhto7q6hdyrbm9hgwj815eyg66fht2rcwsrrhosbk6lykwelkjy1vjc6fckk4jsfamy5ujwjkikx5h9ajfprjpn6j3kqlzxhoyzjfj7ypgor7vsbp3loz0c4g0sm6bhviuvdmen6suqxypam5r1corwzrj0sf8olo72iwhogr1p22kixq6hx7yuuo7wajyts013vd4nao4v2sxv7sh8ztbbeuqv4ckb58tak9clflrcv1ps |
+| `paragraph` | Dolores aperiam odio corrupti asperiores. Natus aliquid veritatis aperiam magnam. Quasi iste totam placeat deserunt voluptate rem assumenda. Vitae autem dolorem vero nostrum. Nostrum facere modi maiores totam magnam quasi., Illum aliquam ipsa ullam tenetur ex non voluptate distinctio. Repellat deleniti accusamus nemo unde dolor libero nostrum. Odit in fugit delectus aliquam nisi vel odio. Est commodi eaque fugiat architecto et a corporis alias., Non maxime ullam quod possimus. Aliquam odit facere ipsum consectetur repellendus earum reprehenderit unde. Consequuntur laudantium provident occaecati qui voluptatem aliquam sequi similique. Maiores voluptatum incidunt sed repudiandae. Eligendi similique autem magnam minus ducimus vitae suscipit. |
+| `paragraphs` | Eaque sint omnis magnam corrupti quas soluta. Reprehenderit culpa illo minus dolor nulla quos. Repudiandae nihil eaque saepe sapiente sunt nisi aliquam dignissimos., Molestiae officiis sed eveniet ex possimus. Laudantium consequuntur aspernatur perspiciatis facilis possimus velit et. Adipisci tempora fugiat deserunt soluta magni unde fugit. Minima molestias repellendus est veniam. Sequi est unde possimus amet repellat odit corrupti doloribus., Inventore ex aut soluta error esse autem libero adipisci. Quod eaque pariatur aut quibusdam suscipit porro consequatur. Quos consequuntur quis eveniet illum consectetur praesentium eligendi., Reprehenderit expedita mollitia dicta modi placeat et. Non praesentium cumque optio sequi. Quibusdam iste tempore consequatur amet non. Nihil consequatur nemo aut autem., Quas excepturi occaecati reprehenderit facilis vel voluptatem voluptate illo. Iure dolor cum tempore ducimus reprehenderit iste quis provident. Id nam animi commodi consequatur repudiandae. Autem similique perspiciatis excepturi laboriosam totam. Saepe omnis laboriosam culpa non., Iusto dicta consectetur expedita esse quisquam quasi facere. Repellat corrupti eaque inventore nam dolor. Odit dolores cum est rem quam. Corrupti vitae nemo praesentium reprehenderit cumque., Delectus iusto veniam voluptatum sunt ad. Impedit itaque pariatur assumenda facere. Cumque dolorum voluptates eveniet delectus corrupti harum. A aliquam ipsum maiores voluptatem molestias amet non excepturi. Delectus porro neque in dignissimos., Inventore soluta nihil dolor quisquam magnam laudantium. Alias saepe magnam quibusdam fugiat officia voluptate. Inventore magni odio rem optio dolore excepturi porro recusandae. Natus quos laudantium illo ad. Et labore doloremque consequuntur distinctio debitis., Voluptate minima harum dolores blanditiis iusto. Sequi quam libero molestias fuga eligendi similique. Facilis commodi distinctio vero error fugiat. Maxime debitis ratione incidunt sapiente. |
+| `phrase` | Labore facilis nemo odit expedita., Provident enim atque tenetur rem ipsam culpa doloremque., Saepe voluptates sapiente totam accusantium et animi. |
+| `phrases` | Animi iure doloremque deleniti nemo., Est error nostrum consequuntur qui perspiciatis., Mollitia doloremque itaque delectus odit adipisci., Corporis quos veritatis voluptas quibusdam voluptatum., Esse rerum quasi excepturi nam., Magnam hic neque consequatur non sapiente cum voluptatibus autem., Ex neque commodi odio necessitatibus., Modi possimus dolorum sint suscipit at cupiditate nihil., Mollitia nisi voluptatem quod alias nostrum. |
+| `sentence` | Iste quibusdam incidunt facere hic sint adipisci at., Ipsum laborum eligendi veritatis iusto consectetur quia., Neque itaque architecto debitis vel. |
+| `sentences` | Ipsum et aliquam possimus vel cumque quidem tempore., Veniam nemo explicabo vitae beatae., Excepturi placeat amet laudantium quas illo., Quam nulla quod quis maxime ipsum., Deserunt atque earum quis aspernatur., Quis sed repellendus quae nihil optio delectus ducimus ipsam., Amet quis nam animi sed., Distinctio debitis veritatis possimus aliquid ipsa magni soluta exercitationem., Iste dolore atque ad tempore tempora. |
+| `word` | consequuntur, officia, possimus |
+| `words` | mollitia, repellendus, ipsum, eos, quos, totam, autem, ipsam, hic |
 
 ## FFaker::LoremAR
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | الصفحات اكتوبر إبّان تحرّك لبولندا، وباءت أحدث. أواخر ضرب, مارشال عن اسبوعين الى شيء يتمكن. الصين ذات عدد المبرمة كل واستمرت. هزيمة قوات ومدني، الحرب يذكر. بها الثقيلة الله عن ما فصل, المدنيين الأوروبيّون التخطيط., ومن أوكيناوا أي ثم المعاهدات منشوريا ومدني، جحافل. هو, ولم استسلام بالقصف زهاء. حين, حتى عن تم الثقيلة كل تزامناً الإنذار،,., يتسنّى في كل, التكاليف. بـ على وتم الجيش عرض الدولارات. فرنسا ثانية ومضى بل, الواقعة. أسر بـ لعدم الأولى احداث لم. كل, وجهان لبولندا، قد, منتصف يتعلّق المحيط. |
-| `paragraphs` | بالعمل سقط الأوضاع الى. جوي الباهضة تم ان أسر,. حدى عل كلا لمّ إحتلال كل. بل, يتم ما والإتحاد قصف جُل,., لم, الحرب موسوليني لم ما, مدينة. لليابان ما, وبغطاء جمعت بخطوط دخول دول. الأرض المتحدة, بحث إذ استولت في لكل., و الأوروبية،, أسر الحكم وقوعها انتباه ما عدم عن. النزاع من مدن شبح مما. العصبة مدن غير اسبوعين ما, ما باستسلام. غير ذلك حتى, مما جمعت وفرنسا حدى الفترة. بال وعلى اليابان في هيروشيما., من مع بالمحور حيث. التي حربية الحلفاء تزامناً المقيتة تونس إيطاليا الأعمال. يبق حكومة وقبل مع. القوقازية الحرب النازية، عن. اسبوعين مكن تحت الواقعة بمباركة, لم غينيا., التجارية وحتّى شبح وبحلول استسلام وفي الفاشي الشمل. بمباركة, أن أي أخر المسرح خصوصا. بحث والروسية البرية باستحداث إستسلاماً, قد جديداً ان, المتّبعة. قد و البرية إيو. المضي وبدون أثره، ربع., وتم في, الحرة المعاهدات إختار الامم. المعركة، أفاق شيء الجيش مكن في إنطلاق. يتم بـ قبل الوراء. شعار مع, الثالث لم. دنو قد سمّي غرّة، كلا عقبت ومن., الصفحات عام وقد الأمم بتطويق إذ بريطانيا، إيو. المتطرّف حتى الإحتفاظ ضرب. اليابان لم يبق والإتحاد وعلى مدن و. حلّت جُل, يعبأ جحافل ما الدولارات وقد قوات تحت. وضم الأوروبيّون الذرية الأمم دارت., وبعد الأوضاع ما, لكل. و كل الا علاقة أوراقهم تم, ومضى. دول ومن أم حتى كنقطة لعملة يبق, ان. مما لم إذ سحقت في., الحرب الواقعة باستخدام عام المزيفة إيو البشريةً المواد,. عدم غريمه يتبقّ عن الصفحات جوي منشوريا ماذا غضون. للحكومة, السيطرة إحتار وتتحمّل المانيا بالمحور بالعمل. مارشال غرّة، غضون المبرمة. مرمى وقبل البولندي نهاية. |
-| `phrase` | دنو سلاح حدى الذرية الأوضاع سقوط., معقل تزامناً لإعلان كلّ لكل سمّي فصل, الثالث دول,., الياباني لم النازية، مدن فبعد النزاع من المتساقطة،,. |
-| `phrases` | بالمحور الخاطفة بقسوة ذات ذلك هذه بل الامم وعزّزت., حول عل أي عدم حتى مساعدة., بـ بها قد عل, تم., بالعمل جورج ومضى المانيا لإعلان تكاليف أن., بها لان دول, سياسة الأجل أضف جُل, أن., يتعلّق لم الثقيلة دنو استسلام الفترة., ليركز حتى, ان, وفي وانتهاءً لبولندا، ستالينجراد جمعت., ليركز وبعد بتطويق فكانت الى., أن استسلام وبغطاء هاربر المضي وباستثناء بالمحور. |
-| `sentence` | لليابان والعتاد عن أخر بل, الفترة النمسا اليابان., تم تطوير فاتّبع في بـ وباستثناء., تلك وتعدد بلا ربع المزيفة لم وفي مع الأمم. |
-| `sentences` | مما تم تعداد هو المسرح جسيمة لم بالعمل أوراقهم., ضرب المقاومة السفن و المواد, لم فكانت مع., وتتحمّل أي, مكن المبرمة., يتعلّق كل, مع, جسيمة السفن أي خصوصا بغزو تم., عدد خسائر لم وقامت أخذ., النفط, و الأمم جسيمة تم, تم حالية., ومن باستخدام يتم في, عن إحتلال قهر يعبأ., وتم تسبب هاربر تم, خصوصا., وقد على قبل كلّ علاقة وتتحمّل أفاق. |
-| `word` | المشترك, لم,, شعار |
-| `words` | الفرنسية, عرفها, بقيادة, عل,, السيطرة, احداث, الباهضة, الأوضاع, تونس |
+| `paragraph` | بريطانيا أساسي تم به،. وصل, هيروشيما بها, بتحدّي الدولارات بريطانيا، كل,. و عل ان لغات إيطاليا يعبأ المعركة،. وقوعها، الا أضف الخنادق قد ساعة كل الحرة., الجديدة، تم إيطاليا النزاع قبل مدينة. الصفحات اكتوبر إبّان تحرّك لبولندا، وباءت أحدث. أواخر ضرب, مارشال عن اسبوعين الى شيء يتمكن. الصين ذات عدد المبرمة كل واستمرت., قوات ومدني، حتى, يذكر أم بها ليبين في, بحث. ومضى وبحلول ضرب, الأمور, الإتفاقية. ومن أوكيناوا أي ثم المعاهدات منشوريا ومدني، جحافل. هو, ولم استسلام بالقصف زهاء. |
+| `paragraphs` | حين, حتى عن تم الثقيلة كل تزامناً الإنذار،,. الدولارات والفرنسي أحدث قوات الامم المبرمة. على وتم أم النازيين. التجارية فرنسا ثانية ومضى. الشمل والحلفاء, تم, بـ لعدم وانتهاءً فرنسا لم., قد, لها, بها التخطيط وتتحمّل عن والحلفاء. بـ جمعت خسائر جوي الباهضة تم كلّ فرنسية. حدى عل كلا لمّ إحتلال كل. بل, يتم ما والإتحاد قصف جُل,., لم, الحرب موسوليني لم ما, مدينة. لليابان ما, وبغطاء جمعت بخطوط دخول دول. الأرض المتحدة, بحث إذ استولت في لكل., و الأوروبية،, أسر الحكم وقوعها انتباه ما عدم عن. النزاع من مدن شبح مما. العصبة مدن غير اسبوعين ما, ما باستسلام. غير ذلك حتى, مما جمعت وفرنسا حدى الفترة. بال وعلى اليابان في هيروشيما., من مع بالمحور حيث. التي حربية الحلفاء تزامناً المقيتة تونس إيطاليا الأعمال. يبق حكومة وقبل مع. القوقازية الحرب النازية، عن. اسبوعين مكن تحت الواقعة بمباركة, لم غينيا., التجارية وحتّى شبح وبحلول استسلام وفي الفاشي الشمل. بمباركة, أن أي أخر المسرح خصوصا. بحث والروسية البرية باستحداث إستسلاماً, قد جديداً ان, المتّبعة. قد و البرية إيو. المضي وبدون أثره، ربع., وتم في, الحرة المعاهدات إختار الامم. المعركة، أفاق شيء الجيش مكن في إنطلاق. يتم بـ قبل الوراء. شعار مع, الثالث لم. دنو قد سمّي غرّة، كلا عقبت ومن., الصفحات عام وقد الأمم بتطويق إذ بريطانيا، إيو. المتطرّف حتى الإحتفاظ ضرب. اليابان لم يبق والإتحاد وعلى مدن و. حلّت جُل, يعبأ جحافل ما الدولارات وقد قوات تحت. وضم الأوروبيّون الذرية الأمم دارت., وبعد الأوضاع ما, لكل. و كل الا علاقة أوراقهم تم, ومضى. دول ومن أم حتى كنقطة لعملة يبق, ان. مما لم إذ سحقت في. |
+| `phrase` | المبرمة بل, الحرب أن تم كل عدم., لم وقد ما عدم السادس., عن أم الإستسلام دول,. |
+| `phrases` | غضون النمسا أم يتمكن كنقطة حربية., إذ أم سياسة اعتداء مارشال., غضون قوات جوي بشكل دنو المعركة،., بال البولندي جديدة الباهضة بتطويق فقد., أن النزاع أساسي بحق لإعلان الدولارات لكل استمرار وعزّزت., الياباني لم النازية، مدن فبعد النزاع من المتساقطة،,., بالمحور الخاطفة بقسوة ذات ذلك هذه بل الامم وعزّزت., حول عل أي عدم حتى مساعدة., بـ بها قد عل, تم. |
+| `sentence` | بالعمل جورج ومضى المانيا لإعلان تكاليف أن., بها لان دول, سياسة الأجل أضف جُل, أن., يتعلّق لم الثقيلة دنو استسلام الفترة. |
+| `sentences` | ليركز حتى, ان, وفي وانتهاءً لبولندا، ستالينجراد جمعت., ليركز وبعد بتطويق فكانت الى., أن استسلام وبغطاء هاربر المضي وباستثناء بالمحور., لليابان والعتاد عن أخر بل, الفترة النمسا اليابان., تم تطوير فاتّبع في بـ وباستثناء., تلك وتعدد بلا ربع المزيفة لم وفي مع الأمم., مما تم تعداد هو المسرح جسيمة لم بالعمل أوراقهم., ضرب المقاومة السفن و المواد, لم فكانت مع., وتتحمّل أي, مكن المبرمة. |
+| `word` | يرتبط, يتعلّق, كل, |
+| `words` | صفحة, جسيمة, السفن, المعاهدات, ولم, دول,, تم, أكثر, أحدث |
 
 ## FFaker::LoremBR
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | emd5ydej5ubgbojo3xdlek65u16ho395zrkxu1eiggxk2qo6mjtpf2z82j1gwnoz2onuqfn8ivr0319cqe9oivze64ty7z1arbstno72ajah4igm4vd6gb3ozj1d5b91bijvoqantw9a78iy3y0y7z5emnysrqk3g21zr71ml91bts1bdhnjo3fb8wbbf1owe8dquwpce731bwhioefkgfyjiimiec6jgx2iqqsw66tlwn44q8euc3ikvy2ftn5, oyv2dlrbz71dlwcxzyx0pbvuimcihrrsthsgwhgf9zjljgktws60tbay6qy3nx8htte0q28zk7wturxasqjhofk3v97xf1jr736kqr7y3pylzxcg4c0yfy5g2ct973u5lyuv4rnlaweut36slvijrmf4qo8bc95p2y57pqd7p3o4zep3hzeng14wjchi6j7y6mjdl7czpaugk9byudlrcggt8bepl3blcfsjiu7t69fdg41oi8097mp3lvr47lg, dy612fui1izbtb28zndeexi1e7v1g7yo6lsnlmbzitgmuhldb97qqcn6rq9divuc2702njkn4mq3143s5ecxcofmwt0s2bbyxhzi04kc1ggorg0ia2p5tijj707aggm3l1alv7a0zxholob7or482bu2unsozlr06e52fmzza1tjrrbz4dknqvy98acja8o2q35fd3hy4hyjypvhe3q3kf3ob5wvxo3yl208nn3t28zrlytncbxfeqnu9t3zl7s |
-| `paragraph` | Estão obrigações si impede homens livre. Dos perfeitamente tampouco expondo do circunstâncias tem. Por bem-vindo trivial mesmo outro igual seu sábio impede., Freqüentemente desimpedido é às para ninguém. Lado exercício quando assegurar sempre mestre-construtor. Fáceis dor dores denunciar certas maiores., Como de sabem aceitos dever homem disso dizer. Esses relato há repudiados antipatia exercício atém. Circunstâncias aborrecimentos cegados alguém é ninguém. |
-| `paragraphs` | Seu obrigações vantagem dores ensinamentos empreende. Obrigações o toda dever escolha laborioso como darei. Outros resultante exceto mais aqueles dar. Bem-vindo irritantes princípio prazeres se impede escolhe., Grande evitada aborrecimentos ocasionalmente a. Seu desfrutar certas disso um hora princípio ocorrerá. Assegurar irritantes uma empreende desimpedido trivial em deseje acontecer. Obter qual exceto porque tolera podem negócios sabem., Desfrutar mais desimpedido é podem repudiados. Sábio esses fraqueza perfeitamente qual indignação proporcionar. Certas felicidade ou da distinguir em negócios rejeita. Desfrutar extremamente atém produz quando. Se assegurar evitada criticar ou dores humana tem evitar., Fadados alguém denunciar evitar desfrutar labuta trivial verdade. Denunciamos sábio busque e dizer toda. Busque uma qual os impede empreende., Seu essa esse denunciamos louvar com. Mas prazer como tampouco fadados toda explicar-lhe outros alguém. Através sábio gostamos evitar os encontram lhe criticar por. Repudiados essa lhe mais mesmo criticar., Dizer encontram exercício encolhimento mesmo. São nada si dores momento seu. Nós exemplo felicidade humana labuta lhe irritantes distinguir darei., Algum atém ou evita homens nosso quem todo. Vantagem é repudiados do irritantes exemplo. Fáceis esse encontram assegurar freqüentemente princípio reivindicações irritantes escolha. Nós para desejo encolhimento culpa dizer. Quem certas prever busque homem seleção prazeres encontram igual., Ame momento sábio felicidade criticar desejo explorador impede. Físico laborioso o que obter direito falham. Da poder darei princípio dos denunciamos outros. Sejamos desimpedido denunciamos culpa o. Fáceis prazeres por ensinamentos aceitos físico., Fadados tão sistema denunciar toda trivial ser princípio labuta. Porque evitada resultante enganados livre repudiados mas assegurar sábio. Gostamos extremamente trivial alguém ensinamentos lado. Nós sabem expondo poder ocorrem. Algum bem-vindo sistema enganados racionalmente ocorrem devo cegados vontade. |
+| `characters` | fd8v7ux28ylfuq4mif7themd5ydej5ubgbojo3xdlek65u16ho395zrkxu1eiggxk2qo6mjtpf2z82j1gwnoz2onuqfn8ivr0319cqe9oivze64ty7z1arbstno72ajah4igm4vd6gb3ozj1d5b91bijvoqantw9a78iy3y0y7z5emnysrqk3g21zr71ml91bts1bdhnjo3fb8wbbf1owe8dquwpce731bwhioefkgfyjiimiec6jgx2iqqsw66, tlwn44q8euc3ikvy2ftn5oyv2dlrbz71dlwcxzyx0pbvuimcihrrsthsgwhgf9zjljgktws60tbay6qy3nx8htte0q28zk7wturxasqjhofk3v97xf1jr736kqr7y3pylzxcg4c0yfy5g2ct973u5lyuv4rnlaweut36slvijrmf4qo8bc95p2y57pqd7p3o4zep3hzeng14wjchi6j7y6mjdl7czpaugk9byudlrcggt8bepl3blcfsjiu7t69, fdg41oi8097mp3lvr47lgdy612fui1izbtb28zndeexi1e7v1g7yo6lsnlmbzitgmuhldb97qqcn6rq9divuc2702njkn4mq3143s5ecxcofmwt0s2bbyxhzi04kc1ggorg0ia2p5tijj707aggm3l1alv7a0zxholob7or482bu2unsozlr06e52fmzza1tjrrbz4dknqvy98acja8o2q35fd3hy4hyjypvhe3q3kf3ob5wvxo3yl208nn3t28 |
+| `paragraph` | Prazeres homens físico falham uma dizer. Estão rejeita vantagem outro exemplo algum e. Labuta devo outro gosta indignação sejamos são dos cegados. Aqueles evita obter simples indignação., Dos perfeitamente tampouco expondo do circunstâncias tem. Por bem-vindo trivial mesmo outro igual seu sábio impede. Reais indignação negócios freqüentemente desimpedido pelos não ame desejo. Exercício qual assegurar seleção mesmo é gosta dores dos., Labuta escolha sistema como de sejamos aceitos dever. Dever devo ser evita resultante igual sabem antipatia. Se enganados circunstâncias aborrecimentos cegados alguém nosso devo. |
+| `paragraphs` | Obrigações uma dores ensinamentos empreende ocorrerá ocorrem. Dever escolha laborioso como darei. Outros resultante exceto mais aqueles dar. Bem-vindo irritantes princípio prazeres se impede escolhe., Grande evitada aborrecimentos ocasionalmente a. Seu desfrutar certas disso um hora princípio ocorrerá. Assegurar irritantes uma empreende desimpedido trivial em deseje acontecer. Obter qual exceto porque tolera podem negócios sabem., Desfrutar mais desimpedido é podem repudiados. Sábio esses fraqueza perfeitamente qual indignação proporcionar. Certas felicidade ou da distinguir em negócios rejeita. Desfrutar extremamente atém produz quando. Se assegurar evitada criticar ou dores humana tem evitar., Fadados alguém denunciar evitar desfrutar labuta trivial verdade. Denunciamos sábio busque e dizer toda. Busque uma qual os impede empreende., Seu essa esse denunciamos louvar com. Mas prazer como tampouco fadados toda explicar-lhe outros alguém. Através sábio gostamos evitar os encontram lhe criticar por. Repudiados essa lhe mais mesmo criticar., Dizer encontram exercício encolhimento mesmo. São nada si dores momento seu. Nós exemplo felicidade humana labuta lhe irritantes distinguir darei., Algum atém ou evita homens nosso quem todo. Vantagem é repudiados do irritantes exemplo. Fáceis esse encontram assegurar freqüentemente princípio reivindicações irritantes escolha. Nós para desejo encolhimento culpa dizer. Quem certas prever busque homem seleção prazeres encontram igual., Ame momento sábio felicidade criticar desejo explorador impede. Físico laborioso o que obter direito falham. Da poder darei princípio dos denunciamos outros. Sejamos desimpedido denunciamos culpa o. Fáceis prazeres por ensinamentos aceitos físico., Fadados tão sistema denunciar toda trivial ser princípio labuta. Porque evitada resultante enganados livre repudiados mas assegurar sábio. Gostamos extremamente trivial alguém ensinamentos lado. Nós sabem expondo poder ocorrem. Algum bem-vindo sistema enganados racionalmente ocorrem devo cegados vontade. |
 | `phrase` | Enganados labuta cegados devo pelo disso estão outro., Denunciamos princípio nasceu expondo poder., Culpa si negócios sejamos idéia desejo. |
 | `phrases` | Como casos culpa quando através evita piores outro mesmo., Extremamente obter esses homem homens., Produz acontecer sempre obrigações os problemas disso ser mais., Verdade quem repudiados hora por., Problemas a freqüentemente felicidade e alguém dores., Princípio casos completo circunstâncias desmoralizados ou se maiores ocorrem., Desimpedido desejo assegurar completo si escolha., Qual exceto àqueles aborrecimentos freqüentemente., Lhe quem certas circunstâncias com problemas ocorrerá evitar. |
 | `sentence` | Devo bem-vindo darei cegados e felicidade., Fáceis dizer alguém obrigações produz poder., Exemplo são racionalmente vantagem fáceis. |
@@ -1717,8 +1725,8 @@
 | `first_name` | Carylon, Pasquale, Fatima |
 | `first_name_female` | Larita, Juliet, Rosalinda |
 | `first_name_male` | Robt, Spencer, Alonso |
-| `html_safe_last_name` | Predovic, Zboncak, Bode |
-| `html_safe_name` | Nilda Boehm, Toccara Frami, Ronny Murray |
+| `html_safe_last_name` | Sawayn, McKenzie, Beatty |
+| `html_safe_name` | Nilda Huels, Toccara Gerhold, Ronny Bradtke |
 | `last_name` | Lemke, Schimmel, Stroman |
 | `male_name_with_prefix` | Mr. Bennie McClure, Mr. Steve Abbott, Mr. Fritz Aufderhar |
 | `male_name_with_prefix_suffix` | Mr. Clemente Kling Sr., Mr. Bradly Fisher III, Mr. Joesph Murphy III |
@@ -1779,8 +1787,8 @@
 | `first_name` | Miroslav, Roman, Alois |
 | `first_name_female` | Eden, Melodie, Larae |
 | `first_name_male` | Alexander, Emerson, Kirby |
-| `html_safe_last_name` | Mertz, Blick, Bailey |
-| `html_safe_name` | Denis Hintz, Libuše Cassin, Jaroslava Howell |
+| `html_safe_last_name` | Murazik, Schaden, Heathcote |
+| `html_safe_name` | Denis Howell, Libuše Kutch, Jaroslava Sanford |
 | `last_name` | Dohnal, Fojtíková, Bauer |
 | `male_name_with_prefix` | Mr. Mac Fišer, Mr. Titus Beránek, Mr. Jimmie Benešová |
 | `male_name_with_prefix_suffix` | Mr. Drew Dlouhý DSc., Mr. Marcelino Beranová DSc., Mr. Felipe Čížek Ph.D. |
@@ -1809,8 +1817,8 @@
 | `first_name` | Daniel, Lilian, Lykke |
 | `first_name_female` | Babette, Leticia, Dierdre |
 | `first_name_male` | Ralph, Sol, Renaldo |
-| `html_safe_last_name` | Lakin, Morissette, Oberbrunner |
-| `html_safe_name` | Daniel Jakubowski, Irene Kunze, Dagmar Murazik |
+| `html_safe_last_name` | Ritchie, Gutkowski, Senger |
+| `html_safe_name` | Daniel Runte, Irene Reilly, Dagmar Gerhold |
 | `last_name` | Cartwright, Effertz, Roob |
 | `male_name` | Nick Ruecker, Lars Wintheiser, Per Barton |
 | `male_name_with_prefix` | Mr. Edwardo Littel, Mr. Gale Goldner, Mr. Son Lesch |
@@ -1837,8 +1845,8 @@
 | `first_name` | Rachael, Jules, Ardelia |
 | `first_name_female` | Vernita, Martine, Sulema |
 | `first_name_male` | Garth, Stevie, Fred |
-| `html_safe_last_name` | Donnelly, Leffler, Mosciski |
-| `html_safe_name` | Alejandra Marvin, Bari Terry, Annalisa Konopelski |
+| `html_safe_last_name` | Murazik, Smitham, Moore |
+| `html_safe_name` | Alejandra Emard, Bari Haag, Annalisa Strosin |
 | `last_name` | Abernathy, Kihn, Torphy |
 | `male_name_with_prefix` | Mr. Erik Turcotte, Mr. Leonard Bechtelar, Mr. Theron Wolf |
 | `male_name_with_prefix_suffix` | Mr. Dylan Hettinger III, Mr. Andres Klocko PhD, Mr. Humberto Mraz MD |
@@ -1983,8 +1991,8 @@
 | `full_name` | Angélica Bergnaum Padberg, Balbina Tromp Kling, Seferino Kihn Russel |
 | `full_name_no_prefix` | Sandra Denesik Sauer, Iris Johnson Kutch, Geraldine D'Amore Romaguera |
 | `full_name_prefix` | Sra. Zaira Marvin Dare, Sra. Sonia Moore Watsica, C. Silvio Ángel Kessler Feest |
-| `html_safe_last_name` | Oberbrunner, Gorczany, Boyle |
-| `html_safe_name` | Diego Rempel, Rafael Aufderhar, Patricio Streich |
+| `html_safe_last_name` | Murazik, Jenkins, Abernathy |
+| `html_safe_name` | Diego Beatty, Rafael Rempel, Patricio Gaylord |
 | `last_name` | Sipes, Ebert, Dietrich |
 | `male_name` | Jerónimo, Saúl, Emanuel |
 | `male_name_with_prefix` | C. Ashley Hahn, C. Thaddeus Waters, Sr. Anibal Bashirian |
@@ -2013,8 +2021,8 @@
 | `first_name` | Mammie, Judy, Edison Houston |
 | `first_name_female` | Adrienne, Tamar, Esther |
 | `first_name_male` | Grant, Clifton, Benny |
-| `html_safe_last_name` | Zulauf, Fadel, Pollich |
-| `html_safe_name` | Edgar Schuppe, Monte Woodrow Deckow, Shannon Dean Lind |
+| `html_safe_last_name` | Green, Ledner, Brakus |
+| `html_safe_name` | Edgar Carroll, Monte Woodrow Hudson, Shannon Dean Bayer |
 | `last_name` | Lakin, Morar, Kunde |
 | `male_name_with_prefix` | Mr. Jackson Rempel, Mr. Scott Rohan, Mr. Stan Klocko |
 | `male_name_with_prefix_suffix` | Mr. Elisha Brown Jr., Mr. Al Cummings V, Mr. Rubin Goldner II |
@@ -2040,8 +2048,8 @@
 | `first_name` | Shane, Devin, Charlotte |
 | `first_name_female` | Mariah, Lacie, Pinkie |
 | `first_name_male` | Hilton, Ahmed, Richard-Samuel |
-| `html_safe_last_name` | Shanahan, Weimann, Herzog |
-| `html_safe_name` | Earlene Bradtke, Gisele Wunsch, Eddie Block |
+| `html_safe_last_name` | Rau, Hettinger, McClure |
+| `html_safe_name` | Earlene Koelpin, Gisele Kassulke, Eddie Gibson |
 | `last_name` | Christiansen, Hauck, Dooley |
 | `male_name_with_prefix` | Mr. Riley Murray, Mr. Ty Smitham, Mr. Harland-Robin Conroy |
 | `male_name_with_prefix_suffix` | Mr. Joey Jaskolski DDS, Mr. Elias-Malcolm Turner I, Mr. Kieth Weber MD |
@@ -2067,8 +2075,8 @@
 | `first_name` | Divina, Alfreda, Natashia |
 | `first_name_female` | Katheryn, Katherine, Yolande |
 | `first_name_male` | Lionel, Jamal, Ira |
-| `html_safe_last_name` | Rath, Lueilwitz, Miller |
-| `html_safe_name` | Debrah Gaylord, Nia McCullough, Sharika Mills |
+| `html_safe_last_name` | Sauer, Pouros, Marquardt |
+| `html_safe_name` | Debrah Mills, Nia Kris, Sharika Renner |
 | `last_name` | Fandiño, Navarro, Lavares |
 | `male_name_with_prefix` | Mr. Kip Tupaz, Mr. Sung Biglang-Awag, Mr. Maynard Concepcion |
 | `male_name_with_prefix_suffix` | Mr. Frank Jimenez Jr., Mr. Jean Cabigas DDS, Mr. Derek Nievez I |
@@ -2132,8 +2140,8 @@
 | `first_name` | Cyrus, Herschel, Ismael |
 | `first_name_female` | Desirae, Faustina, Chin |
 | `first_name_male` | Trenton, Emery, Jerrod |
-| `html_safe_last_name` | Lynch, Steuber, Morar |
-| `html_safe_name` | Maribeth Rowe, Ciera Cira Hoeger, Silas Koss |
+| `html_safe_last_name` | Satterfield, Goyette, Collins |
+| `html_safe_name` | Maribeth Bednar, Ciera Cira Gottlieb, Silas Will |
 | `last_name` | Rolfson, Prosacco, Conroy |
 | `male_name_with_prefix` | Mr. Neville Wehner, Mr. Domenic Upton, Mr. Tobias Reinger |
 | `male_name_with_prefix_suffix` | Mr. Vincent Sporer PhD, Mr. Lyle McKenzie IV, Mr. Boris Emard DVM |
@@ -2271,12 +2279,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | +418007507062, +41800 592 41 07, 00418000226539 |
-| `home_work_phone_number` | 024 517 40 96, 0041612996976, 004134 834 13 66 |
-| `mobile_phone_number` | 004176 135 46 80, +41766861315, 004174 865 49 73 |
-| `phone_number` | 052 082 06 81, 074 374 48 05, 0041900 227 21 98 |
-| `premium_rate_phone_number` | 00419006470952, +41900 766 67 06, +419002824562 |
-| `shared_cost_phone_number` | 00418403224328, 08424327620, 00418485286476 |
+| `free_phone_number` | 08007507062, 08005924107, 0800 022 65 39 |
+| `home_work_phone_number` | +4121 517 40 96, 004133 299 69 76, 0041568341366 |
+| `mobile_phone_number` | 004179 135 46 80, 074 686 13 15, +4174 865 49 73 |
+| `phone_number` | +41520820681, +4175 374 48 05, +41901 227 21 98 |
+| `premium_rate_phone_number` | 0041901 647 09 52, +419067666706, 00419002824562 |
+| `shared_cost_phone_number` | 0842 322 43 28, 0041842 432 76 20, 00418485286476 |
 
 ## FFaker::PhoneNumberCU
 
