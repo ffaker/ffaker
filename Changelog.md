@@ -1,6 +1,8 @@
 ## development
 
   - Add your change HERE
+
+# 2.23.0
   - Add FFaker::BankUS.accounting_number [@professor]
   - Add FFaker::BankUS.routing_number [@professor]
   - Resolve a lot of RuboCop offenses [@AlexWayfer]
