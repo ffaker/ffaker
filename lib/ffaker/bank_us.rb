@@ -10,8 +10,7 @@ module FFaker
     end
 
     def routing_number
-      first_two_digit_range = ((0..12).to_a + (21..32).to_a + (61..72).to_a + [80])
-      first_two_digits = format('%02d', first_two_digit_range.sample)
+      first_two_digits = fetch_sample([*'00'..'12', *'21'..'32', *'61'..'72', '80'])
 
       partial_routing_number = FFaker.numerify('######')
 
