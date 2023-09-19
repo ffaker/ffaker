@@ -12,11 +12,10 @@ module FFaker
     def routing_number
       first_two_digits = fetch_sample([*'00'..'12', *'21'..'32', *'61'..'72', '80'])
 
-      partial_routing_number = FFaker.numerify('######')
+      partial_routing_number = FFaker.numerify("#{first_two_digits}######")
+      ninth_digit = generate_ninth_digit(partial_routing_number)
 
-      ninth_digit = generate_ninth_digit(first_two_digits + partial_routing_number)
-
-      "#{first_two_digits}#{partial_routing_number}#{ninth_digit}"
+      "#{partial_routing_number}#{ninth_digit}"
     end
 
     private
