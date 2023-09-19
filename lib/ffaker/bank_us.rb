@@ -10,10 +10,14 @@ module FFaker
     end
 
     def routing_number
-      partial_routing_number = FFaker.numerify('########')
-      ninth_digit = generate_ninth_digit(partial_routing_number)
+      first_two_digit_range = ((0..12).to_a + (21..32).to_a + (61..72).to_a + [80])
+      first_two_digits = format('%02d', first_two_digit_range.sample)
 
-      "#{partial_routing_number}#{ninth_digit}"
+      partial_routing_number = FFaker.numerify('######')
+
+      ninth_digit = generate_ninth_digit(first_two_digits + partial_routing_number)
+
+      "#{first_two_digits}#{partial_routing_number}#{ninth_digit}"
     end
 
     private

@@ -1,6 +1,7 @@
 ## development
 
   - Add your change HERE
+  - Limit FFaker::BankUS.routing_number first two digits [@professor]
 
 # 2.23.0
   - Add FFaker::BankUS.accounting_number [@professor]
