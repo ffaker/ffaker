@@ -1,6 +1,8 @@
 ## development
 
   - Add your change HERE
+  - Add FFaker::BankUS.accounting_number [@professor]
+  - Add FFaker::BankUS.routing_number [@professor]
   - Resolve a lot of RuboCop offenses [@AlexWayfer]
   - Change `Image.url`, `Image.file`, `Book.cover` and `Avatar.image` arguments to keywords [@AlexWayfer]
   - Adds FFaker::Date.birthday [@professor]
