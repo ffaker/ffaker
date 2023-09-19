@@ -24,8 +24,7 @@ class TestBankUS < Test::Unit::TestCase
     routing_number = @tester.routing_number
     assert_match(/\A\d{9}\z/, routing_number)
 
-    first_two_digit_range = ((0..12).to_a + (21..32).to_a + (61..72).to_a + [80])
-    assert_true(first_two_digit_range.include?(routing_number[0..1].to_i))
+    assert_true(@tester::ROUTING_NUMBER_PREFIXES.include?(routing_number[0..1]))
 
     checksum = (
       (7 * (routing_number[0].to_i + routing_number[3].to_i + routing_number[6].to_i)) +
