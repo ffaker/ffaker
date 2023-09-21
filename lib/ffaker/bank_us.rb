@@ -5,12 +5,16 @@ module FFaker
     extend ModuleUtils
     extend self
 
+    ROUTING_NUMBER_PREFIXES = [*'00'..'12', *'21'..'32', *'61'..'72', '80'].freeze
+
     def account_number(min_digits: 9, max_digits: 17)
       FFaker.numerify('#' * rand(min_digits..max_digits))
     end
 
     def routing_number
-      partial_routing_number = FFaker.numerify('########')
+      first_two_digits = fetch_sample(ROUTING_NUMBER_PREFIXES)
+
+      partial_routing_number = FFaker.numerify("#{first_two_digits}######")
       ninth_digit = generate_ninth_digit(partial_routing_number)
 
       "#{partial_routing_number}#{ninth_digit}"
