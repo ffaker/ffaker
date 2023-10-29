@@ -2,7 +2,7 @@
 
   - Add your change HERE
   - Add `FFaker::UUID` `.uuidv4`, `.uuidv6`, `.uuidv7`, and `.uuidv8` [@stilist]
-  - Deprecate `FFaker::GUID` in favor of `FFaker::UUID` [@stilist]
+  - Deprecate `FFaker::Guid.guid` in favor of `FFaker::UUID` methods [@stilist]
   - Limit FFaker::BankUS.routing_number first two digits [@professor]
 
 # 2.23.0
