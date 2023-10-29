@@ -76,6 +76,7 @@ module FFaker
     'ua' => 'UA',
     'uk' => 'UK',
     'us' => 'US',
+    'uuid' => 'UUID',
     'vn' => 'VN'
   }
 
