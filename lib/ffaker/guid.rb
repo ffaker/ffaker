@@ -11,8 +11,8 @@ module FFaker
     #
     # @deprecated Often generates invalid UUIDs. Use {UUID} instead.
     def guid
-      warn '[guid] is deprecated. Use the UUID module instead.'
-      FFaker.hexify('########-####-####-####-############')
+      warn '[guid] is deprecated. Use the UUID.uuidv4 method instead.'
+      FFaker::UUID.uuidv4
     end
   end
 end
