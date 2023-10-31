@@ -12,7 +12,7 @@ module FFaker
     # @deprecated Often generates invalid UUIDs. Use {UUID} instead.
     def guid
       warn '[guid] is deprecated. Use the UUID.uuidv4 method instead.'
-      FFaker::UUID.uuidv4
+      FFaker::UUID.uuidv4.upcase
     end
   end
 end
