@@ -43,7 +43,7 @@ module FFaker
     end
 
     def domain_name
-      [domain_word, domain_suffix].join('.')
+      [domain_word, domain_suffix, 'test'].join('.')
     end
 
     def domain_word
