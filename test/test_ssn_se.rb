@@ -24,7 +24,7 @@ class TestSSNSE < Test::Unit::TestCase
     assert equal?(ssn_female[10].to_i)
 
     assert_raise ArgumentError do
-      FFaker::SSNSE.ssn(gender: :unkown)
+      FFaker::SSNSE.ssn(gender: :unknown)
     end
   end
 
