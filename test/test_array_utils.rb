@@ -89,7 +89,7 @@ class TestArrayUtils < Test::Unit::TestCase
 
   private
 
-  # Supress the deprecation warning that some methods output, so we get less
+  # Suppress the deprecation warning that some methods output, so we get less
   # noise in our test run.
   def supress_warn_output
     original_verbosity = $VERBOSE

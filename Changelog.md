@@ -400,7 +400,7 @@ Api additions by Rafael Souza
 
 ## 0.3.2 2010-01-14
 
-* Several Optimizations, renamed gem packege to ffaker.
+* Several Optimizations, renamed gem package to ffaker.
 
 ## 0.3.1 2008-04-03
 
