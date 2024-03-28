@@ -1028,8 +1028,8 @@
 | Method | Example |
 | ------ | ------- |
 | `name` | Pascal, Vasseur and Mendes, Rossi et fils, Guillou-Collet |
-| `siren` | 739836110, 690890420, 300789380 |
-| `siret` | 06746846000000, 70493562000500, 45666261000350 |
+| `siren` | 739836112, 690890421, 300789385 |
+| `siret` | 06746846200006, 70493562600504 , 45666261800358 |
 | `suffix` | SA, Groupe, SARL |
 
 ## FFaker::CompanyIT

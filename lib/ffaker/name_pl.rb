@@ -90,9 +90,9 @@ module FFaker
 
     def name_for_gender(name_type, gender) # :nodoc:
       raise(ArgumentError, "Gender must be one of: #{GENDERS}") unless GENDERS.include?(gender)
-      return send("#{gender}_#{name_type}") unless gender == :random
+      return send(:"#{gender}_#{name_type}") unless gender == :random
 
-      fetch_sample([send("female_#{name_type}"), send("male_#{name_type}")])
+      fetch_sample([send(:"female_#{name_type}"), send(:"male_#{name_type}")])
     end
   end
 end
