@@ -14,7 +14,7 @@ module FFaker
 
     def const_missing(const_name)
       if const_name.match?(/[a-z]/) # Not a constant, probably a class/module name.
-        super const_name
+        super(const_name)
       else
         mod_name = ancestors.first.to_s.split('::').last
         data_path = "#{FFaker::BASE_LIB_PATH}/ffaker/data/#{underscore(mod_name)}/#{underscore(const_name.to_s)}"
@@ -43,7 +43,7 @@ module FFaker
                   .reverse
                   .each_with_index
                   .sum { |digit, index| index.even? ? (2 * digit).digits.sum : digit }
-      ((10 - sum%10)%10).to_s
+      ((10 - (sum % 10)) % 10).to_s
     end
   end
 end

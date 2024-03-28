@@ -48,9 +48,9 @@ class TestModuleUtils < Test::Unit::TestCase
   def test_luhn_check
     obj = Object.new
     obj.extend FFaker::ModuleUtils
-    assert obj.luhn_check("97248708") == "6"
-    assert obj.luhn_check("1789372997") == "4"
-    assert obj.luhn_check("8899982700037") == "1"
-    assert obj.luhn_check("1234567820001") == "0"
+    assert obj.luhn_check('97248708') == '6'
+    assert obj.luhn_check('1789372997') == '4'
+    assert obj.luhn_check('8899982700037') == '1'
+    assert obj.luhn_check('1234567820001') == '0'
   end
 end

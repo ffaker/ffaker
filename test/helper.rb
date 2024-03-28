@@ -35,7 +35,7 @@ module DeterministicHelper
       end
     operator_name += '_or_equal_to' if operator[1] == '='
 
-    define_method "assert_#{operator_name}" do |got, expected|
+    define_method :"assert_#{operator_name}" do |got, expected|
       assert(
         got.public_send(operator, expected),
         "Expected #{operator} \"#{expected}\", but got #{got}"
@@ -56,8 +56,8 @@ module DeterministicHelper
   end
 
   %w[less_than_or_equal_to between].each do |method_name|
-    define_method "assert_random_#{method_name}" do |*args, &block|
-      assert_random(block) { send "assert_#{method_name}", block.call, *args }
+    define_method :"assert_random_#{method_name}" do |*args, &block|
+      assert_random(block) { send :"assert_#{method_name}", block.call, *args }
     end
   end
 
@@ -76,7 +76,7 @@ module DeterministicHelper
     #  }
     def assert_methods_are_deterministic(klass, *methods)
       Array(methods).each do |meth|
-        define_method "test_#{meth}_is_deterministic" do
+        define_method :"test_#{meth}_is_deterministic" do
           assert_deterministic(message: "Results from `#{klass}.#{meth}` are not repeatable") do
             klass.send(meth)
           end
