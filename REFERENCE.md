@@ -246,7 +246,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Melbourne, Australia/Sydney, Australia/Hobart |
+| `time_zone` | Australia/Adelaide, Australia/Hobart, Australia/Perth |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -929,7 +929,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `card_expiry_date` | 09/26, 01/28, 08/28 |
+| `card_expiry_date` | 09/27, 01/29, 08/29 |
 | `card_number` | 0881 1113 8121 5000, 7524 0230 1909 1662, 7301 2226 6397 4548 |
 | `card_type` | mastercard, maestro, solo |
 | `iban` | DO50GCBH29467231689551372717, LU338569240126150859, BE89929107166643 |
@@ -1029,7 +1029,7 @@
 | ------ | ------- |
 | `name` | Pascal, Vasseur and Mendes, Rossi et fils, Guillou-Collet |
 | `siren` | 739836112, 690890421, 300789385 |
-| `siret` | 06746846200006, 70493562600504 , 45666261800358 |
+| `siret` | 06746846200006, 70493562600504, 45666261800358 |
 | `suffix` | SA, Groupe, SARL |
 
 ## FFaker::CompanyIT
@@ -1084,10 +1084,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `backward` | 2022-12-26, 2023-01-14, 2023-04-14 |
+| `backward` | 2023-06-02, 2023-06-21, 2023-09-19 |
 | `between`(..., ...) |  |
-| `birthday` | 1998-10-15, 1973-08-17, 2004-11-25 |
-| `forward` | 2024-03-30, 2023-11-19, 2023-12-05 |
+| `birthday` | 1999-03-21, 1974-01-21, 2005-05-01 |
+| `forward` | 2024-09-04, 2024-04-25, 2024-05-11 |
 
 ## FFaker::DizzleIpsum
 
@@ -1375,7 +1375,7 @@
 | `blood_type` | O+, AB+, B+ |
 | `driver_license_category` | A2, C3, C2 |
 | `drivers_license` | 215210, 6805531, 9120780091640 |
-| `expedition_date` | 2022-02-19, 2019-02-26, 2019-10-22 |
+| `expedition_date` | 2022-07-27, 2019-08-03, 2020-03-28 |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `id` | 3614915862, 033452, 961630498897 |
 
@@ -1404,10 +1404,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | CUXW890509MDGWRLN1, HEWS771004MHGYCVJ8, TOIR221205HTLFLXC3 |
-| `rfc` | SUJS051024MDW, BJR0007259VQ, WALÑ710429EQT |
-| `rfc_persona_fisica` | HAYF990628KSV, XOGO120115P8K, YIUJ921021EZJ |
-| `rfc_persona_moral` | NLY000328FIC, OEZ750515L4E, NYM910616VU6 |
+| `curp` | CUXW890705MDGWRLN1, HEWS771027MHGYCVJ8, TOIR230509HTLFLXC3 |
+| `rfc` | SUJS060206MDW, BJR0010239VQ, WALÑ710503EQT |
+| `rfc_persona_fisica` | HAYF990923KSV, XOGO120517P8K, YIUJ921227EZJ |
+| `rfc_persona_moral` | NLY000625FIC, OEZ750530L4E, NYM910818VU6 |
 
 ## FFaker::IdentificationPL
 
@@ -1428,7 +1428,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x00007fad1548ff20&gt;, #&lt;File:0x00007fad154ced38&gt;, #&lt;File:0x00007fad154c02d8&gt; |
+| `file` | #&lt;File:0x00007f9fbeb798b8&gt;, #&lt;File:0x00007f9fbeb71898&gt;, #&lt;File:0x00007f9fbeb99898&gt; |
 | `url` | https://dummyimage.com/300x300/49f936/a1c304.png?text=, https://dummyimage.com/300x300/b344ff/50a4fd.png?text=, https://dummyimage.com/300x300/5e6794/4b406e.png?text= |
 
 ## FFaker::Internet
@@ -1726,8 +1726,8 @@
 | `first_name` | Emilee, Sherlene, Britt |
 | `first_name_female` | Jessie, Richelle, Taylor |
 | `first_name_male` | Man, Alberto, Myles |
-| `html_safe_last_name` | Parker, Hartmann, Rempel |
-| `html_safe_name` | Kate Grant, Kaila Balistreri, Junie Lockman |
+| `html_safe_last_name` | Vandervort, Osinski, Murphy |
+| `html_safe_name` | Kate Ernser, Kaila Bergnaum, Junie Bahringer |
 | `last_name` | Bauch, McClure, Botsford |
 | `male_name_with_prefix` | Mr. Danilo Stanton, Mr. Rickey Abshire, Mr. Brooks Koch |
 | `male_name_with_prefix_suffix` | Mr. Federico Krajcik V, Mr. Bryant Labadie DVM, Mr. Felton Waters DVM |
@@ -1788,8 +1788,8 @@
 | `first_name` | Dušan, Jana, Ivo |
 | `first_name_female` | Yuriko, Shin, Lana |
 | `first_name_male` | Clinton, Franklin, Luis |
-| `html_safe_last_name` | Hoeger, Christiansen, Mayert |
-| `html_safe_name` | Lukáš Schmitt, Božena Hand, Radim Ernser |
+| `html_safe_last_name` | Russel, Emmerich, Zemlak |
+| `html_safe_name` | Lukáš Ferry, Božena Kuhn, Radim Kassulke |
 | `last_name` | Červený, Černá, Dušek |
 | `male_name_with_prefix` | Mr. Allan Beránková, Mr. Irwin Boháčová, Mr. Raymundo Čech |
 | `male_name_with_prefix_suffix` | Mr. Edison Červenková Ph.D., Mr. Samual Beránek Ph.D., Mr. Austin Filip DSc. |
@@ -1818,8 +1818,8 @@
 | `first_name` | Torben, Kristina, Olav |
 | `first_name_female` | Su, Beverly, Sharonda |
 | `first_name_male` | Daniel, Santo, Thomas |
-| `html_safe_last_name` | Rodriguez, Jast, Cormier |
-| `html_safe_name` | Bjørn Armstrong, Christiane Fahey, Hugo Greenfelder |
+| `html_safe_last_name` | Quigley, Batz, Dickens |
+| `html_safe_name` | Bjørn Conroy, Christiane Hessel, Hugo Lind |
 | `last_name` | Weber, Powlowski, Stokes |
 | `male_name` | Vilhelm Lockman, Gustav Bosco, Gunner Welch |
 | `male_name_with_prefix` | Mr. Olin Thiel, Mr. Clifford Weissnat, Mr. Dwayne Kirlin |
@@ -1846,8 +1846,8 @@
 | `first_name` | Teddy, Wynona, Joan |
 | `first_name_female` | Teisha, Rowena, Evelina |
 | `first_name_male` | Lee, Darell, Jeramy |
-| `html_safe_last_name` | Becker, Schroeder, Lynch |
-| `html_safe_name` | Earnest Cartwright, Eusebia Zieme, Jolyn Schultz |
+| `html_safe_last_name` | Halvorson, Medhurst, Crona |
+| `html_safe_name` | Earnest Bauch, Eusebia Jast, Jolyn Prosacco |
 | `last_name` | Botsford, Terry, Jenkins |
 | `male_name_with_prefix` | Mr. Bradford Sipes, Mr. Brooks Durgan, Mr. Tyree Mosciski |
 | `male_name_with_prefix_suffix` | Mr. Lenny Kovacek I, Mr. Edwardo Rodriguez Sr., Mr. Dominick Denesik Jr. |
@@ -1992,8 +1992,8 @@
 | `full_name` | Marcela Tremblay Nitzsche, Augusto Martín Stamm Parker, Linda Wiegand Schoen |
 | `full_name_no_prefix` | Alba Viviana Zemlak Mills, Darío Cruickshank Corwin, Aurora Mosciski Cummings |
 | `full_name_prefix` | Srita. Abril Hamill VonRueden, Srita. Isabel Ward Ferry, C. Nancy Marquardt Zulauf |
-| `html_safe_last_name` | Hudson, Zulauf, Blanda |
-| `html_safe_name` | Marisol Lueilwitz, Xavier Buckridge, Aurelio Roob |
+| `html_safe_last_name` | Rutherford, Lynch, Zulauf |
+| `html_safe_name` | Marisol Rogahn, Xavier Greenfelder, Aurelio Dicki |
 | `last_name` | Bashirian, Ernser, Pfannerstill |
 | `male_name` | Elías, Vladimir, Román |
 | `male_name_with_prefix` | Sr. Herschel Macejkovic, Sr. Rigoberto Hudson, C. Stevie Mayer |
@@ -2022,8 +2022,8 @@
 | `first_name` | Taneka Karie, Susy, Giuseppe |
 | `first_name_female` | Rosio, Audria, Cicely |
 | `first_name_male` | Dylan, Dewey, Alexander |
-| `html_safe_last_name` | Leffler, Langosh, Williamson |
-| `html_safe_name` | Jame Bahringer, Juli Gulgowski, Abel Bednar |
+| `html_safe_last_name` | Douglas, Gislason, Rodriguez |
+| `html_safe_name` | Jame Ratke, Juli Shanahan, Abel Koch |
 | `last_name` | Lueilwitz, Schmeler, Kulas |
 | `male_name_with_prefix` | Mr. Freddy Gottlieb, Mr. Amado Lesch, Mr. Donny Gleason |
 | `male_name_with_prefix_suffix` | Mr. Herb Bradtke Jr., Mr. Issac Abbott DDS, Mr. Chauncey Skiles Jr. |
@@ -2049,8 +2049,8 @@
 | `first_name` | Zoraida, Elvis-Luciano, Joaquin |
 | `first_name_female` | Anamaria, Merlene, Christeen-Luciana |
 | `first_name_male` | Garry, Nick, Jay-Dee |
-| `html_safe_last_name` | Jaskolski, Schuppe, Bechtelar |
-| `html_safe_name` | Mildred Bogisich, Donald Swaniawski, Harris Towne |
+| `html_safe_last_name` | Legros, Sporer, Kertzmann |
+| `html_safe_name` | Mildred Leannon, Donald Homenick, Harris Renner |
 | `last_name` | Leannon, Leffler, Carroll |
 | `male_name_with_prefix` | Mr. Wilton Swaniawski, Mr. Jarrod O'Reilly, Mr. Doyle Cummings |
 | `male_name_with_prefix_suffix` | Mr. Lou Casper V, Mr. Korey Watsica DDS, Mr. Ramon Deckow PhD |
@@ -2076,8 +2076,8 @@
 | `first_name` | Casimira, Sanda, Kayleen |
 | `first_name_female` | Apolonia, Chanda, Mae |
 | `first_name_male` | Alan, Cornell, Frederic |
-| `html_safe_last_name` | Conroy, Stark, Brekke |
-| `html_safe_name` | Sharri Kerluke, Ellie Vandervort, Margaretta Moore |
+| `html_safe_last_name` | Stehr, Thompson, Senger |
+| `html_safe_name` | Sharri Windler, Ellie Rosenbaum, Margaretta Olson |
 | `last_name` | Guintog, Simsuangco, Dacudao |
 | `male_name_with_prefix` | Mr. Brendan Castillo, Mr. Denver Sariwa, Mr. Ray Abulog |
 | `male_name_with_prefix_suffix` | Mr. Brandon Javier V, Mr. Derick Villamor Jr., Mr. Andreas africa PhD |
@@ -2141,8 +2141,8 @@
 | `first_name` | Lowell, Rubye, Marlyn |
 | `first_name_female` | Rosann, Francisca, Ethyl |
 | `first_name_male` | Sherwood, Rich, Heriberto |
-| `html_safe_last_name` | Terry, Kohler, Wunsch |
-| `html_safe_name` | Fred Crist, Henry Jamal Dibbert, Wilda Janiece Thiel |
+| `html_safe_last_name` | Hahn, Mohr, Medhurst |
+| `html_safe_name` | Fred Rolfson, Henry Jamal Frami, Wilda Janiece Smith |
 | `last_name` | Wunsch, Roob, Kuhn |
 | `male_name_with_prefix` | Mr. Zachary Effertz, Mr. Rene Stokes, Mr. Thanh Rice |
 | `male_name_with_prefix_suffix` | Mr. Robby DuBuque I, Mr. Mark Wunsch Jr., Mr. Federico Schuster DDS |
@@ -2280,12 +2280,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | +418008556291, +418009866309, 08003175070 |
-| `home_work_phone_number` | 0041316259241, +41340702265, 0041263951740 |
-| `mobile_phone_number` | +4175 962 99 69, +4175 768 34 13, 074 661 35 46 |
-| `phone_number` | +4132 068 61 31, +41800 586 54 97, 09003008206 |
-| `premium_rate_phone_number` | +41900 811 37 44, 00419068056422, 00419007219864 |
-| `shared_cost_phone_number` | 0840 709 52 76, 08486670628, 0840 245 62 32 |
+| `free_phone_number` | +41800 855 62 91, +418009866309, +41800 317 50 70 |
+| `home_work_phone_number` | 022 625 92 41, 0041210702265, 0913951740 |
+| `mobile_phone_number` | 0779629969, 0767683413, 0776613546 |
+| `phone_number` | 0041580686131, 0041800 586 54 97, 0041901 300 82 06 |
+| `premium_rate_phone_number` | 09068113744, 00419008056422, 09007219864 |
+| `shared_cost_phone_number` | 08487095276, 0844 667 06 28, 0844 245 62 32 |
 
 ## FFaker::PhoneNumberCU
 
@@ -2542,7 +2542,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 201606293340, 200601281480, 199105134440 |
+| `ssn` | 201611203344, 200606021489, 199108184441 |
 
 ## FFaker::SemVer
 
@@ -2598,8 +2598,8 @@
 | Method | Example |
 | ------ | ------- |
 | `between`(..., ...) |  |
-| `date` | 2021-01-08, 2021-02-16, 2020-11-07 |
-| `datetime` | 2022-04-01T01:22:00+00:00, 2023-04-16T01:37:00+00:00, 2022-10-18T07:36:00+00:00 |
+| `date` | 2022-01-08, 2022-02-16, 2021-11-07 |
+| `datetime` | 2023-04-01T01:22:00+00:00, 2024-04-16T01:37:00+00:00, 2023-10-18T07:36:00+00:00 |
 | `day_of_week` | Sun, Tue, Wed |
 | `month` | February, January, July |
 
