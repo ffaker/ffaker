@@ -65,7 +65,7 @@ If you want to add new modules or localization data, use one of the
 (or create a new one!).
 
 **const_missing** is
-[overriden](https://github.com/ffaker/ffaker/blob/main/lib/ffaker/utils/module_utils.rb#L9)
+[overridden](https://github.com/ffaker/ffaker/blob/main/lib/ffaker/utils/module_utils.rb#L9)
 for Faker modules, so if you try to use a constant that is not defined
 in the module, the
 [override](https://github.com/ffaker/ffaker/blob/main/lib/ffaker/utils/module_utils.rb#L9)
