@@ -87,6 +87,7 @@
  * [FFaker::IdentificationES](#ffakeridentificationes)
  * [FFaker::IdentificationESCL](#ffakeridentificationescl)
  * [FFaker::IdentificationESCO](#ffakeridentificationesco)
+ * [FFaker::IdentificationFI](#ffakeridentificationfi)
  * [FFaker::IdentificationIN](#ffakeridentificationin)
  * [FFaker::IdentificationIT](#ffakeridentificationit)
  * [FFaker::IdentificationKR](#ffakeridentificationkr)
@@ -1378,6 +1379,12 @@
 | `expedition_date` | 2022-07-27, 2019-08-03, 2020-03-28 |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `id` | 3614915862, 033452, 961630498897 |
+
+## FFaker::IdentificationFI
+
+| Method | Example |
+| ------ | ------- |
+| `identity_number` | 061260-982P, 040901A981R |
 
 ## FFaker::IdentificationIN
 
