@@ -5,7 +5,7 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    CHECK_DIGITS = "0123456789ABCDEFHJKLMNPRSTUVWXY".freeze
+    CHECK_DIGITS = '0123456789ABCDEFHJKLMNPRSTUVWXY'
     # Number ranges in real use
     POSSIBLY_REAL_FEMALE_INDIVIDUAL_NUMBERS = (2..898).step(2).to_a.freeze
     POSSIBLY_REAL_MALE_INDIVIDUAL_NUMBERS = (3..899).step(2).to_a.freeze
@@ -24,48 +24,50 @@ module FFaker
     end
 
     private
-      def fetch_formatted_day(birthday)
-        sprintf('%.2d', birthday.day)
-      end
 
-      def fetch_formatted_month(birthday)
-        sprintf('%.2d', birthday.month)
-      end
+    def fetch_formatted_day(birthday)
+      format('%.2d', birthday.day)
+    end
 
-      def fetch_formatted_year(birthday)
-        check_birth_year(birthday.year)
-        birthday.strftime("%y")
-      end
+    def fetch_formatted_month(birthday)
+      format('%.2d', birthday.month)
+    end
 
-      def fetch_separator(birthday)
-        case birthday.year
-        when ..1899
-          '+'
-        when 1900..1999
-          '-'
-        else
-          'A'
-        end
-      end
+    def fetch_formatted_year(birthday)
+      check_birth_year(birthday.year)
+      birthday.strftime('%y')
+    end
 
-      def fetch_individual_number(gender, fake)
-        numbers_range = if gender == "female".freeze
-            fake ? FAKE_FEMALE_INDIVIDUAL_NUMBERS : POSSIBLY_REAL_FEMALE_INDIVIDUAL_NUMBERS
-          else
-            fake ? FAKE_MALE_INDIVIDUAL_NUMBERS : POSSIBLY_REAL_MALE_INDIVIDUAL_NUMBERS
-          end
-        sprintf('%.3d', fetch_sample(numbers_range))
+    def fetch_separator(birthday)
+      case birthday.year
+      when ..1899
+        '+'
+      when 1900..1999
+        '-'
+      else
+        'A'
       end
+    end
 
-      def calculate_check_digit(birthday, individual_number)
-        digit = "#{birthday.day}#{fetch_formatted_month(birthday)}#{fetch_formatted_year(birthday)}#{individual_number}".to_i % 31
-        CHECK_DIGITS[digit]
-      end
+    def fetch_individual_number(gender, fake)
+      numbers_range = if gender == 'female'
+                        fake ? FAKE_FEMALE_INDIVIDUAL_NUMBERS : POSSIBLY_REAL_FEMALE_INDIVIDUAL_NUMBERS
+                      else
+                        fake ? FAKE_MALE_INDIVIDUAL_NUMBERS : POSSIBLY_REAL_MALE_INDIVIDUAL_NUMBERS
+                      end
+      format('%.3d', fetch_sample(numbers_range))
+    end
 
-      def check_birth_year(birth_year)
-        return if birth_year.between?(1799, 2100)
+    def calculate_check_digit(birthday, individual_number)
+      digit = "#{birthday.day}#{fetch_formatted_month(birthday)}#{fetch_formatted_year(birthday)}#{individual_number}"
+              .to_i % 31
+      CHECK_DIGITS[digit]
+    end
 
-        raise ArgumentError, "Birth year: #{birth_year} is not between supported 1799 and 2100 range"
-      end
+    def check_birth_year(birth_year)
+      return if birth_year.between?(1799, 2100)
+
+      raise ArgumentError, "Birth year: #{birth_year} is not between supported 1799 and 2100 range"
+    end
   end
 end

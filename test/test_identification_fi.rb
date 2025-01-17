@@ -32,8 +32,8 @@ class TestFakerIdentificationFI < Test::Unit::TestCase
     real_number_match_regex = /^(0[1-9]|[1-2]\d|3[01])(0[1-9]|1[0-2])(\d\d)([-+A-FU-Y])([0-8])(\d\d)([0-9A-FHJ-NPR-Y])$/
     assert_match(real_number_match_regex, @tester.identity_number(fake: false))
     female_match_regex = /^(0[1-9]|[1-2]\d|3[01])(0[1-9]|1[0-2])(\d\d)([-+A-FU-Y])(\d\d)([02468])([0-9A-FHJ-NPR-Y])$/
-    assert_match(female_match_regex, @tester.identity_number(gender: "female"))
+    assert_match(female_match_regex, @tester.identity_number(gender: 'female'))
     male_match_regex = /^(0[1-9]|[1-2]\d|3[01])(0[1-9]|1[0-2])(\d\d)([-+A-FU-Y])(\d\d)([13579])([0-9A-FHJ-NPR-Y])$/
-    assert_match(male_match_regex, @tester.identity_number(gender: "male"))
+    assert_match(male_match_regex, @tester.identity_number(gender: 'male'))
   end
 end
