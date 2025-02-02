@@ -19,7 +19,6 @@ Gemspec/RequiredRubyVersion:
 Lint/Void:
   Exclude:
     - 'lib/ffaker.rb'
-    - 'test/test_vehicle.rb'
 
 # Offense count: 27
 # Configuration parameters: AllowedMethods, AllowedPatterns, CountRepeatedAttributes.

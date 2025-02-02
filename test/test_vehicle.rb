@@ -94,7 +94,6 @@ class TestVehicle < Test::Unit::TestCase
     end
 
     check_digit = weighted_sum % 11
-    check_digit == '10' ? 'X' : check_digit
     check_digit = 'X' if check_digit == 10
     check_digit.to_s
   end
