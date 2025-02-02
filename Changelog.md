@@ -1,8 +1,10 @@
 ## development
 
   - Add your change HERE
+  - Generator for Finnish identity numbers [@zHarrowed]
+  - Fix typos and add Codespell GitHub action [@kianmeng]
 
-# 2.24.0
+## 2.24.0
   - *BREAKING CHANGE*: Drop support under ruby 3.0 [@marocchino]
   - Add ruby 3.4 to CI [@marocchino]
   - Add ruby 3.3 to CI [@boimw]
@@ -11,7 +13,7 @@
   - Deprecate `FFaker::Guid.guid` in favor of `FFaker::UUID` methods [@stilist]
   - Limit FFaker::BankUS.routing_number first two digits [@professor]
 
-# 2.23.0
+## 2.23.0
   - Add FFaker::BankUS.accounting_number [@professor]
   - Add FFaker::BankUS.routing_number [@professor]
   - Resolve a lot of RuboCop offenses [@AlexWayfer]
@@ -22,7 +24,7 @@
   - Adds FFaker::Number.between [@professor]
   - Fixed `FFaker::Number.unique.number(digits: 1)` under Ruby 3 [@simonhildebrandt]
 
-# 2.22.0
+## 2.22.0
   - *BREAKING CHANGE*: Drop support under ruby 2.7 [@marocchino]
   - Correct Vehicle::VIN result [@philippevezina]
   - Improve performance unique [@iiwo]
@@ -454,6 +456,7 @@ Api additions by Rafael Souza
 [@CarlosMouraJR]: https://github.com/CarlosMouraJR
 [@GuillaumeOcculy]: https://github.com/GuillaumeOcculy
 [@IgorMarques]: https://github.com/IgorMarques
+[@Krap]: https://github.com/Krap
 [@Kutomore]: https://github.com/Kutomore
 [@MQuy]: https://github.com/MQuy
 [@Moafak]: https://github.com/Moafak
@@ -472,6 +475,7 @@ Api additions by Rafael Souza
 [@ar2em1s]: https://github.com/ar2em1s
 [@artplan1]: https://github.com/artplan1
 [@az3vedo]: https://github.com/az3vedo
+[@boimw]: https://github.com/boimw
 [@brain64bit]: https://github.com/brain64bit
 [@brnrdog]: https://github.com/brnrdog
 [@brupla6126]: https://github.com/brupla6126
@@ -497,6 +501,7 @@ Api additions by Rafael Souza
 [@joshdvir]: https://github.com/joshdvir
 [@josieljunior]: https://github.com/josieljunior
 [@jvanbaarsen]: https://github.com/jvanbaarsen
+[@kianmeng]: https://github.com/kianmeng
 [@kmayer]: https://github.com/kmayer
 [@kojino]: https://github.com/kojino
 [@ktroutner]: https://github.com/ktroutner
@@ -543,3 +548,5 @@ Api additions by Rafael Souza
 [@waldyr]: https://github.com/waldyr
 [@walerian777]: https://github.com/walerian777
 [@xunker]: https://github.com/xunker
+[@zHarrowed]: https://github.com/zHarrowed
+
