@@ -41,7 +41,7 @@ class TestAddressUA < Test::Unit::TestCase
   end
 
   def test_street_address_with_secondary
-    assert_match( \
+    assert_match(
       /\Aвул\.\s[а-яА-ЯіїєґІЇЄҐ’\-\s]+,\s\d{1,3},\sкв\.\s\d{1,3}\z/,
       @tester.street_address(true)
     )

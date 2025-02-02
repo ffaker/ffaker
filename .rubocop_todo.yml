@@ -45,9 +45,3 @@ Style/RedundantInterpolationUnfreeze:
     - 'lib/ffaker/html_ipsum.rb'
     - 'lib/ffaker/internet_se.rb'
     - 'lib/ffaker/lorem_ua.rb'
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/RedundantLineContinuation:
-  Exclude:
-    - 'test/test_address_ua.rb'
