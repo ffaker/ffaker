@@ -51,9 +51,3 @@ Style/RedundantInterpolationUnfreeze:
 Style/RedundantLineContinuation:
   Exclude:
     - 'test/test_address_ua.rb'
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/SuperArguments:
-  Exclude:
-    - 'lib/ffaker/utils/module_utils.rb'

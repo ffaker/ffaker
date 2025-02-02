@@ -14,7 +14,7 @@ module FFaker
 
     def const_missing(const_name)
       if const_name.match?(/[a-z]/) # Not a constant, probably a class/module name.
-        super(const_name)
+        super
       else
         mod_name = ancestors.first.to_s.split('::').last
         data_path = "#{FFaker::BASE_LIB_PATH}/ffaker/data/#{underscore(mod_name)}/#{underscore(const_name.to_s)}"
