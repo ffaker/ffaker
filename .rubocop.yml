@@ -8,10 +8,10 @@ inherit_mode:
     - Exclude
 
 inherit_from:
-  - ./.rubocop_todo.yml
+  - .rubocop_todo.yml
 
 AllCops:
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.1
   NewCops: enable
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
