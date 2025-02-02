@@ -1,6 +1,12 @@
 ## development
 
   - Add your change HERE
+
+# 2.24.0
+  - *BREAKING CHANGE*: Drop support under ruby 3.0 [@marocchino]
+  - Add ruby 3.4 to CI [@marocchino]
+  - Add ruby 3.3 to CI [@boimw]
+  - Fix Luhn algorithm used in french companie's SIRET and sweden SSN [@Krap]
   - Add `FFaker::UUID` `.uuidv4`, `.uuidv6`, `.uuidv7`, and `.uuidv8` [@stilist]
   - Deprecate `FFaker::Guid.guid` in favor of `FFaker::UUID` methods [@stilist]
   - Limit FFaker::BankUS.routing_number first two digits [@professor]
