@@ -247,7 +247,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Sydney, Australia/Adelaide, Australia/Brisbane |
+| `time_zone` | Australia/Hobart, Australia/Melbourne, Australia/Perth |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -1384,175 +1384,175 @@
 
 | Method | Example |
 | ------ | ------- |
-| `identity_number` | 061260-982P, 040901A981R |
+| `identity_number` | 120392-920K, 060482-968F, 271106A979D |
 
 ## FFaker::IdentificationIN
 
 | Method | Example |
 | ------ | ------- |
-| `aadhaar` | 750121778596, 452487000094, 884047719343 |
+| `aadhaar` | 859645248700, 009488404771, 934308697478 |
 
 ## FFaker::IdentificationIT
 
 | Method | Example |
 | ------ | ------- |
-| `drivers_license` | U118697478Q, U166594416G, U197164812O |
-| `ethnicity` | Asiatico/isolano del Pacifico, Preferisco non rispondere, Nativo americano |
+| `drivers_license` | U115659441W, U178716481S, U124047868V |
+| `ethnicity` | Asiatico/isolano del Pacifico, Altro, Nativo americano |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
-| `ssn` | 80510823890233388868, 96466225596725288405, 12098230302304675870 |
+| `ssn` | 89023338886896466225, 59672528840512098230, 30230467587092299665 |
 
 ## FFaker::IdentificationKR
 
 | Method | Example |
 | ------ | ------- |
-| `rrn` | 880708-1349968, 913004-1956542, 711408-1593517 |
+| `rrn` | 853001-2784354, 830510-1544211, 831905-2371910 |
 
 ## FFaker::IdentificationMX
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | CUXW891022MDGWRLN1, HEWS771209MHGYCVJ8, TOIR240229HTLFLXC3 |
-| `rfc` | SUJS060825MDW, BJR0104129VQ, WALÑ710510EQT |
-| `rfc_persona_fisica` | HAYF000306KSV, XOGO130107P8K, YIUJ930503EZJ |
-| `rfc_persona_moral` | NLY001211FIC, OEZ750630L4E, NYM911216VU6 |
+| `curp` | RANC701221MOCFRCT6, TOIR240229HTLFLXC3, FEAX110119MBSBTH19 |
+| `rfc` | DVÑ761227P7W, W&amp;N800710JU7, FOKS021002EFQ |
+| `rfc_persona_fisica` | KOUJ930503EZJ, NAWD000922EC4, ZERE730408AXG |
+| `rfc_persona_moral` | PWO12021634W, &amp;GU210501XSP, CIJ130303SXY |
 
 ## FFaker::IdentificationPL
 
 | Method | Example |
 | ------ | ------- |
-| `drivers_license` | 91649/05/2323, 18503/11/9262, 00065/29/3282 |
-| `id` | HSE085336, YTB418308, XXM401461 |
-| `identity_card` | TBL103430, UVE336375, BHS861054 |
-| `pesel` | 03120992220, 10020982642, 62831086998 |
+| `drivers_license` | 92620/00/6529, 32827/24/8533, 68311/83/0877 |
+| `id` | MQB446131, LQT443045, EDG837517 |
+| `identity_card` | SKW510549, ZSC729278, SGO049869 |
+| `pesel` | 64072578056, 09112138658, 36840488281 |
 
 ## FFaker::IdentificationTW
 
 | Method | Example |
 | ------ | ------- |
-| `id` | X180573869, F188281301, V150145982 |
+| `id` | B205050148, V198850795, K154887375 |
 
 ## FFaker::Image
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x000000012131df40&gt;, #&lt;File:0x0000000121314e40&gt;, #&lt;File:0x0000000121437930&gt; |
-| `url` | https://dummyimage.com/300x300/49f936/a1c304.png?text=, https://dummyimage.com/300x300/b344ff/50a4fd.png?text=, https://dummyimage.com/300x300/5e6794/4b406e.png?text= |
+| `file` | #&lt;File:0x00007f5a226fe720&gt;, #&lt;File:0x00007f5a226f6408&gt;, #&lt;File:0x00007f5a2272e290&gt; |
+| `url` | https://dummyimage.com/300x300/6ecf0e/045d3e.png?text=, https://dummyimage.com/300x300/826dc7/ba3471.png?text=, https://dummyimage.com/300x300/5e96a3/0c3568.png?text= |
 
 ## FFaker::Internet
 
 | Method | Example |
 | ------ | ------- |
-| `disposable_email` | josefina@binkmail.com, vinita@suremail.info, katia.gutmann@safetymail.info |
-| `domain_name` | dubuque.com, grahamosinski.com, friesen.ca |
-| `domain_suffix` | name, com, biz |
-| `domain_word` | trantow, waters, blick |
-| `email` | dominique@yundtquitzon.biz, norma@gerlach.biz, phillip_homenick@eichmann.com |
-| `free_email` | cristy@hotmail.com, madeline_lynch@gmail.com, lilian@yahoo.com |
-| `http_url` | http://grant.info, http://rutherford.info, http://jacobson.ca |
-| `ip_v4_address` | 46.40.47.238, 33.194.40.43, 24.141.151.118 |
-| `mac` | 95:1e:ed:97:f9:f3, 13:33:5c:50:c0:33, f4:bc:c7:27:fd:da |
-| `password` | 7VSKb20khpz43, GpuTSzUa, 4c3eWDdBFbYw |
-| `safe_email` | burl.anderson@example.com, constance@example.org, rebecka@example.net |
-| `slug` | repellat-nesciunt, molestias-vel, maxime.rem |
+| `disposable_email` | maud_waters@suremail.info, rocio@spamherelots.com, ismael@suremail.info |
+| `domain_name` | reichert.name, waters.biz, dickinson.com |
+| `domain_suffix` | com, biz, co.uk |
+| `domain_word` | kuhic, gerlach, rodriguez |
+| `email` | graham_lynch@waterseffertz.name, lenny_ankunding@lynch.biz, lilian@robertsgrant.info |
+| `free_email` | enid_rutherford@hotmail.com, christena.jacobson@hotmail.com, cassondra@hotmail.com |
+| `http_url` | http://wiegandmurazik.ca, http://gulgowski.name, http://oconner.us |
+| `ip_v4_address` | 245.251.239.44, 228.1.182.244, 202.7.143.25 |
+| `mac` | 86:78:c0:7e:f6:b7, 43:80:03:f9:c5:20, e0:cf:11:e7:e1:d4 |
+| `password` | K4c3eWDd, YwTfMOHfc, zQHSCc3I91KWMnm |
+| `safe_email` | leonard@example.net, marina@example.org, eda@example.com |
+| `slug` | harum-consequuntur, eaque.blanditiis, neque-qui |
 | `uri`(...) |  |
-| `user_name` | marina, zack, khadijah_oberbrunner |
+| `user_name` | minnie_ryan, glynda.oconner, jeanelle_beahan |
 
 ## FFaker::InternetSE
 
 | Method | Example |
 | ------ | ------- |
-| `company_name_single_word` | Aufderhar-Renner, Block-Moore, Konopelski-Ryan |
-| `disposable_email` | glynda.oconner@suremail.info, fabian@safetymail.info, brande@spamherelots.com |
-| `domain_name` | blick.nu, champlin.se, kessler.se |
-| `domain_suffix` | se, com, nu |
-| `domain_word` | jaskolski, kreiger, nicolaskuhic |
-| `email` | theolatiera.schiller@boganbarton.nu, margene.rogahn@botsford.se, lakeisha@rutherford.com |
-| `free_email` | william@gmail.com, pearlene@yahoo.com, robert_blanda@gmail.com |
-| `http_url` | http://schneiderschoen.se, http://goldner.nu, http://baumbach.com |
-| `ip_v4_address` | 7.196.140.97, 7.41.33.152, 157.39.116.20 |
+| `company_name_single_word` | Spinka-Waelchi, Tillman, Bahringer, |
+| `disposable_email` | colton.champlin@safetymail.info, sibylmindi.auer@mailinator.com, theodore_batz@safetymail.info |
+| `domain_name` | bayernicolas.com, cartwrightnicolas.nu, gorczany.com |
+| `domain_suffix` | com, se, nu |
+| `domain_word` | welch, schowalter, bartoncrooks |
+| `email` | reeddenny@grady.se, andreas@toyhegmann.nu, emory@goldner.nu |
+| `free_email` | abigail.hilll@passagen.se, muoi@yahoo.com, boyd@spray.se |
+| `http_url` | http://douglas.se, http://rice.nu, http://ward.nu |
+| `ip_v4_address` | 142.225.166.95, 23.147.202.122, 44.94.53.215 |
 | `join_to_user_name`(...) |  |
-| `login_user_name` | rhonapetra_fadel, josefina_rice, barney_rau |
-| `mac` | 07:29:be:a7:65:fd, e8:8e:dd:4f:87:e1, 42:a6:d6:f8:f8:5f |
-| `password` | tk6SE1xDLNw3uHX, 0JtkdfZiQ, d11PD4AtbYq02aY |
-| `safe_email` | allen@example.net, noelle_sawayn@example.net, gaye_hyatt@example.com |
-| `slug` | libero_impedit, non-perferendis, dolore_reprehenderit |
+| `login_user_name` | bartfritsch, lindsey_larkin, garthnathanvonrueden |
+| `mac` | ee:aa:46:7e:de:5c, 24:bd:e5:3e:d6:07, a5:83:2d:36:ca:f5 |
+| `password` | PD4AtbYq02aYQ, FhEBDY4ZhZA7K, 8VJX1w_elp8T |
+| `safe_email` | kalyn_quigley@example.org, lawrence_boehm@example.net, zola@example.com |
+| `slug` | iusto_cum, ipsum_consequatur, nobis_eos |
 | `uri`(...) |  |
-| `user_name` | lawrence_boehm, aaron, sherman |
+| `user_name` | everett_hettinger, johnny_leuschke, keri |
 | `user_name_from_name`(...) |  |
-| `user_name_random` | abdul_kuhlman, keisha, rossana_mertz |
-| `user_name_variant_long` | johnny_leuschke, johnson_weber, despina.rau |
-| `user_name_variant_short` | fe, renate, daphine |
+| `user_name_random` | beaulahkatlyn, trevor.rau, ta_balistreri |
+| `user_name_variant_long` | missy.mohr, chara.davis, augustinakia.ruecker |
+| `user_name_variant_short` | donellsworth, annamae, kareem |
 
 ## FFaker::JoJo
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Pag, Wang, Tonpetty |
-| `full_name` | Reimi Sugimoto, Pet Shop, Minoru Kaigamori |
-| `last_name` | Tim, Bluemarine, Mountain |
-| `stand` | Harvest, Earth Wind and Fire, Made in Heaven |
+| `first_name` | Anakiss, Vinegar, Sandman |
+| `full_name` | Kyoka Izumi, Yasuho Hirose, Scarlet Valentine |
+| `last_name` | Katahira, Kawajiri, Murakami |
+| `stand` | House of Holy, Sex Pistols, Marilyn Manson |
 
 ## FFaker::Job
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Principal Directives Assistant, District Security Representative, Customer Accounts Designer |
+| `title` | Corporate Operations Specialist, Direct Functionality Strategist, Customer Operations Officer |
 
 ## FFaker::JobBR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Padeiro, Diarista, Senador |
+| `title` | Arquiteto, Mecânico, Chef de Cozinha |
 
 ## FFaker::JobCN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 职员, 法官, 烘培师 |
+| `title` | 副总裁助理, 海关官员, 财务总监 |
 
 ## FFaker::JobFR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | directeur des opérations du service financier, ordonnateur de la division financiere, administrateur spécial associé des services techniques |
+| `title` | expert general du contrôle technique, intendant general du management de la qualité, administrateur de la protection civile |
 
 ## FFaker::JobIT
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Diretto Funzionalità Stratega, Cliente operazioni Ufficiale, Guida Dati Coordinatore |
+| `title` | aziendale ragnatela Architetto, Cliente Marketing Architetto, Globale operazioni Manager |
 
 ## FFaker::JobJA
 
 | Method | Example |
 | ------ | ------- |
-| `title` | マンション管理士, ソムリエ, 俳優・女優 |
+| `title` | バリスタ, バレーボール選手, 舞妓 |
 
 ## FFaker::JobKR
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 여가 및 스포츠 관련 종사원, 금속공학 시험원, 캐드원 |
+| `title` | 패스트푸드원, 전문 간호사, 가구 수리원 |
 
 ## FFaker::JobVN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | Trang phục nhân viên bán hàng, Biên tập viên, dược sĩ |
+| `title` | cầu thủ bóng rổ, thám tử, hàng không cơ khí |
 
 ## FFaker::Locale
 
 | Method | Example |
 | ------ | ------- |
-| `code` | MS, YO, HU |
-| `language` | Welsh, Assamese, Inupiak |
+| `code` | JA, GN, TI |
+| `language` | Georgian, Indonesian, Gujarati |
 
 ## FFaker::Lorem
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | e36rsnm8lnrn7uyimkhpfancnhfgsdk3utp8i2nnri3mkswk76dku7ahvsloatii2f1pph5zdtp2gkcawvcouzqr5tuzfunzqdexcehoqbzwcm86511uhyg7ip7c7koxplgg08yn4kqavguq9m8sjd1r76ud8rj2mus7rp5ffi5jat6alqdhl5a5lthb9x58ohxhkn37abeltuzh84st58mbw766mf4kapyeengh09r1vlc6ucnujpcsxd8n9kk, brdppljj3i49cw6b5du7v27upi19n2n3sz923pjytanqpp2a9dxynt7tx6n9puhz1bb181yg4p6p1858jle1rp2fav5n5vd6svrcnjozurkw4zk0d8oo29vk858psuulamy0yh4papb7rbe2a1672g6jjyktqw8qi8xz1as6s0wogsgj8tx9k55vexj8qohdg4q3rlmexhd9werykm7hcx2c1hr3qc2yg7dzroaqyhnw9gtotjrwhp2qlwrtdrn, ibb5li6mmppj7is5sbebkqup520x9jswzfesv4e8yhe6ihkvw8lj5q1wbbcko2f17mved97v82j3u139fuoqe51zd04tahznhlxt7jgcj7t6lrjtnujgb3lcl8xvaocyhc6z8zecs7x95mxkf7yc9232cp4mfeqqk0tw1zyiqb52ichbjlzb86qxz3ny172n8i1bhto7q6hdyrbm9hgwj815eyg66fht2rcwsrrhosbk6lykwelkjy1vjc6fckk |
-| `paragraph` | Non laboriosam doloribus adipisci alias odit. Quam optio exercitationem ipsa numquam quae pariatur. Dolore fuga doloribus est voluptatum aliquid. Iste harum dolor ea id aliquam a veritatis. Mollitia officia iure necessitatibus impedit consequuntur., Reprehenderit occaecati quae illum provident. Similique quibusdam odit cumque ea corrupti ducimus. Hic veritatis animi amet a adipisci accusantium placeat nihil. Nihil distinctio iure consequuntur occaecati cupiditate. Illum harum nemo rem neque unde., Maxime officiis consequatur sunt minima commodi quibusdam. Autem quis quisquam quam temporibus et blanditiis vero. Numquam alias officia harum illo natus a qui debitis. Porro in culpa iusto possimus impedit accusamus. Suscipit necessitatibus inventore quae amet et a. |
+| `characters` | nrn7uyimkhpfancnhfgsdk3utp8i2nnri3mkswk76dku7ahvsloatii2f1pph5zdtp2gkcawvcouzqr5tuzfunzqdexcehoqbzwcm86511uhyg7ip7c7koxplgg08yn4kqavguq9m8sjd1r76ud8rj2mus7rp5ffi5jat6alqdhl5a5lthb9x58ohxhkn37abeltuzh84st58mbw766mf4kapyeengh09r1vlc6ucnujpcsxd8n9kkbrdppljj3, i49cw6b5du7v27upi19n2n3sz923pjytanqpp2a9dxynt7tx6n9puhz1bb181yg4p6p1858jle1rp2fav5n5vd6svrcnjozurkw4zk0d8oo29vk858psuulamy0yh4papb7rbe2a1672g6jjyktqw8qi8xz1as6s0wogsgj8tx9k55vexj8qohdg4q3rlmexhd9werykm7hcx2c1hr3qc2yg7dzroaqyhnw9gtotjrwhp2qlwrtdrnibb5li6mm, ppj7is5sbebkqup520x9jswzfesv4e8yhe6ihkvw8lj5q1wbbcko2f17mved97v82j3u139fuoqe51zd04tahznhlxt7jgcj7t6lrjtnujgb3lcl8xvaocyhc6z8zecs7x95mxkf7yc9232cp4mfeqqk0tw1zyiqb52ichbjlzb86qxz3ny172n8i1bhto7q6hdyrbm9hgwj815eyg66fht2rcwsrrhosbk6lykwelkjy1vjc6fckk4jsfamy5u |
+| `paragraph` | Ipsa numquam quae illum a quaerat. Dolorum maiores id rem nisi. Iste harum dolor ea id aliquam a veritatis. Mollitia officia iure necessitatibus impedit consequuntur., Reprehenderit occaecati quae illum provident. Similique quibusdam odit cumque ea corrupti ducimus. Hic veritatis animi amet a adipisci accusantium placeat nihil. Nihil distinctio iure consequuntur occaecati cupiditate. Illum harum nemo rem neque unde., Maxime officiis consequatur sunt minima commodi quibusdam. Autem quis quisquam quam temporibus et blanditiis vero. Numquam alias officia harum illo natus a qui debitis. Porro in culpa iusto possimus impedit accusamus. Suscipit necessitatibus inventore quae amet et a. |
 | `paragraphs` | Similique sunt eligendi veniam inventore. Laboriosam similique placeat sed maxime enim tenetur nam. Sapiente nulla praesentium ipsa optio aspernatur excepturi., Eos doloremque adipisci recusandae fuga. Temporibus harum possimus vitae minus expedita est pariatur quo. Consectetur quam nulla sed voluptatum., Voluptatibus nihil perferendis dolores a dolor reprehenderit. Porro magni reiciendis minima iusto. Dicta debitis fuga architecto ex velit repellat modi excepturi. Dolorem odit nihil consequatur voluptas aliquid non., Reprehenderit unde iste est incidunt necessitatibus aut. Vero atque asperiores esse distinctio quo quas. Unde commodi labore recusandae magnam error nisi. Nihil perspiciatis deserunt excepturi asperiores rerum aliquam possimus. Voluptate accusantium eos eaque ducimus quas., Reprehenderit error aliquid veritatis aperiam. Repellat labore officia quasi natus rem possimus. In laudantium quod placeat vitae autem dolorem., Doloribus veniam ad ullam assumenda modi repellat voluptatum magnam. Quasi optio unde pariatur quaerat ipsa corporis delectus. Laboriosam velit iure rerum molestias quos. Vero nemo perspiciatis dolor nam nostrum totam., Odit a magnam repellat laboriosam. Voluptate rerum sit dolorum autem ipsa. Quasi veritatis itaque ullam alias. Non maxime ullam quod possimus., Maxime dolorem amet possimus recusandae eum. Autem consequuntur totam perspiciatis cupiditate. Voluptatem dolore qui unde ratione., Incidunt sed voluptates cumque officia. Magnam quo dignissimos vitae suscipit quos eaque unde culpa. Atque distinctio ratione in deserunt illo. Repellendus deleniti sapiente itaque nihil eaque. Earum dicta laboriosam magnam iusto totam veritatis. |
 | `phrase` | Molestiae officiis sed eveniet ex possimus., Laudantium consequuntur aspernatur perspiciatis facilis possimus velit et., Adipisci tempora fugiat deserunt soluta magni unde fugit. |
 | `phrases` | Minima molestias repellendus est veniam., Sequi est unde possimus amet repellat odit corrupti doloribus., Inventore ex aut soluta error esse autem libero adipisci., Quod eaque pariatur aut quibusdam suscipit porro consequatur., Quos consequuntur quis eveniet illum consectetur praesentium eligendi., Consectetur in distinctio animi dicta tempora., Porro et numquam laudantium impedit., Sequi nemo fugiat error soluta., Dolor velit iusto consequatur voluptas aut. |
@@ -1733,8 +1733,8 @@
 | `first_name` | Emilee, Sherlene, Britt |
 | `first_name_female` | Jessie, Richelle, Taylor |
 | `first_name_male` | Man, Alberto, Myles |
-| `html_safe_last_name` | Langworth, Tromp, Bins |
-| `html_safe_name` | Kate Dietrich, Kaila Hartmann, Junie Runolfsdottir |
+| `html_safe_last_name` | Will, Skiles, Ward |
+| `html_safe_name` | Kate Boyer, Kaila Carroll, Junie Dare |
 | `last_name` | Bauch, McClure, Botsford |
 | `male_name_with_prefix` | Mr. Danilo Stanton, Mr. Rickey Abshire, Mr. Brooks Koch |
 | `male_name_with_prefix_suffix` | Mr. Federico Krajcik V, Mr. Bryant Labadie DVM, Mr. Felton Waters DVM |
@@ -1795,8 +1795,8 @@
 | `first_name` | Dušan, Jana, Ivo |
 | `first_name_female` | Yuriko, Shin, Lana |
 | `first_name_male` | Clinton, Franklin, Luis |
-| `html_safe_last_name` | Beer, Rohan, Koch |
-| `html_safe_name` | Lukáš Kuhic, Božena Hickle, Radim Welch |
+| `html_safe_last_name` | Mertz, Williamson, Huels |
+| `html_safe_name` | Lukáš Rosenbaum, Božena Heaney, Radim Corkery |
 | `last_name` | Červený, Černá, Dušek |
 | `male_name_with_prefix` | Mr. Allan Beránková, Mr. Irwin Boháčová, Mr. Raymundo Čech |
 | `male_name_with_prefix_suffix` | Mr. Edison Červenková Ph.D., Mr. Samual Beránek Ph.D., Mr. Austin Filip DSc. |
@@ -1825,8 +1825,8 @@
 | `first_name` | Torben, Kristina, Olav |
 | `first_name_female` | Su, Beverly, Sharonda |
 | `first_name_male` | Daniel, Santo, Thomas |
-| `html_safe_last_name` | Balistreri, Shields, White |
-| `html_safe_name` | Bjørn White, Christiane Hessel, Hugo Cartwright |
+| `html_safe_last_name` | Hammes, Mayert, Wiegand |
+| `html_safe_name` | Bjørn Beatty, Christiane Gusikowski, Hugo Kemmer |
 | `last_name` | Weber, Powlowski, Stokes |
 | `male_name` | Vilhelm Lockman, Gustav Bosco, Gunner Welch |
 | `male_name_with_prefix` | Mr. Olin Thiel, Mr. Clifford Weissnat, Mr. Dwayne Kirlin |
@@ -1853,8 +1853,8 @@
 | `first_name` | Teddy, Wynona, Joan |
 | `first_name_female` | Teisha, Rowena, Evelina |
 | `first_name_male` | Lee, Darell, Jeramy |
-| `html_safe_last_name` | Daniel, Block, Stark |
-| `html_safe_name` | Earnest Douglas, Eusebia Schulist, Jolyn Lehner |
+| `html_safe_last_name` | Hodkiewicz, Daniel, Mante |
+| `html_safe_name` | Earnest Brakus, Eusebia Gutmann, Jolyn Graham |
 | `last_name` | Botsford, Terry, Jenkins |
 | `male_name_with_prefix` | Mr. Bradford Sipes, Mr. Brooks Durgan, Mr. Tyree Mosciski |
 | `male_name_with_prefix_suffix` | Mr. Lenny Kovacek I, Mr. Edwardo Rodriguez Sr., Mr. Dominick Denesik Jr. |
@@ -1999,8 +1999,8 @@
 | `full_name` | Marcela Tremblay Nitzsche, Augusto Martín Stamm Parker, Linda Wiegand Schoen |
 | `full_name_no_prefix` | Alba Viviana Zemlak Mills, Darío Cruickshank Corwin, Aurora Mosciski Cummings |
 | `full_name_prefix` | Srita. Abril Hamill VonRueden, Srita. Isabel Ward Ferry, C. Nancy Marquardt Zulauf |
-| `html_safe_last_name` | Huels, Bergnaum, Casper |
-| `html_safe_name` | Marisol Reinger, Xavier Block, Aurelio Hills |
+| `html_safe_last_name` | Breitenberg, Littel, Fahey |
+| `html_safe_name` | Marisol Satterfield, Xavier Kirlin, Aurelio Lueilwitz |
 | `last_name` | Bashirian, Ernser, Pfannerstill |
 | `male_name` | Elías, Vladimir, Román |
 | `male_name_with_prefix` | Sr. Herschel Macejkovic, Sr. Rigoberto Hudson, C. Stevie Mayer |
@@ -2029,8 +2029,8 @@
 | `first_name` | Taneka Karie, Susy, Giuseppe |
 | `first_name_female` | Rosio, Audria, Cicely |
 | `first_name_male` | Dylan, Dewey, Alexander |
-| `html_safe_last_name` | Kreiger, Harber, Simonis |
-| `html_safe_name` | Jame Langosh, Juli Flatley, Abel Rath |
+| `html_safe_last_name` | Murazik, Dicki, Thiel |
+| `html_safe_name` | Jame Satterfield, Juli Gulgowski, Abel Steuber |
 | `last_name` | Lueilwitz, Schmeler, Kulas |
 | `male_name_with_prefix` | Mr. Freddy Gottlieb, Mr. Amado Lesch, Mr. Donny Gleason |
 | `male_name_with_prefix_suffix` | Mr. Herb Bradtke Jr., Mr. Issac Abbott DDS, Mr. Chauncey Skiles Jr. |
@@ -2056,8 +2056,8 @@
 | `first_name` | Zoraida, Elvis-Luciano, Joaquin |
 | `first_name_female` | Anamaria, Merlene, Christeen-Luciana |
 | `first_name_male` | Garry, Nick, Jay-Dee |
-| `html_safe_last_name` | Steuber, Jacobs, Roob |
-| `html_safe_name` | Mildred Wiegand, Donald Gusikowski, Harris Kuhlman |
+| `html_safe_last_name` | Carter, Kohler, Ledner |
+| `html_safe_name` | Mildred Ferry, Donald Bosco, Harris Abbott |
 | `last_name` | Leannon, Leffler, Carroll |
 | `male_name_with_prefix` | Mr. Wilton Swaniawski, Mr. Jarrod O'Reilly, Mr. Doyle Cummings |
 | `male_name_with_prefix_suffix` | Mr. Lou Casper V, Mr. Korey Watsica DDS, Mr. Ramon Deckow PhD |
@@ -2083,8 +2083,8 @@
 | `first_name` | Casimira, Sanda, Kayleen |
 | `first_name_female` | Apolonia, Chanda, Mae |
 | `first_name_male` | Alan, Cornell, Frederic |
-| `html_safe_last_name` | Lebsack, Feest, Corkery |
-| `html_safe_name` | Sharri Sipes, Ellie Towne, Margaretta Harber |
+| `html_safe_last_name` | Cole, Schuppe, Fadel |
+| `html_safe_name` | Sharri Schuppe, Ellie Keeling, Margaretta Jerde |
 | `last_name` | Guintog, Simsuangco, Dacudao |
 | `male_name_with_prefix` | Mr. Brendan Castillo, Mr. Denver Sariwa, Mr. Ray Abulog |
 | `male_name_with_prefix_suffix` | Mr. Brandon Javier V, Mr. Derick Villamor Jr., Mr. Andreas africa PhD |
@@ -2148,8 +2148,8 @@
 | `first_name` | Lowell, Rubye, Marlyn |
 | `first_name_female` | Rosann, Francisca, Ethyl |
 | `first_name_male` | Sherwood, Rich, Heriberto |
-| `html_safe_last_name` | Gottlieb, Howell, Jast |
-| `html_safe_name` | Fred Terry, Henry Jamal Dach, Wilda Janiece Hirthe |
+| `html_safe_last_name` | Reilly, Nienow, Strosin |
+| `html_safe_name` | Fred Glover, Henry Jamal Maggio, Wilda Janiece Rodriguez |
 | `last_name` | Wunsch, Roob, Kuhn |
 | `male_name_with_prefix` | Mr. Zachary Effertz, Mr. Rene Stokes, Mr. Thanh Rice |
 | `male_name_with_prefix_suffix` | Mr. Robby DuBuque I, Mr. Mark Wunsch Jr., Mr. Federico Schuster DDS |
@@ -2287,12 +2287,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | +41800 855 62 91, +41800 986 63 09, 08003175070 |
-| `home_work_phone_number` | 0041626259241, 0440702265, 062 395 17 40 |
-| `mobile_phone_number` | 079 962 99 69, 079 768 34 13, +41766613546 |
-| `phone_number` | 081 068 61 31, 00418005865497, 0041900 300 82 06 |
-| `premium_rate_phone_number` | +419018113744, +419008056422, 09017219864 |
-| `shared_cost_phone_number` | +41842 709 52 76, 08446670628, 08422456232 |
+| `free_phone_number` | +418008556291, +418009866309, +418003175070 |
+| `home_work_phone_number` | +4191 625 92 41, +41440702265, 0333951740 |
+| `mobile_phone_number` | +41789629969, 0041797683413, 0766613546 |
+| `phone_number` | 0041240686131, 0041800 586 54 97, 0906 300 82 06 |
+| `premium_rate_phone_number` | 00419008113744, +41900 805 64 22, 0041900 721 98 64 |
+| `shared_cost_phone_number` | 0041844 709 52 76, +418406670628, +41848 245 62 32 |
 
 ## FFaker::PhoneNumberCU
 
