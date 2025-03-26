@@ -104,7 +104,7 @@ module FFaker
     end
 
     def loan_interest_rate(min_rate = 1.5, max_rate = 15.0)
-      format('%.2f', rand(min_rate..max_rate))
+      rand(min_rate..max_rate).round(2)
     end
 
     def loan_term
