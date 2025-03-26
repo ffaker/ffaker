@@ -103,6 +103,18 @@ module FFaker
       fetch_sample(CARD_TYPES)
     end
 
+    def loan_interest_rate(min_rate = 1.5, max_rate = 15.0)
+      format('%.2f', rand(min_rate..max_rate))
+    end
+
+    def loan_term
+      [12, 24, 36, 48, 60, 72, 84].sample
+    end
+
+    def loan_amount(min_amount = 1_000, max_amount = 100_000)
+      rand(min_amount..max_amount)
+    end
+
     private
 
     def formatify_iban(code)
