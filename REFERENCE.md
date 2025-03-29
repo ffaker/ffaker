@@ -961,6 +961,7 @@
 | `maybe` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for maybe |
 | `random` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for random |
 | `sample` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for sample |
+| `boolean(true_ratio: 0.5)` | true, false |
 
 ## FFaker::CheesyLingo
 

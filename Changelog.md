@@ -3,6 +3,7 @@
   - Add your change HERE
   - Generator for Finnish identity numbers [@zHarrowed]
   - Fix typos and add Codespell GitHub action [@kianmeng]
+  - Add FFaker::Boolean.boolean with true ratio [@nedzib]
 
 ## 2.24.0
   - *BREAKING CHANGE*: Drop support under ruby 3.0 [@marocchino]

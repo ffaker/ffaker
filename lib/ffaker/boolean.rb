@@ -12,6 +12,10 @@ module FFaker
       end
     end
 
+    def boolean(true_ratio: 0.5)
+      rand < true_ratio
+    end
+
     alias random maybe
     alias sample maybe
   end
