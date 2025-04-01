@@ -247,7 +247,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Perth, Australia/Darwin, Australia/Canberra |
+| `time_zone` | Australia/Melbourne, Australia/Perth, Australia/Adelaide |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -1086,10 +1086,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `backward` | 2024-12-25, 2024-10-13, 2025-01-05 |
+| `backward` | 2024-12-28, 2024-10-16, 2025-01-08 |
 | `between`(..., ...) |  |
-| `birthday` | 2001-08-07, 1968-11-10, 1974-04-11 |
-| `forward` | 2026-02-10, 2025-11-22, 2025-05-22 |
+| `birthday` | 2001-08-10, 1968-11-13, 1974-04-14 |
+| `forward` | 2026-02-13, 2025-11-25, 2025-05-25 |
 
 ## FFaker::DizzleIpsum
 
@@ -1377,7 +1377,7 @@
 | `blood_type` | AB+, A+, O- |
 | `driver_license_category` | B3, A2, C3 |
 | `drivers_license` | 335416479, 700490, 8274031265 |
-| `expedition_date` | 2020-12-06, 2024-04-03, 2024-12-22 |
+| `expedition_date` | 2020-12-09, 2024-04-06, 2024-12-25 |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `id` | 35595408508, 76887684865, 1704491927 |
 
@@ -1385,7 +1385,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `identity_number` | 310588-9767, 261098-915M, 040861-918C |
+| `identity_number` | 030688-976Y, 291098-915K, 070861-918A |
 
 ## FFaker::IdentificationIN
 
@@ -1412,10 +1412,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | RADM000921MMCYMSE4, HICJ880421HCHXYFW2, JUTU861202HNTLPB06 |
-| `rfc` | FBR030627DCN, GOUK170905PD9, IAT860911OMK |
-| `rfc_persona_fisica` | WEPL9609285NF, ROTZ930310VDY, GAOZ201028JFB |
-| `rfc_persona_moral` | SXJ8610247T9, IGC750806ZXD, IFD141225H0P |
+| `curp` | RADM000922MMCYMSE4, HICJ880422HCHXYFW2, JUTU861203HNTLPB06 |
+| `rfc` | FBR030629DCN, GOUK170908PD9, IAT860912OMK |
+| `rfc_persona_fisica` | WEPL9609305NF, ROTZ930311VDY, GAOZ201031JFB |
+| `rfc_persona_moral` | SXJ8610257T9, IGC750807ZXD, IFD141227H0P |
 
 ## FFaker::IdentificationPL
 
@@ -1436,7 +1436,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x00007fab33ffa0d8&gt;, #&lt;File:0x00007fab34004880&gt;, #&lt;File:0x00007fab341d6b40&gt; |
+| `file` | #&lt;File:0x00007f113dbd0d08&gt;, #&lt;File:0x00007f113dbe4880&gt;, #&lt;File:0x00007f113ddb4b38&gt; |
 | `url` | https://dummyimage.com/300x300/ac9886/9efabb.png?text=, https://dummyimage.com/300x300/a3a4a3/0eb607.png?text=, https://dummyimage.com/300x300/438a37/61afc6.png?text= |
 
 ## FFaker::Internet
@@ -1734,8 +1734,8 @@
 | `first_name` | Greta, Mayra, Lennie |
 | `first_name_female` | Marisa, Myrtis, Deanna |
 | `first_name_male` | Rayford, Oliver, Javier |
-| `html_safe_last_name` | Quigley, Reichert, Ritchie |
-| `html_safe_name` | Eden Kilback, Ethan Watsica, Fransisca Hermann |
+| `html_safe_last_name` | Bashirian, Kling, Schimmel |
+| `html_safe_name` | Eden Reichel, Ethan Hane, Fransisca Howe |
 | `last_name` | Dooley, Luettgen, Jacobs |
 | `male_name_with_prefix` | Mr. Shelton O'Reilly, Mr. Carmelo Hirthe, Mr. Darrin Anderson |
 | `male_name_with_prefix_suffix` | Mr. Porfirio Balistreri V, Mr. Bryant Conn V, Mr. Alexander VonRueden II |
@@ -1796,8 +1796,8 @@
 | `first_name` | Barbora, Martina, Andrea |
 | `first_name_female` | Noelle, Corrinne, Silva |
 | `first_name_male` | Pablo, Stephen, Alejandro |
-| `html_safe_last_name` | Romaguera, Pfannerstill, Kuphal |
-| `html_safe_name` | Otakar Wolff, Libuše Schmidt, Zuzana Casper |
+| `html_safe_last_name` | Christiansen, Lakin, Leannon |
+| `html_safe_name` | Otakar Botsford, Libuše Gleason, Zuzana Klein |
 | `last_name` | Bartoš, Dvořák, Beránek |
 | `male_name_with_prefix` | Mr. Dino Červený, Mr. Everett Březinová, Mr. Teodoro Davidová |
 | `male_name_with_prefix_suffix` | Mr. Jerrold Dostál Th.D., Mr. Man Dvořák Ph.D., Mr. Granville Burianová Ph.D. |
@@ -1826,8 +1826,8 @@
 | `first_name` | Joan, Connie, Charlotte |
 | `first_name_female` | Toshia, France, Temple |
 | `first_name_male` | Rayford, Booker, Clement |
-| `html_safe_last_name` | Lesch, Anderson, Christiansen |
-| `html_safe_name` | Rasmus Altenwerth, Kamilla Hessel, Sigurd Stark |
+| `html_safe_last_name` | Kertzmann, Powlowski, Jaskolski |
+| `html_safe_name` | Rasmus West, Kamilla King, Sigurd Feest |
 | `last_name` | Huel, Considine, Koelpin |
 | `male_name` | Hjalmar Altenwerth, Johnny Jacobs, Samuel Kiehn Nitzsche |
 | `male_name_with_prefix` | Mr. Adam Conroy, Mr. Titus Johns, Mr. Frankie Auer |
@@ -1854,8 +1854,8 @@
 | `first_name` | Viva, Farah, Darleen |
 | `first_name_female` | Kyla, Misty, Kiesha |
 | `first_name_male` | Carson, Mel, Sung |
-| `html_safe_last_name` | Volkman, Greenfelder, Ritchie |
-| `html_safe_name` | Lavonna Glover, Marylyn Parisian, Ayesha Stiedemann |
+| `html_safe_last_name` | Bernier, Moore, McCullough |
+| `html_safe_name` | Lavonna Gutkowski, Marylyn Fay, Ayesha Wilkinson |
 | `last_name` | Huel, Franecki, Weissnat |
 | `male_name_with_prefix` | Mr. Micah Reilly, Mr. Gayle Hilpert, Mr. Chas Glover |
 | `male_name_with_prefix_suffix` | Mr. Carol Connelly I, Mr. Kareem Crona MD, Mr. Warren Schultz Jr. |
@@ -2000,8 +2000,8 @@
 | `full_name` | León Rogahn Gulgowski, Román Lesch Corwin, Georgina Bashirian Gorczany |
 | `full_name_no_prefix` | Fátima West Lesch, Fermín Jacobs Hegmann, Felipe Okuneva Abshire |
 | `full_name_prefix` | Sra. Edith Willms Oga, Sra. Mariel Mayert Anderson, C. Nuria Isabel Kassulke Oberbrunner |
-| `html_safe_last_name` | Kovacek, Hayes, Cole |
-| `html_safe_name` | Abraham Thompson, Gina Reichel, Silvia Klocko |
+| `html_safe_last_name` | Bruen, Kunde, Denesik |
+| `html_safe_name` | Abraham Ritchie, Gina Crooks, Silvia Feil |
 | `last_name` | Lehner, Zemlak, Gislason |
 | `male_name` | Joel, Roger, Homero |
 | `male_name_with_prefix` | Sr. German Conroy, Sr. Hank Bradtke, C. Sean Shanahan |
@@ -2030,8 +2030,8 @@
 | `first_name` | Clarita, Broderick, Sam |
 | `first_name_female` | Reanna, Mattie, Debi |
 | `first_name_male` | Oswaldo, Christian, Jake |
-| `html_safe_last_name` | Kiehn, DuBuque, Ritchie |
-| `html_safe_name` | Marion McClure, Lavon Wisozk, Lulu Schuster |
+| `html_safe_last_name` | Schroeder, Mante, Marquardt |
+| `html_safe_name` | Marion Murazik, Lavon Rath, Lulu Gulgowski |
 | `last_name` | Fay, Wolff, Graham |
 | `male_name_with_prefix` | Mr. Alfonzo Hackett, Mr. Mose Jones, Mr. Terence Langosh |
 | `male_name_with_prefix_suffix` | Mr. Clemente Rippin DDS, Mr. Herschel Crona Jr., Mr. Sebastian Smitham I |
@@ -2057,8 +2057,8 @@
 | `first_name` | Elmo, Selina-Lianne, Rueben |
 | `first_name_female` | Christinia, Rachal, Fanny |
 | `first_name_male` | Dallas, Quinn, Toney |
-| `html_safe_last_name` | Senger, Grimes, Marquardt |
-| `html_safe_name` | Jina Bosco, Mac Howe, Freddy-Juan Upton |
+| `html_safe_last_name` | Ratke, Hahn, Bergnaum |
+| `html_safe_name` | Jina Schuppe, Mac Sawayn, Freddy-Juan Reinger |
 | `last_name` | Blick, Stanton, Lehner |
 | `male_name_with_prefix` | Mr. Saul Schneider, Mr. Lazaro Romaguera, Mr. Jerry Predovic |
 | `male_name_with_prefix_suffix` | Mr. Heriberto Goodwin DVM, Mr. Ervin Hickle II, Mr. Hiram Prosacco III |
@@ -2084,8 +2084,8 @@
 | `first_name` | Hunter, Hilma, Geraldine |
 | `first_name_female` | Berenice, Earnestine, Sueann |
 | `first_name_male` | Ahmed, Alec, Will |
-| `html_safe_last_name` | Dickinson, Schimmel, Mills |
-| `html_safe_name` | Kazuko Schamberger, Carolynn Grimes, Hulda Blanda |
+| `html_safe_last_name` | Krajcik, Mitchell, Bartell |
+| `html_safe_name` | Kazuko Waters, Carolynn Haley, Hulda Franecki |
 | `last_name` | de Leon, Bitaog, Marquez |
 | `male_name_with_prefix` | Mr. Odis Vargas, Mr. Archie Miranda, Mr. Alphonso Songcuya |
 | `male_name_with_prefix_suffix` | Mr. Ollie Sariuag V, Mr. Eugene Rivera V, Mr. Clint Pabalan V |
@@ -2149,8 +2149,8 @@
 | `first_name` | Randy, Kirstin, Elmo |
 | `first_name_female` | Latoya, Nana, Miguelina |
 | `first_name_male` | Irving, Willian, Eloy |
-| `html_safe_last_name` | Wilderman, Maggio, Lueilwitz |
-| `html_safe_name` | Karly Berge, Carlee Braun, Luciano Asa Schmeler |
+| `html_safe_last_name` | Brekke, Boyle, Zulauf |
+| `html_safe_name` | Karly Raynor, Carlee Wyman, Luciano Asa Koss |
 | `last_name` | Wisoky, Parker, Ziemann |
 | `male_name_with_prefix` | Mr. Kenton Hauck, Mr. Lamar Gaylord, Mr. Tyler Dicki |
 | `male_name_with_prefix_suffix` | Mr. Clemente Kiehn II, Mr. George Lindgren DVM, Mr. Freddy Labadie DDS |
@@ -2288,12 +2288,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 0041800 421 33 68, +41800 040 53 80, 00418004210586 |
-| `home_work_phone_number` | 0243785509, 004127 457 78 87, 0216736656 |
-| `mobile_phone_number` | 0041762811891, +4174 333 02 53, 004178 960 81 37 |
-| `phone_number` | 00419005933230, 004126 393 84 18, 00419065206175 |
-| `premium_rate_phone_number` | 0900 059 77 54, +41906 638 54 18, +41906 146 68 34 |
-| `shared_cost_phone_number` | 0041844 754 26 92, 0848 811 90 27, 0840 020 19 17 |
+| `free_phone_number` | +418004213368, 08000405380, +418004210586 |
+| `home_work_phone_number` | 0041443785509, 0041244577887, 027 673 66 56 |
+| `mobile_phone_number` | +4177 281 18 91, +41753330253, 0041759608137 |
+| `phone_number` | 0901 593 32 30, 0041273938418, 0900 520 61 75 |
+| `premium_rate_phone_number` | +419000597754, +419006385418, 09061466834 |
+| `shared_cost_phone_number` | 08447542692, 00418408119027, +418440201917 |
 
 ## FFaker::PhoneNumberCU
 
@@ -2550,7 +2550,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 199810035782, 199110187507, 200204231373 |
+| `ssn` | 199810065789, 199110207503, 200204251371 |
 
 ## FFaker::SemVer
 
