@@ -22,16 +22,16 @@ class TestFakerDate < Test::Unit::TestCase
   def test_backward
     today = Date.today
 
-    assert_random_between(today - 365..today - 1) { @tester.backward }
-    assert_random_between(today - 30..today - 1) { @tester.backward(30) }
+    assert_random_between((today - 365)..(today - 1)) { @tester.backward }
+    assert_random_between((today - 30)..(today - 1)) { @tester.backward(30) }
     assert_instance_of Date, @tester.backward
   end
 
   def test_forward
     today = Date.today
 
-    assert_random_between(today + 1..today + 365) { @tester.forward }
-    assert_random_between(today + 1..today + 30) { @tester.forward(30) }
+    assert_random_between((today + 1)..(today + 365)) { @tester.forward }
+    assert_random_between((today + 1)..(today + 30)) { @tester.forward(30) }
     assert_instance_of Date, @tester.forward
   end
 
