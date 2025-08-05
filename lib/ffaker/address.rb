@@ -48,7 +48,7 @@ module FFaker
     end
 
     def building_number
-      FFaker.numerify(('#' * rand(3..5)))
+      FFaker.numerify('#' * rand(3..5))
     end
 
     def street_name

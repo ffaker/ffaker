@@ -13,7 +13,7 @@ class TestNumber < Test::Unit::TestCase
 
   def test_number
     assert @tester.number.is_a?(Integer)
-    assert @tester.number.digits.count == 1
+    assert @tester.number.digits.one?
     assert @tester.number(digits: 3).digits.count == 3
     assert_match(/\d/, @tester.number.to_s)
     assert_match(/\d{3}/, @tester.number(digits: 3).to_s)
