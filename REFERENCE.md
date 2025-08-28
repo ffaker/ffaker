@@ -105,6 +105,7 @@
  * [FFaker::JobIT](#ffakerjobit)
  * [FFaker::JobJA](#ffakerjobja)
  * [FFaker::JobKR](#ffakerjobkr)
+ * [FFaker::JobTW](#ffakerjobtw)
  * [FFaker::JobVN](#ffakerjobvn)
  * [FFaker::Locale](#ffakerlocale)
  * [FFaker::Lorem](#ffakerlorem)
@@ -1535,6 +1536,12 @@
 | Method | Example |
 | ------ | ------- |
 | `title` | 이미용 강사, 농업용 기계 설치 및 정비원, 고무 및 플라스틱 시험원 |
+
+## FFaker::JobTW
+
+| Method | Example |
+| ------ | ------- |
+| `title` | 市場調查員, 新聞主播, 建築師 |
 
 ## FFaker::JobVN
 
