@@ -7,7 +7,7 @@ class TestBank < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::Bank,
-    :iban, :card_number, :card_expiry_date, :card_type
+    :iban, :card_number, :card_expiry_date, :card_type, :loan_interest_rate, :loan_term, :loan_amount
   )
 
   def setup
@@ -49,5 +49,19 @@ class TestBank < Test::Unit::TestCase
 
   def test_card_type
     assert_include @tester::CARD_TYPES, @tester.card_type
+  end
+
+  def test_loan_interest_rate
+    rate = FFaker::Bank.loan_interest_rate
+    assert(rate.to_f.between?(1.5, 15.0), "Rate #{rate} is out of bounds")
+  end
+
+  def test_loan_term
+    assert_includes([12, 24, 36, 48, 60, 72, 84], FFaker::Bank.loan_term)
+  end
+
+  def test_loan_amount
+    amount = FFaker::Bank.loan_amount
+    assert(amount.between?(1_000, 100_000), "Amount #{amount} is out of bounds")
   end
 end

@@ -936,6 +936,9 @@
 | `card_number` | 0881 1113 8121 5000, 7524 0230 1909 1662, 7301 2226 6397 4548 |
 | `card_type` | mastercard, maestro, solo |
 | `iban` | DO50GCBH29467231689551372717, LU338569240126150859, BE89929107166643 |
+| `loan_amount` | 9914, 65346, 23259 |
+| `loan_interest_rate` | 8.85, 1.73, 10.49 |
+| `loan_term` | 12, 24, 36, 48, 60, 72, 84 |
 
 ## FFaker::BankUS
 
