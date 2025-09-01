@@ -27,7 +27,7 @@ module FFaker
     def rfc_persona_moral
       consonants_n_amp = CONSONANTS + ['Ñ', '&']
       all_letters = consonants_n_amp + VOWELS
-      [fetch_sample(all_letters, count: 3), date, fetch_sample(HOMOCLAVE, count: 3)].flatten.join
+      [*fetch_sample(all_letters, count: 3), date, *fetch_sample(HOMOCLAVE, count: 3)].join
     end
 
     # http://es.wikipedia.org/wiki/Registro_Federal_de_Contribuyentes_(M%C3%A9xico)

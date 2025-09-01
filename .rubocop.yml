@@ -54,5 +54,7 @@ Metrics/MethodLength:
 Metrics/AbcSize:
   AllowedPatterns:
     - 'test_'
+Naming/PredicateMethod:
+  Enabled: false
 Style/RedundantArgument:
   Enabled: false
