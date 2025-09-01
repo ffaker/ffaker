@@ -249,7 +249,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Hobart, Australia/Canberra, Australia/Darwin |
+| `time_zone` | Australia/Sydney, Australia/Brisbane, Australia/Darwin |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -1088,10 +1088,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `backward` | 2025-05-03, 2025-02-19, 2025-05-14 |
+| `backward` | 2025-05-30, 2025-03-18, 2025-06-10 |
 | `between`(..., ...) |  |
-| `birthday` | 2001-12-14, 1969-03-19, 1974-08-18 |
-| `forward` | 2026-06-19, 2026-03-31, 2025-09-28 |
+| `birthday` | 2002-01-10, 1969-04-15, 1974-09-14 |
+| `forward` | 2026-07-16, 2026-04-27, 2025-10-25 |
 
 ## FFaker::DizzleIpsum
 
@@ -1379,7 +1379,7 @@
 | `blood_type` | AB+, A+, O- |
 | `driver_license_category` | B3, A2, C3 |
 | `drivers_license` | 335416479, 700490, 8274031265 |
-| `expedition_date` | 2021-04-14, 2024-08-10, 2025-04-30 |
+| `expedition_date` | 2021-05-11, 2024-09-06, 2025-05-27 |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `id` | 35595408508, 76887684865, 1704491927 |
 
@@ -1387,7 +1387,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `identity_number` | 071088-976S, 040399-9152, 111261-9184 |
+| `identity_number` | 031188-9760, 310399-915F, 070162-918X |
 
 ## FFaker::IdentificationIN
 
@@ -1414,10 +1414,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | RADM001201MMCYMSE4, HICJ880603HCHXYFW2, JUTU870110HNTLPB06 |
-| `rfc` | FBR030913DCN, GOUK171226PD9, IAT861020OMK |
-| `rfc_persona_fisica` | WEPL9611305NF, ROTZ930503VDY, GAOZ210224JFB |
-| `rfc_persona_moral` | SXJ8612027T9, IGC750820ZXD, IFD150409H0P |
+| `curp` | RADM001217MMCYMSE4, HICJ880612HCHXYFW2, JUTU870118HNTLPB06 |
+| `rfc` | FBR030929DCN, GOUK180118PD9, IAT861029OMK |
+| `rfc_persona_fisica` | WEPL9612135NF, ROTZ930514VDY, GAOZ210321JFB |
+| `rfc_persona_moral` | SXJ8612107T9, IGC750822ZXD, IFD150501H0P |
 
 ## FFaker::IdentificationPL
 
@@ -1438,7 +1438,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x00007f1f3a078388&gt;, #&lt;File:0x00007f1f3a0af180&gt;, #&lt;File:0x00007f1f3a0df510&gt; |
+| `file` | #&lt;File:0x00007f307f5c6d98&gt;, #&lt;File:0x00007f307f5f19f8&gt;, #&lt;File:0x00007f307fd91e10&gt; |
 | `url` | https://dummyimage.com/300x300/ac9886/9efabb.png?text=, https://dummyimage.com/300x300/a3a4a3/0eb607.png?text=, https://dummyimage.com/300x300/438a37/61afc6.png?text= |
 
 ## FFaker::Internet
@@ -1541,68 +1541,68 @@
 
 | Method | Example |
 | ------ | ------- |
-| `title` | 市場調查員, 新聞主播, 建築師 |
+| `title` | 啦啦隊, 精算師, 急診醫學科醫師 |
 
 ## FFaker::JobVN
 
 | Method | Example |
 | ------ | ------- |
-| `title` | nhân viên đẹp, người lái xe, chơi quần vợt |
+| `title` | người lái xe, ca sĩ, nhà báo |
 
 ## FFaker::Locale
 
 | Method | Example |
 | ------ | ------- |
-| `code` | TL, CY, TH |
-| `language` | Fiji, English, Korean |
+| `code` | TH, FJ, EN |
+| `language` | Korean, Norwegian, Georgian |
 
 ## FFaker::Lorem
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | s5k9dm1ucrpqmyz3zk2sbyai9164s2mod23ks6b2pxq9cvw1brho1vk8u417uih02hbx8134bissfy780n1w0tzgmo4giospi3v7a936j45bh6ith0m0itg5lonx9sfamwuv8cbm3cngp88qfo9qqwb1i6zg6obes37bsh839pk4pa7p9rbciaxsnkoixoauwjyj3f2uqubnpux9t3de0sc19k2pww4ienkt8zss4yje5gmcs3x5jb5ts6ptvza, trcizrf40hg1hmkys2e6vtpd6egbgrjc0fleg73wh6c1ca8y4bmb31mhvaj0ggr9myemdeh8z8d1j2k76b2bsigc088662a6piqptilbrhab62ulqopqoibx5qe7n1c3ybnq4aa3n09ymmbhd7qpao3rtmf8v2ks67k4vy0k1zq7phtge046vnx8lwwfta923z1xs3w8cg377z0ohtx2g3u11g0ddux296v1spwd4vlpr54wge07f7na7z0c3b8, 5s7vr3msow6lkgccpfg1546po1q6ji8x2l469srkh5gurzvfevkrkr9esppb8dhayjlx3t2ywwkdqes9wnvttdxi451h2q3gs2ubkouwr7zhtgoka2d3hp3v5lsycdd0p14zcxowy9et4r0m4sxang14veekplyd542bibdrkpmzaag0myu5xwvl17a4a1o2qus2fvq5hxdvdgfmo3achjj9pj4b4y7fhmywt98lcpzc9gqvpi25b44n0j8ie6z |
-| `paragraph` | Qui perspiciatis quisquam quia maxime laboriosam laudantium asperiores. Quo quam unde reprehenderit aspernatur blanditiis. Ut modi explicabo fuga magnam., Laborum cum quidem deleniti veritatis dolor animi esse tempora. Nemo corporis totam sed necessitatibus iure. Deleniti iure nobis ratione voluptatum repudiandae voluptatem deserunt. Ex eos enim vel accusamus fugiat quis odio. Ducimus quae similique necessitatibus nulla atque voluptate tempore esse., Modi accusamus quod deserunt iste voluptatem. Quia atque maxime adipisci hic eaque veniam. Expedita nemo ipsam voluptas animi eaque optio ratione sed. Est deserunt hic animi ullam tempora eos. |
-| `paragraphs` | Modi recusandae enim vero beatae mollitia. Nulla ut sint quia ullam dolorum eveniet ab velit. Optio fuga id quasi sit voluptate provident vel., Dolore impedit repellendus non dolorem. Dignissimos at aperiam beatae officiis sapiente. In vitae autem necessitatibus nesciunt. Inventore dolore quidem omnis error., Eveniet voluptates magnam tempora cupiditate velit. Nesciunt deleniti perspiciatis maiores quas occaecati. Asperiores rerum ullam nisi laborum consectetur., Laborum pariatur omnis perferendis minima accusamus quae. Aliquid alias eaque tempora expedita ut. Id unde laudantium optio voluptas assumenda. Commodi earum voluptas excepturi provident. Suscipit eveniet sed nisi tempora facilis facere in., Soluta expedita omnis ipsam voluptas ex id dignissimos. Nemo omnis dolor maiores cumque eos aspernatur sit. Error dolor magnam cum enim iste dolore tempora., Itaque totam necessitatibus labore doloremque officiis recusandae. Veritatis natus necessitatibus itaque cumque deserunt tenetur non. Deleniti soluta rem nostrum illo blanditiis enim beatae saepe. Odio asperiores culpa facilis voluptatibus eum corporis architecto officia., Eos architecto vero sit sunt. Magnam commodi reprehenderit similique debitis. Necessitatibus amet veniam non modi quibusdam. Totam maiores cum blanditiis voluptatem commodi deleniti aliquam veniam., Molestiae quidem tempore commodi sint odio cupiditate laudantium vel. Maxime odio numquam earum molestiae id optio. Aliquid quod reprehenderit modi praesentium commodi., Ducimus officia delectus nemo officiis ipsam earum. Officiis dolorum animi deleniti cum exercitationem ipsa necessitatibus saepe. Repudiandae ipsam adipisci modi at a velit. |
-| `phrase` | Sunt sit laboriosam maxime fugit placeat., Architecto optio quos nulla beatae., Velit tenetur dignissimos consequatur quasi consectetur vel beatae accusamus. |
-| `phrases` | Porro tempore distinctio ut pariatur modi dolor culpa libero., Eius voluptatibus itaque molestiae cupiditate beatae., Reiciendis temporibus odio ipsum vel reprehenderit pariatur omnis., Maiores exercitationem veritatis numquam nam tenetur., Architecto maxime ipsum eos incidunt repudiandae ut neque consequatur., Nostrum dolor vero itaque quas., Veritatis nulla odio excepturi non officiis., Impedit aliquid in eum nostrum animi laboriosam., Culpa accusantium officia cum repellendus consectetur. |
-| `sentence` | Corrupti iste fugiat voluptatem veniam., At optio repellat ut accusamus architecto culpa ipsum voluptate., Iusto ea pariatur numquam in consequatur. |
-| `sentences` | Perspiciatis quibusdam quae recusandae quasi repudiandae., Quis dolorum hic sunt error illum ipsa laborum., Quas maxime soluta animi tempora consequatur nisi quia officia., Ipsum eum placeat quas atque vitae modi blanditiis a., Illum quibusdam in voluptates nostrum doloremque assumenda aliquam harum., Similique modi ea animi commodi ab ipsam autem ipsum., Dolorem asperiores voluptate placeat vel., Architecto quasi iusto consectetur sequi tenetur commodi incidunt., Porro assumenda deleniti architecto necessitatibus ipsum quod aliquid eum. |
-| `word` | necessitatibus, eaque, culpa |
-| `words` | quam, corrupti, doloremque, perspiciatis, repellat, delectus, culpa, eligendi, accusantium |
+| `characters` | k9dm1ucrpqmyz3zk2sbyai9164s2mod23ks6b2pxq9cvw1brho1vk8u417uih02hbx8134bissfy780n1w0tzgmo4giospi3v7a936j45bh6ith0m0itg5lonx9sfamwuv8cbm3cngp88qfo9qqwb1i6zg6obes37bsh839pk4pa7p9rbciaxsnkoixoauwjyj3f2uqubnpux9t3de0sc19k2pww4ienkt8zss4yje5gmcs3x5jb5ts6ptvzatr, cizrf40hg1hmkys2e6vtpd6egbgrjc0fleg73wh6c1ca8y4bmb31mhvaj0ggr9myemdeh8z8d1j2k76b2bsigc088662a6piqptilbrhab62ulqopqoibx5qe7n1c3ybnq4aa3n09ymmbhd7qpao3rtmf8v2ks67k4vy0k1zq7phtge046vnx8lwwfta923z1xs3w8cg377z0ohtx2g3u11g0ddux296v1spwd4vlpr54wge07f7na7z0c3b85s, 7vr3msow6lkgccpfg1546po1q6ji8x2l469srkh5gurzvfevkrkr9esppb8dhayjlx3t2ywwkdqes9wnvttdxi451h2q3gs2ubkouwr7zhtgoka2d3hp3v5lsycdd0p14zcxowy9et4r0m4sxang14veekplyd542bibdrkpmzaag0myu5xwvl17a4a1o2qus2fvq5hxdvdgfmo3achjj9pj4b4y7fhmywt98lcpzc9gqvpi25b44n0j8ie6zl7 |
+| `paragraph` | Porro voluptas blanditiis reiciendis iusto libero maxime nihil natus. Aspernatur dignissimos atque labore tempora. Explicabo laborum labore reprehenderit excepturi. Tempore harum deleniti veritatis dolor animi esse., Corporis laudantium sed debitis eum soluta quas. Totam necessitatibus voluptatem similique ea qui ad. Nulla repellendus minima quam rerum praesentium quae. Accusamus quibusdam voluptatum in distinctio., Consequatur earum tempora officiis maxime mollitia. Quia atque maxime adipisci hic eaque veniam. Expedita nemo ipsam voluptas animi eaque optio ratione sed. Est deserunt hic animi ullam tempora eos. Modi recusandae enim vero beatae mollitia asperiores reprehenderit consequuntur. |
+| `paragraphs` | Excepturi quia exercitationem laborum necessitatibus ab velit inventore. Optio fuga id quasi sit voluptate provident vel. Dolore impedit repellendus non dolorem., Pariatur aperiam beatae accusamus a esse. Commodi officiis sequi modi inventore aliquam expedita error officia. Ex voluptates repudiandae magnam tempora provident velit veniam nesciunt. Cupiditate reiciendis corrupti excepturi minus., Asperiores rerum ullam nisi laborum consectetur necessitatibus nihil. Nulla omnis perferendis minima vero quae explicabo. Aliquid alias eaque tempora expedita ut. Id unde laudantium optio voluptas assumenda., Itaque voluptas molestias cupiditate inventore quae aliquid hic. Suscipit modi quidem maxime iure molestiae iste quo. Expedita omnis ipsam voluptas ex id dignissimos., Nemo omnis dolor maiores cumque eos aspernatur sit. Error dolor magnam cum enim iste dolore tempora. Itaque totam necessitatibus labore doloremque officiis. Veritatis natus necessitatibus itaque cumque deserunt tenetur non., Cum rem nostrum illo blanditiis enim. Nulla odio repellat culpa facilis maiores eum. Corporis architecto error incidunt alias., Architecto at sit sunt provident. Eum natus accusamus enim repudiandae amet quis. Numquam assumenda rem asperiores soluta praesentium voluptatem autem atque., Sed consequuntur odio facilis soluta vel cupiditate. Autem mollitia culpa possimus dignissimos numquam a. Aliquid quod reprehenderit modi praesentium commodi. Similique ducimus deserunt reiciendis nemo. Eveniet quos debitis fuga id deleniti soluta., Nulla unde dolores provident hic voluptas velit tempora debitis. Adipisci repellendus ducimus sunt sit. Voluptas minus aspernatur quod qui architecto quo excepturi. Architecto pariatur non sapiente ducimus consequatur. Dolor ea quasi nulla quod. |
+| `phrase` | Ut illum modi dolor culpa nam tempora., Recusandae nihil occaecati beatae quia., Temporibus odio ipsum vel reprehenderit. |
+| `phrases` | Cupiditate animi in repellat exercitationem., Recusandae architecto maxime ipsum eos., Eius sequi consequatur corporis doloremque veniam voluptas., Pariatur repudiandae corrupti temporibus debitis., Veritatis nulla odio excepturi non officiis., Impedit aliquid in eum nostrum animi laboriosam., Culpa accusantium officia cum repellendus consectetur., Corrupti iste fugiat voluptatem veniam., At optio repellat ut accusamus architecto culpa ipsum voluptate. |
+| `sentence` | Iusto ea pariatur numquam in consequatur., Perspiciatis quibusdam quae recusandae quasi repudiandae., Quis dolorum hic sunt error illum ipsa laborum. |
+| `sentences` | Quas maxime soluta animi tempora consequatur nisi quia officia., Ipsum eum placeat quas atque vitae modi blanditiis a., Illum quibusdam in voluptates nostrum doloremque assumenda aliquam harum., Similique modi ea animi commodi ab ipsam autem ipsum., Dolorem asperiores voluptate placeat vel., Architecto quasi iusto consectetur sequi tenetur commodi incidunt., Porro assumenda deleniti architecto necessitatibus ipsum quod aliquid eum., Eaque officia nihil quos doloremque natus asperiores est., Accusantium ducimus quidem recusandae assumenda. |
+| `word` | harum, at, iste |
+| `words` | dignissimos, cupiditate, tempora, at, facilis, sequi, aliquid, hic, dignissimos |
 
 ## FFaker::LoremAR
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | دول, أي الحكم ذلك العصبة حدى لبولندا، استعملت. فكانت ومن أسر اعتداء بالمطالبة حدى الدّفاع وعلى الهجوم. مشقّة كل, لم غضون لها أم يتم. أخر الأوروبية،, الأجل أن, خصوصا دنو به، ومن الياباني., وحلفاؤها والفلبين الساحل كل الواقعة ذلك فاتّبع. أثره، عدم وانتهاءً قد في إيطاليا. وبغطاء كما أن وتم روسية الامم نورماندي عن. إبّان مكن النازية، الإقتصادية معقل. أن وقبل فرنسا ان حالية., يبق ومضى الياباني لعملة الشهيرة بـ هذه. قد جهة هاربر الأوضاع بال. في, و المتحدة, من كلّ,. |
-| `paragraphs` | لليابان منتصف وتتحمّل ما, بحث وقوعها،. كل أضف, كل تم. تشيرشل المزيفة موسوليني مدن بحث وقوعها., فبعد ومن الربيع، الساحل فرنسية شيء هذه مليون وتعدد. بها الأمم وتم البشريةً حدى بها يكن, لغات. تحت, ان سقطت حلّت., قهر من الإقتصادية فعل, الأوضاع ان,. بريطانيا-فرنسا لم التكاليف يكن,. أما بـ الخاطفة ان., وحزبه حلّت غضون الأوربيين موسوليني مكّن الأوروبية،, بـ. بل كل ما بل, بل حكومة الأبرياء جهة. بقعة بـ بأذى الى العناد الباهضة مكّن. لان أحدث خصوصا مدن وقد خسائر إيو أسر., لألمانيا اوروبا أسر أخر. ضرب, يتم كل انتهت لهذه حتى. والروسية الصعداء التجارية وقوعها، لعملة بقسوة لم أضف قام. أن لها حربية يعبأ بل غزو تم الربيع، الإستسلام., فعل عدد كلا بل هو, مع وقدّموا, أن يعادل. الدمج بتطويق يكن, وانتهاءً الى لقوات. الخاسر المضي و تم يتم. الأمم الحرب أسر إيطاليا والحزب وقوعها، شعار الفترة مشقّة., وفرنسا عن وفنلندا تسبب والجنود ربع انتباه المعاهدات ما,. حرب إحتار وقوعها، قد جوي حيث استمرار لان لقوات. للأسطول هيروشيما لفشل وانتهاءً استسلام. حتى تزامناً احداث ومضى قبل جوي. والفرنسي من موالية هذا., هاربر حالية ذلك وبالرغم إذ أي. و الأرض المعاهدات مرمى الى خصوصا. جيما الأجل الإقتصادية حتى, اكتوبر عن. تم الى مليون بتحدّي وتتحمّل خصوصا المجتمع وتم المواد,., الإستسلام استولت أما بين. من المبرمة حتى, عن حرب. أن هناك يذكر كل به، وفنلندا واقتصار. |
-| `phrase` | والعتاد بالمطالبة بل يتم فرنسا السيء الفرنسية., مع النمسا ثم و بـ القنابل,., و ثم تم, عرفها على عن مكن وإعلان. |
-| `phrases` | إبّان وفرنسا يطول المضي الامم الله ماذا., استمرار جوي قد وقدّموا,., عدم وحرمان وفنلندا اكتوبر, أم حربية مدن,., لهذه يتم, بشكل عدم بـ بـ تسبب., هناك السادس الشمل تغييرات والفلبين جوي لها, إستسلاماً بها., تعديل مارشال والحلفاء, الأمريكية اعتداء طرفاً تزامناً وحزبه بـ., به، وباءت وتم النمسا., عقبت لعملة شيء غير., بـ تم واقتصار تم مسرح إيو تحت استولت عن. |
-| `sentence` | الامم بغزو أي مع, المقاومة., الأخذ وباستثناء جمعت أم كلا., بل, النازيين الأيديولوجية، وبغطاء لغات ما. |
-| `sentences` | الإمتعاض أضف الحرب غير على., ثانية الأمم جديداً ليبين تحت بـ بها وفي المقيتة., استولت الغربي التي في, ما الهجوم بدفع., تم بقسوة مما يطول بلا الله الواقعة., عن و كلا, المزيفة اعتداء إيطاليا الأبرياء اسبوعين., استدعى التكاليف إيطاليا الوراء يذكر مارشال., يتسنّى دنو العصبة الدولارات بها السفن., ألماني, لليابان مع إحتلال عن بحث., عن فكانت العسكري مما وتعدد. |
-| `word` | شعار, الذرية, مدن, |
-| `words` | اسبوعين, ذات, أساسي, قد, خصوصا, كنقطة, عسكرياً, الدولارات, وإعلان |
+| `paragraph` | لم غضون لها أم الصعداء ربع استسلام. الأمم يبق عصبة دنو الصين اكتوبر, وقوعها، بل. وحلفاؤها والفلبين الساحل كل الواقعة ذلك فاتّبع., لعملة الإستسلام باستحداث أسلحته مع وباستثناء إذ المدنيين. الواقعة وتم روسية الامم نورماندي ان. إبّان مكن النازية، الإقتصادية معقل. أن وقبل فرنسا ان حالية. حدى يبق ومضى عدم لعملة الشهيرة بـ هذه., قد جهة هاربر الأوضاع بال شمال المتساقطة،, المحور، كل. هيروشيما تكاليف أي بالرغم. غزو يعادل ما, كل. الفترة بحث مسرح أما. |
+| `paragraphs` | تشيرشل المزيفة موسوليني مدن بحث وقوعها. الصفحات فبعد ان, الربيع،. أضف, ان السادس الحكم., حدى بها هو بل جيما تحت, والحزب. هذه تم أجزاء, وعلى الواقعة جحافل. المانيا والروسية الغربي الفاشي لم الى يكن, تشيرشل الإستسلام. الصيني الأرضية لم الحكم المدنيون. ذلك الأوربيين واقتصار مكّن., بل كل ما بل, بل حكومة الأبرياء جهة. بقعة بـ بأذى الى العناد الباهضة مكّن. لان أحدث خصوصا مدن وقد خسائر إيو أسر. لم, اعتداء فصل دفّة هيروشيما قِبل و مارد أخر. انتهت عدم دفّة جوي الواقعة., وفرنسا لعملة بقسوة أن أضف قام أفاق تزامناً. وتتحمّل غريمه النازيين إيطاليا. ليبين كل سحقت حكومة شعار. دنو وقدّموا, أن شيء حرب., يكن, لعملة التكاليف الرئيسية تم قد بالرغم بها,. ثانية عل اوروبا الأجل الحرب. أسلحته مليون لمّ كلا الفترة كل,. بها, وقوعها، غزو ويكيبيديا، تسبب والجنود. مدن الامم ان الى موالية., البشريةً الإستسلام وباستثناء أن منشوريا الإقتصادي بهيئة ما. مع يتم استسلام فاتّبع بـ اللازمة الأبرياء قد. مشارف و من موالية هذا هو., كلا, دفّة التكاليف بعد موالية. الصينية مرمى التجارية أن الأمور, اقتصّت وقبل. المحيط كلّ, عن عل,. لألمانيا مليون بتحدّي وتتحمّل خصوصا المجتمع وتم المواد, معقل., الإستسلام استولت أما بين. من المبرمة حتى, عن حرب. أن هناك يذكر كل به، وفنلندا واقتصار. والعتاد بالمطالبة بل يتم فرنسا السيء الفرنسية. مع النمسا ثم و بـ القنابل,., بحق كلّ بشكل عن لألمانيا مكن كل, قام. بل عن أن الامم عدد أخر بوزيرها احداث. عدم وحرمان وفنلندا اكتوبر, أم حربية مدن,. |
+| `phrase` | لهذه يتم, بشكل عدم بـ بـ تسبب., هناك السادس الشمل تغييرات والفلبين جوي لها, إستسلاماً بها., تعديل مارشال والحلفاء, الأمريكية اعتداء طرفاً تزامناً وحزبه بـ. |
+| `phrases` | به، وباءت وتم النمسا., عقبت لعملة شيء غير., بـ تم واقتصار تم مسرح إيو تحت استولت عن., الامم بغزو أي مع, المقاومة., الأخذ وباستثناء جمعت أم كلا., بل, النازيين الأيديولوجية، وبغطاء لغات ما., الإمتعاض أضف الحرب غير على., ثانية الأمم جديداً ليبين تحت بـ بها وفي المقيتة., استولت الغربي التي في, ما الهجوم بدفع. |
+| `sentence` | تم بقسوة مما يطول بلا الله الواقعة., عن و كلا, المزيفة اعتداء إيطاليا الأبرياء اسبوعين., استدعى التكاليف إيطاليا الوراء يذكر مارشال. |
+| `sentences` | يتسنّى دنو العصبة الدولارات بها السفن., ألماني, لليابان مع إحتلال عن بحث., عن فكانت العسكري مما وتعدد., الذرية بها كل, وأسرت والجنود قد قام كنقطة., الدولارات كل, حيث أي., اكتوبر, الفاشي فصل هو لغات الغربي و., وبدون أسلحته الذرية لعملة والفرنسي وحلفاؤها., إستيلاء مدن الثالث، غير الثالث وعزّزت مما باستسلام مما., ان فصل ضرب ومضى. |
+| `word` | قد, لم, اليابان |
+| `words` | انتهت, دول,, جحافل, بخطوط, منشوريا, يذكر, بهيئة, نفس, هيروشيما |
 
 ## FFaker::LoremBR
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | 2pc524xry33aykp6zwvqgspv6rvedpoc264puszvugoyzgivgugb1iicbikf3ds4otbjzlm4qt1rv56lg5wdfebiaj50plv45bw1muxh7nahqa22qqo2yj0uabets3pbirxq2c7g6xtdxe3zm891vnww5u7lthq445yqr4o3qmhyqamsfpugv4w4sy1x4cl4wrcyh2br81d0cnlxuwpn4pkydw278wvbkiv7o78fl726oxmy5xlx0calsb5c1q8, iygjoutwzy1vfgpog4zdwt68ssem3nhfhegygmjqy227sd21ayqm9r091kmd5dlcddd6uo6geavgootca86idw3yjanlrqigd41r7gi14hd0ehstz4tc924wxj8wfnefz9cknf9oqf0vskkvx6vb1lbvzm4fjex6n2lczezy7bxhz82ldns578iifwlzhl21hku08kypw7sahopmkhknns4pzvly14jj3pog5n8umhrzzhb929jpyh7uw0ffqow, vyecz4t05uw0ar0lr56a6m7vs98vnt8ic5j7hoyjitxvji9z9ll0ezf5tm6ghq5p6u1jqml4ykmofrauhkcszbsxymy68fv3j9rabx88wotuh26lf6hjjvkko4at6q5p0qne040r1clbi5a2xk563vbfwigxkjvirca67nh3ji151uk87el96wy2totsfh0o6ly02sk3tx9gqy798hfcfr926xch45nxmq9j1rz6r3rgq7p2l26qppsy9ygairi |
-| `paragraph` | Ser falham o desejo mas fadados impede justa alguma. Porque estão fáceis exemplo podem. Empreende princípio a completo nós e mais prever. Problemas nosso resultante toda evita e casos são quem., Com escolhe encontram portanto sabem sábio mesmo. Pelo é labuta toda simples freqüentemente. Às quando é culpa poder devem exceto qual. Ocorrerá outros e ensinamentos prever., Atém que justa enganados resultante essa dever encantos. Sempre felicidade alguma extremamente darei portanto resultante a. Sempre àqueles verdade sábio desejo desimpedido. Por como ocorrerá darei dos rejeita labuta tolera. |
-| `paragraphs` | A mesmo se labuta ocasionalmente prazer pelo encantos falham. Mestre-construtor exemplo louvar escolha todo dos esses aceitos lado. Toda acontecer resultante alguém vontade esses., Homem qual essa algum perfeitamente. Sejamos assegurar poder desejo felicidade ame fadados. Racionalmente dor capazes o os indignação fazer relato desimpedido., Nosso idéia porque dar se dores tampouco impede. Dos se conseqüências mesmo princípio é sabem pelos momento. Para problemas prazeres momento lhe. Reivindicações falham ocorrerá extremamente dor. Si exceto quem mesmo acontecer aborrecimentos distinguir com., Sabem ensinamentos o acontecer livre essa. Escolha tão pelos um encolhimento livre sábio dever dor. Quando àqueles disso pelo louvar mais resultante há. Busque mais é os momento nós., Perfeitamente exercício mais de nosso. Enganados criticar desimpedido tampouco o aborrecimentos em vontade grande. Seu aqueles poder desejo físico mas., Sempre alguma explicar-lhe rejeita através impede fadados darei. Nós problemas seleção mas extremamente exceto. Grande toda e sistema esse ocasionalmente indignação louvar essa., Certas ocorrem culpa capazes dever negócios. Há nasceu obrigações labuta desfrutar circunstâncias evita. Irritantes àqueles escolhe culpa acontecer. Devo maiores e outro idéia disso escolhe gosta., Encolhimento mesmo denunciar tolera pertence dar simples. Outros nada como antipatia bem-vindo lhe. Mais ocorrerá problemas toda momento completo aqueles pelos. Devo criticar e freqüentemente distinguir ocasionalmente antipatia acontecer obrigações., De dolorosas idéia há expondo racionalmente culpa. Um vontade problemas prazer nada humana. Pelo denunciar outros desfrutar de impede laborioso cegados a. Indignação mais vontade desmoralizados toda laborioso acontecer quem não. |
-| `phrase` | Alguma reais buscar os explicar-lhe são indignação., Fáceis desejo obrigações estão sábio momento., Outros todo escolhe lhe para verdade louvar devo. |
-| `phrases` | Ocorrem desimpedido não grande dever tolera deseje desmoralizados., Racionalmente momento dos repudiados podem si freqüentemente pertence., Nada esse tem homem darei., Irritantes toda proporcionar encantos denunciar nasceu alguma mesmo de., Atém poder ensinamentos acontecer obrigações., Nosso conseqüências vontade encolhimento relato reivindicações labuta assegurar., Através denunciamos dores momento tampouco desmoralizados reais., Criticar que aceitos completo explicar-lhe., Conseqüências equivocada escolha casos obrigações si a. |
-| `sentence` | Simples disso evita homem para antipatia se alguma., Verdade portanto através aqueles dos às sistema labuta sábio., Produz todo dizer irritantes mas sabem. |
-| `sentences` | Esses distinguir exemplo da qual., Certas os para desimpedido lado nasceu qual de rejeita., Denunciar maiores reivindicações para grande evitada desmoralizados., Impede prever dos idéia fazer perfeitamente dores., Acontecer tão atém esse piores certas culpa capazes., Por cegados empreende sábio freqüentemente alguma devido., Pertence desimpedido exercício que nós., Físico irritantes criticar homens porque., Escolha é extremamente simples reais culpa. |
-| `word` | empreende, criticar, extremamente |
-| `words` | antipatia, princípio, obrigações, aborrecimentos, com, darei, certas, disso, produz |
+| `characters` | dpoc264puszvugoyzgivgugb1iicbikf3ds4otbjzlm4qt1rv56lg5wdfebiaj50plv45bw1muxh7nahqa22qqo2yj0uabets3pbirxq2c7g6xtdxe3zm891vnww5u7lthq445yqr4o3qmhyqamsfpugv4w4sy1x4cl4wrcyh2br81d0cnlxuwpn4pkydw278wvbkiv7o78fl726oxmy5xlx0calsb5c1q8iygjoutwzy1vfgpog4zdwt68ssem, 3nhfhegygmjqy227sd21ayqm9r091kmd5dlcddd6uo6geavgootca86idw3yjanlrqigd41r7gi14hd0ehstz4tc924wxj8wfnefz9cknf9oqf0vskkvx6vb1lbvzm4fjex6n2lczezy7bxhz82ldns578iifwlzhl21hku08kypw7sahopmkhknns4pzvly14jj3pog5n8umhrzzhb929jpyh7uw0ffqowvyecz4t05uw0ar0lr56a6m7vs98v, nt8ic5j7hoyjitxvji9z9ll0ezf5tm6ghq5p6u1jqml4ykmofrauhkcszbsxymy68fv3j9rabx88wotuh26lf6hjjvkko4at6q5p0qne040r1clbi5a2xk563vbfwigxkjvirca67nh3ji151uk87el96wy2totsfh0o6ly02sk3tx9gqy798hfcfr926xch45nxmq9j1rz6r3rgq7p2l26qppsy9ygairify7an78l13fhibrfcdma8wg2uoz5 |
+| `paragraph` | São evita e casos simples quando culpa como. Encolhimento por repudiados simples mais prever perfeitamente lado uma. Freqüentemente fazer quem culpa porque devem exceto. Ocorrerá outros e ensinamentos prever. Atém que justa enganados resultante essa dever encantos., Sempre felicidade alguma extremamente darei portanto resultante a. Sempre àqueles verdade sábio desejo desimpedido. Por como ocorrerá darei dos rejeita labuta tolera. Lado a mestre-construtor sejamos labuta., Empreende fadados dizer distinguir negócios explorador mesmo esse um. Dos esse aceitos laborioso encolhimento sábio uma algum. Alguma uma esse outros ser hora quem. Para direito sempre assegurar porque desejo fraqueza ame falham. |
+| `paragraphs` | Capazes nós ocorrerá impede falham. Desfrutar labuta evitar o impede prazeres dar. Relato dor simples idéia encontram., Dos se conseqüências mesmo princípio é sabem pelos momento. Para problemas prazeres momento lhe. Reivindicações falham ocorrerá extremamente dor. Si exceto quem mesmo acontecer aborrecimentos distinguir com., Sabem ensinamentos o acontecer livre essa. Escolha tão pelos um encolhimento livre sábio dever dor. Quando àqueles disso pelo louvar mais resultante há. Busque mais é os momento nós., Perfeitamente exercício mais de nosso. Enganados criticar desimpedido tampouco o aborrecimentos em vontade grande. Seu aqueles poder desejo físico mas., Sempre alguma explicar-lhe rejeita através impede fadados darei. Nós problemas seleção mas extremamente exceto. Grande toda e sistema esse ocasionalmente indignação louvar essa., Certas ocorrem culpa capazes dever negócios. Há nasceu obrigações labuta desfrutar circunstâncias evita. Irritantes àqueles escolhe culpa acontecer. Devo maiores e outro idéia disso escolhe gosta., Encolhimento mesmo denunciar tolera pertence dar simples. Outros nada como antipatia bem-vindo lhe. Mais ocorrerá problemas toda momento completo aqueles pelos. Devo criticar e freqüentemente distinguir ocasionalmente antipatia acontecer obrigações., De dolorosas idéia há expondo racionalmente culpa. Um vontade problemas prazer nada humana. Pelo denunciar outros desfrutar de impede laborioso cegados a. Indignação mais vontade desmoralizados toda laborioso acontecer quem não., Exemplo si igual físico desejo ocasionalmente. Seu mas certas pelo tão. Às ou tão àqueles lhe devo acontecer outro desmoralizados. Gostamos devem tem deseje desimpedido relato ninguém. Dos rejeita piores ser freqüentemente perfeitamente. |
+| `phrase` | Nada esse tem homem darei., Irritantes toda proporcionar encantos denunciar nasceu alguma mesmo de., Atém poder ensinamentos acontecer obrigações. |
+| `phrases` | Nosso conseqüências vontade encolhimento relato reivindicações labuta assegurar., Através denunciamos dores momento tampouco desmoralizados reais., Criticar que aceitos completo explicar-lhe., Conseqüências equivocada escolha casos obrigações si a., Simples disso evita homem para antipatia se alguma., Verdade portanto através aqueles dos às sistema labuta sábio., Produz todo dizer irritantes mas sabem., Esses distinguir exemplo da qual., Certas os para desimpedido lado nasceu qual de rejeita. |
+| `sentence` | Denunciar maiores reivindicações para grande evitada desmoralizados., Impede prever dos idéia fazer perfeitamente dores., Acontecer tão atém esse piores certas culpa capazes. |
+| `sentences` | Por cegados empreende sábio freqüentemente alguma devido., Pertence desimpedido exercício que nós., Físico irritantes criticar homens porque., Escolha é extremamente simples reais culpa., Empreende criticar falham antipatia proporcionar ocorrem aborrecimentos como denunciamos., Direito problemas si criticar seu alguém racionalmente evitada., Tampouco sábio distinguir escolha do busque bem-vindo., Aborrecimentos e falham é nosso não conseqüências essa irritantes., Nada qual labuta homem freqüentemente direito esses algum devem. |
+| `word` | fáceis, antipatia, vantagem |
+| `words` | em, nosso, gosta, trivial, e, tampouco, sabem, devido, igual |
 
 ## FFaker::LoremCN
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | 不胜枚举雄鸡报晓烈日当空万紫千红两肋插刀, 鸟语花香东倒西歪千军万马千姿万状拾金不昧麦浪滚滚激动万分洗耳恭听, 绿浪滚滚一箭双雕与虎谋皮一诺千金洁白无瑕牺牲争分夺秒, 天南地北雪花飞舞振奋人心五光十色注视冰雪消融燃眉之急赞不绝口。, 暴风骤雨天老地荒乘热打铁烈日当空犹豫不决桃红柳绿咕咚, 万紫千红虎背熊腰悔恨交加大失所望十万火急打草惊蛇一眨眼惊恐万状六道轮回, 冰雪消融四面八方暴雨如注一马当先咕咚万古长青, 摩拳擦掌四海为家语气坚定无忧无虑画蛇添足千里冰封一诺千金不吵不闹青红皂白。, 七嘴八舌四平八稳去世身材魁梧昂首阔步冰天雪地望三九严寒心旷神怡, 火红冰雪消融牛马不如看望犹豫不决秋月似钩白茫茫螳臂当车名列前茅, 一文不值柠檬黄叮叮咚咚无忧无虑雨打风吹五大三粗嘶叫叹为观止, 小心翼翼毅然决然江水滚滚危峰兀立一瞬间高枕无忧柠檬黄。 |
-| `paragraphs` | 琳琅满目有勇无谋千锤百炼喜出望外黑压压虎背熊腰, 八仙过海，各显神通泣不成声千疮百孔黑白相间五谷丰登, 提心吊胆十万火急七窍生烟天崩地裂枣红千秋万代嫣然一笑前倨后恭西装革履, 有气无力丽日当空东倒西歪铺天盖地急不可待千疮百孔, 雪飘如絮云开日出波涛汹涌三头六臂两情相悦。, 七上八下雪花飞舞十全十美碧波荡漾山河壮丽黯然神伤马到成功为国捐躯摩肩接踵, 大同小异一目十行提心吊胆碧空如洗绞尽脑汁千变万化水帘悬挂一马当先, 仰望千变万化山河壮丽手舞足蹈马失前蹄凝视怒发冲冠十年寒窗, 灯红酒绿赞叹不已快如闪电狐假虎威人山人海四海为家慢慢, 燃眉之急目瞪口呆激动万分湖蓝金灿灿。, 借尸还魂无忧无虑惊弓之鸟四分五裂安危冷暖黄澄澄, 落叶沙沙千军万马小心翼翼气势恢弘轻风徐徐激动人心瞄有名无实, 有备无患自言自语俯视争论不休人山人海有气无力。, 浩浩荡荡四面八方轻风徐徐嚷, 天高云淡前思后想暴雨如注扫视千山万水不可胜数谈论五谷丰登, 空前绝后黑压压寒冬腊月一文不值一日三秋十拿九稳夕阳西下理直气壮讨论, 争分夺秒雪白叹为观止二三其德绿树成阴骄阳似火风和日丽, 六根清净愁眉苦脸瞄鸡飞蛋打东奔西走子。, 洗耳恭听果实累累借尸还魂全神贯注鸡犬不宁, 时上时下万紫千红神采奕奕望万家灯火不屈不挠阳春三月云浪滚滚, 毅然决然灯火通明九牛一毛泪流满面, 不理不睬灰心丧气七零八落讨论不进则退绿意盎然。, 鸡飞蛋打连绵不断三生有幸大公无私哈哈大笑, 天昏地暗一言九鼎苦思冥想中午时分嘶叫, 喀嚓快如闪电前仰后合牛马不如白雪皑皑迫在眉睫激动人心火眼金睛。, 绚丽多彩高枕无忧千姿百态天色模糊一言九鼎, 危峰兀立扑哧牺牲高枕无忧各抒己见嘶叫星转斗移, 人山人海白纸黑字轰轰隆隆胆小如鼠牛头马面, 华灯初上摩肩接踵一丝不苟自高自大碧波荡漾霎时间色彩斑斓。, 青黄不接万紫千红亡羊补牢鸡犬不宁九牛一毛龙争虎斗交头接耳, 无边无际不可胜数十万火急一气呵成大公无私时高时低争分夺秒, 洗耳恭听桃红柳绿千锤百炼无影无踪生气勃勃有恃无恐画蛇添足, 叮叮当当热浪滚滚日月如梭两肋插刀。, 各抒己见仰望绞尽脑汁专心致志, 数不胜数天昏地暗星转斗移壮志凌云, 扑哧绵绵细雨四面八方一身是胆梨黄一目十行坐井观天乳白雪飘如絮。 |
+| `paragraph` | 空前绝后十拿九稳咕咚黑白分明, 深感内疚十年寒窗打草惊蛇徐徐惊弓之鸟六根清净东奔西走风狂雨猛四海为家, 一马当先咕咚素车白马七高八低摩肩接踵四平八稳惊涛骇浪。, 狐假虎威千里冰封牛马不如不明不白, 七嘴八舌四平八稳去世身材魁梧昂首阔步, 望三九严寒舒舒服服孔雀蓝雪花飞舞, 空前绝后茫雾似轻红艳艳爱屋及乌首屈一指, 一文不值柠檬黄叮叮咚咚无忧无虑雨打风吹五大三粗嘶叫叹为观止。, 一瞬间高枕无忧柠檬黄天经地义车水马龙, 千奇百怪开怀大笑黑压压虎背熊腰九霄云外顾虑重重前思后想, 提心吊胆十万火急七窍生烟天崩地裂枣红千秋万代嫣然一笑前倨后恭西装革履。 |
+| `paragraphs` | 中午时分有名无实铺天盖地急不可待, 千锤百炼喜出望外细雨如烟长短不同, 三头六臂两情相悦七拼八凑雪花飞舞十万火急绵绵细雨危峰兀立提心吊胆马到成功, 摩拳擦掌不理不睬大公无私快如闪电惊惶失措暴雨如注拾金不昧, 高山峻岭一马当先愁眉苦脸仰望千秋万代连绵不断赞不绝口马失前蹄。, 十面埋伏两情相悦青山绿水叹为观止健步如飞狐假虎威摩肩接踵四通八达, 嘶十万火急张口结舌感慨万分枣红黄澄澄哈哈大笑, 借尸还魂无忧无虑惊弓之鸟四分五裂安危冷暖黄澄澄无忧无虑犹豫不决, 雄心勃勃星光熠熠气势磅礴北风呼啸激动不已。, 有备无患自言自语俯视争论不休人山人海有气无力, 浩浩荡荡四面八方轻风徐徐嚷, 天高云淡前思后想暴雨如注扫视千山万水不可胜数谈论五谷丰登。, 空前绝后黑压压寒冬腊月一文不值一日三秋十拿九稳夕阳西下, 大公无私讨论十面埋伏投桃报李, 赞叹不已二三其德气势非凡枫叶似火淅淅沥沥苹果绿六道轮回愁眉苦脸瞄, 有勇无谋甲惊弓之鸟一泻千里。, 车轮滚滚深入浅出专心致志鸡犬不宁, 时上时下万紫千红神采奕奕望万家灯火不屈不挠阳春三月云浪滚滚, 毅然决然灯火通明九牛一毛泪流满面, 不理不睬灰心丧气七零八落讨论不进则退绿意盎然。, 鸡飞蛋打连绵不断三生有幸大公无私哈哈大笑, 天昏地暗一言九鼎苦思冥想中午时分嘶叫, 喀嚓快如闪电前仰后合牛马不如白雪皑皑迫在眉睫激动人心火眼金睛。, 绚丽多彩高枕无忧千姿百态天色模糊一言九鼎, 危峰兀立扑哧牺牲高枕无忧各抒己见嘶叫星转斗移, 人山人海白纸黑字轰轰隆隆胆小如鼠牛头马面, 华灯初上摩肩接踵一丝不苟自高自大碧波荡漾霎时间色彩斑斓。, 青黄不接万紫千红亡羊补牢鸡犬不宁九牛一毛龙争虎斗交头接耳, 无边无际不可胜数十万火急一气呵成大公无私时高时低争分夺秒, 洗耳恭听桃红柳绿千锤百炼无影无踪生气勃勃有恃无恐画蛇添足, 叮叮当当热浪滚滚日月如梭两肋插刀。, 各抒己见仰望绞尽脑汁专心致志, 数不胜数天昏地暗星转斗移壮志凌云, 扑哧绵绵细雨四面八方一身是胆梨黄一目十行坐井观天乳白雪飘如絮。 |
 | `sentence` | 不闻不问足下生辉无缘无故长短不同,, 丽日当空形态多样微微一笑嚎啕大哭惊慌失措瞬息万变鼠目寸光,, 十万火急追悔莫及色彩斑斓出生牛犊火眼金睛一泻千里生离死别闷闷不乐, |
 | `sentences` | 雷厉风行忐忑不安返老还童九死一生天长日久震耳欲聋指鹿为马闷闷不乐,, 乳白闻名天下嚎危峰兀立二三其德,, 泪流满面五体投地兴致勃勃两肋插刀闷闷不乐缓慢,, 有恃无恐月白风清响彻云霄刹那间红彤彤,, 顾虑重重老态龙钟乘热打铁万丈瀑布咬牙切齿七折八扣自吹自擂暑气逼人,, 百感交集姿态万千青红皂白八面威风哗哗啦啦,, 鸣生龙活虎赤日炎炎拳打脚踢甲秋实累累,, 摩肩接踵素车白马生气勃勃波浪滚滚不吵不闹十年寒窗,, 前呼后拥大汗淋漓曰疾恶如仇气势恢弘鸣优柔寡断冰清玉洁惊涛骇浪, |
 | `word` | 内忧外患, 暑气逼人, 四通八达 |
@@ -1706,613 +1706,613 @@
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | 叮叮咚咚楓葉炊煙裊裊怒目而視驚弓之鳥牛頭馬面一目十行, 目瞪口呆洗耳恭聽一毛不拔白雪皚皚出爾反爾秋雨綿綿天經地義一心一意, 葉公好龍手忙腳亂憂愁不安萬家燈火, 四面八方五谷豐登揮金如土十拿九穩黑紅日東升白浪滔天粉紅變幻莫測, 灰唧唧喳喳表里如一波光粼粼人天昏地暗冰清玉潔。疾走如飛響徹雲霄紫旭日東升馬失前蹄泣不成聲雪飄如絮, 四面楚歌紫潔白如玉慷慨激昂各抒己見, 前呼後擁前所未有慷慨激昂水平如鏡狂風暴雨十分可惡光陰似箭快如閃電振奮人心, 時隱時現面黃肌瘦五彩繽紛綿綿細雨熱情口蜜腹劍象牙白暴雨如注李白桃紅。令人發指信箱震天動地只好波濤洶湧, 五谷豐登特色聯繫方式冰雪消融感慨萬分危峰兀立, 生死存亡喜怒哀樂優柔寡斷乘熱打鐵緩慢昂首挺胸高山峻嶺自給自足, 四面楚歌連連稱讚開懷大笑實施望女成鳳, 一心一意有限青一諾千金連綿不斷唧唧喳喳秋雨綿綿。 |
-| `paragraphs` | 一促進忐忑不安老態龍鐘秋雨綿綿, 牛頭馬面綠意盎然大毫無希望米載歌載舞一字千金和好如初, 犧牲烏雲翻滾金燦燦順手牽羊齊心協力瞬息萬變, 悠然自得拳打腳踢絞盡腦汁不清不楚, 大形態多樣有始有終泣不成聲檸檬黃車水馬龍科技狐假虎威咬牙切齒。兩袖清風交頭接耳殺雞儆猴五谷豐登開懷大笑手足無措東奔西走烈日灼灼, 一絲不茍鋪天蓋地漫漫長夜愁眉苦臉, 紫聲東擊西生氣勃勃波浪滾滾開懷大笑眾志成城, 東奔西走前所未有垃圾虎嘯龍吟悠然自得鶴立雞群生氣勃勃山河壯麗。天荒地老兔死狐悲驚慌失措綠樹成陰三顧茅廬, 梨黃兇多吉少小試牛刀嫣然一笑一貧如洗交頭接耳暴雨如注無情無義, 前因後果東鱗西爪粉妝玉砌三長兩短馬到成功, 淚眼汪汪不清不楚魚目混珠橙黃毅然決然, 前仰後合大洗耳恭聽產權天藍形態不一一字千金。紅綠樹成陰人山人海令人發指信守諾言潔白如玉棕有氣無力, 促進潔白無瑕為國捐軀咖啡出售, 萬家燈火江水滾滾千山萬水感慨萬分雨打風吹夜幕降臨聲東擊西, 當午日明傾盆大雨管中窺豹廣泛一諾千金殺雞取卵。心靈手巧老公議論紛紛廠家五光十色雄獅猛虎白浪滔天紅一諾千金, 日月如梭嫣然一笑新浪先進一言九鼎, 變幻莫測飛流直下和好如初摩拳擦掌生氣勃勃一言九鼎, 健步如飛數不勝數配合乘熱打鐵去世秋高氣爽指鹿為馬。四面八方水落石出生機勃勃坐井觀天眉開眼笑大學生舉世聞名, 洶湧澎湃桃紅柳綠拳打腳踢眉清目秀, 意大十全十美國冰雪消融梨黃瞬息萬變潔白如玉春暖花開, 一觸即發建立牛馬不如聞雞起舞有始無終促進月明星稀泣不成聲。五花八門身材魁梧功能天誅地滅一心一意一本萬利先進哈哈大笑, 七零八落聲名狼籍七嘴八舌付出方式, 指導笑容可掬兩肋插刀冰天雪地雞飛蛋打棗紅。疾惡如仇人才七高八低羅東心曠神怡手舞足蹈顧慮重重, 千里冰封粉妝玉砌對不起大同小異萬丈瀑布五彩繽紛, 揮汗如雨有始有終七上八下紅艷艷字正腔圓有恃無恐逝世, 前赴後繼大失所望潸然淚下驚濤駭浪天高雲淡。壯志淩雲半明半昧天南地北急不可待大學, 愛屋及烏五體投地東拉西扯火眼金睛不細雨如煙, 利比七折八扣無緣無故門可羅雀千山萬水。 |
-| `sentence` | 雞犬不寧淚眼汪汪星光熠熠黯然神傷微微一笑開懷大笑驚弓之鳥, 明天絕無僅有走馬觀花與世長辭黑白分明手忙腳亂, 相比不幹不凈緩緩慷慨激昂眼明手快悔恨交加欲哭無淚心急如焚雞飛蛋打, |
-| `sentences` | 百感交集手足無措犧牲學時高時低已經光芒萬丈, 優柔寡斷垃圾與世長辭壯志淩雲風狂雨猛門可羅雀聞名天下波濤洶湧, 士兵短信二三其德打草驚蛇有備無患, 是浩浩蕩蕩楓葉理直氣壯萬紫千紅, 水滴石穿促進淺綠為國捐軀三顧茅廬中鶴立雞群嚴寒, 千里冰封地在天昏地暗揚眉吐氣淚流滿面激動不已春心蕩漾, 毫無希望綠瑩瑩銀妝素裹面紅耳赤喜怒哀樂長短不同前呼後擁, 大失所望黯然神傷兩面三刀昂首挺胸鵝黃水滴石穿兇多吉少絞盡腦汁萬紫千紅, 叮叮噹噹大同小異雲開日出不進則退白璧無瑕震耳欲聾, |
-| `word` | 洗耳恭聽, 春心蕩漾, 人聲鼎沸 |
-| `words` | 相比, 暮色蒼茫, 視死如歸, 草綠, 瞻前顧後, 驚弓之鳥, 生離死別, 雪花飛舞, 日月如梭 |
+| `paragraph` | 表里如一指導身材魁梧當午日明上午指鹿為馬國, 六根清凈實施綿綿細雨面紅耳赤追悔莫及月圓花好羞愧難言前倨後恭高山峻嶺, 悠然自得結婚上白骨累累自暴自棄頭重腳輕提出桃紅柳綠, 一見如故綠唯一高山峻嶺招兵買馬檸檬黃響徹雲霄。, 鏗鏘有力一馬當先一目十行視死如歸龍爭虎鬥返老還童東奔西走, 前仰後合媽媽千瘡百孔與虎謀皮廠家利比買空賣空, 迫在眉睫不明不白昂首挺胸逝世一言九鼎, 鳥語花香數不勝數與世長辭地三長兩短哈哈大笑。, 萬眾一心訂單全神貫注上齊心協力, 七零八落指導黑一言九鼎東倒西歪雪花飛舞大學生專心致志, 走馬觀花喜笑顏開象牙白紫愁眉苦臉製作是。 |
+| `paragraphs` | 悠然自得好像半夢半醒頭重腳輕, 躡手躡腳蘋果綠檸檬黃面紅耳赤自私自利自吹自擂以外, 李白桃紅關鍵橙萬家燈火千鈞一發交頭接耳棕一鳴驚人, 大名鼎鼎五花八門雞犬不寧廢寢忘食月白風清, 房地千軍萬馬一諾千金靈活一言九鼎。, 喜怒哀樂可憎可惡變幻莫測一落千丈朝霞輝映惶惶不安人山人海不勝枚舉火紅, 千秋萬代考察西裝革履門可羅雀嚎啕大哭天羅地網, 來狂風暴雨聯繫方式秋實累累已故北風呼嘯, 史無前例細雨如煙淚眼汪汪一日三秋前因後果目瞪口呆製作雄雞報曉, 素車白馬虎背熊腰拾金不昧半夢半醒。, 二三其德千奇百怪枝繁葉茂萬丈瀑布, 眉清目秀顧慮重重殺雞取卵五花八門千姿百態喜怒哀樂語氣堅定明天金, 各抒己見爭分奪秒疾惡如仇情況心靈手巧星轉鬥移感動, 龍馬精神牛頭馬面嘩嘩啦啦功能一文不值。, 豔陽上午米杯弓蛇影綠樹成陰大學, 魚龍混雜天南地北房地開了大名鼎鼎秋雨綿綿, 學習兇多吉少像是對牛彈琴不計其數無憂無慮齊心協力, 傾盆大雨三長兩短摩肩接踵深入淺出愁眉苦臉秋風涼爽洗耳恭聽怒目而視一眨眼, 無情無義拾金不昧九牛一毛大學小心叮叮噹噹。, 先進無緣無故九鼎一絲九牛一毛, 學習比賽屍骨累累買空賣空字正腔圓左顧右盼一諾千金面紅耳赤聞雞起舞, 藍剎那間毅然決然虎嘯龍吟國喪失人性萬古長青。, 一毛不拔輕風徐徐潔白無瑕讚嘆不已自說自話千變萬化, 聯繫形態多樣揮金如土反覆出售, 人流如潮月明星稀千言萬語信箱, 氣勢磅礴七折八扣和風拂面中午時分理直氣壯自私自利, 百感交集五湖四海千絲萬縷追悔莫及一馬當先自說自話自吹自擂迫不及待。, 東張西望波光粼粼怒目而視熱淚盈眶二三其德燃眉之急春心蕩漾, 精益求精萬眾一心指鹿為馬自吹自擂雞飛蛋打五光十色, 冰天雪地提心吊膽心曠神怡紅彤彤牛馬不如視死如歸, 火眼金睛生死存亡前因後果逝世。, 綠瑩瑩出售鵝黃表里如一, 顧慮重重大名鼎鼎讚不絕口萬眾一心, 唯一咬牙切齒亭亭玉立和風拂面字正腔圓哈哈大笑昂首挺胸了目瞪口呆。, 時高時低膽小如鼠微微一笑自言自語慢慢視死如歸半夢半醒衛生, 自高自大眾志成城走馬觀花不聞不問和好如初, 有始有終青黃不接漫漫長夜舒舒服服十全十美坐井觀天一見如故, 一身是膽六道輪回安危冷暖龍爭虎鬥微微一笑古色古香波光粼粼黑乎乎陽春三月。 |
+| `sentence` | 不聞不問星光熠熠結婚黃澄澄迫不及待驚弓之鳥五彩繽紛變幻莫測千軍萬馬,, 十年寒窗指鹿為馬十字街頭寶貝生龍活虎,, 揮汗如雨華燈初上無牽無掛已經殺雞儆猴大學, |
+| `sentences` | 秋風涼爽時感動聞雞起舞對不起,, 上午氣勢恢弘異口同聲北風呼嘯五湖四海八仙過海八面玲瓏,, 屍骨累累五花八門五光十色理直氣壯雞飛蛋打各抒己見,, 一絲不茍振奮人心讚不絕口深藍綠陰如蓋孔雀藍五光十色,, 特色與世長辭手足無措紅,, 紛紛擾擾迫在眉睫秋高氣爽精益求精去世雪白深入淺出需要,, 駕崩時隱時現眼高手低當午日明,, 洗耳恭聽絢麗多彩春暖花開疾走如飛愛屋及烏眼高手低,, 投桃報李萬花雕謝黃澄澄時高時低任何, |
+| `word` | 高枕無憂, 九鼎一絲, 愁眉苦臉 |
+| `words` | 叮叮咚咚, 早出晚歸, 媽媽, 一毛不拔, 炊煙裊裊, 機器, 霎時間, 果實累累, 開了 |
 
 ## FFaker::LoremUA
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | Й у й йому те які нього йшли тут їх. В розумів електрон страву давала для, їхньому бідні золота тепер на повторювалося виковували. Будування щонайдрібніших що багато але тоншої, все іноді у було тому ще. Тобто більше й, саме та мав якого йому у потім її припадала золото то голодно. Й ось Сивоок вони платівок бачили, все похмурих будування то борті. Потім ними варилася тим босі сяйво іноді щодень і прилютовувався., Саме постриг в золотої електрон воно на на, жив було бо розтирав належність. Було ними учив бачили листочки, як що чернецький тут своїми тим ціле. Ділом тепер по жив цього ділі те більшу але проварював обмеженнями Ісси, часом несміливі не. Ярослава чернецький довколишній з щодень в саме нього міг належність! Працею з і страву що красками чим. На людей тоншої то і з та учив ціле а, народ варилася або заплатити великих. Сивоок сам нужду споду розкошами грудку нині ліпші нагодувавши, голодніше вони більшу своїх пиху., Тому ділив жив кубика будування, вживано винести й а молитвах про. Не борті монастир і мав ще урозмаїтити на розкішніше належних. Ділі для щодень своїми бачив довколишній потім затірку тонюсінькі які. Міді смальти було і й, з загибелі й у що золота золота смальту співі сам. Ставав їх обідрані що лизали самої, відчаю і і смальта з києві вони своєю мав сріблом. |
-| `paragraphs` | Людьми своїми святого поля світінні, розумів буде і чим золота що чернецький з них. Розкішніше великих сріблом й не нагодувавши, ціле сяйво по буде помічників. Йшли рятувалися смальти ріденьку викладати тепер винести і, листочки і тобто варив. Й ж тим поміж тільки проварював ігуменом, урозмаїтити якого своєю бога але смальти від? Смальти йому якого, ціле валяться сріблом й смальту честь довго тільки і ділом з закладалося. І поля народ щоб без, належність з все навіть видінь більше. Поневірявся ними нужду вдоволень і, грудку молитвах ось поселення Сивоок мозаїк., У поля довколишній не уже, своїх смальти м’ясо радощів сподівань Сивоок кинули. Про виковували вони божу пішли як то до ними славу, листочки розкошами тільки мав. Тим мав що що ціле, було навіть якого іноді без і затірку коло що потім. Ділі нужді похмурих і вживано славу смальта Георгія. Люди загибелі монастир людей втратив красками й що. Ігуменом всіх працею мав них й навіть перепробував як зі., Згадувано воно ціле поля славу, зі її ліпші варилася бідні ними. До відтіння Сивоок мав, буде доглядав поля але що страву смальти не у. М’ясо та у тільки не то про, ж не бур’яном від з розкошами. Мав місці перепробував людей, в у за нестатками обіді старіші поміж життя що! Про буде їхньому співі з заплатити йшли їхні князя, у жив і навічно сяйво чим., Золотої вдоволень смальти світінні навіть перепробував мав щоб загибелі, літ смальта на про постриг біднішим. Не Ярослава святого доглядав Сивоок, проварював те і ділом більше визнати замилування тонюсінькі. Щонайдрібніших і тепер чернецький а не ріденьку! Тисяч учив нужду нужді замилування смальти за, розтирав ліпші чернецький що! Затірку поселення поневірявся, йшли та щоб з ось біле а життя., Довколишній красками а належних ж з всіх, від часом прилютовувався снісарі багато у. Своїх ж належних колись сріблом про літ електрон ріпу. Нагодує охочі сплав довго, прилютовувався не власне довколишній в Ісси все сріблом. На золота цього туди на в, ось й і з вживано йшли. Варили урозмаїтити поглинає поселення тоншої життя зі святого., Споду приймали з однаково про ж народ, церква у валяться ріпу життя буде Сивоок в! Поля втратив ділі й до, тільки й вони бо ще смальти. Тільки а нині розтирав та і честь хижі Сивоок, ось бога мав міг клали? Не все великим й у але просто на що тільки і навічно, яка до довго. Великим обіді божу обідрані тисяч радощів нестатками заснували з. Іноді загибелі на пішли листочок не обмеженнями сам мав і честь золота, поневірявся сподівань сіль їхньому? Добирав ними і ними, на й вони і з сяйво великих., Бралися що на все валяться міг поля а припадала заростають, з вони часом Сивоок була! Сам Сивоок поневірявся тоншої клали видінь й обіді багато. Обмеженнями рятувалися й і листочок треба йшли відтіння, разом нужді тепер? Своїх святого йшли для буде нужді, споду ділив працював давала літ іноді як. Розкішніше не йому ліпші кубика від від поміж, поселення жив споду. Обдертішим і що бачили свого втратив страву тільки тим власне, своїми платівок іноді. У що про те життя ставав бур’яном ігуменом вживано з!, Розповідали кольорів багато, але ділі хліб нагодувавши будування від сплав і власне. Смальти зі і чим бачили Ісси Сивоок. Що поля як снісарі у тільки по скла і тобто! Вони але свого чим золота він обіді в що заварювалося, бо розтирав викладати? Ставав Міщило учив ігуменом ділив Ісси уже., Видінь і ділом, ними поля воно обіді разом золотої іноді барвах. Обмеженнями ще працював буде уже іноді заплатити великим золото золото те навічно, скляного сіль вживано. В з хліб золотої пішли своєю на. Давала буде Міщило що грудку поглинає своєю ж, голодніше і Георгія у. Навіть якого міді похмурих згадувано радощів, платівок світінні нужду Сивоок як. Людьми золото сподівань Георгія навіть а смальти в, їхні пішли з? Золота зі києві й до Георгія церква. |
-| `phrase` | Чаклував честь на проварював, літ втулився поселення божу та що зостався до., Хижі як ними літ перепробував він золотий ліпші не тільки!, Церква стало їх було іноді повторювалося сам. |
-| `phrases` | Що сплав золотої смальта треба тепер барвах поневірявся саме нагодує ділом, святого своїх бо., Те цього належних монастир, красками співі про яка голодніше перепробував славу., Постриг тим навіть свого з тим борті її багато а жив, ж без вживано лизали., Спокійніше скляного Сивоок Сивоок не з, бо тепер ціле світінні у споду учив люди людей., Монастир свого ж буде бо ними, вдоволень клали у споду кольорів іноді працював., Клопотах ту багато молитвах туди щонайдрібніших люди як варив., Треба мозаїк старіші хліб снісарі воно чернецький жив вдоволень, шапок втратив багато клали учив., Про великих і біднішим ту, належність і ще ними й а?, Й туди було власне щоб й тому не, великих Ісси старіші в. |
-| `sentence` | Тут колись і згадувано щонайдрібніших мозаїк з чернецький?, Світінні а місці було маючи них м’ясо буде нагодувавши він., Навіть сплав проварював іноді і самої плечах, вдоволень золотий йому разом Візантії! |
-| `sentences` | Тут нужді від й закладалося у жив життя на тобто!, Їхньому бо втулився буде навіть Сивоок од вони., Й тоншої саме, для золотий обдертішим прилютовувався мав голодно не а відчаю ж., Нагодує до борті Сивоок буде не не розкошами кинули., Бо їхньому потім належність Сивоок, все біднішим бачив сріблом ліпші стало на жив свого!, Йому ігуменом варилася чернецький чаклував електрон, уже для не шапок а бога нужду., Й тепер з, зі що втулився часом багато колись її винести свого було то людьми., Він в визнати що й від тобто., Всіх варилася ще замилування своїми нагодує мозаїк для, з платівок нужду. |
-| `word` | похмурих, і, десь |
-| `words` | по, навіть, сріблом, не, сіль, не, все, валяться, пиху |
+| `paragraph` | Часи за великих свого Сивоок до, коли будування і Міщило босі жив потім від. Ігуменом всіх працею мав них й навіть перепробував як зі. Згадувано потім ціле люди і зостався ріпу. Тому бідні люди своїми несміливі тільки нього урозмаїтити. Довколишній і відтіння валяться, втулився бур’яном не урозмаїтити про у кубика з і що. Буде не Сивоок що ще електрон своїми валяться жорстокого молитвах, сіль довколишній золотої пиху., Працею винести не видінь золотої жив що їх голодно! Про буде їхньому співі з заплатити йшли їхні князя, у жив і навічно сяйво чим. Приймали від золотої тепер тоншої їхньому іноді багато все прилютовувався? Не яка і не старіші літ бралися воно ними й зі, туди викладати без. Те але тільки, красками й затірку тільки князя капусту києві і уже не. Він про ними втратив іноді обмеженнями належних навіть сподівань? Те та монастир власне до капусту урозмаїтити сріблом, уже золото лизали., Прилютовувався перепробував часи мав над грудку мав або з? Поля коли над, не що все виковували співі від бралися смальти церква смальту. Й затірку бо тонюсінькі м’ясо саме босі сплав довго золотий? Антропоси життя як а які те ріпу. І поля з сподівань плечах більше несміливі то сяйво. |
+| `paragraphs` | Урозмаїтити все свого листочок свого зі Георгія в золотої, будування й біднішим! Споду приймали з однаково про ж народ, церква у валяться ріпу життя буде Сивоок в плечах! Поля втратив ділі й до, тільки й вони бо ще смальти. Тільки а нині розтирав та і честь хижі Сивоок, ось бога мав міг клали? Не все великим й у але просто на що тільки і навічно, яка до довго. Великим обіді божу обідрані тисяч радощів нестатками заснували з., По Георгія борті золотий однаково й Сивоок які, радощів на листочки і більше. Було заплатити кольорів з відчаю нужді плечах у самої божу не, варили які а Сивоок щодень. Зостався хижі її і часом він, в пішли щоб та споду світінні тільки! Сам Сивоок поневірявся тоншої клали видінь й обіді багато. Обмеженнями рятувалися й і листочок треба йшли відтіння, разом нужді тепер? Своїх святого йшли для буде нужді, споду ділив працював давала літ іноді як., Розкішніше не йому ліпші кубика від від поміж поселення, жив споду людей він та і тому. Обдертішим і то тільки місці втратив її тільки чим. Смальти листочки до кубика у варилася, розумів на стало по на. Ліпші од життя ту літ ще проварював більше однаково босі тепер, тисяч хижі відчаю! Цього з виковували людьми власне будовано капусту замилування охочі тому від, і а хліб кинули., Від страждав платівок замилування золото поглинає золотої. На у тонюсінькі обідрані грудку не ту скла народ варив які а, жив відтіння й цього. І чернецький світінні на щоб од обдертішим у? Бідні прилютовувався ж тільки сподівань винести і. І чернецький скла нестатками жив не або ще двох прилютовувався капусту часи, і своїми на як? Й винести все щоб, варили ліпші але у м’ясо поля й у все. Вдоволень стало до на життя, спокійніше і смальту в своїх тільки коли те., Молитвах не тобто, приймали на у лизали снісарі страву хижі на ними своїми щонайдрібніших! Поля Ісси монастир поглинає ділі хижі чаклував втулився своєю красками. Коло й тільки десь Міщило смальту що валяться було. Перепробував своїми просто у, зі і золото на поля нужді все споду у. Що сплав золотої смальта треба тепер барвах поневірявся саме нагодує ділом, святого своїх бо. Те цього належних монастир, красками співі про яка голодніше перепробував славу. Постриг тим навіть свого з тим борті її багато а жив, ж без вживано лизали., Споду смальти перепробував них працював стало жив від їхньому. Як іноді буде на честь, Георгія сплав ліпші на клопотах великим лизали! Листочки нього вони що у, з але і будування добирав Сивоок. Великих молитвах ліпші смальти потім приймали життя, і без Ісси довго не він лизали голодно? Князя будовано помічників і бур’яном про разом своїми в працею, обдертішим біле бога., Втулився треба поневірявся кубика нестатками на її для, загибелі молитвах відчаю. Тут колись і згадувано щонайдрібніших мозаїк з чернецький? Світінні а місці було маючи них м’ясо буде нагодувавши він. Навіть сплав проварював іноді і самої плечах, вдоволень золотий йому разом Візантії! Тут нужді від й закладалося у жив життя на тобто! Їхньому бо втулився буде навіть Сивоок од вони., Було те смальта, смальти і просто все співі голодно не а. Нагодує до борті Сивоок буде не не розкошами кинули. Бо їхньому потім належність Сивоок, все біднішим бачив сріблом ліпші стало на жив свого! Йому ігуменом варилася чернецький чаклував електрон, уже для не шапок а бога нужду. Й тепер з, зі що втулився часом багато колись її винести свого було то людьми. Він в визнати що й від тобто. Всіх варилася ще замилування своїми нагодує мозаїк для, з платівок нужду., По листочки бралися тепер, її сподівань своєю буде від не не закладалося їхньому затірку біднішим навічно. Сріблом їхньому світінні лизали життя більше кубика мозаїк, що босі розумів як й. Разом листочок ними треба працював що щодень народ й сіль. Клали відчаю сподівань й без не жорстокого, нагодувавши яка нужду бідні нужді не варив. Їхні з золота споду розповідали їхньому бога. Від або стало і кинули старіші за, Сивоок було будовано снісарі листочок свого бо! Не й кольорів рятувалися, у ріпу святого нині нужду затірку виковували що честь. |
+| `phrase` | Відтіння ж не ту хліб саме часи, як них тут більше князя охочі смальти., У капусту кольорів багато ж народ, своїх нагодувавши чим більше ними бога., Тільки життя честь не тепер них тільки. |
+| `phrases` | Перепробував несміливі поневірявся варилася у бралися, якого й мав працював що молитвах!, Вдоволень розкошами голодніше скла нужді двох самої ними?, Вони як належність славу що щодень давала кинули бога постриг, не перепробував голодніше по те., Обідрані князя сам й і але власне золотої., Сплав листочок в бачили все люди тому клопотах біднішим заплатити., Тонюсінькі стосував не заварювалося, мозаїк від пиху листочки у ріденьку поселення людей перепробував і і?, Й старіші викладати про листочок біднішим великим, своїх тільки бур’яном не їхньому вживано виковували хижі смальта., В молитвах поля мозаїк грудку не доглядав Сивоок красками., Страву сріблом про борті розкошами народ якого на валяться. |
+| `sentence` | Що те на клопотах приймали й заростають їхні великих., Потім про й цього відчаю разом тим визнати од золото., Давала не у двох без в, страждав тепер у Сивоок власне довго. |
+| `sentences` | Про розкошами смальти валяться розумів й воно спокійніше учив на, приймали сам перепробував ж!, Перепробував ліпші ігуменом золото просто урозмаїтити їхні золото і антропоси., Страждав цього про заплатити йшли в бур’яном тисяч й?, По капусту доглядав то вдоволень красками золото повторювалося, чим щодень або., Однаково Сивоок сріблом й їх тепер вживано., Ще саме і розкошами проварював, цього на антропоси церква своїх золотий валяться все припадала постриг і?, Тільки стало й їх про вдоволень охочі честь., Саме клопотах про бога лизали від іноді поглинає, жив будовано довго зі нині Ісси?, Електрон обмеженнями їхньому смальта мав свого однаково Сивоок Георгія. |
+| `word` | і, у, він |
+| `words` | навіть, тонюсінькі, ліпші, було, закладалося, плечах, урозмаїтити, людей, як |
 
 ## FFaker::Movie
 
 | Method | Example |
 | ------ | ------- |
-| `rating` | R, G, PG |
-| `title` | Legend of Blow, The Imp from Mars, The Wolf Who Fell to Earth |
+| `rating` | PG-13, PG, NC-17 |
+| `title` | I Married a Dangerous Wolves, Dangerous Brains, Danger Wolf 2: Son of Danger Wolf |
 
 ## FFaker::Music
 
 | Method | Example |
 | ------ | ------- |
-| `album` | Homecoming, Advertise, Delirium |
-| `artist` | Slow Hands, City Calm Down, Laidback Luke |
-| `genre` | Pop/Rock, Classical, Blues |
-| `song` | White Iverson, Tennessee Whiskey, Experiment |
+| `album` | Meat and Candy, All That Led Us Here, Geographer on Audiotree Live 2015 |
+| `artist` | Ellie Goulding, Empire Cast, Pell |
+| `genre` | New Age, Religious, Country |
+| `song` | Money On My Mind, Locked Away, Renegades |
 
 ## FFaker::Name
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Tamera Strosin, Miss. Samara Hermann, Miss. Aracely Hoeger |
-| `female_name_with_prefix_suffix` | Miss. Oda Hamill DDS, Mrs. Eveline Mayert II, Mrs. Lonnie Johnson PhD |
-| `female_name_with_suffix` | Dannielle Klein DDS, Alma Dickinson DDS, Clementine Anderson III |
+| `female_name_with_prefix` | Miss. Fawn O'Conner, Miss. Almeda Murphy, Mrs. Collette Lang |
+| `female_name_with_prefix_suffix` | Miss. Annett Carter V, Mrs. Taneka Funk IV, Mrs. Brandy Lemke Jr. |
+| `female_name_with_suffix` | Janessa Konopelski IV, Shaunda Howell IV, Marry Yundt IV |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Greta, Mayra, Lennie |
-| `first_name_female` | Marisa, Myrtis, Deanna |
-| `first_name_male` | Rayford, Oliver, Javier |
-| `html_safe_last_name` | Cole, Nolan, Dicki |
-| `html_safe_name` | Eden Lehner, Ethan Berge, Fransisca Konopelski |
-| `last_name` | Dooley, Luettgen, Jacobs |
-| `male_name_with_prefix` | Mr. Shelton O'Reilly, Mr. Carmelo Hirthe, Mr. Darrin Anderson |
-| `male_name_with_prefix_suffix` | Mr. Porfirio Balistreri V, Mr. Bryant Conn V, Mr. Alexander VonRueden II |
-| `male_name_with_suffix` | Hugo Mayer DVM, Mike Stanton II, Reinaldo Stokes Sr. |
+| `first_name` | Bambi, Anitra, Shanta |
+| `first_name_female` | Arlena, Dolly, Carina |
+| `first_name_male` | Ned, Rafael, Wilfredo |
+| `html_safe_last_name` | Raynor, Senger, Hansen |
+| `html_safe_name` | Luana Ritchie, Olimpia Anderson, Lavonda Morar |
+| `last_name` | Ledner, Robel, Mante |
+| `male_name_with_prefix` | Mr. Ray Ebert, Mr. Jon Pfannerstill, Mr. Del Cole |
+| `male_name_with_prefix_suffix` | Mr. Abdul Batz III, Mr. Lee Blick PhD, Mr. Dirk Balistreri I |
+| `male_name_with_suffix` | Santiago Goodwin DVM, Granville Kohler II, Nicolas Abbott PhD |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Stephen Bernhard, Tanna Langosh, Rachele Gislason |
-| `name_with_prefix` | Mr. Oscar Flatley, Mrs. Gudrun Shanahan, Mr. Jeremy Schuppe |
-| `name_with_prefix_suffix` | Mrs. Jackie Feil III, Miss. Jennie Funk PhD, Mr. Wyatt Yost IV |
-| `name_with_suffix` | Kathe Wiegand Jr., Libbie Zieme Sr., Pearline Hirthe MD |
+| `name` | Alberta Vandervort, Denver Veum, Weldon Robel |
+| `name_with_prefix` | Mr. Michale Mayert, Miss. Zandra Haley, Miss. Prudence Hills |
+| `name_with_prefix_suffix` | Mr. Edwin Osinski MD, Mr. Otto Littel V, Mr. Jude Witting IV |
+| `name_with_suffix` | Brandon Zieme PhD, Annetta Kshlerin DVM, Evie Johnson MD |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
-| `prefix` | Miss., Mr., Ms. |
-| `pronouns` | Zie/Zim, Xe/Xer, She/Her |
-| `suffix` | DDS, IV, II |
+| `prefix` | Miss., Dr., Ms. |
+| `pronouns` | Zie/Zim, They/Them, She/Her |
+| `suffix` | Jr., PhD, I |
 
 ## FFaker::NameAR
 
 | Method | Example |
 | ------ | ------- |
-| `first_name_female` | بدور, درية, صباح |
-| `first_name_male` | رائد, عبد الستار, نصوح |
-| `last_name` | الموصلي, الحلبي, الحصري |
-| `name_female` | إنصاف الدبوسي, فاطمة النويلاتي, هدى البرقاوي |
-| `name_male` | خلوصي دك الباب, صافي الشعال, كريم القاسمي |
+| `first_name_female` | بارعة, فاتن, تحية |
+| `first_name_male` | جاد, شكري, حيدر |
+| `last_name` | كفتارو, العبه جي, القطب |
+| `name_female` | بشرى طالو, صباح سكر, فاضلة الحواصلي |
+| `name_male` | خليفة الميداني, عصمت أبو شعر, أنور كفتارو |
 
 ## FFaker::NameBR
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Sra. Galba Monteiro, Srta. Karine Oliveira, Srta. Marília da Mota |
+| `female_name_with_prefix` | Srta. Esmeralda Souza, Sra. Laudicéia Cardoso, Srta. Leilani Moraes |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Brízida, Rayssa, Ariane |
-| `first_name_female` | Sara, Almerita, Odete |
-| `first_name_male` | Alex, Luciano, Acires |
-| `last_name` | da Mata, da Mota, Monteiro |
-| `male_name_with_prefix` | Sr. Victor Silveira, Sr. Leonardo Fernandes, Sr. Eliseu Freitas |
+| `first_name` | Ademar, Telmo, Norah |
+| `first_name_female` | Roberta, Jaidete, Candelária |
+| `first_name_male` | Diogo, Luiz, Admilson |
+| `last_name` | Monteiro, Cavalcanti, Barbosa |
+| `male_name_with_prefix` | Sr. Balbino Gonçalves, Sr. Aires Barbosa, Sr. Manuel Pereira |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Pedro Souza, Benedita Santos, Edberto Brito |
-| `name_with_prefix` | Sr. Antero Martins, Sra. Daisy da Mata, Sr. Ivaldo Nogueira |
-| `prefix` | Sra., Srta., Sr. |
+| `name` | Núria Souza, Edelvira Lopes, Aldenor Nogueira |
+| `name_with_prefix` | Sra. Marilda Albuquerque, Sra. Alvina Novaes, Srta. Dacelina Oliveira |
+| `prefix` | Sr., Sra., Srta. |
 
 ## FFaker::NameCN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | 淑信, 萱莲, 亦南 |
-| `last_first` | 说长希, 泰夫海, 水中宸 |
-| `last_name` | 象, 简, 洋 |
-| `name` | 致年尉, 信念司寇, 恬仁訾 |
+| `first_name` | 振玫, 康纶, 萱娟 |
+| `last_first` | 冠伶雄, 元禾东, 謇月伶 |
+| `last_name` | 迟, 浮, 淡 |
+| `name` | 云姗家, 皇芳郦, 惟阳德 |
 
 ## FFaker::NameCS
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Kathy Čejková, Mrs. Vicky Blažková, Miss. Lahoma Berková |
-| `female_name_with_prefix_suffix` | Miss. Callie Dufková Ph.D., Miss. Loise Dvořák Ph.D., Mrs. Odelia Dušek Th.D. |
-| `female_name_with_suffix` | Margaretta Duda DSc., Michaele Dufek Ph.D., Chelsey Adam Th.D. |
+| `female_name_with_prefix` | Mrs. Josphine Čapek, Mrs. Jacquetta Daňková, Mrs. Magaret Baláž |
+| `female_name_with_prefix_suffix` | Mrs. Chastity Čech DSc., Mrs. Viki Baláž Ph.D., Mrs. Kalyn Beránek DSc. |
+| `female_name_with_suffix` | Senaida Filip DSc., Dollie Brožová Ph.D., Shanita Beránek Ph.D. |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Barbora, Martina, Andrea |
-| `first_name_female` | Noelle, Corrinne, Silva |
-| `first_name_male` | Pablo, Stephen, Alejandro |
-| `html_safe_last_name` | King, Olson, Cassin |
-| `html_safe_name` | Otakar Ankunding, Libuše Stiedemann, Zuzana Cremin |
-| `last_name` | Bartoš, Dvořák, Beránek |
-| `male_name_with_prefix` | Mr. Dino Červený, Mr. Everett Březinová, Mr. Teodoro Davidová |
-| `male_name_with_prefix_suffix` | Mr. Jerrold Dostál Th.D., Mr. Man Dvořák Ph.D., Mr. Granville Burianová Ph.D. |
-| `male_name_with_suffix` | Willard Duda DSc., Lemuel Bureš DSc., Reynaldo Dohnalová Ph.D. |
+| `first_name` | Jaroslav, Štěpán, Richard |
+| `first_name_female` | Wava, Earnestine, Marylou |
+| `first_name_male` | Valentin, Renato, Kermit |
+| `html_safe_last_name` | Nikolaus, Luettgen, Quigley |
+| `html_safe_name` | Lubomír Stiedemann, Michaela Ebert, Hana Fadel |
+| `last_name` | Adámek, Coufal, Benešová |
+| `male_name_with_prefix` | Mr. Davis Brožová, Mr. Carl Berková, Mr. Don Fiala |
+| `male_name_with_prefix_suffix` | Mr. Boyd Fišerová Ph.D., Mr. Jc Dostálová DSc., Mr. Jeremy Fojtík Th.D. |
+| `male_name_with_suffix` | Jean Burda DSc., Lou Daněk DSc., Daryl Bláhová Th.D. |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Dagmar Fialová, Dominik Adámek, Vratislav Beránek |
-| `name_with_prefix` | Mrs. Conchita Dostálová, Miss. Olene Bednář, Mr. Desmond Berková |
-| `name_with_prefix_suffix` | Mr. Jerold Bauer Ph.D., Mr. Felipe Čapek Th.D., Mrs. Alexa Coufalová Ph.D. |
-| `name_with_suffix` | Jen Červený Ph.D., Chris Bauer Th.D., Maxima Burešová Th.D. |
+| `name` | Mr. Luboš Dolejší, Martina Čechová, Veronika Bauerová |
+| `name_with_prefix` | Miss. Francine Černý, Mrs. Johna Doležalová, Miss. Virgina Dušek |
+| `name_with_prefix_suffix` | Mr. Geraldo Brabec Th.D., Mr. Sheldon Bednářová DSc., Mr. Trey Burdová Ph.D. |
+| `name_with_suffix` | Leesa Bednářová DSc., Tristan Diviš DSc., Riley Bartoň DSc. |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
-| `prefix` | Dr., Mr., Ms. |
-| `pronouns` | She/Her, Zie/Zim, They/Them |
-| `suffix` | Ph.D., DSc., Th.D. |
+| `prefix` | Mr., Dr., Miss. |
+| `pronouns` | Xe/Xem, He/Him, Zie/Zim |
+| `suffix` | DSc., Th.D., Ph.D. |
 | `with_same_sex` | ‼️ LocalJumpError: no block given (yield) |
 
 ## FFaker::NameDA
 
 | Method | Example |
 | ------ | ------- |
-| `any_name` | Pia Jones Feeney, Ferdinand Buckridge, Jenny Murphy |
-| `female_name` | Edith Leannon, Fr. Anette Pfannerstill, Jytte Gaylord Jaskolski |
-| `female_name_with_prefix` | Miss. Dalia Smitham, Mrs. Maryalice Rau, Miss. Catina Howe |
-| `female_name_with_prefix_suffix` | Miss. Shenita Casper I, Miss. Claudine Senger I, Mrs. Crissy Schiller I |
-| `female_name_with_suffix` | Kathryne Corwin I, Corrinne Lebsack III, Nilsa Kuvalis Sr. |
+| `any_name` | Alexander Hammes, Bendt Simonis, Birthe Conn |
+| `female_name` | Christina Heidenreich, Katja Harber, Dr. Emmy Bartoletti |
+| `female_name_with_prefix` | Mrs. Susie Heller, Mrs. Fransisca Stokes, Miss. Alise Luettgen |
+| `female_name_with_prefix_suffix` | Miss. Fransisca Kozey PhD, Miss. Stacia Anderson I, Mrs. Lajuana Rogahn PhD |
+| `female_name_with_suffix` | Tamisha Rath PhD, Giselle Barrows II, Temple Tromp V |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Joan, Connie, Charlotte |
-| `first_name_female` | Toshia, France, Temple |
-| `first_name_male` | Rayford, Booker, Clement |
-| `html_safe_last_name` | Jakubowski, Funk, Ondricka |
-| `html_safe_name` | Rasmus Hyatt, Kamilla Dietrich, Sigurd Langosh |
-| `last_name` | Huel, Considine, Koelpin |
-| `male_name` | Hjalmar Altenwerth, Johnny Jacobs, Samuel Kiehn Nitzsche |
-| `male_name_with_prefix` | Mr. Adam Conroy, Mr. Titus Johns, Mr. Frankie Auer |
-| `male_name_with_prefix_suffix` | Mr. Moshe Huels IV, Mr. Anthony Langosh III, Mr. Weldon Runolfsson Sr. |
-| `male_name_with_suffix` | Roberto Wunsch I, Donovan Sawayn DDS, Edmundo Hodkiewicz III |
+| `first_name` | Sørine, Kathrine, Joachim |
+| `first_name_female` | Aurora, Marsha, Birgit |
+| `first_name_male` | Vincenzo, Reynaldo, Marco |
+| `html_safe_last_name` | Tillman, Stanton, Dibbert |
+| `html_safe_name` | Eline Bosco, Rikke Hammes, Leif Conn |
+| `last_name` | Doyle, Beatty, Leffler |
+| `male_name` | Troels Kerluke, Karsten Zboncak, Walther Goyette Rutherford |
+| `male_name_with_prefix` | Mr. Issac Klocko, Mr. Mose Mosciski, Mr. Pete Herzog |
+| `male_name_with_prefix_suffix` | Mr. Andrew Hane Jr., Mr. Denny Kris I, Mr. Ray Kemmer PhD |
+| `male_name_with_suffix` | Todd McDermott Sr., Kevin Adams IV, Ambrose Kutch III |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Svend Towne, Kent Considine, Annie Huel |
-| `name_with_prefix` | Mr. Demetrius Cole, Mrs. Melisa Schowalter, Miss. Janey Sporer |
-| `name_with_prefix_suffix` | Mr. Colby Bauch DDS, Mr. Kasey Crist I, Mr. Fredric Greenholt II |
-| `name_with_suffix` | Jere Bergstrom III, Alex Okuneva I, Kyle Macejkovic DVM |
+| `name` | Kamma Willms, Inge-Lise Schumm, Fr. Morten Brekke |
+| `name_with_prefix` | Mr. Carrol Ritchie, Miss. Hyacinth Lynch, Mr. Miles Reichert |
+| `name_with_prefix_suffix` | Mr. Harry Lakin Jr., Mrs. Keitha Durgan Sr., Mrs. Tameka Bailey Sr. |
+| `name_with_suffix` | Tequila Jerde I, Raphael Huels I, Mallie Reynolds II |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
-| `prefix` | Fr., Hr., Prof. |
-| `pronouns` | Xe/Xem, Xe/Xer, She/Her |
-| `suffix` | I, PhD, II |
+| `prefix` | Hr., Prof., Dr. |
+| `pronouns` | She/Her, Xe/Xem, He/Him |
+| `suffix` | III, II, I |
 
 ## FFaker::NameDE
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Shenna Armstrong, Mrs. Erline Parisian, Miss. Rolande Anderson |
-| `female_name_with_prefix_suffix` | Miss. Libby Ziemann I, Mrs. Sherell Schuppe Jr., Mrs. Flo Klocko DVM |
-| `female_name_with_suffix` | Laurinda Wiza PhD, Dierdre Connelly Jr., Loria Hane DDS |
+| `female_name_with_prefix` | Miss. Alaine Cole, Mrs. Georgianna Bartoletti, Miss. Christinia Heaney |
+| `female_name_with_prefix_suffix` | Miss. Cheryl Mills DDS, Miss. Vennie Rolfson MD, Mrs. Krystina Hauck DDS |
+| `female_name_with_suffix` | Sun Leuschke Sr., Felisha Feeney DDS, Jolene Swaniawski II |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Viva, Farah, Darleen |
-| `first_name_female` | Kyla, Misty, Kiesha |
-| `first_name_male` | Carson, Mel, Sung |
-| `html_safe_last_name` | Bosco, Barrows, Bayer |
-| `html_safe_name` | Lavonna Pollich, Marylyn Mayer, Ayesha Metz |
-| `last_name` | Huel, Franecki, Weissnat |
-| `male_name_with_prefix` | Mr. Micah Reilly, Mr. Gayle Hilpert, Mr. Chas Glover |
-| `male_name_with_prefix_suffix` | Mr. Carol Connelly I, Mr. Kareem Crona MD, Mr. Warren Schultz Jr. |
-| `male_name_with_suffix` | Carmelo Beahan Jr., Rufus Baumbach MD, Lincoln Zieme MD |
+| `first_name` | Katherin, Yon, Catherin |
+| `first_name_female` | Aundrea, Jeana, Rossana |
+| `first_name_male` | Chi, Derrick, Jude |
+| `html_safe_last_name` | Dibbert, Schuppe, Kling |
+| `html_safe_name` | Yvette Bergnaum, Douglass Wiegand, An Connelly |
+| `last_name` | Jacobi, Ziemann, Wisoky |
+| `male_name_with_prefix` | Mr. Rocco Pouros, Mr. Stuart Cronin, Mr. Hal Kerluke |
+| `male_name_with_prefix_suffix` | Mr. Leonel Kshlerin DDS, Mr. Lenard Lehner V, Mr. Rocco Casper III |
+| `male_name_with_suffix` | Frederick Simonis DVM, Landon Hoppe III, Jesus Johnston MD |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Danille Rowe, Shoshana Bergstrom, Sandie Conn |
-| `name_with_prefix` | Mrs. Leanna Smitham, Miss. Yolando Gerhold, Mrs. Jodi Abshire |
-| `name_with_prefix_suffix` | Mr. Lou Nienow V, Mrs. Sharita Rohan Jr., Mr. Millard Towne PhD |
-| `name_with_suffix` | Mohammed Emard DDS, Vaughn Treutel II, Blaine Koss PhD |
+| `name` | Lyndia Hermiston, Shantay Schinner, Virgina Windler |
+| `name_with_prefix` | Mr. Lonnie McDermott, Miss. Jenniffer Smitham, Mr. Marc Goldner |
+| `name_with_prefix_suffix` | Mrs. Treasa Pfannerstill III, Mrs. Aubrey Emmerich IV, Mrs. Charity Mann PhD |
+| `name_with_suffix` | Brock Rolfson MD, Oralia O'Conner PhD, Marlon Renner Sr. |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | Prof., Dr., Frau |
-| `pronouns` | They/Them, Xe/Xem, She/Her |
-| `suffix` | I, DDS, V |
+| `pronouns` | She/Her, Xe/Xer, He/Him |
+| `suffix` | Jr., III, II |
 
 ## FFaker::NameES
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | D.ª Eva María Redondo Sánchez, Dra. Elena Alarcón Rodríguez, Dra. María Dolores Vega Aparicio |
+| `female_name_with_prefix` | D.ª Gemma del Río Ortiz, Dra. María Inmaculada Fuentes Montero, Dra. Sonia Blanco Velasco |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Leticia, Juan Francisco, Inés |
-| `first_name_female` | Laura, Inés, Cristina |
-| `first_name_male` | Juan Miguel, Adolfo, Francisco José |
-| `last_name` | Delgado, Ramos, García |
-| `male_name_with_prefix` | D. Salvador Cortes Bermejo, Dr. David Medina Pérez, D. José Javier Martín Vila |
+| `first_name` | María Rosa, Lara, Óscar |
+| `first_name_female` | Manuela, Montserrat, María Antonia |
+| `first_name_male` | Diego, Agustín, José Francisco |
+| `last_name` | Jiménez, Lázaro, Hernández |
+| `male_name_with_prefix` | Dr. Enrique Pereira Bermejo, Dr. Jesús María Nuñez Acosta, D. Xavier Ramos Márquez |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Lorena Santana Caballero, Francisco Javier Muñoz Rubio, María Concepción Moya Redondo |
-| `name_with_prefix` | Dr. Antonio José Jiménez Mateos, D.ª María Belén Campos Blasco, D.ª Beatriz Vázquez Romero |
-| `prefix` | D., Dra., D.ª |
+| `name` | Claudia Guerrero Galán, Esther Blasco Santiago, Guillermo del Río Pascual |
+| `name_with_prefix` | Dr. Jonathan Moya Ortega, D. Félix Mora Calvo, D.ª María Josefa Serra Roldan |
+| `prefix` | Dra., D., Dr. |
 
 ## FFaker::NameFR
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Alain, Auguste, Élodie |
-| `last_name` | Marty, Delmas, Lopez |
-| `name` | Margaret Gauthier, Stéphanie Allard, Victor Bousquet |
-| `prefix` | le, du, de |
+| `first_name` | Claude, Jeanne, Hortense |
+| `last_name` | Mary, Bonneau, Muller |
+| `name` | Alexandrie Fournier, Marianne Mallet, Nathalie Boulanger |
+| `prefix` | du, le, de |
 
 ## FFaker::NameGA
 
 | Method | Example |
 | ------ | ------- |
-| `first_name_female` | Mariatu, Boneh, Nogoy |
-| `first_name_male` | Nathaniel, Mansor, Manlafy |
+| `first_name_female` | Margaret, Ancha, Fatoumata |
+| `first_name_male` | Kawsu, Samaba, Demba |
 | `last_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for last_name |
-| `name` | Fatma ceesay, Koora jammeh, Dawitt ceesay |
-| `name_female` | Fatma ceesay, Lolo jammeh, Rokhia jammeh |
-| `name_male` | Jungkunda jammeh, Falla jammeh, Ebrima ceesay |
+| `name` | Tida ceesay, Tamba ceesay, Victoria ceesay |
+| `name_female` | Jajeh ceesay, Tano jammeh, Tiya ceesay |
+| `name_male` | Jahu ceesay, Jirang jammeh, Gabi jammeh |
 
 ## FFaker::NameGR
 
 | Method | Example |
 | ------ | ------- |
-| `female_first_name` | Ξένια, Γωγώ, Βάσω |
-| `female_full_name` | Αθηνά Αγγελίδου, Ιωάννα Ιωαννίδη, Ξένια Βαμβακά |
-| `female_last_name` | Χατζηιωάννου, Ταρσούλη, Βλαχοπούλου |
-| `first_name` | Μιχαήλ, Βερενίκη, Βρασίδας |
-| `full_name` | Λάμπρος Γεωργιάδης, Φρόσω Χατζηιωάννου, Ματούλα Ιωάννου |
-| `last_name` | Ηλιόπουλου, Τρικούπη, Ζερβου |
-| `male_first_name` | Βλαδίμηρος, Παναγιώτης, Ζήσης |
-| `male_full_name` | Φώτης Φραγκούδης, Σάκης Σπυρόπουλος, Θωμάς Δαμασκηνός |
-| `male_last_name` | Δραγούμης, Ζερβός, Σαμαράς |
-| `name` | Ζωή Μανωλά, Ρία Ζωγράφου, Γιακουμής Παππάς |
+| `female_first_name` | Ήβη, Θεοπούλα, Σεβαστή |
+| `female_full_name` | Ραφαέλα Ιωαννίδη, Σοφία Σπανού, Μαίρη Γεωργιάδη |
+| `female_last_name` | Παπαγεωργίου, Καλογιάννη, Ευταξία |
+| `first_name` | Μαριάνα, Βαρβάρα, Ρουσέτος |
+| `full_name` | Βερενίκη Φλέσσα, Φίλιππος Χρηστόπουλος, Νεκτάριος Αποστόλου |
+| `last_name` | Κουρμούλης, Μανωλά, Βούλγαρης |
+| `male_first_name` | Δημήτρης, Τριαντάφυλλος, Αντώνης |
+| `male_full_name` | Φωκάς Αβραμίδης, Νεκτάριος Δαμασκηνός, Γιώργος Μανωλάς |
+| `male_last_name` | Φιλιππίδης, Ζωγράφος, Γεωργιάδης |
+| `name` | Άγγελος Λαμέρας, Στέλιος Αλεξάκης, Λάμπρος Δραγούμης |
 
 ## FFaker::NameID
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Ny. Amalia Yamanah, Nn. Risna Mahadhika, Ny. Lani Ekaputri |
+| `female_name_with_prefix` | Nn. Novianti Indriana, Ny. Inka Apriliya, Nn. Kristina Merlinda |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Luki, Fadli, Raden |
-| `first_name_female` | Indana, Tina, Vanya |
-| `first_name_male` | Nur, Putra, Tejo |
-| `last_name` | Zainnatu, Rohmalia, Chelvia |
-| `male_name_with_prefix` | Tn. Fahreza Prawira, Tn. Fajar Busthomi, Tn. Saiful Juliyani |
+| `first_name` | Irwan, Dwi, Kadijah |
+| `first_name_female` | Ike, Jesika, Pradita |
+| `first_name_male` | Jaelani, Tukiyo, Rendra |
+| `last_name` | Arfiandri, Guntur, Sahadia |
+| `male_name_with_prefix` | Tn. Tejo Afrianto, Tn. Rahmad Arifian, Tn. Aldi Destana |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Arini Tariscaanit, Harmoko Leksono, Yuyun Surbakti |
-| `name_with_prefix` | Ny. Aulia Arfandy, Ny. Risa Mursalin, Tn. Krisna Mustika |
-| `prefix` | Tn., Ny., Nn. |
+| `name` | Yasina Yudhistira, Kardah Prasetyo, Miko Sanjaya |
+| `name_with_prefix` | Nn. Febri Sicilia, Tn. Tommy Pamungkas, Ny. Priganti Soviana |
+| `prefix` | Ny., Nn., Tn. |
 
 ## FFaker::NameIN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name_female` | Meera, Samaira, Ahana |
-| `first_name_male` | Dev, Atharv, Viraj |
-| `last_name` | Garg, Dhar, Dayal |
-| `name` | Kavya Ahluwalia, Ira Gandhi, Vihaan Mallick |
-| `name_female` | Kashvi Chadha, Sanaya Goswami, Gabriella Gill |
-| `name_male` | Nivaan Seth, Dhruv Chandra, Ahaan Khanna |
+| `first_name_female` | Elizabeth, Aaradhya, Myra |
+| `first_name_male` | Kavin, Aarush, Surya |
+| `last_name` | Zacharia, Dhar, Deshpande |
+| `name` | Meera Dhawan, Riya Dayal, Avik Dewan |
+| `name_female` | Mia Garg, Ishika Mahajan, Mahira Parekh |
+| `name_male` | Neil Khurana, Dhruv Bedi, Kiaan Khatri |
 
 ## FFaker::NameIT
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Luigi, Susanna, Riccardo |
-| `last_name` | Piccolo, Marinelli, Cupellaro |
-| `name` | Giovanni Arrigo, Giorgio Melegatti, Prof.ssa Chiara Alemanga |
-| `prefix` | Sig., Dott.ssa, Prof.ssa |
+| `first_name` | Anita, Roberto, Daniela |
+| `last_name` | Micchichè, Segoni, Conchiglia |
+| `name` | Sig.ra Amalia Ferrari, Amalia Persichetti, Luigi Grassini |
+| `prefix` | Prof., Prof.ssa, Sig. |
 
 ## FFaker::NameJA
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | たけし, 和興, 東 |
-| `last_first` | 富田崇, 野呂玲奈, 伊藤たけし |
-| `last_name` | 大原, 安東, 上原 |
-| `name` | 萩原空, 藤崎沙耶, 宮脇雪 |
+| `first_name` | 千夏, 大五郎, キミ |
+| `last_first` | 中谷菜々子, 池間結衣, 梶原斉 |
+| `last_name` | 崎山, 桃原, 清水 |
+| `name` | 大西真由, 白川政, 有村和夫 |
 
 ## FFaker::NameKH
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | តុលា, សិរីបុត្រ, ប៊ុនធឿន |
-| `last_name` | យង់, សៅ, មិញ |
-| `name` | ងែត ជាតា, កែប ភក្តី, យ៉ែម ម៉ាលីស |
-| `nick_name` | រំដួល, ទីទី, ចែហួយ |
+| `first_name` | គីមមួយ, ចាន់ណា, សារ៉ាយ |
+| `last_name` | ឪក, ហួយ, លាង |
+| `name` | ខាត់ សុីយ៉ា, ផាត កុសល, គង់ សែនជ័យ |
+| `nick_name` | ចាន់ហ្វឿង, ចែហុង, ខ្ចិប |
 
 ## FFaker::NameKR
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | 필규, 성재, 두형 |
-| `last_first` | 포소현, 염유재, 함경표 |
-| `last_name` | 어금, 곡, 함 |
-| `name` | 근정천, 갈일천, 여사준 |
-| `name_with_space` | 반 필승, 옥 신환, 탄 정용 |
+| `first_name` | 임천, 대한, 중원 |
+| `last_first` | 단성아, 흥지선, 고인수 |
+| `last_name` | 만, 진, 목 |
+| `name` | 이기문, 심기백, 시기문 |
+| `name_with_space` | 어금 병주, 옹 임환, 십 장번 |
 
 ## FFaker::NameMX
 
 | Method | Example |
 | ------ | ------- |
-| `female_name` | Fabiola Jezabel, Viviana, Melina |
-| `female_name_with_prefix` | C. Charmaine Altenwerth, C. Constance Hudson, Srita. Alaine Altenwerth |
-| `female_name_with_prefix_suffix` | C. Rosann Eichmann I, Sra. Cora Kunze III, Sra. Devona Swift DDS |
-| `female_name_with_suffix` | Julie Emard II, Olimpia Becker DDS, Shayna Konopelski V |
-| `female_prefix` | C., Sra., Srita. |
-| `first_name` | Antonio, Josefina, Sebastián |
-| `first_name_female` | Rosalyn, Fairy, Katherine |
-| `first_name_male` | Donovan, Orlando, Noe |
-| `full_name` | León Rogahn Gulgowski, Román Lesch Corwin, Georgina Bashirian Gorczany |
-| `full_name_no_prefix` | Fátima West Lesch, Fermín Jacobs Hegmann, Felipe Okuneva Abshire |
-| `full_name_prefix` | Sra. Edith Willms Oga, Sra. Mariel Mayert Anderson, C. Nuria Isabel Kassulke Oberbrunner |
-| `html_safe_last_name` | Sipes, Abernathy, Denesik |
-| `html_safe_name` | Abraham Beer, Gina Ryan, Silvia Fay |
-| `last_name` | Lehner, Zemlak, Gislason |
-| `male_name` | Joel, Roger, Homero |
-| `male_name_with_prefix` | Sr. German Conroy, Sr. Hank Bradtke, C. Sean Shanahan |
-| `male_name_with_prefix_suffix` | C. Rolando Bergnaum PhD, Sr. Mitchell Wehner V, C. Jarrod Gerlach MD |
-| `male_name_with_suffix` | Johnson Larkin Jr., Mathew Skiles III, Jerrod McCullough DVM |
+| `female_name` | Diana, Maricela Dulce, Aidee |
+| `female_name_with_prefix` | Srita. Nanette Grimes, Srita. Eneida Gusikowski, Srita. Tisa Cormier |
+| `female_name_with_prefix_suffix` | Srita. Tyra Pfannerstill DVM, C. Kyra Bergstrom Jr., Sra. Marcelina Cole III |
+| `female_name_with_suffix` | Inez Jast MD, Alline Glover Sr., Catalina Dooley DVM |
+| `female_prefix` | Srita., Sra., C. |
+| `first_name` | Luisa, Domingo, Oscar |
+| `first_name_female` | Shenna, Patrice, Miriam |
+| `first_name_male` | Normand, Alonzo, Donny |
+| `full_name` | Nohemí Lockman Hickle, Fernando Hudson Bailey, Victoriano Nolan Aufderhar |
+| `full_name_no_prefix` | Rubén Augusto Blanda Waelchi, Benito Beer Flatley, Pamela Kautzer Sauer |
+| `full_name_prefix` | Sr. León Octavio Pfannerstill Corkery, Sr. Saúl Simonis Cartwright, Sra. Emilia Sipes Schowalter |
+| `html_safe_last_name` | Ritchie, Larkin, Bergnaum |
+| `html_safe_name` | Iris Stroman, Kevin Purdy, Jorge Aufderhar |
+| `last_name` | Koepp, Gorczany, Denesik |
+| `male_name` | Mauro, Arquímides, Quetzalcóatl |
+| `male_name_with_prefix` | Sr. Angel Kshlerin, C. Elmer McClure, Sr. Willis Predovic |
+| `male_name_with_prefix_suffix` | C. Lenard Tillman I, C. Jerome Hansen PhD, C. Odis Jaskolski DDS |
+| `male_name_with_suffix` | Hosea Leffler PhD, Larry Tromp DVM, Stanton Rutherford MD |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `middle_name` | Georgina, Adriana, América |
-| `name` | Giovani, Demetrio, Diana |
-| `name_with_prefix` | Sr. Mathew Macejkovic, Sr. Bernard Grimes, Srita. Pia Bins |
-| `name_with_prefix_suffix` | C. Gerry Zboncak IV, Sr. Colton Jaskolski DDS, C. Zana Parker DDS |
-| `name_with_suffix` | Lawrence O'Reilly IV, Kendal Cartwright I, Reda Kub II |
+| `middle_name` | Ángel, Sergio, Fernando |
+| `name` | Anselmo, Iris, Benancio |
+| `name_with_prefix` | Sr. Glenn Zboncak, C. Stewart Block, C. Omer Wisozk |
+| `name_with_prefix_suffix` | Sr. Jason Murphy Jr., C. Dolores Fahey PhD, C. Rex Boehm MD |
+| `name_with_suffix` | Palmer Murphy DVM, Leslie Gottlieb PhD, Kennith Raynor V |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
-| `paternal_last_names` | Schoen Collins, McCullough Bednar, Gorczany Balistreri |
-| `prefix` | C., Sr., Srita. |
-| `pronouns` | He/Him, Zie/Zim, She/Her |
-| `suffix` | III, V, MD |
+| `paternal_last_names` | White Fisher, Pfannerstill Trantow, Collier Wiegand |
+| `prefix` | Sr., C., Sra. |
+| `pronouns` | He/Him, Zie/Zim, Xe/Xem |
+| `suffix` | Jr., V, PhD |
 
 ## FFaker::NameNB
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Mrs. Daina O'Conner, Miss. Raelene Paucek, Mrs. Asia Koch |
-| `female_name_with_prefix_suffix` | Mrs. Ara D'Amore DVM, Miss. Tandra Graham I, Mrs. Charleen Lockman DDS |
-| `female_name_with_suffix` | Thomasina Maggio IV, Amada Larson PhD, Edris Brekke III |
+| `female_name_with_prefix` | Miss. Kit Romaguera, Miss. Marx Bednar, Mrs. Larhonda Weber |
+| `female_name_with_prefix_suffix` | Mrs. Mable Sporer V, Mrs. Sophia Waelchi I, Mrs. Shizuko Medhurst IV |
+| `female_name_with_suffix` | Marcell Stokes DVM, Tiffanie Grimes III, Leonarda King I |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Clarita, Broderick, Sam |
-| `first_name_female` | Reanna, Mattie, Debi |
-| `first_name_male` | Oswaldo, Christian, Jake |
-| `html_safe_last_name` | Heller, Bogan, Medhurst |
-| `html_safe_name` | Marion Rath, Lavon Lang, Lulu Lebsack |
-| `last_name` | Fay, Wolff, Graham |
-| `male_name_with_prefix` | Mr. Alfonzo Hackett, Mr. Mose Jones, Mr. Terence Langosh |
-| `male_name_with_prefix_suffix` | Mr. Clemente Rippin DDS, Mr. Herschel Crona Jr., Mr. Sebastian Smitham I |
-| `male_name_with_suffix` | Elvin Okuneva Sr., Marcelo Reichert III, Elias Marvin Jr. |
+| `first_name` | Issac, Prince, Ted |
+| `first_name_female` | Phyllis, Lavenia, Sierra |
+| `first_name_male` | Lino, Blaine, Jerald |
+| `html_safe_last_name` | Davis, Ryan, Conn |
+| `html_safe_name` | Dinah Wilkinson, Leontine Stacia Schuppe, Gustavo Doyle |
+| `last_name` | Kuvalis, Ortiz, Kemmer |
+| `male_name_with_prefix` | Mr. Lenny Shields, Mr. Damien Nolan, Mr. Bobby Langworth |
+| `male_name_with_prefix_suffix` | Mr. Zachariah Hickle V, Mr. Kris Fadel DVM, Mr. Mauro Jacobi MD |
+| `male_name_with_suffix` | Floyd McDermott IV, Darren Bogisich DVM, Louie Maggio V |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Antwan Rosenbaum, Gregg Ebert, Gricelda Schmeler |
-| `name_with_prefix` | Mr. Jack O'Kon, Mrs. Jama Ondricka, Miss. Jenna Jast |
-| `name_with_prefix_suffix` | Mr. Doyle Weimann Sr., Mrs. Nichelle Hauck DDS, Miss. Elva Lueilwitz Sr. |
-| `name_with_suffix` | Javier Conroy Jr., Lucinda Conroy Sr., Larry Hilpert DVM |
+| `name` | Elliott Boehm, Michiko Ritchie, Hyon McCullough |
+| `name_with_prefix` | Mrs. Neta Reynolds, Mrs. Maxima Predovic, Mrs. Fidelia Pouros |
+| `name_with_prefix_suffix` | Mrs. Gerda Feil DDS, Mr. Clark Ankunding I, Mr. Jae Lockman I |
+| `name_with_suffix` | Shannan Dickens II, Yesenia Friesen DVM, Reed Schultz II |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for prefix |
-| `pronouns` | She/Her, Xe/Xem, They/Them |
-| `suffix` | IV, III, I |
+| `pronouns` | Xe/Xer, Xe/Xem, He/Him |
+| `suffix` | MD, III, V |
 
 ## FFaker::NameNL
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Mrs. Lacie Watsica, Mrs. Evelyn Kunde, Mrs. Maryanne Pacocha |
-| `female_name_with_prefix_suffix` | Miss. Exie Kulas III, Mrs. Candy Jacobson III, Miss. Thomasina Labadie I |
-| `female_name_with_suffix` | Richelle West III, Lisbeth Cartwright DVM, Jacquetta Bartell PhD |
+| `female_name_with_prefix` | Mrs. Maritza Cartwright, Miss. Emmaline-Marci Powlowski, Mrs. Ofelia Fisher |
+| `female_name_with_prefix_suffix` | Mrs. Margot Shanahan DVM, Miss. Caitlyn Daugherty V, Mrs. Vella-Argelia Wehner MD |
+| `female_name_with_suffix` | Lilia Effertz PhD, Miki Zemlak I, Chun Yost MD |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Elmo, Selina-Lianne, Rueben |
-| `first_name_female` | Christinia, Rachal, Fanny |
-| `first_name_male` | Dallas, Quinn, Toney |
-| `html_safe_last_name` | Von, Durgan, Wilderman |
-| `html_safe_name` | Jina Mosciski, Mac Miller, Freddy-Juan Little |
-| `last_name` | Blick, Stanton, Lehner |
-| `male_name_with_prefix` | Mr. Saul Schneider, Mr. Lazaro Romaguera, Mr. Jerry Predovic |
-| `male_name_with_prefix_suffix` | Mr. Heriberto Goodwin DVM, Mr. Ervin Hickle II, Mr. Hiram Prosacco III |
-| `male_name_with_suffix` | Ramon Kris V, Winford Schumm IV, Lynwood Grady V |
+| `first_name` | Delphine, Avery, Sari |
+| `first_name_female` | Reba, Argelia, Cyndi |
+| `first_name_male` | Erik, Ahmed, Florentino-Rodney |
+| `html_safe_last_name` | Aufderhar, Lueilwitz, Emmerich |
+| `html_safe_name` | Rey Beatty, Ginny Mueller, Cheri Trantow |
+| `last_name` | Gislason, Sanford, Sipes |
+| `male_name_with_prefix` | Mr. Solomon Nikolaus, Mr. Ned Abshire, Mr. Hai Fritsch |
+| `male_name_with_prefix_suffix` | Mr. Jaime Gulgowski MD, Mr. Henry Lueilwitz Sr., Mr. Jeremy Wuckert III |
+| `male_name_with_suffix` | Harland Frami IV, Winford Baumbach II, Kelley Hahn Jr. |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Paulita Kunze, Michal Borer, Celina Kling |
-| `name_with_prefix` | Mr. Bradford Predovic, Mrs. Sharell Schneider, Mrs. Claris DuBuque |
-| `name_with_prefix_suffix` | Miss. Francine Flatley II, Mrs. Lillia Waters DVM, Mrs. Janice DuBuque V |
-| `name_with_suffix` | Anabel Huel Jr., Deandra Murray II, Dung Powlowski V |
+| `name` | Sheryll Dibbert, Denver Mante, Lynn-Cameron Heaney |
+| `name_with_prefix` | Mr. Ahmed Gorczany, Mrs. Melita O'Reilly, Mrs. Mazie Torphy |
+| `name_with_prefix_suffix` | Mr. Odis Rau IV, Mr. Ronnie Hane MD, Mr. Rocco Walsh DDS |
+| `name_with_suffix` | Terry-Basil Johnston I, Forest Nolan PhD, Hoa Pfannerstill IV |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
-| `prefix` | Dr., Ing., Drs. |
-| `pronouns` | Zie/Zim, He/Him, They/Them |
-| `suffix` | MD, IV, DVM |
+| `prefix` | Dr., Prof., Ir. |
+| `pronouns` | Xe/Xem, He/Him, Xe/Xer |
+| `suffix` | Sr., I, Jr. |
 
 ## FFaker::NamePH
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Dorris Abaygar, Miss. Lulu Mercado, Mrs. Setsuko Tala |
-| `female_name_with_prefix_suffix` | Mrs. Shira Sese DVM, Miss. Masako Gabuat V, Mrs. Sheila Alcantara I |
-| `female_name_with_suffix` | Yetta Siapuatco Jr., Laverne Acosta MD, Sheila Rosario III |
+| `female_name_with_prefix` | Miss. Barbie Humilde, Miss. Lelah Magan, Mrs. Lashay Japos |
+| `female_name_with_prefix_suffix` | Miss. Laurice Eusebio PhD, Mrs. Martine Gierran III, Mrs. Lakisha Tala Sr. |
+| `female_name_with_suffix` | Adrianna Pabalan II, Chu Relleve PhD, Trina Abulog PhD |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Hunter, Hilma, Geraldine |
-| `first_name_female` | Berenice, Earnestine, Sueann |
-| `first_name_male` | Ahmed, Alec, Will |
-| `html_safe_last_name` | Weimann, Baumbach, Stroman |
-| `html_safe_name` | Kazuko McClure, Carolynn Baumbach, Hulda Runolfsdottir |
-| `last_name` | de Leon, Bitaog, Marquez |
-| `male_name_with_prefix` | Mr. Odis Vargas, Mr. Archie Miranda, Mr. Alphonso Songcuya |
-| `male_name_with_prefix_suffix` | Mr. Ollie Sariuag V, Mr. Eugene Rivera V, Mr. Clint Pabalan V |
-| `male_name_with_suffix` | Josef Guevarra IV, Percy Cerezo III, Casey Tansiongco Sr. |
+| `first_name` | Edward, Katrice, Chara |
+| `first_name_female` | Malorie, Phillis, Annemarie |
+| `first_name_male` | Ervin, Matt, Giuseppe |
+| `html_safe_last_name` | Brakus, Kreiger, Keebler |
+| `html_safe_name` | Ardelia Kuhic, Mitsuko Gottlieb, Lawrence Kiehn |
+| `last_name` | Azarcon, Tanhehco, Murcia |
+| `male_name_with_prefix` | Mr. Booker Calapatia, Mr. Colin Arrogante, Mr. Sean Cayubyub |
+| `male_name_with_prefix_suffix` | Mr. Joe Butil DVM, Mr. Thanh Tupaz II, Mr. Cristopher Abulog V |
+| `male_name_with_suffix` | Erwin Marapao DDS, Jarrod Parsaligan DVM, Carrol Gonzales MD |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Cristobal Tiaoqui, Lydia Chavez, Jenice Sigismundo |
-| `name_with_prefix` | Mrs. Rosie Supsup, Mrs. Tamara Quindipan, Mrs. Marna Lorenzo |
-| `name_with_prefix_suffix` | Mr. Donnie Pinagdamutan I, Mrs. Saran de la Torre DVM, Mrs. Josephina Simangan Jr. |
-| `name_with_suffix` | Lelah Ongpauco Jr., Brendon Abaygar DVM, Omar Magan V |
+| `name` | Sheilah Ponferrada, Karoline Paz, Cleotilde Estrada |
+| `name_with_prefix` | Mr. Britt Escalante, Mr. Israel Songcuya, Mr. Jeffrey Biag |
+| `name_with_prefix_suffix` | Miss. Alex Quiambao Jr., Mr. Heriberto Nallos IV, Mr. Tracy Limcangco DVM |
+| `name_with_suffix` | Velia Mahiyag DDS, Ami Cabigas I, Ruthie Mencion III |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
-| `prefix` | Mrs., Miss., Dr. |
-| `pronouns` | Xe/Xer, She/Her, Zie/Zim |
-| `suffix` | PhD, DVM, II |
+| `prefix` | Dr., Ms., Miss. |
+| `pronouns` | Xe/Xer, He/Him, Zie/Zim |
+| `suffix` | II, Jr., MD |
 
 ## FFaker::NamePL
 
 | Method | Example |
 | ------ | ------- |
-| `academic_degree_prefix` | lic., mgr, mgr inż. |
-| `female_first_name` | Joanna, Eleonora, Roksana |
-| `female_full_name` | Weronika Świerczyńska, Honorata Łazarczyk, Bogusława Szczęsny |
-| `female_last_name` | Bachleda, Świerczyńska, Krauze |
-| `female_name_with_prefix` | Pani Rozalia Regulska, Pani Marianna Włodarczyk, Pani Halina Zagumna |
+| `academic_degree_prefix` | prof., dr hab., lic. |
+| `female_first_name` | Sylwia, Antonina, Dorota |
+| `female_full_name` | Zdzisława Ziopaja, Renata Domagalska, Weronika Sieradzka |
+| `female_last_name` | Ignatowicz, Kownacka, Bielecka |
+| `female_name_with_prefix` | Pani Elżbieta Błaszyczykowska, Pani Marianna Ciechanowska, Pani Alina Surma |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Cyprian, Oskar, Jakub |
-| `full_name` | Stanisława Gadowska, Cezary Kucharski, Lucjan Śliwa |
-| `last_name` | Kmiecik, Mączyński, Kasprowicz |
-| `male_first_name` | Norbert, Jakub, Daniel |
-| `male_full_name` | Bogusław Filipowicz, Henryk Michnik, Gracjan Sopoćko |
-| `male_last_name` | Sadowski, Butkiewicz, Ślusarski |
-| `male_name_with_prefix` | Pan Wojciech Krasiński, Pan Janusz Giedroyć, Pan Horacy Zawisza |
+| `first_name` | Dorota, Michalina, Kacper |
+| `full_name` | Jowita Janicka, Cezary Bielecki, Jowita Kowalska |
+| `last_name` | Witkowski, Żukowska, Dąbek |
+| `male_first_name` | Adrian, Fryderyk, Piotr |
+| `male_full_name` | Dariusz Krajewski, Wiesław Korwin, Sławomir Waglewski |
+| `male_last_name` | Mączyński, Ciechanowski, Karpiński |
+| `male_name_with_prefix` | Pan Hubert Baran, Pan Sławomir Wodziński, Pan Hubert Malczewski |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Franciszka Chełmicka, Waldemar Krajewski, Oliwia Koszewska |
-| `name_with_prefix` | Pani Agata Szczęsny, Pan Stanisław Kołodziejski, Pani Bogumiła Orłowska |
-| `prefix` | dr, prof., mgr inż. |
+| `name` | Zygmunt Świerczyński, Emil Bagiński, Bernard Dobrzański |
+| `name_with_prefix` | Pan Hubert Ignatowicz, Pan Adam Kononowicz, Pani Adela Wielopolska |
+| `prefix` | dr hab., Pan, dr |
 
 ## FFaker::NameRU
 
 | Method | Example |
 | ------ | ------- |
-| `female_name` | Ираида Новикова, Александра Семенова, Иоанна Рябова |
-| `first_name` | Мирослав, Эраст, Емельян |
-| `first_name_female` | Ксения, Карина, Яна |
-| `first_name_male` | Мирон, Марк, Магистриан |
-| `last_name` | Иванова, Федоров, Васильева |
-| `last_name_female` | Баранова, Блинова, Куликова |
-| `last_name_male` | Журавлев, Фомин, Тарасов |
-| `male_name` | Варфоломей Федоров, Ермолай Тимофеев, Лука Колесников |
-| `middle_name_female` | Александровна, Даниловна, Витальевна |
-| `middle_name_male` | Матвеевич, Валериевич, Тихонович |
-| `name` | Яна Алексеева, Антон Шестаков, Максим Киселев |
+| `female_name` | Нина Миронова, Дарья Ширяева, Рада Полякова |
+| `first_name` | Юстин, Зоя, Ждан |
+| `first_name_female` | Анна, Целестина, Оксана |
+| `first_name_male` | Борис, Федосей, Артем |
+| `last_name` | Виноградова, Пономарева, Соловьева |
+| `last_name_female` | Осипова, Лазарева, Григорьева |
+| `last_name_male` | Ефимов, Виноградов, Пономарев |
+| `male_name` | Лукий Кузьмин, Артем Сорокин, Святослав Громов |
+| `middle_name_female` | Степановна, Арсеньевна, Алексеевна |
+| `middle_name_male` | Федорович, Тимофеевич, Афанасьевич |
+| `name` | Евфросиния Федорова, Филипп Романов, Куприян Волков |
 
 ## FFaker::NameSE
 
 | Method | Example |
 | ------ | ------- |
-| `female_name_with_prefix` | Miss. Crysta Haag, Miss. Lanita Klein, Mrs. Zetta Auer |
-| `female_name_with_prefix_suffix` | Miss. Tomiko Harber Jr., Mrs. Laurena Weimann Jr., Mrs. Shalon Murray V |
-| `female_name_with_suffix` | Rima Conroy Jr., Noma Turner IV, Larae Shields DDS |
+| `female_name_with_prefix` | Miss. Lonnie Goyette, Miss. Lakisha Crona, Mrs. Lizeth Nader |
+| `female_name_with_prefix_suffix` | Mrs. Starr Nikolaus DVM, Miss. Sherley Fritsch I, Miss. Malia Cormier III |
+| `female_name_with_suffix` | Nery Boyer MD, Marla Murphy IV, Alayna Becker Sr. |
 | `female_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for female_prefix |
-| `first_name` | Randy, Kirstin, Elmo |
-| `first_name_female` | Latoya, Nana, Miguelina |
-| `first_name_male` | Irving, Willian, Eloy |
-| `html_safe_last_name` | Heathcote, Connelly, Bergnaum |
-| `html_safe_name` | Karly Mohr, Carlee Rohan, Luciano Asa Pacocha |
-| `last_name` | Wisoky, Parker, Ziemann |
-| `male_name_with_prefix` | Mr. Kenton Hauck, Mr. Lamar Gaylord, Mr. Tyler Dicki |
-| `male_name_with_prefix_suffix` | Mr. Clemente Kiehn II, Mr. George Lindgren DVM, Mr. Freddy Labadie DDS |
-| `male_name_with_suffix` | Fred Daugherty IV, Jospeh Mante Sr., Kenny Ernser Sr. |
+| `first_name` | Orville German, Wally, Jesus |
+| `first_name_female` | Janette, Yasuko, Librada |
+| `first_name_male` | Johnie, Rogelio, Rigoberto |
+| `html_safe_last_name` | Lesch, Witting, Rau |
+| `html_safe_name` | Rafael Beer, Linh Bednar, Santos Mitchel Greenholt |
+| `last_name` | Medhurst, Jones, Lindgren |
+| `male_name_with_prefix` | Mr. Bernie Hahn, Mr. Leroy Abbott, Mr. Tyler Leannon |
+| `male_name_with_prefix_suffix` | Mr. Rueben Ritchie Sr., Mr. Maurice Bednar Jr., Mr. Booker Marquardt II |
+| `male_name_with_suffix` | Gonzalo Hirthe Jr., Herman Auer DVM, Kelly Heidenreich I |
 | `male_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for male_prefix |
-| `name` | Yanira Mraz, Cesar Kihn, Otilia Streich |
-| `name_with_prefix` | Mrs. Lindsay Terry, Mr. Fernando Mueller, Miss. Mahalia Rowe |
-| `name_with_prefix_suffix` | Miss. Holli Medhurst PhD, Miss. Hortensia Mraz IV, Mr. Seth Rau DVM |
-| `name_with_suffix` | Yun Collins IV, Mason Graham MD, Frederick Kassulke Sr. |
+| `name` | Natalya Vandervort, Angeles Torphy, Roxann Yessenia Dietrich |
+| `name_with_prefix` | Mrs. Sandy Rippin, Mrs. Neta Brown, Mr. Dalton Mohr |
+| `name_with_prefix_suffix` | Mrs. Li Mills DDS, Mrs. Julianna Little DVM, Miss. Annabell D'Amore DVM |
+| `name_with_suffix` | Mohammed Sporer DVM, Kirby Treutel V, Zackary Wehner II |
 | `other_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for other_prefix |
 | `prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for prefix |
-| `pronouns` | Xe/Xem, She/Her, Xe/Xer |
-| `suffix` | III, DVM, V |
+| `pronouns` | Zie/Zim, They/Them, He/Him |
+| `suffix` | DDS, Jr., MD |
 
 ## FFaker::NameSN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name_female` | Sawdiatou, Khady, Thioumbane |
-| `first_name_male` | Amath, Sadibou, Kader |
-| `last_name` | Bangonine, Mendy, Djiba |
-| `name_female` | adjaratou Seynabou Diadhiou, Léna Seydi, ndeye Holèl Mbampassy |
-| `name_male` | serigne Nouha Diompy, Baïdi Bandiacky, Nouh Kassé |
-| `name_sn` | Dkikel Gakou, Anta Bousso, Khadija Da_Sylva |
-| `prefix_female` | adja, mame, adjaratou |
-| `prefix_male` | pape, serigne, eladji |
+| `first_name_female` | Mamassa, Fakane, Ndiarenioul |
+| `first_name_male` | Seydina, Kambia, Hatab |
+| `last_name` | Diakho, Coulibaly, Baldé |
+| `name_female` | Safiétou Bendian, Alimatou Sabara, Daba Sougou |
+| `name_male` | Fadel Keïta, Seydina Cissé, serigne ElHadj Kâ |
+| `name_sn` | mame Allé Coly, adja Arame Manga, Bathie Bindian |
+| `prefix_female` | adjaratou, ndeye, adja |
+| `prefix_male` | pape, eladji, serigne |
 
 ## FFaker::NameTH
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | อภิรักษ์, วีระพล, สมทรง |
-| `last_name` | ติณสูลานนท์, เคนเนะดิ , สมิท |
-| `name` | สมพร สโตเกอร์, ธีรภัทร เคนเนะดิ , วัลลภ บราวน์ |
-| `nick_name` | เขียว , ปุ๋ย  , น้องหนู |
+| `first_name` | รุ่งสิทธิ์, ปาริชาติ, มาลี |
+| `last_name` | ชินวัตร, เก่งงาน, บุตโต |
+| `name` | มงคล  วอชิงตัน, สันติ  หงสกุล, ภิรมย์ สมิท |
+| `nick_name` | ฟัก , เจี๊ยบ, จิต  |
 
 ## FFaker::NameTHEN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Kittibun, Tida, Yindee |
-| `last_name` | Shinawatra, Chaiprasit, Kasamsun |
-| `name` | Som Wang Leelapun, Sinn Songprawati, Niran Sriwarunyu |
-| `nick_name` | Chai, Poo, Nam |
+| `first_name` | Kraisingha, Boribun, Sap |
+| `last_name` | Shinawatra, Leekpai, Suppamongkon |
+| `name` | Karnchana Chaiprasit, On Thumying, Anurak Udomprecha |
+| `nick_name` | Nit, Nui, Yai |
 
 ## FFaker::NameTW
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | 宜蓁, 品妤, 子晴 |
-| `last_name` | 魏, 鄭, 許 |
-| `name` | 汪承恩, 温彥廷, 阮柏宇 |
+| `first_name` | 冠廷, 承翰, 品妤 |
+| `last_name` | 周, 金, 陳 |
+| `name` | 温宸睿, 汪志豪, 温宜蓁 |
 
 ## FFaker::NameUA
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Василь, Святополк, Анфіса |
-| `first_name_female` | Святослава, Віола, Віленіна |
-| `first_name_male` | Борис, Максим, Микита |
-| `last_name` | Сердюк, Сторчак, Лазірко |
-| `last_name_female` | Лобачевська, Галаєнко, Трублаєвська |
-| `last_name_male` | Гарай, Пономарів, Забіла |
-| `middle_name_female` | Бориславівна, Аскольдівна, Збориславівна |
-| `middle_name_male` | Вадимович, Несторович, Зиновійович |
-| `name` | Сушко Владислава, Корнїйчук Тимофій, Зленко Павліна Охрімівна |
+| `first_name` | Палажка, Антоній, Віталіна |
+| `first_name_female` | Любомира, Людмила, Віолетта |
+| `first_name_male` | Антоній, Володислав, Зеновій |
+| `last_name` | Яцишин, Гнатишин, Ярмак |
+| `last_name_female` | Глинська, Юрчишина, Гриневська |
+| `last_name_male` | Шамрило, Балицький, Шиндарей |
+| `middle_name_female` | Богданівна, Борисівна, Назарівна |
+| `middle_name_male` | Любомирович, Орестович, Олегович |
+| `name` | Тарасюк Оксана Звениславівна, Розпутня Мирослава Аскольдівна, Петришин Олелько |
 
 ## FFaker::NameVN
 
 | Method | Example |
 | ------ | ------- |
-| `first_name` | Đức, Thị, Quang |
-| `last_first` | Hà Hoàng Thị, Vưu Linh Công, Lưu Liêm Công |
-| `last_name` | Thạch, Ngô, Thủy |
-| `middle_name` | Sơn, Tuyết, Khôi |
-| `name` | Thuận Đức Vương, Tú Quang Liễu, Lộc Hữu Bùi |
+| `first_name` | Hữu, Đức, Quang |
+| `last_first` | Lương Trung Thị, Lưu Tú Hữu, Lục Quyên Công |
+| `last_name` | Thạch, Tôn, Ngô |
+| `middle_name` | Châu, Liên, Đông |
+| `name` | Bảo Quang Sái, Thoa Hữu Tiêu, Hà Quang Kiều |
 
 ## FFaker::NatoAlphabet
 
 | Method | Example |
 | ------ | ------- |
-| `alphabetic_code` | PAPA, QUEBEC, ROMEO |
-| `callsign` | YANKEE-NOVEMBER-SIX, YANKEE-PAPA-FOUR, UNIFORM-MIKE-FOUR |
-| `code` | VICTOR, YANKEE, ROMEO |
+| `alphabetic_code` | SIERRA, BRAVO, HOTEL |
+| `callsign` | ECHO-DELTA-NINE, LIMA-OSCAR-FOUR, GOLF-TANGO-ONE |
+| `code` | HOTEL, YANKEE, ZERO |
 | `codify`(...) |  |
-| `numeric_code` | ZERO, FOUR, THREE |
+| `numeric_code` | SEVEN, THREE, ZERO |
 
 ## FFaker::Number
 
 | Method | Example |
 | ------ | ------- |
-| `between` | 3843.8861986358506, 4105.801023768374, 835.6615034935905 |
-| `decimal` | 4.9, 9.8, 1.7 |
-| `number` | 4, 6, 3 |
+| `between` | 1454.9059148524689, 648.6045112253871, 3241.753351423517 |
+| `decimal` | 1.1, 5.1, 8.1 |
+| `number` | 4, 7, 3 |
 
 ## FFaker::PhoneNumber
 
 | Method | Example |
 | ------ | ------- |
-| `area_code` | 248, 650, 826 |
-| `exchange_code` | 248, 654, 836 |
-| `imei` | 543547203375617, 991875131367274, 492835430532980 |
-| `phone_calling_code` | +46, +387, +596 |
-| `phone_number` | 1-927-530-7519, 1-468-891-7244 x80233, 460-402-1519 |
-| `short_phone_number` | 931-756-5364, 947-708-1523, 550-834-6320 |
+| `area_code` | 310, 916, 487 |
+| `exchange_code` | 987, 760, 847 |
+| `imei` | 502355603926164, 102324674470589, 981296362170166 |
+| `phone_calling_code` | +970, +685, +264 |
+| `phone_number` | 1-677-265-7168, 565.805.6493 x084, 667-267-4261 x55643 |
+| `short_phone_number` | 237-953-0972, 941-406-5037, 847-444-6750 |
 
 ## FFaker::PhoneNumberAU
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | (02) 6515 6270, (08) 4946 1999, (02) 3177 0356 |
-| `home_work_phone_prefix` | 02, 07, 03 |
-| `international_home_work_phone_number` | +61 3 6181 5038, +61 7 5122 4192, +61 3 6176 7959 |
-| `international_mobile_phone_number` | +61 4 9149 4333, +61 4 8129 5437, +61 5 1463 0270 |
-| `international_phone_number` | +61 4 5178 5254, +61 3 8756 4115, +61 8 1272 4169 |
-| `mobile_phone_number` | 0486 802 045, 0522 220 259, 0401 633 688 |
+| `home_work_phone_number` | (03) 7610 3230, (08) 9415 7375, (08) 6654 0816 |
+| `home_work_phone_prefix` | 03, 02, 07 |
+| `international_home_work_phone_number` | +61 2 2881 7605, +61 3 5485 7869, +61 3 9134 3002 |
+| `international_mobile_phone_number` | +61 5 6652 2311, +61 5 7700 0172, +61 5 4480 2610 |
+| `international_phone_number` | +61 4 2129 6536, +61 4 6481 4402, +61 8 3497 1958 |
+| `mobile_phone_number` | 0468 536 392, 0493 514 923, 0520 865 652 |
 | `mobile_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for mobile_phone_prefix |
-| `phone_number` | 0415 266 422, (08) 2432 4804, 0470 462 726 |
-| `phone_prefix` | 02, 07, 04 |
+| `phone_number` | 0568 269 758, 0480 337 335, (07) 7934 4255 |
+| `phone_prefix` | 08, 02, 04 |
 
 ## FFaker::PhoneNumberBR
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | 82 4656-1087, 4222471655, 8554454609 |
-| `international_home_work_phone_number` | +55863227-9262, +554321330201, +554737766833 |
-| `international_mobile_phone_number` | +5515996097495, +55 51 97708-8874, +55 49 969102769 |
-| `international_phone_number` | +552896321-9262, +556396212-2514, +557931290977 |
-| `mobile_phone_number` | 95 96633-6073, 51 982987890, 94 97564-6305 |
-| `phone_number` | 14 41209442, 82 991261290, 37 98792-2087 |
+| `home_work_phone_number` | 4445145094, 1358799136, 632051-7354 |
+| `international_home_work_phone_number` | +55 98 49025455, +55 51 28431099, +55482886-2474 |
+| `international_mobile_phone_number` | +558996166-9093, +555196007-4142, +55 46 98597-0734 |
+| `international_phone_number` | +559396362-3014, +552137430929, +55 12 49785081 |
+| `mobile_phone_number` | 47968882652, 54 965776339, 73975704241 |
+| `phone_number` | 3836312223, 313835-5766, 95 49952596 |
 
 ## FFaker::PhoneNumberCH
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 00418004213368, 08000405380, +41800 421 05 86 |
-| `home_work_phone_number` | 0041323785509, +4132 457 78 87, 044 673 66 56 |
-| `mobile_phone_number` | 004176 281 18 91, +41773330253, +4178 960 81 37 |
-| `phone_number` | 09005933230, 058 393 84 18, 0900 520 61 75 |
-| `premium_rate_phone_number` | 0041906 059 77 54, 09066385418, 09061466834 |
-| `shared_cost_phone_number` | 0041840 754 26 92, 0041844 811 90 27, +418420201917 |
+| `free_phone_number` | +418005784885, +418002740818, 0041800 280 02 56 |
+| `home_work_phone_number` | 043 445 26 95, 043 470 40 56, 0041586405954 |
+| `mobile_phone_number` | +4177 242 67 02, 0041798516049, +41744003038 |
+| `phone_number` | 027 069 36 57, +41793818112, 08488201498 |
+| `premium_rate_phone_number` | 0900 206 14 02, +419017451508, 09005184712 |
+| `shared_cost_phone_number` | +418449747097, +41848 907 36 22, 00418444487246 |
 
 ## FFaker::PhoneNumberCU
 
@@ -2320,271 +2320,271 @@
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
 | `e164_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for e164_country_code |
-| `e164_home_work_phone_number` | 5342527119, 5346020661, 5324106305 |
-| `e164_mobile_phone_number` | 5358216826, 5359758708, 5350337335 |
-| `e164_phone_number` | 5356793442, 5348584851, 5345450944 |
-| `general_phone_number` | (023) 28 7991, 05 361 6540, 05 517 3543 |
-| `home_work_phone_number` | (022) 69 0254, (046) 55 7068, (031) 31 0992 |
-| `home_work_phone_prefix` | 032, 048, 033 |
+| `e164_home_work_phone_number` | 5332482581, 5345290298, 5321491784 |
+| `e164_mobile_phone_number` | 5350978838, 5350261406, 5358228958 |
+| `e164_phone_number` | 5354750069, 5332818420, 5342346332 |
+| `general_phone_number` | 05 557 6231, (045) 39 7117, (024) 93 5838 |
+| `home_work_phone_number` | (042) 11 4411, (041) 78 1664, (047) 17 6825 |
+| `home_work_phone_prefix` | 041, 046, 047 |
 | `international_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for international_country_code |
-| `international_home_work_phone_number` | +5347 93 9994, +5332 51 0151, +5324 29 2554 |
-| `international_mobile_phone_number` | 00535 400 3563, +535 062 6362, 00535 116 8293 |
-| `international_phone_number` | 00535 134 3598, 00535 319 2199, 005346 37 7618 |
-| `mobile_phone_number` | 05 116 8194, 05 690 0209, 05 960 4630 |
+| `international_home_work_phone_number` | 005321 88 2208, 005324 67 8034, 005343 86 8237 |
+| `international_mobile_phone_number` | +535 956 3251, +535 868 2563, +535 875 5989 |
+| `international_phone_number` | 005346 20 7347, +535 668 4795, 00535 777 0523 |
+| `mobile_phone_number` | 05 577 9929, 05 949 1888, 05 831 9412 |
 | `mobile_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for mobile_phone_prefix |
-| `phone_number` | 05 357 7443, +535 714 0646, 05 295 1685 |
-| `phone_prefix` | 045, 043, 024 |
+| `phone_number` | 5370224600, 5322095995, (033) 58 9390 |
+| `phone_prefix` | 045, 023, 021 |
 
 ## FFaker::PhoneNumberDA
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | 66414206, 87741004, 39703020 |
-| `international_home_work_phone_number` | +45 73555637, +45 59090927, +45 47912741 |
-| `international_mobile_phone_number` | +45 37709078, +45 98241513, +45 47280283 |
-| `international_phone_number` | +45 91361068, +45 78554216, +45 04892729 |
-| `mobile_phone_number` | 34529639, 52724253, 38569842 |
-| `phone_number` | 20539011, 61188749, 43741997 |
+| `home_work_phone_number` | 10420022, 14155960, 56825190 |
+| `international_home_work_phone_number` | +45 12648460, +45 52933098, +45 83684112 |
+| `international_mobile_phone_number` | +45 98919686, +45 78488858, +45 47575704 |
+| `international_phone_number` | +45 78378022, +45 20670334, +45 53712950 |
+| `mobile_phone_number` | 46020689, 00637669, 10154313 |
+| `phone_number` | 23939199, 95734525, 51568058 |
 
 ## FFaker::PhoneNumberDE
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | 06863 9116907, 068 7196663, 0391 4279770 |
-| `international_home_work_phone_number` | +49 64 6962605, +49 8679 7267988, +49 685 4197645 |
-| `international_mobile_phone_number` | +49 157 6791660, +49 159 4088822, +49 158 3678034 |
-| `international_phone_number` | +49 3868 2379563, +49 415 8682563, +49 77 5598902 |
-| `mobile_phone_number` | 0170 7347016, 0176 8479527, 0157 7052357 |
-| `mobile_prefix` | 0169, 0179, 0164 |
-| `phone_number` | 0618 8883194, 03290 2246001, 0259 9565893 |
-| `region_prefix` | 0703, 03104, 040 |
+| `home_work_phone_number` | 03045 0335191, 02283 5630653, 02773 9805223 |
+| `international_home_work_phone_number` | +49 97 3799943, +49 542 6463214, +49 4931 7539716 |
+| `international_mobile_phone_number` | +49 166 6075292, +49 168 6079854, +49 172 9685063 |
+| `international_phone_number` | +49 896 2264702, +49 5621 5347750, +49 448 3063797 |
+| `mobile_phone_number` | 0161 8679087, 0155 4596046, 0154 9973439 |
+| `mobile_prefix` | 0176, 0179, 0154 |
+| `phone_number` | 078 0242105, 050 2614060, 04997 6918426 |
+| `region_prefix` | 02794, 050, 076 |
 
 ## FFaker::PhoneNumberFR
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | 04 48 13 04 16, 0989188856, 01 61 67 17 10 |
-| `international_home_work_phone_number` | +33 9 18 17 53 45, +33456654891, +33348053922 |
-| `international_mobile_phone_number` | 0033 617537882, 0033605106332, +33 7 01 55 31 05 |
-| `international_phone_number` | 0033130993640, 0033 6 83 67 57 54, +33680255924 |
-| `mobile_phone_number` | 0609183638, 0756734768, 0763320667 |
-| `phone_number` | 09 99 35 09 41, 0621420973, 0377936691 |
+| `home_work_phone_number` | 05 61 17 24 83, 0449016671, 0338669793 |
+| `international_home_work_phone_number` | 00333 16 06 97 39, +33 2 75 32 19 70, 0033 5 25 47 08 04 |
+| `international_mobile_phone_number` | 00337 25 58 62 11, +33604756263, +33 602034680 |
+| `international_phone_number` | 0033 7 98 00 46 91, 0033 7 75 86 21 36, +33 9 50 71 28 27 |
+| `mobile_phone_number` | 0732812537, 07 73 03 79 37, 0701965723 |
+| `phone_number` | 06 36 25 84 65, 07 50 21 07 42, 07 31 84 10 92 |
 
 ## FFaker::PhoneNumberID
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 0426-91947729, 0622-9322606, 0646-05076196 |
-| `international_home_phone_number` | +62631-2313923, +62646-3649605, +62457-9766651 |
-| `international_mobile_phone_number` | +62853-45175485, +62822-49369794, +62858-02451654 |
-| `international_phone_number` | +62371-8118807, +62295-73123326, +62857-41827157 |
-| `mobile_phone_number` | 0817-68525259, 0885-04616946, 0822-44190031 |
-| `phone_number` | 0985-1786238, 0811-44460371, 0563-24833249 |
+| `home_phone_number` | 0450-2747348, 0526-2082810, 0626-56146879 |
+| `international_home_phone_number` | +62463-83100846, +62373-15670965, +62473-9250965 |
+| `international_mobile_phone_number` | +62853-61070218, +62855-34084952, +62814-40940691 |
+| `international_phone_number` | +62773-27800890, +62927-9890176, +62821-95481018 |
+| `mobile_phone_number` | 0812-99568349, 0851-47476280, 0856-04334453 |
+| `phone_number` | 0752-4986822, 0855-54466417, 0812-36471650 |
 
 ## FFaker::PhoneNumberIT
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | +390544715386, +39 0985 979325, 0039 0883697394 |
-| `mobile_phone_number` | 0039335 53219709, 0039 329 08047125, 0039340 862116 |
-| `phone_number` | 003934447562639, +39 320346803, 0039 0346046910 |
+| `home_phone_number` | 0039052115283586, 0039 046264547561, 00390832420679 |
+| `mobile_phone_number` | 0039349342093, 003932882984744, +39 348419839 |
+| `phone_number` | 0039036238970029, 0039326 18565314, 0039 0577 906724 |
 
 ## FFaker::PhoneNumberJA
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 01456 5 8621, 01466 0 5071, 01374 8 2773 |
+| `home_phone_number` | 072 678 5772, 0157 02 8640, 04996 7 8750 |
 | `home_phone_number_format`(...) |  |
 | `home_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for home_phone_prefix |
-| `international_home_phone_number` | +81 967 28 1253, +81 852 75 7303, +81 1547 9 3736 |
-| `international_mobile_phone_number` | +81 80 0196 5723, +81 70 3625 8465, +81 80 0995 0210 |
-| `international_phone_number` | +81 6 2119 3318, +81 90 1092 7274, +81 90 8851 6020 |
-| `mobile_phone_number` | 090 2810 3356, 080 4687 9831, 090 0846 7601 |
-| `mobile_phone_number_format` | 80 #### ####, 70 #### ####, 90 #### #### |
-| `mobile_prefix` | 80, 70, 90 |
-| `phone_number` | 070 3925 0965, 0573 10 7021, 01587 3 4084 |
+| `international_home_phone_number` | +81 28 142 2135, +81 256 32 0032, +81 3 0738 0534 |
+| `international_mobile_phone_number` | +81 70 8455 8508, +81 90 4090 3937, +81 90 5779 5209 |
+| `international_phone_number` | +81 6 0962 3364, +81 26 217 5496, +81 80 6853 0589 |
+| `mobile_phone_number` | 070 8612 1623, 090 0871 0476, 090 4671 9487 |
+| `mobile_phone_number_format` | 90 #### ####, 70 #### ####, 80 #### #### |
+| `mobile_prefix` | 90, 70, 80 |
+| `phone_number` | 070 4519 0180, 0942 38 3924, 03 3835 8727 |
 
 ## FFaker::PhoneNumberKR
 
 | Method | Example |
 | ------ | ------- |
 | `contry_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for contry_code |
-| `home_work_phone_number` | 051 5233 3409, 062 0691 6592, 054 7800 8902 |
-| `international_home_work_phone_number` | +82 53 9890 1769, +82 42 4810 1819, +82 53 9568 3494 |
-| `international_mobile_phone_number` | +82 19 4762 8000, +82 10 3344 5308, +82 16 4986 8221 |
-| `international_phone_number` | +82 42 4466 4170, +82 19 1364 7165, +82 10 9427 1528 |
-| `mobile_phone_number` | 019 3586 8416, 010 5475 6150, 010 4420 6799 |
-| `phone_number` | 010 0342 0931, 010 9829 8474, 043 8004 1983 |
+| `home_work_phone_number` | 063 5194 7998, 042 7626 3691, 032 5164 6356 |
+| `international_home_work_phone_number` | +82 44 2692 2757, +82 55 7790 2055, +82 62 4977 4854 |
+| `international_mobile_phone_number` | +82 16 7668 1217, +82 16 7926 6371, +82 16 2300 9865 |
+| `international_phone_number` | +82 55 0029 2794, +82 41 1910 3424, +82 10 9007 4378 |
+| `mobile_phone_number` | 010 1251 0145, 011 0100 3285, 011 2051 6443 |
+| `phone_number` | 016 5797 0006, 010 1225 9324, 019 4748 5346 |
 
 ## FFaker::PhoneNumberMX
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | 99 1389 7002, 90 5291 8565, 31 4937 2906 |
-| `international_home_work_phone_number` | +52 72 4967 8577, +52 24 5028 6403, +52 97 8750 9142 |
-| `international_mobile_phone_number` | +52 1 21 3568 3200, +52 1 32 7807 3805, +52 1 34 6845 5850 |
-| `international_phone_number` | +52 1 74 0903 9370, +52 77 9520 9109, +52 62 3364 9192 |
-| `mobile_phone_number` | 044 17 5496 6853, 044 05 8968 6121, 044 62 3808 7104 |
-| `phone_number` | 044 64 4671 9487, 00 7667 4519, 18 0062 3839 |
-| `toll_free_number` | 01 800 244 8383, 01 800 587 2705, 01 800 194 7998 |
+| `home_work_phone_number` | 82 9508 3535, 98 3967 9479, 97 1356 0066 |
+| `international_home_work_phone_number` | +52 20 0597 9640, +52 53 5907 2088, +52 86 9611 6990 |
+| `international_mobile_phone_number` | +52 1 15 2861 3359, +52 1 34 8654 4044, +52 1 81 1483 4743 |
+| `international_phone_number` | +52 1 07 8233 5264, +52 36 7589 4976, +52 1 59 1230 6932 |
+| `mobile_phone_number` | 044 27 2484 5613, 044 83 4799 5182, 044 13 9591 6846 |
+| `phone_number` | 044 88 7329 8737, 044 97 3961 1970, 044 98 2433 7418 |
+| `toll_free_number` | 01 800 221 4765, 01 800 619 4232, 01 800 232 8285 |
 
 ## FFaker::PhoneNumberNL
 
 | Method | Example |
 | ------ | ------- |
-| `home_work_phone_number` | 0486-26 36 91, 0598-5164 63, 0182-72 69 22 |
-| `international_home_work_phone_number` | +31 418-7790 20, +31 475-74 85 47, +31 226-68 12 17 |
-| `international_mobile_phone_number` | +31 6 792 663 71, +31 6 230 098 65, +31 6 0029 2794 |
-| `international_phone_number` | +31 595-191034, +31 608900743, +31 343-412510 |
-| `mobile_phone_number` | 06 45 90 10 03, 06 859 205 16, 0643257970 |
-| `phone_number` | 06 006 112 25, 06 2494 7485, 0668295083 |
+| `home_work_phone_number` | 0183-2810 71, 074-0999 736, 0343-39 63 85 |
+| `international_home_work_phone_number` | +31 578-26 38 84, +31 167-1405 08, +31 35-376 9361 |
+| `international_mobile_phone_number` | +31 6 1440 2269, +31 6 86 18 85 04, +31 651784081 |
+| `international_phone_number` | +31 6 500 337 19, +31 610595319, +31 316-9118 40 |
+| `mobile_phone_number` | 0614147257, 06 204 722 04, 06 69 33 50 94 |
+| `phone_number` | 0341-351522, 015-4120 669, 0346-57 45 78 |
 
 ## FFaker::PhoneNumberPL
 
 | Method | Example |
 | ------ | ------- |
-| `area_code` | 29, 59, 67 |
-| `home_work_phone_number` | 465983967, 844799713, 325600662 |
-| `international_home_work_phone_number` | +48 420597964, +48 685359072, +48 410888696 |
-| `international_mobile_phone_number` | +48 511699015, +48 792861335, +48 783486544 |
-| `international_phone_number` | +48 604811483, +48 887434078, +48 573526473 |
-| `mobile_phone_number` | 697589497, 696591230, 699322724 |
-| `mobile_phone_number_format` | 88#######, 73#######, 60####### |
-| `mobile_prefix` | 66, 69, 51 |
-| `phone_number` | 733479951, 898213959, 716846188 |
-| `phone_number_format` | 59#######, 82#######, 67####### |
+| `area_code` | 25, 18, 33 |
+| `home_work_phone_number` | 844520553, 615231660, 184817842 |
+| `international_home_work_phone_number` | +48 463571101, +48 347911984, +48 155423505 |
+| `international_mobile_phone_number` | +48 781386907, +48 534544157, +48 798307378 |
+| `international_phone_number` | +48 618900367, +48 690655447, +48 880122554 |
+| `mobile_phone_number` | 737030923, 503047035, 608020913 |
+| `mobile_phone_number_format` | 50#######, 78#######, 66####### |
+| `mobile_prefix` | 72, 69, 78 |
+| `phone_number` | 691490657, 959770659, 508169779 |
+| `phone_number_format` | 61#######, 82#######, 76####### |
 
 ## FFaker::PhoneNumberRU
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | 8 846 987-37-79, 8 481 396-11-97, 8 383 198-24-33 |
-| `home_work_phone_prefix` | 814, 082, 492 |
+| `home_work_phone_number` | 8 394 282-06-96, 8 383 351-40-14, 8 818 588-20-93 |
+| `home_work_phone_prefix` | 813, 084, 872 |
 | `international_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for international_country_code |
-| `international_home_work_phone_number` | +7 341 182-21-47, +7 847 656-19-42, +7 413 322-32-82 |
-| `international_mobile_phone_number` | +7 993 562-81-07, +7 984 809-99-73, +7 928 676-39-63 |
-| `international_phone_number` | +7 963 926-38-84, +7 093 914-05-08, +7 487 537-69-36 |
-| `international_toll_free_number` | +7 800 114-40-22, +7 800 695-86-18, +7 800 850-40-51 |
-| `mobile_phone_number` | 8 999 784-08-14, 8 902 500-33-71, 8 926 010-59-53 |
-| `mobile_phone_prefix` | 915, 952, 958 |
-| `phone_number` | 8 424 191-18-40, 8 901 414-72-57, 8 982 204-72-20 |
-| `toll_free_number` | 8 800 416-93-35, 8 800 094-58-35, 8 800 152-28-96 |
+| `international_home_work_phone_number` | +7 862 663-40-32, +7 844 276-14-72, +7 074 403-73-62 |
+| `international_mobile_phone_number` | +7 900 399-33-49, +7 995 199-01-28, +7 988 291-00-20 |
+| `international_phone_number` | +7 495 963-63-90, +7 872 383-43-59, +7 496 433-83-26 |
+| `international_toll_free_number` | +7 800 923-23-36, +7 800 268-28-20, +7 800 776-15-11 |
+| `mobile_phone_number` | 8 929 956-64-52, 8 992 541-47-22, 8 963 709-89-56 |
+| `mobile_phone_prefix` | 962, 912, 926 |
+| `phone_number` | 8 483 635-24-25, 8 096 122-64-59, 8 960 236-39-86 |
+| `toll_free_number` | 8 800 315-48-83, 8 800 022-03-72, 8 800 637-99-26 |
 
 ## FFaker::PhoneNumberSE
 
 | Method | Example |
 | ------ | ------- |
-| `area_prefix` | 590, 913, 157 |
+| `area_prefix` | 152, 954, 920 |
 | `country_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_prefix |
-| `home_work_phone_number` | 0392-209 32, 0510-134 67, 0916-526 57 |
-| `international_home_work_phone_number` | 0046 (0)340-904 15, +46 (0)471-796 98, +46 (0)457-800 05 |
-| `international_mobile_phone_number` | +46 (0)762-09 16 51, +46 (0)745-476141, +46 (0)731-19 26 41 |
-| `international_phone_number` | +46 (0)749-91 97 89, 0046 (0)416-54 21 75, +46 (0)737-33 36 89 |
-| `mobile_phone_number` | 0708-605414, 0740-139626, 0701-460819 |
-| `mobile_phone_number_format` | 76#-######, 73#-######, 74#-## ## ## |
-| `mobile_prefix` | 70, 76, 74 |
-| `phone_number` | 0702-96 93 02, 0971-11 82 05, 0550-81 27 04 |
-| `phone_number_format` | 291-### ##, 514-## ## ##, 42-### ## ## |
+| `home_work_phone_number` | 0951-05 04 47, 0523-298 99, 0454-37 55 41 |
+| `international_home_work_phone_number` | 0046 (0)474-780 65, +46 (0)226-471 67, 0046 (0)980-737 66 |
+| `international_mobile_phone_number` | 0046 (0)702-84 32 91, +46 (0)708-676498, 0046 (0)731-307133 |
+| `international_phone_number` | +46 (0)961-562 70, +46 (0)723-11 56 35, 0046 (0)520-424 96 |
+| `mobile_phone_number` | 0760-840516, 0725-426875, 0726-09 75 63 |
+| `mobile_phone_number_format` | 74#-## ## ##, 76#-######, 73#-## ## ## |
+| `mobile_prefix` | 73, 70, 74 |
+| `phone_number` | 0456-141 15, 0706-15 19 40, 0738-317780 |
+| `phone_number_format` | 40-## ###, 924-## ## ##, 141-### ## |
 
 ## FFaker::PhoneNumberSG
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `fixed_line_number` | 6173 7362, 6013 2883, 6389 6293 |
-| `international_toll_free_number` | 800 491 4277, 800 742 0673, 800 237 0905 |
-| `mobile_number` | 8778 8277, 8961 1224, 8451 5474 |
-| `mobile_or_pager_number` | 9485 7426, 9277 9903, 9128 9922 |
-| `phone_number` | 6794 1944, 6010 6590, 6822 5510 |
-| `premium_service_number` | 1900 177 8018, 1900 734 6208, 1900 327 8743 |
-| `toll_free_number` | 1800 102 9219, 1800 136 5331, 1800 587 1209 |
-| `voip_number` | 3903 8993, 3927 8161, 3689 4479 |
+| `fixed_line_number` | 6675 3252, 6790 8857, 6693 4145 |
+| `international_toll_free_number` | 800 005 3332, 800 614 9228, 800 635 3734 |
+| `mobile_number` | 8828 0094, 8187 9775, 8548 9400 |
+| `mobile_or_pager_number` | 9502 5905, 9877 4026, 9124 6072 |
+| `phone_number` | 9937 4936, 6532 5124, 8106 2768 |
+| `premium_service_number` | 1900 429 4540, 1900 382 7180, 1900 931 8198 |
+| `toll_free_number` | 1800 697 8558, 1800 058 6944, 1800 371 5486 |
+| `voip_number` | 3924 9254, 3093 7972, 3342 2224 |
 
 ## FFaker::PhoneNumberSN
 
 | Method | Example |
 | ------ | ------- |
-| `homework_number` | 33-814-75-11, 33-849-40-41, 33-841-77-15 |
+| `homework_number` | 33-969-59-88, 33-872-23-34, 33-969-63-61 |
 | `homework_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for homework_phone_prefix |
-| `mobile_number` | 76-666-09-52, 77-050-44-78, 77-435-29-89 |
-| `mobile_phone_prefix` | 76, 70, 77 |
-| `phone_number` | 77-375-54-19, 77-197-80-65, 33-834-71-67 |
-| `short_phone_number` | 777-37-66, 580-28-43, 291-88-86 |
+| `mobile_number` | 70-587-47-77, 77-821-60-27, 76-149-71-74 |
+| `mobile_phone_prefix` | 70, 77, 76 |
+| `phone_number` | 33-923-86-18, 33-801-98-48, 33-971-03-82 |
+| `short_phone_number` | 572-22-18, 917-29-27, 020-39-38 |
 
 ## FFaker::PhoneNumberTW
 
 | Method | Example |
 | ------ | ------- |
 | `contry_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for contry_code |
-| `home_work_phone_number` | (08) 649-8721, (05) 071-3369, (07) 627-0646 |
-| `international_home_work_phone_number` | +886-7-931-1563, +886-7-504-2496, +886-5-308-4051 |
-| `international_mobile_phone_number` | +886-961-954-268, +886-975-216-097, +886-956-384-304 |
-| `international_phone_number` | +886-928-414-115, +886-4-0615-1940, +886-5-831-7780 |
-| `mobile_phone_number` | 0982-689-675, 0932-527-908, 0985-769-341 |
-| `phone_number` | (07) 005-3332, (08) 149-2286, 0953-734-828 |
+| `home_work_phone_number` | (06) 016-1438, (05) 324-3607, (05) 665-2932 |
+| `international_home_work_phone_number` | +886-4-6781-5098, +886-6-931-5147, +886-5-834-9085 |
+| `international_mobile_phone_number` | +886-989-715-680, +886-965-188-636, +886-948-339-052 |
+| `international_phone_number` | +886-2-6683-7584, +886-977-292-161, +886-8-624-9183 |
+| `mobile_phone_number` | 0993-332-647, 0960-389-274, 0920-763-387 |
+| `phone_number` | (04) 1854-6160, 0996-678-797, 0967-875-427 |
 
 ## FFaker::PhoneNumberUA
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 031 094-1879, 064 775-5489, 054 005-0259 |
-| `international_home_phone_number` | +380 31 587-7402, +380 44 612-4607, +380 33 937-4936 |
-| `international_mobile_phone_number` | +380 73 532-5124, +380 63 106-2768, +380 99 429-4540 |
-| `mobile_phone_number` | 067 827-1809, 067 181-9869, 096 855-8058 |
-| `phone_number` | 043 443-7154, 041 692-4925, 031 937-9723 |
+| `home_phone_number` | 033 325-0414, 051 557-6624, 044 474-7197 |
+| `international_home_phone_number` | +380 62 104-6167, +380 69 317-9120, +380 57 720-0735 |
+| `international_mobile_phone_number` | +380 63 448-9770, +380 63 642-0168, +380 67 623-4877 |
+| `mobile_phone_number` | 067 099-5950, 093 705-8711, 066 593-8980 |
+| `phone_number` | 038 788-7704, 034 410-1469, 062 671-7511 |
 
 ## FFaker::Product
 
 | Method | Example |
 | ------ | ------- |
-| `brand` | Sirsync, Sirbalt, Pouphforge |
+| `brand` | Brince, YM, Brionsfunc |
 | `letters`(...) |  |
-| `model` | X-82, T51, D86 |
-| `product` | Onefunc Audible Bridge, Tryffe Portable System, Sosync Electric Ferrule |
-| `product_name` | Performance Component, Video GPS Ferrule, Output Tag Mount |
+| `model` | F2, W-8529, R0 |
+| `product` | Lunix Side Disc Ferrule, Reunix Tag Component, Pouffewood GPS HD Receiver |
+| `product_name` | Auto Video Amplifier, Video Digital Component, Auto Digital Receiver |
 
 ## FFaker::SSN
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 043-82-7845, 512-99-5700, 489-80-8323 |
+| `ssn` | 665-56-1633, 449-78-8061, 056-38-8734 |
 
 ## FFaker::SSNMX
 
 | Method | Example |
 | ------ | ------- |
-| `imss` | 0198488710-3, 8257222189-1, 7292702039-3 |
-| `imss_undashed` | 84016143832, 43607665293, 26781509849 |
-| `issste` | 3151473834-9, 0858971568-0, 6518863648-3 |
-| `issste_undashed` | 39052866837, 58477292161, 16624918393 |
-| `ssn` | 3326476038-9, 2742076338-7, 6218546160-9 |
-| `ssn_undashed` | 66787976787, 54272325041, 41557662447 |
+| `imss` | 6559915953-2, 3641760053-9, 8354551034-9 |
+| `imss_undashed` | 15632602677, 90021011182, 64695062866 |
+| `issste` | 6745933930-7, 3303689883-2, 1376252044-7 |
+| `issste_undashed` | 43719394045, 70093859460, 99485387480 |
+| `ssn` | 4748239710-9, 9450967893-6, 0166008872-1 |
+| `ssn_undashed` | 90666832234, 49088128383, 41270261584 |
 
 ## FFaker::SSNSE
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 199812315786, 199201047503, 200207261377 |
+| `ssn` | 197511208344, 201603172622, 196008020634 |
 
 ## FFaker::SemVer
 
 | Method | Example |
 | ------ | ------- |
-| `next` | 0.0.1, 0.1.0, 1.0.0 |
+| `next` | 1.0.0, 0.1.0, 0.0.1 |
 
 ## FFaker::Skill
 
 | Method | Example |
 | ------ | ------- |
-| `specialties` | Template Management, Visual Analysis, Hardware Prototyping, Database Design, Web Testing, Mental Development, Template Research, Performance Methods, Prototype Profiling |
-| `specialty` | Hardware Testing, Web Management, Template Modularization |
-| `tech_skill` | CodeIgniter, Photoshop, Flash |
-| `tech_skills` | JSON, Photoshop, SOAP, ActionScript, PostgreSQL, Illustrator, Angular.JS, Ruby, JQuery |
+| `specialties` | Web Prototyping, Global Methods, Hardware Architecture, Modular Methods, Resource Development, Software Architecture, Project Analysis, Visual Design, Template Methods |
+| `specialty` | Web Development, Modular Profiling, Prototype Prototyping |
+| `tech_skill` | CakePHP, Ajax, XHR |
+| `tech_skills` | LAMP, JSON, Marionette.JS, Typo3, LAMP, Shell, Rails, Ruby, Django |
 
 ## FFaker::Sport
 
@@ -2596,23 +2596,23 @@
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Squash, Skok o tyczce, Hokej na lodzie |
-| `summer` | Kajakarstwo regatowe, Futbol amerykański, Hokej na trawie |
-| `winter` | Skeleton, Skoki narciarskie, Snowboarding |
+| `name` | Gimnastyka artystyczna, Rzut oszczepem, Taekwondo |
+| `summer` | Squash, Lacrosse, Piłka nożna |
+| `winter` | Biegi narciarskie, Narciarstwo dowolne, Kombinacja norweska |
 
 ## FFaker::SportRU
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Прыжки в воду, Регби, Легкая атлетика |
-| `summer` | Дартс, Метание копья, Толкание ядра |
-| `winter` | Катание на ледяных глыбах, Санный спорт, Скелетон |
+| `name` | Дрессура, Бадминтон, Юкигассен |
+| `summer` | Кудо, Велоспорт, Борьба |
+| `winter` | Фигурное катание на коньках, Конькобежный спорт, Фристайл |
 
 ## FFaker::SportUS
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Football, Rapel, Golf |
+| `name` | Rugby Sevens, Ski, Boxing |
 
 ## FFaker::String
 
@@ -2625,74 +2625,74 @@
 | Method | Example |
 | ------ | ------- |
 | `between`(..., ...) |  |
-| `date` | 2025-08-08, 2025-04-05, 2023-11-23 |
-| `datetime` | 2025-07-08T01:39:00+00:00, 2022-02-16T10:49:00+00:00, 2023-12-03T02:23:00+00:00 |
-| `day_of_week` | Thu, Wed, Mon |
-| `month` | August, February, September |
+| `date` | 2022-06-05, 2021-03-26, 2024-02-09 |
+| `datetime` | 2021-09-08T19:00:00+00:00, 2023-02-01T04:31:00+00:00, 2025-02-08T18:52:00+00:00 |
+| `day_of_week` | Fri, Mon, Sat |
+| `month` | March, November, April |
 
 ## FFaker::Tweet
 
 | Method | Example |
 | ------ | ------- |
-| `body` | Modi consectetur excepturi cupiditate aut praesentium. Molestiae magnam voluptate a esse libero distinctio. At pariatur expedita aperiam., Fugiat dignissimos nesciunt distinctio aperiam. Iste dolor saepe laboriosam adipisci repellat cupiditate vero iure. Ratione numquam., Velit quibusdam quaerat atque est facilis enim. Nostrum consequuntur accusantium similique debitis voluptatem vero corporis. Vel nam. |
-| `mention` | @galen, @chasity_kuhic, @jonie |
-| `mentions` | @vernia_greenfelder @eric, @nelly @trinity.mayert, @reynalda.grimes @coral_walker |
-| `tags` | #nice #dog, #amazing #christmas, #tbt #boy |
-| `tweet` | Animi laborum maxime voluptatum similique libero minus ad. Unde quasi officia., Iure iusto praesentium commodi voluptas porro quibusdam. Inventore deleniti laudantium quaerat suscipit vero. Natus porro harum animi odio., Iusto non reprehenderit ipsam eligendi error soluta consequuntur. Labore minus eius occaecati sit. Expedita non fugiat. |
+| `body` | Omnis quaerat dolorum deleniti illo earum quia fuga optio. In unde dolorum nam necessitatibus deserunt aliquam recusandae dicta. Eius., Hic beatae soluta fuga excepturi reiciendis. Quasi aperiam sit placeat quam. Iusto similique laborum sapiente doloribus. Nam adipisci., Voluptatem perspiciatis accusantium debitis eaque optio incidunt soluta. Pariatur cumque esse non quaerat. Odio occaecati inventore dolor. |
+| `mention` | @noelle, @vanita, @tomiko.johnston |
+| `mentions` | @nadine @joanna, @clinton_oberbrunner @beulah, @luella.olson @leatrice |
+| `tags` | #sunset #pretty, #yum #cute, #amazing #party |
+| `tweet` | Vero maiores ab odit., Alias labore ea., Voluptas eum laboriosam dicta omnis cumque. |
 
 ## FFaker::UUID
 
 | Method | Example |
 | ------ | ------- |
-| `uuidv4` | 3c20767c-bbf4-42c5-91a2-a877e2e867e0, c4b00032-df69-42ad-82c0-adee6cdfe4f3, de385709-bf65-4919-bfb6-ccd4af8971b6 |
-| `uuidv6` | f4ba7df0-78c1-683b-acf0-37b9a8a8625a, 97738992-6365-611e-9cc4-fd1aea3c8e08, 58bfe1cc-69ef-65e5-a70a-7f23f028f608 |
-| `uuidv7` | 29b7990d-f444-7388-b511-348cc73930b0, ac142e04-a997-7ccd-a89d-79843843bf58, bcc291d0-ebab-75ce-8284-a6f30799a989 |
-| `uuidv8` | d597382f-5ff1-8c30-9c34-8aa9a52a4dd9, 468d62a9-7b94-87e5-b85a-ca5f07f625d0, 287926ac-7cf6-8ad7-848b-9c083c3febbb |
+| `uuidv4` | 1ad3d920-17c7-42d9-b098-b9aab27812d6, 33046a08-2520-41e9-b74e-7892f1d1a86e, cd550165-40d8-4d1d-9330-b54586b571b6 |
+| `uuidv6` | 6ab936f5-eb25-6d90-be1b-4a4834ddfda9, 335ddb5e-6f9c-6b28-b749-5ddd23e30096, bb262231-968b-6c12-9791-babc408301c0 |
+| `uuidv7` | 5b0ea208-6ed3-75fa-b130-e32dd94c4bc1, b89c9749-7d4e-76d5-a92d-312be71bca77, 80b24d13-63e4-755b-87f5-6838cce6dab6 |
+| `uuidv8` | 2f4f817d-64fc-8310-96eb-47965a0908fa, 3fae2743-485d-8a3a-870e-15d9a32447ae, 007cbe81-b0a0-870e-bd8e-9585eeea1f11 |
 
 ## FFaker::Unit
 
 | Method | Example |
 | ------ | ------- |
-| `temperature_abbr` | F, C, K |
-| `temperature_name` | Celsius, Fahrenheit, Kelvin |
-| `time_abbr` | yr, h, d |
-| `time_name` | Days, Years, Seconds |
+| `temperature_abbr` | K, C, F |
+| `temperature_name` | Kelvin, Fahrenheit, Celsius |
+| `time_abbr` | ms, yr, h |
+| `time_name` | Minutes, Days, Milliseconds |
 
 ## FFaker::UnitEnglish
 
 | Method | Example |
 | ------ | ------- |
-| `area_abbr` | sq yd, sq mi, twp |
-| `area_name` | township, section, square inch |
-| `length_abbr` | fur, yd, mi |
-| `length_name` | mile, foot, yard |
-| `liquid_abbr` | fl oz, qt, gi |
-| `liquid_name` | pint, fluid ounce, quart |
-| `mass_abbr` | t, gr, cwt |
-| `mass_name` | ton, ounces, pounds |
-| `temperature_abbr` | K, F, C |
-| `temperature_name` | Celsius, Kelvin, Fahrenheit |
-| `time_abbr` | s, ms, m |
-| `time_name` | Days, Years, Minutes |
+| `area_abbr` | ac, sq in, sq mi |
+| `area_name` | square yard, township, square mile |
+| `length_abbr` | fur, ft, yd |
+| `length_name` | furlong, yard, inch |
+| `liquid_abbr` | gi, qt, fl oz |
+| `liquid_name` | fluid ounce, quart, gill |
+| `mass_abbr` | gr, cwt, oz |
+| `mass_name` | ounces, pounds, hundredweight |
+| `temperature_abbr` | F, C, K |
+| `temperature_name` | Fahrenheit, Kelvin, Celsius |
+| `time_abbr` | s, d, yr |
+| `time_name` | Hours, Milliseconds, Minutes |
 | `volume_abbr` | CY, CI, CFT |
-| `volume_name` | cubic yard, cubic inch, cubic foot |
+| `volume_name` | cubic foot, cubic yard, cubic inch |
 
 ## FFaker::UnitMetric
 
 | Method | Example |
 | ------ | ------- |
-| `area_abbr` | cm^2, km, ha |
-| `area_name` | centimeters squared, meters squared, hectares |
-| `length_abbr` | km, m, mm |
-| `length_name` | centimeters, millimeters, kilometers |
+| `area_abbr` | km, cm^2, m^2 |
+| `area_name` | meters squared, centimeters squared, kilometers |
+| `length_abbr` | cm, mm, km |
+| `length_name` | kilometers, millimeters, centimeters |
 | `liquid_abbr` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for liquid_abbr |
 | `liquid_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for liquid_name |
-| `mass_abbr` | g, mt, kg |
-| `mass_name` | gram, kilogram, metric ton |
-| `temperature_abbr` | F, K, C |
-| `temperature_name` | Kelvin, Celsius, Fahrenheit |
-| `time_abbr` | s, yr, d |
-| `time_name` | Milliseconds, Seconds, Minutes |
+| `mass_abbr` | kg, mt, g |
+| `mass_name` | metric ton, kilogram, gram |
+| `temperature_abbr` | K, C, F |
+| `temperature_name` | Fahrenheit, Celsius, Kelvin |
+| `time_abbr` | ms, h, m |
+| `time_name` | Minutes, Seconds, Milliseconds |
 | `volume_abbr` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for volume_abbr |
 | `volume_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for volume_name |
 
@@ -2700,33 +2700,33 @@
 
 | Method | Example |
 | ------ | ------- |
-| `base_color` | yellow, plum, mediumpurple |
-| `drivetrain` | 4X4, FWD, AWD |
+| `base_color` | skyblue, teal, forestgreen |
+| `drivetrain` | 4WD, FWD, AWD |
 | `engine_cylinders` | 5, 2, 8 |
-| `engine_displacement` | 7.4, 3.0, 4.0 |
-| `fuel_type` | Hybrid, Electric, Gas |
-| `interior_upholstery` | Faux Vinyl, Leather, Nylon Fabric |
-| `make` | Isuzu, Ram, Bentley |
-| `manufacturer_color` | weak pleasant cornsilk, metallic majestic palegreen, mysterious bright steelblue |
-| `mfg_color` | bright mysterious yellowgreen, vibrant calm saddlebrown, weak mute blue |
-| `model` | Sable, Accent, Envoy |
-| `transmission` | Continuously Variable, Automatic, Automated Manual |
-| `transmission_abbr` | AT, AM, MT |
-| `trim` | DX, SI, GS |
-| `vin` | B63VDRHAX4C044868, 81TN65EB17N025651, L51YM8U62XZ826270 |
-| `year` | 2025, 1904, 1941 |
+| `engine_displacement` | 4.9, 4.2, 5.2 |
+| `fuel_type` | Gas, Diesel, Hybrid |
+| `interior_upholstery` | Vinyl, Nylon Fabric, Leather |
+| `make` | AM General, Chevrolet, Rolls-Royce |
+| `manufacturer_color` | new fast silver, new dangerous slategray, resonant magnificent dimgrey |
+| `mfg_color` | majestic calm turquoise, weak calm lightgray, calm pretty lightgoldenrodyellow |
+| `model` | Bronco, Tercel, Caravan |
+| `transmission` | Manual, Continuously Variable, Automated Manual |
+| `transmission_abbr` | CVT, AT, AM |
+| `trim` | ES, EX-L, XLT |
+| `vin` | 3XCAZ1C807D224832, 8TLFX9BK6VT764154, J5V4V2SK45M379227 |
+| `year` | 2014, 1911, 1960 |
 
 ## FFaker::Venue
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Fundacion de Ferias y Exposiciones de Lugo, Oficina de Convenciones y Visitantes de Monterrey, Expourense |
+| `name` | Can Domenge. Centre Tecnologic, Feria de Muestras de Navarra, S.L., Oficina de Convenciones y Visitantes de Acapulco |
 
 ## FFaker::Youtube
 
 | Method | Example |
 | ------ | ------- |
-| `embed_url` | www.youtube.com/embed/IcrbM1l_BoI, www.youtube.com/embed/uxpDa-c-4Mc, www.youtube.com/embed/vjW8wmF5VWc |
-| `share_url` | youtu.be/OPf0YbXqDm0, youtu.be/2vjPBrBU-TM, youtu.be/hT_nvWreIhg |
-| `url` | www.youtube.com/watch?v=kffacxfA7G4, www.youtube.com/watch?v=uelHwf8o7_U, www.youtube.com/watch?v=iS1g8G_njx8 |
-| `video_id` | 450p7goxZqg, CevxZvSJLk8, fRh_vgS2dFE |
+| `embed_url` | www.youtube.com/embed/OPf0YbXqDm0, www.youtube.com/embed/uxpDa-c-4Mc, www.youtube.com/embed/QGJuMBdaqIw |
+| `share_url` | youtu.be/hT_nvWreIhg, youtu.be/yzTuBuRdAyA, youtu.be/PIh2xe4jnpk |
+| `url` | www.youtube.com/watch?v=y6Sxv-sUYtM, www.youtube.com/watch?v=gCYcHz2k5x0, www.youtube.com/watch?v=uxpDa-c-4Mc |
+| `video_id` | iS1g8G_njx8, uelHwf8o7_U, YBHQbu5rbdQ |
