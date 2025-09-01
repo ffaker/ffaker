@@ -1,9 +1,13 @@
 ## development
 
   - Add your change HERE
+
+## 2.25.0
   - Generator for Finnish identity numbers [@zHarrowed]
   - Fix typos and add Codespell GitHub action [@kianmeng]
   - Add FFaker::Boolean.boolean with true ratio [@nedzib]
+  - Add LoremTW and JobTW [@cookiepingyen]
+  - Add loan tools to bank [@hulous]
 
 ## 2.24.0
   - *BREAKING CHANGE*: Drop support under ruby 3.0 [@marocchino]
@@ -481,6 +485,7 @@ Api additions by Rafael Souza
 [@brnrdog]: https://github.com/brnrdog
 [@brupla6126]: https://github.com/brupla6126
 [@ckyOL]: https://github.com/ckyOL
+[@cookiepingyen]: https://github.com/cookiepingyen
 [@danderozier]: https://github.com/danderozier
 [@dankimio]: https://github.com/dankimio
 [@delucas]: https://github.com/delucas
