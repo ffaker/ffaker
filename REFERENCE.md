@@ -249,7 +249,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Sydney, Australia/Brisbane, Australia/Darwin |
+| `time_zone` | Australia/Perth, Australia/Sydney, Australia/Darwin |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -936,24 +936,24 @@
 | `card_number` | 0881 1113 8121 5000, 7524 0230 1909 1662, 7301 2226 6397 4548 |
 | `card_type` | mastercard, maestro, solo |
 | `iban` | DO50GCBH29467231689551372717, LU338569240126150859, BE89929107166643 |
-| `loan_amount` | 9914, 65346, 23259 |
-| `loan_interest_rate` | 8.85, 1.73, 10.49 |
-| `loan_term` | 12, 24, 36, 48, 60, 72, 84 |
+| `loan_amount` | 79184, 69481, 17196 |
+| `loan_interest_rate` | 4.98, 4.5, 2.39 |
+| `loan_term` | 12, 36, 72 |
 
 ## FFaker::BankUS
 
 | Method | Example |
 | ------ | ------- |
-| `account_number` | 081401370746466, 2347910978238, 9093807601 |
-| `routing_number` | 094894921, 068199652, 032762549 |
+| `account_number` | 6466423479109, 8238190938076019, 8949268199653 |
+| `routing_number` | 027625426, 060505846, 617217600 |
 
 ## FFaker::Book
 
 | Method | Example |
 | ------ | ------- |
-| `author` | Sheila Mraz, Cira Cummerata, Lesli Windler |
-| `cover` | https://robohash.org/cupiditateundesit.png?size=300x300, https://robohash.org/iustonemodoloremque.png?size=300x300, https://robohash.org/voluptatesreiciendisvelit.png?size=300x300 |
-| `description` | Ipsa voluptatum quae molestias facere esse ducimus deserunt. Inventore molestiae quasi quas saepe provident nesciunt assumenda. Veniam quisquam alias ab adipisci cupiditate tempora commodi. Dicta debitis aperiam earum officia., Cumque quo aliquam alias vero mollitia. Tenetur ab unde error reprehenderit sint. Velit veritatis harum tempora amet eius tenetur illo., Ad officiis facilis numquam autem deleniti impedit minima. Sed quas quod nulla velit odio esse in ut. Voluptas ut dignissimos perspiciatis unde voluptates quod nemo. Quasi quo occaecati possimus nostrum assumenda voluptas odit. |
+| `author` | Bridget Nicolas, Marshall Hodkiewicz, Carmelita Robel |
+| `cover` | https://robohash.org/ipsaquosmaxime.png?size=300x300, https://robohash.org/inodioerror.png?size=300x300, https://robohash.org/culpainventoremolestiae.png?size=300x300 |
+| `description` | Atque officiis sint ratione placeat autem quis facere. Quae consectetur sint modi ex. Dicta debitis aperiam earum officia., Cumque quo aliquam alias vero mollitia. Tenetur ab unde error reprehenderit sint. Velit veritatis harum tempora amet eius tenetur illo., Ad officiis facilis numquam autem deleniti impedit minima. Sed quas quod nulla velit odio esse in ut. Voluptas ut dignissimos perspiciatis unde voluptates quod nemo. Quasi quo occaecati possimus nostrum assumenda voluptas odit. |
 | `genre` | Blessing, Covenant, Children's literature |
 | `isbn` | 14465754568, 16855532330, 15054367769 |
 | `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=Journey+of+the+Flying+Cousins&amp;top_text=Semi-autobiographical+novel&amp;author=Bernardina+Terry&amp;image_code=36&amp;theme=5, https://orly-appstore.herokuapp.com/generate?title=Rise+of+the+Danger+Pickpocket&amp;top_text=Prophecy&amp;author=Winona+Stanton&amp;image_code=20&amp;theme=1, https://orly-appstore.herokuapp.com/generate?title=Return+of+the+Death+Thief&amp;top_text=Women%27s+erotica&amp;author=Madonna+Kling&amp;image_code=26&amp;theme=8 |
@@ -1441,7 +1441,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x00007f307f5c6d98&gt;, #&lt;File:0x00007f307f5f19f8&gt;, #&lt;File:0x00007f307fd91e10&gt; |
+| `file` | #&lt;File:0x00007f27a0fe1090&gt;, #&lt;File:0x00007f27a0f970a8&gt;, #&lt;File:0x00007f27a0fbdff0&gt; |
 | `url` | https://dummyimage.com/300x300/ac9886/9efabb.png?text=, https://dummyimage.com/300x300/a3a4a3/0eb607.png?text=, https://dummyimage.com/300x300/438a37/61afc6.png?text= |
 
 ## FFaker::Internet
@@ -1756,8 +1756,8 @@
 | `first_name` | Bambi, Anitra, Shanta |
 | `first_name_female` | Arlena, Dolly, Carina |
 | `first_name_male` | Ned, Rafael, Wilfredo |
-| `html_safe_last_name` | Raynor, Senger, Hansen |
-| `html_safe_name` | Luana Ritchie, Olimpia Anderson, Lavonda Morar |
+| `html_safe_last_name` | Brekke, Leannon, Douglas |
+| `html_safe_name` | Luana Ward, Olimpia Steuber, Lavonda Daniel |
 | `last_name` | Ledner, Robel, Mante |
 | `male_name_with_prefix` | Mr. Ray Ebert, Mr. Jon Pfannerstill, Mr. Del Cole |
 | `male_name_with_prefix_suffix` | Mr. Abdul Batz III, Mr. Lee Blick PhD, Mr. Dirk Balistreri I |
@@ -1818,8 +1818,8 @@
 | `first_name` | Jaroslav, Štěpán, Richard |
 | `first_name_female` | Wava, Earnestine, Marylou |
 | `first_name_male` | Valentin, Renato, Kermit |
-| `html_safe_last_name` | Nikolaus, Luettgen, Quigley |
-| `html_safe_name` | Lubomír Stiedemann, Michaela Ebert, Hana Fadel |
+| `html_safe_last_name` | Reynolds, Ferry, Hyatt |
+| `html_safe_name` | Lubomír Bruen, Michaela Sauer, Hana Sawayn |
 | `last_name` | Adámek, Coufal, Benešová |
 | `male_name_with_prefix` | Mr. Davis Brožová, Mr. Carl Berková, Mr. Don Fiala |
 | `male_name_with_prefix_suffix` | Mr. Boyd Fišerová Ph.D., Mr. Jc Dostálová DSc., Mr. Jeremy Fojtík Th.D. |
@@ -1848,8 +1848,8 @@
 | `first_name` | Sørine, Kathrine, Joachim |
 | `first_name_female` | Aurora, Marsha, Birgit |
 | `first_name_male` | Vincenzo, Reynaldo, Marco |
-| `html_safe_last_name` | Tillman, Stanton, Dibbert |
-| `html_safe_name` | Eline Bosco, Rikke Hammes, Leif Conn |
+| `html_safe_last_name` | Batz, Dare, Glover |
+| `html_safe_name` | Eline Casper, Rikke Hoppe, Leif Hilpert |
 | `last_name` | Doyle, Beatty, Leffler |
 | `male_name` | Troels Kerluke, Karsten Zboncak, Walther Goyette Rutherford |
 | `male_name_with_prefix` | Mr. Issac Klocko, Mr. Mose Mosciski, Mr. Pete Herzog |
@@ -1876,8 +1876,8 @@
 | `first_name` | Katherin, Yon, Catherin |
 | `first_name_female` | Aundrea, Jeana, Rossana |
 | `first_name_male` | Chi, Derrick, Jude |
-| `html_safe_last_name` | Dibbert, Schuppe, Kling |
-| `html_safe_name` | Yvette Bergnaum, Douglass Wiegand, An Connelly |
+| `html_safe_last_name` | DuBuque, Satterfield, Batz |
+| `html_safe_name` | Yvette Murray, Douglass Berge, An Shields |
 | `last_name` | Jacobi, Ziemann, Wisoky |
 | `male_name_with_prefix` | Mr. Rocco Pouros, Mr. Stuart Cronin, Mr. Hal Kerluke |
 | `male_name_with_prefix_suffix` | Mr. Leonel Kshlerin DDS, Mr. Lenard Lehner V, Mr. Rocco Casper III |
@@ -2022,8 +2022,8 @@
 | `full_name` | Nohemí Lockman Hickle, Fernando Hudson Bailey, Victoriano Nolan Aufderhar |
 | `full_name_no_prefix` | Rubén Augusto Blanda Waelchi, Benito Beer Flatley, Pamela Kautzer Sauer |
 | `full_name_prefix` | Sr. León Octavio Pfannerstill Corkery, Sr. Saúl Simonis Cartwright, Sra. Emilia Sipes Schowalter |
-| `html_safe_last_name` | Ritchie, Larkin, Bergnaum |
-| `html_safe_name` | Iris Stroman, Kevin Purdy, Jorge Aufderhar |
+| `html_safe_last_name` | Davis, Beatty, Towne |
+| `html_safe_name` | Iris Terry, Kevin Kreiger, Jorge Bernhard |
 | `last_name` | Koepp, Gorczany, Denesik |
 | `male_name` | Mauro, Arquímides, Quetzalcóatl |
 | `male_name_with_prefix` | Sr. Angel Kshlerin, C. Elmer McClure, Sr. Willis Predovic |
@@ -2052,8 +2052,8 @@
 | `first_name` | Issac, Prince, Ted |
 | `first_name_female` | Phyllis, Lavenia, Sierra |
 | `first_name_male` | Lino, Blaine, Jerald |
-| `html_safe_last_name` | Davis, Ryan, Conn |
-| `html_safe_name` | Dinah Wilkinson, Leontine Stacia Schuppe, Gustavo Doyle |
+| `html_safe_last_name` | Schultz, Price, Gulgowski |
+| `html_safe_name` | Dinah Greenholt, Leontine Stacia Pacocha, Gustavo Konopelski |
 | `last_name` | Kuvalis, Ortiz, Kemmer |
 | `male_name_with_prefix` | Mr. Lenny Shields, Mr. Damien Nolan, Mr. Bobby Langworth |
 | `male_name_with_prefix_suffix` | Mr. Zachariah Hickle V, Mr. Kris Fadel DVM, Mr. Mauro Jacobi MD |
@@ -2079,8 +2079,8 @@
 | `first_name` | Delphine, Avery, Sari |
 | `first_name_female` | Reba, Argelia, Cyndi |
 | `first_name_male` | Erik, Ahmed, Florentino-Rodney |
-| `html_safe_last_name` | Aufderhar, Lueilwitz, Emmerich |
-| `html_safe_name` | Rey Beatty, Ginny Mueller, Cheri Trantow |
+| `html_safe_last_name` | Rutherford, Stamm, Rau |
+| `html_safe_name` | Rey Price, Ginny Ziemann, Cheri Stehr |
 | `last_name` | Gislason, Sanford, Sipes |
 | `male_name_with_prefix` | Mr. Solomon Nikolaus, Mr. Ned Abshire, Mr. Hai Fritsch |
 | `male_name_with_prefix_suffix` | Mr. Jaime Gulgowski MD, Mr. Henry Lueilwitz Sr., Mr. Jeremy Wuckert III |
@@ -2106,8 +2106,8 @@
 | `first_name` | Edward, Katrice, Chara |
 | `first_name_female` | Malorie, Phillis, Annemarie |
 | `first_name_male` | Ervin, Matt, Giuseppe |
-| `html_safe_last_name` | Brakus, Kreiger, Keebler |
-| `html_safe_name` | Ardelia Kuhic, Mitsuko Gottlieb, Lawrence Kiehn |
+| `html_safe_last_name` | Schmeler, Torp, Veum |
+| `html_safe_name` | Ardelia Lemke, Mitsuko Grimes, Lawrence Wiza |
 | `last_name` | Azarcon, Tanhehco, Murcia |
 | `male_name_with_prefix` | Mr. Booker Calapatia, Mr. Colin Arrogante, Mr. Sean Cayubyub |
 | `male_name_with_prefix_suffix` | Mr. Joe Butil DVM, Mr. Thanh Tupaz II, Mr. Cristopher Abulog V |
@@ -2171,8 +2171,8 @@
 | `first_name` | Orville German, Wally, Jesus |
 | `first_name_female` | Janette, Yasuko, Librada |
 | `first_name_male` | Johnie, Rogelio, Rigoberto |
-| `html_safe_last_name` | Lesch, Witting, Rau |
-| `html_safe_name` | Rafael Beer, Linh Bednar, Santos Mitchel Greenholt |
+| `html_safe_last_name` | Zemlak, Padberg, Nader |
+| `html_safe_name` | Rafael Haley, Linh Ryan, Santos Mitchel Gibson |
 | `last_name` | Medhurst, Jones, Lindgren |
 | `male_name_with_prefix` | Mr. Bernie Hahn, Mr. Leroy Abbott, Mr. Tyler Leannon |
 | `male_name_with_prefix_suffix` | Mr. Rueben Ritchie Sr., Mr. Maurice Bednar Jr., Mr. Booker Marquardt II |
@@ -2310,12 +2310,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | +418005784885, +418002740818, 0041800 280 02 56 |
-| `home_work_phone_number` | 043 445 26 95, 043 470 40 56, 0041586405954 |
-| `mobile_phone_number` | +4177 242 67 02, 0041798516049, +41744003038 |
-| `phone_number` | 027 069 36 57, +41793818112, 08488201498 |
-| `premium_rate_phone_number` | 0900 206 14 02, +419017451508, 09005184712 |
-| `shared_cost_phone_number` | +418449747097, +41848 907 36 22, 00418444487246 |
+| `free_phone_number` | +418005784885, 0800 274 08 18, 0800 280 02 56 |
+| `home_work_phone_number` | 004152 445 26 95, +4126 470 40 56, +41316405954 |
+| `mobile_phone_number` | +4179 242 67 02, 004176 851 60 49, 004178 400 30 38 |
+| `phone_number` | +41520693657, +4176 381 81 12, 08408201498 |
+| `premium_rate_phone_number` | 0906 206 14 02, 0900 745 15 08, 09005184712 |
+| `shared_cost_phone_number` | 08429747097, 0848 907 36 22, +418444487246 |
 
 ## FFaker::PhoneNumberCU
 
