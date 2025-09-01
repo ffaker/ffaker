@@ -7,7 +7,7 @@ class TestBank < Test::Unit::TestCase
 
   assert_methods_are_deterministic(
     FFaker::Bank,
-    :iban, :card_number, :card_expiry_date, :card_type
+    :iban, :card_number, :card_expiry_date, :card_type, :loan_interest_rate, :loan_term, :loan_amount
   )
 
   def setup

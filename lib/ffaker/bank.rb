@@ -104,15 +104,15 @@ module FFaker
     end
 
     def loan_interest_rate(min_rate = 1.5, max_rate = 15.0)
-      rand(min_rate..max_rate).round(2)
+      fetch_sample(min_rate..max_rate).round(2)
     end
 
     def loan_term
-      [12, 24, 36, 48, 60, 72, 84].sample
+      fetch_sample([12, 24, 36, 48, 60, 72, 84])
     end
 
     def loan_amount(min_amount = 1_000, max_amount = 100_000)
-      rand(min_amount..max_amount)
+      fetch_sample(min_amount..max_amount)
     end
 
     private
