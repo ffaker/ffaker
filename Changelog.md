@@ -1,6 +1,7 @@
 ## development
 
   - Add your change HERE
+  - Add `AddressBE` for Belgian addresses with 4 digit postal code and existing province/city names [@zzip]
 
 ## 2.25.0
   - Generator for Finnish identity numbers [@zHarrowed]
@@ -555,4 +556,5 @@ Api additions by Rafael Souza
 [@walerian777]: https://github.com/walerian777
 [@xunker]: https://github.com/xunker
 [@zHarrowed]: https://github.com/zHarrowed
+[@zzip]: https://github.com/zzip
 

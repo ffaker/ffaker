@@ -35,6 +35,7 @@ module FFaker
     'ar' => 'AR',
     'au' => 'AU',
     'aws' => 'AWS',
+    'be' => 'BE',
     'br' => 'BR',
     'ca' => 'CA',
     'ch' => 'CH',
