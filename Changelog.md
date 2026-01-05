@@ -2,6 +2,7 @@
 
   - Add your change HERE
   - Add `AddressBE` for Belgian addresses with 4 digit postal code and existing province/city names [@zzip]
+  - Update `AddressUA` city names according to the current official legislation [@jalkoby]
 
 ## 2.25.0
   - Generator for Finnish identity numbers [@zHarrowed]
