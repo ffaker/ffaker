@@ -11,7 +11,7 @@ class TestFakerDevice < Test::Unit::TestCase
   )
 
   def test_name
-    assert_match(/\A[\w\s\-\+]+\z/i, FFaker::Device.name)
+    assert_match(/\A[\w\s\-+]+\z/i, FFaker::Device.name)
   end
 
   def test_manufacturer
