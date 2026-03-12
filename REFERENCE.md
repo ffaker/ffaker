@@ -165,6 +165,7 @@
  * [FFaker::PhoneNumberDA](#ffakerphonenumberda)
  * [FFaker::PhoneNumberDE](#ffakerphonenumberde)
  * [FFaker::PhoneNumberFR](#ffakerphonenumberfr)
+ * [FFaker::PhoneNumberGB](#ffakerphonenumbergb)
  * [FFaker::PhoneNumberID](#ffakerphonenumberid)
  * [FFaker::PhoneNumberIT](#ffakerphonenumberit)
  * [FFaker::PhoneNumberJA](#ffakerphonenumberja)
@@ -251,7 +252,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Perth, Australia/Brisbane, Australia/Adelaide |
+| `time_zone` | Australia/Canberra, Australia/Sydney, Australia/Hobart |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -1478,7 +1479,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x00007fe323e05d68&gt;, #&lt;File:0x00007fe323e1e840&gt;, #&lt;File:0x00007fe323e16b68&gt; |
+| `file` | #&lt;File:0x00007f898bee91e0&gt;, #&lt;File:0x00007f898bee21b0&gt;, #&lt;File:0x00007f898bef92e8&gt; |
 | `url` | https://dummyimage.com/300x300/8e3629/2da380.png?text=, https://dummyimage.com/300x300/42e777/5f9c6f.png?text=, https://dummyimage.com/300x300/ca65c2/f2d139.png?text= |
 
 ## FFaker::Internet
@@ -1793,8 +1794,8 @@
 | `first_name` | Oren, Reyna, Shanel |
 | `first_name_female` | Pok, Kecia, Sherita |
 | `first_name_male` | Hoyt, Andreas, Cristobal |
-| `html_safe_last_name` | Steuber, Glover, Collins |
-| `html_safe_name` | Loan Medhurst, Ines Bartell, Terica Prosacco |
+| `html_safe_last_name` | Bashirian, Olson, Hettinger |
+| `html_safe_name` | Loan Nikolaus, Ines Schmeler, Terica Bahringer |
 | `last_name` | Collier, Wilkinson, Sanford |
 | `male_name_with_prefix` | Mr. Emanuel Cummerata, Mr. Osvaldo Beahan, Mr. Robert Berge |
 | `male_name_with_prefix_suffix` | Mr. Jamie Hoeger IV, Mr. Jamie Padberg III, Mr. Elliot Klein IV |
@@ -1855,8 +1856,8 @@
 | `first_name` | Miroslava, Markéta, Lucie |
 | `first_name_female` | Glynis, Marianela, Edda |
 | `first_name_male` | Timothy, Kent, Marcellus |
-| `html_safe_last_name` | Kemmer, Ruecker, Littel |
-| `html_safe_name` | Radek Sporer, Jana Spencer, Barbora Ritchie |
+| `html_safe_last_name` | Hackett, Cummerata, Hudson |
+| `html_safe_name` | Radek Dietrich, Jana Abshire, Barbora Nolan |
 | `last_name` | Benešová, Fišer, Dvořáková |
 | `male_name_with_prefix` | Mr. Luke Bendová, Mr. Ramon Bartoň, Mr. Cyrus David |
 | `male_name_with_prefix_suffix` | Mr. Ward Dolejší Ph.D., Mr. Ronald Fišerová DSc., Mr. Vernon Dvořáková Ph.D. |
@@ -1885,8 +1886,8 @@
 | `first_name` | Ulrik, Ditlev, Erna |
 | `first_name_female` | Joanie, Hyo, Lucy |
 | `first_name_male` | Giuseppe, Jamey, Christian |
-| `html_safe_last_name` | Windler, Smith, Emmerich |
-| `html_safe_name` | Ole Walsh, Allan Hills, Tom Hodkiewicz |
+| `html_safe_last_name` | Stokes, Hyatt, Jones |
+| `html_safe_name` | Ole Bogisich, Allan Koch, Tom Boyer |
 | `last_name` | Labadie, Mitchell, Grady |
 | `male_name` | Hr. Lars Bernier, Ingemann Pacocha, Ivan Frami |
 | `male_name_with_prefix` | Mr. Mason Dare, Mr. Tyson Abbott, Mr. Gene Zieme |
@@ -1913,8 +1914,8 @@
 | `first_name` | Brigida, Frank, Carlton |
 | `first_name_female` | Tai, Karin, Florrie |
 | `first_name_male` | Freddie, Jamar, Santos |
-| `html_safe_last_name` | Greenfelder, Rodriguez, Stiedemann |
-| `html_safe_name` | Lorene Prohaska, Caterina Hayes, Adelia Senger |
+| `html_safe_last_name` | McCullough, Gibson, Walsh |
+| `html_safe_name` | Lorene Rippin, Caterina Ferry, Adelia Stoltenberg |
 | `last_name` | Cole, Stanton, Luettgen |
 | `male_name_with_prefix` | Mr. Graig Hammes, Mr. Russ Douglas, Mr. Dane Hermann |
 | `male_name_with_prefix_suffix` | Mr. Cedric Stanton I, Mr. Lester Hodkiewicz Jr., Mr. Forest Bailey II |
@@ -2059,8 +2060,8 @@
 | `full_name` | Lino Stracke Turcotte, Guillermo Jacobson Runolfsson, Leonardo Dooley Botsford |
 | `full_name_no_prefix` | Elena Little Satterfield, Carlos McKenzie Medhurst, Lilia Harber Lueilwitz |
 | `full_name_prefix` | Srita. Hanna Cremin Runolfsson, Srita. Eva Considine Auer, C. Cristal Casandra Trantow Considine |
-| `html_safe_last_name` | Kulas, Christiansen, Murray |
-| `html_safe_name` | Elba Morissette, Carmen Christiansen, Axel Zulauf |
+| `html_safe_last_name` | Powlowski, Kshlerin, Daniel |
+| `html_safe_name` | Elba Ledner, Carmen Halvorson, Axel Boyle |
 | `last_name` | Langworth, Raynor, Rutherford |
 | `male_name` | Oswaldo, Abraham, Julián Herminio |
 | `male_name_with_prefix` | C. Jacinto Roberts, C. Kraig Kemmer, C. Myles McCullough |
@@ -2089,8 +2090,8 @@
 | `first_name` | Anibal Claude, Gene, Nelda Zofia |
 | `first_name_female` | Fran, Carita, Marlen |
 | `first_name_male` | Horace, Tim, Doug |
-| `html_safe_last_name` | Schuster, Boehm, Stiedemann |
-| `html_safe_name` | Tandy Victoria Conn, Jed Blanda, Kermit Prosacco |
+| `html_safe_last_name` | Stracke, Schmidt, Walter |
+| `html_safe_name` | Tandy Victoria Brakus, Jed Hilll, Kermit Ankunding |
 | `last_name` | Kuphal, Weimann, Roob |
 | `male_name_with_prefix` | Mr. Jacob Abernathy, Mr. Merlin Howe, Mr. Fidel Graham |
 | `male_name_with_prefix_suffix` | Mr. Gregg Barton MD, Mr. Gustavo Yost Sr., Mr. Dwain Leuschke I |
@@ -2116,8 +2117,8 @@
 | `first_name` | Virgie, Giovanni, Loyd |
 | `first_name_female` | Ima, Babara, Stephenie |
 | `first_name_male` | Alex, Harland-Irving, Tanner |
-| `html_safe_last_name` | Hoeger, Wuckert, Skiles |
-| `html_safe_name` | Mariann-Nikita Goldner, Delcie Daugherty, Raphael Rau |
+| `html_safe_last_name` | Breitenberg, Boehm, Little |
+| `html_safe_name` | Mariann-Nikita Hilpert, Delcie Brakus, Raphael Swift |
 | `last_name` | Hackett, Nicolas, Hansen |
 | `male_name_with_prefix` | Mr. Merle Robel, Mr. Santiago Ritchie, Mr. Odis Williamson |
 | `male_name_with_prefix_suffix` | Mr. Arturo-Lupe Abbott MD, Mr. Warren Little IV, Mr. Wm Kozey DVM |
@@ -2143,8 +2144,8 @@
 | `first_name` | Jerrold, Khadijah, Araceli |
 | `first_name_female` | Skye, Patti, Dannielle |
 | `first_name_male` | Bret, Ramiro, Daren |
-| `html_safe_last_name` | Weimann, Stanton, Kertzmann |
-| `html_safe_name` | Hal Koepp, Jonah Lindgren, Lorenzo Metz |
+| `html_safe_last_name` | Kozey, Auer, Kertzmann |
+| `html_safe_name` | Hal Hoppe, Jonah Lehner, Lorenzo Bartell |
 | `last_name` | Reoja, Parsaligan, Ramirez |
 | `male_name_with_prefix` | Mr. Carter Lopez, Mr. Myron Monteverde, Mr. Tyron Ambriz |
 | `male_name_with_prefix_suffix` | Mr. Ernest Pante V, Mr. Tony Allanic IV, Mr. Raymond de la Cruz II |
@@ -2208,8 +2209,8 @@
 | `first_name` | Edmond, Elayne, Selena |
 | `first_name_female` | Renna, Crystle, Pamula |
 | `first_name_male` | Cedrick, Elroy, Clarence |
-| `html_safe_last_name` | Corkery, Toy, Rosenbaum |
-| `html_safe_name` | Carey Dicki, Madaline Marylouise Cole, Jamison Jaskolski |
+| `html_safe_last_name` | Morissette, Ritchie, Cummings |
+| `html_safe_name` | Carey Kautzer, Madaline Marylouise Prohaska, Jamison Erdman |
 | `last_name` | Hyatt, Stamm, Boyle |
 | `male_name_with_prefix` | Mr. Glenn Monahan, Mr. Maxwell Witting, Mr. Sergio Hackett |
 | `male_name_with_prefix_suffix` | Mr. Wilfredo Hagenes I, Mr. Cletus Parisian Sr., Mr. Ryan Huels III |
@@ -2347,12 +2348,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 0800 466 87 28, +418006998332, 0041800 250 61 38 |
-| `home_work_phone_number` | 024 572 98 84, +4171 382 37 34, +4134 504 03 03 |
-| `mobile_phone_number` | 0041742442063, 0752156160, 004179 943 81 95 |
-| `phone_number` | +41748509589, 0041840 853 73 07, 0041900 779 55 05 |
-| `premium_rate_phone_number` | 09010904882, 0906 693 92 30, +41901 604 88 71 |
-| `shared_cost_phone_number` | +41842 782 59 56, +41848 098 68 75, +418446332917 |
+| `free_phone_number` | 00418004668728, 00418006998332, 08002506138 |
+| `home_work_phone_number` | +4141 572 98 84, +4141 382 37 34, 026 504 03 03 |
+| `mobile_phone_number` | 0742442063, 004178 215 61 60, 074 943 81 95 |
+| `phone_number` | 0778509589, 0041844 853 73 07, 0041906 779 55 05 |
+| `premium_rate_phone_number` | +41900 090 48 82, +41901 693 92 30, +419006048871 |
+| `shared_cost_phone_number` | +418427825956, 00418420986875, 08426332917 |
 
 ## FFaker::PhoneNumberCU
 
@@ -2413,218 +2414,232 @@
 | `mobile_phone_number` | 0695083535, 06 83 96 79 47, 06 71 35 60 06 |
 | `phone_number` | 0159796405, 07 07 20 88 86, 0611699015 |
 
+## FFaker::PhoneNumberGB
+
+| Method | Example |
+| ------ | ------- |
+| `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
+| `home_work_phone_number` | 015396 28613, 0116 134 8654, 0121 044 8114 |
+| `international_home_work_phone_number` | +44 1865 347434, +44 20 8823 3526, +44 121 436 7589 |
+| `international_mobile_phone_number` | +44 7624 9766591, +44 7430 6932272, +44 7748 4561383 |
+| `international_phone_number` | +44 121 195 1821, +44 116 159 1684, +44 1382 188732 |
+| `mobile_phone_number` | 07998 7377973, 07624 9611970, 07398 2433741 |
+| `mobile_prefix` | 07122, 07347, 07565 |
+| `phone_number` | 01382 194232, 0113 328 2856, 0113 281 0718 |
+| `region_prefix` | 020, 01204, 01386 |
+
 ## FFaker::PhoneNumberID
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 0293-1335934, 0769-5440448, 0624-48347434 |
-| `international_home_phone_number` | +62254-8233526, +62984-3675894, +62562-65912306 |
-| `international_mobile_phone_number` | +62884-32272484, +62878-61383479, +62851-82139591 |
-| `international_phone_number` | +62881-84618873, +62387-98737797, +62887-96119701 |
-| `mobile_phone_number` | 0886-82433741, 0883-22147656, 0857-94232232 |
-| `phone_number` | 0813-85628107, 0819-09997367, 0388-63859263 |
+| `home_phone_number` | 0924-67639638, 0402-26388479, 0352-40508553 |
+| `international_home_phone_number` | +62273-6936114, +62526-2269586, +62567-18850405 |
+| `international_mobile_phone_number` | +62818-84081425, +62823-00337190, +62811-59531919 |
+| `international_phone_number` | +62815-01414725, +62897-20472204, +62887-69335094 |
+| `mobile_phone_number` | 0853-58351522, 0819-96412066, 0856-12574578 |
+| `phone_number` | 0260-9452055, 0232-52316606, 0401-8178423 |
 
 ## FFaker::PhoneNumberIT
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | +390875479140, 0039096785537693, +39 0573 14402269 |
-| `mobile_phone_number` | 003933718850405, 0039335408142, 0039345 033719 |
-| `phone_number` | +3934959531919, 0039038101414725, +39 0831 047220 |
+| `home_phone_number` | 0039 044511017911, 0039046254235059, 00390982907245 |
+| `mobile_phone_number` | +39329 578307, +39 347 788900, 0039 339 67860655 |
+| `phone_number` | +39329472012, +39 0771 54870309, +39 088503047035 |
 
 ## FFaker::PhoneNumberJA
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 04 6933 5094, 0297 35 1522, 04 6412 0669 |
+| `home_phone_number` | 04 8020 9130, 086 767 9161, 049 906 5709 |
 | `home_phone_number_format`(...) |  |
 | `home_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for home_phone_prefix |
-| `international_home_phone_number` | +81 4 2574 5786, +81 92 452 0553, +81 8388 5 2316 |
-| `international_mobile_phone_number` | +81 70 0648 1784, +81 70 3357 1101, +81 70 7911 9843 |
-| `international_phone_number` | +81 494 42 3505, +81 83 869 0724, +81 3 1578 3073 |
-| `mobile_phone_number` | 070 7889 0036, 090 6065 5447, 070 0122 5548 |
+| `international_home_phone_number` | +81 88 706 5908, +81 8477 6 9779, +81 5769 7 4628 |
+| `international_mobile_phone_number` | +81 70 0696 0351, +81 70 4014 5882, +81 90 9399 6066 |
+| `international_phone_number` | +81 90 0328 2761, +81 6 4403 7362, +81 80 9334 9199 |
+| `mobile_phone_number` | 070 0128 4291, 090 0209 2963, 090 6390 6383 |
 | `mobile_phone_number_format` | 90 #### ####, 80 #### ####, 70 #### #### |
-| `mobile_prefix` | 90, 70, 80 |
-| `phone_number` | 099 802 0913, 086 767 9161, 090 9065 7097 |
+| `mobile_prefix` | 80, 90, 70 |
+| `phone_number` | 0283 92 3233, 0547 82 8207, 01658 1 5119 |
 
 ## FFaker::PhoneNumberKR
 
 | Method | Example |
 | ------ | ------- |
 | `contry_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for contry_code |
-| `home_work_phone_number` | 044 0659 0816, 044 7977 4628, 062 2069 6035 |
-| `international_home_work_phone_number` | +82 62 1401 4588, +82 32 0939 9606, +82 54 3403 2827 |
-| `international_mobile_phone_number` | +82 16 1472 4403, +82 16 7362 0399, +82 19 3491 9901 |
-| `international_phone_number` | +82 11 8429 1002, +82 11 2963 6390, +82 43 3834 3595 |
-| `mobile_phone_number` | 019 3433 8326, 011 9232 3362, 016 8282 0776 |
-| `phone_number` | 011 1195 6645, 041 1472 2570, 049 9564 9796 |
+| `home_work_phone_number` | 042 6645 2754, 061 1472 2570, 049 9564 9796 |
+| `international_home_work_phone_number` | +82 33 5242 5911, +82 32 6459 2236, +82 52 3154 8830 |
+| `international_mobile_phone_number` | +82 16 2037 2637, +82 16 9926 6480, +82 19 6648 1556 |
+| `international_phone_number` | +82 16 0107 1128, +82 53 5029 2817, +82 10 6095 7244 |
+| `mobile_phone_number` | 010 7093 2077, 010 5921 6136, 010 5998 0327 |
+| `phone_number` | 011 8356 1121, 010 5465 5240, 033 5906 5233 |
 
 ## FFaker::PhoneNumberMX
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | 35 2425 9112, 26 4592 2363, 98 6315 4883 |
-| `international_home_work_phone_number` | +52 02 2037 2637, +52 99 2664 8076, +52 64 8155 6660 |
-| `international_mobile_phone_number` | +52 1 10 7112 8150, +52 1 29 2817 6460, +52 1 95 7244 8709 |
-| `international_phone_number` | +52 20 7785 9216, +52 36 4599 8032, +52 1 75 9835 6112 |
-| `mobile_phone_number` | 044 10 5465 5240, 044 35 9065 2339, 044 98 3017 9020 |
-| `phone_number` | 04 0144 5064, 044 61 8296 3790, 044 92 3312 4578 |
-| `toll_free_number` | 01 800 784 4382, 01 800 178 8534, 01 800 877 9002 |
+| `home_work_phone_number` | 99 8301 7902, 04 0401 4450, 64 7618 2963 |
+| `international_home_work_phone_number` | +52 79 0392 3312, +52 45 7878 4438, +52 21 7885 3487 |
+| `international_mobile_phone_number` | +52 1 79 0026 8477, +52 1 42 8728 6015, +52 1 73 3158 3436 |
+| `international_phone_number` | +52 1 18 8336 4997, +52 39 4155 3002, +52 99 4846 3839 |
+| `mobile_phone_number` | 044 80 9179 7598, 044 90 0361 3505, 044 59 0003 6108 |
+| `phone_number` | 044 77 7409 0518, 30 8987 1331, 044 12 4171 2267 |
+| `toll_free_number` | 01 800 252 2884, 01 800 557 3069, 01 800 996 7697 |
 
 ## FFaker::PhoneNumberNL
 
 | Method | Example |
 | ------ | ------- |
-| `home_work_phone_number` | 072-4774287, 023-6015733, 055-583 4361 |
-| `international_home_work_phone_number` | +31 547-9793 94, +31 71-5300239, +31 514-4846 38 |
-| `international_mobile_phone_number` | +31 6 9809 1797, +31 6 98 90 03 61, +31 6 5055 9000 |
-| `international_phone_number` | +31 511-0817 77, +31 690518630, +31 6 87 13 31 12 |
-| `mobile_phone_number` | 0617122672, 06 22 88 45 57, 06 30 69 99 67 |
-| `phone_number` | 075-7292592, 073-0922824, 06 12 00 64 39 |
+| `home_work_phone_number` | 0512-92 59 26, 073-0922824, 0318-1200 64 |
+| `international_home_work_phone_number` | +31 75-498 5734, +31 40-471 4681, +31 571-39 14 92 |
+| `international_mobile_phone_number` | +31 6 00 14 71 67, +31 6 632 730 99, +31 673790060 |
+| `international_phone_number` | +31 418-0738 25, +31 167-459018, +31 6 86 48 25 15 |
+| `mobile_phone_number` | 06 81 86 77 70, 06 5334 8738, 06 20 98 17 85 |
+| `phone_number` | 0628610661, 06 15 04 64 79, 06 398 797 41 |
 
 ## FFaker::PhoneNumberPL
 
 | Method | Example |
 | ------ | ------- |
-| `area_code` | 13, 16, 58 |
-| `home_work_phone_number` | 235734094, 551468194, 292391492 |
-| `international_home_work_phone_number` | +48 890014716, +48 556632730, +48 879907379 |
-| `international_mobile_phone_number` | +48 500607550, +48 797382570, +48 504590182 |
-| `international_phone_number` | +48 236482515, +48 561867770, +48 945334873 |
-| `mobile_phone_number` | 888120981, 728598286, 510661311 |
-| `mobile_phone_number_format` | 66#######, 88#######, 50####### |
-| `mobile_prefix` | 60, 69, 88 |
-| `phone_number` | 487973987, 724153539, 664479719 |
-| `phone_number_format` | 22#######, 82#######, 55####### |
+| `area_code` | 77, 32, 33 |
+| `home_work_phone_number` | 413539544, 229719797, 827687012 |
+| `international_home_work_phone_number` | +48 445860251, +48 825472355, +48 157465356 |
+| `international_mobile_phone_number` | +48 723640956, +48 737723128, +48 573695931 |
+| `international_phone_number` | +48 331442206, +48 242444243, +48 607200967 |
+| `mobile_phone_number` | 796176973, 514803691, 727832827 |
+| `mobile_phone_number_format` | 69#######, 72#######, 57####### |
+| `mobile_prefix` | 79, 60, 51 |
+| `phone_number` | 480337742, 568240816, 179450908 |
+| `phone_number_format` | 61#######, 84#######, 44####### |
 
 ## FFaker::PhoneNumberRU
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `home_work_phone_number` | 8 872 870-12-25, 8 877 602-51-75, 8 867 723-55-37 |
-| `home_work_phone_prefix` | 074, 093, 424 |
+| `home_work_phone_number` | 8 075 743-62-74, 8 862 734-09-92, 8 877 845-88-00 |
+| `home_work_phone_prefix` | 424, 073, 074 |
 | `international_country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for international_country_code |
-| `international_home_work_phone_number` | +7 475 535-67-36, +7 341 095-68-77, +7 815 231-28-33 |
-| `international_mobile_phone_number` | +7 927 695-93-17, +7 914 144-22-06, +7 908 924-44-24 |
-| `international_phone_number` | +7 073 047-20-09, +7 980 676-17-69, +7 913 731-48-03 |
-| `international_toll_free_number` | +7 800 691-77-83, +7 800 282-76-67, +7 800 341-40-33 |
-| `mobile_phone_number` | 8 992 742-07-88, 8 960 408-16-59, 8 962 509-08-92 |
-| `mobile_phone_prefix` | 905, 992, 962 |
-| `phone_number` | 8 879 362-74-07, 8 867 099-28-84, 8 083 800-34-83 |
-| `toll_free_number` | 8 800 707-64-32, 8 800 431-73-35, 8 800 219-69-95 |
+| `international_home_work_phone_number` | +7 482 370-76-43, +7 086 243-17-33, +7 075 219-69-95 |
+| `international_mobile_phone_number` | +7 925 740-48-76, +7 928 192-12-12, +7 981 492-08-32 |
+| `international_phone_number` | +7 912 373-21-24, +7 871 354-61-00, +7 085 537-76-60 |
+| `international_toll_free_number` | +7 800 599-01-76, +7 800 694-27-70, +7 800 216-34-42 |
+| `mobile_phone_number` | 8 909 982-23-07, 8 980 603-24-70, 8 985 398-52-81 |
+| `mobile_phone_prefix` | 981, 901, 928 |
+| `phone_number` | 8 950 398-16-10, 8 922 944-64-03, 8 866 115-09-97 |
+| `toll_free_number` | 8 800 870-42-46, 8 800 733-83-35, 8 800 141-97-63 |
 
 ## FFaker::PhoneNumberSE
 
 | Method | Example |
 | ------ | ------- |
-| `area_prefix` | 40, 293, 393 |
+| `area_prefix` | 590, 910, 221 |
 | `country_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_prefix |
-| `home_work_phone_number` | 0696-980 47, 0173-87 70 46, 0303-69 09 67 |
-| `international_home_work_phone_number` | 0046 (0)502-11 82 27, 0046 (0)143-87 18 10, +46 (0)951-729 66 |
-| `international_mobile_phone_number` | 0046 (0)720-23 18 91, +46 (0)724-084825, 0046 (0)700-77 62 75 |
-| `international_phone_number` | 0046 (0)935-27 22 87, +46 (0)747-55 65 59, 0046 (0)591-95 32 36 |
-| `mobile_phone_number` | 0727-60 05 39, 0703-545510, 0734-915632 |
-| `mobile_phone_number_format` | 70#-## ## ##, 76#-## ## ##, 74#-## ## ## |
-| `mobile_prefix` | 76, 72, 70 |
-| `phone_number` | 0496-111 82, 0278-95 06 28, 0951-667 45 |
-| `phone_number_format` | 506-### ##, 523-### ##, 151-## ## ## |
+| `home_work_phone_number` | 0926-677 90, 0418-10 11 18, 0920-69 50 62 |
+| `international_home_work_phone_number` | +46 (0)951-667 45, 0046 (0)523-307 33, +46 (0)480-98 83 21 |
+| `international_mobile_phone_number` | +46 (0)735-204474, 0046 (0)741-939404, 0046 (0)700-938594 |
+| `international_phone_number` | 0046 (0)709-948538, +46 (0)512-47 48 23, 0046 (0)258-945 09 |
+| `mobile_phone_number` | 0709-36 01 66, 0708-87 21 90, 0746-66 83 22 |
+| `mobile_phone_number_format` | 73#-######, 74#-## ## ##, 70#-## ## ## |
+| `mobile_prefix` | 70, 76, 72 |
+| `phone_number` | 0652-834 12, 0742-61 58 43, 0703-72 80 09 |
+| `phone_number_format` | 382-## ## ##, 560-### ##, 300-### ## |
 
 ## FFaker::PhoneNumberSG
 
 | Method | Example |
 | ------ | ------- |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `fixed_line_number` | 6733 0368, 6988 3213, 6762 5204 |
-| `international_toll_free_number` | 800 474 3719, 800 394 0457, 800 009 3859 |
-| `mobile_number` | 8460 9948, 8538 7480, 8474 8239 |
-| `mobile_or_pager_number` | 9710 9945, 9096 7893, 9601 6600 |
-| `phone_number` | 9887 2190, 9666 8322, 9449 0881 |
-| `premium_service_number` | 1900 283 8341, 1900 270 2615, 1900 843 1683 |
-| `toll_free_number` | 1800 728 0093, 1800 434 2738, 1800 472 0635 |
-| `voip_number` | 3240 0778, 3844 9401, 3187 6964 |
+| `fixed_line_number` | 6847 2063, 6524 0077, 6884 4940 |
+| `international_toll_free_number` | 800 118 7696, 800 406 6863, 800 071 6095 |
+| `mobile_number` | 8430 3595, 8440 1085, 8496 8291 |
+| `mobile_or_pager_number` | 9861 8751, 9873 0791, 9040 1792 |
+| `phone_number` | 6852 3862, 8905 6331, 6990 3717 |
+| `premium_service_number` | 1900 544 9409, 1900 094 3662, 1900 021 8401 |
+| `toll_free_number` | 1800 870 7310, 1800 281 3307, 1800 955 7757 |
+| `voip_number` | 3766 1203, 3758 8871, 3871 7224 |
 
 ## FFaker::PhoneNumberSN
 
 | Method | Example |
 | ------ | ------- |
-| `homework_number` | 33-866-86-30, 33-971-60-95, 33-943-03-59 |
+| `homework_number` | 33-850-11-43, 33-902-92-24, 33-903-35-22 |
 | `homework_phone_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for homework_phone_prefix |
-| `mobile_number` | 76-440-10-85, 70-968-29-18, 77-618-75-18 |
-| `mobile_phone_prefix` | 70, 76, 77 |
-| `phone_number` | 33-885-23-86, 33-990-56-33, 70-199-03-71 |
-| `short_phone_number` | 754-49-40, 909-43-66, 202-18-40 |
+| `mobile_number` | 77-660-18-90, 77-278-17-90, 70-951-49-34 |
+| `mobile_phone_prefix` | 76, 77, 70 |
+| `phone_number` | 33-925-85-60, 70-958-96-32, 70-031-57-24 |
+| `short_phone_number` | 860-69-05, 178-24-20, 639-50-57 |
 
 ## FFaker::PhoneNumberTW
 
 | Method | Example |
 | ------ | ------- |
 | `contry_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for contry_code |
-| `home_work_phone_number` | (03) 870-7310, (04) 8133-0795, (07) 775-7766 |
-| `international_home_work_phone_number` | +886-3-203-7588, +886-2-7187-1722, +886-5-450-1143 |
-| `international_mobile_phone_number` | +886-930-292-245, +886-903-352-266, +886-901-890-278 |
-| `international_phone_number` | +886-3-038-9514, +886-5-455-6537, +886-4-6409-2585 |
-| `mobile_phone_number` | 0960-895-896, 0932-103-157, 0924-860-690 |
-| `phone_number` | (07) 178-2420, (08) 395-0576, (07) 392-0158 |
+| `home_work_phone_number` | (08) 623-9201, (07) 839-0836, (08) 179-6114 |
+| `international_home_work_phone_number` | +886-5-773-4518, +886-4-5693-5943, +886-2-1984-5190 |
+| `international_mobile_phone_number` | +886-934-845-299, +886-952-834-027, +886-962-392-510 |
+| `international_phone_number` | +886-4-0448-8708, +886-997-164-562, +886-996-957-144 |
+| `mobile_phone_number` | 0955-856-791, 0940-973-683, 0946-687-329 |
+| `phone_number` | 0967-286-934, 0960-901-870, (08) 154-1057 |
 
 ## FFaker::PhoneNumberUA
 
 | Method | Example |
 | ------ | ------- |
-| `home_phone_number` | 069 390-8361, 038 961-1477, 064 345-1825 |
-| `international_home_phone_number` | +380 65 693-5943, +380 41 198-4519, +380 50 348-4529 |
-| `international_mobile_phone_number` | +380 98 528-3402, +380 96 623-9251, +380 99 020-4488 |
-| `mobile_phone_number` | 096 088-9716, 073 562-9695, 096 144-5585 |
-| `phone_number` | 065 791-4097, 095 834-6687, 099 295-6728 |
+| `home_phone_number` | 049 214-6325, 038 020-3234, 054 217-2203 |
+| `international_home_phone_number` | +380 52 925-4222, +380 45 881-0434, +380 64 902-9880 |
+| `international_mobile_phone_number` | +380 93 471-7470, +380 63 047-4383, +380 98 416-2207 |
+| `mobile_phone_number` | 067 586-7176, 097 586-5625, 097 917-5638 |
+| `phone_number` | 064 617-0127, 098 288-5573, 099 313-7542 |
 
 ## FFaker::Product
 
 | Method | Example |
 | ------ | ------- |
-| `brand` | ZM, Brost, Pack |
+| `brand` | Cafunc, Canix, ZZ |
 | `letters`(...) |  |
-| `model` | Y-9052, O-8586, Q-2654 |
-| `product` | Lubalt Air Case, Phins HD Component, Sirfunc GPS Input Lifter |
-| `product_name` | Digital Component, Direct Digital System, GPS Digital Dummy Groove |
+| `model` | Q37, R-544, O85 |
+| `product` | Trerewood GPS Digital Component, SU Electric Compressor, Gensync HD Viewer |
+| `product_name` | Electric Adapter, Remote Lifter, Input Performance System |
 
 ## FFaker::SSN
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 733-63-2732, 273-68-2746, 692-70-0309 |
+| `ssn` | 220-58-5264, 231-56-0926, 141-08-9307 |
 
 ## FFaker::SSNMX
 
 | Method | Example |
 | ------ | ------- |
-| `imss` | 2228810434-9, 0298805471-7, 4701047438-3 |
-| `imss_undashed` | 94162207358, 67176858656, 25891756386 |
-| `issste` | 1701277928-8, 5573331375-4, 2218899205-8 |
-| `issste_undashed` | 10651672244, 37125638660, 17026967617 |
-| `ssn` | 9299199817-0, 6521360086-0, 2027102058-4 |
-| `ssn_undashed` | 28489461294, 55834871874, 62727356119 |
+| `imss` | 9299199817-0, 6521360086-0, 2027102058-4 |
+| `imss_undashed` | 28489461294, 55834871874, 62727356119 |
+| `issste` | 7686845336-5, 0783089770-1, 2540350617-3 |
+| `issste_undashed` | 45210062063, 07987939959, 59399953595 |
+| `ssn` | 7133160991-1, 5921049117-5, 1915701257-3 |
+| `ssn_undashed` | 44279659712, 07312460927, 66707854613 |
 
 ## FFaker::SSNSE
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 194701022551, 202002228080, 198001185836 |
+| `ssn` | 196312267053, 201803057201, 200806022709 |
 
 ## FFaker::SemVer
 
 | Method | Example |
 | ------ | ------- |
-| `next` | 0.0.1, 0.1.0, 1.0.0 |
+| `next` | 0.1.0, 1.0.0, 0.0.1 |
 
 ## FFaker::Skill
 
 | Method | Example |
 | ------ | ------- |
-| `specialties` | Hardware Instruction, Global Research, Statistical Development, Firmware Prototyping, Hardware Instruction, Mental Management, Global Design, Project Methods, Mental Architecture |
-| `specialty` | Project Development, Database Testing, Team Methods |
-| `tech_skill` | SOAP, JQuery, AWS |
-| `tech_skills` | MySQL, Ajax, Photoshop, Ruby, Java, JSON, Photoshop, Illustrator, Rails |
+| `specialties` | Software Optimization, Mental Research, Area Design, Resource Instruction, Resource Optimization, Statistical Architecture, Template Profiling, Hardware Modularization, Mental Optimization |
+| `specialty` | Prototype Modularization, Statistical Testing, Global Architecture |
+| `tech_skill` | MySQL, Zend, Ruby |
+| `tech_skills` | Sinatra, Cassandra, Shell, Python, JQuery, JavaScript, JQuery, PostgreSQL, Ajax |
 
 ## FFaker::Sport
 
@@ -2636,23 +2651,23 @@
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Taekwondo, Strzelectwo, Łyżwiarstwo szybkie |
-| `summer` | Szachy, Pchnięcie kulą, Pływanie synchroniczne |
-| `winter` | Narciarstwo dowolne, Kombinacja norweska, Skeleton |
+| `name` | Poker, Łyżwiarstwo figurowe, Jeździectwo |
+| `summer` | Piłka nożna, Hokej na trawie, Biegi płotkarski |
+| `winter` | Skeleton, Kombinacja norweska, Curling |
 
 ## FFaker::SportRU
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Пятиборье, Гребля на байдарках и каноэ, Прыжки в длину |
-| `summer` | Гольф, Дзюдо, Скалолазание |
-| `winter` | Скелетон, Фигурное катание на коньках, Лыжное двоеборье |
+| `name` | Волейбол, Каратэ, Метание диска |
+| `summer` | Легкая атлетика, Гребной спорт, Волейбол |
+| `winter` | Прыжки на лыжах с трамплина, Лыжное двоеборье, Лыжные гонки |
 
 ## FFaker::SportUS
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Taekwondo, Formula Indy, Shooting |
+| `name` | Cycling BMX, Snowboarding, Mixed Martial Arts |
 
 ## FFaker::String
 
@@ -2665,74 +2680,74 @@
 | Method | Example |
 | ------ | ------- |
 | `between`(..., ...) |  |
-| `date` | 2026-04-20, 2026-10-15, 2022-03-12 |
-| `datetime` | 2025-05-15T01:27:00+00:00, 2024-08-22T17:09:00+00:00, 2022-08-17T17:18:00+00:00 |
-| `day_of_week` | Thu, Sat, Wed |
-| `month` | November, May, March |
+| `date` | 2023-02-02, 2025-01-05, 2024-05-09 |
+| `datetime` | 2025-01-13T03:10:00+00:00, 2022-03-06T02:22:00+00:00, 2025-05-27T19:37:00+00:00 |
+| `day_of_week` | Sat, Thu, Tue |
+| `month` | May, March, January |
 
 ## FFaker::Tweet
 
 | Method | Example |
 | ------ | ------- |
-| `body` | Nisi amet id vero ab necessitatibus unde dolorem. Excepturi veritatis consequatur non mollitia repellat. Aliquam rerum eum saepe ipsam., Dolorum molestiae explicabo tempora enim aliquid. Rerum repellendus inventore nam maxime reiciendis labore. Voluptatum hic molestiae fugit., Incidunt nobis hic sequi molestiae neque nemo nisi. Molestias mollitia aspernatur in natus ducimus unde. Asperiores atque fuga expedita. |
-| `mention` | @maddie_stoltenberg, @kenda, @brandy.mckenzie |
-| `mentions` | @gussie @andrea_nitzsche, @jayson_toy @gayle_wisoky, @ron @israel |
-| `tags` | #love #christmas, #lol #beautiful, #love #fashion |
-| `tweet` | Sed ipsa temporibus cumque libero veritatis.., Corrupti porro voluptas commodi ut qui dolorem consequatur. Totam fugiat nihil eos., Ea facilis molestias.#love #fun #beach |
+| `body` | Consequatur esse assumenda maxime laborum culpa similique mollitia. Consectetur libero totam aut adipisci commodi sint a expedita. Eum ut., Sed eos hic mollitia libero. Voluptas cumque itaque quia reprehenderit. Velit sequi mollitia fuga voluptas soluta libero iusto id. Nulla., Saepe quibusdam quam illo beatae quas sequi. Ipsam repellat a commodi laborum. Sit ullam mollitia voluptatem doloribus. Molestias. |
+| `mention` | @hassan_witting, @mavis, @carri.nienow |
+| `mentions` | @zita @eliseo, @kittie @penney, @murray_jast @jules_kuhlman |
+| `tags` | #school #party, #pretty #followme, #life #food |
+| `tweet` | Accusamus consequuntur.@alysha #clouds #lol #swag #food, Quo aliquam veritatis possimus facilis. Rerum voluptatibus quidem nostrum eum alias error. Laudantium., Est facilis optio accusantium. |
 
 ## FFaker::UUID
 
 | Method | Example |
 | ------ | ------- |
-| `uuidv4` | 7979abf2-8cf3-4d25-973a-1c8563a8f1e3, 0d799952-d2a4-4bc2-9ad7-b650735ae587, 46b3b5fd-f601-4552-9c5a-649409e38090 |
-| `uuidv6` | 99362ce6-8f16-6ace-9478-66dafda70371, 8df0b70b-5243-64be-ac72-fc3eb6983844, b43f8db1-1104-6d2a-9083-7a5d9a8c26fa |
-| `uuidv7` | af02b377-2429-7448-bc6a-74b0029d3c63, 42a6b9b8-977b-7492-b88e-cb4ebff21433, c52d0c1e-a0a0-79e2-88b4-2f09a9ca7e02 |
-| `uuidv8` | f65fd96e-1050-891b-861d-e2cd2fa26aeb, 881fdd39-17be-8bc9-8a03-2da9a507c474, 28815a97-fca8-8144-b028-578a8905f3cb |
+| `uuidv4` | 443dc0ee-5ce5-4278-bb88-2be1111e0f5e, 5b031cb9-fa1f-4c7f-ac08-bf330429f930, f34ac649-1612-4d77-9379-f851979269ff |
+| `uuidv6` | d5cc5de3-0dee-6dcd-b208-449073112458, 12112ef5-e11e-60c5-967d-c778a7a10080, 740be0c6-d9d4-6309-8bb0-ab6f06a684b2 |
+| `uuidv7` | efb0ec12-1421-7c55-9deb-d9c5a45ab003, 850d7dde-ec79-7f6a-8907-4e5f9e35cb09, 00b7ec80-a372-7f90-80df-54e2056f79df |
+| `uuidv8` | 9b3fa7ee-0fa3-8248-93e8-f2f2742fb1a9, 307e5411-ad7b-82bb-9a74-9788f41e97fe, 8bde653d-4fbd-809c-a811-f65db00c57cd |
 
 ## FFaker::Unit
 
 | Method | Example |
 | ------ | ------- |
-| `temperature_abbr` | K, F, C |
-| `temperature_name` | Fahrenheit, Celsius, Kelvin |
-| `time_abbr` | m, s, ms |
-| `time_name` | Seconds, Minutes, Hours |
+| `temperature_abbr` | K, C, F |
+| `temperature_name` | Kelvin, Celsius, Fahrenheit |
+| `time_abbr` | ms, s, h |
+| `time_name` | Minutes, Seconds, Hours |
 
 ## FFaker::UnitEnglish
 
 | Method | Example |
 | ------ | ------- |
-| `area_abbr` | s, sq yd, sq ft |
-| `area_name` | square yard, section, square foot |
-| `length_abbr` | mi, yd, ft |
+| `area_abbr` | sq yd, sq in, ac |
+| `area_name` | square yard, square mile, section |
+| `length_abbr` | mi, in, yd |
 | `length_name` | inch, furlong, mile |
-| `liquid_abbr` | gi, qt, fl oz |
-| `liquid_name` | pint, fluid ounce, quart |
-| `mass_abbr` | t, cwt, oz |
-| `mass_name` | hundredweight, pounds, ounces |
-| `temperature_abbr` | F, C, K |
-| `temperature_name` | Celsius, Kelvin, Fahrenheit |
-| `time_abbr` | ms, yr, h |
-| `time_name` | Seconds, Days, Minutes |
-| `volume_abbr` | CI, CFT, CY |
-| `volume_name` | cubic yard, cubic foot, cubic inch |
+| `liquid_abbr` | gi, qt, pt |
+| `liquid_name` | gill, fluid ounce, pint |
+| `mass_abbr` | oz, cwt, t |
+| `mass_name` | hundredweight, ton, grains |
+| `temperature_abbr` | C, K, F |
+| `temperature_name` | Kelvin, Celsius, Fahrenheit |
+| `time_abbr` | yr, d, ms |
+| `time_name` | Hours, Years, Seconds |
+| `volume_abbr` | CY, CFT, CI |
+| `volume_name` | cubic foot, cubic inch, cubic yard |
 
 ## FFaker::UnitMetric
 
 | Method | Example |
 | ------ | ------- |
-| `area_abbr` | cm^2, m^2, ha |
-| `area_name` | meters squared, centimeters squared, kilometers |
-| `length_abbr` | mm, m, cm |
-| `length_name` | kilometers, millimeters, centimeters |
+| `area_abbr` | ha, km, cm^2 |
+| `area_name` | centimeters squared, kilometers, meters squared |
+| `length_abbr` | mm, km, cm |
+| `length_name` | centimeters, millimeters, meters |
 | `liquid_abbr` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for liquid_abbr |
 | `liquid_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for liquid_name |
-| `mass_abbr` | g, kg, mt |
-| `mass_name` | gram, kilogram, metric ton |
-| `temperature_abbr` | C, K, F |
-| `temperature_name` | Fahrenheit, Kelvin, Celsius |
-| `time_abbr` | ms, s, d |
-| `time_name` | Hours, Days, Years |
+| `mass_abbr` | kg, g, mt |
+| `mass_name` | kilogram, gram, metric ton |
+| `temperature_abbr` | K, F, C |
+| `temperature_name` | Celsius, Kelvin, Fahrenheit |
+| `time_abbr` | yr, s, ms |
+| `time_name` | Milliseconds, Hours, Seconds |
 | `volume_abbr` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for volume_abbr |
 | `volume_name` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for volume_name |
 
@@ -2740,33 +2755,33 @@
 
 | Method | Example |
 | ------ | ------- |
-| `base_color` | floralwhite, lightcoral, cornsilk |
-| `drivetrain` | 4X4, RWD, AWD |
-| `engine_cylinders` | 8, 5, 6 |
-| `engine_displacement` | 7.4, 4.0, 7.5 |
-| `fuel_type` | Diesel, Hybrid, Natural Gas (CNG) |
-| `interior_upholstery` | Leather, Vinyl, PVC |
-| `make` | Jaguar, Mini, Infiniti |
-| `manufacturer_color` | royal tranquil lavender, melodic tranquil darkviolet, tranquil magnetic lavenderblush |
-| `mfg_color` | soft fast gold, soft metallic paleturquoise, fast tranquil lightskyblue |
-| `model` | Grand Prix, Bronco, Accord |
-| `transmission` | Automated Manual, Continuously Variable, Automatic |
-| `transmission_abbr` | CVT, MT, AT |
-| `trim` | ES, EX-L, SE |
-| `vin` | 3YP1T6FS7X1721188, X5FZJDPN1NY182484, JM7JAGZ208T719361 |
-| `year` | 1989, 1976, 2022 |
+| `base_color` | lightskyblue, gold, ghostwhite |
+| `drivetrain` | RWD, AWD, 4X4 |
+| `engine_cylinders` | 5, 6, 8 |
+| `engine_displacement` | 7.0, 5.8, 5.7 |
+| `fuel_type` | Diesel, Electric, Hydrogen Fuel Cell (FCV) |
+| `interior_upholstery` | Nylon Fabric, Leather, Vinyl |
+| `make` | Saab, Bentley, Oldsmobile |
+| `manufacturer_color` | magnetic mundane white, fast beautiful lawngreen, beautiful new purple |
+| `mfg_color` | vibrant soft lightblue, royal pretty dodgerblue, mysterious pleasant white |
+| `model` | Civic, Lancer, Tahoe |
+| `transmission` | Manual, Continuously Variable, Automated Manual |
+| `transmission_abbr` | MT, AM, CVT |
+| `trim` | EX, LT, SE |
+| `vin` | CZGSHYRT6E6985687, 4BXAKFRR3NJ662075, 9NK9RVH613F163390 |
+| `year` | 1930, 1948, 2027 |
 
 ## FFaker::Venue
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Palacio de Congresos de Galicia, Palacio de Exposiciones y Congresos de Sevilla, Centro de Exposiciones y Convenciones de Chihuahua |
+| `name` | Palacio de Congresos de Galicia, Parque Ferial On Line, Business Planet |
 
 ## FFaker::Youtube
 
 | Method | Example |
 | ------ | ------- |
-| `embed_url` | www.youtube.com/embed/CevxZvSJLk8, www.youtube.com/embed/yzTuBuRdAyA, www.youtube.com/embed/vjW8wmF5VWc |
-| `share_url` | youtu.be/nfWlot6h_JM, youtu.be/KQ6zr6kCPj8, youtu.be/NUsoVlDFqZg |
-| `url` | www.youtube.com/watch?v=vjW8wmF5VWc, www.youtube.com/watch?v=YBHQbu5rbdQ, www.youtube.com/watch?v=rYEDA3JcQqw |
-| `video_id` | YqeW9_5kURI, PIh2xe4jnpk, 450p7goxZqg |
+| `embed_url` | www.youtube.com/embed/KYniUCGPGLs, www.youtube.com/embed/QGJuMBdaqIw, www.youtube.com/embed/DK_0jXPuIr0 |
+| `share_url` | youtu.be/HP-MbfHFUqs, youtu.be/KQ6zr6kCPj8, youtu.be/QFs3PIZb3js |
+| `url` | www.youtube.com/watch?v=NUsoVlDFqZg, www.youtube.com/watch?v=RBumgq5yVrA, www.youtube.com/watch?v=nfWlot6h_JM |
+| `video_id` | AJtDXIazrMo, lWA2pjMjpBs, YBHQbu5rbdQ |
