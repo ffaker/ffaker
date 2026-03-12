@@ -52,6 +52,7 @@ module FFaker
     'fi' => 'FI',
     'fr' => 'FR',
     'ga' => 'GA',
+    'gb' => 'GB',
     'gr' => 'GR',
     'html' => 'HTML',
     'id' => 'ID',
