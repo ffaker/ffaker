@@ -1,6 +1,9 @@
 ## development
 
   - Add your change HERE
+  - Add Device module [@MarcoAntonioMartins]
+  - Reduce gem size by excluding test files [@yuri-zubov]
+  - Add PhoneNumberGB for British phone numbers [@sampart]
   - Add `AddressBE` for Belgian addresses with 4 digit postal code and existing province/city names [@zzip]
   - Update `AddressUA` city names according to the current official legislation [@jalkoby]
 
