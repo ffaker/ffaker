@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'English'
 require_relative 'lib/ffaker/version'
 
 Gem::Specification.new do |s|
@@ -26,7 +27,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ['--charset=UTF-8']
   s.extra_rdoc_files = %w[README.md LICENSE Changelog.md]
 
-  s.files = `git ls-files lib`.split($/) + ["Changelog.md", "LICENSE", "README.md"]
+  s.files = `git ls-files lib`.split($INPUT_RECORD_SEPARATOR) + ['Changelog.md', 'LICENSE', 'README.md']
 
   s.metadata = {
     'changelog_uri' => 'https://github.com/ffaker/ffaker/blob/main/Changelog.md',
