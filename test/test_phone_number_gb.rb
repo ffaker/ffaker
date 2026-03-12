@@ -16,29 +16,29 @@ class TestPhoneNumberGB < Test::Unit::TestCase
   end
 
   def test_mobile_prefix
-    assert_match(/^07[0-9]{3}$/, @tester.mobile_prefix)
+    assert_match(/\A07[0-9]{3}\z/, @tester.mobile_prefix)
   end
 
   def test_mobile_prefix_without_leading_zero
-    assert_match(/^7[0-9]{3}$/, @tester.mobile_prefix(false))
+    assert_match(/\A7[0-9]{3}\z/, @tester.mobile_prefix(false))
   end
 
   def test_region_prefix
-    assert_match(/^0[1-9][0-9]{1,4}$/, @tester.region_prefix)
+    assert_match(/\A0[1-9][0-9]{1,4}\z/, @tester.region_prefix)
   end
 
   def test_region_prefix_without_leading_zero
-    assert_match(/^[1-9][0-9]{1,4}$/, @tester.region_prefix(false))
+    assert_match(/\A[1-9][0-9]{1,4}\z/, @tester.region_prefix(false))
   end
 
   def test_mobile_phone_number
-    assert_match(/^07[0-9]{3} [0-9]{7}$/, @tester.mobile_phone_number)
+    assert_match(/\A07[0-9]{3} [0-9]{7}\z/, @tester.mobile_phone_number)
   end
 
   def test_home_work_phone_number
     number = @tester.home_work_phone_number
-    assert_match(/^0[1-9][0-9]{1,4} /, number) # starts with a region code
-    assert_match(/[0-9]{10}$/, number.gsub(/\s/, '')) # has 10 digits in total
+    assert_match(/\A0[1-9][0-9]{1,4} /, number) # starts with a region code
+    assert_match(/\A0[0-9]{10}\z/, number.gsub(/\s/, '')) # has 11 digits in total
   end
 
   def test_country_code
@@ -46,12 +46,12 @@ class TestPhoneNumberGB < Test::Unit::TestCase
   end
 
   def test_international_mobile_phone_number
-    assert_match(/^\+44 7[0-9]{3} [0-9]{7}$/, @tester.international_mobile_phone_number)
+    assert_match(/\A\+44 7[0-9]{3} [0-9]{7}\z/, @tester.international_mobile_phone_number)
   end
 
   def test_international_home_work_phone_number
     number = @tester.international_home_work_phone_number
-    assert_match(/^\+44 [1-9][0-9]{1,4} /, number) # starts with country and region codes
-    assert_match(/^\+44[0-9]{10}$/, number.gsub(/\s/, '')) # remainder is 10 digits
+    assert_match(/\A\+44 [1-9][0-9]{1,4} /, number) # starts with country and region codes
+    assert_match(/\A\+44[0-9]{10}\z/, number.gsub(/\s/, '')) # remainder is 10 digits
   end
 end
