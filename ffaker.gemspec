@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
 
   s.name              = 'ffaker'
   s.version           = FFaker::VERSION
-  s.required_ruby_version = '>= 3.1'
+  s.required_ruby_version = '>= 3.2'
 
   s.license = 'MIT'
 

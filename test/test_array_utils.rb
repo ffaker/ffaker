@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative 'helper'
-require 'set'
 
 class TestArrayUtils < Test::Unit::TestCase
   include DeterministicHelper

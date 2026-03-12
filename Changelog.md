@@ -1,6 +1,7 @@
 ## development
 
   - Add your change HERE
+  - Add ruby 4.0 to CI & Drop support ruby 3.1 [@marocchino]
   - Add Device module [@MarcoAntonioMartins]
   - Reduce gem size by excluding test files [@yuri-zubov]
   - Add PhoneNumberGB for British phone numbers [@sampart]
