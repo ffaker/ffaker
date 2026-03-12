@@ -58,6 +58,7 @@
  * [FFaker::Crypto](#ffakercrypto)
  * [FFaker::Currency](#ffakercurrency)
  * [FFaker::Date](#ffakerdate)
+ * [FFaker::Device](#ffakerdevice)
  * [FFaker::DizzleIpsum](#ffakerdizzleipsum)
  * [FFaker::Education](#ffakereducation)
  * [FFaker::EducationCN](#ffakereducationcn)
@@ -250,7 +251,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Brisbane, Australia/Canberra, Australia/Melbourne |
+| `time_zone` | Australia/Perth, Australia/Adelaide, Australia/Melbourne |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -1117,87 +1118,97 @@
 
 | Method | Example |
 | ------ | ------- |
-| `backward` | 2025-08-23, 2025-01-27, 2025-06-05 |
+| `backward` | 2025-10-28, 2025-04-03, 2025-08-10 |
 | `between`(..., ...) |  |
-| `birthday` | 1971-02-13, 1999-09-03, 1987-07-04 |
-| `forward` | 2026-12-23, 2026-02-19, 2026-03-12 |
+| `birthday` | 1971-04-21, 1999-11-09, 1987-09-09 |
+| `forward` | 2027-02-27, 2026-04-26, 2026-05-17 |
+
+## FFaker::Device
+
+| Method | Example |
+| ------ | ------- |
+| `app_version` | 5.9.3, 5.3.9, 5.4.5 |
+| `manufacturer` | Apple, Motorola, Realme |
+| `name` | Moto Edge 40, OnePlus Nord 3, Sony Xperia 1 V |
+| `platform` | Android, iOS, Web |
+| `version` | 14.0, 12.2, 16.4 |
 
 ## FFaker::DizzleIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | 05pdu0tzp2ouvq9yo6yz7dmomcgbd8mm1yrfln41cvykz7aur9zvhxegmzdnj10drevkmdq1g5693sru02t9v06iaxnf9e0fp61rnyauw4uq7bn9vlfb2jy9tr8hbjlls33p7lb5jblqu2chjetlmh6o14iqbbkzcdf132i66h0hhvyqedg9imo0tuqxyzd4cs4bo40stjix2uf7m7y71at7agavtp7vz06ynijp844943a8itikam4s0dt2etc, 3m2wnm01lyvvzoi4iii7gemfq9iwuo3qk1bzoat2qmasvlukaz2i6xfrzh4kovpsxwyrkrjz5csqsx6sgfzmdcwxiabg0w7j7b2e0hw4yawe1jamojszh876uj4phk4gm5hfzswuk8cd8610535xg292709cmuoa8rekbizyknwhm481f4em5giqyist6mph31coaa2366lsv2msczoo6xe9nj84tew996vq9hgvfyr17ohyqnkuwi5hoasy45l, oxeyns443k8a5tfahimyur2di6w36kviwrypgik0w7vka87cu5rb7xohfit83ze03uvv13ysqhi7py08bp87gzkq12gwplnj1p9ka81eaigl3l2gz6pmgddspk166ofsq0coacxo88xvxu1jbf3sxk17odbjns66bnh1jdp28uypgq7wpjoeiwj4qmynmd7ql1fbxe05sfsl7ydf05j9mu7o7zmenitk9v1f3fy02dnp8zmrow2j5gdroxi1z6y |
-| `paragraph` | Like every single day rizzide everybody got they cups Mr. Buckwort waddup in tha hizzle Long Beach. Fo shizzle hizzouse Doggfada the S oh yes bubbles in the tub I love my momma. Plizzay nasty if the ride is more fly, then you must buy bubbles in the tub everybody got they cups make a few ends televizzle the Magic Johnson of rap waddup. The diggy if the ride is more fly, then you must buy if you was me and I was you the Magic Johnson of rap you talk too much., Pizzle drizzle it's 1993 through all the drama for the Gs tha dizzle. Tha shiznit rizzoad the LBC sippin' on gin and juice every single one gizzo. Used to sell loot tha shiznit the dopest drizzle I love my momma and my money on my mind realness. Snoop put ya choppers up Snoopy for the hustlers sippin' on gin and juice pizzle rizzoad I love my momma., Nasty like every single day put ya choppers up gold chain zig zag smoke and my money on my mind used to sell loot. Gizzo for the hustlers used to sell loot Coupe de Ville rolling down the street everybody got they cups rizzide I love my momma. Zig zag smoke the dopest guess what? tha dizzle make a few ends rolling down the street eighty degrees fo shizzle Mr. Buckwort. Hizzouse Snoop real deal Holyfield tha shiznit feel the breeze Coupe de Ville and my money on my mind fizzle. Sippin' on gin and juice drop it like it's hot roll with for the hustlers realer now I'm on parole tha dizzle feel the breeze. |
-| `paragraphs` | And my money on my mind recognize the S oh yes the LBC the Magic Johnson of rap drop it like it's hot. Bionic nasty the diggy you talk too much make a few ends. Rolling down the street smokin' indo make a few ends realer the Dogg Pound bionic., The dogg pound sippin' on gin and juice gold chain pizzle everybody got they cups for the Gs guess what? every single one. Gold chain rizzoad now I'm on parole for the Gs realer why is you. Real deal holyfield everybody got they cups Snoopy tha dizzle if the ride is more fly, then you must buy rolling down the street why is you Coupe de Ville. Every single one your chrome drizzle Long Beach smokin' weed roll with rolling down the street televizzle., Tha shiznit zig zag smoke put ya choppers up rizzide pizzle rolling down the street every single one. Roll with it's 1993 with my mind on my money Snoop now I'm on parole through all the drama Coupe de Ville. Coupe de ville eighty degrees why is you the Dogg Pound Snoopy the Magic Johnson of rap recognize real deal Holyfield how we do it., Sippin' on gin and juice Doggfada gold chain tha dizzle hizzouse the LBC nothing can save ya if the ride is more fly, then you must buy the diggy. Now i'm on parole nasty pizzle waddup and my money on my mind. Rizzoad Long Beach the diggy waddup tha dizzle I love my momma pizzle., Doggfada rolling down the street bubbles in the tub eighty degrees gold chain. The dogg pound sippin' on gin and juice real deal Holyfield recognize waddup Mr. Buckwort rizzide. Realness the S oh yes roll with why is you recognize. Snoop through all the drama rolling down the street if the ride is more fly, then you must buy every single one at ease smokin' indo., Realness guess what? roll with laid back why is you. Snoopy real deal Holyfield the dopest plizzay laid back rizzide bubbles in the tub tha shiznit rizzoad. Mr. buckwort roll with real deal Holyfield plizzay Snoopy why is you Long Beach. I love my momma fizzle feel the breeze you talk too much fo shizzle. The dogg pound drizzle gold chain like every single day Snoop., The dopest for the hustlers smokin' weed gizzo nothing can save ya. Rizzoad recognize roll with like every single day Mr. Buckwort. Your chrome Coupe de Ville drop it like it's hot rolling down the street now I'm on parole at ease drizzle everybody got they cups. Nasty you talk too much and my money on my mind plizzay rizzoad., Drop it like it's hot Mr. Buckwort the S oh yes the LBC used to sell loot laid back. How we do it hizzouse for the hustlers may I fo shizzle rizzoad the Magic Johnson of rap make a few ends. Realness fo shizzle through all the drama laid back smokin' weed with my mind on my money the S oh yes Snoopy., Rizzoad roll with if the ride is more fly, then you must buy with my mind on my money in tha hizzle rolling down the street now I'm on parole. Coupe de ville realness if the ride is more fly, then you must buy you talk too much waddup recognize why is you televizzle guess what?. Doggfada the Dogg Pound for the hustlers Coupe de Ville Mr. Buckwort the diggy. Fizzle I love my momma with my mind on my money gizzo rolling down the street Long Beach guess what? bubbles in the tub. Snoopy your chrome fizzle why is you guess what?. |
-| `phrase` | Coupe de ville for the Gs eighty degrees smokin' indo why is you you talk too much used to sell loot everybody got they cups nothing can save ya., Fo rizzle roll with Doggfada waddup pizzle your chrome in tha hizzle through all the drama., Smokin' weed realer drop it like it's hot it's 1993 plizzay recognize now I'm on parole bubbles in the tub the Magic Johnson of rap. |
-| `phrases` | Snoop the diggy real deal Holyfield the S oh yes you talk too much now I'm on parole Coupe de Ville Snoopy., Recognize fo shizzle your chrome Doggfada gold chain., Mr. buckwort the Dogg Pound drizzle gizzo drop it like it's hot fizzle at ease with my mind on my money., Real deal holyfield how we do it at ease Doggfada Coupe de Ville tha shiznit realer through all the drama., The dogg pound if you was me and I was you put ya choppers up bubbles in the tub why is you gizzo like every single day., Rizzoad everybody got they cups realer real deal Holyfield hizzouse like every single day bubbles in the tub Mr. Buckwort., Televizzle rizzoad bubbles in the tub why is you Snoop nothing can save ya for the hustlers., At ease waddup now I'm on parole if the ride is more fly, then you must buy drop it like it's hot used to sell loot., Televizzle rizzide if the ride is more fly, then you must buy bubbles in the tub used to sell loot. |
-| `sentence` | Every single one sippin' on gin and juice the diggy Mr. Buckwort it's 1993 feel the breeze plizzay., Bubbles in the tub Snoopy realer Snoop through all the drama hizzouse now I'm on parole., Hizzouse everybody got they cups real deal Holyfield Long Beach recognize guess what? the Dogg Pound. |
-| `sentences` | It's 1993 tha shiznit waddup nasty hizzouse plizzay zig zag smoke bionic rizzoad., For the gs Coupe de Ville guess what? rizzide nasty the Magic Johnson of rap., Long beach may I gold chain zig zag smoke in tha hizzle rizzide waddup tha shiznit drop it like it's hot., Pizzle the Dogg Pound the Magic Johnson of rap it's 1993 gold chain used to sell loot bubbles in the tub., Snoopy realness your chrome bubbles in the tub rizzide plizzay., May i tha shiznit I love my momma laid back like every single day hizzouse put ya choppers up Coupe de Ville., Everybody got they cups Long Beach you talk too much make a few ends the LBC rizzide., Pizzle I love my momma used to sell loot tha shiznit rizzide recognize may I the dopest laid back., Used to sell loot Coupe de Ville how we do it drizzle the Dogg Pound the LBC. |
-| `word` | in tha hizzle, drizzle, for the hustlers |
-| `words` | gizzo, Long Beach, smokin' weed, rizzoad, drop it like it's hot, gold chain, everybody got they cups, the Dogg Pound, fizzle |
+| `characters` | cgbd8mm1yrfln41cvykz7aur9zvhxegmzdnj10drevkmdq1g5693sru02t9v06iaxnf9e0fp61rnyauw4uq7bn9vlfb2jy9tr8hbjlls33p7lb5jblqu2chjetlmh6o14iqbbkzcdf132i66h0hhvyqedg9imo0tuqxyzd4cs4bo40stjix2uf7m7y71at7agavtp7vz06ynijp844943a8itikam4s0dt2etc3m2wnm01lyvvzoi4iii7gemfq, 9iwuo3qk1bzoat2qmasvlukaz2i6xfrzh4kovpsxwyrkrjz5csqsx6sgfzmdcwxiabg0w7j7b2e0hw4yawe1jamojszh876uj4phk4gm5hfzswuk8cd8610535xg292709cmuoa8rekbizyknwhm481f4em5giqyist6mph31coaa2366lsv2msczoo6xe9nj84tew996vq9hgvfyr17ohyqnkuwi5hoasy45loxeyns443k8a5tfahimyur2di, 6w36kviwrypgik0w7vka87cu5rb7xohfit83ze03uvv13ysqhi7py08bp87gzkq12gwplnj1p9ka81eaigl3l2gz6pmgddspk166ofsq0coacxo88xvxu1jbf3sxk17odbjns66bnh1jdp28uypgq7wpjoeiwj4qmynmd7ql1fbxe05sfsl7ydf05j9mu7o7zmenitk9v1f3fy02dnp8zmrow2j5gdroxi1z6y7805l6l35ezybre03spul82k7 |
+| `paragraph` | The diggy if the ride is more fly, then you must buy if you was me and I was you the Magic Johnson of rap you talk too much. Pizzle drizzle it's 1993 through all the drama for the Gs tha dizzle. Tha shiznit rizzoad the LBC sippin' on gin and juice every single one gizzo. Used to sell loot tha shiznit the dopest drizzle I love my momma and my money on my mind realness., Snoopy like every single day sippin' on gin and juice Snoop nothing can save ya zig zag smoke bionic plizzay may I. The lbc put ya choppers up gold chain zig zag smoke every single one like every single day through all the drama recognize smokin' weed. For the gs the diggy Mr. Buckwort Coupe de Ville rolling down the street make a few ends it's 1993. Zig zag smoke the dopest guess what? tha dizzle make a few ends rolling down the street eighty degrees fo shizzle Mr. Buckwort. Hizzouse Snoop real deal Holyfield tha shiznit feel the breeze Coupe de Ville and my money on my mind fizzle., Drop it like it's hot roll with for the Gs drizzle tha dizzle. And my money on my mind recognize the S oh yes the LBC the Magic Johnson of rap drop it like it's hot roll with. Bionic nasty the diggy you talk too much make a few ends. |
+| `paragraphs` | Waddup everybody got they cups why is you Long Beach sippin' on gin and juice drizzle. Smokin' weed gold chain rizzoad guess what? for the hustlers realer. Real deal holyfield everybody got they cups Snoopy tha dizzle if the ride is more fly, then you must buy rolling down the street. Every single one your chrome drizzle Long Beach smokin' weed roll with rolling down the street televizzle., Tha shiznit zig zag smoke put ya choppers up rizzide pizzle rolling down the street every single one. Roll with it's 1993 with my mind on my money Snoop now I'm on parole through all the drama Coupe de Ville. Coupe de ville eighty degrees why is you the Dogg Pound Snoopy the Magic Johnson of rap recognize real deal Holyfield how we do it., Sippin' on gin and juice Doggfada gold chain tha dizzle hizzouse the LBC nothing can save ya if the ride is more fly, then you must buy the diggy. Now i'm on parole nasty pizzle waddup and my money on my mind. Rizzoad Long Beach the diggy waddup tha dizzle I love my momma pizzle., Doggfada rolling down the street bubbles in the tub eighty degrees gold chain. The dogg pound sippin' on gin and juice real deal Holyfield recognize waddup Mr. Buckwort rizzide. Realness the S oh yes roll with why is you recognize. Snoop through all the drama rolling down the street if the ride is more fly, then you must buy every single one at ease smokin' indo., Realness guess what? roll with laid back why is you. Snoopy real deal Holyfield the dopest plizzay laid back rizzide bubbles in the tub tha shiznit rizzoad. Mr. buckwort roll with real deal Holyfield plizzay Snoopy why is you Long Beach. I love my momma fizzle feel the breeze you talk too much fo shizzle. The dogg pound drizzle gold chain like every single day Snoop., The dopest for the hustlers smokin' weed gizzo nothing can save ya. Rizzoad recognize roll with like every single day Mr. Buckwort. Your chrome Coupe de Ville drop it like it's hot rolling down the street now I'm on parole at ease drizzle everybody got they cups. Nasty you talk too much and my money on my mind plizzay rizzoad., Drop it like it's hot Mr. Buckwort the S oh yes the LBC used to sell loot laid back. How we do it hizzouse for the hustlers may I fo shizzle rizzoad the Magic Johnson of rap make a few ends. Realness fo shizzle through all the drama laid back smokin' weed with my mind on my money the S oh yes Snoopy., Rizzoad roll with if the ride is more fly, then you must buy with my mind on my money in tha hizzle rolling down the street now I'm on parole. Coupe de ville realness if the ride is more fly, then you must buy you talk too much waddup recognize why is you televizzle guess what?. Doggfada the Dogg Pound for the hustlers Coupe de Ville Mr. Buckwort the diggy. Fizzle I love my momma with my mind on my money gizzo rolling down the street Long Beach guess what? bubbles in the tub. Snoopy your chrome fizzle why is you guess what?., Coupe de ville for the Gs eighty degrees smokin' indo why is you you talk too much used to sell loot everybody got they cups nothing can save ya. Fo rizzle roll with Doggfada waddup pizzle your chrome in tha hizzle through all the drama. Smokin' weed realer drop it like it's hot it's 1993 plizzay recognize now I'm on parole bubbles in the tub the Magic Johnson of rap. Snoop the diggy real deal Holyfield the S oh yes you talk too much now I'm on parole Coupe de Ville Snoopy. Recognize fo shizzle your chrome Doggfada gold chain. |
+| `phrase` | Mr. buckwort the Dogg Pound drizzle gizzo drop it like it's hot fizzle at ease with my mind on my money., Real deal holyfield how we do it at ease Doggfada Coupe de Ville tha shiznit realer through all the drama., The dogg pound if you was me and I was you put ya choppers up bubbles in the tub why is you gizzo like every single day. |
+| `phrases` | Rizzoad everybody got they cups realer real deal Holyfield hizzouse like every single day bubbles in the tub Mr. Buckwort., Televizzle rizzoad bubbles in the tub why is you Snoop nothing can save ya for the hustlers., At ease waddup now I'm on parole if the ride is more fly, then you must buy drop it like it's hot used to sell loot., Televizzle rizzide if the ride is more fly, then you must buy bubbles in the tub used to sell loot., Every single one sippin' on gin and juice the diggy Mr. Buckwort it's 1993 feel the breeze plizzay., Bubbles in the tub Snoopy realer Snoop through all the drama hizzouse now I'm on parole., Hizzouse everybody got they cups real deal Holyfield Long Beach recognize guess what? the Dogg Pound., It's 1993 tha shiznit waddup nasty hizzouse plizzay zig zag smoke bionic rizzoad., For the gs Coupe de Ville guess what? rizzide nasty the Magic Johnson of rap. |
+| `sentence` | Long beach may I gold chain zig zag smoke in tha hizzle rizzide waddup tha shiznit drop it like it's hot., Pizzle the Dogg Pound the Magic Johnson of rap it's 1993 gold chain used to sell loot bubbles in the tub., Snoopy realness your chrome bubbles in the tub rizzide plizzay. |
+| `sentences` | May i tha shiznit I love my momma laid back like every single day hizzouse put ya choppers up Coupe de Ville., Everybody got they cups Long Beach you talk too much make a few ends the LBC rizzide., Pizzle I love my momma used to sell loot tha shiznit rizzide recognize may I the dopest laid back., Used to sell loot Coupe de Ville how we do it drizzle the Dogg Pound the LBC., Drizzle may I rizzoad guess what? the LBC the Magic Johnson of rap nothing can save ya smokin' weed laid back., You talk too much eighty degrees feel the breeze fizzle tha dizzle realer., With my mind on my money tha dizzle guess what? through all the drama the dopest., Fizzle televizzle the diggy rizzide feel the breeze smokin' weed the LBC., And my money on my mind like every single day the S oh yes the dopest if you was me and I was you. |
+| `word` | nasty, fo shizzle, drizzle |
+| `words` | smokin' indo, the diggy, plizzay, hizzouse, put ya choppers up, smokin' weed, nasty, realness, laid back |
 
 ## FFaker::Education
 
 | Method | Example |
 | ------ | ------- |
-| `degree` | Master of Surgery in Business Science, Master of Fine Arts in Systems Management, Bachelor of Architecture in Medical Education |
-| `degree_short` | MD in Industrial Science, ME in Social Administration, MTech in Human Resource Philosophy |
-| `major` | Industrial Philosophy, Political Arts, Financial Administration |
-| `school` | Greenridge School, Whiteside Institution, University of North Carolina |
-| `school_generic_name` | Winddale, Northdale, Greenwell |
-| `school_name` | Southcrest, Redville, Lakecrest |
+| `degree` | Master of Real Estate Development in Business Development, Master of International Economics in Human Resource Studies, Bachelor of Music in Jazz Studies in Systems Accountancy |
+| `degree_short` | MA in Human Resource Engineering, BCA in Human Resource Development, BCom in Social Arts |
+| `major` | Political Accountancy, Political Science, Business Development |
+| `school` | College of Michigan, Larkside School, University of Wyoming |
+| `school_generic_name` | Hillshore, Southside, Indiana |
+| `school_name` | Redshore, Larkshire, Rivershore |
 
 ## FFaker::EducationCN
 
 | Method | Example |
 | ------ | ------- |
-| `degree` | 教育学学士, 工学硕士, 理学学士 |
-| `location` | 华南, 陕西, 扬州 |
-| `major` | 文物保护技术, 中草药栽培与鉴定, 海洋渔业科学与技术 |
-| `school` | 安徽体育大学大连分校, 永州学院, 阿拉尔师范大学 |
+| `degree` | 医学硕士, 农学博士, 哲学学士 |
+| `location` | 海南, 株洲, 中国 |
+| `major` | 交通工程, 应用电子技术教育, 资源勘查工程 |
+| `school` | 新余学院, 福建学院, 贵州学院 |
 
 ## FFaker::Filesystem
 
 | Method | Example |
 | ------ | ------- |
-| `directory` | unde/magnam/odio, doloremque/optio/aspernatur, eaque/iste/explicabo |
-| `extension` | avi, tiff, pdf |
-| `file_name` | repudiandae/labore/ullam/fugiat.html, voluptatem/voluptatum/exercitationem/dolores.txt, veritatis/consequatur/delectus/quaerat.mp3 |
-| `mime_type` | image/vnd.microsoft.icon, audio/vorbis, application/pdf |
+| `directory` | reprehenderit/nobis/tenetur, ullam/id/in, deleniti/natus/nisi |
+| `extension` | pages, gif, flac |
+| `file_name` | cumque/fugiat/quisquam/nobis.gif, laudantium/nihil/eos/amet.odp, aliquid/quam/veritatis/dolore.mov |
+| `mime_type` | image/jpeg, video/webm, video/quicktime |
 
 ## FFaker::Food
 
 | Method | Example |
 | ------ | ------- |
-| `fruit` | Mandarine, Lychee, Williams pear |
-| `herb_or_spice` | Salad Herbs, Gumbo File, Cilantro |
-| `ingredient` | Pomelo, Azuki bean, Garlic Chives |
-| `meat` | Turtle, Marrow soup, Caribou |
-| `vegetable` | Azuki bean, Broccoli, Tinda |
+| `fruit` | Elderberry, Dragonfruit, Pomegranate |
+| `herb_or_spice` | Cloves, Chipolte Pepper, Cumin |
+| `ingredient` | Bartlett pear, Squab, Tripe |
+| `meat` | Grouse, Turtle, Chicken |
+| `vegetable` | Broccolini, Jerusalem artichoke, Nopal |
 
 ## FFaker::FoodPL
 
 | Method | Example |
 | ------ | ------- |
-| `diary` | masło, śmietana, ser żółty |
-| `fermented` | wino, kapusta kiszona, piwo |
-| `food` | kefir, żurawina, dziczyzna |
-| `fruit` | daktyle, figa, aronia |
-| `herb` | cząber, rozmaryn, lubczyk |
-| `meat` | jagnięcina, wołowina, konina |
-| `preserves` | musztarda, sok, konfitura |
-| `processed` | zsiadłe mleko, majonez, kombucza |
-| `spice` | goździki, kakao, gałka muszkatołowa |
-| `unprocessed` | rzepa, wieprzowina, koperek |
-| `vegetable` | kukurydza, brukselka, szczaw |
+| `diary` | śmietanka, masło, ser żółty |
+| `fermented` | czekolada, miso, natto |
+| `food` | tymianek, ogórek, kapusta kiszona |
+| `fruit` | mango, ananas, żurawina |
+| `herb` | estragon, trawa cytrynowa, koperek |
+| `meat` | baranina, dziczyzna, konina |
+| `preserves` | syrop, powidła, majonez |
+| `processed` | musztarda, ocet, sos sojowy |
+| `spice` | kakao, kolendra, pieprz cayenne |
+| `unprocessed` | kakao, śliwka, lubczyk |
+| `vegetable` | chrzan, brukselka, szczaw |
 
 ## FFaker::FreedomIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | 9lo6k9ocof02zgex5a8vaj2mvsuue1i9jh8otdq0nkt5r1tvqva8cfz1vkn4dmnqjuybgydgvtffn73wz4y6s7mrnto1ag1jraoyfiiu0h2atbd9knp3l1n5h41j5y7o85hrsr0l93wq7pioi4mlq2ku82klipbfivyldcox4at04cjtjzqoh95tofrrwl1vwj6iqtridf0ajmggl2pje9m38as7o5sz4uqabzdkb69gxfs7i5ku0o2nfqh2wrp, vc9uc3r741h5ts9oyyn7goazdi00mq14foljks5r0ra3ydbltqnendbhcjgaor3ugj4o9cqw3kze91q5gk9uh3nc2votfp2lo4cjm3y63z1f42pwwogin3mus5f30csnht4vgbflr1v0igin09vlla5plmhx4d0jxglw9zxzsczd9u14934iwvz30ypr2yrtm33us701xwvmwdocsbkdk3xixwgm7kk88c133i8fnvc7ru2tha9v715bmzbras5, 3j4o3lc2xtvct25wpxo2vxra2s4s4jdrpbxxcou9cpndhx71mbv03gm1h31fhuksgjz7kvss45iy02buzeby1huj60fe4wc2dwo8sufc46lauviz6ttrlvkyh6qamzxuk52nsquq0z64mm1tjo0o4hr53bm4xhfayr8hnpyzvjwhteuqu1cfgaqt4nmlbtjlx3r9mui6yt6maga1pzwftlbux0q6nblglsto2jd85ev1s7goa9h9fhg9txxms4g |
-| `paragraph` | Route 66 super-size independence Lynyrd Skynyrd enemies of freedom fighter jets the media. Boneless buffalo wings Dale Earnhardt Jr WMD super-size nuclear-powered aircraft carrier ESPN2. Low taxes the media freedom tomahawk cruise missile official sponsor 7-Eleven boneless buffalo wings Lynyrd Skynyrd., Lynyrd skynyrd twinkies Hot Pockets truthers Van Halen cheese-stuffed Uncle Sam. Credit cards I only speak American truck nuts extra-large freedom low taxes truthers. Milkshakes capitalism red white and blue RoboCop truthers congress. Disney world no-terrorist-zone redwood the economy Branson Missouri route 66. Route 66 extra value meal foreign policy Michael Bay movies DirecTV bacon cheeseburgers red white and blue fireworks no-terrorist-zone., 1776 hot dogs liberty malls bigger CNN. Online multiplayer 85oz soda drive-thru Costco super bowl consumerism. Credit cards anti-metric system CSI: Miami extra value meal corporations. Huge foreign policy DVD Costco slurpees WMD cheese-stuffed chili cheese fries 3D Blu-Ray. |
-| `paragraphs` | Capitalism RoboCop WMD drone strike Mountain Dew mission accomplished red white and blue redwood. Pickup trucks independence Philly cheesesteak Costco more bullets Disney World official sponsor nuclear-powered aircraft carrier velcro. More bullets fighter jets malls pickup trucks Championship Pro Bass Fishing., Usa-4-life-bro no-terrorist-zone television Garth Brooks Mount Rushmore freedom automatic rifle. Wmd red white and blue capitalism Applebee's bigfoot. National security Marlboro reds MGD nuclear-powered aircraft carrier malls. Lynyrd skynyrd fireworks Mount Rushmore hot dogs CNN extra-large Mega-Stuf Oreos., Freedom slurpees controversial second amendment rights Die Hard 2: Die Harder Starbucks Mountain Dew. Route 66 chili cheese fries gigantic automatic rifle extra beef crispy chicken strips Marlboro reds Home Depot. Supreme court ruling pickup trucks more bullets 18-wheeler MGD Chuck Norris Branson Missouri chili cheese fries. Medal of honor John Cena FBI CIA NSA low taxes CNN gigantic explosive explosions. Lunchables malls condiments extra pulled pork redwood DiGiorno truthers ESPN2., Independence extra-large second amendment rights cholesterol fireworks no-terrorist-zone national security Mount Rushmore Marlboro reds. Corporations foreign policy second amendment rights Medal of Honor 1776 DirecTV better dead than red. Constitutional rights pickup trucks bigger foreign policy Van Halen., Exploding MOPAR constitutional rights nuclear-powered aircraft carrier patriotic Hot Pockets the government Star-Spangled Banner. Huge pickup trucks RoboCop monster truck rally malls CSI: Miami SUVs extra value meal country-fried. Cholesterol national security anti-metric system truck nuts voting independence milkshakes. Cheese-stuffed enemies of freedom shock and awe tomahawk cruise missile hot dogs. Pickup trucks Denny's Grand Slam Breakfast elections DVD shock and awe corporations tomahawk cruise missile pro-wrestling democracy., Fox news fireworks Call of Duty bigger apple pie better dead than red 3D Blu-Ray the media MGD. Disney world mission accomplished extra beef bigfoot condiments. Corporations low taxes extra value meal DiGiorno DirecTV ESPN2., Red white and blue sweatpants southwest breakfast burrito Nashville online multiplayer Star-Spangled Banner Arnold Schwarzenegger the economy stars and stripes. Boneless buffalo wings 3D Blu-Ray credit cards MOPAR corporations Philly cheesesteak twinkies. Voting bigger foreign policy Michael Bay movies 7-Eleven CSI: Miami., Usa-4-life-bro Applebee's explosive fighter jets low gas prices. Supreme court ruling 74-inch HDTV truthers slurpees second amendment rights foreign policy. Lynyrd skynyrd truck nuts Fox News Harley Davidson Proud To Be An American DirecTV bigfoot the economy Denny's Grand Slam Breakfast., Independence extra value meal velcro consumerism tomahawk cruise missile SUVs 1776 capitalism. Cheese-stuffed independence Garth Brooks shock and awe NASA drone strike pro-wrestling democracy CSI: Miami. Hot dogs DiGiorno tomahawk cruise missile potato salad Branson Missouri Applebee's twinkies. Wanted dead or alive I only speak American independence Branson Missouri Texas explosions. |
+| `characters` | x5a8vaj2mvsuue1i9jh8otdq0nkt5r1tvqva8cfz1vkn4dmnqjuybgydgvtffn73wz4y6s7mrnto1ag1jraoyfiiu0h2atbd9knp3l1n5h41j5y7o85hrsr0l93wq7pioi4mlq2ku82klipbfivyldcox4at04cjtjzqoh95tofrrwl1vwj6iqtridf0ajmggl2pje9m38as7o5sz4uqabzdkb69gxfs7i5ku0o2nfqh2wrpvc9uc3r741h5ts9, oyyn7goazdi00mq14foljks5r0ra3ydbltqnendbhcjgaor3ugj4o9cqw3kze91q5gk9uh3nc2votfp2lo4cjm3y63z1f42pwwogin3mus5f30csnht4vgbflr1v0igin09vlla5plmhx4d0jxglw9zxzsczd9u14934iwvz30ypr2yrtm33us701xwvmwdocsbkdk3xixwgm7kk88c133i8fnvc7ru2tha9v715bmzbras53j4o3lc2xtvct25, wpxo2vxra2s4s4jdrpbxxcou9cpndhx71mbv03gm1h31fhuksgjz7kvss45iy02buzeby1huj60fe4wc2dwo8sufc46lauviz6ttrlvkyh6qamzxuk52nsquq0z64mm1tjo0o4hr53bm4xhfayr8hnpyzvjwhteuqu1cfgaqt4nmlbtjlx3r9mui6yt6maga1pzwftlbux0q6nblglsto2jd85ev1s7goa9h9fhg9txxms4gkon2o31ntu5eo00 |
+| `paragraph` | Controversial freedom more bullets voting TGIF CNN. Stock market Chuck Norris cheese-stuffed XXXL sweatpants boneless buffalo wings WMD lunchables fighter jets. Credit cards I only speak American truck nuts extra-large freedom low taxes truthers. Milkshakes capitalism red white and blue RoboCop truthers congress., No-terrorist-zone bigfoot the economy Disney World route 66 television border wall. The media Michael Bay movies Mount Rushmore bacon cheeseburgers red white and blue. Southwest breakfast burrito more bullets truthers Fox News liberty Checkers bigger Applebee's. Online multiplayer 85oz soda drive-thru Costco super bowl consumerism., Anti-metric system CSI: Miami extra value meal corporations bigfoot 85oz soda weekends malls congress. Wmd DirecTV 85oz soda taco night wanted dead or alive FBI CIA NSA Lynyrd Skynyrd commies get out of my country. Robocop Van Halen Applebee's Hanes boxer briefs mission accomplished. |
+| `paragraphs` | Pickup trucks independence Philly cheesesteak Costco more bullets Disney World official sponsor nuclear-powered aircraft carrier velcro. More bullets fighter jets malls pickup trucks Championship Pro Bass Fishing. Velcro USA-4-Life-Bro no-terrorist-zone television Garth Brooks Mount Rushmore., Marlboro reds I only speak American jean shorts nuclear-powered aircraft carrier commies get out of my country online multiplayer. 18-wheeler elections Marlboro reds MGD nuclear-powered aircraft carrier. Credit cards Lynyrd Skynyrd fireworks Mount Rushmore hot dogs boneless buffalo wings extra-large Mega-Stuf Oreos., Freedom slurpees controversial second amendment rights Die Hard 2: Die Harder Starbucks Mountain Dew. Route 66 chili cheese fries gigantic automatic rifle extra beef crispy chicken strips Marlboro reds Home Depot. Supreme court ruling pickup trucks more bullets 18-wheeler MGD Chuck Norris Branson Missouri chili cheese fries. Medal of honor John Cena FBI CIA NSA low taxes CNN gigantic explosive explosions. Lunchables malls condiments extra pulled pork redwood DiGiorno truthers ESPN2., Independence extra-large second amendment rights cholesterol fireworks no-terrorist-zone national security Mount Rushmore Marlboro reds. Corporations foreign policy second amendment rights Medal of Honor 1776 DirecTV better dead than red. Constitutional rights pickup trucks bigger foreign policy Van Halen., Exploding MOPAR constitutional rights nuclear-powered aircraft carrier patriotic Hot Pockets the government Star-Spangled Banner. Huge pickup trucks RoboCop monster truck rally malls CSI: Miami SUVs extra value meal country-fried. Cholesterol national security anti-metric system truck nuts voting independence milkshakes. Cheese-stuffed enemies of freedom shock and awe tomahawk cruise missile hot dogs. Pickup trucks Denny's Grand Slam Breakfast elections DVD shock and awe corporations tomahawk cruise missile pro-wrestling democracy., Fox news fireworks Call of Duty bigger apple pie better dead than red 3D Blu-Ray the media MGD. Disney world mission accomplished extra beef bigfoot condiments. Corporations low taxes extra value meal DiGiorno DirecTV ESPN2., Red white and blue sweatpants southwest breakfast burrito Nashville online multiplayer Star-Spangled Banner Arnold Schwarzenegger the economy stars and stripes. Boneless buffalo wings 3D Blu-Ray credit cards MOPAR corporations Philly cheesesteak twinkies. Voting bigger foreign policy Michael Bay movies 7-Eleven CSI: Miami., Usa-4-life-bro Applebee's explosive fighter jets low gas prices. Supreme court ruling 74-inch HDTV truthers slurpees second amendment rights foreign policy. Lynyrd skynyrd truck nuts Fox News Harley Davidson Proud To Be An American DirecTV bigfoot the economy Denny's Grand Slam Breakfast., Independence extra value meal velcro consumerism tomahawk cruise missile SUVs 1776 capitalism. Cheese-stuffed independence Garth Brooks shock and awe NASA drone strike pro-wrestling democracy CSI: Miami. Hot dogs DiGiorno tomahawk cruise missile potato salad Branson Missouri Applebee's twinkies. Wanted dead or alive I only speak American independence Branson Missouri Texas explosions. |
 | `phrase` | Nuclear-powered aircraft carrier super-size online multiplayer Garth Brooks fireworks., More bullets TGIF anti-metric system Mount Rushmore the government crunch-tastic., Directv twinkies malls super-size voting Dallas Cowboys. |
 | `phrases` | Low gas prices boneless buffalo wings taco night shock and awe Championship Pro Bass Fishing Checkers Uncle Sam nuclear-powered aircraft carrier Arnold Schwarzenegger., Apple pie drive-thru WMD bigfoot BBQ truthers redwood twinkies., Fox news ESPN2 truthers stock market explosive extra value meal., Bbq extra pulled pork jean shorts automatic rifle elections low taxes RoboCop., Texas independence foreign policy shock and awe anti-metric system 74-inch HDTV., Juicy flame-grilled SUVs wanted dead or alive CSI: Miami NASA NASCAR Michael Bay movies Denny's Grand Slam Breakfast., Malls voting John Cena Uncle Sam freedom route 66 85oz soda elections SUVs., Proud to be an american NASA propane tanks Harley Davidson monster truck rally Garth Brooks., Stock market WMD extra pulled pork BBQ voting stars and stripes. |
 | `sentence` | Home depot route 66 wanted dead or alive exploding crispy chicken strips official sponsor patriotic., Second amendment rights Denny's Grand Slam Breakfast Texas pro-wrestling Hot Pockets., Lunchables foreign policy bigger DVD better dead than red the economy USA-4-Life-Bro. |
@@ -1408,7 +1419,7 @@
 | `blood_type` | A-, AB-, AB+ |
 | `driver_license_category` | C2, C3, C1 |
 | `drivers_license` | 101445346859, 3728237, 16610050 |
-| `expedition_date` | 2023-05-21, 2022-12-29, 2025-11-08 |
+| `expedition_date` | 2023-07-26, 2023-03-05, 2026-01-13 |
 | `gender` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for gender |
 | `id` | 989196912, 0869638449, 77365999936 |
 
@@ -1416,7 +1427,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `identity_number` | 301297-922T, 290575-981R, 100982-964Y |
+| `identity_number` | 070398-922Y, 040875-9811, 161182-964E |
 
 ## FFaker::IdentificationIN
 
@@ -1443,10 +1454,10 @@
 
 | Method | Example |
 | ------ | ------- |
-| `curp` | VOEB920517HQTKSL24, XAMG020601MOCCFS07, NIYO090705MDFGDQ45 |
-| `rfc` | TALW930529EY7, IMV0803217ZC, FAVP781026LFZ |
-| `rfc_persona_fisica` | BIJM8908293KP, ÑIIG080606DR2, VAÑT770907S7G |
-| `rfc_persona_moral` | ROU960415Y6U, PDZ760123NFS, UZD181225VQ0 |
+| `curp` | VOEB920612HQTKSL24, XAMG020709MOCCFS07, NIYO090820MDFGDQ45 |
+| `rfc` | TALW930625EY7, IMV0805047ZC, FAVP781105LFZ |
+| `rfc_persona_fisica` | BIJM8909213KP, ÑIIG080721DR2, VAÑT770916S7G |
+| `rfc_persona_moral` | ROU960516Y6U, PDZ760130NFS, UZD190220VQ0 |
 
 ## FFaker::IdentificationPL
 
@@ -1467,7 +1478,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x00007f98e61e8b98&gt;, #&lt;File:0x00007f98e61e0bf0&gt;, #&lt;File:0x00007f98e61b9708&gt; |
+| `file` | #&lt;File:0x00007f1742a98cc8&gt;, #&lt;File:0x00007f1742a916f8&gt;, #&lt;File:0x00007f1742aa9938&gt; |
 | `url` | https://dummyimage.com/300x300/8e3629/2da380.png?text=, https://dummyimage.com/300x300/42e777/5f9c6f.png?text=, https://dummyimage.com/300x300/ca65c2/f2d139.png?text= |
 
 ## FFaker::Internet
@@ -1782,8 +1793,8 @@
 | `first_name` | Oren, Reyna, Shanel |
 | `first_name_female` | Pok, Kecia, Sherita |
 | `first_name_male` | Hoyt, Andreas, Cristobal |
-| `html_safe_last_name` | Dibbert, Murray, Hackett |
-| `html_safe_name` | Loan Deckow, Ines Hammes, Terica Hayes |
+| `html_safe_last_name` | Corwin, Ortiz, Douglas |
+| `html_safe_name` | Loan Gottlieb, Ines Hintz, Terica McLaughlin |
 | `last_name` | Collier, Wilkinson, Sanford |
 | `male_name_with_prefix` | Mr. Emanuel Cummerata, Mr. Osvaldo Beahan, Mr. Robert Berge |
 | `male_name_with_prefix_suffix` | Mr. Jamie Hoeger IV, Mr. Jamie Padberg III, Mr. Elliot Klein IV |
@@ -1844,8 +1855,8 @@
 | `first_name` | Miroslava, Markéta, Lucie |
 | `first_name_female` | Glynis, Marianela, Edda |
 | `first_name_male` | Timothy, Kent, Marcellus |
-| `html_safe_last_name` | Kuhn, Langosh, Farrell |
-| `html_safe_name` | Radek Ankunding, Jana Bins, Barbora Hahn |
+| `html_safe_last_name` | Funk, Kozey, Bechtelar |
+| `html_safe_name` | Radek Stroman, Jana Huels, Barbora Price |
 | `last_name` | Benešová, Fišer, Dvořáková |
 | `male_name_with_prefix` | Mr. Luke Bendová, Mr. Ramon Bartoň, Mr. Cyrus David |
 | `male_name_with_prefix_suffix` | Mr. Ward Dolejší Ph.D., Mr. Ronald Fišerová DSc., Mr. Vernon Dvořáková Ph.D. |
@@ -1874,8 +1885,8 @@
 | `first_name` | Ulrik, Ditlev, Erna |
 | `first_name_female` | Joanie, Hyo, Lucy |
 | `first_name_male` | Giuseppe, Jamey, Christian |
-| `html_safe_last_name` | Lindgren, Marks, Yost |
-| `html_safe_name` | Ole Trantow, Allan Runolfsdottir, Tom Stehr |
+| `html_safe_last_name` | Bogan, Jast, Casper |
+| `html_safe_name` | Ole Boyer, Allan Dooley, Tom Yundt |
 | `last_name` | Labadie, Mitchell, Grady |
 | `male_name` | Hr. Lars Bernier, Ingemann Pacocha, Ivan Frami |
 | `male_name_with_prefix` | Mr. Mason Dare, Mr. Tyson Abbott, Mr. Gene Zieme |
@@ -1902,8 +1913,8 @@
 | `first_name` | Brigida, Frank, Carlton |
 | `first_name_female` | Tai, Karin, Florrie |
 | `first_name_male` | Freddie, Jamar, Santos |
-| `html_safe_last_name` | Hoppe, Ebert, Gerhold |
-| `html_safe_name` | Lorene Buckridge, Caterina Baumbach, Adelia Hackett |
+| `html_safe_last_name` | Feeney, Schaefer, Herman |
+| `html_safe_name` | Lorene Roberts, Caterina Lubowitz, Adelia Olson |
 | `last_name` | Cole, Stanton, Luettgen |
 | `male_name_with_prefix` | Mr. Graig Hammes, Mr. Russ Douglas, Mr. Dane Hermann |
 | `male_name_with_prefix_suffix` | Mr. Cedric Stanton I, Mr. Lester Hodkiewicz Jr., Mr. Forest Bailey II |
@@ -2048,8 +2059,8 @@
 | `full_name` | Lino Stracke Turcotte, Guillermo Jacobson Runolfsson, Leonardo Dooley Botsford |
 | `full_name_no_prefix` | Elena Little Satterfield, Carlos McKenzie Medhurst, Lilia Harber Lueilwitz |
 | `full_name_prefix` | Srita. Hanna Cremin Runolfsson, Srita. Eva Considine Auer, C. Cristal Casandra Trantow Considine |
-| `html_safe_last_name` | Zboncak, Leffler, Weber |
-| `html_safe_name` | Elba Waters, Carmen Hickle, Axel Fahey |
+| `html_safe_last_name` | Douglas, Murphy, Watsica |
+| `html_safe_name` | Elba Dooley, Carmen Barton, Axel Gleason |
 | `last_name` | Langworth, Raynor, Rutherford |
 | `male_name` | Oswaldo, Abraham, Julián Herminio |
 | `male_name_with_prefix` | C. Jacinto Roberts, C. Kraig Kemmer, C. Myles McCullough |
@@ -2078,8 +2089,8 @@
 | `first_name` | Anibal Claude, Gene, Nelda Zofia |
 | `first_name_female` | Fran, Carita, Marlen |
 | `first_name_male` | Horace, Tim, Doug |
-| `html_safe_last_name` | Ankunding, Jast, Boehm |
-| `html_safe_name` | Tandy Victoria Gleason, Jed Mohr, Kermit Feest |
+| `html_safe_last_name` | Metz, Leannon, Bednar |
+| `html_safe_name` | Tandy Victoria Morissette, Jed Rempel, Kermit Bode |
 | `last_name` | Kuphal, Weimann, Roob |
 | `male_name_with_prefix` | Mr. Jacob Abernathy, Mr. Merlin Howe, Mr. Fidel Graham |
 | `male_name_with_prefix_suffix` | Mr. Gregg Barton MD, Mr. Gustavo Yost Sr., Mr. Dwain Leuschke I |
@@ -2105,8 +2116,8 @@
 | `first_name` | Virgie, Giovanni, Loyd |
 | `first_name_female` | Ima, Babara, Stephenie |
 | `first_name_male` | Alex, Harland-Irving, Tanner |
-| `html_safe_last_name` | Schowalter, Wuckert, Goodwin |
-| `html_safe_name` | Mariann-Nikita Casper, Delcie Langworth, Raphael Mohr |
+| `html_safe_last_name` | Mueller, Rempel, Schmidt |
+| `html_safe_name` | Mariann-Nikita Mosciski, Delcie Stoltenberg, Raphael McLaughlin |
 | `last_name` | Hackett, Nicolas, Hansen |
 | `male_name_with_prefix` | Mr. Merle Robel, Mr. Santiago Ritchie, Mr. Odis Williamson |
 | `male_name_with_prefix_suffix` | Mr. Arturo-Lupe Abbott MD, Mr. Warren Little IV, Mr. Wm Kozey DVM |
@@ -2132,8 +2143,8 @@
 | `first_name` | Jerrold, Khadijah, Araceli |
 | `first_name_female` | Skye, Patti, Dannielle |
 | `first_name_male` | Bret, Ramiro, Daren |
-| `html_safe_last_name` | Abernathy, Nolan, Hettinger |
-| `html_safe_name` | Hal Wiegand, Jonah Leuschke, Lorenzo Stamm |
+| `html_safe_last_name` | Stark, Jacobs, Fahey |
+| `html_safe_name` | Hal Cummings, Jonah Zboncak, Lorenzo Littel |
 | `last_name` | Reoja, Parsaligan, Ramirez |
 | `male_name_with_prefix` | Mr. Carter Lopez, Mr. Myron Monteverde, Mr. Tyron Ambriz |
 | `male_name_with_prefix_suffix` | Mr. Ernest Pante V, Mr. Tony Allanic IV, Mr. Raymond de la Cruz II |
@@ -2197,8 +2208,8 @@
 | `first_name` | Edmond, Elayne, Selena |
 | `first_name_female` | Renna, Crystle, Pamula |
 | `first_name_male` | Cedrick, Elroy, Clarence |
-| `html_safe_last_name` | Stehr, Torphy, Lowe |
-| `html_safe_name` | Carey Corkery, Madaline Marylouise Rosenbaum, Jamison Reynolds |
+| `html_safe_last_name` | Blanda, Keebler, Conn |
+| `html_safe_name` | Carey Kulas, Madaline Marylouise Schneider, Jamison Windler |
 | `last_name` | Hyatt, Stamm, Boyle |
 | `male_name_with_prefix` | Mr. Glenn Monahan, Mr. Maxwell Witting, Mr. Sergio Hackett |
 | `male_name_with_prefix_suffix` | Mr. Wilfredo Hagenes I, Mr. Cletus Parisian Sr., Mr. Ryan Huels III |
@@ -2336,12 +2347,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 00418004668728, 0800 699 83 32, +418002506138 |
-| `home_work_phone_number` | +4131 572 98 84, 0041813823734, 004143 504 03 03 |
-| `mobile_phone_number` | 0762442063, +41792156160, +4176 943 81 95 |
-| `phone_number` | 004174 850 95 89, 00418428537307, 09017795505 |
-| `premium_rate_phone_number` | 0901 090 48 82, 0901 693 92 30, 09016048871 |
-| `shared_cost_phone_number` | +41848 782 59 56, +418420986875, 0041842 633 29 17 |
+| `free_phone_number` | 0800 466 87 28, +418006998332, +41800 250 61 38 |
+| `home_work_phone_number` | 0415729884, 0041813823734, 034 504 03 03 |
+| `mobile_phone_number` | 004178 244 20 63, 004174 215 61 60, 0769438195 |
+| `phone_number` | 0748509589, 0848 853 73 07, 00419007795505 |
+| `premium_rate_phone_number` | +41906 090 48 82, 0901 693 92 30, +41901 604 88 71 |
+| `shared_cost_phone_number` | 00418447825956, 08480986875, +418486332917 |
 
 ## FFaker::PhoneNumberCU
 
@@ -2598,7 +2609,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `ssn` | 194612272550, 201912248089, 197912195835 |
+| `ssn` | 194701022551, 202002228080, 198001185836 |
 
 ## FFaker::SemVer
 
