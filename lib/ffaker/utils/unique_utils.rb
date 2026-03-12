@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'set'
-
 module FFaker
   class UniqueUtils
     class RetryLimitExceeded < StandardError
@@ -46,8 +44,8 @@ module FFaker
       raise RetryLimitExceeded, "Retry limit exceeded for #{name}"
     end
 
-    def respond_to_missing?(name, *args)
-      @generator.respond_to?(name, *args) || super
+    def respond_to_missing?(name, *)
+      @generator.respond_to?(name, *) || super
     end
 
     def previous_results
