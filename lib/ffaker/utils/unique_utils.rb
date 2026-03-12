@@ -4,7 +4,8 @@ require 'set'
 
 module FFaker
   class UniqueUtils
-    RetryLimitExceeded = Class.new(StandardError)
+    class RetryLimitExceeded < StandardError
+    end
 
     class << self
       def add_instance(generator, max_retries)
