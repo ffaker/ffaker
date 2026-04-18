@@ -2,7 +2,7 @@
 
 module FFaker
   module Book
-    require 'cgi'
+    require 'cgi/escape'
 
     extend ModuleUtils
     extend self
