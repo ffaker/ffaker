@@ -46,8 +46,7 @@ module FFaker
     private
 
     def number(prefixes, country_prefix = '', spaces: true)
-      prefix = fetch_sample(prefixes)
-      prefix = prefix[1] unless country_prefix == ''
+      prefix = country_prefix.empty? ? fetch_sample(prefixes) : fetch_sample(prefixes)[1]
 
       FFaker.numerify [
         country_prefix,
