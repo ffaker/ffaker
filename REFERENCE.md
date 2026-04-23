@@ -29,6 +29,7 @@
  * [FFaker::AddressUA](#ffakeraddressua)
  * [FFaker::AddressUK](#ffakeraddressuk)
  * [FFaker::AddressUS](#ffakeraddressus)
+ * [FFaker::AddressVN](#ffakeraddressvn)
  * [FFaker::Airline](#ffakerairline)
  * [FFaker::Animal](#ffakeranimal)
  * [FFaker::AnimalBR](#ffakeranimalbr)
@@ -892,6 +893,18 @@
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
 | `zip_code` | 89333, 24258, 66130-7210 |
+
+## FFaker::AddressVN
+
+| Method | Example |
+| ------ | ------- |
+| `city` | Hà Nội, Đà Nẵng, Nha Trang |
+| `province` | Hà Nội, Bình Dương, Khánh Hòa |
+| `province_abbr` | HN, BDG, KH |
+| `street_address` | 42 Đường Lê Lợi, 7 Phố Nguyễn Huệ, 130 Hẻm Trần Hưng Đạo |
+| `street_name` | Lê Lợi, Nguyễn Huệ, Trần Hưng Đạo |
+| `street_prefix` | Đường, Phố, Ngõ |
+| `zip_code` | 700000, 100000, 550000 |
 
 ## FFaker::Airline
 
