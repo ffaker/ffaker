@@ -13,6 +13,7 @@ module FFaker
     MOBILE_PHONE_PREFIX    = %w[06 07].freeze
     PHONE_PREFIX           = HOME_WORK_PHONE_PREFIX + MOBILE_PHONE_PREFIX
     PHONE_NUMBER           = ['########', ' ## ## ## ##'].freeze
+    PHONE_NUMBER_NO_SPACES = ['########'].freeze
 
     def home_work_phone_number(spaces: true)
       number HOME_WORK_PHONE_PREFIX, spaces: spaces
@@ -46,18 +47,15 @@ module FFaker
     private
 
     def number(prefixes, country_prefix = '', spaces: true)
-      space  = spaces ? random_space : ''
       prefix = fetch_sample(prefixes)
       prefix = prefix[1] unless country_prefix == ''
 
-      result = FFaker.numerify [
+      FFaker.numerify [
         country_prefix,
-        space,
+        spaces ? random_space : '',
         prefix,
-        fetch_sample(PHONE_NUMBER)
+        fetch_sample(spaces ? PHONE_NUMBER : PHONE_NUMBER_NO_SPACES)
       ].join.strip
-
-      spaces ? result : result.delete(' ')
     end
 
     def random_space
