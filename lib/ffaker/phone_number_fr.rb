@@ -46,14 +46,11 @@ module FFaker
     private
 
     def number(prefixes, country_prefix = '', spaces: true)
-      prefix = country_prefix.empty? ? fetch_sample(prefixes) : fetch_sample(prefixes)[1]
+      prefix      = country_prefix.empty? ? fetch_sample(prefixes) : fetch_sample(prefixes)[1]
+      space       = spaces ? random_space : ''
+      number_part = spaces ? fetch_sample(PHONE_NUMBER) : PHONE_NUMBER.first
 
-      FFaker.numerify [
-        country_prefix,
-        spaces ? random_space : '',
-        prefix,
-        spaces ? fetch_sample(PHONE_NUMBER) : PHONE_NUMBER.first
-      ].join.strip
+      FFaker.numerify "#{country_prefix}#{space}#{prefix}#{number_part}".strip
     end
 
     def random_space
