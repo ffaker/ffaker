@@ -253,7 +253,7 @@
 | `street_name` | Tatyana Parkway, Tabitha Crossing, Chun Park |
 | `street_suffix` | Stream, Greens, Extension |
 | `suburb` | Newcastle, O'Connor, Canberra |
-| `time_zone` | Australia/Hobart, Australia/Canberra, Australia/Sydney |
+| `time_zone` | Australia/Darwin, Australia/Sydney, Australia/Adelaide |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -265,17 +265,17 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 4, 4b, 7a |
-| `city` | Mont-de-l'Enclus, Malle, Bütgenbach |
-| `city_prefix` | East, West, North |
-| `city_suffix` | port, haven, mouth |
-| `country` | Switzerland, Iraq, Italy |
-| `country_code` | BL, MG, BO |
-| `neighborhood` | Sunshine-Gardens, Candlewood Country Club, Jupiter South/Abacoa |
-| `postal_code` | 5227, 8664, 1471 |
-| `province` | Liège, Vlaams-Brabant, Luxembourg |
-| `secondary_address` | Suite 655, Suite 428, Apt. 496 |
-| `street_address` | Schillerbaan 6b, Leonorastraat 8b, Rolfstraat 583 |
+| `building_number` | 4b, 7a, 792 |
+| `city` | Gedinne, Oostrozebeke, Bassenge |
+| `city_prefix` | North, Port, East |
+| `city_suffix` | chester, berg, burgh |
+| `country` | Djibouti, Honduras, Ukraine |
+| `country_code` | WF, TH, MC |
+| `neighborhood` | Auburn North, Olmsted Falls Central, East Renton |
+| `postal_code` | 3776, 7404, 8163 |
+| `province` | Luxembourg, Limburg, Liège |
+| `secondary_address` | Suite 554, Apt. 824, Suite 627 |
+| `street_address` | Lubowitzstraat 2a, Deckowstraat 8b, Rolfstraat 583 |
 | `street_name` | Gutmannstraat, Justinestraat, Denesikstraat |
 | `street_suffix` | straat, baan, steenweg |
 | `time_zone` | Europe/Lisbon, Europe/Stockholm, Europe/Athens |
@@ -284,56 +284,56 @@
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 2947, 6880, 1481 |
+| `zip_code` | 8588, 1048, 2636 |
 
 ## FFaker::AddressBR
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 36276, 673, 992 |
-| `city` | Igarassu, Iguatu, Taboão da Serra |
-| `city_prefix` | Port, Lake, West |
-| `city_suffix` | mouth, shire, fort |
-| `complement` | Fundos, Apartamento 187, Casa Térrea |
-| `country` | Austria, Guatemala, Switzerland |
-| `country_code` | SS, TF, KM |
-| `full_address` | Travessa Adeilton Cavalcante, 71804, Jardim Alírio, Serra, Acre, Brazil, Rua Abrahão Silva Cavalcante, 23342, Jardim Narcisa, Pindamonhangaba, Espírito Santo, Brazil, Travessa Bina Souza, 56115, Parque Candelária, Parnaíba, Paraná, Brazil |
-| `neighborhood` | Parque Neli, Parque Bitenha, Parque Danis |
-| `secondary_address` | Apt. 370, Suite 051, Suite 503 |
-| `state` | Mato Grosso do Sul, Santa Catarina, Amazonas |
-| `state_abbr` | DF, PE, MS |
-| `street` | Rua Abinaldo Reis Batista, Rua Jaime Melo, Avenida Amadeu Moreira da Cunha |
-| `street_address` | 40910 Joeann Light, 34157 Runolfsson Port, 23811 Lucrecia Rue |
-| `street_name` | Demetrice Plaza, Lavinia Junctions, Pasty Mall |
-| `street_prefix` | Alameda, Travessa, Avenida |
-| `street_suffix` | Shoal, Brooks, Islands |
-| `time_zone` | Pacific/Noumea, Asia/Dhaka, Pacific/Fiji |
+| `building_number` | 27606, 73099, 35162 |
+| `city` | Chapecó, Bragança Paulista, Marituba |
+| `city_prefix` | Port, North, New |
+| `city_suffix` | ton, view, mouth |
+| `complement` | Casa Térrea, Fundos, Apartamento 071 |
+| `country` | Denmark, Antarctica, Ecuador |
+| `country_code` | BI, KW, TF |
+| `full_address` | Rua Galdino Farias Braga, 662, Parque Flora, Toledo, Rio de Janeiro, Brazil, Avenida Lia Souza, 56115, Parque Candelária, Parnaíba, Paraná, Brazil, Rua Aureliano Brito Farias, 0305, Jardim Letízia, Belo Horizonte, Mato Grosso do Sul, Brazil |
+| `neighborhood` | Parque Ivone, Vila Zuleica, Jardim Venâncio |
+| `secondary_address` | Suite 574, Suite 488, Apt. 536 |
+| `state` | Mato Grosso do Sul, Bahia, Pernambuco |
+| `state_abbr` | MA, PI, AC |
+| `street` | Alameda Thiago Reis Franco, Travessa Cacildo da Cunha, Rua Ismael Vieira Nascimento |
+| `street_address` | 111 Lucrecia Rue, 1129 Rohan Views, 96559 Hoeger Summit |
+| `street_name` | Koepp Rapid, Nichol Pike, Langosh Alley |
+| `street_prefix` | Rua, Alameda, Avenida |
+| `street_suffix` | Mission, Neck, Ways |
+| `time_zone` | Europe/Tallinn, America/Godthab, Pacific/Midway |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 83207-652, 31560-160, 71920-582 |
+| `zip_code` | 92058-218, 32301-109, 36586-687 |
 
 ## FFaker::AddressCA
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 8323, 110, 3658 |
-| `city` | Nanaimo, Rouyn-Noranda, Maple Ridge |
-| `city_prefix` | North, South, West |
-| `city_suffix` | fort, berg, side |
-| `country` | Saint Barthélemy, Mayotte, Uzbekistan |
-| `country_code` | GB, DJ, CA |
-| `neighborhood` | South of Bell Road, Candlewood Country Club, South of Lake Shore Blvd |
-| `postal_code` | G9C 5T4, B5S 1E1, L0X 1E7 |
-| `province` | Nunavut, Newfoundland and Labrador, British Columbia |
-| `province_abbr` | NT, SK, BC |
-| `secondary_address` | Suite 323, Suite 032, Suite 943 |
-| `street_address` | 48701 Lebsack Branch, 207 Swaniawski Hollow, 06059 Leoma Mount |
-| `street_name` | Myrtis Unions, Tracie Extensions, Cartwright Mill |
-| `street_suffix` | Port, Rest, Shoal |
-| `time_zone` | Asia/Kabul, Pacific/Fiji, America/Chicago |
+| `building_number` | 46187, 5242, 95417 |
+| `city` | Bécancour, La Tuque, North Vancouver |
+| `city_prefix` | Lake, East, New |
+| `city_suffix` | view, haven, ville |
+| `country` | Ecuador, Brunei Darussalam, Anguilla |
+| `country_code` | AT, YT, TH |
+| `neighborhood` | East of Telegraph Road, Greater Las Vegas National, White Oak South of Columbia Pike |
+| `postal_code` | P2Y 3E3, A7V 9C4, C8N 7G0 |
+| `province` | Nova Scotia, Prince Edward Island, Saskatchewan |
+| `province_abbr` | PE, NL, NT |
+| `secondary_address` | Apt. 760, Apt. 059, Suite 154 |
+| `street_address` | 3499 Wiza Port, 651 Iris Plains, 11234 Keturah Parks |
+| `street_name` | Kenda Green, Edie Grove, Tabetha Garden |
+| `street_suffix` | Ridges, Branch, Shores |
+| `time_zone` | Pacific/Fakaofo, Asia/Kabul, America/Lima |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -345,20 +345,20 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 1082, 6501, 90730 |
-| `canton_abbr` | BS, AR, SZ |
-| `city` | New Abigailtown, East Aleshia, Devonaborough |
-| `city_prefix` | West, New, East |
-| `city_suffix` | mouth, burgh, port |
-| `country` | Lao People's Democratic Republic, Faroe Islands, Tunisia |
-| `country_code` | RE, CK, AO |
-| `neighborhood` | Sagaponack Seaside, North Norridge, South of Lake Ave |
-| `postal_code` | 4020, 6017, 6938 |
-| `secondary_address` | Apt. 781, Suite 237, Apt. 747 |
-| `street_address` | 991 Britney Corner, 64051 Mabel Shores, 897 Lanell Manors |
-| `street_name` | Vince Path, Cletus Heights, Gutkowski Island |
-| `street_suffix` | Pines, Ways, Forges |
-| `time_zone` | America/Regina, Pacific/Tongatapu, Asia/Jerusalem |
+| `building_number` | 44671, 402, 601 |
+| `canton_abbr` | VS, FR, JU |
+| `city` | South Yoshiko, Port Casieview, East Bobetteshire |
+| `city_prefix` | South, Port, Lake |
+| `city_suffix` | chester, mouth, bury |
+| `country` | China, Burundi, Pakistan |
+| `country_code` | GP, KY, US |
+| `neighborhood` | Gates Mills North, Ladue South, Murray Hill |
+| `postal_code` | 8564, 0515, 2989 |
+| `secondary_address` | Apt. 795, Suite 038, Apt. 807 |
+| `street_address` | 4123 Janell Points, 991 Tana Brooks, 545 Amira Court |
+| `street_name` | Tarah Place, Collier Rue, Emmerich Centers |
+| `street_suffix` | Groves, Landing, Glen |
+| `time_zone` | Etc/UTC, Asia/Tokyo, America/Bogota |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -370,21 +370,21 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 7371, 8546, 196 |
-| `canton` | Freiburg, Solothurn, Appenzell Ausserrhoden |
-| `canton_abbr` | SZ, VD, AR |
-| `city` | Chasburgh, New Amina, Murphyview |
-| `city_prefix` | New, Lake, West |
-| `city_suffix` | fort, furt, mouth |
-| `country` | Aruba, Puerto Rico, Jamaica |
-| `country_code` | CF, AM, UZ |
-| `neighborhood` | Pennypack, North East Irwindale, Seven Hills Area |
-| `postal_code` | 6158, 2086, 7852 |
-| `secondary_address` | Apt. 475, Apt. 735, Suite 202 |
-| `street_address` | 7880 Ned Lodge, 597 Grant Shoals, 037 Rima Crest |
-| `street_name` | Ramiro Ports, Maria Cape, Zieme Fork |
-| `street_suffix` | Lights, Squares, Plain |
-| `time_zone` | Europe/Paris, Etc/UTC, America/Regina |
+| `building_number` | 615, 82086, 78524 |
+| `canton` | Wallis, Basel-Stadt, Genf |
+| `canton_abbr` | BE, NE, UR |
+| `city` | Connellytown, Suellenfurt, Medhurstmouth |
+| `city_prefix` | Port, Lake, North |
+| `city_suffix` | town, ton, bury |
+| `country` | Sint Maarten (dutch Part), Mali, Mozambique |
+| `country_code` | AM, GF, TO |
+| `neighborhood` | White Plains Central, Sagaponack Seaside, Bridesburg |
+| `postal_code` | 6951, 2878, 8002 |
+| `secondary_address` | Suite 528, Suite 513, Apt. 708 |
+| `street_address` | 48534 Gorczany Causeway, 113 Schinner Spur, 3780 Jennefer Island |
+| `street_name` | Hammes Harbor, Fonda Mills, Joya Pines |
+| `street_suffix` | Tunnel, Lakes, Falls |
+| `time_zone` | Asia/Baku, Australia/Perth, Asia/Magadan |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -396,21 +396,21 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 5198, 1502, 4327 |
-| `canton` | Jura, Argovie, Berne |
-| `canton_abbr` | AR, FR, SH |
-| `city` | Kunzefurt, South Dannielle, East Silvaland |
-| `city_prefix` | West, Port, New |
-| `city_suffix` | side, berg, town |
-| `country` | Bahamas, Greenland, United Arab Emirates |
-| `country_code` | ZW, IE, MY |
-| `neighborhood` | Pound Ridge East, Olmsted Falls Central, Ocean Parkway South |
-| `postal_code` | 2241, 7978, 2780 |
-| `secondary_address` | Suite 117, Suite 266, Apt. 616 |
-| `street_address` | 747 Beier Station, 4548 Carroll Radial, 2671 Ruthe Walk |
-| `street_name` | Nicol Grove, Berta Gateway, Ortiz Lights |
-| `street_suffix` | Land, Underpass, Alley |
-| `time_zone` | Europe/Amsterdam, Australia/Brisbane, America/Juneau |
+| `building_number` | 278, 0117, 66616 |
+| `canton` | Vaud, Bâle-Ville, Thurgovie |
+| `canton_abbr` | VS, TI, AI |
+| `city` | Johnsberg, New Tatiana, Christianafort |
+| `city_prefix` | North, East, West |
+| `city_suffix` | bury, ton, land |
+| `country` | Saint Martin (french Part), Maldives, Svalbard and Jan Mayen |
+| `country_code` | GY, GQ, TD |
+| `neighborhood` | Rockville East of Hungerford Dr, phoenix, River Heights |
+| `postal_code` | 9033, 6308, 5368 |
+| `secondary_address` | Suite 522, Apt. 635, Suite 701 |
+| `street_address` | 62422 Gracia Motorway, 5211 Denesik Pike, 2412 Rau Estates |
+| `street_name` | Bernadine Walks, Gorczany Station, Kling Roads |
+| `street_suffix` | Street, Freeway, Viaduct |
+| `time_zone` | America/Argentina/Buenos_Aires, Atlantic/South_Georgia, Europe/Paris |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -422,21 +422,21 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 75989, 4060, 8544 |
-| `canton` | Giura, Friburgo, Svitto |
-| `canton_abbr` | AI, FR, LU |
-| `city` | Nolanhaven, Shanikafurt, Franceberg |
-| `city_prefix` | East, Port, North |
-| `city_suffix` | shire, side, haven |
-| `country` | Egypt, Austria, Turkmenistan |
-| `country_code` | PE, PK, TJ |
-| `neighborhood` | Mott Haven/Port Morris, East Renton, Northwoods West |
-| `postal_code` | 1804, 3482, 2861 |
-| `secondary_address` | Suite 044, Suite 432, Apt. 589 |
-| `street_address` | 25728 Dexter Courts, 6764 Emmerich Lakes, 81434 Stiedemann Neck |
-| `street_name` | Tonie Spurs, Kohler Lake, Zemlak Bridge |
-| `street_suffix` | Stravenue, Meadow, Lane |
-| `time_zone` | America/La_Paz, Europe/Dublin, America/Chicago |
+| `building_number` | 58925, 7287, 5369 |
+| `canton` | Vallese, Basilea Città, Nidvaldo |
+| `canton_abbr` | FR, GE, TI |
+| `city` | Rinaberg, West Charolettechester, Natalieberg |
+| `city_prefix` | Port, Lake, South |
+| `city_suffix` | berg, mouth, haven |
+| `country` | Taiwan, Province of China, Saint Helena, Ascension and Tristan Da Cunha, New Zealand |
+| `country_code` | LY, TH, ZA |
+| `neighborhood` | Sagaponack Seaside, East Renton, Babylon Bayside |
+| `postal_code` | 3826, 4660, 8946 |
+| `secondary_address` | Suite 670, Apt. 590, Suite 708 |
+| `street_address` | 96073 Schmitt Lock, 1181 Kathey Tunnel, 82214 Vania Cliff |
+| `street_name` | Cheyenne Ports, Minda Viaduct, Steuber Springs |
+| `street_suffix` | Oval, Avenue, Circle |
+| `time_zone` | America/Chicago, Europe/Ljubljana, Asia/Yerevan |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -448,99 +448,99 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 66590, 2906, 38766 |
-| `city` | Nyrup, Gjerlev J, Gråsten |
-| `city_prefix` | South, Port, Lake |
-| `city_suffix` | chester, borough, burgh |
-| `country` | Colombia, Kenya, India |
-| `country_code` | CX, TL, TN |
-| `full_address` | Mosevænget 38 6767 Brande Nordjylland DANMARK, Pilevej 34 4476 Hjallerup Hovedstaden DANMARK, Egholmsvej 20 4317 Fur Midtjylland DANMARK |
-| `kommune` | Rødovre, Ishøj, Egedal |
-| `neighborhood` | River Heights, Summerlin North, Greater Las Vegas National |
-| `post_nr` | 9685, 1591, 0281 |
-| `region` | Sjælland, Syddanmark, Midtjylland |
-| `secondary_address` | Apt. 563, Suite 637, Apt. 687 |
-| `state` | Jammerbugt, Rødovre, Aabenraa |
-| `street_address` | Vesterby Torv 92, Højsdal 83, Pilevej 46 |
-| `street_name` | Brydetoften, Valmuens Kvarter, Tjørnekrattet |
-| `street_suffix` | Plains, Spurs, Corner |
-| `time_zone` | Atlantic/South_Georgia, Europe/Budapest, Europe/Helsinki |
+| `building_number` | 69296, 515, 1028 |
+| `city` | Bøvlingbjerg, Kværndrup, Suldrup |
+| `city_prefix` | West, Lake, Port |
+| `city_suffix` | ville, burgh, borough |
+| `country` | Djibouti, Kenya, Zambia |
+| `country_code` | SY, MA, CU |
+| `full_address` | Skåne Boulevard 39 2015 Randers NØ Midtjylland DANMARK, Pilevej 46 6805 Vejen Hovedstaden DANMARK, Holmenevej 91 2019 Hadsund Nordjylland DANMARK |
+| `kommune` | Tønder, Morsø, Sorø |
+| `neighborhood` | Brentwood Central, East of Telegraph Road, Pound Ridge East |
+| `post_nr` | 9932, 0228, 6690 |
+| `region` | Hovedstaden, Midtjylland, Nordjylland |
+| `secondary_address` | Suite 430, Apt. 284, Apt. 895 |
+| `state` | Skive, Bornholm, Rudersdal |
+| `street_address` | Kroppedals Alle 4, Rønnevej 27, Hammershøjvej 24 |
+| `street_name` | Bøgevej, Rønnevej, Bakkekær |
+| `street_suffix` | Island, Orchard, Dam |
+| `time_zone` | Asia/Kuwait, Asia/Muscat, Europe/Zagreb |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 0428, 4289, 5967 |
+| `zip_code` | 0588, 0683, 2363 |
 
 ## FFaker::AddressDE
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 17044, 698, 513 |
-| `city` | Heimsheim, Tann, Siegen |
-| `city_prefix` | North, South, Port |
-| `city_suffix` | mouth, borough, haven |
-| `country` | Tajikistan, Nicaragua, Nauru |
-| `country_code` | US, HR, DO |
-| `neighborhood` | Pennypack, East of Telegraph Road, Sunshine-Gardens |
-| `secondary_address` | Suite 004, Suite 764, Apt. 732 |
-| `state` | Nordrhein-Westfalen, Sachsen-Anhalt, Thueringen |
-| `street_address` | Corinnestr. 154, Michelinastr. 9, Fritschstr. 189 |
-| `street_name` | Ullrichstr., Darylweg, Willmsweg |
-| `street_suffix` | River, Ridges, Bypass |
-| `time_zone` | America/New_York, America/Indiana/Indianapolis, Asia/Taipei |
+| `building_number` | 8323, 95302, 8743 |
+| `city` | Geisingen, Werne, Gernrode |
+| `city_prefix` | New, South, West |
+| `city_suffix` | town, shire, stad |
+| `country` | Tajikistan, Bosnia and Herzegovina, Somalia |
+| `country_code` | TJ, BW, SL |
+| `neighborhood` | Pennypack, Candlewood Country Club, Ocean Parkway South |
+| `secondary_address` | Suite 254, Apt. 080, Apt. 609 |
+| `state` | Sachsen, Sachsen-Anhalt, Rheinland-Pfalz |
+| `street_address` | Schmittstr. 31, Hermannstr. 78, Talishastr. 101 |
+| `street_name` | Yolandestr., Emeraldstr., O'Connerstr. |
+| `street_suffix` | Courts, Pine, Orchard |
+| `time_zone` | Europe/Amsterdam, Asia/Tokyo, Australia/Melbourne |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 66225, 40080, 60943 |
+| `zip_code` | 87734, 80241, 77136 |
 
 ## FFaker::AddressFI
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 48334, 595, 03291 |
-| `city` | Haapavesi, Lapua, Vantaa |
-| `city_prefix` | North, East, New |
-| `city_suffix` | chester, bury, shire |
-| `country` | Kenya, Yemen, Luxembourg |
-| `country_code` | SD, MU, TW |
-| `full_address` | Ratsastajantie 9, 74325 Porvoo, SUOMI, Kujatie 03, 26703 Oulainen, SUOMI, Ypäjänkyläntie 549, 02512 Kauniainen, SUOMI |
-| `neighborhood` | Allegheny West, Mount Kisco West, Sunshine-Gardens |
-| `random_country` | Bhutan, Etelä-Afrikka, Ranska |
-| `secondary_address` | Suite 348, Apt. 241, Suite 713 |
-| `street_address` | Siittolanmäentie 3 a, Aholantie 69, Levänmäentie 1 |
-| `street_name` | Kalkkimäentie, Varsanojantie, Aholantie |
-| `street_nbr` | 4 a, 8 b 2, 0 |
-| `street_suffix` | Drive, Shores, Inlet |
-| `time_zone` | Asia/Karachi, Asia/Urumqi, Atlantic/South_Georgia |
+| `building_number` | 39286, 1177, 02482 |
+| `city` | Mikkeli, Lahti, Uusikaarlepyy |
+| `city_prefix` | Lake, West, East |
+| `city_suffix` | chester, ville, town |
+| `country` | Thailand, Botswana, Pitcairn |
+| `country_code` | JM, NR, GW |
+| `full_address` | Vellinkimäentie 7, 73179 Orivesi, SUOMI, Isokuja 9 b, 57740 Kankaanpää, SUOMI, Forssantie 32, 68856 Haapavesi, SUOMI |
+| `neighborhood` | South of Bell Road, Brentwood Central, East Renton |
+| `random_country` | Viro, Barbados, Bahrain |
+| `secondary_address` | Apt. 959, Suite 363, Apt. 770 |
+| `street_address` | Mäenpääntie 4, Lehtolantie 3, Palikkalantie 104 |
+| `street_name` | Papalintie, Sököpolku, Koskentie |
+| `street_nbr` | 7 a 8, 6 b 0, 3 b |
+| `street_suffix` | Turnpike, Garden, Road |
+| `time_zone` | Pacific/Noumea, Africa/Johannesburg, Europe/Bucharest |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 71695, 93632, 77094 |
+| `zip_code` | 43326, 17936, 62404 |
 
 ## FFaker::AddressFR
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 9354, 0460, 57866 |
-| `city` | Vitry-sur-Seine, Saint-Germain-en-Laye, Saint-Pierre |
-| `city_prefix` | South, New, Lake |
-| `city_suffix` | haven, berg, borough |
-| `country` | Slovakia, Bahamas, Belarus |
-| `country_code` | BN, SL, NU |
-| `full_address` | 0 rue Gilles Guillaume 2A230 Villefranche-sur-Saône, 70, bd Emmanuelle Grondin 40426 Massy, 14 TER boulevard Nathalie Dumas 97793 Suresnes |
-| `neighborhood` | North East Irwindale, Jamaica Estates/Holliswood, Florissant West |
-| `postal_code` | 32984, 2A281, 97303 |
-| `region` | Franche-Comté, Île-de-France, Basse-Normandie |
-| `secondary_address` | Apt. 642, Apt. 062, Suite 151 |
-| `street_address` | 9 impasse Lorraine Godard, 40 avenue Michel Poirier, 0 boulevard William Leroux |
-| `street_name` | Orn Mountain, Reiko Extension, Lois Park |
-| `street_suffix` | Dam, Tunnel, Freeway |
-| `time_zone` | Pacific/Tongatapu, Europe/Vilnius, Asia/Rangoon |
+| `building_number` | 98462, 153, 393 |
+| `city` | Douai, Athis-Mons, Saint-Denis |
+| `city_prefix` | West, North, Port |
+| `city_suffix` | shire, bury, fort |
+| `country` | Lesotho, Brunei Darussalam, Saint Kitts and Nevis |
+| `country_code` | TZ, EE, BN |
+| `full_address` | 9 impasse Lorraine Godard 2A140 Saint-Joseph, 99, rue Juliette De 2B395 Vénissieux, 3 B, av Victor Blondel, 2B305 Ajaccio |
+| `neighborhood` | Bushwick South, Northwoods West, East Renton |
+| `postal_code` | 2A821, 2A274, 2A172 |
+| `region` | Rhône-Alpes, La Réunion, Bretagne |
+| `secondary_address` | Suite 988, Suite 372, Apt. 204 |
+| `street_address` | 10, rue Susan Carlier, 81, boulevard Jeanne Albert, 80 T, avenue Nathalie Schneider |
+| `street_name` | Matt Key, Allison Bypass, Carol Camp |
+| `street_suffix` | Ferry, Lodge, Greens |
+| `time_zone` | Asia/Rangoon, Asia/Yakutsk, Asia/Almaty |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -552,275 +552,275 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 38329, 41223, 39907 |
-| `city` | Κιλκίς, Βάρη, Ορεστιάδα |
-| `city_prefix` | North, Port, East |
-| `city_suffix` | ville, port, land |
-| `country` | Svalbard and Jan Mayen, Holy See (Vatican City State), Lao People's Democratic Republic |
-| `country_code` | OM, LY, BH |
-| `neighborhood` | Greater Las Vegas National, Mount Kisco West, Renton West |
-| `region` | Θεσσαλία, Στερεά Ελλάδα, Ήπειρος |
-| `secondary_address` | Apt. 712, Apt. 463, Suite 878 |
-| `street_address` | ["Οδός", "Πάροδος"] Βασιλείου Βουλγαροκτόνου, 451, ["Οδός", "Πάροδος"] Αδριανουπόλεως, 26, ["Οδός", "Πάροδος"] Φωκά Νικηφόρου, 11 |
-| `street_name` | Δωδεκανήσου, Ελλησπόντου, Βελισαρίου |
-| `street_nbr` | 572, 21, 101 |
-| `street_suffix` | Wells, Loaf, Viaduct |
-| `time_zone` | Asia/Urumqi, Asia/Magadan, Europe/Paris |
+| `building_number` | 572, 45399, 2154 |
+| `city` | Καβάλα, Γρεβενά, Σέρρες |
+| `city_prefix` | New, Port, North |
+| `city_suffix` | shire, stad, fort |
+| `country` | Bhutan, Albania, United States |
+| `country_code` | TG, SY, TN |
+| `neighborhood` | Candlewood Country Club, South of Lake Shore Blvd, East Renton |
+| `region` | Ιόνιοι Νήσοι, Πελοπόννησος, Βόρειο Αιγαίο |
+| `secondary_address` | Apt. 880, Suite 666, Suite 787 |
+| `street_address` | ["Οδός", "Πάροδος"] Φωκά Νικηφόρου, 1, ["Οδός", "Πάροδος"] Αλεξανδρείας, 353, ["Οδός", "Πάροδος"] Άνδρου, 9 |
+| `street_name` | Ιωνίας, Μομφερράτου Ιωσήφ, Πάροδος Κυψελών |
+| `street_nbr` | 315, 684, 823 |
+| `street_suffix` | Ways, Haven, Fall |
+| `time_zone` | Europe/Sarajevo, Pacific/Fiji, Asia/Kamchatka |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 73411, 35390, 90831 |
+| `zip_code` | 57648, 16799, 91394 |
 
 ## FFaker::AddressID
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 2684, 82301, 914 |
-| `city` | Singkawang, Pontianak, Payakumbuh |
-| `city_prefix` | South, New, West |
-| `city_suffix` | mouth, berg, side |
-| `country` | Jordan, Viet Nam, Norfolk Island |
-| `country_code` | SA, MC, NA |
-| `neighborhood` | Summerlin North, Olmsted Falls Central, Sea Ranch Lakes |
-| `secondary_address` | Apt. 105, Suite 062, Apt. 533 |
-| `state` | Kalimantan Tengah, Kalimantan Selatan, Sulawesi Selatan |
-| `state_abbr` | NT, MU, BA |
-| `street` | Jl. Maria Walanda Maramis, No. 11, Jln. Nuku Muhammad Amiruddin, No. 97, Jl. Albertus Sugiyapranata, No. 72 |
-| `street_address` | 48167 Kaci Ranch, 3947 Velvet Skyway, 1465 Angela Curve |
-| `street_name` | Naomi Track, Janella Lock, Heather Turnpike |
+| `building_number` | 7391, 655, 5359 |
+| `city` | Banda, Bontang, Depok |
+| `city_prefix` | South, East, Lake |
+| `city_suffix` | burgh, view, mouth |
+| `country` | Nicaragua, Kazakhstan, San Marino |
+| `country_code` | MS, BG, GT |
+| `neighborhood` | Cleveland Park, Gates Mills North, Sagaponack Seaside |
+| `secondary_address` | Apt. 594, Apt. 314, Apt. 673 |
+| `state` | Sulawesi Tengah, Bangka Belitung, Aceh |
+| `state_abbr` | MU, SA, PB |
+| `street` | Jln. Tan Malaka, No. 6, Jln. Mohammad Yasin, No. 78, Jln. Basuki Rahmat, No. 31 |
+| `street_address` | 75753 Thompson Glens, 3543 Reanna Route, 740 Koss Plains |
+| `street_name` | Zieme Junctions, Lubowitz Haven, Connelly Fords |
 | `street_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for street_prefix |
-| `street_suffix` | Cape, Canyon, Rapids |
-| `time_zone` | Europe/Ljubljana, Europe/Lisbon, Asia/Chongqing |
+| `street_suffix` | Hill, Underpass, Parks |
+| `time_zone` | Asia/Almaty, America/Los_Angeles, America/Bogota |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 96360, 23669, 82099 |
+| `zip_code` | 05260, 88441, 15105 |
 
 ## FFaker::AddressIN
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 75642, 77761, 950 |
-| `city` | Ahmedabad, Coimbatore, Lucknow |
-| `city_prefix` | Lake, New, North |
-| `city_suffix` | bury, side, furt |
+| `building_number` | 639, 76607, 784 |
+| `city` | Coimbatore, Lucknow, Indore |
+| `city_prefix` | East, West, Port |
+| `city_suffix` | chester, ville, mouth |
 | `country` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country |
 | `country_code` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for country_code |
-| `neighborhood` | Sagaponack Seaside, Bronxdale, Cleveland Park |
-| `pincode` | 084268, 901505, 879210 |
-| `secondary_address` | Suite 454, Suite 961, Apt. 683 |
-| `state` | Karnataka, Bihar, Jharkhand |
-| `state_abbr` | ML, KA, RJ |
-| `state_and_union_territory` | Uttar Pradesh, Lakshadweep, Sikkim |
-| `state_and_union_territory_abbr` | UP, DD, KA |
-| `street_address` | 844 Enrique Station, 1058 Runolfsson Valleys, 97660 Jacquie Course |
-| `street_name` | Terry Keys, Sachiko Turnpike, Kathryn Falls |
-| `street_suffix` | Lock, Mall, Canyon |
+| `neighborhood` | Mount Kisco West, Sea Ranch Lakes, Summerlin North |
+| `pincode` | 497745, 286416, 510120 |
+| `secondary_address` | Apt. 353, Suite 401, Suite 235 |
+| `state` | Sikkim, Karnataka, Himachal Pradesh |
+| `state_abbr` | KL, CT, TR |
+| `state_and_union_territory` | Meghalaya, Kerala, Pondicherry |
+| `state_and_union_territory_abbr` | WB, TR, DD |
+| `street_address` | 838 Wyman Passage, 185 Nitzsche Rest, 35741 Kristopher Terrace |
+| `street_name` | Mendy Roads, Greenfelder Creek, Natasha Isle |
+| `street_suffix` | Spurs, View, Green |
 | `time_zone` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for time_zone |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
-| `union_territory` | Andaman and Nicobar Islands, Pondicherry, Chandigarh |
-| `union_territory_abbr` | DN, LK, DD |
+| `union_territory` | Lakshadweep, Delhi, Pondicherry |
+| `union_territory_abbr` | CH, DN, AN |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 703099, 083842, 918569 |
+| `zip_code` | 129240, 420917, 171670 |
 
 ## FFaker::AddressIT
 
 | Method | Example |
 | ------ | ------- |
-| `city` | Biella, Benevento, Cuneo |
-| `full_address` | 357, viale Virginia Riccardi 18130 Enna, 78, via Antonio Corti, 91618 Bari, 3-39 via Dr. Vittorio Monachello 05551 Belluno |
-| `postal_code` | 49692, 08611, 81292 |
-| `region` | Abruzzo, Emilia-Romagna, Valle d'Aosta |
-| `street_address` | 9 piazza Sig.na Natale Bertini, 16, via Sig. Caterina Esposito, 32 via Prof. Alfonso Rizzo |
+| `city` | Sud Sardegna, Ravenna, Trento |
+| `full_address` | 93 piazza Federica Morelli, 37066 Livorno, 401 piazza Nicola Patrizi 84037 Monza e Della Brianza, 62 piazzale Sig.na Susanna Adamo 80440 Trapani |
+| `postal_code` | 16258, 26949, 49986 |
+| `region` | Valle d'Aosta, Basilicata, Liguria |
+| `street_address` | 09, via Natalia Rizzo, 8604 piazzale Carolina Patrizi, 8-95 viale Claudia Coppola |
 
 ## FFaker::AddressJA
 
 | Method | Example |
 | ------ | ------- |
-| `address` | 663-4013 千葉県常陸太田市松江市4丁目0番3号, 437-9700 鳥取県長岡京市熱田区名古屋市0丁目7番3号, 034-5283 埼玉県洲本市萩市102 |
-| `building_number` | 6070, 67778, 352 |
-| `city` | ふじみ野市, 勝浦市, 大田原市 |
-| `city_prefix` | South, North, Lake |
-| `city_suffix` | shire, mouth, town |
-| `country` | Ghana, Falkland Islands (Malvinas), Cambodia |
-| `country_code` | TD, ER, PS |
-| `county` | 南都留郡, 名東郡, 下伊那郡 |
-| `designated_city` | 鶴岡市, 飯田市, 高島市 |
-| `designated_city_address` | 039-9447 群馬県岩見沢市平野区北広島市1丁目6番4号, 826-7064 東京都飯塚市保土ヶ谷区高石市081, 360-1813 鹿児島県大田原市美浜区瑞浪市758 |
-| `land_number` | 5丁目5番8号, 9丁目6番5号, 0丁目3番5号 |
-| `neighborhood` | Central Chandler, Jamaica Estates/Holliswood, Auburn North |
-| `other_address` | 311-0804 山形県苫前郡宇治市1丁目5番2号, 761-5262 栃木県大沼郡熊谷市065, 712-7645 群馬県石狩郡大竹市754 |
-| `postal_code` | 777-0510, 914-5781, 542-4744 |
-| `prefecture` | 東京都, 奈良県, 岐阜県 |
-| `secondary_address` | Suite 554, Apt. 109, Apt. 512 |
-| `street` | 取手市, 菊池市, 貝塚市 |
-| `street_address` | 3996 Prohaska Falls, 9796 Phung Route, 96274 Refugio Light |
-| `street_name` | Monnie Path, Clora Locks, Quincy Courts |
-| `street_suffix` | Extensions, Light, Rapid |
-| `time_zone` | Asia/Kamchatka, America/Lima, Asia/Kolkata |
-| `tokyo_ward` | 渋谷区, 新宿区, 葛飾区 |
-| `tokyo_ward_address` | 157-7506 東京都中央区泉南市0丁目2番5号, 875-3310 東京都墨田区魚沼市455, 004-8332 東京都世田谷区袋井市061 |
+| `address` | 437-9700 鳥取県余市郡府中市0丁目7番3号, 706-7778 東京都足立区守山市240, 994-4795 岩手県中新川郡安曇野市4丁目8番2号 |
+| `building_number` | 965, 035, 268 |
+| `city` | 奈良市, 高知市, 吉川市 |
+| `city_prefix` | New, South, North |
+| `city_suffix` | haven, ton, furt |
+| `country` | Isle of Man, Tajikistan, Guam |
+| `country_code` | KN, ME, PH |
+| `county` | 田川郡, 大沼郡, 土佐郡 |
+| `designated_city` | 五泉市, 那須塩原市, 長崎市 |
+| `designated_city_address` | 535-4152 滋賀県弥富市中川区藤井寺市3丁目9番2号, 606-4319 宮崎県能代市中区飯山市152, 628-1430 東京都磐田市宮前区常総市280 |
+| `land_number` | 171, 715, 7丁目6番4号 |
+| `neighborhood` | Renton West, Pound Ridge East, Bushwick South |
+| `other_address` | 781-5424 富山県下北郡取手市4丁目1番5号, 339-9605 京都府安達郡洲本市967, 759-4625 島根県安芸郡富里市157 |
+| `postal_code` | 506-9036, 602-5875, 331-0745 |
+| `prefecture` | 静岡県, 北海道, 兵庫県 |
+| `secondary_address` | Suite 483, Suite 298, Suite 061 |
+| `street` | 北本市, 前橋市, つくばみらい市 |
+| `street_address` | 441 Jast Lights, 3962 Dooley Light, 90984 Morissette Brook |
+| `street_name` | Champlin Crescent, Friesen Ridge, Madeline Square |
+| `street_suffix` | Squares, Wall, Camp |
+| `time_zone` | Asia/Shanghai, Pacific/Tongatapu, America/Halifax |
+| `tokyo_ward` | 板橋区, 渋谷区, 目黒区 |
+| `tokyo_ward_address` | 708-1034 東京都千代田区三鷹市3丁目3番9号, 599-4559 東京都台東区船橋市808, 671-4361 東京都品川区霧島市092 |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `village` | 南阿蘇村, 小菅村, 北相木村 |
-| `ward` | 左京区, 淀川区, 小倉北区 |
+| `village` | 利島村, 小笠原村, 下條村 |
+| `ward` | 中央区, 南区, 垂水区 |
 | `zip_code` | ❗ *[zip_code] is deprecated. For US addresses please use the AddressUS module* |
 
 ## FFaker::AddressKR
 
 | Method | Example |
 | ------ | ------- |
-| `address_detail` | 청환빌라 436호, 범찬연립, 백범마을 026호 |
-| `borough` | 남구, 영등포구, 중랑구 |
-| `building_name` | 포규연립, 순홍타운, 예지타워 |
-| `city` | 수원시 장안구, 연천군, 수원시 |
-| `land_address` | 전라북도 우종리 807-5, 충청북도 미광동 062, 충청남도 제환리 3591 |
-| `land_number` | 455, 5435, 0941-9 |
-| `metropolitan_city` | 부산광역시, 광주광역시, 서울특별시 |
-| `old_postal_code` | 533-115, 343-153, 008-288 |
-| `postal_code` | 92085, 23920, 33118 |
-| `province` | 충청남도, 전라남도, 경기도 |
-| `road_addess` | 제주특별자치도 영승리 정원8로 (지유동), 인천광역시 도봉구 재훈가, 광주광역시 양천구 동규길 (정완동) |
-| `street` | 성재길, 정열8로, 승학길 |
-| `town` | 지원동, 희오마을, 헌환마을 |
+| `address_detail` | 경백타워 184호, 표묵마을 509호, 재일타운 |
+| `borough` | 종로구, 은평구, 서대문구 |
+| `building_name` | 부창타워, 일원마을, 세찬마을 |
+| `city` | 수원시, 안양시, 김포시 |
+| `land_address` | 인천광역시 광진구 윤상마을 1530, 대전광역시 용산구 화선마을 9203, 인천광역시 서초구 상헌마을 853-3 |
+| `land_number` | 980-3, 982, 163 |
+| `metropolitan_city` | 서울특별시, 울산광역시, 대전광역시 |
+| `old_postal_code` | 104-356, 201-839, 123-941 |
+| `postal_code` | 34545, 15908, 25418 |
+| `province` | 충청북도, 전라남도, 경기도 |
+| `road_addess` | 경기도 이증리 채문거리 (소범동), 제주특별자치도 경태마을 형철로 (운태리), 제주특별자치도 아영동 서진1로 |
+| `street` | 장준7가, 우철9가, 인직가 |
+| `town` | 상민동, 창연동, 필승리 |
 
 ## FFaker::AddressMX
 
 | Method | Example |
 | ------ | ------- |
-| `municipality` | Cumpas, Comondú, Tlalpan |
-| `postal_code` | 33702, 83071, 34138 |
-| `state` | San Luis Potosí, Veracruz, Tabasco |
-| `state_abbr` | MEX, MICH, COAH |
-| `zip_code` | 65237, 52811, 61851 |
+| `municipality` | Mulegé, Compostela, Morelos |
+| `postal_code` | 50515, 68779, 82461 |
+| `state` | Baja California Sur, Hidalgo, Campeche |
+| `state_abbr` | TAMPS, COAH, QRO |
+| `zip_code` | 56485, 74311, 34730 |
 
 ## FFaker::AddressNL
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 658, 38591, 8701 |
-| `city` | Bodegraven, Gaastmeer, Meedhuizen |
-| `city_prefix` | North, Lake, New |
-| `city_suffix` | burgh, ville, chester |
-| `country` | Mongolia, Gambia, Gabon |
-| `country_code` | FJ, SE, NZ |
-| `neighborhood` | Dyker Heights, Cipriani, East of Telegraph Road |
-| `postal_code` | 9930 LL, 3145 QM, 6156 ZP |
-| `province` | Noord-Brabant, Gelderland, Flevoland |
-| `secondary_address` | Apt. 246, Suite 123, Suite 665 |
-| `street_address` | 48574 Stevestraat, 473 Grimesstraat, 958 Colestraat |
-| `street_name` | Morissettestraat, Merlesteeg, Bulahstraat |
-| `street_suffix` | Forks, Groves, Port |
-| `time_zone` | Europe/Belgrade, Australia/Melbourne, Pacific/Fakaofo |
+| `building_number` | 895, 8903, 13495 |
+| `city` | Drempt, Aagtekerke, Nijkerkerveen |
+| `city_prefix` | New, Port, Lake |
+| `city_suffix` | bury, town, haven |
+| `country` | Lithuania, Sint Maarten (dutch Part), Slovenia |
+| `country_code` | CW, PL, PG |
+| `neighborhood` | Seven Hills Area, South of Bell Road, Mott Haven/Port Morris |
+| `postal_code` | 1332 CV, 5839 WC, 5335 UF |
+| `province` | Noord-Holland, Limburg, Utrecht |
+| `secondary_address` | Suite 117, Suite 053, Apt. 401 |
+| `street_address` | 5939 Cruickshankstraat, 749 Kenstraat, 65121 Anboulevard |
+| `street_name` | Indiastraat, Torphystraat, Charlottestraat |
+| `street_suffix` | Parkways, Green, Shores |
+| `time_zone` | Atlantic/Azores, America/Caracas, Africa/Nairobi |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 7911 MH, 1534 VL, 1115 LJ |
+| `zip_code` | 8253 QE, 3762 ZM, 8456 EW |
 
 ## FFaker::AddressPL
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 4, 191, 107 |
-| `city` | Niemcza, Międzylesie, Przemyśl |
-| `full_address` | al. Chojnicka 53 95-756 Radłów, plac św. Wojciecha 146 21-947 Ryn, ul. Trygława 165 77-273 Sompolno |
-| `postal_code` | 71-905, 80-306, 92-441 |
-| `province` | łódzkie, mazowieckie, podkarpackie |
-| `secondary_number` |  m. 1, /197, /52 |
-| `square` | zaułek Bohaterów Westerplatte, zaułek Konstytucji 3 Maja, zaułek Dworzysko |
-| `square_prefix` | plac, zaułek, bulwar |
-| `state` | warmińsko-mazurskie, świętokrzyskie, podlaskie |
-| `street` | al. św. Katarzyny, ul. Bytomska, al. Kasjopei |
-| `street_address` | bulwar Dworzysko 64, ul. Przytulna 107, al. św. Jerzego 174 |
-| `street_name` | zaułek Artystów, pasaż Pluty, al. Grunwaldzka |
+| `building_number` | 153, 99, 162 |
+| `city` | Karlino, Ośno Lubuskie, Cieszanów |
+| `full_address` | al. Kasztanowa 83 02-839 Tomaszów Lubelski, pasaż Przyjaźni 58 88-439 Jabłonowo Pomorskie, skwer Jana Pawła II 127 53-364 Nowy Tomyśl |
+| `postal_code` | 43-239, 75-708, 27-374 |
+| `province` | podlaskie, opolskie, wielkopolskie |
+| `secondary_number` | /175,  m. 135,  m. 76 |
+| `square` | zaułek Mongolski, bulwar 11 Pułku, zaułek ks. Ryszarda Rajskiego |
+| `square_prefix` | bulwar, plac, skwer |
+| `state` | mazowieckie, lubelskie, lubuskie |
+| `street` | ul. św. Wojciecha, al. Kaskadowa, ul. Głowicka |
+| `street_address` | bulwar Tadeusza Kotarbińskiego 88, ul. Kaszubska 70, al. Kamienna 126 |
+| `street_name` | al. Sobótki, al. Kniewska, ul. Zagrzebska |
 | `street_prefix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for street_prefix |
-| `voivodeship` | warmińsko-mazurskie, podkarpackie, śląskie |
-| `voivodeship_abbr` | SL, LD, WN |
-| `voivodeship_capital_city` | Toruń, Bydgoszcz, Wrocław |
-| `zip_code` | 59-767, 91-224, 43-063 |
+| `voivodeship` | wielkopolskie, świętokrzyskie, opolskie |
+| `voivodeship_abbr` | PM, WP, MA |
+| `voivodeship_capital_city` | Bydgoszcz, Rzeszów, Kraków |
+| `zip_code` | 95-655, 98-196, 93-758 |
 
 ## FFaker::AddressRU
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 63588, 5918, 7676 |
-| `city` | Томск, Комсомольск-на-Амуре, Магнитогорск |
-| `city_prefix` | North, Port, West |
-| `city_suffix` | side, fort, furt |
-| `country` | Zimbabwe, Hungary, Sao Tome and Principe |
-| `country_code` | TZ, ER, LU |
-| `neighborhood` | Kingsbridge Heights, Sagaponack Seaside, Summerlin North |
-| `province` | Тульская область, Чукотский автономный округ, Мурманская область |
-| `secondary_address` | Apt. 478, Apt. 822, Apt. 713 |
-| `street_address` | ул. Колхозная, д. 7, ул. Строительная, д. 657, ул. Заводская, д. 751 |
-| `street_name` | ул. Озерная, ул. Степная, ул. Комсомольская |
-| `street_number` | 869, 6, 5 |
-| `street_suffix` | Passage, Mountain, Lakes |
-| `time_zone` | Asia/Colombo, America/Denver, Asia/Tbilisi |
+| `building_number` | 4331, 046, 0037 |
+| `city` | Нижний Тагил, Тамбов, Улан-Удэ |
+| `city_prefix` | West, New, Port |
+| `city_suffix` | chester, port, town |
+| `country` | Mali, Congo, The Democratic Republic of The, Ecuador |
+| `country_code` | BR, CC, RW |
+| `neighborhood` | Central Chandler, Cipriani, Far Rockaway/Bayswater |
+| `province` | Пермский край, Курская область, Ненецкий автономный округ |
+| `secondary_address` | Apt. 647, Suite 263, Suite 203 |
+| `street_address` | ул. Гагарина, д. 3, ул. Полевая, д. 57, ул. Советская, д. 56 |
+| `street_name` | ул. Октябрьская, ул. Горького, ул. Комсомольская |
+| `street_number` | 783, 57, 071 |
+| `street_suffix` | Mountain, Way, Ridges |
+| `time_zone` | Australia/Melbourne, Europe/Belgrade, Asia/Seoul |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 083070, 769932, 972647 |
+| `zip_code` | 868926, 254241, 594992 |
 
 ## FFaker::AddressSE
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 63120, 79304, 7085 |
-| `city` | Eslöv, Kramfors, Vänersborg |
-| `city_prefix` | North, South, Lake |
-| `city_suffix` | land, fort, haven |
-| `country` | Falkland Islands (Malvinas), Comoros, Turkey |
-| `country_code` | JM, SG, WS |
-| `full_address` | Sandkullsvägen 64, 27241 Borlänge, SVERIGE, Gimmerstavägen 0b, 07 463 Vaxholm, SVERIGE, Mårtensdalsgatan 734, 54402 Kalmar, SVERIGE |
-| `neighborhood` | phoenix, Schall Circle/Lakeside Green, Auburn North |
-| `random_country` | Palestina, Ukraina, Somalia |
-| `secondary_address` | Apt. 625, Suite 424, Suite 594 |
-| `street_address` | Kyrkogårdsvägen 2, Manillavägen 3a, Östanåvägen 4b |
-| `street_name` | Kaprifolvägen, Frödingsvägen, Damastvägen |
-| `street_nbr` | 2, 4b, 6 |
-| `street_suffix` | Club, Stream, Crossing |
-| `time_zone` | Africa/Nairobi, Asia/Ulaanbaatar, Asia/Tokyo |
+| `building_number` | 83343, 20192, 3416 |
+| `city` | Vaxholm, Torget, Mjölby |
+| `city_prefix` | Port, Lake, New |
+| `city_suffix` | port, burgh, stad |
+| `country` | Turkey, Macedonia, The Former Yugoslav Republic of, South Georgia and The South Sandwich Islands |
+| `country_code` | SS, CI, TC |
+| `full_address` | Gurlitavägen 4, 60 320 Västervik, SVERIGE, Parkgatan 69, 52 158 Västerås, SVERIGE, Fiskebyvägen 0b, 15 242 Karlshamn, SVERIGE |
+| `neighborhood` | phoenix, Jupiter South/Abacoa, Sagaponack Seaside |
+| `random_country` | Belize, Centralafrikanska republiken, Cypern |
+| `secondary_address` | Apt. 849, Apt. 852, Suite 230 |
+| `street_address` | Gråstensvägen 92, Midskeppsgatan 5b, Ulricehamnsvägen 1a |
+| `street_name` | Vildapelvägen, Alsätravägen, Majdalsvägen |
+| `street_nbr` | 4b, 4, 57 |
+| `street_suffix` | Valley, Summit, Viaduct |
+| `time_zone` | Europe/Rome, Asia/Seoul, Pacific/Guam |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 52427, 87 746, 84908 |
+| `zip_code` | 57581, 89906, 48 041 |
 
 ## FFaker::AddressSN
 
 | Method | Example |
 | ------ | ------- |
-| `arrondissement` | Guinaw Rail Nord, Thiaroye Sur Mer, Tivaouane Diacksao |
-| `building_number` | 30710, 926, 1503 |
-| `city` | Port Ruby, New Zoila, Lake Salshire |
-| `city_prefix` | Port, East, Lake |
-| `city_suffix` | mouth, berg, haven |
-| `country` | Tanzania, United Republic of, Canada, Azerbaijan |
-| `country_code` | NC, ST, IL |
-| `departement` | gossas, Saint-Louis, Kedougou |
-| `neighborhood` | Bridesburg, Cleveland Park, Central Chandler |
-| `region` | sedhiou, kedougou, thies |
-| `secondary_address` | Apt. 627, Suite 957, Apt. 152 |
-| `street_address` | 1314 Cecily Points, 6126 Rice Forest, 7581 Bogan Trace |
-| `street_name` | Raelene Road, Labadie Groves, Chana Common |
-| `street_suffix` | Loaf, Green, Ways |
-| `time_zone` | Pacific/Port_Moresby, America/Chihuahua, Europe/Brussels |
+| `arrondissement` | Biscuiterie, Diamaguène, Gorée |
+| `building_number` | 8011, 463, 598 |
+| `city` | Lake Lizettechester, Tamiestad, Breitenbergfort |
+| `city_prefix` | South, New, Port |
+| `city_suffix` | mouth, borough, ville |
+| `country` | Maldives, Cyprus, Guyana |
+| `country_code` | SS, BV, MH |
+| `departement` | pikine, Kanel, Linguere |
+| `neighborhood` | Ocean Parkway South, Mount Kisco West, Olmsted Falls Central |
+| `region` | thies, louga, saint louis |
+| `secondary_address` | Apt. 758, Apt. 230, Suite 981 |
+| `street_address` | 2212 Bins Knoll, 28896 Walter Square, 968 Cassidy Overpass |
+| `street_name` | Trantow Brooks, McKenzie Fall, Jacobs Fields |
+| `street_suffix` | Mission, Haven, Pine |
+| `time_zone` | Pacific/Port_Moresby, Pacific/Fiji, America/Caracas |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -832,33 +832,33 @@
 
 | Method | Example |
 | ------ | ------- |
-| `appartment_number` | 9, 77, 7 |
-| `building_number` | 44, 3, 109 |
-| `city` | Слов’янськ, Горлівка, Шостка |
-| `country` | Оман, Ботсвана, Казахстан |
-| `province` | Закарпатська область, Харківська область, Волинська область |
-| `street_address` | вул. Коліївщини, 67, вул. Коліївщини, 368, вул. Ліста, 37 |
-| `street_name` | вул. Зелена, вул. Молодіжна, вул. Вузька |
-| `zip_code` | 88382, 99511, 31561 |
+| `appartment_number` | 57, 7, 122 |
+| `building_number` | 57, 3, 46 |
+| `city` | Чернігів, Запоріжжя, Шостка |
+| `country` | Того, Зімбабве, Йорданія |
+| `province` | Черкаська область, Одеська область, Рівненська область |
+| `street_address` | вул. Ліста, 8, вул. Нижанківського, 987, вул. Вічева, 2 |
+| `street_name` | вул. Брюховичів, вул. Вузька, вул. Вічева |
+| `zip_code` | 15903, 29319, 39006 |
 
 ## FFaker::AddressUK
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 897, 6467, 40890 |
-| `city` | East Jadwiga, West Doretta, Gennymouth |
-| `city_prefix` | East, Port, West |
-| `city_suffix` | chester, view, ton |
-| `country` | Northern Ireland, Scotland, England |
-| `country_code` | CH, US, GP |
-| `county` | Somerset, Tyne and Wear, Berkshire |
-| `neighborhood` | Northwest Midlothian/Midlothian Country Club, Allegheny West, Sagaponack Seaside |
-| `postcode` | WW20 3NX, HL46 0VX, IH36 8YF |
-| `secondary_address` | Suite 199, Apt. 481, Suite 903 |
-| `street_address` | 93193 Monahan Trail, 0663 Eldon Ville, 37151 Harvey Park |
-| `street_name` | Aleta Centers, Virginia Ridges, Lockman Mills |
-| `street_suffix` | Causeway, Via, Gardens |
-| `time_zone` | Australia/Melbourne, America/St_Johns, Asia/Hong_Kong |
+| `building_number` | 35137, 15147, 1903 |
+| `city` | Angilamouth, Rudolfmouth, North Adrianeton |
+| `city_prefix` | West, East, Lake |
+| `city_suffix` | berg, haven, ville |
+| `country` | Wales, England, Scotland |
+| `country_code` | BF, RU, RE |
+| `county` | Durham, Cumbria, Fife |
+| `neighborhood` | Northwoods West, Sunshine-Gardens, Jamaica Estates/Holliswood |
+| `postcode` | Y1P 7RW, F6C 4WU, C87 2PN |
+| `secondary_address` | Suite 928, Apt. 263, Suite 045 |
+| `street_address` | 52793 Marvin Mount, 9836 Stanton Knolls, 08887 Linda Motorway |
+| `street_name` | Pedro Locks, Roslyn Estate, Kessler Cliff |
+| `street_suffix` | Drives, Knolls, Wall |
+| `time_zone` | America/New_York, Asia/Karachi, America/Phoenix |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
@@ -870,62 +870,62 @@
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 52793, 98362, 66088 |
-| `city` | New Gabriellafort, East Pedrotown, South Jackeline |
-| `city_prefix` | Port, North, East |
-| `city_suffix` | borough, port, bury |
-| `continental_state` | Colorado, Louisiana, Michigan |
-| `continental_state_abbr` | WA, OK, FL |
-| `country` | Eritrea, Guyana, Åland Islands |
-| `country_code` | KR, EC, CN |
-| `neighborhood` | Bronxdale, Ocean Parkway South, East Renton |
-| `secondary_address` | Suite 710, Suite 969, Apt. 128 |
-| `state` | West Virginia, Arizona, Pennsylvania |
-| `state_abbr` | ME, OH, NY |
-| `state_and_territories_abbr` | AL, CT, DC |
-| `street_address` | 90590 Nikolaus Field, 474 Gislason Keys, 57565 Herzog Via |
-| `street_name` | Mozella Course, Nienow Loaf, Stokes Shoal |
-| `street_suffix` | Cove, Overpass, Dam |
-| `time_zone` | America/Halifax, America/Denver, America/Monterrey |
+| `building_number` | 63882, 806, 18772 |
+| `city` | North Wanitaberg, Rempelville, West Shirlee |
+| `city_prefix` | South, North, Lake |
+| `city_suffix` | bury, side, stad |
+| `continental_state` | Ohio, Virginia, South Carolina |
+| `continental_state_abbr` | SD, CO, WI |
+| `country` | Dominica, Uruguay, Myanmar |
+| `country_code` | NA, SR, GW |
+| `neighborhood` | Auburn North, Northwoods West, South of Lake Shore Blvd |
+| `secondary_address` | Suite 024, Apt. 583, Suite 661 |
+| `state` | Nebraska, Oklahoma, North Carolina |
+| `state_abbr` | SC, ME, ID |
+| `state_and_territories_abbr` | HI, MS, IN |
+| `street_address` | 01693 Cameron Harbors, 1540 Joaquina Rapids, 594 Nichol Spurs |
+| `street_name` | Johnston Street, Cary Streets, Bode Mount |
+| `street_suffix` | Estates, Crest, Branch |
+| `time_zone` | Europe/Skopje, America/Indiana/Indianapolis, Asia/Ulaanbaatar |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 89333, 24258, 66130-7210 |
+| `zip_code` | 36735, 33668, 23487 |
 
 ## FFaker::AddressVN
 
 | Method | Example |
 | ------ | ------- |
-| `building_number` | 6931, 863, 1540 |
-| `city` | Đà Lạt, Vinh, Thái Nguyên |
-| `city_prefix` | North, New, Lake |
-| `city_suffix` | mouth, port, berg |
-| `country` | Switzerland, Grenada, New Zealand |
-| `country_code` | MP, SG, PS |
-| `neighborhood` | Candlewood Country Club, Sunshine-Gardens, White Oak South of Columbia Pike |
-| `province` | Phú Thọ, Vĩnh Long, Sóc Trăng |
-| `province_abbr` | QB, LD, BG |
-| `secondary_address` | Apt. 012, Suite 903, Apt. 006 |
-| `street_address` | 523 Hẻm Lê Lợi, 882 Ngõ Hai Bà Trưng, 966 Hẻm Bà Triệu |
-| `street_name` | Cách Mạng Tháng Tám, Lê Lợi, Quang Trung |
-| `street_prefix` | Ngõ, Phố, Hẻm |
-| `street_suffix` | Bypass, Lakes, Parkways |
-| `time_zone` | America/Halifax, Asia/Baku, America/Mazatlan |
+| `building_number` | 74637, 0995, 558 |
+| `city` | Lạng Sơn, Hải Dương, Phan Thiết |
+| `city_prefix` | South, Port, North |
+| `city_suffix` | haven, stad, view |
+| `country` | Cocos (Keeling) Islands, Cayman Islands, Djibouti |
+| `country_code` | WF, PA, SS |
+| `neighborhood` | Sunshine-Gardens, West Covina East, Northwoods West |
+| `province` | Gia Lai, Khánh Hòa, Hòa Bình |
+| `province_abbr` | LS, BTH, DN |
+| `secondary_address` | Suite 896, Suite 977, Suite 383 |
+| `street_address` | 747 Phố Bà Triệu, 925 Phố Cách Mạng Tháng Tám, 707 Ngõ Bà Triệu |
+| `street_name` | Lê Lợi, Bà Triệu, Nguyễn Thị Minh Khai |
+| `street_prefix` | Ngõ, Đường, Phố |
+| `street_suffix` | Crescent, Meadows, Villages |
+| `time_zone` | America/Lima, America/Monterrey, America/Santiago |
 | `uk_country` | ❗ *[uk_country] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_county` | ❗ *[uk_county] is deprecated. For UK addresses please use the AddressUK module* |
 | `uk_postcode` | ❗ *[uk_postcode] is deprecated. For UK addresses please use the AddressUK module* |
 | `us_state` | ❗ *[us_state] is deprecated. For US addresses please use the AddressUS module* |
 | `us_state_abbr` | ❗ *[state_abbr] is deprecated. For US addresses please use the AddressUS module* |
-| `zip_code` | 585581, 840708, 947753 |
+| `zip_code` | 254824, 539606, 744080 |
 
 ## FFaker::Airline
 
 | Method | Example |
 | ------ | ------- |
-| `flight_number` | RC 2523, 9C 416, PF 3261 |
-| `name` | Transaero Airlines, Emirates, Sunexpress Deutschland |
+| `flight_number` | TO 595, LH 1230, NO 1357 |
+| `name` | Aer Lingus, Lot Polish Airlines, Tuifly Gmbh |
 
 ## FFaker::Animal
 
@@ -937,82 +937,82 @@
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | Mergulhão, Hírax, Dourado |
+| `common_name` | Rena, Guará:, Lêmure |
 
 ## FFaker::AnimalCN
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | 羚羊, 鳗鱼, 猬 |
+| `common_name` | 猴, 野鸡, 树懒 |
 
 ## FFaker::AnimalES
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | León marino, Tritón, Pez |
+| `common_name` | Mamut, Sello, Loro |
 
 ## FFaker::AnimalPL
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | Mandryl, Pstrąg, Osa |
+| `common_name` | Nocek, Pijawka, Mysz |
 
 ## FFaker::AnimalUS
 
 | Method | Example |
 | ------ | ------- |
-| `common_name` | Crane, Porcupine, Butterfly |
+| `common_name` | Koala, Ostrich, Eel |
 
 ## FFaker::Avatar
 
 | Method | Example |
 | ------ | ------- |
-| `image` | https://robohash.org/illoaspernaturqui.png?size=300x300, https://robohash.org/accusantiumidreiciendis.png?size=300x300, https://robohash.org/minusullamex.png?size=300x300 |
+| `image` | https://robohash.org/ducimusevenietdistinctio.png?size=300x300, https://robohash.org/cumistea.png?size=300x300, https://robohash.org/dictaconsequunturalias.png?size=300x300 |
 
 ## FFaker::BaconIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | zxtw902cag92qa42uaikr7yg1zdc1eo8v1dmawua0qpsnmepdz6qdtnr8nld3aqgy40fbgv2at9r0vh4rsx6cggfnb2ybs5t867ptx7l852df96zuyt8jstg3303gyd8hwopy915hjwxaisbl8wxpvdtznzjxacbh325vwqrjokhh3tqb8ycd4ocllpgnnu3mkrdpnaogoecs1gsogtuinjs44bf828aenpb01jguzwbzbqywb5kveufa7oz4ss, s0qwz27spc636wyigw8pfs63e3xjrsdcwoy758t8a4g57bnnafr40m921rctx6y6rdjne2z6ht8n7pla4uy3xpvcjbsfmndfrpgnnlomc9665xb28lv2cszhun6dyi2w6zj25mo87vt38e1krtfskjnhlf7hy65q1ed2ixa32dq1gvfe0x34ot0no7f18fm2mi5zuro4jwkre7m3b3w858rmlgrt0it5uq6nhalapzhqrs69t0yiif5ia80kbix, x11mjp5i3v7nknulxdz5yh6kyyyyjd87cwxky12hcgx6x3r5gnrdi0jitgt4axrn9sb33rt3eu6hoh3x0myz2jiihcs7s5et99e5zyxvobr3y97v663z8d53pwuomcrhfixfn9fz7uqfzogas3rmylcrz6g6hypds0yuf3dseq6sqgqjrtpe5kojgeu5qx9yuz47uzyvs0r2x6rbf30phvrzzz3air29ymbs49rbcttgl6lmxqaph9moithujhk |
-| `paragraph` | Pig flank beef biltong venison pork kielbasa. Meatloaf Kevin prosciutto doner frankfurter. Shank biltong swine ham turkey Kevin corned beef tri-tip. Prosciutto pig swine ball tip salami corned beef biltong beef. Pork cow chicken meatloaf bacon ham sirloin Kevin., Jerky meatloaf corned beef brisket venison ground round beef ribs. Hamburger turkey pork pork belly venison porchetta. Pork belly turducken capicola short ribs shank andouille brisket salami., Spare ribs frankfurter swine biltong cow turducken boudin pig ground round. Pastrami tri-tip pork chop ball tip sirloin. Tri-tip pork ground round pork belly turducken venison beef. |
-| `paragraphs` | Pork loin pig chicken ham hock ground round beef ribs ball tip. Bresaola flank beef drumstick cow landjaeger. Corned beef pancetta meatball tail fatback. Pancetta ribeye venison ball tip tongue. T-bone tenderloin swine pork chop corned beef cow filet mignon shankle pig., Ham chuck short ribs tongue turducken salami sausage sirloin pork loin. Meatball spare ribs beef pork short loin kielbasa shoulder brisket landjaeger. Bresaola filet mignon drumstick flank tongue. Pork chop bresaola flank pig t-bone., Boudin pork loin pork chop capicola flank drumstick chicken leberkas frankfurter. Andouille pig ribeye boudin salami corned beef ham hock. Landjaeger tenderloin swine ham strip steak short loin beef tri-tip pork loin., Shank meatloaf short loin frankfurter ground round chuck pig beef doner. T-bone shoulder tenderloin drumstick porchetta beef strip steak pork belly. Cow sirloin shank shankle sausage leberkas., Capicola shoulder kielbasa beef ribs tail pork chop. Rump t-bone andouille pancetta salami biltong doner venison. Ribeye shoulder corned beef kielbasa sausage jowl tenderloin pancetta hamburger., Strip steak corned beef chuck brisket andouille. Cow kielbasa hamburger swine turkey flank biltong. Andouille kielbasa venison jerky ham hock strip steak shank tri-tip salami. Porchetta chicken pork loin flank bresaola filet mignon shankle. Shankle filet mignon rump strip steak ground round., Jerky ham landjaeger short ribs cow. Capicola shoulder leberkas swine short loin strip steak. Pancetta turducken ham short ribs turkey shoulder meatloaf., Sausage doner beef ribs brisket jowl. Meatball leberkas chicken pancetta biltong fatback. Ball tip sirloin prosciutto brisket ribeye shoulder rump. Turkey chicken short loin fatback pork loin. Short ribs drumstick biltong swine bresaola., Ribeye sirloin ball tip ground round shoulder shank t-bone. Strip steak kielbasa tri-tip pork loin ground round pastrami short ribs leberkas filet mignon. Salami biltong tail rump pork leberkas sausage. Meatloaf capicola ground round sausage beef salami tongue swine. |
-| `phrase` | Boudin rump jowl doner sirloin., Tenderloin sausage tongue flank shoulder., Pastrami cow andouille t-bone sirloin shoulder brisket hamburger meatloaf. |
-| `phrases` | Fatback boudin shoulder pig sausage hamburger., Pancetta ground round turkey short loin bacon pork., Doner venison sirloin bresaola pork shank ground round andouille., Pork salami rump shank spare ribs turkey ground round tenderloin leberkas., Rump bresaola chuck corned beef pork chop., Chicken flank boudin turkey kielbasa swine brisket., Pork belly pork loin shoulder sirloin venison t-bone shankle ham., Prosciutto ground round tongue tenderloin ham hock ball tip drumstick bresaola., Meatball shoulder hamburger beef pig meatloaf jowl. |
-| `sentence` | Shankle spare ribs flank rump prosciutto., Turducken shoulder landjaeger venison pork loin., Filet mignon beef ham cow leberkas t-bone boudin bresaola ground round. |
-| `sentences` | Porchetta brisket hamburger tenderloin tri-tip landjaeger short ribs rump shankle., Doner hamburger frankfurter boudin biltong meatloaf venison pig t-bone., Doner pork loin brisket filet mignon pork belly pancetta shank tongue., Salami drumstick hamburger boudin corned beef brisket ribeye pork chop., Tenderloin hamburger swine pancetta ground round short loin chuck pork loin., Tail rump jowl spare ribs cow chicken shankle hamburger., Cow swine biltong t-bone fatback strip steak., Turducken pork chop corned beef swine pork loin pig shoulder., Shank flank pig bresaola brisket. |
-| `word` | pastrami, shankle, meatball |
-| `words` | salami, pork, boudin, spare ribs, Kevin, ham, venison, pancetta, turducken |
+| `characters` | t9r0vh4rsx6cggfnb2ybs5t867ptx7l852df96zuyt8jstg3303gyd8hwopy915hjwxaisbl8wxpvdtznzjxacbh325vwqrjokhh3tqb8ycd4ocllpgnnu3mkrdpnaogoecs1gsogtuinjs44bf828aenpb01jguzwbzbqywb5kveufa7oz4sss0qwz27spc636wyigw8pfs63e3xjrsdcwoy758t8a4g57bnnafr40m921rctx6y6rdjne2z6h, t8n7pla4uy3xpvcjbsfmndfrpgnnlomc9665xb28lv2cszhun6dyi2w6zj25mo87vt38e1krtfskjnhlf7hy65q1ed2ixa32dq1gvfe0x34ot0no7f18fm2mi5zuro4jwkre7m3b3w858rmlgrt0it5uq6nhalapzhqrs69t0yiif5ia80kbixx11mjp5i3v7nknulxdz5yh6kyyyyjd87cwxky12hcgx6x3r5gnrdi0jitgt4axrn9sb33rt3e, u6hoh3x0myz2jiihcs7s5et99e5zyxvobr3y97v663z8d53pwuomcrhfixfn9fz7uqfzogas3rmylcrz6g6hypds0yuf3dseq6sqgqjrtpe5kojgeu5qx9yuz47uzyvs0r2x6rbf30phvrzzz3air29ymbs49rbcttgl6lmxqaph9moithujhk0kniab9h1z89nzadclbbydi810o6pcj9k6htfe8mmmyzy9gcnj9a8c6nb2m46ia8kq04qw0f6 |
+| `paragraph` | Shankle bresaola t-bone tenderloin frankfurter pastrami jerky cow turducken. Cow rump chuck ham hock short loin beef ribs pork chop. Flank short loin fatback pastrami strip steak., Chicken chuck andouille pork belly salami. Turkey meatloaf leberkas drumstick flank tongue beef jerky swine. Cow strip steak pastrami filet mignon brisket. Pork loin pork chop andouille flank drumstick., Meatloaf rump swine pig ribeye capicola. Pork chop porchetta ham meatloaf tenderloin prosciutto ham hock. Short loin beef spare ribs fatback drumstick andouille. Capicola porchetta cow chuck shoulder beef filet mignon tail. |
+| `paragraphs` | Turducken beef meatball pork belly ribeye ground round. Strip steak shank frankfurter fatback beef ribs prosciutto leberkas cow. Spare ribs tongue tail shoulder meatloaf ribeye frankfurter., Porchetta venison frankfurter tri-tip ribeye shoulder. Andouille sausage turkey meatball ham. Strip steak corned beef chuck brisket andouille. Cow kielbasa hamburger swine turkey flank biltong. Andouille kielbasa venison jerky ham hock strip steak shank tri-tip salami., Pancetta shank salami prosciutto ribeye jowl. Strip steak ground round short ribs tongue beef pancetta. Doner pancetta cow strip steak frankfurter shoulder landjaeger prosciutto. Pork belly pork loin doner fatback spare ribs. Biltong sirloin pork loin pastrami pork belly ball tip swine brisket., Filet mignon chicken ham hock turkey ham. Ball tip sirloin prosciutto brisket ribeye shoulder rump. Turkey chicken short loin fatback pork loin. Short ribs drumstick biltong swine bresaola., Ribeye sirloin ball tip ground round shoulder shank t-bone. Strip steak kielbasa tri-tip pork loin ground round pastrami short ribs leberkas filet mignon. Salami biltong tail rump pork leberkas sausage. Meatloaf capicola ground round sausage beef salami tongue swine., Boudin rump jowl doner sirloin. Tenderloin sausage tongue flank shoulder. Pastrami cow andouille t-bone sirloin shoulder brisket hamburger meatloaf. Fatback boudin shoulder pig sausage hamburger., Pork ham landjaeger biltong shank brisket bacon flank. Porchetta jowl ribeye pork meatloaf salami shank beef ribs. Porchetta ground round andouille short loin sausage bresaola boudin chuck fatback. Chicken flank boudin turkey kielbasa swine brisket., Pork belly pork loin shoulder sirloin venison t-bone shankle ham. Prosciutto ground round tongue tenderloin ham hock ball tip drumstick bresaola. Meatball shoulder hamburger beef pig meatloaf jowl. Shankle spare ribs flank rump prosciutto., Shoulder Kevin venison pork loin turducken pig. Jerky shoulder prosciutto strip steak brisket. Cow bresaola andouille meatball strip steak ball tip. |
+| `phrase` | Pancetta venison t-bone brisket hamburger., Kevin brisket turkey bresaola porchetta ball tip pig strip steak tri-tip., Pork loin brisket filet mignon pork belly pancetta porchetta shank. |
+| `phrases` | Ribeye ham meatloaf ball tip hamburger capicola., Jowl t-bone tail prosciutto tenderloin hamburger., Fatback ground round short loin chuck ham hock leberkas., Biltong short ribs cow chicken shankle hamburger., Cow swine biltong t-bone fatback strip steak., Turducken pork chop corned beef swine pork loin pig shoulder., Shank flank pig bresaola brisket., Shankle meatball meatloaf pork capicola tri-tip., Ham turkey pork loin doner tri-tip ribeye rump. |
+| `sentence` | Jerky pig chuck ground round shankle venison landjaeger., Beef turkey ham drumstick turducken strip steak beef ribs pork chop., Pastrami leberkas jowl swine short ribs Kevin meatloaf bresaola. |
+| `sentences` | Sirloin pork chop shoulder ball tip drumstick filet mignon., Kevin landjaeger sirloin frankfurter rump biltong., Strip steak sausage porchetta shoulder tenderloin capicola., Cow beef ribs tongue prosciutto pig porchetta turkey frankfurter ham hock., Prosciutto venison rump pork belly bacon pork., Bresaola pork chop kielbasa tail pancetta chuck capicola., Flank boudin pork bacon pork loin drumstick sirloin hamburger., Strip steak beef leberkas filet mignon jowl landjaeger flank., Filet mignon turducken capicola bresaola doner chicken pig venison. |
+| `word` | brisket, sausage, frankfurter |
+| `words` | swine, prosciutto, boudin, hamburger, drumstick, ham hock, beef ribs, leberkas, beef |
 
 ## FFaker::Bank
 
 | Method | Example |
 | ------ | ------- |
-| `card_expiry_date` | 06/30, 03/29, 12/30 |
-| `card_number` | 0657 3971 0661 6731, 2164 9865 1294 2538, 4707 1679 3228 2748 |
-| `card_type` | american_express, visa, diners_club |
-| `iban` | SA7206597777826185953503, KZ700466743721681313, GI11OUGM611673824482476 |
-| `loan_amount` | 28617, 27340, 57820 |
-| `loan_interest_rate` | 12.39, 2.83, 10.58 |
-| `loan_term` | 24, 60, 84 |
+| `card_expiry_date` | 07/29, 05/29, 02/30 |
+| `card_number` | 1313 7116 1167 3824, 4824 7646 1447 2875, 9664 4788 5056 0481 |
+| `card_type` | maestro, mastercard, dankort |
+| `iban` | VG23IOQH1060063583947680, LB35553964645191591128070016, SV13RYGP41147175434364638451 |
+| `loan_amount` | 98293, 91365, 66149 |
+| `loan_interest_rate` | 1.82, 9.07, 11.41 |
+| `loan_term` | 48, 24, 12 |
 
 ## FFaker::BankUS
 
 | Method | Example |
 | ------ | ------- |
-| `account_number` | 447885056048191, 82310600635839476, 08077355539646451 |
-| `routing_number` | 119159114, 268070018, 309620136 |
+| `account_number` | 692073786, 996299598116189, 0719671117370 |
+| `routing_number` | 272003864, 071637981, 069771752 |
 
 ## FFaker::Book
 
 | Method | Example |
 | ------ | ------- |
-| `author` | Claudio Hintz, Johna Krajcik, Monet Hamill |
-| `cover` | https://robohash.org/erroriddicta.png?size=300x300, https://robohash.org/seddeserunttempore.png?size=300x300, https://robohash.org/laborumlaboreullam.png?size=300x300 |
-| `description` | Voluptas nisi perferendis cumque vero numquam ratione. Cum reiciendis illo quidem autem dolore. Dolore veritatis quo alias quidem natus assumenda totam. Maxime vel ipsa velit ullam ab. Animi iste laborum quisquam eligendi molestiae eaque provident., Atque ex enim quisquam laboriosam pariatur consequatur error. Minima maiores laudantium iure totam blanditiis sit distinctio. Ipsum tenetur doloribus cupiditate dolorem. Quae atque minus minima fugiat porro. Beatae doloribus dolorum a eum., Ducimus saepe quae magni blanditiis. Doloremque accusamus tenetur et earum provident rem. Accusantium recusandae id dolor vero. |
-| `genre` | Diaries and journals, Socio-scientific criticism, Bhagavad Gita |
-| `isbn` | 5872320602, 11332844969, 9122158124 |
-| `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=Blonde+Rain&amp;top_text=Contemporary+slave+narrative&amp;author=Letisha+Harber&amp;image_code=2&amp;theme=11, https://orly-appstore.herokuapp.com/generate?title=Day+of+the+Fake+Jungle&amp;top_text=Military+science+fiction&amp;author=Vania+Borer&amp;image_code=16&amp;theme=8, https://orly-appstore.herokuapp.com/generate?title=Forbidden+Dreams&amp;top_text=Mystery&amp;author=Hanh+Von&amp;image_code=32&amp;theme=12 |
-| `title` | Hungry Diaries, Green Wizard, Ultra Brain |
+| `author` | Connie Rohan, Taylor Pagac, Michal Gerhold |
+| `cover` | https://robohash.org/itaquevelittempore.png?size=300x300, https://robohash.org/eiuspariaturminima.png?size=300x300, https://robohash.org/consequaturminimarem.png?size=300x300 |
+| `description` | Hic veritatis voluptas aspernatur ipsa non quisquam. Repellat nulla magni illum quibusdam vitae dolore. Inventore distinctio odit omnis eos commodi provident cupiditate. Atque tenetur est expedita quasi consequuntur earum voluptatem minus., Labore voluptate repellendus doloremque autem impedit minus. Eveniet molestiae illo placeat voluptate ab. Temporibus odit provident repellat cumque sed., Impedit possimus harum vero sed molestias ipsa repellat necessitatibus. Atque hic ipsum sint pariatur quidem exercitationem aliquid quia. Animi quod dolor perferendis minima repellat libero. Tenetur labore dicta tempora veniam voluptate. Explicabo aliquam voluptatibus ducimus hic modi. |
+| `genre` | Post-apocalyptic, Ceremonial, Hymn |
+| `isbn` | 23781585978, 20253584851, 14572272823 |
+| `orly_cover` | https://orly-appstore.herokuapp.com/generate?title=American+Thief&amp;top_text=Christian+literature&amp;author=Delicia+Brakus&amp;image_code=11&amp;theme=3, https://orly-appstore.herokuapp.com/generate?title=Blonde+Man&amp;top_text=Gothic+fiction&amp;author=Gemma+Wisozk&amp;image_code=38&amp;theme=13, https://orly-appstore.herokuapp.com/generate?title=War+of+the+Forbidden+Pickpocket&amp;top_text=Gospel&amp;author=Eloisa+Jast&amp;image_code=34&amp;theme=7 |
+| `title` | Champagne Brains, Hungry Rain, Season of the Forbidden Identity |
 
 ## FFaker::Boolean
 
@@ -1027,101 +1027,101 @@
 
 | Method | Example |
 | ------ | ------- |
-| `paragraph` | A good alternative to cheesecloth taste and texture in all colours when the rennet is added, curds are formed he old cheese dairy buildings, situated on the historic site 10 grilled cheese sandwiches you should try immediately with blessed are the cheesemakers cut to size of the Friesian herd salt, pepper, mustard and vinegar - tongue in cheek., Cheese paring with wine - tongue in cheek - tongue in cheek soft ripening cheese for of cheesy business lingo washed curd cheese in an artisan farmerhouse soft ripening cheese for the milky way of salt, pepper, mustard and vinegar., Blend the flour, cheese and blend the flour, cheese and of the Friesian herd with Dutch courage it is blue sky thinking of the Friesian herd he old cheese dairy buildings, situated on the historic site but round cheeses are to be cut in wedges, like a cake cheeseparing 10 grilled cheese sandwiches you should try immediately with. |
-| `sentence` | 10 grilled cheese sandwiches you should try immediately with- tongue in cheekdutch sandwich., Cut the cheesethey were so cheesed off10 grilled cheese sandwiches you should try immediately with., But poets have been mysteriously silent on the subject of cheesetaste and texture in all colours10 grilled cheese sandwiches you should try immediately with. |
-| `title` | Nutty Gouda, Grated Gouda, Dutch Cows |
-| `word` | cream, cheesecake, artisan |
-| `words` | elastic, Brie, artisan, smooth, alpine, blue, Gouda, affinage, cream, alpine, smooth, affinage, springy, cheesed, blue |
+| `paragraph` | Applewood smoked of the Friesian herd team cheesy says hi Penicillium roqueforti salt, pepper, mustard and vinegar double dutch or so cute but cheesy Sheridans Cheesemongers What do you call cheese that isn't yours? Nacho Cheese; the early bird may get the worm, but the second mouse gets the cheese in the trap., Trying too hard, unsubtle, and inauthentic coagulation of the milk protein casein with Dutch courage coagulation of the milk protein casein cut to size blessed are the cheesemakers with Dutch courage in an artisan farmerhouse blue fungi in cream garlic cheese biscuits., Soft ripening cheese for and wrap blue cheeses all over as mould spores spread readily separate the curds from the wey New York cheesecake Sheridans Cheesemongers until the wheels form a white coat of penicillium moulds Sheridans Cheesemongers double dutch or so cute but cheesy of the Friesian herd. |
+| `sentence` | New york cheesecakea good alternative to cheeseclothand wrap blue cheeses all over as mould spores spread readily., Raw milk is unpasteurizedapplewood smoked10 grilled cheese sandwiches you should try immediately with., Soft ripening cheese forthey can also age quite well in ripening cellars wherehe old cheese dairy buildings, situated on the historic site. |
+| `title` | Fat Affineurs, Milky Gouda, Smokey Affineurs |
+| `word` | elastic, toast!, grated |
+| `words` | smoked, alpine, sharp, elastic, fat, Emmentaler, briney, cottage cheese, blue, fat, cheese, artisan, Gouda, sharp, cheesed |
 
 ## FFaker::Code
 
 | Method | Example |
 | ------ | ------- |
-| `ean` | 4092553912158, 2916098693322, 5186882404282 |
-| `npi` | 6866571022, 9929097266, 7028939073 |
+| `ean` | 6391086313295, 3920390409108, 7143304884839 |
+| `npi` | 2163588587, 3390673762, 9519004151 |
 
 ## FFaker::Color
 
 | Method | Example |
 | ------ | ------- |
-| `hex_code` | fa82c3, edb32c, 997c92 |
-| `hsl_array` | 78, 72%, 11%, 232, 65%, 2%, 345, 9%, 80% |
-| `hsl_list` | 244,85%,13%, 197,92%,87%, 89,50%,87% |
-| `hsla_array` | 305, 21%, 13%, 0.52, 10, 15%, 12%, 0.82, 84, 25%, 19%, 0.99 |
-| `hsla_list` | 90,84%,21%,0.09, 241,68%,16%,0.39, 62,40%,32%,0.42 |
-| `name` | sienna, plum, dimgrey |
-| `rgb_array` | 137, 3, 205, 78, 75, 59, 53, 184, 64 |
-| `rgb_list` | 59,18,47, 36,111,233, 40,119,49 |
-| `rgba_array` | 210, 23, 181, 0.56, 140, 174, 139, 0.6, 188, 86, 65, 0.15 |
-| `rgba_list` | 153,95,208,0.38, 57,113,115,0.31, 32,198,82,0.76 |
+| `hex_code` | 16c054, fbe3ea, 7a6cc8 |
+| `hsl_array` | 323, 29%, 53%, 321, 55%, 2%, 225, 76%, 52% |
+| `hsl_list` | 254,15%,7%, 334,89%,33%, 339,91%,27% |
+| `hsla_array` | 58, 77%, 75%, 0.29, 195, 97%, 41%, 0.15, 9, 2%, 45%, 0.42 |
+| `hsla_list` | 232,41%,93%,0.98, 346,44%,64%,0.01, 179,36%,59%,0.65 |
+| `name` | brown, deeppink, darkslategrey |
+| `rgb_array` | 239, 112, 239, 250, 115, 4, 229, 12, 74 |
+| `rgb_list` | 129,158,103, 207,168,122, 33,181,79 |
+| `rgba_array` | 231, 103, 28, 0.25, 3, 14, 78, 0.82, 139, 186, 251, 0.95 |
+| `rgba_list` | 180,92,129,0.45, 221,249,96,0.35, 122,217,134,0.94 |
 
 ## FFaker::ColorPL
 
 | Method | Example |
 | ------ | ------- |
-| `name` | niebieski, płowy, majtkowy |
+| `name` | jagodowy, kremowy, lawendowy |
 
 ## FFaker::ColorUA
 
 | Method | Example |
 | ------ | ------- |
-| `name` | пшеничний, морквяний, каштановий |
+| `name` | блаватний, сливовий, нефритовий |
 
 ## FFaker::Company
 
 | Method | Example |
 | ------ | ------- |
-| `bs` | mesh one-to-one action-items, engage granular functionalities, expedite back-end solutions |
-| `catch_phrase` | Programmable heuristic moderator, Focused intangible migration, Optional 3rd generation task-force |
-| `name` | Hoeger LLC, Kuvalis, Dickens and Schmitt, Rau-Reynolds |
-| `position` | Assistant Information Manager, Department President, Operations Manager |
-| `suffix` | Inc, Group, and Sons |
+| `bs` | disintermediate intuitive markets, seize turn-key paradigms, orchestrate enterprise e-services |
+| `catch_phrase` | Streamlined contextually-based synergy, User-friendly full-range alliance, Reverse-engineered motivating array |
+| `name` | Hilpert, Bahringer and Bins, Spinka, Wiegand and Hessel, Murray-Lakin |
+| `position` | Division Secretary, Executive Director, General Vice Manager |
+| `suffix` | Inc, and Sons, LLC |
 
 ## FFaker::CompanyCN
 
 | Method | Example |
 | ------ | ------- |
-| `name` | 富梅咨询公司, 和宸食品有限公司, 昇屏教育公司 |
+| `name` | 方桦科技公司, 宥毓网络公司, 智泰网络公司 |
 | `suffix` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for suffix |
-| `type` | 科技, 电器, 网络 |
+| `type` | 电器, 科技, 食品 |
 
 ## FFaker::CompanyFR
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Poulain-Faivre, Lambert, Bonneau and Diaz, Chauvet SARL |
-| `siren` | 649704244, 909656605, 943793752 |
-| `siret` | 51100161200403, 37549004200922, 44461849000395 |
-| `suffix` | et fils, SA, Groupe |
+| `name` | Boulanger, Parent and Pierre, Philippe-Wagner, Fischer-Boucher |
+| `siren` | 701147357, 957228273, 688358589 |
+| `siret` | 96386713000451, 34137516000536, 50327543000885 |
+| `suffix` | SA, SARL, Groupe |
 
 ## FFaker::CompanyIT
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Studio Legale Monachello, Laboratorio Gelsomino, Mastrogiacomo s.n.c. |
-| `partita_iva` | 80982690101, 38228990156, 61677900260 |
-| `prefix` | Studio Tecnico, Studio Legale, Laboratorio |
-| `suffix` | s.r.l., Avvocati, Architetti |
+| `name` | Studio Tecnico Motta, Studio Tecnico Melegatti, Laboratorio Neri |
+| `partita_iva` | 20557890231, 34652110155, 82000080729 |
+| `prefix` | Studio Tecnico, Laboratorio, Studio Legale |
+| `suffix` | S.p.a., Avvocati, s.n.c. |
 
 ## FFaker::CompanyJA
 
 | Method | Example |
 | ------ | ------- |
-| `name` | 曽我銀行, 石井ホールディングス, 荻野証券 |
-| `position` | アルバイト, 課長, 社員 |
+| `name` | 片山株式会社, 小出株式会社, 親泊ホールディングス |
+| `position` | 会長, 契約社員, 係長 |
 
 ## FFaker::CompanySE
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Toy-Parker, Keebler, Auer och Bartoletti, Brekke-Homenick |
-| `suffix` | AB, Aktiebolag, Ab |
+| `name` | Adams-Friesen, Nader Aktiebolag, Jacobson-Hegmann AB |
+| `suffix` | Ab, AB, Aktiebolag |
 
 ## FFaker::Conference
 
 | Method | Example |
 | ------ | ------- |
-| `name` | Datacentre Investment Forum, Oxford Latin American Studies Conference, The Canadian Institutes Forum on Privacy Law Compliance |
+| `name` | Dealing With Harassment in the Workplace - HR Webinar By ComplianceOnline, Restaurant Development Summit, Exploration Production Technology Summit 2011 |
 
 ## FFaker::CoursesFR
 
@@ -1132,134 +1132,134 @@
 
 | Method | Example |
 | ------ | ------- |
-| `sha256` | 40f2724272c53af9f0a0ae13196801199236836fcc975e5e788053d3fb386069, 691d927bf391bfc5156ef788eab6fe8e01a9a63b8411306a1838e2b57a2e344a, cf2860b0ae11a3d5f284453ab3c36d8cd67d7d3d08bc38da4bceafa2629b5016 |
+| `sha256` | ec086e2dfb19b0afc89ca4d8a0f9a83e9ad6cbf62df8c08ccf4156143648a2f9, 97a50d3f2fc3be2f0f29063f4917288cf51f7fc7079bbbbeed465843dd4261d9, e65a713b7dd445fbe1c888ae45275ae759f37d84abfdbee86105c817318f3f6e |
 
 ## FFaker::Currency
 
 | Method | Example |
 | ------ | ------- |
-| `code` | ZWL, XCD, LTL |
-| `name` | New Leu, US Dollar, Fiji Dollar |
-| `symbol` | ¢, $, ₶ |
+| `code` | EGP, KGS, CLP |
+| `name` | Colombian Peso Unidad de Valor Real, Yuan Renminbi, Zambian Kwacha |
+| `symbol` | ฿, $, ₺ |
 
 ## FFaker::Date
 
 | Method | Example |
 | ------ | ------- |
-| `backward` | 2025-09-30, 2025-09-23, 2025-11-29 |
+| `backward` | 2025-06-28, 2026-02-10, 2025-12-25 |
 | `between`(..., ...) |  |
-| `birthday` | 1964-06-07, 1998-01-27, 1971-11-26 |
-| `forward` | 2027-01-01, 2026-09-08, 2027-02-20 |
+| `birthday` | 1967-09-27, 1990-07-31, 1998-09-12 |
+| `forward` | 2027-02-14, 2026-12-21, 2026-11-17 |
 
 ## FFaker::Device
 
 | Method | Example |
 | ------ | ------- |
-| `app_version` | 4.5.9, 4.4.1, 5.9.8 |
-| `manufacturer` | Samsung, Motorola, Xiaomi |
-| `name` | Redmi Note 10 Pro, Huawei Mate 40, Galaxy S24 Ultra |
-| `platform` | Android, iOS, Web |
-| `version` | 10.4, 12.1, 15.5 |
+| `app_version` | 3.3.4, 4.9.0, 1.9.6 |
+| `manufacturer` | Motorola, Xiaomi, Google |
+| `name` | iPhone 15 Pro, iPhone 11, Mi 11 Lite |
+| `platform` | iOS, Web, Android |
+| `version` | 15.0, 10.4, 14.1 |
 
 ## FFaker::DizzleIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | p7lb5jblqu2chjetlmh6o14iqbbkzcdf132i66h0hhvyqedg9imo0tuqxyzd4cs4bo40stjix2uf7m7y71at7agavtp7vz06ynijp844943a8itikam4s0dt2etc3m2wnm01lyvvzoi4iii7gemfq9iwuo3qk1bzoat2qmasvlukaz2i6xfrzh4kovpsxwyrkrjz5csqsx6sgfzmdcwxiabg0w7j7b2e0hw4yawe1jamojszh876uj4phk4gm5h, fzswuk8cd8610535xg292709cmuoa8rekbizyknwhm481f4em5giqyist6mph31coaa2366lsv2msczoo6xe9nj84tew996vq9hgvfyr17ohyqnkuwi5hoasy45loxeyns443k8a5tfahimyur2di6w36kviwrypgik0w7vka87cu5rb7xohfit83ze03uvv13ysqhi7py08bp87gzkq12gwplnj1p9ka81eaigl3l2gz6pmgddspk166ofsq0c, oacxo88xvxu1jbf3sxk17odbjns66bnh1jdp28uypgq7wpjoeiwj4qmynmd7ql1fbxe05sfsl7ydf05j9mu7o7zmenitk9v1f3fy02dnp8zmrow2j5gdroxi1z6y7805l6l35ezybre03spul82k7hn1ieksp076u4axdxkjddn4ty39wvhgx9u0kzf41u7o0dzbpvuoaguasidnxk3yfugrnj279s4aj186wwqqnaav5cdh3ww5llgy43j4i6l |
-| `paragraph` | The diggy make a few ends Snoopy tha dizzle how we do it I love my momma nasty the dopest. Every single one your chrome drizzle Long Beach smokin' weed roll with rolling down the street televizzle. Roll with fo rizzle in tha hizzle why is you Snoop for the Gs every single one bubbles in the tub drizzle., Mr. buckwort roll with it's 1993 with my mind on my money Snoop now I'm on parole through all the drama Coupe de Ville. Coupe de ville eighty degrees why is you the Dogg Pound Snoopy the Magic Johnson of rap recognize real deal Holyfield how we do it. Nothing can save ya sippin' on gin and juice Doggfada waddup tha dizzle hizzouse like every single day you talk too much if the ride is more fly, then you must buy. Now i'm on parole nasty pizzle waddup and my money on my mind put ya choppers up it's 1993 Coupe de Ville like every single day., Mr. buckwort waddup tha dizzle I love my momma pizzle drizzle fo shizzle. I love my momma feel the breeze everybody got they cups you talk too much now I'm on parole rizzoad laid back. Real deal holyfield realness gold chain bionic guess what? sippin' on gin and juice with my mind on my money. Realness the S oh yes roll with why is you recognize. |
-| `paragraphs` | Snoop through all the drama rolling down the street if the ride is more fly, then you must buy every single one at ease. Realness guess what? roll with laid back why is you every single one fizzle Snoopy the Magic Johnson of rap. Televizzle roll with if the ride is more fly, then you must buy sippin' on gin and juice it's 1993 feel the breeze tha shiznit gizzo. Mr. buckwort roll with real deal Holyfield plizzay Snoopy why is you Long Beach. I love my momma fizzle feel the breeze you talk too much fo shizzle., The dogg pound drizzle gold chain like every single day Snoop guess what? the S oh yes. The dopest for the hustlers smokin' weed gizzo nothing can save ya. Rizzoad recognize roll with like every single day Mr. Buckwort., Coupe de ville drop it like it's hot rolling down the street Long Beach eighty degrees drizzle make a few ends roll with the dopest. Nasty you talk too much and my money on my mind plizzay rizzoad. Fo shizzle hizzouse used to sell loot bionic like every single day sippin' on gin and juice the dopest Long Beach realness. How we do it hizzouse for the hustlers may I fo shizzle., Nasty realness fo shizzle through all the drama laid back it's 1993 guess what? smokin' weed like every single day. Doggfada plizzay waddup fo rizzle smokin' weed Long Beach. Sippin' on gin and juice in tha hizzle through all the drama smokin' indo drizzle fizzle drop it like it's hot. If the ride is more fly, then you must buy nothing can save ya gold chain rizzoad feel the breeze smokin' weed. Doggfada the Dogg Pound for the hustlers Coupe de Ville Mr. Buckwort the diggy fizzle., Through all the drama laid back pizzle I love my momma bubbles in the tub now I'm on parole feel the breeze with my mind on my money eighty degrees. Plizzay used to sell loot zig zag smoke Long Beach the Magic Johnson of rap drizzle realness gizzo hizzouse. Coupe de ville for the Gs eighty degrees smokin' indo why is you you talk too much. Used to sell loot fo rizzle roll with Doggfada waddup smokin' indo gizzo., Smokin' weed realer drop it like it's hot it's 1993 plizzay recognize now I'm on parole bubbles in the tub. Snoop the diggy real deal Holyfield the S oh yes you talk too much now I'm on parole Coupe de Ville Snoopy. Recognize fo shizzle your chrome Doggfada gold chain. Mr. buckwort the Dogg Pound drizzle gizzo drop it like it's hot fizzle at ease with my mind on my money., Real deal holyfield how we do it at ease Doggfada Coupe de Ville tha shiznit realer through all the drama. The dogg pound if you was me and I was you put ya choppers up bubbles in the tub why is you gizzo like every single day. Rizzoad everybody got they cups realer real deal Holyfield hizzouse like every single day bubbles in the tub Mr. Buckwort. Televizzle rizzoad bubbles in the tub why is you Snoop nothing can save ya for the hustlers. At ease waddup now I'm on parole if the ride is more fly, then you must buy drop it like it's hot used to sell loot., Televizzle rizzide if the ride is more fly, then you must buy bubbles in the tub used to sell loot fo rizzle fo shizzle. Mr. buckwort bionic guess what? Long Beach bubbles in the tub. Put ya choppers up if you was me and I was you the Dogg Pound hizzouse through all the drama., Make a few ends real deal Holyfield bubbles in the tub the diggy realness now I'm on parole. In tha hizzle rizzide tha shiznit drizzle why is you if you was me and I was you fizzle nasty. Your chrome for the hustlers Coupe de Ville it's 1993 the S oh yes the LBC. Coupe de ville it's 1993 now I'm on parole make a few ends waddup nasty in tha hizzle. Tha shiznit for the Gs gizzo bubbles in the tub drop it like it's hot the S oh yes. |
-| `phrase` | Mr. buckwort you talk too much drop it like it's hot Snoopy put ya choppers up the S oh yes., Recognize the Dogg Pound guess what? make a few ends tha shiznit I love my momma., Drop it like it's hot realer the dopest the Dogg Pound it's 1993 Doggfada drizzle feel the breeze may I. |
-| `phrases` | Snoop gizzo I love my momma the diggy tha shiznit the S oh yes., The lbc roll with with my mind on my money the Magic Johnson of rap how we do it plizzay., Everybody got they cups nasty in tha hizzle realer eighty degrees., Gizzo Long Beach smokin' weed zig zag smoke drop it like it's hot waddup gold chain now I'm on parole., Fizzle tha dizzle may I nothing can save ya fo shizzle the S oh yes rolling down the street bionic put ya choppers up., Fizzle televizzle the diggy rizzide feel the breeze smokin' weed the LBC., And my money on my mind like every single day the S oh yes the dopest if you was me and I was you., Nasty fo shizzle realer sippin' on gin and juice fizzle through all the drama nothing can save ya Snoop., Recognize why is you smokin' weed realness laid back the dopest tha dizzle the diggy for the hustlers. |
-| `sentence` | Feel the breeze nothing can save ya fo shizzle now I'm on parole the LBC laid back., Real deal holyfield the diggy fo shizzle with my mind on my money bubbles in the tub recognize put ya choppers up bionic., Why is you I love my momma realer the LBC zig zag smoke for the Gs rizzide waddup. |
-| `sentences` | Eighty degrees you talk too much fo shizzle Long Beach bubbles in the tub like every single day., Smokin' indo how we do it sippin' on gin and juice zig zag smoke now I'm on parole I love my momma., The s oh yes and my money on my mind why is you Doggfada Mr. Buckwort may I zig zag smoke realer everybody got they cups., Smokin' weed bubbles in the tub realer realness smokin' indo gold chain., Televizzle bubbles in the tub nasty used to sell loot the diggy., Long beach with my mind on my money the dopest rizzide Mr. Buckwort real deal Holyfield pizzle drizzle., Drizzle zig zag smoke Mr. Buckwort now I'm on parole Coupe de Ville feel the breeze., Nothing can save ya bionic the S oh yes smokin' indo through all the drama Snoopy., I love my momma fo shizzle used to sell loot drizzle sippin' on gin and juice nothing can save ya nasty. |
-| `word` | with my mind on my money, you talk too much, Doggfada |
-| `words` | the LBC, drop it like it's hot, make a few ends, pizzle, Long Beach, like every single day, put ya choppers up, roll with, gold chain |
+| `characters` | f7m7y71at7agavtp7vz06ynijp844943a8itikam4s0dt2etc3m2wnm01lyvvzoi4iii7gemfq9iwuo3qk1bzoat2qmasvlukaz2i6xfrzh4kovpsxwyrkrjz5csqsx6sgfzmdcwxiabg0w7j7b2e0hw4yawe1jamojszh876uj4phk4gm5hfzswuk8cd8610535xg292709cmuoa8rekbizyknwhm481f4em5giqyist6mph31coaa2366lsv2, msczoo6xe9nj84tew996vq9hgvfyr17ohyqnkuwi5hoasy45loxeyns443k8a5tfahimyur2di6w36kviwrypgik0w7vka87cu5rb7xohfit83ze03uvv13ysqhi7py08bp87gzkq12gwplnj1p9ka81eaigl3l2gz6pmgddspk166ofsq0coacxo88xvxu1jbf3sxk17odbjns66bnh1jdp28uypgq7wpjoeiwj4qmynmd7ql1fbxe05sfsl7y, df05j9mu7o7zmenitk9v1f3fy02dnp8zmrow2j5gdroxi1z6y7805l6l35ezybre03spul82k7hn1ieksp076u4axdxkjddn4ty39wvhgx9u0kzf41u7o0dzbpvuoaguasidnxk3yfugrnj279s4aj186wwqqnaav5cdh3ww5llgy43j4i6litegayhsltb6nvhuncdgo93vcnzto2hpigo6hhe2y8f2aqyizmw518p2ic55au3af0vv2yi7jn3 |
+| `paragraph` | Smokin' indo recognize bionic roll with smokin' weed now I'm on parole. Snoop through all the drama rolling down the street if the ride is more fly, then you must buy every single one at ease. Realness guess what? roll with laid back why is you every single one fizzle Snoopy the Magic Johnson of rap. Televizzle roll with if the ride is more fly, then you must buy sippin' on gin and juice it's 1993 feel the breeze tha shiznit gizzo., Mr. buckwort roll with real deal Holyfield plizzay Snoopy why is you Long Beach. I love my momma fizzle feel the breeze you talk too much fo shizzle. The dogg pound drizzle gold chain like every single day Snoop. Coupe de ville the dopest may I the LBC rizzoad you talk too much. Rizzoad recognize roll with like every single day Mr. Buckwort., Coupe de ville drop it like it's hot rolling down the street Long Beach eighty degrees drizzle make a few ends roll with the dopest. Nasty you talk too much and my money on my mind plizzay rizzoad. Fo shizzle hizzouse used to sell loot bionic like every single day sippin' on gin and juice the dopest Long Beach realness. How we do it hizzouse for the hustlers may I fo shizzle. |
+| `paragraphs` | Nasty realness fo shizzle through all the drama laid back it's 1993 guess what? smokin' weed like every single day. Doggfada plizzay waddup fo rizzle smokin' weed Long Beach. Sippin' on gin and juice in tha hizzle through all the drama smokin' indo drizzle fizzle drop it like it's hot. If the ride is more fly, then you must buy nothing can save ya gold chain rizzoad feel the breeze smokin' weed. Doggfada the Dogg Pound for the hustlers Coupe de Ville Mr. Buckwort the diggy fizzle., Through all the drama laid back pizzle I love my momma bubbles in the tub now I'm on parole feel the breeze with my mind on my money eighty degrees. Plizzay used to sell loot zig zag smoke Long Beach the Magic Johnson of rap drizzle realness gizzo hizzouse. Coupe de ville for the Gs eighty degrees smokin' indo why is you you talk too much. Used to sell loot fo rizzle roll with Doggfada waddup smokin' indo gizzo., Smokin' weed realer drop it like it's hot it's 1993 plizzay recognize now I'm on parole bubbles in the tub. Snoop the diggy real deal Holyfield the S oh yes you talk too much now I'm on parole Coupe de Ville Snoopy. Recognize fo shizzle your chrome Doggfada gold chain. Mr. buckwort the Dogg Pound drizzle gizzo drop it like it's hot fizzle at ease with my mind on my money., Real deal holyfield how we do it at ease Doggfada Coupe de Ville tha shiznit realer through all the drama. The dogg pound if you was me and I was you put ya choppers up bubbles in the tub why is you gizzo like every single day. Rizzoad everybody got they cups realer real deal Holyfield hizzouse like every single day bubbles in the tub Mr. Buckwort. Televizzle rizzoad bubbles in the tub why is you Snoop nothing can save ya for the hustlers. At ease waddup now I'm on parole if the ride is more fly, then you must buy drop it like it's hot used to sell loot., Televizzle rizzide if the ride is more fly, then you must buy bubbles in the tub used to sell loot fo rizzle fo shizzle. Mr. buckwort bionic guess what? Long Beach bubbles in the tub. Put ya choppers up if you was me and I was you the Dogg Pound hizzouse through all the drama., Make a few ends real deal Holyfield bubbles in the tub the diggy realness now I'm on parole. In tha hizzle rizzide tha shiznit drizzle why is you if you was me and I was you fizzle nasty. Your chrome for the hustlers Coupe de Ville it's 1993 the S oh yes the LBC. Coupe de ville it's 1993 now I'm on parole make a few ends waddup nasty in tha hizzle. Tha shiznit for the Gs gizzo bubbles in the tub drop it like it's hot the S oh yes., You talk too much drop it like it's hot Snoopy put ya choppers up pizzle Coupe de Ville recognize. Long beach may I tha shiznit I love my momma laid back like every single day hizzouse put ya choppers up. Everybody got they cups Long Beach you talk too much make a few ends the LBC rizzide. Pizzle I love my momma used to sell loot tha shiznit rizzide recognize may I the dopest laid back., Used to sell loot Coupe de Ville how we do it drizzle the Dogg Pound the LBC rizzoad. Drizzle may I rizzoad guess what? the LBC the Magic Johnson of rap nothing can save ya smokin' weed laid back. You talk too much eighty degrees feel the breeze fizzle tha dizzle realer. With my mind on my money tha dizzle guess what? through all the drama the dopest., Fizzle televizzle the diggy rizzide feel the breeze. And my money on my mind like every single day the S oh yes the dopest if you was me and I was you plizzay for the Gs guess what?. Drizzle smokin' indo plizzay if you was me and I was you pizzle your chrome. Nasty realness laid back used to sell loot recognize guess what? you talk too much for the hustlers. Feel the breeze why is you sippin' on gin and juice real deal Holyfield fo shizzle gold chain. |
+| `phrase` | Sippin' on gin and juice the Dogg Pound realer realness nothing can save ya smokin' weed for the hustlers I love my momma., Nasty gizzo smokin' weed now I'm on parole gold chain., Eighty degrees you talk too much fo shizzle Long Beach bubbles in the tub like every single day. |
+| `phrases` | Smokin' indo how we do it sippin' on gin and juice zig zag smoke now I'm on parole I love my momma., The s oh yes and my money on my mind why is you Doggfada Mr. Buckwort may I zig zag smoke realer everybody got they cups., Smokin' weed bubbles in the tub realer realness smokin' indo gold chain., Televizzle bubbles in the tub nasty used to sell loot the diggy., Long beach with my mind on my money the dopest rizzide Mr. Buckwort real deal Holyfield pizzle drizzle., Drizzle zig zag smoke Mr. Buckwort now I'm on parole Coupe de Ville feel the breeze., Nothing can save ya bionic the S oh yes smokin' indo through all the drama Snoopy., I love my momma fo shizzle used to sell loot drizzle sippin' on gin and juice nothing can save ya nasty., You talk too much Doggfada for the Gs hizzouse eighty degrees zig zag smoke the S oh yes. |
+| `sentence` | Roll with gold chain Coupe de Ville hizzouse drizzle the diggy if you was me and I was you used to sell loot if the ride is more fly, then you must buy., Mr. buckwort in tha hizzle pizzle rizzoad feel the breeze., Eighty degrees plizzay it's 1993 Coupe de Ville nasty realness if the ride is more fly, then you must buy the S oh yes. |
+| `sentences` | The dopest fo rizzle guess what? rizzide the Dogg Pound eighty degrees the Magic Johnson of rap everybody got they cups., Snoopy sippin' on gin and juice realer used to sell loot your chrome rolling down the street tha dizzle., Nothing can save ya I love my momma why is you Snoop at ease you talk too much., Realness rizzoad the dopest through all the drama drop it like it's hot., Roll with make a few ends through all the drama realer hizzouse gold chain the Dogg Pound., Everybody got they cups I love my momma rolling down the street tha dizzle your chrome for the Gs tha shiznit Mr. Buckwort., If the ride is more fly, then you must buy the S oh yes rizzide may I the dopest bionic., Now i'm on parole roll with how we do it for the Gs with my mind on my money nasty the LBC guess what?., Tha shiznit the S oh yes rolling down the street may I the dopest put ya choppers up. |
+| `word` | zig zag smoke, Long Beach, you talk too much |
+| `words` | feel the breeze, bionic, may I, gold chain, it's 1993, Snoop, Long Beach, drizzle, feel the breeze |
 
 ## FFaker::Education
 
 | Method | Example |
 | ------ | ------- |
-| `degree` | Master of Architecture in Human Resource Studies, Master of Applied Finance in Financial Science, Bachelor of Music in Business Administration |
-| `degree_short` | BPharm in Business Development, BSc in Financial Economics, BPharm in Marketing Engineering |
-| `major` | Marketing Philosophy, Social Education, Business Development |
-| `school` | Windridge College, University of Winddale, Montana Polytechnic School |
-| `school_generic_name` | Rhode Island, Greenridge, Greenspur |
-| `school_name` | Whitecoast, Northcoast, Hillpoint |
+| `degree` | Bachelor of Science in Microbiology in Systems Management, Bachelor of Engineering in Systems Science, Bachelor of Science in Criminology in Business Engineering |
+| `degree_short` | MCA in Human Resource Education, AB in Political Philosophy, MPharm in Systems Management |
+| `major` | Business Architecture, Human Resource Production, Human Resource Accountancy |
+| `school` | Delaware Academy of Science, College of Windwell, Greenshore Polytechnic Institution |
+| `school_generic_name` | Wyoming, Georgia, Lakecrest |
+| `school_name` | Riverdale, Redpoint, Northshire |
 
 ## FFaker::EducationCN
 
 | Method | Example |
 | ------ | ------- |
-| `degree` | 法学学士, 医学学士, 文学硕士 |
-| `location` | 西藏, 华东, 山西 |
-| `major` | 水质科学与技术, 交通管理, 医学检验技术 |
-| `school` | 华中金融学院, 陕西美术学院武汉分校, 雅安财经大学巩义分校 |
+| `degree` | 工学硕士, 法学硕士, 教育学硕士 |
+| `location` | 西北, 黑龙江, 天津 |
+| `major` | 物业管理, 采购管理, 中国少数民族语言文学 |
+| `school` | 山东林业大学衢州分校, 江西师范大学, 阳江交通大学 |
 
 ## FFaker::Filesystem
 
 | Method | Example |
 | ------ | ------- |
-| `directory` | reprehenderit/dicta/distinctio, deserunt/necessitatibus/nostrum, quibusdam/blanditiis/nihil |
-| `extension` | csv, key, numbers |
-| `file_name` | voluptatibus/illo/veniam/aliquam.key, nam/autem/provident/illo.jpg, reprehenderit/eaque/molestiae/sapiente.ods |
-| `mime_type` | audio/vnd.rn-realaudio, model/x3d+binary, text/csv |
+| `directory` | quis/quas/rerum, natus/sapiente/cumque, commodi/minima/aperiam |
+| `extension` | xlsx, tiff, mp4 |
+| `file_name` | suscipit/nostrum/aperiam/dicta.pptx, cumque/error/officia/aut.mp4, iusto/a/expedita/fugit.txt |
+| `mime_type` | image/png, application/EDI-X12, text/css |
 
 ## FFaker::Food
 
 | Method | Example |
 | ------ | ------- |
-| `fruit` | Apricot, Pomegranate, Banana |
-| `herb_or_spice` | Thyme, Basil, Paprika |
-| `ingredient` | Rabbit, Squash, Pineapple |
-| `meat` | Lamb, Duck Liver, Ostrich |
-| `vegetable` | Sea kale, Greater Plantain, Pea |
+| `fruit` | Quince, Fig, Strawberry |
+| `herb_or_spice` | Chipolte Pepper, Thai Seasoning, Tarragon |
+| `ingredient` | Calf liver, Radish, Gumbo File |
+| `meat` | Pork, Ostrich, Goose Liver |
+| `vegetable` | Samphire, Parsnip, Sea lettuce |
 
 ## FFaker::FoodPL
 
 | Method | Example |
 | ------ | ------- |
-| `diary` | oscypek, maślanka, ser żółty |
-| `fermented` | kimchi, kombucza, natto |
-| `food` | kapusta kiszona, cząber, kombucza |
-| `fruit` | kiwi, pomarańcza, awokado |
-| `herb` | rozmaryn, melisa, mięta |
-| `meat` | konina, dziczyzna, wieprzowina |
-| `preserves` | sok, musztarda, marmolada |
-| `processed` | kapusta kiszona, masło, natto |
-| `spice` | gorczyca biała, wanilia, goździki |
-| `unprocessed` | tymianek, wieprzowina, kminek |
-| `vegetable` | kalarepa, groch, por |
+| `diary` | bryndza, masło, twaróg |
+| `fermented` | ogórek kiszony, czekolada, wino |
+| `food` | jagnięcina, maślanka, cebula |
+| `fruit` | mango, awokado, kiwi |
+| `herb` | mirt, melisa, lawenda |
+| `meat` | jagnięcina, wieprzowina, dziczyzna |
+| `preserves` | dżem, sok, pesto |
+| `processed` | maślanka, piwo, ser topiony |
+| `spice` | goździki, ziele angielskie, kardamon |
+| `unprocessed` | ananas, fasola, szpinak |
+| `vegetable` | ciecierzyca, pietruszka, rzodkiewka |
 
 ## FFaker::FreedomIpsum
 
 | Method | Example |
 | ------ | ------- |
-| `characters` | np3l1n5h41j5y7o85hrsr0l93wq7pioi4mlq2ku82klipbfivyldcox4at04cjtjzqoh95tofrrwl1vwj6iqtridf0ajmggl2pje9m38as7o5sz4uqabzdkb69gxfs7i5ku0o2nfqh2wrpvc9uc3r741h5ts9oyyn7goazdi00mq14foljks5r0ra3ydbltqnendbhcjgaor3ugj4o9cqw3kze91q5gk9uh3nc2votfp2lo4cjm3y63z1f42pww, ogin3mus5f30csnht4vgbflr1v0igin09vlla5plmhx4d0jxglw9zxzsczd9u14934iwvz30ypr2yrtm33us701xwvmwdocsbkdk3xixwgm7kk88c133i8fnvc7ru2tha9v715bmzbras53j4o3lc2xtvct25wpxo2vxra2s4s4jdrpbxxcou9cpndhx71mbv03gm1h31fhuksgjz7kvss45iy02buzeby1huj60fe4wc2dwo8sufc46lauviz6, ttrlvkyh6qamzxuk52nsquq0z64mm1tjo0o4hr53bm4xhfayr8hnpyzvjwhteuqu1cfgaqt4nmlbtjlx3r9mui6yt6maga1pzwftlbux0q6nblglsto2jd85ev1s7goa9h9fhg9txxms4gkon2o31ntu5eo001nvbyfarkpl19oc4uuqpe3wsm50eaqumkvohb3c4x9a3a9yzr2dodurq4ifsoz8xqlue7cpejxj0be9f4ko136y6dtokpe6ofv |
-| `paragraph` | Hot pockets Hanes boxer briefs ESPN2 milkshakes red white and blue drone strike drive-thru fighter jets congress. Velcro USA-4-Life-Bro no-terrorist-zone television Garth Brooks Mount Rushmore. Freedom extra beef huge nuclear-powered aircraft carrier gigantic SUVs CSI: Miami the media. 18-wheeler elections Marlboro reds MGD nuclear-powered aircraft carrier., Lynyrd skynyrd fireworks Mount Rushmore hot dogs CNN extra-large Mega-Stuf Oreos. Shock and awe freedom Starbucks the media second amendment rights Die Hard 2: Die Harder country-fried. Route 66 chili cheese fries gigantic automatic rifle extra beef crispy chicken strips Marlboro reds Home Depot., Sweatpants MOPAR MGD Chuck Norris Disney World. Gigantic Medal of Honor John Cena hot dogs low taxes boneless buffalo wings huge extra value meal explosions. Lunchables malls condiments extra pulled pork redwood DiGiorno truthers ESPN2. Independence extra-large second amendment rights cholesterol fireworks. |
-| `paragraphs` | Juicy flame-grilled Van Halen dual-wielded machine guns extra-large Home Depot. Dallas cowboys constitutional rights Lynyrd Skynyrd better dead than red truthers. Pickup trucks bigger velcro Van Halen SUVs Medal of Honor low gas prices. Voting nuclear-powered aircraft carrier patriotic Hot Pockets USA-4-Life-Bro Star-Spangled Banner 85oz soda pickup trucks. Marlboro reds credit cards commies get out of my country nuclear-powered aircraft carrier Garth Brooks DiGiorno 3D Blu-Ray anti-metric system dual-wielded machine guns., Malls Starbucks truthers cheese-stuffed enemies of freedom shock and awe tomahawk cruise missile potato salad. Pickup trucks Denny's Grand Slam Breakfast elections DVD shock and awe corporations tomahawk cruise missile pro-wrestling democracy. Fox news fireworks Call of Duty bigger apple pie better dead than red 3D Blu-Ray the media MGD. Disney world mission accomplished extra beef bigfoot condiments., Corporations low taxes extra value meal DiGiorno DirecTV ESPN2. Usa-4-life-bro 7-Eleven red white and blue sweatpants southwest breakfast burrito. Cnn Denny's Grand Slam Breakfast RoboCop dual-wielded machine guns stars and stripes extra pulled pork velcro shopping Checkers. Nashville Philly cheesesteak twinkies independence bigger Home Depot Michael Bay movies taco night 74-inch HDTV. Hot pockets the government drone strike extra value meal fighter jets., Supreme court ruling 74-inch HDTV truthers slurpees second amendment rights foreign policy. Lynyrd skynyrd truck nuts Fox News Harley Davidson Proud To Be An American DirecTV bigfoot the economy Denny's Grand Slam Breakfast. Low taxes national security 1776 juicy flame-grilled foreign policy Costco. Tomahawk cruise missile SUVs official sponsor capitalism CSI: Miami slurpees boneless buffalo wings juicy flame-grilled. Nasa truthers pro-wrestling border wall John Wayne 85oz soda controversial., Digiorno tomahawk cruise missile hot dogs Branson Missouri boneless buffalo wings apple pie explosions RoboCop. Die hard 2: die harder constitutional rights Disney World Texas explosions John Cena Philly cheesesteak. Applebee's propane tanks fireworks Checkers nuclear-powered aircraft carrier drive-thru. Anti-metric system low gas prices USA-4-Life-Bro cheese-stuffed Disney World DiGiorno corporations voting. Super-size Checkers Dallas Cowboys route 66 DirecTV., Championship pro bass fishing Costco Uncle Sam nuclear-powered aircraft carrier Arnold Schwarzenegger Medal of Honor Nashville. 18-wheeler crispy chicken strips independence Nashville condiments Bud heavy tall-boy supreme court ruling. Home depot Proud To Be An American stock market explosive extra value meal MOPAR extra pulled pork jean shorts automatic rifle., Low taxes wanted dead or alive I only speak American TGIF Texas CNN. The media Denny's Grand Slam Breakfast anti-metric system CSI: Miami Wal-Mart. Juicy flame-grilled SUVs wanted dead or alive CSI: Miami NASA NASCAR Michael Bay movies Denny's Grand Slam Breakfast., Malls voting John Cena Uncle Sam freedom route 66 85oz soda elections SUVs. Proud to be an american NASA propane tanks Harley Davidson monster truck rally Garth Brooks. Stock market WMD extra pulled pork BBQ voting stars and stripes. Home depot route 66 wanted dead or alive exploding crispy chicken strips official sponsor patriotic. Second amendment rights Denny's Grand Slam Breakfast Texas pro-wrestling Hot Pockets., Lunchables foreign policy bigger DVD better dead than red the economy USA-4-Life-Bro. Starbucks Michael Bay movies Harley Davidson gigantic extra beef fireworks nuclear-powered aircraft carrier freedom. More bullets huge low taxes Die Hard 2: Die Harder patriotic NASA shopping online multiplayer. Wal-mart Lynyrd Skynyrd XXXL fireworks freedom chili cheese fries potato salad Dallas Cowboys corporations. Consumerism Fox News bacon cheeseburgers TGIF DiGiorno CSI: Miami extra beef foreign policy. |
-| `phrase` | Fbi cia nsa extra pulled pork mission accomplished taco night independence automatic rifle 74-inch HDTV boneless buffalo wings 7-Eleven., Super bowl 7-Eleven I only speak American extra-large constitutional rights low taxes more bullets., Exploding nuclear-powered aircraft carrier weekends Applebee's potato salad wanted dead or alive I only speak American. |
-| `phrases` | Liberty extra beef drive-thru no-terrorist-zone congress MGD automatic rifle., Exploding democracy Call of Duty bigfoot voting fireworks MOPAR stock market southwest breakfast burrito., Boneless buffalo wings cholesterol foreign policy bacon cheeseburgers TGIF 18-wheeler the government., Drive-thru congress Michael Bay movies redwood Call of Duty DVD., Crunch-tastic freedom fries Championship Pro Bass Fishing stars and stripes low gas prices controversial enemies of freedom Star-Spangled Banner., Mega-stuf oreos super bowl MGD democracy John Cena country-fried Championship Pro Bass Fishing., Official sponsor 3D Blu-Ray 74-inch HDTV Mount Rushmore commies get out of my country stars and stripes., Bigfoot Fox News Applebee's fireworks 3D Blu-Ray., Van halen 1776 XXXL explosions 18-wheeler controversial. |
-| `sentence` | Constitutional rights supreme court ruling 74-inch HDTV sweatpants DVD extra-large., Arnold schwarzenegger wanted dead or alive Chuck Norris DVD border wall., Mgd congress Uncle Sam bald eagles Branson Missouri Home Depot. |
-| `sentences` | Bud heavy tall-boy shock and awe nuclear-powered aircraft carrier better dead than red constitutional rights Disney World Hanes boxer briefs., Pro-wrestling DiGiorno automatic rifle Van Halen Branson Missouri taco night., Nashville chili cheese fries voting Wal-Mart propane tanks super bowl stock market God Bless America., Low gas prices Uncle Sam truck nuts the government RoboCop Costco., Mgd the media bald eagles Harley Davidson extra value meal velcro Chuck Norris BBQ Costco., Truck nuts patriotic constitutional rights official sponsor Bud heavy tall-boy Applebee's USA-4-Life-Bro low gas prices., Constitutional rights Wal-Mart anti-metric system Disney World Arnold Schwarzenegger cholesterol the economy television., Dual-wielded machine guns explosive FBI CIA NSA twinkies stars and stripes., Juicy flame-grilled corporations 18-wheeler Chuck Norris Texas WMD DiGiorno television. |
-| `word` | truck nuts, credit cards, condiments |
-| `words` | milkshakes, 74-inch HDTV, patriotic, huge, democracy, ESPN2, Chuck Norris, anti-metric system, truthers |
+| `characters` | sz4uqabzdkb69gxfs7i5ku0o2nfqh2wrpvc9uc3r741h5ts9oyyn7goazdi00mq14foljks5r0ra3ydbltqnendbhcjgaor3ugj4o9cqw3kze91q5gk9uh3nc2votfp2lo4cjm3y63z1f42pwwogin3mus5f30csnht4vgbflr1v0igin09vlla5plmhx4d0jxglw9zxzsczd9u14934iwvz30ypr2yrtm33us701xwvmwdocsbkdk3xixwgm7k, k88c133i8fnvc7ru2tha9v715bmzbras53j4o3lc2xtvct25wpxo2vxra2s4s4jdrpbxxcou9cpndhx71mbv03gm1h31fhuksgjz7kvss45iy02buzeby1huj60fe4wc2dwo8sufc46lauviz6ttrlvkyh6qamzxuk52nsquq0z64mm1tjo0o4hr53bm4xhfayr8hnpyzvjwhteuqu1cfgaqt4nmlbtjlx3r9mui6yt6maga1pzwftlbux0q6nb, lglsto2jd85ev1s7goa9h9fhg9txxms4gkon2o31ntu5eo001nvbyfarkpl19oc4uuqpe3wsm50eaqumkvohb3c4x9a3a9yzr2dodurq4ifsoz8xqlue7cpejxj0be9f4ko136y6dtokpe6ofveqta3isysnf5j0xxv1a7hf9s2h09ek4se22psa9wx7tlhm98ex5d6re0cai92ci67vpfulf8go7mwgypym4ewwij0ez90y1n3hons6tyc1xmm |
+| `paragraph` | Shock and awe monster truck rally pickup trucks RoboCop 85oz soda shopping 74-inch HDTV SUVs juicy flame-grilled. Cholesterol national security anti-metric system truck nuts voting independence milkshakes. Cheese-stuffed enemies of freedom shock and awe tomahawk cruise missile hot dogs. Pickup trucks Denny's Grand Slam Breakfast elections DVD shock and awe corporations tomahawk cruise missile pro-wrestling democracy. Fox news fireworks Call of Duty bigger apple pie better dead than red 3D Blu-Ray the media MGD., Disney world mission accomplished extra beef bigfoot condiments. Corporations low taxes extra value meal DiGiorno DirecTV ESPN2. Usa-4-life-bro 7-Eleven red white and blue sweatpants southwest breakfast burrito. Cnn Denny's Grand Slam Breakfast RoboCop dual-wielded machine guns stars and stripes extra pulled pork velcro shopping Checkers., Apple pie official sponsor bigger national security Michael Bay movies. Commies get out of my country sweatpants FBI CIA NSA online multiplayer juicy flame-grilled fighter jets Lynyrd Skynyrd better dead than red. Supreme court ruling 74-inch HDTV truthers slurpees second amendment rights foreign policy. |
+| `paragraphs` | Lynyrd skynyrd truck nuts Fox News Harley Davidson Proud To Be An American DirecTV bigfoot the economy Denny's Grand Slam Breakfast. Low taxes national security 1776 juicy flame-grilled foreign policy Costco. Tomahawk cruise missile SUVs official sponsor capitalism CSI: Miami slurpees boneless buffalo wings juicy flame-grilled. Nasa truthers pro-wrestling border wall John Wayne 85oz soda controversial. Digiorno tomahawk cruise missile hot dogs Branson Missouri boneless buffalo wings apple pie explosions., Die hard 2: die harder constitutional rights Disney World Texas explosions John Cena Philly cheesesteak Wal-Mart elections. Fireworks shopping nuclear-powered aircraft carrier propane tanks cholesterol mission accomplished DirecTV hot dogs DiGiorno. Directv twinkies malls super-size voting Dallas Cowboys. Low gas prices boneless buffalo wings taco night shock and awe Championship Pro Bass Fishing Checkers Uncle Sam nuclear-powered aircraft carrier Arnold Schwarzenegger., Drive-thru WMD corporations BBQ Proud To Be An American bigfoot apple pie. Fox news ESPN2 truthers stock market explosive extra value meal. Bbq extra pulled pork jean shorts automatic rifle elections low taxes RoboCop. Texas independence foreign policy shock and awe anti-metric system 74-inch HDTV., Juicy flame-grilled SUVs wanted dead or alive CSI: Miami NASA NASCAR Michael Bay movies Denny's Grand Slam Breakfast. Malls voting John Cena Uncle Sam freedom route 66 85oz soda elections SUVs. Proud to be an american NASA propane tanks Harley Davidson monster truck rally Garth Brooks. Stock market WMD extra pulled pork BBQ voting stars and stripes. Home depot route 66 wanted dead or alive exploding crispy chicken strips official sponsor patriotic., Second amendment rights Denny's Grand Slam Breakfast Texas pro-wrestling Hot Pockets. Lunchables foreign policy bigger DVD better dead than red the economy USA-4-Life-Bro. Starbucks Michael Bay movies Harley Davidson gigantic extra beef fireworks nuclear-powered aircraft carrier freedom. More bullets huge low taxes Die Hard 2: Die Harder patriotic NASA shopping online multiplayer., Wal-mart Lynyrd Skynyrd XXXL fireworks freedom chili cheese fries potato salad Dallas Cowboys corporations. Consumerism Fox News bacon cheeseburgers TGIF DiGiorno CSI: Miami extra beef foreign policy. Fbi cia nsa extra pulled pork mission accomplished taco night independence automatic rifle 74-inch HDTV boneless buffalo wings 7-Eleven. Super bowl 7-Eleven I only speak American extra-large constitutional rights low taxes more bullets., Exploding nuclear-powered aircraft carrier weekends Applebee's potato salad wanted dead or alive I only speak American. Liberty extra beef drive-thru no-terrorist-zone congress MGD automatic rifle. Exploding democracy Call of Duty bigfoot voting fireworks MOPAR stock market southwest breakfast burrito. Boneless buffalo wings cholesterol foreign policy bacon cheeseburgers TGIF 18-wheeler the government., Drive-thru congress Michael Bay movies redwood Call of Duty DVD slurpees BBQ shock and awe. Juicy flame-grilled boneless buffalo wings Call of Duty Denny's Grand Slam Breakfast John Cena NASA capitalism MGD. The economy nuclear-powered aircraft carrier DiGiorno Philly cheesesteak red white and blue truthers shopping Branson Missouri crunch-tastic. Stars and stripes redwood supreme court ruling drone strike fireworks credit cards constitutional rights jean shorts online multiplayer., Cnn cholesterol Bud heavy tall-boy 1776 freedom fries Hanes boxer briefs more bullets credit cards. Arnold schwarzenegger wanted dead or alive Chuck Norris DVD border wall. Mgd congress Uncle Sam bald eagles Branson Missouri Home Depot. |
+| `phrase` | Bud heavy tall-boy shock and awe nuclear-powered aircraft carrier better dead than red constitutional rights Disney World Hanes boxer briefs., Pro-wrestling DiGiorno automatic rifle Van Halen Branson Missouri taco night., Nashville chili cheese fries voting Wal-Mart propane tanks super bowl stock market God Bless America. |
+| `phrases` | Low gas prices Uncle Sam truck nuts the government RoboCop Costco., Mgd the media bald eagles Harley Davidson extra value meal velcro Chuck Norris BBQ Costco., Truck nuts patriotic constitutional rights official sponsor Bud heavy tall-boy Applebee's USA-4-Life-Bro low gas prices., Constitutional rights Wal-Mart anti-metric system Disney World Arnold Schwarzenegger cholesterol the economy television., Dual-wielded machine guns explosive FBI CIA NSA twinkies stars and stripes., Juicy flame-grilled corporations 18-wheeler Chuck Norris Texas WMD DiGiorno television., Credit cards condiments voting 74-inch HDTV patriotic monster truck rally democracy Chuck Norris anti-metric system., Extra beef slurpees NASA southwest breakfast burrito truck nuts., Dvd mud flaps huge wanted dead or alive low gas prices bigfoot official sponsor mission accomplished border wall. |
+| `sentence` | Chuck norris congress lunchables nuclear-powered aircraft carrier Uncle Sam., Boneless buffalo wings Medal of Honor Bud heavy tall-boy elections Call of Duty television BBQ stars and stripes jean shorts., Harley davidson bacon cheeseburgers Mega-Stuf Oreos low gas prices shopping second amendment rights Applebee's. |
+| `sentences` | Wmd hot dogs Mega-Stuf Oreos sweatpants the government CNN extra-large., Official sponsor independence God Bless America stars and stripes SUVs mud flaps Medal of Honor., Nascar Checkers DiGiorno Proud To Be An American the media Michael Bay movies national security Harley Davidson the government., Television no-terrorist-zone fireworks better dead than red mission accomplished independence NASCAR consumerism fighter jets., Wmd Chuck Norris Dallas Cowboys propane tanks bigfoot potato salad Starbucks., Tomahawk cruise missile apple pie CNN national security taco night., Monster truck rally consumerism liberty nuclear-powered aircraft carrier national security tomahawk cruise missile bigger., Pro-wrestling democracy twinkies extra value meal red white and blue., Sweatpants cheese-stuffed pro-wrestling crispy chicken strips drone strike Hot Pockets Championship Pro Bass Fishing MOPAR. |
+| `word` | constitutional rights, the media, automatic rifle |
+| `words` | mission accomplished, Dale Earnhardt Jr, capitalism, controversial, Mountain Dew, DiGiorno, USA-4-Life-Bro, hot dogs, 85oz soda |
 
 ## FFaker::Game
 
 | Method | Example |
 | ------ | ------- |
-| `category` | Horror, Modern Warfare, Comic Book / Strip |
-| `mechanic` | Different Dice Movement, Ratio / Combat Results Table, Role Playing |
-| `title` | First Pickpocket, I am First Ninjas, Blue Woman |
+| `category` | Aviation / Flight, Number, Movies / TV / Radio theme |
+| `mechanic` | Line of Sight, Trading, Command Cards |
+| `title` | A Fistful of Green Friday, Little City, Marvelous Brain |
 
 ## FFaker::Gender
 
 | Method | Example |
 | ------ | ------- |
 | `binary` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for binary |
-| `maybe` | male, pan-gender, non-binary |
-| `random` | pan-gender, agender, female |
-| `sample` | bi-gender, androgyne, male |
+| `maybe` | male, agender, bi-gender |
+| `random` | bi-gender, androgyne, non-binary |
+| `sample` | non-binary, androgyne, bi-gender |
 
 ## FFaker::GenderBR
 
@@ -1331,16 +1331,16 @@
 | ------ | ------- |
 | `binary` | ‼️ FFaker::UniqueUtils::RetryLimitExceeded: Retry limit exceeded for binary |
 | `maybe` | мужчина, женщина, агендер |
-| `random` | мужчина, агендер, нонбайнари |
-| `sample` | нонбайнари, мужчина, агендер |
+| `random` | женщина, агендер, мужчина |
+| `sample` | агендер, женщина, нонбайнари |
 
 ## FFaker::Geolocation
 
 | Method | Example |
 | ------ | ------- |
 | `boxed_coords`(..., ...) |  |
-| `lat` | 41.491529, 41.5244, 39.9847861520773 |
-| `lng` | -73.769264, -80.1300048828125, -80.149299621582 |
+| `lat` | 40.5998084142575, 41.4811, 40.7490546706085 |
+| `lng` | -80.1410980224609, -122.094516147761, -122.340967372417 |
 
 ## FFaker::Guid
 
@@ -1352,9 +1352,9 @@
 
 | Method | Example |
 | ------ | ------- |
-| `a` | &lt;a href="#optio" title="Possimus velit"&gt;Aspernatur ut&lt;/a&gt;, &lt;a href="#perferendis" title="Molestiae eligendi"&gt;Neque libero&lt;/a&gt;, &lt;a href="#libero" title="Impedit quia"&gt;Libero amet&lt;/a&gt; |
-| `body` | &lt;h1&gt;Beatae incidunt&lt;/h1&gt;&lt;p&gt;&lt;sup&gt;deserunt nostrum&lt;/sup&gt; Consequuntur ad maiores quod voluptatem voluptatum. Cum vero quisquam numquam voluptas id tempora itaque voluptate. Molestias perferendis est sed officia possimus porro qui. Cupiditate delectus facere aut doloribus architecto. &lt;em&gt;Repudiandae quidem saepe numquam perferendis dicta alias deleniti. Quidem illo voluptate fuga dolor molestiae ipsam. Tempore sequi cumque dolorum porro laboriosam.&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Similique&lt;/th&gt;&lt;th&gt;Ea&lt;/th&gt;&lt;th&gt;Ipsam&lt;/th&gt;&lt;th&gt;Repudiandae&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ducimus&lt;/td&gt;&lt;td&gt;Hic&lt;/td&gt;&lt;td&gt;Dolorum&lt;/td&gt;&lt;td&gt;&lt;a href="#harum" title="Omnis eveniet"&gt;Consequuntur perferendis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Omnis maiores&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Corrupti itaque quisquam autem rem reprehenderit ut culpa repellat.&lt;/li&gt;&lt;li&gt;Incidunt quia quisquam eligendi repellat aliquam accusamus voluptatibus.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Aliquam ex veritatis beatae ratione. Sunt ipsum iste quasi expedita ex nobis eum. Consectetur voluptas expedita sequi repellat laborum dolores optio quo. Nisi placeat velit deleniti rerum aspernatur.&lt;br&gt;Voluptatibus suscipit consequuntur cumque harum at. Dolore quisquam repellendus rem illum. Cupiditate iure eum harum consectetur dolorum repellat odio. Vitae repudiandae occaecati debitis saepe ratione omnis. Est suscipit itaque mollitia quia expedita ratione dolore aut.&lt;br&gt;Tempora minima mollitia quis molestiae. Deserunt modi quos illo eos soluta. Occaecati amet adipisci nam eaque. Rerum eos distinctio ipsa suscipit quas libero eveniet optio.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Expedita aperiam&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Dignissimos perferendis perspiciatis aliquam adipisci quisquam molestias officiis at. Veniam vero dolor neque provident laborum consequatur nisi. Est aliquam ratione non rerum.&lt;/li&gt;&lt;li&gt;Maxime dignissimos labore doloremque ducimus tempore et delectus. Illum deserunt quis vel sit tenetur. Doloremque repellat harum recusandae deserunt autem.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #aspernatur h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;In cum&lt;/h1&gt;&lt;p&gt;&lt;a href="#dicta" title="Quod eos"&gt;Possimus occaecati&lt;/a&gt; Reiciendis modi enim sequi dignissimos vero id. Iste eos repellendus aliquid dolor. Neque molestias quae reiciendis sequi placeat. Excepturi distinctio neque beatae eveniet ducimus voluptate. Doloribus soluta in libero explicabo architecto. &lt;em&gt;Iusto quidem reprehenderit perspiciatis perferendis soluta quaerat. Voluptas voluptatum quaerat reprehenderit quia adipisci. Repellendus sed est enim minima error quos.&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Est&lt;/th&gt;&lt;th&gt;Vel&lt;/th&gt;&lt;th&gt;Veniam&lt;/th&gt;&lt;th&gt;Quibusdam&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ipsam&lt;/td&gt;&lt;td&gt;Dignissimos&lt;/td&gt;&lt;td&gt;Autem&lt;/td&gt;&lt;td&gt;&lt;a href="#inventore" title="Cum necessitatibus"&gt;Aliquid id&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Repudiandae&lt;/td&gt;&lt;td&gt;Facere&lt;/td&gt;&lt;td&gt;Magnam&lt;/td&gt;&lt;td&gt;&lt;a href="#vero" title="Libero sequi"&gt;Odio doloribus&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Odit exercitationem&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Voluptatibus numquam veniam ipsa ea repellat quaerat. Ad eaque qui reiciendis ex saepe maxime. Sequi earum quo debitis deserunt voluptas fuga.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Fuga perferendis maiores porro architecto praesentium cum perspiciatis quidem. Eum odio illo ex rem quos eius numquam aperiam. Quam repellendus quo molestias minima. Id pariatur vel voluptas exercitationem eaque ipsum dolore rerum.&lt;br&gt;Nemo alias totam fugit earum occaecati est doloribus architecto. Similique veniam corporis qui excepturi quaerat. Expedita officiis atque facere sint. Optio aut debitis ullam nisi consequatur quaerat.&lt;br&gt;Cupiditate commodi minima tenetur cumque ad. Voluptas hic consequatur dolores commodi aliquid reiciendis. Consectetur mollitia ad quidem explicabo blanditiis. Deserunt debitis possimus reiciendis praesentium. Aliquam praesentium quisquam tempore rerum architecto inventore sint.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Provident eius&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Velit laborum culpa dolores qui tempora. Nihil accusamus adipisci nisi minima quasi. Ullam repudiandae officiis cupiditate laboriosam sint nemo vero.&lt;/li&gt;&lt;li&gt;Fuga iure perferendis et molestias. Id at necessitatibus est nihil neque.&lt;/li&gt;&lt;li&gt;Consequuntur labore sed aut officia qui incidunt debitis rem. Quod fuga ab quaerat voluptates tempora delectus vel eaque.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #omnis h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Officiis natus&lt;/h1&gt;&lt;p&gt;Dolorem explicabo voluptates beatae delectus expedita soluta. Dicta dignissimos adipisci architecto quis harum assumenda. Aspernatur in quia fugiat eius iste nostrum rerum. Vitae ratione hic minima rem quos voluptate. &lt;small&gt;animi necessitatibus&lt;/small&gt; &lt;ins&gt;expedita rerum&lt;/ins&gt;&lt;/p&gt;&lt;p&gt;Excepturi dolorem quos cum ea et veritatis at illum. Voluptas itaque autem vitae corrupti architecto rerum provident. Perferendis cupiditate suscipit assumenda reprehenderit nostrum. Perferendis magnam accusantium accusamus odio expedita itaque velit eius. Occaecati soluta sapiente ipsam doloribus pariatur placeat. &lt;em&gt;Veniam deleniti magni assumenda et deserunt nisi occaecati similique. Modi omnis placeat necessitatibus sint magnam voluptate unde. Cupiditate dignissimos a doloremque ratione libero est quae. Facilis officiis maxime suscipit aspernatur reprehenderit ipsa. Accusantium vel nihil reiciendis ratione commodi incidunt.&lt;/em&gt; &lt;sup&gt;debitis mollitia&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;code&gt;quis adipisci&lt;/code&gt; &lt;a href="#nemo" title="Doloribus nobis"&gt;Molestiae impedit&lt;/a&gt; &lt;del&gt;maxime distinctio&lt;/del&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Sequi&lt;/th&gt;&lt;th&gt;Ab&lt;/th&gt;&lt;th&gt;Tempora&lt;/th&gt;&lt;th&gt;Delectus&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Ex molestias&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Corporis id laboriosam minus facere nisi ab ut. Totam deserunt quod aliquam ad beatae error. Hic rem commodi neque eveniet dolorum.&lt;/li&gt;&lt;li&gt;Est pariatur commodi laudantium quae doloribus ab porro voluptatibus.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Laudantium laborum magni quod voluptatem molestias accusamus numquam. A ad culpa nobis odio eligendi nulla harum. Perspiciatis doloribus hic est eius facilis. Esse illum provident fugiat quam et.&lt;br&gt;Ex dolore debitis vero veniam autem libero quas eveniet. Sint at facilis distinctio ab magni libero. Eveniet nesciunt eius minus culpa. Facilis odit fugiat dolore quae assumenda ab animi sint. Libero esse consectetur architecto fuga nisi voluptatem mollitia hic.&lt;br&gt;Laboriosam totam est corporis rerum nihil reiciendis. Rem maiores deserunt illo iure. Autem tenetur modi tempore repudiandae commodi accusamus ratione inventore. Expedita dolore voluptatem sunt perferendis labore beatae natus veniam.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Vero accusantium&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Totam assumenda vel porro laudantium aliquid architecto corporis. Eligendi quidem excepturi omnis atque laudantium optio fugit.&lt;/li&gt;&lt;li&gt;Facere ut doloremque molestias voluptatem fugit. Excepturi esse cumque ex culpa nam vero sed doloremque.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #nam h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt; |
-| `dl` | &lt;dl&gt;&lt;dt&gt;Ex&lt;/dt&gt;&lt;dd&gt;Architecto optio distinctio ea impedit a neque. Iusto quaerat ullam sapiente nostrum. Tempora odio provident nobis earum beatae explicabo.&lt;/dd&gt;&lt;dt&gt;Optio&lt;/dt&gt;&lt;dd&gt;Dolores alias id asperiores voluptatum nostrum quam deleniti. Placeat laborum rem blanditiis consequatur delectus. Veritatis dolores aliquid nihil voluptatem laborum in. Aliquid doloremque ut perspiciatis at excepturi.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Tenetur&lt;/dt&gt;&lt;dd&gt;Animi nemo accusantium repudiandae libero. Expedita vitae vero autem repellat aliquam nostrum. Ut dolores dolorum quas nisi unde facilis sapiente reprehenderit. Vero sed corrupti hic cumque beatae.&lt;/dd&gt;&lt;dt&gt;Aspernatur&lt;/dt&gt;&lt;dd&gt;Quia quae quas animi laborum. Recusandae sint incidunt deleniti vero architecto eveniet. Porro voluptas explicabo nulla laudantium in corporis maxime aspernatur. Beatae consequatur nobis quisquam sapiente ullam alias.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Commodi&lt;/dt&gt;&lt;dd&gt;Officiis laboriosam dolore eveniet repellendus. Architecto modi aperiam voluptatum sapiente dignissimos. Aliquam magni quo quaerat quas voluptatum.&lt;/dd&gt;&lt;dt&gt;Ipsam&lt;/dt&gt;&lt;dd&gt;Sunt quam commodi laborum facilis ex. Impedit consectetur quia consequuntur repellat tenetur distinctio delectus. Eum nisi dicta ratione nesciunt quasi.&lt;/dd&gt;&lt;/dl&gt; |
+| `a` | &lt;a href="#eligendi" title="Dolores eius"&gt;Qui provident&lt;/a&gt;, &lt;a href="#sapiente" title="Placeat aut"&gt;Delectus quasi&lt;/a&gt;, &lt;a href="#molestias" title="Quis hic"&gt;Quod similique&lt;/a&gt; |
+| `body` | &lt;h1&gt;Ea ipsam&lt;/h1&gt;&lt;p&gt;&lt;code&gt;nihil vitae&lt;/code&gt; &lt;em&gt;Consequuntur perferendis natus asperiores voluptas facilis molestias sapiente facere. Totam iure ut error voluptatibus sed labore consequuntur facere. Voluptatibus dolore nulla a similique. Aliquam ex veritatis beatae ratione.&lt;/em&gt; Harum qui labore aut nulla ut nostrum est ullam. Odit mollitia tempora quas illo qui nobis omnis. Amet adipisci distinctio eaque laborum. Rerum eos distinctio ipsa suscipit quas libero eveniet optio.&lt;/p&gt;&lt;p&gt;&lt;ins&gt;placeat error&lt;/ins&gt; &lt;sub&gt;facilis harum&lt;/sub&gt; Neque molestias quae reiciendis sequi placeat. Excepturi distinctio neque beatae eveniet ducimus voluptate. Doloribus soluta in libero explicabo architecto. Tenetur voluptatibus quas laudantium explicabo.&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Officiis&lt;/th&gt;&lt;th&gt;Quibusdam&lt;/th&gt;&lt;th&gt;Ex&lt;/th&gt;&lt;th&gt;Amet&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Excepturi&lt;/td&gt;&lt;td&gt;Tenetur&lt;/td&gt;&lt;td&gt;Numquam&lt;/td&gt;&lt;td&gt;&lt;a href="#id" title="Necessitatibus similique"&gt;Porro recusandae&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Doloremque&lt;/td&gt;&lt;td&gt;Accusamus&lt;/td&gt;&lt;td&gt;Quo&lt;/td&gt;&lt;td&gt;&lt;a href="#sapiente" title="Nostrum omnis"&gt;Eaque non&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Quod delectus&lt;/h2&gt;&lt;ol&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Quibusdam ipsam ducimus vel inventore optio recusandae ea fuga. Magnam accusamus tempore sequi ducimus odit corporis aut nostrum. Numquam veniam ipsa ea asperiores quaerat. Ad eaque qui reiciendis ex saepe maxime.&lt;br&gt;Sequi earum quo debitis deserunt voluptas fuga. Fuga perferendis maiores porro architecto praesentium. Distinctio occaecati laborum voluptatem magnam reprehenderit ducimus inventore commodi. Blanditiis voluptatum numquam non aperiam iusto nulla maxime provident.&lt;br&gt;Id pariatur vel voluptas exercitationem eaque ipsum dolore rerum. Nemo alias totam fugit earum occaecati est doloribus architecto. Similique veniam corporis qui excepturi quaerat. Expedita officiis atque facere sint.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Nemo cumque&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Exercitationem laboriosam consequatur aliquam placeat. Cupiditate commodi minima tenetur cumque ad.&lt;/li&gt;&lt;li&gt;Voluptas hic consequatur dolores commodi aliquid reiciendis. Consectetur mollitia ad quidem explicabo blanditiis. Deserunt debitis possimus reiciendis praesentium.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #sequi h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Aliquam praesentium&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Inventore quas unde modi quis non rerum. Dolores qui modi ducimus odio saepe non. Quasi facere corporis itaque necessitatibus provident nisi. Illum voluptatem est quidem reprehenderit perferendis.&lt;/em&gt; &lt;ins&gt;omnis debitis&lt;/ins&gt; &lt;strong&gt;Quo nam&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Consectetur at&lt;/strong&gt; &lt;small&gt;facilis deserunt&lt;/small&gt; &lt;ins&gt;dolore in&lt;/ins&gt;&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Voluptas&lt;/th&gt;&lt;th&gt;Recusandae&lt;/th&gt;&lt;th&gt;Commodi&lt;/th&gt;&lt;th&gt;Vitae&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Voluptatum&lt;/td&gt;&lt;td&gt;Architecto&lt;/td&gt;&lt;td&gt;Laborum&lt;/td&gt;&lt;td&gt;&lt;a href="#molestias" title="Totam earum"&gt;Perferendis cupiditate&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Repellat&lt;/td&gt;&lt;td&gt;Voluptas&lt;/td&gt;&lt;td&gt;Placeat&lt;/td&gt;&lt;td&gt;&lt;a href="#doloribus" title="Eum quis"&gt;Quam perferendis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Dolore&lt;/td&gt;&lt;td&gt;Voluptatem&lt;/td&gt;&lt;td&gt;Pariatur&lt;/td&gt;&lt;td&gt;&lt;a href="#nihil" title="Harum saepe"&gt;Consectetur non&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Ducimus cupiditate&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Delectus illum minus beatae hic doloribus magnam sequi.&lt;/li&gt;&lt;li&gt;Omnis dolore quia sed libero. Dignissimos saepe quo sit sequi nesciunt autem doloremque distinctio. Laboriosam sunt ipsa pariatur ut.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Iste molestias ullam tempore hic commodi occaecati rem. Excepturi laudantium necessitatibus adipisci explicabo. Quod atque provident qui reprehenderit. In voluptatibus minus dolorem eum autem.&lt;br&gt;Quia eveniet modi explicabo error fugiat dolorum laboriosam qui. Facere similique dicta sequi ad. Voluptate omnis perspiciatis at minus debitis quibusdam quisquam commodi. Cum itaque et adipisci repudiandae molestias quia. Maxime distinctio vel temporibus modi vero.&lt;br&gt;Quis adipisci ducimus minima suscipit quo blanditiis maxime quidem. Expedita placeat deserunt fugiat tenetur incidunt rerum. Est dolores dolorum excepturi enim rem odit mollitia. Dolorum in fugiat veniam voluptate.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Dolore magni&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Est quia facere excepturi quidem. Nesciunt dolorem error natus quam blanditiis quas voluptatem nobis.&lt;/li&gt;&lt;li&gt;Alias nesciunt illo labore doloribus vel cupiditate nostrum.&lt;/li&gt;&lt;li&gt;Corporis id laboriosam minus facere nisi ab ut. Totam deserunt quod aliquam ad beatae error. Hic rem commodi neque eveniet dolorum.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #voluptatem h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt;, &lt;h1&gt;Officia laborum&lt;/h1&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Praesentium&lt;/th&gt;&lt;th&gt;Quae&lt;/th&gt;&lt;th&gt;Sapiente&lt;/th&gt;&lt;th&gt;Quae&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Eligendi&lt;/td&gt;&lt;td&gt;Earum&lt;/td&gt;&lt;td&gt;Iusto&lt;/td&gt;&lt;td&gt;&lt;a href="#consequatur" title="Quisquam dolores"&gt;Laudantium laborum&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Magni&lt;/td&gt;&lt;td&gt;Porro&lt;/td&gt;&lt;td&gt;Voluptatem&lt;/td&gt;&lt;td&gt;&lt;a href="#corrupti" title="Illum velit"&gt;Nisi autem&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;Ad&lt;/td&gt;&lt;td&gt;Similique&lt;/td&gt;&lt;td&gt;&lt;a href="#cum" title="Iusto cum"&gt;Repellendus laborum&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;Quasi unde&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Id eius rerum debitis nemo nihil at. Temporibus esse et dolores amet in ab.&lt;/li&gt;&lt;li&gt;Dolore officiis at veniam commodi nam.&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;p&gt;Sint at facilis distinctio ab magni libero. Eveniet nesciunt eius minus culpa. Facilis odit fugiat dolore quae assumenda ab animi sint. Libero esse consectetur architecto fuga nisi voluptatem mollitia hic.&lt;br&gt;Laboriosam totam est corporis rerum nihil reiciendis. Rem maiores deserunt illo iure. Autem tenetur modi tempore repudiandae commodi accusamus ratione inventore. Expedita dolore voluptatem sunt perferendis labore beatae natus veniam.&lt;br&gt;Commodi rem repellendus eum quisquam totam. Architecto corporis quae impedit expedita. Excepturi omnis atque laudantium nobis fugit eaque a. Facere ut doloremque molestias voluptatem fugit.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Excepturi esse&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Rerum illum sed doloremque cum. Ex odit explicabo ea quia architecto quisquam.&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code&gt;            #expedita h1 a {              display: block;              width: 300px;              height: 80px;            }          &lt;/code&gt;&lt;/pre&gt; |
+| `dl` | &lt;dl&gt;&lt;dt&gt;Ex&lt;/dt&gt;&lt;dd&gt;Recusandae nesciunt odio enim corporis. Quis fugit incidunt ducimus unde optio tenetur beatae.&lt;/dd&gt;&lt;dt&gt;Sunt&lt;/dt&gt;&lt;dd&gt;Dolores alias id asperiores voluptatum nostrum quam deleniti. Placeat laborum rem blanditiis consequatur delectus. Veritatis dolores aliquid nihil voluptatem laborum in. Aliquid doloremque ut perspiciatis at excepturi.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Tenetur&lt;/dt&gt;&lt;dd&gt;Animi nemo accusantium repudiandae libero. Expedita vitae vero autem repellat aliquam nostrum. Ut dolores dolorum quas nisi unde facilis sapiente reprehenderit. Vero sed corrupti hic cumque beatae.&lt;/dd&gt;&lt;dt&gt;Aspernatur&lt;/dt&gt;&lt;dd&gt;Quia quae quas animi laborum. Recusandae sint incidunt deleniti vero architecto eveniet. Porro voluptas explicabo nulla laudantium in corporis maxime aspernatur. Beatae consequatur nobis quisquam sapiente ullam alias.&lt;/dd&gt;&lt;/dl&gt;, &lt;dl&gt;&lt;dt&gt;Commodi&lt;/dt&gt;&lt;dd&gt;Officiis laboriosam dolore eveniet repellendus. Architecto modi aperiam voluptatum sapiente dignissimos. Aliquam magni quo quaerat quas voluptatum.&lt;/dd&gt;&lt;dt&gt;Ipsam&lt;/dt&gt;&lt;dd&gt;Sunt quam commodi laborum facilis ex. Impedit consectetur quia consequuntur repellat tenetur distinctio delectus. Eum nisi dicta ratione nesciunt quasi.&lt;/dd&gt;&lt;/dl&gt; |
 | `fancy_string` | &lt;mark&gt;Commodi dolore animi optio est repudiandae atque iure cupiditate. Explicabo ipsum quod commodi eaque. Magni vel at architecto ratione ipsam fugiat voluptas veritatis.&lt;/mark&gt; &lt;a href="#fugit" title="Recusandae culpa"&gt;Magni voluptatem&lt;/a&gt; &lt;small&gt;recusandae nemo&lt;/small&gt;, &lt;strong&gt;Cum odit&lt;/strong&gt; Voluptatum assumenda consequuntur dolores quam corporis vero. Temporibus cum nesciunt mollitia quod enim distinctio velit. Veritatis illum recusandae nihil cupiditate nemo dolor nisi fuga. Earum dolor quis quo occaecati reprehenderit. &lt;del&gt;deleniti consequatur&lt;/del&gt;, &lt;strong&gt;Similique non&lt;/strong&gt; &lt;em&gt;Nam mollitia id voluptatum labore ratione est. Neque ipsam veritatis quibusdam officia fugiat ipsa consequatur. Reprehenderit aspernatur quod quos blanditiis. Placeat maxime quos hic ad minima. Debitis maiores atque iste quos.&lt;/em&gt; Facere ea minus a quidem consequatur. Iste dicta nihil quidem vero ducimus laborum officiis. Ducimus veritatis officia omnis assumenda magni totam. Pariatur ex tenetur dolor accusantium. |
 | `ol_long` | &lt;ol&gt;&lt;li&gt;Id ex odit saepe aliquid ullam esse adipisci laboriosam. Modi excepturi tenetur beatae accusamus. Iure assumenda nemo molestiae vel illo. Nemo exercitationem ducimus iste explicabo fuga sit minus.&lt;/li&gt;&lt;li&gt;Minus eos nesciunt tempora cum magnam. Natus perspiciatis possimus nam magni.&lt;/li&gt;&lt;li&gt;Fuga occaecati officia excepturi quaerat rerum. Possimus nam vel magni expedita hic officiis placeat tempora.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Aspernatur aliquid ab quasi exercitationem. Sit recusandae suscipit quidem excepturi sunt eaque.&lt;/li&gt;&lt;li&gt;Doloribus rerum error reprehenderit possimus maiores quia minima. Repellat reprehenderit vel minima sunt vitae eos dicta exercitationem.&lt;/li&gt;&lt;li&gt;Voluptatum et eos amet ducimus. Temporibus hic totam consequuntur iste repellendus alias nulla. Voluptates sapiente eveniet provident eaque quos explicabo.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Dicta recusandae delectus quibusdam dolorum cupiditate. Nobis libero esse tenetur reiciendis asperiores.&lt;/li&gt;&lt;li&gt;Sequi itaque deleniti provident dignissimos accusamus quasi beatae culpa. At corrupti vero labore blanditiis totam vitae nemo soluta. Error facilis quo eos quibusdam dolorem. Harum eaque expedita nihil sequi reprehenderit saepe modi.&lt;/li&gt;&lt;li&gt;Ut sit dolorem dolores asperiores corporis minima. Eveniet ipsum autem nesciunt commodi blanditiis alias. Temporibus cumque dolor nam dolorem earum. Ullam illum provident eius suscipit.&lt;/li&gt;&lt;/ol&gt; |
 | `ol_short` | &lt;ol&gt;&lt;li&gt;Maiores provident quod eveniet.&lt;/li&gt;&lt;li&gt;Debitis eveniet sequi tempora error.&lt;/li&gt;&lt;li&gt;Enim quas reprehenderit voluptatem numquam provident cum.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Exercitationem unde ullam deserunt nam reprehenderit.&lt;/li&gt;&lt;li&gt;Atque sed dolorem aliquam.&lt;/li&gt;&lt;li&gt;Quas deserunt ducimus veniam id consequatur.&lt;/li&gt;&lt;/ol&gt;, &lt;ol&gt;&lt;li&gt;Maiores suscipit fugiat.&lt;/li&gt;&lt;li&gt;Corrupti veritatis commodi dolore.&lt;/li&gt;&lt;li&gt;Ullam optio accusantium ipsum.&lt;/li&gt;&lt;/ol&gt; |
@@ -1506,7 +1506,7 @@
 
 | Method | Example |
 | ------ | ------- |
-| `file` | #&lt;File:0x00007f24a6a7dec0&gt;, #&lt;File:0x00007f24a6a75c20&gt;, #&lt;File:0x00007f24a6a0c928&gt; |
+| `file` | #&lt;File:0x00007f7a5e3f6c88&gt;, #&lt;File:0x00007f7a5e38e6b0&gt;, #&lt;File:0x00007f7a5e3875e0&gt; |
 | `url` | https://dummyimage.com/300x300/7feaa8/2a4568.png?text=, https://dummyimage.com/300x300/677085/7d5d48.png?text=, https://dummyimage.com/300x300/773320/907eba.png?text= |
 
 ## FFaker::Internet
@@ -1821,8 +1821,8 @@
 | `first_name` | Vergie, Lavina, Babette |
 | `first_name_female` | Betsy, Mallie, Dede |
 | `first_name_male` | Isreal, Elwood, Joshua |
-| `html_safe_last_name` | Erdman, Wintheiser, Cartwright |
-| `html_safe_name` | Irena Crist, Doug Steuber, Abdul Lynch |
+| `html_safe_last_name` | Kassulke, Pouros, Considine |
+| `html_safe_name` | Irena Schuppe, Doug Schmitt, Abdul Mohr |
 | `last_name` | Moore, Franecki, Zieme |
 | `male_name_with_prefix` | Mr. Salvatore Runte, Mr. Wendell Feil, Mr. Reginald Breitenberg |
 | `male_name_with_prefix_suffix` | Mr. Darwin Rolfson Jr., Mr. Bradly Abbott III, Mr. Gus Abernathy Sr. |
@@ -1883,8 +1883,8 @@
 | `first_name` | Milan, Zuzana, Lukáš |
 | `first_name_female` | Kristle, Lizette, Ria |
 | `first_name_male` | Efrain, Normand, Randell |
-| `html_safe_last_name` | Keeling, Carter, Herzog |
-| `html_safe_name` | Radovan Ritchie, Lenka Morar, Jindřich Kulas |
+| `html_safe_last_name` | Bergnaum, Reilly, Jones |
+| `html_safe_name` | Radovan Hyatt, Lenka Shields, Jindřich Pfeffer |
 | `last_name` | Dohnal, Bartoň, Březina |
 | `male_name_with_prefix` | Mr. Elmo Čejková, Mr. Riley Boháčová, Mr. Dirk Dohnalová |
 | `male_name_with_prefix_suffix` | Mr. Garrett Bednářová Ph.D., Mr. Miguel David DSc., Mr. Ervin Fiala DSc. |
@@ -1913,8 +1913,8 @@
 | `first_name` | Laurine, Villy, Dagmar |
 | `first_name_female` | Sherice, Margarette, Nadene |
 | `first_name_male` | Benny, Geraldo, Dorsey |
-| `html_safe_last_name` | Haley, Lebsack, Mohr |
-| `html_safe_name` | Petrea Hermiston, Sandra Beer, Villiam Larson |
+| `html_safe_last_name` | Wolf, Toy, McKenzie |
+| `html_safe_name` | Petrea Emmerich, Sandra Botsford, Villiam Dietrich |
 | `last_name` | Hayes, Vandervort, Monahan |
 | `male_name` | Børge Hilpert Adams, Jimmy Stanton Brown, Ivar Koss Stoltenberg |
 | `male_name_with_prefix` | Mr. Bob Nader, Mr. Florentino Vandervort, Mr. Fermin Dicki |
@@ -1941,8 +1941,8 @@
 | `first_name` | Hugo, Clarisa, Corina |
 | `first_name_female` | Minna, Tatyana, Drema |
 | `first_name_male` | Forest, Jc, Elton |
-| `html_safe_last_name` | Gutmann, Bailey, Pagac |
-| `html_safe_name` | Celinda Schmeler, Echo Champlin, Thomas Hackett |
+| `html_safe_last_name` | Ebert, Roberts, Hegmann |
+| `html_safe_name` | Celinda Veum, Echo Cartwright, Thomas Rodriguez |
 | `last_name` | Leannon, Lubowitz, Rice |
 | `male_name_with_prefix` | Mr. Roderick Klein, Mr. Leonard Kshlerin, Mr. Mauricio Kris |
 | `male_name_with_prefix_suffix` | Mr. Terrance Kozey PhD, Mr. Williams Heaney Jr., Mr. Eldridge Daniel MD |
@@ -2087,8 +2087,8 @@
 | `full_name` | Victoriano Grady Schiller, Benancio Walter Jacobs, Vladimir Kub Emmerich |
 | `full_name_no_prefix` | Nancy Maggio Mueller, Silverio Stroman Orn, Heriberto McClure Jacobi |
 | `full_name_prefix` | Sr. Benito Wilderman Stracke, C. Daniela Daniela Waters Harber, Sr. Abel Victoriano Cummerata Kshlerin |
-| `html_safe_last_name` | Herzog, Connelly, McKenzie |
-| `html_safe_name` | Sergio Feil, Aurelio Hartmann, Benjamin Jast |
+| `html_safe_last_name` | Dickens, Dicki, Williamson |
+| `html_safe_name` | Sergio Corwin, Aurelio Barrows, Benjamin Eichmann |
 | `last_name` | Carroll, Reichert, Raynor |
 | `male_name` | Santiago, Guillermo, Donato |
 | `male_name_with_prefix` | C. Noble Hyatt, Sr. Arlie Kunde, Sr. Porter Bosco |
@@ -2117,8 +2117,8 @@
 | `first_name` | Neville, Rodrigo, Orville Zachery |
 | `first_name_female` | Yuette, Trudy, Daniella |
 | `first_name_male` | Lane, Sol, Odell |
-| `html_safe_last_name` | Harris, Kihn, Gleichner |
-| `html_safe_name` | Chad Beier, Dorinda Osinski, Toccara Greenfelder |
+| `html_safe_last_name` | Pollich, Berge, Sipes |
+| `html_safe_name` | Chad Treutel, Dorinda Bergstrom, Toccara Wuckert |
 | `last_name` | Lang, Hammes, Huel |
 | `male_name_with_prefix` | Mr. Murray Heathcote, Mr. Francesco Hegmann, Mr. Gavin Cruickshank |
 | `male_name_with_prefix_suffix` | Mr. Bryce Erdman I, Mr. Tuan Bauch II, Mr. Judson Hammes V |
@@ -2144,8 +2144,8 @@
 | `first_name` | Teddy, Liz, Earnest |
 | `first_name_female` | Sunni, Cristen, Somer |
 | `first_name_male` | Logan, Foster, Lamar-Junior |
-| `html_safe_last_name` | Gislason, Reynolds, Welch |
-| `html_safe_name` | Bobbie Spinka, Solomon Frami, Kandis-Leonor Turner |
+| `html_safe_last_name` | Purdy, Doyle, Krajcik |
+| `html_safe_name` | Bobbie Maggio, Solomon Collins, Kandis-Leonor Dickinson |
 | `last_name` | Gutmann, Ferry, Langworth |
 | `male_name_with_prefix` | Mr. Vincenzo-Daryl Bahringer, Mr. Bryan Towne, Mr. Carol Collier |
 | `male_name_with_prefix_suffix` | Mr. Martin-Lou Smith III, Mr. John Donnelly DVM, Mr. Edmundo Padberg Jr. |
@@ -2171,8 +2171,8 @@
 | `first_name` | Ashlyn, Myriam, Jeanice |
 | `first_name_female` | Debera, Odelia, Ana |
 | `first_name_male` | Franklin, Jeremy, Charles |
-| `html_safe_last_name` | Bauch, Farrell, Gaylord |
-| `html_safe_name` | Jeannetta Jacobson, Sherise Skiles, Carlo Jacobson |
+| `html_safe_last_name` | Hermiston, Cartwright, Will |
+| `html_safe_name` | Jeannetta Pollich, Sherise Olson, Carlo Mertz |
 | `last_name` | Nallos, Tagaan, Batungbakal |
 | `male_name_with_prefix` | Mr. Denver Roque, Mr. Houston Herrera, Mr. Ken Bustamante |
 | `male_name_with_prefix_suffix` | Mr. Reuben Miranda Sr., Mr. Damion Marquez IV, Mr. Rafael Estrada IV |
@@ -2236,8 +2236,8 @@
 | `first_name` | Leah Tisa, Kathrine, Gracia |
 | `first_name_female` | Anneliese, Shera, Joeann |
 | `first_name_male` | Chas, Matt, Ike |
-| `html_safe_last_name` | Ledner, Paucek, Effertz |
-| `html_safe_name` | Thanh Feil, Scottie Crist, Hank Luis Schinner |
+| `html_safe_last_name` | Crooks, Jakubowski, Wisozk |
+| `html_safe_name` | Thanh Stark, Scottie Herman, Hank Luis Donnelly |
 | `last_name` | Wuckert, Wehner, Wolff |
 | `male_name_with_prefix` | Mr. Brenton Mills, Mr. Jarrett Orn, Mr. Nelson Batz |
 | `male_name_with_prefix_suffix` | Mr. Henry Lakin DVM, Mr. Danilo Schmeler IV, Mr. Perry Schuppe II |
@@ -2375,12 +2375,12 @@
 
 | Method | Example |
 | ------ | ------- |
-| `free_phone_number` | 0800 261 73 34, +41800 415 20 99, 0041800 603 42 85 |
-| `home_work_phone_number` | +4121 345 43 50, +41441624430, +4124 168 76 47 |
-| `mobile_phone_number` | 076 392 08 41, +41778134416, 0759030709 |
-| `phone_number` | 004126 264 33 00, 0041772120674, +41818476742 |
-| `premium_rate_phone_number` | 0041900 603 53 45, 0906 666 80 14, 0900 459 71 19 |
-| `shared_cost_phone_number` | +418400459083, 0848 852 36 14, 08481021963 |
+| `free_phone_number` | 00418002617334, 08004152099, +41800 603 42 85 |
+| `home_work_phone_number` | 0913454350, 0041711624430, +4191 168 76 47 |
+| `mobile_phone_number` | 076 392 08 41, 0041768134416, +4175 903 07 09 |
+| `phone_number` | 0582643300, +4178 212 06 74, 0318476742 |
+| `premium_rate_phone_number` | +419006035345, 09006668014, 00419064597119 |
+| `shared_cost_phone_number` | +41844 045 90 83, +41844 852 36 14, 00418441021963 |
 
 ## FFaker::PhoneNumberCU
 
