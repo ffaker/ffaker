@@ -12,20 +12,20 @@ module FFaker
     HOME_WORK_PHONE_PREFIX = AREA_PREFIX + NON_AREA_PREFIX
     MOBILE_PHONE_PREFIX    = %w[06 07].freeze
     PHONE_PREFIX           = HOME_WORK_PHONE_PREFIX + MOBILE_PHONE_PREFIX
-    PHONE_NUMBER          = ['########', ' ## ## ## ##'].freeze
+    PHONE_NUMBER = ['########', ' ## ## ## ##'].freeze
     PHONE_NUMBER_NO_SPACES = '########'
 
     def home_work_phone_number(spaces: true)
-      number HOME_WORK_PHONE_PREFIX, spaces: spaces
+      number(HOME_WORK_PHONE_PREFIX, spaces:)
     end
 
     def mobile_phone_number(spaces: true)
-      number MOBILE_PHONE_PREFIX, spaces: spaces
+      number(MOBILE_PHONE_PREFIX, spaces:)
     end
 
     # generates mobile or home/work number
     def phone_number(spaces: true)
-      rand(0..1).zero? ? home_work_phone_number(spaces: spaces) : mobile_phone_number(spaces: spaces)
+      rand(0..1).zero? ? home_work_phone_number(spaces:) : mobile_phone_number(spaces:)
     end
 
     def country_code
@@ -33,15 +33,15 @@ module FFaker
     end
 
     def international_mobile_phone_number(spaces: true)
-      number MOBILE_PHONE_PREFIX, country_code, spaces: spaces
+      number(MOBILE_PHONE_PREFIX, country_code, spaces:)
     end
 
     def international_home_work_phone_number(spaces: true)
-      number HOME_WORK_PHONE_PREFIX, country_code, spaces: spaces
+      number(HOME_WORK_PHONE_PREFIX, country_code, spaces:)
     end
 
     def international_phone_number(spaces: true)
-      rand(0..1).zero? ? international_mobile_phone_number(spaces: spaces) : international_home_work_phone_number(spaces: spaces)
+      rand(0..1).zero? ? international_mobile_phone_number(spaces:) : international_home_work_phone_number(spaces:)
     end
 
     private
