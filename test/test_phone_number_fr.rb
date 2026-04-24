@@ -12,6 +12,30 @@ class TestPhoneNumberFR < Test::Unit::TestCase
     :international_home_work_phone_number, :country_code
   )
 
+  def test_phone_number_without_spaces_is_deterministic
+    assert_deterministic { FFaker::PhoneNumberFR.phone_number(spaces: false) }
+  end
+
+  def test_home_work_phone_number_without_spaces_is_deterministic
+    assert_deterministic { FFaker::PhoneNumberFR.home_work_phone_number(spaces: false) }
+  end
+
+  def test_mobile_phone_number_without_spaces_is_deterministic
+    assert_deterministic { FFaker::PhoneNumberFR.mobile_phone_number(spaces: false) }
+  end
+
+  def test_international_phone_number_without_spaces_is_deterministic
+    assert_deterministic { FFaker::PhoneNumberFR.international_phone_number(spaces: false) }
+  end
+
+  def test_international_mobile_phone_number_without_spaces_is_deterministic
+    assert_deterministic { FFaker::PhoneNumberFR.international_mobile_phone_number(spaces: false) }
+  end
+
+  def test_international_home_work_phone_number_without_spaces_is_deterministic
+    assert_deterministic { FFaker::PhoneNumberFR.international_home_work_phone_number(spaces: false) }
+  end
+
   def setup
     @tester = FFaker::PhoneNumberFR
   end
@@ -23,7 +47,7 @@ class TestPhoneNumberFR < Test::Unit::TestCase
   end
 
   def test_home_work_phone_number
-    assert_match(/^0([1-5]|[8-9])(\s?\d{2}){4}$/,
+    assert_match(/^0([1-5]|9)(\s?\d{2}){4}$/,
                  @tester.home_work_phone_number)
   end
 
@@ -45,7 +69,7 @@ class TestPhoneNumberFR < Test::Unit::TestCase
   end
 
   def test_international_home_work_phone_number
-    assert_match(/^(\+|00)33\s?([1-5]|[8-9])(\s?\d{2}){4}$/,
+    assert_match(/^(\+|00)33\s?([1-5]|9)(\s?\d{2}){4}$/,
                  @tester.international_home_work_phone_number)
   end
 
@@ -63,7 +87,7 @@ class TestPhoneNumberFR < Test::Unit::TestCase
 
   def test_home_work_phone_number_without_spaces
     10.times do
-      assert_match(/^0([1-5]|[8-9])\d{8}$/, @tester.home_work_phone_number(spaces: false))
+      assert_match(/^0([1-5]|9)\d{8}$/, @tester.home_work_phone_number(spaces: false))
     end
   end
 
@@ -87,7 +111,7 @@ class TestPhoneNumberFR < Test::Unit::TestCase
 
   def test_international_home_work_phone_number_without_spaces
     10.times do
-      assert_match(/^(\+|00)33([1-5]|[8-9])\d{8}$/, @tester.international_home_work_phone_number(spaces: false))
+      assert_match(/^(\+|00)33([1-5]|9)\d{8}$/, @tester.international_home_work_phone_number(spaces: false))
     end
   end
 end
