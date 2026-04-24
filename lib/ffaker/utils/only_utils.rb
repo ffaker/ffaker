@@ -22,8 +22,8 @@ module FFaker
       raise RetryLimitExceeded, "Retry limit exceeded for #{name}"
     end
 
-    def respond_to_missing?(name, *)
-      @generator.respond_to?(name, *) || super
+    def respond_to_missing?(name, include_all = false)
+      @generator.respond_to?(name, include_all) || super
     end
   end
 end
