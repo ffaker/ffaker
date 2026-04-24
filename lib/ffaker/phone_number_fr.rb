@@ -12,50 +12,47 @@ module FFaker
     HOME_WORK_PHONE_PREFIX = AREA_PREFIX + NON_AREA_PREFIX
     MOBILE_PHONE_PREFIX    = %w[06 07].freeze
     PHONE_PREFIX           = HOME_WORK_PHONE_PREFIX + MOBILE_PHONE_PREFIX
-    PHONE_NUMBER           = ['########', ' ## ## ## ##'].freeze
+    PHONE_NUMBER          = ['########', ' ## ## ## ##'].freeze
+    PHONE_NUMBER_NO_SPACES = '########'
 
-    def home_work_phone_number
-      number HOME_WORK_PHONE_PREFIX
+    def home_work_phone_number(spaces: true)
+      number HOME_WORK_PHONE_PREFIX, spaces: spaces
     end
 
-    def mobile_phone_number
-      number MOBILE_PHONE_PREFIX
+    def mobile_phone_number(spaces: true)
+      number MOBILE_PHONE_PREFIX, spaces: spaces
     end
 
     # generates mobile or home/work number
-    def phone_number
-      rand(0..1).zero? ? home_work_phone_number : mobile_phone_number
+    def phone_number(spaces: true)
+      rand(0..1).zero? ? home_work_phone_number(spaces: spaces) : mobile_phone_number(spaces: spaces)
     end
 
     def country_code
       "#{fetch_sample(['+', '00'])}#{COUNTRY_CODE}"
     end
 
-    def international_mobile_phone_number
-      number MOBILE_PHONE_PREFIX, country_code
+    def international_mobile_phone_number(spaces: true)
+      number MOBILE_PHONE_PREFIX, country_code, spaces: spaces
     end
 
-    def international_home_work_phone_number
-      number HOME_WORK_PHONE_PREFIX, country_code
+    def international_home_work_phone_number(spaces: true)
+      number HOME_WORK_PHONE_PREFIX, country_code, spaces: spaces
     end
 
-    def international_phone_number
-      rand(0..1).zero? ? international_mobile_phone_number : international_home_work_phone_number
+    def international_phone_number(spaces: true)
+      rand(0..1).zero? ? international_mobile_phone_number(spaces: spaces) : international_home_work_phone_number(spaces: spaces)
     end
 
     private
 
-    def number(prefixes, country_prefix = '')
-      space  = random_space
-      prefix = fetch_sample(prefixes)
-      prefix = prefix[1] unless country_prefix == ''
+    def number(prefixes, country_prefix = '', spaces: true)
+      prefix      = fetch_sample(prefixes)
+      prefix      = prefix[1] unless country_prefix.empty?
+      space       = spaces ? random_space : ''
+      number_part = spaces ? fetch_sample(PHONE_NUMBER) : PHONE_NUMBER_NO_SPACES
 
-      FFaker.numerify [
-        country_prefix,
-        space,
-        prefix,
-        fetch_sample(PHONE_NUMBER)
-      ].join.strip
+      FFaker.numerify "#{country_prefix}#{space}#{prefix}#{number_part}".strip
     end
 
     def random_space
