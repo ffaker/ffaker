@@ -53,4 +53,26 @@ class TestModuleUtils < Test::Unit::TestCase
     assert obj.luhn_check('8899982700037') == '1'
     assert obj.luhn_check('1234567820001') == '0'
   end
+
+  # Regression test for https://github.com/ffaker/ffaker/issues/550
+  #
+  # When Rails/Zeitwerk bypasses Ruby's built-in autoload mechanism,
+  # const_missing is called directly on the FFaker module with the name of a
+  # sub-module (e.g. :UUID, :AWS, :SSN). The sub-module names are all-uppercase
+  # so they pass the /[a-z]/ guard and fall into the data-file loading branch,
+  # which tries to open a non-existent path and raises Errno::ENOENT.
+  # const_missing should call super for unknown constants so that Ruby raises
+  # the standard NameError instead.
+  def test_const_missing_raises_name_error_for_unknown_all_caps_constants
+    assert_raises(NameError) { FFaker.const_missing(:UNKNOWN_CONSTANT) }
+  end
+
+  def test_const_missing_does_not_raise_enoent_for_submodule_names
+    # UUID, AWS, SSN, HTML are registered sub-modules via autoload.
+    # Simulating Zeitwerk calling const_missing before autoload fires must not
+    # result in Errno::ENOENT.
+    %i[UUID AWS SSN HTML].each do |name|
+      assert_raises(NameError) { FFaker.const_missing(name) }
+    end
+  end
 end
