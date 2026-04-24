@@ -51,12 +51,12 @@ class TestMarkdown < Test::Unit::TestCase
 
   def test_link
     result = FFaker::Markdown.link
-    assert_match(/\A\[.+\]\(http:\/\/.+\)\z/, result)
+    assert_match(%r{\A\[.+\]\(http://.+\)\z}, result)
   end
 
   def test_image
     result = FFaker::Markdown.image
-    assert_match(/\A!\[.+\]\(https?:\/\/.+\)\z/, result)
+    assert_match(%r{\A!\[.+\]\(https?://.+\)\z}, result)
   end
 
   def test_blockquote

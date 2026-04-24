@@ -29,7 +29,7 @@ module FFaker
 
     def block_code(language = nil)
       lang = language || fetch_sample(CODE_LANGUAGES)
-      lines = rand(2..6).times.map { "  #{FFaker::Lorem.words(rand(2..5)).join(' ')}" }
+      lines = Array.new(rand(2..6)) { "  #{FFaker::Lorem.words(rand(2..5)).join(' ')}" }
       "```#{lang}\n#{lines.join("\n")}\n```"
     end
 
@@ -50,17 +50,17 @@ module FFaker
     end
 
     def ordered_list(item_count = 3)
-      item_count.times.map { |i| "#{i + 1}. #{FFaker::Lorem.sentence}" }.join("\n")
+      Array.new(item_count) { |i| "#{i + 1}. #{FFaker::Lorem.sentence}" }.join("\n")
     end
 
     def unordered_list(item_count = 3)
-      item_count.times.map { "- #{FFaker::Lorem.sentence}" }.join("\n")
+      Array.new(item_count) { "- #{FFaker::Lorem.sentence}" }.join("\n")
     end
 
     def table(rows = 3)
       headers = FFaker::Lorem.words(3).map(&:capitalize)
       separator = headers.map { |h| '-' * h.length }
-      data_rows = rows.times.map { FFaker::Lorem.words(3).map(&:capitalize) }
+      data_rows = Array.new(rows) { FFaker::Lorem.words(3).map(&:capitalize) }
 
       lines = []
       lines << "| #{headers.join(' | ')} |"
