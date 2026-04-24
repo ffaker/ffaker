@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module FFaker
-  class OnlyUtils
+  class RetryUtils
     class RetryLimitExceeded < StandardError
     end
 

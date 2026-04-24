@@ -98,20 +98,20 @@ FFaker::UniqueUtils.clear # clears the used values for all generators
 
 ## Conditional values
 
-You can filter generated values using the `only` method with a block. `ffaker` will retry the generation
+You can filter generated values using the `retry_until` method with a block. `ffaker` will retry the generation
 until the block condition is satisfied.
 
 Example:
 ```ruby
-FFaker::Name.only { |str| str.size > 2 }.first_name # returns a first name longer than 2 characters
+FFaker::Name.retry_until { |str| str.size > 2 }.first_name # returns a first name longer than 2 characters
 ```
 
 If a matching value cannot be generated within the retry limit,
-a `FFaker::OnlyUtils::RetryLimitExceeded` error will be raised.
+a `FFaker::RetryUtils::RetryLimitExceeded` error will be raised.
 
-You can pass a custom retry limit as an argument:
+You can pass a custom retry limit using the `limit:` keyword argument:
 ```ruby
-FFaker::Name.only(100) { |str| str.include?(' ') }.name
+FFaker::Name.retry_until(limit: 100) { |str| str.include?(' ') }.name
 ```
 
 ## TODO

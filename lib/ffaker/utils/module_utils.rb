@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require_relative 'array_utils'
-require_relative 'only_utils'
 require_relative 'random_utils'
+require_relative 'retry_utils'
 require_relative 'unique_utils'
 
 module FFaker
@@ -37,10 +37,10 @@ module FFaker
       FFaker::UniqueUtils.add_instance(self, max_retries)
     end
 
-    def only(max_retries = 10_000, &condition)
+    def retry_until(limit: 10_000, &condition)
       raise ArgumentError, 'A block is required' unless condition
 
-      FFaker::OnlyUtils.new(self, condition, max_retries)
+      FFaker::RetryUtils.new(self, condition, limit)
     end
 
     # http://en.wikipedia.org/wiki/Luhn_algorithm
