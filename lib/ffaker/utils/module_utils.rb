@@ -37,7 +37,7 @@ module FFaker
       FFaker::UniqueUtils.add_instance(self, max_retries)
     end
 
-    def retry_until(limit: 10_000, &condition)
+    def retry_until(limit: 100, &condition)
       raise ArgumentError, 'A block is required' unless condition
 
       FFaker::RetryUtils.new(self, condition, limit)

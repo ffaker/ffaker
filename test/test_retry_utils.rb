@@ -4,7 +4,7 @@ require_relative 'helper'
 
 class TestRetryUtils < Test::Unit::TestCase
   def test_returns_value_matching_condition
-    retry_object = FFaker::RetryUtils.new(FFaker::Name, ->(str) { str.size > 2 }, 10_000)
+    retry_object = FFaker::RetryUtils.new(FFaker::Name, ->(str) { str.size > 2 }, 100)
     result = retry_object.first_name
     assert_operator result.size, :>, 2
   end
@@ -34,12 +34,12 @@ class TestRetryUtils < Test::Unit::TestCase
   end
 
   def test_retry_until_accepts_limit_keyword
-    result = FFaker::Name.retry_until(limit: 10_000) { |str| str.size > 2 }.first_name
+    result = FFaker::Name.retry_until(limit: 100) { |str| str.size > 2 }.first_name
     assert_operator result.size, :>, 2
   end
 
   def test_respond_to_delegates_to_generator
-    retry_object = FFaker::RetryUtils.new(FFaker::Name, ->(_) { true }, 10_000)
+    retry_object = FFaker::RetryUtils.new(FFaker::Name, ->(_) { true }, 100)
     assert retry_object.respond_to?(:first_name)
     assert_false retry_object.respond_to?(:nonexistent_method)
   end
