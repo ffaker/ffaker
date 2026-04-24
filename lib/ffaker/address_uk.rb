@@ -31,23 +31,35 @@ module FFaker
       fetch_sample(COUNTRY)
     end
 
+    # All 6 valid UK outward code format generators (lambdas receive area/district digits and letters)
+    POSTCODE_OUTWARD_FORMATS = [
+      ->(a1, _a2, d1, _d2, _dl) { "#{a1}#{d1}" },                    # A9
+      ->(a1, _a2, d1, d2, _dl)  { "#{a1}#{d1}#{d2}" },               # A99
+      ->(a1, _a2, d1, _d2, dl)  { "#{a1}#{d1}#{dl}" },               # A9A
+      ->(a1, a2, d1, _d2, _dl)  { "#{a1}#{a2}#{d1}" },               # AA9
+      ->(a1, a2, d1, d2, _dl)   { "#{a1}#{a2}#{d1}#{d2}" },          # AA99
+      ->(a1, a2, d1, _d2, dl)   { "#{a1}#{a2}#{d1}#{dl}" }           # AA9A
+    ].freeze
+
     def postcode
       a1 = fetch_sample(POSTCODE_AREA_LETTERS)
       a2 = fetch_sample(POSTCODE_AREA_LETTERS_2)
       d1 = rand(0..9)
       d2 = rand(0..9)
-      il = fetch_sample(POSTCODE_INWARD_LETTERS)
-      il2 = fetch_sample(POSTCODE_INWARD_LETTERS)
-      inward = "#{rand(0..9)}#{il}#{il2}"
+      id = rand(0..9)
 
-      outward = case rand(0..5)
-                when 0 then "#{a1}#{d1}"                                         # A9
-                when 1 then "#{a1}#{d1}#{d2}"                                    # A99
-                when 2 then "#{a1}#{d1}#{fetch_sample(POSTCODE_DISTRICT_LETTERS_A9A)}"  # A9A
-                when 3 then "#{a1}#{a2}#{d1}"                                    # AA9
-                when 4 then "#{a1}#{a2}#{d1}#{d2}"                               # AA99
-                else        "#{a1}#{a2}#{d1}#{fetch_sample(POSTCODE_DISTRICT_LETTERS_AA9A)}" # AA9A
-                end
+      format = fetch_sample(POSTCODE_OUTWARD_FORMATS)
+      # District letter depends on format: A9A uses POSTCODE_DISTRICT_LETTERS_A9A,
+      # AA9A uses POSTCODE_DISTRICT_LETTERS_AA9A. We pass from DISTRICT_LETTERS_AA9A
+      # as default; it is ignored for non-district-letter formats.
+      dl = if format == POSTCODE_OUTWARD_FORMATS[2]
+             fetch_sample(POSTCODE_DISTRICT_LETTERS_A9A)
+           else
+             fetch_sample(POSTCODE_DISTRICT_LETTERS_AA9A)
+           end
+
+      outward = format.call(a1, a2, d1, d2, dl)
+      inward = "#{id}#{fetch_sample(POSTCODE_INWARD_LETTERS)}#{fetch_sample(POSTCODE_INWARD_LETTERS)}"
 
       "#{outward} #{inward}"
     end
