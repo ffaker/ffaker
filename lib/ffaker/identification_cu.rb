@@ -7,12 +7,12 @@ module FFaker
     extend ModuleUtils
     extend self
 
-    # Generates a Cuban Carné de Identidad (CI): 11 digits.
+    # Generates a Cuban Carnet de Identidad (CI): 11 digits.
     #
     # Format per LookupTax Cuba Tax ID guide:
-    #   1–6  Date of birth YYMMDD
-    #   7    Century digit (9 = 19th, 0–5 = 20th, 6–8 = 21st)
-    #   8–9  Sequential number (00–99)
+    #   1-6  Date of birth YYMMDD
+    #   7    Century digit (9 = 19th, 0-5 = 20th, 6-8 = 21st)
+    #   8-9  Sequential number (00-99)
     #   10   Gender digit (even = male, odd = female)
     #   11   Check digit
     #
