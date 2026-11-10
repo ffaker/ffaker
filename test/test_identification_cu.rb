@@ -24,11 +24,11 @@ class TestFakerIdentificationCU < Test::Unit::TestCase
 
   private
 
-  def assert_valid_birth_date(ci)
-    yy = ci[0, 2].to_i
-    mm = ci[2, 2].to_i
-    dd = ci[4, 2].to_i
-    century_digit = ci[6].to_i
+  def assert_valid_birth_date(dni)
+    yy = dni[0, 2].to_i
+    mm = dni[2, 2].to_i
+    dd = dni[4, 2].to_i
+    century_digit = dni[6].to_i
 
     year = full_year(yy, century_digit)
     assert_nothing_raised do
