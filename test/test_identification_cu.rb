@@ -36,11 +36,11 @@ class TestFakerIdentificationCU < Test::Unit::TestCase
     end
   end
 
-  def full_year(yy, century_digit)
+  def full_year(year, century_digit)
     case century_digit
-    when 9 then 1800 + yy
-    when 0..5 then 1900 + yy
-    when 6..8 then 2000 + yy
+    when 9 then 1800 + year
+    when 0..5 then 1900 + year
+    when 6..8 then 2000 + year
     end
   end
 end
