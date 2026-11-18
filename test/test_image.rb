@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'open3'
+require 'rbconfig'
 require_relative 'helper'
 
 class TestImage < Test::Unit::TestCase
@@ -16,6 +18,14 @@ class TestImage < Test::Unit::TestCase
   def test_url
     assert_match(%r(#{Regexp.quote(PLACEHOLDER)}300x300/[0-9a-f]{6}/[0-9a-f]{6}\.png\?text=),
                  @tester.url)
+  end
+
+  def test_url_without_warnings_in_verbose_mode
+    lib = File.expand_path('../lib', __dir__)
+    _, stderr, status = Open3.capture3(RbConfig.ruby, '-w', "-I#{lib}", '-e', 'require "ffaker"; FFaker::Image.url')
+
+    assert_predicate status, :success?
+    assert_not_match(/cgi/i, stderr)
   end
 
   def test_url_output_with_keyword_arguments
